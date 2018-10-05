@@ -1,0 +1,36 @@
+
+{
+    "@context": {
+        “@version”: 1.1,
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "@id": "nda-gender",
+        "@type": "https://schema.metadatacenter.org/core/TemplateField",
+        "skos:prefLabel": "gender"
+        "title": "Gender",
+        "description": "Sex of the subject",
+        "_ui": {
+            "inputType": "radio"
+        },
+        "_valueConstraints": {
+            "requiredValue": true,
+            "multipleChoice": false,
+            "literals": [
+                { "label": "Female",
+                  “@value”: 0},
+                { "label": "Male",
+                  “@value”: 1},
+            ]
+            "value_codes": [0, 1]
+            "minValue": 0,
+            "maxValue": 1,
+        },
+        "pav:createdOn": "...",
+        "pav:createdBy": null,
+        "pav:lastUpdatedOn": "...",
+        "oslc:modifiedBy": null,
+        "schema:schemaVersion": "...",
+        "schema:name": "gender",
+        "schema:description": "gender help text”
+    }
+}
