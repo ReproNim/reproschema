@@ -1,0 +1,33 @@
+
+src_subject_id	Subject ID how it's defined in lab/project
+interview_age	Age in months at the time of the interview/test/sampling/imaging.
+interview_date
+gender
+
+
+{
+    "@context": {
+        “@version”: 1.1,
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "@id": "nda-interview_date",
+        "@type": "https://schema.metadatacenter.org/core/TemplateField",
+        "title": "interview date field schema",
+        "description": "interview date template field",
+        "_ui": {
+            "inputType": "date"
+        },
+        "_valueConstraints": {
+            "requiredValue": false,
+        },
+        "pav:createdOn": "...",
+        "pav:createdBy": null,
+        "pav:lastUpdatedOn": "...",
+        "oslc:modifiedBy": null,
+        "schema:schemaVersion": "...",
+        "skos:prefLabel": "interview_date",
+        "schema:name": "Interview Date",
+        "schema:description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY”,
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+    }
+}

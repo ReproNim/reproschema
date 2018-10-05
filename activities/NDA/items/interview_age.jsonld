@@ -4,24 +4,27 @@
         “@version”: 1.1,
         "$schema": "http://json-schema.org/draft-04/schema#",
         "type": "object",
-        "@id": "nda-src_subject_id",
+        "@id": "nda-interview_age",
         "@type": "https://schema.metadatacenter.org/core/TemplateField",
-        "skos:prefLabel": "src_subject_id"
-        "title": "src_subject_id field schema",
-        "description": "subject id template field",
+        "title": "Age field schema",
+        "description": "age template field",
         "_ui": {
-            "inputType": "text"
+            "inputType": "xsd:int"
         },
         "_valueConstraints": {
-            "requiredValue": false,
+            "requiredValue": true,
+            "value_codes": []
+            "minValue": 0,
+            "maxValue": ...,
         },
         "pav:createdOn": "...",
         "pav:createdBy": null,
         "pav:lastUpdatedOn": "...",
         "oslc:modifiedBy": null,
         "schema:schemaVersion": "...",
-        "schema:name": "Subject ID",
-        "schema:description": "Subject ID how it's defined in lab/project”,
+        "skos:prefLabel": "interview_age",
+        "schema:name": "Age",
+        "schema:description": "Age in months at the time of the interview/test/sampling/imaging”,
         "skos": "http://www.w3.org/2004/02/skos/core#"
-        }
+    }
 }
