@@ -1,30 +1,26 @@
-
 {
     "@context": {
         “@version”: 1.1,
-        "$schema": "http://json-schema.org/draft-04/schema#",
-        "type": "object",
-        "@id": "nda-subjectkey",
-        "@type": "https://schema.metadatacenter.org/core/TemplateField",
-        "title": "Subject Key field schema",
-        "description": "subject key template field",
-        "_ui": {
-            "inputType": "xsd:int"
-        },
-        "_valueConstraints": {
-            "requiredValue": true,
-            "value_codes": []
-            "minValue": 0,
-            "maxValue": ...,
-        },
-        "pav:createdOn": "...",
-        "pav:createdBy": "...",
-        "pav:lastUpdatedOn": "...",
-        "oslc:modifiedBy": null,
-        "schema:schemaVersion": "...",
-        "skos:prefLabel": "subjectkey",
-        "schema:name": "Subject Key",
-        "schema:description": "The NDAR Global Unique Identifier (GUID) for research subject",
-        "skos": "http://www.w3.org/2004/02/skos/core#"
-    }
+        ...
+    },
+    "@id": "nda-subjectkey",
+    "@type": "https://schema.metadatacenter.org/core/TemplateField",
+    "title": "Subject Key",
+    "description": "The NDAR Global Unique Identifier (GUID) for research subject",
+    "_ui": {
+        "inputType": "xsd:int"
+    },
+    "_valueConstraints": {
+        "requiredValue": true,
+        "minValue": 0,
+        "maxValue": ...,
+    },
+    "pav:createdOn": null,
+    "pav:createdBy": null,
+    "pav:lastUpdatedOn": null,
+    "oslc:modifiedBy": null,
+    "schema:schemaVersion": "0.0.1",
+    "schema:name": "Schema for subject key of the NDA ",
+    "schema:description": "FDE describing subject key of the NDA"
+
 }
