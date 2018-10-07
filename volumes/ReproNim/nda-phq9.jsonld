@@ -6,24 +6,8 @@
     "@type": "https://schema.metadatacenter.org/core/Template",
     "title": "NDA-PHQ-9",
     "description": null,
-    "src_subject_id": {
-        "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/NDA/items/src_subject_id.jsonld",
-        "@type": "@id"
-    },
-    "subjectkey": {
-        "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/NDA/items/subjectkey.jsonld",
-        "@type": "@id"
-    },
-    "gender": {
-        "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/NDA/items/gender.jsonld",
-        "@type": "@id"
-    },
-    "interview_age": {
-        "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/NDA/items/interview_age.jsonld",
-        "@type": "@id"
-    },
-    "interview_date": {
-        "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/NDA/items/interview_date.jsonld",
+    "nda-common": {
+        "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/NDA/items/nda.jsonld",
         "@type": "@id"
     },
     "phq9_schema": {
@@ -32,14 +16,10 @@
     },
     "_ui": {
         "order": [
-            "src_subject_id",
-            "subjectkey",
-            "gender",
-            "interview_age",
-            "interview_date",
+            "nda-common",
             "phq9_schema"
         ],
-        "pages": [["src_subject_id", "subjectkey", "gender", "interview_age", "interview_date"], ["phq9_schema"]]
+        "pages": [["nda-common"], ["phq9_schema"]]
     },
     "pav:createdOn": null,
     "pav:createdBy": null,
