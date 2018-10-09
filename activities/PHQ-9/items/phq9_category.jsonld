@@ -1,6 +1,29 @@
 {
     "@context": {
-        "@version": 1.1
+        "@version": 1.1,
+        "title": "http://schema.org/name",
+        "description": "http://schema.org/description",
+        "pav:createdBy": {
+            "@type": "@id"
+        },
+        "pav": "http://purl.org/pav/",
+        "pav:createdOn": {
+            "@type": "xsd:dateTime"
+        },
+        "oslc": "http://open-services.net/ns/core#",
+        "pav:lastUpdatedOn": {
+            "@type": "xsd:dateTime"
+        },
+        "oslc:modifiedBy": {
+            "@type": "@id"
+        },
+        "schema:description": {
+            "@type": "xsd:string"
+        },
+        "schema": "http://schema.org/",
+        "schema:name": {
+            "@type": "xsd:string"
+        }
     },
     "@id": "phq9_category",
     "@type": "https://schema.metadatacenter.org/core/TemplateField",
@@ -11,10 +34,9 @@
     },
     "_valueConstraints": {
         "requiredValue": true,
-        "categorical_values": []
+        "valueSets": [],
         "minValue": null,
-        "maxValue": null,
-        "valueSets": []
+        "maxValue": null
     },
     "pav:derivedFrom": "phq9_total_score",
     "pav:createdOn": null,
