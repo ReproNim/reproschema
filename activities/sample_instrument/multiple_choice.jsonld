@@ -1,0 +1,61 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "title": "http://schema.org/name",
+        "description": "http://schema.org/description",
+        "pav:createdBy": {
+            "@type": "@id"
+        },
+        "pav": "http://purl.org/pav/",
+        "pav:createdOn": {
+            "@type": "xsd:dateTime"
+        },
+        "oslc": "http://open-services.net/ns/core#",
+        "pav:lastUpdatedOn": {
+            "@type": "xsd:dateTime"
+        },
+        "oslc:modifiedBy": {
+            "@type": "@id"
+        },
+        "bibo": "http://purl.org/ontology/bibo/",
+        "schema:description": {
+            "@type": "xsd:string"
+        },
+        "schema": "http://schema.org/",
+        "schema:name": {
+            "@type": "xsd:string"
+        }
+    },
+    "@id": "sample_multiple-choice",
+    "@type": "https://schema.metadatacenter.org/core/TemplateField",
+    "title": "Question for the field",
+    "description": null,
+    "_ui": {
+        "inputType": "radio"
+    },
+    "_valueConstraints": {
+        "requiredValue": false,
+        "multipleChoice": false,
+        "literals": [
+            {
+                "label": "Option 1",
+                "@value": 0
+            },
+            {
+                "label": "Option 2",
+                "@value": 1
+            },
+            {
+                "label": "Option 3",
+                "@value": 2
+            }
+        ]
+    },
+    "pav:createdOn": null,
+    "pav:createdBy": null,
+    "pav:lastUpdatedOn": null,
+    "oslc:modifiedBy": null,
+    "schema:schemaVersion": "0.0.1",
+    "schema:name": "Schema for multiple choice field of sample instrument",
+    "schema:description": "FDE describing single answer multiple choice field of sample instrument"
+}
