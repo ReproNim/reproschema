@@ -1,37 +1,46 @@
 {
     "@context": {
         "@version": 1.1,
+        "pav": "http://purl.org/pav/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
         "pav:createdBy": {
             "@type": "@id"
         },
-        "pav": "http://purl.org/pav/",
         "pav:createdOn": {
             "@type": "xsd:dateTime"
         },
-        "oslc": "http://open-services.net/ns/core#",
         "pav:lastUpdatedOn": {
             "@type": "xsd:dateTime"
         },
+        "oslc": "http://open-services.net/ns/core#",
         "oslc:modifiedBy": {
             "@type": "@id"
         },
         "bibo": "http://purl.org/ontology/bibo/",
+        "schema": "http://schema.org/",
         "schema:description": {
             "@type": "xsd:string"
         },
-        "schema": "http://schema.org/",
         "schema:name": {
+            "@type": "xsd:string"
+        },
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "skos:prefLabel": {
             "@type": "xsd:string"
         }
     },
     "@id": "phq9-field1",
     "@type": "https://schema.metadatacenter.org/core/TemplateField",
-    "title": "Little interest or pleasure in doing things",
-    "description": null,
+    "skos:prefLabel": "Little interest or pleasure in doing things",
+    "schema:description": null,
     "_ui": {
         "inputType": "radio"
     },
     "_valueConstraints": {
+        "@id": "http://example-fde.com/phq9-field1",
+        "type": "xsd:integer",
+        "minimum": 0,
+        "maximum": 3,
         "requiredValue": false,
         "multipleChoice": false,
         "literals": [
@@ -53,11 +62,15 @@
             }
         ]
     },
+    "properties": {
+        "@type": {
+            "type": "string",
+            "format": "uri"
+        }
+    },
     "pav:createdOn": null,
     "pav:createdBy": null,
     "pav:lastUpdatedOn": null,
     "oslc:modifiedBy": null,
-    "schema:schemaVersion": "0.0.1",
-    "schema:name": "Schema for question 1 of the PHQ9",
-    "schema:description": "FDE describing question 1 of the PHQ9"
+    "schema:schemaVersion": "0.0.1"
 }
