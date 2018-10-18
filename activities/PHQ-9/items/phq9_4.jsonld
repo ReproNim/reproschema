@@ -1,62 +1,16 @@
 {
-    "@context": {
-        "@version": 1.1,
-        "pav:createdBy": {
-            "@type": "@id"
-        },
-        "pav": "http://purl.org/pav/",
-        "pav:createdOn": {
-            "@type": "xsd:dateTime"
-        },
-        "oslc": "http://open-services.net/ns/core#",
-        "pav:lastUpdatedOn": {
-            "@type": "xsd:dateTime"
-        },
-        "oslc:modifiedBy": {
-            "@type": "@id"
-        },
-        "schema:description": {
-            "@type": "xsd:string"
-        },
-        "schema": "http://schema.org/",
-        "schema:name": {
-            "@type": "xsd:string"
-        }
-    },
+    "@context": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/context.jsonld",
     "@id": "phq9-field4",
     "@type": "https://schema.metadatacenter.org/core/TemplateField",
     "title": "Feeling tired or having little energy",
-    "description": null,
+    "schema:description": null,
     "_ui": {
         "inputType": "radio"
     },
-    "_valueConstraints": {
-        "requiredValue": false,
-        "multipleChoice": false,
-        "literals": [
-            {
-                "label": "Not at all",
-                "@value": 0
-            },
-            {
-                "label": "Several days",
-                "@value": 1
-            },
-            {
-                "label": "More than half the days",
-                "@value": 2
-            },
-            {
-                "label": "Nearly everyday",
-                "@value": 3
-            }
-        ]
-    },
+    "_valueConstraints": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/valueConstraints.jsonld",
     "pav:createdOn": null,
     "pav:createdBy": null,
     "pav:lastUpdatedOn": null,
     "oslc:modifiedBy": null,
-    "schema:schemaVersion": "0.0.1",
-    "schema:name": "Schema for question 4 of the PHQ9",
-    "schema:description": "FDE describing question 4 of the PHQ9"
+    "schema:schemaVersion": "0.0.1"
 }

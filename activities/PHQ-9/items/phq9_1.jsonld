@@ -1,77 +1,16 @@
 {
-    "@context": {
-        "@version": 1.1,
-        "pav": "http://purl.org/pav/",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "pav:createdBy": {
-            "@type": "@id"
-        },
-        "pav:createdOn": {
-            "@type": "xsd:dateTime"
-        },
-        "pav:lastUpdatedOn": {
-            "@type": "xsd:dateTime"
-        },
-        "oslc": "http://open-services.net/ns/core#",
-        "oslc:modifiedBy": {
-            "@type": "@id"
-        },
-        "bibo": "http://purl.org/ontology/bibo/",
-        "schema": "http://schema.org/",
-        "schema:description": {
-            "@type": "xsd:string"
-        },
-        "schema:name": {
-            "@type": "xsd:string"
-        },
-        "skos": "http://www.w3.org/2004/02/skos/core#",
-        "skos:prefLabel": {
-            "@type": "xsd:string"
-        }
-    },
+    "@context": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/context.jsonld",
     "@id": "phq9-field1",
     "@type": "https://schema.metadatacenter.org/core/TemplateField",
     "skos:prefLabel": "Little interest or pleasure in doing things",
+    "schema:description": null,
     "_ui": {
         "inputType": "radio"
     },
-    "_valueConstraints": {
-        "@id": "http://example-fde.com/phq9-field1",
-        "type": "xsd:integer",
-        "minimum": 0,
-        "maximum": 3,
-        "requiredValue": false,
-        "multipleChoice": false,
-        "literals": [
-            {
-                "label": "Not at all",
-                "@value": 0
-            },
-            {
-                "label": "Several days",
-                "@value": 1
-            },
-            {
-                "label": "More than half the days",
-                "@value": 2
-            },
-            {
-                "label": "Nearly everyday",
-                "@value": 3
-            }
-        ]
-    },
-    "properties": {
-        "@type": {
-            "type": "string",
-            "format": "uri"
-        }
-    },
+    "_valueConstraints": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/valueConstraints.jsonld",
     "pav:createdOn": null,
     "pav:createdBy": null,
     "pav:lastUpdatedOn": null,
     "oslc:modifiedBy": null,
-    "schema:schemaVersion": "0.0.1",
-    "schema:name": "Schema for question 1 of the PHQ9",
-    "schema:description": "FDE describing question 1 of the PHQ9"
+    "schema:schemaVersion": "0.0.1"
 }
