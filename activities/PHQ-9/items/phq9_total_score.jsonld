@@ -1,46 +1,23 @@
 {
-    "@context": {
-        "@version": 1.1,
-        "pav:createdBy": {
-            "@type": "@id"
-        },
-        "pav": "http://purl.org/pav/",
-        "pav:createdOn": {
-            "@type": "xsd:dateTime"
-        },
-        "oslc": "http://open-services.net/ns/core#",
-        "pav:lastUpdatedOn": {
-            "@type": "xsd:dateTime"
-        },
-        "oslc:modifiedBy": {
-            "@type": "@id"
-        },
-        "schema:description": {
-            "@type": "xsd:string"
-        },
-        "schema": "http://schema.org/",
-        "schema:name": {
-            "@type": "xsd:string"
-        }
-    },
-    "@id": "phq9_total_score",
+    "@context": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/context.jsonld",
+    "@id": "#phq9_total_score",
     "@type": "https://schema.metadatacenter.org/core/TemplateField",
-    "title": "Total Score",
-    "description": null,
+    "skos:prefLabel": "Total Score",
+    "schema:description": null,
     "_ui": {
-        "inputType": "xsd:int"
+        "inputType": "xsd:int",
+        "readonly": true
     },
     "_valueConstraints": {
-        "requiredValue": false,
         "value_codes": [],
         "minValue": null,
         "maxValue": null
     },
+    "requiredValue": false,
+    "skos:related": null,
     "pav:createdOn": null,
     "pav:createdBy": null,
     "pav:lastUpdatedOn": null,
     "oslc:modifiedBy": null,
-    "schema:schemaVersion": "0.0.1",
-    "schema:name": "Schema for total score field of the PHQ9",
-    "schema:description": "FDE describing total score field of the PHQ9"
+    "schema:schemaVersion": "0.0.1"
 }
