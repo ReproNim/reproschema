@@ -1,47 +1,22 @@
 {
-    "@context": {
-        "@version": 1.1,
-        "pav:createdBy": {
-            "@type": "@id"
-        },
-        "pav": "http://purl.org/pav/",
-        "pav:createdOn": {
-            "@type": "xsd:dateTime"
-        },
-        "oslc": "http://open-services.net/ns/core#",
-        "pav:lastUpdatedOn": {
-            "@type": "xsd:dateTime"
-        },
-        "oslc:modifiedBy": {
-            "@type": "@id"
-        },
-        "schema:description": {
-            "@type": "xsd:string"
-        },
-        "schema": "http://schema.org/",
-        "schema:name": {
-            "@type": "xsd:string"
-        }
-    },
+    "@context": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/context.jsonld",
     "@id": "phq9_category",
     "@type": "https://schema.metadatacenter.org/core/TemplateField",
-    "title": "category",
-    "description": null,
+    "schema:description": null,
     "_ui": {
         "inputType": "text"
     },
     "_valueConstraints": {
-        "requiredValue": true,
         "valueSets": [],
         "minValue": null,
         "maxValue": null
     },
+    "requiredValue": false,
+    "skos:related": null,
     "pav:derivedFrom": "phq9_total_score",
     "pav:createdOn": null,
     "pav:createdBy": null,
     "pav:lastUpdatedOn": null,
     "oslc:modifiedBy": null,
-    "schema:schemaVersion": "0.0.1",
-    "schema:name": "Schema for category field of the PHQ9",
-    "schema:description": "FDE describing category field of the PHQ9"
+    "schema:schemaVersion": "0.0.1"
 }
