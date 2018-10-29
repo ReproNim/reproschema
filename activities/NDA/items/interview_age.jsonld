@@ -1,26 +1,47 @@
 {
     "@context": {
-        "@version": 1.1
+        "@version": 1.1,
+        "pav": "http://purl.org/pav/",
+        "pav:createdBy": {
+            "@type": "@id"
+        },
+        "pav:createdOn": {
+            "@type": "xsd:dateTime"
+        },
+        "pav:lastUpdatedOn": {
+            "@type": "xsd:dateTime"
+        },
+        "oslc": "http://open-services.net/ns/core#",
+        "oslc:modifiedBy": {
+            "@type": "@id"
+        },
+        "bibo": "http://purl.org/ontology/bibo/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "skos:prefLabel": {
+            "@type": "xsd:string"
+        },
+        "schema": "http://schema.org/",
+        "schema:description": {
+            "@type": "xsd:string"
+        }
     },
     "@id": "nda-interview_age",
     "@type": "https://schema.metadatacenter.org/core/TemplateField",
-    "title": "Age",
-    "description": "Age in months at the time of the interview/test/sampling/imaging",
+    "skos:prefLabel": "Age",
+    "schema:description": "Age in months at the time of the interview/test/sampling/imaging",
     "_ui": {
         "inputType": "xsd:int"
     },
     "_valueConstraints": {
-        "requiredValue": true,
-        "value_codes": [],
+        "type": "xsd:int",
         "minValue": 0,
-        "maxValue": 1
+        "maxValue": 99
     },
+    "requiredValue": true,
     "pav:createdOn": null,
     "pav:createdBy": null,
     "pav:lastUpdatedOn": null,
     "oslc:modifiedBy": null,
-    "schema:schemaVersion": "0.0.1",
-    "schema:name": "Schema for Age field of the NDA ",
-    "schema:description": "FDE describing interview_age field of the NDA"
-
+    "schema:schemaVersion": "0.0.1"
 }
