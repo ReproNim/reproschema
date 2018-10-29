@@ -1,24 +1,46 @@
 {
-	"@context": {
-		"@version": 1.1
-	},
-	"@id": "nda-src_subject_id",
-	"@type": "https://schema.metadatacenter.org/core/TemplateField",
-	"title": "Subject ID",
-	"description": "Subject ID how it's defined in lab/project",
-	"_ui": {
-		"inputType": "text"
-	},
-	"_valueConstraints": {
-		"requiredValue": true,
-		"minValue": 0,
-		"maxValue": 1
-	},
-	"pav:createdOn": null,
-	"pav:createdBy": null,
-	"pav:lastUpdatedOn": null,
-	"oslc:modifiedBy": null,
-	"schema:schemaVersion": "0.0.1",
-	"schema:name": "Schema for Subject Id of the NDA ",
-	"schema:description": "FDE describing Subject Id of the NDA"
+    "@context": {
+        "@version": 1.1,
+        "pav": "http://purl.org/pav/",
+        "pav:createdBy": {
+            "@type": "@id"
+        },
+        "pav:createdOn": {
+            "@type": "xsd:dateTime"
+        },
+        "pav:lastUpdatedOn": {
+            "@type": "xsd:dateTime"
+        },
+        "oslc": "http://open-services.net/ns/core#",
+        "oslc:modifiedBy": {
+            "@type": "@id"
+        },
+        "bibo": "http://purl.org/ontology/bibo/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "skos:prefLabel": {
+            "@type": "xsd:string"
+        },
+        "schema": "http://schema.org/",
+        "schema:description": {
+            "@type": "xsd:string"
+        }
+    },
+    "@id": "nda-src_subject_id",
+    "@type": "https://schema.metadatacenter.org/core/TemplateField",
+    "title": "Subject ID",
+    "schema:description": "Subject ID how it's defined in lab/project",
+    "_ui": {
+        "inputType": "text"
+    },
+    "_valueConstraints": {
+        "minValue": 0,
+        "maxValue": 1
+    },
+    "requiredValue": true,
+    "pav:createdOn": null,
+    "pav:createdBy": null,
+    "pav:lastUpdatedOn": null,
+    "oslc:modifiedBy": null,
+    "schema:schemaVersion": "0.0.1"
 }

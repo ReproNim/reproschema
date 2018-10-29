@@ -1,1 +1,1 @@
-collection of individual instruments
+individual instruments
