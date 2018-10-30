@@ -2,23 +2,19 @@
     "@context": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/PHQ-9/context.jsonld",
     "@id": "phq9_category",
     "@type": "https://schema.metadatacenter.org/core/TemplateField",
-    "skos:prefLabel": "Category",
-    "schema:description": null,
-    "_ui": {
+    "rdfs:label": "Category",
+    "schema:description": "PHQ9 Assessment Category",
+    "schema:schemaVersion": "0.0.1",
+    "ui": {
         "inputType": "text",
         "readonly": true
     },
-    "_valueConstraints": {
-        "valueSets": [],
-        "minValue": null,
-        "maxValue": null
+    "valueConstraints": {
+        "valueSets": ["minimal", "mild", "moderate", "moderately severe", "severe"]
     },
-    "requiredValue": false,
-    "skos:related": null,
     "pav:derivedFrom": "phq9_total_score",
     "pav:createdOn": null,
     "pav:createdBy": null,
     "pav:lastUpdatedOn": null,
-    "oslc:modifiedBy": null,
-    "schema:schemaVersion": "0.0.1"
+    "oslc:modifiedBy": null
 }
