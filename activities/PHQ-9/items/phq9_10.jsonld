@@ -1,20 +1,28 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/PHQ-9/context.jsonld",
+    "@context": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/context.jsonld",
     "@id": "phq9-field10",
     "@type": "https://schema.metadatacenter.org/core/TemplateField",
-    "skos:prefLabel": "If you checked off any problems, how difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?",
-    "schema:description": null,
-    "study_info": null,
+    "title": "PHQ-9 Q10",
+    "schema:description": "FDE of Q10 of the PHQ-9 Assessment",
+    "schema:schemaVersion": "0.0.1",
+    "question": [{
+        "@language": "en",
+        "@value": "Q10. If you checked off any problems, how difficult have these problems made it for you to do your work, take care of things at home, or get along with other people? ENG"
+    },
+        {
+            "@language": "es",
+            "@value": "Q10. If you checked off any problems, how difficult have these problems made it for you to do your work, take care of things at home, or get along with other people? SPANISH"
+        }
+    ],
     "ui": {
         "inputType": "radio",
-        "hidden": true
+        "hidden": true,
+        "shuffle": false
     },
-    "valueConstraints": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/PHQ-9/valueConstraints.jsonld",
-    "requiredValue": false,
+    "valueConstraints": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/valueConstraints.jsonld",
     "skos:related": null,
     "pav:createdOn": null,
     "pav:createdBy": null,
     "pav:lastUpdatedOn": null,
-    "oslc:modifiedBy": null,
-    "schema:schemaVersion": "0.0.1"
+    "oslc:modifiedBy": null
 }
