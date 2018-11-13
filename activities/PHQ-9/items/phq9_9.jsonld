@@ -1,19 +1,26 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/PHQ-9/context.jsonld",
-    "@id": "phq9-field9",
+    "@context": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/context.jsonld",
     "@type": "https://schema.metadatacenter.org/core/TemplateField",
-    "title": "Thoughts that you would be better off dead or of hurting yourself in some way",
-    "schema:description": null,
-    "study_info": null,
-    "_ui": {
-        "inputType": "radio"
+    "title": "PHQ-9 Q9",
+    "schema:description": "FDE of Q9 of the PHQ-9 Assessment",
+    "schema:schemaVersion": "0.0.1",
+    "question": [{
+        "@language": "en",
+        "@value": "Q9. Thoughts that you would be better off dead or of hurting yourself in some way? ENG"
     },
-    "_valueConstraints": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/PHQ-9/valueConstraints.jsonld",
-    "requiredValue": false,
+        {
+            "@language": "es",
+            "@value": "Q9. Thoughts that you would be better off dead or of hurting yourself in some way? SPANISH"
+        }
+    ],
+    "ui": {
+        "inputType": "radio",
+        "shuffle": false
+    },
+    "valueConstraints": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/valueConstraints.jsonld",
     "skos:related": null,
     "pav:createdOn": null,
     "pav:createdBy": null,
     "pav:lastUpdatedOn": null,
-    "oslc:modifiedBy": null,
-    "schema:schemaVersion": "0.0.1"
+    "oslc:modifiedBy": null
 }
