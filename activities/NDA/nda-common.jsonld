@@ -1,11 +1,11 @@
 {
-    "@type": "https://schema.metadatacenter.org/core/Template",
     "@context": {
         "@version": 1.1
     },
-    "@id": "nda-common",
-    "skos:prefLabel": "NDA common items form",
+    "@type": "https://schema.metadatacenter.org/core/Template",
+    "title": "NDA common items schema",
     "schema:description": null,
+    "schema:schemaVersion": "0.0.1",
     "select_language": {
         "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/select_language.jsonld",
         "@type": "@id"
@@ -30,7 +30,7 @@
         "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/NDA/items/interview_date.jsonld",
         "@type": "@id"
     },
-    "_ui": {
+    "ui": {
         "order": [
             "select_language",
             "src_subject_id",
@@ -45,6 +45,5 @@
     "pav:createdBy": null,
     "pav:lastUpdatedOn": null,
     "oslc:modifiedBy": null,
-    "schema:schemaVersion": "0.0.1",
     "bibo:status": "bibo:draft"
 }
