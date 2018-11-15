@@ -25,18 +25,18 @@
         "bibo": "http://purl.org/ontology/bibo/",
         "schema": "http://schema.org/"
     },
-    "@id": "/templates/phq8-template",
+    "@id": "/templates/phq9-template",
     "@type": "https://schema.metadatacenter.org/core/Template",
-    "title": "PHQ-8 form schema",
-    "schema:description": "PHQ-8 assessment schema",
+    "title": "PHQ-9a form schema",
+    "schema:description": "PHQ-9 derived assessment schema",
     "schema:schemaVersion": "0.0.1",
     "preamble": [{
         "@language": "en",
-        "@value": "Over the last 2 weeks, how often have you been bothered by any of the following problems? (Use “✔” to indicate your answer)"
+        "@value": "Over the last 1 week, how often have you been bothered by any of the following problems? (Use “✔” to indicate your answer)"
     },
         {
             "@language": "es",
-            "@value": "Over the last 2 weeks, how often have you been bothered by any of the following problems? (Use “✔” to indicate your answer)"
+            "@value": "Over the last 1 week, how often have you been bothered by any of the following problems? (Use “✔” to indicate your answer)"
 
         }
     ],
@@ -44,54 +44,58 @@
         "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/select_language.jsonld",
         "@type": "@id"
     },
-    "phq8_1": {
+    "phq9a_1": {
         "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/items/phq9_1.jsonld",
         "@type": "@id"
     },
-    "phq8_2": {
+    "phq9a_2": {
         "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/items/phq9_2.jsonld",
         "@type": "@id"
     },
-    "phq8_3": {
+    "phq9a_3": {
         "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/items/phq9_3.jsonld",
         "@type": "@id"
     },
-    "phq8_4": {
+    "phq9a_4": {
         "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/items/phq9_4.jsonld",
         "@type": "@id"
     },
-    "phq8_5": {
+    "phq9a_5": {
         "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/items/phq9_5.jsonld",
         "@type": "@id"
     },
-    "phq8_6": {
+    "phq9a_6": {
         "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/items/phq9_6.jsonld",
         "@type": "@id"
     },
-    "phq8_7": {
+    "phq9a_7": {
         "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/items/phq9_7.jsonld",
         "@type": "@id"
     },
-    "phq8_8": {
+    "phq9a_8": {
         "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/items/phq9_8.jsonld",
         "@type": "@id"
     },
-    "phq8_10": {
+    "phq9a_9": {
+        "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/items/phq9_9.jsonld",
+        "@type": "@id"
+    },
+    "phq9a_10": {
         "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/items/phq9_10.jsonld",
         "@type": "@id"
     },
-    "phq8_total_score": {
+    "phq9a_total_score": {
         "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/items/phq9_total_score.jsonld",
         "@type": "@id"
     },
-    "phq8_category": {
-        "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-8/items/phq8_category.jsonld",
+    "phq9a_category": {
+        "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/items/phq9_category.jsonld",
         "@type": "@id"
     },
     "branchLogic": {
-        "if": "phq8_1 != 0 | phq8_2 != 0 | phq8_3 !=0 | phq8_4 !=0 | phq8_5 !=0 | phq8_6 !=0 | phq8_7 !=0 | phq8_8 !=0",
+        "if": "phq9a_1 != 0 | phq9a_2 != 0 | phq9a_3 !=0 | phq9a_4 !=0 | phq9a_5 !=0 | phq9a_6 !=0 | phq9a_7 !=0 | phq9a_8 !=0 | phq9a_9 != 0",
         "then": {
-            "phq8_10": {
+            "phq9a_10": {
                 "ui": {
                     "hidden": "false"
                 }
@@ -99,20 +103,22 @@
         }
     },
     "scoringLogic": {
-        "code": "phq8_1 + phq8_2 + phq8_3 + phq8_4 + phq8_5 + phq8_6 + phq8_7 + phq8_8",
-        "assignTo": "phq8_total_score"
+        "code": "phq9a_1 + phq9a_2 + phq9a_3 + phq9a_4 + phq9a_5 + phq9a_6 + phq9a_7 + phq9a_8 + phq9a_9",
+        "assignTo": "phq9a_total_score"
     },
     "ui": {
         "order": [
             "select_language",
-            "phq8_1",
-            "phq8_2",
-            "phq8_3",
-            "phq8_4",
-            "phq8_5",
-            "phq8_6",
-            "phq8_7",
-            "phq8_8"
+            "phq9a_1",
+            "phq9a_2",
+            "phq9a_3",
+            "phq9a_4",
+            "phq9a_5",
+            "phq9a_6",
+            "phq9a_7",
+            "phq9a_8",
+            "phq9a_9",
+            "phq9a_10"
         ],
         "pages": []
     },
