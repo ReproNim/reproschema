@@ -2,28 +2,29 @@
     "@context": {
         "@version": 1.1
     },
+    "@id": "nda-subjectkey",
     "@type": "https://schema.metadatacenter.org/core/TemplateField",
-    "schema:description": "The NDAR Global Unique Identifier (GUID) for research subject",
-    "schema:schemaVersion": "0.0.1",
     "question": [{
         "@language": "en",
-        "@value": "Q1. Subject Key ENGLISH"
+        "@value": "ENGLISH: Subject Key"
     },
         {
             "@language": "es",
-            "@value": "Q1. Subject Key SPANISH"
+            "@value": "SPANISH: Subject Key"
         }
     ],
+    "schema:description": "The NDAR Global Unique Identifier (GUID) for research subject",
     "ui": {
         "inputType": "number"
     },
     "valueConstraints": {
+        "requiredValue": true,
         "minValue": 0,
         "maxValue": 1
     },
-    "requiredValue": true,
     "pav:createdOn": null,
     "pav:createdBy": null,
     "pav:lastUpdatedOn": null,
-    "oslc:modifiedBy": null
+    "oslc:modifiedBy": null,
+    "schema:schemaVersion": "0.0.1"
 }
