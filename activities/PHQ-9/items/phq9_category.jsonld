@@ -1,5 +1,7 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/PHQ-9/context.jsonld",
+    "@context": [ "https://raw.githubusercontent.com/sanuann/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/phq9_context.jsonld"
+    ],
     "@type": "https://schema.metadatacenter.org/core/TemplateField",
     "title": "Category",
     "schema:description": "PHQ9 Assessment Category",
@@ -12,9 +14,5 @@
     "valueConstraints": {
         "valueSets": ["minimal", "mild", "moderate", "moderately severe", "severe"]
     },
-    "pav:derivedFrom": "phq9_total_score",
-    "pav:createdOn": null,
-    "pav:createdBy": null,
-    "pav:lastUpdatedOn": null,
-    "oslc:modifiedBy": null
+    "pav:derivedFrom": "phq9_total_score"
 }

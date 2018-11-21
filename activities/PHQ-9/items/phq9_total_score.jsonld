@@ -1,5 +1,13 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/PHQ-9/context.jsonld",
+    "@context": [ "https://raw.githubusercontent.com/sanuann/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/phq9_context.jsonld",
+        {
+            "valueConstraints": {
+                "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/valueConstraints.jsonld",
+                "@type": "@id"
+            }
+        }
+    ],
     "@type": "https://schema.metadatacenter.org/core/TemplateField",
     "title": "Total Score",
     "schema:description": "FDE of total score of the PHQ-9 Assessment",
@@ -12,11 +20,5 @@
     "valueConstraints": {
         "minValue": 0,
         "maxValue": 27
-    },
-    "requiredValue": false,
-    "skos:related": null,
-    "pav:createdOn": null,
-    "pav:createdBy": null,
-    "pav:lastUpdatedOn": null,
-    "oslc:modifiedBy": null
+    }
 }
