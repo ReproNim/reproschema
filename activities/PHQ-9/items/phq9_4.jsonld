@@ -1,5 +1,13 @@
 {
-    "@context": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/context.jsonld",
+    "@context": [ "https://raw.githubusercontent.com/sanuann/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/phq9_context.jsonld",
+        {
+            "valueConstraints": {
+                "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/valueConstraints.jsonld",
+                "@type": "@id"
+            }
+        }
+    ],
     "@type": "https://schema.metadatacenter.org/core/TemplateField",
     "title": "PHQ-9 Q4",
     "schema:description": "Q4 of the PHQ-9 Assessment",
@@ -16,14 +24,5 @@
     "ui": {
         "inputType": "radio",
         "shuffle": false
-    },
-    "valueConstraints": {
-        "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/valueConstraints.jsonld",
-        "@type": "@id"
-    },
-    "skos:related": null,
-    "pav:createdOn": null,
-    "pav:createdBy": null,
-    "pav:lastUpdatedOn": null,
-    "oslc:modifiedBy": null
+    }
 }

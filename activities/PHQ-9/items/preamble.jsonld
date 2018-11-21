@@ -1,7 +1,15 @@
 {
+    "@context": [ "https://raw.githubusercontent.com/sanuann/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/phq9_context.jsonld",
+        {
+            "valueConstraints": {
+                "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/valueConstraints.jsonld",
+                "@type": "@id"
+            }
+        }
+    ],
     "@type": "https://schema.metadatacenter.org/core/StaticTemplateField",
-    "@context": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/PHQ-9/context.jsonld",
-    "rdfs:label" : "PHQ-9 question",
+    "title" : "PHQ-9 question",
     "schema:description": "PHQ-9 Assessment common information",
     "schema:schemaVersion": "0.0.1",
     "question": [{
@@ -18,10 +26,6 @@
         "readonly": true,
         "shuffle": false
     },
-    "pav:createdOn": null,
-    "pav:createdBy": null,
-    "pav:lastUpdatedOn": null,
-    "oslc:modifiedBy": null,
     "Meta": [ {
         "group": "CDE",
         "relationship": "same",
