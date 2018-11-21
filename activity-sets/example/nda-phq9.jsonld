@@ -1,28 +1,11 @@
 {
-    "@context": {
-        "@version": 1.1
-    },
-    "@id": "nda-phq-9",
+    "@context": [ "https://raw.githubusercontent.com/sanuann/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activity-sets/example/nda-phq9_context.jsonld"
+    ],
     "@type": "https://schema.metadatacenter.org/core/Template",
     "title": "NDA-PHQ-9",
-    "schema:description": "FDE describing the NDA-PHQ-9",
+    "schema:description": "NDA-PHQ-9",
     "schema:schemaVersion": "0.0.1",
-    "nda-common": {
-        "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/NDA/nda-common.jsonld",
-        "@type": "@id"
-    },
-    "phq9_schema": {
-        "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/phq9_schema.jsonld",
-        "@type": "@id"
-    },
-    "phq9a_schema": {
-        "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9a/phq9a_schema.jsonld",
-        "@type": "@id"
-    },
-    "phq8_schema": {
-        "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ8/phq8_schema.jsonld",
-        "@type": "@id"
-    },
     "ui": {
         "order": [
             "nda-common",
@@ -32,7 +15,6 @@
         ],
         "pages": []
     },
-    "pav:createdOn": null,
     "pav:createdBy": null,
     "pav:lastUpdatedOn": null,
     "oslc:modifiedBy": null,
