@@ -1,0 +1,31 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/sanuann/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9a/phq9a_context.jsonld",
+        {
+            "valueConstraints": {
+                "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9a/valueConstraints.jsonld",
+                "@type": "@id"
+            }
+        }
+    ],
+    "@type": "https://schema.metadatacenter.org/core/TemplateField",
+    "title": "PHQ-9a Q2",
+    "schema:description": "Q2 of the PHQ-9a Assessment",
+    "schema:schemaVersion": "0.0.1",
+    "question": [{
+        "@language": "en",
+        "@value": "Q2. Feeling down, depressed or hopeless? ENG"
+    },
+        {
+            "@language": "es",
+            "@value": "Q2. Feeling down, depressed or hopeless? SPANISH"
+        }
+    ],
+    "ui": {
+        "inputType": "radio",
+        "shuffle": false
+    },
+    "pav:createdBy": null,
+    "pav:lastUpdatedOn": null,
+    "oslc:modifiedBy": null
+}

@@ -1,0 +1,32 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/sanuann/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9a/phq9a_context.jsonld",
+        {
+            "valueConstraints": {
+                "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9a/valueConstraints.jsonld",
+                "@type": "@id"
+            }
+        }
+    ],
+    "@type": "https://schema.metadatacenter.org/core/TemplateField",
+    "title": "PHQ-9a Q10",
+    "schema:description": "Q10 of the PHQ-9a Assessment",
+    "schema:schemaVersion": "0.0.1",
+    "question": [{
+        "@language": "en",
+        "@value": "Q10. If you checked off any problems, how difficult have these problems made it for you to do your work, take care of things at home, or get along with other people? ENG"
+    },
+        {
+            "@language": "es",
+            "@value": "Q10. If you checked off any problems, how difficult have these problems made it for you to do your work, take care of things at home, or get along with other people? SPANISH"
+        }
+    ],
+    "ui": {
+        "inputType": "radio",
+        "hidden": true,
+        "shuffle": false
+    },
+    "pav:createdBy": null,
+    "pav:lastUpdatedOn": null,
+    "oslc:modifiedBy": null
+}
