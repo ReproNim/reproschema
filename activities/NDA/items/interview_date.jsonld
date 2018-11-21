@@ -26,14 +26,23 @@
             "@type": "xsd:string"
         }
     },
-    "@id": "nda-interview_date",
     "@type": "https://schema.metadatacenter.org/core/TemplateField",
-    "title": "Age",
+    "title": "nda-common interview date",
     "schema:description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
-    "_ui": {
+    "schema:schemaVersion": "0.0.1",
+    "question": [{
+        "@language": "en",
+        "@value": "Q1. Interview date ENGLISH"
+    },
+        {
+            "@language": "es",
+            "@value": "Q1. Interview date SPANISH"
+        }
+    ],
+    "ui": {
         "inputType": "date"
     },
-    "_valueConstraints": {
+    "valueConstraints": {
         "type": "xsd:date",
         "minValue": null,
         "maxValue": null
@@ -42,6 +51,5 @@
     "pav:createdOn": null,
     "pav:createdBy": null,
     "pav:lastUpdatedOn": null,
-    "oslc:modifiedBy": null,
-    "schema:schemaVersion": "0.0.1"
+    "oslc:modifiedBy": null
 }

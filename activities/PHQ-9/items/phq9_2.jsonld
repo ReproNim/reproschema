@@ -1,19 +1,28 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/PHQ-9/context.jsonld",
-    "@id": "phq9-field2",
+    "@context": [ "https://raw.githubusercontent.com/sanuann/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/phq9_context.jsonld",
+        {
+            "valueConstraints": {
+                "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/valueConstraints.jsonld",
+                "@type": "@id"
+            }
+        }
+    ],
     "@type": "https://schema.metadatacenter.org/core/TemplateField",
-    "skos:prefLabel": "Feeling down, depressed or hopeless?",
-    "schema:description": null,
-    "study_info": null,
-    "_ui": {
-        "inputType": "radio"
+    "title": "PHQ-9 Q2",
+    "schema:description": "Q2 of the PHQ-9 Assessment",
+    "schema:schemaVersion": "0.0.1",
+    "question": [{
+        "@language": "en",
+        "@value": "Q2. Feeling down, depressed or hopeless? ENG"
     },
-    "_valueConstraints": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/PHQ-9/valueConstraints.jsonld",
-    "requiredValue": false,
-    "skos:related": null,
-    "pav:createdOn": null,
-    "pav:createdBy": null,
-    "pav:lastUpdatedOn": null,
-    "oslc:modifiedBy": null,
-    "schema:schemaVersion": "0.0.1"
+        {
+            "@language": "es",
+            "@value": "Q2. Feeling down, depressed or hopeless? SPANISH"
+        }
+    ],
+    "ui": {
+        "inputType": "radio",
+        "shuffle": false
+    }
 }

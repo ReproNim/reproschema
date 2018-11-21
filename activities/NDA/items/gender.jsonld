@@ -17,32 +17,52 @@
         },
         "bibo": "http://purl.org/ontology/bibo/",
         "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "skos": "http://www.w3.org/2004/02/skos/core#",
-        "skos:prefLabel": {
-            "@type": "xsd:string"
-        },
         "schema": "http://schema.org/",
         "schema:description": {
             "@type": "xsd:string"
         }
     },
-    "@id": "nda-gender",
     "@type": "https://schema.metadatacenter.org/core/TemplateField",
-    "skos:prefLabel": "Gender",
     "schema:description": "Sex of the subject",
-    "_ui": {
+    "schema:schemaVersion": "0.0.1",
+    "question": [{
+        "@language": "en",
+        "@value": "ENGLISH: Gender"
+    },
+        {
+            "@language": "es",
+            "@value": "SPANISH: Gender"
+        }
+    ],
+    "ui": {
         "inputType": "radio"
     },
-    "_valueConstraints": {
+    "valueConstraints": {
         "type": "xsd:string",
         "multipleChoice": false,
         "minValue": 0,
         "maxValue": 1,
         "choices": [
-            { "label": "Female",
-              "@value": 0},
-            { "label": "Male",
-              "@value": 1}
+            { "label": [{
+                "@language": "en",
+                "@value": "Female ENGLISH"
+            },
+                {
+                    "@language": "es",
+                    "@value": "Female SPANISH"
+                }],
+                "@value": 0
+            },
+            { "label": [{
+                "@language": "en",
+                "@value": "Male ENGLISH"
+            },
+                {
+                    "@language": "es",
+                    "@value": "Male SPANISH"
+                }],
+                "@value": 1
+            }
         ]
     },
     "requiredValue": false,
@@ -50,7 +70,7 @@
     "pav:createdOn": null,
     "pav:createdBy": null,
     "pav:lastUpdatedOn": null,
-    "oslc:modifiedBy": null,
-    "schema:schemaVersion": "0.0.1"
+    "oslc:modifiedBy": null
 
 }
+

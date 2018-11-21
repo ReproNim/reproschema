@@ -17,23 +17,27 @@
         },
         "bibo": "http://purl.org/ontology/bibo/",
         "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "skos": "http://www.w3.org/2004/02/skos/core#",
-        "skos:prefLabel": {
-            "@type": "xsd:string"
-        },
         "schema": "http://schema.org/",
         "schema:description": {
             "@type": "xsd:string"
         }
     },
-    "@id": "nda-src_subject_id",
     "@type": "https://schema.metadatacenter.org/core/TemplateField",
-    "skos:prefLabel": "Subject ID",
     "schema:description": "Subject ID how it's defined in lab/project",
-    "_ui": {
+    "schema:schemaVersion": "0.0.1",
+    "question": [{
+        "@language": "en",
+        "@value": "Q1. Subject ID ENGLISH"
+    },
+        {
+            "@language": "es",
+            "@value": "Q1. Subject ID SPANISH"
+        }
+    ],
+    "ui": {
         "inputType": "text"
     },
-    "_valueConstraints": {
+    "valueConstraints": {
         "minValue": 0,
         "maxValue": 1
     },
@@ -41,6 +45,5 @@
     "pav:createdOn": null,
     "pav:createdBy": null,
     "pav:lastUpdatedOn": null,
-    "oslc:modifiedBy": null,
-    "schema:schemaVersion": "0.0.1"
+    "oslc:modifiedBy": null
 }
