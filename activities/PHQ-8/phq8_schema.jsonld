@@ -1,0 +1,55 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/sanuann/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-8/phq8_context.jsonld"
+    ],
+    "@type": "https://schema.metadatacenter.org/core/Template",
+    "title": "PHQ-8 form schema",
+    "schema:description": "PHQ-8 assessment schema",
+    "schema:schemaVersion": "0.0.1",
+    "preamble": [{
+        "@language": "en",
+        "@value": "Over the last 2 weeks, how often have you been bothered by any of the following problems? (Use “✔” to indicate your answer) ENGLISH"
+    },
+        {
+            "@language": "es",
+            "@value": "Over the last 2 weeks, how often have you been bothered by any of the following problems? (Use “✔” to indicate your answer) SPANISH"
+
+        }
+    ],
+    "branchLogic": {
+        "code": "phq8_1 != 0 | phq8_2 != 0 | phq8_3 !=0 | phq8_4 !=0 | phq8_5 !=0 | phq8_6 !=0 | phq8_7 !=0 | phq8_8 !=0",
+        "if": "phq8_1 != 0 | phq8_2 != 0 | phq8_3 !=0 | phq8_4 !=0 | phq8_5 !=0 | phq8_6 !=0 | phq8_7 !=0 | phq8_8 !=0",
+        "then": {
+            "phq8_10": {
+                "ui": {
+                    "hidden": "false"
+                }
+            }
+        }
+    },
+    "scoringLogic": {
+        "code": "phq8_1 + phq8_2 + phq8_3 + phq8_4 + phq8_5 + phq8_6 + phq8_7 + phq8_8",
+        "assignTo": "phq8_total_score"
+    },
+    "ui": {
+        "order": [
+            "phq8_1",
+            "phq8_2",
+            "phq8_3",
+            "phq8_4",
+            "phq8_5",
+            "phq8_6",
+            "phq8_7",
+            "phq8_8"
+        ],
+        "pages": []
+    },
+    "pav:createdBy": null,
+    "pav:lastUpdatedOn": null,
+    "oslc:modifiedBy": null,
+    "bibo:status": "bibo:draft"
+}
+
+
+
+

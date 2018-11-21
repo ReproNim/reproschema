@@ -1,0 +1,31 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/sanuann/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-8/phq8_context.jsonld",
+        {
+            "valueConstraints": {
+                "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-8/valueConstraints.jsonld",
+                "@type": "@id"
+            }
+        }
+    ],
+    "@type": "https://schema.metadatacenter.org/core/TemplateField",
+    "title": "PHQ-8 Q4",
+    "schema:description": "Q4 of the PHQ-8 Assessment",
+    "schema:schemaVersion": "0.0.1",
+    "question": [{
+        "@language": "en",
+        "@value": "Q4. Feeling tired or having little energy? ENG"
+    },
+        {
+            "@language": "es",
+            "@value": "Q4. Feeling tired or having little energy? SPANISH"
+        }
+    ],
+    "ui": {
+        "inputType": "radio",
+        "shuffle": false
+    },
+    "pav:createdBy": null,
+    "pav:lastUpdatedOn": null,
+    "oslc:modifiedBy": null
+}
