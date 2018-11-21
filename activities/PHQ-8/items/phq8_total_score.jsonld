@@ -1,12 +1,6 @@
 {
     "@context": [ "https://raw.githubusercontent.com/sanuann/schema-standardization/master/contexts/generic.jsonld",
-        "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-8/phq8_context.jsonld",
-        {
-            "valueConstraints": {
-                "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-8/valueConstraints.jsonld",
-                "@type": "@id"
-            }
-        }
+        "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-8/phq8_context.jsonld"
     ],
     "@type": "https://schema.metadatacenter.org/core/TemplateField",
     "title": "Total Score",
@@ -21,8 +15,5 @@
         "minValue": 0,
         "maxValue": 27
     },
-    "requiredValue": false,
-    "pav:createdBy": null,
-    "pav:lastUpdatedOn": null,
-    "oslc:modifiedBy": null
+    "requiredValue": false
 }
