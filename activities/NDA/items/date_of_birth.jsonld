@@ -1,0 +1,26 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/sanuann/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/NDA/nda_context.jsonld"
+    ],
+    "@type": "https://schema.metadatacenter.org/core/TemplateField",
+    "title": "nda guid date of birth",
+    "schema:description": "Date of birth MM/DD/YYYY",
+    "schema:schemaVersion": "0.0.1",
+    "question": [{
+        "@language": "en",
+        "@value": "Q1. Date of birth ENGLISH"
+    },
+        {
+            "@language": "es",
+            "@value": "Q1. Date of birth SPANISH"
+        }
+    ],
+    "ui": {
+        "inputType": "date"
+    },
+    "valueConstraints": {
+        "type": "xsd:date",
+        "minValue": null,
+        "maxValue": null
+    }
+}

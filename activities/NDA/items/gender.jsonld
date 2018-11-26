@@ -1,27 +1,7 @@
 {
-    "@context": {
-        "@version": 1.1,
-        "pav": "http://purl.org/pav/",
-        "pav:createdBy": {
-            "@type": "@id"
-        },
-        "pav:createdOn": {
-            "@type": "xsd:dateTime"
-        },
-        "pav:lastUpdatedOn": {
-            "@type": "xsd:dateTime"
-        },
-        "oslc": "http://open-services.net/ns/core#",
-        "oslc:modifiedBy": {
-            "@type": "@id"
-        },
-        "bibo": "http://purl.org/ontology/bibo/",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
-        "schema:description": {
-            "@type": "xsd:string"
-        }
-    },
+    "@context": [ "https://raw.githubusercontent.com/sanuann/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/NDA/nda_context.jsonld"
+    ],
     "@type": "https://schema.metadatacenter.org/core/TemplateField",
     "schema:description": "Sex of the subject",
     "schema:schemaVersion": "0.0.1",
