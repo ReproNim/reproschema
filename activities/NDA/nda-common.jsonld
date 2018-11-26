@@ -1,44 +1,20 @@
 {
-    "@context": {
-        "@version": 1.1
-    },
+    "@context": [ "https://raw.githubusercontent.com/sanuann/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/NDA/nda_context.jsonld"
+    ],
     "@type": "https://schema.metadatacenter.org/core/Template",
     "title": "NDA common items schema",
-    "schema:description": null,
+    "schema:description": "items to generate NDA guid",
     "schema:schemaVersion": "0.0.1",
-    "src_subject_id": {
-        "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/NDA/items/src_subject_id.jsonld",
-        "@type": "@id"
-    },
-    "subjectkey": {
-        "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/NDA/items/subjectkey.jsonld",
-        "@type": "@id"
-    },
-    "gender": {
-        "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/NDA/items/gender.jsonld",
-        "@type": "@id"
-    },
-    "interview_age": {
-        "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/NDA/items/interview_age.jsonld",
-        "@type": "@id"
-    },
-    "interview_date": {
-        "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/NDA/items/interview_date.jsonld",
-        "@type": "@id"
-    },
     "ui": {
         "order": [
-            "src_subject_id",
-            "subjectkey",
-            "gender",
-            "interview_age",
-            "interview_date"
+            "sex",
+            "first_name",
+            "middle_name",
+            "last_name",
+            "date_of_birth",
+            "city_of_birth"
         ],
         "pages": []
-    },
-    "pav:createdOn": null,
-    "pav:createdBy": null,
-    "pav:lastUpdatedOn": null,
-    "oslc:modifiedBy": null,
-    "bibo:status": "bibo:draft"
+    }
 }
