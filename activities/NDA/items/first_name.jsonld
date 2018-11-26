@@ -1,0 +1,26 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/sanuann/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/NDA/nda_context.jsonld"
+    ],
+    "@type": "https://schema.metadatacenter.org/core/TemplateField",
+    "schema:description": "First name of participant",
+    "schema:schemaVersion": "0.0.1",
+    "question": [{
+        "@language": "en",
+        "@value": "ENGLISH: First name"
+    },
+        {
+            "@language": "es",
+            "@value": "SPANISH: First name"
+        }
+    ],
+    "ui": {
+        "inputType": "text"
+    },
+    "valueConstraints": {
+        "type": "xsd:string",
+        "maxLength": 50
+    }
+
+}
+
