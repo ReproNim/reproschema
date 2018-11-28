@@ -15,6 +15,18 @@
             "@type": "@id"
         },
         "@language": "en",
-        "title": { "@id": "http://purl.org/dc/terms/title", "@container": "@language" }
+        "title": { "@id": "http://purl.org/dc/terms/title", "@container": "@language" },
+        "preamble": { "@id": "http://purl.org/dc/terms/description", "@container": "@language" },
+        "ui" : "@nest",
+        "ui_order": {
+            "@id": "https://schema.metadatacenter.org/core/TemplateField",
+            "@container": "@list",
+            "@nest": "ui"
+        },
+        "ui_pages": {
+            "@id": "https://schema.metadatacenter.org/core/TemplateField",
+            "@container": "@list",
+            "@nest": "ui"
+        }
     }
 }
