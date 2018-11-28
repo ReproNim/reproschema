@@ -1,0 +1,212 @@
+{
+    "@context": {
+        "dct": "http://purl.org/dc/terms/",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfa": "http://www.w3.org/ns/rdfa#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "schema": "http://schema.org/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "skos": "http://www.w3.org/2004/02/skos/core#"
+    },
+    "@graph": [
+        {
+            "@id": "schema:description",
+            "@type": "rdf:Property",
+            "owl:equivalentProperty": {
+                "@id": "dct:description"
+            },
+            "rdfs:comment": "A description of the item.",
+            "rdfs:label": "description",
+            "schema:domainIncludes": {
+                "@id": "schema:Thing"
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:Text"
+            },
+            "schema:sameAs": {
+                "@id": "https://schema.org/description"
+            }
+        },
+        {
+            "@id": "schema:schemaVersion",
+            "@type": "rdf:Property",
+            "rdfs:comment": "Indicates (by URL or string) a particular version of a schema.",
+            "rdfs:label": "schemaVersion",
+            "schema:domainIncludes": {
+                "@id": ""
+            },
+            "schema:rangeIncludes": [
+                {
+                    "@id": "schema:Text"
+                },
+                {
+                    "@id": "schema:URL"
+                }
+            ],
+            "schema:sameAs": {
+                "@id": "https://schema.org/schemaVersion"
+            }
+        },
+        {
+            "@id": "schema:version",
+            "@type": "rdf:Property",
+            "rdfs:comment": "Indicates (by URL or string) a particular version of an instrument.",
+            "rdfs:label": "version",
+            "schema:domainIncludes": {
+                "@id": ""
+            },
+            "schema:rangeIncludes": [
+                {
+                    "@id": "schema:Text"
+                },
+                {
+                    "@id": "schema:URL"
+                }
+            ],
+            "schema:sameAs": {
+                "@id": "https://schema.org/version"
+            }
+        },
+        {
+            "@id": "skos:prefLabel",
+            "@type": "rdf:Property",
+            "rdfs:comment": "The long name of the instrument or item.",
+            "rdfs:label": "longName",
+            "schema:domainIncludes": {
+                "@id": ""
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:Text"
+            },
+            "schema:sameAs": {
+                "@id": "http://www.w3.org/2004/02/skos/core#prefLabel"
+            }
+        },
+        {
+            "@id": "skos:altLabel",
+            "@type": "rdf:Property",
+            "rdfs:comment": "The short name of the instrument or item.",
+            "rdfs:label": "shortName",
+            "schema:domainIncludes": {
+                "@id": ""
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:Text"
+            },
+            "schema:sameAs": {
+                "@id": "http://www.w3.org/2004/02/skos/core#altLabel"
+            }
+        },
+        {
+            "@id": "",
+            "@type": "rdf:Property",
+            "rdfs:comment": "The text displayed for the item.",
+            "rdfs:label": "question",
+            "schema:domainIncludes": {
+                "@id": ""
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:Text"
+            },
+            "schema:sameAs": {
+                "@id": ""
+            }
+        },
+        {
+            "@id": "schema:givenName",
+            "@type": "rdf:Property",
+            "rdfs:comment": "Given name. In the U.S., the first name of a Person. This can be used along with familyName instead of the name property.",
+            "rdfs:label": "firstName",
+            "schema:domainIncludes": {
+                "@id": "schema:Person"
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:Text"
+            },
+            "schema:sameAs": {
+                "@id": "https://schema.org/givenName"
+            }
+        },
+        {
+            "@id": "schema:birthPlace",
+            "@type": "rdf:Property",
+            "rdfs:comment": "The place where the person was born.",
+            "rdfs:label": "birthPlace",
+            "schema:domainIncludes": {
+                "@id": "schema:Person"
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:Place"
+            },
+            "schema:sameAs": {
+                "@id": "https://schema.org/birthPlace"
+            }
+        },
+        {
+            "@id": "schema:birthDate",
+            "@type": "rdf:Property",
+            "rdfs:comment": "Date of birth.",
+            "rdfs:label": "birthDate",
+            "schema:domainIncludes": {
+                "@id": "schema:Person"
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:Date"
+            },
+            "schema:sameAs": {
+                "@id": "https://schema.org/birthDate"
+            }
+        },
+        {
+            "@id": "schema:familyName",
+            "@type": "rdf:Property",
+            "rdfs:comment": "Family name. In the U.S., the last name of an Person. This can be used along with givenName instead of the name property.",
+            "rdfs:label": "lastName",
+            "schema:domainIncludes": {
+                "@id": "schema:Person"
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:Text"
+            },
+            "schema:sameAs": {
+                "@id": "https://schema.org/familyName"
+            }
+        },
+        {
+            "@id": "schema:additionalName",
+            "@type": "rdf:Property",
+            "rdfs:comment": "An additional name for a Person, can be used for a middle name.",
+            "rdfs:label": "middleName",
+            "schema:domainIncludes": {
+                "@id": "schema:Person"
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:Text"
+            },
+            "schema:sameAs": {
+                "@id": "https://schema.org/additionalName"
+            }
+        },
+        {
+            "@id": "schema:gender",
+            "@type": "rdf:Property",
+            "rdfs:comment": "Gender of the person. While http://schema.org/Male and http://schema.org/Female may be used, text strings are also acceptable for people who do not identify as a binary gender.",
+            "rdfs:label": "gender",
+            "schema:domainIncludes": {
+                "@id": "schema:Person"
+            },
+            "schema:rangeIncludes": [
+                {
+                    "@id": "schema:GenderType"
+                },
+                {
+                    "@id": "schema:Text"
+                }
+            ],
+            "schema:sameAs": {
+                "@id": "https://schema.org/gender"
+            }
+        }
+    ]
+}

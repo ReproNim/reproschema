@@ -2,19 +2,16 @@
     "@context": [ "https://raw.githubusercontent.com/sanuann/schema-standardization/master/contexts/generic.jsonld",
         "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/phq9_context.jsonld"
     ],
-    "@type": "https://schema.metadatacenter.org/core/TemplateField",
-    "title": "PHQ-9 Q1",
+    "@type": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/schemas/Field.jsonld",
+    "longName": "Q1 of PHQ-9 Questionnaire",
+    "shortName": "phq9_1",
     "schema:description": "Q1 of the PHQ-9 Assessment",
     "schema:schemaVersion": "0.0.1",
-    "question": [{
-        "@language": "en",
-        "@value": "Q1. Little interest or pleasure in doing things ENGLISH"
+    "schema:version": "0.0.1",
+    "question": {
+        "en": "Q1. Little interest or pleasure in doing things ENGLISH",
+        "es": "Q1. Little interest or pleasure in doing things SPANISH"
     },
-        {
-            "@language": "es",
-            "@value": "Q1. Little interest or pleasure in doing things SPANISH"
-        }
-    ],
     "ui": {
         "inputType": "radio",
         "shuffle": false
