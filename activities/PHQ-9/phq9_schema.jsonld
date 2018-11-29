@@ -20,12 +20,10 @@
         "es": "Over the last 2 weeks, how often have you been bothered by any of the following problems? (Use “✔” to indicate your answer) SPANISH"
     },
     "branchLogic": {
-        "code": "if (phq9_1 != 0 | phq9_2 != 0 | phq9_3 !=0 | phq9_4 !=0 | phq9_5 !=0 | phq9_6 !=0 | phq9_7 !=0 | phq9_8 !=0 | phq9_9 != 0) { phq9_10.ui.hidden = false }",
-        "code_lang": "javascript"
+        "javascript": "if (phq9_1 != 0 | phq9_2 != 0 | phq9_3 !=0 | phq9_4 !=0 | phq9_5 !=0 | phq9_6 !=0 | phq9_7 !=0 | phq9_8 !=0 | phq9_9 != 0) { phq9_10.ui.hidden = false }"
     },
     "scoringLogic": {
-        "code": "phq9_total_score = phq9_1 + phq9_2 + phq9_3 + phq9_4 + phq9_5 + phq9_6 + phq9_7 + phq9_8 + phq9_9 + phq9_10",
-        "code_lang": "javascript"
+        "javascript": "phq9_total_score = phq9_1 + phq9_2 + phq9_3 + phq9_4 + phq9_5 + phq9_6 + phq9_7 + phq9_8 + phq9_9 + phq9_10"
     },
     "ui": {
         "ui_order": [
