@@ -2,17 +2,25 @@
     "@context": [ "https://raw.githubusercontent.com/sanuann/schema-standardization/master/contexts/generic.jsonld",
         "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9a/phq9a_context.jsonld"
     ],
-    "@type": "https://schema.metadatacenter.org/core/TemplateField",
-    "title": "Category",
-    "schema:description": "PHQ9a Assessment Category",
+    "@type": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/schemas/Field.jsonld",
+    "@id": "#phq9a_category",
+    "skos:prefLabel": {
+        "en": "Score category of PHQ-9a Questionnaire"
+    },
+    "skos:altLabel": {
+        "en": "phq9a_category"
+    },
+    "schema:description": {
+        "en": "score category of the derived PHQ-9 Assessment"
+    },
     "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
     "ui": {
         "inputType": "text",
         "readonly": true,
         "hidden": true
     },
-    "valueConstraints": {
+    "responseOptions": {
         "valueSets": ["minimal", "mild", "moderate", "moderately severe", "severe"]
-    },
-    "pav:derivedFrom": "phq9_total_score"
+    }
 }
