@@ -1,28 +1,27 @@
 {
     "@context": [ "https://raw.githubusercontent.com/sanuann/schema-standardization/master/contexts/generic.jsonld",
-        "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9a/phq9a_context.jsonld",
-        {
-            "valueConstraints": {
-                "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9a/valueConstraints.jsonld",
-                "@type": "@id"
-            }
-        }
+        "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9a/phq9a_context.jsonld"
     ],
-    "@type": "https://schema.metadatacenter.org/core/TemplateField",
-    "title": "PHQ-9a Q4",
-    "schema:description": "Q4 of the PHQ-9a Assessment",
-    "schema:schemaVersion": "0.0.1",
-    "question": [{
-        "@language": "en",
-        "@value": "Q4. Feeling tired or having little energy? ENG"
+    "@type": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/schemas/Field.jsonld",
+    "@id": "#phq9a_4",
+    "skos:prefLabel": {
+        "en": "Q4 of PHQ-9a Questionnaire"
     },
-        {
-            "@language": "es",
-            "@value": "Q4. Feeling tired or having little energy? SPANISH"
-        }
-    ],
+    "skos:altLabel": {
+        "en": "phq9a_4"
+    },
+    "schema:description": {
+        "en": "Q4 of the derived PHQ-9 Assessment"
+    },
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": {
+        "en": "Q4. Feeling tired or having little energy? ENG",
+        "es": "Q4. Feeling tired or having little energy? SPANISH"
+    },
     "ui": {
         "inputType": "radio",
         "shuffle": false
-    }
+    },
+    "responseOptions": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9a/valueConstraints.jsonld"
 }
