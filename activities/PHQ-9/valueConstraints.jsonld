@@ -4,54 +4,38 @@
     "maximum": 3,
     "multipleChoice": false,
     "requiredValue": false,
-    "choices": [
-        {
-            "label": [{
-                "@language": "en",
-                "@value": "Not at all ENGLISH"
+    "choices": {
+        "en": [{
+                "label": "Not at all ENGLISH",
+                "@value": 0
             },
-                {
-                    "@language": "es",
-                    "@value": "Not at all SPANISH"
-                }
-            ],
+            {
+                "label": "Several days ENGLISH",
+                "@value": 1
+            },
+            {
+                "label": "More than half the days ENGLISH",
+                "@value": 2
+            },
+            {
+                "label": "Nearly everyday ENGLISH",
+                "@value": 3
+            }],
+        "es": [{
+            "label": "Not at all SPANISH",
             "@value": 0
         },
-        {
-            "label": [{
-                "@language": "en",
-                "@value": "Several days ENGLISH"
+            {
+                "label": "Several days SPANISH",
+                "@value": 1
             },
-                {
-                    "@language": "es",
-                    "@value": "Several days SPANISH"
-                }
-            ],
-            "@value": 1
-        },
-        {
-            "label": [{
-                "@language": "en",
-                "@value": "More than half the days ENGLISH"
+            {
+                "label": "More than half the days SPANISH",
+                "@value": 2
             },
-                {
-                    "@language": "es",
-                    "@value": "More than half the days SPANISH"
-                }
-            ],
-            "@value": 2
-        },
-        {
-            "label": [{
-                "@language": "en",
-                "@value": "Nearly everyday ENGLISH"
-            },
-                {
-                    "@language": "es",
-                    "@value": "Nearly everyday SPANISH"
-                }
-            ],
-            "@value": 3
-        }
-    ]
+            {
+                "label": "Nearly everyday SPANISH",
+                "@value": 3
+            }]
+    }
 }
