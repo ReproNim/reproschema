@@ -3,18 +3,22 @@
         "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/phq9_context.jsonld"
     ],
     "@type": "https://schema.metadatacenter.org/core/TemplateField",
-    "title": "PHQ-9 Q7",
-    "schema:description": "Q7 of the PHQ-9 Assessment",
-    "schema:schemaVersion": "0.0.1",
-    "question": [{
-        "@language": "en",
-        "@value": "Q7. Trouble concentrating on things, such as reading the newspaper or watching television? ENG"
+    "@id": "#phq9_7",
+    "skos:prefLabel": {
+        "en": "Q7 of PHQ-9 Questionnaire"
     },
-        {
-            "@language": "es",
-            "@value": "Q7. Trouble concentrating on things, such as reading the newspaper or watching television? SPANISH"
-        }
-    ],
+    "skos:altLabel": {
+        "en": "phq9_7"
+    },
+    "schema:description": {
+        "en": "schema for Q7 of the PHQ-9 Assessment"
+    },
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": {
+        "en": "Q7. Trouble concentrating on things, such as reading the newspaper or watching television? ENG",
+        "es": "Q7. Trouble concentrating on things, such as reading the newspaper or watching television? SPANISH"
+    },
     "ui": {
         "inputType": "radio",
         "shuffle": false

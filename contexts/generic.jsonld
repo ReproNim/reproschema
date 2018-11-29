@@ -3,6 +3,7 @@
         "@version": 1.1,
         "pav": "http://purl.org/pav/",
         "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
         "schema": "http://schema.org/",
         "schema:description": {
             "@type": "xsd:string"
@@ -21,6 +22,11 @@
         "longName": { "@id": "http://www.w3.org/2004/02/skos/core#prefLabel", "@container": "@language" },
         "shortName": { "@id": "http://www.w3.org/2004/02/skos/core#altLabel", "@container": "@language" },
         "preamble": { "@id": "http://purl.org/dc/terms/description", "@container": "@language" },
+        "question": {
+            "@id": "http://schema.org/question",
+            "@type": "xsd:string",
+            "@container": "@language"
+        },
         "ui" : "@nest",
         "ui_order": {
             "@id": "https://schema.metadatacenter.org/core/TemplateField",

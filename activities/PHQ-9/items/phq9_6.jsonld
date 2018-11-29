@@ -3,18 +3,22 @@
         "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/phq9_context.jsonld"
     ],
     "@type": "https://schema.metadatacenter.org/core/TemplateField",
-    "title": "PHQ-9 Q6",
-    "schema:description": "Q6 of the PHQ-9 Assessment",
-    "schema:schemaVersion": "0.0.1",
-    "question": [{
-        "@language": "en",
-        "@value": "Q6. Feeling bad about yourself — or that you are a failure or have let yourself or your family down? ENG"
+    "@id": "#phq9_6",
+    "skos:prefLabel": {
+        "en": "Q6 of PHQ-9 Questionnaire"
     },
-        {
-            "@language": "es",
-            "@value": "Q6. Feeling bad about yourself — or that you are a failure or have let yourself or your family down? SPANISH"
-        }
-    ],
+    "skos:altLabel": {
+        "en": "phq9_6"
+    },
+    "schema:description": {
+        "en": "schema for Q6 of the PHQ-9 Assessment"
+    },
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": {
+        "en": "Q6. Feeling bad about yourself — or that you are a failure or have let yourself or your family down? ENG",
+        "es": "Q6. Feeling bad about yourself — or that you are a failure or have let yourself or your family down? SPANISH"
+    },
     "ui": {
         "inputType": "radio",
         "shuffle": false
