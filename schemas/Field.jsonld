@@ -7,7 +7,8 @@
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
         "schema": "http://schema.org/",
         "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "skos": "http://www.w3.org/2004/02/skos/core#"
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "repronim": "https://schema.repronim.org/"
     },
     "@graph": [
         {
@@ -111,6 +112,57 @@
             },
             "schema:sameAs": {
                 "@id": "https://schema.org/question"
+            }
+        },
+        {
+            "@id": "repronim:ui",
+            "@type": "rdf:Property",
+            "rdfs:comment": "An element to describe the ui of a Field.",
+            "rdfs:label": "ui",
+            "schema:domainIncludes": {
+                "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/schemas/Field.jsonld"
+            },
+            "schema:rangeIncludes": {
+                "@id": "repronim:ui_order"
+            },
+            "schema:sameAs": {
+                "@id": "https://schema.repronim.org/ui"
+            }
+        },
+        {
+            "@id": "repronim:inputType",
+            "@type": "rdf:Property",
+            "rdfs:comment": "An element to describe the input type of the Field item.",
+            "rdfs:label": "inputType",
+            "rdfs:subPropertyOf": {
+                "@id": "repronim:ui"
+            },
+            "schema:domainIncludes": {
+                "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/schemas/Field.jsonld"
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:text"
+            },
+            "schema:sameAs": {
+                "@id": "https://schema.repronim.org/inputType"
+            }
+        },
+        {
+            "@id": "repronim:shuffle",
+            "@type": "rdf:Property",
+            "rdfs:comment": "An element to describe the input type of the Field item.",
+            "rdfs:label": "shuffle",
+            "rdfs:subPropertyOf": {
+                "@id": "repronim:ui"
+            },
+            "schema:domainIncludes": {
+                "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/schemas/Field.jsonld"
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:boolean"
+            },
+            "schema:sameAs": {
+                "@id": "https://schema.repronim.org/shuffle"
             }
         }
     ]
