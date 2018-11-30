@@ -4,6 +4,7 @@
         "pav": "http://purl.org/pav/",
         "xsd": "http://www.w3.org/2001/XMLSchema#",
         "skos": "http://www.w3.org/2004/02/skos/core#",
+        "repronim": "https://schema.repronim.org/",
         "schema": "http://schema.org/",
         "schema:description": {
             "@type": "xsd:string",
@@ -16,13 +17,13 @@
             "@type": "xsd:string"
         },
         "responseOptions": {
-            "@id": "sth:valueconstraints",
+            "@id": "repronim:valueconstraints",
             "@type": "@id"
         },
         "@language": "en",
         "skos:prefLabel": { "@id": "http://www.w3.org/2004/02/skos/core#prefLabel", "@container": "@language" },
         "skos:altLabel": { "@id": "http://www.w3.org/2004/02/skos/core#altLabel", "@container": "@language" },
-        "preamble": { "@id": "http://purl.org/dc/terms/description", "@container": "@language" },
+        "preamble": { "@id": "http://schema.org/question", "@container": "@language" },
         "question": {
             "@id": "http://schema.org/question",
             "@type": "xsd:string",
@@ -38,6 +39,12 @@
             "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/schemas/Field.jsonld",
             "@container": "@list",
             "@nest": "ui"
+        },
+        "branchLogic": {
+            "@id": "https://schema.repronim.org/branchLogic"
+        },
+        "scoringLogic": {
+            "@id": "https://schema.repronim.org/scoringLogic"
         },
         "skipped": {
             "@id": "https://schema.repronim.org/refused_to_answer",

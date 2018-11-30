@@ -97,6 +97,62 @@
             "schema:sameAs": {
                 "@id": "https://schema.org/question"
             }
-        }
+        },
+        {
+            "@id": "repronim:ui",
+            "@type": "rdf:Property",
+            "rdfs:comment": "An element to describe the ui of an Activity.",
+            "rdfs:label": "ui",
+            "schema:domainIncludes": {
+                "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/schemas/Field.jsonld"
+            },
+            "schema:rangeIncludes": {
+                "@id": "repronim:ui_order"
+            },
+            "schema:sameAs": {
+                "@id": "https://schema.repronim.org/ui"
+            }
+        },
+        {
+            "@id": "repronim:ui_order",
+            "@type": "rdf:Property",
+            "rdfs:comment": "An element to describe the order in which the Fields of an instrument appears in the ui.",
+            "rdfs:label": "ui_order",
+            "rdfs:subPropertyOf": {
+                "@id": "repronim:ui"
+            },
+            "schema:domainIncludes": {
+                "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/schemas/Field.jsonld"
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:URL"
+            },
+            "schema:sameAs": {
+                "@id": "https://schema.repronim.org/ui_order"
+            }
+        },
+        {
+            "@id": "schema:programmingLanguage",
+            "@type": "rdf:Property",
+            "rdfs:comment": "The computer programming language.",
+            "rdfs:label": "programmingLanguage",
+            "rdfs:subPropertyOf": {
+                "@id": "repronim:branchLogic"
+            },
+            "schema:domainIncludes": {
+                "@id": "schema:SoftwareSourceCode"
+            },
+            "schema:rangeIncludes": [
+                {
+                    "@id": "schema:ComputerLanguage"
+                },
+                {
+                    "@id": "schema:Text"
+                }
+            ],
+            "schema:sameAs": {
+                "@id": "https://schema.org/programmingLanguage"
+            }
+        },
     ]
 }
