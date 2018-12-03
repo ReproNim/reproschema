@@ -2,34 +2,28 @@
     "@context": [ "https://raw.githubusercontent.com/sanuann/schema-standardization/master/contexts/generic.jsonld",
         "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-8/phq8_context.jsonld"
     ],
-    "@type": "https://schema.metadatacenter.org/core/Template",
-    "title": "PHQ-8 form schema",
-    "schema:description": "PHQ-8 assessment schema",
-    "schema:schemaVersion": "0.0.1",
-    "preamble": [{
-        "@language": "en",
-        "@value": "Over the last 2 weeks, how often have you been bothered by any of the following problems? (Use “✔” to indicate your answer) ENGLISH"
+    "@type": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/schemas/Activity.jsonld",
+    "@id": "phq8_schema",
+    "skos:prefLabel": {
+        "en": "PHQ-8 Assessment"
     },
-        {
-            "@language": "es",
-            "@value": "Over the last 2 weeks, how often have you been bothered by any of the following problems? (Use “✔” to indicate your answer) SPANISH"
-
-        }
-    ],
+    "skos:altLabel": {
+        "en": "phq8_schema"
+    },
+    "schema:description": {
+        "en": "PHQ-8 assessment schema"
+    },
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": {
+        "en": "Over the last 2 weeks, how often have you been bothered by any of the following problems? (Use “✔” to indicate your answer) ENGLISH",
+        "es": "Over the last 2 weeks, how often have you been bothered by any of the following problems? (Use “✔” to indicate your answer) SPANISH"
+    },
     "branchLogic": {
-        "code": "phq8_1 != 0 | phq8_2 != 0 | phq8_3 !=0 | phq8_4 !=0 | phq8_5 !=0 | phq8_6 !=0 | phq8_7 !=0 | phq8_8 !=0",
-        "if": "phq8_1 != 0 | phq8_2 != 0 | phq8_3 !=0 | phq8_4 !=0 | phq8_5 !=0 | phq8_6 !=0 | phq8_7 !=0 | phq8_8 !=0",
-        "then": {
-            "phq8_10": {
-                "ui": {
-                    "hidden": "false"
-                }
-            }
-        }
+        "javascript": "if (phq8_1 != 0 | phq8_2 != 0 | phq8_3 !=0 | phq8_4 !=0 | phq8_5 !=0 | phq8_6 !=0 | phq8_7 !=0 | phq8_8 !=0) { phq8_10.ui.hidden = false }"
     },
     "scoringLogic": {
-        "code": "phq8_1 + phq8_2 + phq8_3 + phq8_4 + phq8_5 + phq8_6 + phq8_7 + phq8_8",
-        "assignTo": "phq8_total_score"
+        "javascript": "phq8_total_score = phq8_1 + phq8_2 + phq8_3 + phq8_4 + phq8_5 + phq8_6 + phq8_7 + phq8_8"
     },
     "ui": {
         "order": [
@@ -42,7 +36,7 @@
             "phq8_7",
             "phq8_8"
         ],
-        "pages": []
+        "shuffle": false
     }
 }
 
