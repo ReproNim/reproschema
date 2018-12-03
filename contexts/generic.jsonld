@@ -6,28 +6,27 @@
         "skos": "http://www.w3.org/2004/02/skos/core#",
         "repronim": "https://schema.repronim.org/",
         "schema": "http://schema.org/",
+        "@language": "en",
         "schema:description": {
-            "@type": "xsd:string",
             "@container": "@language"
         },
-        "schema:schemaVersion": {
-            "@type": "xsd:string"
+        "skos:prefLabel": {
+            "@container": "@language"
         },
-        "schema:version": {
-            "@type": "xsd:string"
+        "skos:altLabel": {
+            "@container": "@language"
+        },
+        "preamble": {
+            "@id": "http://schema.repronimorg/preamble",
+            "@container": "@language"
+        },
+        "question": {
+            "@id": "http://schema.org/question",
+            "@container": "@language"
         },
         "responseOptions": {
             "@id": "repronim:valueconstraints",
             "@type": "@id"
-        },
-        "@language": "en",
-        "skos:prefLabel": { "@id": "http://www.w3.org/2004/02/skos/core#prefLabel", "@container": "@language" },
-        "skos:altLabel": { "@id": "http://www.w3.org/2004/02/skos/core#altLabel", "@container": "@language" },
-        "preamble": { "@id": "http://schema.org/question", "@container": "@language" },
-        "question": {
-            "@id": "http://schema.org/question",
-            "@type": "xsd:string",
-            "@container": "@language"
         },
         "ui" : "@nest",
         "ui_order": {
@@ -36,14 +35,14 @@
             "@type": "@vocab",
             "@nest": "ui"
         },
-        "inputType": {
-            "@id": "https://schema.repronim.org/inputType",
-            "@type": "xsd:string",
-            "@nest": "ui"
-        },
         "ui_shuffle": {
             "@id": "https://schema.repronim.org/shuffle",
             "@type": "schema:Boolean",
+            "@nest": "ui"
+        },
+        "inputType": {
+            "@id": "https://schema.repronim.org/inputType",
+            "@type": "xsd:string",
             "@nest": "ui"
         },
         "branchLogic": {

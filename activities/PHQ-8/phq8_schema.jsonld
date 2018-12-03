@@ -4,21 +4,12 @@
     ],
     "@type": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/schemas/Activity.jsonld",
     "@id": "phq8_schema",
-    "skos:prefLabel": {
-        "en": "PHQ-8 Assessment"
-    },
-    "skos:altLabel": {
-        "en": "phq8_schema"
-    },
-    "schema:description": {
-        "en": "PHQ-8 assessment schema"
-    },
+    "skos:prefLabel": "PHQ-8 Assessment",
+    "skos:altLabel": "phq8_schema",
+    "schema:description": "PHQ-8 assessment schema",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
-    "preamble": {
-        "en": "Over the last 2 weeks, how often have you been bothered by any of the following problems? (Use “✔” to indicate your answer) ENGLISH",
-        "es": "Over the last 2 weeks, how often have you been bothered by any of the following problems? (Use “✔” to indicate your answer) SPANISH"
-    },
+    "preamble": "Over the last 2 weeks, how often have you been bothered by any of the following problems? (Use “✔” to indicate your answer)",
     "branchLogic": {
         "javascript": "if (phq8_1 != 0 | phq8_2 != 0 | phq8_3 !=0 | phq8_4 !=0 | phq8_5 !=0 | phq8_6 !=0 | phq8_7 !=0 | phq8_8 !=0) { phq8_10.ui.hidden = false }"
     },

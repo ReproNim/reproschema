@@ -1,28 +1,17 @@
 {
     "@context": [ "https://raw.githubusercontent.com/sanuann/schema-standardization/master/contexts/generic.jsonld",
-        "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-8/phq8_context.jsonld",
-        {
-            "valueConstraints": {
-                "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-8/valueConstraints.jsonld",
-                "@type": "@id"
-            }
-        }
+        "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-8/phq8_context.jsonld"
     ],
-    "@type": "https://schema.metadatacenter.org/core/TemplateField",
-    "title": "PHQ-8 Q2",
-    "schema:description": "Q2 of the PHQ-8 Assessment",
+    "@type": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/schemas/Field.jsonld",
+    "@id": "phq8_1",
+    "skos:prefLabel": "PHQ-8 Questionnaire",
+    "skos:altLabel": "phq8_2",
+    "schema:description": "Q2 of PHQ-8 Assessment",
     "schema:schemaVersion": "0.0.1",
-    "question": [{
-        "@language": "en",
-        "@value": "Q2. Feeling down, depressed or hopeless? ENG"
-    },
-        {
-            "@language": "es",
-            "@value": "Q2. Feeling down, depressed or hopeless? SPANISH"
-        }
-    ],
+    "schema:version": "0.0.1",
+    "question": "Feeling down, depressed or hopeless?",
     "ui": {
-        "inputType": "radio",
-        "shuffle": false
-    }
+        "inputType": "radio"
+    },
+    "responseOptions": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-8/valueConstraints.jsonld"
 }

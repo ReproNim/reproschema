@@ -1,28 +1,17 @@
 {
     "@context": [ "https://raw.githubusercontent.com/sanuann/schema-standardization/master/contexts/generic.jsonld",
-        "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-8/phq8_context.jsonld",
-        {
-            "valueConstraints": {
-                "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-8/valueConstraints.jsonld",
-                "@type": "@id"
-            }
-        }
+        "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-8/phq8_context.jsonld"
     ],
-    "@type": "https://schema.metadatacenter.org/core/TemplateField",
-    "title": "PHQ-8 Q7",
-    "schema:description": "Q7 of the PHQ-8 Assessment",
+    "@type": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/schemas/Field.jsonld",
+    "@id": "phq8_7",
+    "skos:prefLabel": "Q7 PHQ-8",
+    "skos:altLabel": "phq8_7",
+    "schema:description": "Q7 of PHQ-8 Assessment",
     "schema:schemaVersion": "0.0.1",
-    "question": [{
-        "@language": "en",
-        "@value": "Q7. Trouble concentrating on things, such as reading the newspaper or watching television? ENG"
-    },
-        {
-            "@language": "es",
-            "@value": "Q7. Trouble concentrating on things, such as reading the newspaper or watching television? SPANISH"
-        }
-    ],
+    "schema:version": "0.0.1",
+    "question": "Trouble concentrating on things, such as reading the newspaper or watching television? ENG",
     "ui": {
-        "inputType": "radio",
-        "shuffle": false
-    }
+        "inputType": "radio"
+    },
+    "responseOptions": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-8/valueConstraints.jsonld"
 }
