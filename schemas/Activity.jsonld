@@ -154,5 +154,23 @@
                 "@id": "https://schema.org/programmingLanguage"
             }
         },
+        {
+            "@id": "repronim:shuffle",
+            "@type": "rdf:Property",
+            "rdfs:comment": "An element to determine if the list of items is shuffled or in order.",
+            "rdfs:label": "shuffle",
+            "rdfs:subPropertyOf": {
+                "@id": "repronim:ui"
+            },
+            "schema:domainIncludes": {
+                "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/schemas/Activity.jsonld"
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:boolean"
+            },
+            "schema:sameAs": {
+                "@id": "https://schema.repronim.org/shuffle"
+            }
+        }
     ]
 }
