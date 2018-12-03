@@ -2,8 +2,8 @@
     "@context": [ "https://raw.githubusercontent.com/sanuann/schema-standardization/master/contexts/generic.jsonld",
         "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9a/phq9a_context.jsonld"
     ],
-    "@type": "https://schema.metadatacenter.org/core/Template",
-    "@id": "#phq9a_schema",
+    "@type": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/schemas/Activity.jsonld",
+    "@id": "phq9a_schema",
     "skos:prefLabel": {
         "en": "PHQ-9a Assessment"
     },
@@ -20,15 +20,13 @@
         "es": "Over the last 1 week, how often have you been bothered by any of the following problems? (Use “✔” to indicate your answer) SPANISH"
     },
     "branchLogic": {
-        "code": "if (phq9a_1 != 0 | phq9a_2 != 0 | phq9a_3 !=0 | phq9a_4 !=0 | phq9a_5 !=0 | phq9a_6 !=0 | phq9a_7 !=0 | phq9a_8 !=0 | phq9a_9 != 0) { phq9a_10.ui.hidden = false }",
-        "code_lang": "javascript"
+        "javascript": "if (phq9a_1 != 0 | phq9a_2 != 0 | phq9a_3 !=0 | phq9a_4 !=0 | phq9a_5 !=0 | phq9a_6 !=0 | phq9a_7 !=0 | phq9a_8 !=0 | phq9a_9 != 0) { phq9a_10.ui.hidden = false }"
     },
     "scoringLogic": {
-        "code": "phq9a_total_score = phq9a_1 + phq9a_2 + phq9a_3 + phq9a_4 + phq9a_5 + phq9a_6 + phq9a_7 + phq9a_8 + phq9a_9 + phq9a_10",
-        "code_lang": "javascript"
+        "javascript": "phq9a_total_score = phq9a_1 + phq9a_2 + phq9a_3 + phq9a_4 + phq9a_5 + phq9a_6 + phq9a_7 + phq9a_8 + phq9a_9"
     },
     "ui": {
-        "ui_order": [
+        "order": [
             "phq9a_1",
             "phq9a_2",
             "phq9a_3",
@@ -40,7 +38,7 @@
             "phq9a_9",
             "phq9a_10"
         ],
-        "ui_pages": []
+        "shuffle": false
     }
 }
 
