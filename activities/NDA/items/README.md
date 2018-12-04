@@ -1,1 +1,1 @@
-This directory contains all the common items in NDA instruments. 
+This directory contains the items necessary to generate the NDA guid. 
