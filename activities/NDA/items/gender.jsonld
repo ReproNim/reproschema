@@ -15,18 +15,21 @@
         "inputType": "radio"
     },
     "responseOptions": {
-        "type": "xsd:string",
+        "@type": "xsd:anyURI",
         "multipleChoice": false,
-        "minValue": 0,
-        "maxValue": 1,
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
         "choices": [{
-            "label": "Female",
-            "@value": 0
+
+            "@type": "schema:Female",
+            "schema:name": "Female",
+            "schema:value": 0
         },
-        {
-            "label": "Male",
-            "@value": 1
-        }
+            {
+                "@type": "schema:Male",
+                "schema:name": "Male",
+                "schema:value": 1
+            }
         ]
     }
 }
