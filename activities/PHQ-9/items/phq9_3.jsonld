@@ -1,28 +1,17 @@
 {
     "@context": [ "https://raw.githubusercontent.com/sanuann/schema-standardization/master/contexts/generic.jsonld",
-        "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/phq9_context.jsonld",
-        {
-            "valueConstraints": {
-                "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/valueConstraints.jsonld",
-                "@type": "@id"
-            }
-        }
+        "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/phq9_context.jsonld"
     ],
-    "@type": "https://schema.metadatacenter.org/core/TemplateField",
-    "title": "PHQ-9 Q3",
+    "@type": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/schemas/Field.jsonld",
+    "@id": "phq9_3",
+    "skos:prefLabel": "Q3 of PHQ-9 Questionnaire",
+    "skos:altLabel": "phq9_3",
     "schema:description": "Q3 of the PHQ-9 Assessment",
     "schema:schemaVersion": "0.0.1",
-    "question": [{
-        "@language": "en",
-        "@value": "Q3. Trouble falling or staying asleep, or sleeping too much? ENG"
-    },
-        {
-            "@language": "es",
-            "@value": "Q3. Trouble falling or staying asleep, or sleeping too much? SPANISH"
-        }
-    ],
+    "schema:version": "0.0.1",
+    "question": "Trouble falling or staying asleep, or sleeping too much?",
     "ui": {
-        "inputType": "radio",
-        "shuffle": false
-    }
+        "inputType": "radio"
+    },
+    "responseOptions": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/valueConstraints.jsonld"
 }

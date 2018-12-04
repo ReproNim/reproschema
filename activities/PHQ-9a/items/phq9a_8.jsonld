@@ -1,28 +1,19 @@
 {
     "@context": [ "https://raw.githubusercontent.com/sanuann/schema-standardization/master/contexts/generic.jsonld",
-        "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9a/phq9a_context.jsonld",
-        {
-            "valueConstraints": {
-                "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9a/valueConstraints.jsonld",
-                "@type": "@id"
-            }
-        }
+        "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9a/phq9a_context.jsonld"
     ],
-    "@type": "https://schema.metadatacenter.org/core/TemplateField",
-    "title": "PHQ-9a Q8",
-    "schema:description": "Q8 of the PHQ-9a Assessment",
-    "schema:schemaVersion": "0.0.1",
-    "question": [{
-        "@language": "en",
-        "@value": "Q8. Moving or speaking so slowly that other people could have noticed? Or the opposite — being so fidgety or restless that you have been moving around a lot more than usual? ENG"
+    "@type": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/schemas/Field.jsonld",
+    "@id": "phq9a_8",
+    "skos:prefLabel": "Q8 of PHQ-9a Questionnaire",
+    "skos:altLabel": "phq9a_8",
+    "schema:description": {
+        "en": "schema for Q8 of the derived PHQ-9 Assessment"
     },
-        {
-            "@language": "es",
-            "@value": "Q8. Moving or speaking so slowly that other people could have noticed? Or the opposite — being so fidgety or restless that you have been moving around a lot more than usual? SPANISH"
-        }
-    ],
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Moving or speaking so slowly that other people could have noticed? Or the opposite — being so fidgety or restless that you have been moving around a lot more than usual?",
     "ui": {
-        "inputType": "radio",
-        "shuffle": false
-    }
+        "inputType": "radio"
+    },
+    "responseOptions": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9a/valueConstraints.jsonld"
 }

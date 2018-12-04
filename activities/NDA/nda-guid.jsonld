@@ -1,0 +1,23 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/sanuann/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/NDA/nda_context.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/schemas/Activity.jsonld",
+    "@id": "nda-guid",
+    "skos:prefLabel": "NDA guid",
+    "skos:altLabel": "nda-guid",
+    "schema:description": "schema describing terms needed to generate NDA guid",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "order": [
+            "gender",
+            "givenName",
+            "middleName",
+            "familyName",
+            "birthDate",
+            "birthPlace"
+        ],
+        "shuffle": false
+    }
+}

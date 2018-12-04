@@ -1,28 +1,17 @@
 {
     "@context": [ "https://raw.githubusercontent.com/sanuann/schema-standardization/master/contexts/generic.jsonld",
-        "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9a/phq9a_context.jsonld",
-        {
-            "valueConstraints": {
-                "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9a/valueConstraints.jsonld",
-                "@type": "@id"
-            }
-        }
+        "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9a/phq9a_context.jsonld"
     ],
-    "@type": "https://schema.metadatacenter.org/core/TemplateField",
-    "title": "PHQ-9a Q7",
-    "schema:description": "Q7 of the PHQ-9a Assessment",
+    "@type": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/schemas/Field.jsonld",
+    "@id": "phq9a_7",
+    "skos:prefLabel": "Q7 of PHQ-9a Questionnaire",
+    "skos:altLabel":"phq9a_7",
+    "schema:description": "schema for Q7 of the derived PHQ-9 Assessment",
     "schema:schemaVersion": "0.0.1",
-    "question": [{
-        "@language": "en",
-        "@value": "Q7. Trouble concentrating on things, such as reading the newspaper or watching television? ENG"
-    },
-        {
-            "@language": "es",
-            "@value": "Q7. Trouble concentrating on things, such as reading the newspaper or watching television? SPANISH"
-        }
-    ],
+    "schema:version": "0.0.1",
+    "question": "Trouble concentrating on things, such as reading the newspaper or watching television?",
     "ui": {
-        "inputType": "radio",
-        "shuffle": false
-    }
+        "inputType": "radio"
+    },
+    "responseOptions": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9a/valueConstraints.jsonld"
 }
