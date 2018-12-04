@@ -1,56 +1,33 @@
 {
-    "@context": [ "https://raw.githubusercontent.com/sanuann/schema-standardization/master/contexts/generic.jsonld",
+    "@context": [
+        "https://raw.githubusercontent.com/sanuann/schema-standardization/master/contexts/generic.jsonld",
         "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/NDA/nda_context.jsonld"
     ],
-    "@type": "https://schema.metadatacenter.org/core/TemplateField",
-    "schema:description": "Sex of the subject",
+    "@type": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/schemas/Field.jsonld",
+    "@id": "gender",
+    "skos:prefLabel": "Sex of the subject",
+    "skos:altLabel": "gender",
+    "schema:description": "schema for Sex of the subject",
     "schema:schemaVersion": "0.0.1",
-    "question": [{
-        "@language": "en",
-        "@value": "ENGLISH: Gender"
-    },
-        {
-            "@language": "es",
-            "@value": "SPANISH: Gender"
-        }
-    ],
+    "schema:version": "0.0.1",
+    "question": "Gender",
     "ui": {
         "inputType": "radio"
     },
-    "valueConstraints": {
+    "responseOptions": {
         "type": "xsd:string",
         "multipleChoice": false,
         "minValue": 0,
         "maxValue": 1,
-        "choices": [
-            { "label": [{
-                "@language": "en",
-                "@value": "Female ENGLISH"
-            },
-                {
-                    "@language": "es",
-                    "@value": "Female SPANISH"
-                }],
-                "@value": 0
-            },
-            { "label": [{
-                "@language": "en",
-                "@value": "Male ENGLISH"
-            },
-                {
-                    "@language": "es",
-                    "@value": "Male SPANISH"
-                }],
-                "@value": 1
-            }
+        "choices": [{
+            "label": "Female",
+            "@value": 0
+        },
+        {
+            "label": "Male",
+            "@value": 1
+        }
         ]
-    },
-    "requiredValue": false,
-    "skos:related": null,
-    "pav:createdOn": null,
-    "pav:createdBy": null,
-    "pav:lastUpdatedOn": null,
-    "oslc:modifiedBy": null
-
+    }
 }
 

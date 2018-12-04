@@ -2,25 +2,22 @@
     "@context": [ "https://raw.githubusercontent.com/sanuann/schema-standardization/master/contexts/generic.jsonld",
         "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/NDA/nda_context.jsonld"
     ],
-    "@type": "https://schema.metadatacenter.org/core/TemplateField",
-    "schema:description": "Last name of participant",
+    "@type": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/schemas/Field.jsonld",
+    "@id": "familyName",
+    "skos:prefLabel": "Last name of participant",
+    "skos:altLabel": "familyName",
+    "schema:description": "schema for Last name of participant",
     "schema:schemaVersion": "0.0.1",
-    "question": [{
-        "@language": "en",
-        "@value": "ENGLISH: Last name"
-    },
-        {
-            "@language": "es",
-            "@value": "SPANISH: Last name"
-        }
-    ],
+    "schema:version": "0.0.1",
+    "question": "Last name",
     "ui": {
         "inputType": "text"
     },
-    "valueConstraints": {
+    "responseOptions": {
         "type": "xsd:string",
         "maxLength": 50
     }
-
 }
+
+
 
