@@ -142,7 +142,7 @@ let csvStream = csv(options)
         ins_name = data['Form Name'];
         const item_name = data['Variable / Field Name'];
         // write to item_x file
-        fs.writeFileSync('activities/' + ins_name + '/items/' + item_name + '.jsonld', JSON.stringify(rowData));
+        fs.writeFileSync('activities/' + ins_name + '/items/' + item_name + '.jsonld', JSON.stringify(rowData, null, 4));
         graphArr.push(rowData);
     })
     .on("end", function(){
@@ -164,7 +164,7 @@ let csvStream = csv(options)
                 "shuffle": false
             }
         };
-        const op = JSON.stringify(jsonLD);
+        const op = JSON.stringify(jsonLD, null, 4);
         fs.writeFile('activities/family_history_assessment_parent/' + ins_name + '_schema' + '.jsonld', op, function(err) {
             console.log("File created");
         });
