@@ -20,7 +20,7 @@ const schemaMap = {
     "Branching Logic (Show field only if...)": "branchLogic"
 }
 const uiList = ['inputType', 'shuffle'];
-const responseList = ['type', 'minValue', 'maxValue', 'requiredValue', 'multipleChoice', 'choices'];
+const responseList = ['type', 'minValue', 'maxValue', 'requiredValue', 'multipleChoice'];
 const langList = ['en', 'es'];
 
 // get schema context
@@ -63,6 +63,7 @@ let csvStream = csv(options)
         let rowData = {};
         let ui = {};
         let rspObj = {};
+        let choiceList = [];
         rowData['@type'] = 'https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld';
         Object.keys(data).forEach(current_key => {
             if (current_key !== 'Form Name') {
@@ -78,6 +79,32 @@ let csvStream = csv(options)
                         else {
                             ui[schemaMap[current_key]] = data[current_key];
                             rowData['ui'] = ui;
+                        }
+                    }
+                    else if (schemaMap[current_key] === 'choices' & data[current_key] !== '') {
+                        // parse choice field
+
+                        // split string wrt '|' to get each choice
+                        let c = data[current_key].split('|');
+                        // split each choice wrt ',' to get schema:name and schema:value
+                        c.forEach(ch => {
+                            let choiceObj = {};
+                            let cs = ch.split(', ');
+                            // console.log(94, cs);
+                            // create name and value pair for each choice option
+                            choiceObj['schema:value'] = cs[0];
+                            let cnameList = (cs[1].slice(cs[1].indexOf('<span ')));
+                            // console.log(99, unHTML(cnameList));
+                            choiceObj['schema:name'] = cnameList;
+                            choiceList.push(choiceObj);
+
+                        });
+                        if (rowData.hasOwnProperty('responseOptions')) {
+                            rowData.responseOptions[schemaMap[current_key]] = choiceList;
+                        }
+                        else {
+                            rspObj[schemaMap[current_key]] = choiceList;
+                            rowData['responseOptions'] = rspObj;
                         }
                     }
                     // check all response elements to be nested under 'responseOptions' key
@@ -110,13 +137,12 @@ let csvStream = csv(options)
                         condition = condition.replace(/\ and\ /g, " && ");
                         condition = condition.replace(/\ or\ /g, " || ");
                         re = RegExp(/\[([^\]]*)\]/g);
-                        // console.log("condition: first: " + s + " hi" + condition + " -> " + condition.replace(re, " $1 ") );
                         condition = condition.replace(re, " $1 ");
                         let bl = (`if ( ${condition} ) { ${data['Variable / Field Name']}.ui.hidden = false }`);
                         blObj.push(bl);
                     }
                     // decode html fields
-                    else if (schemaMap[current_key] === 'question' & data[current_key] != '') {
+                    else if (schemaMap[current_key] === 'question' & data[current_key] !== '') {
                         // console.log(unHTML(data[current_key]));
                         langList.forEach(lang => {
 
@@ -132,7 +158,8 @@ let csvStream = csv(options)
                     }
 
                     // non-nested schema elements
-                    else rowData[schemaMap[current_key]] = data[current_key];
+                    else if (data[current_key] !== '')
+                        rowData[schemaMap[current_key]] = data[current_key];
                 }
                 // insert current_key in schema for non-existing mapping
                 else rowData[camelcase(current_key)] = data[current_key];
@@ -184,14 +211,14 @@ function unHTML( str ) {
     str = str.trim();
 
     // we could have our own html-ish tags here, try to remove those as well
-    /*var regex = /(##en##)/ig
+    var regex = /(##en##)/ig
     str = str.replace(regex,"");
     var regex = /(##es##)/ig
     str = str.replace(regex,"");
     var regex = /(##\/en##)/ig
     str = str.replace(regex," ");
     var regex = /(##\/es##)/ig
-    str = str.replace(regex," ");*/
+    str = str.replace(regex," ");
 
     // console.log("before: \"" + s + "\" after :\"" + str + "\"")
     return str;

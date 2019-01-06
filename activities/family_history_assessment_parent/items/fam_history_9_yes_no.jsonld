@@ -6,14 +6,29 @@
         "hidden": true
     },
     "responseOptions": {
-        "choices": "1, <span lang=\"en\">Yes</span><span lang=\"es\" style= \"color:maroon\">Sí</span> | 0, <span lang=\"en\">No</span><span lang=\"es\" style= \"color:maroon\">No</span> | 999, <span lang=\"en\">Don't know</span><span lang=\"es\" style= \"color:maroon\">No lo sé</span> | 7, <span lang=\"en\">Refuse to answer</span><span lang=\"es\" style= \"color:maroon\">Niego contestar</span>",
+        "choices": [
+            {
+                "schema:value": "1",
+                "schema:name": "<span lang=\"en\">Yes</span><span lang=\"es\" style= \"color:maroon\">Sí</span> "
+            },
+            {
+                "schema:value": " 0",
+                "schema:name": "<span lang=\"en\">No</span><span lang=\"es\" style= \"color:maroon\">No</span> "
+            },
+            {
+                "schema:value": " 999",
+                "schema:name": "<span lang=\"en\">Don't know</span><span lang=\"es\" style= \"color:maroon\">No lo sé</span> "
+            },
+            {
+                "schema:value": " 7",
+                "schema:name": "<span lang=\"en\">Refuse to answer</span><span lang=\"es\" style= \"color:maroon\">Niego contestar</span>"
+            }
+        ],
         "minValue": "",
         "maxValue": "",
         "requiredValue": "y"
     },
-    "schema:description": "",
     "textValidationTypeOrShowSliderNumber": "",
-    "@id": "",
     "customAlignment": "LH",
     "questionNumber -(surveysOnly)": "",
     "matrixGroupName": "",
