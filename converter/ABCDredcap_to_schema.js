@@ -74,8 +74,8 @@ let csvStream = csv(options)
                             rowData['ui'] = ui;
                         }
                     }
+                    // parse choice field
                     else if (schemaMap[current_key] === 'choices' & data[current_key] !== '') {
-                        // parse choice field
 
                         // split string wrt '|' to get each choice
                         let c = data[current_key].split('|');
@@ -83,15 +83,14 @@ let csvStream = csv(options)
                         c.forEach(ch => {
                             let choiceObj = {};
                             let cs = ch.split(', ');
-                            // console.log(94, cs);
                             // create name and value pair for each choice option
                             choiceObj['schema:value'] = parseInt(cs[0]);
                             let cnameList = (cs[1].slice(cs[1].indexOf('<span ')));
-                            // console.log(99, unHTML(cnameList));
                             choiceObj['schema:name'] = cnameList;
                             choiceList.push(choiceObj);
 
                         });
+                        // insert 'choices' key inside responseOptions
                         if (rowData.hasOwnProperty('responseOptions')) {
                             rowData.responseOptions[schemaMap[current_key]] = choiceList;
                         }
@@ -136,8 +135,10 @@ let csvStream = csv(options)
                     }
                     // decode html fields
                     else if (schemaMap[current_key] === 'question' & data[current_key] !== '') {
-                        // console.log(unHTML(data[current_key]));
-                        langList.forEach(lang => {
+                        let q = data[current_key];
+                        let qList = q.split('<span ').slice(1);
+                        rowData[schemaMap[current_key]] = qList;
+                        /*langList.forEach(lang => {
 
                             // console.log(lang);
                             if (data[current_key].indexOf(`<span lang="${lang}">`) > -1) {
@@ -146,10 +147,9 @@ let csvStream = csv(options)
                                 let q = data[current_key].slice(start, data[current_key].indexOf('</span'));
                                 // console.log(q);
                             }
-                        });
+                        });*/
 
                     }
-
                     // non-nested schema elements
                     else if (data[current_key] !== '')
                         rowData[schemaMap[current_key]] = data[current_key];
