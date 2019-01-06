@@ -23,31 +23,15 @@ const uiList = ['inputType', 'shuffle'];
 const responseList = ['type', 'minValue', 'maxValue', 'requiredValue', 'multipleChoice'];
 const langList = ['en', 'es'];
 
-// get schema context
-let schemaContext = 'https://raw.githubusercontent.com/sanuann/schema-standardization/master/contexts/generic.jsonld';
-
 let readStream = fs.createReadStream(csvPath).setEncoding('utf-8');
-let chunks = [];
 
-
-// Listen for data
-readStream.on('data', chunk => {
-    // console.log('37', chunk['Form Name']);
-    chunks.push(chunk);
-});
-
+let schemaContextUrl = 'https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld';
 let ins_name = '';
 let order = [];
 let blObj = [];
 let graphArr = [];
-let options = {
-    delimiter: ',',
-    headers: true,
-    objectMode: true,
-    quote: '"',
-    escape: '"',
-    ignoreEmpty: true
-};
+let form_context = {};
+let itemOBj = { "@version": 1.1 };
 
 // create directory structure - activities/form_name/items
 mkdirp('activities/family_history_assessment_parent/items', function (err) {
@@ -58,12 +42,21 @@ mkdirp('activities/family_history_assessment_parent/items', function (err) {
     }
 });
 
+let options = {
+    delimiter: ',',
+    headers: true,
+    objectMode: true,
+    quote: '"',
+    escape: '"',
+    ignoreEmpty: true
+};
 let csvStream = csv(options)
     .on("data", function(data){
         let rowData = {};
         let ui = {};
         let rspObj = {};
         let choiceList = [];
+        rowData['@context'] = [schemaContextUrl],
         rowData['@type'] = 'https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld';
         Object.keys(data).forEach(current_key => {
             if (current_key !== 'Form Name') {
@@ -92,7 +85,7 @@ let csvStream = csv(options)
                             let cs = ch.split(', ');
                             // console.log(94, cs);
                             // create name and value pair for each choice option
-                            choiceObj['schema:value'] = cs[0];
+                            choiceObj['schema:value'] = parseInt(cs[0]);
                             let cnameList = (cs[1].slice(cs[1].indexOf('<span ')));
                             // console.log(99, unHTML(cnameList));
                             choiceObj['schema:name'] = cnameList;
@@ -164,7 +157,11 @@ let csvStream = csv(options)
                 // insert current_key in schema for non-existing mapping
                 else rowData[camelcase(current_key)] = data[current_key];
             }
-            else if (current_key === 'Variable / Field Name') order.push(data[current_key]);
+            if (current_key === 'Variable / Field Name') {
+                let field_name = data[current_key];
+                order.push(field_name);
+                itemOBj[field_name] = { "@id": `${ins_name}:${field_name}.jsonld` , "@type": "@id" };
+            }
         });
         ins_name = data['Form Name'];
         const item_name = data['Variable / Field Name'];
@@ -173,8 +170,13 @@ let csvStream = csv(options)
         graphArr.push(rowData);
     })
     .on("end", function(){
+        form_context['@context'] = itemOBj;
+        fs.writeFile('/activities/' + ins_name + '/' + ins_name + '_context' + '.jsonld', form_context, function(err) {
+            console.log('Context file created');
+        });
+        let formContextUrl = `https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/${ins_name}/${ins_name}_context.jsonld`;
         let jsonLD = {
-            "@context": schemaContext,
+            "@context": [schemaContextUrl, formContextUrl],
             "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Activity.jsonld",
             "@id": ins_name + '_schema',
             "skos:prefLabel": ins_name + '_schema',
