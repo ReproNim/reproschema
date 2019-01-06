@@ -157,22 +157,22 @@ let csvStream = csv(options)
                 // insert current_key in schema for non-existing mapping
                 else rowData[camelcase(current_key)] = data[current_key];
             }
-            if (current_key === 'Variable / Field Name') {
-                let field_name = data[current_key];
-                order.push(field_name);
-                itemOBj[field_name] = { "@id": `${ins_name}:${field_name}.jsonld` , "@type": "@id" };
-            }
         });
         ins_name = data['Form Name'];
-        const item_name = data['Variable / Field Name'];
+        const field_name = data['Variable / Field Name'];
+        order.push(field_name);
+        itemOBj[field_name] = { "@id": `${ins_name}:${field_name}.jsonld` , "@type": "@id" };
         // write to item_x file
-        fs.writeFileSync('activities/' + ins_name + '/items/' + item_name + '.jsonld', JSON.stringify(rowData, null, 4));
+        fs.writeFileSync('activities/' + ins_name + '/items/' + field_name + '.jsonld', JSON.stringify(rowData, null, 4));
         graphArr.push(rowData);
     })
     .on("end", function(){
+        itemOBj[ins_name] = `https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/${ins_name}/items/`;
         form_context['@context'] = itemOBj;
-        fs.writeFile('/activities/' + ins_name + '/' + ins_name + '_context' + '.jsonld', form_context, function(err) {
-            console.log('Context file created');
+        console.log(174, form_context);
+        const fc = JSON.stringify(form_context, null, 4);
+        fs.writeFile('activities/family_history_assessment_parent/' + ins_name + '_context' + '.jsonld', fc, function(err) {
+            console.log("Context created");
         });
         let formContextUrl = `https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/${ins_name}/${ins_name}_context.jsonld`;
         let jsonLD = {
