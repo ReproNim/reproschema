@@ -1,6 +1,7 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/family_history_assessment_parent/family_history_assessment_parent_context.jsonld"
     ],
     "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
     "skos:altLabel": "fam_history_9_yes_no",
@@ -8,10 +9,10 @@
         "inputType": "radio",
         "hidden": true
     },
-    "question": [
-        "lang=\"en\">9. Has ANY blood relative of your child been the kind of person who never holds a job for long, or  gets into fights, or gets into trouble with the police from time to time, or had any trouble with the law as a child or an adult?</span>",
-        "lang=\"es\" style= \"color:maroon\">¿ALGÚN pariente consanguíneo de su niño(a) es el tipo de persona que nunca puede mantener un empleo por mucho tiempo, que de vez en cuando se mete en peleas o tiene problemas con la policía o que ha tenido problemas con la ley, ya sea cuando niño o adulto? </span> "
-    ],
+    "question": {
+        "en": "9. Has ANY blood relative of your child been the kind of person who never holds a job for long, or  gets into fights, or gets into trouble with the police from time to time, or had any trouble with the law as a child or an adult?",
+        "es": "¿ALGÚN pariente consanguíneo de su niño(a) es el tipo de persona que nunca puede mantener un empleo por mucho tiempo, que de vez en cuando se mete en peleas o tiene problemas con la policía o que ha tenido problemas con la ley, ya sea cuando niño o adulto? "
+    },
     "responseOptions": {
         "choices": [
             {

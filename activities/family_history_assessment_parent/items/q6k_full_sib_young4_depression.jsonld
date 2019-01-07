@@ -1,6 +1,7 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/family_history_assessment_parent/family_history_assessment_parent_context.jsonld"
     ],
     "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
     "skos:altLabel": "q6k_full_sib_young4_depression",
@@ -8,10 +9,10 @@
         "inputType": "radio",
         "hidden": true
     },
-    "question": [
-        "lang=\"en\">full sibling-younger</span>",
-        "lang=\"es\" style= \"color:maroon\">Hermano(a) de doble vínculo- menor </span>(4)"
-    ],
+    "question": {
+        "en": "full sibling-younger",
+        "es": "Hermano(a) de doble vínculo- menor "
+    },
     "responseOptions": {
         "choices": [
             {
