@@ -1,6 +1,7 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/family_history_assessment_parent/family_history_assessment_parent_context.jsonld"
     ],
     "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
     "skos:altLabel": "fam_history_q12f_hospitalized",
@@ -8,10 +9,10 @@
         "inputType": "radio",
         "hidden": true
     },
-    "question": [
-        "lang=\"en\">maternal grandmother</span>",
-        "lang=\"es\" style= \"color:maroon\">Abuela materna</span>"
-    ],
+    "question": {
+        "en": "maternal grandmother",
+        "es": "Abuela materna"
+    },
     "responseOptions": {
         "choices": [
             {

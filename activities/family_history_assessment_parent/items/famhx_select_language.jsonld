@@ -1,13 +1,16 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/family_history_assessment_parent/family_history_assessment_parent_context.jsonld"
     ],
     "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
     "skos:altLabel": "famhx_select_language",
     "ui": {
         "inputType": "checkbox"
     },
-    "question": [],
+    "question": {
+        "en": "¿Español?"
+    },
     "responseOptions": {
         "choices": [
             {

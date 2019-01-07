@@ -1,6 +1,7 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/family_history_assessment_parent/family_history_assessment_parent_context.jsonld"
     ],
     "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
     "skos:altLabel": "fam_history_q7e_mania",
@@ -8,10 +9,10 @@
         "inputType": "radio",
         "hidden": true
     },
-    "question": [
-        "lang=\"en\">maternal grandfather</span>",
-        "lang=\"es\" style= \"color:maroon\">Abuelo materno</span>"
-    ],
+    "question": {
+        "en": "maternal grandfather",
+        "es": "Abuelo materno"
+    },
     "responseOptions": {
         "choices": [
             {

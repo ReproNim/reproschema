@@ -1,6 +1,7 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/family_history_assessment_parent/family_history_assessment_parent_context.jsonld"
     ],
     "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
     "skos:altLabel": "q8g_pat_uncle5_visions",
@@ -8,10 +9,10 @@
         "inputType": "radio",
         "hidden": true
     },
-    "question": [
-        "lang=\"en\">paternal uncle</span>",
-        "lang=\"es\" style= \"color:maroon\">Tío paterno</span> (5)"
-    ],
+    "question": {
+        "en": "paternal uncle",
+        "es": "Tío paterno"
+    },
     "responseOptions": {
         "choices": [
             {

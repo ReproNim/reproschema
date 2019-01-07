@@ -1,6 +1,7 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/family_history_assessment_parent/family_history_assessment_parent_context.jsonld"
     ],
     "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
     "skos:altLabel": "fam_history_professional_describe",
@@ -8,10 +9,10 @@
         "inputType": "notes",
         "hidden": true
     },
-    "question": [
-        "lang=\"en\">Additional blood relatives:</span>",
-        "lang=\"es\" style= \"color:maroon\">Parientes consanguíneos adicionales:</span>"
-    ],
+    "question": {
+        "en": "Additional blood relatives:",
+        "es": "Parientes consanguíneos adicionales:"
+    },
     "textValidationTypeOrShowSliderNumber": "",
     "responseOptions": {
         "minValue": "",
