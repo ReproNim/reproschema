@@ -1,6 +1,7 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/family_history_assessment_parent/family_history_assessment_parent_context.jsonld"
     ],
     "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
     "skos:altLabel": "famhx4a_p",
@@ -8,10 +9,10 @@
         "inputType": "checkbox",
         "hidden": true
     },
-    "question": [
-        "lang=\"en\">biological father</span>",
-        "lang=\"es\" style= \"color:maroon\">Padre biológico </span>"
-    ],
+    "question": {
+        "en": "biological father",
+        "es": "Padre biológico "
+    },
     "responseOptions": {
         "choices": [
             {

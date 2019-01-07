@@ -1,6 +1,7 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/family_history_assessment_parent/family_history_assessment_parent_context.jsonld"
     ],
     "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
     "skos:altLabel": "q4l_full_sib_old3_alc",
@@ -8,10 +9,10 @@
         "inputType": "checkbox",
         "hidden": true
     },
-    "question": [
-        "lang=\"en\">full sibling-older</span>",
-        "lang=\"es\" style= \"color:maroon\">Hermano(a) de doble vínculo- mayor</span> (3)"
-    ],
+    "question": {
+        "en": "full sibling-older",
+        "es": "Hermano(a) de doble vínculo- mayor"
+    },
     "responseOptions": {
         "choices": [
             {

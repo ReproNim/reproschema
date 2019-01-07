@@ -1,6 +1,7 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/family_history_assessment_parent/family_history_assessment_parent_context.jsonld"
     ],
     "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
     "skos:altLabel": "fhx_3ha_dk_p",
@@ -8,10 +9,10 @@
         "inputType": "checkbox",
         "hidden": true
     },
-    "question": [
-        "lang=\"en\"># half brother(s)</span>",
-        "lang=\"es\" style= \"color:maroon\"># de medio hermano(s)</span>"
-    ],
+    "question": {
+        "en": "# half brother(s)",
+        "es": "# de medio hermano(s)"
+    },
     "responseOptions": {
         "choices": [
             {
