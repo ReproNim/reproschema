@@ -1,6 +1,7 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/family_history_assessment_parent/family_history_assessment_parent_context.jsonld"
     ],
     "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
     "skos:altLabel": "famhx_1a_p",
@@ -8,11 +9,14 @@
         "inputType": "text",
         "hidden": true
     },
-    "question": [
-        "lang=\"en\"># maternal uncle (s) of the child</span>",
-        "lang=\"es\" style= \"color:maroon\"># de tío(s) materno(s) del niño(a)</span>"
-    ],
-    "schema:description": "<span lang=\"en\">If none, enter \"0\".  If you don't know, please choose \"don't know\" in what follows below</span><span lang=\"es\" style=\"color:maroon;\">Si la respuesta es \"ninguno\", ingrese \"0\".  Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.</span>      ",
+    "question": {
+        "en": "# maternal uncle (s) of the child",
+        "es": "# de tío(s) materno(s) del niño(a)"
+    },
+    "schema:description": {
+        "en": "If none, enter \"0\".  If you don't know, please choose \"don't know\" in what follows below",
+        "es": "Si la respuesta es \"ninguno\", ingrese \"0\".  Si no sabe, por favor escoja \"no se\" en lo que sigue abajo."
+    },
     "textValidationTypeOrShowSliderNumber": "integer",
     "responseOptions": {
         "minValue": "0",

@@ -1,6 +1,7 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/family_history_assessment_parent/family_history_assessment_parent_context.jsonld"
     ],
     "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
     "skos:altLabel": "fhx_3hb_p",
@@ -8,11 +9,14 @@
         "inputType": "text",
         "hidden": true
     },
-    "question": [
-        "lang=\"en\"># half sisters</span>",
-        "lang=\"es\" style= \"color:maroon\"># de medio hermana(s)</span>"
-    ],
-    "schema:description": "<span lang=\"en\">If none, enter \"0\".  If you don't know, please choose \"don't know\" in what follows below</span><span lang=\"es\" style=\"color:maroon;\">Si la respuesta es \"ninguno\", ingrese \"0\".  Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.</span>      ",
+    "question": {
+        "en": "# half sisters",
+        "es": "# de medio hermana(s)"
+    },
+    "schema:description": {
+        "en": "If none, enter \"0\".  If you don't know, please choose \"don't know\" in what follows below",
+        "es": "Si la respuesta es \"ninguno\", ingrese \"0\".  Si no sabe, por favor escoja \"no se\" en lo que sigue abajo."
+    },
     "textValidationTypeOrShowSliderNumber": "number",
     "responseOptions": {
         "minValue": "0",

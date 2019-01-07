@@ -1,6 +1,7 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/family_history_assessment_parent/family_history_assessment_parent_context.jsonld"
     ],
     "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
     "skos:altLabel": "fam_history_6_yes_no",
@@ -8,10 +9,10 @@
         "inputType": "radio",
         "hidden": true
     },
-    "question": [
-        "lang=\"en\">Has ANY blood relative of your child ever suffered from depression, that is, have they felt so low for a period of at least two weeks that they hardly ate or slept or couldn't work or do whatever they usually do?</span>",
-        "lang=\"es\" style= \"color:maroon\">¿ALGÚN pariente consanguíneo de su niño(a) alguna vez ha sufrido depresión? Es decir, ¿se ha sentido tan decaído por un período de al menos dos semanas en el que apenas comía, dormía o no podía trabajar o hacer lo que normalmente haría? </span> "
-    ],
+    "question": {
+        "en": "Has ANY blood relative of your child ever suffered from depression, that is, have they felt so low for a period of at least two weeks that they hardly ate or slept or couldn't work or do whatever they usually do?",
+        "es": "¿ALGÚN pariente consanguíneo de su niño(a) alguna vez ha sufrido depresión? Es decir, ¿se ha sentido tan decaído por un período de al menos dos semanas en el que apenas comía, dormía o no podía trabajar o hacer lo que normalmente haría? "
+    },
     "responseOptions": {
         "choices": [
             {
