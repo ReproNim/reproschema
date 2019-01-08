@@ -121,7 +121,7 @@ function processRow(data){
                         let cs = ch.split(', ');
                         // create name and value pair for each choice option
                         choiceObj['schema:value'] = parseInt(cs[0]);
-                        let cnameList = (cs[1].slice(cs[1].indexOf('<span ')));
+                        let cnameList = parseHtml(cs[1]);
                         choiceObj['schema:name'] = cnameList;
                         choiceList.push(choiceObj);
 
