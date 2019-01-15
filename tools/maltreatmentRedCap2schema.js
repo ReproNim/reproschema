@@ -1,6 +1,7 @@
 /* ************ Constants **************************************************** */
 const csv = require('fast-csv');
 const fs = require('fs');
+const shell = require('shelljs');
 const camelcase = require('camelcase');
 const mkdirp = require('mkdirp');
 const HTMLParser =  require ('node-html-parser');
@@ -21,6 +22,7 @@ const schemaMap = {
 const uiList = ['inputType', 'shuffle'];
 const responseList = ['type', 'minValue', 'maxValue', 'requiredValue', 'multipleChoice'];
 const defaultLanguage = 'en';
+const datas = {};
 /* **************************************************************************************** */
 
 // Make sure we got a filename on the command line.
@@ -33,14 +35,9 @@ let csvPath = process.argv[2];
 let readStream = fs.createReadStream(csvPath).setEncoding('utf-8');
 
 let schemaContextUrl = 'https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld';
-
-let ins_name = '';
 let order = [];
 let blObj = [];
-let graphArr = [];
-
 let languages = [];
-let dataArr = [];
 
 let options = {
     delimiter: ',',
@@ -51,97 +48,60 @@ let options = {
     ignoreEmpty: true
 };
 
-let readFileStream = fs.createReadStream(csvPath).setEncoding('utf-8');
-let insList = [];
-const datas = {};
 // get all field names and instrument name
 csv
-    .fromStream(readStream, {headers: true, delimiters: ','})
+    .fromStream(readStream, options)
     .on('data', function (data) {
-        // get all instruments used in the study and save to a list
-        /*if (data.formName !== '' && insList.indexOf(data.formName) === -1 )
-            insList.push(data.formName);*/
         if (!datas[data['Form Name']]) {
             datas[data['Form Name']] = [];
             // For each form, create directory structure - activities/form_name/items
-            mkdirp('activities/' + data['Form Name'] + '/items', function (err) {
-                if (err){
-                    console.log(err);
-                }else{
-                    console.log(`directory for form ${data['Form Name']} created in activities`)
-                }
-            });
+            shell.mkdir('-p', 'activities/' + data['Form Name'] + '/items');
         }
-        datas[data['Form Name']].push(data['Variable / Field Name']);
+        datas[data['Form Name']].push(data);
     })
     .on('end', function () {
-        // console.log(81, datas);
-
         Object.keys(datas).forEach(form => {
-            // define context file for each form
-            let itemOBj = { "@version": 1.1 };
-            let formContext = {};
-            let formContextUrl;
-            itemOBj[form] = `https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/${form}/items/`;
             let fieldList = datas[form];
-            console.log(84, fieldList);
+            createFormContextSchema(form, fieldList);
+            let formContextUrl = `https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/${form}/${form}_context.jsonld`;
             fieldList.forEach( field => {
-                // define item_x urls to be inserted in context for the corresponding form
-                itemOBj[field] = { "@id": `${form}:${field}.jsonld` , "@type": "@id" };
-            });
-            formContext['@context'] = itemOBj;
-            const fc = JSON.stringify(formContext, null, 4);
-            fs.writeFile(`activities/${form}/${form}_context.jsonld`, fc, function(err) {
-                console.log(`Context created for form ${form}`);
-            });
-            formContextUrl = `https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/${form}/${form}_context.jsonld`;
-
-
-        });
-
-        console.log('done');
-    })
-
-/*
-readStream.pipe(csv(options))
-    .on('data', function(data){
-        dataArr.push(data); // Add a row
-        ins_name = data['Form Name'];
-        // console.log(69, ins_name);
-        let field_name = data['Variable / Field Name'];
-        // define item_x urls to be inserted in context
-        itemOBj[field_name] = { "@id": `${ins_name}:${field_name}.jsonld` , "@type": "@id" };
-        itemOBj[ins_name] = `https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/${ins_name}/items/`;
-        readFileStream.destroy();
-    })
-    .on('end', function(){
-        formContext['@context'] = itemOBj;
-        const fc = JSON.stringify(formContext, null, 4);
-        fs.writeFile('activities/childhood_maltreatment/' + ins_name + '_context' + '.jsonld', fc, function(err) {
-            console.log("Context created");
-        });
-        formContextUrl = `https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/${ins_name}/${ins_name}_context.jsonld`;
-        for (let i = 0, len = dataArr.length; i < len; i++) {
-            if (i === 0) { // take instrument name from first row - 'Form Name' column
-                if (ins_name === '') {
-                    ins_name = dataArr[i]['Form Name'];
+                if(languages.length === 0){
+                    languages = parseLanguageIsoCodes(field['Field Label']);
                 }
-            }
-            if(languages.length === 0){
-                languages = parseLanguageIsoCodes(dataArr[i]['Field Label']);
-            }
+                processRow(form, field);
+            });
 
-            processRow(dataArr[i]);
-        }
-        finishSchemaCreation();
+            finishSchemaCreation(form, formContextUrl);
+        });
+
+        console.log('end: done');
+    })
+
+function createFormContextSchema(form, fieldList) {
+    // define context file for each form
+    let itemOBj = { "@version": 1.1 };
+    let formContext = {};
+    itemOBj[form] = `https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/${form}/items/`;
+    fieldList.forEach( field => {
+        let field_name = field['Variable / Field Name'];
+        // define item_x urls to be inserted in context for the corresponding form
+        itemOBj[field_name] = { "@id": `${form}:${field_name}.jsonld` , "@type": "@id" };
     });
+    formContext['@context'] = itemOBj;
+    const fc = JSON.stringify(formContext, null, 4);
+    fs.writeFile(`activities/${form}/${form}_context.jsonld`, fc, function(err) {
+        if (err)
+            console.log(err);
+        else console.log(`Context created for form ${form}`);
+    });
+}
 
-function processRow(data){
+function processRow(form, data){
     let rowData = {};
     let ui = {};
     let rspObj = {};
     let choiceList = [];
-    rowData['@context'] = [schemaContextUrl, formContextUrl];
+    rowData['@context'] = [schemaContextUrl];
     rowData['@type'] = 'https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld';
     Object.keys(data).forEach(current_key => {
         if (current_key !== 'Form Name') {
@@ -229,22 +189,24 @@ function processRow(data){
             else rowData[camelcase(current_key)] = data[current_key];
         }
     });
-    ins_name = data['Form Name'];
     const field_name = data['Variable / Field Name'];
     order.push(field_name);
     // write to item_x file
-    fs.writeFileSync('activities/' + ins_name + '/items/' + field_name + '.jsonld', JSON.stringify(rowData, null, 4));
-    graphArr.push(rowData);
+    fs.writeFile('activities/' + form + '/items/' + field_name + '.jsonld', JSON.stringify(rowData, null, 4), function (err) {
+        if (err) {
+            console.log("error in writing item schema", err);
+        }
+    });
 }
 
-function finishSchemaCreation() {
+function finishSchemaCreation(form, formContextUrl) {
     let jsonLD = {
         "@context": [schemaContextUrl, formContextUrl],
         "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Activity.jsonld",
-        "@id": ins_name + '_schema',
-        "skos:prefLabel": ins_name + '_schema',
-        "skos:altLabel": ins_name + '_schema',
-        "schema:description": ins_name + ' schema',
+        "@id": `${form}_schema`,
+        "skos:prefLabel": `${form }_schema`,
+        "skos:altLabel": `${form}_schema`,
+        "schema:description": `${form} schema`,
         "schema:schemaVersion": "0.0.1",
         "schema:version": "0.0.1",
         "branchLogic": {
@@ -259,8 +221,12 @@ function finishSchemaCreation() {
         }
     };
     const op = JSON.stringify(jsonLD, null, 4);
-    fs.writeFile('activities/childhood_maltreatment/' + ins_name + '_schema' + '.jsonld', op, function (err) {
-        console.log("Instrument schema created");
+    // console.log(269, jsonLD);
+    fs.writeFile(`activities/${form}/${form}_schema.jsonld`, op, function (err) {
+        if (err) {
+            console.log("error in writing form schema", err)
+        }
+        else console.log("Instrument schema created");
     });
 }
 
@@ -301,4 +267,3 @@ function parseHtml(inputString) {
     return result;
 }
 
-*/
