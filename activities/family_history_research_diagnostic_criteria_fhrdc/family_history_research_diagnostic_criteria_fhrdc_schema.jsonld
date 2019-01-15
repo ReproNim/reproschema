@@ -155,7 +155,20 @@
         ]
     },
     "scoringLogic": {
-        "javascript": ""
+        "javascript": [
+            "somatic_score = max( dsm_5_i_1 , dsm_5_i_2 )",
+            "sleep_score = ( dsm_5_ii_3 )",
+            "attention_score = max( dsm_5_iii_4 )",
+            "depression_score = max( dsm_5_iv_5 , dsm_5_iv_6 )",
+            "irritability_score = max( dsm_5_v_7 )",
+            "anger_score =  dsm_5_vi_8 ",
+            "mania_score = max( dsm_5_vi_9 , dsm_5_vi_10 )",
+            "anxiety_score = max( dsm_5_vi_11 , dsm_5_vi_12 , dsm_5_vi_13 )",
+            "psychosis_score = max( dsm_5_ix_14 , dsm_5_ix_15 )",
+            "repitition_score = max( dsm_5_x_16 , dsm_5_x_17 , dsm_5_x_18 , dsm_5_x_19 )",
+            "substance_abuse_score = max( dsm_5_xi_20 , dsm_5_xi_21 , dsm_5_xi_22 , dsm_5_xi_23 )",
+            "summary_id =  visit_1_parent_arm_1  record_id "
+        ]
     },
     "ui": {
         "order": [

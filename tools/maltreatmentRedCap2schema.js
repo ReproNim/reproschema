@@ -16,7 +16,6 @@ const schemaMap = {
     "Required Field?": "requiredValue",
     "Text Validation Min": "minValue",
     "Text Validation Max": "maxValue",
-    "Choices, Calculations, OR Slider Labels": "choices",
     "Branching Logic (Show field only if...)": "branchLogic"
 }
 const uiList = ['inputType', 'shuffle'];
@@ -36,7 +35,8 @@ let readStream = fs.createReadStream(csvPath).setEncoding('utf-8');
 
 let schemaContextUrl = 'https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld';
 let order = [];
-let blObj = [];
+let blList = [];
+let slList = [];
 let languages = [];
 
 let options = {
@@ -71,10 +71,8 @@ csv
                 processRow(form, field);
             });
 
-            finishSchemaCreation(form, formContextUrl);
+            createFormSchema(form, formContextUrl);
         });
-
-        console.log('end: done');
     })
 
 function createFormContextSchema(form, fieldList) {
@@ -103,91 +101,125 @@ function processRow(form, data){
     let choiceList = [];
     rowData['@context'] = [schemaContextUrl];
     rowData['@type'] = 'https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld';
+
+    // map Choices, Calculations, OR Slider Labels column to choices or scoringLogic key
+    if (data['Field Type'] === 'calc')
+        schemaMap['Choices, Calculations, OR Slider Labels'] = 'scoringLogic';
+    else schemaMap['Choices, Calculations, OR Slider Labels'] = 'choices';
+
+    //console.log(110, schemaMap);
     Object.keys(data).forEach(current_key => {
-        if (current_key !== 'Form Name') {
-            // get schema key from mapping.json corresponding to current_key
-            if (schemaMap.hasOwnProperty(current_key)) {
-                // check all ui elements to be nested under 'ui' key
-                if (uiList.indexOf(schemaMap[current_key]) > -1) {
 
-                    if (rowData.hasOwnProperty('ui')) {
-                        rowData.ui[schemaMap[current_key]] = data[current_key];
-                    }
-                    else {
-                        ui[schemaMap[current_key]] = data[current_key];
-                        rowData['ui'] = ui;
-                    }
-                }
-                // parse choice field
-                else if (schemaMap[current_key] === 'choices' & data[current_key] !== '') {
+        // get schema key from mapping.json corresponding to current_key
+        if (schemaMap.hasOwnProperty(current_key)) {
+            // if (schemaMap[current_key] === 'scoringLogic' && data[current_key] !== '')
 
-                    // split string wrt '|' to get each choice
-                    let c = data[current_key].split('|');
-                    // split each choice wrt ',' to get schema:name and schema:value
-                    c.forEach(ch => {
-                        let choiceObj = {};
-                        let cs = ch.split(', ');
-                        // create name and value pair for each choice option
-                        choiceObj['schema:value'] = parseInt(cs[0]);
-                        let cnameList = parseHtml(cs[1]);
-                        choiceObj['schema:name'] = cnameList;
-                        choiceList.push(choiceObj);
+            // check all ui elements to be nested under 'ui' key
+            if (uiList.indexOf(schemaMap[current_key]) > -1) {
+                let uiValue = data[current_key];
+                if (current_key === 'Field Type' && data[current_key] === 'calc')
+                    uiValue = 'number';
 
-                    });
-                    // insert 'choices' key inside responseOptions
-                    if (rowData.hasOwnProperty('responseOptions')) {
-                        rowData.responseOptions[schemaMap[current_key]] = choiceList;
-                    }
-                    else {
-                        rspObj[schemaMap[current_key]] = choiceList;
-                        rowData['responseOptions'] = rspObj;
-                    }
+                if (rowData.hasOwnProperty('ui')) {
+                    rowData.ui[schemaMap[current_key]] = uiValue;
                 }
-                // check all response elements to be nested under 'responseOptions' key
-                else if (responseList.indexOf(schemaMap[current_key]) > -1) {
-                    if (rowData.hasOwnProperty('responseOptions')) {
-                        rowData.responseOptions[schemaMap[current_key]] = data[current_key];
-                    }
-                    else {
-                        rspObj[schemaMap[current_key]] = data[current_key];
-                        rowData['responseOptions'] = rspObj;
-                    }
+                else {
+                    ui[schemaMap[current_key]] = uiValue;
+                    rowData['ui'] = ui;
                 }
-                // branching logic
-                else if (schemaMap[current_key] === 'branchLogic' & data[current_key] !== '') {
-                    // set ui.hidden for the item to true by default
-                    if (rowData.hasOwnProperty('ui')) {
-                        rowData.ui['hidden'] = true;
-                    }
-                    else {
-                        ui['hidden'] = true;
-                        rowData['ui'] = ui;
-                    }
-                    let condition = data[current_key];
-                    let s = condition;
-                    // normalize the condition field to resemble javascript
-                    let re = RegExp(/\(([0-9]*)\)/g);
-                    condition = condition.replace(re, "___$1");
-                    condition = condition.replace(/([^>|<])=/g, "$1 ==");
-                    condition = condition.replace(/\ and\ /g, " && ");
-                    condition = condition.replace(/\ or\ /g, " || ");
-                    re = RegExp(/\[([^\]]*)\]/g);
-                    condition = condition.replace(re, " $1 ");
-                    let bl = (`if ( ${condition} ) { ${data['Variable / Field Name']}.ui.hidden = false }`);
-                    blObj.push(bl);
-                }
-                // decode html fields
-                else if ((schemaMap[current_key] === 'question' || schemaMap[current_key] ==='schema:description') & data[current_key] !== '') {
-                    let questions = parseHtml(data[current_key]);
-                    rowData[schemaMap[current_key]] = questions;
-                }
-                // non-nested schema elements
-                else if (data[current_key] !== '')
-                    rowData[schemaMap[current_key]] = data[current_key];
             }
-            // insert current_key in schema for non-existing mapping
-            else rowData[camelcase(current_key)] = data[current_key];
+            // parse choice field
+            else if (schemaMap[current_key] === 'choices' & data[current_key] !== '') {
+
+                // split string wrt '|' to get each choice
+                let c = data[current_key].split('|');
+                // split each choice wrt ',' to get schema:name and schema:value
+                c.forEach(ch => {
+                    let choiceObj = {};
+                    let cs = ch.split(', ');
+                    // create name and value pair for each choice option
+                    choiceObj['schema:value'] = parseInt(cs[0]);
+                    let cnameList = parseHtml(cs[1]);
+                    choiceObj['schema:name'] = cnameList;
+                    choiceList.push(choiceObj);
+
+                });
+                // insert 'choices' key inside responseOptions
+                if (rowData.hasOwnProperty('responseOptions')) {
+                    rowData.responseOptions[schemaMap[current_key]] = choiceList;
+                }
+                else {
+                    rspObj[schemaMap[current_key]] = choiceList;
+                    rowData['responseOptions'] = rspObj;
+                }
+            }
+            // check all other response elements to be nested under 'responseOptions' key
+            else if (responseList.indexOf(schemaMap[current_key]) > -1) {
+                if (rowData.hasOwnProperty('responseOptions')) {
+                    rowData.responseOptions[schemaMap[current_key]] = data[current_key];
+                }
+                else {
+                    rspObj[schemaMap[current_key]] = data[current_key];
+                    rowData['responseOptions'] = rspObj;
+                }
+            }
+            // scoring logic
+            else if (schemaMap[current_key] === 'scoringLogic' && data[current_key] !== '') {
+                // set ui.hidden for the item to true by default
+                if (rowData.hasOwnProperty('ui')) {
+                    rowData.ui['hidden'] = true;
+                }
+                else {
+                    ui['hidden'] = true;
+                    rowData['ui'] = ui;
+                }
+                let condition = data[current_key];
+                let s = condition;
+                // normalize the condition field to resemble javascript
+                let re = RegExp(/\(([0-9]*)\)/g);
+                condition = condition.replace(re, "___$1");
+                condition = condition.replace(/([^>|<])=/g, "$1 ==");
+                condition = condition.replace(/\ and\ /g, " && ");
+                condition = condition.replace(/\ or\ /g, " || ");
+                re = RegExp(/\[([^\]]*)\]/g);
+                condition = condition.replace(re, " $1 ");
+                let sl = `${data['Variable / Field Name']} = ${condition}`;
+                slList.push(sl);
+            }
+            // branching logic
+            else if (schemaMap[current_key] === 'branchLogic' & data[current_key] !== '') {
+                // set ui.hidden for the item to true by default
+                if (rowData.hasOwnProperty('ui')) {
+                    rowData.ui['hidden'] = true;
+                }
+                else {
+                    ui['hidden'] = true;
+                    rowData['ui'] = ui;
+                }
+                let condition = data[current_key];
+                let s = condition;
+                // normalize the condition field to resemble javascript
+                let re = RegExp(/\(([0-9]*)\)/g);
+                condition = condition.replace(re, "___$1");
+                condition = condition.replace(/([^>|<])=/g, "$1 ==");
+                condition = condition.replace(/\ and\ /g, " && ");
+                condition = condition.replace(/\ or\ /g, " || ");
+                re = RegExp(/\[([^\]]*)\]/g);
+                condition = condition.replace(re, " $1 ");
+                let bl = (`if ( ${condition} ) { ${data['Variable / Field Name']}.ui.hidden = false }`);
+                blList.push(bl);
+            }
+            // decode html fields
+            else if ((schemaMap[current_key] === 'question' || schemaMap[current_key] ==='schema:description') & data[current_key] !== '') {
+                let questions = parseHtml(data[current_key]);
+                rowData[schemaMap[current_key]] = questions;
+            }
+            // non-nested schema elements
+            else if (data[current_key] !== '')
+                rowData[schemaMap[current_key]] = data[current_key];
         }
+        // insert non-existing mapping as is
+        else rowData[camelcase(current_key)] = data[current_key];
     });
     const field_name = data['Variable / Field Name'];
     order.push(field_name);
@@ -199,7 +231,7 @@ function processRow(form, data){
     });
 }
 
-function finishSchemaCreation(form, formContextUrl) {
+function createFormSchema(form, formContextUrl) {
     let jsonLD = {
         "@context": [schemaContextUrl, formContextUrl],
         "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Activity.jsonld",
@@ -210,10 +242,10 @@ function finishSchemaCreation(form, formContextUrl) {
         "schema:schemaVersion": "0.0.1",
         "schema:version": "0.0.1",
         "branchLogic": {
-            "javascript": blObj
+            "javascript": blList
         },
         "scoringLogic": {
-            "javascript": ""
+            "javascript": slList
         },
         "ui": {
             "order": order,
