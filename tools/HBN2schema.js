@@ -61,31 +61,36 @@ csv
 
     })
     .on('end', function () {
-        console.log(Object.keys(datas).length);
-        let c = 0;
 
         Object.keys(datas).forEach(form => {
             let rowList = datas[form];
             createFormContextSchema(form, rowList);
             let formContextUrl = `https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/${form}/${form}_context.jsonld`;
+            let field_counter = 0;
             rowList.forEach( row => {
                 if(languages.length === 0){
                     languages = parseLanguageIsoCodes(row['Question (number optionally included)']);
                 }
-                processRow(form, row);
+                field_counter = field_counter + 1;
+                processRow(form, row, field_counter);
             });
 
-            // createFormSchema(form, formContextUrl);
+            createFormSchema(form, formContextUrl);
         });
-    })
+    });
 
 function createFormContextSchema(form, rowList) {
     // define context file for each form
     let itemOBj = { "@version": 1.1 };
     let formContext = {};
     itemOBj[form] = `https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/${form}/items/`;
+    let field_counter = 0;
     rowList.forEach( row => {
-        let field_name = row['Question ID'];
+        console.log(86, row['Question (number optionally included)']);
+        // check Question ID and correct if needed
+        field_counter = field_counter + 1;
+        let field_name = parseQuestionID(row['Question ID'], row, field_counter);
+        console.log(90, field_name);
         // define item_x urls to be inserted in context for the corresponding form
         itemOBj[field_name] = { "@id": `${form}:${field_name}.jsonld` , "@type": "@id" };
     });
@@ -98,7 +103,7 @@ function createFormContextSchema(form, rowList) {
     });
 }
 
-function processRow(form, row){
+function processRow(form, row, field_counter){
     let rowData = {};
     let ui = {};
     let rspObj = {};
@@ -106,22 +111,10 @@ function processRow(form, row){
     rowData['@context'] = [schemaContextUrl];
     rowData['@type'] = 'https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld';
 
-    // map Choices, Calculations, OR Slider Labels column to choices or scoringLogic key
-    /*if (row['Field Type'] === 'calc')
-        schemaMap['Choices, Calculations, OR Slider Labels'] = 'scoringLogic';
-    else schemaMap['Choices, Calculations, OR Slider Labels'] = 'choices';*/
-
-    //console.log(110, schemaMap);
-
-    let field_counter = 0;
-    let field_name = row['Question ID'];
-    if (row['Question ID'] !== '')
-        rowData[schemaMap['Question ID']] = field_name;
-    // when Question ID is null
-    else {
-        rowData[schemaMap['Question ID']] = row['Questionnaire ID'] + '_' + (field_counter + 1);
-    }
-
+    // check Question ID and correct if needed
+    let field_name = parseQuestionID(row['Question ID'], row, field_counter);
+    rowData[schemaMap['Question ID']] = field_name;
+    console.log(117, field_name);
     Object.keys(row).forEach(current_key => {
 
         // get schema key from mapping.json corresponding to current_key
@@ -315,5 +308,16 @@ function parseHtml(inputString) {
         result[defaultLanguage] = inputString;
     }
     return result;
+}
+
+function parseQuestionID(QId, row, field_counter) {
+    console.log(312, QId, field_counter);
+    if (QId !== '')
+        return Qid;
+    // when Question ID is null, assign it to QuestionnaireID_x
+    else {
+        // console.log(317, row['Questionnaire ID'] + '_' + field_counter);
+        return row['Questionnaire ID'] + '_' + field_counter;
+    }
 }
 
