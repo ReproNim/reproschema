@@ -1,0 +1,39 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+    "skos:altLabel": "consent_nda",
+    "preamble": "Please indicate from the consent form for which of the items below the subject affirmed consent ",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Consent for sharing data with NDA?"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": "Yes "
+                }
+            },
+            {
+                "schema:value": 0,
+                "schema:name": {
+                    "en": "No"
+                }
+            }
+        ],
+        "minValue": "",
+        "maxValue": "",
+        "requiredValue": "y"
+    },
+    "textValidationTypeOrShowSliderNumber": "",
+    "customAlignment": "",
+    "questionNumber -(surveysOnly)": "",
+    "matrixGroupName": "consents",
+    "matrixRanking?": "",
+    "fieldAnnotation": ""
+}

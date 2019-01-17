@@ -1,0 +1,57 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/family_history_assessment_parent/family_history_assessment_parent_context.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+    "skos:altLabel": "fam_history_11_yes_no",
+    "ui": {
+        "inputType": "radio",
+        "hidden": true
+    },
+    "question": {
+        "en": "11. Has ANY blood relative of your child ever been to a doctor or a counselor about any emotional  or mental problems, or problems with alcohol or drugs?",
+        "es": "¿ALGÚN pariente consanguíneo de su niño(a) ha visitado alguna vez a un médico o terapeuta para tratar algún problema emocional o mental o problemas con el alcohol o las drogas? "
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": "Yes",
+                    "es": "Sí"
+                }
+            },
+            {
+                "schema:value": 0,
+                "schema:name": {
+                    "en": "No",
+                    "es": "No"
+                }
+            },
+            {
+                "schema:value": 999,
+                "schema:name": {
+                    "en": "Don't know",
+                    "es": "No lo sé"
+                }
+            },
+            {
+                "schema:value": 7,
+                "schema:name": {
+                    "en": "Refuse to answer",
+                    "es": "Niego contestar"
+                }
+            }
+        ],
+        "minValue": "",
+        "maxValue": "",
+        "requiredValue": "y"
+    },
+    "textValidationTypeOrShowSliderNumber": "",
+    "customAlignment": "LH",
+    "questionNumber -(surveysOnly)": "",
+    "matrixGroupName": "",
+    "matrixRanking?": "",
+    "fieldAnnotation": ""
+}

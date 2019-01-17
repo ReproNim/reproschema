@@ -1,0 +1,44 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+    "skos:altLabel": "sae_interventin_rel",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "10.\tRelationship of event to intervention:"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": "Unrelated (clearly not related to the intervention) "
+                }
+            },
+            {
+                "schema:value": 2,
+                "schema:name": {
+                    "en": "Possible (may be related to intervention) "
+                }
+            },
+            {
+                "schema:value": 3,
+                "schema:name": {
+                    "en": "Definite (clearly related to intervention)"
+                }
+            }
+        ],
+        "minValue": "",
+        "maxValue": "",
+        "requiredValue": "y"
+    },
+    "textValidationTypeOrShowSliderNumber": "",
+    "customAlignment": "",
+    "questionNumber -(surveysOnly)": "",
+    "matrixGroupName": "",
+    "matrixRanking?": "",
+    "fieldAnnotation": ""
+}

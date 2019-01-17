@@ -1,0 +1,44 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+    "skos:altLabel": "sae_report_type",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "14.\tType of report:"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": "Initial "
+                }
+            },
+            {
+                "schema:value": 2,
+                "schema:name": {
+                    "en": "Follow-up "
+                }
+            },
+            {
+                "schema:value": 3,
+                "schema:name": {
+                    "en": "Final"
+                }
+            }
+        ],
+        "minValue": "",
+        "maxValue": "",
+        "requiredValue": "y"
+    },
+    "textValidationTypeOrShowSliderNumber": "",
+    "customAlignment": "",
+    "questionNumber -(surveysOnly)": "",
+    "matrixGroupName": "",
+    "matrixRanking?": "",
+    "fieldAnnotation": ""
+}

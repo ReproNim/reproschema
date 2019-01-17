@@ -16,6 +16,7 @@ const schemaMap = {
     "Required Field?": "requiredValue",
     "Text Validation Min": "minValue",
     "Text Validation Max": "maxValue",
+    "Choices, Calculations, OR Slider Labels": "choices",
     "Branching Logic (Show field only if...)": "branchLogic"
 }
 const uiList = ['inputType', 'shuffle'];
@@ -37,6 +38,7 @@ let schemaContextUrl = 'https://raw.githubusercontent.com/ReproNim/schema-standa
 let order = [];
 let blList = [];
 let slList = [];
+let blObj = [];
 let languages = [];
 
 let options = {
@@ -73,7 +75,7 @@ csv
 
             createFormSchema(form, formContextUrl);
         });
-    })
+    });
 
 function createFormContextSchema(form, fieldList) {
     // define context file for each form

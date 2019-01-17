@@ -1,0 +1,57 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/family_history_assessment_parent/family_history_assessment_parent_context.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+    "skos:altLabel": "fam_history_7_yes_no",
+    "ui": {
+        "inputType": "radio",
+        "hidden": true
+    },
+    "question": {
+        "en": "7. Has ANY blood relative of your child ever had a period of time when others were concerned  because they suddenly became more active day and night and seemed not to need any sleep and talked much more than usual for them?",
+        "es": "¿ALGÚN pariente consanguíneo de su niño(a) ha pasado alguna vez por un período en el que otras personas se preocuparan por él o ella porque repentinamente se volvió  más activo(a) de día y de noche, parecía no necesitar dormir y hablaba mucho más de lo normal para él o ella? "
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": "Yes",
+                    "es": "Sí"
+                }
+            },
+            {
+                "schema:value": 0,
+                "schema:name": {
+                    "en": "No",
+                    "es": "No"
+                }
+            },
+            {
+                "schema:value": 999,
+                "schema:name": {
+                    "en": "Don't know",
+                    "es": "No lo sé"
+                }
+            },
+            {
+                "schema:value": 7,
+                "schema:name": {
+                    "en": "Refuse to answer",
+                    "es": "Niego contestar"
+                }
+            }
+        ],
+        "minValue": "",
+        "maxValue": "",
+        "requiredValue": "y"
+    },
+    "textValidationTypeOrShowSliderNumber": "",
+    "customAlignment": "LH",
+    "questionNumber -(surveysOnly)": "",
+    "matrixGroupName": "",
+    "matrixRanking?": "",
+    "fieldAnnotation": ""
+}

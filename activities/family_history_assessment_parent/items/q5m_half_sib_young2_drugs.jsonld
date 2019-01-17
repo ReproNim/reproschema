@@ -1,0 +1,89 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/family_history_assessment_parent/family_history_assessment_parent_context.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+    "skos:altLabel": "q5m_half_sib_young2_drugs",
+    "ui": {
+        "inputType": "checkbox",
+        "hidden": true
+    },
+    "question": {
+        "en": "half sibling-younger",
+        "es": "Medio hermano(a)- menor"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:value": 0,
+                "schema:name": {
+                    "en": "No Problems",
+                    "es": "Sin Problemas"
+                }
+            },
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": "Marital",
+                    "es": "Matrimonial"
+                }
+            },
+            {
+                "schema:value": 2,
+                "schema:name": {
+                    "en": "Work",
+                    "es": "Laboral"
+                }
+            },
+            {
+                "schema:value": 3,
+                "schema:name": {
+                    "en": "Arrests/DUI",
+                    "es": "Arrestos/DUI"
+                }
+            },
+            {
+                "schema:value": 7,
+                "schema:name": {
+                    "en": "Health",
+                    "es": "Salud"
+                }
+            },
+            {
+                "schema:value": 4,
+                "schema:name": {
+                    "en": "Drug treatment program",
+                    "es": "Programas por el uso de drogas"
+                }
+            },
+            {
+                "schema:value": 5,
+                "schema:name": {
+                    "en": "School",
+                    "es": "Escolares"
+                }
+            },
+            {
+                "schema:value": 6,
+                "schema:name": {}
+            },
+            {
+                "schema:value": 999,
+                "schema:name": {
+                    "en": "Don't know",
+                    "es": "No sé"
+                }
+            }
+        ],
+        "minValue": "",
+        "maxValue": "",
+        "requiredValue": "y"
+    },
+    "textValidationTypeOrShowSliderNumber": "",
+    "customAlignment": "",
+    "questionNumber -(surveysOnly)": "",
+    "matrixGroupName": "fam_history_q5_pt2",
+    "matrixRanking?": "",
+    "fieldAnnotation": ""
+}

@@ -1,0 +1,57 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/family_history_assessment_parent/family_history_assessment_parent_context.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+    "skos:altLabel": "famhx_4_p",
+    "ui": {
+        "inputType": "radio",
+        "hidden": true
+    },
+    "question": {
+        "en": "Has ANY blood relative of your child ever had any problems due to alcohol, such as: Marital  separation or divorce; Laid off or fired from work; Arrests or DUIs; Alcohol harmed their health; In an alcohol treatment program; Suspended or expelled from school 2 or more times; Isolated self from family, caused arguments or were drunk a lot.",
+        "es": "¿Algún pariente consanguíneo de su niño(a) ha tenido alguna vez problemas debido al alcohol, como una separación o divorcio, Despido o cese laboral, Arrestos o multas por conducir bajo la influencia de drogas, Daños a la salud por causa del alcohol, Ingreso a un programa de tratamiento contra el alcoholismo, suspensión o expulsión de la escuela en 2 o más ocasiones, se aisló de la familia, provocó conflictos o con frecuencia estaba embriagado?"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": "Yes",
+                    "es": "Sí"
+                }
+            },
+            {
+                "schema:value": 0,
+                "schema:name": {
+                    "en": "No",
+                    "es": "No"
+                }
+            },
+            {
+                "schema:value": 999,
+                "schema:name": {
+                    "en": "Don't know",
+                    "es": "No lo sé"
+                }
+            },
+            {
+                "schema:value": 7,
+                "schema:name": {
+                    "en": "Refuse to answer",
+                    "es": "Niego contestar"
+                }
+            }
+        ],
+        "minValue": "",
+        "maxValue": "",
+        "requiredValue": "y"
+    },
+    "textValidationTypeOrShowSliderNumber": "",
+    "customAlignment": "LH",
+    "questionNumber -(surveysOnly)": "",
+    "matrixGroupName": "",
+    "matrixRanking?": "",
+    "fieldAnnotation": ""
+}
