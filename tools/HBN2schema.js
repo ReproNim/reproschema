@@ -3,21 +3,20 @@ const csv = require('fast-csv');
 const fs = require('fs');
 const shell = require('shelljs');
 const camelcase = require('camelcase');
-const mkdirp = require('mkdirp');
 const HTMLParser =  require ('node-html-parser');
 
+
 const schemaMap = {
-    "Identifier?": "@id",
-    "Variable / Field Name": "skos:altLabel",
-    "Field Note": "schema:description",
-    "Section Header": "preamble",
-    "Field Label": "question",
-    "Field Type": "inputType",
-    "Required Field?": "requiredValue",
-    "Text Validation Min": "minValue",
-    "Text Validation Max": "maxValue",
-    "Choices, Calculations, OR Slider Labels": "choices",
-    "Branching Logic (Show field only if...)": "branchLogic"
+    //'Instructions': 'preamble',
+    //'Question Group Instruction': '',
+    'Question (number optionally included)': 'question',
+    'Question ID': 'skos:altLabel',
+    'Response Type': 'inputType',
+    'Response Options': 'choices',
+    'Stevens\' level of measurement': 'type',
+    // 'Position of \'0\'': 'Center',
+    // 'Continuous or Discrete': 'Discrete',
+    // 'Range': '5',
 }
 const uiList = ['inputType', 'shuffle'];
 const responseList = ['type', 'minValue', 'maxValue', 'requiredValue', 'multipleChoice'];
@@ -38,7 +37,6 @@ let schemaContextUrl = 'https://raw.githubusercontent.com/ReproNim/schema-standa
 let order = [];
 let blList = [];
 let slList = [];
-let blObj = [];
 let languages = [];
 
 let options = {
@@ -54,36 +52,45 @@ let options = {
 csv
     .fromStream(readStream, options)
     .on('data', function (data) {
-        if (!datas[data['Form Name']]) {
-            datas[data['Form Name']] = [];
+        if (!datas[data['Questionnaire Name']]) {
+            datas[data['Questionnaire Name']] = [];
             // For each form, create directory structure - activities/form_name/items
-            shell.mkdir('-p', 'activities/' + data['Form Name'] + '/items');
+            shell.mkdir('-p', 'activities/' + data['Questionnaire Name'] + '/items');
         }
-        datas[data['Form Name']].push(data);
+        datas[data['Questionnaire Name']].push(data);
+
     })
     .on('end', function () {
+
         Object.keys(datas).forEach(form => {
-            let fieldList = datas[form];
-            createFormContextSchema(form, fieldList);
+            let rowList = datas[form];
+            createFormContextSchema(form, rowList);
             let formContextUrl = `https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/${form}/${form}_context.jsonld`;
-            fieldList.forEach( field => {
+            let field_counter = 0;
+            rowList.forEach( row => {
                 if(languages.length === 0){
-                    languages = parseLanguageIsoCodes(field['Field Label']);
+                    languages = parseLanguageIsoCodes(row['Question (number optionally included)']);
                 }
-                processRow(form, field);
+                field_counter = field_counter + 1;
+                processRow(form, row, field_counter);
             });
 
             createFormSchema(form, formContextUrl);
         });
     });
 
-function createFormContextSchema(form, fieldList) {
+function createFormContextSchema(form, rowList) {
     // define context file for each form
     let itemOBj = { "@version": 1.1 };
     let formContext = {};
     itemOBj[form] = `https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/${form}/items/`;
-    fieldList.forEach( field => {
-        let field_name = field['Variable / Field Name'];
+    let field_counter = 0;
+    rowList.forEach( row => {
+        console.log(86, row['Question (number optionally included)']);
+        // check Question ID and correct if needed
+        field_counter = field_counter + 1;
+        let field_name = parseQuestionID(row['Question ID'], row, field_counter);
+        console.log(90, field_name);
         // define item_x urls to be inserted in context for the corresponding form
         itemOBj[field_name] = { "@id": `${form}:${field_name}.jsonld` , "@type": "@id" };
     });
@@ -96,7 +103,7 @@ function createFormContextSchema(form, fieldList) {
     });
 }
 
-function processRow(form, data){
+function processRow(form, row, field_counter){
     let rowData = {};
     let ui = {};
     let rspObj = {};
@@ -104,23 +111,21 @@ function processRow(form, data){
     rowData['@context'] = [schemaContextUrl];
     rowData['@type'] = 'https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld';
 
-    // map Choices, Calculations, OR Slider Labels column to choices or scoringLogic key
-    if (data['Field Type'] === 'calc')
-        schemaMap['Choices, Calculations, OR Slider Labels'] = 'scoringLogic';
-    else schemaMap['Choices, Calculations, OR Slider Labels'] = 'choices';
-
-    //console.log(110, schemaMap);
-    Object.keys(data).forEach(current_key => {
+    // check Question ID and correct if needed
+    let field_name = parseQuestionID(row['Question ID'], row, field_counter);
+    rowData[schemaMap['Question ID']] = field_name;
+    console.log(117, field_name);
+    Object.keys(row).forEach(current_key => {
 
         // get schema key from mapping.json corresponding to current_key
-        if (schemaMap.hasOwnProperty(current_key)) {
+        if (schemaMap.hasOwnProperty(current_key) && current_key !== 'Question ID') {
             // if (schemaMap[current_key] === 'scoringLogic' && data[current_key] !== '')
 
             // check all ui elements to be nested under 'ui' key
             if (uiList.indexOf(schemaMap[current_key]) > -1) {
-                let uiValue = data[current_key];
-                if (current_key === 'Field Type' && data[current_key] === 'calc')
-                    uiValue = 'number';
+                let uiValue = row[current_key];
+                /*if (current_key === 'Field Type' && row[current_key] === 'calc')
+                    uiValue = 'number';*/
 
                 if (rowData.hasOwnProperty('ui')) {
                     rowData.ui[schemaMap[current_key]] = uiValue;
@@ -130,15 +135,19 @@ function processRow(form, data){
                     rowData['ui'] = ui;
                 }
             }
+            // when Question ID is null
+            else if ((schemaMap[current_key] === 'skos:altLabel' && row[current_key] === '')) {
+                field_name = row['Questionnaire ID'] + '_' + field_counter;
+            }
             // parse choice field
-            else if (schemaMap[current_key] === 'choices' & data[current_key] !== '') {
+            else if (schemaMap[current_key] === 'choices' & row[current_key] !== '') {
 
                 // split string wrt '|' to get each choice
-                let c = data[current_key].split('|');
+                let c = row[current_key].split(',');
                 // split each choice wrt ',' to get schema:name and schema:value
                 c.forEach(ch => {
                     let choiceObj = {};
-                    let cs = ch.split(', ');
+                    let cs = ch.split('=');
                     // create name and value pair for each choice option
                     choiceObj['schema:value'] = parseInt(cs[0]);
                     let cnameList = parseHtml(cs[1]);
@@ -158,15 +167,15 @@ function processRow(form, data){
             // check all other response elements to be nested under 'responseOptions' key
             else if (responseList.indexOf(schemaMap[current_key]) > -1) {
                 if (rowData.hasOwnProperty('responseOptions')) {
-                    rowData.responseOptions[schemaMap[current_key]] = data[current_key];
+                    rowData.responseOptions[schemaMap[current_key]] = row[current_key];
                 }
                 else {
-                    rspObj[schemaMap[current_key]] = data[current_key];
+                    rspObj[schemaMap[current_key]] = row[current_key];
                     rowData['responseOptions'] = rspObj;
                 }
             }
             // scoring logic
-            else if (schemaMap[current_key] === 'scoringLogic' && data[current_key] !== '') {
+            else if (schemaMap[current_key] === 'scoringLogic' && row[current_key] !== '') {
                 // set ui.hidden for the item to true by default
                 if (rowData.hasOwnProperty('ui')) {
                     rowData.ui['hidden'] = true;
@@ -175,7 +184,7 @@ function processRow(form, data){
                     ui['hidden'] = true;
                     rowData['ui'] = ui;
                 }
-                let condition = data[current_key];
+                let condition = row[current_key];
                 let s = condition;
                 // normalize the condition field to resemble javascript
                 let re = RegExp(/\(([0-9]*)\)/g);
@@ -185,11 +194,11 @@ function processRow(form, data){
                 condition = condition.replace(/\ or\ /g, " || ");
                 re = RegExp(/\[([^\]]*)\]/g);
                 condition = condition.replace(re, " $1 ");
-                let sl = `${data['Variable / Field Name']} = ${condition}`;
+                let sl = `${row['Question ID']} = ${condition}`;
                 slList.push(sl);
             }
             // branching logic
-            else if (schemaMap[current_key] === 'branchLogic' & data[current_key] !== '') {
+            else if (schemaMap[current_key] === 'branchLogic' & row[current_key] !== '') {
                 // set ui.hidden for the item to true by default
                 if (rowData.hasOwnProperty('ui')) {
                     rowData.ui['hidden'] = true;
@@ -198,7 +207,7 @@ function processRow(form, data){
                     ui['hidden'] = true;
                     rowData['ui'] = ui;
                 }
-                let condition = data[current_key];
+                let condition = row[current_key];
                 let s = condition;
                 // normalize the condition field to resemble javascript
                 let re = RegExp(/\(([0-9]*)\)/g);
@@ -208,22 +217,22 @@ function processRow(form, data){
                 condition = condition.replace(/\ or\ /g, " || ");
                 re = RegExp(/\[([^\]]*)\]/g);
                 condition = condition.replace(re, " $1 ");
-                let bl = (`if ( ${condition} ) { ${data['Variable / Field Name']}.ui.hidden = false }`);
+                let bl = (`if ( ${condition} ) { ${row['Question ID']}.ui.hidden = false }`);
                 blList.push(bl);
             }
             // decode html fields
-            else if ((schemaMap[current_key] === 'question' || schemaMap[current_key] ==='schema:description') & data[current_key] !== '') {
-                let questions = parseHtml(data[current_key]);
+            else if ((schemaMap[current_key] === 'question' || schemaMap[current_key] ==='schema:description') & row[current_key] !== '') {
+                let questions = parseHtml(row[current_key]);
                 rowData[schemaMap[current_key]] = questions;
             }
             // non-nested schema elements
-            else if (data[current_key] !== '')
-                rowData[schemaMap[current_key]] = data[current_key];
+            else if (row[current_key] !== '')
+                rowData[schemaMap[current_key]] = row[current_key];
         }
         // insert non-existing mapping as is
-        else rowData[camelcase(current_key)] = data[current_key];
+        // else rowData[camelcase(current_key)] = row[current_key];
     });
-    const field_name = data['Variable / Field Name'];
+    // const field_name = row['Question ID'];
     order.push(field_name);
     // write to item_x file
     fs.writeFile('activities/' + form + '/items/' + field_name + '.jsonld', JSON.stringify(rowData, null, 4), function (err) {
@@ -299,5 +308,16 @@ function parseHtml(inputString) {
         result[defaultLanguage] = inputString;
     }
     return result;
+}
+
+function parseQuestionID(QId, row, field_counter) {
+    console.log(312, QId, field_counter);
+    if (QId !== '')
+        return Qid;
+    // when Question ID is null, assign it to QuestionnaireID_x
+    else {
+        // console.log(317, row['Questionnaire ID'] + '_' + field_counter);
+        return row['Questionnaire ID'] + '_' + field_counter;
+    }
 }
 
