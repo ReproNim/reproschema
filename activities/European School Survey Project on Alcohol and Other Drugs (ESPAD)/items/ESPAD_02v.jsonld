@@ -1,0 +1,30 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+    "skos:altLabel": "ESPAD_02v",
+    "question": {
+        "en": "2v. Have you had medical problems as a result of your inhalant (glue/aerosol) use (e.g. memory loss, hepatitis, convulsions, bleeding, etc.)?"
+    },
+    "ui": {
+        "inputType": "Single Choice"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:value": 0,
+                "schema:name": {
+                    "en": "no"
+                }
+            },
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": "yes"
+                }
+            }
+        ],
+        "type": "Nominal"
+    }
+}

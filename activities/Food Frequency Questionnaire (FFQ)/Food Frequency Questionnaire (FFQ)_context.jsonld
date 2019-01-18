@@ -1,0 +1,326 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "Food Frequency Questionnaire (FFQ)": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/Food Frequency Questionnaire (FFQ)/items/",
+        "FFQ_COLDCEREALFREQ": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_COLDCEREALFREQ.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_COLDCEREALQUAN": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_COLDCEREALQUAN.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_COOKCERFREQ": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_COOKCERFREQ.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_COOKCERQUAN": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_COOKCERQUAN.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_EGGFREQ": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_EGGFREQ.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_EGGQUAN": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_EGGQUAN.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_GRANBARFREQ": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_GRANBARFREQ.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_GRANBARQUAN": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_GRANBARQUAN.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_MILKFREQ": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_MILKFREQ.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_MILKQUAN": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_MILKQUAN.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_FRUITJCFREQ": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_FRUITJCFREQ.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_FRUITJCQUAN": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_FRUITJCQUAN.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_SODAFREQ": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_SODAFREQ.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_SODAQUAN": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_SODAQUAN.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_APPLEFREQ": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_APPLEFREQ.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_APPLEQUAN": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_APPLEQUAN.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_APPLSCFREQ": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_APPLSCFREQ.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_APPLSCQUAN": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_APPLSCQUAN.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_OTHFRUTFREQ": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_OTHFRUTFREQ.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_OTHFRUTQUAN": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_OTHFRUTQUAN.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_FRENCHFREQ": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_FRENCHFREQ.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_FRENCHQUAN": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_FRENCHQUAN.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_OTHPOTFREQ": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_OTHPOTFREQ.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_OTHPOTQUAN": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_OTHPOTQUAN.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_KETCHUPFREQ": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_KETCHUPFREQ.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_KETCHUPQUAN": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_KETCHUPQUAN.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_LETTUCEFREQ": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_LETTUCEFREQ.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_LETTUCEQUAN": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_LETTUCEQUAN.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_TOMATOFREQ": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_TOMATOFREQ.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_TOMATOQUAN": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_TOMATOQUAN.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_GRNBEANFREQ": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_GRNBEANFREQ.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_GRNBEANQUAN": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_GRNBEANQUAN.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_OTHVEGFREQ": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_OTHVEGFREQ.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_OTHVEGQUAN": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_OTHVEGQUAN.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_VEGSOUPFREQ": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_VEGSOUPFREQ.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_VEGSOUPQUAN": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_VEGSOUPQUAN.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_PINTOFREQ": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_PINTOFREQ.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_PINTOQUAN": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_PINTOQUAN.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_REFRIEDFREQ": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_REFRIEDFREQ.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_REFRIEDQUAN": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_REFRIEDQUAN.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_HAMBGRFREQ": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_HAMBGRFREQ.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_HAMBGRQUAN": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_HAMBGRQUAN.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_HOTDOGFREQ": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_HOTDOGFREQ.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_HOTDOGQUAN": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_HOTDOGQUAN.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_LUNCHMTFREQ": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_LUNCHMTFREQ.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_LUNCHMTQUAN": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_LUNCHMTQUAN.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_PIZZAFREQ": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_PIZZAFREQ.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_PIZZAQUAN": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_PIZZAQUAN.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_SPAGFREQ": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_SPAGFREQ.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_SPAGQUAN": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_SPAGQUAN.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_MACFREQ": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_MACFREQ.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_MACQUAN": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_MACQUAN.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_CHICKFREQ": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_CHICKFREQ.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_CHICKQUAN": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_CHICKQUAN.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_FISHFREQ": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_FISHFREQ.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_FISHQUAN": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_FISHQUAN.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_BURRITOFREQ": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_BURRITOFREQ.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_BURRITOQUAN": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_BURRITOQUAN.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_RSTBFFREQ": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_RSTBFFREQ.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_RSTBFQUAN": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_RSTBFQUAN.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_OTHMEATFREQ": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_OTHMEATFREQ.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_OTHMEATQUAN": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_OTHMEATQUAN.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_PORKFREQ": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_PORKFREQ.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_PORKQUAN": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_PORKQUAN.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_POPCORNFREQ": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_POPCORNFREQ.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_POPCORNQUAN": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_POPCORNQUAN.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_SNKCHPFREQ": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_SNKCHPFREQ.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_SNKCHPQUAN": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_SNKCHPQUAN.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_ICECRMFREQ": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_ICECRMFREQ.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_ICECRMQUAN": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_ICECRMQUAN.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_CANDYFREQ": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_CANDYFREQ.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_CANDYQUAN": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_CANDYQUAN.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_COOKIEFREQ": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_COOKIEFREQ.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_COOKIEQUAN": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_COOKIEQUAN.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_CHEESEFREQ": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_CHEESEFREQ.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_CHEESEQUAN": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_CHEESEQUAN.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_WHEATBRDFREQ": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_WHEATBRDFREQ.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_WHEATBRDQUAN": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_WHEATBRDQUAN.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_COLDCEREALTYPE": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_COLDCEREALTYPE.jsonld",
+            "@type": "@id"
+        },
+        "FFQ_MILKTYPE": {
+            "@id": "Food Frequency Questionnaire (FFQ):FFQ_MILKTYPE.jsonld",
+            "@type": "@id"
+        }
+    }
+}

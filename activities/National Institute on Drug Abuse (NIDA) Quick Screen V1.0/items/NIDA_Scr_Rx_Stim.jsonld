@@ -1,0 +1,30 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+    "skos:altLabel": "NIDA_Scr_Rx_Stim",
+    "question": {
+        "en": "Prescription stimulants (Ritalin, Concerta, Dexedrine, Adderall, diet pills, etc)"
+    },
+    "ui": {
+        "inputType": "Single Choice"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:value": 0,
+                "schema:name": {
+                    "en": " No"
+                }
+            },
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": " Yes"
+                }
+            }
+        ],
+        "type": "Nominal"
+    }
+}

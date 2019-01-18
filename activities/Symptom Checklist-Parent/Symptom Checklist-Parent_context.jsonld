@@ -1,0 +1,514 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "Symptom Checklist-Parent": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/Symptom Checklist-Parent/items/",
+        "CSC_01C": {
+            "@id": "Symptom Checklist-Parent:CSC_01C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_01P": {
+            "@id": "Symptom Checklist-Parent:CSC_01P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_02C": {
+            "@id": "Symptom Checklist-Parent:CSC_02C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_02P": {
+            "@id": "Symptom Checklist-Parent:CSC_02P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_03C": {
+            "@id": "Symptom Checklist-Parent:CSC_03C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_03P": {
+            "@id": "Symptom Checklist-Parent:CSC_03P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_04C": {
+            "@id": "Symptom Checklist-Parent:CSC_04C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_04P": {
+            "@id": "Symptom Checklist-Parent:CSC_04P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_05C": {
+            "@id": "Symptom Checklist-Parent:CSC_05C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_05P": {
+            "@id": "Symptom Checklist-Parent:CSC_05P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_06C": {
+            "@id": "Symptom Checklist-Parent:CSC_06C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_06P": {
+            "@id": "Symptom Checklist-Parent:CSC_06P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_07C": {
+            "@id": "Symptom Checklist-Parent:CSC_07C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_07P": {
+            "@id": "Symptom Checklist-Parent:CSC_07P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_08C": {
+            "@id": "Symptom Checklist-Parent:CSC_08C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_08P": {
+            "@id": "Symptom Checklist-Parent:CSC_08P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_09P": {
+            "@id": "Symptom Checklist-Parent:CSC_09P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_09C": {
+            "@id": "Symptom Checklist-Parent:CSC_09C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_10C": {
+            "@id": "Symptom Checklist-Parent:CSC_10C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_10P": {
+            "@id": "Symptom Checklist-Parent:CSC_10P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_11C": {
+            "@id": "Symptom Checklist-Parent:CSC_11C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_11P": {
+            "@id": "Symptom Checklist-Parent:CSC_11P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_12C": {
+            "@id": "Symptom Checklist-Parent:CSC_12C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_12P": {
+            "@id": "Symptom Checklist-Parent:CSC_12P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_13C": {
+            "@id": "Symptom Checklist-Parent:CSC_13C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_13P": {
+            "@id": "Symptom Checklist-Parent:CSC_13P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_14C": {
+            "@id": "Symptom Checklist-Parent:CSC_14C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_14P": {
+            "@id": "Symptom Checklist-Parent:CSC_14P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_15C": {
+            "@id": "Symptom Checklist-Parent:CSC_15C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_15P": {
+            "@id": "Symptom Checklist-Parent:CSC_15P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_16C": {
+            "@id": "Symptom Checklist-Parent:CSC_16C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_16P": {
+            "@id": "Symptom Checklist-Parent:CSC_16P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_17C": {
+            "@id": "Symptom Checklist-Parent:CSC_17C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_17P": {
+            "@id": "Symptom Checklist-Parent:CSC_17P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_18C": {
+            "@id": "Symptom Checklist-Parent:CSC_18C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_18P": {
+            "@id": "Symptom Checklist-Parent:CSC_18P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_19C": {
+            "@id": "Symptom Checklist-Parent:CSC_19C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_19P": {
+            "@id": "Symptom Checklist-Parent:CSC_19P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_20C": {
+            "@id": "Symptom Checklist-Parent:CSC_20C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_20P": {
+            "@id": "Symptom Checklist-Parent:CSC_20P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_21C": {
+            "@id": "Symptom Checklist-Parent:CSC_21C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_21P": {
+            "@id": "Symptom Checklist-Parent:CSC_21P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_22C": {
+            "@id": "Symptom Checklist-Parent:CSC_22C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_22": {
+            "@id": "Symptom Checklist-Parent:CSC_22.jsonld",
+            "@type": "@id"
+        },
+        "CSC_22P": {
+            "@id": "Symptom Checklist-Parent:CSC_22P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_23C": {
+            "@id": "Symptom Checklist-Parent:CSC_23C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_23P": {
+            "@id": "Symptom Checklist-Parent:CSC_23P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_24C": {
+            "@id": "Symptom Checklist-Parent:CSC_24C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_24P": {
+            "@id": "Symptom Checklist-Parent:CSC_24P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_25C": {
+            "@id": "Symptom Checklist-Parent:CSC_25C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_25P": {
+            "@id": "Symptom Checklist-Parent:CSC_25P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_26C": {
+            "@id": "Symptom Checklist-Parent:CSC_26C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_26P": {
+            "@id": "Symptom Checklist-Parent:CSC_26P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_27C": {
+            "@id": "Symptom Checklist-Parent:CSC_27C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_27P": {
+            "@id": "Symptom Checklist-Parent:CSC_27P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_28C": {
+            "@id": "Symptom Checklist-Parent:CSC_28C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_28P": {
+            "@id": "Symptom Checklist-Parent:CSC_28P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_29C": {
+            "@id": "Symptom Checklist-Parent:CSC_29C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_29P": {
+            "@id": "Symptom Checklist-Parent:CSC_29P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_30C": {
+            "@id": "Symptom Checklist-Parent:CSC_30C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_30P": {
+            "@id": "Symptom Checklist-Parent:CSC_30P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_31C": {
+            "@id": "Symptom Checklist-Parent:CSC_31C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_31P": {
+            "@id": "Symptom Checklist-Parent:CSC_31P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_32C": {
+            "@id": "Symptom Checklist-Parent:CSC_32C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_32P": {
+            "@id": "Symptom Checklist-Parent:CSC_32P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_33C": {
+            "@id": "Symptom Checklist-Parent:CSC_33C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_33P": {
+            "@id": "Symptom Checklist-Parent:CSC_33P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_34C": {
+            "@id": "Symptom Checklist-Parent:CSC_34C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_34P": {
+            "@id": "Symptom Checklist-Parent:CSC_34P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_35C": {
+            "@id": "Symptom Checklist-Parent:CSC_35C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_35P": {
+            "@id": "Symptom Checklist-Parent:CSC_35P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_36C": {
+            "@id": "Symptom Checklist-Parent:CSC_36C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_36P": {
+            "@id": "Symptom Checklist-Parent:CSC_36P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_37C": {
+            "@id": "Symptom Checklist-Parent:CSC_37C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_37P": {
+            "@id": "Symptom Checklist-Parent:CSC_37P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_38C": {
+            "@id": "Symptom Checklist-Parent:CSC_38C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_38P": {
+            "@id": "Symptom Checklist-Parent:CSC_38P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_39C": {
+            "@id": "Symptom Checklist-Parent:CSC_39C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_39P": {
+            "@id": "Symptom Checklist-Parent:CSC_39P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_40C": {
+            "@id": "Symptom Checklist-Parent:CSC_40C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_40P": {
+            "@id": "Symptom Checklist-Parent:CSC_40P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_41C": {
+            "@id": "Symptom Checklist-Parent:CSC_41C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_41P": {
+            "@id": "Symptom Checklist-Parent:CSC_41P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_42C": {
+            "@id": "Symptom Checklist-Parent:CSC_42C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_42P": {
+            "@id": "Symptom Checklist-Parent:CSC_42P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_43C": {
+            "@id": "Symptom Checklist-Parent:CSC_43C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_43P": {
+            "@id": "Symptom Checklist-Parent:CSC_43P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_44C": {
+            "@id": "Symptom Checklist-Parent:CSC_44C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_44P": {
+            "@id": "Symptom Checklist-Parent:CSC_44P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_45C": {
+            "@id": "Symptom Checklist-Parent:CSC_45C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_45P": {
+            "@id": "Symptom Checklist-Parent:CSC_45P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_46C": {
+            "@id": "Symptom Checklist-Parent:CSC_46C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_46P": {
+            "@id": "Symptom Checklist-Parent:CSC_46P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_47C": {
+            "@id": "Symptom Checklist-Parent:CSC_47C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_47P": {
+            "@id": "Symptom Checklist-Parent:CSC_47P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_48C": {
+            "@id": "Symptom Checklist-Parent:CSC_48C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_48P": {
+            "@id": "Symptom Checklist-Parent:CSC_48P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_49C": {
+            "@id": "Symptom Checklist-Parent:CSC_49C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_49P": {
+            "@id": "Symptom Checklist-Parent:CSC_49P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_50C": {
+            "@id": "Symptom Checklist-Parent:CSC_50C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_50P": {
+            "@id": "Symptom Checklist-Parent:CSC_50P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_51C": {
+            "@id": "Symptom Checklist-Parent:CSC_51C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_51P": {
+            "@id": "Symptom Checklist-Parent:CSC_51P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_52C": {
+            "@id": "Symptom Checklist-Parent:CSC_52C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_52P": {
+            "@id": "Symptom Checklist-Parent:CSC_52P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_53C": {
+            "@id": "Symptom Checklist-Parent:CSC_53C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_53P": {
+            "@id": "Symptom Checklist-Parent:CSC_53P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_54C": {
+            "@id": "Symptom Checklist-Parent:CSC_54C.jsonld",
+            "@type": "@id"
+        },
+        "CSC_54P": {
+            "@id": "Symptom Checklist-Parent:CSC_54P.jsonld",
+            "@type": "@id"
+        },
+        "CSC_55aC": {
+            "@id": "Symptom Checklist-Parent:CSC_55aC.jsonld",
+            "@type": "@id"
+        },
+        "CSC_55aP": {
+            "@id": "Symptom Checklist-Parent:CSC_55aP.jsonld",
+            "@type": "@id"
+        },
+        "CSC_55bC": {
+            "@id": "Symptom Checklist-Parent:CSC_55bC.jsonld",
+            "@type": "@id"
+        },
+        "CSC_55bP": {
+            "@id": "Symptom Checklist-Parent:CSC_55bP.jsonld",
+            "@type": "@id"
+        },
+        "CSC_55cC": {
+            "@id": "Symptom Checklist-Parent:CSC_55cC.jsonld",
+            "@type": "@id"
+        },
+        "CSC_55cP": {
+            "@id": "Symptom Checklist-Parent:CSC_55cP.jsonld",
+            "@type": "@id"
+        },
+        "CSC_55dC": {
+            "@id": "Symptom Checklist-Parent:CSC_55dC.jsonld",
+            "@type": "@id"
+        },
+        "CSC_55dP": {
+            "@id": "Symptom Checklist-Parent:CSC_55dP.jsonld",
+            "@type": "@id"
+        },
+        "CSC_55eC": {
+            "@id": "Symptom Checklist-Parent:CSC_55eC.jsonld",
+            "@type": "@id"
+        },
+        "CSC_55eP": {
+            "@id": "Symptom Checklist-Parent:CSC_55eP.jsonld",
+            "@type": "@id"
+        },
+        "CSC_55fC": {
+            "@id": "Symptom Checklist-Parent:CSC_55fC.jsonld",
+            "@type": "@id"
+        },
+        "CSC_55fP": {
+            "@id": "Symptom Checklist-Parent:CSC_55fP.jsonld",
+            "@type": "@id"
+        },
+        "CSC_55gC": {
+            "@id": "Symptom Checklist-Parent:CSC_55gC.jsonld",
+            "@type": "@id"
+        },
+        "CSC_55gP": {
+            "@id": "Symptom Checklist-Parent:CSC_55gP.jsonld",
+            "@type": "@id"
+        },
+        "CSC_55hC": {
+            "@id": "Symptom Checklist-Parent:CSC_55hC.jsonld",
+            "@type": "@id"
+        },
+        "CSC_55hP": {
+            "@id": "Symptom Checklist-Parent:CSC_55hP.jsonld",
+            "@type": "@id"
+        },
+        "CSC_55iC": {
+            "@id": "Symptom Checklist-Parent:CSC_55iC.jsonld",
+            "@type": "@id"
+        },
+        "CSC_55iP": {
+            "@id": "Symptom Checklist-Parent:CSC_55iP.jsonld",
+            "@type": "@id"
+        }
+    }
+}
