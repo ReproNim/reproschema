@@ -7,7 +7,7 @@ const HTMLParser =  require ('node-html-parser');
 
 
 const schemaMap = {
-    //'Instructions': 'preamble',
+    'Instructions': 'preamble',
     //'Question Group Instruction': '',
     'Question (number optionally included)': 'question',
     'Question ID': 'skos:altLabel',
@@ -22,6 +22,7 @@ const uiList = ['inputType', 'shuffle'];
 const responseList = ['type', 'minValue', 'maxValue', 'requiredValue', 'multipleChoice'];
 const defaultLanguage = 'en';
 const datas = {};
+const preambleObj = {};
 /* **************************************************************************************** */
 
 // Make sure we got a filename on the command line.
@@ -58,6 +59,9 @@ csv
             shell.mkdir('-p', 'activities/' + data['Questionnaire Name'] + '/items');
         }
         datas[data['Questionnaire Name']].push(data);
+        // collect preamble for every form
+        if (!preambleObj[data['Questionnaire Name']] && data['Instructions'] !== '')
+            preambleObj[data['Questionnaire Name']] = data['Instructions'];
 
     })
     .on('end', function () {
@@ -74,7 +78,6 @@ csv
                 field_counter = field_counter + 1;
                 processRow(form, row, field_counter);
             });
-
             createFormSchema(form, formContextUrl);
         });
     });
@@ -86,11 +89,11 @@ function createFormContextSchema(form, rowList) {
     itemOBj[form] = `https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/${form}/items/`;
     let field_counter = 0;
     rowList.forEach( row => {
-        console.log(86, row['Question (number optionally included)']);
+        // console.log(86, row['Question (number optionally included)']);
         // check Question ID and correct if needed
         field_counter = field_counter + 1;
         let field_name = parseQuestionID(row['Question ID'], row, field_counter);
-        console.log(90, field_name);
+        // console.log(90, field_name);
         // define item_x urls to be inserted in context for the corresponding form
         itemOBj[field_name] = { "@id": `${form}:${field_name}.jsonld` , "@type": "@id" };
     });
@@ -114,7 +117,7 @@ function processRow(form, row, field_counter){
     // check Question ID and correct if needed
     let field_name = parseQuestionID(row['Question ID'], row, field_counter);
     rowData[schemaMap['Question ID']] = field_name;
-    console.log(117, field_name);
+    // console.log(117, field_name);
     Object.keys(row).forEach(current_key => {
 
         // get schema key from mapping.json corresponding to current_key
@@ -232,7 +235,6 @@ function processRow(form, row, field_counter){
         // insert non-existing mapping as is
         // else rowData[camelcase(current_key)] = row[current_key];
     });
-    // const field_name = row['Question ID'];
     order.push(field_name);
     // write to item_x file
     fs.writeFile('activities/' + form + '/items/' + field_name + '.jsonld', JSON.stringify(rowData, null, 4), function (err) {
@@ -252,6 +254,7 @@ function createFormSchema(form, formContextUrl) {
         "schema:description": `${form} schema`,
         "schema:schemaVersion": "0.0.1",
         "schema:version": "0.0.1",
+        "preamble": preambleObj[form],
         "branchLogic": {
             "javascript": blList
         },
@@ -311,13 +314,27 @@ function parseHtml(inputString) {
 }
 
 function parseQuestionID(QId, row, field_counter) {
-    console.log(312, QId, field_counter);
+    // console.log(312, QId, field_counter);
     if (QId !== '')
-        return Qid;
+        return QId;
     // when Question ID is null, assign it to QuestionnaireID_x
     else {
         // console.log(317, row['Questionnaire ID'] + '_' + field_counter);
-        return row['Questionnaire ID'] + '_' + field_counter;
+        // check if Questionnaire ID exists. If not abbreviate Questionnaire Name and get one.
+        if (row['Questionnaire ID'] !== '')
+            return row['Questionnaire ID'] + '_' + field_counter;
+        else {
+            abbreviate(row['Questionnaire Name'], field_counter);
+        }
     }
+
 }
 
+function abbreviate(QName, field_counter) {
+    // var toMatch = "The Columbia Impairment Scale-Self Report Version";
+    var result = QName.replace(/(\w)\w*\W*/g, function (_, i) {
+            return i.toUpperCase();
+        }
+    )
+    // console.log(66, result + '_' + field_counter);
+}
