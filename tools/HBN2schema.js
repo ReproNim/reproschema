@@ -5,10 +5,9 @@ const shell = require('shelljs');
 const camelcase = require('camelcase');
 const HTMLParser =  require ('node-html-parser');
 
-
 const schemaMap = {
     'Instructions': 'preamble',
-    //'Question Group Instruction': '',
+    //'Question Group Instruction': 'preamble',
     'Question (number optionally included)': 'question',
     'Question ID': 'skos:altLabel',
     'Response Type': 'inputType',
@@ -16,13 +15,13 @@ const schemaMap = {
     'Stevens\' level of measurement': 'type',
     // 'Position of \'0\'': 'Center',
     // 'Continuous or Discrete': 'Discrete',
-    // 'Range': '5',
 }
 const uiList = ['inputType', 'shuffle'];
 const responseList = ['type', 'minValue', 'maxValue', 'requiredValue', 'multipleChoice'];
 const defaultLanguage = 'en';
 const datas = {};
 const preambleObj = {};
+
 /* **************************************************************************************** */
 
 // Make sure we got a filename on the command line.
@@ -39,7 +38,6 @@ let order = [];
 let blList = [];
 let slList = [];
 let languages = [];
-
 let options = {
     delimiter: ',',
     headers: true,
@@ -48,16 +46,33 @@ let options = {
     escape: '"',
     ignoreEmpty: true
 };
-
+let field_counter;
 // get all field names and instrument name
 csv
     .fromStream(readStream, options)
     .on('data', function (data) {
+
+
         if (!datas[data['Questionnaire Name']]) {
+
+            field_counter = 0;
+
             datas[data['Questionnaire Name']] = [];
             // For each form, create directory structure - activities/form_name/items
             shell.mkdir('-p', 'activities/' + data['Questionnaire Name'] + '/items');
         }
+        // create new Questionnaire ID when it is null
+        if (data['Questionnaire ID'] === '') {
+            data['Questionnaire ID'] = abbreviate(data['Questionnaire Name']);
+            console.log(60, data['Questionnaire ID']);
+        }
+        field_counter = field_counter + 1;
+        // create new Question ID when it is null
+        if (data['Question ID'] === '') {
+            data['Question ID'] = data['Questionnaire ID'] + '_' + field_counter;
+            console.log(71, data['Question ID']);
+        }
+
         datas[data['Questionnaire Name']].push(data);
         // collect preamble for every form
         if (!preambleObj[data['Questionnaire Name']] && data['Instructions'] !== '')
@@ -89,11 +104,9 @@ function createFormContextSchema(form, rowList) {
     itemOBj[form] = `https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/${form}/items/`;
     let field_counter = 0;
     rowList.forEach( row => {
-        // console.log(86, row['Question (number optionally included)']);
         // check Question ID and correct if needed
-        field_counter = field_counter + 1;
-        let field_name = parseQuestionID(row['Question ID'], row, field_counter);
-        // console.log(90, field_name);
+        //field_counter = field_counter + 1;
+        let field_name = row['Question ID'];
         // define item_x urls to be inserted in context for the corresponding form
         itemOBj[field_name] = { "@id": `${form}:${field_name}.jsonld` , "@type": "@id" };
     });
@@ -115,9 +128,9 @@ function processRow(form, row, field_counter){
     rowData['@type'] = 'https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld';
 
     // check Question ID and correct if needed
-    let field_name = parseQuestionID(row['Question ID'], row, field_counter);
+    // let field_name = parseQuestionID(row['Question ID'], row, field_counter);
+    let field_name = row['Question ID'];
     rowData[schemaMap['Question ID']] = field_name;
-    // console.log(117, field_name);
     Object.keys(row).forEach(current_key => {
 
         // get schema key from mapping.json corresponding to current_key
@@ -330,11 +343,21 @@ function parseQuestionID(QId, row, field_counter) {
 
 }
 
-function abbreviate(QName, field_counter) {
+/*function abbreviate(QName, field_counter) {
+    // var toMatch = "The Columbia Impairment Scale-Self Report Version";
+    var result = QName.replace(/(\w)\w*\W*!/g, function (_, i) {
+            return i.toUpperCase();
+        }
+    )
+    console.log(66, result + '_' + field_counter);
+}*/
+
+function abbreviate(QName) {
     // var toMatch = "The Columbia Impairment Scale-Self Report Version";
     var result = QName.replace(/(\w)\w*\W*/g, function (_, i) {
             return i.toUpperCase();
         }
     )
-    // console.log(66, result + '_' + field_counter);
+    return result;
+    //console.log(66, QName, result);
 }
