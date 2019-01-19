@@ -56,7 +56,6 @@ csv
         if (!datas[data['Questionnaire Name']]) {
 
             field_counter = 0;
-
             datas[data['Questionnaire Name']] = [];
             // For each form, create directory structure - activities/form_name/items
             shell.mkdir('-p', 'activities/' + data['Questionnaire Name'] + '/items');
@@ -64,13 +63,11 @@ csv
         // create new Questionnaire ID when it is null
         if (data['Questionnaire ID'] === '') {
             data['Questionnaire ID'] = abbreviate(data['Questionnaire Name']);
-            console.log(60, data['Questionnaire ID']);
         }
         field_counter = field_counter + 1;
         // create new Question ID when it is null
         if (data['Question ID'] === '') {
             data['Question ID'] = data['Questionnaire ID'] + '_' + field_counter;
-            console.log(71, data['Question ID']);
         }
 
         datas[data['Questionnaire Name']].push(data);
@@ -85,12 +82,10 @@ csv
             let rowList = datas[form];
             createFormContextSchema(form, rowList);
             let formContextUrl = `https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/${form}/${form}_context.jsonld`;
-            let field_counter = 0;
             rowList.forEach( row => {
                 if(languages.length === 0){
                     languages = parseLanguageIsoCodes(row['Question (number optionally included)']);
                 }
-                field_counter = field_counter + 1;
                 processRow(form, row, field_counter);
             });
             createFormSchema(form, formContextUrl);
@@ -104,8 +99,6 @@ function createFormContextSchema(form, rowList) {
     itemOBj[form] = `https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/${form}/items/`;
     let field_counter = 0;
     rowList.forEach( row => {
-        // check Question ID and correct if needed
-        //field_counter = field_counter + 1;
         let field_name = row['Question ID'];
         // define item_x urls to be inserted in context for the corresponding form
         itemOBj[field_name] = { "@id": `${form}:${field_name}.jsonld` , "@type": "@id" };
@@ -126,22 +119,16 @@ function processRow(form, row, field_counter){
     let choiceList = [];
     rowData['@context'] = [schemaContextUrl];
     rowData['@type'] = 'https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld';
-
-    // check Question ID and correct if needed
-    // let field_name = parseQuestionID(row['Question ID'], row, field_counter);
     let field_name = row['Question ID'];
     rowData[schemaMap['Question ID']] = field_name;
     Object.keys(row).forEach(current_key => {
 
         // get schema key from mapping.json corresponding to current_key
         if (schemaMap.hasOwnProperty(current_key) && current_key !== 'Question ID') {
-            // if (schemaMap[current_key] === 'scoringLogic' && data[current_key] !== '')
 
             // check all ui elements to be nested under 'ui' key
             if (uiList.indexOf(schemaMap[current_key]) > -1) {
                 let uiValue = row[current_key];
-                /*if (current_key === 'Field Type' && row[current_key] === 'calc')
-                    uiValue = 'number';*/
 
                 if (rowData.hasOwnProperty('ui')) {
                     rowData.ui[schemaMap[current_key]] = uiValue;
@@ -150,10 +137,6 @@ function processRow(form, row, field_counter){
                     ui[schemaMap[current_key]] = uiValue;
                     rowData['ui'] = ui;
                 }
-            }
-            // when Question ID is null
-            else if ((schemaMap[current_key] === 'skos:altLabel' && row[current_key] === '')) {
-                field_name = row['Questionnaire ID'] + '_' + field_counter;
             }
             // parse choice field
             else if (schemaMap[current_key] === 'choices' & row[current_key] !== '') {
@@ -326,38 +309,10 @@ function parseHtml(inputString) {
     return result;
 }
 
-function parseQuestionID(QId, row, field_counter) {
-    // console.log(312, QId, field_counter);
-    if (QId !== '')
-        return QId;
-    // when Question ID is null, assign it to QuestionnaireID_x
-    else {
-        // console.log(317, row['Questionnaire ID'] + '_' + field_counter);
-        // check if Questionnaire ID exists. If not abbreviate Questionnaire Name and get one.
-        if (row['Questionnaire ID'] !== '')
-            return row['Questionnaire ID'] + '_' + field_counter;
-        else {
-            abbreviate(row['Questionnaire Name'], field_counter);
-        }
-    }
-
-}
-
-/*function abbreviate(QName, field_counter) {
-    // var toMatch = "The Columbia Impairment Scale-Self Report Version";
-    var result = QName.replace(/(\w)\w*\W*!/g, function (_, i) {
-            return i.toUpperCase();
-        }
-    )
-    console.log(66, result + '_' + field_counter);
-}*/
-
 function abbreviate(QName) {
-    // var toMatch = "The Columbia Impairment Scale-Self Report Version";
     var result = QName.replace(/(\w)\w*\W*/g, function (_, i) {
             return i.toUpperCase();
         }
     )
     return result;
-    //console.log(66, QName, result);
 }
