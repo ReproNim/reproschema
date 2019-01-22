@@ -5,10 +5,9 @@ const shell = require('shelljs');
 const camelcase = require('camelcase');
 const HTMLParser =  require ('node-html-parser');
 
-
 const schemaMap = {
-    //'Instructions': 'preamble',
-    //'Question Group Instruction': '',
+    'Instructions': 'preamble',
+    //'Question Group Instruction': 'preamble',
     'Question (number optionally included)': 'question',
     'Question ID': 'skos:altLabel',
     'Response Type': 'inputType',
@@ -16,12 +15,14 @@ const schemaMap = {
     'Stevens\' level of measurement': 'type',
     // 'Position of \'0\'': 'Center',
     // 'Continuous or Discrete': 'Discrete',
-    // 'Range': '5',
 }
 const uiList = ['inputType', 'shuffle'];
 const responseList = ['type', 'minValue', 'maxValue', 'requiredValue', 'multipleChoice'];
 const defaultLanguage = 'en';
 const datas = {};
+const sectionOrderObj = {};
+const preambleObj = {};
+
 /* **************************************************************************************** */
 
 // Make sure we got a filename on the command line.
@@ -34,11 +35,12 @@ let csvPath = process.argv[2];
 let readStream = fs.createReadStream(csvPath).setEncoding('utf-8');
 
 let schemaContextUrl = 'https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld';
+let currentForm = '';
+let QInstructionList = [];
 let order = [];
 let blList = [];
 let slList = [];
 let languages = [];
-
 let options = {
     delimiter: ',',
     headers: true,
@@ -47,85 +49,123 @@ let options = {
     escape: '"',
     ignoreEmpty: true
 };
-
+let field_counter;
 // get all field names and instrument name
 csv
     .fromStream(readStream, options)
     .on('data', function (data) {
-        if (!datas[data['Questionnaire Name']]) {
-            datas[data['Questionnaire Name']] = [];
-            // For each form, create directory structure - activities/form_name/items
-            shell.mkdir('-p', 'activities/' + data['Questionnaire Name'] + '/items');
-        }
-        datas[data['Questionnaire Name']].push(data);
 
+        let Questionnaire = (data['Questionnaire Name']).replace(/ +/g, "");
+        if (!datas[Questionnaire]) {
+
+            field_counter = 0;
+            datas[Questionnaire] = [];
+            // For each form, create directory structure - activities/form_name/items
+            shell.mkdir('-p', 'activities/' + Questionnaire + '/items');
+        }
+        // create new Questionnaire ID when it is null
+        if (data['Questionnaire ID'] === '') {
+            data['Questionnaire ID'] = abbreviate(data['Questionnaire Name']);
+        }
+        field_counter = field_counter + 1;
+        // create new Question ID when it is null
+        if (data['Question ID'] === '') {
+            data['Question ID'] = data['Questionnaire ID'] + '_' + field_counter;
+        }
+
+        datas[Questionnaire].push(data);
+
+        // collect preamble for every form
+        if (!preambleObj[data['Questionnaire Name']] && data['Instructions'] !== '')
+            preambleObj[data['Questionnaire Name']] = data['Instructions'];
+
+        // check new sections and act accordingly
+        if (data['Question Group Instruction'] !== '') {
+            let section = (data['Question Group Instruction']).replace(/ +/g, "");
+            if (QInstructionList.indexOf(section) === -1) {
+                QInstructionList.push(section);
+                // create directory structure for sections
+                shell.mkdir('-p', 'activities/' + Questionnaire + '/' + section);
+            }
+            // set order of fields in section
+            if (!sectionOrderObj[section])
+                sectionOrderObj[section] = [];
+            sectionOrderObj[section].push(data['Question ID']);
+        }
     })
     .on('end', function () {
-
         Object.keys(datas).forEach(form => {
+            order = [];
+            currentForm = form;
             let rowList = datas[form];
-            createFormContextSchema(form, rowList);
             let formContextUrl = `https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/${form}/${form}_context.jsonld`;
-            let field_counter = 0;
+            // define context schema object for each form
+            let contextOBj = { "@version": 1.1 };
+            contextOBj[form] = `https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/${form}/items/`;
             rowList.forEach( row => {
                 if(languages.length === 0){
                     languages = parseLanguageIsoCodes(row['Question (number optionally included)']);
                 }
-                field_counter = field_counter + 1;
-                processRow(form, row, field_counter);
-            });
+                let field_name = row['Question ID'];
+                // check if Question Group Instruction exist
+                if (row['Question Group Instruction'] !== '') {
+                    let sectionID = abbreviate(row['Question Group Instruction']);
+                    let sectionName = row['Question Group Instruction'].replace(/ +/g, "");
+                    // collect preamble for the section too
+                    if (!preambleObj[sectionID])
+                        preambleObj[sectionID] = row['Question Group Instruction'];
 
-            createFormSchema(form, formContextUrl);
+                    // create section schema
+                    createFormSchema(sectionName, formContextUrl, 0);
+                    // let field_name = sectionID; // to be used in the form context schema
+                    contextOBj[sectionID] = { "@id": `${form}/${sectionName}/${sectionName}.jsonld` , "@type": "@id" };
+                    if (order.indexOf(sectionID) === -1) {
+                        order.push(sectionID);
+                    }
+                }
+                else {
+                    // console.log(126,row['Question ID']);
+                    order.push(field_name);
+                }
+                // define item_x urls to be inserted in context for the corresponding form
+                contextOBj[field_name] = { "@id": `${form}:${field_name}.jsonld` , "@type": "@id" };
+
+                processRow(form, row);
+            });
+            // write context schema to file
+            let formContext = {'@context': contextOBj};
+            const fc = JSON.stringify(formContext, null, 4);
+            fs.writeFile(`activities/${form}/${form}_context.jsonld`, fc, function(err) {
+                if (err)
+                    console.log(err);
+                else console.log(`Context created for form ${form}`);
+            });
+            // generate each form schema
+            createFormSchema(form, formContextUrl, 1);
         });
     });
 
-function createFormContextSchema(form, rowList) {
-    // define context file for each form
-    let itemOBj = { "@version": 1.1 };
-    let formContext = {};
-    itemOBj[form] = `https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/${form}/items/`;
-    let field_counter = 0;
-    rowList.forEach( row => {
-        console.log(86, row['Question (number optionally included)']);
-        // check Question ID and correct if needed
-        field_counter = field_counter + 1;
-        let field_name = parseQuestionID(row['Question ID'], row, field_counter);
-        console.log(90, field_name);
-        // define item_x urls to be inserted in context for the corresponding form
-        itemOBj[field_name] = { "@id": `${form}:${field_name}.jsonld` , "@type": "@id" };
-    });
-    formContext['@context'] = itemOBj;
-    const fc = JSON.stringify(formContext, null, 4);
-    fs.writeFile(`activities/${form}/${form}_context.jsonld`, fc, function(err) {
-        if (err)
-            console.log(err);
-        else console.log(`Context created for form ${form}`);
-    });
+function createFormContextSchema(form, row, contextOBj) {
+
 }
 
-function processRow(form, row, field_counter){
+function processRow(form, row){
     let rowData = {};
     let ui = {};
     let rspObj = {};
     let choiceList = [];
     rowData['@context'] = [schemaContextUrl];
     rowData['@type'] = 'https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld';
-
-    // check Question ID and correct if needed
-    let field_name = parseQuestionID(row['Question ID'], row, field_counter);
+    let field_name = row['Question ID'];
     rowData[schemaMap['Question ID']] = field_name;
-    console.log(117, field_name);
     Object.keys(row).forEach(current_key => {
 
         // get schema key from mapping.json corresponding to current_key
         if (schemaMap.hasOwnProperty(current_key) && current_key !== 'Question ID') {
-            // if (schemaMap[current_key] === 'scoringLogic' && data[current_key] !== '')
 
             // check all ui elements to be nested under 'ui' key
             if (uiList.indexOf(schemaMap[current_key]) > -1) {
                 let uiValue = row[current_key];
-                /*if (current_key === 'Field Type' && row[current_key] === 'calc')
-                    uiValue = 'number';*/
 
                 if (rowData.hasOwnProperty('ui')) {
                     rowData.ui[schemaMap[current_key]] = uiValue;
@@ -134,10 +174,6 @@ function processRow(form, row, field_counter){
                     ui[schemaMap[current_key]] = uiValue;
                     rowData['ui'] = ui;
                 }
-            }
-            // when Question ID is null
-            else if ((schemaMap[current_key] === 'skos:altLabel' && row[current_key] === '')) {
-                field_name = row['Questionnaire ID'] + '_' + field_counter;
             }
             // parse choice field
             else if (schemaMap[current_key] === 'choices' & row[current_key] !== '') {
@@ -232,8 +268,6 @@ function processRow(form, row, field_counter){
         // insert non-existing mapping as is
         // else rowData[camelcase(current_key)] = row[current_key];
     });
-    // const field_name = row['Question ID'];
-    order.push(field_name);
     // write to item_x file
     fs.writeFile('activities/' + form + '/items/' + field_name + '.jsonld', JSON.stringify(rowData, null, 4), function (err) {
         if (err) {
@@ -242,16 +276,17 @@ function processRow(form, row, field_counter){
     });
 }
 
-function createFormSchema(form, formContextUrl) {
+function createFormSchema(activity, formContextUrl, formFlag) {
     let jsonLD = {
         "@context": [schemaContextUrl, formContextUrl],
         "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Activity.jsonld",
-        "@id": `${form}_schema`,
-        "skos:prefLabel": `${form }_schema`,
-        "skos:altLabel": `${form}_schema`,
-        "schema:description": `${form} schema`,
+        "@id": `${activity}_schema`,
+        "skos:prefLabel": `${activity }_schema`,
+        "skos:altLabel": `${activity}_schema`,
+        "schema:description": `${activity} schema`,
         "schema:schemaVersion": "0.0.1",
         "schema:version": "0.0.1",
+        "preamble": preambleObj[activity],
         "branchLogic": {
             "javascript": blList
         },
@@ -259,18 +294,30 @@ function createFormSchema(form, formContextUrl) {
             "javascript": slList
         },
         "ui": {
-            "order": order,
             "shuffle": false
         }
     };
-    const op = JSON.stringify(jsonLD, null, 4);
-    // console.log(269, jsonLD);
-    fs.writeFile(`activities/${form}/${form}_schema.jsonld`, op, function (err) {
-        if (err) {
-            console.log("error in writing form schema", err)
-        }
-        else console.log("Instrument schema created");
-    });
+
+    if (formFlag) { // form schema
+        jsonLD.ui['order'] = order;
+        const op = JSON.stringify(jsonLD, null, 4);
+        fs.writeFile(`activities/${activity}/${activity}_schema.jsonld`, op, function (err) {
+            if (err) {
+                console.log("error in writing form schema", err)
+            }
+            else console.log("Instrument schema created");
+        });
+    }
+    else { // section schema
+        jsonLD.ui['order'] = sectionOrderObj[activity]; // section order
+        const op = JSON.stringify(jsonLD, null, 4);
+        fs.writeFile(`activities/${currentForm}/${activity}/${activity}_schema.jsonld`, op, function (err) {
+            if (err) {
+                console.log("error in writing section schema", err)
+            }
+            else console.log("Section schema created");
+        });
+    }
 }
 
 function parseLanguageIsoCodes(inputString){
@@ -310,14 +357,10 @@ function parseHtml(inputString) {
     return result;
 }
 
-function parseQuestionID(QId, row, field_counter) {
-    console.log(312, QId, field_counter);
-    if (QId !== '')
-        return Qid;
-    // when Question ID is null, assign it to QuestionnaireID_x
-    else {
-        // console.log(317, row['Questionnaire ID'] + '_' + field_counter);
-        return row['Questionnaire ID'] + '_' + field_counter;
-    }
+function abbreviate(QName) {
+    var result = QName.replace(/(\w)\w*\W*/g, function (_, i) {
+            return i.toUpperCase();
+        }
+    )
+    return result;
 }
-

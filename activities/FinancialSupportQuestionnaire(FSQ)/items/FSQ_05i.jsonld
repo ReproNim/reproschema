@@ -1,0 +1,30 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+    "skos:altLabel": "FSQ_05i",
+    "question": {
+        "en": "Supplemental Nutrition Assistance Program (SNAP) Benefits"
+    },
+    "ui": {
+        "inputType": "Single Choice"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": "Yes"
+                }
+            },
+            {
+                "schema:value": 0,
+                "schema:name": {
+                    "en": "No"
+                }
+            }
+        ],
+        "type": "Nominal"
+    }
+}
