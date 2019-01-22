@@ -82,8 +82,8 @@ csv
         // check new sections and act accordingly
         if (data['Question Group Instruction'] !== '') {
             let section = (data['Question Group Instruction']).replace(/ +/g, "");
-            if (QInstructionList.indexOf(data['Question Group Instruction]']) === -1) {
-                QInstructionList.push(data['Question Group Instruction]']);
+            if (QInstructionList.indexOf(section) === -1) {
+                QInstructionList.push(section);
                 // create directory structure for sections
                 shell.mkdir('-p', 'activities/' + Questionnaire + '/' + section);
             }
@@ -106,6 +106,7 @@ csv
                 if(languages.length === 0){
                     languages = parseLanguageIsoCodes(row['Question (number optionally included)']);
                 }
+                let field_name = row['Question ID'];
                 // check if Question Group Instruction exist
                 if (row['Question Group Instruction'] !== '') {
                     let sectionID = abbreviate(row['Question Group Instruction']);
@@ -116,17 +117,17 @@ csv
 
                     // create section schema
                     createFormSchema(sectionName, formContextUrl, 0);
-                    let field_name = sectionID; // to be used in the form context schema
-                    contextOBj[field_name] = { "@id": `${form}/${sectionName}/${sectionName}.jsonld` , "@type": "@id" };
+                    // let field_name = sectionID; // to be used in the form context schema
+                    contextOBj[sectionID] = { "@id": `${form}/${sectionName}/${sectionName}.jsonld` , "@type": "@id" };
                     if (order.indexOf(sectionID) === -1) {
                         order.push(sectionID);
                     }
                 }
                 else {
+                    // console.log(126,row['Question ID']);
                     order.push(field_name);
                 }
                 // define item_x urls to be inserted in context for the corresponding form
-                let field_name = row['Question ID'];
                 contextOBj[field_name] = { "@id": `${form}:${field_name}.jsonld` , "@type": "@id" };
 
                 processRow(form, row);
@@ -298,7 +299,6 @@ function createFormSchema(activity, formContextUrl, formFlag) {
     };
 
     if (formFlag) { // form schema
-        console.log('form order: ', order);
         jsonLD.ui['order'] = order;
         const op = JSON.stringify(jsonLD, null, 4);
         fs.writeFile(`activities/${activity}/${activity}_schema.jsonld`, op, function (err) {
