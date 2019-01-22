@@ -85,7 +85,7 @@ csv
             if (QInstructionList.indexOf(section) === -1) {
                 QInstructionList.push(section);
                 // create directory structure for sections
-                shell.mkdir('-p', 'activities/' + Questionnaire + '/' + section);
+                //shell.mkdir('-p', 'activities/' + Questionnaire + '/' + section);
             }
             // set order of fields in section
             if (!sectionOrderObj[section])
@@ -118,7 +118,7 @@ csv
                     // create section schema
                     createFormSchema(sectionName, formContextUrl, 0);
                     // let field_name = sectionID; // to be used in the form context schema
-                    contextOBj[sectionID] = { "@id": `${form}/${sectionName}/${sectionName}.jsonld` , "@type": "@id" };
+                    contextOBj[sectionID] = { "@id": `${form}/${sectionName}.jsonld` , "@type": "@id" };
                     if (order.indexOf(sectionID) === -1) {
                         order.push(sectionID);
                     }
@@ -311,7 +311,7 @@ function createFormSchema(activity, formContextUrl, formFlag) {
     else { // section schema
         jsonLD.ui['order'] = sectionOrderObj[activity]; // section order
         const op = JSON.stringify(jsonLD, null, 4);
-        fs.writeFile(`activities/${currentForm}/${activity}/${activity}_schema.jsonld`, op, function (err) {
+        fs.writeFile(`activities/${currentForm}/${activity}_schema.jsonld`, op, function (err) {
             if (err) {
                 console.log("error in writing section schema", err)
             }
