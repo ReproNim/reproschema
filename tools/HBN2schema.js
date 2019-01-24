@@ -76,12 +76,16 @@ csv
         datas[Questionnaire].push(data);
 
         // collect preamble for every form
-        if (!preambleObj[data['Questionnaire Name']] && data['Instructions'] !== '')
-            preambleObj[data['Questionnaire Name']] = data['Instructions'];
+        if (!preambleObj[Questionnaire]) {
+            if (data['Instructions'] !== '') {
+                preambleObj[Questionnaire] = {'Instructions': data['Instructions']};
+            }
+            else preambleObj[Questionnaire] = {};
+        }
 
         // check new sections and act accordingly
         if (data['Question Group Instruction'] !== '') {
-            let section = (data['Question Group Instruction']).replace(/ +/g, "");
+            let section = (data['Question Group Instruction']).trim();
             if (QInstructionList.indexOf(section) === -1) {
                 QInstructionList.push(section);
                 // create directory structure for sections
@@ -98,6 +102,8 @@ csv
             order = [];
             currentForm = form;
             let rowList = datas[form];
+            let sectionList = [];
+            let sectionNumber = 1;
             let formContextUrl = `https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/${form}/${form}_context.jsonld`;
             // define context schema object for each form
             let contextOBj = { "@version": 1.1 };
@@ -109,22 +115,25 @@ csv
                 let field_name = row['Question ID'];
                 // check if Question Group Instruction exist
                 if (row['Question Group Instruction'] !== '') {
-                    let sectionID = abbreviate(row['Question Group Instruction']);
-                    let sectionName = row['Question Group Instruction'].replace(/ +/g, "");
+                    // let sectionID = abbreviate(row['Question Group Instruction']);
+                    // let sectionName = row['Question Group Instruction'].replace(/ +/g, "");
+                    row['Question Group Instruction'] = (row['Question Group Instruction']).trim();
                     // collect preamble for the section too
-                    if (!preambleObj[sectionID])
-                        preambleObj[sectionID] = row['Question Group Instruction'];
-
-                    // create section schema
-                    createFormSchema(sectionName, formContextUrl, 0);
-                    // let field_name = sectionID; // to be used in the form context schema
-                    contextOBj[sectionID] = { "@id": `${form}/${sectionName}.jsonld` , "@type": "@id" };
-                    if (order.indexOf(sectionID) === -1) {
-                        order.push(sectionID);
+                    if (sectionList.indexOf(row['Question Group Instruction']) === -1) {
+                        sectionList.push(row['Question Group Instruction']);
+                        let sectionName = `Section${sectionNumber}`;
+                        preambleObj[form][sectionName] = row['Question Group Instruction'];
+                        // create section schema
+                        createFormSchema(sectionName, formContextUrl, 0);
+                        // let field_name = sectionID; // to be used in the form context schema
+                        contextOBj[sectionName] = { "@id": `${form}/${sectionName}.jsonld` , "@type": "@id" };
+                        if (order.indexOf(sectionName) === -1) {
+                            order.push(sectionName);
+                        }
+                        sectionNumber++;
                     }
                 }
                 else {
-                    // console.log(126,row['Question ID']);
                     order.push(field_name);
                 }
                 // define item_x urls to be inserted in context for the corresponding form
@@ -144,10 +153,6 @@ csv
             createFormSchema(form, formContextUrl, 1);
         });
     });
-
-function createFormContextSchema(form, row, contextOBj) {
-
-}
 
 function processRow(form, row){
     let rowData = {};
@@ -265,8 +270,6 @@ function processRow(form, row){
             else if (row[current_key] !== '')
                 rowData[schemaMap[current_key]] = row[current_key];
         }
-        // insert non-existing mapping as is
-        // else rowData[camelcase(current_key)] = row[current_key];
     });
     // write to item_x file
     fs.writeFile('activities/' + form + '/items/' + field_name + '.jsonld', JSON.stringify(rowData, null, 4), function (err) {
@@ -286,7 +289,7 @@ function createFormSchema(activity, formContextUrl, formFlag) {
         "schema:description": `${activity} schema`,
         "schema:schemaVersion": "0.0.1",
         "schema:version": "0.0.1",
-        "preamble": preambleObj[activity],
+        "preamble": "",
         "branchLogic": {
             "javascript": blList
         },
@@ -299,6 +302,8 @@ function createFormSchema(activity, formContextUrl, formFlag) {
     };
 
     if (formFlag) { // form schema
+        if (preambleObj.hasOwnProperty(activity))
+            jsonLD.preamble = preambleObj[activity]['Instructions'];
         jsonLD.ui['order'] = order;
         const op = JSON.stringify(jsonLD, null, 4);
         fs.writeFile(`activities/${activity}/${activity}_schema.jsonld`, op, function (err) {
@@ -309,7 +314,10 @@ function createFormSchema(activity, formContextUrl, formFlag) {
         });
     }
     else { // section schema
-        jsonLD.ui['order'] = sectionOrderObj[activity]; // section order
+        if (preambleObj[currentForm].hasOwnProperty([activity]))
+            jsonLD.preamble = preambleObj[currentForm][activity];
+        let sectionorder = preambleObj[currentForm][activity];
+        jsonLD.ui['order'] = sectionOrderObj[sectionorder]; // section order
         const op = JSON.stringify(jsonLD, null, 4);
         fs.writeFile(`activities/${currentForm}/${activity}_schema.jsonld`, op, function (err) {
             if (err) {
