@@ -1,0 +1,37 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+    "skos:altLabel": "ASSQ_01",
+    "preamble": "This child stands out as different from other children of his/her age in the following way:",
+    "question": {
+        "en": "is old-fashioned or precocious"
+    },
+    "ui": {
+        "inputType": "Single Choice"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:value": 0,
+                "schema:name": {
+                    "en": "No"
+                }
+            },
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": "Somewhat"
+                }
+            },
+            {
+                "schema:value": 2,
+                "schema:name": {
+                    "en": "Yes"
+                }
+            }
+        ],
+        "type": "Ordinal"
+    }
+}

@@ -55,9 +55,8 @@ csv
     .fromStream(readStream, options)
     .on('data', function (data) {
 
-        let Questionnaire = (data['Questionnaire Name']).replace(/ +/g, "");
+        let Questionnaire = (data['Questionnaire Name']).replace(/[&\/\\#,+()$~%.'":*?<>{}, +]/g, '');
         if (!datas[Questionnaire]) {
-
             field_counter = 0;
             datas[Questionnaire] = [];
             // For each form, create directory structure - activities/form_name/items
@@ -86,11 +85,6 @@ csv
         // check new sections and act accordingly
         if (data['Question Group Instruction'] !== '') {
             let section = (data['Question Group Instruction']).trim();
-            if (QInstructionList.indexOf(section) === -1) {
-                QInstructionList.push(section);
-                // create directory structure for sections
-                //shell.mkdir('-p', 'activities/' + Questionnaire + '/' + section);
-            }
             // set order of fields in section
             if (!sectionOrderObj[section])
                 sectionOrderObj[section] = [];
@@ -115,8 +109,6 @@ csv
                 let field_name = row['Question ID'];
                 // check if Question Group Instruction exist
                 if (row['Question Group Instruction'] !== '') {
-                    // let sectionID = abbreviate(row['Question Group Instruction']);
-                    // let sectionName = row['Question Group Instruction'].replace(/ +/g, "");
                     row['Question Group Instruction'] = (row['Question Group Instruction']).trim();
                     // collect preamble for the section too
                     if (sectionList.indexOf(row['Question Group Instruction']) === -1) {
@@ -125,7 +117,6 @@ csv
                         preambleObj[form][sectionName] = row['Question Group Instruction'];
                         // create section schema
                         createFormSchema(sectionName, formContextUrl, 0);
-                        // let field_name = sectionID; // to be used in the form context schema
                         contextOBj[sectionName] = { "@id": `${form}/${sectionName}.jsonld` , "@type": "@id" };
                         if (order.indexOf(sectionName) === -1) {
                             order.push(sectionName);
