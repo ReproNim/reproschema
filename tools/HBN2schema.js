@@ -13,9 +13,13 @@ const schemaMap = {
     'Response Type': 'inputType',
     'Response Options': 'choices',
     'Stevens\' level of measurement': 'type',
-    // 'Position of \'0\'': 'Center',
-    // 'Continuous or Discrete': 'Discrete',
-}
+};
+const uiInputTypes = {
+    'single choice': 'radio',
+    'text entry': 'text',
+    'text entry.': 'text',
+    'numeric': 'number'
+};
 const uiList = ['inputType', 'shuffle'];
 const responseList = ['type', 'minValue', 'maxValue', 'requiredValue', 'multipleChoice'];
 const defaultLanguage = 'en';
@@ -156,13 +160,22 @@ function processRow(form, row){
     rowData[schemaMap['Question ID']] = field_name;
     Object.keys(row).forEach(current_key => {
 
-        // get schema key from mapping.json corresponding to current_key
         if (schemaMap.hasOwnProperty(current_key) && current_key !== 'Question ID') {
 
             // check all ui elements to be nested under 'ui' key
             if (uiList.indexOf(schemaMap[current_key]) > -1) {
-                let uiValue = row[current_key];
-
+                let uiValue = (row[current_key]).toLowerCase();
+                if (uiValue === 'single choice') {
+                    if (rowData.hasOwnProperty('responseOptions')) {
+                        rowData.responseOptions['multipleChoice'] = false;
+                    }
+                    else {
+                        rspObj['multipleChoice'] = false;
+                        rowData['responseOptions'] = rspObj;
+                    }
+                }
+                if (uiInputTypes.hasOwnProperty(uiValue))
+                    uiValue = uiInputTypes[uiValue];
                 if (rowData.hasOwnProperty('ui')) {
                     rowData.ui[schemaMap[current_key]] = uiValue;
                 }

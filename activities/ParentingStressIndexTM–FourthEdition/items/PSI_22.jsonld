@@ -7,10 +7,8 @@
     "question": {
         "en": "I feel that I am: (Choose a response from the choices below.) 1) a very good parent. 2) a better-than-average parent. 3) an average parent. 4) a person who has some trouble being a parent. 5) not very good at being a parent."
     },
-    "ui": {
-        "inputType": "Single Choice"
-    },
     "responseOptions": {
+        "multipleChoice": false,
         "choices": [
             {
                 "schema:value": 1,
@@ -34,5 +32,8 @@
             }
         ],
         "type": "Ordinal"
+    },
+    "ui": {
+        "inputType": "radio"
     }
 }
