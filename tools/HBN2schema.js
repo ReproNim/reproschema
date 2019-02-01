@@ -294,17 +294,21 @@ function createFormSchema(activity, formContextUrl, formFlag) {
         "schema:schemaVersion": "0.0.1",
         "schema:version": "0.0.1",
         "preamble": "",
-        "branchLogic": {
-            "javascript": blList
-        },
-        "scoringLogic": {
-            "javascript": slList
-        },
         "ui": {
             "shuffle": false
         }
     };
-
+    if (blList.length) {
+        console.log(301, blList);
+        jsonLD.branchLogic = {
+            "javascript": blList
+        };
+    }
+    if (slList.length) {
+        jsonLD.scoringLogic = {
+            "javascript": slList
+        };
+    }
     if (formFlag) { // form schema
         if (preambleObj.hasOwnProperty(activity))
             jsonLD.preamble = preambleObj[activity]['Instructions'];
