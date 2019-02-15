@@ -54,6 +54,7 @@ let options = {
     ignoreEmpty: true
 };
 let field_counter;
+let respVal;
 // get all field names and instrument name
 csv
     .fromStream(readStream, options)
@@ -165,12 +166,25 @@ function processRow(form, row){
             // check all ui elements to be nested under 'ui' key
             if (uiList.indexOf(schemaMap[current_key]) > -1) {
                 let uiValue = (row[current_key]).toLowerCase();
-                if (uiValue === 'single choice') {
+                if (uiValue === 'single choice' || uiValue === 'multiple choice') {
+                    if (uiValue === 'single choice')
+                        respVal = false;
+                    else if (uiValue === 'multiple choice')
+                        respVal = true;
                     if (rowData.hasOwnProperty('responseOptions')) {
-                        rowData.responseOptions['multipleChoice'] = false;
+                        rowData.responseOptions['multipleChoice'] = respVal;
                     }
                     else {
-                        rspObj['multipleChoice'] = false;
+                        rspObj['multipleChoice'] = respVal;
+                        rowData['responseOptions'] = rspObj;
+                    }
+                }
+                if (uiValue === 'multiple choice') {
+                    if (rowData.hasOwnProperty('responseOptions')) {
+                        rowData.responseOptions['multipleChoice'] = true;
+                    }
+                    else {
+                        rspObj['multipleChoice'] = true;
                         rowData['responseOptions'] = rspObj;
                     }
                 }
