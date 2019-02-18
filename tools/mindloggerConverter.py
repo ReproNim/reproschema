@@ -5,25 +5,20 @@ import json
 
 pp = pprint.PrettyPrinter(indent=4)
 
+# map mindlogger db schema keys to schema-standards
 schemaMap = {
 	"_id": "@id",
 	"_modelType": "@type",
 	"description": "schema:description",
 	"meta.abbreviation": "skos:altLabel",
-	"meta.description": "skos:prefLabel",
-	# "name": "Physical Health",
-	# "parentCollection": "folder",
-
+	"meta.description": "skos:prefLabel"
 }
 
 mindloggerapiUrl = 'https://api.mindlogger.info/api/v1'
-url = 'https://api.mindlogger.info/api/v1/folder/5bd88558336da80de9145b76'
+urlEMAPhysicalHealth = mindloggerapiUrl+ '/folder/5bd88558336da80de9145b76'
 
-form_schema = requests.get(url).json()
-meta_form_info = nested_lookup(
-	key='meta',
-	document=form_schema
-)
+form_schema = requests.get(urlEMAPhysicalHealth).json()
+meta_form_info = nested_lookup(key='meta', document=form_schema)
 form_dict = {
 	"@context": [
 		"https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld"
@@ -66,7 +61,10 @@ for key, value in meta_form_info[0].items():
 	else:
 		form_dict[mapped_key] = value
 
-with open('data.json', 'w') as fp:
+form_name = form_dict['skos:altLabel']
+form_name = ''.join(x for x in form_name.title() if not x.isspace())
+print (form_name)
+with open(form_name + '.jsonld', 'w') as fp:
 	json.dump(form_dict, fp, indent=4)
 
 itemMap = {
@@ -104,33 +102,34 @@ for item in form_schema['meta']['screens']:
 			val = value
 			item_dict[mapped_key] = value
 		elif key == 'meta':
-			meta_item_info = nested_lookup(
-				key='meta',
-				document=item_schema
-			)
-			for k, v in meta_item_info[0].items():
+			for k, v in value.items():
+				val = v
 				if k in itemMap:
 					mapped_key = itemMap[k]
 					val = v
 				elif k in item_ui.keys():
 					mapped_key = 'ui'
+					if k == 'surveyType' and v == 'list':
+						v = 'radio'
 					val = {item_ui[k]: v}
-					# val = {mapped_key: ui_obj}
 				elif k == 'survey':
 					mapped_key = 'responseOptions'
+					resp = {}
 					for ky, vl in v.items():
 						if ky in resp_items.keys():
-							v = vl
+							rk = resp_items[ky]
 							if ky == 'mode':  # MCQ
 								if vl == 'single':
-									v = 'false'  # one answer question
+									vl = 'false'  # one answer question
 								else:
-									v = 'true'  # multiple choice options
-							val.update({resp_items[ky]: v})
-						if mapped_key in item_dict:
-							item_dict[mapped_key].update(val)
-						else:
-							item_dict[mapped_key] = val
+									vl = 'true'  # multiple choice options
+							if ky == 'options':
+								new_vl = []
+								for c in vl:
+									new_vl.append({'schema:name': c['text']})
+								vl = new_vl
+							resp.update({rk: vl})
+					val = resp
 				else:
 					mapped_key = k
 					val = v
@@ -139,7 +138,5 @@ for item in form_schema['meta']['screens']:
 				else:
 					item_dict[mapped_key] = val
 
-		# pp.pprint(item_dict)
-
-	with open(item_schema['_id']+ '_schema.json', 'w') as fp:
+	with open(item_schema['_id'] + '_schema.jsonld', 'w') as fp:
 		json.dump(item_dict, fp, indent=4)
