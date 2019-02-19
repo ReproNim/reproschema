@@ -122,7 +122,7 @@ csv
                         preambleObj[form][sectionName] = row['Question Group Instruction'];
                         // create section schema
                         createFormSchema(sectionName, formContextUrl, 0);
-                        contextOBj[sectionName] = { "@id": `${form}/${sectionName}_schema.jsonld` , "@type": "@id" };
+                        contextOBj[sectionName] = { "@id": `${form}:${sectionName}_schema.jsonld` , "@type": "@id" };
                         if (order.indexOf(sectionName) === -1) {
                             order.push(sectionName);
                         }
