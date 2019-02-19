@@ -106,7 +106,7 @@ csv
             let formContextUrl = `https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/${form}/${form}_context.jsonld`;
             // define context schema object for each form
             let contextOBj = { "@version": 1.1 };
-            contextOBj[form] = `https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/${form}/items/`;
+            contextOBj[form] = `https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/${form}/`;
             rowList.forEach( row => {
                 if(languages.length === 0){
                     languages = parseLanguageIsoCodes(row['Question (number optionally included)']);
@@ -133,7 +133,7 @@ csv
                     order.push(field_name);
                 }
                 // define item_x urls to be inserted in context for the corresponding form
-                contextOBj[field_name] = { "@id": `${form}:${field_name}.jsonld` , "@type": "@id" };
+                contextOBj[field_name] = { "@id": `${form}:items/${field_name}.jsonld` , "@type": "@id" };
 
                 processRow(form, row);
             });
