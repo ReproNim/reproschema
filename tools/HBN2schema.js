@@ -16,8 +16,10 @@ const schemaMap = {
 };
 const uiInputTypes = {
     'single choice': 'radio',
+    'multiple choice': 'radio',
     'text entry': 'text',
     'text entry.': 'text',
+    'text entry. ': 'text',
     'numeric': 'number'
 };
 const uiList = ['inputType', 'shuffle'];
