@@ -1,0 +1,38 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/Voice-GeneralHealth/general_health_context.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+    "@id": "gh_12",
+    "skos:prefLabel": "Q12 of General Health Survey",
+    "skos:altLabel": "gh_12",
+    "schema:description": "Q12 of the General Health survey",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Are you currently pregnant?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "type": "xsd:string",
+        "multipleChoice": false,
+        "requiredValue": false,
+        "choices": [{
+            "schema:name": "Yes",
+            "schema:value": 1
+        },
+            {
+                "schema:name": "No",
+                "schema:value": 2
+            },
+            {
+                "schema:name": "Not sure",
+                "schema:value": 3
+            },
+            {
+                "schema:name": "Prefer not to answer",
+                "schema:value": 4
+            }
+        ]
+    }
+}
