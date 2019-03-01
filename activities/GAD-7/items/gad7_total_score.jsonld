@@ -1,0 +1,23 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/GAD-7/gad7_context.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+    "@id": "gad7_total_Score",
+    "skos:prefLabel": "Score of GAD-7 Questionnaire",
+    "skos:altLabel": "gad7_total_score",
+    "schema:description": "schema for total score of the GAD-7 Assessment",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "inputType": "xsd:int",
+        "readonly": true,
+        "hidden": true
+    },
+    "responseOptions": {
+        "type": "xsd:integer",
+        "requiredValue": false,
+        "minValue": 0,
+        "maxValue": 27
+    }
+}

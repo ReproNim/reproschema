@@ -1,0 +1,27 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/GAD-7/gad7_context.jsonld"
+    ],
+    "type": "xsd:integer",
+    "schema:minValue": 0,
+    "schema:maxValue": 3,
+    "multipleChoice": false,
+    "requiredValue": false,
+    "choices": [{
+        "schema:name": "Not at all",
+        "schema:value": 0
+    },
+    {
+        "schema:name": "Several days",
+        "schema:value": 1
+    },
+    {
+        "schema:name": "More than half the days",
+        "schema:value": 2
+    },
+    {
+        "schema:name": "Nearly everyday",
+        "schema:value": 3
+    }
+    ]
+}
