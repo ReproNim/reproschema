@@ -11,8 +11,8 @@
     "schema:version": "0.0.1",
     "ui": {
         "order": [
-            "nda_guid",
             "phq9_schema",
+            "nda_guid",
             "gad7_schema",
             "bads_schema",
             "promis_schema",
@@ -31,6 +31,14 @@
             "general_health_schema": "Questionnaire 4",
             "voice_task_schema": "Questionnaire 5",
             "voice_sample_schema": "Questionnaire 6"
+        },
+        "visibility": {
+            "phq9_schema": true,
+            "nda_guid": {
+              "method": "POST",
+              "url": "https://us-central1-dmriprep.cloudfunctions.net/mit_voice_pilot",
+              "payload": ["phq9_schema"]
+            }
         }
     }
 }
