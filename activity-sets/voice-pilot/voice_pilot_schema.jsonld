@@ -31,6 +31,14 @@
             "general_health_schema": "General Health",
             "voice_task_schema": "Voice Tasks",
             "voice_sample_schema": "Voice Passage"
+        },
+        "visibility": {
+            "phq9_schema": true,
+            "nda_guid": {
+              "method": "POST",
+              "url": "https://us-central1-dmriprep.cloudfunctions.net/mit_voice_pilot",
+              "payload": ["phq9_schema"]
+            }
         }
     }
 }
