@@ -1,0 +1,25 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/voice_task/voice_task_context.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+    "@id": "guided_speech",
+    "skos:prefLabel": "Guided speech",
+    "skos:altLabel": "guided speech",
+    "schema:description": "guided speech item for voice task",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Look at the map in the image below, and give directions in 1 min to another person over the phone as to how you would go from Start to End.",
+    "ui": {
+        "inputType": "audioImageRecord"
+    },
+    "responseOptions": {
+        "type": "audioImageRecord",
+        "schema:minValue": 0,
+        "schema:maxValue": 60000,
+        "schema:image": "https://drive.google.com/file/d/15-YDVpkCDuvCik9DggDAd_iyJce7lap8/view",
+        "multipleChoice": false,
+        "requiredValue": true
+    }
+}
