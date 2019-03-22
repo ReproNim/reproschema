@@ -4,20 +4,21 @@
         "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/NDA/nda_context.jsonld"
     ],
     "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
-    "@id": "birthDate",
-    "skos:prefLabel": "Date of birth",
-    "skos:altLabel": "birthDate",
-    "schema:description": "schema for Date of birth MM/DD/YYYY",
+    "@id": "birthDocument",
+    "skos:prefLabel": "Proof of city of birth",
+    "skos:altLabel": "birthPlace",
+    "schema:description": "schema for proof of birth place of participant",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
-    "question": "Date of birth",
+    "question": "Upload copy of birth certificate",
     "ui": {
-        "inputType": "date"
+        "inputType": "imageUpload"
     },
     "responseOptions": {
-        "type": "xsd:date",
-        "schema:maxValue": "new Date()"
+        "type": "xsd:string",
+        "maxLength": 50
     }
 }
+
 
 
