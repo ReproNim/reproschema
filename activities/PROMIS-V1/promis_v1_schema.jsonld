@@ -1,0 +1,35 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/PROMIS-V1/promis_v1_context.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Activity.jsonld",
+    "@id": "promis_v1_schema",
+    "skos:prefLabel": "PROMIS-V1 Assessment",
+    "skos:altLabel": "promis_v1_schema",
+    "schema:description": "PROMIS-V1 assessment schema",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": "Please read each statement carefully and then circle the number which best describes how much the statement was true for you DURING THE PAST WEEK, INCLUDING TODAY",
+    "scoringLogic": {
+        "javascript": "promis_v1_total_score = promis_v1_1 + promis_v1_2 + promis_v1_3 + promis_v1_4 + promis_v1_5 + promis_v1_6 + promis_v1_7 + promis_v1_8 + promis_v1_9"
+    },
+    "ui": {
+        "order": [
+            "promis_v1_1",
+            "promis_v1_2",
+            "promis_v1_3",
+            "promis_v1_4",
+            "promis_v1_5",
+            "promis_v1_6",
+            "promis_v1_7",
+            "promis_v1_8",
+            "promis_v1_9",
+            "promis_v1_10"
+        ],
+        "shuffle": false
+    }
+}
+
+
+
+
