@@ -1,0 +1,49 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/PROMIS-V2/promis_v2_context.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Activity.jsonld",
+    "@id": "promis_v2_schema",
+    "skos:prefLabel": "PROMIS-V2 Assessment",
+    "skos:altLabel": "promis_v2_schema",
+    "schema:description": "PROMIS-V2 assessment schema",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": "Please read each statement carefully and then circle the number which best describes how much the statement was true for you DURING THE PAST WEEK, INCLUDING TODAY",
+    "scoringLogic": {
+        "javascript": "promis_v2_total_score = promis_v2_1 + promis_v2_2 + promis_v2_3 + promis_v2_4 + promis_v2_5 + promis_v2_6 + promis_v2_7 + promis_v2_8 + promis_v2_9"
+    },
+    "ui": {
+        "order": [
+            "promis_v2_1",
+            "promis_v2_2",
+            "promis_v2_3",
+            "promis_v2_4",
+            "promis_v2_5",
+            "promis_v2_6",
+            "promis_v2_7",
+            "promis_v2_8",
+            "promis_v2_9",
+            "promis_v2_10",
+            "promis_v2_11",
+            "promis_v2_12",
+            "promis_v2_13",
+            "promis_v2_14",
+            "promis_v2_15",
+            "promis_v2_16",
+            "promis_v2_17",
+            "promis_v2_18",
+            "promis_v2_19",
+            "promis_v2_20",
+            "promis_v2_21",
+            "promis_v2_22",
+            "promis_v2_23",
+            "promis_v2_24"
+        ],
+        "shuffle": false
+    }
+}
+
+
+
+

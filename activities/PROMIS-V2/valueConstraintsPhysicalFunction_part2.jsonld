@@ -1,0 +1,31 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/PROMIS-V2/promis_v2_context.jsonld"
+    ],
+    "type": "xsd:integer",
+    "schema:minValue": 0,
+    "schema:maxValue": 4,
+    "multipleChoice": false,
+    "requiredValue": false,
+    "choices": [{
+        "schema:name": "Not at all",
+        "schema:value": 0
+    },
+        {
+            "schema:name": "Very little",
+            "schema:value": 1
+        },
+        {
+            "schema:name": "Somewhat",
+            "schema:value": 2
+        },
+        {
+            "schema:name": "Quite a lot",
+            "schema:value": 3
+        },
+        {
+            "schema:name": "Cannot do",
+            "schema:value": 4
+        }
+    ]
+}
