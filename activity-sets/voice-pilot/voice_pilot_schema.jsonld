@@ -15,6 +15,7 @@
             "nda_guid",
             "gad7_schema",
             "bads_schema",
+            "promis_v1_schema",
             "general_health_schema",
             "voice_task_schema",
             "voice_sample_schema"
@@ -26,7 +27,7 @@
             "nda_guid":  "Demographics",
             "gad7_schema":  "General anxiety",
             "bads_schema":  "Behavioral",
-            "promis_schema":  "Global Health v1",
+            "promis_v1_schema":  "Global Health v1",
             "general_health_schema": "General Health",
             "voice_task_schema": "Voice Tasks",
             "voice_sample_schema": "Voice Passage"
@@ -34,6 +35,36 @@
         "visibility": {
             "phq9_schema": true,
             "nda_guid": {
+              "method": "POST",
+              "url": "https://us-central1-dmriprep.cloudfunctions.net/mit_voice_pilot",
+              "payload": ["phq9_schema"]
+            },
+            "gad7_schema": {
+              "method": "POST",
+              "url": "https://us-central1-dmriprep.cloudfunctions.net/mit_voice_pilot",
+              "payload": ["phq9_schema"]
+            },
+            "bads_schema": {
+              "method": "POST",
+              "url": "https://us-central1-dmriprep.cloudfunctions.net/mit_voice_pilot",
+              "payload": ["phq9_schema"]
+            },
+            "promis_v1_schema": {
+              "method": "POST",
+              "url": "https://us-central1-dmriprep.cloudfunctions.net/mit_voice_pilot",
+              "payload": ["phq9_schema"]
+            },
+            "general_health_schema": {
+              "method": "POST",
+              "url": "https://us-central1-dmriprep.cloudfunctions.net/mit_voice_pilot",
+              "payload": ["phq9_schema"]
+            },
+            "voice_task_schema": {
+              "method": "POST",
+              "url": "https://us-central1-dmriprep.cloudfunctions.net/mit_voice_pilot",
+              "payload": ["phq9_schema"]
+            },
+            "voice_sample_schema": {
               "method": "POST",
               "url": "https://us-central1-dmriprep.cloudfunctions.net/mit_voice_pilot",
               "payload": ["phq9_schema"]
