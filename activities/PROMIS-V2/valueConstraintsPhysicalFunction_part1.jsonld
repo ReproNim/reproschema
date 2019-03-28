@@ -1,0 +1,31 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/PROMIS-V2/promis_v2_context.jsonld"
+    ],
+    "type": "xsd:integer",
+    "schema:minValue": 0,
+    "schema:maxValue": 4,
+    "multipleChoice": false,
+    "requiredValue": false,
+    "choices": [{
+        "schema:name": "Without any difficulty",
+        "schema:value": 0
+    },
+        {
+            "schema:name": "With a little difficulty",
+            "schema:value": 1
+        },
+        {
+            "schema:name": "With some difficulty",
+            "schema:value": 2
+        },
+        {
+            "schema:name": "With much difficulty",
+            "schema:value": 3
+        },
+        {
+            "schema:name": "Unable to do",
+            "schema:value": 4
+        }
+    ]
+}
