@@ -15,10 +15,11 @@
     },
     "responseOptions": {
         "type": "xsd:integer",
-        "multipleChoice": false,
+        "schema:minValue": "No pain",
+        "schema:maxValue": "Worst pain imaginable",
         "requiredValue": false,
         "choices": [{
-            "schema:name": "0 No pain",
+            "schema:name": "0",
             "schema:value": 5
         },
             {
@@ -58,7 +59,7 @@
                 "schema:value": 2
             },
             {
-                "schema:name": "10 Worst pain imaginable",
+                "schema:name": "10",
                 "schema:value": 1
             }
         ]
