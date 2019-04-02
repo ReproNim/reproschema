@@ -1,0 +1,27 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activity-sets/ema-hbn/ema-hbn_context.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/ActivitySet.jsonld",
+    "@id": "ema-hbn_schema",
+    "skos:prefLabel": "Healthy Brain Network: EMA",
+    "skos:altLabel": "ema-hbn",
+    "schema:description": "Daily questions about your child's physical and mental health",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "order": [
+            "ema_morning",
+            "ema_evening"
+        ],
+        "shuffle": false,
+        "activity_display_name": {
+            "ema_morning":  "Morning",
+            "ema_evening":  "Evening"
+        },
+        "visibility": {
+            "ema_morning": true,
+            "ema_evening": true
+        }
+    }
+}
