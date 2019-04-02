@@ -6,5 +6,4 @@
 * **BADS**
 * **PROMIS**
 * **General Health**
-* **Voice Task**
-* **Voice sample**
+* **Voice Tasks**
