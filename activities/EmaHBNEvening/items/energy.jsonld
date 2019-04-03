@@ -14,19 +14,21 @@
         "inputType": "slider"
     },
     "responseOptions": {
-        "@type": "xsd:anyURI",
-        "multipleChoice": false,
-        "schema:minValue": 0,
-        "schema:maxValue": 1,
+        "@type": "xsd:integer",
+        "schema:minValue": "very tired",
+        "schema:maxValue": "high energy",
+        "requiredValue": false,
         "choices": [{
-            "@type": "schema:Boolean",
-            "schema:name": "No",
+            "schema:name": "0",
             "schema:value": 0
         },
         {
-            "@type": "schema:Boolean",
-            "schema:name": "Yes",
+            "schema:name": "1",
             "schema:value": 1
+        },
+        {
+            "schema:name": "2",
+            "schema:value": 2
         }
         ]
     }
