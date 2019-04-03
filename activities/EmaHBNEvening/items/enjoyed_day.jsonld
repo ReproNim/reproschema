@@ -11,23 +11,36 @@
     "schema:version": "0.0.1",
     "question": "Did your child seem like they enjoyed the day?",
     "ui": {
-        "inputType": "radio"
+        "inputType": "slider"
     },
     "responseOptions": {
-        "@type": "xsd:anyURI",
-        "multipleChoice": false,
-        "schema:minValue": 0,
-        "schema:maxValue": 1,
+        "@type": "xsd:integer",
+        "schema:minValue": "No enjoyment or pleasure",
+        "schema:maxValue": "Really enjoying things",
+        "requiredValue": false,
         "choices": [{
-            "@type": "schema:Boolean",
-            "schema:name": "No",
+            "schema:name": "0",
             "schema:value": 0
         },
-            {
-                "@type": "schema:Boolean",
-                "schema:name": "Yes",
-                "schema:value": 1
-            }
+        {
+            "schema:name": "1",
+            "schema:value": 1
+        },
+        {
+            "schema:name": "2",
+            "schema:value": 2
+        },
+        {
+            "schema:name": "3",
+            "schema:value": 3
+        },
+        {
+            "schema:name": "4",
+            "schema:value": 4
+        },        {
+            "schema:name": "5",
+            "schema:value": 5
+        }
         ]
     }
 }
