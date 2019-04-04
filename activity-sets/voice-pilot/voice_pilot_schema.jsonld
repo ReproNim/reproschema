@@ -16,6 +16,7 @@
             "gad7_schema",
             "bads_schema",
             "promis_v1_schema",
+            "promis_v2_schema",
             "general_health_schema",
             "voice_task_schema"
         ],
@@ -50,6 +51,11 @@
               "method": "POST",
               "url": "https://us-central1-dmriprep.cloudfunctions.net/mit_voice_pilot",
               "payload": ["phq9_schema"]
+            },
+            "promis_v2_schema": {
+                "method": "POST",
+                "url": "https://us-central1-dmriprep.cloudfunctions.net/mit_voice_pilot",
+                "payload": ["phq9_schema"]
             },
             "general_health_schema": {
               "method": "POST",
