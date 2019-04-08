@@ -3,22 +3,16 @@
         "https://raw.githubusercontent.com/zaliqarosli/schema-standardization/2019-04-08-AddSubActivities/activities/PHQ-9-LORIS/phq9_context.jsonld"
     ],
     "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
-    "@id": "phq9_total_Score",
-    "skos:prefLabel": "Score of PHQ-9 Questionnaire",
-    "skos:altLabel": "phq9_total_score",
-    "schema:description": "schema for total score of the PHQ-9 Assessment",
+    "@id": "phq9_0",
+    "skos:prefLabel": "Header of PHQ-9 Questionnaire",
+    "skos:altLabel": "phq9_0",
+    "schema:description": "Header of the PHQ-9 Assessment",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
-    "question": "Total Score",
+    "question": "Questions of the PHQ-9 Questionnaire",
     "ui": {
-        "inputType": "static",
-        "readonly": true,
-        "hidden": true
+        "inputType": "header",
+        "headerLevel": 3
     },
-    "responseOptions": {
-        "type": "xsd:integer",
-        "requiredValue": false,
-        "minValue": 0,
-        "maxValue": 27
-    }
+    "responseOptions": null
 }

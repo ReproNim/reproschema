@@ -12,6 +12,36 @@
     },
     "@graph": [
         {
+            "@id": "skos:prefLabel",
+            "@type": "rdf:Property",
+            "rdfs:comment": "The long name of the instrument or item.",
+            "rdfs:label": "prefLabel",
+            "schema:domainIncludes": {
+                "@id": ""
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:Text"
+            },
+            "schema:sameAs": {
+                "@id": "http://www.w3.org/2004/02/skos/core#prefLabel"
+            }
+        },
+        {
+            "@id": "skos:altLabel",
+            "@type": "rdf:Property",
+            "rdfs:comment": "The short name of the instrument or item.",
+            "rdfs:label": "altLabel",
+            "schema:domainIncludes": {
+                "@id": ""
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:Text"
+            },
+            "schema:sameAs": {
+                "@id": "http://www.w3.org/2004/02/skos/core#altLabel"
+            }
+        },
+        {
             "@id": "schema:description",
             "@type": "rdf:Property",
             "owl:equivalentProperty": {
@@ -67,36 +97,6 @@
             ],
             "schema:sameAs": {
                 "@id": "https://schema.org/version"
-            }
-        },
-        {
-            "@id": "skos:prefLabel",
-            "@type": "rdf:Property",
-            "rdfs:comment": "The long name of the instrument or item.",
-            "rdfs:label": "prefLabel",
-            "schema:domainIncludes": {
-                "@id": ""
-            },
-            "schema:rangeIncludes": {
-                "@id": "schema:Text"
-            },
-            "schema:sameAs": {
-                "@id": "http://www.w3.org/2004/02/skos/core#prefLabel"
-            }
-        },
-        {
-            "@id": "skos:altLabel",
-            "@type": "rdf:Property",
-            "rdfs:comment": "The short name of the instrument or item.",
-            "rdfs:label": "altLabel",
-            "schema:domainIncludes": {
-                "@id": ""
-            },
-            "schema:rangeIncludes": {
-                "@id": "schema:Text"
-            },
-            "schema:sameAs": {
-                "@id": "http://www.w3.org/2004/02/skos/core#altLabel"
             }
         },
         {
