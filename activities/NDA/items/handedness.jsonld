@@ -5,31 +5,32 @@
     ],
     "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
     "@id": "gender",
-    "skos:prefLabel": "Sex of the subject",
-    "skos:altLabel": "gender",
-    "schema:description": "schema for Sex of the subject",
+    "skos:prefLabel": "Handedness of the subject",
+    "skos:altLabel": "handedness",
+    "schema:description": "schema for simple handedness of the subject",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
-    "question": "Sex",
+    "question": "Handedness",
     "ui": {
         "inputType": "radio"
     },
     "responseOptions": {
-        "@type": "xsd:anyURI",
+        "@type": "xsd:string",
         "multipleChoice": false,
         "schema:minValue": 0,
-        "schema:maxValue": 1,
+        "schema:maxValue": 2,
         "requiredValue": true,
         "choices": [{
-
-            "@type": "schema:Female",
-            "schema:name": "Female",
+            "schema:name": "Left",
             "schema:value": 0
-        },
+            },
             {
-                "@type": "schema:Male",
-                "schema:name": "Male",
+                "schema:name": "Right",
                 "schema:value": 1
+            },
+            {
+                "schema:name": "Ambidextrous",
+                "schema:value": 2
             }
         ]
     }
