@@ -1,0 +1,21 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/NDA/nda_context.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+    "@id": "mental_health",
+    "skos:prefLabel": "mental health diagnosis of participant",
+    "skos:altLabel": "mental_health",
+    "schema:description": "schema for mental health of participant",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Diagnosed with any mental-health disorder?",
+    "ui": {
+        "inputType": "text"
+    },
+    "responseOptions": {
+        "type": "xsd:string",
+        "maxLength": 50
+    }
+}
+
