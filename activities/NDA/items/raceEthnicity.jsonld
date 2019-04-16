@@ -17,7 +17,27 @@
     "responseOptions": {
         "type": "xsd:string",
         "requiredValue": false,
-        "maxLength": 50
+        "choices": [{
+            "schema:name": "American Indian or Alaska Native",
+            "schema:value": 0
+        },
+            {
+                "schema:name": "Asian",
+                "schema:value": 1
+            },
+            {
+                "schema:name": "Black or African American",
+                "schema:value": 2
+            },
+            {
+                "schema:name": "Native Hawaiian or Other Pacific Islander",
+                "schema:value": 3
+            },
+            {
+                "schema:name": "White",
+                "schema:value": 4
+            }
+        ]
     }
 }
 
