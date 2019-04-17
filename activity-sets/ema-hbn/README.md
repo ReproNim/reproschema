@@ -6,8 +6,7 @@
 
 
 As part of the Healthy Brain Network study, we want to collect daily information on your child's physical and mental health. 
-You will be asked a short set of questions twice a day. We will record the information and share it with you and our researchers
-so we can look for patterns in the data. These patterns may help you and your clinicians provide better care for your child.
+You will be asked a short set of questions twice a day. We will record the information and share it with you and our researchers so we can look for patterns in the data. These patterns may help you and your clinicians provide better care for your child.
 
 ## ☀️ Questions we'll ask in the morning
 
