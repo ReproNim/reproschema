@@ -1,6 +1,8 @@
 # Healthy Brain Network: Daily Assessments
 
-<img src="https://1kgzmckwpmb29d06l31nw6va-wpengine.netdna-ssl.com/wp-content/uploads/2015/02/child-mind-institute-hbn-logo.jpg" alt="drawing" width="200" />
+<div class="text-center mb-3 mt-3">
+  <img src="https://1kgzmckwpmb29d06l31nw6va-wpengine.netdna-ssl.com/wp-content/uploads/2015/02/child-mind-institute-hbn-logo.jpg" alt="drawing" width="200" />
+</div>
 
 
 As part of the Healthy Brain Network study, we want to collect daily information on your child's physical and mental health. 
