@@ -84,6 +84,20 @@
             "@type": "xsd:int",
             "@nest": "ui"
         },
+        "render": "@nest",
+        "table": "@nest",
+        "headers": {
+            "@id": "https://schema.repronim.org/tableheaders",
+            "@container": "@list",
+            "@type": "@vocab",
+            "@nest": "table"
+        },
+        "rows": {
+            "@id": "https://schema.repronim.org/tablerows",
+            "@container": "@list",
+            "@type": "@vocab",
+            "@nest": "table"
+        },
         "branchLogic": {
             "@id": "https://schema.repronim.org/branchLogic",
             "@container": "@index"
@@ -94,6 +108,16 @@
         },
         "visibility": {
             "@id": "https://schema.repronim.org/visibility",
+            "@container": "@index",
+            "@nest": "ui"
+        },
+        "required": {
+            "@id": "https://schema.repronim.org/required",
+            "@container": "@index",
+            "@nest": "ui"
+        },
+        "addStatus": {
+            "@id": "https://schema.repronim.org/addStatus",
             "@container": "@index",
             "@nest": "ui"
         },

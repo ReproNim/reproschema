@@ -1,0 +1,49 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/MedicalHistory-LORIS/medicalhistory_context.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Activity.jsonld",
+    "@id": "medicalhistory_sectionD",
+    "skos:prefLabel": "Section D of Medical History Instrument",
+    "skos:altLabel": "medicalhistory_sectionD",
+    "schema:description": "Section D of Medical History Instrument",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": "D. Neurological",
+    "ui": {
+        "inputType": "section",
+        "order": [
+            "medicalhistory_21",
+            "medicalhistory_21a_incident",
+            "medicalhistory_21a_hospitalized",
+            "medicalhistory_21a_age",
+            "medicalhistory_21b_incident",
+            "medicalhistory_21b_hospitalized",
+            "medicalhistory_21b_age",
+            "medicalhistory_21c_incident",
+            "medicalhistory_21c_hospitalized",
+            "medicalhistory_21c_age",
+            "medicalhistory_21d"
+        ],
+        "shuffle": false,
+        "render": {
+            "table": {
+                "preamble": "If YES, please fill out the table below, indicating: a) How many concussions have you experienced in your lifetime? b) For each incident, were you hospitalized? c) For each incident, how old were you?",
+                "headers": [
+                    "Incident",
+                    "Hospitalized?",
+                    "Age"
+                ],
+                "rows": [{
+                    "order": ["medicalhistory_21a_incident", "medicalhistory_21a_hospitalized", "medicalhistory_21a_age"]
+                },
+                {
+                    "order": ["medicalhistory_21b_incident", "medicalhistory_21b_hospitalized", "medicalhistory_21b_age"]
+                },
+                {
+                    "order": ["medicalhistory_21c_incident", "medicalhistory_21c_hospitalized", "medicalhistory_21c_age"]
+                }]
+            }
+        }
+    }
+}
