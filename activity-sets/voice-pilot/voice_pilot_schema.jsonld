@@ -11,7 +11,7 @@
     "schema:version": "0.0.1",
     "variableMap": [
         {"variableName": "voice_screening_schema", "isAbout": "voice_screening_schema"},
-        {"variableName": "nda_guid", "isAbout": "nda_guid"},
+        {"variableName": "demographics_schema", "isAbout": "demographics_schema"},
         {"variableName": "gad7_schema", "isAbout": "gad7_schema"},
         {"variableName": "bads_schema", "isAbout": "bads_schema"},
         {"variableName": "promis_schema", "isAbout": "promis_schema"},
@@ -20,7 +20,7 @@
     "ui": {
         "order": [
             "voice_screening_schema",
-            "nda_guid",
+            "demographics_schema",
             "gad7_schema",
             "bads_schema",
             "promis_schema",
@@ -29,7 +29,7 @@
         "shuffle": false,
         "activity_display_name": {
             "voice_screening_schema":  "Screening",
-            "nda_guid":  "Demographics",
+            "demographics_schema":  "Demographics",
             "gad7_schema":  "General anxiety",
             "bads_schema":  "Behavioral",
             "promis_schema":  "PROMIS Measure",
@@ -37,7 +37,7 @@
         },
         "visibility": {
             "voice_screening_schema": true,
-            "nda_guid": {
+            "demographics_schema": {
               "method": "POST",
               "url": "https://us-central1-dmriprep.cloudfunctions.net/mit_voice_pilot",
               "payload": ["voice_screening_schema"]
