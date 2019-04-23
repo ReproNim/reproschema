@@ -1,0 +1,33 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/VoiceScreening/voice_screening_context.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+    "@id": "education_level",
+    "skos:prefLabel": "Education level of participant",
+    "skos:altLabel": "education_level",
+    "schema:description": "schema for education level of participant",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "US High School Graduate",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "type": "xsd:string",
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "multipleChoice": false,
+        "requiredValue": true,
+        "choices": [{
+            "schema:name": "Yes",
+            "schema:value": 1
+        },
+            {
+                "schema:name": "No",
+                "schema:value": 0
+            }
+        ]
+    }
+}
+
