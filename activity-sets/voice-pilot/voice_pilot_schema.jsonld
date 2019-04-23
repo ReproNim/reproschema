@@ -11,7 +11,7 @@
     "schema:version": "0.0.1",
     "schema:image": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activity-sets/voice-pilot/mit_voice_pilot_applet_image.svg?sanitize=true",
     "variableMap": [
-        {"variableName": "phq9_schema", "isAbout": "phq9_schema"},
+        {"variableName": "voice_screening_schema", "isAbout": "voice_screening_schema"},
         {"variableName": "nda_guid", "isAbout": "nda_guid"},
         {"variableName": "gad7_schema", "isAbout": "gad7_schema"},
         {"variableName": "bads_schema", "isAbout": "bads_schema"},
@@ -20,7 +20,7 @@
     ],
     "ui": {
         "order": [
-            "phq9_schema",
+            "voice_screening_schema",
             "nda_guid",
             "gad7_schema",
             "bads_schema",
@@ -29,7 +29,7 @@
         ],
         "shuffle": false,
         "activity_display_name": {
-            "phq9_schema":  "Screening",
+            "voice_screening_schema":  "Screening",
             "nda_guid":  "Demographics",
             "gad7_schema":  "General anxiety",
             "bads_schema":  "Behavioral",
@@ -37,36 +37,36 @@
             "voice_task_schema": "Voice Tasks"
         },
         "visibility": {
-            "phq9_schema": true,
+            "voice_screening_schema": true,
             "nda_guid": {
               "method": "POST",
               "url": "https://us-central1-dmriprep.cloudfunctions.net/mit_voice_pilot",
-              "payload": ["phq9_schema"]
+              "payload": ["voice_screening_schema"]
             },
             "gad7_schema": {
               "method": "POST",
               "url": "https://us-central1-dmriprep.cloudfunctions.net/mit_voice_pilot",
-              "payload": ["phq9_schema"]
+              "payload": ["voice_screening_schema"]
             },
             "bads_schema": {
               "method": "POST",
               "url": "https://us-central1-dmriprep.cloudfunctions.net/mit_voice_pilot",
-              "payload": ["phq9_schema"]
+              "payload": ["voice_screening_schema"]
             },
             "promis_schema": {
               "method": "POST",
               "url": "https://us-central1-dmriprep.cloudfunctions.net/mit_voice_pilot",
-              "payload": ["phq9_schema"]
+              "payload": ["voice_screening_schema"]
             },
             "general_health_schema": {
               "method": "POST",
               "url": "https://us-central1-dmriprep.cloudfunctions.net/mit_voice_pilot",
-              "payload": ["phq9_schema"]
+              "payload": ["voice_screening_schema"]
             },
             "voice_task_schema": {
               "method": "POST",
               "url": "https://us-central1-dmriprep.cloudfunctions.net/mit_voice_pilot",
-              "payload": ["phq9_schema"]
+              "payload": ["voice_screening_schema"]
             }
         }
     }
