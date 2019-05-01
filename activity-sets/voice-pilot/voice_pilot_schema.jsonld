@@ -12,27 +12,36 @@
     "variableMap": [
         {"variableName": "voice_screening_schema", "isAbout": "voice_screening_schema"},
         {"variableName": "demographics_schema", "isAbout": "demographics_schema"},
+        {"variableName": "promis_global_schema", "isAbout": "promis_global_schema"},
+        {"variableName": "promis_mental_schema", "isAbout": "promis_mental_schema"},
+        {"variableName": "promis_physical_schema", "isAbout": "promis_physical_schema"},
         {"variableName": "gad7_schema", "isAbout": "gad7_schema"},
+        {"variableName": "cage_aid_schema", "isAbout": "cage_aid_schema"},
         {"variableName": "bads_schema", "isAbout": "bads_schema"},
-        {"variableName": "promis_schema", "isAbout": "promis_schema"},
         {"variableName": "voice_task_schema", "isAbout": "voice_task_schema"}
     ],
     "ui": {
         "order": [
             "voice_screening_schema",
             "demographics_schema",
+            "promis_global_schema",
+            "promis_mental_schema",
+            "promis_physical_schema",
             "gad7_schema",
+            "cage_aid_schema",
             "bads_schema",
-            "promis_schema",
             "voice_task_schema"
         ],
         "shuffle": false,
         "activity_display_name": {
             "voice_screening_schema":  "Screening",
             "demographics_schema":  "Demographics",
+            "promis_global_schema":  "PROMIS Measure",
+            "promis_mental_schema":  "PROMIS Mental",
+            "promis_physical_schema": "PROMIS Physical",
             "gad7_schema":  "General anxiety",
+            "cage_aid_schema": "CAGE AID",
             "bads_schema":  "Behavioral",
-            "promis_schema":  "PROMIS Measure",
             "voice_task_schema": "Voice Tasks"
         },
         "visibility": {
@@ -42,22 +51,32 @@
               "url": "https://us-central1-dmriprep.cloudfunctions.net/mit_voice_pilot",
               "payload": ["voice_screening_schema"]
             },
+            "promis_global_schema": {
+                "method": "POST",
+                "url": "https://us-central1-dmriprep.cloudfunctions.net/mit_voice_pilot",
+                "payload": ["voice_screening_schema"]
+            },
+            "promis_mental_schema": {
+                "method": "POST",
+                "url": "https://us-central1-dmriprep.cloudfunctions.net/mit_voice_pilot",
+                "payload": ["voice_screening_schema"]
+            },
+            "promis_physical_schema": {
+                "method": "POST",
+                "url": "https://us-central1-dmriprep.cloudfunctions.net/mit_voice_pilot",
+                "payload": ["voice_screening_schema"]
+            },
             "gad7_schema": {
               "method": "POST",
               "url": "https://us-central1-dmriprep.cloudfunctions.net/mit_voice_pilot",
               "payload": ["voice_screening_schema"]
             },
+            "cage_aid_schema": {
+                "method": "POST",
+                "url": "https://us-central1-dmriprep.cloudfunctions.net/mit_voice_pilot",
+                "payload": ["voice_screening_schema"]
+            },
             "bads_schema": {
-              "method": "POST",
-              "url": "https://us-central1-dmriprep.cloudfunctions.net/mit_voice_pilot",
-              "payload": ["voice_screening_schema"]
-            },
-            "promis_schema": {
-              "method": "POST",
-              "url": "https://us-central1-dmriprep.cloudfunctions.net/mit_voice_pilot",
-              "payload": ["voice_screening_schema"]
-            },
-            "general_health_schema": {
               "method": "POST",
               "url": "https://us-central1-dmriprep.cloudfunctions.net/mit_voice_pilot",
               "payload": ["voice_screening_schema"]

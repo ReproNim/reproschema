@@ -1,0 +1,32 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/CageAidAssessment/cage_aid_context.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+    "@id": "ca_1",
+    "skos:prefLabel": "Q1 of CAGE-AID Questionnaire",
+    "skos:altLabel": "ca_1",
+    "schema:description": "Q1 of the CAGE-AID Assessment",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Have you ever felt that you ought to cut down on your drinking or drug use? ",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "type": "xsd:integer",
+        "schema:minValue": "0",
+        "schema:maxValue": "1",
+        "requiredValue": false,
+        "choices": [{
+            "schema:name": "Yes",
+            "schema:value": 1
+        },
+            {
+                "schema:name": "No",
+                "schema:value": 0
+            }
+        ]
+    }
+
+}
