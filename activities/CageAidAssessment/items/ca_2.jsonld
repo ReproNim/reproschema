@@ -1,0 +1,32 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/CageAidAssessment/cage_aid_context.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+    "@id": "ca_2",
+    "skos:prefLabel": "Q2 of CAGE-AID Questionnaire",
+    "skos:altLabel": "ca_2",
+    "schema:description": "Q2 of the CAGE-AID Assessment",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Have people annoyed you by criticizing your drinking or drug use?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "type": "xsd:integer",
+        "schema:minValue": "0",
+        "schema:maxValue": "1",
+        "requiredValue": false,
+        "choices": [{
+            "schema:name": "Yes",
+            "schema:value": 1
+        },
+            {
+                "schema:name": "No",
+                "schema:value": 0
+            }
+        ]
+    }
+
+}
