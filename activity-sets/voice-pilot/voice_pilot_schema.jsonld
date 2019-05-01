@@ -46,46 +46,14 @@
         },
         "visibility": {
             "voice_screening_schema": true,
-            "demographics_schema": {
-              "method": "POST",
-              "url": "https://us-central1-dmriprep.cloudfunctions.net/mit_voice_pilot",
-              "payload": ["voice_screening_schema"]
-            },
-            "promis_global_schema": {
-                "method": "POST",
-                "url": "https://us-central1-dmriprep.cloudfunctions.net/mit_voice_pilot",
-                "payload": ["voice_screening_schema"]
-            },
-            "promis_mental_schema": {
-                "method": "POST",
-                "url": "https://us-central1-dmriprep.cloudfunctions.net/mit_voice_pilot",
-                "payload": ["voice_screening_schema"]
-            },
-            "promis_physical_schema": {
-                "method": "POST",
-                "url": "https://us-central1-dmriprep.cloudfunctions.net/mit_voice_pilot",
-                "payload": ["voice_screening_schema"]
-            },
-            "gad7_schema": {
-              "method": "POST",
-              "url": "https://us-central1-dmriprep.cloudfunctions.net/mit_voice_pilot",
-              "payload": ["voice_screening_schema"]
-            },
-            "cage_aid_schema": {
-                "method": "POST",
-                "url": "https://us-central1-dmriprep.cloudfunctions.net/mit_voice_pilot",
-                "payload": ["voice_screening_schema"]
-            },
-            "bads_schema": {
-              "method": "POST",
-              "url": "https://us-central1-dmriprep.cloudfunctions.net/mit_voice_pilot",
-              "payload": ["voice_screening_schema"]
-            },
-            "voice_task_schema": {
-              "method": "POST",
-              "url": "https://us-central1-dmriprep.cloudfunctions.net/mit_voice_pilot",
-              "payload": ["voice_screening_schema"]
-            }
+            "demographics_schema": true,
+            "promis_global_schema": true,
+            "promis_mental_schema": true,
+            "promis_physical_schema": true,
+            "gad7_schema": true,
+            "cage_aid_schema": true,
+            "bads_schema": true,
+            "voice_task_schema": true
         }
     }
 }
