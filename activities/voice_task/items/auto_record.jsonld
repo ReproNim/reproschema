@@ -1,0 +1,23 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/voice_task/voice_task_context.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+    "@id": "pataka",
+    "skos:prefLabel": "Say pataka",
+    "skos:altLabel": "pataka",
+    "schema:description": "pataka task",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Say something to test microphone",
+    "ui": {
+        "inputType": "audioAutoRecord"
+    },
+    "responseOptions": {
+        "type": "audioAutoRecord",
+        "schema:minValue": 0,
+        "schema:maxValue": 60000,
+        "requiredValue": true
+    }
+}
