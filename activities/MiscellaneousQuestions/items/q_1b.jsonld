@@ -1,0 +1,34 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/MiscellaneousQuestions/other_questions_context.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+    "@id": "q_1b",
+    "skos:prefLabel": "Q1b of Other Questions",
+    "skos:altLabel": "q_1b",
+    "schema:description": "Q1b of the Other Questions Assessment",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Are you taking any medication to manage your mental health?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "type": "xsd:integer",
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "multipleChoice": false,
+        "requiredValue": false,
+        "choices": [
+            {
+                "schema:name": "Yes",
+                "schema:value": 1
+            },
+            {
+                "schema:name": "No",
+                "schema:value": 0
+            }
+        ]
+    }
+}
