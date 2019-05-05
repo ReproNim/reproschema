@@ -1,0 +1,55 @@
+schema:ActivityShape
+    a sh:NodeShape ;
+    sh:targetClass schema:Activity ;
+    sh:property [
+        sh:path schema:description ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path schema:schemaVersion;
+        sh:node schema:SchemaVersionShape ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path schema:version ;
+        sh:node schema:VersionShape ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path skos:prefLabel ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path skos:altLabel ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path repronim:question;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path repronim:ui ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:node repronim:UiShape ;
+    ] .
+
+repronim:UiShape
+    a sh:NodeShape ;
+    sh:property [
+        sh:path repronim:inputType ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:string ;
+    ] .
+

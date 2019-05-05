@@ -1,0 +1,101 @@
+schema:ActivityShape
+    a sh:NodeShape ;
+    sh:targetClass schema:Activity ;
+    sh:property [
+        sh:path schema:description ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path schema:schemaVersion;
+        sh:node schema:SchemaVersionShape ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path schema:version ;
+        sh:node schema:VersionShape ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path skos:prefLabel ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+            sh:path skos:altLabel ;
+            sh:datatype xsd:string ;
+            sh:minCount 1 ;
+            sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path repronim:preamble;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path repronim:scoringLogic;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:node repronim:ScoringLogicShape ;
+        ] ;
+    sh:property [
+        sh:path repronim:branchLogic;
+        sh:maxCount 1 ;
+        sh:node repronim:BranchLogicShape ;
+    ] ;
+    sh:property [
+        sh:path repronim:variableMap;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:node repronim:VariableMapShape ;
+    ] ;
+    sh:property [
+        sh:path repronim:ui ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:node repronim:UiShape ;
+    ] .
+
+repronim:UiShape
+    a sh:NodeShape ;
+    sh:property [
+        sh:path repronim:order ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:node repronim:OrderShape ;
+    ] ;
+    sh:property [
+        sh:path repronim:shuffle ;
+        sh:datatype schema:boolean ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path repronim:visibility ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:node repronim:VisibilityShape ;
+    ] .
+
+repronim:ScoringLogicShape
+    a sh:NodeShape ;
+    sh:property [
+
+    ] .
+
+repronim:BranchLogicShape
+    a sh:NodeShape ;
+    sh:property [
+
+    ] .
+
+repronim:VariableMapShape
+    a sh:NodeShape ;
+    sh:property [
+
+    ] .
+
