@@ -14,6 +14,18 @@
     },
     "scoringLogic": {
     },
+    "variableMap": [
+        {"variableName": "multipart_audio_check", "isAbout": "multipart_audio_check"},
+        {"variableName": "say_ah", "isAbout": "say_ah"},
+        {"variableName": "pataka", "isAbout": "pataka"},
+        {"variableName": "guided_speech", "isAbout": "guided_speech"},
+        {"variableName": "free_speech", "isAbout": "free_speech"},
+        {"variableName": "rainbow_passage", "isAbout": "rainbow_passage"},
+        {"variableName": "multipart_voice", "isAbout": "multipart_voice"},
+        {"variableName": "feedback_question", "isAbout": "feedback_question"},
+        {"variableName": "feedback_yes", "isAbout": "feedback_yes"},
+        {"variableName": "feedback_brief", "isAbout": "feedback_brief"}
+    ],
     "ui": {
         "order": [
             "multipart_audio_check",
@@ -23,9 +35,23 @@
             "free_speech",
             "rainbow_passage",
             "multipart_voice",
-            "feedback_question"
+            "feedback_question",
+            "feedback_yes",
+            "feedback_brief"
         ],
         "shuffle": true,
+        "visibility": {
+            "multipart_audio_check": true,
+            "say_ah": true,
+            "pataka": true,
+            "guided_speech": true,
+            "free_speech": true,
+            "rainbow_passage": true,
+            "multipart_voice": true,
+            "feedback_question": true,
+            "feedback_yes": true,
+            "feedback_brief": true
+        },
         "allow": ["skipped", "dontKnow"]
     }
 }
