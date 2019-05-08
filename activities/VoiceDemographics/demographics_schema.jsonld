@@ -13,8 +13,9 @@
     "variableMap": [
         {"variableName": "yearOfBirth", "isAbout": "yearOfBirth"},
         {"variableName": "raceEthnicity", "isAbout": "raceEthnicity"},
-        {"variableName": "state", "isAbout": "state"},
         {"variableName": "countryOfBirth", "isAbout": "countryOfBirth"},
+        {"variableName": "stateOfBirth", "isAbout": "stateOfBirth"},
+        {"variableName": "stateOfResidence", "isAbout": "stateOfResidence"},
         {"variableName": "knownLanguages", "isAbout": "knownLanguages"},
         {"variableName": "fluentLanguages", "isAbout": "fluentLanguages"}
     ],
@@ -23,7 +24,8 @@
             "yearOfBirth",
             "raceEthnicity",
             "countryOfBirth",
-            "state",
+            "stateOfBirth",
+            "stateOfResidence",
             "knownLanguages",
             "fluentLanguages"
         ],
@@ -32,7 +34,8 @@
             "yearOfBirth":  true,
             "raceEthnicity": true,
             "countryOfBirth": true,
-            "state": true,
+            "stateOfBirth": "countryOfBirth == 'United States'",
+            "stateOfResidence": true,
             "knownLanguages": true,
             "fluentLanguages": true
         },
