@@ -1,0 +1,22 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/voice_task/voice_task_context.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+    "@id": "feedback_brief",
+    "skos:prefLabel": "Feedback described in brief",
+    "skos:altLabel": "feedback_brief",
+    "schema:description": "schema for feedback on voice tasks described in brief",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Would you like to briefly tell us what specific aspect of <<user selected test>> did you like?",
+    "ui": {
+        "inputType": "text"
+    },
+
+    "responseOptions": {
+        "type": "xsd:string",
+        "requiredValue": false,
+        "maxLength": 500
+    }
+}
