@@ -50,7 +50,7 @@
             "multipart_voice": true,
             "feedback_question": true,
             "feedback_yes": "feedback_question == 1",
-            "feedback_brief": "feedback_yes !== 7"
+            "feedback_brief": "feedback_question == 1 && feedback_yes !== 7"
         },
         "inputs": {
             "feedback_brief": {
