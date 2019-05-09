@@ -1,0 +1,118 @@
+{
+  "@context": [
+    "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld"
+  ],
+  "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+  "@id": "flanker_practice",
+  "skos:prefLabel": "Flanker Practice",
+  "skos:altLabel": "flanker_practice",
+  "schema:description": "Flanker practice",
+  "schema:schemaVersion": "0.0.1",
+  "schema:version": "0.0.1",
+  "ui": {
+    "inputType": "visual-stimulus-response"
+  },
+  "inputs": [
+    {
+      "@type": "schema:ItemList",
+      "schema:name": "trials",
+      "schema:numberOfItems": 4,
+      "schema:itemListElement": [
+        {
+          "@type": "schema:Property",
+          "schema:name": "congruent-left",
+          "schema:image": "<img src='https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/FlankerExample/items/congruent-left.png' />",
+          "responseOptions": {
+            "@type": "xsd:anyURI",
+            "choices": [
+              {
+                "@type": "schema:Number",
+                "schema:name": "<img alt='left' src='https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/FlankerExample/items/arrow-left-white.png' />",
+                "schema:value": 0
+              },
+              {
+                "@type": "schema:Number",
+                "schema:name": "<img alt='right' src='https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/FlankerExample/items/arrow-right-white.png' />",
+                "schema:value": 1
+              }
+            ]
+          },
+          "schema:value": 0
+        },
+        {
+          "@type": "schema:Property",
+          "schema:name": "incongruent-left",
+          "schema:image": "<img src='https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/FlankerExample/items/incongruent-left.png' />",
+          "responseOptions": {
+            "@type": "xsd:anyURI",
+            "choices": [
+              {
+                "@type": "schema:Number",
+                "schema:name": "<img alt='left' src='https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/FlankerExample/items/arrow-left-white.png' />",
+                "schema:value": 0
+              },
+              {
+                "@type": "schema:Number",
+                "schema:name": "<img alt='right' src='https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/FlankerExample/items/arrow-right-white.png' />",
+                "schema:value": 1
+              }
+            ]
+          },
+          "schema:value": 0
+        },
+        {
+          "@type": "schema:Property",
+          "schema:name": "congruent-right",
+          "schema:image": "<img src='https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/FlankerExample/items/congruent-right.png' />",
+          "responseOptions": {
+            "@type": "xsd:anyURI",
+            "choices": [
+              {
+                "@type": "schema:Number",
+                "schema:name": "<img alt='left' src='https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/FlankerExample/items/arrow-left-white.png' />",
+                "schema:value": 0
+              },
+              {
+                "@type": "schema:Number",
+                "schema:name": "<img alt='right' src='https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/FlankerExample/items/arrow-right-white.png' />",
+                "schema:value": 1
+              }
+            ]
+          },
+          "schema:value": 1
+        },
+        {
+          "@type": "schema:Property",
+          "schema:name": "incongruent-right",
+          "schema:image": "<img src='https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/FlankerExample/items/incongruent-right.png' />",
+          "responseOptions": {
+            "@type": "xsd:anyURI",
+            "choices": [
+              {
+                "@type": "schema:Number",
+                "schema:name": "<img alt='left' src='https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/FlankerExample/items/arrow-left-white.png' />",
+                "schema:value": 0
+              },
+              {
+                "@type": "schema:Number",
+                "schema:name": "<img alt='right' src='https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/FlankerExample/items/arrow-right-white.png' />",
+                "schema:value": 1
+              }
+            ]
+          },
+          "schema:value": 1
+        }
+      ]
+    },
+    {
+      "@type": "schema:Text",
+      "schema:name": "samplingMethod",
+      "schema:value": "fixed-repetitions"
+    },
+    {
+      "@type": "schema:Number",
+      "schema:name": "sampleSize",
+      "schema:value": 3
+    }
+  ]
+}
