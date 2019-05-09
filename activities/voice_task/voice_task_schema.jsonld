@@ -49,8 +49,13 @@
             "rainbow_passage": true,
             "multipart_voice": true,
             "feedback_question": true,
-            "feedback_yes": true,
-            "feedback_brief": true
+            "feedback_yes": "feedback_question == 1",
+            "feedback_brief": "feedback_yes"
+        },
+        "inputs": {
+            "feedback_brief": {
+                "user_selected_text": "feedback_yes"
+            }
         },
         "allow": ["skipped", "dontKnow"]
     }
