@@ -48,17 +48,17 @@
         "shuffle": false,
         "visibility": {
             "education_level": true,
-            "phq9_1": true,
-            "phq9_2": true,
-            "phq9_3": true,
-            "phq9_4": true,
-            "phq9_5": true,
-            "phq9_6": true,
-            "phq9_7": true,
-            "phq9_8": true,
-            "phq9_9": true,
-            "phq9_10": "phq9_1 > 0 ||  phq9_2 > 0 || phq9_3 > 0 || phq9_4 > 0 || phq9_5 > 0 || phq9_6 > 0 || phq9_7 > 0 || phq9_8 > 0 || phq9_9 > 0",
-            "gender": true
+            "phq9_1": "education_level === 1",
+            "phq9_2": "education_level === 1",
+            "phq9_3": "education_level === 1",
+            "phq9_4": "education_level === 1",
+            "phq9_5": "education_level === 1",
+            "phq9_6": "education_level === 1",
+            "phq9_7": "education_level === 1",
+            "phq9_8": "education_level === 1",
+            "phq9_9": "education_level === 1",
+            "phq9_10": "education_level === 1 && (phq9_1 > 0 ||  phq9_2 > 0 || phq9_3 > 0 || phq9_4 > 0 || phq9_5 > 0 || phq9_6 > 0 || phq9_7 > 0 || phq9_8 > 0 || phq9_9 > 0)",
+            "gender": "education_level === 1"
         }
     }
 }
