@@ -1,6 +1,6 @@
 {
     "@context": [ "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
-        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/PHQ-9/phq9_context.jsonld"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/PHQ-9-LORIS/phq9_context.jsonld"
     ],
     "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
     "@id": "phq9_total_Score",
@@ -9,8 +9,9 @@
     "schema:description": "schema for total score of the PHQ-9 Assessment",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
+    "question": "Total Score",
     "ui": {
-        "inputType": "xsd:int",
+        "inputType": "static",
         "readonly": true,
         "hidden": true
     },
