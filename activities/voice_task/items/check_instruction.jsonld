@@ -9,12 +9,12 @@
     "schema:description": "schema for Audio Check instructions",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
-    "question": "Test your microphone in the next screen. if qualified, then you can carry out the upcoming voice tasks. Click on the start button",
+    "question": "Please record your voice to test your microphone. Click on the start button and then say something.",
     "ui": {
-        "inputType": "static"
+        "inputType": "buttonStart"
     },
     "responseOptions": {
-        "type": "xsd:string",
+        "type": "xsd:boolean",
         "schema:minValue": 0,
         "schema:maxValue": 1,
         "requiredValue": true
