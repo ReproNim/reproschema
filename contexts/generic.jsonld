@@ -45,7 +45,12 @@
         },
         "responseOptions": {
             "@id": "repronim:valueconstraints",
-            "@type": "@id"
+            "@type": "@vocab"
+        },
+        "statusOptions": {
+            "@id": "https://schema.repronim.org/statusOptions",
+            "@container": "@list",
+            "@type": "@vocab"
         },
         "ui" : "@nest",
         "order": {
@@ -57,12 +62,6 @@
         "shuffle": {
             "@id": "https://schema.repronim.org/shuffle",
             "@type": "schema:Boolean",
-            "@nest": "ui"
-        },
-        "allow": {
-            "@id": "https://schema.repronim.org/allow",
-            "@container": "@list",
-            "@type": "@vocab",
             "@nest": "ui"
         },
         "activity_display_name": {
@@ -78,6 +77,11 @@
         "inputType": {
             "@id": "https://schema.repronim.org/inputType",
             "@type": "xsd:string",
+            "@nest": "ui"
+        },
+        "headerLevel": {
+            "@id": "https://schema.repronim.org/headerLevel",
+            "@type": "xsd:int",
             "@nest": "ui"
         },
         "branchLogic": {
@@ -101,6 +105,16 @@
         "isAbout": {
             "@id": "https://schema.repronim.org/isAbout",
             "@type": "@vocab"
+        },
+        "required": {
+            "@id": "https://schema.repronim.org/required",
+            "@container": "@index",
+            "@nest": "ui"
+        },
+        "addStatus": {
+            "@id": "https://schema.repronim.org/addStatus",
+            "@container": "@index",
+            "@nest": "ui"
         },
         "skipped": "https://schema.repronim.org/refused_to_answer",
         "dontKnow": "https://schema.repronim.org/dont_know_answer",

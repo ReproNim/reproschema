@@ -11,6 +11,36 @@
     },
     "@graph": [
         {
+            "@id": "skos:prefLabel",
+            "@type": "rdf:Property",
+            "rdfs:comment": "The long name of the instrument or item.",
+            "rdfs:label": "prefLabel",
+            "schema:domainIncludes": {
+                "@id": ""
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:Text"
+            },
+            "schema:sameAs": {
+                "@id": "http://www.w3.org/2004/02/skos/core#prefLabel"
+            }
+        },
+        {
+            "@id": "skos:altLabel",
+            "@type": "rdf:Property",
+            "rdfs:comment": "The short name of the instrument or item.",
+            "rdfs:label": "shortName",
+            "schema:domainIncludes": {
+                "@id": ""
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:Text"
+            },
+            "schema:sameAs": {
+                "@id": "http://www.w3.org/2004/02/skos/core#altLabel"
+            }
+        },
+        {
             "@id": "schema:description",
             "@type": "rdf:Property",
             "owl:equivalentProperty": {
@@ -69,22 +99,7 @@
             }
         },
         {
-            "@id": "skos:altLabel",
-            "@type": "rdf:Property",
-            "rdfs:comment": "The short name of the instrument or item.",
-            "rdfs:label": "shortName",
-            "schema:domainIncludes": {
-                "@id": ""
-            },
-            "schema:rangeIncludes": {
-                "@id": "schema:Text"
-            },
-            "schema:sameAs": {
-                "@id": "http://www.w3.org/2004/02/skos/core#altLabel"
-            }
-        },
-        {
-            "@id": "schema:question",
+            "@id": "repronim:preamble",
             "@type": "rdf:Property",
             "rdfs:comment": "The preamble for the instrument.",
             "rdfs:label": "preamble",
@@ -129,29 +144,6 @@
             },
             "schema:sameAs": {
                 "@id": "https://schema.repronim.org/order"
-            }
-        },
-        {
-            "@id": "schema:programmingLanguage",
-            "@type": "rdf:Property",
-            "rdfs:comment": "The computer programming language.",
-            "rdfs:label": "programmingLanguage",
-            "rdfs:subPropertyOf": {
-                "@id": "repronim:branchLogic"
-            },
-            "schema:domainIncludes": {
-                "@id": "schema:SoftwareSourceCode"
-            },
-            "schema:rangeIncludes": [
-                {
-                    "@id": "schema:ComputerLanguage"
-                },
-                {
-                    "@id": "schema:Text"
-                }
-            ],
-            "schema:sameAs": {
-                "@id": "https://schema.org/programmingLanguage"
             }
         },
         {
