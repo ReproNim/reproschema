@@ -17,6 +17,7 @@
     },
     "variableMap": [
         {"variableName": "education_level", "isAbout": "education_level"},
+        {"variableName": "multipart_audio_check", "isAbout": "multipart_audio_check"},
         {"variableName": "phq9_1", "isAbout": "phq9_1"},
         {"variableName": "phq9_2", "isAbout": "phq9_2"},
         {"variableName": "phq9_3", "isAbout": "phq9_3"},
@@ -33,6 +34,7 @@
     "ui": {
         "order": [
             "education_level",
+            "multipart_audio_check",
             "phq9_1",
             "phq9_2",
             "phq9_3",
@@ -48,6 +50,7 @@
         "shuffle": false,
         "visibility": {
             "education_level": true,
+            "multipart_audio_check": "education_level === 1",
             "phq9_1": "education_level === 1",
             "phq9_2": "education_level === 1",
             "phq9_3": "education_level === 1",
