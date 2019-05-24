@@ -44,15 +44,43 @@
             "other_questions_schema": "Other Questions",
             "voice_task_schema": "Voice Tasks"
         },
-        "visibility": {
-            "voice_screening_schema": true,
-            "demographics_schema": true,
-            "promis_global_schema": true,
-            "gad7_schema": true,
-            "cage_aid_schema": true,
-            "bads_schema": true,
-            "other_questions_schema": true,
-            "voice_task_schema": true
+        "visibility":{
+            "voice_screening_schema":true,
+            "voice_task_schema":{
+                "method":"POST",
+                "url":"http://localhost:8000/check",
+                "payload":["voice_screening_schema"]
+            },
+            "demographics_schema":{
+                "method":"POST",
+                "url":"http://localhost:8000/check",
+                "payload":["voice_screening_schema"]
+            },
+            "promis_global_schema":{
+                "method":"POST",
+                "url":"http://localhost:8000/check",
+                "payload":["voice_screening_schema"]
+            },
+            "gad7_schema":{
+                "method":"POST",
+                "url":"http://localhost:8000/check",
+                "payload":["voice_screening_schema"]
+            },
+            "cage_aid_schema":{
+                "method":"POST",
+                "url":"http://localhost:8000/check",
+                "payload":["voice_screening_schema"]
+            },
+            "bads_schema":{
+                "method":"POST",
+                "url":"http://localhost:8000/check",
+                "payload":["voice_screening_schema"]
+            },
+            "other_questions_schema":{
+                "method":"POST",
+                "url":"http://localhost:8000/check",
+                "payload":["voice_screening_schema"]
+            }
         }
     }
 }
