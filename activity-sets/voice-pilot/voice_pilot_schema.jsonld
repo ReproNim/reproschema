@@ -1,6 +1,6 @@
 {
-    "@context": [ "https://raw.githubusercontent.com/sanuann/schema-standardization/master/contexts/generic.jsonld",
-        "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activity-sets/voice-pilot/voice_pilot_context.jsonld"
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activity-sets/voice-pilot/voice_pilot_context.jsonld"
     ],
     "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/ActivitySet.jsonld",
     "@id": "voice_pilot_schema",
@@ -46,11 +46,6 @@
         },
         "visibility":{
             "voice_screening_schema":true,
-            "voice_task_schema":{
-                "method":"POST",
-                "url":"http://localhost:8000/check",
-                "payload":["voice_screening_schema"]
-            },
             "demographics_schema": false,
             "promis_global_schema":{
                 "method":"POST",
@@ -73,6 +68,11 @@
                 "payload":["voice_screening_schema"]
             },
             "other_questions_schema":{
+                "method":"POST",
+                "url":"http://localhost:8000/check",
+                "payload":["voice_screening_schema"]
+            },
+            "voice_task_schema":{
                 "method":"POST",
                 "url":"http://localhost:8000/check",
                 "payload":["voice_screening_schema"]
