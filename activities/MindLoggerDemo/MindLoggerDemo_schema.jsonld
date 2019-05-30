@@ -1,0 +1,30 @@
+{
+  "@context": [
+    "https://raw.githubusercontent.com/stufreen/schema-standardization/widget-demo-activity/contexts/generic.jsonld",
+    "https://raw.githubusercontent.com/stufreen/schema-standardization/widget-demo-activity/activities/MindLoggerDemo/MindLoggerDemo_context.jsonld"
+  ],
+  "@type": "https://raw.githubusercontent.com/stufreen/schema-standardization/widget-demo-activity/schemas/Activity.jsonld",
+  "@id": "MindLoggerDemo_schema",
+  "skos:prefLabel": "MindLogger Widget Demo",
+  "skos:altLabel": "FlankerExample",
+  "schema:description": "This activity contains one of each type of widget supported by the MindLogger mobile app.",
+  "schema:schemaVersion": "0.0.1",
+  "schema:version": "0.0.1",
+  "preamble": "Please follow the instructions for the task.",
+  "branchLogic": {},
+  "scoringLogic": {},
+  "variableMap": [
+    {
+      "variableName": "markdown-message",
+      "isAbout": "markdown-message"
+    }
+  ],
+  "ui": {
+    "order": [
+      "markdown-message"
+    ],
+    "visibility": {
+      "markdown-message": true
+    }
+  }
+}
