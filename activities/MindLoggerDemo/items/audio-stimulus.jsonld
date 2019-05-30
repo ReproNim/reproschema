@@ -1,16 +1,16 @@
 {
   "@context": [
-    "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld"
+    "https://raw.githubusercontent.com/stufreen/schema-standardization/widget-demo-activity/contexts/generic.jsonld"
   ],
-  "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
-  "@id": "ravlt_stimulus_5",
-  "skos:altLabel": "RAVLT Stimulus 5",
-  "skos:prefLabel": "RAVLT Stimulus 5",
-  "schema:description": "Instructions for the Rey Auditory Verbal Learning Test",
+  "@type": "https://raw.githubusercontent.com/stufreen/schema-standardization/widget-demo-activity/schemas/Field.jsonld",
+  "@id": "audio-stimulus",
+  "skos:altLabel": "AudioStimulus",
+  "skos:prefLabel": "AudioStimulus",
+  "schema:description": "Demo of the Audio Stimulus widget",
   "schema:schemaVersion": "0.0.1",
   "schema:version": "0.0.1",
   "question": {
-    "en": "Press the Play button below to listen to a list of words."
+    "en": "## Audio Stimulus\r\n\r\n**inputType: \"audioStimulus\"**\r\n\r\nPlay a sound for the user.\r\n\r\nThis widget can be configured to play automatically when the user gets to this screen, and to advance to the following screen automatically.\r\n\r\nThis widget can also be configured to only play once."
   },
   "ui": {
     "inputType": "audioStimulus"
@@ -19,18 +19,17 @@
     {
       "@type": "schema:AudioObject",
       "schema:name": "stimulus",
-      "schema:contentUrl": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/RAVLT/items/ravlt-a.mp3",
-      "schema:transcript": "Drum, Curtain, Bell, Coffee, School, Parent, Moon, Garden, Hat, Farmer, Nose, Turkey, Color, House, River."
+      "schema:contentUrl": "https://raw.githubusercontent.com/stufreen/schema-standardization/widget-demo-activity/activities/MindLoggerDemo/items/GoalLoading-rising.mp3"
     },
     {
       "@type": "schema:Boolean",
       "schema:name": "autoAdvance",
-      "schema:value": true
+      "schema:value": false
     },
     {
       "@type": "schema:Boolean",
       "schema:name": "allowReplay",
-      "schema:value": false
+      "schema:value": true
     }
   ]
 }
