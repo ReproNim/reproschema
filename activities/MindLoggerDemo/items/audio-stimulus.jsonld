@@ -1,0 +1,40 @@
+{
+  "@context": [
+    "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld"
+  ],
+  "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+  "@id": "audio-stimulus",
+  "skos:altLabel": "AudioStimulus",
+  "skos:prefLabel": "AudioStimulus",
+  "schema:description": "Demo of the Audio Stimulus widget",
+  "schema:schemaVersion": "0.0.1",
+  "schema:version": "0.0.1",
+  "question": {
+    "en": "## Audio Stimulus\r\n\r\nPlay a sound for the user.\r\n\r\nThis widget can be configured to play automatically when the user gets to this screen, and to advance to the following screen automatically.\r\n\r\nThis widget can also be configured to only play once."
+  },
+  "ui": {
+    "inputType": "audioStimulus",
+    "allow": ["autoAdvance"]
+  },
+  "inputOptions": [
+    {
+      "@type": "schema:URL",
+      "schema:name": "stimulus",
+      "schema:value": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/MindLoggerDemo/items/ravlt-a.mp3",
+      "schema:contentUrl": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/MindLoggerDemo/items/ravlt-a.mp3"
+    },
+    {
+      "@type": "schema:Boolean",
+      "schema:name": "allowReplay",
+      "schema:value": true
+    }
+  ],
+  "media": {
+    "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/MindLoggerDemo/items/ravlt-a.mp3": {
+      "@type": "schema:AudioObject",
+      "schema:name": "stimulus",
+      "schema:contentUrl": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/MindLoggerDemo/items/ravlt-a.mp3",
+      "schema:transcript": "Drum, Curtain, Bell, Coffee, School, Parent, Moon, Garden, Hat, Farmer, Nose, Turkey, Color, House, River."
+    }
+  }
+}

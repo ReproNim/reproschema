@@ -1,0 +1,21 @@
+{
+  "@context": [
+    "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld"
+  ],
+  "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+  "@id": "audio-record",
+  "skos:prefLabel": "Audio Record",
+  "skos:altLabel": "Audio Record",
+  "schema:description": "Demo of the Audio Record widget",
+  "schema:schemaVersion": "0.0.1",
+  "schema:version": "0.0.1",
+  "question": "## Audio Record\r\n\r\nRecord audio from the user's microphone. In this case we've configured the widget to have a maximum length of  10 seconds.",
+  "ui": {
+    "inputType": "audioRecord"
+  },
+  "responseOptions": {
+    "schema:minValue": 0,
+    "schema:maxValue": 10000,
+    "requiredValue": true
+  }
+}
