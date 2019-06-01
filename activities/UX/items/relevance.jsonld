@@ -1,0 +1,40 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ChildMindInstitute/schema-standardization/master/activities/UX/ux_context.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+    "@id": "relvance",
+    "skos:prefLabel": "Relevance",
+    "skos:altLabel": "relvance",
+    "schema:description": "How well did the questions reflect your child’s health and behavior?",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "How well did the questions reflect your child’s health and behavior?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+      "multipleChoice": false,
+      "choices": [
+          {
+              "schema:value": 2,
+              "schema:name": {
+                  "en": "The questions covered all relevant areas of my child’s health and behavior."
+              }
+          },
+          {
+              "schema:value": 1,
+              "schema:name": {
+                  "en": "The questions covered some, but not all, areas of my child’s health and behavior."
+              }
+          },
+          {
+              "schema:value": 1,
+              "schema:name": {
+                  "en": "The questions were not relevant at all to my child’s health and behavior."
+              }
+          }
+      ],
+      "type": "Ordinal"
+    }
+}

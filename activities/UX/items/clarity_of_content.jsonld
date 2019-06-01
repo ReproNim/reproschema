@@ -3,35 +3,35 @@
         "https://raw.githubusercontent.com/ChildMindInstitute/schema-standardization/master/activities/UX/ux_context.jsonld"
     ],
     "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
-    "@id": "ease_of_use",
-    "skos:prefLabel": "Ease of Use",
-    "skos:altLabel": "ease_of_use",
-    "schema:description": "How easy was this app to use?",
+    "@id": "clarity_of_content",
+    "skos:prefLabel": "Clarity of Content",
+    "skos:altLabel": "clarity_of_content",
+    "schema:description": "How clear were the questions you were asked?",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
-    "question": "How easy was this app to use?",
+    "question": "How clear were the questions you were asked?",
     "ui": {
         "inputType": "slider"
     },
     "responseOptions": {
       "type": "xsd:integer",
-      "schema:minValue": "Very difficult",
-      "schema:maxValue": "Very easy",
+      "schema:minValue": "Very unclear",
+      "schema:maxValue": "Very clear",
       "requiredValue": false,
       "choices": [{
-          "schema:name": "Very difficult",
+          "schema:name": "Very unclear",
           "schema:value": 0
       },
           {
-              "schema:name": "A little tricky",
+              "schema:name": "A litle unclear",
               "schema:value": 1
           },
           {
-              "schema:name": "Easy enough",
+              "schema:name": "Clear enough",
               "schema:value": 2
           },
           {
-              "schema:name": "Very difficult",
+              "schema:name": "Very clear",
               "schema:value": 3
           }
       ]
