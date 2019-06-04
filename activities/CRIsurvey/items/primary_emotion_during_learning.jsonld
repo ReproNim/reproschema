@@ -9,13 +9,13 @@
    "schema:description": "primary emotion during learning",
    "schema:schemaVersion": "0.0.1",
    "schema:version": "0.0.1",
-   "question": "What is your primary emotion during learning",
+   "question": "What is your primary emotion during learning?",
    "ui": {
        "inputType": "radio"
    },
    "responseOptions": {
        "@type": "xsd:anyURI",
-       "multipleChoice": true,
+       "multipleChoice": false,
        "schema:minValue": 0,
        "schema:maxValue": 4,
        "choices": [{
@@ -23,50 +23,30 @@
            "schema:name": "Enthusiasm",
            "schema:value": 0,
            "schema:image": "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/1F915.svg"
-
-
-
-
        },
        {
            "@type": "schema:option",
            "schema:name": "Resistance",
            "schema:value": 1,
            "schema:image": "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/1F469-200D-1F3EB.svg"
-
-
-
-
        },
        {
            "@type": "schema:option",
-           "schema:name": "Fulfilment",
+           "schema:name": "Fulfillment",
            "schema:value": 2,
            "schema:image": "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/1F4DD.svg"
-
-
-
-
        },
        {
            "@type": "schema:option",
            "schema:name": "Self esteem",
            "schema:value": 3,
            "schema:image": "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/1F47F.svg"
-
-
-
-
        },
              {
            "@type": "schema:option",
            "schema:name": "Confusion",
            "schema:value": 4,
            "schema:image": "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/2764.svg"
-
-
-
-
        }
        ]
    }

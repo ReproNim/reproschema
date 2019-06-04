@@ -10,17 +10,66 @@
    "schema:description": "qualities that make one a good learner",
    "schema:schemaVersion": "0.0.1",
    "schema:version": "0.0.1",
-   "question": "Rate in order of 1 (most important) to 10 (least important) the importance of these qualities that make one a good learner: Memory, Common-sense, Analytical ability, Alertness and observation, Curiosity, Wonderment and imagination, Ambition, Joie de vivre, Intolerance toward ignorance (not knowing), Need for self improvement",
+   "question": "Select the most important qualities that make one a good learner.",
    "ui": {
-       "inputType": "audioRecord"
+       "inputType": "radio"
    },
    "responseOptions": {
-       "type": "audioRecord",
+       "@type": "xsd:anyURI",
+       "multipleChoice": true,
        "schema:minValue": 0,
-       "schema:maxValue": 60000,
-       "multipleChoice": false,
-       "requiredValue": true
+       "schema:maxValue": 9,
+       "choices": [{
+           "@type": "schema:option",
+           "schema:name": "Memory",
+           "schema:value": 0,
+       },
+       {
+           "@type": "schema:option",
+           "schema:name": "Common-sense",
+           "schema:value": 1,
+       },
+       {
+           "@type": "schema:option",
+           "schema:name": "Analytical ability",
+           "schema:value": 2,
+       },
+       {
+           "@type": "schema:option",
+           "schema:name": "Alertness and observation",
+           "schema:value": 3,
+       },
+       {
+           "@type": "schema:option",
+           "schema:name": "Curiosity",
+           "schema:value": 4,
+       },
+       {
+           "@type": "schema:option",
+           "schema:name": "Wonderment and imagination",
+           "schema:value": 5,
+       },
+       {
+           "@type": "schema:option",
+           "schema:name": "Ambition",
+           "schema:value": 6,
+       },
+       {
+           "@type": "schema:option",
+           "schema:name": "Joie de vivre",
+           "schema:value": 7,
+       },
+       {
+           "@type": "schema:option",
+           "schema:name": "Intolerance toward ignorance (not knowing)",
+           "schema:value": 8,
+       },
+       {
+           "@type": "schema:option",
+           "schema:name": "Need for self improvement",
+           "schema:value": 9,
+       }
    }
-
-
 }
+
+
