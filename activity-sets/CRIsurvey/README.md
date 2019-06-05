@@ -1,8 +1,8 @@
 # CRI survey
 
-<div class="text-center mb-3 mt-3">
+<!--div class="text-center mb-3 mt-3">
   <img src="https://1kgzmckwpmb29d06l31nw6va-wpengine.netdna-ssl.com/wp-content/uploads/2015/02/child-mind-institute-hbn-logo.jpg" alt="drawing" width="200" />
-</div>
+</div-->
 
 
 We want to collect information about your thoughts on learning.
