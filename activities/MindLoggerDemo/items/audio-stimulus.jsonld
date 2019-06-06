@@ -13,7 +13,8 @@
     "en": "## Audio Stimulus\r\n\r\nPlay a sound for the user.\r\n\r\nThis widget can be configured to play automatically when the user gets to this screen, and to advance to the following screen automatically.\r\n\r\nThis widget can also be configured to only play once."
   },
   "ui": {
-    "inputType": "audioStimulus"
+    "inputType": "audioStimulus",
+    "allow": ["autoAdvance"]
   },
   "inputOptions": [
     {
@@ -21,11 +22,6 @@
       "schema:name": "stimulus",
       "schema:contentUrl": "https://raw.githubusercontent.com/stufreen/schema-standardization/widget-demo-activity/activities/MindLoggerDemo/items/ravlt-a.mp3",
       "schema:transcript": "Drum, Curtain, Bell, Coffee, School, Parent, Moon, Garden, Hat, Farmer, Nose, Turkey, Color, House, River."
-    },
-    {
-      "@type": "schema:Boolean",
-      "schema:name": "autoAdvance",
-      "schema:value": false
     },
     {
       "@type": "schema:Boolean",
