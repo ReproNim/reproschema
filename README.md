@@ -76,7 +76,7 @@ We have defined 3 different types of schema –
       }
       ```
 
-    - `@type` - String. Dereferenceable [IRI](https://en.wikipedia.org/wiki/Internationalized_Resource_Identifier) of the JSON-LD schema definition of the type of entity described. For example, `"https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Activity.jsonld"`
+    - `@type`=`"https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Activity.jsonld"`
 
   - To create `item_x.jsonld` in the items folder:
     - Use keys defined in [`schema/Field.jsonld`](./schema/Field.jsonld)
