@@ -31,7 +31,8 @@
             "gad7_schema",
             "cage_aid_schema",
             "bads_schema",
-            "other_questions_schema"
+            "other_questions_schema",
+            "thankyou_schema"
         ],
         "shuffle": false,
         "activity_display_name": {
@@ -46,7 +47,11 @@
         },
         "visibility":{
             "voice_screening_schema":true,
-            "demographics_schema": false,
+            "demographics_schema": {
+                "method":"POST",
+                "url":"http://localhost:8000/check",
+                "payload":["voice_screening_schema"]
+            },
             "promis_global_schema":{
                 "method":"POST",
                 "url":"http://localhost:8000/check",
@@ -76,7 +81,8 @@
                 "method":"POST",
                 "url":"http://localhost:8000/check",
                 "payload":["voice_screening_schema"]
-            }
+            },
+            "thankyou_schema": "voice_screening_schema && voice_task_schema && demographics_schema && promis_global_schema && gad7_schema && cage_aid_schema && bads_schema && other_questions_schema"
         }
     }
 }

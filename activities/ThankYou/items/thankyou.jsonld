@@ -1,0 +1,24 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/ThankYou/thankyou_context.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+    "@id": "thankyou",
+    "skos:prefLabel": "Thank You",
+    "skos:altLabel": "thankyou",
+    "schema:description": "audio check result",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Thank You!",
+    "ui": {
+        "inputType": "static",
+        "readonly": true
+    },
+    "responseOptions": {
+        "type": "xsd:boolean",
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "requiredValue": true
+    }
+}
