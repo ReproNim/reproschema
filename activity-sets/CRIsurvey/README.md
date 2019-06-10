@@ -5,7 +5,7 @@
 </div-->
 
 
-We want to collect information about your thoughts on learning.
+We want to hear your thoughts about learning.
 You will be asked a short set of questions. 
 We will record the information and share it with you and our researchers so we can look for patterns in the data. 
 
