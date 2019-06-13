@@ -1,0 +1,23 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+    "@id": "date",
+    "skos:prefLabel": "Date",
+    "skos:altLabel": "date",
+    "schema:description": "Demo of the Date widget",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "## Date\r\n\r\nThis widget uses the device's native date picker UI component.\r\n\r\nPlease select a date:",
+    "ui": {
+        "inputType": "date"
+    },
+    "responseOptions": {
+        "type": "xsd:date",
+        "requiredValue": true,
+        "schema:maxValue": "new Date()"
+    }
+}
+
+

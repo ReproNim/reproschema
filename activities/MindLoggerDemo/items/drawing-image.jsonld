@@ -1,0 +1,31 @@
+{
+  "@context": [
+    "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld"
+  ],
+  "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+  "@id": "drawing-image",
+  "skos:prefLabel": "Drawing with image",
+  "skos:altLabel": "drawing-image",
+  "schema:description": "Demo of the Drawing widget with an image",
+  "schema:schemaVersion": "0.0.1",
+  "schema:version": "0.0.1",
+  "question": "## Drawing (with image)\r\n\r\nThe Drawing widget can optionally have an image in the background that the user draws on top of.",
+  "ui": {
+    "inputType": "drawing"
+  },
+  "inputOptions": [
+    {
+      "@type": "schema:URL",
+      "schema:name": "backgroundImage",
+      "schema:value": "https://image.freepik.com/free-vector/abstract-geometric-pattern-background_1319-242.jpg"
+    }
+  ],
+  "media": {
+    "https://image.freepik.com/free-vector/abstract-geometric-pattern-background_1319-242.jpg": {
+      "@type": "schema:ImageObject",
+      "schema:encodingFormat": "image/jpeg",
+      "schema:name": "Abstract Pattern",
+      "schema:contentUrl": "https://image.freepik.com/free-vector/abstract-geometric-pattern-background_1319-242.jpg"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "@context": [
+    "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld"
+  ],
+  "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+  "@id": "table-counter",
+  "skos:prefLabel": "Table Counter",
+  "skos:altLabel": "Table Counter",
+  "schema:description": "Demo of the Table Counter widget",
+  "schema:schemaVersion": "0.0.1",
+  "schema:version": "0.0.1",
+  "question": "## Table Counter\r\n\r\nThe editor defines the number of rows and columns and the labels. Each table cell is a counter that the user can increment by pressing on it. The user can decrement the counter by doing a long press.\r\n\r\nIn this example, a list of names appears along the x-axis together with some behaviors along the y-axis.",
+  "ui": {
+    "inputType": "tableCounter"
+  },
+  "inputOptions": [
+    {
+      "@type": "schema:ItemList",
+      "schema:name": "cols",
+      "schema:numberOfItems": 2,
+      "schema:itemListElement": [
+        {
+          "@type": "schema:Text",
+          "schema:name": "label",
+          "schema:value": "Daniel"
+        },
+        {
+          "@type": "schema:Text",
+          "schema:name": "label",
+          "schema:value": "Jessica"
+        }
+      ]
+    },
+    {
+      "@type": "schema:ItemList",
+      "schema:name": "rows",
+      "schema:numberOfItems": 3,
+      "schema:itemListElement": [
+        {
+          "@type": "schema:Text",
+          "schema:name": "label",
+          "schema:value": "Biting"
+        },
+        {
+          "@type": "schema:Text",
+          "schema:name": "label",
+          "schema:value": "Yelling"
+        },
+        {
+          "@type": "schema:Text",
+          "schema:name": "label",
+          "schema:value": "Hitting"
+        }
+      ]
+    }
+  ]
+}

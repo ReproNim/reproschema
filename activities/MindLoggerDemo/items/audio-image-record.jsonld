@@ -1,0 +1,32 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+    "@id": "audio-image-record",
+    "skos:prefLabel": "Audio Image Record",
+    "skos:altLabel": "Audio Image Record",
+    "schema:description": "Demo of the Audio Image widget",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "## Audio Image Record\r\n\r\nRecord audio from the user's microphone while showing the user a visual stimulus.\r\n\r\nLook at the map in the image below, and give directions to another person over the phone as to how you would follow the route from Start to Stop, using the landmarks.",
+    "ui": {
+        "inputType": "audioImageRecord"
+    },
+    "responseOptions": {
+        "type": "audioImageRecord",
+        "schema:minValue": 0,
+        "schema:maxValue": 60000,
+        "schema:image": "https://www.dropbox.com/s/wgtjq3bgqlfhbzd/map3g.png?raw=1",
+        "multipleChoice": false,
+        "requiredValue": true
+    },
+    "media": {
+        "https://www.dropbox.com/s/wgtjq3bgqlfhbzd/map3g.png?raw=1": {
+            "@type": "schema:ImageObject",
+            "schema:encodingFormat": "image/png",
+            "schema:name": "Map",
+            "schema:contentUrl": "https://www.dropbox.com/s/wgtjq3bgqlfhbzd/map3g.png?raw=1"
+        }
+    }
+}
