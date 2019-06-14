@@ -14,36 +14,9 @@
         "inputType": "section",
         "order": [
             "medicalhistory_21",
-            "medicalhistory_21a_incident",
-            "medicalhistory_21a_hospitalized",
-            "medicalhistory_21a_age",
-            "medicalhistory_21b_incident",
-            "medicalhistory_21b_hospitalized",
-            "medicalhistory_21b_age",
-            "medicalhistory_21c_incident",
-            "medicalhistory_21c_hospitalized",
-            "medicalhistory_21c_age",
+            "medicalhistory_concussion_table",
             "medicalhistory_21d"
         ],
         "shuffle": false,
-        "render": {
-            "table": {
-                "preamble": "If YES, please fill out the table below, indicating: a) How many concussions have you experienced in your lifetime? b) For each incident, were you hospitalized? c) For each incident, how old were you?",
-                "headers": [
-                    "Incident",
-                    "Hospitalized?",
-                    "Age"
-                ],
-                "rows": [{
-                    "order": ["medicalhistory_21a_incident", "medicalhistory_21a_hospitalized", "medicalhistory_21a_age"]
-                },
-                {
-                    "order": ["medicalhistory_21b_incident", "medicalhistory_21b_hospitalized", "medicalhistory_21b_age"]
-                },
-                {
-                    "order": ["medicalhistory_21c_incident", "medicalhistory_21c_hospitalized", "medicalhistory_21c_age"]
-                }]
-            }
-        }
     }
 }
