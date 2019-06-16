@@ -1,0 +1,118 @@
+{
+  "@context": [
+    "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld"
+  ],
+  "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+  "@id": "visual-stimulus-response",
+  "skos:prefLabel": "Visual Stimulus Response",
+  "skos:altLabel": "Visual Stimulus Response",
+  "schema:description": "Flanker practice",
+  "schema:schemaVersion": "0.0.1",
+  "schema:version": "0.0.1",
+  "ui": {
+    "inputType": "visual-stimulus-response",
+    "allow": ["autoAdvance"]
+  },
+  "inputOptions": [
+    {
+      "@type": "schema:ItemList",
+      "schema:name": "trials",
+      "schema:numberOfItems": 3,
+      "schema:itemListElement": [
+        {
+          "@type": "schema:Property",
+          "schema:name": "q1",
+          "schema:image": "<h3>A 2016 interview with this Batman actor found him looking sad; the internet then made him the meme we deserve</h3>",
+          "responseOptions": {
+            "@type": "xsd:anyURI",
+            "choices": [
+              {
+                "@type": "schema:Number",
+                "schema:name": "Christian Bale",
+                "schema:value": 0
+              },
+              {
+                "@type": "schema:Number",
+                "schema:name": "Ben Affleck",
+                "schema:value": 1
+              }
+            ]
+          },
+          "schema:value": 1
+        },
+        {
+          "@type": "schema:Property",
+          "schema:name": "q2",
+          "schema:image": "<h3>A common sight was walking around Monet who worked outdoors, as in a cliff walk in this Channel-side French region</h3",
+          "responseOptions": {
+            "@type": "xsd:anyURI",
+            "choices": [
+              {
+                "@type": "schema:Number",
+                "schema:name": "Normandy",
+                "schema:value": 0
+              },
+              {
+                "@type": "schema:Number",
+                "schema:name": "Brittany",
+                "schema:value": 1
+              }
+            ]
+          },
+          "schema:value": 0
+        },
+        {
+          "@type": "schema:Property",
+          "schema:name": "q3",
+          "schema:image": "<h3>Modern auto safety took a big step in '66 as LBJ signed bills mandating seatbelts & rupture-resistant these</h3>",
+          "responseOptions": {
+            "@type": "xsd:anyURI",
+            "choices": [
+              {
+                "@type": "schema:Number",
+                "schema:name": "Air bags",
+                "schema:value": 0
+              },
+              {
+                "@type": "schema:Number",
+                "schema:name": "Fuel tanks",
+                "schema:value": 1
+              }
+            ]
+          },
+          "schema:value": 1
+        }
+      ]
+    },
+    {
+      "@type": "schema:Boolean",
+      "schema:name": "showFixation",
+      "schema:value": false
+    },
+    {
+      "@type": "schema:Boolean",
+      "schema:name": "showFeedback",
+      "schema:value": true
+    },
+    {
+      "@type": "schema:Boolean",
+      "schema:name": "showResults",
+      "schema:value": true
+    },
+    {
+      "@type": "schema:Text",
+      "schema:name": "samplingMethod",
+      "schema:value": "randomize-order"
+    },
+    {
+      "@type": "schema:Number",
+      "schema:name": "sampleSize",
+      "schema:value": 3
+    },
+    {
+      "@type": "schema:Number",
+      "schema:name": "trialDuration",
+      "schema:value": 10000
+    }
+  ]
+}

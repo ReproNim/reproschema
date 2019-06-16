@@ -1,0 +1,37 @@
+{
+  "@context": [
+    "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld"
+  ],
+  "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+  "@id": "delay",
+  "skos:prefLabel": "Delay",
+  "skos:altLabel": "delay",
+  "schema:description": "Demo of the Delay option",
+  "schema:schemaVersion": "0.0.1",
+  "schema:version": "0.0.1",
+  "question": "## Delay\r\n\r\nEach widget can be configured to have a delay period during which the user cannot answer. This has many potentioal uses such as getting the user to carefully read a question before answering.\r\n\r\nHow was your child's day?",
+  "ui": {
+    "inputType": "radio",
+    "delay": 5000
+  },
+  "responseOptions": {
+    "@type": "xsd:anyURI",
+    "multipleChoice": false,
+    "schema:minValue": 0,
+    "schema:maxValue": 1,
+    "choices": [
+      {
+        "@type": "schema:Boolean",
+        "schema:name": "Bad Day",
+        "schema:value": 0,
+        "schema:image": "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/1F44E.jpg"
+      },
+      {
+        "@type": "schema:Boolean",
+        "schema:name": "Good Day",
+        "schema:value": 1,
+        "schema:image": "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/1F44D.jpg"
+      }
+    ]
+  }
+}
