@@ -1,32 +1,33 @@
 {
-    "@context": [ "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
-        "https://raw.githubusercontent.com/shnizzedy/schema-standardization/arno/activity-sets/CRIsurvey/CRIsurvey_context.jsonld"
+  "@context": ["https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+    "https://raw.githubusercontent.com/shnizzedy/schema-standardization/arno/activity-sets/CRIsurvey/CRIsurvey_context.jsonld"
+  ],
+  "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/ActivitySet.jsonld",
+  "@id": "CRIsurveySet_schema",
+  "skos:prefLabel": "CRI survey",
+  "skos:altLabel": "CRIsurvey",
+  "schema:description": "CRI survey",
+  "schema:schemaVersion": "0.0.1",
+  "schema:version": "0.0.1",
+  "schema:about": "https://raw.githubusercontent.com/shnizzedy/schema-standardization/arno/activity-sets/CRIsurvey/README.md",
+  "schema:image": "https://childmindinstitute.github.io/mindlogger-assets/illustrations/undraw/CRIsurvey_image.svg",
+  "variableMap": [{
+    "variableName": "CRIsurvey",
+    "isAbout": "CRIsurvey"
+  }],
+  "ui": {
+    "order": [
+      "CRIsurvey"
     ],
-    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/ActivitySet.jsonld",
-    "@id": "CRIsurveySet_schema",
-    "skos:prefLabel": "CRI survey",
-    "skos:altLabel": "CRIsurvey",
-    "schema:description": "CRI survey",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
-    "schema:about": "https://raw.githubusercontent.com/shnizzedy/schema-standardization/arno/activity-sets/CRIsurvey/README.md",
-    "schema:image": "https://childmindinstitute.github.io/mindlogger-assets/illustrations/undraw/CRIsurvey_image.svg",
-    "variableMap": [
-        {"variableName": "CRIsurvey", "isAbout": "CRIsurvey"}
-    ],
-    "ui": {
-        "order": [
-            "CRIsurvey"
-        ],
-        "shuffle": false,
-        "activity_display_name": {
-            "CRIsurvey":  {
-              "@language": "en",
-              "@value": "CRI survey"
-            }
-        },
-        "visibility": {
-            "CRIsurvey": true
-        }
+    "shuffle": false,
+    "activity_display_name": {
+      "CRIsurvey": {
+        "@language": "en",
+        "@value": "CRI survey"
+      }
+    },
+    "visibility": {
+      "CRIsurvey": true
     }
+  }
 }
