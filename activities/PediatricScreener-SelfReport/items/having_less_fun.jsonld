@@ -11,26 +11,30 @@
   "schema:version": "0.0.1",
   "schema:question": "How often in the past 6 months has your child **seemed to be having less fun**?",
   "ui": {
-        "inputType": "slider"
+        "inputType": "radio",
+        "allow": ["autoAdvance"]
   },
   "responseOptions": {
-        "@type": "xsd:integer",
-        "schema:minValue": "",
-        "schema:maxValue": "",
-        "requiredValue": false,
-        "choices": [{
-            "schema:name": "Never",
-            "schema:value": 0
-        },
-        {
-            "schema:name": "Sometimes",
-            "schema:value": 1
-        },
-        {
-            "schema:name": "Often",
-            "schema:value": 2,
-            "schema:image": "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/1F62B.jpg"
-        }
+        "@type": "xsd:anyURI",
+        "multipleChoice": false,
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "@type": "schema:Boolean",
+                "schema:name": "Never",
+                "schema:value": 0
+            },
+            {
+                "@type": "schema:Boolean",
+                "schema:name": "Sometimes",
+                "schema:value": 1
+            },
+            {
+                "@type": "schema:Boolean",
+                "schema:name": "Often",
+                "schema:value": 2
+            }
         ]
   }
 }

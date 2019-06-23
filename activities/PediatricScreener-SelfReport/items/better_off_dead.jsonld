@@ -11,28 +11,35 @@
   "schema:version": "0.0.1",
   "schema:question": "In the past 6 months how often has your child **had thoughts that they would be better off dead or of hurting themselves in some way**?",
   "ui": {
-        "inputType": "slider"
+        "inputType": "radio",
+        "allow": ["autoAdvance"]
   },
   "responseOptions": {
-        "@type": "xsd:integer",
-        "schema:minValue": "",
-        "schema:maxValue": "",
-        "requiredValue": false,
-        "choices": [{
-            "schema:name": "Not at all",
-            "schema:value": 0
-        },
-        {
-            "schema:name": "Several days",
-            "schema:value": 1
-        },
-        {
-            "schema:name": "More than half the days",
-            "schema:value": 2
-        },
-        {
-            "schema:name": "Nearly every day",
-            "schema:value": 3        }
+        "@type": "xsd:anyURI",
+        "multipleChoice": false,
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "@type": "schema:Boolean",
+                "schema:name": "Not at all",
+                "schema:value": 0
+            },
+            {
+                "@type": "schema:Boolean",
+                "schema:name": "Several days",
+                "schema:value": 1
+            },
+            {
+                "@type": "schema:Boolean",
+                "schema:name": "More than half the days",
+                "schema:value": 2
+            },
+            {
+                "@type": "schema:Boolean",
+                "schema:name": "Nearly every day",
+                "schema:value": 3
+            }
         ]
   }
 }
