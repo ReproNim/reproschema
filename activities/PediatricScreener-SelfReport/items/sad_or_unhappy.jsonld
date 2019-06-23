@@ -1,0 +1,36 @@
+{
+  "@context": ["https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+    "https://raw.githubusercontent.com/binarybottle/schema-standardization/master/activities/PediatricScreener-SelfReport/pediatric_screener_selfreport_context.jsonld"
+  ],
+  "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+  "@id": "sad_or_unhappy",
+  "skos:prefLabel": "Feel sad or unhappy",
+  "skos:altLabel": "sad_or_unhappy",
+  "schema:description": "How often child feels sad or unhappy",
+  "schema:schemaVersion": "0.0.1",
+  "schema:version": "0.0.1",
+  "schema:question": "How often in the past 6 months has your child **felt sad or unhappy**?",
+  "ui": {
+        "inputType": "slider"
+  },
+  "responseOptions": {
+        "@type": "xsd:integer",
+        "schema:minValue": "",
+        "schema:maxValue": "",
+        "requiredValue": false,
+        "choices": [{
+            "schema:name": "Never",
+            "schema:value": 0
+        },
+        {
+            "schema:name": "Sometimes",
+            "schema:value": 1
+        },
+        {
+            "schema:name": "Often",
+            "schema:value": 2,
+            "schema:image": "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/1F62B.jpg"
+        }
+        ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "@context": ["https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+    "https://raw.githubusercontent.com/binarybottle/schema-standardization/master/activities/PediatricScreener-SelfReport/pediatric_screener_selfreport_context.jsonld"
+  ],
+  "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+  "@id": "bullied",
+  "skos:prefLabel": "Picked on or bullied",
+  "skos:altLabel": "bullied",
+  "schema:description": "Child has been picked on or bullied by other children",
+  "schema:schemaVersion": "0.0.1",
+  "schema:version": "0.0.1",
+  "schema:question": "In the past 6 months has your child **been picked on or bullied by other children**?",
+  "ui": {
+        "inputType": "slider"
+  },
+  "responseOptions": {
+        "@type": "xsd:integer",
+        "schema:minValue": "",
+        "schema:maxValue": "",
+        "requiredValue": false,
+        "choices": [{
+            "schema:name": "Not true",
+            "schema:value": 0
+        },
+        {
+            "schema:name": "Somewhat true",
+            "schema:value": 1
+        },
+        {
+            "schema:name": "Certainly true",
+            "schema:value": 2,
+            "schema:image": "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/1F915.jpg"
+        }
+        ]
+  }
+}
