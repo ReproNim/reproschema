@@ -1,0 +1,36 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/sanuann/schema-standardization/feature_add_consent/activities/ConsentVoiceStudy/voice_consent_context.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Activity.jsonld",
+    "@id": "voice_consent_schema",
+    "skos:prefLabel": "Consent",
+    "skos:altLabel": "consent_overview",
+    "schema:description": "Consent Overview",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Little interest or pleasure in doing things",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "type": "xsd:boolean",
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "multipleChoice": false,
+        "requiredValue": true,
+        "choices": [{
+            "schema:name": "Decline",
+            "schema:value": 0
+        },
+            {
+                "schema:name": "Accept",
+                "schema:value": 1
+            }
+        ]
+    }
+}
+
+
+
+
