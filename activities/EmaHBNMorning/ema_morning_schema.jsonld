@@ -1,0 +1,29 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/EmaHBNMorning/ema_morning_context.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Activity.jsonld",
+    "@id": "ema_morning_schema",
+    "skos:prefLabel": "EMA: Morning",
+    "skos:altLabel": "ema_morning_schema",
+    "schema:description": "Morning Questions",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": "",
+    "scoringLogic": {
+    },
+    "repronim:timeUnit": "yearmonthdate",
+    "ui": {
+        "order": [
+            "time_in_bed",
+            "nightmares",
+            "sleeping_aids"
+        ],
+        "shuffle": false,
+        "visibility": {
+            "time_in_bed": true,
+            "nightmares": true,
+            "sleeping_aids": true
+        }
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/EmaHBNMorning/ema_morning_context.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+    "@id": "sleeping_aids",
+    "skos:prefLabel": "Sleeping Aids",
+    "skos:altLabel": "sleeping_aids",
+    "schema:description": "whether or not your child took sleeping aids to fall asleep last night",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Did your child take sleeping pills or anything else to help their sleep last night?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "@type": "xsd:anyURI",
+        "multipleChoice": false,
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [{
+            "@type": "schema:Boolean",
+            "schema:name": "No",
+            "schema:value": 0,
+            "schema:image": "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/1F6CF.svg"
+
+        },
+        {
+            "@type": "schema:Boolean",
+            "schema:name": "Yes",
+            "schema:value": 1,
+            "schema:image": "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/1F48A.svg"
+
+        }
+        ]
+    }
+}

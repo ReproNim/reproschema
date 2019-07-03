@@ -1,0 +1,65 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/EmaHBNEvening/ema_evening_context.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+    "@id": "sources_of_stress",
+    "skos:prefLabel": "Sources of Stress",
+    "skos:altLabel": "source_of_stress",
+    "schema:description": "your child's sources of stress",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Choose the source(s) of your child's stress today:",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "@type": "xsd:anyURI",
+        "multipleChoice": true,
+        "schema:minValue": 0,
+        "schema:maxValue": 2,
+        "choices": [{
+            "@type": "schema:option",
+            "schema:name": "Didn't feel well",
+            "schema:value": 0,
+            "schema:image": "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/1F915.svg"
+
+        },
+        {
+            "@type": "schema:option",
+            "schema:name": "Classroom learning",
+            "schema:value": 1,
+            "schema:image": "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/1F469-200D-1F3EB.svg"
+
+        },
+        {
+            "@type": "schema:option",
+            "schema:name": "A test or quiz at school",
+            "schema:value": 2,
+            "schema:image": "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/1F4DD.svg"
+
+        },
+        {
+            "@type": "schema:option",
+            "schema:name": "Bullying",
+            "schema:value": 3,
+            "schema:image": "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/1F47F.svg"
+
+        },
+        {
+            "@type": "schema:option",
+            "schema:name": "Online relationships",
+            "schema:value": 4,
+            "schema:image": "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/E246.svg"
+
+        },
+        {
+            "@type": "schema:option",
+            "schema:name": "Death of a loved one",
+            "schema:value": 5,
+            "schema:image": "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/2764.svg"
+
+        }
+        ]
+    }
+}

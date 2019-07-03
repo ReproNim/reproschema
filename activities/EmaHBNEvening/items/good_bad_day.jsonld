@@ -1,0 +1,35 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/EmaHBNEvening/ema_evening_context.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+    "@id": "good_bad_day",
+    "skos:prefLabel": "Good or Bad day",
+    "skos:altLabel": "good_bad_day",
+    "schema:description": "did you child have a good or bad day",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Did your child have a good day or bad day today?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "@type": "xsd:anyURI",
+        "multipleChoice": false,
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [{
+            "@type": "schema:Boolean",
+            "schema:name": "Bad Day",
+            "schema:value": 0,
+            "schema:image": "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/1F44E.svg"
+        },
+        {
+            "@type": "schema:Boolean",
+            "schema:name": "Good Day",
+            "schema:value": 1,
+            "schema:image": "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/1F44D.svg"
+        }
+        ]
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/EmaHBNEvening/ema_evening_context.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Activity.jsonld",
+    "@id": "ema_evening_schema",
+    "skos:prefLabel": "EMA: Evening",
+    "skos:altLabel": "ema_evening_schema",
+    "schema:description": "Evening Questions",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": "",
+    "scoringLogic": {
+    },
+    "repronim:timeUnit": "yearmonthdate",
+    "variableMap": [
+        {"variableName": "stressful_day", "isAbout": "stressful_day"},
+        {"variableName": "sources_of_stress", "isAbout": "sources_of_stress"},
+        {"variableName": "good_bad_day", "isAbout": "good_bad_day"},
+        {"variableName": "enjoyed_day", "isAbout": "enjoyed_day"},
+        {"variableName": "energy", "isAbout": "energy"},
+        {"variableName": "health", "isAbout": "health"}
+    ],
+    "ui": {
+        "order": [
+            "stressful_day",
+            "sources_of_stress",
+            "good_bad_day",
+            "enjoyed_day",
+            "energy",
+            "health"
+        ],
+        "shuffle": false,
+        "visibility": {
+            "stressful_day": true,
+            "sources_of_stress": "stressful_day",
+            "good_bad_day": true,
+            "enjoyed_day": true,
+            "energy": true,
+            "health": true
+        }
+    }
+}

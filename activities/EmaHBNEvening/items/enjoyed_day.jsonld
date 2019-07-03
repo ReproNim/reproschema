@@ -1,0 +1,48 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/EmaHBNEvening/ema_evening_context.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+    "@id": "enjoyed_day",
+    "skos:prefLabel": "Enjoyed the day",
+    "skos:altLabel": "enjoyed_day",
+    "schema:description": "whether or not your child took sleeping aids to fall asleep last night",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Did your child seem like they enjoyed the day?",
+    "ui": {
+        "inputType": "slider"
+    },
+    "responseOptions": {
+        "@type": "xsd:integer",
+        "schema:minValue": "No enjoyment or pleasure",
+        "schema:maxValue": "Really enjoying things",
+        "requiredValue": false,
+        "choices": [{
+            "schema:name": "0",
+            "schema:value": 0,
+            "schema:image": "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/1F621.svg"
+        },
+        {
+            "schema:name": "1",
+            "schema:value": 1
+        },
+        {
+            "schema:name": "2",
+            "schema:value": 2
+        },
+        {
+            "schema:name": "3",
+            "schema:value": 3
+        },
+        {
+            "schema:name": "4",
+            "schema:value": 4
+        },        {
+            "schema:name": "5",
+            "schema:value": 5,
+            "schema:image": "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/1F601.svg"
+        }
+        ]
+    }
+}
