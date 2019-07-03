@@ -3,15 +3,15 @@
         "https://raw.githubusercontent.com/sanuann/schema-standardization/feature_add_consent/activities/ConsentVoiceStudy/voice_consent_context.jsonld"
     ],
     "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
-    "@id": "quiz_q5",
-    "skos:prefLabel": "Quiz Q1",
-    "skos:altLabel": "quiz_q1",
-    "schema:description": "Quiz Question 1",
+    "@id": "quiz_q2",
+    "skos:prefLabel": "Quiz Q2",
+    "skos:altLabel": "quiz_q2",
+    "schema:description": "Quiz Question 2",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
-    "question": "",
+    "question": "What will be used to identify my study data?",
     "ui": {
-        "inputType": "sign"
+        "inputType": "radio"
     },
     "responseOptions": {
         "type": "xsd:string",
@@ -20,15 +20,15 @@
         "multipleChoice": false,
         "requiredValue": true,
         "choices": [{
-            "schema:name": "Track my symptoms and triggers",
+            "schema:name": "My full name",
             "schema:value": 0
         },
             {
-                "schema:name": "Schedule an appointment with my regular doctor",
+                "schema:name": "My house address",
                 "schema:value": 1
             },
             {
-                "schema:name": "Join a support group for people living with Parkinson's disease",
+                "schema:name": "My Global Unique Identifier (GUID)",
                 "schema:value": 2
             }
         ]
