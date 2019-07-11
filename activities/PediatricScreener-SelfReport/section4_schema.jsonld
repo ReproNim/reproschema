@@ -1,7 +1,7 @@
 {
     "@context": [
         "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
-        "https://raw.githubusercontent.com/binarybottle/schema-standardization/master/activities/PediatricScreener-SelfReport/pediatric_screener_selfreport_context.jsonld"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/PediatricScreener-SelfReport/pediatric_screener_selfreport_context.jsonld"
     ],
     "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Activity.jsonld",
     "@id": "pediatric_screener_selfreport_section4_schema",
@@ -10,7 +10,7 @@
     "schema:description": "Respond to questions about yourself as part of this mental health screener.",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
-    "preamble": "## Remaining Questions\n\nPlease answer the following Yes/No questions.",
+    "preamble": "Please answer the following Yes/No questions.",
     "branchLogic": {},
     "scoringLogic": {},
     "repronim:timeUnit": "yearmonthdate",
@@ -49,6 +49,7 @@
             "people_say_cut_down",
             "trouble_and_drugs"
         ],
+        "inputType": "section",
         "shuffle": false,
         "visibility": {
             "car_high": true,
