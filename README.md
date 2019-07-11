@@ -69,11 +69,11 @@ We have defined 3 different types of schema -
       For example, 
       "@context":["https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld","https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/PHQ-9/phq9_context.jsonld"],
 
-    - @type - "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Activity.jsonld”
+    - @type - "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Activity.jsonld"
 
   - To create item_x.jsonld in the items folder:
     - Use keys defined in schema/Field.jsonld
-    - @type - "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld”
+    - @type - "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld"
     - responseOptions - can be embedded or can point to a remote jsonld object.
 
 - To create an activity-set:
@@ -90,7 +90,7 @@ We have defined 3 different types of schema -
       For example, 
       "@context":["https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld","https://raw.githubusercontent.com/sanuann/schema-standardization/master/activity-sets/example/nda-phq_context.jsonld"]
 
-    - @type "@type":"https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/ActivitySet.jsonld”
+    - @type "@type":"https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/ActivitySet.jsonld"
 
 ## 6.0: Why linked data?
 
