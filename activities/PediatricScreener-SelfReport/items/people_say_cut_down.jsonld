@@ -1,0 +1,35 @@
+{
+  "@context": ["https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+    "https://raw.githubusercontent.com/binarybottle/schema-standardization/master/activities/PediatricScreener-SelfReport/pediatric_screener_selfreport_context.jsonld"
+  ],
+  "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+  "@id": "people_say_cut_down",
+  "skos:prefLabel": "People say cut down on drinking or drug use",
+  "skos:altLabel": "people_say_cut_down",
+  "schema:description": "People say cut down on drinking or drug use",
+  "schema:schemaVersion": "0.0.1",
+  "schema:version": "0.0.1",
+  "schema:question": "Do your family or friends ever tell you that you should cut down on your drinking or drug use?",
+  "ui": {
+        "inputType": "radio",
+        "allow": ["autoAdvance"]
+  },
+  "responseOptions": {
+        "@type": "xsd:anyURI",
+        "multipleChoice": false,
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "@type": "schema:Boolean",
+                "schema:name": "No",
+                "schema:value": 0
+            },
+            {
+                "@type": "schema:Boolean",
+                "schema:name": "Yes",
+                "schema:value": 1
+            }
+        ]
+  }
+}

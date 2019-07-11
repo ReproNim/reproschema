@@ -1,0 +1,74 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/MedicalHistory-LORIS/medicalhistory_context.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Activity.jsonld",
+    "@id": "medicalhistory_schema",
+    "skos:prefLabel": "Medical History Instrument",
+    "skos:altLabel": "medicalhistory_schema",
+    "schema:description": "Medical History Instrument schema",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": "",
+    "statusOptions": ["not_answered"],
+    "ui": {
+        "order": [
+            "medicalhistory_page1",
+            "medicalhistory_page2",
+            "medicalhistory_page3"
+        ],
+        "shuffle": false,
+        "visibility": {
+            "medicalhistory_1":   true,
+            "medicalhistory_1a":  true,
+            "medicalhistory_2":   true,
+            "medicalhistory_2a":  "if([medicalhistory_2]='yes',true,false)",
+            "medicalhistory_7":   true,
+            "medicalhistory_7a":  "if([medicalhistory_7]='yes',true,false)",
+            "medicalhistory_7b":  true,
+            "medicalhistory_21":  true,
+            "concussion_table":   "if([medicalhistory_21]='yes',true,false)",
+            "medicalhistory_21d": true
+        },
+        "required": {
+            "medicalhistory_1":                true,
+            "medicalhistory_1a":               false,
+            "medicalhistory_2":                true,
+            "medicalhistory_2a":               false,
+            "medicalhistory_7":                true,
+            "medicalhistory_7a":               "if([medicalhistory_7]='yes',true,false)",
+            "medicalhistory_7b":               false,
+            "medicalhistory_21":               true,
+            "medicalhistory_21a_incident":     false,
+            "medicalhistory_21a_hospitalized": false,
+            "medicalhistory_21a_age":          false,
+            "medicalhistory_21b_incident":     false,
+            "medicalhistory_21b_hospitalized": false,
+            "medicalhistory_21b_age":          false,
+            "medicalhistory_21c_incident":     false,
+            "medicalhistory_21c_hospitalized": false,
+            "medicalhistory_21c_age":          false,
+            "medicalhistory_21d":              true
+        },
+        "addStatus": {
+            "medicalhistory_1":                false,
+            "medicalhistory_1a":               true,
+            "medicalhistory_2":                false,
+            "medicalhistory_2a":               false,
+            "medicalhistory_7":                false,
+            "medicalhistory_7a":               false,
+            "medicalhistory_7b":               true,
+            "medicalhistory_21":               false,
+            "medicalhistory_21a_incident":     false,
+            "medicalhistory_21a_hospitalized": false,
+            "medicalhistory_21a_age":          false,
+            "medicalhistory_21b_incident":     false,
+            "medicalhistory_21b_hospitalized": false,
+            "medicalhistory_21b_age":          false,
+            "medicalhistory_21c_incident":     false,
+            "medicalhistory_21c_hospitalized": false,
+            "medicalhistory_21c_age":          false,
+            "medicalhistory_21d":              false
+        }
+    }
+}
