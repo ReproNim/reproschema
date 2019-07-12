@@ -18,10 +18,9 @@
         {"variableName": "cage_aid_schema", "isAbout": "cage_aid_schema"},
         {"variableName": "bads_schema", "isAbout": "bads_schema"},
         {"variableName": "other_questions_schema", "isAbout": "other_questions_schema"},
-        {"variableName": "voice_task_schema", "isAbout": "voice_task_schema"}
+        {"variableName": "voice_task_schema", "isAbout": "voice_task_schema"},
+        {"variableName": "thankyou_schema", "isAbout": "thankyou_schema"}
     ],
-    "branchLogic": {
-    },
     "ui": {
         "order": [
             "voice_screening_schema",
@@ -31,7 +30,8 @@
             "gad7_schema",
             "cage_aid_schema",
             "bads_schema",
-            "other_questions_schema"
+            "other_questions_schema",
+            "thankyou_schema"
         ],
         "shuffle": false,
         "activity_display_name": {
@@ -44,15 +44,48 @@
             "bads_schema": "Question Set 7",
             "other_questions_schema": "Question Set 8"
         },
-        "visibility": {
-            "voice_screening_schema": true,
-            "demographics_schema": true,
-            "promis_global_schema": true,
-            "gad7_schema": true,
-            "cage_aid_schema": true,
-            "bads_schema": true,
-            "other_questions_schema": true,
-            "voice_task_schema": true
+        "visibility":{
+            "voice_screening_schema":true,
+            "demographics_schema": {
+                "method":"POST",
+                "url":"https://sig.mit.edu/vb/check",
+                "payload":["voice_screening_schema"]
+            },
+            "promis_global_schema":{
+                "method":"POST",
+                "url":"https://sig.mit.edu/vb/check",
+                "payload":["voice_screening_schema"]
+            },
+            "gad7_schema":{
+                "method":"POST",
+                "url":"https://sig.mit.edu/vb/check",
+                "payload":["voice_screening_schema"]
+            },
+            "cage_aid_schema":{
+                "method":"POST",
+                "url":"https://sig.mit.edu/vb/check",
+                "payload":["voice_screening_schema"]
+            },
+            "bads_schema":{
+                "method":"POST",
+                "url":"https://sig.mit.edu/vb/check",
+                "payload":["voice_screening_schema"]
+            },
+            "other_questions_schema":{
+                "method":"POST",
+                "url":"https://sig.mit.edu/vb/check",
+                "payload":["voice_screening_schema"]
+            },
+            "voice_task_schema":{
+                "method":"POST",
+                "url":"https://sig.mit.edu/vb/check",
+                "payload":["voice_screening_schema"]
+            },
+            "thankyou_schema": {
+                "method":"POST",
+                "url":"https://sig.mit.edu/vb/check",
+                "payload":["voice_screening_schema && voice_task_schema && demographics_schema && promis_global_schema && gad7_schema && cage_aid_schema && bads_schema && other_questions_schema"]
+            }
         }
     }
 }
