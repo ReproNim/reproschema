@@ -1,6 +1,6 @@
 {
     "@context": [ "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
-        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activity-sets/voice-pilot/voice_pilot_context.jsonld"
+        "https://raw.githubusercontent.com/sanuann/schema-standardization/branching_server_side_test/activity-sets/voice-pilot/voice_pilot_context.jsonld"
     ],
     "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/ActivitySet.jsonld",
     "@id": "voice_pilot_schema",
@@ -9,7 +9,7 @@
     "schema:description": "activity set for UW MIT Voice Pilot Protocol",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
-    "schema:image": "https://childmindinstitute.github.io/mindlogger-assets/illustrations/undraw/mit_voice_pilot_applet_image.jpg",
+    "schema:image": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activity-sets/voice-pilot/mit_voice_pilot_applet_image.svg?sanitize=true",
     "variableMap": [
         {"variableName": "voice_screening_schema", "isAbout": "voice_screening_schema"},
         {"variableName": "demographics_schema", "isAbout": "demographics_schema"},
@@ -30,19 +30,18 @@
             "gad7_schema",
             "cage_aid_schema",
             "bads_schema",
-            "other_questions_schema",
-            "thankyou_schema"
+            "other_questions_schema"
         ],
         "shuffle": false,
         "activity_display_name": {
-            "voice_screening_schema": "Question Set 1",
-            "voice_task_schema": "Question Set 2",
-            "demographics_schema": "Question Set 3",
-            "promis_global_schema": "Question Set 4",
-            "gad7_schema":  "Question Set 5",
-            "cage_aid_schema": "Question Set 6",
-            "bads_schema": "Question Set 7",
-            "other_questions_schema": "Question Set 8"
+            "voice_screening_schema": "Screening",
+            "demographics_schema": "Demographics",
+            "promis_global_schema": "Health",
+            "gad7_schema":  "Anxiety",
+            "cage_aid_schema": "Substance use",
+            "bads_schema": "Behavior",
+            "other_questions_schema": "Other Questions",
+            "voice_task_schema": "Voice Tasks"
         },
         "visibility":{
             "voice_screening_schema":true,
@@ -80,11 +79,6 @@
                 "method":"POST",
                 "url":"https://sig.mit.edu/vb/check",
                 "payload":["voice_screening_schema"]
-            },
-            "thankyou_schema": {
-                "method":"POST",
-                "url":"https://sig.mit.edu/vb/check",
-                "payload":["voice_screening_schema && voice_task_schema && demographics_schema && promis_global_schema && gad7_schema && cage_aid_schema && bads_schema && other_questions_schema"]
             }
         }
     }
