@@ -1,0 +1,90 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+    "@id": "radio-multi",
+    "skos:prefLabel": "Radio (multi-select)",
+    "skos:altLabel": "radio-multi",
+    "schema:description": "Demo of a multiple choice Radio widget",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "## Radio (multi-select)\r\n\r\nThe radio widget can also be configured to allow multiple responses.\r\n\r\nWhat were some sources of stress?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "@type": "xsd:anyURI",
+        "multipleChoice": true,
+        "schema:minValue": 0,
+        "schema:maxValue": 2,
+        "choices": [{
+            "@type": "schema:option",
+            "schema:name": "Didn't feel well",
+            "schema:value": 0,
+            "schema:image": "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/1F915.jpg"
+        },
+        {
+            "@type": "schema:option",
+            "schema:name": "Classroom learning",
+            "schema:value": 1,
+            "schema:image": "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/1F469-200D-1F3EB.jpg"
+        },
+        {
+            "@type": "schema:option",
+            "schema:name": "A test or quiz at school",
+            "schema:value": 2,
+            "schema:image": "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/1F4DD.jpg"
+        },
+        {
+            "@type": "schema:option",
+            "schema:name": "Bullying",
+            "schema:value": 3,
+            "schema:image": "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/1F47F.jpg"
+        },
+        {
+            "@type": "schema:option",
+            "schema:name": "Online relationships",
+            "schema:value": 4,
+            "schema:image": "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/E246.jpg"
+        },
+        {
+            "@type": "schema:option",
+            "schema:name": "Death of a loved one",
+            "schema:value": 5,
+            "schema:image": "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/2764.jpg"
+        }]
+    },
+    "media": {
+        "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/1F915.jpg": {
+            "@type": "schema:ImageObject",
+            "schema:encodingFormat": "image/jpeg",
+            "schema:contentUrl": "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/1F915.jpg"
+        },
+        "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/1F469-200D-1F3EB.jpg": {
+            "@type": "schema:ImageObject",
+            "schema:encodingFormat": "image/jpeg",
+            "schema:contentUrl": "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/1F469-200D-1F3EB.jpg"
+        },
+        "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/1F4DD.jpg": {
+            "@type": "schema:ImageObject",
+            "schema:encodingFormat": "image/jpeg",
+            "schema:contentUrl": "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/1F4DD.jpg"
+        },
+        "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/1F47F.jpg": {
+            "@type": "schema:ImageObject",
+            "schema:encodingFormat": "image/jpeg",
+            "schema:contentUrl": "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/1F47F.jpg"
+        },
+        "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/E246.jpg": {
+            "@type": "schema:ImageObject",
+            "schema:encodingFormat": "image/jpeg",
+            "schema:contentUrl": "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/E246.jpg"
+        },
+        "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/2764.jpg": {
+            "@type": "schema:ImageObject",
+            "schema:encodingFormat": "image/jpeg",
+            "schema:contentUrl": "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/2764.jpg"
+        }
+    }
+}

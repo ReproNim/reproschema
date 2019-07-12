@@ -1,0 +1,38 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/MiscellaneousQuestions/other_questions_context.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+    "@id": "q_2a",
+    "skos:prefLabel": "Q2a of Other Questions",
+    "skos:altLabel": "q_2a",
+    "schema:description": "Q2a of the Other Questions Assessment",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Specify the health condition:",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "type": "xsd:integer",
+        "schema:minValue": 1,
+        "schema:maxValue": 3,
+        "multipleChoice": false,
+        "requiredValue": false,
+        "choices": [
+            {
+                "schema:name": "Parkinson/ALS/Motor speech disorders",
+                "schema:value": 1
+            },
+            {
+                "schema:name": "Dyslexia",
+                "schema:value": 2
+            },
+            {
+                "schema:name": "Other",
+                "schema:value": 3
+            }
+        ]
+    }
+}
+

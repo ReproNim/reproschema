@@ -1,0 +1,33 @@
+{
+  "@context": ["https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+    "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activity-sets/pediatric-screener/pediatric-screener_context.jsonld"
+  ],
+  "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/ActivitySet.jsonld",
+  "@id": "pediatric-screener_schema",
+  "skos:prefLabel": "Pediatric Screener",
+  "skos:altLabel": "pediatric-screener",
+  "schema:description": "Pediatric mental health screener",
+  "schema:schemaVersion": "0.0.1",
+  "schema:version": "0.0.1",
+  "schema:about": "https://raw.githubusercontent.com/binarybottle/schema-standardization/master/activity-sets/pediatric-screener/README.md",
+  "schema:image": "https://raw.githubusercontent.com/ChildMindInstitute/mindlogger-assets/master/MATTER-Lab-logo-square.jpg",
+  "variableMap": [
+        {"variableName": "pediatric_screener_parent", "isAbout": "pediatric_screener_parent"},
+        {"variableName": "pediatric_screener_selfreport", "isAbout": "pediatric_screener_selfreport"}
+  ],
+  "ui": {
+        "order": [
+            "pediatric_screener_parent",
+            "pediatric_screener_selfreport"
+        ],
+        "shuffle": false,
+        "activity_display_name": {
+            "pediatric_screener_parent":  "Parent",
+            "pediatric_screener_selfreport":  "Self-report"
+        },
+        "visibility": {
+            "pediatric_screener_parent": true,
+            "pediatric_screener_selfreport": true
+        }
+  }
+}
