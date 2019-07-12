@@ -1,0 +1,49 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/PediatricScreener-SelfReport/pediatric_screener_selfreport_context.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Activity.jsonld",
+    "@id": "pediatric_screener_selfreport_section3_schema",
+    "skos:prefLabel": "Self-report section 3",
+    "skos:altLabel": "pediatric_screener_selfreport_section3_schema",
+    "schema:description": "Respond to questions about yourself as part of this mental health screener.",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": "For each of the following, please select the option that best describes you for *the past 12 months*.",
+    "branchLogic": {},
+    "scoringLogic": {},
+    "repronim:timeUnit": "yearmonthdate",
+    "variableMap": [
+        {
+            "variableName": "alcohol",
+            "isAbout": "alcohol"
+        },
+        {
+            "variableName": "marijuana",
+            "isAbout": "marijuana"
+        },
+        {
+            "variableName": "drugs",
+            "isAbout": "drugs"
+        }
+    ],
+    "ui": {
+        "order": [
+            "alcohol",
+            "marijuana",
+            "drugs"
+        ],
+        "inputType": "section",
+        "shuffle": false,
+        "visibility": {
+            "alcohol": true,
+            "marijuana": true,
+            "drugs": true
+        },
+        "allow": [
+            "skipped",
+            "dontKnow"
+        ]
+    }
+}

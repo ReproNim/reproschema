@@ -1,0 +1,36 @@
+{
+  "@context": [
+    "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld"
+  ],
+  "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+  "@id": "ravlt_stimulus_3",
+  "skos:altLabel": "RAVLT Stimulus 3",
+  "skos:prefLabel": "RAVLT Stimulus 3",
+  "schema:description": "Instructions for the Rey Auditory Verbal Learning Test",
+  "schema:schemaVersion": "0.0.1",
+  "schema:version": "0.0.1",
+  "question": {
+    "en": "Press the Play button below to listen to a list of words."
+  },
+  "inputOptions": [
+    {
+      "@type": "schema:URL",
+      "schema:name": "stimulus",
+      "schema:value": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/RAVLT/items/ravlt-a.mp3",
+      "schema:contentUrl": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/RAVLT/items/ravlt-a.mp3"
+    },
+    {
+      "@type": "schema:Boolean",
+      "schema:name": "allowReplay",
+      "schema:value": false
+    }
+  ],
+  "media": {
+    "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/RAVLT/items/ravlt-a.mp3": {
+      "@type": "schema:AudioObject",
+      "schema:name": "stimulus",
+      "schema:contentUrl": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/RAVLT/items/ravlt-a.mp3",
+      "schema:transcript": "Drum, Curtain, Bell, Coffee, School, Parent, Moon, Garden, Hat, Farmer, Nose, Turkey, Color, House, River."
+    }
+  }
+}

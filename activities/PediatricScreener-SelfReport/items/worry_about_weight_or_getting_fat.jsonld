@@ -1,0 +1,40 @@
+{
+  "@context": ["https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+    "https://raw.githubusercontent.com/binarybottle/schema-standardization/master/activities/PediatricScreener-SelfReport/pediatric_screener_selfreport_context.jsonld"
+  ],
+  "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+  "@id": "worry_about_weight_or_getting_fat",
+  "skos:prefLabel": "Is preoccupied with gaining weight or worrying a lot about becoming fat",
+  "skos:altLabel": "worry_about_weight_or_getting_fat",
+  "schema:description": "Child has been preoccupied with gaining weight or worrying a lot about becoming fat",
+  "schema:schemaVersion": "0.0.1",
+  "schema:version": "0.0.1",
+  "schema:question": "In the past 3 months has your child **been preoccupied with gaining weight or worrying a lot about becoming fat**?",
+  "ui": {
+        "inputType": "radio",
+        "allow": ["autoAdvance"]
+  },
+  "responseOptions": {
+        "@type": "xsd:anyURI",
+        "multipleChoice": false,
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "@type": "schema:Boolean",
+                "schema:name": "Not true",
+                "schema:value": 0
+            },
+            {
+                "@type": "schema:Boolean",
+                "schema:name": "Somewhat true",
+                "schema:value": 1
+            },
+            {
+                "@type": "schema:Boolean",
+                "schema:name": "Certainly true",
+                "schema:value": 2
+            }
+        ]
+  }
+}

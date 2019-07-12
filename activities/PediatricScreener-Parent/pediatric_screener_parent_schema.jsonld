@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+    "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/PediatricScreener-Parent/pediatric_screener_parent_context.jsonld"
+  ],
+  "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Activity.jsonld",
+  "@id": "pediatric_screener_parent_schema",
+  "skos:prefLabel": "Parent questionnaire",
+  "skos:altLabel": "pediatric_screener_parent_schema",
+  "schema:description": "Respond to questions about your child as part of this mental health screener.",
+  "schema:schemaVersion": "0.0.1",
+  "schema:version": "0.0.1",
+  "preamble": "",
+  "branchLogic": {},
+  "scoringLogic": {},
+  "repronim:timeUnit": "yearmonthdate",
+  "variableMap": [
+    {
+      "variableName": "section1_schema",
+      "isAbout": "section1_schema"
+    },
+    {
+      "variableName": "section2_schema",
+      "isAbout": "section2_schema"
+    }
+  ],
+  "ui": {
+    "order": [
+      "section1_schema",
+      "section2_schema"
+    ],
+    "shuffle": false,
+    "visibility": {
+      "section1_schema": true,
+      "section2_schema": true
+    },
+      "allow": [
+      "skipped",
+      "dontKnow"
+    ]
+  }
+}

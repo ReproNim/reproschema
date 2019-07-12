@@ -1,0 +1,51 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+    "@id": "radio",
+    "skos:prefLabel": "Radio",
+    "skos:altLabel": "radio",
+    "schema:description": "Demo of the Radio widget",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "## Radio\r\n\r\nThe Radio widget allows the user to respond to a multiple choice question. Options can also have images associated with them.\r\n\r\nHow was your child's day?",
+    "ui": {
+        "inputType": "radio",
+        "allow": ["autoAdvance"]
+    },
+    "responseOptions": {
+        "@type": "xsd:anyURI",
+        "multipleChoice": false,
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "@type": "schema:Boolean",
+                "schema:name": "Bad Day",
+                "schema:value": 0,
+                "schema:image": "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/1F44E.jpg"
+            },
+            {
+                "@type": "schema:Boolean",
+                "schema:name": "Good Day",
+                "schema:value": 1,
+                "schema:image": "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/1F44D.jpg"
+            }
+        ]
+    },
+    "media": {
+        "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/1F44E.jpg": {
+            "@type": "schema:ImageObject",
+            "schema:encodingFormat": "image/jpeg",
+            "schema:name": "Upset Emoji",
+            "schema:contentUrl": "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/1F44E.jpg"
+        },
+        "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/1F44D.jpg": {
+            "@type": "schema:ImageObject",
+            "schema:encodingFormat": "image/jpeg",
+            "schema:name": "Smiling Emoji",
+            "schema:contentUrl": "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/1F44D.jpg"
+        }
+    }
+}
