@@ -11,55 +11,30 @@
     "schema:version": "0.0.1",
     "question": "In the past 7 days, how would you rate your fatigue on average?",
     "ui": {
-        "inputType": "slider"
+        "inputType": "radio"
     },
     "responseOptions": {
-        "type": "xsd:integer",
-        "schema:minValue": "No pain",
-        "schema:maxValue": "Worst pain imaginable",
+        "type": "xsd:string",
+        "multipleChoice": false,
         "requiredValue": false,
         "choices": [{
-            "schema:name": "0",
+            "schema:name": "None",
             "schema:value": 5
         },
             {
-                "schema:name": "1",
+                "schema:name": "Mild",
                 "schema:value": 4
             },
             {
-                "schema:name": "2",
-                "schema:value": 4
-            },
-            {
-                "schema:name": "3",
-                "schema:value": 4
-            },
-            {
-                "schema:name": "4",
+                "schema:name": "Moderate",
                 "schema:value": 3
             },
             {
-                "schema:name": "5",
-                "schema:value": 3
-            },
-            {
-                "schema:name": "6",
-                "schema:value": 3
-            },
-            {
-                "schema:name": "7",
+                "schema:name": "Severe",
                 "schema:value": 2
             },
             {
-                "schema:name": "8",
-                "schema:value": 2
-            },
-            {
-                "schema:name": "9",
-                "schema:value": 2
-            },
-            {
-                "schema:name": "10",
+                "schema:name": "Very severe",
                 "schema:value": 1
             }
         ]
