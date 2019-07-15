@@ -1,0 +1,54 @@
+{
+  "@context": [
+    "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+    "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/PediatricScreener-SelfReport/pediatric_screener_selfreport_context.jsonld"
+  ],
+  "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Activity.jsonld",
+  "@id": "pediatric_screener_selfreport_schema",
+  "skos:prefLabel": "Self-report questionnaire",
+  "skos:altLabel": "pediatric_screener_selfreport_schema",
+  "schema:description": "Respond to questions about yourself as part of this mental health screener.",
+  "schema:schemaVersion": "0.0.1",
+  "schema:version": "0.0.1",
+  "preamble": "",
+  "branchLogic": {},
+  "scoringLogic": {},
+  "repronim:timeUnit": "yearmonthdate",
+  "variableMap": [
+    {
+      "variableName": "section1_schema",
+      "isAbout": "section1_schema"
+    },
+    {
+      "variableName": "section2_schema",
+      "isAbout": "section2_schema"
+    },
+    {
+      "variableName": "section3_schema",
+      "isAbout": "section3_schema"
+    },
+    {
+      "variableName": "section4_schema",
+      "isAbout": "section4_schema"
+    }
+  ],
+  "ui": {
+    "order": [
+      "section1_schema",
+      "section2_schema",
+      "section3_schema",
+      "section4_schema"
+    ],
+    "shuffle": false,
+    "visibility": {
+      "section1_schema": true,
+      "section2_schema": true,
+      "section3_schema": true,
+      "section4_schema": true
+    },
+      "allow": [
+      "skipped",
+      "dontKnow"
+    ]
+  }
+}

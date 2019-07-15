@@ -75,7 +75,6 @@ We have defined 3 different types of schema –
         ]
       }
       ```
-
     - `@type`=`"https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Activity.jsonld"`
 
   - To create `item_x.jsonld` in the items folder:
@@ -103,7 +102,6 @@ We have defined 3 different types of schema –
         ]
       }
       ```
-
     - `@type`=`"https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/ActivitySet.jsonld"`
 
 ## 6.0: Why linked data?

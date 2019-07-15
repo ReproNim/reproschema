@@ -1,0 +1,31 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/MedicalHistory-LORIS/medicalhistory_context.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Activity.jsonld",
+    "@id": "medicalhistory_concussion_table",
+    "skos:prefLabel": "Concussion Table of Medical History Instrument",
+    "skos:altLabel": "medicalhistory_concussion_table",
+    "schema:description": "Concussion Table of Medical History Instrument",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": "If YES, please fill out the table below, indicating: a) How many concussions have you experienced in your lifetime? b) For each incident, were you hospitalized? c) For each incident, how old were you?",
+    "ui": {
+        "inputType": "table",
+        "headers": [
+            "Incident",
+            "Hospitalized?",
+            "Age"
+        ],
+        "rows": [{
+            "order": ["medicalhistory_21a_incident", "medicalhistory_21a_hospitalized", "medicalhistory_21a_age"]
+        },
+        {
+            "order": ["medicalhistory_21b_incident", "medicalhistory_21b_hospitalized", "medicalhistory_21b_age"]
+        },
+        {
+            "order": ["medicalhistory_21c_incident", "medicalhistory_21c_hospitalized", "medicalhistory_21c_age"]
+        }],
+        "shuffle": false,
+    }
+}

@@ -1,0 +1,63 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+    "@id": "slider",
+    "skos:prefLabel": "Slider",
+    "skos:altLabel": "slider",
+    "schema:description": "Demo of the Slider widget",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "## Slider\r\n\r\nThe Slider widget allows the user to drag their finger to a specific value.\r\n\r\nHow much did your child enjoy the day?",
+    "ui": {
+        "inputType": "slider"
+    },
+    "responseOptions": {
+        "@type": "xsd:integer",
+        "schema:minValue": "No enjoyment or pleasure",
+        "schema:maxValue": "Really enjoying things",
+        "requiredValue": false,
+        "choices": [
+            {
+                "schema:name": "0",
+                "schema:value": 0,
+                "schema:image": "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/1F621.jpg"
+            },
+            {
+                "schema:name": "1",
+                "schema:value": 1
+            },
+            {
+                "schema:name": "2",
+                "schema:value": 2
+            },
+            {
+                "schema:name": "3",
+                "schema:value": 3
+            },
+            {
+                "schema:name": "4",
+                "schema:value": 4
+            },        {
+                "schema:name": "5",
+                "schema:value": 5,
+                "schema:image": "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/1F601.jpg"
+            }
+        ]
+    },
+    "media": {
+        "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/1F621.jpg": {
+            "@type": "schema:ImageObject",
+            "schema:encodingFormat": "image/jpeg",
+            "schema:name": "Frowning Emoji",
+            "schema:contentUrl": "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/1F621.jpg"
+        },
+        "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/1F601.jpg": {
+            "@type": "schema:ImageObject",
+            "schema:encodingFormat": "image/jpeg",
+            "schema:name": "Happy Emoji",
+            "schema:contentUrl": "https://childmindinstitute.github.io/mindlogger-assets/emojis/openmoji/1F601.jpg"
+        }
+    }
+}

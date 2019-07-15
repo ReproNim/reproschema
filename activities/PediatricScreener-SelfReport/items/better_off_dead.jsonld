@@ -1,0 +1,45 @@
+{
+  "@context": ["https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+    "https://raw.githubusercontent.com/binarybottle/schema-standardization/master/activities/PediatricScreener-SelfReport/pediatric_screener_selfreport_context.jsonld"
+  ],
+  "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+  "@id": "better_off_dead",
+  "skos:prefLabel": "Thoughts that they would be better off dead or of hurting themselves in some way",
+  "skos:altLabel": "better_off_dead",
+  "schema:description": "How often child has thoughts that they would be better off dead or of hurting themselves in some way",
+  "schema:schemaVersion": "0.0.1",
+  "schema:version": "0.0.1",
+  "schema:question": "In the past 6 months how often has your child **had thoughts that they would be better off dead or of hurting themselves in some way**?",
+  "ui": {
+        "inputType": "radio",
+        "allow": ["autoAdvance"]
+  },
+  "responseOptions": {
+        "@type": "xsd:anyURI",
+        "multipleChoice": false,
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "@type": "schema:Boolean",
+                "schema:name": "Not at all",
+                "schema:value": 0
+            },
+            {
+                "@type": "schema:Boolean",
+                "schema:name": "Several days",
+                "schema:value": 1
+            },
+            {
+                "@type": "schema:Boolean",
+                "schema:name": "More than half the days",
+                "schema:value": 2
+            },
+            {
+                "@type": "schema:Boolean",
+                "schema:name": "Nearly every day",
+                "schema:value": 3
+            }
+        ]
+  }
+}
