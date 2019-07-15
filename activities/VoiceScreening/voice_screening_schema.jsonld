@@ -24,11 +24,13 @@
         "order": [
             "education_level",
             "phq9_schema",
-            "gender"
+            "gender",
+            "multipart_audio_check"
         ],
         "shuffle": false,
         "visibility": {
             "education_level": true,
+            "multipart_audio_check": "education_level === 1",
             "phq9_schema": "education_level === 1",
             "gender": "education_level === 1"
         }
