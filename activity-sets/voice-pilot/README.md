@@ -1,7 +1,3 @@
-<img src="./about_the_study.png"
-     alt="Markdown Monster icon"
-     style="float: left; margin-right: 10px;" />
-     
 <section style="height: 30vw; min-height: 15rem; background: linear-gradient(#5A478F, #47337D)">
     <div style="
       height: 30vw;
