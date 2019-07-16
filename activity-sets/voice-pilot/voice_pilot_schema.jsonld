@@ -30,7 +30,8 @@
             "gad7_schema",
             "cage_aid_schema",
             "bads_schema",
-            "other_questions_schema"
+            "other_questions_schema",
+            "thankyou_schema"
         ],
         "shuffle": false,
         "activity_display_name": {
@@ -41,7 +42,8 @@
             "cage_aid_schema": "Substance use",
             "bads_schema": "Behavior",
             "other_questions_schema": "Other Questions",
-            "voice_task_schema": "Voice Tasks"
+            "voice_task_schema": "Voice Tasks",
+            "thankyou_schema": "ThankYou"
         },
         "visibility":{
             "voice_screening_schema":true,
@@ -76,6 +78,11 @@
                 "payload":["voice_screening_schema"]
             },
             "voice_task_schema":{
+                "method":"POST",
+                "url":"https://sig.mit.edu/vb/check",
+                "payload":["voice_screening_schema"]
+            },
+            "thankyou_schema": {
                 "method":"POST",
                 "url":"https://sig.mit.edu/vb/check",
                 "payload":["voice_screening_schema"]
