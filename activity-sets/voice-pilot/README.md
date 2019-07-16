@@ -1,6 +1,17 @@
 <img src="./about_the_study.png"
      alt="Markdown Monster icon"
      style="float: left; margin-right: 10px;" />
+     
+<section style="height: 30vw; min-height: 15rem; background: linear-gradient(#5A478F, #47337D)">
+    <div style="
+      height: 30vw;
+      min-height: 15rem;
+      background-image: url(./about_the_study.png);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat">
+    </div>
+</section>
 
 <h2 align="center">Welcome to Voice Study</h2>
 
