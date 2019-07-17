@@ -12,7 +12,8 @@
     "variableMap": [
         {"variableName": "consent_overview", "isAbout": "consent_overview"},
         {"variableName": "quiz", "isAbout": "quiz"},
-        {"variableName": "sign", "isAbout": "sign"}
+        {"variableName": "sign", "isAbout": "sign"},
+        {"variableName": "quiz_score", "isAbout": "quiz_score"}
     ],
     "ui": {
         "order": [
@@ -24,8 +25,8 @@
         "visibility": {
             "consent_overview": true,
             "quiz": true,
-            "retake_quiz": "quiz !== 5",
-            "sign": "quiz === 5"
+            "retake_quiz": "quiz_score !== 5",
+            "sign": "quiz_score === 5"
         }
     }
 }
