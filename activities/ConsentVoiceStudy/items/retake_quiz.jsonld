@@ -3,16 +3,13 @@
         "https://raw.githubusercontent.com/sanuann/schema-standardization/feature_add_consent/activities/ConsentVoiceStudy/voice_consent_context.jsonld"
     ],
     "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Activity.jsonld",
-    "@id": "consent_quiz_schema",
-    "skos:prefLabel": "Consent Quiz",
-    "skos:altLabel": "consent_quiz_schema",
-    "schema:description": "Consent quiz for voice study",
+    "@id": "consent_retake_quiz",
+    "skos:prefLabel": "Consent Retake Quiz",
+    "skos:altLabel": "consent_retake_quiz",
+    "schema:description": "retake quiz for voice study",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
-    "preamble": "Let's see what you have learned from the consent document.",
-    "scoringLogic": {
-        "quiz_score": "q1 + q2 + q3 + q4 + q5"
-    },
+    "preamble": "<h2>You’re almost there!</h2>\n          <p>You answered one or more questions incorrectly. We want to make sure that you understand what this study is about and what is involved before you proceed. Please review the sections again. </p>",
     "variableMap": [
         {"variableName": "q1", "isAbout": "q1"},
         {"variableName": "q2", "isAbout": "q2"},
@@ -28,7 +25,7 @@
             "q4",
             "q5"
         ],
-        "inputType": "multipart",
+        "inputType": "retake",
         "shuffle": false,
         "visibility": {
             "q1":  true,
