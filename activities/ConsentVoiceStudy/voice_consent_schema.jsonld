@@ -11,20 +11,20 @@
     "schema:version": "0.0.1",
     "variableMap": [
         {"variableName": "consent_overview", "isAbout": "consent_overview"},
-        {"variableName": "quiz", "isAbout": "quiz"},
+        {"variableName": "quiz_schema", "isAbout": "quiz_schema"},
         {"variableName": "sign", "isAbout": "sign"},
         {"variableName": "quiz_score", "isAbout": "quiz_score"}
     ],
     "ui": {
         "order": [
             "consent_overview",
-            "quiz",
+            "quiz_schema",
             "sign"
         ],
         "shuffle": false,
         "visibility": {
             "consent_overview": true,
-            "quiz": true,
+            "quiz_schema": true,
             "retake_quiz": "quiz_score !== 5",
             "sign": "quiz_score === 5"
         }
