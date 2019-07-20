@@ -14,5 +14,10 @@
     "ui": {
         "inputType": "audioPassageRecord"
     },
-    "responseOptions": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/voice_task/items/pataka_valueConstraints.jsonld"
+    "responseOptions": {
+        "type": "audioPassageRecord",
+        "schema:minValue": 0,
+        "schema:maxValue": 75000,
+        "requiredValue": true
+    }
 }
