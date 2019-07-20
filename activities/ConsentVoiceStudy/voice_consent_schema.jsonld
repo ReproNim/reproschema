@@ -13,19 +13,32 @@
         {"variableName": "consent_overview", "isAbout": "consent_overview"},
         {"variableName": "quiz_schema", "isAbout": "quiz_schema"},
         {"variableName": "sign", "isAbout": "sign"},
+        {"variableName": "q1", "isAbout": "q1"},
+        {"variableName": "q2", "isAbout": "q2"},
+        {"variableName": "q3", "isAbout": "q3"},
+        {"variableName": "q4", "isAbout": "q4"},
+        {"variableName": "q5", "isAbout": "q5"},
         {"variableName": "quiz_score", "isAbout": "quiz_score"}
     ],
     "ui": {
         "order": [
             "consent_overview",
-            "quiz_schema",
+            "q1",
+            "q2",
+            "q3",
+            "q4",
+            "q5",
             "sign"
         ],
         "shuffle": false,
         "visibility": {
             "consent_overview": true,
-            "quiz_schema": true,
-            "sign": "quiz_score === 5"
+            "q1": true,
+            "q2": true,
+            "q3": true,
+            "q4": true,
+            "q5": true,
+            "sign": "q1 + q2 + q3 + q4 + q5 === 5"
         }
     }
 }
