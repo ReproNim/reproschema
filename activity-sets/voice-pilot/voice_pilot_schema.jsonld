@@ -50,6 +50,11 @@
         },
         "visibility":{
             "voice_screening_schema":true,
+            "voice_consent_schema": {
+                "method":"POST",
+                "url":"https://sig.mit.edu/vb/check",
+                "payload":["voice_screening_schema"]
+            },
             "demographics_schema": {
                 "method":"POST",
                 "url":"https://sig.mit.edu/vb/check",
