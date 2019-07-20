@@ -1,0 +1,67 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/PediatricScreener-SelfReport/pediatric_screener_selfreport_context.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Activity.jsonld",
+    "@id": "pediatric_screener_selfreport_section4_schema",
+    "skos:prefLabel": "Self-report section 4",
+    "skos:altLabel": "pediatric_screener_selfreport_section4_schema",
+    "schema:description": "Respond to questions about yourself as part of this mental health screener.",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": "Please answer the following Yes/No questions.",
+    "branchLogic": {},
+    "scoringLogic": {},
+    "repronim:timeUnit": "yearmonthdate",
+    "variableMap": [
+        {
+            "variableName": "car_high",
+            "isAbout": "car_high"
+        },
+        {
+            "variableName": "drugs_to_relax",
+            "isAbout": "drugs_to_relax"
+        },
+        {
+            "variableName": "drugs_while_alone",
+            "isAbout": "drugs_while_alone"
+        },
+        {
+            "variableName": "drugs_forget",
+            "isAbout": "drugs_forget"
+        },
+        {
+            "variableName": "people_say_cut_down",
+            "isAbout": "people_say_cut_down"
+        },
+        {
+            "variableName": "trouble_and_drugs",
+            "isAbout": "trouble_and_drugs"
+        }
+    ],
+    "ui": {
+        "order": [
+            "car_high",
+            "drugs_to_relax",
+            "drugs_while_alone",
+            "drugs_forget",
+            "people_say_cut_down",
+            "trouble_and_drugs"
+        ],
+        "inputType": "section",
+        "shuffle": false,
+        "visibility": {
+            "car_high": true,
+            "drugs_to_relax": true,
+            "drugs_while_alone": true,
+            "drugs_forget": true,
+            "people_say_cut_down": true,
+            "trouble_and_drugs": true
+        },
+        "allow": [
+            "skipped",
+            "dontKnow"
+        ]
+    }
+}

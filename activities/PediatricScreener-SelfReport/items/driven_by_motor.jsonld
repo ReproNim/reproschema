@@ -1,0 +1,40 @@
+{
+  "@context": ["https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+    "https://raw.githubusercontent.com/binarybottle/schema-standardization/master/activities/PediatricScreener-SelfReport/pediatric_screener_selfreport_context.jsonld"
+  ],
+  "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+  "@id": "driven_by_motor",
+  "skos:prefLabel": "Acts as if driven by motor",
+  "skos:altLabel": "driven_by_motor",
+  "schema:description": "How often child acts as if driven by a motor",
+  "schema:schemaVersion": "0.0.1",
+  "schema:version": "0.0.1",
+  "schema:question": "How often in the past 6 months has your child **acted as if driven by a motor**?",
+  "ui": {
+        "inputType": "radio",
+        "allow": ["autoAdvance"]
+  },
+  "responseOptions": {
+        "@type": "xsd:anyURI",
+        "multipleChoice": false,
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "@type": "schema:Boolean",
+                "schema:name": "Never",
+                "schema:value": 0
+            },
+            {
+                "@type": "schema:Boolean",
+                "schema:name": "Sometimes",
+                "schema:value": 1
+            },
+            {
+                "@type": "schema:Boolean",
+                "schema:name": "Often",
+                "schema:value": 2
+            }
+        ]
+  }
+}

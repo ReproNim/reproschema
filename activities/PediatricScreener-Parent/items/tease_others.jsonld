@@ -1,0 +1,40 @@
+{
+  "@context": ["https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+    "https://raw.githubusercontent.com/binarybottle/schema-standardization/master/activities/PediatricScreener-Parent/pediatric_screener_parent_context.jsonld"
+  ],
+  "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+  "@id": "tease_others",
+  "skos:prefLabel": "Tease others",
+  "skos:altLabel": "tease_others",
+  "schema:description": "How often child teases others",
+  "schema:schemaVersion": "0.0.1",
+  "schema:version": "0.0.1",
+  "schema:question": "How often in the past 6 months has your child **teased others**?",
+  "ui": {
+        "inputType": "radio",
+        "allow": ["autoAdvance"]
+  },
+  "responseOptions": {
+        "@type": "xsd:anyURI",
+        "multipleChoice": false,
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "@type": "schema:Boolean",
+                "schema:name": "Never",
+                "schema:value": 0
+            },
+            {
+                "@type": "schema:Boolean",
+                "schema:name": "Sometimes",
+                "schema:value": 1
+            },
+            {
+                "@type": "schema:Boolean",
+                "schema:name": "Often",
+                "schema:value": 2
+            }
+        ]
+  }
+}

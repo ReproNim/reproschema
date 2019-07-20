@@ -1,0 +1,55 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/PediatricScreener-SelfReport/pediatric_screener_selfreport_context.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Activity.jsonld",
+    "@id": "pediatric_screener_selfreport_section2_schema",
+    "skos:prefLabel": "Self-report section 2",
+    "skos:altLabel": "pediatric_screener_selfreport_section2_schema",
+    "schema:description": "Respond to questions about yourself as part of this mental health screener.",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": "The next questions are about your eating habits and feelings about your shape and weight. Please respond based on the *past 3 months*.",
+    "branchLogic": {},
+    "scoringLogic": {},
+    "repronim:timeUnit": "yearmonthdate",
+    "variableMap": [
+        {
+            "variableName": "worry_about_weight_or_getting_fat",
+            "isAbout": "worry_about_weight_or_getting_fat"
+        },
+        {
+            "variableName": "throw_up",
+            "isAbout": "throw_up"
+        },
+        {
+            "variableName": "control_weight",
+            "isAbout": "control_weight"
+        },
+        {
+            "variableName": "eating_binges",
+            "isAbout": "eating_binges"
+        }
+    ],
+    "ui": {
+        "order": [
+            "worry_about_weight_or_getting_fat",
+            "throw_up",
+            "control_weight",
+            "eating_binges"
+        ],
+        "inputType": "section",
+        "shuffle": false,
+        "visibility": {
+            "worry_about_weight_or_getting_fat": true,
+            "throw_up": true,
+            "control_weight": true,
+            "eating_binges": true
+        },
+        "allow": [
+            "skipped",
+            "dontKnow"
+        ]
+    }
+}

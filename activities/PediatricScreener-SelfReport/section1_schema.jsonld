@@ -1,0 +1,158 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/PediatricScreener-SelfReport/pediatric_screener_selfreport_context.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Activity.jsonld",
+    "@id": "pediatric_screener_selfreport_section1_schema",
+    "skos:prefLabel": "Self-report section 1",
+    "skos:altLabel": "pediatric_screener_selfreport_section1_schema",
+    "schema:description": "Respond to questions about yourself as part of this mental health screener.",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": "For each of the following descriptions, please select the option that best fits you.",
+    "branchLogic": {},
+    "scoringLogic": {},
+    "repronim:timeUnit": "yearmonthdate",
+    "variableMap": [
+        {
+            "variableName": "sad_or_unhappy",
+            "isAbout": "sad_or_unhappy"
+        },
+        {
+            "variableName": "hopeless",
+            "isAbout": "hopeless"
+        },
+        {
+            "variableName": "down_on_self",
+            "isAbout": "down_on_self"
+        },
+        {
+            "variableName": "worry",
+            "isAbout": "worry"
+        },
+        {
+            "variableName": "having_less_fun",
+            "isAbout": "having_less_fun"
+        },
+        {
+            "variableName": "fidgety",
+            "isAbout": "fidgety"
+        },
+        {
+            "variableName": "daydream_too_much",
+            "isAbout": "daydream_too_much"
+        },
+        {
+            "variableName": "distracted_easily",
+            "isAbout": "distracted_easily"
+        },
+        {
+            "variableName": "trouble_concentrating",
+            "isAbout": "trouble_concentrating"
+        },
+        {
+            "variableName": "driven_by_motor",
+            "isAbout": "driven_by_motor"
+        },
+        {
+            "variableName": "fight_other_children",
+            "isAbout": "fight_other_children"
+        },
+        {
+            "variableName": "not_listen_to_rules",
+            "isAbout": "not_listen_to_rules"
+        },
+        {
+            "variableName": "not_understand_others_feelings",
+            "isAbout": "not_understand_others_feelings"
+        },
+        {
+            "variableName": "tease_others",
+            "isAbout": "tease_others"
+        },
+        {
+            "variableName": "blame_others_for_troubles",
+            "isAbout": "blame_others_for_troubles"
+        },
+        {
+            "variableName": "refuse_to_share",
+            "isAbout": "refuse_to_share"
+        },
+        {
+            "variableName": "take_things",
+            "isAbout": "take_things"
+        },
+        {
+            "variableName": "bullied",
+            "isAbout": "bullied"
+        },
+        {
+            "variableName": "better_off_dead",
+            "isAbout": "better_off_dead"
+        },
+        {
+            "variableName": "little_interest_or_pleasure",
+            "isAbout": "little_interest_or_pleasure"
+        },
+        {
+            "variableName": "depressed_or_hopeless",
+            "isAbout": "depressed_or_hopeless"
+        }
+    ],
+    "ui": {
+        "order": [
+            "fidgety",
+            "sad_or_unhappy",
+            "daydream_too_much",
+            "refuse_to_share",
+            "not_understand_others_feelings",
+            "hopeless",
+            "trouble_concentrating",
+            "fight_other_children",
+            "down_on_self",
+            "blame_others_for_troubles",
+            "having_less_fun",
+            "not_listen_to_rules",
+            "driven_by_motor",
+            "tease_others",
+            "worry",
+            "take_things",
+            "distracted_easily",
+            "bullied",
+            "better_off_dead",
+            "little_interest_or_pleasure",
+            "depressed_or_hopeless"
+        ],
+        "inputType": "section",
+        "shuffle": false,
+        "visibility": {
+            "instructions_1": true,
+            "sad_or_unhappy": true,
+            "hopeless": true,
+            "down_on_self": true,
+            "worry": true,
+            "having_less_fun": true,
+            "fidgety": true,
+            "daydream_too_much": true,
+            "distracted_easily": true,
+            "trouble_concentrating": true,
+            "driven_by_motor": true,
+            "fight_other_children": true,
+            "not_listen_to_rules": true,
+            "not_understand_others_feelings": true,
+            "tease_others": true,
+            "blame_others_for_troubles": true,
+            "refuse_to_share": true,
+            "take_things": true,
+            "bullied": true,
+            "better_off_dead": true,
+            "little_interest_or_pleasure": true,
+            "depressed_or_hopeless": true
+        },
+        "allow": [
+            "skipped",
+            "dontKnow"
+        ]
+    }
+}
