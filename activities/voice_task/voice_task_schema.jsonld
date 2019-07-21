@@ -1,6 +1,6 @@
 {
     "@context": [ "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
-        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/voice_task/voice_task_context.jsonld"
+        "https://raw.githubusercontent.com/sanuann/schema-standardization/feature_add_consent/activities/voice_task/voice_task_context.jsonld"
     ],
     "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Activity.jsonld",
     "@id": "voice_task_schema",
@@ -44,8 +44,8 @@
             "rainbow_passage": true,
             "multipart_voice": true,
             "feedback_question": true,
-            "feedback_yes": "feedback_question == 1",
-            "feedback_brief": "feedback_question == 1 && feedback_yes !== 7"
+            "feedback_yes": "feedback_question === 1",
+            "feedback_brief": "feedback_question === 1 && feedback_yes !== 7"
         },
         "allow": ["skipped", "dontKnow"]
     }
