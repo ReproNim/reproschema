@@ -23,12 +23,14 @@
     "ui": {
         "order": [
             "education_level",
+            "multipart_audio_check",
             "phq9_schema",
             "gender"
         ],
         "shuffle": false,
         "visibility": {
             "education_level": true,
+            "multipart_audio_check": true,
             "phq9_schema": "education_level === 1",
             "gender": "education_level === 1"
         }
