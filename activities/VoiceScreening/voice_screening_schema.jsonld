@@ -16,7 +16,6 @@
     },
     "variableMap": [
         {"variableName": "education_level", "isAbout": "education_level"},
-        {"variableName": "multipart_voice", "isAbout": "multipart_voice"},
         {"variableName": "multipart_audio_check", "isAbout": "multipart_audio_check"},
         {"variableName": "gender", "isAbout": "gender"},
         {"variableName": "phq9_schema", "isAbout": "phq9_schema"}
@@ -24,14 +23,14 @@
     "ui": {
         "order": [
             "education_level",
-            "multipart_voice",
+            "multipart_audio_check",
             "phq9_schema",
             "gender"
         ],
         "shuffle": false,
         "visibility": {
             "education_level": true,
-            "multipart_voice": true,
+            "multipart_audio_check": "education_level === 1",
             "phq9_schema": "education_level === 1",
             "gender": "education_level === 1"
         }
