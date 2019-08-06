@@ -35,7 +35,7 @@ let csvPath = process.argv[2];
 let readStream = fs.createReadStream(csvPath).setEncoding('utf-8');
 
 let schemaContextUrl = 'https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld';
-let order = [];
+let order = {};
 let blList = [];
 let slList = [];
 let blObj = [];
@@ -59,9 +59,11 @@ csv
             // For each form, create directory structure - activities/form_name/items
             shell.mkdir('-p', 'activities/' + data['Form Name'] + '/items');
         }
+        // console.log(62, data);
         datas[data['Form Name']].push(data);
     })
     .on('end', function () {
+        // console.log(66, datas);
         Object.keys(datas).forEach(form => {
             let fieldList = datas[form];
             createFormContextSchema(form, fieldList);
@@ -224,7 +226,11 @@ function processRow(form, data){
         else rowData[camelcase(current_key)] = data[current_key];
     });
     const field_name = data['Variable / Field Name'];
-    order.push(field_name);
+    if (!order[form]) {
+        order[form] = [];
+        order[form].push(field_name);
+    }
+    else order[form].push(field_name);
     // write to item_x file
     fs.writeFile('activities/' + form + '/items/' + field_name + '.jsonld', JSON.stringify(rowData, null, 4), function (err) {
         if (err) {
@@ -250,7 +256,7 @@ function createFormSchema(form, formContextUrl) {
             "javascript": slList
         },
         "ui": {
-            "order": order,
+            "order": order[form],
             "shuffle": false
         }
     };
