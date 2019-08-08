@@ -14,7 +14,7 @@ schemaMap = {
 	"meta.description": "skos:prefLabel"
 }
 
-mindloggerapiUrl = 'https://api.mindlogger.info/api/v1'
+mindloggerapiUrl = 'https://api.mindlogger.org/api/v1'
 urlEMAPhysicalHealth = mindloggerapiUrl+ '/folder/5bd88558336da80de9145b76'
 
 form_schema = requests.get(urlEMAPhysicalHealth).json()
