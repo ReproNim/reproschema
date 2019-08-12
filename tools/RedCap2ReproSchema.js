@@ -208,7 +208,7 @@ function processRow(form, data){
                 condition = condition.replace(/\ or\ /g, " || ");
                 re = RegExp(/\[([^\]]*)\]/g);
                 condition = condition.replace(re, " $1 ");
-                visibilityObj = { [data['Variable / Field Name']]: condition};
+                visibilityObj[[data['Variable / Field Name']]] = condition;
             }
 
             // decode html fields
