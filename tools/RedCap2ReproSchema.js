@@ -36,7 +36,7 @@ let readStream = fs.createReadStream(csvPath).setEncoding('utf-8');
 
 let schemaContextUrl = 'https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld';
 let order = {};
-let blList = [];
+let visibilityObj = {};
 let scoresObj = {};
 let blObj = [];
 let languages = [];
@@ -69,6 +69,7 @@ csv
             createFormContextSchema(form, fieldList); // create context for each activity
             let formContextUrl = `https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/${form}/${form}_context.jsonld`;
             scoresObj = {};
+            visibilityObj = {};
             fieldList.forEach( field => {
                 if(languages.length === 0){
                     languages = parseLanguageIsoCodes(field['Field Label']);
@@ -194,20 +195,11 @@ function processRow(form, data){
                 re = RegExp(/\[([^\]]*)\]/g);
                 condition = condition.replace(re, " $1 ");
                 scoresObj = { [data['Variable / Field Name']]: condition };
-                // scoresObj.append(sl);
             }
 
             // branching logic
             // TODO: this needs to be changed to match current schema by using visibility key
             else if (schemaMap[current_key] === 'visibility' & data[current_key] !== '') {
-                // set ui.hidden for the item to true by default
-                if (rowData.hasOwnProperty('ui')) {
-                    rowData.ui['hidden'] = true;
-                }
-                else {
-                    ui['hidden'] = true;
-                    rowData['ui'] = ui;
-                }
                 let condition = data[current_key];
                 let s = condition;
                 // normalize the condition field to resemble javascript
@@ -218,8 +210,7 @@ function processRow(form, data){
                 condition = condition.replace(/\ or\ /g, " || ");
                 re = RegExp(/\[([^\]]*)\]/g);
                 condition = condition.replace(re, " $1 ");
-                let bl = (`if ( ${condition} ) { ${data['Variable / Field Name']}.ui.hidden = false }`);
-                blList.push(bl);
+                visibilityObj = { [data['Variable / Field Name']]: condition};
             }
 
             // decode html fields
@@ -261,7 +252,7 @@ function processRow(form, data){
 }
 
 function createFormSchema(form, formContextUrl) {
-    // console.log(27, form, scoresObj);
+    // console.log(27, form, visibilityObj);
     let jsonLD = {
         "@context": [schemaContextUrl, formContextUrl],
         "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Activity.jsonld",
@@ -276,7 +267,7 @@ function createFormSchema(form, formContextUrl) {
         "ui": {
             "order": order[form],
             "shuffle": false,
-            "visibility": blList
+            "visibility": visibilityObj
         }
     };
     const op = JSON.stringify(jsonLD, null, 4);
