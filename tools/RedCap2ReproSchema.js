@@ -174,7 +174,6 @@ function processRow(form, data){
             }
 
             // scoring logic
-            // TODO: check if changes needed
             else if (schemaMap[current_key] === 'scoringLogic' && data[current_key] !== '') {
                 // set ui.hidden for the item to true by default
                 if (rowData.hasOwnProperty('ui')) {
@@ -198,7 +197,6 @@ function processRow(form, data){
             }
 
             // branching logic
-            // TODO: this needs to be changed to match current schema by using visibility key
             else if (schemaMap[current_key] === 'visibility' & data[current_key] !== '') {
                 let condition = data[current_key];
                 let s = condition;
