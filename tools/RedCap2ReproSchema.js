@@ -197,17 +197,20 @@ function processRow(form, data){
             }
 
             // branching logic
-            else if (schemaMap[current_key] === 'visibility' & data[current_key] !== '') {
-                let condition = data[current_key];
-                let s = condition;
-                // normalize the condition field to resemble javascript
-                let re = RegExp(/\(([0-9]*)\)/g);
-                condition = condition.replace(re, "___$1");
-                condition = condition.replace(/([^>|<])=/g, "$1 ==");
-                condition = condition.replace(/\ and\ /g, " && ");
-                condition = condition.replace(/\ or\ /g, " || ");
-                re = RegExp(/\[([^\]]*)\]/g);
-                condition = condition.replace(re, " $1 ");
+            else if (schemaMap[current_key] === 'visibility') {
+                let condition = true; // for items visible by default
+                if (data[current_key]) {
+                    condition = data[current_key];
+                    let s = condition;
+                    // normalize the condition field to resemble javascript
+                    let re = RegExp(/\(([0-9]*)\)/g);
+                    condition = condition.replace(re, "___$1");
+                    condition = condition.replace(/([^>|<])=/g, "$1 ==");
+                    condition = condition.replace(/\ and\ /g, " && ");
+                    condition = condition.replace(/\ or\ /g, " || ");
+                    re = RegExp(/\[([^\]]*)\]/g);
+                    condition = condition.replace(re, " $1 ");
+                }
                 visibilityObj[[data['Variable / Field Name']]] = condition;
             }
 
