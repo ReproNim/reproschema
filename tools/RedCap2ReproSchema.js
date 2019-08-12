@@ -40,6 +40,7 @@ let visibilityObj = {};
 let scoresObj = {};
 let blObj = [];
 let languages = [];
+let variableMap = [];
 
 let options = {
     delimiter: ',',
@@ -70,6 +71,7 @@ csv
             let formContextUrl = `https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/${form}/${form}_context.jsonld`;
             scoresObj = {};
             visibilityObj = {};
+            variableMap = [];
             fieldList.forEach( field => {
                 if(languages.length === 0){
                     languages = parseLanguageIsoCodes(field['Field Label']);
@@ -197,18 +199,21 @@ function processRow(form, data){
             }
 
             // branching logic
-            else if (schemaMap[current_key] === 'visibility' & data[current_key] !== '') {
-                let condition = data[current_key];
-                let s = condition;
-                // normalize the condition field to resemble javascript
-                let re = RegExp(/\(([0-9]*)\)/g);
-                condition = condition.replace(re, "___$1");
-                condition = condition.replace(/([^>|<])=/g, "$1 ==");
-                condition = condition.replace(/\ and\ /g, " && ");
-                condition = condition.replace(/\ or\ /g, " || ");
-                re = RegExp(/\[([^\]]*)\]/g);
-                condition = condition.replace(re, " $1 ");
-                visibilityObj = { [data['Variable / Field Name']]: condition};
+            else if (schemaMap[current_key] === 'visibility') {
+                let condition = true; // for items visible by default
+                if (data[current_key]) {
+                    condition = data[current_key];
+                    let s = condition;
+                    // normalize the condition field to resemble javascript
+                    let re = RegExp(/\(([0-9]*)\)/g);
+                    condition = condition.replace(re, "___$1");
+                    condition = condition.replace(/([^>|<])=/g, "$1 ==");
+                    condition = condition.replace(/\ and\ /g, " && ");
+                    condition = condition.replace(/\ or\ /g, " || ");
+                    re = RegExp(/\[([^\]]*)\]/g);
+                    condition = condition.replace(re, " $1 ");
+                }
+                visibilityObj[[data['Variable / Field Name']]] = condition;
             }
 
             // decode html fields
@@ -233,6 +238,9 @@ function processRow(form, data){
         // dropdown and autocomplete??
     });
     const field_name = data['Variable / Field Name'];
+
+    // add field to variableMap
+    variableMap.push({"variableName": field_name, "isAbout": field_name});
 
     // check if 'order' object exists for the activity and add the items to the respective order array
     if (!order[form]) {
@@ -262,6 +270,7 @@ function createFormSchema(form, formContextUrl) {
         "schema:version": "0.0.1",
         // todo: preamble: Field Type = descriptive represents preamble in the CSV file., it also has branching logic. so should preamble be an item in our schema?
         "scoringLogic": scoresObj,
+        "variableMap": variableMap,
         "ui": {
             "order": order[form],
             "shuffle": false,
