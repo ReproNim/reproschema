@@ -19,6 +19,14 @@ const schemaMap = {
     "Choices, Calculations, OR Slider Labels": "choices",
     "Branching Logic (Show field only if...)": "visibility"
 };
+const inputTypeMap = {
+    "calc": "number",
+    "checkbox": "radio",
+    "descriptive": "static",
+    "dropdown": "select",
+    "notes": "text"
+};
+
 const uiList = ['inputType', 'shuffle'];
 const responseList = ['type', 'minValue', 'maxValue', 'requiredValue', 'multipleChoice'];
 const defaultLanguage = 'en';
@@ -125,9 +133,9 @@ function processRow(form, data){
             if (uiList.indexOf(schemaMap[current_key]) > -1) {
                 let uiKey = schemaMap[current_key];
                 let uiValue = data[current_key];
-                if (uiKey === 'inputType' && data[current_key] === 'calc')
-                    uiValue = 'number';
-
+                if (inputTypeMap.hasOwnProperty(data[current_key])) { // map Field type to supported inputTypes
+                    uiValue = inputTypeMap[data[current_key]];
+                }
                 // add object to ui element of the item
                 if (rowData.hasOwnProperty('ui')) {
                     rowData.ui[uiKey] = uiValue; // append to existing ui object
