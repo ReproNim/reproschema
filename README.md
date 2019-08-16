@@ -4,12 +4,12 @@ This documentation describes and explains the ReproNim schema specification.
 
 ## 0.0: Contents
 
-- [1.0: Introduction](#17-introduction)
+- [1.0: Introduction](#10-introduction)
 - [2.0: Need for Standardizing assessments](#20-need-for-standardizing-assessments)
-- [3.0: Advantages of current representation](#38-advantages-of-current-representation)
-- [4.0: Schema](#48-schema)
-- [5.0: Contribute - how to create activity, activity-sets?](#70-how-can-i-create-a-new-activity-and-activity-set)
-- [6.0: Test the schema](#131-testing-the-schema)
+- [3.0: Advantages of current representation](#30-advantages-of-current-representation)
+- [4.0: Schema](#40-schema)
+- [5.0: Contribute - how to create activity, activity-sets?](#50-how-can-i-create-a-new-activity-and-activity-set)
+- [6.0: Test the schema](#60-testing-the-schema)
 - [7.0: Why linked data?]()
 - [8.0: How these activities are licensed?]()
 - [9.0: Which tools will/are supporting this standard?]()
