@@ -4,14 +4,15 @@ This documentation describes and explains the ReproNim schema specification.
 
 ## 0.0: Contents
 
-- [1.0: Introduction](#10-introduction)
+- [1.0: Introduction](#17-introduction)
 - [2.0: Need for Standardizing assessments](#20-need-for-standardizing-assessments)
-- [3.0: Advantages of current representation](#30-advantages-of-current-representation)
-- [4.0: Schema](#40-schema)
-- [5.0: Contribute - how to create activity, activity-sets?](#50-how-can-i-create-a-new-activity-and-activity-set)
-- [6.0: Why linked data?]()
-- [7.0: How these activities are licensed?]()
-- [8.0: Which tools will/are supporting this standard?]()
+- [3.0: Advantages of current representation](#38-advantages-of-current-representation)
+- [4.0: Schema](#48-schema)
+- [5.0: Contribute - how to create activity, activity-sets?](#70-how-can-i-create-a-new-activity-and-activity-set)
+- [6.0: Test the schema](#131-testing-the-schema)
+- [7.0: Why linked data?]()
+- [8.0: How these activities are licensed?]()
+- [9.0: Which tools will/are supporting this standard?]()
 
 ## 1.0: Introduction
 Cognitive and clinical assessments are used throughout neuroscience, but little consistency exists in assessment data acquisition or response representation across studies. Harmonizing data after acquisition is resource intensive. Currently, the NIMH Data Archive (NDA) enforces harmonization during data submission. This approach can create a mismatch between collected and submitted data. Reverse engineering NDA data dictionaries to their original assessments using a tool like Brainverse can be tedious. To enforce consistency at the data acquisition stage, we created a standard schema and a set of reusable common assessments. The schema extends and modifies the CEDAR metadata representation. Using JSON-LD, we represent Items (elements of individual assessments) or Scores, Activities (individual assessments), and Activity sets (collections of activities performed by a participant). An implementation of the schema  can specify scoring logic, branching logic, and user interface rendering options. The schema allows internationalization (multiple languages), is implementation agnostic, and tracks variations in assessments (e.g., PHQ-9, PHQ-8). This open and accessible schema library with appropriate conversion (e.g., to RedCap) and data collection tools (e.g., [MindLogger](https://mindlogger.info/), LORIS, RedCap) enables more consistent acquisition across projects, with results being harmonized by design.
@@ -127,8 +128,10 @@ Fork the project and manually create the jsonld files according to the above dir
       ```
     - `@type`=`"https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/ActivitySet.jsonld"`
 
-## 6.0: Why linked data?
+## 6.0: Testing the schema
 
-## 7.0: How these activities are licensed?
+## 7.0: Why linked data?
 
-## 8.0: Which tools will/are supporting this standard?
+## 8.0: How these activities are licensed?
+
+## 9.0: Which tools will/are supporting this standard?
