@@ -130,7 +130,7 @@ Fork the project and manually create the jsonld files according to the above dir
 
 ## 6.0: View schema and collect data
 
-http://schema-ui.herokuapp.com/#/?url=path_to_activity_set_schema.jsonld
+`http://schema-ui.herokuapp.com/#/?url=path_to_activity_set_schema.jsonld`
 
 ## 7.0: Why linked data?
 
