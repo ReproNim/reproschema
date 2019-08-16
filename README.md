@@ -9,7 +9,7 @@ This documentation describes and explains the ReproNim schema specification.
 - [3.0: Advantages of current representation](#30-advantages-of-current-representation)
 - [4.0: Schema](#40-schema)
 - [5.0: Contribute - how to create activity, activity-sets?](#50-how-can-i-create-a-new-activity-and-activity-set)
-- [6.0: Test the schema](#60-testing-the-schema)
+- [6.0: Test the schema](#60-view-schema-and-collect-data)
 - [7.0: Why linked data?]()
 - [8.0: How these activities are licensed?]()
 - [9.0: Which tools will/are supporting this standard?]()
@@ -128,7 +128,9 @@ Fork the project and manually create the jsonld files according to the above dir
       ```
     - `@type`=`"https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/ActivitySet.jsonld"`
 
-## 6.0: Testing the schema
+## 6.0: View schema and collect data
+
+http://schema-ui.herokuapp.com/#/?url=path_to_activity_set_schema.jsonld
 
 ## 7.0: Why linked data?
 
