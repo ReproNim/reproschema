@@ -1,0 +1,40 @@
+{
+  "@context": [
+    "https://purl.org/repro/s/dev/contexts/generic"
+  ],
+  "@type": "https://purl.org/repro/s/dev/schemas/Field",
+  "@id": "ravlt_stimulus_4",
+  "skos:altLabel": "RAVLT Stimulus 4",
+  "skos:prefLabel": "RAVLT Stimulus 4",
+  "schema:description": "Instructions for the Rey Auditory Verbal Learning Test",
+  "schema:schemaVersion": "0.0.1",
+  "schema:version": "0.0.1",
+  "question": {
+    "en": "Press the Play button below to listen to a list of words."
+  },
+  "ui": {
+    "inputType": "audioStimulus",
+    "allow": ["autoAdvance"]
+  },
+  "inputOptions": [
+    {
+      "@type": "schema:URL",
+      "schema:name": "stimulus",
+      "schema:value": "https://purl.org/repro/s/dev/activities/RAVLT/items/ravlt-a.mp3",
+      "schema:contentUrl": "https://purl.org/repro/s/dev/activities/RAVLT/items/ravlt-a.mp3"
+    },
+    {
+      "@type": "schema:Boolean",
+      "schema:name": "allowReplay",
+      "schema:value": false
+    }
+  ],
+  "media": {
+    "https://purl.org/repro/s/dev/activities/RAVLT/items/ravlt-a.mp3": {
+      "@type": "schema:AudioObject",
+      "schema:name": "stimulus",
+      "schema:contentUrl": "https://purl.org/repro/s/dev/activities/RAVLT/items/ravlt-a.mp3",
+      "schema:transcript": "Drum, Curtain, Bell, Coffee, School, Parent, Moon, Garden, Hat, Farmer, Nose, Turkey, Color, House, River."
+    }
+  }
+}

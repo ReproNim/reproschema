@@ -1,0 +1,26 @@
+{
+    "@context": [
+        "https://purl.org/repro/s/dev/contexts/generic",
+        "https://purl.org/repro/s/dev/activities/NDA/nda_context"
+    ],
+    "@type": "https://purl.org/repro/s/dev/schemas/Field",
+    "@id": "stateOfBirth",
+    "skos:prefLabel": "State of birth",
+    "skos:altLabel": "stateOfBirth",
+    "schema:description": "schema for state of birth of participant",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "State of birth",
+    "ui": {
+        "inputType": "selectState"
+    },
+    "responseOptions": {
+        "type": "xsd:string",
+        "requiredValue": false,
+        "maxLength": 50,
+        "choiceUrl": "https://gist.githubusercontent.com/mshafrir/2646763/raw/8b0dbb93521f5d6889502305335104218454c2bf/states_hash.json"
+    }
+}
+
+
+

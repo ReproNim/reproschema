@@ -1,0 +1,38 @@
+{
+    "@context": [ "https://purl.org/repro/s/dev/contexts/generic",
+        "https://purl.org/repro/s/dev/activities/NDA/nda_context"
+    ],
+    "@type": "https://purl.org/repro/s/dev/schemas/Activity",
+    "@id": "nda_guid",
+    "skos:prefLabel": "NDA guid",
+    "skos:altLabel": "nda_guid",
+    "schema:description": "schema describing terms needed to generate NDA guid",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "order": [
+            "yearOfBirth",
+            "raceEthnicity",
+            "gender",
+            "state",
+            "countryOfBirth",
+            "nativeLanguage",
+            "mentalHealth",
+            "healthCondition",
+            "medication"
+        ],
+        "shuffle": false,
+        "visibility": {
+            "yearOfBirth":  true,
+            "raceEthnicity": true,
+            "gender": true,
+            "state": true,
+            "countryOfBirth": true,
+            "nativeLanguage": true,
+            "mentalHealth": true,
+            "healthCondition": true,
+            "medication": true
+        },
+        "allow": ["skipped"]
+    }
+}

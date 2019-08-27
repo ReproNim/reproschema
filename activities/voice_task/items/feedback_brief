@@ -1,0 +1,22 @@
+{
+    "@context": [ "https://purl.org/repro/s/dev/contexts/generic",
+        "https://purl.org/repro/s/dev/activities/voice_task/voice_task_context"
+    ],
+    "@type": "https://purl.org/repro/s/dev/schemas/Field",
+    "@id": "feedback_brief",
+    "skos:prefLabel": "Feedback described in brief",
+    "skos:altLabel": "feedback_brief",
+    "schema:description": "schema for feedback on voice tasks described in brief",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Please tell us what specific aspect of the task did you like?",
+    "ui": {
+        "inputType": "text"
+    },
+
+    "responseOptions": {
+        "type": "xsd:string",
+        "requiredValue": false,
+        "maxLength": 500
+    }
+}
