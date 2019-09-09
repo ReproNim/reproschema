@@ -1,0 +1,45 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/serious_adverse_event_sae_report_form_v1/serious_adverse_event_sae_report_form_v1_context.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Activity.jsonld",
+    "@id": "serious_adverse_event_sae_report_form_v1_schema",
+    "skos:prefLabel": "serious_adverse_event_sae_report_form_v1_schema",
+    "skos:altLabel": "serious_adverse_event_sae_report_form_v1_schema",
+    "schema:description": "serious_adverse_event_sae_report_form_v1 schema",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "scoringLogic": {},
+    "ui": {
+        "order": [
+            "sae_initials",
+            "sae_report_date",
+            "sae_onset",
+            "sae_stop",
+            "sae_location",
+            "sae_unexpected",
+            "sae_sex",
+            "sae_age",
+            "sae_description",
+            "sae_category",
+            "sae_date_death",
+            "sae_intervention",
+            "sae_med_spec",
+            "sae_device_spec",
+            "sae_surg_spec",
+            "sae_behavior_spec",
+            "sae_interventin_rel",
+            "sae_intervention_disc",
+            "sae_medication",
+            "sae_rel_data",
+            "sae_report_type",
+            "sae_signature",
+            "sae_sig_date"
+        ],
+        "shuffle": false,
+        "visibility": {
+            "sae_behavior_spec": " sae_intervention   == '4'"
+        }
+    }
+}

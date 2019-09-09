@@ -1,0 +1,926 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "major_depression": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/major_depression/items/",
+        "cmdd0": {
+            "@id": "major_depression:cmdd0.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd001": {
+            "@id": "major_depression:dcmdd001.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd002": {
+            "@id": "major_depression:dcmdd002.jsonld",
+            "@type": "@id"
+        },
+        "cmdd1": {
+            "@id": "major_depression:cmdd1.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd003": {
+            "@id": "major_depression:dcmdd003.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd004": {
+            "@id": "major_depression:dcmdd004.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd005": {
+            "@id": "major_depression:dcmdd005.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd006": {
+            "@id": "major_depression:dcmdd006.jsonld",
+            "@type": "@id"
+        },
+        "cmdd2": {
+            "@id": "major_depression:cmdd2.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd007": {
+            "@id": "major_depression:dcmdd007.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd008": {
+            "@id": "major_depression:dcmdd008.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd009": {
+            "@id": "major_depression:dcmdd009.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd010": {
+            "@id": "major_depression:dcmdd010.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd011": {
+            "@id": "major_depression:dcmdd011.jsonld",
+            "@type": "@id"
+        },
+        "cmdd3": {
+            "@id": "major_depression:cmdd3.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd012": {
+            "@id": "major_depression:dcmdd012.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd013": {
+            "@id": "major_depression:dcmdd013.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd014": {
+            "@id": "major_depression:dcmdd014.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd015": {
+            "@id": "major_depression:dcmdd015.jsonld",
+            "@type": "@id"
+        },
+        "cmdd4": {
+            "@id": "major_depression:cmdd4.jsonld",
+            "@type": "@id"
+        },
+        "cmdd5": {
+            "@id": "major_depression:cmdd5.jsonld",
+            "@type": "@id"
+        },
+        "cmdd6": {
+            "@id": "major_depression:cmdd6.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd016": {
+            "@id": "major_depression:dcmdd016.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd017": {
+            "@id": "major_depression:dcmdd017.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd018": {
+            "@id": "major_depression:dcmdd018.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd019": {
+            "@id": "major_depression:dcmdd019.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd020": {
+            "@id": "major_depression:dcmdd020.jsonld",
+            "@type": "@id"
+        },
+        "cmdd7": {
+            "@id": "major_depression:cmdd7.jsonld",
+            "@type": "@id"
+        },
+        "cmdd8": {
+            "@id": "major_depression:cmdd8.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd021": {
+            "@id": "major_depression:dcmdd021.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd022": {
+            "@id": "major_depression:dcmdd022.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd023": {
+            "@id": "major_depression:dcmdd023.jsonld",
+            "@type": "@id"
+        },
+        "cmdd9": {
+            "@id": "major_depression:cmdd9.jsonld",
+            "@type": "@id"
+        },
+        "cmdd10": {
+            "@id": "major_depression:cmdd10.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd024": {
+            "@id": "major_depression:dcmdd024.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd025": {
+            "@id": "major_depression:dcmdd025.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd026": {
+            "@id": "major_depression:dcmdd026.jsonld",
+            "@type": "@id"
+        },
+        "cmdd11": {
+            "@id": "major_depression:cmdd11.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd027": {
+            "@id": "major_depression:dcmdd027.jsonld",
+            "@type": "@id"
+        },
+        "cmdd12": {
+            "@id": "major_depression:cmdd12.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd028": {
+            "@id": "major_depression:dcmdd028.jsonld",
+            "@type": "@id"
+        },
+        "cmdd13": {
+            "@id": "major_depression:cmdd13.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd029": {
+            "@id": "major_depression:dcmdd029.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd030": {
+            "@id": "major_depression:dcmdd030.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd031": {
+            "@id": "major_depression:dcmdd031.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd032": {
+            "@id": "major_depression:dcmdd032.jsonld",
+            "@type": "@id"
+        },
+        "cmdd14": {
+            "@id": "major_depression:cmdd14.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd033": {
+            "@id": "major_depression:dcmdd033.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd034": {
+            "@id": "major_depression:dcmdd034.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd035": {
+            "@id": "major_depression:dcmdd035.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd036": {
+            "@id": "major_depression:dcmdd036.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd037": {
+            "@id": "major_depression:dcmdd037.jsonld",
+            "@type": "@id"
+        },
+        "cmdd15": {
+            "@id": "major_depression:cmdd15.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd038": {
+            "@id": "major_depression:dcmdd038.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd039": {
+            "@id": "major_depression:dcmdd039.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd040": {
+            "@id": "major_depression:dcmdd040.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd041": {
+            "@id": "major_depression:dcmdd041.jsonld",
+            "@type": "@id"
+        },
+        "cmdd16": {
+            "@id": "major_depression:cmdd16.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd042": {
+            "@id": "major_depression:dcmdd042.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd043": {
+            "@id": "major_depression:dcmdd043.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd044": {
+            "@id": "major_depression:dcmdd044.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd045": {
+            "@id": "major_depression:dcmdd045.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd046": {
+            "@id": "major_depression:dcmdd046.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd047": {
+            "@id": "major_depression:dcmdd047.jsonld",
+            "@type": "@id"
+        },
+        "cmdd17": {
+            "@id": "major_depression:cmdd17.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd048": {
+            "@id": "major_depression:dcmdd048.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd049": {
+            "@id": "major_depression:dcmdd049.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd050": {
+            "@id": "major_depression:dcmdd050.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd051": {
+            "@id": "major_depression:dcmdd051.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd052": {
+            "@id": "major_depression:dcmdd052.jsonld",
+            "@type": "@id"
+        },
+        "cmdd18": {
+            "@id": "major_depression:cmdd18.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd053": {
+            "@id": "major_depression:dcmdd053.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd054": {
+            "@id": "major_depression:dcmdd054.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd055": {
+            "@id": "major_depression:dcmdd055.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd056": {
+            "@id": "major_depression:dcmdd056.jsonld",
+            "@type": "@id"
+        },
+        "cmdd19": {
+            "@id": "major_depression:cmdd19.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd057": {
+            "@id": "major_depression:dcmdd057.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd058": {
+            "@id": "major_depression:dcmdd058.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd059": {
+            "@id": "major_depression:dcmdd059.jsonld",
+            "@type": "@id"
+        },
+        "cmdd19a": {
+            "@id": "major_depression:cmdd19a.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd060": {
+            "@id": "major_depression:dcmdd060.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd061": {
+            "@id": "major_depression:dcmdd061.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd062": {
+            "@id": "major_depression:dcmdd062.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd063": {
+            "@id": "major_depression:dcmdd063.jsonld",
+            "@type": "@id"
+        },
+        "cmdd20": {
+            "@id": "major_depression:cmdd20.jsonld",
+            "@type": "@id"
+        },
+        "cmdd20a": {
+            "@id": "major_depression:cmdd20a.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd064": {
+            "@id": "major_depression:dcmdd064.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd065": {
+            "@id": "major_depression:dcmdd065.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd066": {
+            "@id": "major_depression:dcmdd066.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd067": {
+            "@id": "major_depression:dcmdd067.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd068": {
+            "@id": "major_depression:dcmdd068.jsonld",
+            "@type": "@id"
+        },
+        "cmdd21": {
+            "@id": "major_depression:cmdd21.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd069": {
+            "@id": "major_depression:dcmdd069.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd070": {
+            "@id": "major_depression:dcmdd070.jsonld",
+            "@type": "@id"
+        },
+        "cmdd22": {
+            "@id": "major_depression:cmdd22.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd071": {
+            "@id": "major_depression:dcmdd071.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd072": {
+            "@id": "major_depression:dcmdd072.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd073": {
+            "@id": "major_depression:dcmdd073.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd074": {
+            "@id": "major_depression:dcmdd074.jsonld",
+            "@type": "@id"
+        },
+        "cmdd23": {
+            "@id": "major_depression:cmdd23.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd075a": {
+            "@id": "major_depression:dcmdd075a.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd075b": {
+            "@id": "major_depression:dcmdd075b.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd075c": {
+            "@id": "major_depression:dcmdd075c.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd075d": {
+            "@id": "major_depression:dcmdd075d.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd076": {
+            "@id": "major_depression:dcmdd076.jsonld",
+            "@type": "@id"
+        },
+        "cmdd24": {
+            "@id": "major_depression:cmdd24.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd077": {
+            "@id": "major_depression:dcmdd077.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd078": {
+            "@id": "major_depression:dcmdd078.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd079": {
+            "@id": "major_depression:dcmdd079.jsonld",
+            "@type": "@id"
+        },
+        "cmdd25": {
+            "@id": "major_depression:cmdd25.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd080a": {
+            "@id": "major_depression:dcmdd080a.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd080b": {
+            "@id": "major_depression:dcmdd080b.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd080c": {
+            "@id": "major_depression:dcmdd080c.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd080d": {
+            "@id": "major_depression:dcmdd080d.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd081": {
+            "@id": "major_depression:dcmdd081.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd082": {
+            "@id": "major_depression:dcmdd082.jsonld",
+            "@type": "@id"
+        },
+        "cmdd26": {
+            "@id": "major_depression:cmdd26.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd083": {
+            "@id": "major_depression:dcmdd083.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd084": {
+            "@id": "major_depression:dcmdd084.jsonld",
+            "@type": "@id"
+        },
+        "cmdd27": {
+            "@id": "major_depression:cmdd27.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd085": {
+            "@id": "major_depression:dcmdd085.jsonld",
+            "@type": "@id"
+        },
+        "cmdd28": {
+            "@id": "major_depression:cmdd28.jsonld",
+            "@type": "@id"
+        },
+        "cmdd29": {
+            "@id": "major_depression:cmdd29.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd086": {
+            "@id": "major_depression:dcmdd086.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd087": {
+            "@id": "major_depression:dcmdd087.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd088": {
+            "@id": "major_depression:dcmdd088.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd089": {
+            "@id": "major_depression:dcmdd089.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd090": {
+            "@id": "major_depression:dcmdd090.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd091": {
+            "@id": "major_depression:dcmdd091.jsonld",
+            "@type": "@id"
+        },
+        "cmdd30": {
+            "@id": "major_depression:cmdd30.jsonld",
+            "@type": "@id"
+        },
+        "cmdd31": {
+            "@id": "major_depression:cmdd31.jsonld",
+            "@type": "@id"
+        },
+        "cmdd32": {
+            "@id": "major_depression:cmdd32.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd092": {
+            "@id": "major_depression:dcmdd092.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd093": {
+            "@id": "major_depression:dcmdd093.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd094": {
+            "@id": "major_depression:dcmdd094.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd095": {
+            "@id": "major_depression:dcmdd095.jsonld",
+            "@type": "@id"
+        },
+        "cmdd33": {
+            "@id": "major_depression:cmdd33.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd096": {
+            "@id": "major_depression:dcmdd096.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd097": {
+            "@id": "major_depression:dcmdd097.jsonld",
+            "@type": "@id"
+        },
+        "cmdd34": {
+            "@id": "major_depression:cmdd34.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd098": {
+            "@id": "major_depression:dcmdd098.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd099": {
+            "@id": "major_depression:dcmdd099.jsonld",
+            "@type": "@id"
+        },
+        "cmdd35": {
+            "@id": "major_depression:cmdd35.jsonld",
+            "@type": "@id"
+        },
+        "cmdd35a": {
+            "@id": "major_depression:cmdd35a.jsonld",
+            "@type": "@id"
+        },
+        "cmdd35b": {
+            "@id": "major_depression:cmdd35b.jsonld",
+            "@type": "@id"
+        },
+        "cmdd36": {
+            "@id": "major_depression:cmdd36.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd100": {
+            "@id": "major_depression:dcmdd100.jsonld",
+            "@type": "@id"
+        },
+        "cmdd37": {
+            "@id": "major_depression:cmdd37.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd101": {
+            "@id": "major_depression:dcmdd101.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd102": {
+            "@id": "major_depression:dcmdd102.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd103": {
+            "@id": "major_depression:dcmdd103.jsonld",
+            "@type": "@id"
+        },
+        "cmdd38": {
+            "@id": "major_depression:cmdd38.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd104": {
+            "@id": "major_depression:dcmdd104.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd105": {
+            "@id": "major_depression:dcmdd105.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd106": {
+            "@id": "major_depression:dcmdd106.jsonld",
+            "@type": "@id"
+        },
+        "cmdd39": {
+            "@id": "major_depression:cmdd39.jsonld",
+            "@type": "@id"
+        },
+        "cmdd39a": {
+            "@id": "major_depression:cmdd39a.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd107": {
+            "@id": "major_depression:dcmdd107.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd108": {
+            "@id": "major_depression:dcmdd108.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd109": {
+            "@id": "major_depression:dcmdd109.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd110": {
+            "@id": "major_depression:dcmdd110.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd111": {
+            "@id": "major_depression:dcmdd111.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd112": {
+            "@id": "major_depression:dcmdd112.jsonld",
+            "@type": "@id"
+        },
+        "cmdd39b": {
+            "@id": "major_depression:cmdd39b.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd114": {
+            "@id": "major_depression:dcmdd114.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd113": {
+            "@id": "major_depression:dcmdd113.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd115": {
+            "@id": "major_depression:dcmdd115.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd116": {
+            "@id": "major_depression:dcmdd116.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd117": {
+            "@id": "major_depression:dcmdd117.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd118": {
+            "@id": "major_depression:dcmdd118.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd119": {
+            "@id": "major_depression:dcmdd119.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd120": {
+            "@id": "major_depression:dcmdd120.jsonld",
+            "@type": "@id"
+        },
+        "cmdd40": {
+            "@id": "major_depression:cmdd40.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd121": {
+            "@id": "major_depression:dcmdd121.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd122": {
+            "@id": "major_depression:dcmdd122.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd123": {
+            "@id": "major_depression:dcmdd123.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd124": {
+            "@id": "major_depression:dcmdd124.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd125": {
+            "@id": "major_depression:dcmdd125.jsonld",
+            "@type": "@id"
+        },
+        "cmdd41": {
+            "@id": "major_depression:cmdd41.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd126": {
+            "@id": "major_depression:dcmdd126.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd127": {
+            "@id": "major_depression:dcmdd127.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd128": {
+            "@id": "major_depression:dcmdd128.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd129": {
+            "@id": "major_depression:dcmdd129.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd130": {
+            "@id": "major_depression:dcmdd130.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd131": {
+            "@id": "major_depression:dcmdd131.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd132": {
+            "@id": "major_depression:dcmdd132.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd133": {
+            "@id": "major_depression:dcmdd133.jsonld",
+            "@type": "@id"
+        },
+        "cmdd42": {
+            "@id": "major_depression:cmdd42.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd134": {
+            "@id": "major_depression:dcmdd134.jsonld",
+            "@type": "@id"
+        },
+        "cmdd44": {
+            "@id": "major_depression:cmdd44.jsonld",
+            "@type": "@id"
+        },
+        "cmdd45": {
+            "@id": "major_depression:cmdd45.jsonld",
+            "@type": "@id"
+        },
+        "cmdd46": {
+            "@id": "major_depression:cmdd46.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd135": {
+            "@id": "major_depression:dcmdd135.jsonld",
+            "@type": "@id"
+        },
+        "cmdd47": {
+            "@id": "major_depression:cmdd47.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd136": {
+            "@id": "major_depression:dcmdd136.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd137": {
+            "@id": "major_depression:dcmdd137.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd138": {
+            "@id": "major_depression:dcmdd138.jsonld",
+            "@type": "@id"
+        },
+        "cmdd48": {
+            "@id": "major_depression:cmdd48.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd139": {
+            "@id": "major_depression:dcmdd139.jsonld",
+            "@type": "@id"
+        },
+        "cmdd49": {
+            "@id": "major_depression:cmdd49.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd140": {
+            "@id": "major_depression:dcmdd140.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd141": {
+            "@id": "major_depression:dcmdd141.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd142": {
+            "@id": "major_depression:dcmdd142.jsonld",
+            "@type": "@id"
+        },
+        "cmdd50": {
+            "@id": "major_depression:cmdd50.jsonld",
+            "@type": "@id"
+        },
+        "cmdd51a": {
+            "@id": "major_depression:cmdd51a.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd143": {
+            "@id": "major_depression:dcmdd143.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd144": {
+            "@id": "major_depression:dcmdd144.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd145": {
+            "@id": "major_depression:dcmdd145.jsonld",
+            "@type": "@id"
+        },
+        "cmdd51": {
+            "@id": "major_depression:cmdd51.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd146": {
+            "@id": "major_depression:dcmdd146.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd147": {
+            "@id": "major_depression:dcmdd147.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd148": {
+            "@id": "major_depression:dcmdd148.jsonld",
+            "@type": "@id"
+        },
+        "cmdd52": {
+            "@id": "major_depression:cmdd52.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd149": {
+            "@id": "major_depression:dcmdd149.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd150": {
+            "@id": "major_depression:dcmdd150.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd151": {
+            "@id": "major_depression:dcmdd151.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd152": {
+            "@id": "major_depression:dcmdd152.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd153": {
+            "@id": "major_depression:dcmdd153.jsonld",
+            "@type": "@id"
+        },
+        "cmdd53": {
+            "@id": "major_depression:cmdd53.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd154": {
+            "@id": "major_depression:dcmdd154.jsonld",
+            "@type": "@id"
+        },
+        "cmdd54": {
+            "@id": "major_depression:cmdd54.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd155": {
+            "@id": "major_depression:dcmdd155.jsonld",
+            "@type": "@id"
+        },
+        "cmdd55": {
+            "@id": "major_depression:cmdd55.jsonld",
+            "@type": "@id"
+        },
+        "cmdd56": {
+            "@id": "major_depression:cmdd56.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd156": {
+            "@id": "major_depression:dcmdd156.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd157": {
+            "@id": "major_depression:dcmdd157.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd158": {
+            "@id": "major_depression:dcmdd158.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd159": {
+            "@id": "major_depression:dcmdd159.jsonld",
+            "@type": "@id"
+        },
+        "dcmdd160": {
+            "@id": "major_depression:dcmdd160.jsonld",
+            "@type": "@id"
+        },
+        "cmdd_end": {
+            "@id": "major_depression:cmdd_end.jsonld",
+            "@type": "@id"
+        }
+    }
+}

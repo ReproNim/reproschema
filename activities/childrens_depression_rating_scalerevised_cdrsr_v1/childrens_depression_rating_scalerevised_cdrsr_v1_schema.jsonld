@@ -1,0 +1,66 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/childrens_depression_rating_scalerevised_cdrsr_v1/childrens_depression_rating_scalerevised_cdrsr_v1_context.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Activity.jsonld",
+    "@id": "childrens_depression_rating_scalerevised_cdrsr_v1_schema",
+    "skos:prefLabel": "childrens_depression_rating_scalerevised_cdrsr_v1_schema",
+    "skos:altLabel": "childrens_depression_rating_scalerevised_cdrsr_v1_schema",
+    "schema:description": "childrens_depression_rating_scalerevised_cdrsr_v1 schema",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "scoringLogic": {
+        "cdrsr_raw": " cdrsr1  +  cdrsr2  +  cdrsr3  +  cdrsr4  +  cdrsr5  +  cdrsr6  +  cdrsr7   +  cdrsr8  +  cdrsr9  +  cdrsr10  +  cdrsr11  +  cdrsr12  +  cdrsr13  +  cdrsr14  +  cdrsr15  +  cdrsr16  +  cdrsr17 "
+    },
+    "ui": {
+        "order": [
+            "cdrs_report_date",
+            "cdrs_init",
+            "cdrs_r_verify_id",
+            "instructions_cdrsr",
+            "cdrsr1_text",
+            "cdrsr1",
+            "cdrsr2_text",
+            "cdrsr2",
+            "cdrsr3_text",
+            "cdrsr3",
+            "cdrsr4_text",
+            "cdrsr4",
+            "cdrsr4_specify",
+            "cdrsr4b",
+            "cdrsr5_text",
+            "cdrsr5",
+            "cdrsrb",
+            "cdrsr6_text",
+            "cdrsr6",
+            "cdrsr7_text",
+            "cdrsr7",
+            "cdrsr8_text",
+            "cdrsr8",
+            "cdrsr9_text",
+            "cdrsr9",
+            "cdrsr10_text",
+            "cdrsr10",
+            "cdrsr11_text",
+            "cdrsr11",
+            "cdrsr12_text",
+            "cdrsr12",
+            "cdrsr13_text",
+            "cdrsr13",
+            "cdrsr14_text",
+            "cdrsr14",
+            "cdrsr15_text",
+            "cdrsr15",
+            "cdrsr16_text",
+            "cdrsr16",
+            "cdrsr17_text",
+            "cdrsr17",
+            "cdrsr_raw"
+        ],
+        "shuffle": false,
+        "visibility": {
+            "cdrsrb": " cdrsr5   == '2' ||  cdrsr5   == '4' ||  cdrsr5   == '3' ||  cdrsr5   == '5'"
+        }
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/concomitant_medication_log_v1/concomitant_medication_log_v1_context.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Activity.jsonld",
+    "@id": "concomitant_medication_log_v1_schema",
+    "skos:prefLabel": "concomitant_medication_log_v1_schema",
+    "skos:altLabel": "concomitant_medication_log_v1_schema",
+    "schema:description": "concomitant_medication_log_v1 schema",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "scoringLogic": {},
+    "ui": {
+        "order": [
+            "med_name",
+            "med_indication",
+            "med_dose",
+            "med_units",
+            "med_frequency",
+            "med_route",
+            "med_start",
+            "med_end",
+            "med_ae",
+            "med_collect_init",
+            "med_collect_date"
+        ],
+        "shuffle": false,
+        "visibility": {
+            "med_collect_date": " no_screen_meds   == '0' ||  no_rand_meds   == '0' ||  no_end_meds   == '0'"
+        }
+    }
+}
