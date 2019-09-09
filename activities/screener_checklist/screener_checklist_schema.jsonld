@@ -1,0 +1,35 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/screener_checklist/screener_checklist_context.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Activity.jsonld",
+    "@id": "screener_checklist_schema",
+    "skos:prefLabel": "screener_checklist_schema",
+    "skos:altLabel": "screener_checklist_schema",
+    "schema:description": "screener_checklist schema",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "scoringLogic": {},
+    "variableMap": [
+        {
+            "variableName": "checklist_a",
+            "isAbout": "checklist_a"
+        },
+        {
+            "variableName": "checklist_b",
+            "isAbout": "checklist_b"
+        }
+    ],
+    "ui": {
+        "order": [
+            "checklist_a",
+            "checklist_b"
+        ],
+        "shuffle": false,
+        "visibility": {
+            "checklist_a": true,
+            "checklist_b": true
+        }
+    }
+}

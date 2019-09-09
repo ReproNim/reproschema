@@ -1,0 +1,1630 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "drug_use": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/drug_use/items/",
+        "cdgu0": {
+            "@id": "drug_use:cdgu0.jsonld",
+            "@type": "@id"
+        },
+        "cdgu2": {
+            "@id": "drug_use:cdgu2.jsonld",
+            "@type": "@id"
+        },
+        "cdgu1": {
+            "@id": "drug_use:cdgu1.jsonld",
+            "@type": "@id"
+        },
+        "cdgu2a": {
+            "@id": "drug_use:cdgu2a.jsonld",
+            "@type": "@id"
+        },
+        "cdgu3": {
+            "@id": "drug_use:cdgu3.jsonld",
+            "@type": "@id"
+        },
+        "cdgu4": {
+            "@id": "drug_use:cdgu4.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu001": {
+            "@id": "drug_use:dcdgu001.jsonld",
+            "@type": "@id"
+        },
+        "cdgu5": {
+            "@id": "drug_use:cdgu5.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu002": {
+            "@id": "drug_use:dcdgu002.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu003": {
+            "@id": "drug_use:dcdgu003.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu004": {
+            "@id": "drug_use:dcdgu004.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu005": {
+            "@id": "drug_use:dcdgu005.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu006": {
+            "@id": "drug_use:dcdgu006.jsonld",
+            "@type": "@id"
+        },
+        "cdgu6a": {
+            "@id": "drug_use:cdgu6a.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu007": {
+            "@id": "drug_use:dcdgu007.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu008": {
+            "@id": "drug_use:dcdgu008.jsonld",
+            "@type": "@id"
+        },
+        "cdgu6b": {
+            "@id": "drug_use:cdgu6b.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu009": {
+            "@id": "drug_use:dcdgu009.jsonld",
+            "@type": "@id"
+        },
+        "cdgu7a": {
+            "@id": "drug_use:cdgu7a.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu010": {
+            "@id": "drug_use:dcdgu010.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu011": {
+            "@id": "drug_use:dcdgu011.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu012": {
+            "@id": "drug_use:dcdgu012.jsonld",
+            "@type": "@id"
+        },
+        "cdgu7": {
+            "@id": "drug_use:cdgu7.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu013": {
+            "@id": "drug_use:dcdgu013.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu014": {
+            "@id": "drug_use:dcdgu014.jsonld",
+            "@type": "@id"
+        },
+        "cdgu8": {
+            "@id": "drug_use:cdgu8.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu015": {
+            "@id": "drug_use:dcdgu015.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu016": {
+            "@id": "drug_use:dcdgu016.jsonld",
+            "@type": "@id"
+        },
+        "cdgu9": {
+            "@id": "drug_use:cdgu9.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu07": {
+            "@id": "drug_use:dcdgu07.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu18": {
+            "@id": "drug_use:dcdgu18.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu19": {
+            "@id": "drug_use:dcdgu19.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu20": {
+            "@id": "drug_use:dcdgu20.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu21": {
+            "@id": "drug_use:dcdgu21.jsonld",
+            "@type": "@id"
+        },
+        "cdgu10a": {
+            "@id": "drug_use:cdgu10a.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu022": {
+            "@id": "drug_use:dcdgu022.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu023": {
+            "@id": "drug_use:dcdgu023.jsonld",
+            "@type": "@id"
+        },
+        "cdgu10": {
+            "@id": "drug_use:cdgu10.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu024": {
+            "@id": "drug_use:dcdgu024.jsonld",
+            "@type": "@id"
+        },
+        "cdgu11": {
+            "@id": "drug_use:cdgu11.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu025": {
+            "@id": "drug_use:dcdgu025.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu026": {
+            "@id": "drug_use:dcdgu026.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu027": {
+            "@id": "drug_use:dcdgu027.jsonld",
+            "@type": "@id"
+        },
+        "cdgu12": {
+            "@id": "drug_use:cdgu12.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu028": {
+            "@id": "drug_use:dcdgu028.jsonld",
+            "@type": "@id"
+        },
+        "cdgu13": {
+            "@id": "drug_use:cdgu13.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu029": {
+            "@id": "drug_use:dcdgu029.jsonld",
+            "@type": "@id"
+        },
+        "cdgu14": {
+            "@id": "drug_use:cdgu14.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu030": {
+            "@id": "drug_use:dcdgu030.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu031": {
+            "@id": "drug_use:dcdgu031.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu032": {
+            "@id": "drug_use:dcdgu032.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu033": {
+            "@id": "drug_use:dcdgu033.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu034": {
+            "@id": "drug_use:dcdgu034.jsonld",
+            "@type": "@id"
+        },
+        "cdgu15a": {
+            "@id": "drug_use:cdgu15a.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu035": {
+            "@id": "drug_use:dcdgu035.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu036": {
+            "@id": "drug_use:dcdgu036.jsonld",
+            "@type": "@id"
+        },
+        "cdgu15": {
+            "@id": "drug_use:cdgu15.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu037": {
+            "@id": "drug_use:dcdgu037.jsonld",
+            "@type": "@id"
+        },
+        "cdgu16": {
+            "@id": "drug_use:cdgu16.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu038": {
+            "@id": "drug_use:dcdgu038.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu039": {
+            "@id": "drug_use:dcdgu039.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu040": {
+            "@id": "drug_use:dcdgu040.jsonld",
+            "@type": "@id"
+        },
+        "cdgu17": {
+            "@id": "drug_use:cdgu17.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu041": {
+            "@id": "drug_use:dcdgu041.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu042": {
+            "@id": "drug_use:dcdgu042.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu043": {
+            "@id": "drug_use:dcdgu043.jsonld",
+            "@type": "@id"
+        },
+        "cdgu18": {
+            "@id": "drug_use:cdgu18.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu044": {
+            "@id": "drug_use:dcdgu044.jsonld",
+            "@type": "@id"
+        },
+        "cdgu19": {
+            "@id": "drug_use:cdgu19.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu045": {
+            "@id": "drug_use:dcdgu045.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu046": {
+            "@id": "drug_use:dcdgu046.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu047": {
+            "@id": "drug_use:dcdgu047.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu048": {
+            "@id": "drug_use:dcdgu048.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu049": {
+            "@id": "drug_use:dcdgu049.jsonld",
+            "@type": "@id"
+        },
+        "cdgu20a": {
+            "@id": "drug_use:cdgu20a.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu050": {
+            "@id": "drug_use:dcdgu050.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu051": {
+            "@id": "drug_use:dcdgu051.jsonld",
+            "@type": "@id"
+        },
+        "cdgu20": {
+            "@id": "drug_use:cdgu20.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu052": {
+            "@id": "drug_use:dcdgu052.jsonld",
+            "@type": "@id"
+        },
+        "cdgu21": {
+            "@id": "drug_use:cdgu21.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu053": {
+            "@id": "drug_use:dcdgu053.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu054": {
+            "@id": "drug_use:dcdgu054.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu055": {
+            "@id": "drug_use:dcdgu055.jsonld",
+            "@type": "@id"
+        },
+        "cdgu22": {
+            "@id": "drug_use:cdgu22.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu056": {
+            "@id": "drug_use:dcdgu056.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu057": {
+            "@id": "drug_use:dcdgu057.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu058": {
+            "@id": "drug_use:dcdgu058.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu059": {
+            "@id": "drug_use:dcdgu059.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu060": {
+            "@id": "drug_use:dcdgu060.jsonld",
+            "@type": "@id"
+        },
+        "cdgu23": {
+            "@id": "drug_use:cdgu23.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu061": {
+            "@id": "drug_use:dcdgu061.jsonld",
+            "@type": "@id"
+        },
+        "cdgu24": {
+            "@id": "drug_use:cdgu24.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu062": {
+            "@id": "drug_use:dcdgu062.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu063": {
+            "@id": "drug_use:dcdgu063.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu064": {
+            "@id": "drug_use:dcdgu064.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu065": {
+            "@id": "drug_use:dcdgu065.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu066": {
+            "@id": "drug_use:dcdgu066.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu067": {
+            "@id": "drug_use:dcdgu067.jsonld",
+            "@type": "@id"
+        },
+        "cdgu25": {
+            "@id": "drug_use:cdgu25.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu068": {
+            "@id": "drug_use:dcdgu068.jsonld",
+            "@type": "@id"
+        },
+        "cdgu26": {
+            "@id": "drug_use:cdgu26.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu069": {
+            "@id": "drug_use:dcdgu069.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu070": {
+            "@id": "drug_use:dcdgu070.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu071": {
+            "@id": "drug_use:dcdgu071.jsonld",
+            "@type": "@id"
+        },
+        "cdgu26a": {
+            "@id": "drug_use:cdgu26a.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu072": {
+            "@id": "drug_use:dcdgu072.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu073": {
+            "@id": "drug_use:dcdgu073.jsonld",
+            "@type": "@id"
+        },
+        "cdgu27": {
+            "@id": "drug_use:cdgu27.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu074": {
+            "@id": "drug_use:dcdgu074.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu075": {
+            "@id": "drug_use:dcdgu075.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu076": {
+            "@id": "drug_use:dcdgu076.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu077": {
+            "@id": "drug_use:dcdgu077.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu078": {
+            "@id": "drug_use:dcdgu078.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu079": {
+            "@id": "drug_use:dcdgu079.jsonld",
+            "@type": "@id"
+        },
+        "cdgu28": {
+            "@id": "drug_use:cdgu28.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu080": {
+            "@id": "drug_use:dcdgu080.jsonld",
+            "@type": "@id"
+        },
+        "cdgu29": {
+            "@id": "drug_use:cdgu29.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu081": {
+            "@id": "drug_use:dcdgu081.jsonld",
+            "@type": "@id"
+        },
+        "cdgu30": {
+            "@id": "drug_use:cdgu30.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu082": {
+            "@id": "drug_use:dcdgu082.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu083": {
+            "@id": "drug_use:dcdgu083.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu084": {
+            "@id": "drug_use:dcdgu084.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu085": {
+            "@id": "drug_use:dcdgu085.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu086": {
+            "@id": "drug_use:dcdgu086.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu087": {
+            "@id": "drug_use:dcdgu087.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu088": {
+            "@id": "drug_use:dcdgu088.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu089": {
+            "@id": "drug_use:dcdgu089.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu090": {
+            "@id": "drug_use:dcdgu090.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu091": {
+            "@id": "drug_use:dcdgu091.jsonld",
+            "@type": "@id"
+        },
+        "cdgu31a": {
+            "@id": "drug_use:cdgu31a.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu092": {
+            "@id": "drug_use:dcdgu092.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu093": {
+            "@id": "drug_use:dcdgu093.jsonld",
+            "@type": "@id"
+        },
+        "cdgu31": {
+            "@id": "drug_use:cdgu31.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu094": {
+            "@id": "drug_use:dcdgu094.jsonld",
+            "@type": "@id"
+        },
+        "cdgu32": {
+            "@id": "drug_use:cdgu32.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu095": {
+            "@id": "drug_use:dcdgu095.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu096": {
+            "@id": "drug_use:dcdgu096.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu097": {
+            "@id": "drug_use:dcdgu097.jsonld",
+            "@type": "@id"
+        },
+        "cdgu33": {
+            "@id": "drug_use:cdgu33.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu098": {
+            "@id": "drug_use:dcdgu098.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu099": {
+            "@id": "drug_use:dcdgu099.jsonld",
+            "@type": "@id"
+        },
+        "cdgu34": {
+            "@id": "drug_use:cdgu34.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu100": {
+            "@id": "drug_use:dcdgu100.jsonld",
+            "@type": "@id"
+        },
+        "cdgu35": {
+            "@id": "drug_use:cdgu35.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu101": {
+            "@id": "drug_use:dcdgu101.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu102": {
+            "@id": "drug_use:dcdgu102.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu103": {
+            "@id": "drug_use:dcdgu103.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu104": {
+            "@id": "drug_use:dcdgu104.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu105": {
+            "@id": "drug_use:dcdgu105.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu106": {
+            "@id": "drug_use:dcdgu106.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu107": {
+            "@id": "drug_use:dcdgu107.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu108": {
+            "@id": "drug_use:dcdgu108.jsonld",
+            "@type": "@id"
+        },
+        "cdgu36a": {
+            "@id": "drug_use:cdgu36a.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu109": {
+            "@id": "drug_use:dcdgu109.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu110": {
+            "@id": "drug_use:dcdgu110.jsonld",
+            "@type": "@id"
+        },
+        "cdgu36": {
+            "@id": "drug_use:cdgu36.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu111": {
+            "@id": "drug_use:dcdgu111.jsonld",
+            "@type": "@id"
+        },
+        "cdgu37": {
+            "@id": "drug_use:cdgu37.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu112": {
+            "@id": "drug_use:dcdgu112.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu113": {
+            "@id": "drug_use:dcdgu113.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu114": {
+            "@id": "drug_use:dcdgu114.jsonld",
+            "@type": "@id"
+        },
+        "cdgu38": {
+            "@id": "drug_use:cdgu38.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu115": {
+            "@id": "drug_use:dcdgu115.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu116": {
+            "@id": "drug_use:dcdgu116.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu117": {
+            "@id": "drug_use:dcdgu117.jsonld",
+            "@type": "@id"
+        },
+        "cdgu39a": {
+            "@id": "drug_use:cdgu39a.jsonld",
+            "@type": "@id"
+        },
+        "cdgu39": {
+            "@id": "drug_use:cdgu39.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu118": {
+            "@id": "drug_use:dcdgu118.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu119": {
+            "@id": "drug_use:dcdgu119.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu120": {
+            "@id": "drug_use:dcdgu120.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu121": {
+            "@id": "drug_use:dcdgu121.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu122": {
+            "@id": "drug_use:dcdgu122.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu123": {
+            "@id": "drug_use:dcdgu123.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu124": {
+            "@id": "drug_use:dcdgu124.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu125": {
+            "@id": "drug_use:dcdgu125.jsonld",
+            "@type": "@id"
+        },
+        "cdgu40": {
+            "@id": "drug_use:cdgu40.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu126": {
+            "@id": "drug_use:dcdgu126.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu127": {
+            "@id": "drug_use:dcdgu127.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu128": {
+            "@id": "drug_use:dcdgu128.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu129": {
+            "@id": "drug_use:dcdgu129.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu130": {
+            "@id": "drug_use:dcdgu130.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu131": {
+            "@id": "drug_use:dcdgu131.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu132": {
+            "@id": "drug_use:dcdgu132.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu133": {
+            "@id": "drug_use:dcdgu133.jsonld",
+            "@type": "@id"
+        },
+        "cdgu41": {
+            "@id": "drug_use:cdgu41.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu134": {
+            "@id": "drug_use:dcdgu134.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu135": {
+            "@id": "drug_use:dcdgu135.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu136": {
+            "@id": "drug_use:dcdgu136.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu137": {
+            "@id": "drug_use:dcdgu137.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu138": {
+            "@id": "drug_use:dcdgu138.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu139": {
+            "@id": "drug_use:dcdgu139.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu140": {
+            "@id": "drug_use:dcdgu140.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu141": {
+            "@id": "drug_use:dcdgu141.jsonld",
+            "@type": "@id"
+        },
+        "cdgu42": {
+            "@id": "drug_use:cdgu42.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu142": {
+            "@id": "drug_use:dcdgu142.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu143": {
+            "@id": "drug_use:dcdgu143.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu144": {
+            "@id": "drug_use:dcdgu144.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu145": {
+            "@id": "drug_use:dcdgu145.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu146": {
+            "@id": "drug_use:dcdgu146.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu147": {
+            "@id": "drug_use:dcdgu147.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu148": {
+            "@id": "drug_use:dcdgu148.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu149": {
+            "@id": "drug_use:dcdgu149.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu150": {
+            "@id": "drug_use:dcdgu150.jsonld",
+            "@type": "@id"
+        },
+        "cdgu43": {
+            "@id": "drug_use:cdgu43.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu151": {
+            "@id": "drug_use:dcdgu151.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu152": {
+            "@id": "drug_use:dcdgu152.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu153": {
+            "@id": "drug_use:dcdgu153.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu154": {
+            "@id": "drug_use:dcdgu154.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu155": {
+            "@id": "drug_use:dcdgu155.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu156": {
+            "@id": "drug_use:dcdgu156.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu157": {
+            "@id": "drug_use:dcdgu157.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu158": {
+            "@id": "drug_use:dcdgu158.jsonld",
+            "@type": "@id"
+        },
+        "cdgu44": {
+            "@id": "drug_use:cdgu44.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu159": {
+            "@id": "drug_use:dcdgu159.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu160": {
+            "@id": "drug_use:dcdgu160.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu161": {
+            "@id": "drug_use:dcdgu161.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu162": {
+            "@id": "drug_use:dcdgu162.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu163": {
+            "@id": "drug_use:dcdgu163.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu164": {
+            "@id": "drug_use:dcdgu164.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu165": {
+            "@id": "drug_use:dcdgu165.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu166": {
+            "@id": "drug_use:dcdgu166.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu167": {
+            "@id": "drug_use:dcdgu167.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu168": {
+            "@id": "drug_use:dcdgu168.jsonld",
+            "@type": "@id"
+        },
+        "cdgu45": {
+            "@id": "drug_use:cdgu45.jsonld",
+            "@type": "@id"
+        },
+        "cdgu46": {
+            "@id": "drug_use:cdgu46.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu169": {
+            "@id": "drug_use:dcdgu169.jsonld",
+            "@type": "@id"
+        },
+        "cdgu47": {
+            "@id": "drug_use:cdgu47.jsonld",
+            "@type": "@id"
+        },
+        "cdgu47a": {
+            "@id": "drug_use:cdgu47a.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu170": {
+            "@id": "drug_use:dcdgu170.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu171": {
+            "@id": "drug_use:dcdgu171.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu172": {
+            "@id": "drug_use:dcdgu172.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu173": {
+            "@id": "drug_use:dcdgu173.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu174": {
+            "@id": "drug_use:dcdgu174.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu175": {
+            "@id": "drug_use:dcdgu175.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu176": {
+            "@id": "drug_use:dcdgu176.jsonld",
+            "@type": "@id"
+        },
+        "cdgu48": {
+            "@id": "drug_use:cdgu48.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu177": {
+            "@id": "drug_use:dcdgu177.jsonld",
+            "@type": "@id"
+        },
+        "cdgu49": {
+            "@id": "drug_use:cdgu49.jsonld",
+            "@type": "@id"
+        },
+        "cdgu49a": {
+            "@id": "drug_use:cdgu49a.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu178": {
+            "@id": "drug_use:dcdgu178.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu179": {
+            "@id": "drug_use:dcdgu179.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu180": {
+            "@id": "drug_use:dcdgu180.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu181": {
+            "@id": "drug_use:dcdgu181.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu182": {
+            "@id": "drug_use:dcdgu182.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu183": {
+            "@id": "drug_use:dcdgu183.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu184": {
+            "@id": "drug_use:dcdgu184.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu185": {
+            "@id": "drug_use:dcdgu185.jsonld",
+            "@type": "@id"
+        },
+        "cdgu50a": {
+            "@id": "drug_use:cdgu50a.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu186": {
+            "@id": "drug_use:dcdgu186.jsonld",
+            "@type": "@id"
+        },
+        "cdgu50": {
+            "@id": "drug_use:cdgu50.jsonld",
+            "@type": "@id"
+        },
+        "cdgu51": {
+            "@id": "drug_use:cdgu51.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu187": {
+            "@id": "drug_use:dcdgu187.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu188": {
+            "@id": "drug_use:dcdgu188.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu189": {
+            "@id": "drug_use:dcdgu189.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu190": {
+            "@id": "drug_use:dcdgu190.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu191": {
+            "@id": "drug_use:dcdgu191.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu192": {
+            "@id": "drug_use:dcdgu192.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu193": {
+            "@id": "drug_use:dcdgu193.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu194": {
+            "@id": "drug_use:dcdgu194.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu195": {
+            "@id": "drug_use:dcdgu195.jsonld",
+            "@type": "@id"
+        },
+        "cdgu54": {
+            "@id": "drug_use:cdgu54.jsonld",
+            "@type": "@id"
+        },
+        "cdgu55": {
+            "@id": "drug_use:cdgu55.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu196": {
+            "@id": "drug_use:dcdgu196.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu197": {
+            "@id": "drug_use:dcdgu197.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu198": {
+            "@id": "drug_use:dcdgu198.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu199": {
+            "@id": "drug_use:dcdgu199.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu200": {
+            "@id": "drug_use:dcdgu200.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu201": {
+            "@id": "drug_use:dcdgu201.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu202": {
+            "@id": "drug_use:dcdgu202.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu203": {
+            "@id": "drug_use:dcdgu203.jsonld",
+            "@type": "@id"
+        },
+        "cdgu57": {
+            "@id": "drug_use:cdgu57.jsonld",
+            "@type": "@id"
+        },
+        "cdgu58": {
+            "@id": "drug_use:cdgu58.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu204": {
+            "@id": "drug_use:dcdgu204.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu205": {
+            "@id": "drug_use:dcdgu205.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu206": {
+            "@id": "drug_use:dcdgu206.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu207": {
+            "@id": "drug_use:dcdgu207.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu208": {
+            "@id": "drug_use:dcdgu208.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu209": {
+            "@id": "drug_use:dcdgu209.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu210": {
+            "@id": "drug_use:dcdgu210.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu211": {
+            "@id": "drug_use:dcdgu211.jsonld",
+            "@type": "@id"
+        },
+        "cdgu60": {
+            "@id": "drug_use:cdgu60.jsonld",
+            "@type": "@id"
+        },
+        "cdgu61": {
+            "@id": "drug_use:cdgu61.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu212": {
+            "@id": "drug_use:dcdgu212.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu213": {
+            "@id": "drug_use:dcdgu213.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu214": {
+            "@id": "drug_use:dcdgu214.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu215": {
+            "@id": "drug_use:dcdgu215.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu216": {
+            "@id": "drug_use:dcdgu216.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu217": {
+            "@id": "drug_use:dcdgu217.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu218": {
+            "@id": "drug_use:dcdgu218.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu219": {
+            "@id": "drug_use:dcdgu219.jsonld",
+            "@type": "@id"
+        },
+        "cdgu63": {
+            "@id": "drug_use:cdgu63.jsonld",
+            "@type": "@id"
+        },
+        "cdgu64": {
+            "@id": "drug_use:cdgu64.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu220": {
+            "@id": "drug_use:dcdgu220.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu221": {
+            "@id": "drug_use:dcdgu221.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu222": {
+            "@id": "drug_use:dcdgu222.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu223": {
+            "@id": "drug_use:dcdgu223.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu224": {
+            "@id": "drug_use:dcdgu224.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu225": {
+            "@id": "drug_use:dcdgu225.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu226": {
+            "@id": "drug_use:dcdgu226.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu227": {
+            "@id": "drug_use:dcdgu227.jsonld",
+            "@type": "@id"
+        },
+        "cdgu66": {
+            "@id": "drug_use:cdgu66.jsonld",
+            "@type": "@id"
+        },
+        "cdgu67": {
+            "@id": "drug_use:cdgu67.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu228": {
+            "@id": "drug_use:dcdgu228.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu229": {
+            "@id": "drug_use:dcdgu229.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu230": {
+            "@id": "drug_use:dcdgu230.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu231": {
+            "@id": "drug_use:dcdgu231.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu232": {
+            "@id": "drug_use:dcdgu232.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu233": {
+            "@id": "drug_use:dcdgu233.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu234": {
+            "@id": "drug_use:dcdgu234.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu235": {
+            "@id": "drug_use:dcdgu235.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu236": {
+            "@id": "drug_use:dcdgu236.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu237": {
+            "@id": "drug_use:dcdgu237.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu238": {
+            "@id": "drug_use:dcdgu238.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu239": {
+            "@id": "drug_use:dcdgu239.jsonld",
+            "@type": "@id"
+        },
+        "cdgu68": {
+            "@id": "drug_use:cdgu68.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu254": {
+            "@id": "drug_use:dcdgu254.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu255": {
+            "@id": "drug_use:dcdgu255.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu256": {
+            "@id": "drug_use:dcdgu256.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu257": {
+            "@id": "drug_use:dcdgu257.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu258": {
+            "@id": "drug_use:dcdgu258.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu259": {
+            "@id": "drug_use:dcdgu259.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu260": {
+            "@id": "drug_use:dcdgu260.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu261": {
+            "@id": "drug_use:dcdgu261.jsonld",
+            "@type": "@id"
+        },
+        "cdgu70": {
+            "@id": "drug_use:cdgu70.jsonld",
+            "@type": "@id"
+        },
+        "cdgu71": {
+            "@id": "drug_use:cdgu71.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu262": {
+            "@id": "drug_use:dcdgu262.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu263": {
+            "@id": "drug_use:dcdgu263.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu264": {
+            "@id": "drug_use:dcdgu264.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu265": {
+            "@id": "drug_use:dcdgu265.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu266": {
+            "@id": "drug_use:dcdgu266.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu267": {
+            "@id": "drug_use:dcdgu267.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu268": {
+            "@id": "drug_use:dcdgu268.jsonld",
+            "@type": "@id"
+        },
+        "cdgu72": {
+            "@id": "drug_use:cdgu72.jsonld",
+            "@type": "@id"
+        },
+        "cdgu73": {
+            "@id": "drug_use:cdgu73.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu269": {
+            "@id": "drug_use:dcdgu269.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu270": {
+            "@id": "drug_use:dcdgu270.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu271": {
+            "@id": "drug_use:dcdgu271.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu272": {
+            "@id": "drug_use:dcdgu272.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu273": {
+            "@id": "drug_use:dcdgu273.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu274": {
+            "@id": "drug_use:dcdgu274.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu275": {
+            "@id": "drug_use:dcdgu275.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu276": {
+            "@id": "drug_use:dcdgu276.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu277": {
+            "@id": "drug_use:dcdgu277.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu278": {
+            "@id": "drug_use:dcdgu278.jsonld",
+            "@type": "@id"
+        },
+        "cdgu74": {
+            "@id": "drug_use:cdgu74.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu279": {
+            "@id": "drug_use:dcdgu279.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu280": {
+            "@id": "drug_use:dcdgu280.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu281": {
+            "@id": "drug_use:dcdgu281.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu282": {
+            "@id": "drug_use:dcdgu282.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu283": {
+            "@id": "drug_use:dcdgu283.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu284": {
+            "@id": "drug_use:dcdgu284.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu285": {
+            "@id": "drug_use:dcdgu285.jsonld",
+            "@type": "@id"
+        },
+        "cdgu75": {
+            "@id": "drug_use:cdgu75.jsonld",
+            "@type": "@id"
+        },
+        "cdgu76": {
+            "@id": "drug_use:cdgu76.jsonld",
+            "@type": "@id"
+        },
+        "cdgu77": {
+            "@id": "drug_use:cdgu77.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu286": {
+            "@id": "drug_use:dcdgu286.jsonld",
+            "@type": "@id"
+        },
+        "cdgu78": {
+            "@id": "drug_use:cdgu78.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu287": {
+            "@id": "drug_use:dcdgu287.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu288": {
+            "@id": "drug_use:dcdgu288.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu289": {
+            "@id": "drug_use:dcdgu289.jsonld",
+            "@type": "@id"
+        },
+        "cdgu79": {
+            "@id": "drug_use:cdgu79.jsonld",
+            "@type": "@id"
+        },
+        "cdgu79a": {
+            "@id": "drug_use:cdgu79a.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu290": {
+            "@id": "drug_use:dcdgu290.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu291": {
+            "@id": "drug_use:dcdgu291.jsonld",
+            "@type": "@id"
+        },
+        "cdgu80": {
+            "@id": "drug_use:cdgu80.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu292": {
+            "@id": "drug_use:dcdgu292.jsonld",
+            "@type": "@id"
+        },
+        "cdgu80a": {
+            "@id": "drug_use:cdgu80a.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu293": {
+            "@id": "drug_use:dcdgu293.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu294": {
+            "@id": "drug_use:dcdgu294.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu295": {
+            "@id": "drug_use:dcdgu295.jsonld",
+            "@type": "@id"
+        },
+        "cdgu81": {
+            "@id": "drug_use:cdgu81.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu296": {
+            "@id": "drug_use:dcdgu296.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu297": {
+            "@id": "drug_use:dcdgu297.jsonld",
+            "@type": "@id"
+        },
+        "cdgu83": {
+            "@id": "drug_use:cdgu83.jsonld",
+            "@type": "@id"
+        },
+        "cdgu82": {
+            "@id": "drug_use:cdgu82.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu298": {
+            "@id": "drug_use:dcdgu298.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu299": {
+            "@id": "drug_use:dcdgu299.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu300": {
+            "@id": "drug_use:dcdgu300.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu301": {
+            "@id": "drug_use:dcdgu301.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu302": {
+            "@id": "drug_use:dcdgu302.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu303": {
+            "@id": "drug_use:dcdgu303.jsonld",
+            "@type": "@id"
+        },
+        "cdgu84": {
+            "@id": "drug_use:cdgu84.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu304": {
+            "@id": "drug_use:dcdgu304.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu305": {
+            "@id": "drug_use:dcdgu305.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu306": {
+            "@id": "drug_use:dcdgu306.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu307": {
+            "@id": "drug_use:dcdgu307.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu308": {
+            "@id": "drug_use:dcdgu308.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu309": {
+            "@id": "drug_use:dcdgu309.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu310": {
+            "@id": "drug_use:dcdgu310.jsonld",
+            "@type": "@id"
+        },
+        "cdgu85a": {
+            "@id": "drug_use:cdgu85a.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu311": {
+            "@id": "drug_use:dcdgu311.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu312": {
+            "@id": "drug_use:dcdgu312.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu313": {
+            "@id": "drug_use:dcdgu313.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu314": {
+            "@id": "drug_use:dcdgu314.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu315": {
+            "@id": "drug_use:dcdgu315.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu316": {
+            "@id": "drug_use:dcdgu316.jsonld",
+            "@type": "@id"
+        },
+        "cdgu85": {
+            "@id": "drug_use:cdgu85.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu317": {
+            "@id": "drug_use:dcdgu317.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu318": {
+            "@id": "drug_use:dcdgu318.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu319": {
+            "@id": "drug_use:dcdgu319.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu320": {
+            "@id": "drug_use:dcdgu320.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu321": {
+            "@id": "drug_use:dcdgu321.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu322": {
+            "@id": "drug_use:dcdgu322.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu323": {
+            "@id": "drug_use:dcdgu323.jsonld",
+            "@type": "@id"
+        },
+        "dcdgu324": {
+            "@id": "drug_use:dcdgu324.jsonld",
+            "@type": "@id"
+        },
+        "cdgu_end": {
+            "@id": "drug_use:cdgu_end.jsonld",
+            "@type": "@id"
+        }
+    }
+}

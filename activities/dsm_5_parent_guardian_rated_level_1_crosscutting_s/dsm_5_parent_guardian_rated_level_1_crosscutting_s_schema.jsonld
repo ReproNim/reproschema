@@ -1,0 +1,60 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/dsm_5_parent_guardian_rated_level_1_crosscutting_s/dsm_5_parent_guardian_rated_level_1_crosscutting_s_context.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Activity.jsonld",
+    "@id": "dsm_5_parent_guardian_rated_level_1_crosscutting_s_schema",
+    "skos:prefLabel": "dsm_5_parent_guardian_rated_level_1_crosscutting_s_schema",
+    "skos:altLabel": "dsm_5_parent_guardian_rated_level_1_crosscutting_s_schema",
+    "schema:description": "dsm_5_parent_guardian_rated_level_1_crosscutting_s schema",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "scoringLogic": {
+        "substance_abuse_score": "max( dsm_5_xi_20 , dsm_5_xi_21 , dsm_5_xi_22 , dsm_5_xi_23 )"
+    },
+    "ui": {
+        "order": [
+            "dsm_5_relationship",
+            "dsm_5_instructions",
+            "dsm_5_i_1",
+            "dsm_5_i_2",
+            "dsm_5_ii_3",
+            "dsm_5_iii_4",
+            "dsm_5_iv_5",
+            "dsm_5_iv_6",
+            "dsm_5_v_7",
+            "dsm_5_vi_8",
+            "dsm_5_vi_9",
+            "dsm_5_vi_10",
+            "dsm_5_vi_11",
+            "dsm_5_vi_12",
+            "dsm_5_vi_13",
+            "dsm_5_ix_14",
+            "dsm_5_ix_15",
+            "dsm_5_x_16",
+            "dsm_5_x_17",
+            "dsm_5_x_18",
+            "dsm_5_x_19",
+            "dsm_5_xi_20",
+            "dsm_5_xi_21",
+            "dsm_5_xi_22",
+            "dsm_5_xi_23",
+            "dsm_5_xii_24",
+            "dsm_5_xii_25",
+            "somatic_score",
+            "sleep_score",
+            "attention_score",
+            "depression_score",
+            "irritability_score",
+            "anger_score",
+            "mania_score",
+            "anxiety_score",
+            "psychosis_score",
+            "repitition_score",
+            "substance_abuse_score"
+        ],
+        "shuffle": false,
+        "visibility": {}
+    }
+}

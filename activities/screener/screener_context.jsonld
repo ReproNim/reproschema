@@ -1,0 +1,846 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "screener": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/screener/items/",
+        "cscr0": {
+            "@id": "screener:cscr0.jsonld",
+            "@type": "@id"
+        },
+        "dcscr005": {
+            "@id": "screener:dcscr005.jsonld",
+            "@type": "@id"
+        },
+        "cscr1": {
+            "@id": "screener:cscr1.jsonld",
+            "@type": "@id"
+        },
+        "dcscr006": {
+            "@id": "screener:dcscr006.jsonld",
+            "@type": "@id"
+        },
+        "dcscr007": {
+            "@id": "screener:dcscr007.jsonld",
+            "@type": "@id"
+        },
+        "dcscr008": {
+            "@id": "screener:dcscr008.jsonld",
+            "@type": "@id"
+        },
+        "dcscr009": {
+            "@id": "screener:dcscr009.jsonld",
+            "@type": "@id"
+        },
+        "cscr2": {
+            "@id": "screener:cscr2.jsonld",
+            "@type": "@id"
+        },
+        "dcscr010": {
+            "@id": "screener:dcscr010.jsonld",
+            "@type": "@id"
+        },
+        "dcscr011": {
+            "@id": "screener:dcscr011.jsonld",
+            "@type": "@id"
+        },
+        "cscr2a": {
+            "@id": "screener:cscr2a.jsonld",
+            "@type": "@id"
+        },
+        "cscr3": {
+            "@id": "screener:cscr3.jsonld",
+            "@type": "@id"
+        },
+        "dcscr012": {
+            "@id": "screener:dcscr012.jsonld",
+            "@type": "@id"
+        },
+        "dcscr013": {
+            "@id": "screener:dcscr013.jsonld",
+            "@type": "@id"
+        },
+        "cscr4": {
+            "@id": "screener:cscr4.jsonld",
+            "@type": "@id"
+        },
+        "dcscr014": {
+            "@id": "screener:dcscr014.jsonld",
+            "@type": "@id"
+        },
+        "dcscr015": {
+            "@id": "screener:dcscr015.jsonld",
+            "@type": "@id"
+        },
+        "dcscr016": {
+            "@id": "screener:dcscr016.jsonld",
+            "@type": "@id"
+        },
+        "dcscr017": {
+            "@id": "screener:dcscr017.jsonld",
+            "@type": "@id"
+        },
+        "dcscr018": {
+            "@id": "screener:dcscr018.jsonld",
+            "@type": "@id"
+        },
+        "dcscr019": {
+            "@id": "screener:dcscr019.jsonld",
+            "@type": "@id"
+        },
+        "cscr5": {
+            "@id": "screener:cscr5.jsonld",
+            "@type": "@id"
+        },
+        "dcscr020": {
+            "@id": "screener:dcscr020.jsonld",
+            "@type": "@id"
+        },
+        "dcscr021": {
+            "@id": "screener:dcscr021.jsonld",
+            "@type": "@id"
+        },
+        "dcscr022": {
+            "@id": "screener:dcscr022.jsonld",
+            "@type": "@id"
+        },
+        "cscr6": {
+            "@id": "screener:cscr6.jsonld",
+            "@type": "@id"
+        },
+        "cscr7": {
+            "@id": "screener:cscr7.jsonld",
+            "@type": "@id"
+        },
+        "cscr8": {
+            "@id": "screener:cscr8.jsonld",
+            "@type": "@id"
+        },
+        "dcscr023": {
+            "@id": "screener:dcscr023.jsonld",
+            "@type": "@id"
+        },
+        "dcscr024": {
+            "@id": "screener:dcscr024.jsonld",
+            "@type": "@id"
+        },
+        "dcscr025": {
+            "@id": "screener:dcscr025.jsonld",
+            "@type": "@id"
+        },
+        "dcscr026": {
+            "@id": "screener:dcscr026.jsonld",
+            "@type": "@id"
+        },
+        "cscr9": {
+            "@id": "screener:cscr9.jsonld",
+            "@type": "@id"
+        },
+        "dcscr027": {
+            "@id": "screener:dcscr027.jsonld",
+            "@type": "@id"
+        },
+        "dcscr028": {
+            "@id": "screener:dcscr028.jsonld",
+            "@type": "@id"
+        },
+        "dcscr029": {
+            "@id": "screener:dcscr029.jsonld",
+            "@type": "@id"
+        },
+        "dcscr030": {
+            "@id": "screener:dcscr030.jsonld",
+            "@type": "@id"
+        },
+        "cscr10": {
+            "@id": "screener:cscr10.jsonld",
+            "@type": "@id"
+        },
+        "dcscr031": {
+            "@id": "screener:dcscr031.jsonld",
+            "@type": "@id"
+        },
+        "dcscr032": {
+            "@id": "screener:dcscr032.jsonld",
+            "@type": "@id"
+        },
+        "dcscr033": {
+            "@id": "screener:dcscr033.jsonld",
+            "@type": "@id"
+        },
+        "dcscr034": {
+            "@id": "screener:dcscr034.jsonld",
+            "@type": "@id"
+        },
+        "dcscr035": {
+            "@id": "screener:dcscr035.jsonld",
+            "@type": "@id"
+        },
+        "cscr11": {
+            "@id": "screener:cscr11.jsonld",
+            "@type": "@id"
+        },
+        "cscr12": {
+            "@id": "screener:cscr12.jsonld",
+            "@type": "@id"
+        },
+        "cscr13": {
+            "@id": "screener:cscr13.jsonld",
+            "@type": "@id"
+        },
+        "dcscr036": {
+            "@id": "screener:dcscr036.jsonld",
+            "@type": "@id"
+        },
+        "dcscr037": {
+            "@id": "screener:dcscr037.jsonld",
+            "@type": "@id"
+        },
+        "dcscr038": {
+            "@id": "screener:dcscr038.jsonld",
+            "@type": "@id"
+        },
+        "dcscr039": {
+            "@id": "screener:dcscr039.jsonld",
+            "@type": "@id"
+        },
+        "dcscr040": {
+            "@id": "screener:dcscr040.jsonld",
+            "@type": "@id"
+        },
+        "dcscr041": {
+            "@id": "screener:dcscr041.jsonld",
+            "@type": "@id"
+        },
+        "dcscr042": {
+            "@id": "screener:dcscr042.jsonld",
+            "@type": "@id"
+        },
+        "dcscr043": {
+            "@id": "screener:dcscr043.jsonld",
+            "@type": "@id"
+        },
+        "cscr15": {
+            "@id": "screener:cscr15.jsonld",
+            "@type": "@id"
+        },
+        "cscr16": {
+            "@id": "screener:cscr16.jsonld",
+            "@type": "@id"
+        },
+        "cscr17": {
+            "@id": "screener:cscr17.jsonld",
+            "@type": "@id"
+        },
+        "dcscr044": {
+            "@id": "screener:dcscr044.jsonld",
+            "@type": "@id"
+        },
+        "dcscr045": {
+            "@id": "screener:dcscr045.jsonld",
+            "@type": "@id"
+        },
+        "cscr18": {
+            "@id": "screener:cscr18.jsonld",
+            "@type": "@id"
+        },
+        "dcscr046": {
+            "@id": "screener:dcscr046.jsonld",
+            "@type": "@id"
+        },
+        "dcscr047": {
+            "@id": "screener:dcscr047.jsonld",
+            "@type": "@id"
+        },
+        "cscr19": {
+            "@id": "screener:cscr19.jsonld",
+            "@type": "@id"
+        },
+        "dcscr048": {
+            "@id": "screener:dcscr048.jsonld",
+            "@type": "@id"
+        },
+        "dcscr049": {
+            "@id": "screener:dcscr049.jsonld",
+            "@type": "@id"
+        },
+        "cscr19a": {
+            "@id": "screener:cscr19a.jsonld",
+            "@type": "@id"
+        },
+        "dcscr050": {
+            "@id": "screener:dcscr050.jsonld",
+            "@type": "@id"
+        },
+        "cscr20": {
+            "@id": "screener:cscr20.jsonld",
+            "@type": "@id"
+        },
+        "cscr21": {
+            "@id": "screener:cscr21.jsonld",
+            "@type": "@id"
+        },
+        "dcscr051": {
+            "@id": "screener:dcscr051.jsonld",
+            "@type": "@id"
+        },
+        "dcscr052": {
+            "@id": "screener:dcscr052.jsonld",
+            "@type": "@id"
+        },
+        "dcscr053": {
+            "@id": "screener:dcscr053.jsonld",
+            "@type": "@id"
+        },
+        "cscr23": {
+            "@id": "screener:cscr23.jsonld",
+            "@type": "@id"
+        },
+        "cscr24": {
+            "@id": "screener:cscr24.jsonld",
+            "@type": "@id"
+        },
+        "dcscr054": {
+            "@id": "screener:dcscr054.jsonld",
+            "@type": "@id"
+        },
+        "dcscr055": {
+            "@id": "screener:dcscr055.jsonld",
+            "@type": "@id"
+        },
+        "dcscr056": {
+            "@id": "screener:dcscr056.jsonld",
+            "@type": "@id"
+        },
+        "dcscr057": {
+            "@id": "screener:dcscr057.jsonld",
+            "@type": "@id"
+        },
+        "dcscr058": {
+            "@id": "screener:dcscr058.jsonld",
+            "@type": "@id"
+        },
+        "dcscr059": {
+            "@id": "screener:dcscr059.jsonld",
+            "@type": "@id"
+        },
+        "cscr25": {
+            "@id": "screener:cscr25.jsonld",
+            "@type": "@id"
+        },
+        "dcscr060": {
+            "@id": "screener:dcscr060.jsonld",
+            "@type": "@id"
+        },
+        "dcscr061": {
+            "@id": "screener:dcscr061.jsonld",
+            "@type": "@id"
+        },
+        "dcscr062": {
+            "@id": "screener:dcscr062.jsonld",
+            "@type": "@id"
+        },
+        "dcscr063": {
+            "@id": "screener:dcscr063.jsonld",
+            "@type": "@id"
+        },
+        "dcscr064": {
+            "@id": "screener:dcscr064.jsonld",
+            "@type": "@id"
+        },
+        "dcscr065": {
+            "@id": "screener:dcscr065.jsonld",
+            "@type": "@id"
+        },
+        "cscr26": {
+            "@id": "screener:cscr26.jsonld",
+            "@type": "@id"
+        },
+        "dcscr066": {
+            "@id": "screener:dcscr066.jsonld",
+            "@type": "@id"
+        },
+        "dcscr067": {
+            "@id": "screener:dcscr067.jsonld",
+            "@type": "@id"
+        },
+        "dcscr068": {
+            "@id": "screener:dcscr068.jsonld",
+            "@type": "@id"
+        },
+        "dcscr069": {
+            "@id": "screener:dcscr069.jsonld",
+            "@type": "@id"
+        },
+        "cscr27": {
+            "@id": "screener:cscr27.jsonld",
+            "@type": "@id"
+        },
+        "cscr28": {
+            "@id": "screener:cscr28.jsonld",
+            "@type": "@id"
+        },
+        "dcscr070": {
+            "@id": "screener:dcscr070.jsonld",
+            "@type": "@id"
+        },
+        "dcscr071": {
+            "@id": "screener:dcscr071.jsonld",
+            "@type": "@id"
+        },
+        "dcscr072": {
+            "@id": "screener:dcscr072.jsonld",
+            "@type": "@id"
+        },
+        "cscr29": {
+            "@id": "screener:cscr29.jsonld",
+            "@type": "@id"
+        },
+        "dcscr073": {
+            "@id": "screener:dcscr073.jsonld",
+            "@type": "@id"
+        },
+        "dcscr074": {
+            "@id": "screener:dcscr074.jsonld",
+            "@type": "@id"
+        },
+        "dcscr075": {
+            "@id": "screener:dcscr075.jsonld",
+            "@type": "@id"
+        },
+        "dcscr076": {
+            "@id": "screener:dcscr076.jsonld",
+            "@type": "@id"
+        },
+        "dcscr077": {
+            "@id": "screener:dcscr077.jsonld",
+            "@type": "@id"
+        },
+        "cscr30": {
+            "@id": "screener:cscr30.jsonld",
+            "@type": "@id"
+        },
+        "cscr31": {
+            "@id": "screener:cscr31.jsonld",
+            "@type": "@id"
+        },
+        "dcscr078": {
+            "@id": "screener:dcscr078.jsonld",
+            "@type": "@id"
+        },
+        "cscr32": {
+            "@id": "screener:cscr32.jsonld",
+            "@type": "@id"
+        },
+        "dcscr079": {
+            "@id": "screener:dcscr079.jsonld",
+            "@type": "@id"
+        },
+        "dcscr080": {
+            "@id": "screener:dcscr080.jsonld",
+            "@type": "@id"
+        },
+        "dcscr081": {
+            "@id": "screener:dcscr081.jsonld",
+            "@type": "@id"
+        },
+        "cscr34": {
+            "@id": "screener:cscr34.jsonld",
+            "@type": "@id"
+        },
+        "dcscr082": {
+            "@id": "screener:dcscr082.jsonld",
+            "@type": "@id"
+        },
+        "dcscr083": {
+            "@id": "screener:dcscr083.jsonld",
+            "@type": "@id"
+        },
+        "cscr36": {
+            "@id": "screener:cscr36.jsonld",
+            "@type": "@id"
+        },
+        "dcscr084": {
+            "@id": "screener:dcscr084.jsonld",
+            "@type": "@id"
+        },
+        "dcscr085": {
+            "@id": "screener:dcscr085.jsonld",
+            "@type": "@id"
+        },
+        "dcscr086": {
+            "@id": "screener:dcscr086.jsonld",
+            "@type": "@id"
+        },
+        "dcscr087": {
+            "@id": "screener:dcscr087.jsonld",
+            "@type": "@id"
+        },
+        "dcscr088": {
+            "@id": "screener:dcscr088.jsonld",
+            "@type": "@id"
+        },
+        "dcscr089": {
+            "@id": "screener:dcscr089.jsonld",
+            "@type": "@id"
+        },
+        "cscr37": {
+            "@id": "screener:cscr37.jsonld",
+            "@type": "@id"
+        },
+        "cscr38": {
+            "@id": "screener:cscr38.jsonld",
+            "@type": "@id"
+        },
+        "cscr39": {
+            "@id": "screener:cscr39.jsonld",
+            "@type": "@id"
+        },
+        "dcscr090": {
+            "@id": "screener:dcscr090.jsonld",
+            "@type": "@id"
+        },
+        "dcscr091": {
+            "@id": "screener:dcscr091.jsonld",
+            "@type": "@id"
+        },
+        "dcscr092": {
+            "@id": "screener:dcscr092.jsonld",
+            "@type": "@id"
+        },
+        "dcscr093": {
+            "@id": "screener:dcscr093.jsonld",
+            "@type": "@id"
+        },
+        "dcscr094": {
+            "@id": "screener:dcscr094.jsonld",
+            "@type": "@id"
+        },
+        "dcscr095": {
+            "@id": "screener:dcscr095.jsonld",
+            "@type": "@id"
+        },
+        "dcscr095a": {
+            "@id": "screener:dcscr095a.jsonld",
+            "@type": "@id"
+        },
+        "dcscr095b": {
+            "@id": "screener:dcscr095b.jsonld",
+            "@type": "@id"
+        },
+        "dcscr095c": {
+            "@id": "screener:dcscr095c.jsonld",
+            "@type": "@id"
+        },
+        "dcscr095d": {
+            "@id": "screener:dcscr095d.jsonld",
+            "@type": "@id"
+        },
+        "cscr40": {
+            "@id": "screener:cscr40.jsonld",
+            "@type": "@id"
+        },
+        "dcscr096": {
+            "@id": "screener:dcscr096.jsonld",
+            "@type": "@id"
+        },
+        "dcscr097": {
+            "@id": "screener:dcscr097.jsonld",
+            "@type": "@id"
+        },
+        "cscr41": {
+            "@id": "screener:cscr41.jsonld",
+            "@type": "@id"
+        },
+        "dcscr098": {
+            "@id": "screener:dcscr098.jsonld",
+            "@type": "@id"
+        },
+        "dcscr099": {
+            "@id": "screener:dcscr099.jsonld",
+            "@type": "@id"
+        },
+        "dcscr100": {
+            "@id": "screener:dcscr100.jsonld",
+            "@type": "@id"
+        },
+        "dcscr101": {
+            "@id": "screener:dcscr101.jsonld",
+            "@type": "@id"
+        },
+        "dcscr102": {
+            "@id": "screener:dcscr102.jsonld",
+            "@type": "@id"
+        },
+        "dcscr102a": {
+            "@id": "screener:dcscr102a.jsonld",
+            "@type": "@id"
+        },
+        "dcscr102b": {
+            "@id": "screener:dcscr102b.jsonld",
+            "@type": "@id"
+        },
+        "dcscr102c": {
+            "@id": "screener:dcscr102c.jsonld",
+            "@type": "@id"
+        },
+        "dcscr102d": {
+            "@id": "screener:dcscr102d.jsonld",
+            "@type": "@id"
+        },
+        "cscr42": {
+            "@id": "screener:cscr42.jsonld",
+            "@type": "@id"
+        },
+        "dcscr103": {
+            "@id": "screener:dcscr103.jsonld",
+            "@type": "@id"
+        },
+        "dcscr104": {
+            "@id": "screener:dcscr104.jsonld",
+            "@type": "@id"
+        },
+        "cscr43": {
+            "@id": "screener:cscr43.jsonld",
+            "@type": "@id"
+        },
+        "dcscr105": {
+            "@id": "screener:dcscr105.jsonld",
+            "@type": "@id"
+        },
+        "dcscr106": {
+            "@id": "screener:dcscr106.jsonld",
+            "@type": "@id"
+        },
+        "cscr44": {
+            "@id": "screener:cscr44.jsonld",
+            "@type": "@id"
+        },
+        "dcscr107": {
+            "@id": "screener:dcscr107.jsonld",
+            "@type": "@id"
+        },
+        "cscr45": {
+            "@id": "screener:cscr45.jsonld",
+            "@type": "@id"
+        },
+        "cscr46": {
+            "@id": "screener:cscr46.jsonld",
+            "@type": "@id"
+        },
+        "dcscr108": {
+            "@id": "screener:dcscr108.jsonld",
+            "@type": "@id"
+        },
+        "dcscr109": {
+            "@id": "screener:dcscr109.jsonld",
+            "@type": "@id"
+        },
+        "cscr47": {
+            "@id": "screener:cscr47.jsonld",
+            "@type": "@id"
+        },
+        "cscr48": {
+            "@id": "screener:cscr48.jsonld",
+            "@type": "@id"
+        },
+        "cscr49": {
+            "@id": "screener:cscr49.jsonld",
+            "@type": "@id"
+        },
+        "dcscr110": {
+            "@id": "screener:dcscr110.jsonld",
+            "@type": "@id"
+        },
+        "dcscr111": {
+            "@id": "screener:dcscr111.jsonld",
+            "@type": "@id"
+        },
+        "dcscr112": {
+            "@id": "screener:dcscr112.jsonld",
+            "@type": "@id"
+        },
+        "dcscr113": {
+            "@id": "screener:dcscr113.jsonld",
+            "@type": "@id"
+        },
+        "dcscr114": {
+            "@id": "screener:dcscr114.jsonld",
+            "@type": "@id"
+        },
+        "dcscr115": {
+            "@id": "screener:dcscr115.jsonld",
+            "@type": "@id"
+        },
+        "dcscr116": {
+            "@id": "screener:dcscr116.jsonld",
+            "@type": "@id"
+        },
+        "dcscr117": {
+            "@id": "screener:dcscr117.jsonld",
+            "@type": "@id"
+        },
+        "dcscr118": {
+            "@id": "screener:dcscr118.jsonld",
+            "@type": "@id"
+        },
+        "cscr50": {
+            "@id": "screener:cscr50.jsonld",
+            "@type": "@id"
+        },
+        "cscr51": {
+            "@id": "screener:cscr51.jsonld",
+            "@type": "@id"
+        },
+        "dcscr119": {
+            "@id": "screener:dcscr119.jsonld",
+            "@type": "@id"
+        },
+        "dcscr120": {
+            "@id": "screener:dcscr120.jsonld",
+            "@type": "@id"
+        },
+        "cscr52": {
+            "@id": "screener:cscr52.jsonld",
+            "@type": "@id"
+        },
+        "dcscr121": {
+            "@id": "screener:dcscr121.jsonld",
+            "@type": "@id"
+        },
+        "dcscr122": {
+            "@id": "screener:dcscr122.jsonld",
+            "@type": "@id"
+        },
+        "dcscr123": {
+            "@id": "screener:dcscr123.jsonld",
+            "@type": "@id"
+        },
+        "dcscr124": {
+            "@id": "screener:dcscr124.jsonld",
+            "@type": "@id"
+        },
+        "dcscr125": {
+            "@id": "screener:dcscr125.jsonld",
+            "@type": "@id"
+        },
+        "dcscr126": {
+            "@id": "screener:dcscr126.jsonld",
+            "@type": "@id"
+        },
+        "dcscr127": {
+            "@id": "screener:dcscr127.jsonld",
+            "@type": "@id"
+        },
+        "dcscr128": {
+            "@id": "screener:dcscr128.jsonld",
+            "@type": "@id"
+        },
+        "dcscr129": {
+            "@id": "screener:dcscr129.jsonld",
+            "@type": "@id"
+        },
+        "dcscr130": {
+            "@id": "screener:dcscr130.jsonld",
+            "@type": "@id"
+        },
+        "dcscr131": {
+            "@id": "screener:dcscr131.jsonld",
+            "@type": "@id"
+        },
+        "dcscr132": {
+            "@id": "screener:dcscr132.jsonld",
+            "@type": "@id"
+        },
+        "dcscr133": {
+            "@id": "screener:dcscr133.jsonld",
+            "@type": "@id"
+        },
+        "dcscr134": {
+            "@id": "screener:dcscr134.jsonld",
+            "@type": "@id"
+        },
+        "dcscr135": {
+            "@id": "screener:dcscr135.jsonld",
+            "@type": "@id"
+        },
+        "dcscr136": {
+            "@id": "screener:dcscr136.jsonld",
+            "@type": "@id"
+        },
+        "dcscr137": {
+            "@id": "screener:dcscr137.jsonld",
+            "@type": "@id"
+        },
+        "dcscr138": {
+            "@id": "screener:dcscr138.jsonld",
+            "@type": "@id"
+        },
+        "dcscr139": {
+            "@id": "screener:dcscr139.jsonld",
+            "@type": "@id"
+        },
+        "dcscr140": {
+            "@id": "screener:dcscr140.jsonld",
+            "@type": "@id"
+        },
+        "dcscr141": {
+            "@id": "screener:dcscr141.jsonld",
+            "@type": "@id"
+        },
+        "dcscr142": {
+            "@id": "screener:dcscr142.jsonld",
+            "@type": "@id"
+        },
+        "dcscr142a": {
+            "@id": "screener:dcscr142a.jsonld",
+            "@type": "@id"
+        },
+        "dcscr143": {
+            "@id": "screener:dcscr143.jsonld",
+            "@type": "@id"
+        },
+        "dcscr144": {
+            "@id": "screener:dcscr144.jsonld",
+            "@type": "@id"
+        },
+        "dcscr144a": {
+            "@id": "screener:dcscr144a.jsonld",
+            "@type": "@id"
+        },
+        "cscr53": {
+            "@id": "screener:cscr53.jsonld",
+            "@type": "@id"
+        },
+        "dcscr145": {
+            "@id": "screener:dcscr145.jsonld",
+            "@type": "@id"
+        },
+        "dcscr146": {
+            "@id": "screener:dcscr146.jsonld",
+            "@type": "@id"
+        },
+        "dcscr148": {
+            "@id": "screener:dcscr148.jsonld",
+            "@type": "@id"
+        },
+        "dcscr149": {
+            "@id": "screener:dcscr149.jsonld",
+            "@type": "@id"
+        },
+        "cscr54": {
+            "@id": "screener:cscr54.jsonld",
+            "@type": "@id"
+        },
+        "dcscr150": {
+            "@id": "screener:dcscr150.jsonld",
+            "@type": "@id"
+        },
+        "dcscr151": {
+            "@id": "screener:dcscr151.jsonld",
+            "@type": "@id"
+        },
+        "cscr_end": {
+            "@id": "screener:cscr_end.jsonld",
+            "@type": "@id"
+        }
+    }
+}

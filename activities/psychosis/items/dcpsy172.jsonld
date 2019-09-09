@@ -1,0 +1,44 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld",
+    "skos:altLabel": "dcpsy172",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Physical Illness: At the time that you were having (insert symptoms) were you also physically ill? (e.g., high fever, migraine, epilepsy)"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:value": 0,
+                "schema:name": {
+                    "en": "NA/No Info "
+                }
+            },
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": "Never "
+                }
+            },
+            {
+                "schema:value": 2,
+                "schema:name": {
+                    "en": "Sometimes "
+                }
+            },
+            {
+                "schema:value": 3,
+                "schema:name": {
+                    "en": "Always"
+                }
+            }
+        ],
+        "minValue": "",
+        "maxValue": "",
+        "requiredValue": ""
+    }
+}
