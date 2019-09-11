@@ -1,9 +1,17 @@
 {
     "@context": {
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "schema": "http://schema.org/"
     },
     "@id": "allowExport",
-    "@type": "rdfs:Class",
-    "rdfs:comment": "A boolean element to describe if data can be exported or not",
-    "rdfs:label": "allow export"
+    "@type": "rdf:property",
+    "rdfs:comment": "Indicates (by boolean) if data can be exported or not.",
+    "rdfs:label": "allow export",
+    "schema:domainIncludes": {
+            "@id": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/ActivitySet"
+        },
+    "schema:rangeIncludes": {
+        "@id": "schema:boolean"
+    }
 }
