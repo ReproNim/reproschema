@@ -7,7 +7,9 @@
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
         "schema": "http://schema.org/",
         "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "skos": "http://www.w3.org/2004/02/skos/core#"
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "repronim": "https://schema.repronim.org/",
+        "reproschema": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/"
     },
     "@graph": [
         {
@@ -119,7 +121,7 @@
             "rdfs:comment": "An element to describe the ui of an Activity.",
             "rdfs:label": "ui",
             "schema:domainIncludes": {
-                "@id": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field"
+                "@id": "reproschema:Field"
             },
             "schema:rangeIncludes": {
                 "@id": "repronim:order"
@@ -137,7 +139,7 @@
                 "@id": "repronim:ui"
             },
             "schema:domainIncludes": {
-                "@id": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field"
+                "@id": "reproschema:Field"
             },
             "schema:rangeIncludes": {
                 "@id": "schema:URL"
@@ -155,7 +157,7 @@
                 "@id": "repronim:ui"
             },
             "schema:domainIncludes": {
-                "@id": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Activity"
+                "@id": "reproschema:Activity"
             },
             "schema:rangeIncludes": {
                 "@id": "schema:boolean"

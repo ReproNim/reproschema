@@ -8,7 +8,8 @@
         "schema": "http://schema.org/",
         "xsd": "http://www.w3.org/2001/XMLSchema#",
         "skos": "http://www.w3.org/2004/02/skos/core#",
-        "repronim": "https://schema.repronim.org/"
+        "repronim": "https://schema.repronim.org/",
+        "reproschema": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/"
     },
     "@graph": [
         {
@@ -105,7 +106,7 @@
             "rdfs:comment": "The text displayed for the item.",
             "rdfs:label": "question",
             "schema:domainIncludes": {
-                "@id": ""
+                "@id": "reproschema:Field"
             },
             "schema:rangeIncludes": {
                 "@id": "schema:Text"
@@ -120,7 +121,7 @@
             "rdfs:comment": "An element to describe the ui of a Field.",
             "rdfs:label": "ui",
             "schema:domainIncludes": {
-                "@id": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field"
+                "@id": "reproschema:Field"
             },
             "schema:rangeIncludes": {
                 "@id": "repronim:order"
@@ -138,7 +139,7 @@
                 "@id": "repronim:ui"
             },
             "schema:domainIncludes": {
-                "@id": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field"
+                "@id": "reproschema:Field"
             },
             "schema:rangeIncludes": {
                 "@id": "schema:text"
