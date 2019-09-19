@@ -1,9 +1,23 @@
 {
     "@context": {
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "schema": "http://schema.org/"
     },
     "@id": "order",
-    "@type": "rdfs:Class",
-    "rdfs:comment": "An element to describe the order in which the items of an assessment appear in the original questionnaire.",
-    "rdfs:label": "order"
+    "@type": "rdf:property",
+    "rdfs:comment": "An ordered list of items to describe the order in which the items of an assessment appear in the original questionnaire.",
+    "rdfs:label": "order",
+    "schema:domainIncludes": [
+        {
+            "@id": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/ActivitySet"
+        },
+        {
+            "@id": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Activity"
+        }
+
+    ],
+    "schema:rangeIncludes": {
+        "@id": "schema:Text"
+    }
 }
