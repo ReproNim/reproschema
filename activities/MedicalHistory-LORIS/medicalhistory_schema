@@ -4,14 +4,14 @@
     ],
     "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Activity",
     "@id": "medicalhistory_schema",
-    "skos:prefLabel": "Medical History Instrument",
-    "skos:altLabel": "medicalhistory_schema",
-    "schema:description": "Medical History Instrument schema",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "prefLabel": "Medical History Instrument",
+    "altLabel": "medicalhistory_schema",
+    "description": "Medical History Instrument schema",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "preamble": "",
-    "statusOptions": ["not_answered"],
     "ui": {
+        "allow": ["not_answered"],
         "order": [
             "medicalhistory_page1",
             "medicalhistory_page2",
@@ -50,7 +50,7 @@
             "medicalhistory_21c_age":          false,
             "medicalhistory_21d":              true
         },
-        "addStatus": {
+        "addAllow": {
             "medicalhistory_1":                false,
             "medicalhistory_1a":               true,
             "medicalhistory_2":                false,
