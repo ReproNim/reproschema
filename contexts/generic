@@ -9,27 +9,43 @@
         "reproterms": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/",
         "schema": "http://schema.org/",
         "@language": "en",
-        "schema:description": {
+        "description": {
+            "@id": "schema:description",
             "@container": "@language"
         },
-        "schema:name": {
+        "name": {
+            "@id": "schema:name",
             "@container": "@language"
+        },
+        "value": {
+            "@id": "schema:value",
+            "@type": "xsd:integer"
         },
         "schema:citation": {
             "@container": "@language"
         },
-        "skos:prefLabel": {
+        "version": {
+            "@id": "schema:version",
+            "@type": "xsd:string"
+        },
+        "schemaVersion": {
+            "@id": "schema:schemaVersion",
+            "@type": "xsd:string"
+        },
+        "prefLabel": {
+            "@id": "skos:prefLabel",
             "@container": "@language"
         },
-        "skos:altLabel": {
+        "altLabel": {
+            "@id": "skos:altLabel",
             "@container": "@language"
         },
         "preamble": {
-            "@id": "http://schema.repronim.org/preamble",
+            "@id": "repronim:preamble",
             "@container": "@language"
         },
         "question": {
-            "@id": "http://schema.org/question",
+            "@id": "schema:question",
             "@container": "@language"
         },
         "choices": {
@@ -37,94 +53,96 @@
             "@container": "@list"
         },
         "choiceUrl": {
-            "@id": "https://schema.org/DigitalDocument",
+            "@id": "schema:DigitalDocument",
             "@type": "@id"
         },
         "requiredValue": {
-            "@id": "http://schema.repronim.org/requiredValue",
+            "@id": "repronim:requiredValue",
             "@type": "schema:Boolean"
         },
         "multipleChoice": {
-            "@id": "http://schema.repronim.org/multipleChoice",
+            "@id": "repronim:multipleChoice",
             "@type": "schema:Boolean"
         },
         "responseOptions": {
             "@id": "repronim:valueconstraints",
             "@type": "@vocab"
         },
-        "statusOptions": {
-            "@id": "https://schema.repronim.org/statusOptions",
-            "@container": "@list",
-            "@type": "@vocab"
+        "dataType": {
+            "@id": "schema:DataType",
+            "@type": "@id"
+        },
+        "minValue": {
+            "@id": "schema:minValue",
+            "@type": "schema:Number"
+        },
+        "maxValue": {
+            "@id": "schema:maxValue",
+            "@type": "schema:Number"
         },
         "ui" : "@nest",
         "order": {
-            "@id": "https://schema.repronim.org/order",
+            "@id": "repronim:order",
             "@container": "@list",
             "@type": "@vocab",
             "@nest": "ui"
         },
         "shuffle": {
-            "@id": "https://schema.repronim.org/shuffle",
+            "@id": "repronim:shuffle",
             "@type": "schema:Boolean",
             "@nest": "ui"
         },
         "activity_display_name": {
-            "@id": "https://schema.repronim.org/activity_display_name",
+            "@id": "repronim:activity_display_name",
             "@type": "schema:alternateName",
             "@nest": "ui"
         },
         "inputOptions": {
-            "@id": "https://schema.repronim.org/inputs",
+            "@id": "repronim:inputs",
             "@container": "@index",
             "@nest": "ui"
         },
         "inputType": {
-            "@id": "https://schema.repronim.org/inputType",
+            "@id": "repronim:inputType",
             "@type": "xsd:string",
             "@nest": "ui"
         },
         "readOnly": {
-            "@id": "https://schema.repronim.org/readOnly",
+            "@id": "repronim:readOnly",
             "@type": "xsd:boolean",
             "@nest": "ui"
         },
         "headerLevel": {
-            "@id": "https://schema.repronim.org/headerLevel",
+            "@id": "repronim:headerLevel",
             "@type": "xsd:int",
             "@nest": "ui"
         },
         "headers": {
-            "@id": "https://schema.repronim.org/tableheaders",
+            "@id": "repronim:tableheaders",
             "@container": "@list",
             "@nest": "ui"
         },
         "rows": {
-            "@id": "https://schema.repronim.org/tablerows",
+            "@id": "repronim:tablerows",
             "@container": "@list",
             "@type": "@vocab",
             "@nest": "ui"
         },
         "branchLogic": {
-            "@id": "https://schema.repronim.org/branchLogic",
+            "@id": "repronim:branchLogic",
             "@container": "@index"
         },
         "scoringLogic": {
-            "@id": "https://schema.repronim.org/scoringLogic",
+            "@id": "repronim:scoringLogic",
             "@container": "@index"
         },
         "visibility": {
-            "@id": "https://schema.repronim.org/visibility",
+            "@id": "repronim:visibility",
             "@container": "@index",
             "@nest": "ui"
         },
         "required": {
-            "@id": "https://schema.repronim.org/required",
-            "@container": "@index",
-            "@nest": "ui"
-        },
-        "addStatus": {
-            "@id": "https://schema.repronim.org/addStatus",
+            "@id": "repronim:required",
             "@container": "@index",
             "@nest": "ui"
         },
@@ -138,20 +156,19 @@
             "@type": "@vocab"
         },
         "required": {
-            "@id": "https://schema.repronim.org/required",
+            "@id": "repronim:required",
             "@container": "@index",
             "@nest": "ui"
         },
         "allow": {
-            "@id": "https://schema.repronim.org/allow",
+            "@id": "repronim:allow",
             "@container": "@list",
             "@type": "@vocab",
             "@nest": "ui"
         },
-        "allow": {
-            "@id": "https://schema.repronim.org/allow",
-            "@container": "@list",
-            "@type": "@vocab",
+        "addAllow": {
+            "@id": "repronim:addAllow",
+            "@container": "@index",
             "@nest": "ui"
         },
         "skipped": "https://schema.repronim.org/refused_to_answer",
@@ -174,37 +191,37 @@
         },
         "method": "schema:httpMethod",
         "url": "schema:url",
-        "payload": "https://schema.repronim.org/payload",
-        "pav:importedFrom": {
-            "@id": "http://purl.org/pav/importedFrom",
+        "payload": "repronim:payload",
+        "importedFrom": {
+            "@id": "pav:importedFrom",
             "@type": "@id"
         },
-        "pav:importedBy": {
-            "@id": "http://purl.org/pav/importedBy",
+        "importedBy": {
+            "@id": "pav:importedBy",
             "@type": "@id"
         },
-        "pav:createdWith": {
-            "@id": "http://purl.org/pav/createdWith",
+        "createdWith": {
+            "@id": "pav:createdWith",
             "@type": "@id"
         },
-        "pav:createdBy": {
-            "@id": "http://purl.org/pav/createdBy",
+        "createdBy": {
+            "@id": "pav:createdBy",
             "@type": "@id"
         },
-        "pav:createdOn": {
-            "@id": "http://purl.org/pav/createdOn",
+        "createdOn": {
+            "@id": "pav:createdOn",
             "@type": "@id"
         },
-        "pav:previousVersion": {
-            "@id": "http://purl.org/pav/previousVersion",
+        "previousVersion": {
+            "@id": "pav:previousVersion",
             "@type": "@id"
         },
-        "pav:lastUpdateOn": {
-            "@id": "http://purl.org/pav/lastUpdateOn",
+        "lastUpdateOn": {
+            "@id": "pav:lastUpdateOn",
             "@type": "@id"
         },
-        "pav:derivedFrom": {
-            "@id": "http://purl.org/pav/derivedFrom",
+        "derivedFrom": {
+            "@id": "pav:derivedFrom",
             "@type": "@id"
         }
     }
