@@ -1,0 +1,101 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activity-sets/VoicePilot/VoicePilot_context"
+    ],
+    "@type": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/ActivitySet",
+    "@id": "VoicePilot",
+    "skos:prefLabel": "Voice Pilot Protocol Activity set",
+    "skos:altLabel": "voice_pilot",
+    "schema:description": "activity set for UW MIT Voice Pilot Protocol",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "schema:image": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activity-sets/voice-pilot/mit_voice_pilot_applet_image.svg?sanitize=true",
+    "variableMap": [
+        {"variableName": "voice_screening_schema", "isAbout": "voice_screening_schema"},
+        {"variableName": "VoiceConsent_schema", "isAbout": "VoiceConsent_schema"},
+        {"variableName": "Demographics_schema", "isAbout": "Demographics_schema"},
+        {"variableName": "PROMISGlobalHealth_schema", "isAbout": "PROMISGlobalHealth_schema"},
+        {"variableName": "GAD7_schema", "isAbout": "GAD7_schema"},
+        {"variableName": "CageAid_schema", "isAbout": "CageAid_schema"},
+        {"variableName": "BADS_schema", "isAbout": "BADS_schema"},
+        {"variableName": "OtherQuestions_schema", "isAbout": "OtherQuestions_schema"},
+        {"variableName": "VoiceTask_schema", "isAbout": "VoiceTask_schema"},
+        {"variableName": "Thankyou_schema", "isAbout": "Thankyou_schema"}
+    ],
+    "ui": {
+        "order": [
+            "VoiceScreening_schema",
+            "VoiceConsent_schema",
+            "VoiceTask_schema",
+            "Demographics_schema",
+            "PROMISGlobalHealth_schema",
+            "GAD7_schema",
+            "CageAid_schema",
+            "BADS_schema",
+            "OtherQuestions_schema",
+            "Thankyou_schema"
+        ],
+        "shuffle": false,
+        "activity_display_name": {
+            "VoiceScreening_schema": "Screening",
+            "VoiceConsent_schema": "Consent",
+            "Demographics_schema": "Demographics",
+            "PROMISGlobalHealth_schema": "Health",
+            "GAD7_schema":  "Anxiety",
+            "CageAid_schema": "Substance use",
+            "BADS_schema": "Behavior",
+            "OtherQuestions_schema": "Other Questions",
+            "VoiceTask_schema": "Voice Tasks",
+            "Thankyou_schema": "ThankYou"
+        },
+        "visibility":{
+            "VoiceScreening_schema":true,
+            "VoiceConsent_schema": {
+                "method":"POST",
+                "url":"https://sig.mit.edu/vb/check",
+                "payload":["VoiceScreening_schema"]
+            },
+            "Demographics_schema": {
+                "method":"POST",
+                "url":"https://sig.mit.edu/vb/check",
+                "payload":["VoiceScreening_schema"]
+            },
+            "PROMISGlobalHealth_schema":{
+                "method":"POST",
+                "url":"https://sig.mit.edu/vb/check",
+                "payload":["VoiceScreening_schema"]
+            },
+            "GAD7_schema":{
+                "method":"POST",
+                "url":"https://sig.mit.edu/vb/check",
+                "payload":["VoiceScreening_schema"]
+            },
+            "CageAid_schema":{
+                "method":"POST",
+                "url":"https://sig.mit.edu/vb/check",
+                "payload":["VoiceScreening_schema"]
+            },
+            "BADS_schema":{
+                "method":"POST",
+                "url":"https://sig.mit.edu/vb/check",
+                "payload":["VoiceScreening_schema"]
+            },
+            "OtherQuestions_schema":{
+                "method":"POST",
+                "url":"https://sig.mit.edu/vb/check",
+                "payload":["VoiceScreening_schema"]
+            },
+            "VoiceTask_schema":{
+                "method":"POST",
+                "url":"https://sig.mit.edu/vb/check",
+                "payload":["VoiceScreening_schema"]
+            },
+            "Thankyou_schema": {
+                "method":"POST",
+                "url":"https://sig.mit.edu/vb/check",
+                "payload":["VoiceScreening_schema"]
+            }
+        },
+        "allow": ["autoAdvance", "disableBack"]
+    }
+}
