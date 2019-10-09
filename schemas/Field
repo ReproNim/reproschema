@@ -8,7 +8,7 @@
         "schema": "http://schema.org/",
         "xsd": "http://www.w3.org/2001/XMLSchema#",
         "skos": "http://www.w3.org/2004/02/skos/core#",
-        "repronim": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/terms/",
+        "reproterms": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/terms/",
         "reproschema": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/"
     },
     "@graph": [
@@ -116,7 +116,7 @@
             }
         },
         {
-            "@id": "repronim:ui",
+            "@id": "reproterms:ui",
             "@type": "rdf:Property",
             "rdfs:comment": "An element to describe the ui of a Field.",
             "rdfs:label": "ui",
@@ -124,19 +124,19 @@
                 "@id": "reproschema:Field"
             },
             "schema:rangeIncludes": {
-                "@id": "repronim:order"
+                "@id": "reproterms:order"
             },
             "schema:sameAs": {
                 "@id": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/terms/ui"
             }
         },
         {
-            "@id": "repronim:inputType",
+            "@id": "reproterms:inputType",
             "@type": "rdf:Property",
             "rdfs:comment": "An element to describe the input type of the Field item.",
             "rdfs:label": "inputType",
             "rdfs:subPropertyOf": {
-                "@id": "repronim:ui"
+                "@id": "reproterms:ui"
             },
             "schema:domainIncludes": {
                 "@id": "reproschema:Field"

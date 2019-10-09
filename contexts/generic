@@ -4,7 +4,7 @@
         "pav": "http://purl.org/pav/",
         "xsd": "http://www.w3.org/2001/XMLSchema#",
         "skos": "http://www.w3.org/2004/02/skos/core#",
-        "repronim": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/terms/",
+        "reproterms": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/terms/",
         "reproschema": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/",
         "schema": "http://schema.org/",
         "@language": "en",
@@ -40,7 +40,7 @@
             "@container": "@language"
         },
         "preamble": {
-            "@id": "repronim:preamble",
+            "@id": "reproterms:preamble",
             "@container": "@language"
         },
         "question": {
@@ -56,15 +56,15 @@
             "@type": "@id"
         },
         "requiredValue": {
-            "@id": "repronim:requiredValue",
+            "@id": "reproterms:requiredValue",
             "@type": "schema:Boolean"
         },
         "multipleChoice": {
-            "@id": "repronim:multipleChoice",
+            "@id": "reproterms:multipleChoice",
             "@type": "schema:Boolean"
         },
         "responseOptions": {
-            "@id": "repronim:valueconstraints",
+            "@id": "reproterms:valueconstraints",
             "@type": "@vocab"
         },
         "dataType": {
@@ -81,67 +81,67 @@
         },
         "ui" : "@nest",
         "order": {
-            "@id": "repronim:order",
+            "@id": "reproterms:order",
             "@container": "@list",
             "@type": "@vocab",
             "@nest": "ui"
         },
         "shuffle": {
-            "@id": "repronim:shuffle",
+            "@id": "reproterms:shuffle",
             "@type": "schema:Boolean",
             "@nest": "ui"
         },
         "activity_display_name": {
-            "@id": "repronim:activity_display_name",
+            "@id": "reproterms:activity_display_name",
             "@type": "schema:alternateName",
             "@nest": "ui"
         },
         "inputOptions": {
-            "@id": "repronim:inputs",
+            "@id": "reproterms:inputs",
             "@container": "@index",
             "@nest": "ui"
         },
         "inputType": {
-            "@id": "repronim:inputType",
+            "@id": "reproterms:inputType",
             "@type": "xsd:string",
             "@nest": "ui"
         },
         "readOnly": {
-            "@id": "repronim:readOnly",
+            "@id": "reproterms:readOnly",
             "@type": "xsd:boolean",
             "@nest": "ui"
         },
         "headerLevel": {
-            "@id": "repronim:headerLevel",
+            "@id": "reproterms:headerLevel",
             "@type": "xsd:int",
             "@nest": "ui"
         },
         "headers": {
-            "@id": "repronim:tableheaders",
+            "@id": "reproterms:tableheaders",
             "@container": "@list",
             "@nest": "ui"
         },
         "rows": {
-            "@id": "repronim:tablerows",
+            "@id": "reproterms:tablerows",
             "@container": "@list",
             "@type": "@vocab",
             "@nest": "ui"
         },
         "branchLogic": {
-            "@id": "repronim:branchLogic",
+            "@id": "reproterms:branchLogic",
             "@container": "@index"
         },
         "scoringLogic": {
-            "@id": "repronim:scoringLogic",
+            "@id": "reproterms:scoringLogic",
             "@container": "@index"
         },
         "visibility": {
-            "@id": "repronim:visibility",
+            "@id": "reproterms:visibility",
             "@container": "@index",
             "@nest": "ui"
         },
         "required": {
-            "@id": "repronim:required",
+            "@id": "reproterms:required",
             "@container": "@index",
             "@nest": "ui"
         },
@@ -154,19 +154,14 @@
             "@id": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/terms/isAbout",
             "@type": "@vocab"
         },
-        "required": {
-            "@id": "repronim:required",
-            "@container": "@index",
-            "@nest": "ui"
-        },
         "allow": {
-            "@id": "repronim:allow",
+            "@id": "reproterms:allow",
             "@container": "@list",
             "@type": "@vocab",
             "@nest": "ui"
         },
         "addAllow": {
-            "@id": "repronim:addAllow",
+            "@id": "reproterms:addAllow",
             "@container": "@index",
             "@nest": "ui"
         },
@@ -184,13 +179,13 @@
             "@nest": "ui"
         },
         "delay": {
-            "@id": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/terms/delay",
+            "@id": "reproterms:delay",
             "@type": "@id",
             "@nest": "ui"
         },
         "method": "schema:httpMethod",
         "url": "schema:url",
-        "payload": "repronim:payload",
+        "payload": "reproterms:payload",
         "importedFrom": {
             "@id": "pav:importedFrom",
             "@type": "@id"
