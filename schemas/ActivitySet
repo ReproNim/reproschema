@@ -8,7 +8,7 @@
         "schema": "http://schema.org/",
         "xsd": "http://www.w3.org/2001/XMLSchema#",
         "skos": "http://www.w3.org/2004/02/skos/core#",
-        "repronim": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/terms/",
+        "reproterms": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/terms/",
         "reproschema": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/"
     },
     "@graph": [
@@ -86,7 +86,7 @@
             }
         },
         {
-            "@id": "repronim:ui",
+            "@id": "reproterms:ui",
             "@type": "rdf:Property",
             "rdfs:comment": "An element to describe the ui of an Activity.",
             "rdfs:label": "ui",
@@ -94,19 +94,19 @@
                 "@id": "reproschema:Field"
             },
             "schema:rangeIncludes": {
-                "@id": "repronim:order"
+                "@id": "reproterms:order"
             },
             "schema:sameAs": {
                 "@id": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/terms/ui"
             }
         },
         {
-            "@id": "repronim:order",
+            "@id": "reproterms:order",
             "@type": "rdf:Property",
             "rdfs:comment": "An element to describe the order in which the Fields of an instrument appears in the ui.",
             "rdfs:label": "order",
             "rdfs:subPropertyOf": {
-                "@id": "repronim:ui"
+                "@id": "reproterms:ui"
             },
             "schema:domainIncludes": {
                 "@id": "reproschema:Field"
