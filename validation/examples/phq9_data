@@ -7,8 +7,24 @@
         "reproschema": "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/",
         "schema": "http://schema.org/",
         "@language": "en",
+        "prefLabel": {
+            "@id": "skos:prefLabel",
+            "@container": "@language"
+        },
         "description": {
             "@id": "schema:description",
+            "@container": "@language"
+        },
+        "name": {
+            "@id": "schema:name",
+            "@container": "@language"
+        },
+        "value": {
+            "@id": "schema:value",
+            "@type": "xsd:integer"
+        },
+        "citation": {
+            "@id": "schema:citation",
             "@container": "@language"
         },
         "version": {
@@ -32,14 +48,15 @@
             "@container": "@language"
         }
     },
-    "@type": "Activity",
-    "@id": "phq9_schema",
+    "@type": "reproschema:Activity",
+    "@id": "phq9_data",
     "prefLabel": "PHQ-9 Assessment",
-    "altLabel": "phq9_schema",
-    "description": "PHQ-9 assessment schema",
-    "schemaVersion": "0.0.1",
-    "version": "0.0.1",
-    "preamble": 1234
+    "skos:altLabel": "phq9_schema",
+    "schema:description": "PHQ-9 assessment schema",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "schema:citation": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1495268/",
+    "preamble": "Over the last 2 weeks, how often have you been bothered by any of the following problems?"
 }
 
 
