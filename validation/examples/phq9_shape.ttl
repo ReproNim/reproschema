@@ -7,6 +7,7 @@
 @prefix reproterms: <https://raw.githubusercontent.com/ReproNim/schema-standardization/master/terms/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix reproschema: <https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/> .
+@prefix phq9: <https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/PHQ-9/items/> .
 
 reproschema:ActivityShape
     a sh:NodeShape ;
@@ -55,4 +56,37 @@ reproschema:ActivityShape
         sh:path schema:citation ;
         sh:datatype rdf:langString ;
         sh:deactivated false ;
+    ] ;
+    sh:property [
+        sh:path reproterms:scoringLogic ;
+        sh:node reproterms:ScoringShape ;
+        sh:deactivated true ;
+    ] ;
+    sh:property [
+        sh:path reproterms:order ;
+        sh:node reproterms:OrderShape ;
+        sh:deactivated false ;
+    ] .
+
+reproterms:OrderShape
+    a sh:NodeShape ;
+    sh:targetClass reproterms:order ;
+    sh:property [
+        sh:path xsd:string ;
+        sh:node dash:ListShape ;
+        sh:property [
+            sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
+            sh:datatype xsd:string ;
+            sh:minLength 1 ;
+            sh:minCount 1 ;
+        ]
+    ] .
+
+schema:ScoringShape
+    a sh:NodeShape ;
+    sh:closed true ;
+    sh:property [
+        sh:path phq9:phq9_total_score ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
     ] .
