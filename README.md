@@ -47,24 +47,24 @@ Cognitive and clinical assessments are used throughout neuroscience, but little 
 
 ## 4.0: Schema
 We have defined 3 different types of schema –
-- [ActivitySet](https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/ActivitySet.jsonld)
-- [Activity](https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Activity.jsonld)
-- [Item](https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld)
+- [ActivitySet](https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/ActivitySet)
+- [Activity](https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/Activity)
+- [Item](https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/Field)
 
 Schema overall structure:
 
 - activity-set directory structure: name the directory in the CamelCase naming convention. It contains the following:
-  - activity_set_name_schema.jsonld : schema to define the activity-set
-  - activity_name_context.jsonld : context to define keys used specific to the activity-set schema
+  - activity_set_name_schema : schema to define the activity-set
+  - activity_name_context : context to define keys used specific to the activity-set schema
 - activity directory structure: name the directory with name of activity in the CamelCase naming convention. It contains the following:
   - items (directory) : contains the individual items/questions in the activity schema
-    - item_1.jsonld
+    - item_1
     - ...
-  - activity_name_schema.jsonld : schema to define the activity
-  - activity_name_context.jsonld : context to define keys used specific to the activity schema
+  - activity_name_schema : schema to define the activity
+  - activity_name_context : context to define keys used specific to the activity schema
   - sub-activity jsonld schemas (if any)
 
-The generic keys are defined in the generic context file (context/generic.jsonld)
+The generic keys are defined in the generic context file (contexts/generic)
 
 
 ## 5.0: How can I create a new activity and activity-set
@@ -80,12 +80,12 @@ Fork the project and manually create the jsonld files according to the above dir
   - Under the [`activities`](./activities) directory, create directory with name of activity in the CamelCase naming convention.
   - activity directory structure:
     - `items` (directory) : contains the individual items/questions in the activity schema
-      - `Item_1.jsonld`
+      - `Item_1`
       - …
-    - `activityName_schema.jsonld` : schema to define the activity
-    - `activityName_context.jsonld` : context to define keys used specific to the activity schema
+    - `activityName_schema` : schema to define the activity
+    - `activityName_context` : context to define keys used specific to the activity schema
 
-  - Creating `activityName_schema.jsonld` – use the keys defined in [`schema/Activity.jsonld`](./schema/Activity.json). If any other keys are used, then define them in `activityName_context.jsonld`
+  - Creating `activityName_schema` – use the keys defined in [`schemas/Activity`](./schemas/Activity). If any other keys are used, then define them in `activityName_context`
 
   - Description of some other keys:
     - `@context` - Array. Include the ReproNim generic context JSON-LD file along with the activity context.
@@ -94,25 +94,25 @@ Fork the project and manually create the jsonld files according to the above dir
       ```json
       {
         "@context": [
-          "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
-          "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/PHQ-9/phq9_context.jsonld"
+          "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+          "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/PHQ-9/phq9_context"
         ]
       }
       ```
-    - `@type`=`"https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Activity.jsonld"`
+    - `@type`=`"https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/Activity"`
 
-  - To create `item_x.jsonld` in the items folder:
-    - Use keys defined in [`schema/Field.jsonld`](./schema/Field.jsonld)
-    - `@type`=`"https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/Field.jsonld"`
+  - To create `item_x` in the items folder:
+    - Use keys defined in [`schemas/Field`](./schemas/Field)
+    - `@type`=`"https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/Field"`
     - `responseOptions` – can be embedded or can point to a remote JSON-LD object.
 
 - To create an activity-set:
   - Under the [`activity-sets`](./activity-sets) directory, create directory with name of activity-set in the CamelCase naming convention.
   - activity-set directory structure:
-    - `activitySetName_schema.jsonld` : schema to define the activity-set
-    - `activitySetName_context.jsonld` : context to define keys used specific to the activity-set schema
+    - `activitySetName_schema` : schema to define the activity-set
+    - `activitySetName_context` : context to define keys used specific to the activity-set schema
 
-  - Creating `activitySetName_schema.jsonld` – use the keys defined in [`schema/ActivitySet.jsonld`](./schema/ActivitySet.jsonld). If any other keys are used, then define them in `activitySetName_context.jsonld`
+  - Creating `activitySetName_schema` – use the keys defined in [`schemas/ActivitySet`](./schemas/ActivitySet). If any other keys are used, then define them in `activitySetName_context`
 
   - Description of some other keys:
     - `@context` – Array. Include the ReproNim generic context JSON-LD file along with the activity-set context.
@@ -121,16 +121,16 @@ Fork the project and manually create the jsonld files according to the above dir
       ```json
       {
         "@context": [
-          "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic.jsonld",
-          "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activity-sets/example/nda-phq_context.jsonld"
+          "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+          "https://raw.githubusercontent.com/sanuann/reproschema/master/activity-sets/example/nda-phq_context"
         ]
       }
       ```
-    - `@type`=`"https://raw.githubusercontent.com/ReproNim/schema-standardization/master/schemas/ActivitySet.jsonld"`
+    - `@type`=`"https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/ActivitySet"`
 
 ## 6.0: View schema and collect data
 
-`http://schema-ui.herokuapp.com/#/?url=path_to_activity_set_schema.jsonld`
+`http://schema.repronimg.org/ui/#/?url=path_to_activity_set_schema`
 
 ## 7.0: Why linked data?
 
