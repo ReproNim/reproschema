@@ -1,0 +1,30 @@
+{
+  "@context": [
+    "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "https://raw.githubusercontent.com/YOUR-ACTIVITY-CONTEXT-FILE"
+  ],
+  "@type": "reproschema:Field",
+  "@id": "Demo with Lionel",
+  "skos:prefLabel": "Demo with Lionel",
+  "skos:altLabel": "Demo with Lionel",
+  "schema:description": "",
+  "schema:schemaVersion": "0.0.1",
+  "schema:version": "0.0.1",
+  "question": "How are you today? ",
+  "ui": {
+    "inputType": "radio"
+  },
+  "responseOptions": {
+    "@type": "xsd:anyURI",
+    "multipleChoice": false,
+    "schema:minValue": 0,
+    "schema:maxValue": 0,
+    "choices": [
+      {
+        "@type": "schema:Boolean",
+        "schema:name": "In one word, good",
+        "schema:value": 0
+      }
+    ]
+  }
+}
