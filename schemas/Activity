@@ -17,9 +17,14 @@
             "@type": "rdf:Property",
             "rdfs:comment": "The long name of the instrument or item.",
             "rdfs:label": "prefLabel",
-            "schema:domainIncludes": {
-                "@id": ""
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "reproschema:Protocol"
+                },
+                {
+                    "@id": "reproschema:Activity"
+                }
+            ],
             "schema:rangeIncludes": {
                 "@id": "schema:Text"
             },
@@ -32,9 +37,14 @@
             "@type": "rdf:Property",
             "rdfs:comment": "The short name of the instrument or item.",
             "rdfs:label": "shortName",
-            "schema:domainIncludes": {
-                "@id": ""
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "reproschema:Protocol"
+                },
+                {
+                    "@id": "reproschema:Activity"
+                }
+            ],
             "schema:rangeIncludes": {
                 "@id": "schema:Text"
             },
@@ -65,9 +75,14 @@
             "@type": "rdf:Property",
             "rdfs:comment": "Indicates (by URL or string) a particular version of a schema.",
             "rdfs:label": "schemaVersion",
-            "schema:domainIncludes": {
-                "@id": ""
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "reproschema:Protocol"
+                },
+                {
+                    "@id": "reproschema:Activity"
+                }
+            ],
             "schema:rangeIncludes": [
                 {
                     "@id": "schema:Text"
@@ -85,9 +100,14 @@
             "@type": "rdf:Property",
             "rdfs:comment": "Indicates (by URL or string) a particular version of an instrument.",
             "rdfs:label": "version",
-            "schema:domainIncludes": {
-                "@id": ""
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "reproschema:Protocol"
+                },
+                {
+                    "@id": "reproschema:Activity"
+                }
+            ],
             "schema:rangeIncludes": [
                 {
                     "@id": "schema:Text"
@@ -120,14 +140,16 @@
             "@type": "rdf:Property",
             "rdfs:comment": "An element to describe the ui of an Activity.",
             "rdfs:label": "ui",
-            "schema:domainIncludes": {
-                "@id": "reproschema:Field"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "reproschema:Protocol"
+                },
+                {
+                    "@id": "reproschema:Activity"
+                }
+            ],
             "schema:rangeIncludes": {
                 "@id": "reproterms:order"
-            },
-            "schema:sameAs": {
-                "@id": "reproterms:ui"
             }
         },
         {
@@ -138,11 +160,16 @@
             "rdfs:subPropertyOf": {
                 "@id": "reproterms:ui"
             },
-            "schema:domainIncludes": {
-                "@id": "reproschema:Field"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "reproschema:Protocol"
+                },
+                {
+                    "@id": "reproschema:Activity"
+                }
+            ],
             "schema:rangeIncludes": {
-                "@id": "schema:URL"
+                "@id": "reproschema:Field"
             },
             "schema:sameAs": {
                 "@id": "reproterms:order"
@@ -151,19 +178,43 @@
         {
             "@id": "reproterms:shuffle",
             "@type": "rdf:Property",
-            "rdfs:comment": "An element to determine if the list of items is shuffled or in order.",
+            "rdfs:comment": "A Boolean to determine if the list of items is shuffled
+             or in order.",
             "rdfs:label": "shuffle",
             "rdfs:subPropertyOf": {
                 "@id": "reproterms:ui"
             },
-            "schema:domainIncludes": {
-                "@id": "reproschema:Activity"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "reproschema:Protocol"
+                },
+                {
+                    "@id": "reproschema:Activity"
+                }
+            ],
             "schema:rangeIncludes": {
                 "@id": "schema:boolean"
+            }
+        },
+        {
+            "@id": "reproterms:allow",
+            "@type": "rdf:Property",
+            "rdfs:comment": "A element to list the allowed behaviors for a
+             given activity or protocol.",
+            "rdfs:label": "allow",
+            "rdfs:subPropertyOf": {
+                "@id": "reproterms:ui"
             },
-            "schema:sameAs": {
-                "@id": "reproterms:shuffle"
+            "schema:domainIncludes": [
+                {
+                    "@id": "reproschema:Protocol"
+                },
+                {
+                    "@id": "reproschema:Activity"
+                }
+            ],
+            "schema:rangeIncludes": {
+                "@id": "schema:Text"
             }
         }
     ]
