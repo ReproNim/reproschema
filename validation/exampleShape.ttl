@@ -4,39 +4,72 @@
 @prefix schema: <http://schema.org/> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix reproterms: <https://raw.githubusercontent.com/sanuann/schema-standardization/master/terms/> .
+@prefix reproschema: <https://raw.githubusercontent.com/sanuann/schema-standardization/master/schemas> .
 
-schema:PersonShape
+reproschema:ActivityShape
     a sh:NodeShape ;
-    sh:targetClass schema:Person ;
+    sh:targetClass reproschema:Activity;
     sh:property [
-        sh:path schema:givenName ;
+        sh:path reproterms:preamble;
         sh:datatype xsd:string ;
-        sh:name "given name" ;
-    ] ;
-    sh:property [
-        sh:path schema:birthDate ;
-        sh:lessThan schema:deathDate ;
         sh:maxCount 1 ;
     ] ;
     sh:property [
-        sh:path schema:gender ;
-        sh:in ( "female" "male" ) ;
+        sh:path reproterms:scoring_logic ;
+        sh:node reproterms:ScoringShape ;
     ] ;
     sh:property [
-        sh:path schema:address ;
-        sh:node schema:AddressShape ;
+        sh:path reproterms:variableMap ;
+        sh:node reproterms:VariableMapShape ;
+    ] ;
+    sh:property [
+        sh:path reproterms:inputType ;
+        sh:datatype xsd:string ;
+    ] ;
+   sh:property [
+        sh:path reproterms:shuffle ;
+        sh:datatype xsd:boolean ;
+    ] ;
+   sh:property [
+        sh:path reproterms:visibility ;
+        sh:node reproterms:VisibilityShape ;
     ] .
 
-schema:AddressShape
+reproterms:VisibilityShape
     a sh:NodeShape ;
     sh:closed true ;
     sh:property [
-        sh:path schema:streetAddress ;
+        sh:path reproterms:variableName ;
         sh:datatype xsd:string ;
     ] ;
     sh:property [
-        sh:path schema:postalCode ;
-        sh:or ( [ sh:datatype xsd:string ] [ sh:datatype xsd:integer ] ) ;
-        sh:minInclusive 10000 ;
-        sh:maxInclusive 99999 ;
+        sh:path reproterms:isVis ;
+        sh:or ( [ sh:datatype xsd:string ] [ sh:datatype xsd:boolean ] ) ;
+    ] .
+
+
+reproterms:VariableMapShape
+    a sh:NodeShape ;
+    sh:closed true ;
+    sh:property [
+        sh:path reproterms:variableName ;
+        sh:datatype xsd:string ;
+    ] ;
+    sh:property [
+        sh:path reproterms:isAbout ;
+        sh:datatype xsd:string ;
+    ] .
+
+reproterms:ScoringShape
+    a sh:NodeShape ;
+    sh:closed true ;
+    sh:property [
+        sh:path reproterms:variableName ;
+        sh:datatype xsd:string ;
+    ] ;
+    sh:property [
+        sh:path reproterms:jsExpression ;
+        sh:datatype xsd:string ;
     ] .
