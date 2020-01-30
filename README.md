@@ -15,7 +15,7 @@ This documentation describes and explains the ReproNim schema specification.
 - [9.0: Which tools will/are supporting this standard?]()
 
 ## 1.0: Introduction
-Cognitive and clinical assessments are used throughout neuroscience, but little consistency exists in assessment data acquisition or response representation across studies. Harmonizing data after acquisition is resource intensive. Currently, the NIMH Data Archive (NDA) enforces harmonization during data submission. This approach can create a mismatch between collected and submitted data. Reverse engineering NDA data dictionaries to their original assessments using a tool like Brainverse can be tedious. To enforce consistency at the data acquisition stage, we created a standard schema and a set of reusable common assessments. The schema extends and modifies the CEDAR metadata representation. Using JSON-LD, we represent Items (elements of individual assessments) or Scores, Activities (individual assessments), and Activity sets (collections of activities performed by a participant). An implementation of the schema  can specify scoring logic, branching logic, and user interface rendering options. The schema allows internationalization (multiple languages), is implementation agnostic, and tracks variations in assessments (e.g., PHQ-9, PHQ-8). This open and accessible schema library with appropriate conversion (e.g., to RedCap) and data collection tools (e.g., [MindLogger](https://mindlogger.info/), LORIS, RedCap) enables more consistent acquisition across projects, with results being harmonized by design.
+Cognitive and clinical assessments are used throughout neuroscience, but little consistency exists in assessment data acquisition or response representation across studies. Harmonizing data after acquisition is resource intensive. Currently, the NIMH Data Archive (NDA) enforces harmonization during data submission. This approach can create a mismatch between collected and submitted data. Reverse engineering NDA data dictionaries to their original assessments using a tool like Brainverse can be tedious. To enforce consistency at the data acquisition stage, we created a standard schema and a set of reusable common assessments. The schema extends and modifies the CEDAR metadata representation. Using JSON-LD, we represent Items (elements of individual assessments) or Scores, Activities (individual assessments), and Protocols (collections of activities performed by a participant). An implementation of the schema  can specify scoring logic, branching logic, and user interface rendering options. The schema allows internationalization (multiple languages), is implementation agnostic, and tracks variations in assessments (e.g., PHQ-9, PHQ-8). This open and accessible schema library with appropriate conversion (e.g., to RedCap) and data collection tools (e.g., [MindLogger](https://mindlogger.info/), LORIS, RedCap) enables more consistent acquisition across projects, with results being harmonized by design.
 
 ## 2.0: Need for Standardizing assessments
 - Cognitive and Clinical assessments are used throughout neuroimaging to perform deep phenotyping
@@ -31,7 +31,7 @@ Cognitive and clinical assessments are used throughout neuroscience, but little 
 - Collaborations: ABCD, Healthy Brain Network, LORIS/CONP
 - We used CEDAR templates as a starting point
 - Developed cleaner JSON-LD representation to represent:
-  - __Activity Sets__: Collections of activities performed by a participant
+  - __Protocols__: Collections of activities performed by a participant
   - __Activity__: Individual assessments
   - __Items__: Elements of individual assessments
 
@@ -39,7 +39,7 @@ Cognitive and clinical assessments are used throughout neuroscience, but little 
 - Rich contexts with JSON-LD
   - Redcap uses CSVs to represent forms
 - Single source of curated assessments from [ReproNim](https://github.com/ReproNim)
-- Each Item, Activity, and Activity Set provide unique and persistent identifiers
+- Each Item, Activity, and Protocol provide unique and persistent identifiers
 - Variations can be tracked (e.g., PHQ-9, PHQ-8)
 - Allows, supports, and tracks internationalization (ABCD requires Spanish and English forms)
 - Implementation agnostic – schema can be used by several software
