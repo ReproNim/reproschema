@@ -6,18 +6,23 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dash: <http://datashapes.org/dash#> .
 @prefix reproterms: <https://raw.githubusercontent.com/sanuann/schema-standardization/master/terms/> .
-@prefix reproschema: <https://raw.githubusercontent.com/sanuann/schema-standardization/master/schemas> .
+@prefix reproschema: <https://raw.githubusercontent.com/sanuann/schema-standardization/master/schemas/> .
 
-reproschema:ActivityShape
+schema:PersonShape
     a sh:NodeShape ;
-    sh:targetClass reproschema:Activity;
+    sh:targetClass reproschema:Activity ;
     sh:property [
-        sh:path reproterms:preamble;
-        sh:datatype xsd:string ;
+        sh:path schema:description;
+        sh:datatype rdf:langString ;
         sh:maxCount 1 ;
     ] ;
     sh:property [
-        sh:path reproterms:scoring_logic ;
+        sh:path reproterms:preamble;
+        sh:datatype rdf:langString ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path reproterms:scoringLogic ;
         sh:node reproterms:ScoringShape ;
     ] ;
     sh:property [
@@ -42,11 +47,11 @@ reproterms:VisibilityShape
     sh:closed true ;
     sh:property [
         sh:path reproterms:variableName ;
-        sh:datatype xsd:string ;
+        sh:datatype rdf:langString ;
     ] ;
     sh:property [
         sh:path reproterms:isVis ;
-        sh:or ( [ sh:datatype xsd:string ] [ sh:datatype xsd:boolean ] ) ;
+        sh:or ( [ sh:datatype rdf:langString ] [ sh:datatype xsd:boolean ] ) ;
     ] .
 
 
@@ -67,7 +72,7 @@ reproterms:ScoringShape
     sh:closed true ;
     sh:property [
         sh:path reproterms:variableName ;
-        sh:datatype xsd:string ;
+        sh:datatype rdf:langString ;
     ] ;
     sh:property [
         sh:path reproterms:jsExpression ;
