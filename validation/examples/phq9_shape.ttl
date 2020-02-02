@@ -4,9 +4,9 @@
 @prefix schema: <http://schema.org/> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix reproterms: <https://raw.githubusercontent.com/ReproNim/reproschema/master/terms/> .
+@prefix reproterms: <https://raw.githubusercontent.com/sanuann/schema-standardization/master/terms/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix reproschema: <https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas> .
+@prefix reproschema: <https://raw.githubusercontent.com/sanuann/schema-standardization/master/schemas/> .
 
 schema:ActivityShape
     a sh:NodeShape ;
@@ -41,8 +41,26 @@ schema:ActivityShape
         sh:maxCount 1 ;
     ] ;
     sh:property [
-            sh:path skos:altLabel ;
-            sh:datatype xsd:string ;
-            sh:minCount 1 ;
-            sh:maxCount 1 ;
+        sh:path skos:altLabel ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+     sh:property [
+        sh:path reproterms:scoring_logic ;
+        sh:node reproterms:scoringShape ;
+        ] .
+
+
+reproschema:scoringShape
+    a sh:NodeShape ;
+    sh:closed true ;
+    sh:property [
+        sh:path reproterms:variableName ;
+        sh:datatype xsd:string ;
+    ] ;
+    sh:property [
+        sh:path reproterms:jsExpression ;
+        sh:datatype xsd:integer ;
+
     ] .

@@ -1,0 +1,27 @@
+{
+    "@context": { "@vocab": "http://schema.org/",
+    "reproterms": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/terms/",
+    "reproschema": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/schemas/"},
+
+    "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/phq9_schema",
+    "@type": "reproschema:Activity",
+    "reproterms:preamble": "abcd",
+    "reproterms:scoring_logic": [{
+        "reproterms:variableName": "phq9_total_score",
+        "reproterms:jsExpression": "phq9_1 + phq9_2 + phq9_3 + phq9_4 + phq9_5 + phq9_6 + phq9_7 + phq9_8 + phq9_9"
+    },
+    {
+        "reproterms:variableName": "abcd",
+        "reproterms:jsExpression": "phq9_1 + phq9_2 + phq9_3 + phq9_4 + phq9_5 + phq9_6 + phq9_7 + phq9_8 + phq9_9"
+    }],
+    "reproterms:variableMap": [
+        {"reproterms:variableName": "phq9_1", "reproterms:isAbout": "phq9_1"},
+        {"reproterms:variableName": "phq9_2", "reproterms:isAbout": "phq9_2"}
+    ],
+    "reproterms:inputType": "section",
+    "reproterms:shuffle": false,
+    "reproterms:visibility": [
+        {"reproterms:variableName": "phq9_1", "reproterms:isVis": 12},
+        {"reproterms:variableName": "phq9_10", "reproterms:isVis": "phq9_1 > 0 ||  phq9_2 > 0"}
+    ]
+}

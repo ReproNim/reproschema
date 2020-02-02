@@ -1,6 +1,9 @@
 {
     "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/PHQ-9/phq9_context"
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/PHQ-9/phq9_context",
+        {
+            "@base": "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/PHQ-9/"
+        }
     ],
     "@type": "reproschema:Activity",
     "@id": "phq9_schema",
@@ -11,8 +14,11 @@
     "schema:version": "0.0.1",
     "schema:citation": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1495268/",
     "preamble": "Over the last 2 weeks, how often have you been bothered by any of the following problems?",
+    "scoring_logic": [
+        {"variableName": "phq9_total_score", "jsExpression": "phq9_1 + phq9_2 + phq9_3 + phq9_4 + phq9_5 + phq9_6 + phq9_7 + phq9_8 + phq9_9"}
+    ],
     "scoringLogic": {
-        "phq9_total_score": "phq9_1 + phq9_2 + phq9_3 + phq9_4 + phq9_5 + phq9_6 + phq9_7 + phq9_8 + phq9_9"
+        "phq9_total_score": "[phq9_1] + [phq9_2] + [phq9_3] + [phq9_4] + [phq9_5] + [phq9_6] + [phq9_7] + [phq9_8] + [phq9_9]"
     },
     "variableMap": [
         {"variableName": "phq9_1", "isAbout": "phq9_1"},
@@ -53,7 +59,21 @@
             "phq9_8": true,
             "phq9_9": true,
             "phq9_10": "phq9_1 > 0 ||  phq9_2 > 0 || phq9_3 > 0 || phq9_4 > 0 || phq9_5 > 0 || phq9_6 > 0 || phq9_7 > 0 || phq9_8 > 0 || phq9_9 > 0"
-        }
+        },
+        "vis": [
+            {"variableName": "phq9_1", "isVis": true},
+            {"variableName": "phq9_2", "isVis": true},
+            {"variableName": "phq9_3", "isVis": true},
+            {"variableName": "phq9_4", "isVis": true},
+            {"variableName": "phq9_5", "isVis": true},
+            {"variableName": "phq9_6", "isVis": true},
+            {"variableName": "phq9_7", "isVis": true},
+            {"variableName": "phq9_8", "isVis": true},
+            {"variableName": "phq9_9", "isVis": true},
+            {"variableName": "phq9_10", "isVis": "phq9_1 > 0 ||  phq9_2 > 0 || phq9_3 > 0 || phq9_4 > 0 || phq9_5 > 0 || phq9_6 > 0 || phq9_7 > 0 || phq9_8 > 0 || phq9_9 > 0"}
+
+        ]
+
     }
 }
 

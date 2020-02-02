@@ -4,8 +4,8 @@
         "pav": "http://purl.org/pav/",
         "xsd": "http://www.w3.org/2001/XMLSchema#",
         "skos": "http://www.w3.org/2004/02/skos/core#",
-        "reproterms": "https://raw.githubusercontent.com/ReproNim/reproschema/master/terms/",
-        "reproschema": "https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/",
+        "reproterms": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/terms/",
+        "reproschema": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/schemas/",
         "schema": "http://schema.org/",
         "@language": "en",
         "description": {
@@ -135,7 +135,16 @@
             "@id": "reproterms:scoringLogic",
             "@container": "@index"
         },
+        "scoring_logic": {
+            "@id": "reproterms:scoring_logic",
+            "@container": "@index"
+        },
         "visibility": {
+            "@id": "reproterms:visibility",
+            "@container": "@index",
+            "@nest": "ui"
+        },
+        "vis": {
             "@id": "reproterms:visibility",
             "@container": "@index",
             "@nest": "ui"
@@ -147,7 +156,7 @@
         },
         "variableMap": {
             "@id": "reproterms:variableMap",
-            "@container": "@list"
+            "@container": "@index"
         },
         "variableName": "reproterms:variableName",
         "isAbout": {
