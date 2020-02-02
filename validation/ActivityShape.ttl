@@ -1,22 +1,29 @@
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix reproterms: <https://raw.githubusercontent.com/sanuann/schema-standardization/master/terms/> .
+@prefix reproschema: <https://raw.githubusercontent.com/sanuann/schema-standardization/master/schemas/> .
+
 schema:ActivityShape
     a sh:NodeShape ;
-    sh:targetClass schema:Activity ;
+    sh:targetClass reproschema:Activity ;
     sh:property [
-        sh:path schema:description ;
-        sh:datatype xsd:string ;
-        sh:minCount 1 ;
+        sh:path schema:description;
+        sh:datatype rdf:langString ;
         sh:maxCount 1 ;
     ] ;
     sh:property [
         sh:path schema:schemaVersion;
-        sh:node schema:SchemaVersionShape ;
-        sh:minCount 1 ;
+        sh:datatype xsd:string ;
         sh:maxCount 1 ;
     ] ;
     sh:property [
         sh:path schema:version ;
-        sh:node schema:VersionShape ;
-        sh:minCount 1 ;
+        sh:datatype xsd:string ;
         sh:maxCount 1 ;
     ] ;
     sh:property [
@@ -32,70 +39,64 @@ schema:ActivityShape
             sh:maxCount 1 ;
     ] ;
     sh:property [
-        sh:path repronim:preamble;
+        sh:path reproterms:preamble;
+        sh:datatype rdf:langString ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path reproterms:scoring_logic ;
+        sh:node reproterms:ScoringShape ;
+    ] ;
+    sh:property [
+        sh:path reproterms:variableMap ;
+        sh:node reproterms:VariableMapShape ;
+    ] ;
+    sh:property [
+        sh:path reproterms:inputType ;
         sh:datatype xsd:string ;
-        sh:maxCount 1 ;
+    ] ;
+   sh:property [
+        sh:path reproterms:shuffle ;
+        sh:datatype schema:Boolean ;
+    ] ;
+   sh:property [
+        sh:path reproterms:visibility ;
+        sh:node reproterms:VisibilityShape ;
+    ] .
+
+reproterms:VisibilityShape
+    a sh:NodeShape ;
+    sh:closed true ;
+    sh:property [
+        sh:path reproterms:variableName ;
+        sh:datatype rdf:langString ;
     ] ;
     sh:property [
-        sh:path repronim:scoringLogic;
+        sh:path reproterms:isVis ;
+        sh:or ( [ sh:datatype rdf:langString ] [ sh:datatype xsd:boolean ] ) ;
+    ] .
+
+
+reproterms:VariableMapShape
+    a sh:NodeShape ;
+    sh:closed true ;
+    sh:property [
+        sh:path reproterms:variableName ;
         sh:datatype xsd:string ;
-        sh:maxCount 1 ;
-        sh:node repronim:ScoringLogicShape ;
-        ] ;
-    sh:property [
-        sh:path repronim:branchLogic;
-        sh:maxCount 1 ;
-        sh:node repronim:BranchLogicShape ;
     ] ;
     sh:property [
-        sh:path repronim:variableMap;
+        sh:path reproterms:isAbout ;
         sh:datatype xsd:string ;
-        sh:minCount 1 ;
-        sh:maxCount 1 ;
-        sh:node repronim:VariableMapShape ;
+    ] .
+
+reproterms:ScoringShape
+    a sh:NodeShape ;
+    sh:closed true ;
+    sh:property [
+        sh:path reproterms:variableName ;
+        sh:datatype rdf:langString ;
     ] ;
     sh:property [
-        sh:path repronim:ui ;
-        sh:minCount 1 ;
-        sh:maxCount 1 ;
-        sh:node repronim:UiShape ;
+        sh:path reproterms:jsExpression ;
+        sh:datatype xsd:string ;
     ] .
-
-repronim:UiShape
-    a sh:NodeShape ;
-    sh:property [
-        sh:path repronim:order ;
-        sh:minCount 1 ;
-        sh:maxCount 1 ;
-        sh:node repronim:OrderShape ;
-    ] ;
-    sh:property [
-        sh:path repronim:shuffle ;
-        sh:datatype schema:boolean ;
-        sh:maxCount 1 ;
-    ] ;
-    sh:property [
-        sh:path repronim:visibility ;
-        sh:minCount 1 ;
-        sh:maxCount 1 ;
-        sh:node repronim:VisibilityShape ;
-    ] .
-
-repronim:ScoringLogicShape
-    a sh:NodeShape ;
-    sh:property [
-
-    ] .
-
-repronim:BranchLogicShape
-    a sh:NodeShape ;
-    sh:property [
-
-    ] .
-
-repronim:VariableMapShape
-    a sh:NodeShape ;
-    sh:property [
-
-    ] .
-
