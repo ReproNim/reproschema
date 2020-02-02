@@ -8,7 +8,7 @@
 @prefix reproterms: <https://raw.githubusercontent.com/sanuann/schema-standardization/master/terms/> .
 @prefix reproschema: <https://raw.githubusercontent.com/sanuann/schema-standardization/master/schemas/> .
 
-schema:PersonShape
+schema:ActivityShape
     a sh:NodeShape ;
     sh:targetClass reproschema:Activity ;
     sh:property [
@@ -17,12 +17,34 @@ schema:PersonShape
         sh:maxCount 1 ;
     ] ;
     sh:property [
+        sh:path schema:schemaVersion;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path schema:version ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path skos:prefLabel ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+            sh:path skos:altLabel ;
+            sh:datatype xsd:string ;
+            sh:minCount 1 ;
+            sh:maxCount 1 ;
+    ] ;
+    sh:property [
         sh:path reproterms:preamble;
         sh:datatype rdf:langString ;
         sh:maxCount 1 ;
     ] ;
     sh:property [
-        sh:path reproterms:scoringLogic ;
+        sh:path reproterms:scoring_logic ;
         sh:node reproterms:ScoringShape ;
     ] ;
     sh:property [
@@ -35,7 +57,7 @@ schema:PersonShape
     ] ;
    sh:property [
         sh:path reproterms:shuffle ;
-        sh:datatype xsd:boolean ;
+        sh:datatype schema:Boolean ;
     ] ;
    sh:property [
         sh:path reproterms:visibility ;
