@@ -27,50 +27,18 @@ import json
 with open('../activities/PHQ-9/phq9_schema', 'r') as myfile:
     data=myfile.read()
 doc = {
-#     "@context": {
-#         "@version": 1.1,
-#     "reproterms": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/terms/",
-#      "reproschema": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/schemas/",
-# "xsd": "http://www.w3.org/2001/XMLSchema#",
-#     "ui" : "@nest",
-#     "preamble": {
-#         "@id": "reproterms:preamble",
-#         "@container": "@language"
-#     },
-#     "shuffle": {
-#             "@id": "reproterms:shuffle",
-#             "@type": "xsd:boolean",
-#             "@nest": "ui"
-#     },
-#     "@base": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/"
-#     },
     "@context": [
-        {
-            "@version": 1.1,
-            "reproterms": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/terms/",
-            "reproschema": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/schemas/",
-            "xsd": "http://www.w3.org/2001/XMLSchema#",
-            "ui": "@nest",
-            "preamble": {
-                "@id": "reproterms:preamble",
-                "@container": "@language"
-            },
-            "shuffle": {
-                    "@id": "reproterms:shuffle",
-                    "@type": "xsd:boolean",
-                    "@nest": "ui"
-            }
-        },
-        {
-            "@base": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/"
-        }
-    ],
+        "https://raw.githubusercontent.com/sanuann/schema-standardization/master/contexts/generic",
+        "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/phq9_context",
+    {
+        "@base": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/"
+    }],
     "@id": "phq9_schema",
     "@type": "reproschema:Activity",
     "preamble": 123,
     "ui": {
         "reproterms:inputType": "section",
-        "reproterms:shuffle": False,
+        "reproterms:shuffle": False
     }
 }
 
@@ -346,8 +314,9 @@ doc1 = {
     # },
 
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities"
+        "https://raw.githubusercontent.com/sanuann/schema-standardization/master/contexts"
+        "/generic",
+        "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities"
         "/PHQ-9/phq9_context",
     {
         "@base": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/"
@@ -356,27 +325,14 @@ doc1 = {
     "@id": "phq9_schema",
     "skos:prefLabel": "PHQ-9 Assessment",
     "skos:altLabel": "phq9_schema",
-    "schema:description": 23,
+    "schema:description": "1332gjh",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
     "schema:citation": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1495268/",
-    "preamble": "Over the last 2 weeks, how often have you been bothered by any of the following problems?",
+    "preamble": "abc",
     "scoringLogic": {
         "phq9_total_score": "phq9_1 + phq9_2 + phq9_3 + phq9_4 + phq9_5 + phq9_6 + phq9_7 + phq9_8 + phq9_9"
     },
-    "variableMap": [
-        {"variableName": "phq9_1", "isAbout": "phq9_1"},
-        {"variableName": "phq9_2", "isAbout": "phq9_2"},
-        {"variableName": "phq9_3", "isAbout": "phq9_3"},
-        {"variableName": "phq9_4", "isAbout": "phq9_4"},
-        {"variableName": "phq9_5", "isAbout": "phq9_5"},
-        {"variableName": "phq9_6", "isAbout": "phq9_6"},
-        {"variableName": "phq9_7", "isAbout": "phq9_7"},
-        {"variableName": "phq9_8", "isAbout": "phq9_8"},
-        {"variableName": "phq9_9", "isAbout": "phq9_9"},
-        {"variableName": "phq9_10", "isAbout": "phq9_10"},
-        {"variableName": "phq9_total_score", "isAbout": "phq9_total_score"}
-    ],
     "ui": {
         "order": [
             "phq9_1",
@@ -395,24 +351,7 @@ doc1 = {
     }
 
 }
-doc2 = {
-    "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities"
-        "/PHQ-9/phq9_context",
-    {
-        "@base": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/"
-    }],
-    "@type": "reproschema:Activity",
-    "@id": "phq9_schema",
-    "skos:prefLabel": "PHQ-9 Assessment",
-    "skos:altLabel": "phq9_schema",
-    "schema:description": "PHQ-9 assessment schema",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
-    "schema:citation": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1495268/",
-    "preamble": "Over the last 2 weeks, how often have you been bothered by any of the following problems?"
-}
-exp = jsonld.expand(doc)
+exp = jsonld.expand(doc1)
 normalized = jsonld.normalize(
     exp, {'algorithm': 'URDNA2015', 'format':
         'application/n-quads'})
