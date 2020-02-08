@@ -165,6 +165,76 @@
             "schema:sameAs": {
                 "@id": "reproterms:shuffle"
             }
+        },
+        {
+            "@id": "reproterms:variableMap",
+            "@type": "rdf:Property",
+            "rdfs:comment": "An element to define mapping between variables used and
+             the corresponding nodes.",
+            "rdfs:label": "variableMap",
+            "schema:domainIncludes": [
+                {
+                    "@id": "reproschema:ActivitySet"
+                },
+                {
+                    "@id": "reproschema:Activity"
+                }
+
+            ],
+            "schema:rangeIncludes": [
+                {
+                    "@id": "reproschema:Activity"
+                },
+                {
+                    "@id": "reproschema:Field"
+                }
+            ]
+        },
+        {
+            "@id": "reproterms:visibility",
+            "@type": "rdf:Property",
+            "rdfs:comment": "An element to describe visibility conditions of items in an assessment.",
+            "rdfs:label": "visibility",
+            "schema:domainIncludes": [
+                {
+                    "@id": "reproschema:ActivitySet"
+                },
+                {
+                    "@id": "reproschema:Activity"
+                }
+
+            ],
+            "schema:rangeIncludes": [
+                {
+                    "@id": "reproschema:Activity"
+                },
+                {
+                    "@id": "reproschema:Field"
+                }
+            ]
+        },
+        {
+            "@id": "reproterms:scoring_logic",
+            "@type": "rdf:Property",
+            "rdfs:comment": "An array of items indicating score in an activity or protocol.",
+            "rdfs:label": "scoring_logic",
+            "schema:domainIncludes": [
+                {
+                    "@id": "reproschema:ActivitySet"
+                },
+                {
+                    "@id": "reproschema:Activity"
+                }
+
+            ],
+            "schema:rangeIncludes": [
+                {
+                    "@id": "reproschema:Activity"
+                },
+                {
+                    "@id": "reproschema:Field"
+                }
+            ]
         }
     ]
 }
