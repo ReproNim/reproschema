@@ -11,6 +11,12 @@
     "schema:description": "VoiceScreening assessment schema",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
+    "scoring_logic": [
+        {"variableName": "phq9_total_score", "jsExpression": "phq9_1 + phq9_2 + phq9_3 + phq9_4 + phq9_5 + phq9_6 + phq9_7 + phq9_8 + phq9_9"}
+    ],
+    "scoring_logic": [
+        {"variableName": "phq9_total_score", "jsExpression": "phq9_1 + phq9_2 + phq9_3 + phq9_4 + phq9_5 + phq9_6 + phq9_7 + phq9_8 + phq9_9"}
+    ],
     "scoringLogic": {
         "phq9_total_score": "phq9_1 + phq9_2 + phq9_3 + phq9_4 + phq9_5 + phq9_6 + phq9_7 + phq9_8 + phq9_9"
     },
@@ -33,7 +39,12 @@
             "multipart_audio_check": "education_level === 1",
             "phq9_schema": "education_level === 1",
             "gender": "education_level === 1"
-        }
+        },
+         "vis": [
+            {"variableName": "education_level", "isVis": true},
+            {"variableName": "multipart_audio_check", "isVis": "education_level === 1"},
+            {"variableName": "phq9_schema", "isVis": "education_level === 1"},
+            {"variableName": "gender", "isVis": "education_level === 1"}
     }
 }
 

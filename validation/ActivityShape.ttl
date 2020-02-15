@@ -5,11 +5,15 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dash: <http://datashapes.org/dash#> .
-@prefix reproterms: <https://raw.githubusercontent.com/sanuann/schema-standardization/master/terms/> .
-@prefix reproschema: <https://raw.githubusercontent.com/sanuann/schema-standardization/master/schemas/> .
+@prefix reproterms: <https://raw.githubusercontent.com/ReproNim/reproschema/master/terms/> .
+@prefix reproschema: <https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-schema:ActivityShape
+
+reproschema:ActivityShape
     a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
     sh:targetClass reproschema:Activity ;
     sh:property [
         sh:path schema:description;
@@ -18,25 +22,30 @@ schema:ActivityShape
     ] ;
     sh:property [
         sh:path schema:schemaVersion;
-        sh:datatype xsd:string ;
+        sh:datatype rdf:langString ;
         sh:maxCount 1 ;
     ] ;
     sh:property [
         sh:path schema:version ;
-        sh:datatype xsd:string ;
+        sh:datatype rdf:langString ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path schema:citation ;
+        sh:datatype rdf:langString ;
         sh:maxCount 1 ;
     ] ;
     sh:property [
         sh:path skos:prefLabel ;
-        sh:datatype xsd:string ;
+        sh:datatype rdf:langString ;
         sh:minCount 1 ;
         sh:maxCount 1 ;
     ] ;
     sh:property [
-            sh:path skos:altLabel ;
-            sh:datatype xsd:string ;
-            sh:minCount 1 ;
-            sh:maxCount 1 ;
+        sh:path skos:altLabel ;
+        sh:datatype rdf:langString ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
     ] ;
     sh:property [
         sh:path reproterms:preamble;
@@ -46,6 +55,15 @@ schema:ActivityShape
     sh:property [
         sh:path reproterms:scoring_logic ;
         sh:node reproterms:ScoringShape ;
+    ] ;
+    sh:property [
+        sh:path reproterms:order ;
+        sh:node dash:ListShape ;
+        sh:property [
+            sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
+            sh:nodeKind sh:IRI ;
+            sh:minCount 1 ;
+        ]
     ] ;
     sh:property [
         sh:path reproterms:variableMap ;
@@ -80,13 +98,14 @@ reproterms:VisibilityShape
 reproterms:VariableMapShape
     a sh:NodeShape ;
     sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
     sh:property [
         sh:path reproterms:variableName ;
-        sh:datatype xsd:string ;
+        sh:datatype rdf:langString ;
     ] ;
     sh:property [
         sh:path reproterms:isAbout ;
-        sh:datatype xsd:string ;
+        sh:nodeKind sh:IRI ;
     ] .
 
 reproterms:ScoringShape
@@ -98,5 +117,5 @@ reproterms:ScoringShape
     ] ;
     sh:property [
         sh:path reproterms:jsExpression ;
-        sh:datatype xsd:string ;
+        sh:datatype rdf:langString ;
     ] .
