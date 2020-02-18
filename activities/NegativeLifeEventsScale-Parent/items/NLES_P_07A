@@ -1,0 +1,31 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "NLES_P_07A",
+    "question": {
+        "en": "If yes, the child was aware that his/her parent suffered from serious illness or injury?"
+    },
+    "responseOptions": {
+        "multipleChoice": false,
+        "choices": [
+            {
+                "schema:value": 0,
+                "schema:name": {
+                    "en": "No"
+                }
+            },
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": "Yes"
+                }
+            }
+        ],
+        "type": "Nominal"
+    },
+    "ui": {
+        "inputType": "radio"
+    }
+}

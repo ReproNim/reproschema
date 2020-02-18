@@ -1,0 +1,37 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/NDA/nda_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "gender",
+    "skos:prefLabel": "Sex of the subject",
+    "skos:altLabel": "gender",
+    "schema:description": "schema for Sex of the subject",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Sex",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "@type": "xsd:anyURI",
+        "multipleChoice": false,
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "requiredValue": true,
+        "choices": [{
+
+            "@type": "schema:Female",
+            "schema:name": "Female",
+            "schema:value": 0
+        },
+            {
+                "@type": "schema:Male",
+                "schema:name": "Male",
+                "schema:value": 1
+            }
+        ]
+    }
+}
+

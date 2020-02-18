@@ -1,0 +1,44 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "SNAP_1",
+    "preamble": "In the past WEEK, have you noticed that your child...",
+    "question": {
+        "en": "Fails to give close attention to details or makes careless mistakes in schoolwork, work, or other activities"
+    },
+    "responseOptions": {
+        "multipleChoice": false,
+        "choices": [
+            {
+                "schema:value": 0,
+                "schema:name": {
+                    "en": "Not at all"
+                }
+            },
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": "Just a little"
+                }
+            },
+            {
+                "schema:value": 2,
+                "schema:name": {
+                    "en": "Pretty much"
+                }
+            },
+            {
+                "schema:value": 3,
+                "schema:name": {
+                    "en": "Very much"
+                }
+            }
+        ],
+        "type": "Ordinal"
+    },
+    "ui": {
+        "inputType": "radio"
+    }
+}

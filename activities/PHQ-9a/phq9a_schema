@@ -1,0 +1,60 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/PHQ-9a/phq9a_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "phq9a_schema",
+    "skos:prefLabel": "PHQ-9a Assessment",
+    "skos:altLabel": "phq9a_schema",
+    "schema:description": "PHQ-9a assessment schema",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": "Over the last 1 week, how often have you been bothered by any of the following problems?",
+    "scoringLogic": {
+        "phq9a_total_score": "phq9a_1 + phq9a_2 + phq9a_3 + phq9a_4 + phq9a_5 + phq9a_6 + phq9a_7 + phq9a_8 + phq9a_9"
+    },
+    "variableMap": [
+            {"variableName": "phq9a_1", "isAbout": "phq9a_1"},
+            {"variableName": "phq9a_2", "isAbout": "phq9a_2"},
+            {"variableName": "phq9a_3", "isAbout": "phq9a_3"},
+            {"variableName": "phq9a_4", "isAbout": "phq9a_4"},
+            {"variableName": "phq9a_5", "isAbout": "phq9a_5"},
+            {"variableName": "phq9a_6", "isAbout": "phq9a_6"},
+            {"variableName": "phq9a_7", "isAbout": "phq9a_7"},
+            {"variableName": "phq9a_8", "isAbout": "phq9a_8"},
+            {"variableName": "phq9a_9", "isAbout": "phq9a_9"},
+            {"variableName": "phq9a_10", "isAbout": "phq9a_10"},
+            {"variableName": "phq9a_total_score", "isAbout": "phq9a_total_score"}
+        ],
+    "ui": {
+        "order": [
+            "phq9a_1",
+            "phq9a_2",
+            "phq9a_3",
+            "phq9a_4",
+            "phq9a_5",
+            "phq9a_6",
+            "phq9a_7",
+            "phq9a_8",
+            "phq9a_9",
+            "phq9a_10"
+        ],
+        "shuffle": false,
+        "visibility": {
+            "phq9a_1": true,
+            "phq9a_2": true,
+            "phq9a_3": true,
+            "phq9a_4": true,
+            "phq9a_5": true,
+            "phq9a_6": true,
+            "phq9a_7": true,
+            "phq9a_8": true,
+            "phq9a_9": true,
+            "phq9a_10": "phq9a_1 > 0 ||  phq9a_2 > 0 || phq9a_3 > 0 || phq9a_4 > 0 || phq9a_5 > 0 || phq9a_6 > 0 || phq9a_7 > 0 || phq9a_8 > 0 || phq9a_9 > 0"
+        }
+    }
+}
+
+
+
+

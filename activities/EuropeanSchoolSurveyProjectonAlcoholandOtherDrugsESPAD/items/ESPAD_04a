@@ -1,0 +1,31 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "ESPAD_04a",
+    "question": {
+        "en": "4a. Have you ever used amphetamines (speed), methamphetamine (crystal meth), or desoxyn?"
+    },
+    "responseOptions": {
+        "multipleChoice": false,
+        "choices": [
+            {
+                "schema:value": 0,
+                "schema:name": {
+                    "en": "no"
+                }
+            },
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": "yes"
+                }
+            }
+        ],
+        "type": "Nominal"
+    },
+    "ui": {
+        "inputType": "radio"
+    }
+}

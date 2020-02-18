@@ -1,0 +1,31 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "CY-BOCS_31",
+    "question": {
+        "en": "Excessive concern with body part or aspect of appearance (e.g. dysmorphophobia)"
+    },
+    "responseOptions": {
+        "multipleChoice": true,
+        "choices": [
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": "Current"
+                }
+            },
+            {
+                "schema:value": 2,
+                "schema:name": {
+                    "en": "Past"
+                }
+            }
+        ],
+        "type": "Nominal"
+    },
+    "ui": {
+        "inputType": "radio"
+    }
+}

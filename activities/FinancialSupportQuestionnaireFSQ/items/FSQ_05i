@@ -1,0 +1,31 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "FSQ_05i",
+    "question": {
+        "en": "Supplemental Nutrition Assistance Program (SNAP) Benefits"
+    },
+    "responseOptions": {
+        "multipleChoice": false,
+        "choices": [
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": "Yes"
+                }
+            },
+            {
+                "schema:value": 0,
+                "schema:name": {
+                    "en": "No"
+                }
+            }
+        ],
+        "type": "Nominal"
+    },
+    "ui": {
+        "inputType": "radio"
+    }
+}

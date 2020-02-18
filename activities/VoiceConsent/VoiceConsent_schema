@@ -1,0 +1,52 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/VoiceConsent/VoiceConsent_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "VoiceConsent",
+    "skos:prefLabel": "Voice Consent",
+    "skos:altLabel": "voice_consent_schema",
+    "schema:description": "Consent for voice study",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": "Learn about the study, risks and benefits of joining by going through the consent. Once you have accepted it, take a short quiz to check what you have learned from the consent document.",
+    "variableMap": [
+        {"variableName": "consent_overview", "isAbout": "consent_overview"},
+        {"variableName": "quiz_schema", "isAbout": "quiz_schema"},
+        {"variableName": "sign", "isAbout": "sign"},
+        {"variableName": "q1", "isAbout": "q1"},
+        {"variableName": "q2", "isAbout": "q2"},
+        {"variableName": "q3", "isAbout": "q3"},
+        {"variableName": "q4", "isAbout": "q4"},
+        {"variableName": "q5", "isAbout": "q5"},
+        {"variableName": "quiz_score", "isAbout": "quiz_score"},
+        {"variableName": "retake_quiz", "isAbout": "retake_quiz"}
+    ],
+    "ui": {
+        "order": [
+            "consent_overview",
+            "q1",
+            "q2",
+            "q3",
+            "q4",
+            "q5",
+            "sign",
+            "retake_quiz"
+        ],
+        "shuffle": false,
+        "visibility": {
+            "consent_overview": true,
+            "q1": true,
+            "q2": true,
+            "q3": true,
+            "q4": true,
+            "q5": true,
+            "sign": "q1 + q2 + q3 + q4 + q5 === 5",
+            "retake_quiz": "q1 + q2 + q3 + q4 + q5 !== 5"
+        }
+    }
+}
+
+
+
+

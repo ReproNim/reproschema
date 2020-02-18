@@ -1,0 +1,38 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "TRF_P_91",
+    "preamble": "Following is a list of items that describe children. For each item that describes the child now or within the past two months, please indicate the 2 if the item is very true or often true of the child. Indicate the 1 if the item is somewhat or sometimes true. If the item is not true of the child, indicate the 0. Please answer all items as well as you can, even if some do not seem to apply to the child. ",
+    "question": {
+        "en": "91. Unusually loud"
+    },
+    "responseOptions": {
+        "multipleChoice": false,
+        "choices": [
+            {
+                "schema:value": 0,
+                "schema:name": {
+                    "en": "Not True (as far as you know)"
+                }
+            },
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": "Somewhat or Sometimes True"
+                }
+            },
+            {
+                "schema:value": 2,
+                "schema:name": {
+                    "en": "Very True or Often True"
+                }
+            }
+        ],
+        "type": "Ordinal"
+    },
+    "ui": {
+        "inputType": "radio"
+    }
+}

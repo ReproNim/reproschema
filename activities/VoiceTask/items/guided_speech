@@ -1,0 +1,25 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/VoiceTask/VoiceTask_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "guided_speech",
+    "skos:prefLabel": "Guided speech",
+    "skos:altLabel": "guided speech",
+    "schema:description": "guided speech item for voice task",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Look at the map in the image below, and give directions to another person over the phone as to how you would follow the route from Start to Stop, using the landmarks.",
+    "ui": {
+        "inputType": "audioImageRecord"
+    },
+    "responseOptions": {
+        "type": "audioImageRecord",
+        "schema:minValue": 0,
+        "schema:maxValue": 60000,
+        "schema:image": "https://www.dropbox.com/s/wgtjq3bgqlfhbzd/map3g.png?raw=1",
+        "multipleChoice": false,
+        "requiredValue": true
+    }
+}

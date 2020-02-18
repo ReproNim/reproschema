@@ -1,0 +1,522 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "SymptomChecklist-Parent": "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/SymptomChecklist-Parent/",
+        "Section1": {
+            "@id": "SymptomChecklist-Parent:Section1_schema",
+            "@type": "@id"
+        },
+        "CSC_01C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_01C",
+            "@type": "@id"
+        },
+        "CSC_01P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_01P",
+            "@type": "@id"
+        },
+        "CSC_02C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_02C",
+            "@type": "@id"
+        },
+        "CSC_02P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_02P",
+            "@type": "@id"
+        },
+        "CSC_03C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_03C",
+            "@type": "@id"
+        },
+        "CSC_03P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_03P",
+            "@type": "@id"
+        },
+        "CSC_04C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_04C",
+            "@type": "@id"
+        },
+        "CSC_04P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_04P",
+            "@type": "@id"
+        },
+        "CSC_05C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_05C",
+            "@type": "@id"
+        },
+        "CSC_05P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_05P",
+            "@type": "@id"
+        },
+        "CSC_06C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_06C",
+            "@type": "@id"
+        },
+        "CSC_06P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_06P",
+            "@type": "@id"
+        },
+        "CSC_07C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_07C",
+            "@type": "@id"
+        },
+        "CSC_07P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_07P",
+            "@type": "@id"
+        },
+        "CSC_08C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_08C",
+            "@type": "@id"
+        },
+        "CSC_08P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_08P",
+            "@type": "@id"
+        },
+        "CSC_09P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_09P",
+            "@type": "@id"
+        },
+        "CSC_09C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_09C",
+            "@type": "@id"
+        },
+        "CSC_10C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_10C",
+            "@type": "@id"
+        },
+        "CSC_10P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_10P",
+            "@type": "@id"
+        },
+        "CSC_11C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_11C",
+            "@type": "@id"
+        },
+        "CSC_11P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_11P",
+            "@type": "@id"
+        },
+        "CSC_12C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_12C",
+            "@type": "@id"
+        },
+        "CSC_12P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_12P",
+            "@type": "@id"
+        },
+        "CSC_13C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_13C",
+            "@type": "@id"
+        },
+        "CSC_13P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_13P",
+            "@type": "@id"
+        },
+        "CSC_14C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_14C",
+            "@type": "@id"
+        },
+        "CSC_14P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_14P",
+            "@type": "@id"
+        },
+        "CSC_15C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_15C",
+            "@type": "@id"
+        },
+        "CSC_15P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_15P",
+            "@type": "@id"
+        },
+        "CSC_16C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_16C",
+            "@type": "@id"
+        },
+        "CSC_16P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_16P",
+            "@type": "@id"
+        },
+        "CSC_17C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_17C",
+            "@type": "@id"
+        },
+        "CSC_17P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_17P",
+            "@type": "@id"
+        },
+        "CSC_18C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_18C",
+            "@type": "@id"
+        },
+        "CSC_18P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_18P",
+            "@type": "@id"
+        },
+        "CSC_19C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_19C",
+            "@type": "@id"
+        },
+        "CSC_19P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_19P",
+            "@type": "@id"
+        },
+        "CSC_20C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_20C",
+            "@type": "@id"
+        },
+        "CSC_20P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_20P",
+            "@type": "@id"
+        },
+        "CSC_21C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_21C",
+            "@type": "@id"
+        },
+        "CSC_21P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_21P",
+            "@type": "@id"
+        },
+        "CSC_22C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_22C",
+            "@type": "@id"
+        },
+        "CSC_22": {
+            "@id": "SymptomChecklist-Parent:items/CSC_22",
+            "@type": "@id"
+        },
+        "CSC_22P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_22P",
+            "@type": "@id"
+        },
+        "CSC_23C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_23C",
+            "@type": "@id"
+        },
+        "CSC_23P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_23P",
+            "@type": "@id"
+        },
+        "CSC_24C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_24C",
+            "@type": "@id"
+        },
+        "CSC_24P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_24P",
+            "@type": "@id"
+        },
+        "CSC_25C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_25C",
+            "@type": "@id"
+        },
+        "CSC_25P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_25P",
+            "@type": "@id"
+        },
+        "CSC_26C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_26C",
+            "@type": "@id"
+        },
+        "CSC_26P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_26P",
+            "@type": "@id"
+        },
+        "CSC_27C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_27C",
+            "@type": "@id"
+        },
+        "CSC_27P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_27P",
+            "@type": "@id"
+        },
+        "CSC_28C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_28C",
+            "@type": "@id"
+        },
+        "CSC_28P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_28P",
+            "@type": "@id"
+        },
+        "CSC_29C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_29C",
+            "@type": "@id"
+        },
+        "CSC_29P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_29P",
+            "@type": "@id"
+        },
+        "CSC_30C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_30C",
+            "@type": "@id"
+        },
+        "CSC_30P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_30P",
+            "@type": "@id"
+        },
+        "CSC_31C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_31C",
+            "@type": "@id"
+        },
+        "CSC_31P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_31P",
+            "@type": "@id"
+        },
+        "CSC_32C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_32C",
+            "@type": "@id"
+        },
+        "CSC_32P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_32P",
+            "@type": "@id"
+        },
+        "CSC_33C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_33C",
+            "@type": "@id"
+        },
+        "CSC_33P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_33P",
+            "@type": "@id"
+        },
+        "CSC_34C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_34C",
+            "@type": "@id"
+        },
+        "CSC_34P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_34P",
+            "@type": "@id"
+        },
+        "CSC_35C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_35C",
+            "@type": "@id"
+        },
+        "CSC_35P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_35P",
+            "@type": "@id"
+        },
+        "CSC_36C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_36C",
+            "@type": "@id"
+        },
+        "CSC_36P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_36P",
+            "@type": "@id"
+        },
+        "CSC_37C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_37C",
+            "@type": "@id"
+        },
+        "CSC_37P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_37P",
+            "@type": "@id"
+        },
+        "CSC_38C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_38C",
+            "@type": "@id"
+        },
+        "CSC_38P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_38P",
+            "@type": "@id"
+        },
+        "CSC_39C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_39C",
+            "@type": "@id"
+        },
+        "CSC_39P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_39P",
+            "@type": "@id"
+        },
+        "CSC_40C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_40C",
+            "@type": "@id"
+        },
+        "CSC_40P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_40P",
+            "@type": "@id"
+        },
+        "CSC_41C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_41C",
+            "@type": "@id"
+        },
+        "CSC_41P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_41P",
+            "@type": "@id"
+        },
+        "CSC_42C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_42C",
+            "@type": "@id"
+        },
+        "CSC_42P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_42P",
+            "@type": "@id"
+        },
+        "CSC_43C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_43C",
+            "@type": "@id"
+        },
+        "CSC_43P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_43P",
+            "@type": "@id"
+        },
+        "CSC_44C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_44C",
+            "@type": "@id"
+        },
+        "CSC_44P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_44P",
+            "@type": "@id"
+        },
+        "CSC_45C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_45C",
+            "@type": "@id"
+        },
+        "CSC_45P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_45P",
+            "@type": "@id"
+        },
+        "CSC_46C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_46C",
+            "@type": "@id"
+        },
+        "CSC_46P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_46P",
+            "@type": "@id"
+        },
+        "CSC_47C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_47C",
+            "@type": "@id"
+        },
+        "CSC_47P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_47P",
+            "@type": "@id"
+        },
+        "CSC_48C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_48C",
+            "@type": "@id"
+        },
+        "CSC_48P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_48P",
+            "@type": "@id"
+        },
+        "CSC_49C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_49C",
+            "@type": "@id"
+        },
+        "CSC_49P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_49P",
+            "@type": "@id"
+        },
+        "CSC_50C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_50C",
+            "@type": "@id"
+        },
+        "CSC_50P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_50P",
+            "@type": "@id"
+        },
+        "CSC_51C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_51C",
+            "@type": "@id"
+        },
+        "CSC_51P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_51P",
+            "@type": "@id"
+        },
+        "CSC_52C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_52C",
+            "@type": "@id"
+        },
+        "CSC_52P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_52P",
+            "@type": "@id"
+        },
+        "CSC_53C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_53C",
+            "@type": "@id"
+        },
+        "CSC_53P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_53P",
+            "@type": "@id"
+        },
+        "CSC_54C": {
+            "@id": "SymptomChecklist-Parent:items/CSC_54C",
+            "@type": "@id"
+        },
+        "CSC_54P": {
+            "@id": "SymptomChecklist-Parent:items/CSC_54P",
+            "@type": "@id"
+        },
+        "Section2": {
+            "@id": "SymptomChecklist-Parent:Section2_schema",
+            "@type": "@id"
+        },
+        "CSC_55aC": {
+            "@id": "SymptomChecklist-Parent:items/CSC_55aC",
+            "@type": "@id"
+        },
+        "CSC_55aP": {
+            "@id": "SymptomChecklist-Parent:items/CSC_55aP",
+            "@type": "@id"
+        },
+        "CSC_55bC": {
+            "@id": "SymptomChecklist-Parent:items/CSC_55bC",
+            "@type": "@id"
+        },
+        "CSC_55bP": {
+            "@id": "SymptomChecklist-Parent:items/CSC_55bP",
+            "@type": "@id"
+        },
+        "CSC_55cC": {
+            "@id": "SymptomChecklist-Parent:items/CSC_55cC",
+            "@type": "@id"
+        },
+        "CSC_55cP": {
+            "@id": "SymptomChecklist-Parent:items/CSC_55cP",
+            "@type": "@id"
+        },
+        "CSC_55dC": {
+            "@id": "SymptomChecklist-Parent:items/CSC_55dC",
+            "@type": "@id"
+        },
+        "CSC_55dP": {
+            "@id": "SymptomChecklist-Parent:items/CSC_55dP",
+            "@type": "@id"
+        },
+        "CSC_55eC": {
+            "@id": "SymptomChecklist-Parent:items/CSC_55eC",
+            "@type": "@id"
+        },
+        "CSC_55eP": {
+            "@id": "SymptomChecklist-Parent:items/CSC_55eP",
+            "@type": "@id"
+        },
+        "CSC_55fC": {
+            "@id": "SymptomChecklist-Parent:items/CSC_55fC",
+            "@type": "@id"
+        },
+        "CSC_55fP": {
+            "@id": "SymptomChecklist-Parent:items/CSC_55fP",
+            "@type": "@id"
+        },
+        "CSC_55gC": {
+            "@id": "SymptomChecklist-Parent:items/CSC_55gC",
+            "@type": "@id"
+        },
+        "CSC_55gP": {
+            "@id": "SymptomChecklist-Parent:items/CSC_55gP",
+            "@type": "@id"
+        },
+        "CSC_55hC": {
+            "@id": "SymptomChecklist-Parent:items/CSC_55hC",
+            "@type": "@id"
+        },
+        "CSC_55hP": {
+            "@id": "SymptomChecklist-Parent:items/CSC_55hP",
+            "@type": "@id"
+        },
+        "CSC_55iC": {
+            "@id": "SymptomChecklist-Parent:items/CSC_55iC",
+            "@type": "@id"
+        },
+        "CSC_55iP": {
+            "@id": "SymptomChecklist-Parent:items/CSC_55iP",
+            "@type": "@id"
+        }
+    }
+}

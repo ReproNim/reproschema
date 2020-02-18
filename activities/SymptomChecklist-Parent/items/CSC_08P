@@ -1,0 +1,32 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "CSC_08P",
+    "preamble": "Please respond to the following statements based on your child’s mood and behavior:",
+    "question": {
+        "en": "8. Has times when he/she is suddenly much more interested in sex than usual - Past "
+    },
+    "responseOptions": {
+        "multipleChoice": false,
+        "choices": [
+            {
+                "schema:value": 0,
+                "schema:name": {
+                    "en": "No"
+                }
+            },
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": "Yes"
+                }
+            }
+        ],
+        "type": "Nominal"
+    },
+    "ui": {
+        "inputType": "radio"
+    }
+}

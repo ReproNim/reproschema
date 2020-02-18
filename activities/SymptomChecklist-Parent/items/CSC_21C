@@ -1,0 +1,32 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "CSC_21C",
+    "preamble": "Please respond to the following statements based on your child’s mood and behavior:",
+    "question": {
+        "en": "21. Is unable to speak in specific situations, such as school, despite being able to speak without a problem in other situations - Current"
+    },
+    "responseOptions": {
+        "multipleChoice": false,
+        "choices": [
+            {
+                "schema:value": 0,
+                "schema:name": {
+                    "en": "No"
+                }
+            },
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": "Yes"
+                }
+            }
+        ],
+        "type": "Nominal"
+    },
+    "ui": {
+        "inputType": "radio"
+    }
+}

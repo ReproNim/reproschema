@@ -1,0 +1,44 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "ICU_SR_11",
+    "preamble": "Read each statement and decide how well it describes you. Choose the appropriate bubble for each statement. Do not leave any statement unrated.",
+    "question": {
+        "en": "I do not care about doing things well."
+    },
+    "responseOptions": {
+        "multipleChoice": false,
+        "choices": [
+            {
+                "schema:value": 0,
+                "schema:name": {
+                    "en": "Not at all true"
+                }
+            },
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": "Somewhat true"
+                }
+            },
+            {
+                "schema:value": 2,
+                "schema:name": {
+                    "en": "Very true"
+                }
+            },
+            {
+                "schema:value": 3,
+                "schema:name": {
+                    "en": "Definitely true"
+                }
+            }
+        ],
+        "type": "Ordinal"
+    },
+    "ui": {
+        "inputType": "radio"
+    }
+}

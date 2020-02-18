@@ -1,0 +1,50 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "YFAS_08",
+    "preamble": "This survey asks about your eating habits in the past year. People sometimes have difficulty controlling their intake of certain foods such as:\n - Sweets like ice cream, chocolate, doughnuts, cookies, cake, candy, ice cream\n - Starches like white bread, rolls, pasta, and rice\n - Salty snacks like chips, pretzels, and crackers\n - Fatty foods like steak, bacon, hamburgers, cheeseburgers, pizza, and French fries\n - Sugary drinks like soda pop\nWhen the following questions ask about "CERTAIN FOODS" please think of ANY food similar to those listed in the food group or ANY OTHER foods you have had a problem within the past year.",
+    "question": {
+        "en": "There have been times when I consumed certain foods so often or in such large quantities that I started to eat food instead of working, spending time with my family or friends, or engaging in other important activities or recreational activities I enjoy."
+    },
+    "responseOptions": {
+        "multipleChoice": false,
+        "choices": [
+            {
+                "schema:value": 0,
+                "schema:name": {
+                    "en": "Never"
+                }
+            },
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": "Once a month"
+                }
+            },
+            {
+                "schema:value": 2,
+                "schema:name": {
+                    "en": "2-4 times a month"
+                }
+            },
+            {
+                "schema:value": 3,
+                "schema:name": {
+                    "en": "2-3 times a week"
+                }
+            },
+            {
+                "schema:value": 4,
+                "schema:name": {
+                    "en": "4 or more times daily"
+                }
+            }
+        ],
+        "type": "Ordinal"
+    },
+    "ui": {
+        "inputType": "radio"
+    }
+}

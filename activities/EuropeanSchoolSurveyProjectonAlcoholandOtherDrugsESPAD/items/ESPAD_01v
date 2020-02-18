@@ -1,0 +1,31 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "ESPAD_01v",
+    "question": {
+        "en": "1v. Have you ever experienced withdrawal symptoms as a result of heavy marijuana / hashish intake?"
+    },
+    "responseOptions": {
+        "multipleChoice": false,
+        "choices": [
+            {
+                "schema:value": 0,
+                "schema:name": {
+                    "en": "no"
+                }
+            },
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": "yes"
+                }
+            }
+        ],
+        "type": "Nominal"
+    },
+    "ui": {
+        "inputType": "radio"
+    }
+}

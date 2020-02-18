@@ -1,0 +1,31 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "ESPAD_11v",
+    "question": {
+        "en": "11v. Have you had medical problems as a result of your narcotics use (e.g. memory loss, hepatitis, convulsions, bleeding, etc.)?"
+    },
+    "responseOptions": {
+        "multipleChoice": false,
+        "choices": [
+            {
+                "schema:value": 0,
+                "schema:name": {
+                    "en": "no"
+                }
+            },
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": "yes"
+                }
+            }
+        ],
+        "type": "Nominal"
+    },
+    "ui": {
+        "inputType": "radio"
+    }
+}

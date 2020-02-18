@@ -1,0 +1,26 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/NDA/nda_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "birthCountry",
+    "skos:prefLabel": "Country of birth(as in birth certificate)",
+    "skos:altLabel": "birthCountry",
+    "schema:description": "schema for Country of birth of participant",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Country of birth",
+    "ui": {
+        "inputType": "selectCountry"
+    },
+    "responseOptions": {
+        "type": "xsd:string",
+        "requiredValue": true,
+        "maxLength": 50,
+        "choiceUrl": "https://raw.githubusercontent.com/samayo/country-json/master/src/country-by-name.json"
+    }
+}
+
+
+

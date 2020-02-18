@@ -1,0 +1,44 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/NDA/nda_context",
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/VoiceDemographics/VoiceDemographics_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "VoiceDemographics",
+    "skos:prefLabel": "Demographics for voice study",
+    "skos:altLabel": "voice_demographics",
+    "schema:description": "schema describing demographics for voice study",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "variableMap": [
+        {"variableName": "yearOfBirth", "isAbout": "yearOfBirth"},
+        {"variableName": "raceEthnicity", "isAbout": "raceEthnicity"},
+        {"variableName": "countryOfBirth", "isAbout": "countryOfBirth"},
+        {"variableName": "stateOfBirth", "isAbout": "stateOfBirth"},
+        {"variableName": "stateOfResidence", "isAbout": "stateOfResidence"},
+        {"variableName": "knownLanguages", "isAbout": "knownLanguages"},
+        {"variableName": "fluentLanguages", "isAbout": "fluentLanguages"}
+    ],
+    "ui": {
+        "order": [
+            "yearOfBirth",
+            "raceEthnicity",
+            "countryOfBirth",
+            "stateOfBirth",
+            "stateOfResidence",
+            "knownLanguages",
+            "fluentLanguages"
+        ],
+        "shuffle": false,
+        "visibility": {
+            "yearOfBirth":  true,
+            "raceEthnicity": true,
+            "countryOfBirth": true,
+            "stateOfBirth": "countryOfBirth == 'United States'",
+            "stateOfResidence": true,
+            "knownLanguages": true,
+            "fluentLanguages": true
+        },
+        "allow": ["skipped"]
+    }
+}

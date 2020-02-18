@@ -1,0 +1,31 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "NIDA_Scr_Sed",
+    "question": {
+        "en": "Sedatives or sleeping pills (Valium, Serepax, Ativan, Librium, Xanax, Rohypnol, GHB, etc)"
+    },
+    "responseOptions": {
+        "multipleChoice": false,
+        "choices": [
+            {
+                "schema:value": 0,
+                "schema:name": {
+                    "en": " No"
+                }
+            },
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": " Yes"
+                }
+            }
+        ],
+        "type": "Nominal"
+    },
+    "ui": {
+        "inputType": "radio"
+    }
+}

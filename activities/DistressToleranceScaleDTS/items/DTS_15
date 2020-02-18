@@ -1,0 +1,50 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "DTS_15",
+    "preamble": "Think of times that you feel distressed or upset. Select the item that best describes your beliefs about feeling distressed or upset. Please answer regarding your feelings of distress \"in general\", that is, on the average.",
+    "question": {
+        "en": "When I feel distressed or upset, I cannot help but concentrate on how bad the distress actually feels."
+    },
+    "responseOptions": {
+        "multipleChoice": false,
+        "choices": [
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": "Strongly Disagree"
+                }
+            },
+            {
+                "schema:value": 2,
+                "schema:name": {
+                    "en": "Mildly Disagree"
+                }
+            },
+            {
+                "schema:value": 3,
+                "schema:name": {
+                    "en": "Agree and Disagree Equally"
+                }
+            },
+            {
+                "schema:value": 4,
+                "schema:name": {
+                    "en": "Mildly Agree"
+                }
+            },
+            {
+                "schema:value": 5,
+                "schema:name": {
+                    "en": "Strongly Agree"
+                }
+            }
+        ],
+        "type": "Ordinal"
+    },
+    "ui": {
+        "inputType": "radio"
+    }
+}

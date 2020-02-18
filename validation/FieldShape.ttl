@@ -1,55 +1,69 @@
-schema:ActivityShape
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix reproterms: <https://raw.githubusercontent.com/sanuann/schema-standardization/master/terms/> .
+@prefix reproschema: <https://raw.githubusercontent.com/sanuann/schema-standardization/master/schemas/> .
+
+schema:FieldShape
     a sh:NodeShape ;
-    sh:targetClass schema:Activity ;
+    sh:targetClass reproschema:Field ;
     sh:property [
-        sh:path schema:description ;
-        sh:datatype xsd:string ;
+        sh:path skos:prefLabel;
+        sh:datatype rdf:langString ;
+        sh:maxCount 1 ;
         sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path skos:altLabel;
+        sh:datatype rdf:langString ;
         sh:maxCount 1 ;
     ] ;
     sh:property [
-        sh:path schema:schemaVersion;
-        sh:node schema:SchemaVersionShape ;
-        sh:minCount 1 ;
+        sh:path schema:description ;
+        sh:datatype rdf:langString ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path schema:schemaVersion ;
+        sh:datatype rdf:langString ;
         sh:maxCount 1 ;
     ] ;
     sh:property [
         sh:path schema:version ;
-        sh:node schema:VersionShape ;
-        sh:minCount 1 ;
+        sh:datatype rdf:langString ;
         sh:maxCount 1 ;
     ] ;
     sh:property [
-        sh:path skos:prefLabel ;
+        sh:path schema:question ;
+        sh:datatype rdf:langString ;
+        sh:maxCount 1 ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path reproterms:inputType ;
         sh:datatype xsd:string ;
-        sh:minCount 1 ;
         sh:maxCount 1 ;
+        sh:minCount 1 ;
     ] ;
-    sh:property [
-        sh:path skos:altLabel ;
-        sh:datatype xsd:string ;
-        sh:minCount 1 ;
+   sh:property [
+        sh:path reproterms:responseOptions ;
+        sh:node reproterms:ResponseOptionsShape ;
         sh:maxCount 1 ;
-    ] ;
-    sh:property [
-        sh:path repronim:question;
-        sh:datatype xsd:string ;
         sh:minCount 1 ;
-        sh:maxCount 1 ;
-    ] ;
-    sh:property [
-        sh:path repronim:ui ;
-        sh:minCount 1 ;
-        sh:maxCount 1 ;
-        sh:node repronim:UiShape ;
-    ] .
+   ] .
 
-repronim:UiShape
+reproterms:ResponseOptionsShape
     a sh:NodeShape ;
+    sh:closed true ;
     sh:property [
-        sh:path repronim:inputType ;
-        sh:minCount 1 ;
-        sh:maxCount 1 ;
-        sh:datatype xsd:string ;
+        sh:path reproterms:variableName ;
+        sh:datatype rdf:langString ;
+    ] ;
+    sh:property [
+        sh:path reproterms:isVis ;
+        sh:or ( [ sh:datatype xsd:string ] [ sh:datatype xsd:boolean ] ) ;
     ] .
-

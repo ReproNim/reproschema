@@ -1,0 +1,42 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/PROMISGlobalHealth/PROMISGlobalHealth_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "g_5",
+    "skos:prefLabel": "Q5 of PROMIS Global Health Survey",
+    "skos:altLabel": "g_5",
+    "schema:description": "Q5 of the PROMIS Global Health survey",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "In general, how would you rate your satisfaction with your social activities and relationships?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "type": "xsd:string",
+        "multipleChoice": false,
+        "requiredValue": false,
+        "choices": [{
+            "schema:name": "Excellent",
+            "schema:value": 5
+        },
+            {
+                "schema:name": "Very Good",
+                "schema:value": 4
+            },
+            {
+                "schema:name": "Good",
+                "schema:value": 3
+            },
+            {
+                "schema:name": "Fair",
+                "schema:value": 2
+            },
+            {
+                "schema:name": "Poor",
+                "schema:value": 1
+            }
+        ]
+    }
+}

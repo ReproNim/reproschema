@@ -1,0 +1,26 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "PPS_F_01",
+    "preamble": "For females (ages 11+), they answer the following questions:",
+    "question": {
+        "en": "1. Would you say that your growth spurt in height:"
+    },
+    "responseOptions": {
+        "multipleChoice": false,
+        "choices": [
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": "has not yet begun to spurt (\"spurt\" means more growth than usual)\n2"
+                }
+            }
+        ],
+        "type": "Ordinal"
+    },
+    "ui": {
+        "inputType": "radio"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/VoiceDemographics/VoiceDemographics_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "knownLanguages",
+    "skos:prefLabel": "Known languages of participant",
+    "skos:altLabel": "knownLanguages",
+    "schema:description": "schema for known languages of participant",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Known Language",
+    "ui": {
+        "inputType": "selectLanguage"
+    },
+    "responseOptions": {
+        "type": "xsd:string",
+        "requiredValue": false,
+        "multipleChoice": true,
+        "maxLength": 50,
+        "choiceUrl": "https://raw.githubusercontent.com/ReproNim/reproschema/master/resources/languages.json"
+    }
+}
+
+
+

@@ -1,0 +1,38 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "ASSQ_12",
+    "preamble": "This child stands out as different from other children of his/her age in the following way:",
+    "question": {
+        "en": "lacks empathy (i.e. tends to see things only from his/her own perspective, and has troubles seeing things from other's perspective)"
+    },
+    "responseOptions": {
+        "multipleChoice": false,
+        "choices": [
+            {
+                "schema:value": 0,
+                "schema:name": {
+                    "en": "No"
+                }
+            },
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": "Somewhat"
+                }
+            },
+            {
+                "schema:value": 2,
+                "schema:name": {
+                    "en": "Yes"
+                }
+            }
+        ],
+        "type": "Ordinal"
+    },
+    "ui": {
+        "inputType": "radio"
+    }
+}

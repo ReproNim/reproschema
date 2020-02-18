@@ -1,0 +1,32 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "FTND_02",
+    "preamble": "If No, do not answer the remaining questions.",
+    "question": {
+        "en": "Have you been a smoker within the past two years?"
+    },
+    "responseOptions": {
+        "multipleChoice": false,
+        "choices": [
+            {
+                "schema:value": 0,
+                "schema:name": {
+                    "en": " No"
+                }
+            },
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": " Yes"
+                }
+            }
+        ],
+        "type": "Nominal"
+    },
+    "ui": {
+        "inputType": "radio"
+    }
+}

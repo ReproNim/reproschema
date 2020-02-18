@@ -1,0 +1,20 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/PHQ-9a/phq9a_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "phq9a_category",
+    "skos:prefLabel": "Score category of PHQ-9a Questionnaire",
+    "skos:altLabel": "phq9a_category",
+    "schema:description": "score category of the derived PHQ-9 Assessment",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "inputType": "text",
+        "readonly": true,
+        "hidden": true
+    },
+    "responseOptions": {
+        "valueSets": ["minimal", "mild", "moderate", "moderately severe", "severe"]
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "@context": {
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "schema": "http://schema.org/",
+        "reproschema": "https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/"
+    },
+    "@id": "allow",
+    "@type": "rdf:property",
+    "rdfs:comment": "An array of items indicating properties allowed on an activity or protocol ",
+    "rdfs:label": "allow",
+    "schema:domainIncludes": [
+        {
+            "@id": "reproschema:ActivitySet"
+        },
+        {
+            "@id": "reproschema:Activity"
+        }
+
+    ],
+    "schema:rangeIncludes": {
+        "@id": "schema:Text"
+    }
+}

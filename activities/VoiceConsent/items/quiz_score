@@ -1,0 +1,23 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/PHQ-9/phq9_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "quiz_score",
+    "skos:prefLabel": "Score of Consent Quiz",
+    "skos:altLabel": "quiz_score",
+    "schema:description": "schema for consent quiz score",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "inputType": "xsd:int",
+        "readOnly": true,
+        "hidden": true
+    },
+    "responseOptions": {
+        "type": "xsd:integer",
+        "requiredValue": false,
+        "minValue": 0,
+        "maxValue": 5
+    }
+}

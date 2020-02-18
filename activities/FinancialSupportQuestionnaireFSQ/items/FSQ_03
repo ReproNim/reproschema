@@ -1,0 +1,37 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "FSQ_03",
+    "question": {
+        "en": "Is the child's other caregiver currently employed?"
+    },
+    "responseOptions": {
+        "multipleChoice": false,
+        "choices": [
+            {
+                "schema:value": 0,
+                "schema:name": {
+                    "en": " No"
+                }
+            },
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": " Yes"
+                }
+            },
+            {
+                "schema:value": 2,
+                "schema:name": {
+                    "en": " Child does not have a second primary caregiver"
+                }
+            }
+        ],
+        "type": "Ordinal"
+    },
+    "ui": {
+        "inputType": "radio"
+    }
+}

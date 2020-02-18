@@ -1,0 +1,26 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "CIS_SR_12",
+    "preamble": "This survey asks questions about how you think you are doing overall. Please answer questions on a scale from 0 to 4 with 0 being \"No Problem\" to 4 being \"Very Bad Problem\"",
+    "question": {
+        "en": "How much of a problem would you say you have with your school work (or doing your job)?"
+    },
+    "responseOptions": {
+        "multipleChoice": false,
+        "choices": [
+            {
+                "schema:value": 0,
+                "schema:name": {
+                    "en": "No Problem\n1"
+                }
+            }
+        ],
+        "type": "Ordinal"
+    },
+    "ui": {
+        "inputType": "radio"
+    }
+}

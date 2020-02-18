@@ -1,0 +1,40 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/VoiceConsent/VoiceConsent_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "quiz_q3",
+    "skos:prefLabel": "Quiz Q3",
+    "skos:altLabel": "quiz_q3",
+    "schema:description": "Quiz Question 3",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "I decided to share my data broadly with qualified researchers and now I want to stop. What happens to the data I have already shared?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "type": "xsd:string",
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "multipleChoice": false,
+        "requiredValue": true,
+        "choices": [{
+            "schema:name": "My account and all my data will be deleted",
+            "schema:value": 0
+        },
+            {
+                "schema:name": "The data I already shared will continue to be used in research",
+                "schema:value": 1
+            },
+            {
+                "schema:name": "My data will be sent to my regular healthcare provider",
+                "schema:value": 0
+            }
+        ]
+    }
+}
+
+
+
+

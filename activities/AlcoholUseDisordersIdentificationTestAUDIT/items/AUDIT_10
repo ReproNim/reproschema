@@ -1,0 +1,46 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "AUDIT_10",
+    "preamble": "Please circle the answer that is correct for you.",
+    "question": {
+        "en": "10. Has a relative or friend, or a doctor or other health worker been concerned about your drinking or suggested you cut down?"
+    },
+    "responseOptions": {
+        "multipleChoice": false,
+        "choices": [
+            {
+                "schema:value": 0,
+                "schema:name": {
+                    "en": "No"
+                }
+            },
+            {
+                "schema:value": 2,
+                "schema:name": {
+                    "en": "Yes"
+                }
+            },
+            {
+                "schema:value": null,
+                "schema:name": {}
+            },
+            {
+                "schema:value": 4,
+                "schema:name": {
+                    "en": "Yes"
+                }
+            },
+            {
+                "schema:value": null,
+                "schema:name": {}
+            }
+        ],
+        "type": "Ordinal"
+    },
+    "ui": {
+        "inputType": "radio"
+    }
+}

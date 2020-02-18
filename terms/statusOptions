@@ -1,0 +1,23 @@
+{
+    "@context": {
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "schema": "http://schema.org/"
+    },
+    "@id": "statusOptions",
+    "@type": "rdf:property",
+    "rdfs:comment": "Provides information on whether or not a field item wants to be accompanied by the additional status option(s) defined in “statusOptions”",
+    "rdfs:label": "status options",
+    "schema:domainIncludes": [
+        {
+            "@id": "https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/ActivitySet"
+        },
+        {
+            "@id": "https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/Activity"
+        }
+
+    ],
+    "schema:rangeIncludes": {
+        "@id": "schema:Text"
+    }
+}

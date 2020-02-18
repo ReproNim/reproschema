@@ -1,0 +1,26 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "CIS_P_01",
+    "preamble": "This survey asks questions about how you think your child is doing overall. Please answer the questions on a scale from 0 to 4 with 0 being \"No Problem\" and 4 being \"Very Bad Problem\"",
+    "question": {
+        "en": "In general, how much of a problem do you think your child has with getting into trouble?"
+    },
+    "responseOptions": {
+        "multipleChoice": false,
+        "choices": [
+            {
+                "schema:value": 0,
+                "schema:name": {
+                    "en": "No Problem\n1"
+                }
+            }
+        ],
+        "type": "Ordinal"
+    },
+    "ui": {
+        "inputType": "radio"
+    }
+}

@@ -1,0 +1,161 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/protocols/VoicePilot/VoicePilot_context"
+    ],
+    "@type": "reproschema:ActivitySet",
+    "@id": "VoicePilot",
+    "skos:prefLabel": "Voice Pilot Protocol Activity set",
+    "skos:altLabel": "voice_pilot",
+    "schema:description": "activity set for UW MIT Voice Pilot Protocol",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "schema:image": "https://raw.githubusercontent.com/ReproNim/reproschema/master/protocols/VoicePilot/mit_voice_pilot_applet_image.svg?sanitize=true",
+    "variableMap": [
+        {"variableName": "VoiceScreening_schema", "isAbout": "VoiceScreening_schema"},
+        {"variableName": "VoiceConsent_schema", "isAbout": "VoiceConsent_schema"},
+        {"variableName": "VoiceDemographics_schema", "isAbout": "VoiceDemographics_schema"},
+        {"variableName": "PROMISGlobalHealth_schema", "isAbout": "PROMISGlobalHealth_schema"},
+        {"variableName": "GAD7_schema", "isAbout": "GAD7_schema"},
+        {"variableName": "CageAid_schema", "isAbout": "CageAid_schema"},
+        {"variableName": "BADS_schema", "isAbout": "BADS_schema"},
+        {"variableName": "OtherQuestions_schema", "isAbout": "OtherQuestions_schema"},
+        {"variableName": "VoiceTask_schema", "isAbout": "VoiceTask_schema"},
+        {"variableName": "Thankyou_schema", "isAbout": "Thankyou_schema"}
+    ],
+    "ui": {
+        "order": [
+            "VoiceScreening_schema",
+            "VoiceConsent_schema",
+            "VoiceTask_schema",
+            "VoiceDemographics_schema",
+            "PROMISGlobalHealth_schema",
+            "GAD7_schema",
+            "CageAid_schema",
+            "BADS_schema",
+            "OtherQuestions_schema",
+            "Thankyou_schema"
+        ],
+        "shuffle": false,
+        "DisplayNameMap": [
+            {"variableName": "VoiceScreening_schema", "activityName": "Screening"},
+            {"variableName": "VoiceConsent_schema", "activityName": "Consent"},
+            {"variableName": "VoiceDemographics_schema", "activityName": "Demographics"},
+            {"variableName": "PROMISGlobalHealth_schema", "activityName": "Health"},
+            {"variableName": "GAD7_schema", "activityName": "Anxiety"},
+            {"variableName": "CageAid_schema", "activityName": "Substance use"},
+            {"variableName": "BADS_schema", "activityName": "Behavior"},
+            {"variableName": "OtherQuestions_schema", "activityName": "Other Questions"},
+            {"variableName": "VoiceTask_schema", "activityName": "Voice Tasks"},
+            {"variableName": "Thankyou_schema", "activityName": "ThankYou"}
+        ],
+        "activity_display_name": {
+            "VoiceScreening_schema": "Screening",
+            "VoiceConsent_schema": "Consent",
+            "VoiceDemographics_schema": "Demographics",
+            "PROMISGlobalHealth_schema": "Health",
+            "GAD7_schema":  "Anxiety",
+            "CageAid_schema": "Substance use",
+            "BADS_schema": "Behavior",
+            "OtherQuestions_schema": "Other Questions",
+            "VoiceTask_schema": "Voice Tasks",
+            "Thankyou_schema": "ThankYou"
+        },
+        "visibility":{
+            "VoiceScreening_schema":true,
+            "VoiceConsent_schema": {
+                "method":"POST",
+                "url":"https://sig.mit.edu/vb/check",
+                "payload":["VoiceScreening_schema"]
+            },
+            "VoiceDemographics_schema": {
+                "method":"POST",
+                "url":"https://sig.mit.edu/vb/check",
+                "payload":["VoiceScreening_schema"]
+            },
+            "PROMISGlobalHealth_schema":{
+                "method":"POST",
+                "url":"https://sig.mit.edu/vb/check",
+                "payload":["VoiceScreening_schema"]
+            },
+            "GAD7_schema":{
+                "method":"POST",
+                "url":"https://sig.mit.edu/vb/check",
+                "payload":["VoiceScreening_schema"]
+            },
+            "CageAid_schema":{
+                "method":"POST",
+                "url":"https://sig.mit.edu/vb/check",
+                "payload":["VoiceScreening_schema"]
+            },
+            "BADS_schema":{
+                "method":"POST",
+                "url":"https://sig.mit.edu/vb/check",
+                "payload":["VoiceScreening_schema"]
+            },
+            "OtherQuestions_schema":{
+                "method":"POST",
+                "url":"https://sig.mit.edu/vb/check",
+                "payload":["VoiceScreening_schema"]
+            },
+            "VoiceTask_schema":{
+                "method":"POST",
+                "url":"https://sig.mit.edu/vb/check",
+                "payload":["VoiceScreening_schema"]
+            },
+            "Thankyou_schema": {
+                "method":"POST",
+                "url":"https://sig.mit.edu/vb/check",
+                "payload":["VoiceScreening_schema"]
+            }
+        },
+        "vis": [
+            {"variableName": "VoiceScreening_schema", "isVis": true},
+            {"variableName": "VoiceConsent_schema", "isVis": {
+                "method":"POST",
+                "url":"https://sig.mit.edu/vb/check",
+                "payload":["VoiceScreening_schema"]
+            }},
+            {"variableName": "VoiceDemographics_schema", "isVis": {
+                "method":"POST",
+                "url":"https://sig.mit.edu/vb/check",
+                "payload":["VoiceScreening_schema"]
+            }},
+            {"variableName": "PROMISGlobalHealth_schema", "isVis": {
+                "method":"POST",
+                "url":"https://sig.mit.edu/vb/check",
+                "payload":["VoiceScreening_schema"]
+            }},
+            {"variableName": "GAD7_schema", "isVis": {
+                "method":"POST",
+                "url":"https://sig.mit.edu/vb/check",
+                "payload":["VoiceScreening_schema"]
+            }},
+            {"variableName": "CageAid_schema", "isVis": {
+                "method":"POST",
+                "url":"https://sig.mit.edu/vb/check",
+                "payload":["VoiceScreening_schema"]
+            }},
+            {"variableName": "BADS_schema", "isVis": {
+                "method":"POST",
+                "url":"https://sig.mit.edu/vb/check",
+                "payload":["VoiceScreening_schema"]
+            }},
+            {"variableName": "OtherQuestions_schema", "isVis": {
+                "method":"POST",
+                "url":"https://sig.mit.edu/vb/check",
+                "payload":["VoiceScreening_schema"]
+            }},
+            {"variableName": "VoiceTask_schema", "isVis": {
+                "method":"POST",
+                "url":"https://sig.mit.edu/vb/check",
+                "payload":["VoiceScreening_schema"]
+            }},
+            {"variableName": "Thankyou_schema", "isVis": {
+                "method":"POST",
+                "url":"https://sig.mit.edu/vb/check",
+                "payload":["VoiceScreening_schema"]
+            }}
+        ],
+        "allow": ["autoAdvance", "disableBack"]
+    }
+}

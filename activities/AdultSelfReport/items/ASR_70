@@ -1,0 +1,38 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "ASR_70",
+    "preamble": "Following is a list of items that describe people. For each item, please pick the answer to describe yourself over the past 6 months. Please answer all items as well as you can, even if some do not seem to apply to you.",
+    "question": {
+        "en": "62. Poorly coordinated or clumsy"
+    },
+    "responseOptions": {
+        "multipleChoice": false,
+        "choices": [
+            {
+                "schema:value": 0,
+                "schema:name": {
+                    "en": "Not true (as far as you know)"
+                }
+            },
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": "Somewhat or sometimes true"
+                }
+            },
+            {
+                "schema:value": 2,
+                "schema:name": {
+                    "en": "Very true or often true"
+                }
+            }
+        ],
+        "type": "Ordinal"
+    },
+    "ui": {
+        "inputType": "radio"
+    }
+}

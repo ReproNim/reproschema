@@ -1,0 +1,50 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "AUDIT_02",
+    "preamble": "Please circle the answer that is correct for you.",
+    "question": {
+        "en": "2. How many drinks containing alcohol do you have on a typical day when you are drinking?"
+    },
+    "responseOptions": {
+        "multipleChoice": false,
+        "choices": [
+            {
+                "schema:value": 0,
+                "schema:name": {
+                    "en": "\"1 or 2\""
+                }
+            },
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": "\"3 or 4\""
+                }
+            },
+            {
+                "schema:value": 2,
+                "schema:name": {
+                    "en": "\"5 or 6\""
+                }
+            },
+            {
+                "schema:value": 3,
+                "schema:name": {
+                    "en": "\"7 to 9\""
+                }
+            },
+            {
+                "schema:value": 4,
+                "schema:name": {
+                    "en": "\"10 or more\""
+                }
+            }
+        ],
+        "type": "Ordinal"
+    },
+    "ui": {
+        "inputType": "radio"
+    }
+}

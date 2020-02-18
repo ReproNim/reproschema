@@ -1,0 +1,46 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/sanuann/reproschema/feature_add_consent/activities/VoiceConsent/VoiceConsent_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "consent_quiz_schema",
+    "skos:prefLabel": "Consent Quiz",
+    "skos:altLabel": "consent_quiz_schema",
+    "schema:description": "Consent quiz for voice study",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": "Let's see what you have learned from the consent document.",
+    "scoringLogic": {
+        "quiz_score": "q1 + q2 + q3 + q4 + q5"
+    },
+    "variableMap": [
+        {"variableName": "q1", "isAbout": "q1"},
+        {"variableName": "q2", "isAbout": "q2"},
+        {"variableName": "q3", "isAbout": "q3"},
+        {"variableName": "q4", "isAbout": "q4"},
+        {"variableName": "q5", "isAbout": "q5"},
+        {"variableName": "quiz_score", "isAbout": "quiz_score"}
+    ],
+    "ui": {
+        "order": [
+            "q1",
+            "q2",
+            "q3",
+            "q4",
+            "q5"
+        ],
+        "inputType": "section",
+        "shuffle": false,
+        "visibility": {
+            "q1":  true,
+            "q2": true,
+            "q3": true,
+            "q4": true,
+            "q5": true
+        }
+    }
+}
+
+
+
+

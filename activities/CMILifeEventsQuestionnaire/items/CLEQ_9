@@ -1,0 +1,56 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "CLEQ_9",
+    "preamble": "Your answers to this questionaire will tell us about important events that might have happened to your child or your family. Read each item for each item please indicate the date (as well as you can remember) of each occurrence. Then indicate how much of an effect you think it had on your child's life by choosing from the appropriate headings and then circling the number beneath it (\"No Effect\" = 1, \"A Little Effect\" = 2, Some Effect\" = 3, \"Moderate Effect\" = 4, and \"Great Effect\" = 5). If the event occured more than once (e.g new school placement), please indicate the one that you feel has had the biggest impact on your child. If the event did not occur, circle \"0\" (Did not occur). ",
+    "question": {
+        "en": "9. Change in significant parental relationship"
+    },
+    "responseOptions": {
+        "multipleChoice": false,
+        "choices": [
+            {
+                "schema:value": 0,
+                "schema:name": {
+                    "en": "Did not occur"
+                }
+            },
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": "No effect"
+                }
+            },
+            {
+                "schema:value": 2,
+                "schema:name": {
+                    "en": "A little effect"
+                }
+            },
+            {
+                "schema:value": 3,
+                "schema:name": {
+                    "en": "Some effect"
+                }
+            },
+            {
+                "schema:value": 4,
+                "schema:name": {
+                    "en": "Moderate effect"
+                }
+            },
+            {
+                "schema:value": 5,
+                "schema:name": {
+                    "en": "Great effect"
+                }
+            }
+        ],
+        "type": "Ordinal"
+    },
+    "ui": {
+        "inputType": "radio"
+    }
+}

@@ -1,0 +1,102 @@
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix reproterms: <https://raw.githubusercontent.com/sanuann/schema-standardization/master/terms/> .
+@prefix reproschema: <https://raw.githubusercontent.com/sanuann/schema-standardization/master/schemas/> .
+
+schema:ActivityShape
+    a sh:NodeShape ;
+    sh:targetClass reproschema:Activity ;
+    sh:property [
+        sh:path schema:description;
+        sh:datatype rdf:langString ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path schema:schemaVersion;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path schema:version ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path skos:prefLabel ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+            sh:path skos:altLabel ;
+            sh:datatype xsd:string ;
+            sh:minCount 1 ;
+            sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path reproterms:preamble;
+        sh:datatype rdf:langString ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path reproterms:scoring_logic ;
+        sh:node reproterms:ScoringShape ;
+    ] ;
+    sh:property [
+        sh:path reproterms:variableMap ;
+        sh:node reproterms:VariableMapShape ;
+    ] ;
+    sh:property [
+        sh:path reproterms:inputType ;
+        sh:datatype xsd:string ;
+    ] ;
+   sh:property [
+        sh:path reproterms:shuffle ;
+        sh:datatype schema:Boolean ;
+    ] ;
+   sh:property [
+        sh:path reproterms:visibility ;
+        sh:node reproterms:VisibilityShape ;
+    ] .
+
+reproterms:VisibilityShape
+    a sh:NodeShape ;
+    sh:closed true ;
+    sh:property [
+        sh:path reproterms:variableName ;
+        sh:datatype rdf:langString ;
+    ] ;
+    sh:property [
+        sh:path reproterms:isVis ;
+        sh:or ( [ sh:datatype rdf:langString ] [ sh:datatype xsd:boolean ] ) ;
+    ] .
+
+
+reproterms:VariableMapShape
+    a sh:NodeShape ;
+    sh:closed true ;
+    sh:property [
+        sh:path reproterms:variableName ;
+        sh:datatype xsd:string ;
+    ] ;
+    sh:property [
+        sh:path reproterms:isAbout ;
+        sh:datatype xsd:string ;
+    ] .
+
+reproterms:ScoringShape
+    a sh:NodeShape ;
+    sh:closed true ;
+    sh:property [
+        sh:path reproterms:variableName ;
+        sh:datatype rdf:langString ;
+    ] ;
+    sh:property [
+        sh:path reproterms:jsExpression ;
+        sh:datatype xsd:string ;
+    ] .

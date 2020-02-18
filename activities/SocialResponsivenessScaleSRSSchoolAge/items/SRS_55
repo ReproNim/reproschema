@@ -1,0 +1,44 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "SRS_55",
+    "preamble": "For each question, circle the number that best describes the child's behavior over the past 6 months.",
+    "question": {
+        "en": "55. Knows when he or she is too close to someone or is invading someone's space."
+    },
+    "responseOptions": {
+        "multipleChoice": false,
+        "choices": [
+            {
+                "schema:value": 0,
+                "schema:name": {
+                    "en": " Not True"
+                }
+            },
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": " Sometimes True"
+                }
+            },
+            {
+                "schema:value": 2,
+                "schema:name": {
+                    "en": " Often True"
+                }
+            },
+            {
+                "schema:value": 3,
+                "schema:name": {
+                    "en": " Almost Always True"
+                }
+            }
+        ],
+        "type": "Ordinal"
+    },
+    "ui": {
+        "inputType": "radio"
+    }
+}

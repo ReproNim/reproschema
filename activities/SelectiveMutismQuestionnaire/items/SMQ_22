@@ -1,0 +1,43 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "SMQ_22",
+    "question": {
+        "en": "Overall, how much does not talking bother your child?"
+    },
+    "responseOptions": {
+        "multipleChoice": false,
+        "choices": [
+            {
+                "schema:value": 3,
+                "schema:name": {
+                    "en": "Always"
+                }
+            },
+            {
+                "schema:value": 2,
+                "schema:name": {
+                    "en": "Often"
+                }
+            },
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": "Seldom"
+                }
+            },
+            {
+                "schema:value": 0,
+                "schema:name": {
+                    "en": "Never"
+                }
+            }
+        ],
+        "type": "Ordinal"
+    },
+    "ui": {
+        "inputType": "radio"
+    }
+}

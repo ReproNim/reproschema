@@ -1,0 +1,50 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "PAQ_C_01d",
+    "preamble": "We are trying to find out about your level of physical activity from the last 7 days (in the last\nweek). This includes sports or dance that make you sweat or make your legs feel tired, or games\nthat make you breathe hard, like tag, skipping, running, climbing, and others.\nRemember:\n1. There are no right and wrong answers — this is not a test.\n2. Please answer all the questions as honestly and accurately as you can — this is very\nimportant. ",
+    "question": {
+        "en": "Tag"
+    },
+    "responseOptions": {
+        "multipleChoice": false,
+        "choices": [
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": "No"
+                }
+            },
+            {
+                "schema:value": 2,
+                "schema:name": {
+                    "en": "1-2"
+                }
+            },
+            {
+                "schema:value": 3,
+                "schema:name": {
+                    "en": "3-4"
+                }
+            },
+            {
+                "schema:value": 4,
+                "schema:name": {
+                    "en": "5-6"
+                }
+            },
+            {
+                "schema:value": 5,
+                "schema:name": {
+                    "en": "7 times or more"
+                }
+            }
+        ],
+        "type": "Ordinal"
+    },
+    "ui": {
+        "inputType": "radio"
+    }
+}

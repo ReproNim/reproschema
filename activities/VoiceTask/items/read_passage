@@ -1,0 +1,23 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/VoiceTask/VoiceTask_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "read_passage",
+    "skos:prefLabel": "Read a passage",
+    "skos:altLabel": "read a passage",
+    "schema:description": "read a passage",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": "Read the passage below out loud while recording yourself. ",
+    "question": "It was the first day of school.  It was a tough day for all the kids. One girl had a really hard time because nobody could say her name. Her name was Peggy Babcock. Go ahead. Try and say it three times quickly. \"Peggy Babcock Peggy Babcock Peggy Babcock.\" Not easy going, right? She was afraid to say hello to any of the other kids on the playground. One boy walked up to her and asked what her name was. She said \"When you hear my name it sounds simple but no one can say it. It is Peggy Babcock.\" He laughed and said \"Your name is tricky but mine is better. It sounds simple but no one can remember it. It is Jonas Norvin Sven Arthur Schwinn Bart Winston Ulysses M.\" Peggy laughed and said \"Easy. Your name sounds like 'Joan is nervous when others win. But you win some, you lose some.' How do you like my version?\" Jonas was so happy that he said \"Let’s be friends. I will call you PB.\" The pair of them stuck so close to each other that everyone at school called them \"PB and J.",
+    "ui": {
+        "inputType": "audioPassageRecord"
+    },
+    "responseOptions": {
+        "type": "audioPassageRecord",
+        "schema:minValue": 0,
+        "schema:maxValue": 75000,
+        "requiredValue": true
+    }
+}

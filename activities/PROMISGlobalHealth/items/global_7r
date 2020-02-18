@@ -1,0 +1,67 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/PROMISGlobalHealth/PROMISGlobalHealth_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "g_7r",
+    "skos:prefLabel": "Q7r of PROMIS Global Health Survey",
+    "skos:altLabel": "g_7r",
+    "schema:description": "Q7r of the PROMIS Global Health survey",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "In the past 7 days, how would you rate your pain on average?",
+    "ui": {
+        "inputType": "slider"
+    },
+    "responseOptions": {
+        "type": "xsd:integer",
+        "schema:minValue": "No pain",
+        "schema:maxValue": "Worst pain imaginable",
+        "requiredValue": false,
+        "choices": [{
+            "schema:name": "0",
+            "schema:value": 5
+        },
+            {
+                "schema:name": "1",
+                "schema:value": 4
+            },
+            {
+                "schema:name": "2",
+                "schema:value": 4
+            },
+            {
+                "schema:name": "3",
+                "schema:value": 4
+            },
+            {
+                "schema:name": "4",
+                "schema:value": 3
+            },
+            {
+                "schema:name": "5",
+                "schema:value": 3
+            },
+            {
+                "schema:name": "6",
+                "schema:value": 3
+            },
+            {
+                "schema:name": "7",
+                "schema:value": 2
+            },
+            {
+                "schema:name": "8",
+                "schema:value": 2
+            },
+            {
+                "schema:name": "9",
+                "schema:value": 2
+            },
+            {
+                "schema:name": "10",
+                "schema:value": 1
+            }
+        ]
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "SDS_06",
+    "preamble": "INSTRUCTIONS: This questionnaire will allow to your doctor to have a better understanding of the sleep-wake rhythm of your child and of any problems in his/her sleep behavior. Try to answer every question; in answering, consider each question as pertaining to the past 6 months of the child’s life. Please answer the questions by circling or striking the number 1 to 5. Thank you very much for your help.\r",
+    "question": {
+        "en": "The child startles or jerks parts of the body while falling asleep"
+    },
+    "responseOptions": {
+        "multipleChoice": false,
+        "choices": [
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": "Never"
+                }
+            },
+            {
+                "schema:value": 2,
+                "schema:name": {
+                    "en": "Occasionally (once or twice per month or less)"
+                }
+            },
+            {
+                "schema:value": 3,
+                "schema:name": {
+                    "en": "Sometimes (once or twice per week)"
+                }
+            },
+            {
+                "schema:value": 4,
+                "schema:name": {
+                    "en": "Often (3 or 5 times per week)"
+                }
+            },
+            {
+                "schema:value": 5,
+                "schema:name": {
+                    "en": "Always (daily)"
+                }
+            }
+        ],
+        "type": "Ordinal"
+    },
+    "ui": {
+        "inputType": "radio"
+    }
+}

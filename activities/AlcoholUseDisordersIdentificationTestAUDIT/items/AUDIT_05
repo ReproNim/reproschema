@@ -1,0 +1,50 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "AUDIT_05",
+    "preamble": "Please circle the answer that is correct for you.",
+    "question": {
+        "en": "5. How often during the last year have you failed to do what was normally expected of you because of drinking?"
+    },
+    "responseOptions": {
+        "multipleChoice": false,
+        "choices": [
+            {
+                "schema:value": 0,
+                "schema:name": {
+                    "en": "Never"
+                }
+            },
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": "Less than Monthly"
+                }
+            },
+            {
+                "schema:value": 2,
+                "schema:name": {
+                    "en": "Monthly"
+                }
+            },
+            {
+                "schema:value": 3,
+                "schema:name": {
+                    "en": "Weekly"
+                }
+            },
+            {
+                "schema:value": 4,
+                "schema:name": {
+                    "en": "Daily or Almost Daily"
+                }
+            }
+        ],
+        "type": "Ordinal"
+    },
+    "ui": {
+        "inputType": "radio"
+    }
+}

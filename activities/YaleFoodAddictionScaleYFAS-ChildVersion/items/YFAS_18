@@ -1,0 +1,50 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "YFAS_18",
+    "preamble": "When we say "FOOD" we want you to think of ANY "junk food" like those above.\nIn the past 12 months:",
+    "question": {
+        "en": "18. How often do you try to cut down on certain foods?"
+    },
+    "responseOptions": {
+        "multipleChoice": false,
+        "choices": [
+            {
+                "schema:value": 0,
+                "schema:name": {
+                    "en": "Never"
+                }
+            },
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": "Rarely"
+                }
+            },
+            {
+                "schema:value": 2,
+                "schema:name": {
+                    "en": "Sometimes"
+                }
+            },
+            {
+                "schema:value": 3,
+                "schema:name": {
+                    "en": "Very Often"
+                }
+            },
+            {
+                "schema:value": 4,
+                "schema:name": {
+                    "en": "Always"
+                }
+            }
+        ],
+        "type": "Ordinal"
+    },
+    "ui": {
+        "inputType": "radio"
+    }
+}

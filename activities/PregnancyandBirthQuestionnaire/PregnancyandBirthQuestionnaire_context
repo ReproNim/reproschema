@@ -1,0 +1,258 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "PregnancyandBirthQuestionnaire": "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/PregnancyandBirthQuestionnaire/",
+        "Relation": {
+            "@id": "PregnancyandBirthQuestionnaire:items/Relation",
+            "@type": "@id"
+        },
+        "PBQ_01": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_01",
+            "@type": "@id"
+        },
+        "PBQ_01A": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_01A",
+            "@type": "@id"
+        },
+        "PBQ_02": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_02",
+            "@type": "@id"
+        },
+        "PBQ_02A": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_02A",
+            "@type": "@id"
+        },
+        "PBQ_03": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_03",
+            "@type": "@id"
+        },
+        "PBQ_03A": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_03A",
+            "@type": "@id"
+        },
+        "PBQ_03B": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_03B",
+            "@type": "@id"
+        },
+        "PBQ_03B_1": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_03B_1",
+            "@type": "@id"
+        },
+        "PBQ_03C": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_03C",
+            "@type": "@id"
+        },
+        "PBQ_04": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_04",
+            "@type": "@id"
+        },
+        "PBQ_04A": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_04A",
+            "@type": "@id"
+        },
+        "PBQ_05": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_05",
+            "@type": "@id"
+        },
+        "PBQ_05A": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_05A",
+            "@type": "@id"
+        },
+        "PBQ_05B": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_05B",
+            "@type": "@id"
+        },
+        "PBQ_05C": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_05C",
+            "@type": "@id"
+        },
+        "PBQ_06": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_06",
+            "@type": "@id"
+        },
+        "PBQ_06A": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_06A",
+            "@type": "@id"
+        },
+        "PBQ_07": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_07",
+            "@type": "@id"
+        },
+        "PBQ_07A": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_07A",
+            "@type": "@id"
+        },
+        "PBQ_07B": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_07B",
+            "@type": "@id"
+        },
+        "PBQ_07C": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_07C",
+            "@type": "@id"
+        },
+        "Section1": {
+            "@id": "PregnancyandBirthQuestionnaire:Section1_schema",
+            "@type": "@id"
+        },
+        "PBQ_08": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_08",
+            "@type": "@id"
+        },
+        "PBQ_09": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_09",
+            "@type": "@id"
+        },
+        "PBQ_09A": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_09A",
+            "@type": "@id"
+        },
+        "PBQ_10": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_10",
+            "@type": "@id"
+        },
+        "PBQ_10A": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_10A",
+            "@type": "@id"
+        },
+        "PBQ_11": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_11",
+            "@type": "@id"
+        },
+        "PBQ_11A": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_11A",
+            "@type": "@id"
+        },
+        "PBQ_12": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_12",
+            "@type": "@id"
+        },
+        "PBQ_12A": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_12A",
+            "@type": "@id"
+        },
+        "PBQ_13": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_13",
+            "@type": "@id"
+        },
+        "PBQ_13A": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_13A",
+            "@type": "@id"
+        },
+        "PBQ_13B": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_13B",
+            "@type": "@id"
+        },
+        "PBQ_13D": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_13D",
+            "@type": "@id"
+        },
+        "PBQ_13E": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_13E",
+            "@type": "@id"
+        },
+        "PBQ_13F": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_13F",
+            "@type": "@id"
+        },
+        "PBQ_13G": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_13G",
+            "@type": "@id"
+        },
+        "PBQ_13H": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_13H",
+            "@type": "@id"
+        },
+        "PBQ_14": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_14",
+            "@type": "@id"
+        },
+        "PBQ_14A": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_14A",
+            "@type": "@id"
+        },
+        "PBQ_15": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_15",
+            "@type": "@id"
+        },
+        "PBQ_16": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_16",
+            "@type": "@id"
+        },
+        "PBQ_17": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_17",
+            "@type": "@id"
+        },
+        "PBQ_17A": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_17A",
+            "@type": "@id"
+        },
+        "PBQ_17B": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_17B",
+            "@type": "@id"
+        },
+        "PBQ_18": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_18",
+            "@type": "@id"
+        },
+        "PBQ_18A": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_18A",
+            "@type": "@id"
+        },
+        "PBQ_19": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_19",
+            "@type": "@id"
+        },
+        "PBQ_19A": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_19A",
+            "@type": "@id"
+        },
+        "PBQ_21": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_21",
+            "@type": "@id"
+        },
+        "PBQ_22": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_22",
+            "@type": "@id"
+        },
+        "PBQ_23": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_23",
+            "@type": "@id"
+        },
+        "PBQ_23A": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_23A",
+            "@type": "@id"
+        },
+        "PBQ_24": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_24",
+            "@type": "@id"
+        },
+        "PBQ_24A": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_24A",
+            "@type": "@id"
+        },
+        "PBQ_25": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_25",
+            "@type": "@id"
+        },
+        "PBQ_25A": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_25A",
+            "@type": "@id"
+        },
+        "PBQ_26": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_26",
+            "@type": "@id"
+        },
+        "PBQ_26A": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_26A",
+            "@type": "@id"
+        },
+        "PBQ_27": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_27",
+            "@type": "@id"
+        },
+        "PBQ_27A": {
+            "@id": "PregnancyandBirthQuestionnaire:items/PBQ_27A",
+            "@type": "@id"
+        }
+    }
+}

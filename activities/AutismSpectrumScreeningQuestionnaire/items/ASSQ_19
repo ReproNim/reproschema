@@ -1,0 +1,38 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "ASSQ_19",
+    "preamble": "This child stands out as different from other children of his/her age in the following way:",
+    "question": {
+        "en": "is poor at games; no idea of cooperating in a team, scores \"own goals\""
+    },
+    "responseOptions": {
+        "multipleChoice": false,
+        "choices": [
+            {
+                "schema:value": 0,
+                "schema:name": {
+                    "en": "No"
+                }
+            },
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": "Somewhat"
+                }
+            },
+            {
+                "schema:value": 2,
+                "schema:name": {
+                    "en": "Yes"
+                }
+            }
+        ],
+        "type": "Ordinal"
+    },
+    "ui": {
+        "inputType": "radio"
+    }
+}

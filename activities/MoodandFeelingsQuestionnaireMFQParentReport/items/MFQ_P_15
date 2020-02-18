@@ -1,0 +1,38 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "MFQ_P_15",
+    "preamble": "This form is about how your child might have been feeling or acting recently.\nFor each question, please choose how s/he has been feeling or acting in the past two\nweeks. If a sentence was not true about your child, choose NOT TRUE. If a sentence was only sometimes true, choose SOMETIMES. If a sentence was true about your child most of the time, choose TRUE. ",
+    "question": {
+        "en": "S/he thought there was nothing good for him/her in the future."
+    },
+    "responseOptions": {
+        "multipleChoice": false,
+        "choices": [
+            {
+                "schema:value": 0,
+                "schema:name": {
+                    "en": " Not True"
+                }
+            },
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": " Sometimes"
+                }
+            },
+            {
+                "schema:value": 2,
+                "schema:name": {
+                    "en": " True"
+                }
+            }
+        ],
+        "type": "Ordinal"
+    },
+    "ui": {
+        "inputType": "radio"
+    }
+}

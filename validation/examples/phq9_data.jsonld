@@ -1,0 +1,59 @@
+{
+    "@context": {
+        "pav": "http://purl.org/pav/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "reproterms": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/terms/",
+        "reproschema": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/schemas/",
+        "schema": "http://schema.org/",
+        "@language": "en",
+        "description": {
+            "@id": "schema:description",
+            "@container": "@language"
+        },
+        "version": {
+            "@id": "schema:version",
+            "@type": "xsd:string"
+        },
+        "schemaVersion": {
+            "@id": "schema:schemaVersion",
+            "@type": "xsd:string"
+        },
+        "prefLabel": {
+            "@id": "skos:prefLabel",
+            "@container": "@language"
+        },
+        "altLabel": {
+            "@id": "skos:altLabel",
+            "@container": "@language"
+        },
+        "preamble": {
+            "@id": "reproterms:preamble",
+            "@container": "@language"
+        },
+        "scoring_logic": {
+            "@id": "reproterms:scoring_logic",
+            "@container": "@index"
+        }
+    },
+    "@type": "reproschema:Activity",
+    "@id": "https://raw.githubusercontent.com/sanuann/schema-standardization/master/activities/PHQ-9/phq9_schema",
+    "prefLabel": "PHQ-9 Assessment",
+    "altLabel": "phq9_schema",
+    "description": "PHQ-9 assessment schema",
+    "schemaVersion": "0.0.1",
+    "version": 123,
+    "preamble": 123,
+    "scoring_logic": {
+        "variableName": "phq9_total_score",
+        "jsExpression": "phq9_1 + phq9_2 + phq9_3 + phq9_4 + phq9_5 + phq9_6 + phq9_7 + phq9_8 + phq9_9"
+    }
+}
+
+
+
+
+
+
+
+

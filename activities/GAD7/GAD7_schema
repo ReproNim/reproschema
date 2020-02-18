@@ -1,0 +1,33 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/GAD7/GAD7_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "GAD7",
+    "skos:prefLabel": "GAD7 Assessment",
+    "skos:altLabel": "gad7_schema",
+    "schema:description": "GAD7 assessment schema",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "schema:citation": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5542568/",
+    "preamble": "Over the last 2 weeks, how often have you been bothered by the following problems?",
+    "scoringLogic": {
+        "javascript": "gad7_total_score = gad7_1 + gad7_2 + gad7_3 + gad7_4 + gad7_5 + gad7_6 + gad7_7"
+    },
+    "ui": {
+        "order": [
+            "gad7_1",
+            "gad7_2",
+            "gad7_3",
+            "gad7_4",
+            "gad7_5",
+            "gad7_6",
+            "gad7_7"
+        ],
+        "shuffle": false
+    }
+}
+
+
+
+

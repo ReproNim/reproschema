@@ -1,0 +1,56 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "YFAS_25",
+    "preamble": "This survey asks about your eating habits in the past year. People sometimes have difficulty controlling their intake of certain foods such as:\n - Sweets like ice cream, chocolate, doughnuts, cookies, cake, candy, ice cream\n - Starches like white bread, rolls, pasta, and rice\n - Salty snacks like chips, pretzels, and crackers\n - Fatty foods like steak, bacon, hamburgers, cheeseburgers, pizza, and French fries\n - Sugary drinks like soda pop\nWhen the following questions ask about "CERTAIN FOODS" please think of ANY food similar to those listed in the food group or ANY OTHER foods you have had a problem within the past year.",
+    "question": {
+        "en": "How many times in the past year did you try to cut down or stop eating certain foods altogether?"
+    },
+    "responseOptions": {
+        "multipleChoice": false,
+        "choices": [
+            {
+                "schema:value": 0,
+                "schema:name": {
+                    "en": "Never"
+                }
+            },
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": "1 time"
+                }
+            },
+            {
+                "schema:value": 2,
+                "schema:name": {
+                    "en": "2 times"
+                }
+            },
+            {
+                "schema:value": 3,
+                "schema:name": {
+                    "en": "3 times"
+                }
+            },
+            {
+                "schema:value": 4,
+                "schema:name": {
+                    "en": "4 times"
+                }
+            },
+            {
+                "schema:value": 5,
+                "schema:name": {
+                    "en": "5 or more times"
+                }
+            }
+        ],
+        "type": "Ordinal"
+    },
+    "ui": {
+        "inputType": "radio"
+    }
+}

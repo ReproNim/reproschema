@@ -1,0 +1,40 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/VoiceConsent/VoiceConsent_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "quiz_q1",
+    "skos:prefLabel": "Quiz Q1",
+    "skos:altLabel": "quiz_q1",
+    "schema:description": "Quiz Question 1",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "What is the purpose of this study?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "type": "xsd:string",
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "multipleChoice": false,
+        "requiredValue": true,
+        "choices": [{
+            "schema:name": "Understand the changes in Parkinson’s disease symptoms",
+            "schema:value": 1
+        },
+            {
+                "schema:name": "Give medical and treatment advice to people with Parkinson’s disease",
+                "schema:value": 0
+            },
+            {
+                "schema:name": "Diagnose people with Parkinson’s disease",
+                "schema:value": 0
+            }
+        ]
+    }
+}
+
+
+
+

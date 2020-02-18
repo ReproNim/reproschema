@@ -1,0 +1,44 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "BDI2_5",
+    "preamble": "This questionnaire consists of 21 groups of statements. Please read each group of statements carefully, and then pick out the one statement in each group that best describes the way you have been feeling during the past two weeks, including today. If several statements in the group seem to apply equally well, choose the highest number for that group. Be sure that you do not choose more than one statement for any group.",
+    "question": {
+        "en": "Guilty Feelings"
+    },
+    "responseOptions": {
+        "multipleChoice": false,
+        "choices": [
+            {
+                "schema:value": 0,
+                "schema:name": {
+                    "en": "I don't feel particularly guilty"
+                }
+            },
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": "I feel guilty over many things I have done or should have done"
+                }
+            },
+            {
+                "schema:value": 2,
+                "schema:name": {
+                    "en": "I feel quite guilty most of the time"
+                }
+            },
+            {
+                "schema:value": 3,
+                "schema:name": {
+                    "en": "I feel guilty all of the time"
+                }
+            }
+        ],
+        "type": "Ordinal"
+    },
+    "ui": {
+        "inputType": "radio"
+    }
+}

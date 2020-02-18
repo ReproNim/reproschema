@@ -1,0 +1,231 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "pav": "http://purl.org/pav/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "reproterms": "https://raw.githubusercontent.com/ReproNim/reproschema/master/terms/",
+        "reproschema": "https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/",
+        "schema": "http://schema.org/",
+        "@language": "en",
+        "description": {
+            "@id": "schema:description",
+            "@container": "@language"
+        },
+        "name": {
+            "@id": "schema:name",
+            "@container": "@language"
+        },
+        "value": {
+            "@id": "schema:value",
+            "@type": "xsd:integer"
+        },
+        "schema:citation": {
+            "@container": "@language"
+        },
+        "version": {
+            "@id": "schema:version",
+            "@type": "xsd:string"
+        },
+        "schemaVersion": {
+            "@id": "schema:schemaVersion",
+            "@type": "xsd:string"
+        },
+        "prefLabel": {
+            "@id": "skos:prefLabel",
+            "@container": "@language"
+        },
+        "altLabel": {
+            "@id": "skos:altLabel",
+            "@container": "@language"
+        },
+        "preamble": {
+            "@id": "reproterms:preamble",
+            "@container": "@language"
+        },
+        "question": {
+            "@id": "schema:question",
+            "@container": "@language"
+        },
+        "choices": {
+            "@id": "schema:itemListElement",
+            "@container": "@list"
+        },
+        "choiceUrl": {
+            "@id": "schema:DigitalDocument",
+            "@type": "@id"
+        },
+        "requiredValue": {
+            "@id": "reproterms:requiredValue",
+            "@type": "schema:Boolean"
+        },
+        "multipleChoice": {
+            "@id": "reproterms:multipleChoice",
+            "@type": "schema:Boolean"
+        },
+        "responseOptions": {
+            "@id": "reproterms:valueconstraints",
+            "@type": "@vocab"
+        },
+        "dataType": {
+            "@id": "schema:DataType",
+            "@type": "@id"
+        },
+        "minValue": {
+            "@id": "schema:minValue",
+            "@type": "schema:Number"
+        },
+        "maxValue": {
+            "@id": "schema:maxValue",
+            "@type": "schema:Number"
+        },
+        "ui" : "@nest",
+        "order": {
+            "@id": "reproterms:order",
+            "@container": "@list",
+            "@type": "@vocab",
+            "@nest": "ui"
+        },
+        "shuffle": {
+            "@id": "reproterms:shuffle",
+            "@type": "schema:Boolean",
+            "@nest": "ui"
+        },
+        "activity_display_name": {
+            "@id": "reproterms:activity_display_name",
+            "@type": "schema:alternateName",
+            "@nest": "ui"
+        },
+        "inputOptions": {
+            "@id": "reproterms:inputs",
+            "@container": "@index",
+            "@nest": "ui"
+        },
+        "inputType": {
+            "@id": "reproterms:inputType",
+            "@type": "xsd:string",
+            "@nest": "ui"
+        },
+        "readOnly": {
+            "@id": "reproterms:readOnly",
+            "@type": "xsd:boolean",
+            "@nest": "ui"
+        },
+        "headerLevel": {
+            "@id": "reproterms:headerLevel",
+            "@type": "xsd:int",
+            "@nest": "ui"
+        },
+        "headers": {
+            "@id": "reproterms:tableheaders",
+            "@container": "@list",
+            "@nest": "ui"
+        },
+        "rows": {
+            "@id": "reproterms:tablerows",
+            "@container": "@list",
+            "@type": "@vocab",
+            "@nest": "ui"
+        },
+        "branchLogic": {
+            "@id": "reproterms:branchLogic",
+            "@container": "@index"
+        },
+        "scoringLogic": {
+            "@id": "reproterms:scoringLogic",
+            "@container": "@index"
+        },
+        "scoring_logic": {
+            "@id": "reproterms:scoring_logic",
+            "@container": "@index"
+        },
+        "visibility": {
+            "@id": "reproterms:visibility",
+            "@container": "@index",
+            "@nest": "ui"
+        },
+        "vis": {
+            "@id": "reproterms:visibility",
+            "@container": "@index",
+            "@nest": "ui"
+        },
+        "required": {
+            "@id": "reproterms:required",
+            "@container": "@index",
+            "@nest": "ui"
+        },
+        "variableMap": {
+            "@id": "reproterms:variableMap",
+            "@container": "@index"
+        },
+        "variableName": "reproterms:variableName",
+        "isAbout": {
+            "@id": "reproterms:isAbout",
+            "@type": "@vocab"
+        },
+        "allow": {
+            "@id": "reproterms:allow",
+            "@container": "@list",
+            "@type": "@vocab",
+            "@nest": "ui"
+        },
+        "addAllow": {
+            "@id": "reproterms:addAllow",
+            "@container": "@index",
+            "@nest": "ui"
+        },
+        "skipped": "reproterms:refused_to_answer",
+        "dontKnow": "reproterms:dont_know_answer",
+        "timedOut": "reproterms:timed_out",
+        "fullScreen": "reproterms:full_screen",
+        "autoAdvance": "reproterms:auto_advance",
+        "disableBack": "reproterms:disable_back",
+        "allowExport": "reproterms:allow_export",
+        "media": "reproterms:media",
+        "timer": {
+            "@id": "reproterms:timer",
+            "@type": "@id",
+            "@nest": "ui"
+        },
+        "delay": {
+            "@id": "reproterms:delay",
+            "@type": "@id",
+            "@nest": "ui"
+        },
+        "method": "schema:httpMethod",
+        "url": "schema:url",
+        "payload": "reproterms:payload",
+        "importedFrom": {
+            "@id": "pav:importedFrom",
+            "@type": "@id"
+        },
+        "importedBy": {
+            "@id": "pav:importedBy",
+            "@type": "@id"
+        },
+        "createdWith": {
+            "@id": "pav:createdWith",
+            "@type": "@id"
+        },
+        "createdBy": {
+            "@id": "pav:createdBy",
+            "@type": "@id"
+        },
+        "createdOn": {
+            "@id": "pav:createdOn",
+            "@type": "@id"
+        },
+        "previousVersion": {
+            "@id": "pav:previousVersion",
+            "@type": "@id"
+        },
+        "lastUpdateOn": {
+            "@id": "pav:lastUpdateOn",
+            "@type": "@id"
+        },
+        "derivedFrom": {
+            "@id": "pav:derivedFrom",
+            "@type": "@id"
+        }
+    }
+}

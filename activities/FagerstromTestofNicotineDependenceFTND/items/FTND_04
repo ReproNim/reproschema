@@ -1,0 +1,31 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "FTND_04",
+    "question": {
+        "en": "Do you find it difficult to refrain from smoking in the places where it is forbidden (e.g. in church, at the library, in cinema)?"
+    },
+    "responseOptions": {
+        "multipleChoice": false,
+        "choices": [
+            {
+                "schema:value": 0,
+                "schema:name": {
+                    "en": " No"
+                }
+            },
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": " Yes"
+                }
+            }
+        ],
+        "type": "Nominal"
+    },
+    "ui": {
+        "inputType": "radio"
+    }
+}

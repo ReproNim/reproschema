@@ -1,0 +1,25 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/ThankYou/ThankYou_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "ThankYou",
+    "skos:prefLabel": "Thank You Page",
+    "skos:altLabel": "thankyou_schema",
+    "schema:description": "ThankYou page schema",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "variableMap": [
+        {"variableName": "saveData", "isAbout": "saveData"}
+    ],
+    "ui": {
+        "order": [
+            "saveData"
+        ],
+        "shuffle": false,
+        "visibility": {
+            "saveData": true
+        }
+    }
+}
+

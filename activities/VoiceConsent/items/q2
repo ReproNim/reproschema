@@ -1,0 +1,40 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/VoiceConsent/VoiceConsent_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "quiz_q2",
+    "skos:prefLabel": "Quiz Q2",
+    "skos:altLabel": "quiz_q2",
+    "schema:description": "Quiz Question 2",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "What will be used to identify my study data?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "type": "xsd:string",
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "multipleChoice": false,
+        "requiredValue": true,
+        "choices": [{
+            "schema:name": "My full name",
+            "schema:value": 0
+        },
+            {
+                "schema:name": "My house address",
+                "schema:value": 0
+            },
+            {
+                "schema:name": "My Global Unique Identifier (GUID)",
+                "schema:value": 1
+            }
+        ]
+    }
+}
+
+
+
+

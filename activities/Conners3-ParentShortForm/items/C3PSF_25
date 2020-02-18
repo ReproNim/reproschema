@@ -1,0 +1,56 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "C3PSF_25",
+    "preamble": "Here are some things parents might say about their children. Please tell us about your child and what he/she has been like in the past month. Read each item carefully, then mark how well it describes your child or how frequently it has happened in the past month.\nFor items that you find difficult to answer, please give your best guess.",
+    "question": {
+        "en": "Is angry and resentful"
+    },
+    "responseOptions": {
+        "multipleChoice": false,
+        "choices": [
+            {
+                "schema:value": 0,
+                "schema:name": {
+                    "en": "Not true at all (Never"
+                }
+            },
+            {
+                "schema:value": null,
+                "schema:name": {}
+            },
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": "Just a little true (Occasionally)"
+                }
+            },
+            {
+                "schema:value": 2,
+                "schema:name": {
+                    "en": "Pretty much true (Often"
+                }
+            },
+            {
+                "schema:value": null,
+                "schema:name": {}
+            },
+            {
+                "schema:value": 3,
+                "schema:name": {
+                    "en": "Very much true (Very often"
+                }
+            },
+            {
+                "schema:value": null,
+                "schema:name": {}
+            }
+        ],
+        "type": "Ordinal"
+    },
+    "ui": {
+        "inputType": "radio"
+    }
+}

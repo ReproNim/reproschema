@@ -1,0 +1,24 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/NDA/nda_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "birthDocument",
+    "skos:prefLabel": "Proof of city of birth",
+    "skos:altLabel": "birthPlace",
+    "schema:description": "schema for proof of birth place of participant",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Upload copy of birth certificate",
+    "ui": {
+        "inputType": "documentUpload"
+    },
+    "responseOptions": {
+        "requiredValue": false,
+        "type": "schema:DigitalDocument"
+    }
+}
+
+
+

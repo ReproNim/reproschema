@@ -1,0 +1,43 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "BAI_22",
+    "question": {
+        "en": "Hot/cold sweats"
+    },
+    "responseOptions": {
+        "multipleChoice": false,
+        "choices": [
+            {
+                "schema:value": 0,
+                "schema:name": {
+                    "en": "Not at all"
+                }
+            },
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": "Mildly but it didn't bother me"
+                }
+            },
+            {
+                "schema:value": 2,
+                "schema:name": {
+                    "en": "Moderately-it wasn't pleasant at all times"
+                }
+            },
+            {
+                "schema:value": 3,
+                "schema:name": {
+                    "en": "Severely-it bothered me a lot"
+                }
+            }
+        ],
+        "type": "Ordinal"
+    },
+    "ui": {
+        "inputType": "radio"
+    }
+}

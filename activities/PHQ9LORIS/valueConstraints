@@ -1,0 +1,28 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/PHQ-9/phq9_context"
+    ],
+    "@id": "valueConstraints",
+    "dataType": "xsd:integer",
+    "minValue": 0,
+    "maxValue": 3,
+    "multipleChoice": false,
+    "requiredValue": true,
+    "choices": [{
+        "name": "Not at all",
+        "value": 0
+    },
+    {
+        "name": "Several days",
+        "value": 1
+    },
+    {
+        "name": "More than half the days",
+        "value": 2
+    },
+    {
+        "name": "Nearly everyday",
+        "value": 3
+    }
+    ]
+}

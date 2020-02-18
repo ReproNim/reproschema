@@ -1,0 +1,18 @@
+{
+    "@context": {
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "schema": "http://schema.org/",
+        "reproschema": "https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/"
+    },
+    "@id": "multipleChoice",
+    "@type": "rdf:property",
+    "rdfs:comment": "Indicates (by boolean) if a radio item of an assessment has one or more options as its answer",
+    "rdfs:label": "multiple choice",
+    "schema:domainIncludes": {
+        "@id": "reproschema:Field"
+    },
+    "schema:rangeIncludes": {
+        "@id": "schema:boolean"
+    }
+}

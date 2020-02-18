@@ -1,0 +1,21 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/VoiceScreening/VoiceScreening_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "audio_check_schema",
+    "skos:prefLabel": "audio check",
+    "skos:altLabel": "audio_check",
+    "schema:description": "Audio check for participant",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "order": [
+            "auto_record",
+            "audio_eligibility"
+        ],
+        "inputType": "multipart",
+        "shuffle": false,
+        "allow": ["skipped"]
+    }
+}

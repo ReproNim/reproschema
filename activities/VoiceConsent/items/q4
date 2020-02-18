@@ -1,0 +1,40 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/VoiceConsent/VoiceConsent_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "quiz_q4",
+    "skos:prefLabel": "Quiz Q4",
+    "skos:altLabel": "quiz_q4",
+    "schema:description": "Quiz Question 4",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Are there risks of participating in this study?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "type": "xsd:string",
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "multipleChoice": false,
+        "requiredValue": true,
+        "choices": [{
+            "schema:name": "There is no risk of participating in this research study",
+            "schema:value": 0
+        },
+            {
+                "schema:name": "There is a risk that my regular doctor won’t be allowed to care for me any longer",
+                "schema:value": 0
+            },
+            {
+                "schema:name": "Some activities may be tiring and seeing my data may be stressful",
+                "schema:value": 1
+            }
+        ]
+    }
+}
+
+
+
+

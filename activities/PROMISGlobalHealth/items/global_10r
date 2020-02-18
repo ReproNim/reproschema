@@ -1,0 +1,42 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/PROMISGlobalHealth/PROMISGlobalHealth_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "g_10r",
+    "skos:prefLabel": "Q10r of PROMIS Global Health Survey",
+    "skos:altLabel": "g_10r",
+    "schema:description": "Q10r of the PROMIS Global Health survey",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "In the past 7 days, how often have you been bothered by emotional problems such as feeling anxious, depressed or irritable?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "type": "xsd:string",
+        "multipleChoice": false,
+        "requiredValue": false,
+        "choices": [{
+            "schema:name": "Never",
+            "schema:value": 5
+        },
+            {
+                "schema:name": "Rarely",
+                "schema:value": 4
+            },
+            {
+                "schema:name": "Sometimes",
+                "schema:value": 3
+            },
+            {
+                "schema:name": "Often",
+                "schema:value": 2
+            },
+            {
+                "schema:name": "Always",
+                "schema:value": 1
+            }
+        ]
+    }
+}

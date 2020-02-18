@@ -1,0 +1,24 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/PHQ9LORIS/PHQ9LORIS_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "phq9_total_score",
+    "prefLabel": "Score of PHQ-9 Questionnaire",
+    "altLabel": "phq9_total_score",
+    "description": "schema for total score of the PHQ-9 Assessment",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
+    "question": "Total Score",
+    "ui": {
+        "inputType": "static_score",
+        "readonly": true,
+        "hidden": true
+    },
+    "responseOptions": {
+        "dataType": "xsd:integer",
+        "requiredValue": false,
+        "minValue": 0,
+        "maxValue": 27
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "C-SSRS_31",
+    "question": {
+        "en": "Potential Lethality - Most Lethal Attempt(CSSRS1_045) One Answer if actual Lethality = 0. Enter date under \"Specify Detail\""
+    },
+    "responseOptions": {
+        "multipleChoice": false,
+        "choices": [
+            {
+                "schema:value": 0,
+                "schema:name": {
+                    "en": " Behavior not likely to result in injury"
+                }
+            },
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": " Behavior likely to result in injury but not likely to cause death"
+                }
+            },
+            {
+                "schema:value": 2,
+                "schema:name": {
+                    "en": " Behavior likely to result in death despite available medical care"
+                }
+            },
+            {
+                "schema:value": 3,
+                "schema:name": {
+                    "en": " N/A"
+                }
+            }
+        ],
+        "type": "Ordinal"
+    },
+    "ui": {
+        "inputType": "radio"
+    }
+}

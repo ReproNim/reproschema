@@ -1,0 +1,50 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "AUDIT_03",
+    "preamble": "Please circle the answer that is correct for you.",
+    "question": {
+        "en": "3. How often do you have six or more drinks on one occassion?"
+    },
+    "responseOptions": {
+        "multipleChoice": false,
+        "choices": [
+            {
+                "schema:value": 0,
+                "schema:name": {
+                    "en": "Never"
+                }
+            },
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": "Less than Monthly"
+                }
+            },
+            {
+                "schema:value": 2,
+                "schema:name": {
+                    "en": "Monthly"
+                }
+            },
+            {
+                "schema:value": 3,
+                "schema:name": {
+                    "en": "Weekly"
+                }
+            },
+            {
+                "schema:value": 4,
+                "schema:name": {
+                    "en": "Daily or Almost Daily"
+                }
+            }
+        ],
+        "type": "Ordinal"
+    },
+    "ui": {
+        "inputType": "radio"
+    }
+}

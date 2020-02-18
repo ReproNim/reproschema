@@ -1,0 +1,37 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "CBCL_83",
+    "preamble": "Below is a list of items that describe children and youths. For each item that describes your child now or within the past 6 months, please select the 2 if the item is very true of your child. Select the 1 if the item is somewhat or sometimes true of your child. If the item is not true of your child, select the 0. Please answer all items as well as you can, even if some don't seem to apply to your child. ",
+    "question": {
+        "en": "83. Stores up too many things he/she doesn't need (describe):"
+    },
+    "ui": {
+        "inputType": "single choice, text entry"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:value": 0,
+                "schema:name": {
+                    "en": "Not true"
+                }
+            },
+            {
+                "schema:value": 1,
+                "schema:name": {
+                    "en": "Somewhat or sometimes true"
+                }
+            },
+            {
+                "schema:value": 2,
+                "schema:name": {
+                    "en": "Very true or often true"
+                }
+            }
+        ],
+        "type": "Ordinal"
+    }
+}

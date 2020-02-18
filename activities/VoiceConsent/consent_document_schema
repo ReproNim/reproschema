@@ -1,0 +1,56 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/VoiceConsent/VoiceConsent_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "consent_document_schema",
+    "skos:prefLabel": "Voice Consent",
+    "skos:altLabel": "consent_document_schema",
+    "schema:description": "Consent Content for voice study",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "variableMap": [
+        {"variableName": "what_is_involved", "isAbout": "what_is_involved"},
+        {"variableName": "data_col_storage_and_privacy", "isAbout": "data_col_storage_and_privacy"},
+        {"variableName": "data_use_and_trends", "isAbout": "data_use_and_trends"},
+        {"variableName": "sharing_for_future_use", "isAbout": "sharing_for_future_use"},
+        {"variableName": "potential_risks", "isAbout": "potential_risks"},
+        {"variableName": "potential_benefits", "isAbout": "potential_benefits"},
+        {"variableName": "not_medical_care", "isAbout": "not_medical_care"},
+        {"variableName": "issues_to_consider", "isAbout": "issues_to_consider"},
+        {"variableName": "leaving_the_study", "isAbout": "leaving_the_study"},
+        {"variableName": "contact", "isAbout": "contact"}
+    ],
+    "ui": {
+        "order": [
+            "what_is_involved",
+            "data_collection",
+            "trends",
+            "sharing",
+            "risks",
+            "benefits",
+            "not_medical",
+            "issues",
+            "leaving",
+            "contact"
+        ],
+        "inputType": "consent",
+        "shuffle": false,
+        "visibility": {
+            "what_is_involved":  true,
+            "data_col_storage_and_privacy": true,
+            "data_use_and_trends": true,
+            "sharing_for_future_use": true,
+            "potential_risks": true,
+            "potential_benefits": true,
+            "not_medical_care": true,
+            "issues_to_consider": true,
+            "leaving_the_study": true,
+            "contact": true
+        }
+    }
+}
+
+
+
+

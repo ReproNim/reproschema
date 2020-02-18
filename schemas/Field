@@ -1,0 +1,152 @@
+{
+    "@context": {
+        "dct": "http://purl.org/dc/terms/",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfa": "http://www.w3.org/ns/rdfa#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "schema": "http://schema.org/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "reproterms": "https://raw.githubusercontent.com/ReproNim/reproschema/master/terms/",
+        "reproschema": "https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/"
+    },
+    "@graph": [
+        {
+            "@id": "skos:prefLabel",
+            "@type": "rdf:Property",
+            "rdfs:comment": "The long name of the instrument or item.",
+            "rdfs:label": "prefLabel",
+            "schema:domainIncludes": {
+                "@id": ""
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:Text"
+            },
+            "schema:sameAs": {
+                "@id": "http://www.w3.org/2004/02/skos/core#prefLabel"
+            }
+        },
+        {
+            "@id": "skos:altLabel",
+            "@type": "rdf:Property",
+            "rdfs:comment": "The short name of the instrument or item.",
+            "rdfs:label": "altLabel",
+            "schema:domainIncludes": {
+                "@id": ""
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:Text"
+            },
+            "schema:sameAs": {
+                "@id": "http://www.w3.org/2004/02/skos/core#altLabel"
+            }
+        },
+        {
+            "@id": "schema:description",
+            "@type": "rdf:Property",
+            "owl:equivalentProperty": {
+                "@id": "dct:description"
+            },
+            "rdfs:comment": "A description of the item.",
+            "rdfs:label": "description",
+            "schema:domainIncludes": {
+                "@id": "schema:Thing"
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:Text"
+            },
+            "schema:sameAs": {
+                "@id": "https://schema.org/description"
+            }
+        },
+        {
+            "@id": "schema:schemaVersion",
+            "@type": "rdf:Property",
+            "rdfs:comment": "Indicates (by URL or string) a particular version of a schema.",
+            "rdfs:label": "schemaVersion",
+            "schema:domainIncludes": {
+                "@id": ""
+            },
+            "schema:rangeIncludes": [
+                {
+                    "@id": "schema:Text"
+                },
+                {
+                    "@id": "schema:URL"
+                }
+            ],
+            "schema:sameAs": {
+                "@id": "https://schema.org/schemaVersion"
+            }
+        },
+        {
+            "@id": "schema:version",
+            "@type": "rdf:Property",
+            "rdfs:comment": "Indicates (by URL or string) a particular version of an instrument.",
+            "rdfs:label": "version",
+            "schema:domainIncludes": {
+                "@id": ""
+            },
+            "schema:rangeIncludes": [
+                {
+                    "@id": "schema:Text"
+                },
+                {
+                    "@id": "schema:URL"
+                }
+            ],
+            "schema:sameAs": {
+                "@id": "https://schema.org/version"
+            }
+        },
+        {
+            "@id": "schema:question",
+            "@type": "rdf:Property",
+            "rdfs:comment": "The text displayed for the item.",
+            "rdfs:label": "question",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Field"
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:Text"
+            },
+            "schema:sameAs": {
+                "@id": "https://schema.org/question"
+            }
+        },
+        {
+            "@id": "reproterms:ui",
+            "@type": "rdf:Property",
+            "rdfs:comment": "An element to describe the ui of a Field.",
+            "rdfs:label": "ui",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Field"
+            },
+            "schema:rangeIncludes": {
+                "@id": "reproterms:order"
+            },
+            "schema:sameAs": {
+                "@id": "reproterms:ui"
+            }
+        },
+        {
+            "@id": "reproterms:inputType",
+            "@type": "rdf:Property",
+            "rdfs:comment": "An element to describe the input type of the Field item.",
+            "rdfs:label": "inputType",
+            "rdfs:subPropertyOf": {
+                "@id": "reproterms:ui"
+            },
+            "schema:domainIncludes": {
+                "@id": "reproschema:Field"
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:text"
+            },
+            "schema:sameAs": {
+                "@id": "reproterms:inputType"
+            }
+        }
+    ]
+}
