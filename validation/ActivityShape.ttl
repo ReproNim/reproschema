@@ -91,9 +91,26 @@ reproterms:VisibilityShape
     ] ;
     sh:property [
         sh:path reproterms:isVis ;
-        sh:or ( [ sh:datatype rdf:langString ] [ sh:datatype xsd:boolean ] ) ;
+        sh:or ( [ sh:datatype rdf:langString ] [ sh:datatype xsd:boolean ] [
+        sh:node reproterms:IsVisShape ]) ;
     ] .
 
+reproterms:IsVisShape
+    a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [
+        sh:path schema:method ;
+        sh:datatype rdf:langString ;
+    ] ;
+    sh:property [
+        sh:path schema:url ;
+        sh:datatype rdf:langString ;
+    ] ;
+    sh:property [
+        sh:path reproterms:payload ;
+        sh:datatype rdf:langString ;
+    ] .
 
 reproterms:VariableMapShape
     a sh:NodeShape ;
