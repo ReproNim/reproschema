@@ -1,0 +1,61 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/TokenActivity/TokenActivity_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "token_screen",
+    "skos:prefLabel": "Q1 of TokenActivity Questionnaire",
+    "skos:altLabel": "token_screen",
+    "schema:description": "Q1 of the TokenActivity Assessment",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": {
+        "en": "Token Screen"
+    },
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "type": "xsd:integer",
+        "schema:minValue": 0,
+        "schema:maxValue": 5,
+        "multipleChoice": true,
+        "requiredValue": false,
+        "choices": [{
+            "name": {
+                "en": "Paid attention"
+            },
+            "value": 0
+        },
+        {
+            "name": {
+                "en": "Cleaned up room"
+            },
+            "value": 1
+        },
+        {
+            "name": {
+                "en": "Brushed teeth"
+            },
+            "value": 2
+        },
+        {
+            "name": {
+                "en": "Lied difficult"
+            },
+            "value": 3
+        },
+        {
+            "name": {
+                "en": "Showed aggression"
+            },
+            "value": 4
+        },
+        {
+            "name": {
+                "en": "Used foul language"
+            },
+            "value": 5
+        }]
+    }
+}
