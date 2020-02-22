@@ -1,7 +1,6 @@
 {
     "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent
-        .com/ReproNim/reproschema/master/protocols/VoicePilot/Malargue_context"
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/protocols/Malargue/Malargue_context"
     ],
     "@type": "reproschema:ActivitySet",
     "@id": "Malargue",
@@ -21,9 +20,9 @@
             "GAD7_schema"
         ],
         "shuffle": false,
-        "DisplayNameMap": [
-            {"variableName": "phq9_schema", "activityName": "Screening"},
-            {"variableName": "GAD7_schema", "activityName": "Anxiety"}
+        "displayNameMap": [
+            {"isAbout": "phq9_schema", "alternateName": "Screening"},
+            {"isAbout": "GAD7_schema", "alternateName": "Anxiety"}
         ],
         "visibility":{
             "phq9_schema":true,
