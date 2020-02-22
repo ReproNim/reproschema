@@ -1,93 +1,37 @@
-# from rdflib import Graph, plugin
-# from rdflib.serializer import Serializer
-#
-# testrdf = '''
-# @prefix dc: <http://purl.org/dc/terms/> .
-# <http://example.org/about>
-# dc:title "Someone's Homepage"@en .
-# '''
-#
-# testjson = '''{
-#     "@context": {
-#         "@language": "en",
-#         "@vocab": "http://purl.org/dc/terms/"
-#     },
-#     "@id": "http://example.org/about",
-#     "title": "Someone's Homepage"
-# }'''
-# g = Graph().parse(data=testjson, format='json-ld')
-#
-# print(g.serialize(format='n3'))
-
-
 from pyld import jsonld
-import json
-
-# read file
-# with open('../activities/PHQ-9/phq9_schema', 'r') as myfile:
-#     data=myfile.read()
-
 from urllib.request import urlopen
 import json
+import os
 
 url = 'https://raw.githubusercontent.com/sanuann/reproschema/master/activities/PHQ-9/phq9_schema'
 data = json.loads(urlopen(url).read().decode("utf-8"))
 
-doc2 = {
-    "@context": {
-        "day" : {
-          "@id" : "test:day"
-        },
-        "month" : {
-          "@id" : "test:month"
-        },
-        "myList" : {
-          "@id" : "test:myList"
-        },
-        "year" : {
-          "@id" : "test:year"
-        },
-        "schema" : "http://schema.org/",
-        "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "xsd" : "http://www.w3.org/2001/XMLSchema#",
-        "test" : "http://www.test.com/ns#",
-        "reproterms": "https://raw.githubusercontent.com/ReproNim/reproschema/master/terms/>",
-        "isAbout": {
-            "@id": "reproterms:isAbout",
-            "@type": "@vocab"
-        },
-      },
+# for root, dirs, files in os.walk('./activities/PHQ-9', topdown=True):
+#     for name in files:
+#         if name.endswith('_schema'):
+#             file_path = os.path.join(root, name)
+#             with open(file_path) as json_file:
+#                 try:
+#                     print(11, json.loads(file_path))
+#                 except ValueError as e:
+#                     print ("File '%s' has JSON validation errors. %s" %(file_path, e))
+#                     raise
 
-    "@id": "test:MyNode",
-    "@type": "test:MyTargetClass",
-    "myList": [
-      {
-        "year": "2019",
-        "month": "October",
-        "day": "29"
-      },
-      {
-        "year": "2018",
-        "month": "January",
-        "day": "17"
-      }
-    ]
-}
-
-doc = {
-    "@context": [
-    "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-    "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/PHQ-9/phq9_context"
-    ],
-    "@type": "reproschema:Activity",
-    "@id": "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/PHQ-9/phq9_schema",
-    "variableMap": [
-        {
-        "variableName": "phq9_1",
-        "isAbout": "phq9_1"
-        }
-    ]
-}
+for root, dirs, files in os.walk('./activities/PHQ-9', topdown=True):
+    for name in files:
+        # files without extension or with .jsonld extn
+        if name.endswith('_schema'):
+            # print(18, '--- ', name)
+            full_file_name = os.path.join(root, name)
+            with open(full_file_name) as json_file:
+                try:
+                    #print(25, json_file.read())
+                    #d = json.dumps(json_file)
+                    data = json.load(json_file)
+                    # read_json_files.append(files)
+                except ValueError as e:
+                    print ("File '%s' has JSON validation errors. %s" %(full_file_name, e))
+                    raise
 
 # exp = jsonld.expand(doc)
 normalized = jsonld.normalize(
