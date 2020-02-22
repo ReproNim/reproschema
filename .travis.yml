@@ -7,5 +7,10 @@ matrix:
       dist: xenial
       sudo: true
 
+install:
+  - pip3 install pyshacl
+
 script:
   - python ./validation/jsonParser.py
+  - python ./validation/test1.py > test1.ttl
+  - pyshacl -s validation/ActivityShape.ttl -m -i rdfs -a -f human test1.ttl
