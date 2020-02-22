@@ -19,6 +19,7 @@ for root, dirs, files in os.walk('./activities/PHQ-9', topdown=True):
                     # read_json_files.append(files)
                 except ValueError as e:
                     print ("File '%s' has JSON validation errors. %s" %(full_file_name, e))
+                    raise
                     # invalid_json_files.append(files)
 
 # print(invalid_json_files, len(read_json_files))
