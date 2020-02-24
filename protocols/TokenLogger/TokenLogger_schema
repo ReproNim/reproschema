@@ -6,7 +6,7 @@
     "@id": "TokenLogger_schema",
     "skos:prefLabel": "TokenLogger Protocol",
     "skos:altLabel": "tokenlogger",
-    "schema:description": "protocol for UW MIT Voice Pilot Protocol",
+    "schema:description": "protocol for TokenLogger",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
     "schema:image": "https://raw.githubusercontent.com/ReproNim/reproschema/master/protocols/TokenLogger/mit_voice_pilot_applet_image.svg?sanitize=true",
@@ -21,9 +21,8 @@
         "displayNameMap": [
             {"isAbout": "TokenActivity_schema", "alternateName": "TokenActivity"}
         ],
-        "visibility":{
-            "TokenActivity_schema":true
-        },
-        "allow": ["autoAdvance", "disableBack"]
+        "visibility":[
+            {"variableName": "TokenActivity_schema", "isVis": true},
+        ]
     }
 }
