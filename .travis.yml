@@ -1,0 +1,18 @@
+language: python
+python:
+  - 3.6
+matrix:
+  include:
+    - python: 3.7
+      dist: xenial
+      sudo: true
+
+install:
+  - pip3 install pyshacl
+  - pip install PyLD
+  - pip install requests
+
+script:
+  - python ./validation/jsonParser.py
+  - python ./validation/test1.py > test1.ttl
+  - pyshacl -s validation/ActivityShape.ttl -m -i rdfs -a -f human test1.ttl
