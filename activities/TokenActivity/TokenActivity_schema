@@ -6,22 +6,15 @@
         }
     ],
     "@type": "reproschema:Activity",
-    "@id": "phq9_schema",
+    "@id": "TokenActivity_schema",
     "skos:prefLabel": "TokenActivity Assessment",
-    "skos:altLabel": "phq9_schema",
+    "skos:altLabel": "TokenActivity_schema",
     "schema:description": "TokenActivity assessment schema",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
-    "schema:citation": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1495268/",
     "preamble": {
         "en": "Instructions goes here .."
 
-    },
-    "scoring_logic": [
-        {"variableName": "phq9_total_score", "jsExpression": "phq9_1 + phq9_2 + phq9_3 + phq9_4 + phq9_5 + phq9_6 + phq9_7 + phq9_8 + phq9_9"}
-    ],
-    "scoringLogic": {
-        "phq9_total_score": "[phq9_1] + [phq9_2] + [phq9_3] + [phq9_4] + [phq9_5] + [phq9_6] + [phq9_7] + [phq9_8] + [phq9_9]"
     },
     "variableMap": [
         {"variableName": "token_screen", "isAbout": "token_screen"}
@@ -31,10 +24,7 @@
             "token_screen"
         ],
         "shuffle": false,
-        "visibility": {
-            "token_screen": true
-        },
-        "vis": [
+        "visibility": [
             {"variableName": "token_screen", "isVis": true}
         ]
 
