@@ -36,17 +36,17 @@
             "feedback_brief"
         ],
         "shuffle": true,
-        "visibility": {
-            "say_ah": true,
-            "pataka": true,
-            "guided_speech": true,
-            "free_speech": true,
-            "rainbow_passage": true,
-            "multipart_voice": true,
-            "feedback_question": true,
-            "feedback_yes": "feedback_question === 1",
-            "feedback_brief": "feedback_question === 1 && feedback_yes !== 7"
-        }
+        "visibility": [
+            {"variableName": "say_ah", "isVis": true},
+            {"variableName": "pataka", "isVis": true},
+            {"variableName": "guided_speech", "isVis": true},
+            {"variableName": "free_speech", "isVis": true},
+            {"variableName": "rainbow_passage", "isVis": true},
+            {"variableName": "multipart_voice", "isVis": true},
+            {"variableName": "feedback_question", "isVis": true},
+            {"variableName": "feedback_yes", "isVis": "feedback_question === 1"},
+            {"variableName": "feedback_brief", "isVis": "feedback_question === 1 && feedback_yes !== 7"}
+        ]
     }
 }
 

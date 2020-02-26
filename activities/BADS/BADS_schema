@@ -11,9 +11,19 @@
     "schema:version": "0.0.1",
     "schema:citation": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5619563/",
     "preamble": "Please read each statement carefully and then select the number which best describes how much the statement was true for you DURING THE PAST WEEK, INCLUDING TODAY",
-    "scoringLogic": {
-        "javascript": "bads_total_score = bads_1 + bads_2 + bads_3 + bads_4 + bads_5 + bads_6 + bads_7 + bads_8 + bads_9"
-    },
+    "scoringLogic": [
+        {"variableName": "bads_total_score", "jsExpression": "bads_1 + bads_2 + bads_3 + bads_4 + bads_5 + bads_6 + bads_7 + bads_8 + bads_9"}
+    ],
+    "variableMap": [
+        {"variableName": "bads_1", "isAbout": "bads_1"},
+        {"variableName": "bads_2", "isAbout": "bads_2"},
+        {"variableName": "bads_3", "isAbout": "bads_3"},
+        {"variableName": "bads_4", "isAbout": "bads_4"},
+        {"variableName": "bads_5", "isAbout": "bads_5"},
+        {"variableName": "bads_6", "isAbout": "bads_6"},
+        {"variableName": "bads_7", "isAbout": "bads_7"},
+        {"variableName": "bads_total_score", "isAbout": "bads_total_score"}
+    ],
     "ui": {
         "order": [
             "bads_1",

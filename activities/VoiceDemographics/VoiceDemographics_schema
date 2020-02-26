@@ -30,15 +30,15 @@
             "fluentLanguages"
         ],
         "shuffle": false,
-        "visibility": {
-            "yearOfBirth":  true,
-            "raceEthnicity": true,
-            "countryOfBirth": true,
-            "stateOfBirth": "countryOfBirth == 'United States'",
-            "stateOfResidence": true,
-            "knownLanguages": true,
-            "fluentLanguages": true
-        },
+        "visibility": [
+            {"variableName": "yearOfBirth", "isVis": true},
+            {"variableName": "raceEthnicity", "isVis": true},
+            {"variableName": "countryOfBirth", "isVis": true},
+            {"variableName": "stateOfBirth", "isVis": "countryOfBirth == 'United States'"},
+            {"variableName": "stateOfResidence", "isVis": true},
+            {"variableName": "knownLanguages", "isVis": true},
+            {"variableName": "fluentLanguages", "isVis": true},
+        ],
         "allow": ["skipped"]
     }
 }
