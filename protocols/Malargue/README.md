@@ -1,4 +1,4 @@
-<h2 align="center">Welcome to Voice Study</h2>
+<h2 align="center">Welcome to Malargue study</h2>
 
 <p align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu sagittis leo,
 sit amet consectetur mi. Donec volutpat rutrum massa et luctus.
