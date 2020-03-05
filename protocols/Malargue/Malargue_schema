@@ -3,10 +3,10 @@
         "https://raw.githubusercontent.com/ReproNim/reproschema/master/protocols/Malargue/Malargue_context"
     ],
     "@type": "reproschema:ActivitySet",
-    "@id": "Malargue",
-    "skos:prefLabel": "Voice Pilot Protocol Activity set",
-    "skos:altLabel": "voice_pilot",
-    "schema:description": "activity set for UW MIT Voice Pilot Protocol",
+    "@id": "Malargue_schema",
+    "skos:prefLabel": "Malargue Protocol",
+    "skos:altLabel": "malargue",
+    "schema:description": "activity set for Malargue Protocol",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
     "schema:image": "https://raw.githubusercontent.com/ReproNim/reproschema/master/protocols/VoicePilot/mit_voice_pilot_applet_image.svg?sanitize=true",
@@ -24,10 +24,9 @@
             {"isAbout": "phq9_schema", "alternateName": "Screening"},
             {"isAbout": "GAD7_schema", "alternateName": "Anxiety"}
         ],
-        "visibility":{
-            "phq9_schema":true,
-            "GAD7_schema":true
-        },
-        "allow": ["autoAdvance", "disableBack"]
+        "visibility": [
+            {"variableName": "phq9_schema", "isVis": true},
+            {"variableName": "GAD7_schema", "isVis": true}
+        ]
     }
 }
