@@ -4,16 +4,16 @@
         "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/VoiceTask/VoiceTask_context"
     ],
     "@type": "reproschema:Field",
-    "@id": "free_speech_sad",
-    "skos:prefLabel": " Sad Free speech",
-    "skos:altLabel": "sad free speech",
-    "schema:description": "sad free speech item for voice task",
+    "@id": "free_speech",
+    "skos:prefLabel": "Free speech",
+    "skos:altLabel": "free speech",
+    "schema:description": "free speech item for voice task",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
     "question": {
-        "en": "Describe a sad event from your past with as much detail and depth as possible.",
-        "es": "Cuente un recuerdo triste de su vida con el mayor detalle y profundidad posible."
-    },
+        "en": "Describe a happy event from your past with as much detail and depth as possible.",
+        "es": "Cuente un recuerdo feliz de su vida con el mayor detalle y profundidad posible."
+    }
     "ui": {
         "inputType": "audioRecord"
     },
@@ -21,6 +21,7 @@
         "type": "audioRecord",
         "schema:minValue": 0,
         "schema:maxValue": 60000,
+        "multipleChoice": false,
         "requiredValue": true
     }
 
