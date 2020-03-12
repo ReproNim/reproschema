@@ -12,21 +12,26 @@
     "schema:image": "https://raw.githubusercontent.com/ReproNim/reproschema/master/protocols/VoicePilot/mit_voice_pilot_applet_image.svg?sanitize=true",
     "variableMap": [
         {"variableName": "phq9_schema", "isAbout": "phq9_schema"},
-        {"variableName": "GAD7_schema", "isAbout": "GAD7_schema"}
+        {"variableName": "GAD7_schema", "isAbout": "GAD7_schema"},
+        {"variableName": "MalargueVoiceTask_schema", "isAbout": "MalargueVoiceTask_schema"}
     ],
     "ui": {
         "order": [
             "phq9_schema",
-            "GAD7_schema"
+            "GAD7_schema",
+            "MalargueVoiceTask_schema"
         ],
         "shuffle": false,
         "displayNameMap": [
-            {"isAbout": "phq9_schema", "alternateName": "Screening"},
-            {"isAbout": "GAD7_schema", "alternateName": "Anxiety"}
+            {"isAbout": "phq9_schema", "alternateName": {"en": "Screening", "es": "Screening_es" }},
+            {"isAbout": "GAD7_schema", "alternateName": {"en": "Anxiety", "es": "Anxiety_es"}},
+            {"isAbout": "MalargueVoiceTask_schema", "alternateName": {"en": "Voice Tasks", "es": "Voice Task_es"}}
         ],
         "visibility": [
             {"variableName": "phq9_schema", "isVis": true},
-            {"variableName": "GAD7_schema", "isVis": true}
-        ]
+            {"variableName": "GAD7_schema", "isVis": true},
+            {"variableName": "MalargueVoiceTask_schema", "isVis": true}
+        ],
+        "allow": ["autoAdvance", "disableBack"]
     }
 }
