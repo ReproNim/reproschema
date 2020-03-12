@@ -1,0 +1,29 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/VoiceTask/VoiceTask_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "free_speech",
+    "skos:prefLabel": "Free speech",
+    "skos:altLabel": "free speech",
+    "schema:description": "free speech item for voice task",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": {
+        "en": "Please state the name of the last movie or television show that you were really \"struck by\". Describe three things that made it memorable.",
+        "es": "Por favor diga el nombre de la última película o serie que realmente te cautivó. Describa tres cosas que la hicieron memorable.",
+
+    }
+    "ui": {
+        "inputType": "audioRecord"
+    },
+    "responseOptions": {
+        "type": "audioRecord",
+        "schema:minValue": 0,
+        "schema:maxValue": 60000,
+        "multipleChoice": false,
+        "requiredValue": true
+    }
+
+}
