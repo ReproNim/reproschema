@@ -35,14 +35,14 @@
         ],
         "shuffle": false,
         "visibility": {
-            "consent_overview": true,
-            "q1": true,
-            "q2": true,
-            "q3": true,
-            "q4": true,
-            "q5": true,
-            "sign": "q1 + q2 + q3 + q4 + q5 === 5",
-            "retake_quiz": "q1 + q2 + q3 + q4 + q5 !== 5"
+            {"variableName": "consent_overview", "isVis": true},
+            {"variableName": "q1", "isVis": true},
+            {"variableName": "q2", "isVis": true},
+            {"variableName": "q3", "isVis": true},
+            {"variableName": "q4", "isVis": true},
+            {"variableName": "q5", "isVis": true},
+            {"variableName": "sign", "isVis": "q1 + q2 + q3 + q4 + q5 === 5"},
+            {"variableName": "retake_quiz", "isVis": "q1 + q2 + q3 + q4 + q5 !== 5"}
         }
     }
 }
