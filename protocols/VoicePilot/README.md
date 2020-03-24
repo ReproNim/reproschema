@@ -55,7 +55,7 @@
 <div class="image container">
   <div class="image">
     <img style="transform: scale(0.7); padding-bottom: 1rem" src="static/images/create your story.svg" alt="create-story"/>
-  </div>h
+  </div>
   <div class="text">
     <h3>Create your story</h3>
     <p>In just a minute you can see if you are eligible to participate in the voice study.
