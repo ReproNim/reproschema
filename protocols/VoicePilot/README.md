@@ -22,7 +22,7 @@
 <section>
 <div class="image container">
   <div class="image">
-    <BridgeImage style="margin-bottom: -6px" src="static/images/about%20the%20study.svg"/>
+    <img style="margin-bottom: -6px" src="static/images/about%20the%20study.svg" alt="about"/>
   </div>
   <div class="text" style="padding-top: 1rem">
     <h3>Understand your Mental Health</h3>
@@ -38,7 +38,7 @@
 <section>
 <div class="image container">
   <div class="image">
-    <BridgeImage style="padding-top: 1.5rem" src="static/images/tell%20your%20story.svg"/>
+    <img style="padding-top: 1.5rem" src="static/images/tell%20your%20story.svg" alt="tell-story"/>
   </div>
   <div class="text">
     <h3>Telling your story</h3>
@@ -54,8 +54,8 @@
 <section>
 <div class="image container">
   <div class="image">
-    <BridgeImage style="transform: scale(0.7); padding-bottom: 1rem" src="static/images/create your story.svg"/>
-  </div>
+    <img style="transform: scale(0.7); padding-bottom: 1rem" src="static/images/create your story.svg" alt="create-story"/>
+  </div>h
   <div class="text">
     <h3>Create your story</h3>
     <p>In just a minute you can see if you are eligible to participate in the voice study.
