@@ -1,14 +1,3 @@
-<section style="height: 30vw; min-height: 15rem; background: linear-gradient(#268762, #15ac7f)">
-        <div style="
-          height: 30vw;
-          min-height: 15rem;
-          background-image: url(static/images/about%20the%20study.svg);
-          background-position: center;
-          background-size: contain;
-          background-repeat: no-repeat">
-        </div>
-      </section>
-<br>
 <section>
 <div class="container-fluid">
   <h2>Welcome to Voice Study</h2>
