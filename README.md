@@ -130,7 +130,7 @@ Fork the project and manually create the jsonld files according to the above dir
 
 ## 6.0: View schema and collect data
 
-`http://schema.repronimg.org/ui/#/?url=path_to_protocol_schema`
+`http://schema.repronim.org/ui/#/?url=path_to_protocol_schema`
 
 ## 7.0: Why linked data?
 
