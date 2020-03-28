@@ -1,0 +1,41 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/protocols/wellbeing/wellbeing_context"
+    ],
+    "@type": "reproschema:ActivitySet",
+    "@id": "wellbeing_schema",
+    "skos:prefLabel": "Wellbeing Protocol",
+    "skos:altLabel": "wellbeing",
+    "schema:description": "activity set for Wellbeing Protocol",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "schema:image": "https://raw.githubusercontent.com/ReproNim/reproschema/master/protocols/VoicePilot/mit_voice_pilot_applet_image.svg?sanitize=true",
+    "variableMap": [
+        {"variableName": "Wellbeing_schema", "isAbout": "Wellbeing_schema"},
+        {"variableName": "phq9_schema", "isAbout": "phq9_schema"},
+        {"variableName": "GAD7_schema", "isAbout": "GAD7_schema"},
+        {"variableName": "ThankYou_schema", "isAbout": "ThankYou_schema"}
+    ],
+    "ui": {
+        "order": [
+            "Wellbeing_schema",
+            "phq9_schema",
+            "GAD7_schema",
+            "ThankYou_schema"
+        ],
+        "shuffle": false,
+        "displayNameMap": [
+            {"isAbout": "Wellbeing_schema", "alternateName": {"en": "Voice Tasks", "es": "Voice Task_es"}},
+            {"isAbout": "phq9_schema", "alternateName": {"en": "Mood", "es": "Mood_es" }},
+            {"isAbout": "GAD7_schema", "alternateName": {"en": "Anxiety", "es": "Anxiety_es"}},
+            {"isAbout": "ThankYou_schema", "alternateName": {"en": "ThankYou", "es": "ThankYou_es"}}
+        ],
+        "visibility": [
+            {"variableName": "Wellbeing_schema", "isVis": true},
+            {"variableName": "phq9_schema", "isVis": true},
+            {"variableName": "GAD7_schema", "isVis": true},
+            {"variableName": "ThankYou_schema", "isVis": true}
+        ],
+        "allow": ["autoAdvance"]
+    }
+}
