@@ -1,0 +1,32 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/Wellbeing/Wellbeing_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "share_data",
+    "skos:prefLabel": "Happy Event",
+    "skos:altLabel": "happy_event",
+    "schema:description": "q1 for voice tasks",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Please tell us if are willing to share the data",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "type": "xsd:string",
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "multipleChoice": false,
+        "requiredValue": true,
+        "choices": [{
+            "schema:name": "Yes",
+            "schema:value": 1
+        },
+            {
+                "schema:name": "No",
+                "schema:value": 0
+            }
+        ]
+    }
+}
