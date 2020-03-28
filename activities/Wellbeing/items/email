@@ -11,22 +11,11 @@
     "schema:version": "0.0.1",
     "question": "Please provide your email address",
     "ui": {
-        "inputType": "radio"
+        "inputType": "text"
     },
     "responseOptions": {
+        "requiredValue": false,
         "type": "xsd:string",
-        "schema:minValue": 0,
-        "schema:maxValue": 1,
-        "multipleChoice": false,
-        "requiredValue": true,
-        "choices": [{
-            "schema:name": "Yes",
-            "schema:value": 1
-        },
-            {
-                "schema:name": "No",
-                "schema:value": 0
-            }
-        ]
+        "maxLength": 60
     }
 }
