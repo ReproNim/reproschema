@@ -1,0 +1,33 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "ui": {
+        "inputType": "radio",
+        "customAlignment": "LV"
+    },
+    "question": {
+        "en": "Grooming"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:value": 1,
+                "schema:name": "Positive self-care evident (hair combed",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2,
+                "schema:name": "Some self-care failure (untied laces",
+                "@type": "schema:option",
+                "schema:image": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/618x618/wrinkled and untucked) .png"
+            },
+            {
+                "schema:value": 3,
+                "schema:name": "Disheveled",
+                "@type": "schema:option"
+            }
+        ]
+    }
+}

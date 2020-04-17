@@ -1,0 +1,39 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "ui": {
+        "inputType": "radio",
+        "customAlignment": "LV"
+    },
+    "question": {
+        "en": "Privacy Disturbance"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:value": 1,
+                "schema:name": "No one else present",
+                "@type": "schema:option",
+                "schema:image": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/618x618/no interruptions .png"
+            },
+            {
+                "schema:value": 2,
+                "schema:name": "Minor children around",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 3,
+                "schema:name": "Others  (1) within earshot for part of time",
+                "@type": "schema:option",
+                "schema:image": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/618x618/and/or (2) resulting in some disruption of flow of interview .png"
+            },
+            {
+                "schema:value": 4,
+                "schema:name": "Continuous presence of others with significant disruption of flow of interview",
+                "@type": "schema:option"
+            }
+        ]
+    }
+}

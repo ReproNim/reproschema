@@ -1,0 +1,24 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "ui": {
+        "inputType": "text"
+    },
+    "responseOptions": {
+        "valueType": "xsd:int",
+        "schema:minValue": "1900",
+        "schema:maxValue": "9999"
+    },
+    "question": {
+        "en": "Date at beginning of school year (Year)"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "redcap",
+            "column": "Field Note",
+            "value": "YEAR"
+        }
+    ]
+}
