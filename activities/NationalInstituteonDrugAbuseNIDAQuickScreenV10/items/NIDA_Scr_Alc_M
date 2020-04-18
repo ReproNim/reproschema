@@ -1,26 +1,29 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "NIDA_Scr_Alc_M",
     "@type": "reproschema:Field",
-    "skos:altLabel": "NIDA_Scr_Alc_M",
-    "preamble": "For each substance, mark the appropriate column",
-    "question": {
-        "en": "Alcohol- For men, 5 or more drinks a day"
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": {
+        "en": "For each substance, mark the appropriate column"
     },
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 0,
-                "schema:name": {
+                "value": 0,
+                "name": {
                     "en": " Never\n1"
                 }
             }
-        ],
-        "type": "Ordinal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "Alcohol- For men, 5 or more drinks a day"
     }
 }

@@ -1,26 +1,29 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "WHODAS_P_11",
     "@type": "reproschema:Field",
-    "skos:altLabel": "WHODAS_P_11",
-    "preamble": "\"This questionnaire asks about difficulties due to health conditions. Health conditions include diseases or illnesses, other health problems that may be short or long lasting, injuries, mental or emotional problems, and problems with alcohol or drugs.\nThink back over the past 30 days and answer these questions, thinking about how much difficulty your child had doing the following activities. For each question, please circle only one response.\"",
-    "question": {
-        "en": "In the past 30 days, how much difficulty did your child have in maintaining a friendship?"
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": {
+        "en": "\"This questionnaire asks about difficulties due to health conditions. Health conditions include diseases or illnesses, other health problems that may be short or long lasting, injuries, mental or emotional problems, and problems with alcohol or drugs.\nThink back over the past 30 days and answer these questions, thinking about how much difficulty your child had doing the following activities. For each question, please circle only one response.\""
     },
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 0,
-                "schema:name": {
+                "value": 0,
+                "name": {
                     "en": "No Difficulty\n1"
                 }
             }
-        ],
-        "type": "Ordinal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "In the past 30 days, how much difficulty did your child have in maintaining a friendship?"
     }
 }

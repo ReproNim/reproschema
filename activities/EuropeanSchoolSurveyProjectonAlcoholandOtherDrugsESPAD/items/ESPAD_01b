@@ -1,31 +1,32 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "ESPAD_01b",
     "@type": "reproschema:Field",
-    "skos:altLabel": "ESPAD_01b",
-    "question": {
-        "en": "1b. Have you ever used marijuana (grass, pot) or hashish (hash, hash oil)?"
-    },
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 0,
-                "schema:name": {
+                "value": 0,
+                "name": {
                     "en": "no"
                 }
             },
             {
-                "schema:value": 1,
-                "schema:name": {
+                "value": 1,
+                "name": {
                     "en": "yes"
                 }
             }
-        ],
-        "type": "Nominal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "1b. Have you ever used marijuana (grass, pot) or hashish (hash, hash oil)?"
     }
 }

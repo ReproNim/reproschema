@@ -1,0 +1,37 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "ui": {
+        "inputType": "radio",
+        "customAlignment": "LV"
+    },
+    "question": {
+        "en": "Observed Anxiety"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:value": 1,
+                "schema:name": "None or very little anxiety ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2,
+                "schema:name": "Some anxiety ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 3,
+                "schema:name": "Marked anxiety or anxiety very readily provoked ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 9,
+                "schema:name": "N/A or no info",
+                "@type": "schema:option"
+            }
+        ]
+    }
+}

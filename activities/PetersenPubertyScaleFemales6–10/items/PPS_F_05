@@ -1,26 +1,29 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "PPS_F_05",
     "@type": "reproschema:Field",
-    "skos:altLabel": "PPS_F_05",
-    "preamble": "For females (ages 6-10), parent answers the following questions:",
-    "question": {
-        "en": "5. Do you think your child's development is any earlier or later than most other girls her age?"
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": {
+        "en": "For females (ages 6-10), parent answers the following questions:"
     },
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 1,
-                "schema:name": {
+                "value": 1,
+                "name": {
                     "en": "much earlier\n2"
                 }
             }
-        ],
-        "type": "Ordinal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "5. Do you think your child's development is any earlier or later than most other girls her age?"
     }
 }

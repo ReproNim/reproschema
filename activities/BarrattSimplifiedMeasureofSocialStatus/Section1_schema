@@ -1,7 +1,7 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/BarrattSimplifiedMeasureofSocialStatus/BarrattSimplifiedMeasureofSocialStatus_context"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/BarrattSimplifiedMeasureofSocialStatus/BarrattSimplifiedMeasureofSocialStatus_context"
     ],
     "@type": "reproschema:Activity",
     "@id": "Section1_schema",
@@ -13,9 +13,21 @@
     "preamble": "Select the appropriate response for your level of school completed and your child's other caregivers' level of school completed.\n\nLevel of school completed:",
     "ui": {
         "shuffle": false,
+        "visibility": [
+            {
+                "variableName": "BSMSS_Who",
+                "isVis": true
+            }
+        ],
         "order": [
             "Father_Edu",
             "Mother_Edu"
         ]
-    }
+    },
+    "variableMap": [
+        {
+            "variableName": "BSMSS_Who",
+            "isAbout": "BSMSS_Who"
+        }
+    ]
 }

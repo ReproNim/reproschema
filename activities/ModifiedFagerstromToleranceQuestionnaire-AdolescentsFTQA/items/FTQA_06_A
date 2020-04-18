@@ -1,47 +1,48 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "FTQA_06_A",
     "@type": "reproschema:Field",
-    "skos:altLabel": "FTQA_06_A",
-    "question": {
-        "en": "Do you find it difficult to refrain from smoking in places where it is forbidden (church, library, movies, etc.)?"
-    },
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 0,
-                "schema:name": {
+                "value": 0,
+                "name": {
                     "en": " A. Yes"
                 }
             },
             {
-                "schema:value": null,
-                "schema:name": {
+                "value": null,
+                "name": {
                     "en": " B. Yes"
                 }
             },
             {
-                "schema:value": null,
-                "schema:name": {
+                "value": null,
+                "name": {
                     "en": " C. No"
                 }
             },
             {
-                "schema:value": null,
-                "schema:name": {
+                "value": null,
+                "name": {
                     "en": " D. No"
                 }
             },
             {
-                "schema:value": null,
-                "schema:name": {}
+                "value": null,
+                "name": {}
             }
-        ],
-        "type": "Ordinal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "Do you find it difficult to refrain from smoking in places where it is forbidden (church, library, movies, etc.)?"
     }
 }

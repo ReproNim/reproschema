@@ -1,50 +1,53 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "YFAS_04",
     "@type": "reproschema:Field",
-    "skos:altLabel": "YFAS_04",
-    "preamble": "When we say "FOOD" we want you to think of ANY "junk food" like those above.\nIn the past 12 months:",
-    "question": {
-        "en": "4. I worry about eating too much food."
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": {
+        "en": "We want to know how kids feel about food and eating. There are no right answers. Every kid is different. We just want to know how you feel about \"junk foods\" like: - Sweets like ice cream, chocolate, doughnuts, cookies, cake, candy. - Carbs like white bread, rolls, pasta, and rice. - Salty snacks like chips, pretzels, and crackers. - Fatty foods like steak, bacon, hamburgers, cheeseburgers, pizza, and french fries. - Sugary drinks like soda pop. "
     },
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 0,
-                "schema:name": {
+                "value": 0,
+                "name": {
                     "en": "Never"
                 }
             },
             {
-                "schema:value": 1,
-                "schema:name": {
+                "value": 1,
+                "name": {
                     "en": "Rarely"
                 }
             },
             {
-                "schema:value": 2,
-                "schema:name": {
+                "value": 2,
+                "name": {
                     "en": "Sometimes"
                 }
             },
             {
-                "schema:value": 3,
-                "schema:name": {
+                "value": 3,
+                "name": {
                     "en": "Very Often"
                 }
             },
             {
-                "schema:value": 4,
-                "schema:name": {
+                "value": 4,
+                "name": {
                     "en": "Always"
                 }
             }
-        ],
-        "type": "Ordinal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "4. I worry about eating too much food."
     }
 }

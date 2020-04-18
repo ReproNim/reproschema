@@ -1,43 +1,44 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "BAI_15",
     "@type": "reproschema:Field",
-    "skos:altLabel": "BAI_15",
-    "question": {
-        "en": "Fear of losing control"
-    },
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 0,
-                "schema:name": {
+                "value": 0,
+                "name": {
                     "en": "Not at all"
                 }
             },
             {
-                "schema:value": 1,
-                "schema:name": {
+                "value": 1,
+                "name": {
                     "en": "Mildly but it didn't bother me"
                 }
             },
             {
-                "schema:value": 2,
-                "schema:name": {
+                "value": 2,
+                "name": {
                     "en": "Moderately-it wasn't pleasant at all times"
                 }
             },
             {
-                "schema:value": 3,
-                "schema:name": {
+                "value": 3,
+                "name": {
                     "en": "Severely-it bothered me a lot"
                 }
             }
-        ],
-        "type": "Ordinal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "Fear of losing control"
     }
 }

@@ -1,25 +1,26 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "FSQ_07",
     "@type": "reproschema:Field",
-    "skos:altLabel": "FSQ_07",
-    "question": {
-        "en": "What type of residence is this?"
-    },
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 0,
-                "schema:name": {
+                "value": 0,
+                "name": {
                     "en": " Apartment\n1"
                 }
             }
-        ],
-        "type": "Ordinal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "What type of residence is this?"
     }
 }

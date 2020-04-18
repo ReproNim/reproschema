@@ -1,7 +1,7 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/BasicDemographicInformation/BasicDemographicInformation_context"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/BasicDemographicInformation/BasicDemographicInformation_context"
     ],
     "@type": "reproschema:Activity",
     "@id": "BasicDemographicInformation_schema",
@@ -12,6 +12,40 @@
     "schema:version": "0.0.1",
     "ui": {
         "shuffle": false,
+        "visibility": [
+            {
+                "variableName": "BDI_1",
+                "isVis": true
+            },
+            {
+                "variableName": "BDI_2",
+                "isVis": true
+            },
+            {
+                "variableName": "BDI_3",
+                "isVis": true
+            },
+            {
+                "variableName": "BDI_4",
+                "isVis": true
+            },
+            {
+                "variableName": "BDI_5",
+                "isVis": true
+            },
+            {
+                "variableName": "BDI_6",
+                "isVis": true
+            },
+            {
+                "variableName": "BDI_7",
+                "isVis": true
+            },
+            {
+                "variableName": "BDI_8",
+                "isVis": true
+            }
+        ],
         "order": [
             "BDI_1",
             "BDI_2",
@@ -22,5 +56,39 @@
             "BDI_7",
             "BDI_8"
         ]
-    }
+    },
+    "variableMap": [
+        {
+            "variableName": "BDI_1",
+            "isAbout": "BDI_1"
+        },
+        {
+            "variableName": "BDI_2",
+            "isAbout": "BDI_2"
+        },
+        {
+            "variableName": "BDI_3",
+            "isAbout": "BDI_3"
+        },
+        {
+            "variableName": "BDI_4",
+            "isAbout": "BDI_4"
+        },
+        {
+            "variableName": "BDI_5",
+            "isAbout": "BDI_5"
+        },
+        {
+            "variableName": "BDI_6",
+            "isAbout": "BDI_6"
+        },
+        {
+            "variableName": "BDI_7",
+            "isAbout": "BDI_7"
+        },
+        {
+            "variableName": "BDI_8",
+            "isAbout": "BDI_8"
+        }
+    ]
 }

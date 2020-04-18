@@ -1,31 +1,32 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "PBQ_19A",
     "@type": "reproschema:Field",
-    "skos:altLabel": "PBQ_19A",
-    "question": {
-        "en": "How long did the mother/ you stay in hospital for your child's birth?"
-    },
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 1,
-                "schema:name": {
+                "value": 1,
+                "name": {
                     "en": " Unknown"
                 }
             },
             {
-                "schema:value": 2,
-                "schema:name": {
+                "value": 2,
+                "name": {
                     "en": "Not Available"
                 }
             }
-        ],
-        "type": "Ordinal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "How long did the mother/ you stay in hospital for your child's birth?"
     }
 }

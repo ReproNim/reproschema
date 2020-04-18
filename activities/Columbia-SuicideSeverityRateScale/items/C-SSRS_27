@@ -1,61 +1,62 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "C-SSRS_27",
     "@type": "reproschema:Field",
-    "skos:altLabel": "C-SSRS_27",
-    "question": {
-        "en": "Actual Lethality/Medical Damage - Most Recent Attempt(CSSRS1_041) Enter date under \"Specify Detail\""
-    },
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 0,
-                "schema:name": {
+                "value": 0,
+                "name": {
                     "en": " No physical damage or very minor physical damage"
                 }
             },
             {
-                "schema:value": 1,
-                "schema:name": {
+                "value": 1,
+                "name": {
                     "en": " Minor Physical damage"
                 }
             },
             {
-                "schema:value": 2,
-                "schema:name": {
+                "value": 2,
+                "name": {
                     "en": " Moderate physical damage; medical attention needed"
                 }
             },
             {
-                "schema:value": 3,
-                "schema:name": {
+                "value": 3,
+                "name": {
                     "en": " Moderately severe physical damage; medical hospitalization and likely intensive care required"
                 }
             },
             {
-                "schema:value": 4,
-                "schema:name": {
+                "value": 4,
+                "name": {
                     "en": " Severe physical damage; medical hospitalization with intensive care required"
                 }
             },
             {
-                "schema:value": 5,
-                "schema:name": {
+                "value": 5,
+                "name": {
                     "en": " Death"
                 }
             },
             {
-                "schema:value": 6,
-                "schema:name": {
+                "value": 6,
+                "name": {
                     "en": " N/A"
                 }
             }
-        ],
-        "type": "Ordinal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "Actual Lethality/Medical Damage - Most Recent Attempt(CSSRS1_041) Enter date under \"Specify Detail\""
     }
 }

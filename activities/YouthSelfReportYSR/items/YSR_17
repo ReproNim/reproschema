@@ -1,38 +1,41 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "YSR_17",
     "@type": "reproschema:Field",
-    "skos:altLabel": "YSR_17",
-    "preamble": "Below is a list of items that describe kids. For each item that describes you now or within the past 6 months, please circle the 2 if the item is very true or often true of you. Circle the 1 if the item is somewhat or sometimes true of you. If the item is not true of you, circle the 0.",
-    "question": {
-        "en": "17. I daydream a lot"
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": {
+        "en": "Below is a list of items that describe kids. For each item that describes you now or within the past 6 months, please circle the 2 if the item is very true or often true of you. Circle the 1 if the item is somewhat or sometimes true of you. If the item is not true of you, circle the 0."
     },
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 0,
-                "schema:name": {
+                "value": 0,
+                "name": {
                     "en": " Not True (as far as you know)"
                 }
             },
             {
-                "schema:value": 1,
-                "schema:name": {
+                "value": 1,
+                "name": {
                     "en": " Somewhat or Sometimes True"
                 }
             },
             {
-                "schema:value": 2,
-                "schema:name": {
+                "value": 2,
+                "name": {
                     "en": " Very True or Often True"
                 }
             }
-        ],
-        "type": "Ordinal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "17. I daydream a lot"
     }
 }

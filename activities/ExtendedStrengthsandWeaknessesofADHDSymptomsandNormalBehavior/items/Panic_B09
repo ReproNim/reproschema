@@ -1,26 +1,29 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "Panic_B09",
     "@type": "reproschema:Field",
-    "skos:altLabel": "Panic_B09",
-    "preamble": "Children differ in their abilities to handle emotions and behave appropriately in several situations. For each item listed below, rate how well your child handles emotions and behaves compared to other children of the same age. ",
-    "question": {
-        "en": "Maintain feelings of a comfortable body temperature"
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": {
+        "en": "Children differ in their abilities to handle emotions and behave appropriately in several situations. For each item listed below, rate how well your child handles emotions and behaves compared to other children of the same age. "
     },
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": -3,
-                "schema:name": {
+                "value": -3,
+                "name": {
                     "en": " Far Below Average\n-2"
                 }
             }
-        ],
-        "type": "Ordinal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "Maintain feelings of a comfortable body temperature"
     }
 }

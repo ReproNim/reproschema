@@ -1,31 +1,32 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "C-SSRS_47",
     "@type": "reproschema:Field",
-    "skos:altLabel": "C-SSRS_47",
-    "question": {
-        "en": "Preparatory Acts or Behavior - Past 3 months(CSSRS1_039)\n\"Have you taken any steps towards making a suicide attempt or preparing to kill yourself (such as collecting pills, getting a gun, giving valuables away or writing a suicide note)?\" If yes, describe..."
-    },
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 0,
-                "schema:name": {
+                "value": 0,
+                "name": {
                     "en": "No"
                 }
             },
             {
-                "schema:value": 1,
-                "schema:name": {
+                "value": 1,
+                "name": {
                     "en": "Yes"
                 }
             }
-        ],
-        "type": "Nominal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "Preparatory Acts or Behavior - Past 3 months(CSSRS1_039)\n\"Have you taken any steps towards making a suicide attempt or preparing to kill yourself (such as collecting pills, getting a gun, giving valuables away or writing a suicide note)?\" If yes, describe..."
     }
 }

@@ -1,26 +1,29 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "EHQ_02",
     "@type": "reproschema:Field",
-    "skos:altLabel": "EHQ_02",
-    "preamble": "For each of the activities below, please indicate: Which hand do you prefer for that activity? Do you ever use the other hand for the activity?",
-    "question": {
-        "en": "Drawing"
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": {
+        "en": "For each of the activities below, please indicate: Which hand do you prefer for that activity? Do you ever use the other hand for the activity?"
     },
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": null,
-                "schema:name": {
+                "value": null,
+                "name": {
                     "en": "Yes\nEHQ_02a"
                 }
             }
-        ],
-        "type": "Ordinal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "Drawing"
     }
 }

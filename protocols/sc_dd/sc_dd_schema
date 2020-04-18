@@ -1,0 +1,54 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/sanuann/reproschema/master/protocols/sc_dd/sc_dd_context"
+    ],
+    "@type": "reproschema:ActivitySet",
+    "@id": "sc_dd_schema",
+    "skos:prefLabel": "Your protocol display name",
+    "skos:altLabel": "sc_dd_schema",
+    "schema:description": "Description for your protocol",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "variableMap": [
+        {
+            "variableName": "abc_v2017",
+            "isAbout": "abc_v2017"
+        },
+        {
+            "variableName": "adhd_rating_scale_iv_home_version",
+            "isAbout": "adhd_rating_scale_iv_home_version"
+        }
+    ],
+    "ui": {
+        "order": [
+            "abc_v2017",
+            "adhd_rating_scale_iv_home_version"
+        ],
+        "shuffle": false,
+        "displayNameMap": [
+            {
+                "isAbout": "abc_v2017",
+                "alternateName": {
+                    "en": "abc_v2017"
+                }
+            },
+            {
+                "isAbout": "adhd_rating_scale_iv_home_version",
+                "alternateName": {
+                    "en": "adhd_rating_scale_iv"
+                }
+            }
+        ],
+        "visibility": [
+            {
+                "variableName": "abc_v2017",
+                "isVis": true
+            },
+            {
+                "variableName": "adhd_rating_scale_iv_home_version",
+                "isVis": true
+            }
+        ]
+    }
+}

@@ -1,7 +1,7 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/Sutter-EybergSchoolBehaviorInventorySESBI-Revised/Sutter-EybergSchoolBehaviorInventorySESBI-Revised_context"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/Sutter-EybergSchoolBehaviorInventorySESBI-Revised/Sutter-EybergSchoolBehaviorInventorySESBI-Revised_context"
     ],
     "@type": "reproschema:Activity",
     "@id": "Section2_schema",
@@ -13,6 +13,12 @@
     "preamble": "Is this a problem for you?",
     "ui": {
         "shuffle": false,
+        "visibility": [
+            {
+                "variableName": "SESBI-R_1",
+                "isVis": true
+            }
+        ],
         "order": [
             "SESBI-R_2",
             "SESBI-R_4",
@@ -85,5 +91,11 @@
             "ECBI_62",
             "ECBI_64"
         ]
-    }
+    },
+    "variableMap": [
+        {
+            "variableName": "SESBI-R_1",
+            "isAbout": "SESBI-R_1"
+        }
+    ]
 }

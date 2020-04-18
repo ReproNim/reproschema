@@ -1,32 +1,35 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "AUDIT_02_a",
     "@type": "reproschema:Field",
-    "skos:altLabel": "AUDIT_02_a",
-    "preamble": "Please circle the answer that is correct for you.",
-    "question": {
-        "en": "2a. Have you ever had at least three drinks on one occasion?"
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": {
+        "en": "Please circle the answer that is correct for you."
     },
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 0,
-                "schema:name": {
+                "value": 0,
+                "name": {
                     "en": "No"
                 }
             },
             {
-                "schema:value": 1,
-                "schema:name": {
+                "value": 1,
+                "name": {
                     "en": "Yes"
                 }
             }
-        ],
-        "type": "Nominal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "2a. Have you ever had at least three drinks on one occasion?"
     }
 }

@@ -1,26 +1,29 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "PPS_M_03",
     "@type": "reproschema:Field",
-    "skos:altLabel": "PPS_M_03",
-    "preamble": "For males (6-10), parents answer the following questions:",
-    "question": {
-        "en": "3. Have you noticed any skin changes, especially pimples?"
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": {
+        "en": "For males (6-10), parents answer the following questions:"
     },
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 1,
-                "schema:name": {
+                "value": 1,
+                "name": {
                     "en": "not yet started showing changes\n2"
                 }
             }
-        ],
-        "type": "Ordinal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "3. Have you noticed any skin changes, especially pimples?"
     }
 }

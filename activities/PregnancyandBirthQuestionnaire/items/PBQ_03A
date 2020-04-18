@@ -1,43 +1,44 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "PBQ_03A",
     "@type": "reproschema:Field",
-    "skos:altLabel": "PBQ_03A",
-    "question": {
-        "en": "If yes, at the present time, does the mother/ do you smoke every day, on occasion, or not at all?"
-    },
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 1,
-                "schema:name": {
+                "value": 1,
+                "name": {
                     "en": " Yes"
                 }
             },
             {
-                "schema:value": null,
-                "schema:name": {
+                "value": null,
+                "name": {
                     "en": " Yes"
                 }
             },
             {
-                "schema:value": null,
-                "schema:name": {
+                "value": null,
+                "name": {
                     "en": " No"
                 }
             },
             {
-                "schema:value": null,
-                "schema:name": {
+                "value": null,
+                "name": {
                     "en": " Unknown \n5 "
                 }
             }
-        ],
-        "type": "Ordinal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "If yes, at the present time, does the mother/ do you smoke every day, on occasion, or not at all?"
     }
 }

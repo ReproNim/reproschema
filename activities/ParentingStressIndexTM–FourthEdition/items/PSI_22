@@ -1,39 +1,40 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "PSI_22",
     "@type": "reproschema:Field",
-    "skos:altLabel": "PSI_22",
-    "question": {
-        "en": "I feel that I am: (Choose a response from the choices below.) 1) a very good parent. 2) a better-than-average parent. 3) an average parent. 4) a person who has some trouble being a parent. 5) not very good at being a parent."
-    },
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 1,
-                "schema:name": {}
+                "value": 1,
+                "name": {}
             },
             {
-                "schema:value": 2,
-                "schema:name": {}
+                "value": 2,
+                "name": {}
             },
             {
-                "schema:value": 3,
-                "schema:name": {}
+                "value": 3,
+                "name": {}
             },
             {
-                "schema:value": 4,
-                "schema:name": {}
+                "value": 4,
+                "name": {}
             },
             {
-                "schema:value": 5,
-                "schema:name": {}
+                "value": 5,
+                "name": {}
             }
-        ],
-        "type": "Ordinal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "I feel that I am: (Choose a response from the choices below.) 1) a very good parent. 2) a better-than-average parent. 3) an average parent. 4) a person who has some trouble being a parent. 5) not very good at being a parent."
     }
 }

@@ -1,37 +1,38 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "BDI_6",
     "@type": "reproschema:Field",
-    "skos:altLabel": "BDI_6",
-    "question": {
-        "en": "Study Site"
-    },
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 1,
-                "schema:name": {
+                "value": 1,
+                "name": {
                     "en": "Staten Island"
                 }
             },
             {
-                "schema:value": 2,
-                "schema:name": {
+                "value": 2,
+                "name": {
                     "en": "Mobile Research Vehicle (MRV)"
                 }
             },
             {
-                "schema:value": 3,
-                "schema:name": {
+                "value": 3,
+                "name": {
                     "en": "Midtown Manhattan"
                 }
             }
-        ],
-        "type": "Ordinal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "Study Site"
     }
 }

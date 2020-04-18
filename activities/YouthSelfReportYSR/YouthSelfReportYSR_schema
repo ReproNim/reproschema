@@ -1,7 +1,7 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/YouthSelfReportYSR/YouthSelfReportYSR_context"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/YouthSelfReportYSR/YouthSelfReportYSR_context"
     ],
     "@type": "reproschema:Activity",
     "@id": "YouthSelfReportYSR_schema",
@@ -13,6 +13,484 @@
     "preamble": "Below is a list of items that describe kids. For each item that describes you now or within the past 6 months, please circle the 2 if the item is very true or often true of you. Circle the 1 if the item is somewhat or sometimes true of you. If the item is not true of you, circle the 0.",
     "ui": {
         "shuffle": false,
+        "visibility": [
+            {
+                "variableName": "YSR_01",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_02",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_03",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_04",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_05",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_06",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_07",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_08",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_09",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_10",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_11",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_12",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_13",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_14",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_15",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_16",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_17",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_18",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_19",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_20",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_21",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_22",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_23",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_24",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_25",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_26",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_27",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_28",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_29",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_30",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_31",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_32",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_33",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_34",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_35",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_36",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_37",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_38",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_39",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_40",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_41",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_42",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_43",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_44",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_45",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_46",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_47",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_48",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_49",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_50",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_51",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_52",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_53",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_54",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_55",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_56a",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_56b",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_56c",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_56d",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_56e",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_56f",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_56g",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_56h",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_57",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_58",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_59",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_60",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_61",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_62",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_63",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_64",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_65",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_66",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_67",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_68",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_69",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_70",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_71",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_72",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_73",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_74",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_75",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_76",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_77",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_78",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_79",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_80",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_81",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_82",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_83",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_84",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_85",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_86",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_87",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_88",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_89",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_90",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_91",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_92",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_93",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_94",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_95",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_96",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_97",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_98",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_99",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_100",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_101",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_102",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_103",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_104",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_105",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_106",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_107",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_108",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_109",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_110",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_111",
+                "isVis": true
+            },
+            {
+                "variableName": "YSR_112",
+                "isVis": true
+            }
+        ],
         "order": [
             "YSR_01",
             "YSR_02",
@@ -134,5 +612,483 @@
             "YSR_111",
             "YSR_112"
         ]
-    }
+    },
+    "variableMap": [
+        {
+            "variableName": "YSR_01",
+            "isAbout": "YSR_01"
+        },
+        {
+            "variableName": "YSR_02",
+            "isAbout": "YSR_02"
+        },
+        {
+            "variableName": "YSR_03",
+            "isAbout": "YSR_03"
+        },
+        {
+            "variableName": "YSR_04",
+            "isAbout": "YSR_04"
+        },
+        {
+            "variableName": "YSR_05",
+            "isAbout": "YSR_05"
+        },
+        {
+            "variableName": "YSR_06",
+            "isAbout": "YSR_06"
+        },
+        {
+            "variableName": "YSR_07",
+            "isAbout": "YSR_07"
+        },
+        {
+            "variableName": "YSR_08",
+            "isAbout": "YSR_08"
+        },
+        {
+            "variableName": "YSR_09",
+            "isAbout": "YSR_09"
+        },
+        {
+            "variableName": "YSR_10",
+            "isAbout": "YSR_10"
+        },
+        {
+            "variableName": "YSR_11",
+            "isAbout": "YSR_11"
+        },
+        {
+            "variableName": "YSR_12",
+            "isAbout": "YSR_12"
+        },
+        {
+            "variableName": "YSR_13",
+            "isAbout": "YSR_13"
+        },
+        {
+            "variableName": "YSR_14",
+            "isAbout": "YSR_14"
+        },
+        {
+            "variableName": "YSR_15",
+            "isAbout": "YSR_15"
+        },
+        {
+            "variableName": "YSR_16",
+            "isAbout": "YSR_16"
+        },
+        {
+            "variableName": "YSR_17",
+            "isAbout": "YSR_17"
+        },
+        {
+            "variableName": "YSR_18",
+            "isAbout": "YSR_18"
+        },
+        {
+            "variableName": "YSR_19",
+            "isAbout": "YSR_19"
+        },
+        {
+            "variableName": "YSR_20",
+            "isAbout": "YSR_20"
+        },
+        {
+            "variableName": "YSR_21",
+            "isAbout": "YSR_21"
+        },
+        {
+            "variableName": "YSR_22",
+            "isAbout": "YSR_22"
+        },
+        {
+            "variableName": "YSR_23",
+            "isAbout": "YSR_23"
+        },
+        {
+            "variableName": "YSR_24",
+            "isAbout": "YSR_24"
+        },
+        {
+            "variableName": "YSR_25",
+            "isAbout": "YSR_25"
+        },
+        {
+            "variableName": "YSR_26",
+            "isAbout": "YSR_26"
+        },
+        {
+            "variableName": "YSR_27",
+            "isAbout": "YSR_27"
+        },
+        {
+            "variableName": "YSR_28",
+            "isAbout": "YSR_28"
+        },
+        {
+            "variableName": "YSR_29",
+            "isAbout": "YSR_29"
+        },
+        {
+            "variableName": "YSR_30",
+            "isAbout": "YSR_30"
+        },
+        {
+            "variableName": "YSR_31",
+            "isAbout": "YSR_31"
+        },
+        {
+            "variableName": "YSR_32",
+            "isAbout": "YSR_32"
+        },
+        {
+            "variableName": "YSR_33",
+            "isAbout": "YSR_33"
+        },
+        {
+            "variableName": "YSR_34",
+            "isAbout": "YSR_34"
+        },
+        {
+            "variableName": "YSR_35",
+            "isAbout": "YSR_35"
+        },
+        {
+            "variableName": "YSR_36",
+            "isAbout": "YSR_36"
+        },
+        {
+            "variableName": "YSR_37",
+            "isAbout": "YSR_37"
+        },
+        {
+            "variableName": "YSR_38",
+            "isAbout": "YSR_38"
+        },
+        {
+            "variableName": "YSR_39",
+            "isAbout": "YSR_39"
+        },
+        {
+            "variableName": "YSR_40",
+            "isAbout": "YSR_40"
+        },
+        {
+            "variableName": "YSR_41",
+            "isAbout": "YSR_41"
+        },
+        {
+            "variableName": "YSR_42",
+            "isAbout": "YSR_42"
+        },
+        {
+            "variableName": "YSR_43",
+            "isAbout": "YSR_43"
+        },
+        {
+            "variableName": "YSR_44",
+            "isAbout": "YSR_44"
+        },
+        {
+            "variableName": "YSR_45",
+            "isAbout": "YSR_45"
+        },
+        {
+            "variableName": "YSR_46",
+            "isAbout": "YSR_46"
+        },
+        {
+            "variableName": "YSR_47",
+            "isAbout": "YSR_47"
+        },
+        {
+            "variableName": "YSR_48",
+            "isAbout": "YSR_48"
+        },
+        {
+            "variableName": "YSR_49",
+            "isAbout": "YSR_49"
+        },
+        {
+            "variableName": "YSR_50",
+            "isAbout": "YSR_50"
+        },
+        {
+            "variableName": "YSR_51",
+            "isAbout": "YSR_51"
+        },
+        {
+            "variableName": "YSR_52",
+            "isAbout": "YSR_52"
+        },
+        {
+            "variableName": "YSR_53",
+            "isAbout": "YSR_53"
+        },
+        {
+            "variableName": "YSR_54",
+            "isAbout": "YSR_54"
+        },
+        {
+            "variableName": "YSR_55",
+            "isAbout": "YSR_55"
+        },
+        {
+            "variableName": "YSR_56a",
+            "isAbout": "YSR_56a"
+        },
+        {
+            "variableName": "YSR_56b",
+            "isAbout": "YSR_56b"
+        },
+        {
+            "variableName": "YSR_56c",
+            "isAbout": "YSR_56c"
+        },
+        {
+            "variableName": "YSR_56d",
+            "isAbout": "YSR_56d"
+        },
+        {
+            "variableName": "YSR_56e",
+            "isAbout": "YSR_56e"
+        },
+        {
+            "variableName": "YSR_56f",
+            "isAbout": "YSR_56f"
+        },
+        {
+            "variableName": "YSR_56g",
+            "isAbout": "YSR_56g"
+        },
+        {
+            "variableName": "YSR_56h",
+            "isAbout": "YSR_56h"
+        },
+        {
+            "variableName": "YSR_57",
+            "isAbout": "YSR_57"
+        },
+        {
+            "variableName": "YSR_58",
+            "isAbout": "YSR_58"
+        },
+        {
+            "variableName": "YSR_59",
+            "isAbout": "YSR_59"
+        },
+        {
+            "variableName": "YSR_60",
+            "isAbout": "YSR_60"
+        },
+        {
+            "variableName": "YSR_61",
+            "isAbout": "YSR_61"
+        },
+        {
+            "variableName": "YSR_62",
+            "isAbout": "YSR_62"
+        },
+        {
+            "variableName": "YSR_63",
+            "isAbout": "YSR_63"
+        },
+        {
+            "variableName": "YSR_64",
+            "isAbout": "YSR_64"
+        },
+        {
+            "variableName": "YSR_65",
+            "isAbout": "YSR_65"
+        },
+        {
+            "variableName": "YSR_66",
+            "isAbout": "YSR_66"
+        },
+        {
+            "variableName": "YSR_67",
+            "isAbout": "YSR_67"
+        },
+        {
+            "variableName": "YSR_68",
+            "isAbout": "YSR_68"
+        },
+        {
+            "variableName": "YSR_69",
+            "isAbout": "YSR_69"
+        },
+        {
+            "variableName": "YSR_70",
+            "isAbout": "YSR_70"
+        },
+        {
+            "variableName": "YSR_71",
+            "isAbout": "YSR_71"
+        },
+        {
+            "variableName": "YSR_72",
+            "isAbout": "YSR_72"
+        },
+        {
+            "variableName": "YSR_73",
+            "isAbout": "YSR_73"
+        },
+        {
+            "variableName": "YSR_74",
+            "isAbout": "YSR_74"
+        },
+        {
+            "variableName": "YSR_75",
+            "isAbout": "YSR_75"
+        },
+        {
+            "variableName": "YSR_76",
+            "isAbout": "YSR_76"
+        },
+        {
+            "variableName": "YSR_77",
+            "isAbout": "YSR_77"
+        },
+        {
+            "variableName": "YSR_78",
+            "isAbout": "YSR_78"
+        },
+        {
+            "variableName": "YSR_79",
+            "isAbout": "YSR_79"
+        },
+        {
+            "variableName": "YSR_80",
+            "isAbout": "YSR_80"
+        },
+        {
+            "variableName": "YSR_81",
+            "isAbout": "YSR_81"
+        },
+        {
+            "variableName": "YSR_82",
+            "isAbout": "YSR_82"
+        },
+        {
+            "variableName": "YSR_83",
+            "isAbout": "YSR_83"
+        },
+        {
+            "variableName": "YSR_84",
+            "isAbout": "YSR_84"
+        },
+        {
+            "variableName": "YSR_85",
+            "isAbout": "YSR_85"
+        },
+        {
+            "variableName": "YSR_86",
+            "isAbout": "YSR_86"
+        },
+        {
+            "variableName": "YSR_87",
+            "isAbout": "YSR_87"
+        },
+        {
+            "variableName": "YSR_88",
+            "isAbout": "YSR_88"
+        },
+        {
+            "variableName": "YSR_89",
+            "isAbout": "YSR_89"
+        },
+        {
+            "variableName": "YSR_90",
+            "isAbout": "YSR_90"
+        },
+        {
+            "variableName": "YSR_91",
+            "isAbout": "YSR_91"
+        },
+        {
+            "variableName": "YSR_92",
+            "isAbout": "YSR_92"
+        },
+        {
+            "variableName": "YSR_93",
+            "isAbout": "YSR_93"
+        },
+        {
+            "variableName": "YSR_94",
+            "isAbout": "YSR_94"
+        },
+        {
+            "variableName": "YSR_95",
+            "isAbout": "YSR_95"
+        },
+        {
+            "variableName": "YSR_96",
+            "isAbout": "YSR_96"
+        },
+        {
+            "variableName": "YSR_97",
+            "isAbout": "YSR_97"
+        },
+        {
+            "variableName": "YSR_98",
+            "isAbout": "YSR_98"
+        },
+        {
+            "variableName": "YSR_99",
+            "isAbout": "YSR_99"
+        },
+        {
+            "variableName": "YSR_100",
+            "isAbout": "YSR_100"
+        },
+        {
+            "variableName": "YSR_101",
+            "isAbout": "YSR_101"
+        },
+        {
+            "variableName": "YSR_102",
+            "isAbout": "YSR_102"
+        },
+        {
+            "variableName": "YSR_103",
+            "isAbout": "YSR_103"
+        },
+        {
+            "variableName": "YSR_104",
+            "isAbout": "YSR_104"
+        },
+        {
+            "variableName": "YSR_105",
+            "isAbout": "YSR_105"
+        },
+        {
+            "variableName": "YSR_106",
+            "isAbout": "YSR_106"
+        },
+        {
+            "variableName": "YSR_107",
+            "isAbout": "YSR_107"
+        },
+        {
+            "variableName": "YSR_108",
+            "isAbout": "YSR_108"
+        },
+        {
+            "variableName": "YSR_109",
+            "isAbout": "YSR_109"
+        },
+        {
+            "variableName": "YSR_110",
+            "isAbout": "YSR_110"
+        },
+        {
+            "variableName": "YSR_111",
+            "isAbout": "YSR_111"
+        },
+        {
+            "variableName": "YSR_112",
+            "isAbout": "YSR_112"
+        }
+    ]
 }

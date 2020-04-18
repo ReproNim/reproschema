@@ -1,26 +1,29 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "CDI2P_17",
     "@type": "reproschema:Field",
-    "skos:altLabel": "CDI2P_17",
-    "preamble": "For each of the statements below, select one response that best describes your observations of your child in the past two weeks. (Indicate your response for each item by circling the number that best corresponds to your choice. You may change an item response by drawing an X through your original choice and selecting a new response). Remember, for each statement, pick one answer that best describes your observations of your child in the PAST TWO WEEKS.",
-    "question": {
-        "en": "17. My child has disagreements and conflicts with others."
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": {
+        "en": "For each of the statements below, select one response that best describes your observations of your child in the past two weeks. (Indicate your response for each item by circling the number that best corresponds to your choice. You may change an item response by drawing an X through your original choice and selecting a new response). Remember, for each statement, pick one answer that best describes your observations of your child in the PAST TWO WEEKS."
     },
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 0,
-                "schema:name": {
+                "value": 0,
+                "name": {
                     "en": "Not at all\n1"
                 }
             }
-        ],
-        "type": "Ordinal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "17. My child has disagreements and conflicts with others."
     }
 }

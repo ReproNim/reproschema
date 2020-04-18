@@ -1,7 +1,7 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/StrengthsandDifficultiesQuestionnaire/StrengthsandDifficultiesQuestionnaire_context"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/StrengthsandDifficultiesQuestionnaire/StrengthsandDifficultiesQuestionnaire_context"
     ],
     "@type": "reproschema:Activity",
     "@id": "Section1_schema",
@@ -13,6 +13,12 @@
     "preamble": "",
     "ui": {
         "shuffle": false,
+        "visibility": [
+            {
+                "variableName": "SDQ_01",
+                "isVis": true
+            }
+        ],
         "order": [
             "SDQ_02",
             "SDQ_04",
@@ -37,5 +43,11 @@
             "SDQ_23",
             "SDQ_25"
         ]
-    }
+    },
+    "variableMap": [
+        {
+            "variableName": "SDQ_01",
+            "isAbout": "SDQ_01"
+        }
+    ]
 }

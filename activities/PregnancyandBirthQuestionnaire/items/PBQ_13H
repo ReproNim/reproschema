@@ -1,25 +1,26 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "PBQ_13H",
     "@type": "reproschema:Field",
-    "skos:altLabel": "PBQ_13H",
-    "question": {
-        "en": "If the mother (you) had alcohol: At which stage of pregnancy did the mother (you) have this amount of alcohol?"
-    },
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 1,
-                "schema:name": {
+                "value": 1,
+                "name": {
                     "en": " During the first trimester\n2 "
                 }
             }
-        ],
-        "type": "Ordinal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "If the mother (you) had alcohol: At which stage of pregnancy did the mother (you) have this amount of alcohol?"
     }
 }

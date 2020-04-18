@@ -1,44 +1,47 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "STAI_05",
     "@type": "reproschema:Field",
-    "skos:altLabel": "STAI_05",
-    "preamble": "A number of statements which people have used to describe themselves will follow. Read each statement and choose the appropriate answer to indicate how you feel right now, that is, at this moment. There are no right or wrong answers. Do not spend too much time on any one statement but give the answer which seems to describe your present feelings best.",
-    "question": {
-        "en": "5. I feel at ease"
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": {
+        "en": "A number of statements which people have used to describe themselves will follow. Read each statement and choose the appropriate answer to indicate how you feel right now, that is, at this moment. There are no right or wrong answers. Do not spend too much time on any one statement but give the answer which seems to describe your present feelings best."
     },
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 1,
-                "schema:name": {
+                "value": 1,
+                "name": {
                     "en": "Not at all"
                 }
             },
             {
-                "schema:value": 2,
-                "schema:name": {
+                "value": 2,
+                "name": {
                     "en": "Somewhat"
                 }
             },
             {
-                "schema:value": 3,
-                "schema:name": {
+                "value": 3,
+                "name": {
                     "en": "Moderately so"
                 }
             },
             {
-                "schema:value": 4,
-                "schema:name": {
+                "value": 4,
+                "name": {
                     "en": "Very much so"
                 }
             }
-        ],
-        "type": "Ordinal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "5. I feel at ease"
     }
 }

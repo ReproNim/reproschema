@@ -1,25 +1,26 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "PBQ_07A",
     "@type": "reproschema:Field",
-    "skos:altLabel": "PBQ_07A",
-    "question": {
-        "en": "If yes, was the father or other person living with the mother/ you smoking during her/ your pregnancy IN THE PRESENCE of the mother/you?"
-    },
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 1,
-                "schema:name": {
+                "value": 1,
+                "name": {
                     "en": " No\n2 "
                 }
             }
-        ],
-        "type": "Ordinal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "If yes, was the father or other person living with the mother/ you smoking during her/ your pregnancy IN THE PRESENCE of the mother/you?"
     }
 }

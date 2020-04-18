@@ -1,7 +1,7 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/EdinburghHandednessQuestionnaire/EdinburghHandednessQuestionnaire_context"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/EdinburghHandednessQuestionnaire/EdinburghHandednessQuestionnaire_context"
     ],
     "@type": "reproschema:Activity",
     "@id": "Section2_schema",
@@ -13,6 +13,12 @@
     "preamble": "Do you ever use the other hand?",
     "ui": {
         "shuffle": false,
+        "visibility": [
+            {
+                "variableName": "EHQ_01a",
+                "isVis": true
+            }
+        ],
         "order": [
             "EHQ_01",
             "EHQ_02",
@@ -30,5 +36,11 @@
             "EHQ_14",
             "EHQ_15"
         ]
-    }
+    },
+    "variableMap": [
+        {
+            "variableName": "EHQ_01a",
+            "isAbout": "EHQ_01a"
+        }
+    ]
 }

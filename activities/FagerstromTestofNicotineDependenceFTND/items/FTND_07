@@ -1,31 +1,32 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "FTND_07",
     "@type": "reproschema:Field",
-    "skos:altLabel": "FTND_07",
-    "question": {
-        "en": "Do you smoke more frequently during the first hours after waking than during the rest of the day?"
-    },
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 0,
-                "schema:name": {
+                "value": 0,
+                "name": {
                     "en": " No"
                 }
             },
             {
-                "schema:value": 1,
-                "schema:name": {
+                "value": 1,
+                "name": {
                     "en": " Yes"
                 }
             }
-        ],
-        "type": "Nominal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "Do you smoke more frequently during the first hours after waking than during the rest of the day?"
     }
 }

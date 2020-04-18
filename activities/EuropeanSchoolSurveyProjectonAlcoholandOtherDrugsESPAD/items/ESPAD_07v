@@ -1,31 +1,32 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "ESPAD_07v",
     "@type": "reproschema:Field",
-    "skos:altLabel": "ESPAD_07v",
-    "question": {
-        "en": "7v. Have you had medical problems as a result of your crack use (e.g. memory loss, hepatitis, convulsions, bleeding, etc.)?"
-    },
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 0,
-                "schema:name": {
+                "value": 0,
+                "name": {
                     "en": "no"
                 }
             },
             {
-                "schema:value": 1,
-                "schema:name": {
+                "value": 1,
+                "name": {
                     "en": "yes"
                 }
             }
-        ],
-        "type": "Nominal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "7v. Have you had medical problems as a result of your crack use (e.g. memory loss, hepatitis, convulsions, bleeding, etc.)?"
     }
 }

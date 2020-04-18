@@ -1,49 +1,50 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "NLES_P_06B",
     "@type": "reproschema:Field",
-    "skos:altLabel": "NLES_P_06B",
-    "question": {
-        "en": "If yes, how upset was the child that people in his/her family hurt each other?"
-    },
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 0,
-                "schema:name": {
+                "value": 0,
+                "name": {
                     "en": "Not at all upset"
                 }
             },
             {
-                "schema:value": 1,
-                "schema:name": {
+                "value": 1,
+                "name": {
                     "en": "A tiny bit upset"
                 }
             },
             {
-                "schema:value": 2,
-                "schema:name": {
+                "value": 2,
+                "name": {
                     "en": "A little upset"
                 }
             },
             {
-                "schema:value": 3,
-                "schema:name": {
+                "value": 3,
+                "name": {
                     "en": "Pretty upset"
                 }
             },
             {
-                "schema:value": 4,
-                "schema:name": {
+                "value": 4,
+                "name": {
                     "en": "Very upset"
                 }
             }
-        ],
-        "type": "Ordinal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "If yes, how upset was the child that people in his/her family hurt each other?"
     }
 }

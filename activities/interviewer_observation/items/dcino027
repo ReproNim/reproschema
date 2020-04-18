@@ -1,0 +1,39 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "ui": {
+        "inputType": "radio",
+        "customAlignment": "LV"
+    },
+    "question": {
+        "en": "Estimate of Respondent's Intelligence"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:value": 1,
+                "schema:name": "Very low (dull",
+                "@type": "schema:option",
+                "schema:image": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/618x618/uncomprehending) .png"
+            },
+            {
+                "schema:value": 2,
+                "schema:name": "Low (slow",
+                "@type": "schema:option",
+                "schema:image": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/618x618/needs explaining) .png"
+            },
+            {
+                "schema:value": 3,
+                "schema:name": "Average ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 4,
+                "schema:name": "Better than average (quick to comprehend)",
+                "@type": "schema:option"
+            }
+        ]
+    }
+}

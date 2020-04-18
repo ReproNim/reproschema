@@ -1,7 +1,7 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/Columbia-SuicideSeverityRateScale/Columbia-SuicideSeverityRateScale_context"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/Columbia-SuicideSeverityRateScale/Columbia-SuicideSeverityRateScale_context"
     ],
     "@type": "reproschema:Activity",
     "@id": "Section2_schema",
@@ -13,6 +13,48 @@
     "preamble": "Section: Itensity of Ideation\n\nThe following features should be rated with respect to the most severe type of ideation (i.e. from 1-5 from above, with 1 being the least severe and 5 being the most severe). Ask about the time he/she was feeling the most suicidal.",
     "ui": {
         "shuffle": false,
+        "visibility": [
+            {
+                "variableName": "C-SSRS_1",
+                "isVis": true
+            },
+            {
+                "variableName": "C-SSRS_2",
+                "isVis": true
+            },
+            {
+                "variableName": "C-SSRS_3",
+                "isVis": true
+            },
+            {
+                "variableName": "C-SSRS_4",
+                "isVis": true
+            },
+            {
+                "variableName": "C-SSRS_5",
+                "isVis": true
+            },
+            {
+                "variableName": "C-SSRS_6",
+                "isVis": true
+            },
+            {
+                "variableName": "C-SSRS_7",
+                "isVis": true
+            },
+            {
+                "variableName": "C-SSRS_8",
+                "isVis": true
+            },
+            {
+                "variableName": "C-SSRS_9",
+                "isVis": true
+            },
+            {
+                "variableName": "C-SSRS_10",
+                "isVis": true
+            }
+        ],
         "order": [
             "C-SSRS_11",
             "C-SSRS_12",
@@ -27,5 +69,47 @@
             "C-SSRS_21",
             "C-SSRS_22"
         ]
-    }
+    },
+    "variableMap": [
+        {
+            "variableName": "C-SSRS_1",
+            "isAbout": "C-SSRS_1"
+        },
+        {
+            "variableName": "C-SSRS_2",
+            "isAbout": "C-SSRS_2"
+        },
+        {
+            "variableName": "C-SSRS_3",
+            "isAbout": "C-SSRS_3"
+        },
+        {
+            "variableName": "C-SSRS_4",
+            "isAbout": "C-SSRS_4"
+        },
+        {
+            "variableName": "C-SSRS_5",
+            "isAbout": "C-SSRS_5"
+        },
+        {
+            "variableName": "C-SSRS_6",
+            "isAbout": "C-SSRS_6"
+        },
+        {
+            "variableName": "C-SSRS_7",
+            "isAbout": "C-SSRS_7"
+        },
+        {
+            "variableName": "C-SSRS_8",
+            "isAbout": "C-SSRS_8"
+        },
+        {
+            "variableName": "C-SSRS_9",
+            "isAbout": "C-SSRS_9"
+        },
+        {
+            "variableName": "C-SSRS_10",
+            "isAbout": "C-SSRS_10"
+        }
+    ]
 }

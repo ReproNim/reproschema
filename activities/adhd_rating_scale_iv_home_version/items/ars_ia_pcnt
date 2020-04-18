@@ -1,0 +1,27 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "ui": {
+        "inputType": "text"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "schema:minValue": "1",
+        "schema:maxValue": "99"
+    },
+    "preamble": {
+        "en": "Summary: Percentile Scores"
+    },
+    "question": {
+        "en": "Inattention (IA) percentile Score"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "redcap",
+            "column": "Field Note",
+            "value": "from look-up table"
+        }
+    ]
+}

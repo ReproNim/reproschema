@@ -1,7 +1,7 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/SocialAptitudesScale/SocialAptitudesScale_context"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/SocialAptitudesScale/SocialAptitudesScale_context"
     ],
     "@type": "reproschema:Activity",
     "@id": "SocialAptitudesScale_schema",
@@ -13,6 +13,48 @@
     "preamble": "How does your child compare with other children/people of his/her age in the following situations: ",
     "ui": {
         "shuffle": false,
+        "visibility": [
+            {
+                "variableName": "SAS_01",
+                "isVis": true
+            },
+            {
+                "variableName": "SAS_02",
+                "isVis": true
+            },
+            {
+                "variableName": "SAS_03",
+                "isVis": true
+            },
+            {
+                "variableName": "SAS_04",
+                "isVis": true
+            },
+            {
+                "variableName": "SAS_05",
+                "isVis": true
+            },
+            {
+                "variableName": "SAS_06",
+                "isVis": true
+            },
+            {
+                "variableName": "SAS_07",
+                "isVis": true
+            },
+            {
+                "variableName": "SAS_08",
+                "isVis": true
+            },
+            {
+                "variableName": "SAS_09",
+                "isVis": true
+            },
+            {
+                "variableName": "SAS_10",
+                "isVis": true
+            }
+        ],
         "order": [
             "SAS_01",
             "SAS_02",
@@ -25,5 +67,47 @@
             "SAS_09",
             "SAS_10"
         ]
-    }
+    },
+    "variableMap": [
+        {
+            "variableName": "SAS_01",
+            "isAbout": "SAS_01"
+        },
+        {
+            "variableName": "SAS_02",
+            "isAbout": "SAS_02"
+        },
+        {
+            "variableName": "SAS_03",
+            "isAbout": "SAS_03"
+        },
+        {
+            "variableName": "SAS_04",
+            "isAbout": "SAS_04"
+        },
+        {
+            "variableName": "SAS_05",
+            "isAbout": "SAS_05"
+        },
+        {
+            "variableName": "SAS_06",
+            "isAbout": "SAS_06"
+        },
+        {
+            "variableName": "SAS_07",
+            "isAbout": "SAS_07"
+        },
+        {
+            "variableName": "SAS_08",
+            "isAbout": "SAS_08"
+        },
+        {
+            "variableName": "SAS_09",
+            "isAbout": "SAS_09"
+        },
+        {
+            "variableName": "SAS_10",
+            "isAbout": "SAS_10"
+        }
+    ]
 }

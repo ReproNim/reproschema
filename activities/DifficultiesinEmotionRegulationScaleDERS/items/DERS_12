@@ -1,49 +1,50 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "DERS_12",
     "@type": "reproschema:Field",
-    "skos:altLabel": "DERS_12",
-    "question": {
-        "en": "When I'm upset, I become embarrassed for feeling that way"
-    },
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 1,
-                "schema:name": {
+                "value": 1,
+                "name": {
                     "en": "almost never (0-10%)"
                 }
             },
             {
-                "schema:value": 2,
-                "schema:name": {
+                "value": 2,
+                "name": {
                     "en": "sometimes (11-35%)"
                 }
             },
             {
-                "schema:value": 3,
-                "schema:name": {
+                "value": 3,
+                "name": {
                     "en": "about half the time (36-65%)"
                 }
             },
             {
-                "schema:value": 4,
-                "schema:name": {
+                "value": 4,
+                "name": {
                     "en": "most of thh time (66-90%)"
                 }
             },
             {
-                "schema:value": 5,
-                "schema:name": {
+                "value": 5,
+                "name": {
                     "en": "almost always (91-100%)"
                 }
             }
-        ],
-        "type": "Ordinal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "When I'm upset, I become embarrassed for feeling that way"
     }
 }

@@ -1,7 +1,7 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/PetersenPubertyScaleFemales11/PetersenPubertyScaleFemales11_context"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/PetersenPubertyScaleFemales11/PetersenPubertyScaleFemales11_context"
     ],
     "@type": "reproschema:Activity",
     "@id": "PetersenPubertyScaleFemales11_schema",
@@ -13,6 +13,32 @@
     "preamble": "For females (ages 11+), they answer the following questions:",
     "ui": {
         "shuffle": false,
+        "visibility": [
+            {
+                "variableName": "PPS_F_01",
+                "isVis": true
+            },
+            {
+                "variableName": "PPS_F_02",
+                "isVis": true
+            },
+            {
+                "variableName": "PPS_F_03",
+                "isVis": true
+            },
+            {
+                "variableName": "PPS_F_04",
+                "isVis": true
+            },
+            {
+                "variableName": "PPS_F_05",
+                "isVis": true
+            },
+            {
+                "variableName": "PPS_F_06",
+                "isVis": true
+            }
+        ],
         "order": [
             "PPS_F_01",
             "PPS_F_02",
@@ -21,5 +47,31 @@
             "PPS_F_05",
             "PPS_F_06"
         ]
-    }
+    },
+    "variableMap": [
+        {
+            "variableName": "PPS_F_01",
+            "isAbout": "PPS_F_01"
+        },
+        {
+            "variableName": "PPS_F_02",
+            "isAbout": "PPS_F_02"
+        },
+        {
+            "variableName": "PPS_F_03",
+            "isAbout": "PPS_F_03"
+        },
+        {
+            "variableName": "PPS_F_04",
+            "isAbout": "PPS_F_04"
+        },
+        {
+            "variableName": "PPS_F_05",
+            "isAbout": "PPS_F_05"
+        },
+        {
+            "variableName": "PPS_F_06",
+            "isAbout": "PPS_F_06"
+        }
+    ]
 }

@@ -1,48 +1,51 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "SDQ_26",
     "@type": "reproschema:Field",
-    "skos:altLabel": "SDQ_26",
-    "preamble": "For each item, please mark the box for Not True, Somewhat True or Certainly True. It would help us if you answered all items as best you can even if you are not absolutely certain. Please give your answers on the basis of your child's behavior over the last six months.",
-    "question": {
-        "en": "Overall, do you think that your child has difficulties in one or more of the following areas: emotions, concentration, behavior or being able to get on with other people?"
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": {
+        "en": "For each item, please mark the box for Not True, Somewhat True or Certainly True. It would help us if you answered all items as best you can even if you are not absolutely certain. Please give your answers on the basis of your child's behavior over the last six months."
     },
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 0,
-                "schema:name": {
+                "value": 0,
+                "name": {
                     "en": "No"
                 }
             },
             {
-                "schema:value": 1,
-                "schema:name": {
+                "value": 1,
+                "name": {
                     "en": "Yes- minor difficulties"
                 }
             },
             {
-                "schema:value": 2,
-                "schema:name": {
+                "value": 2,
+                "name": {
                     "en": "Yes- definite difficulties"
                 }
             },
             {
-                "schema:value": 3,
-                "schema:name": {
+                "value": 3,
+                "name": {
                     "en": "Yes"
                 }
             },
             {
-                "schema:value": null,
-                "schema:name": {}
+                "value": null,
+                "name": {}
             }
-        ],
-        "type": "Ordinal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "Overall, do you think that your child has difficulties in one or more of the following areas: emotions, concentration, behavior or being able to get on with other people?"
     }
 }

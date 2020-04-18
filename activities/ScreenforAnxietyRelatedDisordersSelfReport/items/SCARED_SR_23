@@ -1,38 +1,41 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "SCARED_SR_23",
     "@type": "reproschema:Field",
-    "skos:altLabel": "SCARED_SR_23",
-    "preamble": "Below is a list of sentences that describe how people feel. Read each phrase and decide if it is \"Not True or Hardly Ever True\" or \"Somewhat True or Sometimes True\" or \"Very True or Often True\" for you. Then, for each sentence, fill in one circle that corresponds to the response that seems to describe you for the last 3 months",
-    "question": {
-        "en": "I am a worrier"
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": {
+        "en": "Below is a list of sentences that describe how people feel. Read each phrase and decide if it is \"Not True or Hardly Ever True\" or \"Somewhat True or Sometimes True\" or \"Very True or Often True\" for you. Then, for each sentence, fill in one circle that corresponds to the response that seems to describe you for the last 3 months"
     },
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 0,
-                "schema:name": {
+                "value": 0,
+                "name": {
                     "en": "Not True or Hardly Ever True"
                 }
             },
             {
-                "schema:value": 1,
-                "schema:name": {
+                "value": 1,
+                "name": {
                     "en": "Somewhat True or Sometimes True"
                 }
             },
             {
-                "schema:value": 2,
-                "schema:name": {
+                "value": 2,
+                "name": {
                     "en": "Very True or Often True"
                 }
             }
-        ],
-        "type": "Ordinal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "I am a worrier"
     }
 }

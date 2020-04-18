@@ -1,7 +1,7 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/FoodFrequencyQuestionnaireFFQ/FoodFrequencyQuestionnaireFFQ_context"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/FoodFrequencyQuestionnaireFFQ/FoodFrequencyQuestionnaireFFQ_context"
     ],
     "@type": "reproschema:Activity",
     "@id": "FoodFrequencyQuestionnaireFFQ_schema",
@@ -12,6 +12,328 @@
     "schema:version": "0.0.1",
     "ui": {
         "shuffle": false,
+        "visibility": [
+            {
+                "variableName": "FFQ_COLDCEREALFREQ",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_COLDCEREALQUAN",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_COOKCERFREQ",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_COOKCERQUAN",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_EGGFREQ",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_EGGQUAN",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_GRANBARFREQ",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_GRANBARQUAN",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_MILKFREQ",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_MILKQUAN",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_FRUITJCFREQ",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_FRUITJCQUAN",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_SODAFREQ",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_SODAQUAN",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_APPLEFREQ",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_APPLEQUAN",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_APPLSCFREQ",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_APPLSCQUAN",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_OTHFRUTFREQ",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_OTHFRUTQUAN",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_FRENCHFREQ",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_FRENCHQUAN",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_OTHPOTFREQ",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_OTHPOTQUAN",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_KETCHUPFREQ",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_KETCHUPQUAN",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_LETTUCEFREQ",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_LETTUCEQUAN",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_TOMATOFREQ",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_TOMATOQUAN",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_GRNBEANFREQ",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_GRNBEANQUAN",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_OTHVEGFREQ",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_OTHVEGQUAN",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_VEGSOUPFREQ",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_VEGSOUPQUAN",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_PINTOFREQ",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_PINTOQUAN",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_REFRIEDFREQ",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_REFRIEDQUAN",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_HAMBGRFREQ",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_HAMBGRQUAN",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_HOTDOGFREQ",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_HOTDOGQUAN",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_LUNCHMTFREQ",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_LUNCHMTQUAN",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_PIZZAFREQ",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_PIZZAQUAN",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_SPAGFREQ",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_SPAGQUAN",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_MACFREQ",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_MACQUAN",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_CHICKFREQ",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_CHICKQUAN",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_FISHFREQ",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_FISHQUAN",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_BURRITOFREQ",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_BURRITOQUAN",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_RSTBFFREQ",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_RSTBFQUAN",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_OTHMEATFREQ",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_OTHMEATQUAN",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_PORKFREQ",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_PORKQUAN",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_POPCORNFREQ",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_POPCORNQUAN",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_SNKCHPFREQ",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_SNKCHPQUAN",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_ICECRMFREQ",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_ICECRMQUAN",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_CANDYFREQ",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_CANDYQUAN",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_COOKIEFREQ",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_COOKIEQUAN",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_CHEESEFREQ",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_CHEESEQUAN",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_WHEATBRDFREQ",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_WHEATBRDQUAN",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_COLDCEREALTYPE",
+                "isVis": true
+            },
+            {
+                "variableName": "FFQ_MILKTYPE",
+                "isVis": true
+            }
+        ],
         "order": [
             "FFQ_COLDCEREALFREQ",
             "FFQ_COLDCEREALQUAN",
@@ -94,5 +416,327 @@
             "FFQ_COLDCEREALTYPE",
             "FFQ_MILKTYPE"
         ]
-    }
+    },
+    "variableMap": [
+        {
+            "variableName": "FFQ_COLDCEREALFREQ",
+            "isAbout": "FFQ_COLDCEREALFREQ"
+        },
+        {
+            "variableName": "FFQ_COLDCEREALQUAN",
+            "isAbout": "FFQ_COLDCEREALQUAN"
+        },
+        {
+            "variableName": "FFQ_COOKCERFREQ",
+            "isAbout": "FFQ_COOKCERFREQ"
+        },
+        {
+            "variableName": "FFQ_COOKCERQUAN",
+            "isAbout": "FFQ_COOKCERQUAN"
+        },
+        {
+            "variableName": "FFQ_EGGFREQ",
+            "isAbout": "FFQ_EGGFREQ"
+        },
+        {
+            "variableName": "FFQ_EGGQUAN",
+            "isAbout": "FFQ_EGGQUAN"
+        },
+        {
+            "variableName": "FFQ_GRANBARFREQ",
+            "isAbout": "FFQ_GRANBARFREQ"
+        },
+        {
+            "variableName": "FFQ_GRANBARQUAN",
+            "isAbout": "FFQ_GRANBARQUAN"
+        },
+        {
+            "variableName": "FFQ_MILKFREQ",
+            "isAbout": "FFQ_MILKFREQ"
+        },
+        {
+            "variableName": "FFQ_MILKQUAN",
+            "isAbout": "FFQ_MILKQUAN"
+        },
+        {
+            "variableName": "FFQ_FRUITJCFREQ",
+            "isAbout": "FFQ_FRUITJCFREQ"
+        },
+        {
+            "variableName": "FFQ_FRUITJCQUAN",
+            "isAbout": "FFQ_FRUITJCQUAN"
+        },
+        {
+            "variableName": "FFQ_SODAFREQ",
+            "isAbout": "FFQ_SODAFREQ"
+        },
+        {
+            "variableName": "FFQ_SODAQUAN",
+            "isAbout": "FFQ_SODAQUAN"
+        },
+        {
+            "variableName": "FFQ_APPLEFREQ",
+            "isAbout": "FFQ_APPLEFREQ"
+        },
+        {
+            "variableName": "FFQ_APPLEQUAN",
+            "isAbout": "FFQ_APPLEQUAN"
+        },
+        {
+            "variableName": "FFQ_APPLSCFREQ",
+            "isAbout": "FFQ_APPLSCFREQ"
+        },
+        {
+            "variableName": "FFQ_APPLSCQUAN",
+            "isAbout": "FFQ_APPLSCQUAN"
+        },
+        {
+            "variableName": "FFQ_OTHFRUTFREQ",
+            "isAbout": "FFQ_OTHFRUTFREQ"
+        },
+        {
+            "variableName": "FFQ_OTHFRUTQUAN",
+            "isAbout": "FFQ_OTHFRUTQUAN"
+        },
+        {
+            "variableName": "FFQ_FRENCHFREQ",
+            "isAbout": "FFQ_FRENCHFREQ"
+        },
+        {
+            "variableName": "FFQ_FRENCHQUAN",
+            "isAbout": "FFQ_FRENCHQUAN"
+        },
+        {
+            "variableName": "FFQ_OTHPOTFREQ",
+            "isAbout": "FFQ_OTHPOTFREQ"
+        },
+        {
+            "variableName": "FFQ_OTHPOTQUAN",
+            "isAbout": "FFQ_OTHPOTQUAN"
+        },
+        {
+            "variableName": "FFQ_KETCHUPFREQ",
+            "isAbout": "FFQ_KETCHUPFREQ"
+        },
+        {
+            "variableName": "FFQ_KETCHUPQUAN",
+            "isAbout": "FFQ_KETCHUPQUAN"
+        },
+        {
+            "variableName": "FFQ_LETTUCEFREQ",
+            "isAbout": "FFQ_LETTUCEFREQ"
+        },
+        {
+            "variableName": "FFQ_LETTUCEQUAN",
+            "isAbout": "FFQ_LETTUCEQUAN"
+        },
+        {
+            "variableName": "FFQ_TOMATOFREQ",
+            "isAbout": "FFQ_TOMATOFREQ"
+        },
+        {
+            "variableName": "FFQ_TOMATOQUAN",
+            "isAbout": "FFQ_TOMATOQUAN"
+        },
+        {
+            "variableName": "FFQ_GRNBEANFREQ",
+            "isAbout": "FFQ_GRNBEANFREQ"
+        },
+        {
+            "variableName": "FFQ_GRNBEANQUAN",
+            "isAbout": "FFQ_GRNBEANQUAN"
+        },
+        {
+            "variableName": "FFQ_OTHVEGFREQ",
+            "isAbout": "FFQ_OTHVEGFREQ"
+        },
+        {
+            "variableName": "FFQ_OTHVEGQUAN",
+            "isAbout": "FFQ_OTHVEGQUAN"
+        },
+        {
+            "variableName": "FFQ_VEGSOUPFREQ",
+            "isAbout": "FFQ_VEGSOUPFREQ"
+        },
+        {
+            "variableName": "FFQ_VEGSOUPQUAN",
+            "isAbout": "FFQ_VEGSOUPQUAN"
+        },
+        {
+            "variableName": "FFQ_PINTOFREQ",
+            "isAbout": "FFQ_PINTOFREQ"
+        },
+        {
+            "variableName": "FFQ_PINTOQUAN",
+            "isAbout": "FFQ_PINTOQUAN"
+        },
+        {
+            "variableName": "FFQ_REFRIEDFREQ",
+            "isAbout": "FFQ_REFRIEDFREQ"
+        },
+        {
+            "variableName": "FFQ_REFRIEDQUAN",
+            "isAbout": "FFQ_REFRIEDQUAN"
+        },
+        {
+            "variableName": "FFQ_HAMBGRFREQ",
+            "isAbout": "FFQ_HAMBGRFREQ"
+        },
+        {
+            "variableName": "FFQ_HAMBGRQUAN",
+            "isAbout": "FFQ_HAMBGRQUAN"
+        },
+        {
+            "variableName": "FFQ_HOTDOGFREQ",
+            "isAbout": "FFQ_HOTDOGFREQ"
+        },
+        {
+            "variableName": "FFQ_HOTDOGQUAN",
+            "isAbout": "FFQ_HOTDOGQUAN"
+        },
+        {
+            "variableName": "FFQ_LUNCHMTFREQ",
+            "isAbout": "FFQ_LUNCHMTFREQ"
+        },
+        {
+            "variableName": "FFQ_LUNCHMTQUAN",
+            "isAbout": "FFQ_LUNCHMTQUAN"
+        },
+        {
+            "variableName": "FFQ_PIZZAFREQ",
+            "isAbout": "FFQ_PIZZAFREQ"
+        },
+        {
+            "variableName": "FFQ_PIZZAQUAN",
+            "isAbout": "FFQ_PIZZAQUAN"
+        },
+        {
+            "variableName": "FFQ_SPAGFREQ",
+            "isAbout": "FFQ_SPAGFREQ"
+        },
+        {
+            "variableName": "FFQ_SPAGQUAN",
+            "isAbout": "FFQ_SPAGQUAN"
+        },
+        {
+            "variableName": "FFQ_MACFREQ",
+            "isAbout": "FFQ_MACFREQ"
+        },
+        {
+            "variableName": "FFQ_MACQUAN",
+            "isAbout": "FFQ_MACQUAN"
+        },
+        {
+            "variableName": "FFQ_CHICKFREQ",
+            "isAbout": "FFQ_CHICKFREQ"
+        },
+        {
+            "variableName": "FFQ_CHICKQUAN",
+            "isAbout": "FFQ_CHICKQUAN"
+        },
+        {
+            "variableName": "FFQ_FISHFREQ",
+            "isAbout": "FFQ_FISHFREQ"
+        },
+        {
+            "variableName": "FFQ_FISHQUAN",
+            "isAbout": "FFQ_FISHQUAN"
+        },
+        {
+            "variableName": "FFQ_BURRITOFREQ",
+            "isAbout": "FFQ_BURRITOFREQ"
+        },
+        {
+            "variableName": "FFQ_BURRITOQUAN",
+            "isAbout": "FFQ_BURRITOQUAN"
+        },
+        {
+            "variableName": "FFQ_RSTBFFREQ",
+            "isAbout": "FFQ_RSTBFFREQ"
+        },
+        {
+            "variableName": "FFQ_RSTBFQUAN",
+            "isAbout": "FFQ_RSTBFQUAN"
+        },
+        {
+            "variableName": "FFQ_OTHMEATFREQ",
+            "isAbout": "FFQ_OTHMEATFREQ"
+        },
+        {
+            "variableName": "FFQ_OTHMEATQUAN",
+            "isAbout": "FFQ_OTHMEATQUAN"
+        },
+        {
+            "variableName": "FFQ_PORKFREQ",
+            "isAbout": "FFQ_PORKFREQ"
+        },
+        {
+            "variableName": "FFQ_PORKQUAN",
+            "isAbout": "FFQ_PORKQUAN"
+        },
+        {
+            "variableName": "FFQ_POPCORNFREQ",
+            "isAbout": "FFQ_POPCORNFREQ"
+        },
+        {
+            "variableName": "FFQ_POPCORNQUAN",
+            "isAbout": "FFQ_POPCORNQUAN"
+        },
+        {
+            "variableName": "FFQ_SNKCHPFREQ",
+            "isAbout": "FFQ_SNKCHPFREQ"
+        },
+        {
+            "variableName": "FFQ_SNKCHPQUAN",
+            "isAbout": "FFQ_SNKCHPQUAN"
+        },
+        {
+            "variableName": "FFQ_ICECRMFREQ",
+            "isAbout": "FFQ_ICECRMFREQ"
+        },
+        {
+            "variableName": "FFQ_ICECRMQUAN",
+            "isAbout": "FFQ_ICECRMQUAN"
+        },
+        {
+            "variableName": "FFQ_CANDYFREQ",
+            "isAbout": "FFQ_CANDYFREQ"
+        },
+        {
+            "variableName": "FFQ_CANDYQUAN",
+            "isAbout": "FFQ_CANDYQUAN"
+        },
+        {
+            "variableName": "FFQ_COOKIEFREQ",
+            "isAbout": "FFQ_COOKIEFREQ"
+        },
+        {
+            "variableName": "FFQ_COOKIEQUAN",
+            "isAbout": "FFQ_COOKIEQUAN"
+        },
+        {
+            "variableName": "FFQ_CHEESEFREQ",
+            "isAbout": "FFQ_CHEESEFREQ"
+        },
+        {
+            "variableName": "FFQ_CHEESEQUAN",
+            "isAbout": "FFQ_CHEESEQUAN"
+        },
+        {
+            "variableName": "FFQ_WHEATBRDFREQ",
+            "isAbout": "FFQ_WHEATBRDFREQ"
+        },
+        {
+            "variableName": "FFQ_WHEATBRDQUAN",
+            "isAbout": "FFQ_WHEATBRDQUAN"
+        },
+        {
+            "variableName": "FFQ_COLDCEREALTYPE",
+            "isAbout": "FFQ_COLDCEREALTYPE"
+        },
+        {
+            "variableName": "FFQ_MILKTYPE",
+            "isAbout": "FFQ_MILKTYPE"
+        }
+    ]
 }

@@ -1,31 +1,32 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "C-SSRS_37",
     "@type": "reproschema:Field",
-    "skos:altLabel": "C-SSRS_37",
-    "question": {
-        "en": "Interrupted Attempt - Lifetime(CSSRS1_029)\nWhen the person is interrupted (by an outside circumstance) from starting the potentially self-injurious act. \"Has there been a time when you started to do something to end your life but someone or something stopped you before you actually did anything?\" If yes, describe..."
-    },
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 0,
-                "schema:name": {
+                "value": 0,
+                "name": {
                     "en": "No"
                 }
             },
             {
-                "schema:value": 1,
-                "schema:name": {
+                "value": 1,
+                "name": {
                     "en": "Yes"
                 }
             }
-        ],
-        "type": "Nominal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "Interrupted Attempt - Lifetime(CSSRS1_029)\nWhen the person is interrupted (by an outside circumstance) from starting the potentially self-injurious act. \"Has there been a time when you started to do something to end your life but someone or something stopped you before you actually did anything?\" If yes, describe..."
     }
 }

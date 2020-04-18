@@ -1,46 +1,49 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "AUDIT_09",
     "@type": "reproschema:Field",
-    "skos:altLabel": "AUDIT_09",
-    "preamble": "Please circle the answer that is correct for you.",
-    "question": {
-        "en": "9. Have you or someone else been injured as a result of your drinking?"
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": {
+        "en": "Please circle the answer that is correct for you."
     },
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 0,
-                "schema:name": {
+                "value": 0,
+                "name": {
                     "en": "No"
                 }
             },
             {
-                "schema:value": 2,
-                "schema:name": {
+                "value": 2,
+                "name": {
                     "en": "Yes"
                 }
             },
             {
-                "schema:value": null,
-                "schema:name": {}
+                "value": null,
+                "name": {}
             },
             {
-                "schema:value": 4,
-                "schema:name": {
+                "value": 4,
+                "name": {
                     "en": "Yes"
                 }
             },
             {
-                "schema:value": null,
-                "schema:name": {}
+                "value": null,
+                "name": {}
             }
-        ],
-        "type": "Ordinal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "9. Have you or someone else been injured as a result of your drinking?"
     }
 }
