@@ -1,0 +1,68 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/PregnancyandBirthQuestionnaire/PregnancyandBirthQuestionnaire_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "PBQ_Section1_schema",
+    "skos:prefLabel": "PBQ_Section1_schema",
+    "skos:altLabel": "PBQ_Section1_schema",
+    "schema:description": "PBQ_Section1 schema",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": "During the pregnancy, did THE MOTHER/ did you experience any of the following:",
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "PBQ_08",
+            "PBQ_09",
+            "PBQ_09A",
+            "PBQ_10",
+            "PBQ_10A"
+        ],
+        "visibility": [
+            {
+                "variableName": "PBQ_08",
+                "isVis": true
+            },
+            {
+                "variableName": "PBQ_09",
+                "isVis": true
+            },
+            {
+                "variableName": "PBQ_09A",
+                "isVis": " 2537   == '2'"
+            },
+            {
+                "variableName": "PBQ_10",
+                "isVis": true
+            },
+            {
+                "variableName": "PBQ_10A",
+                "isVis": " 2539   == '2'"
+            }
+        ]
+    },
+    "variableMap": [
+        {
+            "variableName": "PBQ_08",
+            "isAbout": "PBQ_08"
+        },
+        {
+            "variableName": "PBQ_09",
+            "isAbout": "PBQ_09"
+        },
+        {
+            "variableName": "PBQ_09A",
+            "isAbout": "PBQ_09A"
+        },
+        {
+            "variableName": "PBQ_10",
+            "isAbout": "PBQ_10"
+        },
+        {
+            "variableName": "PBQ_10A",
+            "isAbout": "PBQ_10A"
+        }
+    ]
+}

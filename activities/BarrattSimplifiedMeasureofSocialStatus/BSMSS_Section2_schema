@@ -4,46 +4,38 @@
         "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/BarrattSimplifiedMeasureofSocialStatus/BarrattSimplifiedMeasureofSocialStatus_context"
     ],
     "@type": "reproschema:Activity",
-    "@id": "Section2_schema",
-    "skos:prefLabel": "Section2_schema",
-    "skos:altLabel": "Section2_schema",
-    "schema:description": "Section2 schema",
+    "@id": "BSMSS_Section2_schema",
+    "skos:prefLabel": "BSMSS_Section2_schema",
+    "skos:altLabel": "BSMSS_Section2_schema",
+    "schema:description": "BSMSS_Section2 schema",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
     "preamble": "Select the appropriate response for your occupation, and your child's other caregivers' occupation.\n\nOccupation:",
     "ui": {
         "shuffle": false,
-        "visibility": [
-            {
-                "variableName": "BSMSS_Who",
-                "isVis": true
-            },
-            {
-                "variableName": "Father_Edu",
-                "isVis": true
-            },
-            {
-                "variableName": "Mother_Edu",
-                "isVis": true
-            }
-        ],
         "order": [
             "Father_Occupation",
             "Mother_Occupation"
+        ],
+        "visibility": [
+            {
+                "variableName": "Father_Occupation",
+                "isVis": true
+            },
+            {
+                "variableName": "Mother_Occupation",
+                "isVis": true
+            }
         ]
     },
     "variableMap": [
         {
-            "variableName": "BSMSS_Who",
-            "isAbout": "BSMSS_Who"
+            "variableName": "Father_Occupation",
+            "isAbout": "Father_Occupation"
         },
         {
-            "variableName": "Father_Edu",
-            "isAbout": "Father_Edu"
-        },
-        {
-            "variableName": "Mother_Edu",
-            "isAbout": "Mother_Edu"
+            "variableName": "Mother_Occupation",
+            "isAbout": "Mother_Occupation"
         }
     ]
 }
