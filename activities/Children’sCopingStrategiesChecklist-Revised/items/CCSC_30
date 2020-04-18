@@ -1,44 +1,47 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "CCSC_30",
     "@type": "reproschema:Field",
-    "skos:altLabel": "CCSC_30",
-    "preamble": "Sometimes kids have problems or feel upset about things. When this happens, they may do different things to solve the problem or to make themselves feel better. \n \nFor each statement, choose the answer that BEST describes how often you usually did this to solve  your problems or make yourself feel better during the past month. \n \nThere are no right or wrong answers, just indicate how often YOU USUALLY did each thing in order  to solve your problems or make yourself feel better since the stressor.",
-    "question": {
-        "en": "You told yourself you could handle whatever happens."
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": {
+        "en": "Sometimes kids have problems or feel upset about things. When this happens, they may do different things to solve the problem or to make themselves feel better. \n \nFor each statement, choose the answer that BEST describes how often you usually did this to solve  your problems or make yourself feel better during the past month. \n \nThere are no right or wrong answers, just indicate how often YOU USUALLY did each thing in order  to solve your problems or make yourself feel better since the stressor."
     },
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 1,
-                "schema:name": {
+                "value": 1,
+                "name": {
                     "en": "Never"
                 }
             },
             {
-                "schema:value": 2,
-                "schema:name": {
+                "value": 2,
+                "name": {
                     "en": "Sometimes"
                 }
             },
             {
-                "schema:value": 3,
-                "schema:name": {
+                "value": 3,
+                "name": {
                     "en": "Often"
                 }
             },
             {
-                "schema:value": 4,
-                "schema:name": {
+                "value": 4,
+                "name": {
                     "en": "Most of the time"
                 }
             }
-        ],
-        "type": "Ordinal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "You told yourself you could handle whatever happens."
     }
 }

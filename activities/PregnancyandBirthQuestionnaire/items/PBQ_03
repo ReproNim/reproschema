@@ -1,25 +1,26 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "PBQ_03",
     "@type": "reproschema:Field",
-    "skos:altLabel": "PBQ_03",
-    "question": {
-        "en": "Has the mother/ have you ever smoked a cigarette on occasion or on a regular basis?"
-    },
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 1,
-                "schema:name": {
+                "value": 1,
+                "name": {
                     "en": " No\n2 "
                 }
             }
-        ],
-        "type": "Ordinal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "Has the mother/ have you ever smoked a cigarette on occasion or on a regular basis?"
     }
 }

@@ -1,23 +1,30 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "NIDA_04_NA",
     "@type": "reproschema:Field",
-    "skos:altLabel": "NIDA_04_NA",
-    "question": {
-        "en": "N/A, proceed to next question"
-    },
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": null,
-                "schema:name": {}
+                "value": -1,
+                "name": {
+                    "en": " N/A"
+                }
+            },
+            {
+                "value": null,
+                "name": {}
             }
-        ],
-        "type": "Ordinal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "N/A, proceed to next question"
     }
 }

@@ -1,7 +1,7 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/RepetitiveBehaviorScale-Revised/RepetitiveBehaviorScale-Revised_context"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/RepetitiveBehaviorScale-Revised/RepetitiveBehaviorScale-Revised_context"
     ],
     "@type": "reproschema:Activity",
     "@id": "RepetitiveBehaviorScale-Revised_schema",
@@ -13,8 +13,20 @@
     "preamble": "Please rate this person's behavior by reading each of the items listed and then choosing the score that best describes how much of a problem the item is for the person. Be sure to read and score all items listed. Make your ratings based on your observations and interactions with the person over the last month.",
     "ui": {
         "shuffle": false,
+        "visibility": [
+            {
+                "variableName": "RBS_39",
+                "isVis": true
+            }
+        ],
         "order": [
             "RBS_39"
         ]
-    }
+    },
+    "variableMap": [
+        {
+            "variableName": "RBS_39",
+            "isAbout": "RBS_39"
+        }
+    ]
 }

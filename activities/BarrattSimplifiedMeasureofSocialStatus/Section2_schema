@@ -1,7 +1,7 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/BarrattSimplifiedMeasureofSocialStatus/BarrattSimplifiedMeasureofSocialStatus_context"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/BarrattSimplifiedMeasureofSocialStatus/BarrattSimplifiedMeasureofSocialStatus_context"
     ],
     "@type": "reproschema:Activity",
     "@id": "Section2_schema",
@@ -13,9 +13,37 @@
     "preamble": "Select the appropriate response for your occupation, and your child's other caregivers' occupation.\n\nOccupation:",
     "ui": {
         "shuffle": false,
+        "visibility": [
+            {
+                "variableName": "BSMSS_Who",
+                "isVis": true
+            },
+            {
+                "variableName": "Father_Edu",
+                "isVis": true
+            },
+            {
+                "variableName": "Mother_Edu",
+                "isVis": true
+            }
+        ],
         "order": [
             "Father_Occupation",
             "Mother_Occupation"
         ]
-    }
+    },
+    "variableMap": [
+        {
+            "variableName": "BSMSS_Who",
+            "isAbout": "BSMSS_Who"
+        },
+        {
+            "variableName": "Father_Edu",
+            "isAbout": "Father_Edu"
+        },
+        {
+            "variableName": "Mother_Edu",
+            "isAbout": "Mother_Edu"
+        }
+    ]
 }

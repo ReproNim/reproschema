@@ -1,25 +1,26 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "NIDA_03g",
     "@type": "reproschema:Field",
-    "skos:altLabel": "NIDA_03g",
-    "question": {
-        "en": "g. Hallucinogens (LSD, acid, mushrooms, PCP, Special K, ecstasy, etc)"
-    },
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 0,
-                "schema:name": {
+                "value": 0,
+                "name": {
                     "en": " Never\n3"
                 }
             }
-        ],
-        "type": "Ordinal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "g. Hallucinogens (LSD, acid, mushrooms, PCP, Special K, ecstasy, etc)"
     }
 }

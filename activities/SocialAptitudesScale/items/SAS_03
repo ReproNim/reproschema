@@ -1,26 +1,29 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "SAS_03",
     "@type": "reproschema:Field",
-    "skos:altLabel": "SAS_03",
-    "preamble": "How does your child compare with other children/people of his/her age in the following situations: ",
-    "question": {
-        "en": "Able to compromise and be flexible"
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": {
+        "en": "How does your child compare with other children/people of his/her age in the following situations: "
     },
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 0,
-                "schema:name": {
+                "value": 0,
+                "name": {
                     "en": "A lot worse than average\n1"
                 }
             }
-        ],
-        "type": "Ordinal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "Able to compromise and be flexible"
     }
 }

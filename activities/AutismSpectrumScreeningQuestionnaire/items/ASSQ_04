@@ -1,38 +1,41 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "ASSQ_04",
     "@type": "reproschema:Field",
-    "skos:altLabel": "ASSQ_04",
-    "preamble": "This child stands out as different from other children of his/her age in the following way:",
-    "question": {
-        "en": "accumulates facts on certain subjects (good rote memory) but does not really understand the meaning"
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": {
+        "en": "This child stands out as different from other children of his/her age in the following way:"
     },
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 0,
-                "schema:name": {
+                "value": 0,
+                "name": {
                     "en": "No"
                 }
             },
             {
-                "schema:value": 1,
-                "schema:name": {
+                "value": 1,
+                "name": {
                     "en": "Somewhat"
                 }
             },
             {
-                "schema:value": 2,
-                "schema:name": {
+                "value": 2,
+                "name": {
                     "en": "Yes"
                 }
             }
-        ],
-        "type": "Ordinal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "accumulates facts on certain subjects (good rote memory) but does not really understand the meaning"
     }
 }

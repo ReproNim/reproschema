@@ -1,49 +1,50 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "CY-BOCS_87",
     "@type": "reproschema:Field",
-    "skos:altLabel": "CY-BOCS_87",
-    "question": {
-        "en": "Interference Due to Obsessive Thoughts (How much would these habits get in the way of school or doing something with friends, Is there something you dont do because of them (If currently not in school, determine how much performance would be affected if the person was in school))"
-    },
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 0,
-                "schema:name": {
+                "value": 0,
+                "name": {
                     "en": "None"
                 }
             },
             {
-                "schema:value": 1,
-                "schema:name": {
+                "value": 1,
+                "name": {
                     "en": "Mild"
                 }
             },
             {
-                "schema:value": 2,
-                "schema:name": {
+                "value": 2,
+                "name": {
                     "en": "Moderate"
                 }
             },
             {
-                "schema:value": 3,
-                "schema:name": {
+                "value": 3,
+                "name": {
                     "en": "Severe"
                 }
             },
             {
-                "schema:value": 4,
-                "schema:name": {
+                "value": 4,
+                "name": {
                     "en": "Extreme"
                 }
             }
-        ],
-        "type": "Ordinal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "Interference Due to Obsessive Thoughts (How much would these habits get in the way of school or doing something with friends, Is there something you dont do because of them (If currently not in school, determine how much performance would be affected if the person was in school))"
     }
 }

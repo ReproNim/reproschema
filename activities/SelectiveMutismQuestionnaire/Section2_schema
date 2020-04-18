@@ -1,7 +1,7 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/SelectiveMutismQuestionnaire/SelectiveMutismQuestionnaire_context"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/SelectiveMutismQuestionnaire/SelectiveMutismQuestionnaire_context"
     ],
     "@type": "reproschema:Activity",
     "@id": "Section2_schema",
@@ -13,6 +13,32 @@
     "preamble": "Home/Family",
     "ui": {
         "shuffle": false,
+        "visibility": [
+            {
+                "variableName": "SMQ_1",
+                "isVis": true
+            },
+            {
+                "variableName": "SMQ_2",
+                "isVis": true
+            },
+            {
+                "variableName": "SMQ_3",
+                "isVis": true
+            },
+            {
+                "variableName": "SMQ_4",
+                "isVis": true
+            },
+            {
+                "variableName": "SMQ_5",
+                "isVis": true
+            },
+            {
+                "variableName": "SMQ_6",
+                "isVis": true
+            }
+        ],
         "order": [
             "SMQ_7",
             "SMQ_8",
@@ -21,5 +47,31 @@
             "SMQ_11",
             "SMQ_12"
         ]
-    }
+    },
+    "variableMap": [
+        {
+            "variableName": "SMQ_1",
+            "isAbout": "SMQ_1"
+        },
+        {
+            "variableName": "SMQ_2",
+            "isAbout": "SMQ_2"
+        },
+        {
+            "variableName": "SMQ_3",
+            "isAbout": "SMQ_3"
+        },
+        {
+            "variableName": "SMQ_4",
+            "isAbout": "SMQ_4"
+        },
+        {
+            "variableName": "SMQ_5",
+            "isAbout": "SMQ_5"
+        },
+        {
+            "variableName": "SMQ_6",
+            "isAbout": "SMQ_6"
+        }
+    ]
 }

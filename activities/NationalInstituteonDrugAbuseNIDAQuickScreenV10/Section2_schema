@@ -1,7 +1,7 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/NationalInstituteonDrugAbuseNIDAQuickScreenV10/NationalInstituteonDrugAbuseNIDAQuickScreenV10_context"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/NationalInstituteonDrugAbuseNIDAQuickScreenV10/NationalInstituteonDrugAbuseNIDAQuickScreenV10_context"
     ],
     "@type": "reproschema:Activity",
     "@id": "Section2_schema",
@@ -13,6 +13,28 @@
     "preamble": "In your LIFETIME, which of the following substances have you ever used?",
     "ui": {
         "shuffle": false,
+        "visibility": [
+            {
+                "variableName": "NIDA_Scr_Alc_M",
+                "isVis": true
+            },
+            {
+                "variableName": "NIDA_Scr_Alc_F",
+                "isVis": true
+            },
+            {
+                "variableName": "NIDA_Scr_Tobacco",
+                "isVis": true
+            },
+            {
+                "variableName": "NIDA_Scr_Rx_Drug",
+                "isVis": true
+            },
+            {
+                "variableName": "NIDA_Scr_Illegal_Drug",
+                "isVis": true
+            }
+        ],
         "order": [
             "NIDA_Scr_Cannabis",
             "NIDA_Scr_Cocaine",
@@ -26,5 +48,27 @@
             "NIDA_Scr_Other",
             "NIDA_Scr_Sed"
         ]
-    }
+    },
+    "variableMap": [
+        {
+            "variableName": "NIDA_Scr_Alc_M",
+            "isAbout": "NIDA_Scr_Alc_M"
+        },
+        {
+            "variableName": "NIDA_Scr_Alc_F",
+            "isAbout": "NIDA_Scr_Alc_F"
+        },
+        {
+            "variableName": "NIDA_Scr_Tobacco",
+            "isAbout": "NIDA_Scr_Tobacco"
+        },
+        {
+            "variableName": "NIDA_Scr_Rx_Drug",
+            "isAbout": "NIDA_Scr_Rx_Drug"
+        },
+        {
+            "variableName": "NIDA_Scr_Illegal_Drug",
+            "isAbout": "NIDA_Scr_Illegal_Drug"
+        }
+    ]
 }

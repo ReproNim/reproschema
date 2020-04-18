@@ -1,31 +1,32 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "C-SSRS_7",
     "@type": "reproschema:Field",
-    "skos:altLabel": "C-SSRS_7",
-    "question": {
-        "en": "4. Active Suicidal Ideation with Some Intent to Act, without Specific Plan - Lifetime(CSSRS1_007)\n\"Have you had these thoughts and had some intention of acting on them?\" If yes, describe..."
-    },
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 0,
-                "schema:name": {
+                "value": 0,
+                "name": {
                     "en": "No"
                 }
             },
             {
-                "schema:value": 1,
-                "schema:name": {
+                "value": 1,
+                "name": {
                     "en": "Yes"
                 }
             }
-        ],
-        "type": "Nominal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "4. Active Suicidal Ideation with Some Intent to Act, without Specific Plan - Lifetime(CSSRS1_007)\n\"Have you had these thoughts and had some intention of acting on them?\" If yes, describe..."
     }
 }

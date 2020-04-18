@@ -1,26 +1,29 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "PPS_M_06",
     "@type": "reproschema:Field",
-    "skos:altLabel": "PPS_M_06",
-    "preamble": "For males (ages 11+), answer the following questions:",
-    "question": {
-        "en": "6. Do you think your development is any earlier or later than most other boys your age?"
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": {
+        "en": "For males (ages 11+), answer the following questions:"
     },
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 1,
-                "schema:name": {
+                "value": 1,
+                "name": {
                     "en": "much earlier\n2"
                 }
             }
-        ],
-        "type": "Ordinal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "Do you think your development is any earlier or later than most other boys your age?"
     }
 }

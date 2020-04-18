@@ -1,7 +1,7 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/NationalInstituteonDrugAbuseNIDAQuickScreenV178/NationalInstituteonDrugAbuseNIDAQuickScreenV178_context"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/NationalInstituteonDrugAbuseNIDAQuickScreenV178/NationalInstituteonDrugAbuseNIDAQuickScreenV178_context"
     ],
     "@type": "reproschema:Activity",
     "@id": "NationalInstituteonDrugAbuseNIDAQuickScreenV178_schema",
@@ -12,8 +12,20 @@
     "schema:version": "0.0.1",
     "ui": {
         "shuffle": false,
+        "visibility": [
+            {
+                "variableName": "NIDA_07a",
+                "isVis": true
+            }
+        ],
         "order": [
             "Section1"
         ]
-    }
+    },
+    "variableMap": [
+        {
+            "variableName": "NIDA_07a",
+            "isAbout": "NIDA_07a"
+        }
+    ]
 }

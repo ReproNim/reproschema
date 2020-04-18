@@ -1,56 +1,59 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "IAT_06",
     "@type": "reproschema:Field",
-    "skos:altLabel": "IAT_06",
-    "preamble": "Based upon the following five-point likert scale, select the response that best represents the frequency of the behavior described in the following 20-item questionnaire",
-    "question": {
-        "en": "How often do your grades or school work suffer because of the amount of time you spend on-line?"
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": {
+        "en": "Based upon the following five-point likert scale, select the response that best represents the frequency of the behavior described in the following 20-item questionnaire"
     },
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 0,
-                "schema:name": {
+                "value": 0,
+                "name": {
                     "en": "Does Not Apply"
                 }
             },
             {
-                "schema:value": 1,
-                "schema:name": {
+                "value": 1,
+                "name": {
                     "en": "Rarely"
                 }
             },
             {
-                "schema:value": 2,
-                "schema:name": {
+                "value": 2,
+                "name": {
                     "en": "Occasionally"
                 }
             },
             {
-                "schema:value": 3,
-                "schema:name": {
+                "value": 3,
+                "name": {
                     "en": "Frequently"
                 }
             },
             {
-                "schema:value": 4,
-                "schema:name": {
+                "value": 4,
+                "name": {
                     "en": "Often"
                 }
             },
             {
-                "schema:value": 5,
-                "schema:name": {
+                "value": 5,
+                "name": {
                     "en": "Always"
                 }
             }
-        ],
-        "type": "Ordinal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "How often do your grades or school work suffer because of the amount of time you spend on-line?"
     }
 }

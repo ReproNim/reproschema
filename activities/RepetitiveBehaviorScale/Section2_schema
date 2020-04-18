@@ -1,7 +1,7 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/RepetitiveBehaviorScale/RepetitiveBehaviorScale_context"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/RepetitiveBehaviorScale/RepetitiveBehaviorScale_context"
     ],
     "@type": "reproschema:Activity",
     "@id": "Section2_schema",
@@ -13,8 +13,60 @@
     "preamble": "Section: II. Self-Injurious Behavior Subscale",
     "ui": {
         "shuffle": false,
+        "visibility": [
+            {
+                "variableName": "RBS_01",
+                "isVis": true
+            },
+            {
+                "variableName": "RBS_02",
+                "isVis": true
+            },
+            {
+                "variableName": "RBS_03",
+                "isVis": true
+            },
+            {
+                "variableName": "RBS_04",
+                "isVis": true
+            },
+            {
+                "variableName": "RBS_05",
+                "isVis": true
+            },
+            {
+                "variableName": "RBS_06",
+                "isVis": true
+            }
+        ],
         "order": [
             "RBS_07"
         ]
-    }
+    },
+    "variableMap": [
+        {
+            "variableName": "RBS_01",
+            "isAbout": "RBS_01"
+        },
+        {
+            "variableName": "RBS_02",
+            "isAbout": "RBS_02"
+        },
+        {
+            "variableName": "RBS_03",
+            "isAbout": "RBS_03"
+        },
+        {
+            "variableName": "RBS_04",
+            "isAbout": "RBS_04"
+        },
+        {
+            "variableName": "RBS_05",
+            "isAbout": "RBS_05"
+        },
+        {
+            "variableName": "RBS_06",
+            "isAbout": "RBS_06"
+        }
+    ]
 }

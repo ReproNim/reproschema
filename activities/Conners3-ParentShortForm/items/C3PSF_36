@@ -1,56 +1,59 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "C3PSF_36",
     "@type": "reproschema:Field",
-    "skos:altLabel": "C3PSF_36",
-    "preamble": "Here are some things parents might say about their children. Please tell us about your child and what he/she has been like in the past month. Read each item carefully, then mark how well it describes your child or how frequently it has happened in the past month.\nFor items that you find difficult to answer, please give your best guess.",
-    "question": {
-        "en": "Is patient and content, even when waiting in a long line"
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": {
+        "en": "Here are some things parents might say about their children. Please tell us about your child and what he/she has been like in the past month. Read each item carefully, then mark how well it describes your child or how frequently it has happened in the past month.\nFor items that you find difficult to answer, please give your best guess."
     },
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 0,
-                "schema:name": {
+                "value": 0,
+                "name": {
                     "en": "Not true at all (Never"
                 }
             },
             {
-                "schema:value": null,
-                "schema:name": {}
+                "value": null,
+                "name": {}
             },
             {
-                "schema:value": 1,
-                "schema:name": {
+                "value": 1,
+                "name": {
                     "en": "Just a little true (Occasionally)"
                 }
             },
             {
-                "schema:value": 2,
-                "schema:name": {
+                "value": 2,
+                "name": {
                     "en": "Pretty much true (Often"
                 }
             },
             {
-                "schema:value": null,
-                "schema:name": {}
+                "value": null,
+                "name": {}
             },
             {
-                "schema:value": 3,
-                "schema:name": {
+                "value": 3,
+                "name": {
                     "en": "Very much true (Very often"
                 }
             },
             {
-                "schema:value": null,
-                "schema:name": {}
+                "value": null,
+                "name": {}
             }
-        ],
-        "type": "Ordinal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "Is patient and content, even when waiting in a long line"
     }
 }

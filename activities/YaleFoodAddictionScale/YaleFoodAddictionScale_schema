@@ -1,7 +1,7 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/YaleFoodAddictionScale/YaleFoodAddictionScale_context"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/YaleFoodAddictionScale/YaleFoodAddictionScale_context"
     ],
     "@type": "reproschema:Activity",
     "@id": "YaleFoodAddictionScale_schema",
@@ -10,14 +10,450 @@
     "schema:description": "YaleFoodAddictionScale schema",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
-    "preamble": "This survey asks about your eating habits in the past year. People sometimes have difficulty controlling their intake of certain foods such as:\n - Sweets like ice cream, chocolate, doughnuts, cookies, cake, candy, ice cream\n - Starches like white bread, rolls, pasta, and rice\n - Salty snacks like chips, pretzels, and crackers\n - Fatty foods like steak, bacon, hamburgers, cheeseburgers, pizza, and French fries\n - Sugary drinks like soda pop\nWhen the following questions ask about "CERTAIN FOODS" please think of ANY food similar to those listed in the food group or ANY OTHER foods you have had a problem within the past year.",
+    "preamble": "This survey asks about your eating habits in the past year. People sometimes have difficulty controlling their intake of certain foods such as:\n - Sweets like ice cream, chocolate, doughnuts, cookies, cake, candy, ice cream\n - Starches like white bread, rolls, pasta, and rice\n - Salty snacks like chips, pretzels, and crackers\n - Fatty foods like steak, bacon, hamburgers, cheeseburgers, pizza, and French fries\n - Sugary drinks like soda pop\nWhen the following questions ask about “CERTAIN FOODS” please think of ANY food similar to those listed in the food group or ANY OTHER foods you have had a problem within the past year.",
     "ui": {
         "shuffle": false,
+        "visibility": [
+            {
+                "variableName": "YFAS_01",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_02",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_03",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_04",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_05",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_06",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_07",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_08",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_09",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_10",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_11",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_12",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_13",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_14",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_15",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_16",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_17",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_18",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_19",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_20",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_21",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_22",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_23",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_24",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_25",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_26b",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_26c",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_26d",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_26e",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_26f",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_26g",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_26h",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_26i",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_26j",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_26k",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_26l",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_26m",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_26n",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_26o",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_26p",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_26q",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_26r",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_26s",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_26t",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_26u",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_26v",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_26w",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_26x",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_26y",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_26z",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_26aa",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_26ab",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_26ac",
+                "isVis": true
+            },
+            {
+                "variableName": "YFAS_27",
+                "isVis": true
+            }
+        ],
         "order": [
             "Section1",
             "YFAS_25",
             "Section2",
             "YFAS_27"
         ]
-    }
+    },
+    "variableMap": [
+        {
+            "variableName": "YFAS_01",
+            "isAbout": "YFAS_01"
+        },
+        {
+            "variableName": "YFAS_02",
+            "isAbout": "YFAS_02"
+        },
+        {
+            "variableName": "YFAS_03",
+            "isAbout": "YFAS_03"
+        },
+        {
+            "variableName": "YFAS_04",
+            "isAbout": "YFAS_04"
+        },
+        {
+            "variableName": "YFAS_05",
+            "isAbout": "YFAS_05"
+        },
+        {
+            "variableName": "YFAS_06",
+            "isAbout": "YFAS_06"
+        },
+        {
+            "variableName": "YFAS_07",
+            "isAbout": "YFAS_07"
+        },
+        {
+            "variableName": "YFAS_08",
+            "isAbout": "YFAS_08"
+        },
+        {
+            "variableName": "YFAS_09",
+            "isAbout": "YFAS_09"
+        },
+        {
+            "variableName": "YFAS_10",
+            "isAbout": "YFAS_10"
+        },
+        {
+            "variableName": "YFAS_11",
+            "isAbout": "YFAS_11"
+        },
+        {
+            "variableName": "YFAS_12",
+            "isAbout": "YFAS_12"
+        },
+        {
+            "variableName": "YFAS_13",
+            "isAbout": "YFAS_13"
+        },
+        {
+            "variableName": "YFAS_14",
+            "isAbout": "YFAS_14"
+        },
+        {
+            "variableName": "YFAS_15",
+            "isAbout": "YFAS_15"
+        },
+        {
+            "variableName": "YFAS_16",
+            "isAbout": "YFAS_16"
+        },
+        {
+            "variableName": "YFAS_17",
+            "isAbout": "YFAS_17"
+        },
+        {
+            "variableName": "YFAS_18",
+            "isAbout": "YFAS_18"
+        },
+        {
+            "variableName": "YFAS_19",
+            "isAbout": "YFAS_19"
+        },
+        {
+            "variableName": "YFAS_20",
+            "isAbout": "YFAS_20"
+        },
+        {
+            "variableName": "YFAS_21",
+            "isAbout": "YFAS_21"
+        },
+        {
+            "variableName": "YFAS_22",
+            "isAbout": "YFAS_22"
+        },
+        {
+            "variableName": "YFAS_23",
+            "isAbout": "YFAS_23"
+        },
+        {
+            "variableName": "YFAS_24",
+            "isAbout": "YFAS_24"
+        },
+        {
+            "variableName": "YFAS_25",
+            "isAbout": "YFAS_25"
+        },
+        {
+            "variableName": "YFAS_26b",
+            "isAbout": "YFAS_26b"
+        },
+        {
+            "variableName": "YFAS_26c",
+            "isAbout": "YFAS_26c"
+        },
+        {
+            "variableName": "YFAS_26d",
+            "isAbout": "YFAS_26d"
+        },
+        {
+            "variableName": "YFAS_26e",
+            "isAbout": "YFAS_26e"
+        },
+        {
+            "variableName": "YFAS_26f",
+            "isAbout": "YFAS_26f"
+        },
+        {
+            "variableName": "YFAS_26g",
+            "isAbout": "YFAS_26g"
+        },
+        {
+            "variableName": "YFAS_26h",
+            "isAbout": "YFAS_26h"
+        },
+        {
+            "variableName": "YFAS_26i",
+            "isAbout": "YFAS_26i"
+        },
+        {
+            "variableName": "YFAS_26j",
+            "isAbout": "YFAS_26j"
+        },
+        {
+            "variableName": "YFAS_26k",
+            "isAbout": "YFAS_26k"
+        },
+        {
+            "variableName": "YFAS_26l",
+            "isAbout": "YFAS_26l"
+        },
+        {
+            "variableName": "YFAS_26m",
+            "isAbout": "YFAS_26m"
+        },
+        {
+            "variableName": "YFAS_26n",
+            "isAbout": "YFAS_26n"
+        },
+        {
+            "variableName": "YFAS_26o",
+            "isAbout": "YFAS_26o"
+        },
+        {
+            "variableName": "YFAS_26p",
+            "isAbout": "YFAS_26p"
+        },
+        {
+            "variableName": "YFAS_26q",
+            "isAbout": "YFAS_26q"
+        },
+        {
+            "variableName": "YFAS_26r",
+            "isAbout": "YFAS_26r"
+        },
+        {
+            "variableName": "YFAS_26s",
+            "isAbout": "YFAS_26s"
+        },
+        {
+            "variableName": "YFAS_26t",
+            "isAbout": "YFAS_26t"
+        },
+        {
+            "variableName": "YFAS_26u",
+            "isAbout": "YFAS_26u"
+        },
+        {
+            "variableName": "YFAS_26v",
+            "isAbout": "YFAS_26v"
+        },
+        {
+            "variableName": "YFAS_26w",
+            "isAbout": "YFAS_26w"
+        },
+        {
+            "variableName": "YFAS_26x",
+            "isAbout": "YFAS_26x"
+        },
+        {
+            "variableName": "YFAS_26y",
+            "isAbout": "YFAS_26y"
+        },
+        {
+            "variableName": "YFAS_26z",
+            "isAbout": "YFAS_26z"
+        },
+        {
+            "variableName": "YFAS_26aa",
+            "isAbout": "YFAS_26aa"
+        },
+        {
+            "variableName": "YFAS_26ab",
+            "isAbout": "YFAS_26ab"
+        },
+        {
+            "variableName": "YFAS_26ac",
+            "isAbout": "YFAS_26ac"
+        },
+        {
+            "variableName": "YFAS_27",
+            "isAbout": "YFAS_27"
+        }
+    ]
 }

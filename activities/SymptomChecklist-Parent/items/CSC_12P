@@ -1,32 +1,35 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "CSC_12P",
     "@type": "reproschema:Field",
-    "skos:altLabel": "CSC_12P",
-    "preamble": "Please respond to the following statements based on your child’s mood and behavior:",
-    "question": {
-        "en": "13. Feels very afraid of being in a crowded place, or going outside in public alone - Past"
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": {
+        "en": "Please respond to the following statements based on your child’s mood and behavior:"
     },
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 0,
-                "schema:name": {
+                "value": 0,
+                "name": {
                     "en": "No"
                 }
             },
             {
-                "schema:value": 1,
-                "schema:name": {
+                "value": 1,
+                "name": {
                     "en": "Yes"
                 }
             }
-        ],
-        "type": "Nominal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "13. Feels very afraid of being in a crowded place, or going outside in public alone - Past"
     }
 }

@@ -1,26 +1,29 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "BSMSS_Who",
     "@type": "reproschema:Field",
-    "skos:altLabel": "BSMSS_Who",
-    "preamble": "In this survey, Parent/Guardian 1 refers to you. Parent/Guardian 2 refers to your spouse or the child's other caregiver.\n\nIf you are the child's only caregiver, answer only about yourself.",
-    "question": {
-        "en": "Who is providing financial support for the child?"
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": {
+        "en": "In this survey, Parent/Guardian 1 refers to you. Parent/Guardian 2 refers to your spouse or the child's other caregiver.\n\nIf you are the child's only caregiver, answer only about yourself."
     },
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 0,
-                "schema:name": {
+                "value": 0,
+                "name": {
                     "en": "Both Parents/Guardians\n1"
                 }
             }
-        ],
-        "type": "Nominal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "Who is providing financial support for the child?"
     }
 }

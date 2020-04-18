@@ -1,7 +1,7 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/FinancialSupportQuestionnaire/FinancialSupportQuestionnaire_context"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/FinancialSupportQuestionnaire/FinancialSupportQuestionnaire_context"
     ],
     "@type": "reproschema:Activity",
     "@id": "FinancialSupportQuestionnaire_schema",
@@ -13,6 +13,48 @@
     "preamble": "In this survey, Parent/Guardian 1 refers to you. Parent/Guardian 2 refers to your spouse or the child's other caregiver.\n\nIf you are the child's only caregiver, answer only about yourself.",
     "ui": {
         "shuffle": false,
+        "visibility": [
+            {
+                "variableName": "BSMSS_FSQ_1",
+                "isVis": true
+            },
+            {
+                "variableName": "BSMSS_FSQ_2",
+                "isVis": true
+            },
+            {
+                "variableName": "BSMSS_FSQ_3",
+                "isVis": " 4046   == 'Yes'"
+            },
+            {
+                "variableName": "BSMSS_FSQ_4",
+                "isVis": true
+            },
+            {
+                "variableName": "BSMSS_FSQ_5",
+                "isVis": true
+            },
+            {
+                "variableName": "BSMSS_FSQ_6",
+                "isVis": true
+            },
+            {
+                "variableName": "BSMSS_FSQ_7",
+                "isVis": true
+            },
+            {
+                "variableName": "BSMSS_FSQ_8",
+                "isVis": true
+            },
+            {
+                "variableName": "BSMSS_FSQ_9",
+                "isVis": true
+            },
+            {
+                "variableName": "BSMSS_FSQ_10",
+                "isVis": true
+            }
+        ],
         "order": [
             "BSMSS_FSQ_1",
             "BSMSS_FSQ_2",
@@ -25,5 +67,47 @@
             "BSMSS_FSQ_9",
             "BSMSS_FSQ_10"
         ]
-    }
+    },
+    "variableMap": [
+        {
+            "variableName": "BSMSS_FSQ_1",
+            "isAbout": "BSMSS_FSQ_1"
+        },
+        {
+            "variableName": "BSMSS_FSQ_2",
+            "isAbout": "BSMSS_FSQ_2"
+        },
+        {
+            "variableName": "BSMSS_FSQ_3",
+            "isAbout": "BSMSS_FSQ_3"
+        },
+        {
+            "variableName": "BSMSS_FSQ_4",
+            "isAbout": "BSMSS_FSQ_4"
+        },
+        {
+            "variableName": "BSMSS_FSQ_5",
+            "isAbout": "BSMSS_FSQ_5"
+        },
+        {
+            "variableName": "BSMSS_FSQ_6",
+            "isAbout": "BSMSS_FSQ_6"
+        },
+        {
+            "variableName": "BSMSS_FSQ_7",
+            "isAbout": "BSMSS_FSQ_7"
+        },
+        {
+            "variableName": "BSMSS_FSQ_8",
+            "isAbout": "BSMSS_FSQ_8"
+        },
+        {
+            "variableName": "BSMSS_FSQ_9",
+            "isAbout": "BSMSS_FSQ_9"
+        },
+        {
+            "variableName": "BSMSS_FSQ_10",
+            "isAbout": "BSMSS_FSQ_10"
+        }
+    ]
 }

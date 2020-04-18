@@ -1,26 +1,29 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "PPS_F_06",
     "@type": "reproschema:Field",
-    "skos:altLabel": "PPS_F_06",
-    "preamble": "For females (ages 6-10), parent answers the following questions:",
-    "question": {
-        "en": "6. Has your child begun to menstruate?"
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": {
+        "en": "For females (ages 6-10), parent answers the following questions:"
     },
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 0,
-                "schema:name": {
+                "value": 0,
+                "name": {
                     "en": "No\n1"
                 }
             }
-        ],
-        "type": "Nominal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "6. Has your child begun to menstruate?"
     }
 }

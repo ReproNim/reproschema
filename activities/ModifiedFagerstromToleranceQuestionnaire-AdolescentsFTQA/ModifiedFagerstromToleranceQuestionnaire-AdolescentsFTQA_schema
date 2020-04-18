@@ -1,7 +1,7 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/ModifiedFagerstromToleranceQuestionnaire-AdolescentsFTQA/ModifiedFagerstromToleranceQuestionnaire-AdolescentsFTQA_context"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/ModifiedFagerstromToleranceQuestionnaire-AdolescentsFTQA/ModifiedFagerstromToleranceQuestionnaire-AdolescentsFTQA_context"
     ],
     "@type": "reproschema:Activity",
     "@id": "ModifiedFagerstromToleranceQuestionnaire-AdolescentsFTQA_schema",
@@ -12,6 +12,40 @@
     "schema:version": "0.0.1",
     "ui": {
         "shuffle": false,
+        "visibility": [
+            {
+                "variableName": "FTQA_01",
+                "isVis": true
+            },
+            {
+                "variableName": "FTQA_02_A",
+                "isVis": " 1832   == '1'"
+            },
+            {
+                "variableName": "FTQA_03_A",
+                "isVis": true
+            },
+            {
+                "variableName": "FTQA_04_A",
+                "isVis": true
+            },
+            {
+                "variableName": "FTQA_05_A",
+                "isVis": true
+            },
+            {
+                "variableName": "FTQA_06_A",
+                "isVis": true
+            },
+            {
+                "variableName": "FTQA_07_A",
+                "isVis": true
+            },
+            {
+                "variableName": "FTQA_08",
+                "isVis": true
+            }
+        ],
         "order": [
             "FTQA_01",
             "FTQA_02_A",
@@ -22,5 +56,39 @@
             "FTQA_07_A",
             "FTQA_08"
         ]
-    }
+    },
+    "variableMap": [
+        {
+            "variableName": "FTQA_01",
+            "isAbout": "FTQA_01"
+        },
+        {
+            "variableName": "FTQA_02_A",
+            "isAbout": "FTQA_02_A"
+        },
+        {
+            "variableName": "FTQA_03_A",
+            "isAbout": "FTQA_03_A"
+        },
+        {
+            "variableName": "FTQA_04_A",
+            "isAbout": "FTQA_04_A"
+        },
+        {
+            "variableName": "FTQA_05_A",
+            "isAbout": "FTQA_05_A"
+        },
+        {
+            "variableName": "FTQA_06_A",
+            "isAbout": "FTQA_06_A"
+        },
+        {
+            "variableName": "FTQA_07_A",
+            "isAbout": "FTQA_07_A"
+        },
+        {
+            "variableName": "FTQA_08",
+            "isAbout": "FTQA_08"
+        }
+    ]
 }

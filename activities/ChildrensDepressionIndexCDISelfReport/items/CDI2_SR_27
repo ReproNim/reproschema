@@ -1,26 +1,29 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "CDI2_SR_27",
     "@type": "reproschema:Field",
-    "skos:altLabel": "CDI2_SR_27",
-    "preamble": "Kids sometimes have different feelings and ideas. \n\nThis form lists the feelings and ideas in groups. From each group of three sentences, pick one sentence that describes you best for the past two weeks. After you pick a sentence from the first group, go on to the next group. \n\nThere is no right or wrong answer. Just pick the sentence that best describes the way you have been recently. \nRemember, for each group, pick out the sentence that describes you best in the PAST TWO WEEKS.",
-    "question": {
-        "en": "Item 27"
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": {
+        "en": "Kids sometimes have different feelings and ideas. \n\nThis form lists the feelings and ideas in groups. From each group of three sentences, pick one sentence that describes you best for the past two weeks. After you pick a sentence from the first group, go on to the next group. \n\nThere is no right or wrong answer. Just pick the sentence that best describes the way you have been recently. \nRemember, for each group, pick out the sentence that describes you best in the PAST TWO WEEKS."
     },
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 0,
-                "schema:name": {
+                "value": 0,
+                "name": {
                     "en": " My eating is O.K.\n1"
                 }
             }
-        ],
-        "type": "Ordinal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "Item 27"
     }
 }

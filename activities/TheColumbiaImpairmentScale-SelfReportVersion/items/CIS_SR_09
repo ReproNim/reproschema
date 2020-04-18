@@ -1,26 +1,29 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "CIS_SR_09",
     "@type": "reproschema:Field",
-    "skos:altLabel": "CIS_SR_09",
-    "preamble": "This survey asks questions about how you think you are doing overall. Please answer questions on a scale from 0 to 4 with 0 being \"No Problem\" to 4 being \"Very Bad Problem\"",
-    "question": {
-        "en": "How much of a problem do you have getting along with your sister(s) and/or brother(s)?"
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": {
+        "en": "This survey asks questions about how you think you are doing overall. Please answer questions on a scale from 0 to 4 with 0 being \"No Problem\" to 4 being \"Very Bad Problem\""
     },
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 0,
-                "schema:name": {
+                "value": 0,
+                "name": {
                     "en": "No Problem\n1"
                 }
             }
-        ],
-        "type": "Ordinal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "How much of a problem do you have getting along with your sister(s) and/or brother(s)?"
     }
 }

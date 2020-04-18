@@ -1,31 +1,32 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "CY-BOCS_67",
     "@type": "reproschema:Field",
-    "skos:altLabel": "CY-BOCS_67",
-    "question": {
-        "en": "Distinguish from age appropriate magical games (e.g. array of behavior, such as sleeping over certain spots on a floor, touching an object / self certain number of times as a routine game to avoid something bad from happening"
-    },
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
     "responseOptions": {
         "multipleChoice": true,
         "choices": [
             {
-                "schema:value": 1,
-                "schema:name": {
+                "value": 1,
+                "name": {
                     "en": "Current"
                 }
             },
             {
-                "schema:value": 2,
-                "schema:name": {
+                "value": 2,
+                "name": {
                     "en": "Past"
                 }
             }
-        ],
-        "type": "Nominal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "Distinguish from age appropriate magical games (e.g. array of behavior, such as sleeping over certain spots on a floor, touching an object / self certain number of times as a routine game to avoid something bad from happening"
     }
 }

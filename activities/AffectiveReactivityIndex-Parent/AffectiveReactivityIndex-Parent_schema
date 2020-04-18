@@ -1,7 +1,7 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/AffectiveReactivityIndex-Parent/AffectiveReactivityIndex-Parent_context"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/AffectiveReactivityIndex-Parent/AffectiveReactivityIndex-Parent_context"
     ],
     "@type": "reproschema:Activity",
     "@id": "AffectiveReactivityIndex-Parent_schema",
@@ -13,6 +13,36 @@
     "preamble": "For each item, please mark the box for Not True, Somewhat True or Certainly True. In the last six months and compared to others of the same age, how well does each of the following statements describe the behavior/feelings of your child? Please try to answer all questions.",
     "ui": {
         "shuffle": false,
+        "visibility": [
+            {
+                "variableName": "ARI_P_01",
+                "isVis": true
+            },
+            {
+                "variableName": "ARI_P_02",
+                "isVis": true
+            },
+            {
+                "variableName": "ARI_P_03",
+                "isVis": true
+            },
+            {
+                "variableName": "ARI_P_04",
+                "isVis": true
+            },
+            {
+                "variableName": "ARI_P_05",
+                "isVis": true
+            },
+            {
+                "variableName": "ARI_P_06",
+                "isVis": true
+            },
+            {
+                "variableName": "ARI_P_07",
+                "isVis": true
+            }
+        ],
         "order": [
             "ARI_P_01",
             "ARI_P_02",
@@ -22,5 +52,35 @@
             "ARI_P_06",
             "ARI_P_07"
         ]
-    }
+    },
+    "variableMap": [
+        {
+            "variableName": "ARI_P_01",
+            "isAbout": "ARI_P_01"
+        },
+        {
+            "variableName": "ARI_P_02",
+            "isAbout": "ARI_P_02"
+        },
+        {
+            "variableName": "ARI_P_03",
+            "isAbout": "ARI_P_03"
+        },
+        {
+            "variableName": "ARI_P_04",
+            "isAbout": "ARI_P_04"
+        },
+        {
+            "variableName": "ARI_P_05",
+            "isAbout": "ARI_P_05"
+        },
+        {
+            "variableName": "ARI_P_06",
+            "isAbout": "ARI_P_06"
+        },
+        {
+            "variableName": "ARI_P_07",
+            "isAbout": "ARI_P_07"
+        }
+    ]
 }

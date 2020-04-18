@@ -1,7 +1,7 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/AlcoholUseDisordersIdentificationTestAUDIT/AlcoholUseDisordersIdentificationTestAUDIT_context"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/AlcoholUseDisordersIdentificationTestAUDIT/AlcoholUseDisordersIdentificationTestAUDIT_context"
     ],
     "@type": "reproschema:Activity",
     "@id": "AlcoholUseDisordersIdentificationTestAUDIT_schema",
@@ -13,6 +13,60 @@
     "preamble": "Please circle the answer that is correct for you.",
     "ui": {
         "shuffle": false,
+        "visibility": [
+            {
+                "variableName": "AUDIT_01",
+                "isVis": true
+            },
+            {
+                "variableName": "AUDIT_02",
+                "isVis": true
+            },
+            {
+                "variableName": "AUDIT_02_a",
+                "isVis": true
+            },
+            {
+                "variableName": "AUDIT_02_b",
+                "isVis": true
+            },
+            {
+                "variableName": "AUDIT_03",
+                "isVis": true
+            },
+            {
+                "variableName": "AUDIT_04",
+                "isVis": true
+            },
+            {
+                "variableName": "AUDIT_04_a",
+                "isVis": true
+            },
+            {
+                "variableName": "AUDIT_05",
+                "isVis": true
+            },
+            {
+                "variableName": "AUDIT_06",
+                "isVis": true
+            },
+            {
+                "variableName": "AUDIT_07",
+                "isVis": true
+            },
+            {
+                "variableName": "AUDIT_08",
+                "isVis": true
+            },
+            {
+                "variableName": "AUDIT_09",
+                "isVis": true
+            },
+            {
+                "variableName": "AUDIT_10",
+                "isVis": true
+            }
+        ],
         "order": [
             "AUDIT_01",
             "AUDIT_02",
@@ -28,5 +82,59 @@
             "AUDIT_09",
             "AUDIT_10"
         ]
-    }
+    },
+    "variableMap": [
+        {
+            "variableName": "AUDIT_01",
+            "isAbout": "AUDIT_01"
+        },
+        {
+            "variableName": "AUDIT_02",
+            "isAbout": "AUDIT_02"
+        },
+        {
+            "variableName": "AUDIT_02_a",
+            "isAbout": "AUDIT_02_a"
+        },
+        {
+            "variableName": "AUDIT_02_b",
+            "isAbout": "AUDIT_02_b"
+        },
+        {
+            "variableName": "AUDIT_03",
+            "isAbout": "AUDIT_03"
+        },
+        {
+            "variableName": "AUDIT_04",
+            "isAbout": "AUDIT_04"
+        },
+        {
+            "variableName": "AUDIT_04_a",
+            "isAbout": "AUDIT_04_a"
+        },
+        {
+            "variableName": "AUDIT_05",
+            "isAbout": "AUDIT_05"
+        },
+        {
+            "variableName": "AUDIT_06",
+            "isAbout": "AUDIT_06"
+        },
+        {
+            "variableName": "AUDIT_07",
+            "isAbout": "AUDIT_07"
+        },
+        {
+            "variableName": "AUDIT_08",
+            "isAbout": "AUDIT_08"
+        },
+        {
+            "variableName": "AUDIT_09",
+            "isAbout": "AUDIT_09"
+        },
+        {
+            "variableName": "AUDIT_10",
+            "isAbout": "AUDIT_10"
+        }
+    ]
 }

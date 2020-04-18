@@ -1,38 +1,41 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "ARI_P_06",
     "@type": "reproschema:Field",
-    "skos:altLabel": "ARI_P_06",
-    "preamble": "For each item, please mark the box for Not True, Somewhat True or Certainly True. In the last six months and compared to others of the same age, how well does each of the following statements describe the behavior/feelings of your child? Please try to answer all questions.",
-    "question": {
-        "en": "Loses temper easily"
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": {
+        "en": "For each item, please mark the box for Not True, Somewhat True or Certainly True. In the last six months and compared to others of the same age, how well does each of the following statements describe the behavior/feelings of your child? Please try to answer all questions."
     },
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 0,
-                "schema:name": {
+                "value": 0,
+                "name": {
                     "en": "Not True"
                 }
             },
             {
-                "schema:value": 1,
-                "schema:name": {
+                "value": 1,
+                "name": {
                     "en": "Somewhat True"
                 }
             },
             {
-                "schema:value": 2,
-                "schema:name": {
+                "value": 2,
+                "name": {
                     "en": "Certainly True"
                 }
             }
-        ],
-        "type": "Ordinal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "Loses temper easily"
     }
 }

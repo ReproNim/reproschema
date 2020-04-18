@@ -1,44 +1,47 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "ICU_SR_23",
     "@type": "reproschema:Field",
-    "skos:altLabel": "ICU_SR_23",
-    "preamble": "Read each statement and decide how well it describes you. Choose the appropriate bubble for each statement. Do not leave any statement unrated.",
-    "question": {
-        "en": "I work hard on everything I do."
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": {
+        "en": "Read each statement and decide how well it describes you. Choose the appropriate bubble for each statement. Do not leave any statement unrated."
     },
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 0,
-                "schema:name": {
+                "value": 0,
+                "name": {
                     "en": "Not at all true"
                 }
             },
             {
-                "schema:value": 1,
-                "schema:name": {
+                "value": 1,
+                "name": {
                     "en": "Somewhat true"
                 }
             },
             {
-                "schema:value": 2,
-                "schema:name": {
+                "value": 2,
+                "name": {
                     "en": "Very true"
                 }
             },
             {
-                "schema:value": 3,
-                "schema:name": {
+                "value": 3,
+                "name": {
                     "en": "Definitely true"
                 }
             }
-        ],
-        "type": "Ordinal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "I work hard on everything I do."
     }
 }

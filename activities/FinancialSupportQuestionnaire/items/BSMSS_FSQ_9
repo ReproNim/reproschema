@@ -1,24 +1,27 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "BSMSS_FSQ_9",
     "@type": "reproschema:Field",
-    "skos:altLabel": "BSMSS_FSQ_9",
-    "preamble": "In this survey, Parent/Guardian 1 refers to you. Parent/Guardian 2 refers to your spouse or the child's other caregiver.\n\nIf you are the child's only caregiver, answer only about yourself.",
-    "question": {
-        "en": "What type of residence is this?"
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": {
+        "en": "In this survey, Parent/Guardian 1 refers to you. Parent/Guardian 2 refers to your spouse or the child's other caregiver.\n\nIf you are the child's only caregiver, answer only about yourself."
     },
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": null,
-                "schema:name": {}
+                "value": null,
+                "name": {}
             }
-        ],
-        "type": "Non-numeric"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "What type of residence is this?"
     }
 }

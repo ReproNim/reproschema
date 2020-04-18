@@ -1,7 +1,7 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/FinancialSupportQuestionnaireFSQ/FinancialSupportQuestionnaireFSQ_context"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/FinancialSupportQuestionnaireFSQ/FinancialSupportQuestionnaireFSQ_context"
     ],
     "@type": "reproschema:Activity",
     "@id": "Section1_schema",
@@ -13,6 +13,24 @@
     "preamble": "Are you, your spouse, or your child eligible for any of the following (check all that apply)?",
     "ui": {
         "shuffle": false,
+        "visibility": [
+            {
+                "variableName": "FSQ_01",
+                "isVis": true
+            },
+            {
+                "variableName": "FSQ_02",
+                "isVis": true
+            },
+            {
+                "variableName": "FSQ_03",
+                "isVis": true
+            },
+            {
+                "variableName": "FSQ_04",
+                "isVis": true
+            }
+        ],
         "order": [
             "FSQ_05a",
             "FSQ_05b",
@@ -25,5 +43,23 @@
             "FSQ_05i",
             "FSQ_05j"
         ]
-    }
+    },
+    "variableMap": [
+        {
+            "variableName": "FSQ_01",
+            "isAbout": "FSQ_01"
+        },
+        {
+            "variableName": "FSQ_02",
+            "isAbout": "FSQ_02"
+        },
+        {
+            "variableName": "FSQ_03",
+            "isAbout": "FSQ_03"
+        },
+        {
+            "variableName": "FSQ_04",
+            "isAbout": "FSQ_04"
+        }
+    ]
 }

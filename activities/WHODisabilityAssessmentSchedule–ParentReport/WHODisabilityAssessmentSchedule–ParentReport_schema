@@ -1,7 +1,7 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/WHODisabilityAssessmentSchedule–ParentReport/WHODisabilityAssessmentSchedule–ParentReport_context"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/activities/WHODisabilityAssessmentSchedule–ParentReport/WHODisabilityAssessmentSchedule–ParentReport_context"
     ],
     "@type": "reproschema:Activity",
     "@id": "WHODisabilityAssessmentSchedule–ParentReport_schema",
@@ -13,6 +13,68 @@
     "preamble": "\"This questionnaire asks about difficulties due to health conditions. Health conditions include diseases or illnesses, other health problems that may be short or long lasting, injuries, mental or emotional problems, and problems with alcohol or drugs.\nThink back over the past 30 days and answer these questions, thinking about how much difficulty your child had doing the following activities. For each question, please circle only one response.\"",
     "ui": {
         "shuffle": false,
+        "visibility": [
+            {
+                "variableName": "WHODAS_P_01",
+                "isVis": true
+            },
+            {
+                "variableName": "WHODAS_P_02",
+                "isVis": true
+            },
+            {
+                "variableName": "WHODAS_P_03",
+                "isVis": true
+            },
+            {
+                "variableName": "WHODAS_P_04",
+                "isVis": true
+            },
+            {
+                "variableName": "WHODAS_P_05",
+                "isVis": true
+            },
+            {
+                "variableName": "WHODAS_P_06",
+                "isVis": true
+            },
+            {
+                "variableName": "WHODAS_P_07",
+                "isVis": true
+            },
+            {
+                "variableName": "WHODAS_P_08",
+                "isVis": true
+            },
+            {
+                "variableName": "WHODAS_P_09",
+                "isVis": true
+            },
+            {
+                "variableName": "WHODAS_P_10",
+                "isVis": true
+            },
+            {
+                "variableName": "WHODAS_P_11",
+                "isVis": true
+            },
+            {
+                "variableName": "WHODAS_P_12",
+                "isVis": true
+            },
+            {
+                "variableName": "WHODAS_P_Days01",
+                "isVis": true
+            },
+            {
+                "variableName": "WHODAS_P_Days02",
+                "isVis": true
+            },
+            {
+                "variableName": "WHODAS_P_Days03",
+                "isVis": true
+            }
+        ],
         "order": [
             "WHODAS_P_01",
             "WHODAS_P_02",
@@ -30,5 +92,67 @@
             "WHODAS_P_Days02",
             "WHODAS_P_Days03"
         ]
-    }
+    },
+    "variableMap": [
+        {
+            "variableName": "WHODAS_P_01",
+            "isAbout": "WHODAS_P_01"
+        },
+        {
+            "variableName": "WHODAS_P_02",
+            "isAbout": "WHODAS_P_02"
+        },
+        {
+            "variableName": "WHODAS_P_03",
+            "isAbout": "WHODAS_P_03"
+        },
+        {
+            "variableName": "WHODAS_P_04",
+            "isAbout": "WHODAS_P_04"
+        },
+        {
+            "variableName": "WHODAS_P_05",
+            "isAbout": "WHODAS_P_05"
+        },
+        {
+            "variableName": "WHODAS_P_06",
+            "isAbout": "WHODAS_P_06"
+        },
+        {
+            "variableName": "WHODAS_P_07",
+            "isAbout": "WHODAS_P_07"
+        },
+        {
+            "variableName": "WHODAS_P_08",
+            "isAbout": "WHODAS_P_08"
+        },
+        {
+            "variableName": "WHODAS_P_09",
+            "isAbout": "WHODAS_P_09"
+        },
+        {
+            "variableName": "WHODAS_P_10",
+            "isAbout": "WHODAS_P_10"
+        },
+        {
+            "variableName": "WHODAS_P_11",
+            "isAbout": "WHODAS_P_11"
+        },
+        {
+            "variableName": "WHODAS_P_12",
+            "isAbout": "WHODAS_P_12"
+        },
+        {
+            "variableName": "WHODAS_P_Days01",
+            "isAbout": "WHODAS_P_Days01"
+        },
+        {
+            "variableName": "WHODAS_P_Days02",
+            "isAbout": "WHODAS_P_Days02"
+        },
+        {
+            "variableName": "WHODAS_P_Days03",
+            "isAbout": "WHODAS_P_Days03"
+        }
+    ]
 }

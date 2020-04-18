@@ -1,57 +1,58 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "FFQ_COLDCEREALTYPE",
     "@type": "reproschema:Field",
-    "skos:altLabel": "FFQ_COLDCEREALTYPE",
-    "question": {
-        "en": "Cold cereal type"
-    },
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 1,
-                "schema:name": {
+                "value": 1,
+                "name": {
                     "en": " Whole grain cereals"
                 }
             },
             {
-                "schema:value": null,
-                "schema:name": {
+                "value": null,
+                "name": {
                     "en": " Whole grain cereals"
                 }
             },
             {
-                "schema:value": null,
-                "schema:name": {
+                "value": null,
+                "name": {
                     "en": " Cereals"
                 }
             },
             {
-                "schema:value": null,
-                "schema:name": {}
+                "value": null,
+                "name": {}
             },
             {
-                "schema:value": null,
-                "schema:name": {
+                "value": null,
+                "name": {
                     "en": " Cereals"
                 }
             },
             {
-                "schema:value": null,
-                "schema:name": {}
+                "value": null,
+                "name": {}
             },
             {
-                "schema:value": null,
-                "schema:name": {
+                "value": null,
+                "name": {
                     "en": " Missing"
                 }
             }
-        ],
-        "type": "Ordinal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "Cold cereal type"
     }
 }

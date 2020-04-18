@@ -1,41 +1,42 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        "https://raw.githubusercontent.com/ReproNim/schema-standardization/master/contexts/generic"
     ],
+    "@id": "NIDA_06f",
     "@type": "reproschema:Field",
-    "skos:altLabel": "NIDA_06f",
-    "question": {
-        "en": "f. Sedatives or sleeping pills (Valium, Serepax, Ativan, Librium, Xanax, Rohypnol, GHB, etc)"
-    },
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
     "responseOptions": {
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 0,
-                "schema:name": {
+                "value": 0,
+                "name": {
                     "en": " No"
                 }
             },
             {
-                "schema:value": null,
-                "schema:name": {
+                "value": null,
+                "name": {
                     "en": " Yes"
                 }
             },
             {
-                "schema:value": null,
-                "schema:name": {
+                "value": null,
+                "name": {
                     "en": " Yes"
                 }
             },
             {
-                "schema:value": null,
-                "schema:name": {}
+                "value": null,
+                "name": {}
             }
-        ],
-        "type": "Ordinal"
+        ]
     },
     "ui": {
         "inputType": "radio"
+    },
+    "question": {
+        "en": "f. Sedatives or sleeping pills (Valium, Serepax, Ativan, Librium, Xanax, Rohypnol, GHB, etc)"
     }
 }
