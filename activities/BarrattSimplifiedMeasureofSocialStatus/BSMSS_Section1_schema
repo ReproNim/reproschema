@@ -13,15 +13,19 @@
     "preamble": "Select the appropriate response for your level of school completed and your child's other caregivers' level of school completed.\n\nLevel of school completed:",
     "ui": {
         "shuffle": false,
-        "visibility": [
-            {
-                "variableName": "BSMSS_Who",
-                "isVis": true
-            }
-        ],
         "order": [
             "Father_Edu",
             "Mother_Edu"
+        ],
+        "visibility": [
+            {
+                "variableName": "Father_Edu",
+                "isVis": true
+            },
+            {
+                "variableName": "Mother_Edu",
+                "isVis": true
+            }
         ]
     },
     "variableMap": [

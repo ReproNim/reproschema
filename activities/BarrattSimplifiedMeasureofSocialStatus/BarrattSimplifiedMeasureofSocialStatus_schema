@@ -13,32 +13,24 @@
     "preamble": "In this survey, Parent/Guardian 1 refers to you. Parent/Guardian 2 refers to your spouse or the child's other caregiver.\n\nIf you are the child's only caregiver, answer only about yourself.",
     "ui": {
         "shuffle": false,
+        "order": [
+            "BSMSS_Who",
+            "BSMSS_Section1",
+            "BSMSS_Section2"
+        ],
         "visibility": [
             {
                 "variableName": "BSMSS_Who",
                 "isVis": true
             },
             {
-                "variableName": "Father_Edu",
+                "variableName": "BSMSS_Section1",
                 "isVis": true
             },
             {
-                "variableName": "Mother_Edu",
-                "isVis": true
-            },
-            {
-                "variableName": "Father_Occupation",
-                "isVis": true
-            },
-            {
-                "variableName": "Mother_Occupation",
+                "variableName": "BSMSS_Section2",
                 "isVis": true
             }
-        ],
-        "order": [
-            "BSMSS_Who",
-            "BSMSS_Section1",
-            "BSMSS_Section2"
         ]
     },
     "variableMap": [

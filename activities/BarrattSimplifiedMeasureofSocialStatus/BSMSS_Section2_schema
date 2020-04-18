@@ -13,23 +13,19 @@
     "preamble": "Select the appropriate response for your occupation, and your child's other caregivers' occupation.\n\nOccupation:",
     "ui": {
         "shuffle": false,
-        "visibility": [
-            {
-                "variableName": "BSMSS_Who",
-                "isVis": true
-            },
-            {
-                "variableName": "Father_Edu",
-                "isVis": true
-            },
-            {
-                "variableName": "Mother_Edu",
-                "isVis": true
-            }
-        ],
         "order": [
             "Father_Occupation",
             "Mother_Occupation"
+        ],
+        "visibility": [
+            {
+                "variableName": "Father_Occupation",
+                "isVis": true
+            },
+            {
+                "variableName": "Mother_Occupation",
+                "isVis": true
+            }
         ]
     },
     "variableMap": [
