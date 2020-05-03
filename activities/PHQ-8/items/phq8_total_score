@@ -1,18 +1,14 @@
 {
-    "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/PHQ-8/phq8_context"
-    ],
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic" ],
     "@type": "reproschema:Field",
     "@id": "phq8_total_score",
     "skos:prefLabel": "Score PHQ-8",
-    "skos:altLabel": "phq8_total_score",
     "schema:description": "total score of the PHQ-8 Assessment",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
     "ui": {
         "inputType": "xsd:int",
-        "readonly": true,
-        "hidden": true
+        "readonly": true
     },
     "responseOptions": {
         "minValue": 0,

@@ -1,11 +1,8 @@
 {
-    "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/VoiceTask/VoiceTask_context"
-    ],
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic" ],
     "@type": "reproschema:Field",
-    "@id": "caterpillar_p",
+    "@id": "caterpillar",
     "skos:prefLabel": "caterpillar_passage",
-    "skos:altLabel": "caterpillar",
     "schema:description": "caterpillar passage task",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
@@ -14,7 +11,7 @@
         "inputType": "audioPassageRecord"
     },
     "responseOptions": {
-        "type": "audioPassageRecord",
+        "valueType": "audioPassageRecord",
         "schema:minValue": 0,
         "schema:maxValue": 60000,
         "requiredValue": true

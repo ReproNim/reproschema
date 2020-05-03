@@ -1,7 +1,5 @@
 {
-    "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/VoiceScreening/VoiceScreening_context"
-    ],
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic" ],
     "@type": "reproschema:Field",
     "@id": "audio_check",
     "skos:prefLabel": "Audio Check",
@@ -13,7 +11,7 @@
         "inputType": "audioCheck"
     },
     "responseOptions": {
-        "type": "audioCheck",
+        "valueType": "audioCheck",
         "schema:minValue": 0,
         "schema:maxValue": 4000,
         "requiredValue": true

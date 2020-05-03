@@ -1,12 +1,8 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/VoiceDemographics/VoiceDemographics_context"
-    ],
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic" ],
     "@type": "reproschema:Field",
     "@id": "fluentLanguages",
-    "skos:prefLabel": "Fluent languages of participant",
-    "skos:altLabel": "fluentLanguages",
+    "skos:prefLabel": "Fluent languages",
     "schema:description": "schema for fluent languages of participant",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
@@ -15,7 +11,7 @@
         "inputType": "selectLanguage"
     },
     "responseOptions": {
-        "type": "xsd:string",
+        "valueType": "xsd:string",
         "requiredValue": false,
         "multipleChoice": true,
         "maxLength": 50,
