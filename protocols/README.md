@@ -1,1 +1,1 @@
-collections of activities
+collections of protocols
