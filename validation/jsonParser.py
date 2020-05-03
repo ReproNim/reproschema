@@ -5,7 +5,7 @@ import json
 # read_json_files = []
 
 
-for root, dirs, files in os.walk('./activities/PHQ-9', topdown=True):
+for root, dirs, files in os.walk('./activities', topdown=True):
     for name in files:
         # files without extension or with .jsonld extn
         if not os.path.splitext(name)[1] or os.path.splitext(name)[1] == '.jsonld':

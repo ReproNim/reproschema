@@ -1,21 +1,17 @@
 {
-    "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/GAD7/GAD7_context"
-    ],
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic" ],
     "@type": "reproschema:Field",
     "@id": "gad7_total_Score",
-    "skos:prefLabel": "Score of GAD7 Questionnaire",
-    "skos:altLabel": "gad7_total_score",
+    "skos:prefLabel": "GAD7 Score",
     "schema:description": "schema for total score of the GAD7 Assessment",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
     "ui": {
         "inputType": "xsd:int",
-        "readonly": true,
-        "hidden": true
+        "readonly": true
     },
     "responseOptions": {
-        "type": "xsd:integer",
+        "valueType": "xsd:integer",
         "requiredValue": false,
         "minValue": 0,
         "maxValue": 27

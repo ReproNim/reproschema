@@ -1,27 +1,24 @@
 {
-    "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/PHQ-8/phq8_context"
-    ],
-    "type": "xsd:integer",
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic" ],
+    "valueType": "xsd:integer",
     "schema:minValue": 0,
     "schema:maxValue": 3,
     "multipleChoice": false,
     "requiredValue": true,
     "choices": [{
-        "schema:name": "Not at all",
-        "schema:value": 0
+        "name": "Not at all",
+        "value": 0
     },
-        {
-            "schema:name": "Several days",
-            "schema:value": 1
-        },
-        {
-            "schema:name": "More than half the days",
-            "schema:value": 2
-        },
-        {
-            "schema:name": "Nearly everyday",
-            "schema:value": 3
-        }
-    ]
+    {
+        "name": "Several days",
+        "value": 1
+    },
+    {
+        "name": "More than half the days",
+        "value": 2
+    },
+    {
+        "name": "Nearly everyday",
+        "value": 3
+    }]
 }
