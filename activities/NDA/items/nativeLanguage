@@ -1,12 +1,9 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/NDA/NDA_context"
-    ],
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic" ],
     "@type": "reproschema:Field",
     "@id": "nativeLanguage",
-    "skos:prefLabel": "Native language of participant",
-    "skos:altLabel": "nativeLanguage",
+    "skos:prefLabel": "Native language",
     "schema:description": "schema for native language of participant",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
@@ -15,7 +12,7 @@
         "inputType": "selectLanguage"
     },
     "responseOptions": {
-        "type": "xsd:string",
+        "valueType": "xsd:string",
         "requiredValue": false,
         "maxLength": 50
     }
