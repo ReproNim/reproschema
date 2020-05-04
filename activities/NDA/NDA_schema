@@ -5,10 +5,20 @@
     "@type": "reproschema:Activity",
     "@id": "NDA_schema",
     "skos:prefLabel": "NDA guid",
-    "skos:altLabel": "nda_schema",
     "schema:description": "schema describing terms needed to generate NDA guid",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
+    "variableMap": [
+        {"variableName": "yearOfBirth", "isAbout": "yearOfBirth"},
+        {"variableName": "raceEthnicity", "isAbout": "raceEthnicity"},
+        {"variableName": "gender", "isAbout": "gender"},
+        {"variableName": "state", "isAbout": "state"},
+        {"variableName": "countryOfBirth", "isAbout": "countryOfBirth"},
+        {"variableName": "nativeLanguage", "isAbout": "nativeLanguage"},
+        {"variableName": "mentalHealth", "isAbout": "mentalHealth"},
+        {"variableName": "healthCondition", "isAbout": "healthCondition"},
+        {"variableName": "medication", "isAbout": "medication"}
+    ],
     "ui": {
         "order": [
             "yearOfBirth",
@@ -22,17 +32,6 @@
             "medication"
         ],
         "shuffle": false,
-        "visibility": {
-            "yearOfBirth":  true,
-            "raceEthnicity": true,
-            "gender": true,
-            "state": true,
-            "countryOfBirth": true,
-            "nativeLanguage": true,
-            "mentalHealth": true,
-            "healthCondition": true,
-            "medication": true
-        },
         "allow": ["skipped"]
     }
 }

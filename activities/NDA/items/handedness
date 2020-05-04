@@ -1,12 +1,9 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/NDA/NDA_context"
-    ],
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic" ],
     "@type": "reproschema:Field",
-    "@id": "gender",
-    "skos:prefLabel": "Handedness of the subject",
-    "skos:altLabel": "handedness",
+    "@id": "handedness",
+    "skos:prefLabel": "Handedness",
     "schema:description": "schema for simple handedness of the subject",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
@@ -15,7 +12,7 @@
         "inputType": "radio"
     },
     "responseOptions": {
-        "@type": "xsd:string",
+        "valueType": "xsd:string",
         "multipleChoice": false,
         "schema:minValue": 0,
         "schema:maxValue": 2,
