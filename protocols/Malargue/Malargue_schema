@@ -1,6 +1,13 @@
 {
     "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/protocols/Malargue/Malargue_context"
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/protocols/Malargue/Malargue_context",
+        {
+            "addProperties": {
+                "@id": "reproterms:addProperties",
+                "@container": "@index",
+                "@nest": "ui"
+            }
+        }
     ],
     "@type": "reproschema:Protocol",
     "@id": "Malargue_schema",
