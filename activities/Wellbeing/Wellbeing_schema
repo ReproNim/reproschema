@@ -12,14 +12,29 @@
         "en": "For each task, you should hit the record button before speaking and then stop once you are done speaking. You may hit play to hear what was recorded.",
         "es": "Para cada pregunta, debería hacer click sobre el botón antes de hablar y luego hacerlo de nuevo para parar de grabar. Luego puede tocar play para escuchar su respuesta."
     },
-    "variableMap": [
-        {"variableName": "share_data", "isAbout": "share_data"},
-        {"variableName": "email", "isAbout": "email"},
-        {"variableName": "multipart_audio_check", "isAbout": "multipart_audio_check"},
-        {"variableName": "free_speech_general_mood", "isAbout": "free_speech_general_mood"},
-        {"variableName": "say_ah", "isAbout": "say_ah"}
-    ],
     "ui": {
+        "addProperties": [
+            {"isAbout": "share_data",
+            "variableName": "share_data",
+            "isVis": true
+            },
+            {"isAbout": "email",
+            "variableName": "email",
+            "isVis": "share_data === 1"
+            },
+            {"isAbout": "multipart_audio_check",
+            "variableName": "multipart_audio_check",
+            "isVis": true
+            },
+            {"isAbout": "free_speech_general_mood",
+            "variableName": "share_data",
+            "isVis": true
+            },
+            {"isAbout": "say_ah",
+            "variableName": "say_ah",
+            "isVis": true
+            }
+        ],
         "order": [
             "multipart_audio_check",
             "share_data",
@@ -27,14 +42,7 @@
             "free_speech_general_mood",
             "say_ah"
         ],
-        "shuffle": false,
-        "visibility": [
-            {"variableName": "share_data", "isVis": true},
-            {"variableName": "email", "isVis": "share_data === 1"},
-            {"variableName": "multipart_audio_check", "isVis": true},
-            {"variableName": "free_speech_general_mood", "isVis": true},
-            {"variableName": "say_ah", "isVis": true}
-        ]
+        "shuffle": false
     }
 }
 

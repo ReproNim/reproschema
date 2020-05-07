@@ -11,18 +11,60 @@
     "schema:version": "0.0.1",
     "preamble": "Learn about the study, risks and benefits of joining by going through the consent. Once you have accepted it, take a short quiz to check what you have learned from the consent document.",
     "variableMap": [
-        {"variableName": "consent_overview", "isAbout": "consent_overview"},
-        {"variableName": "quiz_schema", "isAbout": "quiz_schema"},
-        {"variableName": "sign", "isAbout": "sign"},
-        {"variableName": "q1", "isAbout": "q1"},
+        {"variableName": "", "isAbout": "consent_overview"},
+        {"variableName": "", "isAbout": "quiz_schema"},
+        {"variableName": "", "isAbout": "sign"},
+        {"variableName": "", "isAbout": "q1"},
         {"variableName": "q2", "isAbout": "q2"},
         {"variableName": "q3", "isAbout": "q3"},
         {"variableName": "q4", "isAbout": "q4"},
         {"variableName": "q5", "isAbout": "q5"},
-        {"variableName": "quiz_score", "isAbout": "quiz_score"},
-        {"variableName": "retake_quiz", "isAbout": "retake_quiz"}
+        {"variableName": "", "isAbout": "quiz_score"},
+        {"variableName": "", "isAbout": "retake_quiz"}
     ],
     "ui": {
+        "addProperties": [
+                {"isAbout": "consent_overview",
+                "variableName": "consent_overview",
+                "isVis": true
+                },
+                {"isAbout": "quiz_schema",
+                "variableName": "quiz_schema",
+                "isVis": true
+                },
+                {"isAbout": "sign",
+                "variableName": "sign",
+                "isVis": "q1 + q2 + q3 + q4 + q5 === 5"
+                },
+                {"isAbout": "q1",
+                "variableName": "q1",
+                "isVis": true
+                },
+                {"isAbout": "q2",
+                "variableName": "q2",
+                "isVis": true
+                },
+                {"isAbout": "q3",
+                "variableName": "q3",
+                "isVis": true
+                },
+                {"isAbout": "q4",
+                "variableName": "q4",
+                "isVis": true
+                },
+                {"isAbout": "q5",
+                "variableName": "q5",
+                "isVis": true
+                },
+                {"isAbout": "quiz_score",
+                "variableName": "quiz_score",
+                "isVis": false
+                },
+                {"isAbout": "retake_quiz",
+                "variableName": "retake_quiz",
+                "isVis": "q1 + q2 + q3 + q4 + q5 !== 5"
+                }
+        ],
         "order": [
             "consent_overview",
             "q1",
@@ -33,17 +75,7 @@
             "sign",
             "retake_quiz"
         ],
-        "shuffle": false,
-        "visibility": [
-            {"variableName": "consent_overview", "isVis": true},
-            {"variableName": "q1", "isVis": true},
-            {"variableName": "q2", "isVis": true},
-            {"variableName": "q3", "isVis": true},
-            {"variableName": "q4", "isVis": true},
-            {"variableName": "q5", "isVis": true},
-            {"variableName": "sign", "isVis": "q1 + q2 + q3 + q4 + q5 === 5"},
-            {"variableName": "retake_quiz", "isVis": "q1 + q2 + q3 + q4 + q5 !== 5"}
-        ]
+        "shuffle": false
     }
 }
 
