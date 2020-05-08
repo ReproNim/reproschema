@@ -142,7 +142,12 @@ Then you can view your schema here:
 
 `http://schema.repronimg.org/ui/#/?url=path_to_protocol_schema`
 
-For example: ```https://schema.repronim.org/ui/#/?url=https://raw.githubusercontent.com/sensein/covid19/master/protocol/Covid19_schema```
+For example: 
+
+`
+https://schema.repronim.org/ui/#/?url=https://raw.githubusercontent.com/sensein/covid19/master/protocol/Covid19_schema
+`
+
 
 
 ## 7.0: Why linked data?
