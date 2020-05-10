@@ -8,15 +8,33 @@
     "schema:description": "schema describing terms needed to generate NDA guid",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
-    "variableMap": [
-        {"variableName": "gender", "isAbout": "gender"},
-        {"variableName": "first_name", "isAbout": "first_name"},
-        {"variableName": "middle_name", "isAbout": "middle_name"},
-        {"variableName": "last_name", "isAbout": "last_name"},
-        {"variableName": "yearOfBirth", "isAbout": "yearOfBirth"},
-        {"variableName": "city_of_birth", "isAbout": "city_of_birth"}
-    ],
     "ui": {
+        "addProperties": [
+            {"isAbout": "gender",
+            "variableName": "gender",
+            "isVis": true
+            },
+            {"isAbout": "first_name",
+            "variableName": "first_name",
+            "isVis": true
+            },
+            {"isAbout": "middle_name",
+            "variableName": "middle_name",
+            "isVis": true
+            },
+            {"isAbout": "last_name",
+            "variableName": "last_name",
+            "isVis": true
+            },
+            {"isAbout": "yearOfBirth",
+            "variableName": "yearOfBirth",
+            "isVis": true
+            },
+            {"isAbout": "city_of_birth",
+            "variableName": "city_of_birth",
+            "isVis": true
+            }
+        ],
         "order": [
             "gender",
             "first_name",
