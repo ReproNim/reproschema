@@ -1,12 +1,11 @@
 {
     "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/NDA/nda_context",
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/VoiceScreening/VoiceScreening_context",
         "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/VoiceDemographics/VoiceDemographics_context"
     ],
     "@type": "reproschema:Activity",
-    "@id": "VoiceDemographics",
-    "skos:prefLabel": "Demographics for voice study",
-    "skos:altLabel": "voice_demographics",
+    "@id": "VoiceDemographics_schema",
+    "skos:prefLabel": "Demographics",
     "schema:description": "schema describing demographics for voice study",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
@@ -37,7 +36,7 @@
             {"variableName": "stateOfBirth", "isVis": "countryOfBirth == 'United States'"},
             {"variableName": "stateOfResidence", "isVis": true},
             {"variableName": "knownLanguages", "isVis": true},
-            {"variableName": "fluentLanguages", "isVis": true},
+            {"variableName": "fluentLanguages", "isVis": true}
         ],
         "allow": ["skipped"]
     }

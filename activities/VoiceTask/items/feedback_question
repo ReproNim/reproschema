@@ -1,11 +1,8 @@
 {
-    "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/VoiceTask/VoiceTask_context"
-    ],
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic" ],
     "@type": "reproschema:Field",
     "@id": "feedback_question",
     "skos:prefLabel": "Feedback question",
-    "skos:altLabel": "feedback_question",
     "schema:description": "schema for feedback on voice tasks",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
@@ -13,21 +10,20 @@
     "ui": {
         "inputType": "radio"
     },
-
     "responseOptions": {
-        "type": "xsd:boolean",
+        "valueType": "xsd:boolean",
         "schema:minValue": 0,
         "schema:maxValue": 1,
         "multipleChoice": false,
         "requiredValue": true,
         "choices": [
             {
-                "schema:name": "Yes",
-                "schema:value": 1
+                "name": "Yes",
+                "value": 1
             },
             {
-                "schema:name": "No",
-                "schema:value": 0
+                "name": "No",
+                "value": 0
             }
         ]
     }

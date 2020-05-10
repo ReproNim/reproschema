@@ -3,7 +3,7 @@ from urllib.request import urlopen
 import json
 import os
 
-url = 'https://raw.githubusercontent.com/sanuann/reproschema/master/activities/PHQ-9/phq9_schema'
+url = 'https://raw.githubusercontent.com/sanuann/reproschema/master/activities/PHQ-9/PHQ9_schema'
 data = json.loads(urlopen(url).read().decode("utf-8"))
 
 # for root, dirs, files in os.walk('./activities/PHQ-9', topdown=True):

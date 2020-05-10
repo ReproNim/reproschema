@@ -4,25 +4,42 @@
     ],
     "@type": "reproschema:Activity",
     "@id": "MalargueVoiceTask_schema",
-    "skos:prefLabel": "voice tasks",
-    "skos:altLabel": "voice tasks",
+    "skos:prefLabel": "Malargue Voice Tasks",
     "schema:description": " Malargue Voice tasks",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
     "preamble": {
-        en: "For each task, you should hit the record button before speaking and then stop once you are done speaking. You may hit play to hear what was recorded.",
-        es: "Para cada pregunta, debería hacer click sobre el botón antes de hablar y luego hacerlo de nuevo para parar de grabar. Luego puede tocar play para escuchar su respuesta."
-    }
+        "en": "For each task, you should hit the record button before speaking and then stop once you are done speaking. You may hit play to hear what was recorded.",
+        "es": "Para cada pregunta, debería hacer click sobre el botón antes de hablar y luego hacerlo de nuevo para parar de grabar. Luego puede tocar play para escuchar su respuesta."
+    },
     "variableMap": [
-        {"variableName": "happy_event", "isAbout": "happy_event"}
+        {"variableName": "free_speech_general_mood", "isAbout": "free_speech_general_mood"},
+        {"variableName": "say_ah", "isAbout": "say_ah"},
+        {"variableName": "free_speech_happy", "isAbout": "free_speech_happy"},
+        {"variableName": "free_speech_sad", "isAbout": "free_speech_sad"},
+        {"variableName": "free_speech_important_people", "isAbout": "free_speech_important_people"},
+        {"variableName": "free_speech_next_summer", "isAbout": "free_speech_next_summer"},
+        {"variableName": "pataka", "isAbout": "pataka"}
     ],
     "ui": {
         "order": [
-            "happy_event"
+            "free_speech_general_mood",
+            "say_ah",
+            "free_speech_happy",
+            "free_speech_sad",
+            "free_speech_important_people",
+            "free_speech_next_summer",
+            "pataka"
         ],
-        "shuffle": true,
+        "shuffle": false,
         "visibility": [
-            {"variableName": "happy_event", "isVis": true}
+            {"variableName": "free_speech_general_mood", "isVis": true},
+            {"variableName": "say_ah", "isVis": true},
+            {"variableName": "free_speech_happy", "isVis": true},
+            {"variableName": "free_speech_sad", "isVis": true},
+            {"variableName": "free_speech_important_people", "isVis": true},
+            {"variableName": "free_speech_next_summer", "isVis": true},
+            {"variableName": "pataka", "isVis": true}
         ]
     }
 }

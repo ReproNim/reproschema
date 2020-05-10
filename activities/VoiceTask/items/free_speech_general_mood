@@ -1,26 +1,23 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/VoiceTask/VoiceTask_context"
-    ],
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic" ],
     "@type": "reproschema:Field",
-    "@id": "free_speech",
-    "skos:prefLabel": "Free speech",
-    "skos:altLabel": "free speech",
+    "@id": "free_speech_general_mood",
+    "skos:prefLabel": "Free speech general",
     "schema:description": "free speech item for voice task",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
     "question": {
         "en": "Tell me how you're feeling, and why you think you feel that way with as much detail as possible.",
         "es": "Cuente cómo se siente y por qué piensa que se siente de ese modo con el mayor detalle y profundidad posible."
-    }
+    },
     "ui": {
         "inputType": "audioRecord"
     },
     "responseOptions": {
-        "type": "audioRecord",
+        "valueType": "audioRecord",
         "schema:minValue": 0,
-        "schema:maxValue": 60000,
+        "schema:maxValue": 120000,
         "multipleChoice": false,
         "requiredValue": true
     }

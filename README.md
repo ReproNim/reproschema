@@ -112,7 +112,7 @@ Fork the project and manually create the jsonld files according to the above dir
     - `protocolName_schema` : schema to define the protocol
     - `protocolName_context` : context to define keys used specific to the protocol schema
 
-  - Creating `protocolName_schema` – use the keys defined in [`schemas/ActivitySet`](./schemas/ActivitySet). If any other keys are used, then define them in `protocolName_context`
+  - Creating `protocolName_schema` – use the keys defined in [`schemas/Protocol`](./schemas/Protocol). If any other keys are used, then define them in `protocolName_context`
 
   - Description of some other keys:
     - `@context` – Array. Include the ReproNim generic context JSON-LD file along with the protocol context.
@@ -126,7 +126,7 @@ Fork the project and manually create the jsonld files according to the above dir
         ]
       }
       ```
-    - `@type`=`"https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/ActivitySet"`
+    - `@type`=`"https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/Protocol"`
 
 ## 6.0: Test schema and collect data
 
@@ -140,7 +140,7 @@ Or test individual files here: ```https://jsonlint.com/```
 
 Then you can view your schema here:
 
-`http://schema.repronimg.org/ui/#/?url=path_to_protocol_schema`
+`http://schema.repronim.org/ui/#/?url=path_to_protocol_schema`
 
 For example: 
 

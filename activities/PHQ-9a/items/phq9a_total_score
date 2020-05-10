@@ -1,21 +1,17 @@
 {
-    "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/PHQ-9a/phq9a_context"
-    ],
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic" ],
     "@type": "reproschema:Field",
     "@id": "phq9a_total_score",
-    "skos:prefLabel": "Score of PHQ-9a Questionnaire",
-    "skos:altLabel": "phq9a_total_score",
+    "skos:prefLabel": "PHQ9a Score",
     "schema:description": "score of the derived PHQ-9 Assessment",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
     "ui": {
         "inputType": "xsd:int",
-        "readonly": true,
-        "hidden": true
+        "readonly": true
     },
     "responseOptions": {
-        "type": "xsd:integer",
+        "valueType": "xsd:integer",
         "requiredValue": false,
         "minValue": 0,
         "maxValue": 27

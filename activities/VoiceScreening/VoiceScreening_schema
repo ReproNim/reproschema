@@ -1,37 +1,34 @@
 {
     "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/PHQ-9/phq9_context",
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/NDA/nda_context",
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/VoiceScreening/VoiceScreening_context"
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/PHQ-9/PHQ9_context",
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/NDA/NDA_context",
+        "https://raw.githubusercontent.com/sanuann/reproschema/master/activities/VoiceScreening/VoiceScreening_context"
     ],
     "@type": "reproschema:Activity",
-    "@id": "VoiceScreening",
-    "skos:prefLabel": "VoiceScreening Assessment",
-    "skos:altLabel": "voice_screening_schema",
+    "@id": "VoiceScreening_schema",
+    "skos:prefLabel": "VoiceScreening",
     "schema:description": "VoiceScreening assessment schema",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
-    "scoringLogic": [
-        {"variableName": "phq9_total_score", "jsExpression": "phq9_1 + phq9_2 + phq9_3 + phq9_4 + phq9_5 + phq9_6 + phq9_7 + phq9_8 + phq9_9"}
-    ],
     "variableMap": [
         {"variableName": "education_level", "isAbout": "education_level"},
-        {"variableName": "audio_check", "isAbout": "audio_check"},
+        {"variableName": "multipart_audio_check", "isAbout": "multipart_audio_check"},
         {"variableName": "gender", "isAbout": "gender"},
-        {"variableName": "phq9_schema", "isAbout": "phq9_schema"}
+        {"variableName": "PHQ9_schema", "isAbout": "PHQ9_schema"},
+        {"variableName": "audio_check", "isAbout": "audio_check"}
     ],
     "ui": {
         "order": [
             "education_level",
             "audio_check",
-            "phq9_schema",
+            "PHQ9_schema",
             "gender"
         ],
         "shuffle": false,
          "visibility": [
             {"variableName": "education_level", "isVis": true},
             {"variableName": "audio_check", "isVis": "education_level === 1"},
-            {"variableName": "phq9_schema", "isVis": "education_level === 1"},
+            {"variableName": "PHQ9_schema", "isVis": "education_level === 1"},
             {"variableName": "gender", "isVis": "education_level === 1"}
          ]
     }

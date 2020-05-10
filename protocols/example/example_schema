@@ -1,0 +1,37 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/protocols/example/example_context"
+    ],
+    "@type": "reproschema:Protocol",
+    "@id": "example_schema",
+    "skos:prefLabel": "Example Protocol",
+    "schema:description": "a sample protocol for NDA-PHQ Assessments",
+    "schema:image": "optional link to image file",
+    "schema:about": "https://raw.githubusercontent.com/ReproNim/reproschema/master/protocols/example/README.md",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "variableMap": [
+        {"variableName": "example_activity1_schema", "isAbout": "example_activity1_schema"},
+        {"variableName": "example_activity2_schema", "isAbout": "example_activity2_schema"}
+    ],
+    "ui": {
+        "order": [
+            "example_activity1_schema",
+            "example_activity2_schema"
+        ],
+        "shuffle": false,
+         "displayNameMap": [
+            {"isAbout": "example_activity1_schema", "alternateName": "Activity 1"},
+            {"isAbout": "example_activity2_schema", "alternateName": "Activity 2"}
+        ],
+        "visibility": [
+            {"variableName": "example_activity1_schema", "isVis": true},
+            {"variableName": "example_activity2_schema", "isVis": {
+                "method":"POST",
+                "url":"https://sig.mit.edu/vb/check",
+                "payload":["example_activity1_schema"]
+            }}
+        ],
+        "allow": ["autoAdvance", "disableBack"]
+    }
+}

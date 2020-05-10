@@ -1,21 +1,18 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/NDA/nda_context"
-    ],
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic" ],
     "@type": "reproschema:Field",
-    "@id": "birthPlace",
-    "skos:prefLabel": "City of birth(as in birth certificate)",
-    "skos:altLabel": "birthPlace",
+    "@id": "city_of_birth",
+    "skos:prefLabel": "City of birth",
     "schema:description": "schema for City of birth of participant",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
-    "question": "City of birth",
+    "question": "City of birth(as in birth certificate)",
     "ui": {
         "inputType": "select"
     },
     "responseOptions": {
-        "type": "xsd:string",
+        "valueType": "xsd:string",
         "requiredValue": false,
         "maxLength": 50
     }
