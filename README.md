@@ -9,7 +9,7 @@ This documentation describes and explains the ReproNim schema specification.
 - [3.0: Advantages of current representation](#30-advantages-of-current-representation)
 - [4.0: Schema](#40-schema)
 - [5.0: Contribute - how to create activity, protocol?](#50-how-can-i-create-a-new-activity-and-protocol)
-- [6.0: Test the schema](#60-view-schema-and-collect-data)
+- [6.0: Test schema and collect data](#60-view-schema-and-collect-data)
 - [7.0: Why linked data?]()
 - [8.0: How these activities are licensed?]()
 - [9.0: Which tools will/are supporting this standard?]()
@@ -128,9 +128,27 @@ Fork the project and manually create the jsonld files according to the above dir
       ```
     - `@type`=`"https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/Protocol"`
 
-## 6.0: View schema and collect data
+## 6.0: Test schema and collect data
+
+First, make sure your syntax is in correct jsonld format. Test all files with ```@content``` from command line:
+```
+npm install -g jsonlint
+grep -r --exclude-dir=node_modules --exclude-dir=ui --exclude-dir=.github "@context" . | cut -d: -f1 | xargs -I fname jsonlint -q fname
+```
+
+Or test individual files here: ```https://jsonlint.com/```
+
+Then you can view your schema here:
 
 `http://schema.repronim.org/ui/#/?url=path_to_protocol_schema`
+
+For example: 
+
+`
+https://schema.repronim.org/ui/#/?url=https://raw.githubusercontent.com/sensein/covid19/master/protocol/Covid19_schema
+`
+
+
 
 ## 7.0: Why linked data?
 
