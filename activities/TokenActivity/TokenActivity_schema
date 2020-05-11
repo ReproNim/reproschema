@@ -8,7 +8,6 @@
     "@type": "reproschema:Activity",
     "@id": "TokenActivity_schema",
     "skos:prefLabel": "TokenActivity Assessment",
-    "skos:altLabel": "TokenActivity_schema",
     "schema:description": "TokenActivity assessment schema",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
@@ -16,17 +15,17 @@
         "en": "Instructions goes here .."
 
     },
-    "variableMap": [
-        {"variableName": "token_screen", "isAbout": "token_screen"}
-    ],
     "ui": {
+        "addProperties": [
+            {"isAbout": "token_screen",
+            "variableName": "token_screen",
+            "isVis": true
+            }
+        ],
         "order": [
             "token_screen"
         ],
-        "shuffle": false,
-        "visibility": [
-            {"variableName": "token_screen", "isVis": true}
-        ]
+        "shuffle": false
 
     }
 }

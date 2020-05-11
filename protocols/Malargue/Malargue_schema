@@ -10,32 +10,36 @@
     "schema:version": "0.0.1",
     "landingPage": "https://raw.githubusercontent.com/ReproNim/reproschema/master/protocols/Malargue/README.md",
     "schema:image": "https://raw.githubusercontent.com/ReproNim/reproschema/master/protocols/VoicePilot/mit_voice_pilot_applet_image.svg?sanitize=true",
-    "variableMap": [
-        {"variableName": "PHQ9_schema", "isAbout": "PHQ9_schema"},
-        {"variableName": "GAD7_schema", "isAbout": "GAD7_schema"},
-        {"variableName": "MalargueVoiceTask_schema", "isAbout": "MalargueVoiceTask_schema"},
-        {"variableName": "ThankYou_schema", "isAbout": "ThankYou_schema"}
-    ],
     "ui": {
-        "order": [
+		"addProperties": [
+			{"isAbout": "PHQ9_schema",
+			"variableName": "PHQ9_schema",
+			"prefLabel": {"en": "Screening", "es": "Screening_es" },
+			"isVis": true
+			},
+			{"isAbout": "GAD7_schema",
+			"variableName": "GAD7_schema",
+			"prefLabel": {"en": "Anxiety", "es": "Anxiety_es"},
+			"isVis": true
+			},
+			{"isAbout": "MalargueVoiceTask_schema",
+			"variableName": "MalargueVoiceTask_schema",
+			"prefLabel": {"en": "Voice Tasks", "es": "Voice Task_es"},
+			"isVis": true
+			},
+			{"isAbout": "ThankYou_schema",
+			"variableName": "ThankYou_schema",
+			"prefLabel": {"en": "ThankYou", "es": "ThankYou_es"},
+			"isVis": true
+			}
+		],
+		"order": [
             "PHQ9_schema",
             "GAD7_schema",
             "MalargueVoiceTask_schema",
             "ThankYou_schema"
         ],
-        "shuffle": false,
-        "displayNameMap": [
-            {"isAbout": "PHQ9_schema", "alternateName": {"en": "Screening", "es": "Screening_es" }},
-            {"isAbout": "GAD7_schema", "alternateName": {"en": "Anxiety", "es": "Anxiety_es"}},
-            {"isAbout": "MalargueVoiceTask_schema", "alternateName": {"en": "Voice Tasks", "es": "Voice Task_es"}},
-            {"isAbout": "ThankYou_schema", "alternateName": {"en": "ThankYou", "es": "ThankYou_es"}}
-        ],
-        "visibility": [
-            {"variableName": "PHQ9_schema", "isVis": true},
-            {"variableName": "GAD7_schema", "isVis": true},
-            {"variableName": "MalargueVoiceTask_schema", "isVis": true},
-            {"variableName": "ThankYou_schema", "isVis": true}
-        ],
-        "allow": ["autoAdvance", "disableBack"]
-    }
+		"shuffle": false,
+		"allow": ["autoAdvance", "disableBack"]
+	}
 }
