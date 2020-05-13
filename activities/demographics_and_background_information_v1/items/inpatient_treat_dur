@@ -1,0 +1,28 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "@id": "inpatient_treat_dur",
+    "prefLabel": "inpatient_treat_dur",
+    "ui": {
+        "inputType": "text",
+        "customAlignment": "RH"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "requiredValue": true
+    },
+    "question": {
+        "en": "What was the total duration of treatment in weeks? (the sum of all inpatient treatment combined)\n"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "redcap",
+            "column": "Field Note",
+            "value": "*For any duration less than 1 week, code as 0.5"
+        }
+    ]
+}
