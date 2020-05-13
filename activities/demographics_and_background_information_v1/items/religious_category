@@ -1,0 +1,48 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "@id": "religious_category",
+    "prefLabel": "religious_category",
+    "responseOptions": {
+        "multipleChoice": false,
+        "choices": [
+            {
+                "schema:value": 1,
+                "schema:name": "Catholic ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2,
+                "schema:name": "Protestant ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 3,
+                "schema:name": "Jewish ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 4,
+                "schema:name": "Other ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 5,
+                "schema:name": "Never Affiliated with Any",
+                "@type": "schema:option"
+            }
+        ],
+        "requiredValue": true
+    },
+    "ui": {
+        "inputType": "radio",
+        "customAlignment": "LV"
+    },
+    "question": {
+        "en": "Religious Categories:\n"
+    }
+}

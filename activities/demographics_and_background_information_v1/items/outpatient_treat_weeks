@@ -1,0 +1,23 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "@id": "outpatient_treat_weeks",
+    "prefLabel": "outpatient_treat_weeks",
+    "ui": {
+        "inputType": "number",
+        "customAlignment": "RH"
+    },
+    "responseOptions": {
+        "valueType": "xsd:int",
+        "schema:minValue": "10",
+        "schema:maxValue": "500",
+        "requiredValue": true
+    },
+    "question": {
+        "en": "What was the total duration of treatment in weeks? \n(the sum of all outpatient treatment combined)\n"
+    }
+}

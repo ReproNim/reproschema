@@ -54,15 +54,17 @@ We have defined 3 different types of schema –
 Schema overall structure:
 
 - protocol directory structure: name the directory in the CamelCase naming convention. It contains the following:
-  - protocol_name_schema : schema to define the protocol
-  - protocol_name_context : context to define keys used specific to the protocol schema
+  - `protocolName_schema` : schema to define the protocol
+  - `protocolName_context` : context to define keys used specific to the protocol schema
 - activity directory structure: name the directory with name of activity in the CamelCase naming convention. It contains the following:
-  - items (directory) : contains the individual items/questions in the activity schema
-    - item_1
+  - `/items`: directory containing the jsonld files for individual items of the activity schema
+    - `item_1`
     - ...
-  - activity_name_schema : schema to define the activity
-  - activity_name_context : context to define keys used specific to the activity schema
+  - `activityName_schema` : schema to define the activity
+  - `activityName_context` : context to define keys used specific to the activity schema
   - sub-activity jsonld schemas (if any)
+  
+Note: All schema and context files above are saved without a `.jsonld` files extension.
 
 The generic keys are defined in the generic context file (contexts/generic)
 
@@ -74,32 +76,83 @@ The generic keys are defined in the generic context file (contexts/generic)
 - Python package to generate JSON-LDs in our schema format. [repo](https://github.com/akeshavan/mindlogger-build-applet)
 
 ### 5.2: Manual schema generation: 
-Fork the project and manually create the jsonld files according to the above directory structure. this process will be tedious for large questionnaires.
+Fork the project and manually create the jsonld files according to the above directory structure. (This process will be tedious for large
+ questionnaires).
 
 - To create an activity:
   - Under the [`activities`](./activities) directory, create directory with name of activity in the CamelCase naming convention.
   - activity directory structure:
-    - `items` (directory) : contains the individual items/questions in the activity schema
-      - `Item_1`
+    - `/items` (directory) : contains the `jsonld` files for individual items of the activity schema
+      - `item_1`
       - …
     - `activityName_schema` : schema to define the activity
     - `activityName_context` : context to define keys used specific to the activity schema
 
   - Creating `activityName_schema` – use the keys defined in [`schemas/Activity`](./schemas/Activity). If any other keys are used, then define them in `activityName_context`
-
-  - Description of some other keys:
-    - `@context` - Array. Include the ReproNim generic context JSON-LD file along with the activity context.
-
-      For example,
-      ```json
-      {
-        "@context": [
-          "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-          "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/PHQ-9/phq9_context"
-        ]
-      }
-      ```
-    - `@type`=`"https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/Activity"`
+  
+  For example,
+  ```
+    {
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/Wellbeing/Wellbeing_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "Wellbeing_schema",
+    "skos:prefLabel": "Wellbeing",
+    "schema:description": " Wellbeing Voice tasks",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": {
+        "en": "For each task, you should hit the record button before speaking and then stop once you are done speaking. You may hit play to hear what was recorded.",
+        "es": "Para cada pregunta, debería hacer click sobre el botón antes de hablar y luego hacerlo de nuevo para parar de grabar. Luego puede tocar play para escuchar su respuesta."
+    },
+    "ui": {
+        "addProperties": [
+            {"isAbout": "share_data",
+            "variableName": "share_data",
+            "prefLabel": {"en": "Share Data"},
+            "isVis": true,
+            "allow": ["skipped", "dontknow"],
+            ...
+            },
+            {"isAbout": "email",
+            "variableName": "email",
+            "isVis": "share_data === 1"
+            },
+            {"isAbout": "multipart_audio_check",
+            "variableName": "multipart_audio_check",
+            "isVis": true
+            },
+            {"isAbout": "free_speech_general_mood",
+            "variableName": "share_data",
+            "isVis": true
+            },
+            {"isAbout": "say_ah",
+            "variableName": "say_ah",
+            "isVis": true
+            }
+        ],
+        "order": [
+            "multipart_audio_check",
+            "share_data",
+            "email",
+            "free_speech_general_mood",
+            "say_ah"
+        ],
+        "shuffle": false
+    }
+  }
+  ```
+  
+  - Mandatory keys:
+    - `@context` - [Array] Include the ReproNim generic context JSON-LD file along with the activity context.
+    - `@type`- describes type of the schema.
+    - `@id` - unique id for the schema. should be same as the filename.
+    - `skos:prefLabel` - display name for the schema
+    - `ui.addProperties` - defines the various properties of each item.
+    - `variablename` - variable name used in `ui.order` for the items
+    - `isAbout` - file name of the corresponding variable name
+    - `ui.order` - [Array] defines the order in which the items appear in the activity
 
   - To create `item_x` in the items folder:
     - Use keys defined in [`schemas/Field`](./schemas/Field)

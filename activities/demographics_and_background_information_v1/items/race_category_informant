@@ -1,0 +1,56 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "@id": "race_category_informant",
+    "prefLabel": "race_category_informant",
+    "responseOptions": {
+        "multipleChoice": false,
+        "choices": [
+            {
+                "schema:value": 1,
+                "schema:name": "Caucasian or White ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2,
+                "schema:name": "Black or African American ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 3,
+                "schema:name": "American Indian or Alaska Native ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 4,
+                "schema:name": "Asian ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 5,
+                "schema:name": "Native Hawaiian or other Pacific Islander ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 6,
+                "schema:name": "Multiracial",
+                "@type": "schema:option"
+            }
+        ],
+        "requiredValue": true
+    },
+    "ui": {
+        "inputType": "radio",
+        "customAlignment": "LV"
+    },
+    "preamble": {
+        "en": "Your race and ethnic identity."
+    },
+    "question": {
+        "en": "Racial Categories:"
+    }
+}
