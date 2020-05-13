@@ -41,23 +41,19 @@ reproschema:ActivitySetShape
         sh:maxCount 1 ;
     ] ;
     sh:property [
-        sh:path skos:altLabel ;
-        sh:datatype rdf:langString ;
-        sh:minCount 1 ;
-        sh:maxCount 1 ;
-    ] ;
-    sh:property [
         sh:path reproterms:preamble;
         sh:datatype rdf:langString ;
         sh:maxCount 1 ;
     ] ;
     sh:property [
-        sh:path reproterms:scoring_logic ;
+        sh:path reproterms:scoringLogic ;
         sh:node reproterms:ScoringShape ;
+        sh:maxCount 1 ;
     ] ;
     sh:property [
         sh:path reproterms:order ;
         sh:node dash:ListShape ;
+        sh:minCount 1 ;
         sh:property [
             sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
             sh:nodeKind sh:IRI ;
@@ -65,8 +61,8 @@ reproschema:ActivitySetShape
         ]
     ] ;
     sh:property [
-        sh:path reproterms:variableMap ;
-        sh:node reproterms:VariableMapShape ;
+        sh:path reproterms:addProperties ;
+        sh:node reproterms:AddPropertiesShape ;
     ] ;
     sh:property [
         sh:path reproterms:shuffle ;
@@ -80,10 +76,29 @@ reproschema:ActivitySetShape
             sh:nodeKind sh:IRI ;
             sh:minCount 1 ;
         ]
+    ] .
+
+reproterms:AddPropertiesShape
+    a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [
+        sh:path reproterms:variableName ;
+        sh:datatype rdf:langString ;
+        sh:minCount 1 ;
     ] ;
     sh:property [
-        sh:path reproterms:visibility ;
-        sh:node reproterms:VisibilityShape ;
+        sh:path reproterms:isAbout ;
+        sh:nodeKind sh:IRI ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path reproterms:isVis ;
+        sh:or ( [ sh:datatype rdf:langString ] [ sh:datatype xsd:boolean ] [ sh:node reproterms:IsVisShape ]) ;
+    ] ;
+    sh:property [
+        sh:path skos:prefLabel ;
+        sh:datatype rdf:langString ;
     ] .
 
 reproterms:VisibilityShape

@@ -37,11 +37,6 @@ reproschema:ActivityShape
         sh:minCount 1 ;
     ] ;
     sh:property [
-        sh:path skos:altLabel ;
-        sh:datatype rdf:langString ;
-        sh:minCount 1 ;
-    ] ;
-    sh:property [
         sh:path reproterms:preamble;
         sh:datatype rdf:langString ;
     ] ;
@@ -52,6 +47,8 @@ reproschema:ActivityShape
     sh:property [
         sh:path reproterms:order ;
         sh:node dash:ListShape ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
         sh:property [
             sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
             sh:nodeKind sh:IRI ;
@@ -59,8 +56,8 @@ reproschema:ActivityShape
         ]
     ] ;
     sh:property [
-        sh:path reproterms:variableMap ;
-        sh:node reproterms:VariableMapShape ;
+        sh:path reproterms:addProperties ;
+        sh:node reproterms:AddPropertiesShape ;
     ] ;
     sh:property [
         sh:path reproterms:inputType ;
@@ -69,23 +66,46 @@ reproschema:ActivityShape
    sh:property [
         sh:path reproterms:shuffle ;
         sh:datatype schema:Boolean ;
-    ] ;
-   sh:property [
-        sh:path reproterms:visibility ;
-        sh:node reproterms:VisibilityShape ;
     ] .
 
-reproterms:VisibilityShape
+reproterms:AddPropertiesShape
     a sh:NodeShape ;
     sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
     sh:property [
         sh:path reproterms:variableName ;
         sh:datatype rdf:langString ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path reproterms:isAbout ;
+        sh:nodeKind sh:IRI ;
+        sh:minCount 1 ;
     ] ;
     sh:property [
         sh:path reproterms:isVis ;
         sh:or ( [ sh:datatype rdf:langString ] [ sh:datatype xsd:boolean ] [
         sh:node reproterms:IsVisShape ]) ;
+    ] ;
+    sh:property [
+        sh:path skos:prefLabel ;
+        sh:datatype rdf:langString ;
+    ] .
+
+reproterms:ScoringShape
+    a sh:NodeShape ;
+    sh:closed true ;
+    sh:property [
+        sh:path reproterms:variableName ;
+        sh:datatype rdf:langString ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path reproterms:jsExpression ;
+        sh:datatype rdf:langString ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
     ] .
 
 reproterms:IsVisShape
@@ -102,30 +122,5 @@ reproterms:IsVisShape
     ] ;
     sh:property [
         sh:path reproterms:payload ;
-        sh:datatype rdf:langString ;
-    ] .
-
-reproterms:VariableMapShape
-    a sh:NodeShape ;
-    sh:closed true ;
-    sh:ignoredProperties ( rdf:type ) ;
-    sh:property [
-        sh:path reproterms:variableName ;
-        sh:datatype rdf:langString ;
-    ] ;
-    sh:property [
-        sh:path reproterms:isAbout ;
-        sh:nodeKind sh:IRI ;
-    ] .
-
-reproterms:ScoringShape
-    a sh:NodeShape ;
-    sh:closed true ;
-    sh:property [
-        sh:path reproterms:variableName ;
-        sh:datatype rdf:langString ;
-    ] ;
-    sh:property [
-        sh:path reproterms:jsExpression ;
         sh:datatype rdf:langString ;
     ] .
