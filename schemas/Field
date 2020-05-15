@@ -15,10 +15,10 @@
         {
             "@id": "skos:prefLabel",
             "@type": "rdf:Property",
-            "rdfs:comment": "The long name of the instrument or item.",
+            "rdfs:comment": "Indicates the label of the Field.",
             "rdfs:label": "prefLabel",
             "schema:domainIncludes": {
-                "@id": ""
+                "@id": "reproschema:Field"
             },
             "schema:rangeIncludes": {
                 "@id": "schema:Text"
@@ -30,10 +30,10 @@
         {
             "@id": "skos:altLabel",
             "@type": "rdf:Property",
-            "rdfs:comment": "The short name of the instrument or item.",
+            "rdfs:comment": "The short name of Field item.",
             "rdfs:label": "altLabel",
             "schema:domainIncludes": {
-                "@id": ""
+                "@id": "reproschema:Field"
             },
             "schema:rangeIncludes": {
                 "@id": "schema:Text"
@@ -63,10 +63,10 @@
         {
             "@id": "schema:schemaVersion",
             "@type": "rdf:Property",
-            "rdfs:comment": "Indicates (by URL or string) a particular version of a schema.",
+            "rdfs:comment": "Indicates (by URL or string) a particular version of the reproschema.",
             "rdfs:label": "schemaVersion",
             "schema:domainIncludes": {
-                "@id": ""
+                "@id": "reproschema:Field"
             },
             "schema:rangeIncludes": [
                 {
@@ -83,10 +83,10 @@
         {
             "@id": "schema:version",
             "@type": "rdf:Property",
-            "rdfs:comment": "Indicates (by URL or string) a particular version of an instrument.",
+            "rdfs:comment": "Indicates (by URL or string) a particular version of the item.",
             "rdfs:label": "version",
             "schema:domainIncludes": {
-                "@id": ""
+                "@id": "reproschema:Field"
             },
             "schema:rangeIncludes": [
                 {
@@ -116,28 +116,10 @@
             }
         },
         {
-            "@id": "reproterms:ui",
-            "@type": "rdf:Property",
-            "rdfs:comment": "An element to describe the ui of a Field.",
-            "rdfs:label": "ui",
-            "schema:domainIncludes": {
-                "@id": "reproschema:Field"
-            },
-            "schema:rangeIncludes": {
-                "@id": "reproterms:order"
-            },
-            "schema:sameAs": {
-                "@id": "reproterms:ui"
-            }
-        },
-        {
             "@id": "reproterms:inputType",
             "@type": "rdf:Property",
             "rdfs:comment": "An element to describe the input type of the Field item.",
             "rdfs:label": "inputType",
-            "rdfs:subPropertyOf": {
-                "@id": "reproterms:ui"
-            },
             "schema:domainIncludes": {
                 "@id": "reproschema:Field"
             },
@@ -147,6 +129,193 @@
             "schema:sameAs": {
                 "@id": "reproterms:inputType"
             }
-        }
+        },
+        {
+            "@id": "reproterms:responseOptions",
+            "@type": "rdf:Property",
+            "rdfs:comment": "An element to describe the properties of response of the Field item.",
+            "rdfs:label": "responseOptions",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Field"
+            },
+            "schema:rangeIncludes": [
+                {
+                    "@id": "schema:Text"
+                },
+                {
+                    "@id": "schema:URL"
+                }
+            ],
+            "schema:sameAs": {
+                "@id": "reproterms:responseOptions"
+            }
+        },
+        {
+            "@id": "reproterms:valueType",
+            "@type": "rdf:Property",
+            "rdfs:comment": "An element to describe the value type of the response for the Field item.",
+            "rdfs:label": "valueType",
+            "rdfs:subPropertyOf": {
+                "@id": "reproterms:responseOptions"
+            },
+            "schema:domainIncludes": {
+                "@id": "reproterms:responseOptions"
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:text"
+            }
+        },
+        {
+            "@id": "schema:minValue",
+            "@type": "rdf:Property",
+            "rdfs:comment": "Indicates the lower value of the response for the Field item.",
+            "rdfs:label": "minValue",
+            "rdfs:subPropertyOf": {
+                "@id": "reproterms:responseOptions"
+            },
+            "schema:domainIncludes": {
+                "@id": "reproterms:responseOptions"
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:Number"
+            }
+        },
+        {
+            "@id": "schema:maxValue",
+            "@type": "rdf:Property",
+            "rdfs:comment": "Indicates the upper value of the response for the Field item.",
+            "rdfs:label": "maxValue",
+            "rdfs:subPropertyOf": {
+                "@id": "reproterms:responseOptions"
+            },
+            "schema:domainIncludes": {
+                "@id": "reproterms:responseOptions"
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:Number"
+            }
+        },
+        {
+            "@id": "reproterms:multipleChoice",
+            "@type": "rdf:Property",
+            "rdfs:comment": "Indicates (by bool) if response for the Field item is a multiple choice type.",
+            "rdfs:label": "multipleChoice",
+            "rdfs:subPropertyOf": {
+                "@id": "reproterms:responseOptions"
+            },
+            "schema:domainIncludes": {
+                "@id": "reproterms:responseOptions"
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:Boolean"
+            },
+            "schema:sameAs": {
+                "@id": "reproterms:multipleChoice"
+            }
+        },
+        {
+            "@id": "reproterms:requiredValue",
+            "@type": "rdf:Property",
+            "rdfs:comment": "Indicates (by bool) if the response for the Field item is mandatory or not.",
+            "rdfs:label": "requiredValue",
+            "rdfs:subPropertyOf": {
+                "@id": "reproterms:responseOptions"
+            },
+            "schema:domainIncludes": {
+                "@id": "reproterms:responseOptions"
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:Boolean"
+            }
+        },
+        {
+            "@id": "reproterms:datumType",
+            "@type": "rdf:Property",
+            "rdfs:comment": "Indicates what type of datum the response is (e.g. range,count,scalar etc.) for the Field item.",
+            "rdfs:label": "datumType",
+            "rdfs:subPropertyOf": {
+                "@id": "reproterms:responseOptions"
+            },
+            "schema:domainIncludes": {
+                "@id": "reproterms:responseOptions"
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:text"
+            },
+            "schema:sameAs": {
+                "@id": "reproterms:datumType"
+            }
+        },
+        {
+            "@id": "reproterms:hasUnit",
+            "@type": "rdf:Property",
+            "rdfs:comment": "Indicates Unit of measurement of the response for the Field item.",
+            "rdfs:label": "datumType",
+            "rdfs:subPropertyOf": {
+                "@id": "reproterms:responseOptions"
+            },
+            "schema:domainIncludes": {
+                "@id": "reproterms:responseOptions"
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:text"
+            },
+            "schema:sameAs": {
+                "@id": "reproterms:hasUnit"
+            }
+        },
+        {
+            "@id": "reproterms:isPartOf",
+            "@type": "rdf:Property",
+            "rdfs:comment": "An element to link Field to assessments.",
+            "rdfs:label": "isPartOf",
+            "schema:domainIncludes": {
+                "@id": "reproterms:responseOptions"
+            },
+            "schema:rangeIncludes": [
+                {
+                    "@id": "schema:Text"
+                },
+                {
+                    "@id": "schema:URL"
+                }
+            ]
+        },
+        {
+            "@id": "schema:name",
+            "@type": "rdf:Property",
+            "rdfs:comment": "An element to describe the name of choice in responseOptions of the Field item.",
+            "rdfs:label": "name",
+            "rdfs:subPropertyOf": {
+                "@id": "reproterms:choices"
+            },
+            "schema:domainIncludes": {
+                "@id": "reproterms:choices"
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:text"
+            },
+            "schema:sameAs": {
+                "@id": "schema:name"
+            }
+        },
+        {
+            "@id": "schema:value",
+            "@type": "rdf:Property",
+            "rdfs:comment": "An element to describe the numerical value of a choice in responseOptions of the Field item.",
+            "rdfs:label": "value",
+            "rdfs:subPropertyOf": {
+                "@id": "reproterms:choices"
+            },
+            "schema:domainIncludes": {
+                "@id": "reproterms:choices"
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:text"
+            },
+            "schema:sameAs": {
+                "@id": "schema:name"
+            }
+        },
     ]
 }
