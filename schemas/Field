@@ -133,10 +133,13 @@
         {
             "@id": "schema:isPartOf",
             "@type": "rdf:Property",
-            "rdfs:comment": "An element to link Field to assessments.",
+            "rdfs:comment": "Indicates an item that this item is part of.",
             "rdfs:label": "isPartOf",
             "schema:domainIncludes": {
                 "@id": "reproterms:Field"
+            },
+            "schema:inverseOf": {
+              "@id": "schema:hasPart"
             },
             "schema:rangeIncludes": [
                 {
@@ -145,12 +148,15 @@
                 {
                     "@id": "schema:URL"
                 }
-            ]
+            ],
+            "schema:sameAs": {
+                "@id": "schema:isPartOf"
+            }
         },
         {
             "@id": "reproterms:responseOptions",
             "@type": "rdf:Property",
-            "rdfs:comment": "An element to describe the properties of response of the Field item.",
+            "rdfs:comment": "An element (object or by URL)to describe the properties of response of the Field item.",
             "rdfs:label": "responseOptions",
             "schema:domainIncludes": {
                 "@id": "reproschema:Field"
@@ -165,6 +171,26 @@
             ],
             "schema:sameAs": {
                 "@id": "reproterms:responseOptions"
+            }
+        },
+        {
+            "@id": "reproterms:inputOptions",
+            "@type": "rdf:Property",
+            "rdfs:comment": "An element (object or by URL)to describe the input options of the Field item.",
+            "rdfs:label": "inputOptions",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Field"
+            },
+            "schema:rangeIncludes": [
+                {
+                    "@id": ""
+                },
+                {
+                    "@id": "schema:URL"
+                }
+            ],
+            "schema:sameAs": {
+                "@id": "reproterms:inputOptions"
             }
         }
     ]
