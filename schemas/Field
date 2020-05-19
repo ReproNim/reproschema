@@ -51,7 +51,7 @@
             "rdfs:comment": "A description of the item.",
             "rdfs:label": "description",
             "schema:domainIncludes": {
-                "@id": "schema:Thing"
+                "@id": "reproschema:Field"
             },
             "schema:rangeIncludes": {
                 "@id": "schema:Text"
@@ -98,6 +98,21 @@
             ],
             "schema:sameAs": {
                 "@id": "https://schema.org/version"
+            }
+        },
+        {
+            "@id": "reproterms:preamble",
+            "@type": "rdf:Property",
+            "rdfs:comment": "The preamble for the Field item.",
+            "rdfs:label": "preamble",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Field"
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:Text"
+            },
+            "schema:sameAs": {
+                "@id": "reproterms:preamble"
             }
         },
         {

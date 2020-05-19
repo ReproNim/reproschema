@@ -15,10 +15,10 @@
         {
             "@id": "skos:prefLabel",
             "@type": "rdf:Property",
-            "rdfs:comment": "The long name of the instrument or item.",
+            "rdfs:comment": "The preferred name of the assessment.",
             "rdfs:label": "prefLabel",
             "schema:domainIncludes": {
-                "@id": ""
+                "@id": "reproschema:Activity"
             },
             "schema:rangeIncludes": {
                 "@id": "schema:Text"
@@ -30,10 +30,10 @@
         {
             "@id": "skos:altLabel",
             "@type": "rdf:Property",
-            "rdfs:comment": "The short name of the instrument or item.",
-            "rdfs:label": "shortName",
+            "rdfs:comment": "The short name of the assessment.",
+            "rdfs:label": "altLabel",
             "schema:domainIncludes": {
-                "@id": ""
+                "@id": "reproschema:Activity"
             },
             "schema:rangeIncludes": {
                 "@id": "schema:Text"
@@ -51,7 +51,7 @@
             "rdfs:comment": "A description of the item.",
             "rdfs:label": "description",
             "schema:domainIncludes": {
-                "@id": "schema:Thing"
+                "@id": "reproschema:Activity"
             },
             "schema:rangeIncludes": {
                 "@id": "schema:Text"
@@ -66,7 +66,7 @@
             "rdfs:comment": "Indicates (by URL or string) a particular version of a schema.",
             "rdfs:label": "schemaVersion",
             "schema:domainIncludes": {
-                "@id": ""
+                "@id": "reproschema:Activity"
             },
             "schema:rangeIncludes": [
                 {
@@ -83,10 +83,10 @@
         {
             "@id": "schema:version",
             "@type": "rdf:Property",
-            "rdfs:comment": "Indicates (by URL or string) a particular version of an instrument.",
+            "rdfs:comment": "Indicates (by URL or string) a particular version of an assessment.",
             "rdfs:label": "version",
             "schema:domainIncludes": {
-                "@id": ""
+                "@id": "reproschema:Activity"
             },
             "schema:rangeIncludes": [
                 {
@@ -101,45 +101,47 @@
             }
         },
         {
+            "@id": "schema:citation",
+            "@type": "rdf:Property",
+            "rdfs:comment": "A citation or reference to another creative work, such as another publication, web page, scholarly article, etc.",
+            "rdfs:label": "citation",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Activity"
+            },
+            "schema:rangeIncludes": [
+                {
+                    "@id": "schema:Text"
+                },
+                {
+                    "@id": "schema:URL"
+                }
+            ],
+            "schema:sameAs": {
+                "@id": "https://schema.org/citation"
+            }
+        },
+        {
             "@id": "reproterms:preamble",
             "@type": "rdf:Property",
             "rdfs:comment": "The preamble for the instrument.",
             "rdfs:label": "preamble",
             "schema:domainIncludes": {
-                "@id": ""
+                "@id": "reproschema:Activity"
             },
             "schema:rangeIncludes": {
                 "@id": "schema:Text"
             },
             "schema:sameAs": {
-                "@id": "https://schema.org/question"
-            }
-        },
-        {
-            "@id": "reproterms:ui",
-            "@type": "rdf:Property",
-            "rdfs:comment": "An element to describe the ui of an Activity.",
-            "rdfs:label": "ui",
-            "schema:domainIncludes": {
-                "@id": "reproschema:Field"
-            },
-            "schema:rangeIncludes": {
-                "@id": "reproterms:order"
-            },
-            "schema:sameAs": {
-                "@id": "reproterms:ui"
+                "@id": "reproterms:preamble"
             }
         },
         {
             "@id": "reproterms:order",
             "@type": "rdf:Property",
-            "rdfs:comment": "An element to describe the order in which the Fields of an instrument appears in the ui.",
+            "rdfs:comment": "An element to describe the order in which the Fields of an instrument appear in the ui.",
             "rdfs:label": "order",
-            "rdfs:subPropertyOf": {
-                "@id": "reproterms:ui"
-            },
             "schema:domainIncludes": {
-                "@id": "reproschema:Field"
+                "@id": "reproschema:Activity"
             },
             "schema:rangeIncludes": {
                 "@id": "schema:URL"
@@ -151,11 +153,8 @@
         {
             "@id": "reproterms:shuffle",
             "@type": "rdf:Property",
-            "rdfs:comment": "An element to determine if the list of items is shuffled or in order.",
+            "rdfs:comment": "An element (bool) to determine if the list of items is shuffled or in order.",
             "rdfs:label": "shuffle",
-            "rdfs:subPropertyOf": {
-                "@id": "reproterms:ui"
-            },
             "schema:domainIncludes": {
                 "@id": "reproschema:Activity"
             },
@@ -167,11 +166,10 @@
             }
         },
         {
-            "@id": "reproterms:variableMap",
+            "@id": "reproterms:isAbout",
             "@type": "rdf:Property",
-            "rdfs:comment": "An element to define mapping between variables used and
-             the corresponding nodes.",
-            "rdfs:label": "variableMap",
+            "rdfs:comment": "An element to define (by URL) the corresponding nodes.",
+            "rdfs:label": "isAbout",
             "schema:domainIncludes": [
                 {
                     "@id": "reproschema:Protocol"
@@ -191,10 +189,10 @@
             ]
         },
         {
-            "@id": "reproterms:visibility",
+            "@id": "reproterms:isVis",
             "@type": "rdf:Property",
             "rdfs:comment": "An element to describe visibility conditions of items in an assessment.",
-            "rdfs:label": "visibility",
+            "rdfs:label": "isVis",
             "schema:domainIncludes": [
                 {
                     "@id": "reproschema:Protocol"
@@ -206,18 +204,18 @@
             ],
             "schema:rangeIncludes": [
                 {
-                    "@id": "reproschema:Activity"
+                    "@id": "schema:Boolean"
                 },
                 {
-                    "@id": "reproschema:Field"
+                    "@id": "schema:Text"
                 }
             ]
         },
         {
-            "@id": "reproterms:scoring_logic",
+            "@id": "reproterms:scoringLogic",
             "@type": "rdf:Property",
-            "rdfs:comment": "An array of items indicating score in an activity or protocol.",
-            "rdfs:label": "scoring_logic",
+            "rdfs:comment": "An array of objects indicating score in an activity or protocol and the score Field item ",
+            "rdfs:label": "scoringLogic",
             "schema:domainIncludes": [
                 {
                     "@id": "reproschema:Protocol"
