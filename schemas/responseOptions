@@ -123,18 +123,23 @@
             }
         },
         {
-            "@id": "reproterms:hasUnit",
+            "@id": "schema:unitCode",
             "@type": "rdf:Property",
-            "rdfs:comment": "Indicates Unit of measurement of the response for the Field item.",
-            "rdfs:label": "hasUnit",
+            "rdfs:comment": "The unit of measurement given using the UN/CEFACT Common Code (3 characters) or a URL. Other codes than the UN/CEFACT Common Code may be used with a prefix followed by a colon."
+            "rdfs:label": "unitCode",
             "schema:domainIncludes": {
                 "@id": "reproterms:responseOptions"
             },
-            "schema:rangeIncludes": {
-                "@id": "schema:text"
-            },
+            "http://schema.org/rangeIncludes": [
+                {
+                    "@id": "schema:URL"
+                },
+                {
+                    "@id": "schema:Text"
+                }
+            ],
             "schema:sameAs": {
-                "@id": "reproterms:hasUnit"
+                "@id": "schema:unitCode"
             }
         },
         {
