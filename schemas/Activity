@@ -166,6 +166,26 @@
             }
         },
         {
+            "@id": "reproschema:addProperties",
+            "@type": "rdf:Property",
+            "rdfs:comment": "An array of objects to describe the various properties added to assessments and fields.",
+            "rdfs:label": "addProperties",
+            "schema:domainIncludes": [
+                {
+                    "@id": "reproschema:Protocol"
+                },
+                {
+                    "@id": "reproschema:Activity"
+                }
+            ],
+            "schema:rangeIncludes": {
+                "@id": "schema:Text"
+            },
+            "schema:sameAs": {
+                "@id": "reproschema:addProperties"
+            }
+        },
+        {
             "@id": "reproterms:isAbout",
             "@type": "rdf:Property",
             "rdfs:comment": "An element to define (by URL) the corresponding nodes.",
@@ -189,6 +209,26 @@
             ]
         },
         {
+            "@id": "reproschema:variableName",
+            "@type": "rdf:Property",
+            "rdfs:comment": "A description of the item.",
+            "rdfs:label": "variableName",
+            "schema:domainIncludes": [
+                {
+                    "@id": "reproschema:Protocol"
+                },
+                {
+                    "@id": "reproschema:Activity"
+                }
+            ],
+            "schema:rangeIncludes": {
+                "@id": "schema:Text"
+            },
+            "schema:sameAs": {
+                "@id": "reproschema:variableName"
+            }
+        },
+        {
             "@id": "reproterms:isVis",
             "@type": "rdf:Property",
             "rdfs:comment": "An element to describe visibility conditions of items in an assessment.",
@@ -200,7 +240,6 @@
                 {
                     "@id": "reproschema:Activity"
                 }
-
             ],
             "schema:rangeIncludes": [
                 {
