@@ -5,11 +5,13 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dash: <http://datashapes.org/dash#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix reproterms: <https://raw.githubusercontent.com/sanuann/schema-standardization/master/terms/> .
 @prefix reproschema: <https://raw.githubusercontent.com/sanuann/schema-standardization/master/schemas/> .
 
 schema:FieldShape
     a sh:NodeShape ;
+    sh:ignoredProperties ( rdf:type ) ;
     sh:targetClass reproschema:Field ;
     sh:property [
         sh:path skos:prefLabel;

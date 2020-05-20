@@ -4,19 +4,15 @@ from pyshacl import validate
 import json
 import os
 
-url = 'https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/PHQ-9/PHQ9_schema'
+url = 'https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/PHQ-9/items/phq9_1'
 data = json.loads(urlopen(url).read().decode("utf-8"))
 
-for root, dirs, files in os.walk('./activities/GAD7'):
+for root, dirs, files in os.walk('./activities/PHQ-9/items'):
     for name in files:
-        # files without extension or with .jsonld extn
-        if name.endswith('_schema'):
-            # print(18, '--- ', name)
-            full_file_name = os.path.join(root, name)
+        full_file_name = os.path.join(root, name)
+        if not os.path.splitext(full_file_name)[1]:
             with open(full_file_name) as json_file:
                 try:
-                    #print(25, json_file.read())
-                    #d = json.dumps(json_file)
                     data = json.load(json_file)
                     # normalized = jsonld.normalize(
                     #     data, {'algorithm': 'URDNA2015', 'format':
