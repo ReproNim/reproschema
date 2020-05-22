@@ -11,6 +11,7 @@
 
 schema:FieldShape
     a sh:NodeShape ;
+    sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:targetClass reproschema:Field ;
     sh:property [
@@ -18,11 +19,6 @@ schema:FieldShape
         sh:datatype rdf:langString ;
         sh:maxCount 1 ;
         sh:minCount 1 ;
-    ] ;
-    sh:property [
-        sh:path skos:altLabel;
-        sh:datatype rdf:langString ;
-        sh:maxCount 1 ;
     ] ;
     sh:property [
         sh:path schema:description ;
@@ -44,6 +40,11 @@ schema:FieldShape
         sh:datatype rdf:langString ;
         sh:maxCount 1 ;
         sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path reproterms:preamble;
+        sh:datatype rdf:langString ;
+        sh:maxCount 1 ;
     ] ;
     sh:property [
         sh:path reproterms:inputType ;

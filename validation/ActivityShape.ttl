@@ -47,7 +47,6 @@ reproschema:ActivityShape
     sh:property [
         sh:path reproterms:order ;
         sh:node dash:ListShape ;
-        sh:minCount 1 ;
         sh:maxCount 1 ;
         sh:property [
             sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
@@ -63,9 +62,19 @@ reproschema:ActivityShape
         sh:path reproterms:inputType ;
         sh:datatype xsd:string ;
     ] ;
-   sh:property [
+    sh:property [
         sh:path reproterms:shuffle ;
         sh:datatype schema:Boolean ;
+    ] ;
+    sh:property [
+        sh:path reproterms:allow ;
+        sh:node dash:ListShape ;
+        sh:maxCount 1 ;
+        sh:property [
+            sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
+            sh:nodeKind sh:IRI ;
+            sh:minCount 1 ;
+        ]
     ] .
 
 reproterms:AddPropertiesShape
@@ -84,8 +93,7 @@ reproterms:AddPropertiesShape
     ] ;
     sh:property [
         sh:path reproterms:isVis ;
-        sh:or ( [ sh:datatype rdf:langString ] [ sh:datatype xsd:boolean ] [
-        sh:node reproterms:IsVisShape ]) ;
+        sh:or ( [ sh:datatype rdf:langString ] [ sh:datatype xsd:boolean ] [ sh:node reproterms:IsVisShape ]) ;
     ] ;
     sh:property [
         sh:path skos:prefLabel ;
