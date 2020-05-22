@@ -17,9 +17,17 @@
             "@type": "rdf:Property",
             "rdfs:comment": "The preferred name of the assessment.",
             "rdfs:label": "prefLabel",
-            "schema:domainIncludes": {
-                "@id": "reproschema:Activity"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "reproschema:Protocol"
+                },
+                {
+                    "@id": "reproschema:Activity"
+                },
+                {
+                    "@id": "reproschema:Field"
+                }
+            ],
             "schema:rangeIncludes": {
                 "@id": "schema:Text"
             },
@@ -32,9 +40,17 @@
             "@type": "rdf:Property",
             "rdfs:comment": "The short name of the assessment.",
             "rdfs:label": "altLabel",
-            "schema:domainIncludes": {
-                "@id": "reproschema:Activity"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "reproschema:Protocol"
+                },
+                {
+                    "@id": "reproschema:Activity"
+                },
+                {
+                    "@id": "reproschema:Field"
+                }
+            ],
             "schema:rangeIncludes": {
                 "@id": "schema:Text"
             },
@@ -51,22 +67,19 @@
             "rdfs:comment": "A description of the item.",
             "rdfs:label": "description",
             "schema:domainIncludes": {
-                "@id": "reproschema:Activity"
+                "@id": "schema:Thing"
             },
             "schema:rangeIncludes": {
                 "@id": "schema:Text"
-            },
-            "schema:sameAs": {
-                "@id": "https://schema.org/description"
             }
         },
         {
             "@id": "schema:schemaVersion",
             "@type": "rdf:Property",
-            "rdfs:comment": "Indicates (by URL or string) a particular version of a schema.",
+            "rdfs:comment": "Indicates (by URL or string) a particular version of a schema used in some CreativeWork. For example, a document could declare a schemaVersion using an URL such as http://schema.org/version/2.0/ if precise indication of schema version was required by some application.",
             "rdfs:label": "schemaVersion",
             "schema:domainIncludes": {
-                "@id": "reproschema:Activity"
+                "@id": "schema:CreativeWork"
             },
             "schema:rangeIncludes": [
                 {
@@ -75,30 +88,24 @@
                 {
                     "@id": "schema:URL"
                 }
-            ],
-            "schema:sameAs": {
-                "@id": "https://schema.org/schemaVersion"
-            }
+            ]
         },
         {
             "@id": "schema:version",
             "@type": "rdf:Property",
-            "rdfs:comment": "Indicates (by URL or string) a particular version of an assessment.",
+            "rdfs:comment": "The version of the CreativeWork embodied by a specified resource.",
             "rdfs:label": "version",
             "schema:domainIncludes": {
-                "@id": "reproschema:Activity"
+                "@id": "schema:CreativeWork"
             },
             "schema:rangeIncludes": [
                 {
                     "@id": "schema:Text"
                 },
                 {
-                    "@id": "schema:URL"
+                    "@id": "schema:Number"
                 }
-            ],
-            "schema:sameAs": {
-                "@id": "https://schema.org/version"
-            }
+            ]
         },
         {
             "@id": "schema:citation",
@@ -106,19 +113,16 @@
             "rdfs:comment": "A citation or reference to another creative work, such as another publication, web page, scholarly article, etc.",
             "rdfs:label": "citation",
             "schema:domainIncludes": {
-                "@id": "reproschema:Activity"
+                "@id": "schema:CreativeWork"
             },
             "schema:rangeIncludes": [
                 {
                     "@id": "schema:Text"
                 },
                 {
-                    "@id": "schema:URL"
+                    "@id": "schema:CreativeWork"
                 }
-            ],
-            "schema:sameAs": {
-                "@id": "https://schema.org/citation"
-            }
+            ]
         },
         {
             "@id": "reproterms:preamble",

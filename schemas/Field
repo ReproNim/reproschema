@@ -51,13 +51,10 @@
             "rdfs:comment": "A description of the item.",
             "rdfs:label": "description",
             "schema:domainIncludes": {
-                "@id": "reproschema:Field"
+                "@id": "schema:Thing"
             },
             "schema:rangeIncludes": {
                 "@id": "schema:Text"
-            },
-            "schema:sameAs": {
-                "@id": "https://schema.org/description"
             }
         },
         {
@@ -169,7 +166,7 @@
             }
         },
         {
-            "@id": "reproterms:responseOptions",
+            "@id": "reproschema:responseOptions",
             "@type": "rdf:Property",
             "rdfs:comment": "An element (object or by URL)to describe the properties of response of the Field item.",
             "rdfs:label": "responseOptions",
@@ -178,14 +175,14 @@
             },
             "schema:rangeIncludes": [
                 {
-                    "@id": "reproterms:responseOptions"
+                    "@id": "reproschema:responseOptions"
                 },
                 {
                     "@id": "schema:URL"
                 }
             ],
             "schema:sameAs": {
-                "@id": "reproterms:responseOptions"
+                "@id": "reproschema:responseOptions"
             }
         },
         {
