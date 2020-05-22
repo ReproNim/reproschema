@@ -10,19 +10,16 @@
     "schema:version": "0.0.1",
     "landingPage": "https://raw.githubusercontent.com/ReproNim/reproschema/master/protocols/TokenLogger/README.md",
     "schema:image": "https://raw.githubusercontent.com/ReproNim/reproschema/master/protocols/TokenLogger/mit_voice_pilot_applet_image.svg?sanitize=true",
-    "variableMap": [
-        {"variableName": "TokenActivity_schema", "isAbout": "TokenActivity_schema"}
-    ],
     "ui": {
+        "addProperties": [
+            {"variableName": "TokenActivity_schema",
+            "isAbout": "TokenActivity_schema",
+            "prefLabel": {"en": "TokenActivity" },
+            }
+        ],
         "order": [
             "TokenActivity_schema"
         ],
-        "shuffle": false,
-        "displayNameMap": [
-            {"isAbout": "TokenActivity_schema", "alternateName": "TokenActivity"}
-        ],
-        "visibility":[
-            {"variableName": "TokenActivity_schema", "isVis": true}
-        ]
+        "shuffle": false
     }
 }
