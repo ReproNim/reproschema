@@ -61,6 +61,36 @@
             "schema:sameAs": {
                 "@id": "schema:value"
             }
+        },
+        {
+            "@id": "reproschema:skipped",
+            "@type": "rdf:Property",
+            "rdfs:comment": "An element to describe the choice skipped.",
+            "rdfs:label": "skipped",
+            "schema:domainIncludes": {
+                "@id": "reproterms:choices"
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:URL"
+            },
+            "schema:sameAs": {
+                "@id": "reproschema:skipped"
+            }
+        },
+        {
+            "@id": "reproschema:dontKnow",
+            "@type": "rdf:Property",
+            "rdfs:comment": "An element to describe the choice dontKnow.",
+            "rdfs:label": "dontKnow",
+            "schema:domainIncludes": {
+                "@id": "reproterms:choices"
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:URL"
+            },
+            "schema:sameAs": {
+                "@id": "reproschema:dontKnow"
+            }
         }
     ]
 }
