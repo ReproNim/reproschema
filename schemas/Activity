@@ -36,29 +36,6 @@
             }
         },
         {
-            "@id": "skos:altLabel",
-            "@type": "rdf:Property",
-            "rdfs:comment": "The short name of the assessment.",
-            "rdfs:label": "altLabel",
-            "schema:domainIncludes": [
-                {
-                    "@id": "reproschema:Protocol"
-                },
-                {
-                    "@id": "reproschema:Activity"
-                },
-                {
-                    "@id": "reproschema:Field"
-                }
-            ],
-            "schema:rangeIncludes": {
-                "@id": "schema:Text"
-            },
-            "schema:sameAs": {
-                "@id": "http://www.w3.org/2004/02/skos/core#altLabel"
-            }
-        },
-        {
             "@id": "schema:description",
             "@type": "rdf:Property",
             "owl:equivalentProperty": {
@@ -144,9 +121,14 @@
             "@type": "rdf:Property",
             "rdfs:comment": "An element to describe the order in which the Fields of an instrument appear in the ui.",
             "rdfs:label": "order",
-            "schema:domainIncludes": {
-                "@id": "reproschema:Activity"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "reproschema:Protocol"
+                },
+                {
+                    "@id": "reproschema:Activity"
+                }
+            ],
             "schema:rangeIncludes": {
                 "@id": "schema:URL"
             },
@@ -159,9 +141,14 @@
             "@type": "rdf:Property",
             "rdfs:comment": "An element (bool) to determine if the list of items is shuffled or in order.",
             "rdfs:label": "shuffle",
-            "schema:domainIncludes": {
-                "@id": "reproschema:Activity"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "reproschema:Protocol"
+                },
+                {
+                    "@id": "reproschema:Activity"
+                }
+            ],
             "schema:rangeIncludes": {
                 "@id": "schema:boolean"
             },
@@ -183,76 +170,11 @@
                 }
             ],
             "schema:rangeIncludes": {
-                "@id": "schema:Text"
+                "@id": "reproschema:addProperties"
             },
             "schema:sameAs": {
                 "@id": "reproschema:addProperties"
             }
-        },
-        {
-            "@id": "reproterms:isAbout",
-            "@type": "rdf:Property",
-            "rdfs:comment": "An element to define (by URL) the corresponding nodes.",
-            "rdfs:label": "isAbout",
-            "schema:domainIncludes": [
-                {
-                    "@id": "reproschema:Protocol"
-                },
-                {
-                    "@id": "reproschema:Activity"
-                }
-
-            ],
-            "schema:rangeIncludes": [
-                {
-                    "@id": "reproschema:Activity"
-                },
-                {
-                    "@id": "reproschema:Field"
-                }
-            ]
-        },
-        {
-            "@id": "reproschema:variableName",
-            "@type": "rdf:Property",
-            "rdfs:comment": "A description of the item.",
-            "rdfs:label": "variableName",
-            "schema:domainIncludes": [
-                {
-                    "@id": "reproschema:Protocol"
-                },
-                {
-                    "@id": "reproschema:Activity"
-                }
-            ],
-            "schema:rangeIncludes": {
-                "@id": "schema:Text"
-            },
-            "schema:sameAs": {
-                "@id": "reproschema:variableName"
-            }
-        },
-        {
-            "@id": "reproterms:isVis",
-            "@type": "rdf:Property",
-            "rdfs:comment": "An element to describe visibility conditions of items in an assessment.",
-            "rdfs:label": "isVis",
-            "schema:domainIncludes": [
-                {
-                    "@id": "reproschema:Protocol"
-                },
-                {
-                    "@id": "reproschema:Activity"
-                }
-            ],
-            "schema:rangeIncludes": [
-                {
-                    "@id": "schema:Boolean"
-                },
-                {
-                    "@id": "schema:Text"
-                }
-            ]
         },
         {
             "@id": "reproterms:scoringLogic",
@@ -266,16 +188,10 @@
                 {
                     "@id": "reproschema:Activity"
                 }
-
             ],
-            "schema:rangeIncludes": [
-                {
-                    "@id": "reproschema:Activity"
-                },
-                {
-                    "@id": "reproschema:Field"
-                }
-            ]
+            "schema:rangeIncludes": {
+                "@id": "reproschema:scoringLogic"
+            }
         }
     ]
 }
