@@ -195,7 +195,12 @@
         },
         {
             "@id": "reproschema:Activity",
-            "@type": "rdfs:Class",
+            "@type": [
+                "rdfs:Class",
+                "prov:Entity",
+                "prov:Plan",
+                "nidm:Assessment"
+            ],
             "rdfs:comment": "An assessment in a protocol.",
             "rdfs:label": "Activity",
             "rdfs:subClassOf": {

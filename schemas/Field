@@ -188,7 +188,11 @@
         },
         {
             "@id": "reproschema:Field",
-            "@type": "rdfs:Class",
+            "@type": [
+                "rdfs:Class",
+                "prov:Entity",
+                "nidm:DataElement"
+            ],
             "rdfs:comment": "An item in an assessment.",
             "rdfs:label": "Field",
             "rdfs:subClassOf": {
