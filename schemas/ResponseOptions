@@ -123,7 +123,7 @@
             }
         },
         {
-            "@id": "reproschema:choices",
+            "@id": "reproterms:choices",
             "@type": "rdf:Property",
             "rdfs:comment": "An array to list the available options in responseOptions of the Field item.",
             "rdfs:label": "choices",
@@ -131,31 +131,17 @@
                 "@id": "reproschema:responseOptions"
             },
             "schema:rangeIncludes": {
-                "@id": "reproschema:choices"
+                "@id": "reproschema:Choices"
             },
             "schema:sameAs": {
                 "@id": "schema:itemListElement"
             }
         },
         {
-            "@id": "reproschema:responseOptions",
-            "@type": "rdf:Property",
+            "@id": "reproschema:ResponseOptions",
+            "@type": "rdfs:Class",
             "rdfs:comment": "An element (object or by URL)to describe the properties of response of the Field item.",
-            "rdfs:label": "responseOptions",
-            "schema:domainIncludes": {
-                "@id": "reproschema:Field"
-            },
-            "schema:rangeIncludes": [
-                {
-                    "@id": "reproschema:responseOptions"
-                },
-                {
-                    "@id": "schema:URL"
-                }
-            ],
-            "schema:sameAs": {
-                "@id": "reproschema:responseOptions"
-            }
+            "rdfs:label": "ResponseOptions"
         }
     ]
 }
