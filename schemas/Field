@@ -171,6 +171,22 @@
             }
         },
         {
+            "@id": "http://schema.org/associatedMedia",
+            "@type": "rdf:Property",
+            "schema:domainIncludes": [
+                {
+                    "@id": "http://schema.org/CreativeWork"
+                }
+            ],
+            "schema:rangeIncludes": [
+                {
+                    "@id": "http://schema.org/MediaObject"
+                }
+            ],
+            "rdfs:comment": A media object that encodes this CreativeWork. This property is a synonym for encoding.",
+            "rdfs:label": "associatedMedia"
+        },
+        {
             "@id": "reproschema:Field",
             "@type": "rdfs:Class",
             "rdfs:comment": "An item in an assessment.",
