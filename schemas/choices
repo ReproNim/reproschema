@@ -91,6 +91,21 @@
             "schema:sameAs": {
                 "@id": "reproschema:dontKnow"
             }
+        },
+        {
+            "@id": "reproschema:choices",
+            "@type": "rdf:Property",
+            "rdfs:comment": "An array to list the available options in responseOptions of the Field item.",
+            "rdfs:label": "choices",
+            "schema:domainIncludes": {
+                "@id": "reproschema:responseOptions"
+            },
+            "schema:rangeIncludes": {
+                "@id": "reproschema:choices"
+            },
+            "schema:sameAs": {
+                "@id": "schema:itemListElement"
+            }
         }
     ]
 }

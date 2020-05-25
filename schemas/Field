@@ -28,21 +28,6 @@
             }
         },
         {
-            "@id": "skos:altLabel",
-            "@type": "rdf:Property",
-            "rdfs:comment": "The short name of Field item.",
-            "rdfs:label": "altLabel",
-            "schema:domainIncludes": {
-                "@id": "reproschema:Field"
-            },
-            "schema:rangeIncludes": {
-                "@id": "schema:Text"
-            },
-            "schema:sameAs": {
-                "@id": "http://www.w3.org/2004/02/skos/core#altLabel"
-            }
-        },
-        {
             "@id": "schema:description",
             "@type": "rdf:Property",
             "owl:equivalentProperty": {
@@ -203,6 +188,15 @@
             ],
             "schema:sameAs": {
                 "@id": "reproterms:inputOptions"
+            }
+        },
+        {
+            "@id": "reproschema:Field",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "An item in an assessment.",
+            "rdfs:label": "Field",
+            "rdfs:subClassOf": {
+                "@id": "http://schema.org/CreativeWork"
             }
         }
     ]
