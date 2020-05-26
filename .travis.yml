@@ -13,6 +13,5 @@ install:
   - pip install requests
 
 script:
-  - python ./validation/jsonParser.py
-  - python ./validation/test1.py > test1.ttl
-  - pyshacl -s validation/ActivityShape.ttl -m -i rdfs -a -f human test1.ttl
+  - python ./validation/validateActivities.py
+  - python ./validation/validateProcotol.py
