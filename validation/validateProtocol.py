@@ -12,7 +12,7 @@ for root, dirs, files in os.walk('./protocols'):
         # files without extension or with .jsonld extn
         # print(18, '--- ', name)
         full_file_name = os.path.join(root, name)
-        if not os.path.splitext(full_file_name)[1]:
+        if name != '.DS_Store' and (not os.path.splitext(full_file_name)[1]):
             with open(full_file_name) as json_file:
                 try:
                     data_file = json.load(json_file)
@@ -21,7 +21,7 @@ for root, dirs, files in os.walk('./protocols'):
                         base_url = 'https://raw.githubusercontent.com/ReproNim/reproschema/master/protocols/' + base_path + '/'
 
                         if data_file['@type'] == 'reproschema:Protocol':
-                            shape_file_path = 'validation/ActivitySetShape.ttl'
+                            shape_file_path = 'validation/ProtocolShape.ttl'
 
                         elif data_file['@type'] == 'reproschema:Field':
                             shape_file_path = 'validation/FieldShape.ttl'

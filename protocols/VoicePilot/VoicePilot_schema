@@ -4,7 +4,7 @@
     ],
     "@type": "reproschema:Protocol",
     "@id": "VoicePilot_schema",
-    "skos:prefLabel": "Voice Pilot",
+    "prefLabel": "Voice Pilot",
     "schema:description": "activity set for UW MIT Voice Pilot Protocol",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
@@ -14,89 +14,43 @@
         "addProperties": [
                 {"isAbout": "VoiceScreening_schema",
                 "variableName": "VoiceScreening_schema",
-                "prefLabel": {"en": "Screening"},
-                "isVis": true
+                "prefLabel": {"en": "Screening"}
                 },
                 {"isAbout": "VoiceConsent_schema",
                 "variableName": "VoiceConsent_schema",
-                "prefLabel": {"en": "Consent"},
-                "isVis": {
-                    "method":"POST",
-                    "url":"https://sig.mit.edu/vb/check",
-                    "payload":["VoiceScreening_schema"]
-                }
+                "prefLabel": {"en": "Consent"}
                 },
                 {"isAbout": "VoiceDemographics_schema",
                 "variableName": "VoiceDemographics_schema",
-                "prefLabel": {"en": "Demographics"},
-                "isVis": {
-                    "method":"POST",
-                    "url":"https://sig.mit.edu/vb/check",
-                    "payload":["VoiceScreening_schema"]
-                }
+                "prefLabel": {"en": "Demographics"}
                 },
                 {"isAbout": "PROMISGlobalHealth_schema",
                 "variableName": "PROMISGlobalHealth_schema",
-                "prefLabel": {"en": "Health"},
-                "isVis": {
-                    "method":"POST",
-                    "url":"https://sig.mit.edu/vb/check",
-                    "payload":["VoiceScreening_schema"]
-                }
+                "prefLabel": {"en": "Health"}
                 },
                 {"isAbout": "GAD7_schema",
                 "variableName": "GAD7_schema",
-                "prefLabel": {"en": "Anxiety"},
-                "isVis": {
-                    "method":"POST",
-                    "url":"https://sig.mit.edu/vb/check",
-                    "payload":["VoiceScreening_schema"]
-                }
+                "prefLabel": {"en": "Anxiety"}
                 },
                 {"isAbout": "CageAid_schema",
                 "variableName": "CageAid_schema",
-                "prefLabel": {"en": "Substance use"},
-                "isVis": {
-                    "method":"POST",
-                    "url":"https://sig.mit.edu/vb/check",
-                    "payload":["VoiceScreening_schema"]
-                }
+                "prefLabel": {"en": "Substance use"}
                 },
                 {"isAbout": "BADS_schema",
                 "variableName": "BADS_schema",
-                "prefLabel": {"en": "Behavior"},
-                "isVis": {
-                    "method":"POST",
-                    "url":"https://sig.mit.edu/vb/check",
-                    "payload":["VoiceScreening_schema"]
-                }
+                "prefLabel": {"en": "Behavior"}
                 },
                 {"isAbout": "OtherQuestions_schema",
                 "variableName": "OtherQuestions_schema",
-                "prefLabel": {"en": "Other Questions" },
-                "isVis": {
-                    "method":"POST",
-                    "url":"https://sig.mit.edu/vb/check",
-                    "payload":["VoiceScreening_schema"]
-                }
+                "prefLabel": {"en": "Other Questions" }
                 },
                 {"isAbout": "VoiceTask_schema",
                 "variableName": "VoiceTask_schema",
-                "prefLabel": {"en": "Voice Tasks"},
-                "isVis": {
-                    "method":"POST",
-                    "url":"https://sig.mit.edu/vb/check",
-                    "payload":["VoiceScreening_schema"]
-                }
+                "prefLabel": {"en": "Voice Tasks"}
                 },
                 {"isAbout": "Thankyou_schema",
                 "variableName": "Thankyou_schema",
-                "prefLabel": {"en": "ThankYou"},
-                "isVis": {
-                    "method":"POST",
-                    "url":"https://sig.mit.edu/vb/check",
-                    "payload":["VoiceScreening_schema"]
-                }
+                "prefLabel": {"en": "ThankYou"}
                 }
         ],
         "order": [

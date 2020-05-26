@@ -13,6 +13,7 @@
 reproschema:ActivitySetShape
     a sh:NodeShape ;
     sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
     sh:targetClass reproschema:Protocol ;
     sh:property [
         sh:path schema:description;
