@@ -10,7 +10,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 
-reproschema:ActivitySetShape
+reproschema:ProtocolShape
     a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
@@ -36,10 +36,14 @@ reproschema:ActivitySetShape
         sh:maxCount 1 ;
     ] ;
     sh:property [
+        sh:path reproterms:landingPage ;
+        sh:datatype rdf:langString ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
         sh:path skos:prefLabel ;
         sh:datatype rdf:langString ;
         sh:minCount 1 ;
-        sh:maxCount 1 ;
     ] ;
     sh:property [
         sh:path reproterms:preamble;
@@ -102,18 +106,6 @@ reproterms:AddPropertiesShape
         sh:datatype rdf:langString ;
     ] .
 
-reproterms:VisibilityShape
-    a sh:NodeShape ;
-    sh:closed true ;
-    sh:property [
-        sh:path reproterms:variableName ;
-        sh:datatype rdf:langString ;
-    ] ;
-    sh:property [
-        sh:path reproterms:isVis ;
-        sh:or ( [ sh:datatype rdf:langString ] [ sh:datatype xsd:boolean ] [ sh:node reproterms:IsVisShape ]) ;
-    ] .
-
 reproterms:IsVisShape
     a sh:NodeShape ;
     sh:closed true ;
@@ -129,19 +121,6 @@ reproterms:IsVisShape
     sh:property [
         sh:path reproterms:payload ;
         sh:datatype rdf:langString ;
-    ] .
-
-reproterms:VariableMapShape
-    a sh:NodeShape ;
-    sh:closed true ;
-    sh:ignoredProperties ( rdf:type ) ;
-    sh:property [
-        sh:path reproterms:variableName ;
-        sh:datatype rdf:langString ;
-    ] ;
-    sh:property [
-        sh:path reproterms:isAbout ;
-        sh:nodeKind sh:IRI ;
     ] .
 
 reproterms:ScoringShape

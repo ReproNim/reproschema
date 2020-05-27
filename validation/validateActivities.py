@@ -7,7 +7,7 @@ import os
 data_file_format = 'nquads'
 shapes_file_format = 'turtle'
 
-for root, dirs, files in os.walk('./activities/GAD7'):
+for root, dirs, files in os.walk('./activities'):
     for name in files:
         # files without extension or with .jsonld extn
         # print(18, '--- ', name)
@@ -30,7 +30,7 @@ for root, dirs, files in os.walk('./activities/GAD7'):
                         conforms, v_graph, v_text = validate(normalized, shacl_graph=shape_file_path,
                                                              data_graph_format=data_file_format,
                                                              shacl_graph_format=shapes_file_format,
-                                                             inference='rdfs', debug=False,
+                                                             inference='rdfs', debug=True,
                                                              serialize_report_graph=True)
                         print(base_url+name, 'Conforms:', conforms)
                         if not conforms:
