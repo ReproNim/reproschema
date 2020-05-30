@@ -9,13 +9,12 @@ shapes_file_format = 'turtle'
 
 for root, dirs, files in os.walk('./activities'):
     for name in files:
-        # files without extension or with .jsonld extn
-        # print(18, '--- ', name)
         full_file_name = os.path.join(root, name)
-        if not os.path.splitext(full_file_name)[1]:
-            with open(full_file_name) as json_file:
+        print(13, full_file_name)
+        if not os.path.splitext(full_file_name)[1]: # files without extension
+            with open(full_file_name) as fp:
                 try:
-                    data_file = json.load(json_file)
+                    data_file = json.load(fp)
                     if '@type' in data_file:
                         base_path = root.split('activities/')[1]
                         base_url = 'https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/' + base_path + '/'
@@ -30,12 +29,12 @@ for root, dirs, files in os.walk('./activities'):
                         conforms, v_graph, v_text = validate(normalized, shacl_graph=shape_file_path,
                                                              data_graph_format=data_file_format,
                                                              shacl_graph_format=shapes_file_format,
-                                                             inference='rdfs', debug=True,
+                                                             inference='rdfs', debug=False,
                                                              serialize_report_graph=True)
-                        print(base_url+name, 'Conforms:', conforms)
+                        # print(base_url+name, 'Conforms:', conforms)
+                        fp.close()
                         if not conforms:
                             raise ValueError(v_text)
                 except ValueError as e:
                     print ("File '%s' has validation errors: \n %s" %(full_file_name, e))
                     raise
-

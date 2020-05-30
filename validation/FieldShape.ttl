@@ -6,10 +6,10 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dash: <http://datashapes.org/dash#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix reproterms: <https://raw.githubusercontent.com/sanuann/schema-standardization/master/terms/> .
-@prefix reproschema: <https://raw.githubusercontent.com/sanuann/schema-standardization/master/schemas/> .
+@prefix reproterms: <https://raw.githubusercontent.com/ReproNim/reproschema/master/terms/> .
+@prefix reproschema: <https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/> .
 
-schema:FieldShape
+reproschema:FieldShape
     a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
@@ -17,7 +17,6 @@ schema:FieldShape
     sh:property [
         sh:path skos:prefLabel;
         sh:datatype rdf:langString ;
-        sh:maxCount 1 ;
         sh:minCount 1 ;
     ] ;
     sh:property [
@@ -38,8 +37,6 @@ schema:FieldShape
     sh:property [
         sh:path schema:question ;
         sh:datatype rdf:langString ;
-        sh:maxCount 1 ;
-        sh:minCount 1 ;
     ] ;
     sh:property [
         sh:path reproterms:preamble;
@@ -54,19 +51,59 @@ schema:FieldShape
     ] ;
    sh:property [
         sh:path reproterms:responseOptions ;
-        sh:node reproterms:ResponseOptionsShape ;
-        sh:maxCount 1 ;
-        sh:minCount 1 ;
+        sh:or ( [ sh:datatype sh:IRI ] [ sh:node reproterms:ResponseOptionsShape ] ) ;
    ] .
 
 reproterms:ResponseOptionsShape
     a sh:NodeShape ;
     sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
     sh:property [
-        sh:path reproterms:variableName ;
+        sh:path reproterms:multipleChoice ;
+        sh:datatype schema:Boolean ;
+    ] ;
+    sh:property [
+        sh:path reproterms:requiredValue ;
+        sh:datatype schema:Boolean ;
+    ] ;
+    sh:property [
+        sh:path schema:minValue ;
+        sh:datatype schema:Number ;
+    ] ;
+    sh:property [
+        sh:path schema:maxValue ;
+        sh:datatype schema:Number ;
+    ] ;
+    sh:property [
+        sh:path reproterms:valueType ;
+        sh:or ( [ sh:datatype xsd:integer ] [  sh:datatype xsd:string ] );
+    ] ;
+    sh:property [
+        sh:path schema:itemListElement ;
+        sh:node schema:ChoicesShape ;
+    ] .
+
+schema:ChoicesShape
+    a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [
+        sh:path schema:name ;
         sh:datatype rdf:langString ;
     ] ;
     sh:property [
-        sh:path reproterms:isVis ;
-        sh:or ( [ sh:datatype xsd:string ] [ sh:datatype xsd:boolean ] ) ;
+        sh:path schema:value ;
+        sh:datatype xsd:integer ;
+    ] ;
+    sh:property [
+        sh:path schema:image ;
+        sh:datatype xsd:string ;
+    ] ;
+    sh:property [
+        sh:path reproterms:dontKnow ;
+        sh:nodeKind sh:IRI ;
+    ] ;
+    sh:property [
+        sh:path reproterms:skipped ;
+        sh:nodeKind sh:IRI ;
     ] .
