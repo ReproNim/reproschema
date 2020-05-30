@@ -1,0 +1,102 @@
+{
+    "@context": {
+        "dct": "http://purl.org/dc/terms/",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfa": "http://www.w3.org/ns/rdfa#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "schema": "http://schema.org/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "reproterms": "https://raw.githubusercontent.com/ReproNim/reproschema/master/terms/",
+        "reproschema": "https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/"
+    },
+    "@graph": [
+        {
+            "@id": "schema:image",
+            "@type": "rdf:Property",
+            "rdfs:comment": "An image of the item. This can be a <a class=\"localLink\" href=\"http://schema.org/URL\">URL</a> or a fully described <a class=\"localLink\" href=\"http://schema.org/ImageObject\">ImageObject</a>.",
+            "rdfs:label": "image",
+            "schema:domainIncludes": {
+                "@id": "reproterms:responseOptions"
+            },
+            "schema:rangeIncludes": [
+                {
+                "@id": "schema:ImageObject"
+                },
+                {
+                "@id": "schema:URL"
+                }
+            ],
+            "schema:sameAs": {
+                "@id": "schema:image"
+            }
+        },
+        {
+            "@id": "schema:name",
+            "@type": "rdf:Property",
+            "rdfs:comment": "An element to describe the name of each choice option in responseOptions of the Field item.",
+            "rdfs:label": "name",
+            "schema:domainIncludes": {
+                "@id": "reproterms:choices"
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:text"
+            },
+            "schema:sameAs": {
+                "@id": "schema:name"
+            }
+        },
+        {
+            "@id": "schema:value",
+            "@type": "rdf:Property",
+            "rdfs:comment": "An element to describe the numerical value of a choice in responseOptions of the Field item.",
+            "rdfs:label": "value",
+            "schema:domainIncludes": {
+                "@id": "reproterms:choices"
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:Number"
+            },
+            "schema:sameAs": {
+                "@id": "schema:value"
+            }
+        },
+        {
+            "@id": "reproterms:skipped",
+            "@type": "rdf:Property",
+            "rdfs:comment": "An element to describe the choice skipped.",
+            "rdfs:label": "skipped",
+            "schema:domainIncludes": {
+                "@id": "reproterms:choices"
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:URL"
+            },
+            "schema:sameAs": {
+                "@id": "reproterms:skipped"
+            }
+        },
+        {
+            "@id": "reproterms:dontKnow",
+            "@type": "rdf:Property",
+            "rdfs:comment": "An element to describe the choice dontKnow.",
+            "rdfs:label": "dontKnow",
+            "schema:domainIncludes": {
+                "@id": "reproterms:choices"
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:URL"
+            },
+            "schema:sameAs": {
+                "@id": "reproterms:dontKnow"
+            }
+        },
+        {
+            "@id": "reproschema:Choices",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "An array to list the available options in responseOptions of the Field item.",
+            "rdfs:label": "Choices"
+        }
+    ]
+}

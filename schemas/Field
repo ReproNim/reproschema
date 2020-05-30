@@ -8,6 +8,8 @@
         "schema": "http://schema.org/",
         "xsd": "http://www.w3.org/2001/XMLSchema#",
         "skos": "http://www.w3.org/2004/02/skos/core#",
+        "prov": "http://www.w3.org/ns/prov#",
+        "nidm": "http://purl.org/nidash/nidm#",
         "reproterms": "https://raw.githubusercontent.com/ReproNim/reproschema/master/terms/",
         "reproschema": "https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/"
     },
@@ -15,31 +17,16 @@
         {
             "@id": "skos:prefLabel",
             "@type": "rdf:Property",
-            "rdfs:comment": "The long name of the instrument or item.",
+            "rdfs:comment": "Indicates the label of the Field.",
             "rdfs:label": "prefLabel",
             "schema:domainIncludes": {
-                "@id": ""
+                "@id": "reproschema:Field"
             },
             "schema:rangeIncludes": {
                 "@id": "schema:Text"
             },
             "schema:sameAs": {
                 "@id": "http://www.w3.org/2004/02/skos/core#prefLabel"
-            }
-        },
-        {
-            "@id": "skos:altLabel",
-            "@type": "rdf:Property",
-            "rdfs:comment": "The short name of the instrument or item.",
-            "rdfs:label": "altLabel",
-            "schema:domainIncludes": {
-                "@id": ""
-            },
-            "schema:rangeIncludes": {
-                "@id": "schema:Text"
-            },
-            "schema:sameAs": {
-                "@id": "http://www.w3.org/2004/02/skos/core#altLabel"
             }
         },
         {
@@ -55,18 +42,15 @@
             },
             "schema:rangeIncludes": {
                 "@id": "schema:Text"
-            },
-            "schema:sameAs": {
-                "@id": "https://schema.org/description"
             }
         },
         {
             "@id": "schema:schemaVersion",
             "@type": "rdf:Property",
-            "rdfs:comment": "Indicates (by URL or string) a particular version of a schema.",
+            "rdfs:comment": "Indicates (by URL or string) a particular version of the reproschema.",
             "rdfs:label": "schemaVersion",
             "schema:domainIncludes": {
-                "@id": ""
+                "@id": "reproschema:Field"
             },
             "schema:rangeIncludes": [
                 {
@@ -83,10 +67,10 @@
         {
             "@id": "schema:version",
             "@type": "rdf:Property",
-            "rdfs:comment": "Indicates (by URL or string) a particular version of an instrument.",
+            "rdfs:comment": "Indicates (by URL or string) a particular version of the item.",
             "rdfs:label": "version",
             "schema:domainIncludes": {
-                "@id": ""
+                "@id": "reproschema:Field"
             },
             "schema:rangeIncludes": [
                 {
@@ -98,6 +82,21 @@
             ],
             "schema:sameAs": {
                 "@id": "https://schema.org/version"
+            }
+        },
+        {
+            "@id": "reproterms:preamble",
+            "@type": "rdf:Property",
+            "rdfs:comment": "The preamble for the Field item.",
+            "rdfs:label": "preamble",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Field"
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:Text"
+            },
+            "schema:sameAs": {
+                "@id": "reproterms:preamble"
             }
         },
         {
@@ -116,28 +115,10 @@
             }
         },
         {
-            "@id": "reproterms:ui",
-            "@type": "rdf:Property",
-            "rdfs:comment": "An element to describe the ui of a Field.",
-            "rdfs:label": "ui",
-            "schema:domainIncludes": {
-                "@id": "reproschema:Field"
-            },
-            "schema:rangeIncludes": {
-                "@id": "reproterms:order"
-            },
-            "schema:sameAs": {
-                "@id": "reproterms:ui"
-            }
-        },
-        {
             "@id": "reproterms:inputType",
             "@type": "rdf:Property",
             "rdfs:comment": "An element to describe the input type of the Field item.",
             "rdfs:label": "inputType",
-            "rdfs:subPropertyOf": {
-                "@id": "reproterms:ui"
-            },
             "schema:domainIncludes": {
                 "@id": "reproschema:Field"
             },
@@ -146,6 +127,78 @@
             },
             "schema:sameAs": {
                 "@id": "reproterms:inputType"
+            }
+        },
+        {
+            "@id": "schema:isPartOf",
+            "@type": "rdf:Property",
+            "rdfs:comment": "Indicates an item that this item is part of.",
+            "rdfs:label": "isPartOf",
+            "schema:domainIncludes": {
+                "@id": "reproterms:Field"
+            },
+            "schema:inverseOf": {
+              "@id": "schema:hasPart"
+            },
+            "schema:rangeIncludes": [
+                {
+                    "@id": "reproschema:Activity"
+                },
+                {
+                    "@id": "schema:URL"
+                }
+            ],
+            "schema:sameAs": {
+                "@id": "schema:isPartOf"
+            }
+        },
+        {
+            "@id": "reproschema:responseOptions",
+            "@type": "rdf:Property",
+            "rdfs:comment": "An element (object or by URL)to describe the properties of response of the Field item.",
+            "rdfs:label": "responseOptions",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Field"
+            },
+            "schema:rangeIncludes": [
+                {
+                    "@id": "reproschema:ResponseOptions"
+                },
+                {
+                    "@id": "schema:URL"
+                }
+            ],
+            "schema:sameAs": {
+                "@id": "reproschema:responseOptions"
+            }
+        },
+        {
+            "@id": "http://schema.org/associatedMedia",
+            "@type": "rdf:Property",
+            "schema:domainIncludes": [
+                {
+                    "@id": "http://schema.org/CreativeWork"
+                }
+            ],
+            "schema:rangeIncludes": [
+                {
+                    "@id": "http://schema.org/MediaObject"
+                }
+            ],
+            "rdfs:comment": A media object that encodes this CreativeWork. This property is a synonym for encoding.",
+            "rdfs:label": "associatedMedia"
+        },
+        {
+            "@id": "reproschema:Field",
+            "@type": [
+                "rdfs:Class",
+                "prov:Entity",
+                "nidm:DataElement"
+            ],
+            "rdfs:comment": "An item in an assessment.",
+            "rdfs:label": "Field",
+            "rdfs:subClassOf": {
+                "@id": "http://schema.org/CreativeWork"
             }
         }
     ]
