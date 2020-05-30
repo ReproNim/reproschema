@@ -130,6 +130,21 @@
             }
         },
         {
+            "@id": "reproterms:readOnly",
+            "@type": "rdf:Property",
+            "rdfs:comment": "An element( by Boolean) to indicate a readOnly Field. ",
+            "rdfs:label": "readOnly",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Field"
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:Boolean"
+            },
+            "schema:sameAs": {
+                "@id": "reproterms:readOnly"
+            }
+        },
+        {
             "@id": "schema:isPartOf",
             "@type": "rdf:Property",
             "rdfs:comment": "Indicates an item that this item is part of.",
@@ -153,7 +168,7 @@
             }
         },
         {
-            "@id": "reproschema:responseOptions",
+            "@id": "reproterms:responseOptions",
             "@type": "rdf:Property",
             "rdfs:comment": "An element (object or by URL)to describe the properties of response of the Field item.",
             "rdfs:label": "responseOptions",
