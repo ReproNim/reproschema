@@ -6,14 +6,12 @@
   "@type": "reproschema:Activity",
   "@id": "MindLoggerDemo_schema",
   "skos:prefLabel": "MindLogger Widget Demo",
-  "skos:altLabel": "MindLogger Widget Demo",
   "schema:description": "This activity contains one of each type of widget supported by the MindLogger mobile app.",
   "schema:schemaVersion": "0.0.1",
   "schema:version": "0.0.1",
   "preamble": "Please follow the instructions for the task.",
-  "branchLogic": {},
-  "scoringLogic": {},
-  "variableMap": [
+  "ui": {
+    "addProperties": [
     {
       "variableName": "markdown-message",
       "isAbout": "markdown-message"
@@ -103,7 +101,6 @@
       "isAbout": "upload"
     }
   ],
-  "ui": {
     "order": [
       "markdown-message",
       "radio",
@@ -128,30 +125,6 @@
       "timer",
       "upload"
     ],
-    "visibility": {
-      "markdown-message": true,
-      "radio": true,
-      "radio-multi": true,
-      "slider": true,
-      "text": true,
-      "date": true,
-      "time-range": true,
-      "table-counter": true,
-      "table-text": true,
-      "audio-stimulus": true,
-      "audio-record": true,
-      "audio-image-record": true,
-      "drawing": true,
-      "drawing-image": true,
-      "photo": true,
-      "video": true,
-      "vsr-instructions": true,
-      "visual-stimulus-response": true,
-      "delay": true,
-      "timer": true,
-      "geolocation": true,
-      "upload": true
-    },
     "allow": [
       "skipped",
       "dontKnow"
