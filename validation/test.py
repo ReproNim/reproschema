@@ -17,7 +17,7 @@ reproschema:FieldShape
     sh:property [
         sh:path skos:prefLabel;
         sh:datatype rdf:langString ;
-        sh:minCount 1 ;
+        
     ] ;
     sh:property [
         sh:path schema:description ;
@@ -47,13 +47,12 @@ reproschema:FieldShape
         sh:path reproterms:inputType ;
         sh:datatype xsd:string ;
         sh:maxCount 1 ;
-        sh:minCount 1 ;
     ] ;
    sh:property [
-        sh:path reproterms:valueconstraints ;
+        sh:path reproterms:responseOptions ;
         sh:node reproterms:ResponseOptionsShape ;
-        sh:minCount 1 ;
    ] .
+
 reproterms:ResponseOptionsShape
     a sh:NodeShape ;
     sh:closed true ;
@@ -72,16 +71,17 @@ reproterms:ResponseOptionsShape
     ] ;
     sh:property [
         sh:path schema:maxValue ;
-        sh:datatype schema:Number ;
+        sh:datatype xsd:integer ;
     ] ;
     sh:property [
         sh:path reproterms:valueType ;
-        sh:datatype xsd:string ;
+        sh:datatype xsd:integer ;
     ] ;
     sh:property [
         sh:path schema:itemListElement ;
         sh:node schema:ChoicesShape ;
     ] .
+
 schema:ChoicesShape
     a sh:NodeShape ;
     sh:closed true ;
@@ -124,45 +124,7 @@ data_file = '''
     "ui": {
         "inputType": "radio"
     },
-    "responseOptions": {
-    "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic" ],
-    "valueType": "xsd:integer",
-    "schema:minValue": 0,
-    "schema:maxValue": 3,
-    "multipleChoice": false,
-    "requiredValue": true,
-    "choices": [
-    {
-        "name": {
-            "en": "Not at all",
-            "es": "Para nada"
-        },
-        "value": 0
-    },
-    {
-        "name": {
-            "en": "Several days",
-            "es": "Varios días"
-        },
-        "value": 1
-    },
-    {
-        "name": {
-            "en": "More than half the days",
-            "es": "Más de la mitad de los días"
-        },
-        "value": 2
-    },
-    {
-        "name": {
-            "en": "Nearly everyday",
-            "es": "Casi todos los días"
-        },
-        "value": 3
-    }
-    ]
-}
-
+    "responseOptions": "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/PHQ-9/valueConstraints"
 }
 '''
 import pyld
@@ -172,36 +134,38 @@ shapes_file_format = 'turtle'
 
 data = json.loads(data_file)
 normalized = pyld.jsonld.normalize(
-    data, {'algorithm': 'URDNA2015', 'format':
-        'application/n-quads'})
+    data, {'algorithm': 'URDNA2015',
+           'base': 'https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/PHQ-9/items/',
+           'format': 'application/n-quads'})
+# print(136, normalized)
 conforms, v_graph, v_text = validate(normalized, shacl_graph=shapes_file,
                                      data_graph_format='nquads',
                                      shacl_graph_format=shapes_file_format,
                                      inference='rdfs', debug=True,
                                      serialize_report_graph=True)
 
-print(conforms, v_text)
-print(str(v_graph))
+print(conforms)
+# print(str(v_graph))
 
 
-
-for root, dirs, files in os.walk('./activities/PHQ-9/items'):
-    for name in files:
-        file_path = os.path.join(root, name)
-        if not os.path.splitext(file_path)[1]:  # files without extension
-            print('\n', 192, name)
-            with open(file_path) as fp:
-                data = json.load(fp)
-                normalized = pyld.jsonld.normalize(
-                    data, {'algorithm': 'URDNA2015', 'format':
-                        'application/n-quads'})
-                print(normalized)
-                conforms, v_graph, v_text = validate(normalized, shacl_graph=shapes_file,
-                                                     data_graph_format='nquads',
-                                                     shacl_graph_format=shapes_file_format,
-                                                     inference='rdfs', debug=True,
-                                                     serialize_report_graph=True)
-                print('------', conforms, v_text)
-                print(str(v_graph))
-
-            fp.close()
+# for root, dirs, files in os.walk('./activities/PHQ-9/items'):
+#     for name in files:
+#         file_path = os.path.join(root, name)
+#         if not os.path.splitext(file_path)[1]:  # files without extension
+#             # print('\n', 192, name)
+#             with open(file_path) as fp:
+#                 data = json.load(fp)
+#                 normalized = pyld.jsonld.normalize(
+#                     data, {'algorithm': 'URDNA2015',
+#                            'base': 'https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/PHQ-9/items/',
+#                            'format': 'application/n-quads'})
+#                 # print(normalized)
+#                 conforms, v_graph, v_text = validate(normalized, shacl_graph=shapes_file,
+#                                                      data_graph_format='nquads',
+#                                                      shacl_graph_format=shapes_file_format,
+#                                                      inference='rdfs', debug=True,
+#                                                      serialize_report_graph=True)
+#                 print('------', name, conforms)
+#                 # print(str(v_graph))
+#
+#             fp.close()
