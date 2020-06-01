@@ -10,7 +10,7 @@ shapes_file_format = 'turtle'
 for root, dirs, files in os.walk('./activities'):
     for name in files:
         full_file_name = os.path.join(root, name)
-        print(13, full_file_name)
+        # print(13, full_file_name)
         if not os.path.splitext(full_file_name)[1]: # files without extension
             with open(full_file_name) as fp:
                 try:
@@ -31,9 +31,10 @@ for root, dirs, files in os.walk('./activities'):
                                                              shacl_graph_format=shapes_file_format,
                                                              inference='rdfs', debug=False,
                                                              serialize_report_graph=True)
-                        # print(base_url+name, 'Conforms:', conforms)
+                        print(base_url+name, 'Conforms:', conforms)
                         fp.close()
                         if not conforms:
+                            # print(37, normalized)
                             raise ValueError(v_text)
                 except ValueError as e:
                     print ("File '%s' has validation errors: \n %s" %(full_file_name, e))

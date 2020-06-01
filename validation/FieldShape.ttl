@@ -51,7 +51,7 @@ reproschema:FieldShape
     ] ;
    sh:property [
         sh:path reproterms:responseOptions ;
-        sh:or ( [ sh:datatype sh:IRI ] [ sh:node reproterms:ResponseOptionsShape ] ) ;
+        sh:node reproterms:ResponseOptionsShape ;
    ] .
 
 reproterms:ResponseOptionsShape
@@ -68,11 +68,11 @@ reproterms:ResponseOptionsShape
     ] ;
     sh:property [
         sh:path schema:minValue ;
-        sh:datatype schema:Number ;
+        sh:datatype xsd:integer ;
     ] ;
     sh:property [
         sh:path schema:maxValue ;
-        sh:datatype schema:Number ;
+        sh:datatype xsd:integer ;
     ] ;
     sh:property [
         sh:path reproterms:valueType ;
