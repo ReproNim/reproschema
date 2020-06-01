@@ -49,6 +49,11 @@ reproschema:FieldShape
         sh:maxCount 1 ;
         sh:minCount 1 ;
     ] ;
+    sh:property [
+        sh:path reproterms:readOnly ;
+        sh:datatype xsd:boolean ;
+        sh:maxCount 1 ;
+    ] ;
    sh:property [
         sh:path reproterms:responseOptions ;
         sh:node reproterms:ResponseOptionsShape ;
@@ -76,7 +81,7 @@ reproterms:ResponseOptionsShape
     ] ;
     sh:property [
         sh:path reproterms:valueType ;
-        sh:or ( [ sh:datatype xsd:integer ] [  sh:datatype xsd:string ] );
+        sh:or ( [ sh:datatype xsd:integer ] [  sh:datatype xsd:string ] [ sh:datatype rdf:langString ]);
     ] ;
     sh:property [
         sh:path schema:itemListElement ;
