@@ -16,14 +16,15 @@
         "addProperties": [
             {"isAbout": "share_data",
             "variableName": "share_data",
+            "requiredValue": true,
             "isVis": true
             },
             {"isAbout": "email",
             "variableName": "email",
             "isVis": "share_data === 1"
             },
-            {"isAbout": "multipart_audio_check",
-            "variableName": "multipart_audio_check",
+            {"isAbout": "audio_check",
+            "variableName": "audio_check",
             "isVis": true
             },
             {"isAbout": "free_speech_general_mood",
@@ -36,7 +37,7 @@
             }
         ],
         "order": [
-            "multipart_audio_check",
+            "audio_check",
             "share_data",
             "email",
             "free_speech_general_mood",

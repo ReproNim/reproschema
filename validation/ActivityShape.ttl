@@ -92,6 +92,10 @@ reproterms:AddPropertiesShape
         sh:minCount 1 ;
     ] ;
     sh:property [
+        sh:path reproterms:requiredValue ;
+        sh:datatype schema:Boolean ;
+    ] ;
+    sh:property [
         sh:path reproterms:isVis ;
         sh:or ( [ sh:datatype rdf:langString ] [ sh:datatype xsd:boolean ] [ sh:node reproterms:IsVisShape ]) ;
     ] ;

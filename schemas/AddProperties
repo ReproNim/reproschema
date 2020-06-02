@@ -55,6 +55,21 @@
             ]
         },
         {
+            "@id": "reproterms:requiredValue",
+            "@type": "rdf:Property",
+            "rdfs:comment": "Indicates (by bool) if the response for the Field item is mandatory or not.",
+            "rdfs:label": "requiredValue",
+            "schema:domainIncludes": {
+                "@id": "reproterms:addProperties"
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:Boolean"
+            },
+            "schema:sameAs": {
+                "@id": "reproterms:requiredValue"
+            }
+        },
+        {
             "@id": "skos:prefLabel",
             "@type": "rdf:Property",
             "rdfs:comment": "Indicates the label of an Activity or Field to be used as display name.",

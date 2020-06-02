@@ -7,7 +7,7 @@ import os
 data_file_format = 'nquads'
 shapes_file_format = 'turtle'
 
-for root, dirs, files in os.walk('./activities'):
+for root, dirs, files in os.walk('./activities/PHQ-9'):
     for name in files:
         full_file_name = os.path.join(root, name)
         # print(13, full_file_name)

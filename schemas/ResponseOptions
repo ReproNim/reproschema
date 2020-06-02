@@ -73,21 +73,6 @@
             }
         },
         {
-            "@id": "reproterms:requiredValue",
-            "@type": "rdf:Property",
-            "rdfs:comment": "Indicates (by bool) if the response for the Field item is mandatory or not.",
-            "rdfs:label": "requiredValue",
-            "schema:domainIncludes": {
-                "@id": "reproterms:responseOptions"
-            },
-            "schema:rangeIncludes": {
-                "@id": "schema:Boolean"
-            },
-            "schema:sameAs": {
-                "@id": "reproterms:requiredValue"
-            }
-        },
-        {
             "@id": "reproterms:datumType",
             "@type": "rdf:Property",
             "rdfs:comment": "Indicates what type of datum the response is (e.g. range,count,scalar etc.) for the Field item.",
@@ -130,9 +115,14 @@
             "schema:domainIncludes": {
                 "@id": "reproschema:responseOptions"
             },
-            "schema:rangeIncludes": {
+            "schema:rangeIncludes": [
+                {
                 "@id": "reproschema:Choices"
-            },
+                },
+                {
+                    "@id": "schema:URL"
+                }
+            ],
             "schema:sameAs": {
                 "@id": "schema:itemListElement"
             }

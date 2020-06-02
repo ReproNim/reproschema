@@ -67,7 +67,7 @@ reproterms:ResponseOptionsShape
     ] ;
     sh:property [
         sh:path schema:minValue ;
-        sh:datatype schema:Number ;
+        sh:datatype xsd:integer ;
     ] ;
     sh:property [
         sh:path schema:maxValue ;
@@ -75,7 +75,7 @@ reproterms:ResponseOptionsShape
     ] ;
     sh:property [
         sh:path reproterms:valueType ;
-        sh:datatype xsd:integer ;
+        sh:nodeKind sh:IRI ;
     ] ;
     sh:property [
         sh:path schema:itemListElement ;
@@ -108,23 +108,56 @@ schema:ChoicesShape
     ] .
 '''
 data_file = '''
-{
-    "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
-     ],
+{   "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic" ],
     "@type": "reproschema:Field",
-    "@id": "phq9_8",
-    "prefLabel": "PHQ9-8",
-    "schema:description": "schema for Q8 of the PHQ-9 Assessment",
+    "@id": "phq9_10",
+    "skos:prefLabel": "PHQ9-10",
+    "schema:description": "schema for Q10 of the PHQ-9 Assessment",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
     "question": {
-        "en": "Moving or speaking so slowly that other people could have noticed? Or the opposite — being so fidgety or restless that you have been moving around a lot more than usual?",
-        "es": "¿Se ha movido o hablado tan lento que otras personas podrían haberlo notado? o lo contrario – muy inquieto(a) o agitado(a) que ha estado moviéndose mucho más de lo normal?"
+        "en": "How difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?",
+        "es": "¿Qué tanta dificultad le han dado estos problemas para hacer su trabajo, encargarse de las tareas del hogar, o llevarse bien con otras personas?"
     },
     "ui": {
         "inputType": "radio"
     },
-    "responseOptions": "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/PHQ-9/valueConstraints"
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 3,
+        "multipleChoice": false,
+        "requiredValue": false,
+        "choices": [{
+            "name": {
+                "en": "Not difficult at all",
+                "es": "No ha sido difícil"
+            },
+            "value": 0
+        },
+        {
+            "name": {
+                "en": "Somewhat difficult",
+                "es": "Un poco difícil"
+            },
+            "value": 1
+        },
+        {
+            "name": {
+                "en": "Very difficult",
+                "es": "Muy difícil"
+            },
+            "value": 2
+        },
+        {
+            "name": {
+                "en": "Extremely difficult",
+                "es": "Extremadamente difícil"
+            },
+            "value": 3
+        }]
+    }
+
 }
 '''
 import pyld
@@ -137,7 +170,7 @@ normalized = pyld.jsonld.normalize(
     data, {'algorithm': 'URDNA2015',
            'base': 'https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/PHQ-9/items/',
            'format': 'application/n-quads'})
-# print(136, normalized)
+print(136, normalized)
 conforms, v_graph, v_text = validate(normalized, shacl_graph=shapes_file,
                                      data_graph_format='nquads',
                                      shacl_graph_format=shapes_file_format,

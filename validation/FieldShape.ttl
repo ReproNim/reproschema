@@ -20,6 +20,11 @@ reproschema:FieldShape
         sh:minCount 1 ;
     ] ;
     sh:property [
+        sh:path skos:altLabel;
+        sh:datatype rdf:langString ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
         sh:path schema:description ;
         sh:datatype rdf:langString ;
         sh:maxCount 1 ;
@@ -49,6 +54,11 @@ reproschema:FieldShape
         sh:maxCount 1 ;
         sh:minCount 1 ;
     ] ;
+    sh:property [
+        sh:path reproterms:readOnly ;
+        sh:datatype xsd:boolean ;
+        sh:maxCount 1 ;
+    ] ;
    sh:property [
         sh:path reproterms:responseOptions ;
         sh:node reproterms:ResponseOptionsShape ;
@@ -63,10 +73,6 @@ reproterms:ResponseOptionsShape
         sh:datatype schema:Boolean ;
     ] ;
     sh:property [
-        sh:path reproterms:requiredValue ;
-        sh:datatype schema:Boolean ;
-    ] ;
-    sh:property [
         sh:path schema:minValue ;
         sh:datatype xsd:integer ;
     ] ;
@@ -76,7 +82,7 @@ reproterms:ResponseOptionsShape
     ] ;
     sh:property [
         sh:path reproterms:valueType ;
-        sh:or ( [ sh:datatype xsd:integer ] [  sh:datatype xsd:string ] );
+        sh:nodeKind sh:IRI ;
     ] ;
     sh:property [
         sh:path schema:itemListElement ;
