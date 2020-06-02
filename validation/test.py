@@ -108,17 +108,13 @@ schema:ChoicesShape
     ] .
 '''
 data_file = '''
-{   "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-    {
-        "valType": {
-            "@id": "reproterms:valueType",
-            "@type": "@vocab"
-        }
-    }
- ],
+{   "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic" ],
     "@type": "reproschema:Field",
     "@id": "phq9_10",
     "skos:prefLabel": "PHQ9-10",
+    "schema:description": "schema for Q10 of the PHQ-9 Assessment",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
     "question": {
         "en": "How difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?",
         "es": "¿Qué tanta dificultad le han dado estos problemas para hacer su trabajo, encargarse de las tareas del hogar, o llevarse bien con otras personas?"
@@ -127,11 +123,42 @@ data_file = '''
         "inputType": "radio"
     },
     "responseOptions": {
-        "valType": "xsd:integer"
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 3,
+        "multipleChoice": false,
+        "requiredValue": false,
+        "choices": [{
+            "name": {
+                "en": "Not difficult at all",
+                "es": "No ha sido difícil"
+            },
+            "value": 0
+        },
+        {
+            "name": {
+                "en": "Somewhat difficult",
+                "es": "Un poco difícil"
+            },
+            "value": 1
+        },
+        {
+            "name": {
+                "en": "Very difficult",
+                "es": "Muy difícil"
+            },
+            "value": 2
+        },
+        {
+            "name": {
+                "en": "Extremely difficult",
+                "es": "Extremadamente difícil"
+            },
+            "value": 3
+        }]
     }
 
 }
-
 '''
 import pyld
 import json, os
