@@ -20,6 +20,11 @@ reproschema:FieldShape
         sh:minCount 1 ;
     ] ;
     sh:property [
+        sh:path skos:altLabel;
+        sh:datatype rdf:langString ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
         sh:path schema:description ;
         sh:datatype rdf:langString ;
         sh:maxCount 1 ;
@@ -81,7 +86,7 @@ reproterms:ResponseOptionsShape
     ] ;
     sh:property [
         sh:path reproterms:valueType ;
-        sh:or ( [ sh:datatype xsd:integer ] [  sh:datatype xsd:string ] [ sh:datatype rdf:langString ]);
+        sh:nodeKind sh:IRI ;
     ] ;
     sh:property [
         sh:path schema:itemListElement ;
