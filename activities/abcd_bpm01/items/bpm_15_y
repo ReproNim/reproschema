@@ -1,0 +1,47 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "bpm_15_y",
+    "@type": "reproschema:Field",
+    "prefLabel": "bpm_15_y",
+    "altLabel": "bpm_15 bpmy_15",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "I am stubborn",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": "0",
+        "schema:maxValue": "1",
+        "choices": [
+            {
+                "name": "Not True",
+                "value": 0
+            },
+            {
+                "name": "Somewhat True",
+                "value": 1
+            },
+            {
+                "name": "Very True",
+                "value": 2
+            },
+            {
+                "name": "Refuse to answer",
+                "value": 777
+            },
+            {
+                "name": "Don't know",
+                "value": 999
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = Not True; 1 = Somewhat True; 2 = Very True; 777 = Refuse to answer; 999 = Don't know"
+        }
+    ]
+}

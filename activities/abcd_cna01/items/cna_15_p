@@ -1,0 +1,39 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "cna_15_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "cna_15_p",
+    "altLabel": "child_nutrition_15_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Were you/biological mother taking daily prenatal vitamins or folic acid supplements before you/she became pregnant? ¿Tomo usted o la madre biológica vitaminas prenatales diarias o acido fólico antes de quedar embarazada?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": "1",
+        "schema:maxValue": "0",
+        "choices": [
+            {
+                "name": "Yes Si",
+                "value": 1
+            },
+            {
+                "name": "No No",
+                "value": 0
+            },
+            {
+                "name": "Don't Know No Recuerdo",
+                "value": 999
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes Si; 0 = No No; 999 = Don't Know No Recuerdo"
+        }
+    ]
+}

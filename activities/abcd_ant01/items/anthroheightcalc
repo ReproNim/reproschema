@@ -1,0 +1,23 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "anthroheightcalc",
+    "@type": "reproschema:Field",
+    "prefLabel": "anthroheightcalc",
+    "altLabel": "anthro_height_calc",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Standing Height Average (inches): If three measurements were obtained, the two closest measurements will be averaged. Should the third measurement fall equally between the first two measurements, all three will be averaged.",
+    "ui": {
+        "inputType": "text"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "Calculation: if([anthro_3_height_in] <> '',  mean([anthro_1_height_in], [anthro_2_height_in], [anthro_3_height_in]), mean([anthro_1_height_in], [anthro_2_height_in]))"
+        }
+    ]
+}

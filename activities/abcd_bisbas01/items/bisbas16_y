@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "bisbas16_y",
+    "@type": "reproschema:Field",
+    "prefLabel": "bisbas16_y",
+    "altLabel": "bisbas_16",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Nobody can stop me when I want something.",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": "0",
+        "schema:maxValue": "1",
+        "choices": [
+            {
+                "name": "Not true",
+                "value": 0
+            },
+            {
+                "name": "Somewhat true",
+                "value": 1
+            },
+            {
+                "name": "True",
+                "value": 2
+            },
+            {
+                "name": "Very true",
+                "value": 3
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = Not true; 1 = Somewhat true; 2 = True; 3 = Very true"
+        }
+    ]
+}
