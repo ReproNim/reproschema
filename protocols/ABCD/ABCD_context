@@ -1,0 +1,974 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "activity_path": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/activities/",
+        "acspsw03": {
+            "@id": "activity_path:acspsw03/acspsw03_schema",
+            "@type": "@id"
+        },
+        "abcd_bpmt01": {
+            "@id": "activity_path:abcd_bpmt01/abcd_bpmt01_schema",
+            "@type": "@id"
+        },
+        "cct01": {
+            "@id": "activity_path:cct01/cct01_schema",
+            "@type": "@id"
+        },
+        "abcd_cna01": {
+            "@id": "activity_path:abcd_cna01/abcd_cna01_schema",
+            "@type": "@id"
+        },
+        "crpbi01": {
+            "@id": "activity_path:crpbi01/crpbi01_schema",
+            "@type": "@id"
+        },
+        "fhxp102": {
+            "@id": "activity_path:fhxp102/fhxp102_schema",
+            "@type": "@id"
+        },
+        "abcd_hsss01": {
+            "@id": "activity_path:abcd_hsss01/abcd_hsss01_schema",
+            "@type": "@id"
+        },
+        "abcd_isc01": {
+            "@id": "activity_path:abcd_isc01/abcd_isc01_schema",
+            "@type": "@id"
+        },
+        "abcd_ip01": {
+            "@id": "activity_path:abcd_ip01/abcd_ip01_schema",
+            "@type": "@id"
+        },
+        "lmtp201": {
+            "@id": "activity_path:lmtp201/lmtp201_schema",
+            "@type": "@id"
+        },
+        "abcd_lpds01": {
+            "@id": "activity_path:abcd_lpds01/abcd_lpds01_schema",
+            "@type": "@id"
+        },
+        "abcd_lpksad01": {
+            "@id": "activity_path:abcd_lpksad01/abcd_lpksad01_schema",
+            "@type": "@id"
+        },
+        "abcd_lpmh01": {
+            "@id": "activity_path:abcd_lpmh01/abcd_lpmh01_schema",
+            "@type": "@id"
+        },
+        "abcd_lpohstbi01": {
+            "@id": "activity_path:abcd_lpohstbi01/abcd_lpohstbi01_schema",
+            "@type": "@id"
+        },
+        "abcd_lpsaiq01": {
+            "@id": "activity_path:abcd_lpsaiq01/abcd_lpsaiq01_schema",
+            "@type": "@id"
+        },
+        "abcd_lssmh01": {
+            "@id": "activity_path:abcd_lssmh01/abcd_lssmh01_schema",
+            "@type": "@id"
+        },
+        "abcd_lsssa01": {
+            "@id": "activity_path:abcd_lsssa01/abcd_lsssa01_schema",
+            "@type": "@id"
+        },
+        "abcd_lsstbi01": {
+            "@id": "activity_path:abcd_lsstbi01/abcd_lsstbi01_schema",
+            "@type": "@id"
+        },
+        "abcd_lt01": {
+            "@id": "activity_path:abcd_lt01/abcd_lt01_schema",
+            "@type": "@id"
+        },
+        "abcd_mri01": {
+            "@id": "activity_path:abcd_mri01/abcd_mri01_schema",
+            "@type": "@id"
+        },
+        "abcd_ysr01": {
+            "@id": "activity_path:abcd_ysr01/abcd_ysr01_schema",
+            "@type": "@id"
+        },
+        "pacc01": {
+            "@id": "activity_path:pacc01/pacc01_schema",
+            "@type": "@id"
+        },
+        "pasr01": {
+            "@id": "activity_path:pasr01/pasr01_schema",
+            "@type": "@id"
+        },
+        "abcd_asrs01": {
+            "@id": "activity_path:abcd_asrs01/abcd_asrs01_schema",
+            "@type": "@id"
+        },
+        "abcd_cbcl01": {
+            "@id": "activity_path:abcd_cbcl01/abcd_cbcl01_schema",
+            "@type": "@id"
+        },
+        "abcd_cbcls01": {
+            "@id": "activity_path:abcd_cbcls01/abcd_cbcls01_schema",
+            "@type": "@id"
+        },
+        "abcd_crpf01": {
+            "@id": "activity_path:abcd_crpf01/abcd_crpf01_schema",
+            "@type": "@id"
+        },
+        "pdem02": {
+            "@id": "activity_path:pdem02/pdem02_schema",
+            "@type": "@id"
+        },
+        "abcd_ptsd01": {
+            "@id": "activity_path:abcd_ptsd01/abcd_ptsd01_schema",
+            "@type": "@id"
+        },
+        "dibf01": {
+            "@id": "activity_path:dibf01/dibf01_schema",
+            "@type": "@id"
+        },
+        "abcd_ksad01": {
+            "@id": "activity_path:abcd_ksad01/abcd_ksad01_schema",
+            "@type": "@id"
+        },
+        "fes02": {
+            "@id": "activity_path:fes02/fes02_schema",
+            "@type": "@id"
+        },
+        "abcd_pfb01": {
+            "@id": "activity_path:abcd_pfb01/abcd_pfb01_schema",
+            "@type": "@id"
+        },
+        "abcd_pff01": {
+            "@id": "activity_path:abcd_pff01/abcd_pff01_schema",
+            "@type": "@id"
+        },
+        "abcd_pgi01": {
+            "@id": "activity_path:abcd_pgi01/abcd_pgi01_schema",
+            "@type": "@id"
+        },
+        "abcd_pksadscd01": {
+            "@id": "activity_path:abcd_pksadscd01/abcd_pksadscd01_schema",
+            "@type": "@id"
+        },
+        "abcd_ple01": {
+            "@id": "activity_path:abcd_ple01/abcd_ple01_schema",
+            "@type": "@id"
+        },
+        "abcd_mx01": {
+            "@id": "activity_path:abcd_mx01/abcd_mx01_schema",
+            "@type": "@id"
+        },
+        "medsy01": {
+            "@id": "activity_path:medsy01/medsy01_schema",
+            "@type": "@id"
+        },
+        "macv01": {
+            "@id": "activity_path:macv01/macv01_schema",
+            "@type": "@id"
+        },
+        "abcd_meim01": {
+            "@id": "activity_path:abcd_meim01/abcd_meim01_schema",
+            "@type": "@id"
+        },
+        "abcd_pnsc01": {
+            "@id": "activity_path:abcd_pnsc01/abcd_pnsc01_schema",
+            "@type": "@id"
+        },
+        "abcd_otbi01": {
+            "@id": "activity_path:abcd_otbi01/abcd_otbi01_schema",
+            "@type": "@id"
+        },
+        "abcd_pgbi01": {
+            "@id": "activity_path:abcd_pgbi01/abcd_pgbi01_schema",
+            "@type": "@id"
+        },
+        "plus01": {
+            "@id": "activity_path:plus01/plus01_schema",
+            "@type": "@id"
+        },
+        "abcd_ppdms01": {
+            "@id": "activity_path:abcd_ppdms01/abcd_ppdms01_schema",
+            "@type": "@id"
+        },
+        "stq01": {
+            "@id": "activity_path:stq01/stq01_schema",
+            "@type": "@id"
+        },
+        "abcd_pssrs01": {
+            "@id": "activity_path:abcd_pssrs01/abcd_pssrs01_schema",
+            "@type": "@id"
+        },
+        "abcd_sds01": {
+            "@id": "activity_path:abcd_sds01/abcd_sds01_schema",
+            "@type": "@id"
+        },
+        "abcd_saiq02": {
+            "@id": "activity_path:abcd_saiq02/abcd_saiq02_schema",
+            "@type": "@id"
+        },
+        "abcd_via01": {
+            "@id": "activity_path:abcd_via01/abcd_via01_schema",
+            "@type": "@id"
+        },
+        "pmq01": {
+            "@id": "activity_path:pmq01/pmq01_schema",
+            "@type": "@id"
+        },
+        "prq01": {
+            "@id": "activity_path:prq01/prq01_schema",
+            "@type": "@id"
+        },
+        "abcd_ps01": {
+            "@id": "activity_path:abcd_ps01/abcd_ps01_schema",
+            "@type": "@id"
+        },
+        "abcd_ra01": {
+            "@id": "activity_path:abcd_ra01/abcd_ra01_schema",
+            "@type": "@id"
+        },
+        "abcd_screen01": {
+            "@id": "activity_path:abcd_screen01/abcd_screen01_schema",
+            "@type": "@id"
+        },
+        "abcd_sscep01": {
+            "@id": "activity_path:abcd_sscep01/abcd_sscep01_schema",
+            "@type": "@id"
+        },
+        "abcd_sscey01": {
+            "@id": "activity_path:abcd_sscey01/abcd_sscey01_schema",
+            "@type": "@id"
+        },
+        "abcd_ssmty01": {
+            "@id": "activity_path:abcd_ssmty01/abcd_ssmty01_schema",
+            "@type": "@id"
+        },
+        "abcd_ssphp01": {
+            "@id": "activity_path:abcd_ssphp01/abcd_ssphp01_schema",
+            "@type": "@id"
+        },
+        "abcd_ssphy01": {
+            "@id": "activity_path:abcd_ssphy01/abcd_ssphy01_schema",
+            "@type": "@id"
+        },
+        "abcd_tbi01": {
+            "@id": "activity_path:abcd_tbi01/abcd_tbi01_schema",
+            "@type": "@id"
+        },
+        "abcd_ssbpmtf01": {
+            "@id": "activity_path:abcd_ssbpmtf01/abcd_ssbpmtf01_schema",
+            "@type": "@id"
+        },
+        "abcd_devhxss01": {
+            "@id": "activity_path:abcd_devhxss01/abcd_devhxss01_schema",
+            "@type": "@id"
+        },
+        "abcd_medhxss01": {
+            "@id": "activity_path:abcd_medhxss01/abcd_medhxss01_schema",
+            "@type": "@id"
+        },
+        "abcd_spacss01": {
+            "@id": "activity_path:abcd_spacss01/abcd_spacss01_schema",
+            "@type": "@id"
+        },
+        "abcd_suss01": {
+            "@id": "activity_path:abcd_suss01/abcd_suss01_schema",
+            "@type": "@id"
+        },
+        "abcddemo01": {
+            "@id": "activity_path:abcddemo01/abcddemo01_schema",
+            "@type": "@id"
+        },
+        "abcd_midabwdp01": {
+            "@id": "activity_path:abcd_midabwdp01/abcd_midabwdp01_schema",
+            "@type": "@id"
+        },
+        "abcd_midabwdp201": {
+            "@id": "activity_path:abcd_midabwdp201/abcd_midabwdp201_schema",
+            "@type": "@id"
+        },
+        "abcd_midabwdp202": {
+            "@id": "activity_path:abcd_midabwdp202/abcd_midabwdp202_schema",
+            "@type": "@id"
+        },
+        "midaparc03": {
+            "@id": "activity_path:midaparc03/midaparc03_schema",
+            "@type": "@id"
+        },
+        "midaparc02": {
+            "@id": "activity_path:midaparc02/midaparc02_schema",
+            "@type": "@id"
+        },
+        "midaparcp202": {
+            "@id": "activity_path:midaparcp202/midaparcp202_schema",
+            "@type": "@id"
+        },
+        "midaparcp203": {
+            "@id": "activity_path:midaparcp203/midaparcp203_schema",
+            "@type": "@id"
+        },
+        "abcd_midasemdp101": {
+            "@id": "activity_path:abcd_midasemdp101/abcd_midasemdp101_schema",
+            "@type": "@id"
+        },
+        "abcd_midasemdp201": {
+            "@id": "activity_path:abcd_midasemdp201/abcd_midasemdp201_schema",
+            "@type": "@id"
+        },
+        "abcd_midasemdp202": {
+            "@id": "activity_path:abcd_midasemdp202/abcd_midasemdp202_schema",
+            "@type": "@id"
+        },
+        "abcd_midasemp102": {
+            "@id": "activity_path:abcd_midasemp102/abcd_midasemp102_schema",
+            "@type": "@id"
+        },
+        "abcd_midasemp101": {
+            "@id": "activity_path:abcd_midasemp101/abcd_midasemp101_schema",
+            "@type": "@id"
+        },
+        "abcd_midasemp202": {
+            "@id": "activity_path:abcd_midasemp202/abcd_midasemp202_schema",
+            "@type": "@id"
+        },
+        "abcd_midasemp201": {
+            "@id": "activity_path:abcd_midasemp201/abcd_midasemp201_schema",
+            "@type": "@id"
+        },
+        "abcd_mid02": {
+            "@id": "activity_path:abcd_mid02/abcd_mid02_schema",
+            "@type": "@id"
+        },
+        "abcd_midr1bwdp101": {
+            "@id": "activity_path:abcd_midr1bwdp101/abcd_midr1bwdp101_schema",
+            "@type": "@id"
+        },
+        "abcd_midr1bwdp201": {
+            "@id": "activity_path:abcd_midr1bwdp201/abcd_midr1bwdp201_schema",
+            "@type": "@id"
+        },
+        "abcd_midr1bwdp202": {
+            "@id": "activity_path:abcd_midr1bwdp202/abcd_midr1bwdp202_schema",
+            "@type": "@id"
+        },
+        "abcd_midr1bwp102": {
+            "@id": "activity_path:abcd_midr1bwp102/abcd_midr1bwp102_schema",
+            "@type": "@id"
+        },
+        "abcd_midr1bwp101": {
+            "@id": "activity_path:abcd_midr1bwp101/abcd_midr1bwp101_schema",
+            "@type": "@id"
+        },
+        "abcd_midr1bwp201": {
+            "@id": "activity_path:abcd_midr1bwp201/abcd_midr1bwp201_schema",
+            "@type": "@id"
+        },
+        "abcd_midr1bwp202": {
+            "@id": "activity_path:abcd_midr1bwp202/abcd_midr1bwp202_schema",
+            "@type": "@id"
+        },
+        "abcd_tmidr1semdp101": {
+            "@id": "activity_path:abcd_tmidr1semdp101/abcd_tmidr1semdp101_schema",
+            "@type": "@id"
+        },
+        "abcd_tmidr1semdp201": {
+            "@id": "activity_path:abcd_tmidr1semdp201/abcd_tmidr1semdp201_schema",
+            "@type": "@id"
+        },
+        "abcd_tmidr1semdp202": {
+            "@id": "activity_path:abcd_tmidr1semdp202/abcd_tmidr1semdp202_schema",
+            "@type": "@id"
+        },
+        "abcd_midsemp101": {
+            "@id": "activity_path:abcd_midsemp101/abcd_midsemp101_schema",
+            "@type": "@id"
+        },
+        "abcd_midsemp102": {
+            "@id": "activity_path:abcd_midsemp102/abcd_midsemp102_schema",
+            "@type": "@id"
+        },
+        "abcd_midsemp201": {
+            "@id": "activity_path:abcd_midsemp201/abcd_midsemp201_schema",
+            "@type": "@id"
+        },
+        "abcd_midsemp202": {
+            "@id": "activity_path:abcd_midsemp202/abcd_midsemp202_schema",
+            "@type": "@id"
+        },
+        "abcd_tr2bwdp01": {
+            "@id": "activity_path:abcd_tr2bwdp01/abcd_tr2bwdp01_schema",
+            "@type": "@id"
+        },
+        "abcd_tr2bwdp201": {
+            "@id": "activity_path:abcd_tr2bwdp201/abcd_tr2bwdp201_schema",
+            "@type": "@id"
+        },
+        "abcd_tr2bwdp202": {
+            "@id": "activity_path:abcd_tr2bwdp202/abcd_tr2bwdp202_schema",
+            "@type": "@id"
+        },
+        "midr2bwp102": {
+            "@id": "activity_path:midr2bwp102/midr2bwp102_schema",
+            "@type": "@id"
+        },
+        "midr2bwp101": {
+            "@id": "activity_path:midr2bwp101/midr2bwp101_schema",
+            "@type": "@id"
+        },
+        "midr2bwp202": {
+            "@id": "activity_path:midr2bwp202/midr2bwp202_schema",
+            "@type": "@id"
+        },
+        "midr2bwp201": {
+            "@id": "activity_path:midr2bwp201/midr2bwp201_schema",
+            "@type": "@id"
+        },
+        "abcd_tr2semdp101": {
+            "@id": "activity_path:abcd_tr2semdp101/abcd_tr2semdp101_schema",
+            "@type": "@id"
+        },
+        "abcd_tr2semdp201": {
+            "@id": "activity_path:abcd_tr2semdp201/abcd_tr2semdp201_schema",
+            "@type": "@id"
+        },
+        "abcd_tr2semdp202": {
+            "@id": "activity_path:abcd_tr2semdp202/abcd_tr2semdp202_schema",
+            "@type": "@id"
+        },
+        "abcd_midr2semp102": {
+            "@id": "activity_path:abcd_midr2semp102/abcd_midr2semp102_schema",
+            "@type": "@id"
+        },
+        "abcd_midr2semp101": {
+            "@id": "activity_path:abcd_midr2semp101/abcd_midr2semp101_schema",
+            "@type": "@id"
+        },
+        "abcd_midr2semp202": {
+            "@id": "activity_path:abcd_midr2semp202/abcd_midr2semp202_schema",
+            "@type": "@id"
+        },
+        "abcd_midr2semp201": {
+            "@id": "activity_path:abcd_midr2semp201/abcd_midr2semp201_schema",
+            "@type": "@id"
+        },
+        "mribrec02": {
+            "@id": "activity_path:mribrec02/mribrec02_schema",
+            "@type": "@id"
+        },
+        "mrisst02": {
+            "@id": "activity_path:mrisst02/mrisst02_schema",
+            "@type": "@id"
+        },
+        "abcd_tfsstabwdp101": {
+            "@id": "activity_path:abcd_tfsstabwdp101/abcd_tfsstabwdp101_schema",
+            "@type": "@id"
+        },
+        "abcd_tfsstabwdp201": {
+            "@id": "activity_path:abcd_tfsstabwdp201/abcd_tfsstabwdp201_schema",
+            "@type": "@id"
+        },
+        "abcd_tfsstasemdp101": {
+            "@id": "activity_path:abcd_tfsstasemdp101/abcd_tfsstasemdp101_schema",
+            "@type": "@id"
+        },
+        "abcd_tfsstasemdp201": {
+            "@id": "activity_path:abcd_tfsstasemdp201/abcd_tfsstasemdp201_schema",
+            "@type": "@id"
+        },
+        "mrisstsem01": {
+            "@id": "activity_path:mrisstsem01/mrisstsem01_schema",
+            "@type": "@id"
+        },
+        "abcd_sst02": {
+            "@id": "activity_path:abcd_sst02/abcd_sst02_schema",
+            "@type": "@id"
+        },
+        "mrisstr1bw01": {
+            "@id": "activity_path:mrisstr1bw01/mrisstr1bw01_schema",
+            "@type": "@id"
+        },
+        "abcd_tfsstr1bwdp101": {
+            "@id": "activity_path:abcd_tfsstr1bwdp101/abcd_tfsstr1bwdp101_schema",
+            "@type": "@id"
+        },
+        "abcd_tfsstr1bwdp201": {
+            "@id": "activity_path:abcd_tfsstr1bwdp201/abcd_tfsstr1bwdp201_schema",
+            "@type": "@id"
+        },
+        "abcd_tfsstr1semdp101": {
+            "@id": "activity_path:abcd_tfsstr1semdp101/abcd_tfsstr1semdp101_schema",
+            "@type": "@id"
+        },
+        "abcd_tfsstr1semdp201": {
+            "@id": "activity_path:abcd_tfsstr1semdp201/abcd_tfsstr1semdp201_schema",
+            "@type": "@id"
+        },
+        "mrisstr1sem01": {
+            "@id": "activity_path:mrisstr1sem01/mrisstr1sem01_schema",
+            "@type": "@id"
+        },
+        "mrisstr2bw01": {
+            "@id": "activity_path:mrisstr2bw01/mrisstr2bw01_schema",
+            "@type": "@id"
+        },
+        "abcd_tfsstr2bwdp101": {
+            "@id": "activity_path:abcd_tfsstr2bwdp101/abcd_tfsstr2bwdp101_schema",
+            "@type": "@id"
+        },
+        "abcd_tfsstr2bwdp201": {
+            "@id": "activity_path:abcd_tfsstr2bwdp201/abcd_tfsstr2bwdp201_schema",
+            "@type": "@id"
+        },
+        "abcd_tfsstr2semdp101": {
+            "@id": "activity_path:abcd_tfsstr2semdp101/abcd_tfsstr2semdp101_schema",
+            "@type": "@id"
+        },
+        "abcd_tfsstr2semdp201": {
+            "@id": "activity_path:abcd_tfsstr2semdp201/abcd_tfsstr2semdp201_schema",
+            "@type": "@id"
+        },
+        "mrisstr2bwsem01": {
+            "@id": "activity_path:mrisstr2bwsem01/mrisstr2bwsem01_schema",
+            "@type": "@id"
+        },
+        "nback_bwroi02": {
+            "@id": "activity_path:nback_bwroi02/nback_bwroi02_schema",
+            "@type": "@id"
+        },
+        "abcd_tfabwdp101": {
+            "@id": "activity_path:abcd_tfabwdp101/abcd_tfabwdp101_schema",
+            "@type": "@id"
+        },
+        "abcd_tfabwdp201": {
+            "@id": "activity_path:abcd_tfabwdp201/abcd_tfabwdp201_schema",
+            "@type": "@id"
+        },
+        "abcd_tnbasemdp101": {
+            "@id": "activity_path:abcd_tnbasemdp101/abcd_tnbasemdp101_schema",
+            "@type": "@id"
+        },
+        "abcd_tnbasemdp201": {
+            "@id": "activity_path:abcd_tnbasemdp201/abcd_tnbasemdp201_schema",
+            "@type": "@id"
+        },
+        "nbackallsem01": {
+            "@id": "activity_path:nbackallsem01/nbackallsem01_schema",
+            "@type": "@id"
+        },
+        "abcd_mrinback02": {
+            "@id": "activity_path:abcd_mrinback02/abcd_mrinback02_schema",
+            "@type": "@id"
+        },
+        "nbackr101": {
+            "@id": "activity_path:nbackr101/nbackr101_schema",
+            "@type": "@id"
+        },
+        "abcd_tfncr1bwdp101": {
+            "@id": "activity_path:abcd_tfncr1bwdp101/abcd_tfncr1bwdp101_schema",
+            "@type": "@id"
+        },
+        "abcd_tfncr1bwdp201": {
+            "@id": "activity_path:abcd_tfncr1bwdp201/abcd_tfncr1bwdp201_schema",
+            "@type": "@id"
+        },
+        "abcd_tfnbr1semdp101": {
+            "@id": "activity_path:abcd_tfnbr1semdp101/abcd_tfnbr1semdp101_schema",
+            "@type": "@id"
+        },
+        "abcd_tfnbr1semdp201": {
+            "@id": "activity_path:abcd_tfnbr1semdp201/abcd_tfnbr1semdp201_schema",
+            "@type": "@id"
+        },
+        "nbackr1sem01": {
+            "@id": "activity_path:nbackr1sem01/nbackr1sem01_schema",
+            "@type": "@id"
+        },
+        "nbackr201": {
+            "@id": "activity_path:nbackr201/nbackr201_schema",
+            "@type": "@id"
+        },
+        "abcd_tfnbr2bwdp101": {
+            "@id": "activity_path:abcd_tfnbr2bwdp101/abcd_tfnbr2bwdp101_schema",
+            "@type": "@id"
+        },
+        "abcd_tfnbr2bwdp201": {
+            "@id": "activity_path:abcd_tfnbr2bwdp201/abcd_tfnbr2bwdp201_schema",
+            "@type": "@id"
+        },
+        "abcd_tfnbr2dp101": {
+            "@id": "activity_path:abcd_tfnbr2dp101/abcd_tfnbr2dp101_schema",
+            "@type": "@id"
+        },
+        "abcd_tfnbr2dp201": {
+            "@id": "activity_path:abcd_tfnbr2dp201/abcd_tfnbr2dp201_schema",
+            "@type": "@id"
+        },
+        "nbackr2sem01": {
+            "@id": "activity_path:nbackr2sem01/nbackr2sem01_schema",
+            "@type": "@id"
+        },
+        "abcd_tlfb01": {
+            "@id": "activity_path:abcd_tlfb01/abcd_tlfb01_schema",
+            "@type": "@id"
+        },
+        "abcd_y10ids01": {
+            "@id": "activity_path:abcd_y10ids01/abcd_y10ids01_schema",
+            "@type": "@id"
+        },
+        "abcd_y7mi01": {
+            "@id": "activity_path:abcd_y7mi01/abcd_y7mi01_schema",
+            "@type": "@id"
+        },
+        "yacc01": {
+            "@id": "activity_path:yacc01/yacc01_schema",
+            "@type": "@id"
+        },
+        "abcd_yam01": {
+            "@id": "activity_path:abcd_yam01/abcd_yam01_schema",
+            "@type": "@id"
+        },
+        "yalcs01": {
+            "@id": "activity_path:yalcs01/yalcs01_schema",
+            "@type": "@id"
+        },
+        "abcd_ant01": {
+            "@id": "activity_path:abcd_ant01/abcd_ant01_schema",
+            "@type": "@id"
+        },
+        "abcd_bisbas01": {
+            "@id": "activity_path:abcd_bisbas01/abcd_bisbas01_schema",
+            "@type": "@id"
+        },
+        "abcd_bpm01": {
+            "@id": "activity_path:abcd_bpm01/abcd_bpm01_schema",
+            "@type": "@id"
+        },
+        "abcd_yddss01": {
+            "@id": "activity_path:abcd_yddss01/abcd_yddss01_schema",
+            "@type": "@id"
+        },
+        "abcd_ksad501": {
+            "@id": "activity_path:abcd_ksad501/abcd_ksad501_schema",
+            "@type": "@id"
+        },
+        "abcd_yksad01": {
+            "@id": "activity_path:abcd_yksad01/abcd_yksad01_schema",
+            "@type": "@id"
+        },
+        "abcd_ydmes01": {
+            "@id": "activity_path:abcd_ydmes01/abcd_ydmes01_schema",
+            "@type": "@id"
+        },
+        "abcd_ehis01": {
+            "@id": "activity_path:abcd_ehis01/abcd_ehis01_schema",
+            "@type": "@id"
+        },
+        "abcd_yest01": {
+            "@id": "activity_path:abcd_yest01/abcd_yest01_schema",
+            "@type": "@id"
+        },
+        "abcd_fes01": {
+            "@id": "activity_path:abcd_fes01/abcd_fes01_schema",
+            "@type": "@id"
+        },
+        "abcd_yfb01": {
+            "@id": "activity_path:abcd_yfb01/abcd_yfb01_schema",
+            "@type": "@id"
+        },
+        "abcd_yff01": {
+            "@id": "activity_path:abcd_yff01/abcd_yff01_schema",
+            "@type": "@id"
+        },
+        "abcd_ygi01": {
+            "@id": "activity_path:abcd_ygi01/abcd_ygi01_schema",
+            "@type": "@id"
+        },
+        "biocf01": {
+            "@id": "activity_path:biocf01/biocf01_schema",
+            "@type": "@id"
+        },
+        "abcd_ygs01": {
+            "@id": "activity_path:abcd_ygs01/abcd_ygs01_schema",
+            "@type": "@id"
+        },
+        "abcd_yhr01": {
+            "@id": "activity_path:abcd_yhr01/abcd_yhr01_schema",
+            "@type": "@id"
+        },
+        "abcd_hers01": {
+            "@id": "activity_path:abcd_hers01/abcd_hers01_schema",
+            "@type": "@id"
+        },
+        "abcd_yle01": {
+            "@id": "activity_path:abcd_yle01/abcd_yle01_schema",
+            "@type": "@id"
+        },
+        "abcd_ymidm01": {
+            "@id": "activity_path:abcd_ymidm01/abcd_ymidm01_schema",
+            "@type": "@id"
+        },
+        "abcd_ymypisu01": {
+            "@id": "activity_path:abcd_ymypisu01/abcd_ymypisu01_schema",
+            "@type": "@id"
+        },
+        "abcd_monet01": {
+            "@id": "activity_path:abcd_monet01/abcd_monet01_schema",
+            "@type": "@id"
+        },
+        "abcd_tbss01": {
+            "@id": "activity_path:abcd_tbss01/abcd_tbss01_schema",
+            "@type": "@id"
+        },
+        "abcd_ytbpai01": {
+            "@id": "activity_path:abcd_ytbpai01/abcd_ytbpai01_schema",
+            "@type": "@id"
+        },
+        "abcd_nsc01": {
+            "@id": "activity_path:abcd_nsc01/abcd_nsc01_schema",
+            "@type": "@id"
+        },
+        "abcd_yn01": {
+            "@id": "activity_path:abcd_yn01/abcd_yn01_schema",
+            "@type": "@id"
+        },
+        "abcd_ynm01": {
+            "@id": "activity_path:abcd_ynm01/abcd_ynm01_schema",
+            "@type": "@id"
+        },
+        "abcd_plus01": {
+            "@id": "activity_path:abcd_plus01/abcd_plus01_schema",
+            "@type": "@id"
+        },
+        "abcd_ypsq201": {
+            "@id": "activity_path:abcd_ypsq201/abcd_ypsq201_schema",
+            "@type": "@id"
+        },
+        "abcd_ypsq101": {
+            "@id": "activity_path:abcd_ypsq101/abcd_ypsq101_schema",
+            "@type": "@id"
+        },
+        "abcd_ypre101": {
+            "@id": "activity_path:abcd_ypre101/abcd_ypre101_schema",
+            "@type": "@id"
+        },
+        "abcd_ypre201": {
+            "@id": "activity_path:abcd_ypre201/abcd_ypre201_schema",
+            "@type": "@id"
+        },
+        "abcd_ypdms01": {
+            "@id": "activity_path:abcd_ypdms01/abcd_ypdms01_schema",
+            "@type": "@id"
+        },
+        "abcd_prepost01": {
+            "@id": "activity_path:abcd_prepost01/abcd_prepost01_schema",
+            "@type": "@id"
+        },
+        "abcd_stq01": {
+            "@id": "activity_path:abcd_stq01/abcd_stq01_schema",
+            "@type": "@id"
+        },
+        "abcd_svs01": {
+            "@id": "activity_path:abcd_svs01/abcd_svs01_schema",
+            "@type": "@id"
+        },
+        "abcd_ysua01": {
+            "@id": "activity_path:abcd_ysua01/abcd_ysua01_schema",
+            "@type": "@id"
+        },
+        "abcd_ysu02": {
+            "@id": "activity_path:abcd_ysu02/abcd_ysu02_schema",
+            "@type": "@id"
+        },
+        "abcd_ysuip01": {
+            "@id": "activity_path:abcd_ysuip01/abcd_ysuip01_schema",
+            "@type": "@id"
+        },
+        "abcd_yssbpm01": {
+            "@id": "activity_path:abcd_yssbpm01/abcd_yssbpm01_schema",
+            "@type": "@id"
+        },
+        "abcd_ytt01": {
+            "@id": "activity_path:abcd_ytt01/abcd_ytt01_schema",
+            "@type": "@id"
+        },
+        "abcd_ywpss01": {
+            "@id": "activity_path:abcd_ywpss01/abcd_ywpss01_schema",
+            "@type": "@id"
+        },
+        "abcd_yrb01": {
+            "@id": "activity_path:abcd_yrb01/abcd_yrb01_schema",
+            "@type": "@id"
+        },
+        "abcd_ddtidp101": {
+            "@id": "activity_path:abcd_ddtidp101/abcd_ddtidp101_schema",
+            "@type": "@id"
+        },
+        "abcd_ddtidp201": {
+            "@id": "activity_path:abcd_ddtidp201/abcd_ddtidp201_schema",
+            "@type": "@id"
+        },
+        "abcd_ddtifp101": {
+            "@id": "activity_path:abcd_ddtifp101/abcd_ddtifp101_schema",
+            "@type": "@id"
+        },
+        "abcd_ddtifp201": {
+            "@id": "activity_path:abcd_ddtifp201/abcd_ddtifp201_schema",
+            "@type": "@id"
+        },
+        "abcd_dmdtifp101": {
+            "@id": "activity_path:abcd_dmdtifp101/abcd_dmdtifp101_schema",
+            "@type": "@id"
+        },
+        "abcd_dmdtifp201": {
+            "@id": "activity_path:abcd_dmdtifp201/abcd_dmdtifp201_schema",
+            "@type": "@id"
+        },
+        "abcd_dmdtifp202": {
+            "@id": "activity_path:abcd_dmdtifp202/abcd_dmdtifp202_schema",
+            "@type": "@id"
+        },
+        "abcd_dti_p101": {
+            "@id": "activity_path:abcd_dti_p101/abcd_dti_p101_schema",
+            "@type": "@id"
+        },
+        "abcd_dti_p201": {
+            "@id": "activity_path:abcd_dti_p201/abcd_dti_p201_schema",
+            "@type": "@id"
+        },
+        "dmriqc01": {
+            "@id": "activity_path:dmriqc01/dmriqc01_schema",
+            "@type": "@id"
+        },
+        "abcd_drsidp101": {
+            "@id": "activity_path:abcd_drsidp101/abcd_drsidp101_schema",
+            "@type": "@id"
+        },
+        "abcd_drsidp201": {
+            "@id": "activity_path:abcd_drsidp201/abcd_drsidp201_schema",
+            "@type": "@id"
+        },
+        "abcd_drsidp301": {
+            "@id": "activity_path:abcd_drsidp301/abcd_drsidp301_schema",
+            "@type": "@id"
+        },
+        "mri_rsi_p102": {
+            "@id": "activity_path:mri_rsi_p102/mri_rsi_p102_schema",
+            "@type": "@id"
+        },
+        "mri_rsi_p202": {
+            "@id": "activity_path:mri_rsi_p202/mri_rsi_p202_schema",
+            "@type": "@id"
+        },
+        "abcd_mrirsfd01": {
+            "@id": "activity_path:abcd_mrirsfd01/abcd_mrirsfd01_schema",
+            "@type": "@id"
+        },
+        "abcd_betnet02": {
+            "@id": "activity_path:abcd_betnet02/abcd_betnet02_schema",
+            "@type": "@id"
+        },
+        "mrirscor02": {
+            "@id": "activity_path:mrirscor02/mrirscor02_schema",
+            "@type": "@id"
+        },
+        "abcd_mrirstv02": {
+            "@id": "activity_path:abcd_mrirstv02/abcd_mrirstv02_schema",
+            "@type": "@id"
+        },
+        "abcd_mrisdp101": {
+            "@id": "activity_path:abcd_mrisdp101/abcd_mrisdp101_schema",
+            "@type": "@id"
+        },
+        "abcd_mrisdp201": {
+            "@id": "activity_path:abcd_mrisdp201/abcd_mrisdp201_schema",
+            "@type": "@id"
+        },
+        "abcd_smrip101": {
+            "@id": "activity_path:abcd_smrip101/abcd_smrip101_schema",
+            "@type": "@id"
+        },
+        "abcd_smrip201": {
+            "@id": "activity_path:abcd_smrip201/abcd_smrip201_schema",
+            "@type": "@id"
+        },
+        "freesqc01": {
+            "@id": "activity_path:freesqc01/freesqc01_schema",
+            "@type": "@id"
+        },
+        "genomics_sample03": {
+            "@id": "activity_path:genomics_sample03/genomics_sample03_schema",
+            "@type": "@id"
+        },
+        "abcd_mrfindings01": {
+            "@id": "activity_path:abcd_mrfindings01/abcd_mrfindings01_schema",
+            "@type": "@id"
+        },
+        "mriqcrp102": {
+            "@id": "activity_path:mriqcrp102/mriqcrp102_schema",
+            "@type": "@id"
+        },
+        "mriqcrp202": {
+            "@id": "activity_path:mriqcrp202/mriqcrp202_schema",
+            "@type": "@id"
+        },
+        "mriqcrp302": {
+            "@id": "activity_path:mriqcrp302/mriqcrp302_schema",
+            "@type": "@id"
+        },
+        "psb01": {
+            "@id": "activity_path:psb01/psb01_schema",
+            "@type": "@id"
+        },
+        "abcd_rhds01": {
+            "@id": "activity_path:abcd_rhds01/abcd_rhds01_schema",
+            "@type": "@id"
+        },
+        "abcd_mhp02": {
+            "@id": "activity_path:abcd_mhp02/abcd_mhp02_schema",
+            "@type": "@id"
+        },
+        "abcd_mhy02": {
+            "@id": "activity_path:abcd_mhy02/abcd_mhy02_schema",
+            "@type": "@id"
+        },
+        "abcd_upps01": {
+            "@id": "activity_path:abcd_upps01/abcd_upps01_schema",
+            "@type": "@id"
+        },
+        "abcd_psb01": {
+            "@id": "activity_path:abcd_psb01/abcd_psb01_schema",
+            "@type": "@id"
+        },
+        "dhx01": {
+            "@id": "activity_path:dhx01/dhx01_schema",
+            "@type": "@id"
+        },
+        "fhxp201": {
+            "@id": "activity_path:fhxp201/fhxp201_schema",
+            "@type": "@id"
+        },
+        "abcd_fastqc01": {
+            "@id": "activity_path:abcd_fastqc01/abcd_fastqc01_schema",
+            "@type": "@id"
+        },
+        "pps01": {
+            "@id": "activity_path:pps01/pps01_schema",
+            "@type": "@id"
+        },
+        "sph01": {
+            "@id": "activity_path:sph01/sph01_schema",
+            "@type": "@id"
+        },
+        "srpf01": {
+            "@id": "activity_path:srpf01/srpf01_schema",
+            "@type": "@id"
+        },
+        "aurora01": {
+            "@id": "activity_path:aurora01/aurora01_schema",
+            "@type": "@id"
+        },
+        "fmriresults01": {
+            "@id": "activity_path:fmriresults01/fmriresults01_schema",
+            "@type": "@id"
+        },
+        "image03": {
+            "@id": "activity_path:image03/image03_schema",
+            "@type": "@id"
+        }
+    }
+}

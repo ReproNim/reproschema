@@ -1,0 +1,1954 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+        "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/protocols/ABCD/ABCD_context"
+    ],
+    "@id": "ABCD_schema",
+    "@type": "reproschema:Protocol",
+    "skos:prefLabel": "ABCD",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "order": [
+            "acspsw03",
+            "abcd_bpmt01",
+            "cct01",
+            "abcd_cna01",
+            "crpbi01",
+            "fhxp102",
+            "abcd_hsss01",
+            "abcd_isc01",
+            "abcd_ip01",
+            "lmtp201",
+            "abcd_lpds01",
+            "abcd_lpksad01",
+            "abcd_lpmh01",
+            "abcd_lpohstbi01",
+            "abcd_lpsaiq01",
+            "abcd_lssmh01",
+            "abcd_lsssa01",
+            "abcd_lsstbi01",
+            "abcd_lt01",
+            "abcd_mri01",
+            "abcd_ysr01",
+            "pacc01",
+            "pasr01",
+            "abcd_asrs01",
+            "abcd_cbcl01",
+            "abcd_cbcls01",
+            "abcd_crpf01",
+            "pdem02",
+            "abcd_ptsd01",
+            "dibf01",
+            "abcd_ksad01",
+            "fes02",
+            "abcd_pfb01",
+            "abcd_pff01",
+            "abcd_pgi01",
+            "abcd_pksadscd01",
+            "abcd_ple01",
+            "abcd_mx01",
+            "medsy01",
+            "macv01",
+            "abcd_meim01",
+            "abcd_pnsc01",
+            "abcd_otbi01",
+            "abcd_pgbi01",
+            "plus01",
+            "abcd_ppdms01",
+            "stq01",
+            "abcd_pssrs01",
+            "abcd_sds01",
+            "abcd_saiq02",
+            "abcd_via01",
+            "pmq01",
+            "prq01",
+            "abcd_ps01",
+            "abcd_ra01",
+            "abcd_screen01",
+            "abcd_sscep01",
+            "abcd_sscey01",
+            "abcd_ssmty01",
+            "abcd_ssphp01",
+            "abcd_ssphy01",
+            "abcd_tbi01",
+            "abcd_ssbpmtf01",
+            "abcd_devhxss01",
+            "abcd_medhxss01",
+            "abcd_spacss01",
+            "abcd_suss01",
+            "abcddemo01",
+            "abcd_midabwdp01",
+            "abcd_midabwdp201",
+            "abcd_midabwdp202",
+            "midaparc03",
+            "midaparc02",
+            "midaparcp202",
+            "midaparcp203",
+            "abcd_midasemdp101",
+            "abcd_midasemdp201",
+            "abcd_midasemdp202",
+            "abcd_midasemp102",
+            "abcd_midasemp101",
+            "abcd_midasemp202",
+            "abcd_midasemp201",
+            "abcd_mid02",
+            "abcd_midr1bwdp101",
+            "abcd_midr1bwdp201",
+            "abcd_midr1bwdp202",
+            "abcd_midr1bwp102",
+            "abcd_midr1bwp101",
+            "abcd_midr1bwp201",
+            "abcd_midr1bwp202",
+            "abcd_tmidr1semdp101",
+            "abcd_tmidr1semdp201",
+            "abcd_tmidr1semdp202",
+            "abcd_midsemp101",
+            "abcd_midsemp102",
+            "abcd_midsemp201",
+            "abcd_midsemp202",
+            "abcd_tr2bwdp01",
+            "abcd_tr2bwdp201",
+            "abcd_tr2bwdp202",
+            "midr2bwp102",
+            "midr2bwp101",
+            "midr2bwp202",
+            "midr2bwp201",
+            "abcd_tr2semdp101",
+            "abcd_tr2semdp201",
+            "abcd_tr2semdp202",
+            "abcd_midr2semp102",
+            "abcd_midr2semp101",
+            "abcd_midr2semp202",
+            "abcd_midr2semp201",
+            "mribrec02",
+            "mrisst02",
+            "abcd_tfsstabwdp101",
+            "abcd_tfsstabwdp201",
+            "abcd_tfsstasemdp101",
+            "abcd_tfsstasemdp201",
+            "mrisstsem01",
+            "abcd_sst02",
+            "mrisstr1bw01",
+            "abcd_tfsstr1bwdp101",
+            "abcd_tfsstr1bwdp201",
+            "abcd_tfsstr1semdp101",
+            "abcd_tfsstr1semdp201",
+            "mrisstr1sem01",
+            "mrisstr2bw01",
+            "abcd_tfsstr2bwdp101",
+            "abcd_tfsstr2bwdp201",
+            "abcd_tfsstr2semdp101",
+            "abcd_tfsstr2semdp201",
+            "mrisstr2bwsem01",
+            "nback_bwroi02",
+            "abcd_tfabwdp101",
+            "abcd_tfabwdp201",
+            "abcd_tnbasemdp101",
+            "abcd_tnbasemdp201",
+            "nbackallsem01",
+            "abcd_mrinback02",
+            "nbackr101",
+            "abcd_tfncr1bwdp101",
+            "abcd_tfncr1bwdp201",
+            "abcd_tfnbr1semdp101",
+            "abcd_tfnbr1semdp201",
+            "nbackr1sem01",
+            "nbackr201",
+            "abcd_tfnbr2bwdp101",
+            "abcd_tfnbr2bwdp201",
+            "abcd_tfnbr2dp101",
+            "abcd_tfnbr2dp201",
+            "nbackr2sem01",
+            "abcd_tlfb01",
+            "abcd_y10ids01",
+            "abcd_y7mi01",
+            "yacc01",
+            "abcd_yam01",
+            "yalcs01",
+            "abcd_ant01",
+            "abcd_bisbas01",
+            "abcd_bpm01",
+            "abcd_yddss01",
+            "abcd_ksad501",
+            "abcd_yksad01",
+            "abcd_ydmes01",
+            "abcd_ehis01",
+            "abcd_yest01",
+            "abcd_fes01",
+            "abcd_yfb01",
+            "abcd_yff01",
+            "abcd_ygi01",
+            "biocf01",
+            "abcd_ygs01",
+            "abcd_yhr01",
+            "abcd_hers01",
+            "abcd_yle01",
+            "abcd_ymidm01",
+            "abcd_ymypisu01",
+            "abcd_monet01",
+            "abcd_tbss01",
+            "abcd_ytbpai01",
+            "abcd_nsc01",
+            "abcd_yn01",
+            "abcd_ynm01",
+            "abcd_plus01",
+            "abcd_ypsq201",
+            "abcd_ypsq101",
+            "abcd_ypre101",
+            "abcd_ypre201",
+            "abcd_ypdms01",
+            "abcd_prepost01",
+            "abcd_stq01",
+            "abcd_svs01",
+            "abcd_ysua01",
+            "abcd_ysu02",
+            "abcd_ysuip01",
+            "abcd_yssbpm01",
+            "abcd_ytt01",
+            "abcd_ywpss01",
+            "abcd_yrb01",
+            "abcd_ddtidp101",
+            "abcd_ddtidp201",
+            "abcd_ddtifp101",
+            "abcd_ddtifp201",
+            "abcd_dmdtifp101",
+            "abcd_dmdtifp201",
+            "abcd_dmdtifp202",
+            "abcd_dti_p101",
+            "abcd_dti_p201",
+            "dmriqc01",
+            "abcd_drsidp101",
+            "abcd_drsidp201",
+            "abcd_drsidp301",
+            "mri_rsi_p102",
+            "mri_rsi_p202",
+            "abcd_mrirsfd01",
+            "abcd_betnet02",
+            "mrirscor02",
+            "abcd_mrirstv02",
+            "abcd_mrisdp101",
+            "abcd_mrisdp201",
+            "abcd_smrip101",
+            "abcd_smrip201",
+            "freesqc01",
+            "genomics_sample03",
+            "abcd_mrfindings01",
+            "mriqcrp102",
+            "mriqcrp202",
+            "mriqcrp302",
+            "psb01",
+            "abcd_rhds01",
+            "abcd_mhp02",
+            "abcd_mhy02",
+            "abcd_upps01",
+            "abcd_psb01",
+            "dhx01",
+            "fhxp201",
+            "abcd_fastqc01",
+            "pps01",
+            "sph01",
+            "srpf01",
+            "aurora01",
+            "fmriresults01",
+            "image03"
+        ],
+        "shuffle": false,
+        "addProperties": [
+            {
+                "variableName": "acspsw03",
+                "isAbout": "acspsw03",
+                "prefLabel": {
+                    "en": "acspsw03"
+                }
+            },
+            {
+                "variableName": "abcd_bpmt01",
+                "isAbout": "abcd_bpmt01",
+                "prefLabel": {
+                    "en": "abcd_bpmt01"
+                }
+            },
+            {
+                "variableName": "cct01",
+                "isAbout": "cct01",
+                "prefLabel": {
+                    "en": "cct01"
+                }
+            },
+            {
+                "variableName": "abcd_cna01",
+                "isAbout": "abcd_cna01",
+                "prefLabel": {
+                    "en": "abcd_cna01"
+                }
+            },
+            {
+                "variableName": "crpbi01",
+                "isAbout": "crpbi01",
+                "prefLabel": {
+                    "en": "crpbi01"
+                }
+            },
+            {
+                "variableName": "fhxp102",
+                "isAbout": "fhxp102",
+                "prefLabel": {
+                    "en": "fhxp102"
+                }
+            },
+            {
+                "variableName": "abcd_hsss01",
+                "isAbout": "abcd_hsss01",
+                "prefLabel": {
+                    "en": "abcd_hsss01"
+                }
+            },
+            {
+                "variableName": "abcd_isc01",
+                "isAbout": "abcd_isc01",
+                "prefLabel": {
+                    "en": "abcd_isc01"
+                }
+            },
+            {
+                "variableName": "abcd_ip01",
+                "isAbout": "abcd_ip01",
+                "prefLabel": {
+                    "en": "abcd_ip01"
+                }
+            },
+            {
+                "variableName": "lmtp201",
+                "isAbout": "lmtp201",
+                "prefLabel": {
+                    "en": "lmtp201"
+                }
+            },
+            {
+                "variableName": "abcd_lpds01",
+                "isAbout": "abcd_lpds01",
+                "prefLabel": {
+                    "en": "abcd_lpds01"
+                }
+            },
+            {
+                "variableName": "abcd_lpksad01",
+                "isAbout": "abcd_lpksad01",
+                "prefLabel": {
+                    "en": "abcd_lpksad01"
+                }
+            },
+            {
+                "variableName": "abcd_lpmh01",
+                "isAbout": "abcd_lpmh01",
+                "prefLabel": {
+                    "en": "abcd_lpmh01"
+                }
+            },
+            {
+                "variableName": "abcd_lpohstbi01",
+                "isAbout": "abcd_lpohstbi01",
+                "prefLabel": {
+                    "en": "abcd_lpohstbi01"
+                }
+            },
+            {
+                "variableName": "abcd_lpsaiq01",
+                "isAbout": "abcd_lpsaiq01",
+                "prefLabel": {
+                    "en": "abcd_lpsaiq01"
+                }
+            },
+            {
+                "variableName": "abcd_lssmh01",
+                "isAbout": "abcd_lssmh01",
+                "prefLabel": {
+                    "en": "abcd_lssmh01"
+                }
+            },
+            {
+                "variableName": "abcd_lsssa01",
+                "isAbout": "abcd_lsssa01",
+                "prefLabel": {
+                    "en": "abcd_lsssa01"
+                }
+            },
+            {
+                "variableName": "abcd_lsstbi01",
+                "isAbout": "abcd_lsstbi01",
+                "prefLabel": {
+                    "en": "abcd_lsstbi01"
+                }
+            },
+            {
+                "variableName": "abcd_lt01",
+                "isAbout": "abcd_lt01",
+                "prefLabel": {
+                    "en": "abcd_lt01"
+                }
+            },
+            {
+                "variableName": "abcd_mri01",
+                "isAbout": "abcd_mri01",
+                "prefLabel": {
+                    "en": "abcd_mri01"
+                }
+            },
+            {
+                "variableName": "abcd_ysr01",
+                "isAbout": "abcd_ysr01",
+                "prefLabel": {
+                    "en": "abcd_ysr01"
+                }
+            },
+            {
+                "variableName": "pacc01",
+                "isAbout": "pacc01",
+                "prefLabel": {
+                    "en": "pacc01"
+                }
+            },
+            {
+                "variableName": "pasr01",
+                "isAbout": "pasr01",
+                "prefLabel": {
+                    "en": "pasr01"
+                }
+            },
+            {
+                "variableName": "abcd_asrs01",
+                "isAbout": "abcd_asrs01",
+                "prefLabel": {
+                    "en": "abcd_asrs01"
+                }
+            },
+            {
+                "variableName": "abcd_cbcl01",
+                "isAbout": "abcd_cbcl01",
+                "prefLabel": {
+                    "en": "abcd_cbcl01"
+                }
+            },
+            {
+                "variableName": "abcd_cbcls01",
+                "isAbout": "abcd_cbcls01",
+                "prefLabel": {
+                    "en": "abcd_cbcls01"
+                }
+            },
+            {
+                "variableName": "abcd_crpf01",
+                "isAbout": "abcd_crpf01",
+                "prefLabel": {
+                    "en": "abcd_crpf01"
+                }
+            },
+            {
+                "variableName": "pdem02",
+                "isAbout": "pdem02",
+                "prefLabel": {
+                    "en": "pdem02"
+                }
+            },
+            {
+                "variableName": "abcd_ptsd01",
+                "isAbout": "abcd_ptsd01",
+                "prefLabel": {
+                    "en": "abcd_ptsd01"
+                }
+            },
+            {
+                "variableName": "dibf01",
+                "isAbout": "dibf01",
+                "prefLabel": {
+                    "en": "dibf01"
+                }
+            },
+            {
+                "variableName": "abcd_ksad01",
+                "isAbout": "abcd_ksad01",
+                "prefLabel": {
+                    "en": "abcd_ksad01"
+                }
+            },
+            {
+                "variableName": "fes02",
+                "isAbout": "fes02",
+                "prefLabel": {
+                    "en": "fes02"
+                }
+            },
+            {
+                "variableName": "abcd_pfb01",
+                "isAbout": "abcd_pfb01",
+                "prefLabel": {
+                    "en": "abcd_pfb01"
+                }
+            },
+            {
+                "variableName": "abcd_pff01",
+                "isAbout": "abcd_pff01",
+                "prefLabel": {
+                    "en": "abcd_pff01"
+                }
+            },
+            {
+                "variableName": "abcd_pgi01",
+                "isAbout": "abcd_pgi01",
+                "prefLabel": {
+                    "en": "abcd_pgi01"
+                }
+            },
+            {
+                "variableName": "abcd_pksadscd01",
+                "isAbout": "abcd_pksadscd01",
+                "prefLabel": {
+                    "en": "abcd_pksadscd01"
+                }
+            },
+            {
+                "variableName": "abcd_ple01",
+                "isAbout": "abcd_ple01",
+                "prefLabel": {
+                    "en": "abcd_ple01"
+                }
+            },
+            {
+                "variableName": "abcd_mx01",
+                "isAbout": "abcd_mx01",
+                "prefLabel": {
+                    "en": "abcd_mx01"
+                }
+            },
+            {
+                "variableName": "medsy01",
+                "isAbout": "medsy01",
+                "prefLabel": {
+                    "en": "medsy01"
+                }
+            },
+            {
+                "variableName": "macv01",
+                "isAbout": "macv01",
+                "prefLabel": {
+                    "en": "macv01"
+                }
+            },
+            {
+                "variableName": "abcd_meim01",
+                "isAbout": "abcd_meim01",
+                "prefLabel": {
+                    "en": "abcd_meim01"
+                }
+            },
+            {
+                "variableName": "abcd_pnsc01",
+                "isAbout": "abcd_pnsc01",
+                "prefLabel": {
+                    "en": "abcd_pnsc01"
+                }
+            },
+            {
+                "variableName": "abcd_otbi01",
+                "isAbout": "abcd_otbi01",
+                "prefLabel": {
+                    "en": "abcd_otbi01"
+                }
+            },
+            {
+                "variableName": "abcd_pgbi01",
+                "isAbout": "abcd_pgbi01",
+                "prefLabel": {
+                    "en": "abcd_pgbi01"
+                }
+            },
+            {
+                "variableName": "plus01",
+                "isAbout": "plus01",
+                "prefLabel": {
+                    "en": "plus01"
+                }
+            },
+            {
+                "variableName": "abcd_ppdms01",
+                "isAbout": "abcd_ppdms01",
+                "prefLabel": {
+                    "en": "abcd_ppdms01"
+                }
+            },
+            {
+                "variableName": "stq01",
+                "isAbout": "stq01",
+                "prefLabel": {
+                    "en": "stq01"
+                }
+            },
+            {
+                "variableName": "abcd_pssrs01",
+                "isAbout": "abcd_pssrs01",
+                "prefLabel": {
+                    "en": "abcd_pssrs01"
+                }
+            },
+            {
+                "variableName": "abcd_sds01",
+                "isAbout": "abcd_sds01",
+                "prefLabel": {
+                    "en": "abcd_sds01"
+                }
+            },
+            {
+                "variableName": "abcd_saiq02",
+                "isAbout": "abcd_saiq02",
+                "prefLabel": {
+                    "en": "abcd_saiq02"
+                }
+            },
+            {
+                "variableName": "abcd_via01",
+                "isAbout": "abcd_via01",
+                "prefLabel": {
+                    "en": "abcd_via01"
+                }
+            },
+            {
+                "variableName": "pmq01",
+                "isAbout": "pmq01",
+                "prefLabel": {
+                    "en": "pmq01"
+                }
+            },
+            {
+                "variableName": "prq01",
+                "isAbout": "prq01",
+                "prefLabel": {
+                    "en": "prq01"
+                }
+            },
+            {
+                "variableName": "abcd_ps01",
+                "isAbout": "abcd_ps01",
+                "prefLabel": {
+                    "en": "abcd_ps01"
+                }
+            },
+            {
+                "variableName": "abcd_ra01",
+                "isAbout": "abcd_ra01",
+                "prefLabel": {
+                    "en": "abcd_ra01"
+                }
+            },
+            {
+                "variableName": "abcd_screen01",
+                "isAbout": "abcd_screen01",
+                "prefLabel": {
+                    "en": "abcd_screen01"
+                }
+            },
+            {
+                "variableName": "abcd_sscep01",
+                "isAbout": "abcd_sscep01",
+                "prefLabel": {
+                    "en": "abcd_sscep01"
+                }
+            },
+            {
+                "variableName": "abcd_sscey01",
+                "isAbout": "abcd_sscey01",
+                "prefLabel": {
+                    "en": "abcd_sscey01"
+                }
+            },
+            {
+                "variableName": "abcd_ssmty01",
+                "isAbout": "abcd_ssmty01",
+                "prefLabel": {
+                    "en": "abcd_ssmty01"
+                }
+            },
+            {
+                "variableName": "abcd_ssphp01",
+                "isAbout": "abcd_ssphp01",
+                "prefLabel": {
+                    "en": "abcd_ssphp01"
+                }
+            },
+            {
+                "variableName": "abcd_ssphy01",
+                "isAbout": "abcd_ssphy01",
+                "prefLabel": {
+                    "en": "abcd_ssphy01"
+                }
+            },
+            {
+                "variableName": "abcd_tbi01",
+                "isAbout": "abcd_tbi01",
+                "prefLabel": {
+                    "en": "abcd_tbi01"
+                }
+            },
+            {
+                "variableName": "abcd_ssbpmtf01",
+                "isAbout": "abcd_ssbpmtf01",
+                "prefLabel": {
+                    "en": "abcd_ssbpmtf01"
+                }
+            },
+            {
+                "variableName": "abcd_devhxss01",
+                "isAbout": "abcd_devhxss01",
+                "prefLabel": {
+                    "en": "abcd_devhxss01"
+                }
+            },
+            {
+                "variableName": "abcd_medhxss01",
+                "isAbout": "abcd_medhxss01",
+                "prefLabel": {
+                    "en": "abcd_medhxss01"
+                }
+            },
+            {
+                "variableName": "abcd_spacss01",
+                "isAbout": "abcd_spacss01",
+                "prefLabel": {
+                    "en": "abcd_spacss01"
+                }
+            },
+            {
+                "variableName": "abcd_suss01",
+                "isAbout": "abcd_suss01",
+                "prefLabel": {
+                    "en": "abcd_suss01"
+                }
+            },
+            {
+                "variableName": "abcddemo01",
+                "isAbout": "abcddemo01",
+                "prefLabel": {
+                    "en": "abcddemo01"
+                }
+            },
+            {
+                "variableName": "abcd_midabwdp01",
+                "isAbout": "abcd_midabwdp01",
+                "prefLabel": {
+                    "en": "abcd_midabwdp01"
+                }
+            },
+            {
+                "variableName": "abcd_midabwdp201",
+                "isAbout": "abcd_midabwdp201",
+                "prefLabel": {
+                    "en": "abcd_midabwdp201"
+                }
+            },
+            {
+                "variableName": "abcd_midabwdp202",
+                "isAbout": "abcd_midabwdp202",
+                "prefLabel": {
+                    "en": "abcd_midabwdp202"
+                }
+            },
+            {
+                "variableName": "midaparc03",
+                "isAbout": "midaparc03",
+                "prefLabel": {
+                    "en": "midaparc03"
+                }
+            },
+            {
+                "variableName": "midaparc02",
+                "isAbout": "midaparc02",
+                "prefLabel": {
+                    "en": "midaparc02"
+                }
+            },
+            {
+                "variableName": "midaparcp202",
+                "isAbout": "midaparcp202",
+                "prefLabel": {
+                    "en": "midaparcp202"
+                }
+            },
+            {
+                "variableName": "midaparcp203",
+                "isAbout": "midaparcp203",
+                "prefLabel": {
+                    "en": "midaparcp203"
+                }
+            },
+            {
+                "variableName": "abcd_midasemdp101",
+                "isAbout": "abcd_midasemdp101",
+                "prefLabel": {
+                    "en": "abcd_midasemdp101"
+                }
+            },
+            {
+                "variableName": "abcd_midasemdp201",
+                "isAbout": "abcd_midasemdp201",
+                "prefLabel": {
+                    "en": "abcd_midasemdp201"
+                }
+            },
+            {
+                "variableName": "abcd_midasemdp202",
+                "isAbout": "abcd_midasemdp202",
+                "prefLabel": {
+                    "en": "abcd_midasemdp202"
+                }
+            },
+            {
+                "variableName": "abcd_midasemp102",
+                "isAbout": "abcd_midasemp102",
+                "prefLabel": {
+                    "en": "abcd_midasemp102"
+                }
+            },
+            {
+                "variableName": "abcd_midasemp101",
+                "isAbout": "abcd_midasemp101",
+                "prefLabel": {
+                    "en": "abcd_midasemp101"
+                }
+            },
+            {
+                "variableName": "abcd_midasemp202",
+                "isAbout": "abcd_midasemp202",
+                "prefLabel": {
+                    "en": "abcd_midasemp202"
+                }
+            },
+            {
+                "variableName": "abcd_midasemp201",
+                "isAbout": "abcd_midasemp201",
+                "prefLabel": {
+                    "en": "abcd_midasemp201"
+                }
+            },
+            {
+                "variableName": "abcd_mid02",
+                "isAbout": "abcd_mid02",
+                "prefLabel": {
+                    "en": "abcd_mid02"
+                }
+            },
+            {
+                "variableName": "abcd_midr1bwdp101",
+                "isAbout": "abcd_midr1bwdp101",
+                "prefLabel": {
+                    "en": "abcd_midr1bwdp101"
+                }
+            },
+            {
+                "variableName": "abcd_midr1bwdp201",
+                "isAbout": "abcd_midr1bwdp201",
+                "prefLabel": {
+                    "en": "abcd_midr1bwdp201"
+                }
+            },
+            {
+                "variableName": "abcd_midr1bwdp202",
+                "isAbout": "abcd_midr1bwdp202",
+                "prefLabel": {
+                    "en": "abcd_midr1bwdp202"
+                }
+            },
+            {
+                "variableName": "abcd_midr1bwp102",
+                "isAbout": "abcd_midr1bwp102",
+                "prefLabel": {
+                    "en": "abcd_midr1bwp102"
+                }
+            },
+            {
+                "variableName": "abcd_midr1bwp101",
+                "isAbout": "abcd_midr1bwp101",
+                "prefLabel": {
+                    "en": "abcd_midr1bwp101"
+                }
+            },
+            {
+                "variableName": "abcd_midr1bwp201",
+                "isAbout": "abcd_midr1bwp201",
+                "prefLabel": {
+                    "en": "abcd_midr1bwp201"
+                }
+            },
+            {
+                "variableName": "abcd_midr1bwp202",
+                "isAbout": "abcd_midr1bwp202",
+                "prefLabel": {
+                    "en": "abcd_midr1bwp202"
+                }
+            },
+            {
+                "variableName": "abcd_tmidr1semdp101",
+                "isAbout": "abcd_tmidr1semdp101",
+                "prefLabel": {
+                    "en": "abcd_tmidr1semdp101"
+                }
+            },
+            {
+                "variableName": "abcd_tmidr1semdp201",
+                "isAbout": "abcd_tmidr1semdp201",
+                "prefLabel": {
+                    "en": "abcd_tmidr1semdp201"
+                }
+            },
+            {
+                "variableName": "abcd_tmidr1semdp202",
+                "isAbout": "abcd_tmidr1semdp202",
+                "prefLabel": {
+                    "en": "abcd_tmidr1semdp202"
+                }
+            },
+            {
+                "variableName": "abcd_midsemp101",
+                "isAbout": "abcd_midsemp101",
+                "prefLabel": {
+                    "en": "abcd_midsemp101"
+                }
+            },
+            {
+                "variableName": "abcd_midsemp102",
+                "isAbout": "abcd_midsemp102",
+                "prefLabel": {
+                    "en": "abcd_midsemp102"
+                }
+            },
+            {
+                "variableName": "abcd_midsemp201",
+                "isAbout": "abcd_midsemp201",
+                "prefLabel": {
+                    "en": "abcd_midsemp201"
+                }
+            },
+            {
+                "variableName": "abcd_midsemp202",
+                "isAbout": "abcd_midsemp202",
+                "prefLabel": {
+                    "en": "abcd_midsemp202"
+                }
+            },
+            {
+                "variableName": "abcd_tr2bwdp01",
+                "isAbout": "abcd_tr2bwdp01",
+                "prefLabel": {
+                    "en": "abcd_tr2bwdp01"
+                }
+            },
+            {
+                "variableName": "abcd_tr2bwdp201",
+                "isAbout": "abcd_tr2bwdp201",
+                "prefLabel": {
+                    "en": "abcd_tr2bwdp201"
+                }
+            },
+            {
+                "variableName": "abcd_tr2bwdp202",
+                "isAbout": "abcd_tr2bwdp202",
+                "prefLabel": {
+                    "en": "abcd_tr2bwdp202"
+                }
+            },
+            {
+                "variableName": "midr2bwp102",
+                "isAbout": "midr2bwp102",
+                "prefLabel": {
+                    "en": "midr2bwp102"
+                }
+            },
+            {
+                "variableName": "midr2bwp101",
+                "isAbout": "midr2bwp101",
+                "prefLabel": {
+                    "en": "midr2bwp101"
+                }
+            },
+            {
+                "variableName": "midr2bwp202",
+                "isAbout": "midr2bwp202",
+                "prefLabel": {
+                    "en": "midr2bwp202"
+                }
+            },
+            {
+                "variableName": "midr2bwp201",
+                "isAbout": "midr2bwp201",
+                "prefLabel": {
+                    "en": "midr2bwp201"
+                }
+            },
+            {
+                "variableName": "abcd_tr2semdp101",
+                "isAbout": "abcd_tr2semdp101",
+                "prefLabel": {
+                    "en": "abcd_tr2semdp101"
+                }
+            },
+            {
+                "variableName": "abcd_tr2semdp201",
+                "isAbout": "abcd_tr2semdp201",
+                "prefLabel": {
+                    "en": "abcd_tr2semdp201"
+                }
+            },
+            {
+                "variableName": "abcd_tr2semdp202",
+                "isAbout": "abcd_tr2semdp202",
+                "prefLabel": {
+                    "en": "abcd_tr2semdp202"
+                }
+            },
+            {
+                "variableName": "abcd_midr2semp102",
+                "isAbout": "abcd_midr2semp102",
+                "prefLabel": {
+                    "en": "abcd_midr2semp102"
+                }
+            },
+            {
+                "variableName": "abcd_midr2semp101",
+                "isAbout": "abcd_midr2semp101",
+                "prefLabel": {
+                    "en": "abcd_midr2semp101"
+                }
+            },
+            {
+                "variableName": "abcd_midr2semp202",
+                "isAbout": "abcd_midr2semp202",
+                "prefLabel": {
+                    "en": "abcd_midr2semp202"
+                }
+            },
+            {
+                "variableName": "abcd_midr2semp201",
+                "isAbout": "abcd_midr2semp201",
+                "prefLabel": {
+                    "en": "abcd_midr2semp201"
+                }
+            },
+            {
+                "variableName": "mribrec02",
+                "isAbout": "mribrec02",
+                "prefLabel": {
+                    "en": "mribrec02"
+                }
+            },
+            {
+                "variableName": "mrisst02",
+                "isAbout": "mrisst02",
+                "prefLabel": {
+                    "en": "mrisst02"
+                }
+            },
+            {
+                "variableName": "abcd_tfsstabwdp101",
+                "isAbout": "abcd_tfsstabwdp101",
+                "prefLabel": {
+                    "en": "abcd_tfsstabwdp101"
+                }
+            },
+            {
+                "variableName": "abcd_tfsstabwdp201",
+                "isAbout": "abcd_tfsstabwdp201",
+                "prefLabel": {
+                    "en": "abcd_tfsstabwdp201"
+                }
+            },
+            {
+                "variableName": "abcd_tfsstasemdp101",
+                "isAbout": "abcd_tfsstasemdp101",
+                "prefLabel": {
+                    "en": "abcd_tfsstasemdp101"
+                }
+            },
+            {
+                "variableName": "abcd_tfsstasemdp201",
+                "isAbout": "abcd_tfsstasemdp201",
+                "prefLabel": {
+                    "en": "abcd_tfsstasemdp201"
+                }
+            },
+            {
+                "variableName": "mrisstsem01",
+                "isAbout": "mrisstsem01",
+                "prefLabel": {
+                    "en": "mrisstsem01"
+                }
+            },
+            {
+                "variableName": "abcd_sst02",
+                "isAbout": "abcd_sst02",
+                "prefLabel": {
+                    "en": "abcd_sst02"
+                }
+            },
+            {
+                "variableName": "mrisstr1bw01",
+                "isAbout": "mrisstr1bw01",
+                "prefLabel": {
+                    "en": "mrisstr1bw01"
+                }
+            },
+            {
+                "variableName": "abcd_tfsstr1bwdp101",
+                "isAbout": "abcd_tfsstr1bwdp101",
+                "prefLabel": {
+                    "en": "abcd_tfsstr1bwdp101"
+                }
+            },
+            {
+                "variableName": "abcd_tfsstr1bwdp201",
+                "isAbout": "abcd_tfsstr1bwdp201",
+                "prefLabel": {
+                    "en": "abcd_tfsstr1bwdp201"
+                }
+            },
+            {
+                "variableName": "abcd_tfsstr1semdp101",
+                "isAbout": "abcd_tfsstr1semdp101",
+                "prefLabel": {
+                    "en": "abcd_tfsstr1semdp101"
+                }
+            },
+            {
+                "variableName": "abcd_tfsstr1semdp201",
+                "isAbout": "abcd_tfsstr1semdp201",
+                "prefLabel": {
+                    "en": "abcd_tfsstr1semdp201"
+                }
+            },
+            {
+                "variableName": "mrisstr1sem01",
+                "isAbout": "mrisstr1sem01",
+                "prefLabel": {
+                    "en": "mrisstr1sem01"
+                }
+            },
+            {
+                "variableName": "mrisstr2bw01",
+                "isAbout": "mrisstr2bw01",
+                "prefLabel": {
+                    "en": "mrisstr2bw01"
+                }
+            },
+            {
+                "variableName": "abcd_tfsstr2bwdp101",
+                "isAbout": "abcd_tfsstr2bwdp101",
+                "prefLabel": {
+                    "en": "abcd_tfsstr2bwdp101"
+                }
+            },
+            {
+                "variableName": "abcd_tfsstr2bwdp201",
+                "isAbout": "abcd_tfsstr2bwdp201",
+                "prefLabel": {
+                    "en": "abcd_tfsstr2bwdp201"
+                }
+            },
+            {
+                "variableName": "abcd_tfsstr2semdp101",
+                "isAbout": "abcd_tfsstr2semdp101",
+                "prefLabel": {
+                    "en": "abcd_tfsstr2semdp101"
+                }
+            },
+            {
+                "variableName": "abcd_tfsstr2semdp201",
+                "isAbout": "abcd_tfsstr2semdp201",
+                "prefLabel": {
+                    "en": "abcd_tfsstr2semdp201"
+                }
+            },
+            {
+                "variableName": "mrisstr2bwsem01",
+                "isAbout": "mrisstr2bwsem01",
+                "prefLabel": {
+                    "en": "mrisstr2bwsem01"
+                }
+            },
+            {
+                "variableName": "nback_bwroi02",
+                "isAbout": "nback_bwroi02",
+                "prefLabel": {
+                    "en": "nback_bwroi02"
+                }
+            },
+            {
+                "variableName": "abcd_tfabwdp101",
+                "isAbout": "abcd_tfabwdp101",
+                "prefLabel": {
+                    "en": "abcd_tfabwdp101"
+                }
+            },
+            {
+                "variableName": "abcd_tfabwdp201",
+                "isAbout": "abcd_tfabwdp201",
+                "prefLabel": {
+                    "en": "abcd_tfabwdp201"
+                }
+            },
+            {
+                "variableName": "abcd_tnbasemdp101",
+                "isAbout": "abcd_tnbasemdp101",
+                "prefLabel": {
+                    "en": "abcd_tnbasemdp101"
+                }
+            },
+            {
+                "variableName": "abcd_tnbasemdp201",
+                "isAbout": "abcd_tnbasemdp201",
+                "prefLabel": {
+                    "en": "abcd_tnbasemdp201"
+                }
+            },
+            {
+                "variableName": "nbackallsem01",
+                "isAbout": "nbackallsem01",
+                "prefLabel": {
+                    "en": "nbackallsem01"
+                }
+            },
+            {
+                "variableName": "abcd_mrinback02",
+                "isAbout": "abcd_mrinback02",
+                "prefLabel": {
+                    "en": "abcd_mrinback02"
+                }
+            },
+            {
+                "variableName": "nbackr101",
+                "isAbout": "nbackr101",
+                "prefLabel": {
+                    "en": "nbackr101"
+                }
+            },
+            {
+                "variableName": "abcd_tfncr1bwdp101",
+                "isAbout": "abcd_tfncr1bwdp101",
+                "prefLabel": {
+                    "en": "abcd_tfncr1bwdp101"
+                }
+            },
+            {
+                "variableName": "abcd_tfncr1bwdp201",
+                "isAbout": "abcd_tfncr1bwdp201",
+                "prefLabel": {
+                    "en": "abcd_tfncr1bwdp201"
+                }
+            },
+            {
+                "variableName": "abcd_tfnbr1semdp101",
+                "isAbout": "abcd_tfnbr1semdp101",
+                "prefLabel": {
+                    "en": "abcd_tfnbr1semdp101"
+                }
+            },
+            {
+                "variableName": "abcd_tfnbr1semdp201",
+                "isAbout": "abcd_tfnbr1semdp201",
+                "prefLabel": {
+                    "en": "abcd_tfnbr1semdp201"
+                }
+            },
+            {
+                "variableName": "nbackr1sem01",
+                "isAbout": "nbackr1sem01",
+                "prefLabel": {
+                    "en": "nbackr1sem01"
+                }
+            },
+            {
+                "variableName": "nbackr201",
+                "isAbout": "nbackr201",
+                "prefLabel": {
+                    "en": "nbackr201"
+                }
+            },
+            {
+                "variableName": "abcd_tfnbr2bwdp101",
+                "isAbout": "abcd_tfnbr2bwdp101",
+                "prefLabel": {
+                    "en": "abcd_tfnbr2bwdp101"
+                }
+            },
+            {
+                "variableName": "abcd_tfnbr2bwdp201",
+                "isAbout": "abcd_tfnbr2bwdp201",
+                "prefLabel": {
+                    "en": "abcd_tfnbr2bwdp201"
+                }
+            },
+            {
+                "variableName": "abcd_tfnbr2dp101",
+                "isAbout": "abcd_tfnbr2dp101",
+                "prefLabel": {
+                    "en": "abcd_tfnbr2dp101"
+                }
+            },
+            {
+                "variableName": "abcd_tfnbr2dp201",
+                "isAbout": "abcd_tfnbr2dp201",
+                "prefLabel": {
+                    "en": "abcd_tfnbr2dp201"
+                }
+            },
+            {
+                "variableName": "nbackr2sem01",
+                "isAbout": "nbackr2sem01",
+                "prefLabel": {
+                    "en": "nbackr2sem01"
+                }
+            },
+            {
+                "variableName": "abcd_tlfb01",
+                "isAbout": "abcd_tlfb01",
+                "prefLabel": {
+                    "en": "abcd_tlfb01"
+                }
+            },
+            {
+                "variableName": "abcd_y10ids01",
+                "isAbout": "abcd_y10ids01",
+                "prefLabel": {
+                    "en": "abcd_y10ids01"
+                }
+            },
+            {
+                "variableName": "abcd_y7mi01",
+                "isAbout": "abcd_y7mi01",
+                "prefLabel": {
+                    "en": "abcd_y7mi01"
+                }
+            },
+            {
+                "variableName": "yacc01",
+                "isAbout": "yacc01",
+                "prefLabel": {
+                    "en": "yacc01"
+                }
+            },
+            {
+                "variableName": "abcd_yam01",
+                "isAbout": "abcd_yam01",
+                "prefLabel": {
+                    "en": "abcd_yam01"
+                }
+            },
+            {
+                "variableName": "yalcs01",
+                "isAbout": "yalcs01",
+                "prefLabel": {
+                    "en": "yalcs01"
+                }
+            },
+            {
+                "variableName": "abcd_ant01",
+                "isAbout": "abcd_ant01",
+                "prefLabel": {
+                    "en": "abcd_ant01"
+                }
+            },
+            {
+                "variableName": "abcd_bisbas01",
+                "isAbout": "abcd_bisbas01",
+                "prefLabel": {
+                    "en": "abcd_bisbas01"
+                }
+            },
+            {
+                "variableName": "abcd_bpm01",
+                "isAbout": "abcd_bpm01",
+                "prefLabel": {
+                    "en": "abcd_bpm01"
+                }
+            },
+            {
+                "variableName": "abcd_yddss01",
+                "isAbout": "abcd_yddss01",
+                "prefLabel": {
+                    "en": "abcd_yddss01"
+                }
+            },
+            {
+                "variableName": "abcd_ksad501",
+                "isAbout": "abcd_ksad501",
+                "prefLabel": {
+                    "en": "abcd_ksad501"
+                }
+            },
+            {
+                "variableName": "abcd_yksad01",
+                "isAbout": "abcd_yksad01",
+                "prefLabel": {
+                    "en": "abcd_yksad01"
+                }
+            },
+            {
+                "variableName": "abcd_ydmes01",
+                "isAbout": "abcd_ydmes01",
+                "prefLabel": {
+                    "en": "abcd_ydmes01"
+                }
+            },
+            {
+                "variableName": "abcd_ehis01",
+                "isAbout": "abcd_ehis01",
+                "prefLabel": {
+                    "en": "abcd_ehis01"
+                }
+            },
+            {
+                "variableName": "abcd_yest01",
+                "isAbout": "abcd_yest01",
+                "prefLabel": {
+                    "en": "abcd_yest01"
+                }
+            },
+            {
+                "variableName": "abcd_fes01",
+                "isAbout": "abcd_fes01",
+                "prefLabel": {
+                    "en": "abcd_fes01"
+                }
+            },
+            {
+                "variableName": "abcd_yfb01",
+                "isAbout": "abcd_yfb01",
+                "prefLabel": {
+                    "en": "abcd_yfb01"
+                }
+            },
+            {
+                "variableName": "abcd_yff01",
+                "isAbout": "abcd_yff01",
+                "prefLabel": {
+                    "en": "abcd_yff01"
+                }
+            },
+            {
+                "variableName": "abcd_ygi01",
+                "isAbout": "abcd_ygi01",
+                "prefLabel": {
+                    "en": "abcd_ygi01"
+                }
+            },
+            {
+                "variableName": "biocf01",
+                "isAbout": "biocf01",
+                "prefLabel": {
+                    "en": "biocf01"
+                }
+            },
+            {
+                "variableName": "abcd_ygs01",
+                "isAbout": "abcd_ygs01",
+                "prefLabel": {
+                    "en": "abcd_ygs01"
+                }
+            },
+            {
+                "variableName": "abcd_yhr01",
+                "isAbout": "abcd_yhr01",
+                "prefLabel": {
+                    "en": "abcd_yhr01"
+                }
+            },
+            {
+                "variableName": "abcd_hers01",
+                "isAbout": "abcd_hers01",
+                "prefLabel": {
+                    "en": "abcd_hers01"
+                }
+            },
+            {
+                "variableName": "abcd_yle01",
+                "isAbout": "abcd_yle01",
+                "prefLabel": {
+                    "en": "abcd_yle01"
+                }
+            },
+            {
+                "variableName": "abcd_ymidm01",
+                "isAbout": "abcd_ymidm01",
+                "prefLabel": {
+                    "en": "abcd_ymidm01"
+                }
+            },
+            {
+                "variableName": "abcd_ymypisu01",
+                "isAbout": "abcd_ymypisu01",
+                "prefLabel": {
+                    "en": "abcd_ymypisu01"
+                }
+            },
+            {
+                "variableName": "abcd_monet01",
+                "isAbout": "abcd_monet01",
+                "prefLabel": {
+                    "en": "abcd_monet01"
+                }
+            },
+            {
+                "variableName": "abcd_tbss01",
+                "isAbout": "abcd_tbss01",
+                "prefLabel": {
+                    "en": "abcd_tbss01"
+                }
+            },
+            {
+                "variableName": "abcd_ytbpai01",
+                "isAbout": "abcd_ytbpai01",
+                "prefLabel": {
+                    "en": "abcd_ytbpai01"
+                }
+            },
+            {
+                "variableName": "abcd_nsc01",
+                "isAbout": "abcd_nsc01",
+                "prefLabel": {
+                    "en": "abcd_nsc01"
+                }
+            },
+            {
+                "variableName": "abcd_yn01",
+                "isAbout": "abcd_yn01",
+                "prefLabel": {
+                    "en": "abcd_yn01"
+                }
+            },
+            {
+                "variableName": "abcd_ynm01",
+                "isAbout": "abcd_ynm01",
+                "prefLabel": {
+                    "en": "abcd_ynm01"
+                }
+            },
+            {
+                "variableName": "abcd_plus01",
+                "isAbout": "abcd_plus01",
+                "prefLabel": {
+                    "en": "abcd_plus01"
+                }
+            },
+            {
+                "variableName": "abcd_ypsq201",
+                "isAbout": "abcd_ypsq201",
+                "prefLabel": {
+                    "en": "abcd_ypsq201"
+                }
+            },
+            {
+                "variableName": "abcd_ypsq101",
+                "isAbout": "abcd_ypsq101",
+                "prefLabel": {
+                    "en": "abcd_ypsq101"
+                }
+            },
+            {
+                "variableName": "abcd_ypre101",
+                "isAbout": "abcd_ypre101",
+                "prefLabel": {
+                    "en": "abcd_ypre101"
+                }
+            },
+            {
+                "variableName": "abcd_ypre201",
+                "isAbout": "abcd_ypre201",
+                "prefLabel": {
+                    "en": "abcd_ypre201"
+                }
+            },
+            {
+                "variableName": "abcd_ypdms01",
+                "isAbout": "abcd_ypdms01",
+                "prefLabel": {
+                    "en": "abcd_ypdms01"
+                }
+            },
+            {
+                "variableName": "abcd_prepost01",
+                "isAbout": "abcd_prepost01",
+                "prefLabel": {
+                    "en": "abcd_prepost01"
+                }
+            },
+            {
+                "variableName": "abcd_stq01",
+                "isAbout": "abcd_stq01",
+                "prefLabel": {
+                    "en": "abcd_stq01"
+                }
+            },
+            {
+                "variableName": "abcd_svs01",
+                "isAbout": "abcd_svs01",
+                "prefLabel": {
+                    "en": "abcd_svs01"
+                }
+            },
+            {
+                "variableName": "abcd_ysua01",
+                "isAbout": "abcd_ysua01",
+                "prefLabel": {
+                    "en": "abcd_ysua01"
+                }
+            },
+            {
+                "variableName": "abcd_ysu02",
+                "isAbout": "abcd_ysu02",
+                "prefLabel": {
+                    "en": "abcd_ysu02"
+                }
+            },
+            {
+                "variableName": "abcd_ysuip01",
+                "isAbout": "abcd_ysuip01",
+                "prefLabel": {
+                    "en": "abcd_ysuip01"
+                }
+            },
+            {
+                "variableName": "abcd_yssbpm01",
+                "isAbout": "abcd_yssbpm01",
+                "prefLabel": {
+                    "en": "abcd_yssbpm01"
+                }
+            },
+            {
+                "variableName": "abcd_ytt01",
+                "isAbout": "abcd_ytt01",
+                "prefLabel": {
+                    "en": "abcd_ytt01"
+                }
+            },
+            {
+                "variableName": "abcd_ywpss01",
+                "isAbout": "abcd_ywpss01",
+                "prefLabel": {
+                    "en": "abcd_ywpss01"
+                }
+            },
+            {
+                "variableName": "abcd_yrb01",
+                "isAbout": "abcd_yrb01",
+                "prefLabel": {
+                    "en": "abcd_yrb01"
+                }
+            },
+            {
+                "variableName": "abcd_ddtidp101",
+                "isAbout": "abcd_ddtidp101",
+                "prefLabel": {
+                    "en": "abcd_ddtidp101"
+                }
+            },
+            {
+                "variableName": "abcd_ddtidp201",
+                "isAbout": "abcd_ddtidp201",
+                "prefLabel": {
+                    "en": "abcd_ddtidp201"
+                }
+            },
+            {
+                "variableName": "abcd_ddtifp101",
+                "isAbout": "abcd_ddtifp101",
+                "prefLabel": {
+                    "en": "abcd_ddtifp101"
+                }
+            },
+            {
+                "variableName": "abcd_ddtifp201",
+                "isAbout": "abcd_ddtifp201",
+                "prefLabel": {
+                    "en": "abcd_ddtifp201"
+                }
+            },
+            {
+                "variableName": "abcd_dmdtifp101",
+                "isAbout": "abcd_dmdtifp101",
+                "prefLabel": {
+                    "en": "abcd_dmdtifp101"
+                }
+            },
+            {
+                "variableName": "abcd_dmdtifp201",
+                "isAbout": "abcd_dmdtifp201",
+                "prefLabel": {
+                    "en": "abcd_dmdtifp201"
+                }
+            },
+            {
+                "variableName": "abcd_dmdtifp202",
+                "isAbout": "abcd_dmdtifp202",
+                "prefLabel": {
+                    "en": "abcd_dmdtifp202"
+                }
+            },
+            {
+                "variableName": "abcd_dti_p101",
+                "isAbout": "abcd_dti_p101",
+                "prefLabel": {
+                    "en": "abcd_dti_p101"
+                }
+            },
+            {
+                "variableName": "abcd_dti_p201",
+                "isAbout": "abcd_dti_p201",
+                "prefLabel": {
+                    "en": "abcd_dti_p201"
+                }
+            },
+            {
+                "variableName": "dmriqc01",
+                "isAbout": "dmriqc01",
+                "prefLabel": {
+                    "en": "dmriqc01"
+                }
+            },
+            {
+                "variableName": "abcd_drsidp101",
+                "isAbout": "abcd_drsidp101",
+                "prefLabel": {
+                    "en": "abcd_drsidp101"
+                }
+            },
+            {
+                "variableName": "abcd_drsidp201",
+                "isAbout": "abcd_drsidp201",
+                "prefLabel": {
+                    "en": "abcd_drsidp201"
+                }
+            },
+            {
+                "variableName": "abcd_drsidp301",
+                "isAbout": "abcd_drsidp301",
+                "prefLabel": {
+                    "en": "abcd_drsidp301"
+                }
+            },
+            {
+                "variableName": "mri_rsi_p102",
+                "isAbout": "mri_rsi_p102",
+                "prefLabel": {
+                    "en": "mri_rsi_p102"
+                }
+            },
+            {
+                "variableName": "mri_rsi_p202",
+                "isAbout": "mri_rsi_p202",
+                "prefLabel": {
+                    "en": "mri_rsi_p202"
+                }
+            },
+            {
+                "variableName": "abcd_mrirsfd01",
+                "isAbout": "abcd_mrirsfd01",
+                "prefLabel": {
+                    "en": "abcd_mrirsfd01"
+                }
+            },
+            {
+                "variableName": "abcd_betnet02",
+                "isAbout": "abcd_betnet02",
+                "prefLabel": {
+                    "en": "abcd_betnet02"
+                }
+            },
+            {
+                "variableName": "mrirscor02",
+                "isAbout": "mrirscor02",
+                "prefLabel": {
+                    "en": "mrirscor02"
+                }
+            },
+            {
+                "variableName": "abcd_mrirstv02",
+                "isAbout": "abcd_mrirstv02",
+                "prefLabel": {
+                    "en": "abcd_mrirstv02"
+                }
+            },
+            {
+                "variableName": "abcd_mrisdp101",
+                "isAbout": "abcd_mrisdp101",
+                "prefLabel": {
+                    "en": "abcd_mrisdp101"
+                }
+            },
+            {
+                "variableName": "abcd_mrisdp201",
+                "isAbout": "abcd_mrisdp201",
+                "prefLabel": {
+                    "en": "abcd_mrisdp201"
+                }
+            },
+            {
+                "variableName": "abcd_smrip101",
+                "isAbout": "abcd_smrip101",
+                "prefLabel": {
+                    "en": "abcd_smrip101"
+                }
+            },
+            {
+                "variableName": "abcd_smrip201",
+                "isAbout": "abcd_smrip201",
+                "prefLabel": {
+                    "en": "abcd_smrip201"
+                }
+            },
+            {
+                "variableName": "freesqc01",
+                "isAbout": "freesqc01",
+                "prefLabel": {
+                    "en": "freesqc01"
+                }
+            },
+            {
+                "variableName": "genomics_sample03",
+                "isAbout": "genomics_sample03",
+                "prefLabel": {
+                    "en": "genomics_sample03"
+                }
+            },
+            {
+                "variableName": "abcd_mrfindings01",
+                "isAbout": "abcd_mrfindings01",
+                "prefLabel": {
+                    "en": "abcd_mrfindings01"
+                }
+            },
+            {
+                "variableName": "mriqcrp102",
+                "isAbout": "mriqcrp102",
+                "prefLabel": {
+                    "en": "mriqcrp102"
+                }
+            },
+            {
+                "variableName": "mriqcrp202",
+                "isAbout": "mriqcrp202",
+                "prefLabel": {
+                    "en": "mriqcrp202"
+                }
+            },
+            {
+                "variableName": "mriqcrp302",
+                "isAbout": "mriqcrp302",
+                "prefLabel": {
+                    "en": "mriqcrp302"
+                }
+            },
+            {
+                "variableName": "psb01",
+                "isAbout": "psb01",
+                "prefLabel": {
+                    "en": "psb01"
+                }
+            },
+            {
+                "variableName": "abcd_rhds01",
+                "isAbout": "abcd_rhds01",
+                "prefLabel": {
+                    "en": "abcd_rhds01"
+                }
+            },
+            {
+                "variableName": "abcd_mhp02",
+                "isAbout": "abcd_mhp02",
+                "prefLabel": {
+                    "en": "abcd_mhp02"
+                }
+            },
+            {
+                "variableName": "abcd_mhy02",
+                "isAbout": "abcd_mhy02",
+                "prefLabel": {
+                    "en": "abcd_mhy02"
+                }
+            },
+            {
+                "variableName": "abcd_upps01",
+                "isAbout": "abcd_upps01",
+                "prefLabel": {
+                    "en": "abcd_upps01"
+                }
+            },
+            {
+                "variableName": "abcd_psb01",
+                "isAbout": "abcd_psb01",
+                "prefLabel": {
+                    "en": "abcd_psb01"
+                }
+            },
+            {
+                "variableName": "dhx01",
+                "isAbout": "dhx01",
+                "prefLabel": {
+                    "en": "dhx01"
+                }
+            },
+            {
+                "variableName": "fhxp201",
+                "isAbout": "fhxp201",
+                "prefLabel": {
+                    "en": "fhxp201"
+                }
+            },
+            {
+                "variableName": "abcd_fastqc01",
+                "isAbout": "abcd_fastqc01",
+                "prefLabel": {
+                    "en": "abcd_fastqc01"
+                }
+            },
+            {
+                "variableName": "pps01",
+                "isAbout": "pps01",
+                "prefLabel": {
+                    "en": "pps01"
+                }
+            },
+            {
+                "variableName": "sph01",
+                "isAbout": "sph01",
+                "prefLabel": {
+                    "en": "sph01"
+                }
+            },
+            {
+                "variableName": "srpf01",
+                "isAbout": "srpf01",
+                "prefLabel": {
+                    "en": "srpf01"
+                }
+            },
+            {
+                "variableName": "aurora01",
+                "isAbout": "aurora01",
+                "prefLabel": {
+                    "en": "aurora01"
+                }
+            },
+            {
+                "variableName": "fmriresults01",
+                "isAbout": "fmriresults01",
+                "prefLabel": {
+                    "en": "fmriresults01"
+                }
+            },
+            {
+                "variableName": "image03",
+                "isAbout": "image03",
+                "prefLabel": {
+                    "en": "image03"
+                }
+            }
+        ]
+    }
+}
