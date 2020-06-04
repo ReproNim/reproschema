@@ -1,0 +1,55 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "accult_q4_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "accult_q4_p",
+    "altLabel": "accult_phenx_q4_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "What language do you speak with most of your friends? ¿En qué idioma habla con la mayoría de sus amistades?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "(Other language) all the time (Otro idioma) todo el tiempo",
+                "value": 1
+            },
+            {
+                "name": "(Other language) most of the time (Otro idioma) la mayor parte del tiempo",
+                "value": 2
+            },
+            {
+                "name": "(Other language) and English equally (Otro idioma) e inglés igualmente",
+                "value": 3
+            },
+            {
+                "name": "English most of the time Inglés la mayor parte del tiempo",
+                "value": 4
+            },
+            {
+                "name": "English all the time Inglés todo el tiempo",
+                "value": 5
+            },
+            {
+                "name": "Refused Niego contestar",
+                "value": 777
+            },
+            {
+                "name": "Don't Know No se",
+                "value": 999
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = (Other language) all the time (Otro idioma) todo el tiempo; 2 = (Other language) most of the time (Otro idioma) la mayor parte del tiempo; 3 = (Other language) and English equally (Otro idioma) e inglés igualmente; 4 = English most of the time Inglés la mayor parte del tiempo; 5 = English all the time Inglés todo el tiempo; 777 = Refused Niego contestar; 999 = Don't Know No se"
+        }
+    ]
+}

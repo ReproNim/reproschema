@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "tlfb_rx_misuse_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "tlfb_rx_misuse_l",
+    "altLabel": "su_tlfb_rx_misuse_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Taking pills, liquids, or medications, such as Ritalin, Adderall, Xanax, Ativan, Oxycontin, Vicodin, Fentanyl, or Cough Syrup, to get high or in a way that your doctor or parents did not direct you to use them?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "No",
+                "value": 0
+            },
+            {
+                "name": "Yes / tlfb_rx_misuse_c_l   == \"\"0\"\"",
+                "value": 1
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = No; 1 = Yes / tlfb_rx_misuse_c_l   == \"\"0\"\""
+        }
+    ]
+}

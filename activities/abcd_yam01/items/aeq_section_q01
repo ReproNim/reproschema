@@ -1,0 +1,47 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "aeq_section_q01",
+    "@type": "reproschema:Field",
+    "prefLabel": "aeq_section_q01",
+    "altLabel": "su_aeq_01",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Alcohol helps a person relax, feel happy, feel less tense, and can keep a person's mind off of mistakes at school or work.",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Disagree Strongly",
+                "value": 1
+            },
+            {
+                "name": "Disagree Somewhat",
+                "value": 2
+            },
+            {
+                "name": "Uncertain",
+                "value": 3
+            },
+            {
+                "name": "Agree Somewhat",
+                "value": 4
+            },
+            {
+                "name": "Agree Strongly / tlfb_alc_l   == '1' ",
+                "value": 5
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Disagree Strongly; 2 = Disagree Somewhat; 3 = Uncertain; 4 = Agree Somewhat; 5 = Agree Strongly / tlfb_alc_l   == '1' ||  tlfb_alc_c_l   == '1'"
+        }
+    ]
+}

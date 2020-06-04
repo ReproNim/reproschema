@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "ple_new_job_fu_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "ple_new_job_fu_p",
+    "altLabel": "life_events_phenx_new_job_fu_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Was this a good or bad experience for your child? ¿Esto fue una buena o mala experiencia para su niño(a)?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Mostly good Principalmente bueno",
+                "value": 1
+            },
+            {
+                "name": "Mostly bad Principalmente malo",
+                "value": 2
+            },
+            {
+                "name": "Not applicable No aplicable",
+                "value": 6
+            },
+            {
+                "name": "Don't know No sé",
+                "value": 7
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Mostly good Principalmente bueno; 2 = Mostly bad Principalmente malo; 6 = Not applicable No aplicable; 7 = Don't know No sé"
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "isip_5_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "isip_5_l",
+    "altLabel": "su_isip_5_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Did the person the drink belonged to offer you a sip or did you take it when they weren't looking?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "They offered me a sip",
+                "value": 1
+            },
+            {
+                "name": "I intentionally took it when they weren't looking",
+                "value": 2
+            },
+            {
+                "name": "I accidentally took it when they weren't looking /( isip_1b_yn_l   == '1' && ( isip_1d_c_l   == '0' ",
+                "value": 3
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = They offered me a sip; 2 = I intentionally took it when they weren't looking; 3 = I accidentally took it when they weren't looking /( isip_1b_yn_l   == '1' && ( isip_1d_c_l   == '0' ||   isip_2_c_l   == '0' ||  isip_3_c_l   == '0' ||  isip_4_c_l   == '0' ||  isip_5_c_l   == '0' ||  isip_6_c_l   == '0')) || ( isip_1b_c_l   == '1' && ( isip_2_c_l   == '0' ||  isip_3_c_l   == '0' ||  isip_4_c_l   == '0' ||  isip_5_c_l   == '0' ||  isip_6_c_l   == '0'))"
+        }
+    ]
+}

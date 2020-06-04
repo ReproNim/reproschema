@@ -1,0 +1,34 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "iqc_event_rsfmri_autoqcd",
+    "@type": "reproschema:Field",
+    "prefLabel": "iqc_event_rsfmri_autoqcd",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "rsfMRI: Decide whether rsfmri series in a given pguidevent pass qc or not.",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "name": "all rsfmri series pass qc",
+                "value": 1
+            },
+            {
+                "name": "NOT all rsfmri series pass qc",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = all rsfmri series pass qc;  0 = NOT all rsfmri series pass qc"
+        }
+    ]
+}

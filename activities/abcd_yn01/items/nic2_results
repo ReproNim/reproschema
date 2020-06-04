@@ -1,0 +1,75 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "nic2_results",
+    "@type": "reproschema:Field",
+    "prefLabel": "nic2_results",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "NicAlert lowest red band reading level:",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "Level 0 (Negative",
+                "value": 0
+            },
+            {
+                "value": null
+            },
+            {
+                "name": "Level 1 (Negative",
+                "value": 1
+            },
+            {
+                "value": null
+            },
+            {
+                "name": "Level 2 (Negative",
+                "value": 2
+            },
+            {
+                "value": null
+            },
+            {
+                "name": "Level 3 (Positive",
+                "value": 3
+            },
+            {
+                "value": null
+            },
+            {
+                "name": "Level 4 (Positive",
+                "value": 4
+            },
+            {
+                "value": null
+            },
+            {
+                "name": "Level 5 (Positive",
+                "value": 5
+            },
+            {
+                "value": null
+            },
+            {
+                "name": "Level 6 (Positive",
+                "value": 6
+            },
+            {
+                "value": null
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = Level 0 (Negative; Non-user of tobacco products; 1 = Level 1 (Negative; Non-user of tobacco products; 2 = Level 2 (Negative; Non-user of tobacco products; 3 = Level 3 (Positive; User of tobacco products); 4 = Level 4 (Positive; User of tobacco products); 5 = Level 5 (Positive; User of tobacco products); 6 = Level 6 (Positive; User of tobacco products) | Note: If recent (past 48 hours) use was not reported (or not expected), report the result as \"Level 2\"."
+        }
+    ]
+}

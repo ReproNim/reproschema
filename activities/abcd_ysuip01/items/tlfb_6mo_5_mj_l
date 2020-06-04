@@ -1,0 +1,47 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "tlfb_6mo_5_mj_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "tlfb_6mo_5_mj_l",
+    "altLabel": "su_tlfb_past_yr_5_mj_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "How strong or potent do you think your smoked marijuana was that you used during the past year? Try to estimate the potency:",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Low (around < 5% THC)",
+                "value": 1
+            },
+            {
+                "name": "Medium (10%)",
+                "value": 2
+            },
+            {
+                "name": "High (15%)",
+                "value": 3
+            },
+            {
+                "name": "Very high (20%+)",
+                "value": 4
+            },
+            {
+                "name": "Don't know / tlfb_6mo_skip_l___9   == '1'",
+                "value": 5
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Low (around < 5% THC); 2 = Medium (10%); 3 = High (15%); 4 = Very high (20%+); 5 = Don't know / tlfb_6mo_skip_l___9   == '1'"
+        }
+    ]
+}

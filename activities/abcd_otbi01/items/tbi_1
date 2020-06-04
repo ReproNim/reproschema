@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "tbi_1",
+    "@type": "reproschema:Field",
+    "prefLabel": "tbi_1",
+    "altLabel": "brain_injury_1_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Has your child ever been hospitalized or treated in an emergency room following an injury to his/her head or neck? ¿Alguna vez han hospitalizado a su niño/a o le han tratado en una sala de emergencias después de sufrir una lesión en la cabeza o en el cuello?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 0,
+        "choices": [
+            {
+                "name": "Yes Si",
+                "value": 1
+            },
+            {
+                "name": "No No",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes Si; 0 = No No"
+        }
+    ]
+}

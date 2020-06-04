@@ -1,0 +1,51 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "gish_f3_y",
+    "@type": "reproschema:Field",
+    "prefLabel": "gish_f3_y",
+    "altLabel": "gish_f3",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "How much have you had the wish to be a boy?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Always",
+                "value": 1
+            },
+            {
+                "name": "Often",
+                "value": 2
+            },
+            {
+                "name": "Sometimes",
+                "value": 3
+            },
+            {
+                "name": "Rarely",
+                "value": 4
+            },
+            {
+                "name": "Never",
+                "value": 5
+            },
+            {
+                "name": "Decline to answer",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Always; 2 = Often; 3 = Sometimes; 4 = Rarely; 5 = Never; 0 = Decline to answer"
+        }
+    ]
+}

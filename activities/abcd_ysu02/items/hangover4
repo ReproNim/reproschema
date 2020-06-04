@@ -1,0 +1,47 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "hangover4",
+    "@type": "reproschema:Field",
+    "prefLabel": "hangover4",
+    "altLabel": "hangover4_caea81 su_hangover4",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "In the past 6 months, what percentage of drinking occasions were followed the next morning by   Felt very nauseous",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "(0%)Never",
+                "value": 0
+            },
+            {
+                "name": "(25%)Occasionally",
+                "value": 1
+            },
+            {
+                "name": "(50%)About half the time",
+                "value": 2
+            },
+            {
+                "name": "(75%)Most of the time",
+                "value": 3
+            },
+            {
+                "name": "(100%)Every time",
+                "value": 4
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = (0%)Never; 1 = (25%)Occasionally; 2 = (50%)About half the time; 3 = (75%)Most of the time; 4 = (100%)Every time"
+        }
+    ]
+}

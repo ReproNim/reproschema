@@ -1,0 +1,39 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "screentime_wknd_t_min",
+    "@type": "reproschema:Field",
+    "prefLabel": "screentime_wknd_t_min",
+    "altLabel": "screentime_wknd_typical_min",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "On a typical WEEKEND DAY (or non-school day, like during summer or holiday breaks), how much TIME per day do you spend in TOTAL on a computer, phone, tablet, iPod, or other device or video game?  Please do NOT include time spent on school related work, but do include watching TV, shows or videos, texting or chatting, playing games, or visiting social networking sites (Facebook, Twitter, Instagram).",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "value": 0
+            },
+            {
+                "value": 15
+            },
+            {
+                "value": 30
+            },
+            {
+                "value": 45
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0=0; 15=15; 30=30; 45=45"
+        }
+    ]
+}

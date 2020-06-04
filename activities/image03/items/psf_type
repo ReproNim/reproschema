@@ -1,0 +1,34 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "psf_type",
+    "@type": "reproschema:Field",
+    "prefLabel": "psf_type",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Type of point spread function used for deconvolution",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": null,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "name": "empirical",
+                "value": null
+            },
+            {
+                "name": "theoretical",
+                "value": null
+            }
+        ],
+        "valueType": "xsd:string"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "E = empirical; T = theoretical"
+        }
+    ]
+}

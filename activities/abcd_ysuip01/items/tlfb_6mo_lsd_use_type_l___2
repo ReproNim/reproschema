@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "tlfb_6mo_lsd_use_type_l___2",
+    "@type": "reproschema:Field",
+    "prefLabel": "tlfb_6mo_lsd_use_type_l___2",
+    "altLabel": "su_tlfb_past_yr_hall_use_type_l___2",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Which of these have you used since we last saw you on [asnt_timestamp_c]? (2, PCP or angel dust)",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "No",
+                "value": 0
+            },
+            {
+                "name": "Yes ",
+                "value": 1
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = No; 1 = Yes | Please check all that apply. / tlfb_6mo_skip_l___23  =='1'"
+        }
+    ]
+}

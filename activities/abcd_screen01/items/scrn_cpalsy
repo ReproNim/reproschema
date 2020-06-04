@@ -1,0 +1,34 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "scrn_cpalsy",
+    "@type": "reproschema:Field",
+    "prefLabel": "scrn_cpalsy",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Has your child been diagnosed with any of the following serious medical or neurological conditions by a health professional? Cerebral Palsy? / ¿Parálisis cerebral?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "Yes - GO TO END",
+                "value": 0
+            },
+            {
+                "name": "No (Continue)",
+                "value": 1
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = Yes - GO TO END; 1 = No (Continue)"
+        }
+    ]
+}

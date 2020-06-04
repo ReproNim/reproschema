@@ -1,0 +1,36 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "demo_prnt_prtnr_bio_2",
+    "@type": "reproschema:Field",
+    "prefLabel": "demo_prnt_prtnr_bio_2",
+    "altLabel": "demo_prnt_prtnr_bio_2_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Is your partner the child's biological parent?/ Su pareja es el padre o la madre biologico(a) del nino o de la nina?   ",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "value": 1
+            },
+            {
+                "value": 2
+            },
+            {
+                "value": 777
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1= Yes/S?; 2= No/No; 777= Refuse to answer/Niego contestar"
+        }
+    ]
+}

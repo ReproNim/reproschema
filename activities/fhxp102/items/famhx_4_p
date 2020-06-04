@@ -1,0 +1,42 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "famhx_4_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "famhx_4_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "4. Has ANY blood relative of your child ever had any problems due to alcohol, such as: Marital  separation or divorce; Laid off or fired from work; Arrests or DUIs; Alcohol harmed their health; In an alcohol treatment program; Suspended or expelled from school 2 or more times; Isolated self from family, caused arguments or were drunk a lot. ¿Algún pariente consanguíneo de su niño(a) ha tenido alguna vez problemas debido al alcohol, como una separación o divorcio, Despido o cese laboral, Arrestos o multas por conducir bajo la influencia de drogas, Daños a la salud por causa del alcohol, Ingreso a un programa de tratamiento contra el alcoholismo, suspensión o expulsión de la escuela en 2 o más ocasiones, se aisló de la familia, provocó conflictos o con frecuencia estaba embriagado?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 0,
+        "choices": [
+            {
+                "name": "Yes Sí",
+                "value": 1
+            },
+            {
+                "name": "No No",
+                "value": 0
+            },
+            {
+                "name": "Don't know No lo sé",
+                "value": 999
+            },
+            {
+                "name": "Refuse to answer Niego contestar /  famhx_1   == 1",
+                "value": 7
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes Sí; 0 = No No; 999 = Don't know No lo sé; 7 = Refuse to answer Niego contestar /  famhx_1   == 1"
+        }
+    ]
+}

@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "fitf_s4_q11_y",
+    "@type": "reproschema:Field",
+    "prefLabel": "fitf_s4_q11_y",
+    "altLabel": "fitbit_follow_up_s4_q11",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "How often did you check the Fitbit to get information about your activity?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Several times per day",
+                "value": 1
+            },
+            {
+                "name": "About once per day",
+                "value": 2
+            },
+            {
+                "name": "Several times per week",
+                "value": 3
+            },
+            {
+                "name": "About once per week",
+                "value": 4
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Several times per day; 2 = About once per day; 3 = Several times per week; 4 = About once per week"
+        }
+    ]
+}

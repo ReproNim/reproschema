@@ -1,0 +1,51 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "naas_comm_contact",
+    "@type": "reproschema:Field",
+    "prefLabel": "naas_comm_contact",
+    "altLabel": "naas_comm_contact_2 native_amer_accult_comm_contact_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "What contact did your child's Native American parent have with Native American communities? ¿Qué contacto ha tenido el padre / la madre Americano(a) Nativo(a) del niño / la niña con las comunidades nativas americanas?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Raised for 1 year or more on the reservation or other Native American community Criado(a) por mÃ¡s de un aÃ±o en la reserva u otra comunidad de Americanos Nativos",
+                "value": 1
+            },
+            {
+                "name": "Raised for 1 year or less on the reservation or other Native American community Criado(a) por un aÃ±o o menos de un aÃ±o en una reserva u otra comunidad de Americanos Nativos",
+                "value": 2
+            },
+            {
+                "name": "Occasional visits to the reservation or other Native American community Visitas ocasionales a la reserva o alguna otra comunidad de Americanos Nativos",
+                "value": 3
+            },
+            {
+                "name": "Occasional communications with people on reservation or other Native American community Comunicaciones ocasionales con personas en la reserva u otra comunidad Americana Nativa",
+                "value": 4
+            },
+            {
+                "name": "No exposure or communications with people on reservation or other Native American community No he sido expuesto(a) o he tenido comunicaciÃ³n con personas de una reserva o comunidad de Americanos Nativos.",
+                "value": 5
+            },
+            {
+                "name": "Don't Know No lo sÃ© // The following questions are about you or the child's family.",
+                "value": 999
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Raised for 1 year or more on the reservation or other Native American community Criado(a) por mÃ¡s de un aÃ±o en la reserva u otra comunidad de Americanos Nativos; 2 = Raised for 1 year or less on the reservation or other Native American community Criado(a) por un aÃ±o o menos de un aÃ±o en una reserva u otra comunidad de Americanos Nativos; 3 = Occasional visits to the reservation or other Native American community Visitas ocasionales a la reserva o alguna otra comunidad de Americanos Nativos; 4 = Occasional communications with people on reservation or other Native American community Comunicaciones ocasionales con personas en la reserva u otra comunidad Americana Nativa; 5 = No exposure or communications with people on reservation or other Native American community No he sido expuesto(a) o he tenido comunicaciÃ³n con personas de una reserva o comunidad de Americanos Nativos.; 999 = Don't Know No lo sÃ© // The following questions are about you or the child's family."
+        }
+    ]
+}

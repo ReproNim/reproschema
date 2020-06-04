@@ -1,0 +1,38 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "genetic_zygosity_status_1",
+    "@type": "reproschema:Field",
+    "prefLabel": "genetic_zygosity_status_1",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Genetically inferred zygosity status between participant and genetic_paired_subjectid_1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": -1,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "value": 1
+            },
+            {
+                "value": 2
+            },
+            {
+                "value": 3
+            },
+            {
+                "value": -1
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1= monozygotic ; 2= dizygotic ; 3=siblings ;-1= not available (twins/sibs, genetic_pi_hat not calculated)"
+        }
+    ]
+}

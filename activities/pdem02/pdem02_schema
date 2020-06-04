@@ -1,0 +1,808 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+        "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/activities/pdem02/pdem02_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "pdem02_schema",
+    "skos:prefLabel": "pdem02",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "order": [
+            "demo_adopt_agex_v2",
+            "demo_adopt_agex_v2_bl_dk",
+            "demo_biofather_v2",
+            "demo_biomother_v2",
+            "demo_brthdat_v2",
+            "demo_child_time_v2",
+            "demo_child_time_v2b",
+            "demo_child_time2_v2",
+            "demo_child_time2_v2_dk",
+            "demo_child_time3_v2",
+            "demo_comb_income_v2",
+            "demo_comb_income_v2b",
+            "demo_ed_v2",
+            "demo_ethn_v2",
+            "demo_ethn_v2b",
+            "demo_ethn2_v2",
+            "demo_ethn2_v2b",
+            "demo_fam_exp1_v2",
+            "demo_fam_exp1_v2b",
+            "demo_fam_exp2_v2",
+            "demo_fam_exp2_v2b",
+            "demo_fam_exp3_v2",
+            "demo_fam_exp3_v2b",
+            "demo_fam_exp4_v2",
+            "demo_fam_exp4_v2b",
+            "demo_fam_exp5_v2",
+            "demo_fam_exp5_v2b",
+            "demo_fam_exp6_v2",
+            "demo_fam_exp6_v2b",
+            "demo_fam_exp7_v2",
+            "demo_fam_exp7_v2b",
+            "demo_gender_id_v2",
+            "demo_gender_id_v2b",
+            "demo_matgrandf_v2",
+            "demo_matgrandm_v2",
+            "demo_origin_v2",
+            "demo_patgrandf_v2",
+            "demo_patgrandm_v2",
+            "demo_prim",
+            "demo_prnt_16",
+            "demo_prnt_16a",
+            "demo_prnt_age_v2",
+            "demo_prnt_age_v2_bl_refuse",
+            "demo_prnt_ed_v2",
+            "demo_prnt_ed_v2b",
+            "demo_prnt_empl_time",
+            "demo_prnt_empl_v2",
+            "demo_prnt_empl_v2b",
+            "demo_prnt_ethn_v2",
+            "demo_prnt_ethn_v2b",
+            "demo_prnt_ethn2_v2",
+            "demo_prnt_ethn2_v2b",
+            "demo_prnt_gender_id_v2",
+            "demo_prnt_gender_id_v2b",
+            "demo_prnt_income_v2",
+            "demo_prnt_income_v2b",
+            "demo_prnt_marital_v2",
+            "demo_prnt_marital_v2b",
+            "demo_prnt_origin_v2",
+            "demo_prnt_prtnr_adopt",
+            "demo_prnt_prtnr_bio",
+            "demo_prnt_prtnr_bio_2",
+            "demo_prnt_prtnr_v2",
+            "demo_prnt_prtnr_v2b",
+            "demo_prnt_race_a_v2___10",
+            "demo_prnt_race_a_v2___11",
+            "demo_prnt_race_a_v2___12",
+            "demo_prnt_race_a_v2___13",
+            "demo_prnt_race_a_v2___14",
+            "demo_prnt_race_a_v2___15",
+            "demo_prnt_race_a_v2___16",
+            "demo_prnt_race_a_v2___17",
+            "demo_prnt_race_a_v2___18",
+            "demo_prnt_race_a_v2___19",
+            "demo_prnt_race_a_v2___20",
+            "demo_prnt_race_a_v2___21",
+            "demo_prnt_race_a_v2___22",
+            "demo_prnt_race_a_v2___23",
+            "demo_prnt_race_a_v2___24",
+            "demo_prnt_race_a_v2___25",
+            "demo_prnt_race_a_v2___77",
+            "demo_prnt_race_a_v2___99",
+            "demo_prnt_years_us_v2",
+            "demo_prnt_years_us_v2_dk",
+            "demo_prtnr_ed_v2",
+            "demo_prtnr_ed_v2b",
+            "demo_prtnr_empl_time",
+            "demo_prtnr_empl_v2",
+            "demo_prtnr_empl_v2b",
+            "demo_prtnr_income_v2",
+            "demo_prtnr_income_v2b",
+            "demo_race_a_p___0",
+            "demo_race_a_p___10",
+            "demo_race_a_p___11",
+            "demo_race_a_p___12",
+            "demo_race_a_p___13",
+            "demo_race_a_p___14",
+            "demo_race_a_p___15",
+            "demo_race_a_p___16",
+            "demo_race_a_p___17",
+            "demo_race_a_p___18",
+            "demo_race_a_p___19",
+            "demo_race_a_p___20",
+            "demo_race_a_p___21",
+            "demo_race_a_p___22",
+            "demo_race_a_p___23",
+            "demo_race_a_p___24",
+            "demo_race_a_p___25",
+            "demo_race_a_p___77",
+            "demo_race_a_p___99",
+            "demo_race_notes_v2",
+            "demo_relig_v2",
+            "demo_relig2_v2",
+            "demo_roster_v2",
+            "demo_roster_v2_refuse",
+            "demo_sex_v2",
+            "demo_sex_v2b",
+            "demo_years_us_v2",
+            "demo_years_us_v2_dk",
+            "demo_yrs_1",
+            "demo_yrs_1_2",
+            "demo_yrs_2",
+            "demo_yrs_2_2",
+            "demo_yrs_2_no_display___1",
+            "demo_yrs_2a_2",
+            "demo_yrs_2b_2",
+            "fam_roster_10c_v2",
+            "fam_roster_11c_v2",
+            "fam_roster_12c_v2",
+            "fam_roster_13c_v2",
+            "fam_roster_14c_v2",
+            "fam_roster_15c_v2",
+            "fam_roster_2c_v2",
+            "fam_roster_3c_v2",
+            "fam_roster_4c_v2",
+            "fam_roster_5c_v2",
+            "fam_roster_6c_v2",
+            "fam_roster_7c_v2",
+            "fam_roster_8c_v2",
+            "fam_roster_9c_v2",
+            "naas_birthplace",
+            "naas_birthplace_2",
+            "naas_comm_contact",
+            "naas_comm_contact_2",
+            "naas_id",
+            "naas_id_2",
+            "naas_id_dad",
+            "naas_id_dad_2",
+            "naas_mom_id",
+            "naas_mom_id_2",
+            "naas_pride",
+            "naas_pride_2",
+            "naas_raised",
+            "naas_raised_2",
+            "naas_self_rating",
+            "naas_self_rating_2",
+            "naas_traditions",
+            "naas_traditions_2"
+        ],
+        "shuffle": false,
+        "addProperties": [
+            {
+                "variableName": "demo_adopt_agex_v2",
+                "isAbout": "demo_adopt_agex_v2"
+            },
+            {
+                "variableName": "demo_adopt_agex_v2_bl_dk",
+                "isAbout": "demo_adopt_agex_v2_bl_dk"
+            },
+            {
+                "variableName": "demo_biofather_v2",
+                "isAbout": "demo_biofather_v2"
+            },
+            {
+                "variableName": "demo_biomother_v2",
+                "isAbout": "demo_biomother_v2"
+            },
+            {
+                "variableName": "demo_brthdat_v2",
+                "isAbout": "demo_brthdat_v2"
+            },
+            {
+                "variableName": "demo_child_time_v2",
+                "isAbout": "demo_child_time_v2"
+            },
+            {
+                "variableName": "demo_child_time_v2b",
+                "isAbout": "demo_child_time_v2b"
+            },
+            {
+                "variableName": "demo_child_time2_v2",
+                "isAbout": "demo_child_time2_v2"
+            },
+            {
+                "variableName": "demo_child_time2_v2_dk",
+                "isAbout": "demo_child_time2_v2_dk"
+            },
+            {
+                "variableName": "demo_child_time3_v2",
+                "isAbout": "demo_child_time3_v2"
+            },
+            {
+                "variableName": "demo_comb_income_v2",
+                "isAbout": "demo_comb_income_v2"
+            },
+            {
+                "variableName": "demo_comb_income_v2b",
+                "isAbout": "demo_comb_income_v2b"
+            },
+            {
+                "variableName": "demo_ed_v2",
+                "isAbout": "demo_ed_v2"
+            },
+            {
+                "variableName": "demo_ethn_v2",
+                "isAbout": "demo_ethn_v2"
+            },
+            {
+                "variableName": "demo_ethn_v2b",
+                "isAbout": "demo_ethn_v2b"
+            },
+            {
+                "variableName": "demo_ethn2_v2",
+                "isAbout": "demo_ethn2_v2"
+            },
+            {
+                "variableName": "demo_ethn2_v2b",
+                "isAbout": "demo_ethn2_v2b"
+            },
+            {
+                "variableName": "demo_fam_exp1_v2",
+                "isAbout": "demo_fam_exp1_v2"
+            },
+            {
+                "variableName": "demo_fam_exp1_v2b",
+                "isAbout": "demo_fam_exp1_v2b"
+            },
+            {
+                "variableName": "demo_fam_exp2_v2",
+                "isAbout": "demo_fam_exp2_v2"
+            },
+            {
+                "variableName": "demo_fam_exp2_v2b",
+                "isAbout": "demo_fam_exp2_v2b"
+            },
+            {
+                "variableName": "demo_fam_exp3_v2",
+                "isAbout": "demo_fam_exp3_v2"
+            },
+            {
+                "variableName": "demo_fam_exp3_v2b",
+                "isAbout": "demo_fam_exp3_v2b"
+            },
+            {
+                "variableName": "demo_fam_exp4_v2",
+                "isAbout": "demo_fam_exp4_v2"
+            },
+            {
+                "variableName": "demo_fam_exp4_v2b",
+                "isAbout": "demo_fam_exp4_v2b"
+            },
+            {
+                "variableName": "demo_fam_exp5_v2",
+                "isAbout": "demo_fam_exp5_v2"
+            },
+            {
+                "variableName": "demo_fam_exp5_v2b",
+                "isAbout": "demo_fam_exp5_v2b"
+            },
+            {
+                "variableName": "demo_fam_exp6_v2",
+                "isAbout": "demo_fam_exp6_v2"
+            },
+            {
+                "variableName": "demo_fam_exp6_v2b",
+                "isAbout": "demo_fam_exp6_v2b"
+            },
+            {
+                "variableName": "demo_fam_exp7_v2",
+                "isAbout": "demo_fam_exp7_v2"
+            },
+            {
+                "variableName": "demo_fam_exp7_v2b",
+                "isAbout": "demo_fam_exp7_v2b"
+            },
+            {
+                "variableName": "demo_gender_id_v2",
+                "isAbout": "demo_gender_id_v2"
+            },
+            {
+                "variableName": "demo_gender_id_v2b",
+                "isAbout": "demo_gender_id_v2b"
+            },
+            {
+                "variableName": "demo_matgrandf_v2",
+                "isAbout": "demo_matgrandf_v2"
+            },
+            {
+                "variableName": "demo_matgrandm_v2",
+                "isAbout": "demo_matgrandm_v2"
+            },
+            {
+                "variableName": "demo_origin_v2",
+                "isAbout": "demo_origin_v2"
+            },
+            {
+                "variableName": "demo_patgrandf_v2",
+                "isAbout": "demo_patgrandf_v2"
+            },
+            {
+                "variableName": "demo_patgrandm_v2",
+                "isAbout": "demo_patgrandm_v2"
+            },
+            {
+                "variableName": "demo_prim",
+                "isAbout": "demo_prim"
+            },
+            {
+                "variableName": "demo_prnt_16",
+                "isAbout": "demo_prnt_16"
+            },
+            {
+                "variableName": "demo_prnt_16a",
+                "isAbout": "demo_prnt_16a"
+            },
+            {
+                "variableName": "demo_prnt_age_v2",
+                "isAbout": "demo_prnt_age_v2"
+            },
+            {
+                "variableName": "demo_prnt_age_v2_bl_refuse",
+                "isAbout": "demo_prnt_age_v2_bl_refuse"
+            },
+            {
+                "variableName": "demo_prnt_ed_v2",
+                "isAbout": "demo_prnt_ed_v2"
+            },
+            {
+                "variableName": "demo_prnt_ed_v2b",
+                "isAbout": "demo_prnt_ed_v2b"
+            },
+            {
+                "variableName": "demo_prnt_empl_time",
+                "isAbout": "demo_prnt_empl_time"
+            },
+            {
+                "variableName": "demo_prnt_empl_v2",
+                "isAbout": "demo_prnt_empl_v2"
+            },
+            {
+                "variableName": "demo_prnt_empl_v2b",
+                "isAbout": "demo_prnt_empl_v2b"
+            },
+            {
+                "variableName": "demo_prnt_ethn_v2",
+                "isAbout": "demo_prnt_ethn_v2"
+            },
+            {
+                "variableName": "demo_prnt_ethn_v2b",
+                "isAbout": "demo_prnt_ethn_v2b"
+            },
+            {
+                "variableName": "demo_prnt_ethn2_v2",
+                "isAbout": "demo_prnt_ethn2_v2"
+            },
+            {
+                "variableName": "demo_prnt_ethn2_v2b",
+                "isAbout": "demo_prnt_ethn2_v2b"
+            },
+            {
+                "variableName": "demo_prnt_gender_id_v2",
+                "isAbout": "demo_prnt_gender_id_v2"
+            },
+            {
+                "variableName": "demo_prnt_gender_id_v2b",
+                "isAbout": "demo_prnt_gender_id_v2b"
+            },
+            {
+                "variableName": "demo_prnt_income_v2",
+                "isAbout": "demo_prnt_income_v2"
+            },
+            {
+                "variableName": "demo_prnt_income_v2b",
+                "isAbout": "demo_prnt_income_v2b"
+            },
+            {
+                "variableName": "demo_prnt_marital_v2",
+                "isAbout": "demo_prnt_marital_v2"
+            },
+            {
+                "variableName": "demo_prnt_marital_v2b",
+                "isAbout": "demo_prnt_marital_v2b"
+            },
+            {
+                "variableName": "demo_prnt_origin_v2",
+                "isAbout": "demo_prnt_origin_v2"
+            },
+            {
+                "variableName": "demo_prnt_prtnr_adopt",
+                "isAbout": "demo_prnt_prtnr_adopt"
+            },
+            {
+                "variableName": "demo_prnt_prtnr_bio",
+                "isAbout": "demo_prnt_prtnr_bio"
+            },
+            {
+                "variableName": "demo_prnt_prtnr_bio_2",
+                "isAbout": "demo_prnt_prtnr_bio_2"
+            },
+            {
+                "variableName": "demo_prnt_prtnr_v2",
+                "isAbout": "demo_prnt_prtnr_v2"
+            },
+            {
+                "variableName": "demo_prnt_prtnr_v2b",
+                "isAbout": "demo_prnt_prtnr_v2b"
+            },
+            {
+                "variableName": "demo_prnt_race_a_v2___10",
+                "isAbout": "demo_prnt_race_a_v2___10"
+            },
+            {
+                "variableName": "demo_prnt_race_a_v2___11",
+                "isAbout": "demo_prnt_race_a_v2___11"
+            },
+            {
+                "variableName": "demo_prnt_race_a_v2___12",
+                "isAbout": "demo_prnt_race_a_v2___12"
+            },
+            {
+                "variableName": "demo_prnt_race_a_v2___13",
+                "isAbout": "demo_prnt_race_a_v2___13"
+            },
+            {
+                "variableName": "demo_prnt_race_a_v2___14",
+                "isAbout": "demo_prnt_race_a_v2___14"
+            },
+            {
+                "variableName": "demo_prnt_race_a_v2___15",
+                "isAbout": "demo_prnt_race_a_v2___15"
+            },
+            {
+                "variableName": "demo_prnt_race_a_v2___16",
+                "isAbout": "demo_prnt_race_a_v2___16"
+            },
+            {
+                "variableName": "demo_prnt_race_a_v2___17",
+                "isAbout": "demo_prnt_race_a_v2___17"
+            },
+            {
+                "variableName": "demo_prnt_race_a_v2___18",
+                "isAbout": "demo_prnt_race_a_v2___18"
+            },
+            {
+                "variableName": "demo_prnt_race_a_v2___19",
+                "isAbout": "demo_prnt_race_a_v2___19"
+            },
+            {
+                "variableName": "demo_prnt_race_a_v2___20",
+                "isAbout": "demo_prnt_race_a_v2___20"
+            },
+            {
+                "variableName": "demo_prnt_race_a_v2___21",
+                "isAbout": "demo_prnt_race_a_v2___21"
+            },
+            {
+                "variableName": "demo_prnt_race_a_v2___22",
+                "isAbout": "demo_prnt_race_a_v2___22"
+            },
+            {
+                "variableName": "demo_prnt_race_a_v2___23",
+                "isAbout": "demo_prnt_race_a_v2___23"
+            },
+            {
+                "variableName": "demo_prnt_race_a_v2___24",
+                "isAbout": "demo_prnt_race_a_v2___24"
+            },
+            {
+                "variableName": "demo_prnt_race_a_v2___25",
+                "isAbout": "demo_prnt_race_a_v2___25"
+            },
+            {
+                "variableName": "demo_prnt_race_a_v2___77",
+                "isAbout": "demo_prnt_race_a_v2___77"
+            },
+            {
+                "variableName": "demo_prnt_race_a_v2___99",
+                "isAbout": "demo_prnt_race_a_v2___99"
+            },
+            {
+                "variableName": "demo_prnt_years_us_v2",
+                "isAbout": "demo_prnt_years_us_v2"
+            },
+            {
+                "variableName": "demo_prnt_years_us_v2_dk",
+                "isAbout": "demo_prnt_years_us_v2_dk"
+            },
+            {
+                "variableName": "demo_prtnr_ed_v2",
+                "isAbout": "demo_prtnr_ed_v2"
+            },
+            {
+                "variableName": "demo_prtnr_ed_v2b",
+                "isAbout": "demo_prtnr_ed_v2b"
+            },
+            {
+                "variableName": "demo_prtnr_empl_time",
+                "isAbout": "demo_prtnr_empl_time"
+            },
+            {
+                "variableName": "demo_prtnr_empl_v2",
+                "isAbout": "demo_prtnr_empl_v2"
+            },
+            {
+                "variableName": "demo_prtnr_empl_v2b",
+                "isAbout": "demo_prtnr_empl_v2b"
+            },
+            {
+                "variableName": "demo_prtnr_income_v2",
+                "isAbout": "demo_prtnr_income_v2"
+            },
+            {
+                "variableName": "demo_prtnr_income_v2b",
+                "isAbout": "demo_prtnr_income_v2b"
+            },
+            {
+                "variableName": "demo_race_a_p___0",
+                "isAbout": "demo_race_a_p___0"
+            },
+            {
+                "variableName": "demo_race_a_p___10",
+                "isAbout": "demo_race_a_p___10"
+            },
+            {
+                "variableName": "demo_race_a_p___11",
+                "isAbout": "demo_race_a_p___11"
+            },
+            {
+                "variableName": "demo_race_a_p___12",
+                "isAbout": "demo_race_a_p___12"
+            },
+            {
+                "variableName": "demo_race_a_p___13",
+                "isAbout": "demo_race_a_p___13"
+            },
+            {
+                "variableName": "demo_race_a_p___14",
+                "isAbout": "demo_race_a_p___14"
+            },
+            {
+                "variableName": "demo_race_a_p___15",
+                "isAbout": "demo_race_a_p___15"
+            },
+            {
+                "variableName": "demo_race_a_p___16",
+                "isAbout": "demo_race_a_p___16"
+            },
+            {
+                "variableName": "demo_race_a_p___17",
+                "isAbout": "demo_race_a_p___17"
+            },
+            {
+                "variableName": "demo_race_a_p___18",
+                "isAbout": "demo_race_a_p___18"
+            },
+            {
+                "variableName": "demo_race_a_p___19",
+                "isAbout": "demo_race_a_p___19"
+            },
+            {
+                "variableName": "demo_race_a_p___20",
+                "isAbout": "demo_race_a_p___20"
+            },
+            {
+                "variableName": "demo_race_a_p___21",
+                "isAbout": "demo_race_a_p___21"
+            },
+            {
+                "variableName": "demo_race_a_p___22",
+                "isAbout": "demo_race_a_p___22"
+            },
+            {
+                "variableName": "demo_race_a_p___23",
+                "isAbout": "demo_race_a_p___23"
+            },
+            {
+                "variableName": "demo_race_a_p___24",
+                "isAbout": "demo_race_a_p___24"
+            },
+            {
+                "variableName": "demo_race_a_p___25",
+                "isAbout": "demo_race_a_p___25"
+            },
+            {
+                "variableName": "demo_race_a_p___77",
+                "isAbout": "demo_race_a_p___77"
+            },
+            {
+                "variableName": "demo_race_a_p___99",
+                "isAbout": "demo_race_a_p___99"
+            },
+            {
+                "variableName": "demo_race_notes_v2",
+                "isAbout": "demo_race_notes_v2"
+            },
+            {
+                "variableName": "demo_relig_v2",
+                "isAbout": "demo_relig_v2"
+            },
+            {
+                "variableName": "demo_relig2_v2",
+                "isAbout": "demo_relig2_v2"
+            },
+            {
+                "variableName": "demo_roster_v2",
+                "isAbout": "demo_roster_v2"
+            },
+            {
+                "variableName": "demo_roster_v2_refuse",
+                "isAbout": "demo_roster_v2_refuse"
+            },
+            {
+                "variableName": "demo_sex_v2",
+                "isAbout": "demo_sex_v2"
+            },
+            {
+                "variableName": "demo_sex_v2b",
+                "isAbout": "demo_sex_v2b"
+            },
+            {
+                "variableName": "demo_years_us_v2",
+                "isAbout": "demo_years_us_v2"
+            },
+            {
+                "variableName": "demo_years_us_v2_dk",
+                "isAbout": "demo_years_us_v2_dk"
+            },
+            {
+                "variableName": "demo_yrs_1",
+                "isAbout": "demo_yrs_1"
+            },
+            {
+                "variableName": "demo_yrs_1_2",
+                "isAbout": "demo_yrs_1_2"
+            },
+            {
+                "variableName": "demo_yrs_2",
+                "isAbout": "demo_yrs_2"
+            },
+            {
+                "variableName": "demo_yrs_2_2",
+                "isAbout": "demo_yrs_2_2"
+            },
+            {
+                "variableName": "demo_yrs_2_no_display___1",
+                "isAbout": "demo_yrs_2_no_display___1"
+            },
+            {
+                "variableName": "demo_yrs_2a_2",
+                "isAbout": "demo_yrs_2a_2"
+            },
+            {
+                "variableName": "demo_yrs_2b_2",
+                "isAbout": "demo_yrs_2b_2"
+            },
+            {
+                "variableName": "fam_roster_10c_v2",
+                "isAbout": "fam_roster_10c_v2"
+            },
+            {
+                "variableName": "fam_roster_11c_v2",
+                "isAbout": "fam_roster_11c_v2"
+            },
+            {
+                "variableName": "fam_roster_12c_v2",
+                "isAbout": "fam_roster_12c_v2"
+            },
+            {
+                "variableName": "fam_roster_13c_v2",
+                "isAbout": "fam_roster_13c_v2"
+            },
+            {
+                "variableName": "fam_roster_14c_v2",
+                "isAbout": "fam_roster_14c_v2"
+            },
+            {
+                "variableName": "fam_roster_15c_v2",
+                "isAbout": "fam_roster_15c_v2"
+            },
+            {
+                "variableName": "fam_roster_2c_v2",
+                "isAbout": "fam_roster_2c_v2"
+            },
+            {
+                "variableName": "fam_roster_3c_v2",
+                "isAbout": "fam_roster_3c_v2"
+            },
+            {
+                "variableName": "fam_roster_4c_v2",
+                "isAbout": "fam_roster_4c_v2"
+            },
+            {
+                "variableName": "fam_roster_5c_v2",
+                "isAbout": "fam_roster_5c_v2"
+            },
+            {
+                "variableName": "fam_roster_6c_v2",
+                "isAbout": "fam_roster_6c_v2"
+            },
+            {
+                "variableName": "fam_roster_7c_v2",
+                "isAbout": "fam_roster_7c_v2"
+            },
+            {
+                "variableName": "fam_roster_8c_v2",
+                "isAbout": "fam_roster_8c_v2"
+            },
+            {
+                "variableName": "fam_roster_9c_v2",
+                "isAbout": "fam_roster_9c_v2"
+            },
+            {
+                "variableName": "naas_birthplace",
+                "isAbout": "naas_birthplace"
+            },
+            {
+                "variableName": "naas_birthplace_2",
+                "isAbout": "naas_birthplace_2"
+            },
+            {
+                "variableName": "naas_comm_contact",
+                "isAbout": "naas_comm_contact"
+            },
+            {
+                "variableName": "naas_comm_contact_2",
+                "isAbout": "naas_comm_contact_2"
+            },
+            {
+                "variableName": "naas_id",
+                "isAbout": "naas_id"
+            },
+            {
+                "variableName": "naas_id_2",
+                "isAbout": "naas_id_2"
+            },
+            {
+                "variableName": "naas_id_dad",
+                "isAbout": "naas_id_dad"
+            },
+            {
+                "variableName": "naas_id_dad_2",
+                "isAbout": "naas_id_dad_2"
+            },
+            {
+                "variableName": "naas_mom_id",
+                "isAbout": "naas_mom_id"
+            },
+            {
+                "variableName": "naas_mom_id_2",
+                "isAbout": "naas_mom_id_2"
+            },
+            {
+                "variableName": "naas_pride",
+                "isAbout": "naas_pride"
+            },
+            {
+                "variableName": "naas_pride_2",
+                "isAbout": "naas_pride_2"
+            },
+            {
+                "variableName": "naas_raised",
+                "isAbout": "naas_raised"
+            },
+            {
+                "variableName": "naas_raised_2",
+                "isAbout": "naas_raised_2"
+            },
+            {
+                "variableName": "naas_self_rating",
+                "isAbout": "naas_self_rating"
+            },
+            {
+                "variableName": "naas_self_rating_2",
+                "isAbout": "naas_self_rating_2"
+            },
+            {
+                "variableName": "naas_traditions",
+                "isAbout": "naas_traditions"
+            },
+            {
+                "variableName": "naas_traditions_2",
+                "isAbout": "naas_traditions_2"
+            }
+        ]
+    }
+}

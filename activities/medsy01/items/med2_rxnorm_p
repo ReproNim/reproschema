@@ -1,0 +1,23 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "med2_rxnorm_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "med2_rxnorm_p",
+    "altLabel": "medinv_plus_rxnorm_med2_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage)  Nombre del Medicamento (por favor, elija la formulaciue mse aproxime a la medicaciomada por su ni); no hay necesidad de incluir la dosis)",
+    "ui": {
+        "inputType": "text"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations."
+        }
+    ]
+}

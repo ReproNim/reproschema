@@ -1,0 +1,34 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "su_tlfb_mj_conc_use_calc_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "su_tlfb_mj_conc_use_calc_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Marijuana oils or concentrates such as 710; hash oil; BHO/butane hash oil/dabs/shatter/budder/honey oil; Co2 oil/vaporizer pen; Rick Simpson Oil/RSO/phoenix tears;  0 replaces blank answers in tlfb_mj_conc_use_l when  tlfb_mj_l=0 ",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "Yes",
+                "value": 1
+            },
+            {
+                "name": "No",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes; 0 = No"
+        }
+    ]
+}

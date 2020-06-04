@@ -1,0 +1,50 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "gish_m8_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "gish_m8_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "He plays sports with girls (but not boys) Practica deportes con niñas (pero no con niños)",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "As a favorite activity Como actividad favorita ",
+                "value": 1
+            },
+            {
+                "name": "Frequently Frecuentemente ",
+                "value": 2
+            },
+            {
+                "name": "Once in a while De vez en cuando ",
+                "value": 3
+            },
+            {
+                "name": "Rarely Casi nunca ",
+                "value": 4
+            },
+            {
+                "name": "Never Nunca ",
+                "value": 5
+            },
+            {
+                "name": "Decline to answer Prefiero no responder",
+                "value": 777
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = As a favorite activity Como actividad favorita ; 2 = Frequently Frecuentemente ; 3 = Once in a while De vez en cuando ; 4 = Rarely Casi nunca ; 5 = Never Nunca ; 777 = Decline to answer Prefiero no responder"
+        }
+    ]
+}

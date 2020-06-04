@@ -1,0 +1,41 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "mrif_score",
+    "@type": "reproschema:Field",
+    "prefLabel": "mrif_score",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Report Score",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "value": 0
+            },
+            {
+                "value": 1
+            },
+            {
+                "value": 2
+            },
+            {
+                "value": 3
+            },
+            {
+                "value": 4
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0= Image artifacts prevent radiology read; 1= No abnormal findings; 2 =Normal anatomical variant of no clinical significance; 3 =Consider clinical referral; 4=Consider immediate clinical referral"
+        }
+    ]
+}

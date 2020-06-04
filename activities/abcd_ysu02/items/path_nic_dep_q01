@@ -1,0 +1,47 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "path_nic_dep_q01",
+    "@type": "reproschema:Field",
+    "prefLabel": "path_nic_dep_q01",
+    "altLabel": "path_nic_dep_q01_a7d429 su_path_nic_dep_q01",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "How soon after you wake up do you want to use tobacco?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Within 5 minutes",
+                "value": 1
+            },
+            {
+                "name": "From 6 to 30 minutes",
+                "value": 2
+            },
+            {
+                "name": "From more than 30 minutes to 1 hour",
+                "value": 3
+            },
+            {
+                "name": "After more than 1 hour but less than 24 hours",
+                "value": 4
+            },
+            {
+                "name": "I rarely want to use tobacco",
+                "value": 5
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Within 5 minutes; 2 = From 6 to 30 minutes; 3 = From more than 30 minutes to 1 hour; 4 = After more than 1 hour but less than 24 hours; 5 = I rarely want to use tobacco"
+        }
+    ]
+}

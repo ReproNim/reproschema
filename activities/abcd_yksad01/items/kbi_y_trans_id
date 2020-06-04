@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "kbi_y_trans_id",
+    "@type": "reproschema:Field",
+    "prefLabel": "kbi_y_trans_id",
+    "altLabel": "ksads_back_trans_id",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Are you transgender?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Yes",
+                "value": 1
+            },
+            {
+                "name": "Maybe",
+                "value": 2
+            },
+            {
+                "name": "No",
+                "value": 3
+            },
+            {
+                "name": "I do not understand this question",
+                "value": 4
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes; 2 = Maybe; 3 = No; 4 = I do not understand this question"
+        }
+    ]
+}

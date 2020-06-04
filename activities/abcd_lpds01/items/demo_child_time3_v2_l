@@ -1,0 +1,59 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "demo_child_time3_v2_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "demo_child_time3_v2_l",
+    "altLabel": "demo_child_time3_p_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Who is the best person to contact about that household? Please select the relationship they have with the child. ¿Quien es la mejor persona para contactar con respecto a ese hogar? Por favor seleccione la relacion que tienen con su nin-o(a).",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "other biological parent otro(a) padre(madre) biologico(a) ",
+                "value": 1
+            },
+            {
+                "name": "step mother madrasta ",
+                "value": 2
+            },
+            {
+                "name": "step father padrasto ",
+                "value": 3
+            },
+            {
+                "name": "grandmother abuela ",
+                "value": 4
+            },
+            {
+                "name": "grandfather abuelo ",
+                "value": 5
+            },
+            {
+                "name": "aunt tia ",
+                "value": 6
+            },
+            {
+                "name": "uncle tio ",
+                "value": 7
+            },
+            {
+                "name": "other otro",
+                "value": 8
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = other biological parent otro(a) padre(madre) biologico(a) ; 2 = step mother madrasta ; 3 = step father padrasto ; 4 = grandmother abuela ; 5 = grandfather abuelo ; 6 = aunt tia ; 7 = uncle tio ; 8 = other otro"
+        }
+    ]
+}

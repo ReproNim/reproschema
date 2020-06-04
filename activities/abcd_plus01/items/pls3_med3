@@ -1,0 +1,23 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "pls3_med3",
+    "@type": "reproschema:Field",
+    "prefLabel": "pls3_med3",
+    "altLabel": "su_pls3_med3",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Medication Name (please choose the formulation that most closely matches the medication you took; no need to include dosage)",
+    "ui": {
+        "inputType": "text"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations."
+        }
+    ]
+}

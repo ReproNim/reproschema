@@ -1,0 +1,39 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "tlfb_6mo_1_cig_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "tlfb_6mo_1_cig_l",
+    "altLabel": "su_tlfb_last_yr_1_cig_l su_tlfb_past_yr_1_cig_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "During the past year, did your cigarettes typically contain flavor?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Yes",
+                "value": 1
+            },
+            {
+                "name": "Yes",
+                "value": 2
+            },
+            {
+                "name": "No flavoring / tlfb_6mo_skip_l___2   == '1' ",
+                "value": 3
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes; 2 = Yes; 3 = No flavoring / tlfb_6mo_skip_l___2   == '1' ||   tlfb_6mo_skip_l___5   == '1'"
+        }
+    ]
+}

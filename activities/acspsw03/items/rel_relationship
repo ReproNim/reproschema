@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "rel_relationship",
+    "@type": "reproschema:Field",
+    "prefLabel": "rel_relationship",
+    "altLabel": "demo_rel_relationship",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Relationship of the participant in his or her family",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "single",
+                "value": 0
+            },
+            {
+                "name": "sibling",
+                "value": 1
+            },
+            {
+                "name": "twin",
+                "value": 2
+            },
+            {
+                "name": "triplet",
+                "value": 3
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = single; 1 = sibling; 2 = twin; 3 = triplet"
+        }
+    ]
+}

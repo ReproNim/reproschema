@@ -1,0 +1,47 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "pds_2_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "pds_2_p",
+    "altLabel": "pubertdev_2_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "And how about the growth of your child's body hair (\"body hair\" means hair any place other than their head, such as under their arms)? Would you say that your child's body hair growth: ¿Y qué diría del crecimiento del vello corporal de su niño(a) (\"vello corporal\" se refiere al vello que crece en cualquier parte del cuerpo que no sea el pelo de la cabeza, como en las axilas)?¿Diría usted que el vello corporal de su niño(a)...?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "has not yet begun to grow Aún no le ha empezado a salir.",
+                "value": 1
+            },
+            {
+                "name": "has barely started to grow Apenas le está empezando a salir.",
+                "value": 2
+            },
+            {
+                "name": "is definitely underway Definitivamente ya le está saliendo.",
+                "value": 3
+            },
+            {
+                "name": "seems complete Parece haber terminado de salir.",
+                "value": 4
+            },
+            {
+                "name": "I don't know No sé",
+                "value": 999
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = has not yet begun to grow Aún no le ha empezado a salir.; 2 = has barely started to grow Apenas le está empezando a salir.; 3 = is definitely underway Definitivamente ya le está saliendo.; 4 = seems complete Parece haber terminado de salir.; 999 = I don't know No sé"
+        }
+    ]
+}

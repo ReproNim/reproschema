@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "medhx_4a_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "medhx_4a_l",
+    "altLabel": "medhx_4a_er_p_l medhx_4a_er_past_yr_p_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Has he/she been to an emergency room since we last saw you? Desde la última vez que nos vimos en [asnt_timestamp_c], ¿su niño(a) ha visitado una sala de emergencias?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 0,
+        "choices": [
+            {
+                "name": "Yes Sí",
+                "value": 1
+            },
+            {
+                "name": "No No",
+                "value": 0
+            },
+            {
+                "name": "Don't know No Sé",
+                "value": 6
+            },
+            {
+                "name": "Refuse to answer Niego contestar// Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+                "value": 7
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes Sí; 0 = No No; 6 = Don't know No Sé; 7 = Refuse to answer Niego contestar// Now I'd like to ask you about your child's use of health services since we last saw you on_____. "
+        }
+    ]
+}

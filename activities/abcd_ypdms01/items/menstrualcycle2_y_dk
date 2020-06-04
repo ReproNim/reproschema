@@ -1,0 +1,34 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "menstrualcycle2_y_dk",
+    "@type": "reproschema:Field",
+    "prefLabel": "menstrualcycle2_y_dk",
+    "altLabel": "menstrual_2_dk",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "On average, how many days are there between the first day of your period and the first day of your next period? (e.g., 30 days). Don't know",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 999,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "name": "Don't know",
+                "value": 999
+            },
+            {
+                "value": 777
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "999 = Don't know; 777= refuse to answer"
+        }
+    ]
+}

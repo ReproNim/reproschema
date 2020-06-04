@@ -1,0 +1,38 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "scrn_gestage",
+    "@type": "reproschema:Field",
+    "prefLabel": "scrn_gestage",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Was your child born less than 28 weeks of gestation, or in other words, was your child born more than 12 weeks premature? /¿Su niño(a) nació antes de las 28 semanas de gestación o, en otras palabras, fue prematuro por más de 12 semanas?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 0,
+        "choices": [
+            {
+                "name": "Yes - GO TO END",
+                "value": 1
+            },
+            {
+                "name": "No",
+                "value": 0
+            },
+            {
+                "name": "Don't know ",
+                "value": 2
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes - GO TO END; 0 = No; 2 = Don't know | If born at or after 28 weeks, mark No."
+        }
+    ]
+}

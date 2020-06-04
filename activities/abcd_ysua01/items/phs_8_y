@@ -1,0 +1,47 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "phs_8_y",
+    "@type": "reproschema:Field",
+    "prefLabel": "phs_8_y",
+    "altLabel": "su_phs_8",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "How much do you think people risk harming themselves (physically or in other ways) if they use smokeless tobacco regularly?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "No Risk",
+                "value": 0
+            },
+            {
+                "name": "Slight Risk",
+                "value": 1
+            },
+            {
+                "name": "Moderate Risk",
+                "value": 2
+            },
+            {
+                "name": "Great Risk",
+                "value": 3
+            },
+            {
+                "name": "Don't Know / tlfb_tob_l   == '1' ",
+                "value": 999
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = No Risk; 1 = Slight Risk; 2 = Moderate Risk; 3 = Great Risk; 999 = Don't Know / tlfb_tob_l   == '1' ||  tlfb_tob_c_l   == '1'"
+        }
+    ]
+}

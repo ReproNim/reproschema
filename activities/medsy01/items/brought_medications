@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "brought_medications",
+    "@type": "reproschema:Field",
+    "prefLabel": "brought_medications",
+    "altLabel": "medinv_plus_brought_med_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Did your child take any medications in the past two weeks and if so did you bring them with you? ? /¿Su niño(a) tomó algún medicamento en las últimas dos semanas? Si la respuesta es sí, trajo todos los medicamentos de su niño(a) a esta visita?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "Yes",
+                "value": 0
+            },
+            {
+                "name": "Yes",
+                "value": 1
+            },
+            {
+                "name": "Refused - Record reason for refusal in Comments Section Se negó - anote el motivo por el cual se negó en la sección de Comentarios.",
+                "value": 2
+            },
+            {
+                "name": "Took No Medications No usó ningún medicamento ",
+                "value": 3
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = Yes; 1 = Yes; 2 = Refused - Record reason for refusal in Comments Section Se negó - anote el motivo por el cual se negó en la sección de Comentarios.; 3 = Took No Medications No usó ningún medicamento | Mark the form status as 'Unverified' if you are waiting on the parent to provide child's medications.//The ABCD Study will be describing all medications its participants are using, both prescription and over-the-counter. These include pills, liquid medications; skin patches, eye drops, creams, salves, inhalers and injections, as well as cold or allergy medications, vitamins, herbal remedies and other supplements"
+        }
+    ]
+}

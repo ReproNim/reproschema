@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "tlfb_tob_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "tlfb_tob_l",
+    "altLabel": "su_tlfb_tob_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "tobacco products, such as cigarettes, smokeless tobacco, cigars, hookah, electronic or e-cigarettes, or Juul?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "No",
+                "value": 0
+            },
+            {
+                "name": "Yes / tlfb_tob_c_l   == '0'",
+                "value": 1
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = No; 1 = Yes / tlfb_tob_c_l   == '0'"
+        }
+    ]
+}

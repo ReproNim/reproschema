@@ -1,0 +1,38 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "slice_acquisition",
+    "@type": "reproschema:Field",
+    "prefLabel": "slice_acquisition",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "fMRI slice acquisition",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "value": 1
+            },
+            {
+                "value": 2
+            },
+            {
+                "value": 3
+            },
+            {
+                "value": 4
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1=ascending; 2=descending; 3=interleaved-even first; 4=interleaved-odd first"
+        }
+    ]
+}

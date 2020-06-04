@@ -1,0 +1,23 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "tlfb_vicodin_calc",
+    "@type": "reproschema:Field",
+    "prefLabel": "tlfb_vicodin_calc",
+    "altLabel": "su_tlfb_opiaterx_calc",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Age of onset:",
+    "ui": {
+        "inputType": "Float"
+    },
+    "responseOptions": {
+        "valueType": "Float"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "Calculation: round(([tlfb_age_calc_inmonths]-(datediff([tlfb_vicodin_date1], [su_today], \"M\", \"mdy\")))/12,2) | years old"
+        }
+    ]
+}

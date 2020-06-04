@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "dna_saliva_y",
+    "@type": "reproschema:Field",
+    "prefLabel": "dna_saliva_y",
+    "altLabel": "biospec_dna_saliva",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Saliva DNA sample collected on site?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "name": "Yes",
+                "value": 1
+            },
+            {
+                "name": "Participant refused",
+                "value": 0
+            },
+            {
+                "name": "Participant unable to complete",
+                "value": 3
+            },
+            {
+                "name": "Not collected (other)",
+                "value": 4
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes; 0 = Participant refused; 3 = Participant unable to complete; 4 = Not collected (other)"
+        }
+    ]
+}

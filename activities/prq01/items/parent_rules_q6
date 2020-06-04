@@ -1,0 +1,47 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "parent_rules_q6",
+    "@type": "reproschema:Field",
+    "prefLabel": "parent_rules_q6",
+    "altLabel": "prq_q6_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Do you enforce penalties for violating family rules about smoking? /¿Aplica sanciones por no respetar las reglas familiares con respecto a fumar cigarrillos?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "name": "Never /Nunca",
+                "value": 0
+            },
+            {
+                "name": "Rarely/ Rara vez",
+                "value": 1
+            },
+            {
+                "name": "Sometimes /A veces",
+                "value": 2
+            },
+            {
+                "name": "Often/ Con frecuencia",
+                "value": 3
+            },
+            {
+                "name": "I have not had to enforce these rules /No he tenido que hacer que cumplan estas reglas",
+                "value": 4
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = Never /Nunca; 1 = Rarely/ Rara vez; 2 = Sometimes /A veces; 3 = Often/ Con frecuencia; 4 = I have not had to enforce these rules /No he tenido que hacer que cumplan estas reglas"
+        }
+    ]
+}

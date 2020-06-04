@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "isip_2_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "isip_2_l",
+    "altLabel": "su_isip_2_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Did you continue to drink the alcoholic drink (and finish it) after the first sip?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "Yes",
+                "value": 1
+            },
+            {
+                "name": "No /( isip_1b_yn_l   == '1' && ( isip_1d_c_l   == '0' ",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes; 0 = No /( isip_1b_yn_l   == '1' && ( isip_1d_c_l   == '0' ||   isip_2_c_l   == '0' ||  isip_3_c_l   == '0' ||  isip_4_c_l   == '0' ||  isip_5_c_l   == '0' ||  isip_6_c_l   == '0')) || ( isip_1b_c_l   == '1' && ( isip_2_c_l   == '0' ||  isip_3_c_l   == '0' ||  isip_4_c_l   == '0' ||  isip_5_c_l   == '0' ||  isip_6_c_l   == '0'))"
+        }
+    ]
+}

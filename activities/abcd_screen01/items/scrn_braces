@@ -1,0 +1,38 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "scrn_braces",
+    "@type": "reproschema:Field",
+    "prefLabel": "scrn_braces",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Does (Child's name) have metal braces, spacers, or other dental appliances that cannot be removed? /¿(Nombre del menor) tiene aparatos de ortodoncia, espaciadores o otros aparatos dentales metálicos que no se puedan quitar?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 0,
+        "choices": [
+            {
+                "name": "Yes",
+                "value": 1
+            },
+            {
+                "name": "No",
+                "value": 0
+            },
+            {
+                "name": "Unsure - (Consult PI) ",
+                "value": 2
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes; 0 = No; 2 = Unsure - (Consult PI) | If only regular fillings, removable retainers and non-metal braces (e.g., Invisalign), RECORD AS NO. If palate expander, determine if it is metal, and record when it will be removed. If gold teeth/grill, ask if/when they can be removed. If they cannot be removed for scans, ask how many teeth are covered. If more than four teeth, record as 'unsure', continue screener, and consult with investigator."
+        }
+    ]
+}

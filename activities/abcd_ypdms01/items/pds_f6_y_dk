@@ -1,0 +1,34 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "pds_f6_y_dk",
+    "@type": "reproschema:Field",
+    "prefLabel": "pds_f6_y_dk",
+    "altLabel": "pubertdev_f6_dk",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "how old were you when you started to menstruate? Don't know",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 999,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "name": "I Don't know",
+                "value": 999
+            },
+            {
+                "value": 777
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "999 = I Don't know; 777=refuse to answer"
+        }
+    ]
+}

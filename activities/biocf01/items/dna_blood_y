@@ -1,0 +1,47 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "dna_blood_y",
+    "@type": "reproschema:Field",
+    "prefLabel": "dna_blood_y",
+    "altLabel": "biospec_dna_blood",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Blood DNA sample collected?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 0,
+        "choices": [
+            {
+                "name": "Yes",
+                "value": 1
+            },
+            {
+                "name": "Participant unable to complete",
+                "value": 0
+            },
+            {
+                "name": "Participant refused",
+                "value": 3
+            },
+            {
+                "name": "Not collected (other)",
+                "value": 4
+            },
+            {
+                "name": "Not applicable (Non Twin sites only)",
+                "value": 2
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes; 0 = Participant unable to complete; 3 = Participant refused; 4 = Not collected (other); 2 = Not applicable (Non Twin sites only)"
+        }
+    ]
+}

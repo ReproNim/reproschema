@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "medhx_5a",
+    "@type": "reproschema:Field",
+    "prefLabel": "medhx_5a",
+    "altLabel": "medhx_5a_er_before_past_yrp medhx_5a_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Has he/she been to the emergency room any time BEFORE this past year, that is, any other time in his/her whole life? / ¿Su niño(a) visitó la sala de emergencias en algún momento ANTES de este último año; es decir, en algún otro momento de su vida?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 0,
+        "choices": [
+            {
+                "name": "Yes /Sí",
+                "value": 1
+            },
+            {
+                "name": "No /No",
+                "value": 0
+            },
+            {
+                "name": "Don't know /No Sé",
+                "value": 6
+            },
+            {
+                "name": "Refuse to answer /Niego contestar //Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+                "value": 7
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes /Sí; 0 = No /No; 6 = Don't know /No Sé; 7 = Refuse to answer /Niego contestar //Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life."
+        }
+    ]
+}

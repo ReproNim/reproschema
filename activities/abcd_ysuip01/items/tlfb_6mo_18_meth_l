@@ -1,0 +1,51 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "tlfb_6mo_18_meth_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "tlfb_6mo_18_meth_l",
+    "altLabel": "su_tlfb_past_yr_18_meth_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "What was the typical route of administration you used when taking methamphetamine during the past year?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Smoking",
+                "value": 1
+            },
+            {
+                "name": "Oral ingestion",
+                "value": 2
+            },
+            {
+                "name": "Intranasal (snorting)",
+                "value": 3
+            },
+            {
+                "name": "Injecting subcutaneous",
+                "value": 4
+            },
+            {
+                "name": "Injecting intramuscular",
+                "value": 5
+            },
+            {
+                "name": "Injecting intravenous / tlfb_6mo_skip_l___17   == '1'",
+                "value": 6
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Smoking; 2 = Oral ingestion; 3 = Intranasal (snorting); 4 = Injecting subcutaneous; 5 = Injecting intramuscular; 6 = Injecting intravenous / tlfb_6mo_skip_l___17   == '1'"
+        }
+    ]
+}

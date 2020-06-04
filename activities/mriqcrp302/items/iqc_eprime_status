@@ -1,0 +1,38 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "iqc_eprime_status",
+    "@type": "reproschema:Field",
+    "prefLabel": "iqc_eprime_status",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Status of the E-Prime data (DAIC use only).",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "ok",
+                "value": 1
+            },
+            {
+                "name": "questionable timing relative to image data (>12min)",
+                "value": 2
+            },
+            {
+                "name": "should be excluded",
+                "value": 3
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = ok; 2 = questionable timing relative to image data (>12min); 3 = should be excluded"
+        }
+    ]
+}

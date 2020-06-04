@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "tlfb_shrooms_use",
+    "@type": "reproschema:Field",
+    "prefLabel": "tlfb_shrooms_use",
+    "altLabel": "su_tlfb_shrooms_use",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "I want to start by asking if you have EVER TRIED any of the following drugs in your life. Have you ever tried___________at any time in your life? Hallucinogen drug: magic mushrooms or shrooms",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "No",
+                "value": 0
+            },
+            {
+                "name": "Yes",
+                "value": 1
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = No; 1 = Yes"
+        }
+    ]
+}

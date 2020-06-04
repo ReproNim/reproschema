@@ -1,0 +1,34 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "scrn_claustrophobexcl",
+    "@type": "reproschema:Field",
+    "prefLabel": "scrn_claustrophobexcl",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Has this problem prevented your child from doing anything, like getting into elevators or going to places s/he thought would be too small? / ¿Este problema ha evitado que su niño(a) haga alguna cosa, como subirse a un elevador o ir a lugares que pensara que serían demasiado pequeños?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 0,
+        "choices": [
+            {
+                "name": "Yes - GO TO END",
+                "value": 1
+            },
+            {
+                "name": "No",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes - GO TO END; 0 = No"
+        }
+    ]
+}

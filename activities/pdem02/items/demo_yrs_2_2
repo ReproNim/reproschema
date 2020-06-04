@@ -1,0 +1,45 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "demo_yrs_2_2",
+    "@type": "reproschema:Field",
+    "prefLabel": "demo_yrs_2_2",
+    "altLabel": "demo_yrs_2_2_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "In general  how important are your child's religious and spiritual beliefs in his/her daily life?/ En general   cu?n importantes son las creencias religiosas y espirituales en la vida diaria de su nino(a)?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 999,
+        "choices": [
+            {
+                "value": 1
+            },
+            {
+                "value": 2
+            },
+            {
+                "value": 3
+            },
+            {
+                "value": 4
+            },
+            {
+                "value": 999
+            },
+            {
+                "value": 777
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1= Not at all/Para nada; 2= Not very/No mucho; 3= Somewhat/Algo; 4= Very/Mucho; 999= Don't know/No lo se; 777= Declined/Niego contestar"
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "tbi_3_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "tbi_3_l",
+    "altLabel": "brain_injury_3_l tbi_3_p_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Since we last saw you on [asnt_timestamp_c], has your child injured his/her head or neck in a fall or from being hit by something? (For example, falling from a bike or horse, rollerblading, falling on ice, being hit by a rock). In the past year, has your child injured his/her head or neck playing sports or on the playground?\n\n Desde la última vez que nos vimos en [baseline_year_1_arm_1][asnt_timestamp], ¿su niño/a se ha lesionado  la cabeza o el cuello debido a una caída o porque algo le haya caído algo en la cabeza (p. ej., al caerse de una bicicleta o un caballo, al andar en patines, al caerse en el hielo o que le haya caído una roca)? En el último año, ¿su niño(a) se ha lastimado la cabeza o el cuello haciendo deporte o jugando en un parque?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 0,
+        "choices": [
+            {
+                "name": "Yes Si",
+                "value": 1
+            },
+            {
+                "name": "No No",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes Si; 0 = No No"
+        }
+    ]
+}

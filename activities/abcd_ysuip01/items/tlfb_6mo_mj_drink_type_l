@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "tlfb_6mo_mj_drink_type_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "tlfb_6mo_mj_drink_type_l",
+    "altLabel": "su_tlfb_past_yr_mj_drink_type_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Was your marijuana-infused alcohol made with:",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Only THC",
+                "value": 1
+            },
+            {
+                "name": "Only cannabidiol (CBD)",
+                "value": 2
+            },
+            {
+                "name": "Both THC and CBD",
+                "value": 3
+            },
+            {
+                "name": "I don't know / tlfb_6mo_skip_l___13   == '1'",
+                "value": 4
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Only THC; 2 = Only cannabidiol (CBD); 3 = Both THC and CBD; 4 = I don't know / tlfb_6mo_skip_l___13   == '1'"
+        }
+    ]
+}

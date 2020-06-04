@@ -1,0 +1,47 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "fitb_s1_q1_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "fitb_s1_q1_p",
+    "altLabel": "fitbit_baseline_s1_q1_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "In your opinion, compared to other boys/girls your son/daughter's age, how much physical activity does your child engage in?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Much less",
+                "value": 1
+            },
+            {
+                "name": "A little less",
+                "value": 2
+            },
+            {
+                "name": "About the same",
+                "value": 3
+            },
+            {
+                "name": "A little more",
+                "value": 4
+            },
+            {
+                "name": "Much more",
+                "value": 5
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Much less; 2 = A little less; 3 = About the same; 4 = A little more; 5 = Much more"
+        }
+    ]
+}

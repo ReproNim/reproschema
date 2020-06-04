@@ -1,0 +1,38 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "pds_sex_y",
+    "@type": "reproschema:Field",
+    "prefLabel": "pds_sex_y",
+    "altLabel": "pubertdev_sex",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Do you consider yourself male or female?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Male",
+                "value": 1
+            },
+            {
+                "name": "Female",
+                "value": 2
+            },
+            {
+                "value": null
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Male; 2 = Female; The next questions are about changes that may be happening to your body. These changes normally happen to different young people at different ages. Since they may have something to do with your brain image results, do your best to answer carefully. To give you some privacy, we will let you read and answer the questions on your own. However, if you would like help reading or you don't understand the questions, just let me know and I can help you."
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "sleepdisturb1_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "sleepdisturb1_p",
+    "altLabel": "sleep_1_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "How many hours of sleep does your child get on most nights? ¿Cuántas horas duerme su niño(a) la mayoría de las noches?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "9-11 hours/ 9 a 11 horas",
+                "value": 1
+            },
+            {
+                "name": "8-9 hours /8 a 9 horas",
+                "value": 2
+            },
+            {
+                "name": "7-8 hours /7 a 8 horas",
+                "value": 3
+            },
+            {
+                "name": "5-7 hours /5 a 7 horas",
+                "value": 4
+            },
+            {
+                "name": "Less than 5 hours/ Menos de 5 horas// Consider each question pertaining to the PAST 6 MONTHS of the child's life",
+                "value": 5
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = 9-11 hours/ 9 a 11 horas; 2 = 8-9 hours /8 a 9 horas; 3 = 7-8 hours /7 a 8 horas; 4 = 5-7 hours /5 a 7 horas; 5 = Less than 5 hours/ Menos de 5 horas// Consider each question pertaining to the PAST 6 MONTHS of the child's life"
+        }
+    ]
+}

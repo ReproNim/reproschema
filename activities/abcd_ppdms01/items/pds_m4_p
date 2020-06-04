@@ -1,0 +1,47 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "pds_m4_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "pds_m4_p",
+    "altLabel": "pubertdev_m4_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Have you noticed a deepening of his voice? ¿Ha notado que la voz de su niño se ha vuelto más profunda?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "voice has not yet started changing Su voz aún no ha empezado a cambiar.",
+                "value": 1
+            },
+            {
+                "name": "voice has barely started changing Su voz apenas ha empezado a cambiar.",
+                "value": 2
+            },
+            {
+                "name": "voice changes are definitely underway Definitivamente ya están ocurriendo cambios en su voz.",
+                "value": 3
+            },
+            {
+                "name": "voice changes seem complete Parece haber terminado de cambiar su voz.",
+                "value": 4
+            },
+            {
+                "name": "I don't know No sé",
+                "value": 999
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = voice has not yet started changing Su voz aún no ha empezado a cambiar.; 2 = voice has barely started changing Su voz apenas ha empezado a cambiar.; 3 = voice changes are definitely underway Definitivamente ya están ocurriendo cambios en su voz.; 4 = voice changes seem complete Parece haber terminado de cambiar su voz.; 999 = I don't know No sé"
+        }
+    ]
+}

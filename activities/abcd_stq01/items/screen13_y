@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "screen13_y",
+    "@type": "reproschema:Field",
+    "prefLabel": "screen13_y",
+    "altLabel": "screentime_13",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "How often do you play mature-rated video games (e.g., Call of Duty, Grand Theft Auto, Assassin's Creed, etc.)?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "name": "Never",
+                "value": 0
+            },
+            {
+                "name": "Once in a while",
+                "value": 1
+            },
+            {
+                "name": "Regularly",
+                "value": 2
+            },
+            {
+                "name": "All the time",
+                "value": 3
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = Never; 1 = Once in a while; 2 = Regularly; 3 = All the time"
+        }
+    ]
+}

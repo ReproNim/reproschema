@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "upps21_y",
+    "@type": "reproschema:Field",
+    "prefLabel": "upps21_y",
+    "altLabel": "upps_21",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "I would like to learn to fly an airplane.",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Not at all like me",
+                "value": 1
+            },
+            {
+                "name": "Not like me",
+                "value": 2
+            },
+            {
+                "name": "Somewhat like me",
+                "value": 3
+            },
+            {
+                "name": "Very much like me",
+                "value": 4
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Not at all like me; 2 = Not like me; 3 = Somewhat like me; 4 = Very much like me"
+        }
+    ]
+}

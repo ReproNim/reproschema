@@ -1,0 +1,51 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "parent_rules_q1",
+    "@type": "reproschema:Field",
+    "prefLabel": "parent_rules_q1",
+    "altLabel": "prq_q1_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Which statement best describes the rules for your child's drinking in your house? / ¿Cuál de las siguientes afirmaciones describe mejor las reglas que debe seguir su niño(a) con respecto al consumo de alcohol en su casa?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "name": "My child is not allowed to drink under any circumstances  / Mi niño(a) no tiene permitido beber bajo ninguna circunstancia",
+                "value": 1
+            },
+            {
+                "name": "My child is allowed to drink at home but only on special occasions and under parent supervision / Mi niño(a) tiene permitido beber en casa",
+                "value": 2
+            },
+            {
+                "name": "My child can have a drink when he/she asks for one  /Mi niño(a) puede tomar una copa cuando pide una",
+                "value": 3
+            },
+            {
+                "name": "My child can drink at home whenever he/she wants to / Mi niño(a) puede beber en casa cuando lo desee",
+                "value": 4
+            },
+            {
+                "name": "I don't set rules about my child's drinking / No le pongo reglas a mi niño(a) con respecto al consumo de alcohol",
+                "value": 5
+            },
+            {
+                "name": "I haven't made rules yet about my child drinking   /Todavía no le he puesto reglas a mi niño(a) con respecto al consumo de alcohol",
+                "value": 6
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = My child is not allowed to drink under any circumstances  / Mi niño(a) no tiene permitido beber bajo ninguna circunstancia; 2 = My child is allowed to drink at home but only on special occasions and under parent supervision / Mi niño(a) tiene permitido beber en casa; 3 = My child can have a drink when he/she asks for one  /Mi niño(a) puede tomar una copa cuando pide una; 4 = My child can drink at home whenever he/she wants to / Mi niño(a) puede beber en casa cuando lo desee; 5 = I don't set rules about my child's drinking / No le pongo reglas a mi niño(a) con respecto al consumo de alcohol; 6 = I haven't made rules yet about my child drinking   /Todavía no le he puesto reglas a mi niño(a) con respecto al consumo de alcohol"
+        }
+    ]
+}

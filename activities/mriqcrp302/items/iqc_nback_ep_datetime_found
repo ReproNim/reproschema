@@ -1,0 +1,32 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "iqc_nback_ep_datetime_found",
+    "@type": "reproschema:Field",
+    "prefLabel": "iqc_nback_ep_datetime_found",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Eprime nBack file found and readable",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "value": 0
+            },
+            {
+                "value": 1
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0= Not Found; 1= Found"
+        }
+    ]
+}

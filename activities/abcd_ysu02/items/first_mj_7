@@ -1,0 +1,39 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "first_mj_7",
+    "@type": "reproschema:Field",
+    "prefLabel": "first_mj_7",
+    "altLabel": "su_first_mj_7",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "You mentioned earlier that you have had a puff of marijuana, weed or pot in the past. I want to ask some more questions about that.  Did the person the marijuana belonged to offer you some or did you take it when they weren't looking?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "They offered me some",
+                "value": 1
+            },
+            {
+                "name": "I intentionally took it when they weren't looking",
+                "value": 2
+            },
+            {
+                "name": "I accidentally took it when they weren't looking",
+                "value": 3
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = They offered me some; 2 = I intentionally took it when they weren't looking; 3 = I accidentally took it when they weren't looking"
+        }
+    ]
+}

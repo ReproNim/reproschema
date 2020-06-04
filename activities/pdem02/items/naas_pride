@@ -1,0 +1,51 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "naas_pride",
+    "@type": "reproschema:Field",
+    "prefLabel": "naas_pride",
+    "altLabel": "naas_pride_2 native_amer_accult_pride_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "How much pride does your family have in Native American culture and heritage? ¿Cuánto orgullo tiene su familia en la cultura y el patrimonio Nativo Americano?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Extremely proud Extremadamente orgulloso(a)",
+                "value": 1
+            },
+            {
+                "name": "Moderately proud Moderadamente orgulloso(a)",
+                "value": 2
+            },
+            {
+                "name": "A little pride Un poco orgulloso",
+                "value": 3
+            },
+            {
+                "name": "No pride",
+                "value": 4
+            },
+            {
+                "name": "No pride",
+                "value": 5
+            },
+            {
+                "name": "Don't Know No lo sÃ©  // The following questions are about you or the child's family.",
+                "value": 999
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Extremely proud Extremadamente orgulloso(a); 2 = Moderately proud Moderadamente orgulloso(a); 3 = A little pride Un poco orgulloso; 4 = No pride; 5 = No pride; 999 = Don't Know No lo sÃ©  // The following questions are about you or the child's family."
+        }
+    ]
+}

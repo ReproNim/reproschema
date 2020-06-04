@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "res_tobacco_q16_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "res_tobacco_q16_l",
+    "altLabel": "su_subj_resp_nic_q06_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Were you alone the first time you experimented with an e-cigarette or e-hookah?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Yes",
+                "value": 1
+            },
+            {
+                "name": "No / tlfb_ecig_use_l  == '1' ",
+                "value": 2
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes; 2 = No / tlfb_ecig_use_l  == '1' ||  tlfb_hookah_use_l  == '1'  &&  tlfb_ecig_use_c_l  == '0' &&  tlfb_hookah_use_c_l  == '0'"
+        }
+    ]
+}

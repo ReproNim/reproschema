@@ -1,0 +1,47 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "tlfb_6mo_5_mj",
+    "@type": "reproschema:Field",
+    "prefLabel": "tlfb_6mo_5_mj",
+    "altLabel": "su_tlfb_6mo_5_mj",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "How strong or potent do you think your smoked marijuana was that you used in the past six months? Try to estimate the potency:",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Low (around",
+                "value": 1
+            },
+            {
+                "name": "Medium (10%)",
+                "value": 2
+            },
+            {
+                "name": "High (15%)",
+                "value": 3
+            },
+            {
+                "name": "Very high (20%+)",
+                "value": 4
+            },
+            {
+                "name": "Don't know",
+                "value": 5
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Low (around; 2 = Medium (10%); 3 = High (15%); 4 = Very high (20%+); 5 = Don't know"
+        }
+    ]
+}

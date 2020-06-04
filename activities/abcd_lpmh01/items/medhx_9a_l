@@ -1,0 +1,39 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "medhx_9a_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "medhx_9a_l",
+    "altLabel": "medhx_9a_anesthesia_p_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Since we last saw you on [asnt_timestamp_c],  has he/she had general anesthesia or sedation for any surgery or procedure? Desde la última vez que nos vimos en [asnt_timestamp_c], ¿él/ella ha estado bajo anestesia general o sedación para alguna cirugía o procedimiento?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 0,
+        "choices": [
+            {
+                "name": "Yes Sí",
+                "value": 1
+            },
+            {
+                "name": "No No",
+                "value": 0
+            },
+            {
+                "name": "Don't know No sé//Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+                "value": 6
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes Sí; 0 = No No; 6 = Don't know No sé//Now I'd like to ask you about your child's use of health services since we last saw you on_____. "
+        }
+    ]
+}

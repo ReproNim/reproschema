@@ -1,0 +1,39 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "ra_scan_check_list_ssto",
+    "@type": "reproschema:Field",
+    "prefLabel": "ra_scan_check_list_ssto",
+    "altLabel": "scan_check_ssto",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "SST task order",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "1st task",
+                "value": 1
+            },
+            {
+                "name": "2nd task",
+                "value": 2
+            },
+            {
+                "name": "3rd task",
+                "value": 3
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = 1st task; 2 = 2nd task; 3 = 3rd task"
+        }
+    ]
+}

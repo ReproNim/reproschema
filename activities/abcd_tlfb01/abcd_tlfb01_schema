@@ -1,0 +1,1288 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+        "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/activities/abcd_tlfb01/abcd_tlfb01_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "abcd_tlfb01_schema",
+    "skos:prefLabel": "abcd_tlfb01",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "order": [
+            "su_tlfb_cal_scr_mj_days_yr",
+            "su_tlfb_cal_scr_nic_days_yr",
+            "tlfb_cal_scr_alc_avg",
+            "tlfb_cal_scr_alc_lud",
+            "tlfb_cal_scr_alc_max",
+            "tlfb_cal_scr_alc_td",
+            "tlfb_cal_scr_alc_ud",
+            "tlfb_cal_scr_alc_wt",
+            "tlfb_cal_scr_alc_wu",
+            "tlfb_cal_scr_assess_date",
+            "tlfb_cal_scr_blunt_avg",
+            "tlfb_cal_scr_blunt_lud",
+            "tlfb_cal_scr_blunt_max",
+            "tlfb_cal_scr_blunt_td",
+            "tlfb_cal_scr_blunt_ud",
+            "tlfb_cal_scr_blunt_wt",
+            "tlfb_cal_scr_blunt_wu",
+            "tlfb_cal_scr_bthslt_avg",
+            "tlfb_cal_scr_bthslt_lud",
+            "tlfb_cal_scr_bthslt_max",
+            "tlfb_cal_scr_bthslt_td",
+            "tlfb_cal_scr_bthslt_ud",
+            "tlfb_cal_scr_bthslt_wt",
+            "tlfb_cal_scr_bthslt_wu",
+            "tlfb_cal_scr_cbd_avg",
+            "tlfb_cal_scr_cbd_lud",
+            "tlfb_cal_scr_cbd_max",
+            "tlfb_cal_scr_cbd_td",
+            "tlfb_cal_scr_cbd_ud",
+            "tlfb_cal_scr_cbd_wt",
+            "tlfb_cal_scr_cbd_wu",
+            "tlfb_cal_scr_cg_avg",
+            "tlfb_cal_scr_cg_lud",
+            "tlfb_cal_scr_cg_max",
+            "tlfb_cal_scr_cg_td",
+            "tlfb_cal_scr_cg_ud",
+            "tlfb_cal_scr_cg_wt",
+            "tlfb_cal_scr_cg_wu",
+            "tlfb_cal_scr_chew_avg",
+            "tlfb_cal_scr_chew_lud",
+            "tlfb_cal_scr_chew_max",
+            "tlfb_cal_scr_chew_td",
+            "tlfb_cal_scr_chew_ud",
+            "tlfb_cal_scr_chew_wt",
+            "tlfb_cal_scr_chew_wu",
+            "tlfb_cal_scr_cig_avg",
+            "tlfb_cal_scr_cig_lud",
+            "tlfb_cal_scr_cig_max",
+            "tlfb_cal_scr_cig_td",
+            "tlfb_cal_scr_cig_ud",
+            "tlfb_cal_scr_cig_wt",
+            "tlfb_cal_scr_cig_wu",
+            "tlfb_cal_scr_co_mjsd_drinks",
+            "tlfb_cal_scr_co_mjsd_mj",
+            "tlfb_cal_scr_co_mjsd_num",
+            "tlfb_cal_scr_co_toal_al",
+            "tlfb_cal_scr_co_toal_num",
+            "tlfb_cal_scr_co_toal_to",
+            "tlfb_cal_scr_co_tomj_mj",
+            "tlfb_cal_scr_co_tomj_num",
+            "tlfb_cal_scr_co_tomj_to",
+            "tlfb_cal_scr_coc_avg",
+            "tlfb_cal_scr_coc_lud",
+            "tlfb_cal_scr_coc_max",
+            "tlfb_cal_scr_coc_td",
+            "tlfb_cal_scr_coc_ud",
+            "tlfb_cal_scr_coc_wt",
+            "tlfb_cal_scr_coc_wu",
+            "tlfb_cal_scr_dab_avg",
+            "tlfb_cal_scr_dab_lud",
+            "tlfb_cal_scr_dab_max",
+            "tlfb_cal_scr_dab_td",
+            "tlfb_cal_scr_dab_ud",
+            "tlfb_cal_scr_dab_wt",
+            "tlfb_cal_scr_dab_wu",
+            "tlfb_cal_scr_drinksperbinge",
+            "tlfb_cal_scr_dxm_avg",
+            "tlfb_cal_scr_dxm_lud",
+            "tlfb_cal_scr_dxm_max",
+            "tlfb_cal_scr_dxm_td",
+            "tlfb_cal_scr_dxm_ud",
+            "tlfb_cal_scr_dxm_wt",
+            "tlfb_cal_scr_dxm_wu",
+            "tlfb_cal_scr_ecig_avg",
+            "tlfb_cal_scr_ecig_lud",
+            "tlfb_cal_scr_ecig_max",
+            "tlfb_cal_scr_ecig_td",
+            "tlfb_cal_scr_ecig_ud",
+            "tlfb_cal_scr_ecig_wt",
+            "tlfb_cal_scr_ecig_wu",
+            "tlfb_cal_scr_emj_avg",
+            "tlfb_cal_scr_emj_lud",
+            "tlfb_cal_scr_emj_max",
+            "tlfb_cal_scr_emj_td",
+            "tlfb_cal_scr_emj_ud",
+            "tlfb_cal_scr_emj_wt",
+            "tlfb_cal_scr_emj_wu",
+            "tlfb_cal_scr_fake_avg",
+            "tlfb_cal_scr_fake_lud",
+            "tlfb_cal_scr_fake_max",
+            "tlfb_cal_scr_fake_td",
+            "tlfb_cal_scr_fake_ud",
+            "tlfb_cal_scr_fake_wt",
+            "tlfb_cal_scr_fake_wu",
+            "tlfb_cal_scr_gbh_avg",
+            "tlfb_cal_scr_gbh_lud",
+            "tlfb_cal_scr_gbh_max",
+            "tlfb_cal_scr_gbh_td",
+            "tlfb_cal_scr_gbh_ud",
+            "tlfb_cal_scr_gbh_wt",
+            "tlfb_cal_scr_gbh_wu",
+            "tlfb_cal_scr_hall_avg",
+            "tlfb_cal_scr_hall_lud",
+            "tlfb_cal_scr_hall_max",
+            "tlfb_cal_scr_hall_td",
+            "tlfb_cal_scr_hall_ud",
+            "tlfb_cal_scr_hall_wt",
+            "tlfb_cal_scr_hall_wu",
+            "tlfb_cal_scr_hooka_avg",
+            "tlfb_cal_scr_hooka_lud",
+            "tlfb_cal_scr_hooka_max",
+            "tlfb_cal_scr_hooka_td",
+            "tlfb_cal_scr_hooka_ud",
+            "tlfb_cal_scr_hooka_wt",
+            "tlfb_cal_scr_hooka_wu",
+            "tlfb_cal_scr_inhal_avg",
+            "tlfb_cal_scr_inhal_lud",
+            "tlfb_cal_scr_inhal_max",
+            "tlfb_cal_scr_inhal_td",
+            "tlfb_cal_scr_inhal_ud",
+            "tlfb_cal_scr_inhal_wt",
+            "tlfb_cal_scr_inhal_wu",
+            "tlfb_cal_scr_k2_avg",
+            "tlfb_cal_scr_k2_lud",
+            "tlfb_cal_scr_k2_max",
+            "tlfb_cal_scr_k2_td",
+            "tlfb_cal_scr_k2_ud",
+            "tlfb_cal_scr_k2_wt",
+            "tlfb_cal_scr_k2_wu",
+            "tlfb_cal_scr_ket_avg",
+            "tlfb_cal_scr_ket_lud",
+            "tlfb_cal_scr_ket_max",
+            "tlfb_cal_scr_ket_td",
+            "tlfb_cal_scr_ket_ud",
+            "tlfb_cal_scr_ket_wt",
+            "tlfb_cal_scr_ket_wu",
+            "tlfb_cal_scr_mdma_avg",
+            "tlfb_cal_scr_mdma_lud",
+            "tlfb_cal_scr_mdma_max",
+            "tlfb_cal_scr_mdma_td",
+            "tlfb_cal_scr_mdma_ud",
+            "tlfb_cal_scr_mdma_wt",
+            "tlfb_cal_scr_mdma_wu",
+            "tlfb_cal_scr_meth_avg",
+            "tlfb_cal_scr_meth_lud",
+            "tlfb_cal_scr_meth_max",
+            "tlfb_cal_scr_meth_td",
+            "tlfb_cal_scr_meth_ud",
+            "tlfb_cal_scr_meth_wt",
+            "tlfb_cal_scr_meth_wu",
+            "tlfb_cal_scr_mjalc_avg",
+            "tlfb_cal_scr_mjalc_lud",
+            "tlfb_cal_scr_mjalc_max",
+            "tlfb_cal_scr_mjalc_td",
+            "tlfb_cal_scr_mjalc_ud",
+            "tlfb_cal_scr_mjalc_wt",
+            "tlfb_cal_scr_mjalc_wu",
+            "tlfb_cal_scr_mjt_avg",
+            "tlfb_cal_scr_mjt_lud",
+            "tlfb_cal_scr_mjt_max",
+            "tlfb_cal_scr_mjt_td",
+            "tlfb_cal_scr_mjt_ud",
+            "tlfb_cal_scr_mjt_wt",
+            "tlfb_cal_scr_mjt_wu",
+            "tlfb_cal_scr_nicrx_avg",
+            "tlfb_cal_scr_nicrx_lud",
+            "tlfb_cal_scr_nicrx_max",
+            "tlfb_cal_scr_nicrx_td",
+            "tlfb_cal_scr_nicrx_ud",
+            "tlfb_cal_scr_nicrx_wt",
+            "tlfb_cal_scr_nicrx_wu",
+            "tlfb_cal_scr_num_bde",
+            "tlfb_cal_scr_num_events",
+            "tlfb_cal_scr_opiate_avg",
+            "tlfb_cal_scr_opiate_lud",
+            "tlfb_cal_scr_opiate_max",
+            "tlfb_cal_scr_opiate_td",
+            "tlfb_cal_scr_opiate_ud",
+            "tlfb_cal_scr_opiate_wt",
+            "tlfb_cal_scr_opiate_wu",
+            "tlfb_cal_scr_opiaterx_avg",
+            "tlfb_cal_scr_opiaterx_lud",
+            "tlfb_cal_scr_opiaterx_max",
+            "tlfb_cal_scr_opiaterx_td",
+            "tlfb_cal_scr_opiaterx_ud",
+            "tlfb_cal_scr_opiaterx_wt",
+            "tlfb_cal_scr_opiaterx_wu",
+            "tlfb_cal_scr_ot_avg",
+            "tlfb_cal_scr_ot_lud",
+            "tlfb_cal_scr_ot_max",
+            "tlfb_cal_scr_ot_td",
+            "tlfb_cal_scr_ot_ud",
+            "tlfb_cal_scr_ot_wt",
+            "tlfb_cal_scr_ot_wu",
+            "tlfb_cal_scr_pipe_avg",
+            "tlfb_cal_scr_pipe_lud",
+            "tlfb_cal_scr_pipe_max",
+            "tlfb_cal_scr_pipe_td",
+            "tlfb_cal_scr_pipe_ud",
+            "tlfb_cal_scr_pipe_wt",
+            "tlfb_cal_scr_pipe_wu",
+            "tlfb_cal_scr_roid_avg",
+            "tlfb_cal_scr_roid_lud",
+            "tlfb_cal_scr_roid_max",
+            "tlfb_cal_scr_roid_td",
+            "tlfb_cal_scr_roid_ud",
+            "tlfb_cal_scr_roid_wt",
+            "tlfb_cal_scr_roid_wu",
+            "tlfb_cal_scr_sal_avg",
+            "tlfb_cal_scr_sal_lud",
+            "tlfb_cal_scr_sal_max",
+            "tlfb_cal_scr_sal_td",
+            "tlfb_cal_scr_sal_ud",
+            "tlfb_cal_scr_sal_wt",
+            "tlfb_cal_scr_sal_wu",
+            "tlfb_cal_scr_sedrx_avg",
+            "tlfb_cal_scr_sedrx_lud",
+            "tlfb_cal_scr_sedrx_max",
+            "tlfb_cal_scr_sedrx_td",
+            "tlfb_cal_scr_sedrx_ud",
+            "tlfb_cal_scr_sedrx_wt",
+            "tlfb_cal_scr_sedrx_wu",
+            "tlfb_cal_scr_shroom_avg",
+            "tlfb_cal_scr_shroom_lud",
+            "tlfb_cal_scr_shroom_max",
+            "tlfb_cal_scr_shroom_td",
+            "tlfb_cal_scr_shroom_ud",
+            "tlfb_cal_scr_shroom_wt",
+            "tlfb_cal_scr_shroom_wu",
+            "tlfb_cal_scr_smj_avg",
+            "tlfb_cal_scr_smj_lud",
+            "tlfb_cal_scr_smj_max",
+            "tlfb_cal_scr_smj_td",
+            "tlfb_cal_scr_smj_ud",
+            "tlfb_cal_scr_smj_wt",
+            "tlfb_cal_scr_smj_wu",
+            "tlfb_cal_scr_stimrx_avg",
+            "tlfb_cal_scr_stimrx_lud",
+            "tlfb_cal_scr_stimrx_max",
+            "tlfb_cal_scr_stimrx_td",
+            "tlfb_cal_scr_stimrx_ud",
+            "tlfb_cal_scr_stimrx_wt",
+            "tlfb_cal_scr_stimrx_wu",
+            "tlfb_cal_scr_tot_bde"
+        ],
+        "shuffle": false,
+        "addProperties": [
+            {
+                "variableName": "su_tlfb_cal_scr_mj_days_yr",
+                "isAbout": "su_tlfb_cal_scr_mj_days_yr"
+            },
+            {
+                "variableName": "su_tlfb_cal_scr_nic_days_yr",
+                "isAbout": "su_tlfb_cal_scr_nic_days_yr"
+            },
+            {
+                "variableName": "tlfb_cal_scr_alc_avg",
+                "isAbout": "tlfb_cal_scr_alc_avg"
+            },
+            {
+                "variableName": "tlfb_cal_scr_alc_lud",
+                "isAbout": "tlfb_cal_scr_alc_lud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_alc_max",
+                "isAbout": "tlfb_cal_scr_alc_max"
+            },
+            {
+                "variableName": "tlfb_cal_scr_alc_td",
+                "isAbout": "tlfb_cal_scr_alc_td"
+            },
+            {
+                "variableName": "tlfb_cal_scr_alc_ud",
+                "isAbout": "tlfb_cal_scr_alc_ud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_alc_wt",
+                "isAbout": "tlfb_cal_scr_alc_wt"
+            },
+            {
+                "variableName": "tlfb_cal_scr_alc_wu",
+                "isAbout": "tlfb_cal_scr_alc_wu"
+            },
+            {
+                "variableName": "tlfb_cal_scr_assess_date",
+                "isAbout": "tlfb_cal_scr_assess_date"
+            },
+            {
+                "variableName": "tlfb_cal_scr_blunt_avg",
+                "isAbout": "tlfb_cal_scr_blunt_avg"
+            },
+            {
+                "variableName": "tlfb_cal_scr_blunt_lud",
+                "isAbout": "tlfb_cal_scr_blunt_lud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_blunt_max",
+                "isAbout": "tlfb_cal_scr_blunt_max"
+            },
+            {
+                "variableName": "tlfb_cal_scr_blunt_td",
+                "isAbout": "tlfb_cal_scr_blunt_td"
+            },
+            {
+                "variableName": "tlfb_cal_scr_blunt_ud",
+                "isAbout": "tlfb_cal_scr_blunt_ud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_blunt_wt",
+                "isAbout": "tlfb_cal_scr_blunt_wt"
+            },
+            {
+                "variableName": "tlfb_cal_scr_blunt_wu",
+                "isAbout": "tlfb_cal_scr_blunt_wu"
+            },
+            {
+                "variableName": "tlfb_cal_scr_bthslt_avg",
+                "isAbout": "tlfb_cal_scr_bthslt_avg"
+            },
+            {
+                "variableName": "tlfb_cal_scr_bthslt_lud",
+                "isAbout": "tlfb_cal_scr_bthslt_lud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_bthslt_max",
+                "isAbout": "tlfb_cal_scr_bthslt_max"
+            },
+            {
+                "variableName": "tlfb_cal_scr_bthslt_td",
+                "isAbout": "tlfb_cal_scr_bthslt_td"
+            },
+            {
+                "variableName": "tlfb_cal_scr_bthslt_ud",
+                "isAbout": "tlfb_cal_scr_bthslt_ud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_bthslt_wt",
+                "isAbout": "tlfb_cal_scr_bthslt_wt"
+            },
+            {
+                "variableName": "tlfb_cal_scr_bthslt_wu",
+                "isAbout": "tlfb_cal_scr_bthslt_wu"
+            },
+            {
+                "variableName": "tlfb_cal_scr_cbd_avg",
+                "isAbout": "tlfb_cal_scr_cbd_avg"
+            },
+            {
+                "variableName": "tlfb_cal_scr_cbd_lud",
+                "isAbout": "tlfb_cal_scr_cbd_lud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_cbd_max",
+                "isAbout": "tlfb_cal_scr_cbd_max"
+            },
+            {
+                "variableName": "tlfb_cal_scr_cbd_td",
+                "isAbout": "tlfb_cal_scr_cbd_td"
+            },
+            {
+                "variableName": "tlfb_cal_scr_cbd_ud",
+                "isAbout": "tlfb_cal_scr_cbd_ud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_cbd_wt",
+                "isAbout": "tlfb_cal_scr_cbd_wt"
+            },
+            {
+                "variableName": "tlfb_cal_scr_cbd_wu",
+                "isAbout": "tlfb_cal_scr_cbd_wu"
+            },
+            {
+                "variableName": "tlfb_cal_scr_cg_avg",
+                "isAbout": "tlfb_cal_scr_cg_avg"
+            },
+            {
+                "variableName": "tlfb_cal_scr_cg_lud",
+                "isAbout": "tlfb_cal_scr_cg_lud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_cg_max",
+                "isAbout": "tlfb_cal_scr_cg_max"
+            },
+            {
+                "variableName": "tlfb_cal_scr_cg_td",
+                "isAbout": "tlfb_cal_scr_cg_td"
+            },
+            {
+                "variableName": "tlfb_cal_scr_cg_ud",
+                "isAbout": "tlfb_cal_scr_cg_ud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_cg_wt",
+                "isAbout": "tlfb_cal_scr_cg_wt"
+            },
+            {
+                "variableName": "tlfb_cal_scr_cg_wu",
+                "isAbout": "tlfb_cal_scr_cg_wu"
+            },
+            {
+                "variableName": "tlfb_cal_scr_chew_avg",
+                "isAbout": "tlfb_cal_scr_chew_avg"
+            },
+            {
+                "variableName": "tlfb_cal_scr_chew_lud",
+                "isAbout": "tlfb_cal_scr_chew_lud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_chew_max",
+                "isAbout": "tlfb_cal_scr_chew_max"
+            },
+            {
+                "variableName": "tlfb_cal_scr_chew_td",
+                "isAbout": "tlfb_cal_scr_chew_td"
+            },
+            {
+                "variableName": "tlfb_cal_scr_chew_ud",
+                "isAbout": "tlfb_cal_scr_chew_ud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_chew_wt",
+                "isAbout": "tlfb_cal_scr_chew_wt"
+            },
+            {
+                "variableName": "tlfb_cal_scr_chew_wu",
+                "isAbout": "tlfb_cal_scr_chew_wu"
+            },
+            {
+                "variableName": "tlfb_cal_scr_cig_avg",
+                "isAbout": "tlfb_cal_scr_cig_avg"
+            },
+            {
+                "variableName": "tlfb_cal_scr_cig_lud",
+                "isAbout": "tlfb_cal_scr_cig_lud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_cig_max",
+                "isAbout": "tlfb_cal_scr_cig_max"
+            },
+            {
+                "variableName": "tlfb_cal_scr_cig_td",
+                "isAbout": "tlfb_cal_scr_cig_td"
+            },
+            {
+                "variableName": "tlfb_cal_scr_cig_ud",
+                "isAbout": "tlfb_cal_scr_cig_ud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_cig_wt",
+                "isAbout": "tlfb_cal_scr_cig_wt"
+            },
+            {
+                "variableName": "tlfb_cal_scr_cig_wu",
+                "isAbout": "tlfb_cal_scr_cig_wu"
+            },
+            {
+                "variableName": "tlfb_cal_scr_co_mjsd_drinks",
+                "isAbout": "tlfb_cal_scr_co_mjsd_drinks"
+            },
+            {
+                "variableName": "tlfb_cal_scr_co_mjsd_mj",
+                "isAbout": "tlfb_cal_scr_co_mjsd_mj"
+            },
+            {
+                "variableName": "tlfb_cal_scr_co_mjsd_num",
+                "isAbout": "tlfb_cal_scr_co_mjsd_num"
+            },
+            {
+                "variableName": "tlfb_cal_scr_co_toal_al",
+                "isAbout": "tlfb_cal_scr_co_toal_al"
+            },
+            {
+                "variableName": "tlfb_cal_scr_co_toal_num",
+                "isAbout": "tlfb_cal_scr_co_toal_num"
+            },
+            {
+                "variableName": "tlfb_cal_scr_co_toal_to",
+                "isAbout": "tlfb_cal_scr_co_toal_to"
+            },
+            {
+                "variableName": "tlfb_cal_scr_co_tomj_mj",
+                "isAbout": "tlfb_cal_scr_co_tomj_mj"
+            },
+            {
+                "variableName": "tlfb_cal_scr_co_tomj_num",
+                "isAbout": "tlfb_cal_scr_co_tomj_num"
+            },
+            {
+                "variableName": "tlfb_cal_scr_co_tomj_to",
+                "isAbout": "tlfb_cal_scr_co_tomj_to"
+            },
+            {
+                "variableName": "tlfb_cal_scr_coc_avg",
+                "isAbout": "tlfb_cal_scr_coc_avg"
+            },
+            {
+                "variableName": "tlfb_cal_scr_coc_lud",
+                "isAbout": "tlfb_cal_scr_coc_lud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_coc_max",
+                "isAbout": "tlfb_cal_scr_coc_max"
+            },
+            {
+                "variableName": "tlfb_cal_scr_coc_td",
+                "isAbout": "tlfb_cal_scr_coc_td"
+            },
+            {
+                "variableName": "tlfb_cal_scr_coc_ud",
+                "isAbout": "tlfb_cal_scr_coc_ud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_coc_wt",
+                "isAbout": "tlfb_cal_scr_coc_wt"
+            },
+            {
+                "variableName": "tlfb_cal_scr_coc_wu",
+                "isAbout": "tlfb_cal_scr_coc_wu"
+            },
+            {
+                "variableName": "tlfb_cal_scr_dab_avg",
+                "isAbout": "tlfb_cal_scr_dab_avg"
+            },
+            {
+                "variableName": "tlfb_cal_scr_dab_lud",
+                "isAbout": "tlfb_cal_scr_dab_lud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_dab_max",
+                "isAbout": "tlfb_cal_scr_dab_max"
+            },
+            {
+                "variableName": "tlfb_cal_scr_dab_td",
+                "isAbout": "tlfb_cal_scr_dab_td"
+            },
+            {
+                "variableName": "tlfb_cal_scr_dab_ud",
+                "isAbout": "tlfb_cal_scr_dab_ud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_dab_wt",
+                "isAbout": "tlfb_cal_scr_dab_wt"
+            },
+            {
+                "variableName": "tlfb_cal_scr_dab_wu",
+                "isAbout": "tlfb_cal_scr_dab_wu"
+            },
+            {
+                "variableName": "tlfb_cal_scr_drinksperbinge",
+                "isAbout": "tlfb_cal_scr_drinksperbinge"
+            },
+            {
+                "variableName": "tlfb_cal_scr_dxm_avg",
+                "isAbout": "tlfb_cal_scr_dxm_avg"
+            },
+            {
+                "variableName": "tlfb_cal_scr_dxm_lud",
+                "isAbout": "tlfb_cal_scr_dxm_lud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_dxm_max",
+                "isAbout": "tlfb_cal_scr_dxm_max"
+            },
+            {
+                "variableName": "tlfb_cal_scr_dxm_td",
+                "isAbout": "tlfb_cal_scr_dxm_td"
+            },
+            {
+                "variableName": "tlfb_cal_scr_dxm_ud",
+                "isAbout": "tlfb_cal_scr_dxm_ud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_dxm_wt",
+                "isAbout": "tlfb_cal_scr_dxm_wt"
+            },
+            {
+                "variableName": "tlfb_cal_scr_dxm_wu",
+                "isAbout": "tlfb_cal_scr_dxm_wu"
+            },
+            {
+                "variableName": "tlfb_cal_scr_ecig_avg",
+                "isAbout": "tlfb_cal_scr_ecig_avg"
+            },
+            {
+                "variableName": "tlfb_cal_scr_ecig_lud",
+                "isAbout": "tlfb_cal_scr_ecig_lud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_ecig_max",
+                "isAbout": "tlfb_cal_scr_ecig_max"
+            },
+            {
+                "variableName": "tlfb_cal_scr_ecig_td",
+                "isAbout": "tlfb_cal_scr_ecig_td"
+            },
+            {
+                "variableName": "tlfb_cal_scr_ecig_ud",
+                "isAbout": "tlfb_cal_scr_ecig_ud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_ecig_wt",
+                "isAbout": "tlfb_cal_scr_ecig_wt"
+            },
+            {
+                "variableName": "tlfb_cal_scr_ecig_wu",
+                "isAbout": "tlfb_cal_scr_ecig_wu"
+            },
+            {
+                "variableName": "tlfb_cal_scr_emj_avg",
+                "isAbout": "tlfb_cal_scr_emj_avg"
+            },
+            {
+                "variableName": "tlfb_cal_scr_emj_lud",
+                "isAbout": "tlfb_cal_scr_emj_lud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_emj_max",
+                "isAbout": "tlfb_cal_scr_emj_max"
+            },
+            {
+                "variableName": "tlfb_cal_scr_emj_td",
+                "isAbout": "tlfb_cal_scr_emj_td"
+            },
+            {
+                "variableName": "tlfb_cal_scr_emj_ud",
+                "isAbout": "tlfb_cal_scr_emj_ud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_emj_wt",
+                "isAbout": "tlfb_cal_scr_emj_wt"
+            },
+            {
+                "variableName": "tlfb_cal_scr_emj_wu",
+                "isAbout": "tlfb_cal_scr_emj_wu"
+            },
+            {
+                "variableName": "tlfb_cal_scr_fake_avg",
+                "isAbout": "tlfb_cal_scr_fake_avg"
+            },
+            {
+                "variableName": "tlfb_cal_scr_fake_lud",
+                "isAbout": "tlfb_cal_scr_fake_lud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_fake_max",
+                "isAbout": "tlfb_cal_scr_fake_max"
+            },
+            {
+                "variableName": "tlfb_cal_scr_fake_td",
+                "isAbout": "tlfb_cal_scr_fake_td"
+            },
+            {
+                "variableName": "tlfb_cal_scr_fake_ud",
+                "isAbout": "tlfb_cal_scr_fake_ud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_fake_wt",
+                "isAbout": "tlfb_cal_scr_fake_wt"
+            },
+            {
+                "variableName": "tlfb_cal_scr_fake_wu",
+                "isAbout": "tlfb_cal_scr_fake_wu"
+            },
+            {
+                "variableName": "tlfb_cal_scr_gbh_avg",
+                "isAbout": "tlfb_cal_scr_gbh_avg"
+            },
+            {
+                "variableName": "tlfb_cal_scr_gbh_lud",
+                "isAbout": "tlfb_cal_scr_gbh_lud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_gbh_max",
+                "isAbout": "tlfb_cal_scr_gbh_max"
+            },
+            {
+                "variableName": "tlfb_cal_scr_gbh_td",
+                "isAbout": "tlfb_cal_scr_gbh_td"
+            },
+            {
+                "variableName": "tlfb_cal_scr_gbh_ud",
+                "isAbout": "tlfb_cal_scr_gbh_ud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_gbh_wt",
+                "isAbout": "tlfb_cal_scr_gbh_wt"
+            },
+            {
+                "variableName": "tlfb_cal_scr_gbh_wu",
+                "isAbout": "tlfb_cal_scr_gbh_wu"
+            },
+            {
+                "variableName": "tlfb_cal_scr_hall_avg",
+                "isAbout": "tlfb_cal_scr_hall_avg"
+            },
+            {
+                "variableName": "tlfb_cal_scr_hall_lud",
+                "isAbout": "tlfb_cal_scr_hall_lud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_hall_max",
+                "isAbout": "tlfb_cal_scr_hall_max"
+            },
+            {
+                "variableName": "tlfb_cal_scr_hall_td",
+                "isAbout": "tlfb_cal_scr_hall_td"
+            },
+            {
+                "variableName": "tlfb_cal_scr_hall_ud",
+                "isAbout": "tlfb_cal_scr_hall_ud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_hall_wt",
+                "isAbout": "tlfb_cal_scr_hall_wt"
+            },
+            {
+                "variableName": "tlfb_cal_scr_hall_wu",
+                "isAbout": "tlfb_cal_scr_hall_wu"
+            },
+            {
+                "variableName": "tlfb_cal_scr_hooka_avg",
+                "isAbout": "tlfb_cal_scr_hooka_avg"
+            },
+            {
+                "variableName": "tlfb_cal_scr_hooka_lud",
+                "isAbout": "tlfb_cal_scr_hooka_lud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_hooka_max",
+                "isAbout": "tlfb_cal_scr_hooka_max"
+            },
+            {
+                "variableName": "tlfb_cal_scr_hooka_td",
+                "isAbout": "tlfb_cal_scr_hooka_td"
+            },
+            {
+                "variableName": "tlfb_cal_scr_hooka_ud",
+                "isAbout": "tlfb_cal_scr_hooka_ud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_hooka_wt",
+                "isAbout": "tlfb_cal_scr_hooka_wt"
+            },
+            {
+                "variableName": "tlfb_cal_scr_hooka_wu",
+                "isAbout": "tlfb_cal_scr_hooka_wu"
+            },
+            {
+                "variableName": "tlfb_cal_scr_inhal_avg",
+                "isAbout": "tlfb_cal_scr_inhal_avg"
+            },
+            {
+                "variableName": "tlfb_cal_scr_inhal_lud",
+                "isAbout": "tlfb_cal_scr_inhal_lud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_inhal_max",
+                "isAbout": "tlfb_cal_scr_inhal_max"
+            },
+            {
+                "variableName": "tlfb_cal_scr_inhal_td",
+                "isAbout": "tlfb_cal_scr_inhal_td"
+            },
+            {
+                "variableName": "tlfb_cal_scr_inhal_ud",
+                "isAbout": "tlfb_cal_scr_inhal_ud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_inhal_wt",
+                "isAbout": "tlfb_cal_scr_inhal_wt"
+            },
+            {
+                "variableName": "tlfb_cal_scr_inhal_wu",
+                "isAbout": "tlfb_cal_scr_inhal_wu"
+            },
+            {
+                "variableName": "tlfb_cal_scr_k2_avg",
+                "isAbout": "tlfb_cal_scr_k2_avg"
+            },
+            {
+                "variableName": "tlfb_cal_scr_k2_lud",
+                "isAbout": "tlfb_cal_scr_k2_lud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_k2_max",
+                "isAbout": "tlfb_cal_scr_k2_max"
+            },
+            {
+                "variableName": "tlfb_cal_scr_k2_td",
+                "isAbout": "tlfb_cal_scr_k2_td"
+            },
+            {
+                "variableName": "tlfb_cal_scr_k2_ud",
+                "isAbout": "tlfb_cal_scr_k2_ud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_k2_wt",
+                "isAbout": "tlfb_cal_scr_k2_wt"
+            },
+            {
+                "variableName": "tlfb_cal_scr_k2_wu",
+                "isAbout": "tlfb_cal_scr_k2_wu"
+            },
+            {
+                "variableName": "tlfb_cal_scr_ket_avg",
+                "isAbout": "tlfb_cal_scr_ket_avg"
+            },
+            {
+                "variableName": "tlfb_cal_scr_ket_lud",
+                "isAbout": "tlfb_cal_scr_ket_lud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_ket_max",
+                "isAbout": "tlfb_cal_scr_ket_max"
+            },
+            {
+                "variableName": "tlfb_cal_scr_ket_td",
+                "isAbout": "tlfb_cal_scr_ket_td"
+            },
+            {
+                "variableName": "tlfb_cal_scr_ket_ud",
+                "isAbout": "tlfb_cal_scr_ket_ud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_ket_wt",
+                "isAbout": "tlfb_cal_scr_ket_wt"
+            },
+            {
+                "variableName": "tlfb_cal_scr_ket_wu",
+                "isAbout": "tlfb_cal_scr_ket_wu"
+            },
+            {
+                "variableName": "tlfb_cal_scr_mdma_avg",
+                "isAbout": "tlfb_cal_scr_mdma_avg"
+            },
+            {
+                "variableName": "tlfb_cal_scr_mdma_lud",
+                "isAbout": "tlfb_cal_scr_mdma_lud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_mdma_max",
+                "isAbout": "tlfb_cal_scr_mdma_max"
+            },
+            {
+                "variableName": "tlfb_cal_scr_mdma_td",
+                "isAbout": "tlfb_cal_scr_mdma_td"
+            },
+            {
+                "variableName": "tlfb_cal_scr_mdma_ud",
+                "isAbout": "tlfb_cal_scr_mdma_ud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_mdma_wt",
+                "isAbout": "tlfb_cal_scr_mdma_wt"
+            },
+            {
+                "variableName": "tlfb_cal_scr_mdma_wu",
+                "isAbout": "tlfb_cal_scr_mdma_wu"
+            },
+            {
+                "variableName": "tlfb_cal_scr_meth_avg",
+                "isAbout": "tlfb_cal_scr_meth_avg"
+            },
+            {
+                "variableName": "tlfb_cal_scr_meth_lud",
+                "isAbout": "tlfb_cal_scr_meth_lud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_meth_max",
+                "isAbout": "tlfb_cal_scr_meth_max"
+            },
+            {
+                "variableName": "tlfb_cal_scr_meth_td",
+                "isAbout": "tlfb_cal_scr_meth_td"
+            },
+            {
+                "variableName": "tlfb_cal_scr_meth_ud",
+                "isAbout": "tlfb_cal_scr_meth_ud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_meth_wt",
+                "isAbout": "tlfb_cal_scr_meth_wt"
+            },
+            {
+                "variableName": "tlfb_cal_scr_meth_wu",
+                "isAbout": "tlfb_cal_scr_meth_wu"
+            },
+            {
+                "variableName": "tlfb_cal_scr_mjalc_avg",
+                "isAbout": "tlfb_cal_scr_mjalc_avg"
+            },
+            {
+                "variableName": "tlfb_cal_scr_mjalc_lud",
+                "isAbout": "tlfb_cal_scr_mjalc_lud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_mjalc_max",
+                "isAbout": "tlfb_cal_scr_mjalc_max"
+            },
+            {
+                "variableName": "tlfb_cal_scr_mjalc_td",
+                "isAbout": "tlfb_cal_scr_mjalc_td"
+            },
+            {
+                "variableName": "tlfb_cal_scr_mjalc_ud",
+                "isAbout": "tlfb_cal_scr_mjalc_ud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_mjalc_wt",
+                "isAbout": "tlfb_cal_scr_mjalc_wt"
+            },
+            {
+                "variableName": "tlfb_cal_scr_mjalc_wu",
+                "isAbout": "tlfb_cal_scr_mjalc_wu"
+            },
+            {
+                "variableName": "tlfb_cal_scr_mjt_avg",
+                "isAbout": "tlfb_cal_scr_mjt_avg"
+            },
+            {
+                "variableName": "tlfb_cal_scr_mjt_lud",
+                "isAbout": "tlfb_cal_scr_mjt_lud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_mjt_max",
+                "isAbout": "tlfb_cal_scr_mjt_max"
+            },
+            {
+                "variableName": "tlfb_cal_scr_mjt_td",
+                "isAbout": "tlfb_cal_scr_mjt_td"
+            },
+            {
+                "variableName": "tlfb_cal_scr_mjt_ud",
+                "isAbout": "tlfb_cal_scr_mjt_ud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_mjt_wt",
+                "isAbout": "tlfb_cal_scr_mjt_wt"
+            },
+            {
+                "variableName": "tlfb_cal_scr_mjt_wu",
+                "isAbout": "tlfb_cal_scr_mjt_wu"
+            },
+            {
+                "variableName": "tlfb_cal_scr_nicrx_avg",
+                "isAbout": "tlfb_cal_scr_nicrx_avg"
+            },
+            {
+                "variableName": "tlfb_cal_scr_nicrx_lud",
+                "isAbout": "tlfb_cal_scr_nicrx_lud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_nicrx_max",
+                "isAbout": "tlfb_cal_scr_nicrx_max"
+            },
+            {
+                "variableName": "tlfb_cal_scr_nicrx_td",
+                "isAbout": "tlfb_cal_scr_nicrx_td"
+            },
+            {
+                "variableName": "tlfb_cal_scr_nicrx_ud",
+                "isAbout": "tlfb_cal_scr_nicrx_ud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_nicrx_wt",
+                "isAbout": "tlfb_cal_scr_nicrx_wt"
+            },
+            {
+                "variableName": "tlfb_cal_scr_nicrx_wu",
+                "isAbout": "tlfb_cal_scr_nicrx_wu"
+            },
+            {
+                "variableName": "tlfb_cal_scr_num_bde",
+                "isAbout": "tlfb_cal_scr_num_bde"
+            },
+            {
+                "variableName": "tlfb_cal_scr_num_events",
+                "isAbout": "tlfb_cal_scr_num_events"
+            },
+            {
+                "variableName": "tlfb_cal_scr_opiate_avg",
+                "isAbout": "tlfb_cal_scr_opiate_avg"
+            },
+            {
+                "variableName": "tlfb_cal_scr_opiate_lud",
+                "isAbout": "tlfb_cal_scr_opiate_lud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_opiate_max",
+                "isAbout": "tlfb_cal_scr_opiate_max"
+            },
+            {
+                "variableName": "tlfb_cal_scr_opiate_td",
+                "isAbout": "tlfb_cal_scr_opiate_td"
+            },
+            {
+                "variableName": "tlfb_cal_scr_opiate_ud",
+                "isAbout": "tlfb_cal_scr_opiate_ud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_opiate_wt",
+                "isAbout": "tlfb_cal_scr_opiate_wt"
+            },
+            {
+                "variableName": "tlfb_cal_scr_opiate_wu",
+                "isAbout": "tlfb_cal_scr_opiate_wu"
+            },
+            {
+                "variableName": "tlfb_cal_scr_opiaterx_avg",
+                "isAbout": "tlfb_cal_scr_opiaterx_avg"
+            },
+            {
+                "variableName": "tlfb_cal_scr_opiaterx_lud",
+                "isAbout": "tlfb_cal_scr_opiaterx_lud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_opiaterx_max",
+                "isAbout": "tlfb_cal_scr_opiaterx_max"
+            },
+            {
+                "variableName": "tlfb_cal_scr_opiaterx_td",
+                "isAbout": "tlfb_cal_scr_opiaterx_td"
+            },
+            {
+                "variableName": "tlfb_cal_scr_opiaterx_ud",
+                "isAbout": "tlfb_cal_scr_opiaterx_ud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_opiaterx_wt",
+                "isAbout": "tlfb_cal_scr_opiaterx_wt"
+            },
+            {
+                "variableName": "tlfb_cal_scr_opiaterx_wu",
+                "isAbout": "tlfb_cal_scr_opiaterx_wu"
+            },
+            {
+                "variableName": "tlfb_cal_scr_ot_avg",
+                "isAbout": "tlfb_cal_scr_ot_avg"
+            },
+            {
+                "variableName": "tlfb_cal_scr_ot_lud",
+                "isAbout": "tlfb_cal_scr_ot_lud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_ot_max",
+                "isAbout": "tlfb_cal_scr_ot_max"
+            },
+            {
+                "variableName": "tlfb_cal_scr_ot_td",
+                "isAbout": "tlfb_cal_scr_ot_td"
+            },
+            {
+                "variableName": "tlfb_cal_scr_ot_ud",
+                "isAbout": "tlfb_cal_scr_ot_ud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_ot_wt",
+                "isAbout": "tlfb_cal_scr_ot_wt"
+            },
+            {
+                "variableName": "tlfb_cal_scr_ot_wu",
+                "isAbout": "tlfb_cal_scr_ot_wu"
+            },
+            {
+                "variableName": "tlfb_cal_scr_pipe_avg",
+                "isAbout": "tlfb_cal_scr_pipe_avg"
+            },
+            {
+                "variableName": "tlfb_cal_scr_pipe_lud",
+                "isAbout": "tlfb_cal_scr_pipe_lud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_pipe_max",
+                "isAbout": "tlfb_cal_scr_pipe_max"
+            },
+            {
+                "variableName": "tlfb_cal_scr_pipe_td",
+                "isAbout": "tlfb_cal_scr_pipe_td"
+            },
+            {
+                "variableName": "tlfb_cal_scr_pipe_ud",
+                "isAbout": "tlfb_cal_scr_pipe_ud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_pipe_wt",
+                "isAbout": "tlfb_cal_scr_pipe_wt"
+            },
+            {
+                "variableName": "tlfb_cal_scr_pipe_wu",
+                "isAbout": "tlfb_cal_scr_pipe_wu"
+            },
+            {
+                "variableName": "tlfb_cal_scr_roid_avg",
+                "isAbout": "tlfb_cal_scr_roid_avg"
+            },
+            {
+                "variableName": "tlfb_cal_scr_roid_lud",
+                "isAbout": "tlfb_cal_scr_roid_lud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_roid_max",
+                "isAbout": "tlfb_cal_scr_roid_max"
+            },
+            {
+                "variableName": "tlfb_cal_scr_roid_td",
+                "isAbout": "tlfb_cal_scr_roid_td"
+            },
+            {
+                "variableName": "tlfb_cal_scr_roid_ud",
+                "isAbout": "tlfb_cal_scr_roid_ud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_roid_wt",
+                "isAbout": "tlfb_cal_scr_roid_wt"
+            },
+            {
+                "variableName": "tlfb_cal_scr_roid_wu",
+                "isAbout": "tlfb_cal_scr_roid_wu"
+            },
+            {
+                "variableName": "tlfb_cal_scr_sal_avg",
+                "isAbout": "tlfb_cal_scr_sal_avg"
+            },
+            {
+                "variableName": "tlfb_cal_scr_sal_lud",
+                "isAbout": "tlfb_cal_scr_sal_lud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_sal_max",
+                "isAbout": "tlfb_cal_scr_sal_max"
+            },
+            {
+                "variableName": "tlfb_cal_scr_sal_td",
+                "isAbout": "tlfb_cal_scr_sal_td"
+            },
+            {
+                "variableName": "tlfb_cal_scr_sal_ud",
+                "isAbout": "tlfb_cal_scr_sal_ud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_sal_wt",
+                "isAbout": "tlfb_cal_scr_sal_wt"
+            },
+            {
+                "variableName": "tlfb_cal_scr_sal_wu",
+                "isAbout": "tlfb_cal_scr_sal_wu"
+            },
+            {
+                "variableName": "tlfb_cal_scr_sedrx_avg",
+                "isAbout": "tlfb_cal_scr_sedrx_avg"
+            },
+            {
+                "variableName": "tlfb_cal_scr_sedrx_lud",
+                "isAbout": "tlfb_cal_scr_sedrx_lud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_sedrx_max",
+                "isAbout": "tlfb_cal_scr_sedrx_max"
+            },
+            {
+                "variableName": "tlfb_cal_scr_sedrx_td",
+                "isAbout": "tlfb_cal_scr_sedrx_td"
+            },
+            {
+                "variableName": "tlfb_cal_scr_sedrx_ud",
+                "isAbout": "tlfb_cal_scr_sedrx_ud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_sedrx_wt",
+                "isAbout": "tlfb_cal_scr_sedrx_wt"
+            },
+            {
+                "variableName": "tlfb_cal_scr_sedrx_wu",
+                "isAbout": "tlfb_cal_scr_sedrx_wu"
+            },
+            {
+                "variableName": "tlfb_cal_scr_shroom_avg",
+                "isAbout": "tlfb_cal_scr_shroom_avg"
+            },
+            {
+                "variableName": "tlfb_cal_scr_shroom_lud",
+                "isAbout": "tlfb_cal_scr_shroom_lud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_shroom_max",
+                "isAbout": "tlfb_cal_scr_shroom_max"
+            },
+            {
+                "variableName": "tlfb_cal_scr_shroom_td",
+                "isAbout": "tlfb_cal_scr_shroom_td"
+            },
+            {
+                "variableName": "tlfb_cal_scr_shroom_ud",
+                "isAbout": "tlfb_cal_scr_shroom_ud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_shroom_wt",
+                "isAbout": "tlfb_cal_scr_shroom_wt"
+            },
+            {
+                "variableName": "tlfb_cal_scr_shroom_wu",
+                "isAbout": "tlfb_cal_scr_shroom_wu"
+            },
+            {
+                "variableName": "tlfb_cal_scr_smj_avg",
+                "isAbout": "tlfb_cal_scr_smj_avg"
+            },
+            {
+                "variableName": "tlfb_cal_scr_smj_lud",
+                "isAbout": "tlfb_cal_scr_smj_lud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_smj_max",
+                "isAbout": "tlfb_cal_scr_smj_max"
+            },
+            {
+                "variableName": "tlfb_cal_scr_smj_td",
+                "isAbout": "tlfb_cal_scr_smj_td"
+            },
+            {
+                "variableName": "tlfb_cal_scr_smj_ud",
+                "isAbout": "tlfb_cal_scr_smj_ud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_smj_wt",
+                "isAbout": "tlfb_cal_scr_smj_wt"
+            },
+            {
+                "variableName": "tlfb_cal_scr_smj_wu",
+                "isAbout": "tlfb_cal_scr_smj_wu"
+            },
+            {
+                "variableName": "tlfb_cal_scr_stimrx_avg",
+                "isAbout": "tlfb_cal_scr_stimrx_avg"
+            },
+            {
+                "variableName": "tlfb_cal_scr_stimrx_lud",
+                "isAbout": "tlfb_cal_scr_stimrx_lud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_stimrx_max",
+                "isAbout": "tlfb_cal_scr_stimrx_max"
+            },
+            {
+                "variableName": "tlfb_cal_scr_stimrx_td",
+                "isAbout": "tlfb_cal_scr_stimrx_td"
+            },
+            {
+                "variableName": "tlfb_cal_scr_stimrx_ud",
+                "isAbout": "tlfb_cal_scr_stimrx_ud"
+            },
+            {
+                "variableName": "tlfb_cal_scr_stimrx_wt",
+                "isAbout": "tlfb_cal_scr_stimrx_wt"
+            },
+            {
+                "variableName": "tlfb_cal_scr_stimrx_wu",
+                "isAbout": "tlfb_cal_scr_stimrx_wu"
+            },
+            {
+                "variableName": "tlfb_cal_scr_tot_bde",
+                "isAbout": "tlfb_cal_scr_tot_bde"
+            }
+        ]
+    }
+}

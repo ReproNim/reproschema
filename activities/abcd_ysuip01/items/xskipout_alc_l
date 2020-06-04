@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "xskipout_alc_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "xskipout_alc_l",
+    "altLabel": "su_xskipout_alc_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Did the participant have at least 2 drinking days in the past 12 months where they consumed one full drink of alcohol or more?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "Yes",
+                "value": 1
+            },
+            {
+                "name": "No / tlfb_alc_use_l  =='1'",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes; 0 = No / tlfb_alc_use_l  =='1'"
+        }
+    ]
+}

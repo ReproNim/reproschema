@@ -1,0 +1,39 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "first_nicotine_7",
+    "@type": "reproschema:Field",
+    "prefLabel": "first_nicotine_7",
+    "altLabel": "su_first_nicotine_7",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Was your cigarette/e-cigarette product flavored with?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Menthol or mint",
+                "value": 1
+            },
+            {
+                "name": "Other flavoring",
+                "value": 2
+            },
+            {
+                "name": "No flavoring ",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Menthol or mint; 2 = Other flavoring; 0 = No flavoring "
+        }
+    ]
+}

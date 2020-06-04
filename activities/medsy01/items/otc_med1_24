@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "otc_med1_24",
+    "@type": "reproschema:Field",
+    "prefLabel": "otc_med1_24",
+    "altLabel": "medinv_plus_otc_med1_24_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "OTC Med 1. Did your child take this medication in the last 24 hours?? /¿Tomó su niño(a) este medicamento en las últimas 24 horas?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 0,
+        "choices": [
+            {
+                "name": "Yes /Sí",
+                "value": 1
+            },
+            {
+                "name": "No /No",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes /Sí; 0 = No /No"
+        }
+    ]
+}

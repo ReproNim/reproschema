@@ -1,0 +1,51 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "medhx_ss_4b_p_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "medhx_ss_4b_p_l",
+    "altLabel": "medhx_ss_4b_er_times__p_l medhx_ss_4b_times_er_past_yr_p_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "How many times has he/she been to the emergency room in that past year?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "0",
+                "value": 0
+            },
+            {
+                "name": "1 time",
+                "value": 1
+            },
+            {
+                "name": "2 times",
+                "value": 2
+            },
+            {
+                "name": "3-4 times",
+                "value": 3
+            },
+            {
+                "name": "5-9 times",
+                "value": 4
+            },
+            {
+                "name": ">10+ times ",
+                "value": 5
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = 0; 1 = 1 time; 2 = 2 times; 3 = 3-4 times; 4 = 5-9 times; 5 = >10+ times | If yes is endorsed,  parent is then asked \"How many times.\" If no is endorsed, \"0\" has replaced missing [medhx_4b_l]."
+        }
+    ]
+}

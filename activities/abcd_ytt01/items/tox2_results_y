@@ -1,0 +1,51 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "tox2_results_y",
+    "@type": "reproschema:Field",
+    "prefLabel": "tox2_results_y",
+    "altLabel": "biospec_tox2_results",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Collection 1: Were any toxicology results positive?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Yes",
+                "value": 1
+            },
+            {
+                "name": "No",
+                "value": 2
+            },
+            {
+                "name": "Not applicable (not part of 10%)",
+                "value": 3
+            },
+            {
+                "name": "Participant unable to complete",
+                "value": 4
+            },
+            {
+                "name": "Participant refused",
+                "value": 5
+            },
+            {
+                "name": "Not collected (other)",
+                "value": 6
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes; 2 = No; 3 = Not applicable (not part of 10%); 4 = Participant unable to complete; 5 = Participant refused; 6 = Not collected (other)"
+        }
+    ]
+}

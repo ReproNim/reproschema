@@ -1,0 +1,51 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "naas_mom_id",
+    "@type": "reproschema:Field",
+    "prefLabel": "naas_mom_id",
+    "altLabel": "naas_mom_id_2 native_amer_accult_mom_id_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Which identification does (did) your  child's Native American parent's mother use?  ¿Qué identificación usa (usaba) la mamá del padre / la madre Americano(a) Nativo(a) del niño / la niña?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Native American American(a) Nativo(a)",
+                "value": 1
+            },
+            {
+                "name": "Native American and some non-Native American (e.g.",
+                "value": 2
+            },
+            {
+                "name": "Native American and non-Native American (bicultural) Americano Nativo y no Americano Nativo (bicultural)",
+                "value": 3
+            },
+            {
+                "name": "Non-Native American and some Native American No Americano Nativo y algo Americano Nativo",
+                "value": 4
+            },
+            {
+                "name": "Non-Native American (e.g.",
+                "value": 5
+            },
+            {
+                "name": "Don't Know No lo sÃ© // The following questions are about you or the child's family.",
+                "value": 999
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Native American American(a) Nativo(a); 2 = Native American and some non-Native American (e.g.; 3 = Native American and non-Native American (bicultural) Americano Nativo y no Americano Nativo (bicultural); 4 = Non-Native American and some Native American No Americano Nativo y algo Americano Nativo; 5 = Non-Native American (e.g.; 999 = Don't Know No lo sÃ© // The following questions are about you or the child's family."
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "bal_test2_result_y",
+    "@type": "reproschema:Field",
+    "prefLabel": "bal_test2_result_y",
+    "altLabel": "biospec_alc_test2_result",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Breathalyzer Test 2 Result:",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "name": "Negative (.000)",
+                "value": 1
+            },
+            {
+                "name": "Positive (.001 or above)",
+                "value": 2
+            },
+            {
+                "name": "Participant unable to complete (tried 3 times)",
+                "value": 4
+            },
+            {
+                "name": "Participant refused",
+                "value": 5
+            },
+            {
+                "name": "Not collected (other)",
+                "value": 6
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Negative (.000); 2 = Positive (.001 or above); 4 = Participant unable to complete (tried 3 times); 5 = Participant refused; 6 = Not collected (other)"
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "otc_med9_ago",
+    "@type": "reproschema:Field",
+    "prefLabel": "otc_med9_ago",
+    "altLabel": "medinv_plus_otc_med9_ago_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "OTC Med 9. How long ago did h/she take the medication? ? /¿Hace cuánto tiempo que él/ella toma este medicamento?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 30,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "value": null
+            },
+            {
+                "name": "24) / en horas",
+                "value": 30
+            },
+            {
+                "value": 30
+            }
+        ],
+        "valueType": "Float"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "(in hours; 30 mins=0.5, max hours = 24) / en horas; 30 minutos=0.5, horas máximas=24)"
+        }
+    ]
+}

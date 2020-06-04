@@ -1,0 +1,23 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "tlfb_alc_calc_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "tlfb_alc_calc_l",
+    "altLabel": "su_tlfb_alc_calc_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Age of onset:",
+    "ui": {
+        "inputType": "Float"
+    },
+    "responseOptions": {
+        "valueType": "Float"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "Calculation: round(([tlfb_age_calc_inmonths_l]-(datediff([tlfb_alc_date1_l], [su_today_l], \"M\", \"mdy\")))/12,2) | years old / tlfb_alc_first_use  == '1'"
+        }
+    ]
+}

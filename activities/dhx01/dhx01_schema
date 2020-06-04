@@ -1,0 +1,1263 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+        "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/activities/dhx01/dhx01_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "dhx01_schema",
+    "skos:prefLabel": "dhx01",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "order": [
+            "birth_weight_lbs",
+            "birth_weight_oz",
+            "devhx_1_p",
+            "devhx_10",
+            "devhx_10a3_p",
+            "devhx_10b3_p",
+            "devhx_10c3_p",
+            "devhx_10d3_p",
+            "devhx_10e3_p",
+            "devhx_10f3_p",
+            "devhx_10g3_p",
+            "devhx_10h3_p",
+            "devhx_10i3_p",
+            "devhx_10j3_p",
+            "devhx_10k3_p",
+            "devhx_10l3_p",
+            "devhx_10m3_p",
+            "devhx_11_p",
+            "devhx_11_p_dk",
+            "devhx_12_p",
+            "devhx_12a_p",
+            "devhx_13_3_p",
+            "devhx_14a3_p",
+            "devhx_14b3_p",
+            "devhx_14c3_p",
+            "devhx_14d3_p",
+            "devhx_14e3_p",
+            "devhx_14f3_p",
+            "devhx_14g3_p",
+            "devhx_14h3_p",
+            "devhx_15",
+            "devhx_15_dk",
+            "devhx_16_p",
+            "devhx_16_p_dk",
+            "devhx_17_p",
+            "devhx_17_p_dk",
+            "devhx_18_p",
+            "devhx_18_p_dk",
+            "devhx_19a_p",
+            "devhx_19a_p_dk",
+            "devhx_19b_p",
+            "devhx_19b_p_dk",
+            "devhx_19c_p",
+            "devhx_19c_p_dk",
+            "devhx_19d_p",
+            "devhx_19d_p_dk",
+            "devhx_2_p_dk",
+            "devhx_20_p",
+            "devhx_21_p",
+            "devhx_22_3_p",
+            "devhx_23b_p",
+            "devhx_2b_p_dk",
+            "devhx_3_p",
+            "devhx_3_p_dk",
+            "devhx_4_p",
+            "devhx_4_p_dk",
+            "devhx_5_p",
+            "devhx_6_p",
+            "devhx_7_p",
+            "devhx_7_p_dk",
+            "devhx_8_alchohol_avg",
+            "devhx_8_alchohol_avg_dk",
+            "devhx_8_alchohol_max",
+            "devhx_8_alchohol_max_dk",
+            "devhx_8_alcohol",
+            "devhx_8_alcohol_effects",
+            "devhx_8_alcohol_effects_dk",
+            "devhx_8_cigs_per_day",
+            "devhx_8_cigs_per_day_dk",
+            "devhx_8_coc_crack",
+            "devhx_8_coc_crack_amt",
+            "devhx_8_coc_crack_amt_dk",
+            "devhx_8_her_morph",
+            "devhx_8_her_morph_amt",
+            "devhx_8_her_morph_amt_dk",
+            "devhx_8_marijuana",
+            "devhx_8_marijuana_amt",
+            "devhx_8_marijuana_amt_dk",
+            "devhx_8_med1_fu",
+            "devhx_8_med1_how_much",
+            "devhx_8_med1_how_much_dk",
+            "devhx_8_med1_prn",
+            "devhx_8_med1_times",
+            "devhx_8_med1_times_dk",
+            "devhx_8_med1_unit",
+            "devhx_8_med2_fu",
+            "devhx_8_med2_how_much",
+            "devhx_8_med2_how_much_dk",
+            "devhx_8_med2_prn",
+            "devhx_8_med2_times",
+            "devhx_8_med2_times_dk",
+            "devhx_8_med2_unit",
+            "devhx_8_med3_how_much",
+            "devhx_8_med3_how_much_dk",
+            "devhx_8_med3_prn",
+            "devhx_8_med3_times",
+            "devhx_8_med3_times_dk",
+            "devhx_8_med3_unit",
+            "devhx_8_other_drugs",
+            "devhx_8_other1_amt",
+            "devhx_8_other1_amt_dk",
+            "devhx_8_other1_name_2",
+            "devhx_8_other1_name_oth",
+            "devhx_8_other1_times",
+            "devhx_8_other1_times_dk",
+            "devhx_8_other1_unit",
+            "devhx_8_other2_amt",
+            "devhx_8_other2_amt_dk",
+            "devhx_8_other2_name_2",
+            "devhx_8_other2_name_oth",
+            "devhx_8_other2_times",
+            "devhx_8_other2_times_dk",
+            "devhx_8_other2_unit",
+            "devhx_8_other3_amt",
+            "devhx_8_other3_amt_dk",
+            "devhx_8_other3_name_2",
+            "devhx_8_other3_name_oth",
+            "devhx_8_other3_times",
+            "devhx_8_other3_times_dk",
+            "devhx_8_other3_unit",
+            "devhx_8_other4_amt",
+            "devhx_8_other4_amt_dk",
+            "devhx_8_other4_name_2",
+            "devhx_8_other4_name_oth",
+            "devhx_8_other4_times",
+            "devhx_8_other4_times_dk",
+            "devhx_8_other4_unit",
+            "devhx_8_other5_amt",
+            "devhx_8_other5_amt_dk",
+            "devhx_8_other5_name_2",
+            "devhx_8_other5_name_oth",
+            "devhx_8_other5_times",
+            "devhx_8_other5_times_dk",
+            "devhx_8_other5_unit",
+            "devhx_8_oxycont",
+            "devhx_8_oxycont_amt",
+            "devhx_8_oxycont_amt_dk",
+            "devhx_8_prescript_med",
+            "devhx_8_prescript_yes",
+            "devhx_8_rxnorm_med1",
+            "devhx_8_rxnorm_med2",
+            "devhx_8_rxnorm_med3",
+            "devhx_8_tobacco",
+            "devhx_9_alchohol_avg",
+            "devhx_9_alchohol_avg_dk",
+            "devhx_9_alchohol_max",
+            "devhx_9_alchohol_max_dk",
+            "devhx_9_alcohol",
+            "devhx_9_alcohol_effects",
+            "devhx_9_alcohol_effects_dk",
+            "devhx_9_cigs_per_day",
+            "devhx_9_cigs_per_day_dk",
+            "devhx_9_coc_crack",
+            "devhx_9_coc_crack_amt",
+            "devhx_9_coc_crack_amt_dk",
+            "devhx_9_her_morph",
+            "devhx_9_her_morph_amt",
+            "devhx_9_her_morph_amt_dk",
+            "devhx_9_marijuana",
+            "devhx_9_marijuana_amt",
+            "devhx_9_marijuana_amt_dk",
+            "devhx_9_med1_fu",
+            "devhx_9_med1_how_much",
+            "devhx_9_med1_how_much_dk",
+            "devhx_9_med1_prn",
+            "devhx_9_med1_rxnorm",
+            "devhx_9_med1_times",
+            "devhx_9_med1_times_dk",
+            "devhx_9_med1_unit",
+            "devhx_9_med2_fu2",
+            "devhx_9_med2_how_much",
+            "devhx_9_med2_how_much_dk",
+            "devhx_9_med2_prn",
+            "devhx_9_med2_rxnorm",
+            "devhx_9_med2_rxnorm_dk",
+            "devhx_9_med2_times",
+            "devhx_9_med2_unit",
+            "devhx_9_med3_fu",
+            "devhx_9_med3_how_much",
+            "devhx_9_med3_how_much_dk",
+            "devhx_9_med3_prn",
+            "devhx_9_med3_rxnorm",
+            "devhx_9_med3_times",
+            "devhx_9_med3_times_dk",
+            "devhx_9_med3_unit",
+            "devhx_9_med4_fu",
+            "devhx_9_med4_how_much",
+            "devhx_9_med4_how_much_dk",
+            "devhx_9_med4_prn",
+            "devhx_9_med4_rxnorm",
+            "devhx_9_med4_times",
+            "devhx_9_med4_times_dk",
+            "devhx_9_med4_unit",
+            "devhx_9_med5_how_much",
+            "devhx_9_med5_how_much_dk",
+            "devhx_9_med5_prn",
+            "devhx_9_med5_rxnorm",
+            "devhx_9_med5_times",
+            "devhx_9_med5_times_dk",
+            "devhx_9_med5_unit",
+            "devhx_9_other_drugs",
+            "devhx_9_other1_amt",
+            "devhx_9_other1_amt_dk",
+            "devhx_9_other1_name_2",
+            "devhx_9_other1_name_oth",
+            "devhx_9_other1_times",
+            "devhx_9_other1_times_dk",
+            "devhx_9_other1_unit",
+            "devhx_9_other2_amt",
+            "devhx_9_other2_amt_dk",
+            "devhx_9_other2_name_2",
+            "devhx_9_other2_name_oth",
+            "devhx_9_other2_times",
+            "devhx_9_other2_times_dk",
+            "devhx_9_other2_unit",
+            "devhx_9_other3_amt",
+            "devhx_9_other3_amt_dk",
+            "devhx_9_other3_name_2",
+            "devhx_9_other3_name_oth",
+            "devhx_9_other3_times",
+            "devhx_9_other3_times_dk",
+            "devhx_9_other3_unit",
+            "devhx_9_other4_amt",
+            "devhx_9_other4_amt_dk",
+            "devhx_9_other4_name_2",
+            "devhx_9_other4_name_oth",
+            "devhx_9_other4_times",
+            "devhx_9_other4_times_dk",
+            "devhx_9_other4_unit",
+            "devhx_9_other5_amt",
+            "devhx_9_other5_amt_dk",
+            "devhx_9_other5_name_2",
+            "devhx_9_other5_name_oth",
+            "devhx_9_other5_times",
+            "devhx_9_other5_times_dk",
+            "devhx_9_other5_unit",
+            "devhx_9_oxycont",
+            "devhx_9_oxycont_amt",
+            "devhx_9_oxycont_amt_dk",
+            "devhx_9_prescript_med",
+            "devhx_9_tobacco",
+            "devhx_caff_amt_month",
+            "devhx_caff_amt_month_dk",
+            "devhx_caff_amt_week",
+            "devhx_caff_amt_week_dk",
+            "devhx_caffeine_11",
+            "devhx_caffeine_amt",
+            "devhx_caffeine_amt_dk",
+            "visit"
+        ],
+        "shuffle": false,
+        "addProperties": [
+            {
+                "variableName": "birth_weight_lbs",
+                "isAbout": "birth_weight_lbs"
+            },
+            {
+                "variableName": "birth_weight_oz",
+                "isAbout": "birth_weight_oz"
+            },
+            {
+                "variableName": "devhx_1_p",
+                "isAbout": "devhx_1_p"
+            },
+            {
+                "variableName": "devhx_10",
+                "isAbout": "devhx_10"
+            },
+            {
+                "variableName": "devhx_10a3_p",
+                "isAbout": "devhx_10a3_p"
+            },
+            {
+                "variableName": "devhx_10b3_p",
+                "isAbout": "devhx_10b3_p"
+            },
+            {
+                "variableName": "devhx_10c3_p",
+                "isAbout": "devhx_10c3_p"
+            },
+            {
+                "variableName": "devhx_10d3_p",
+                "isAbout": "devhx_10d3_p"
+            },
+            {
+                "variableName": "devhx_10e3_p",
+                "isAbout": "devhx_10e3_p"
+            },
+            {
+                "variableName": "devhx_10f3_p",
+                "isAbout": "devhx_10f3_p"
+            },
+            {
+                "variableName": "devhx_10g3_p",
+                "isAbout": "devhx_10g3_p"
+            },
+            {
+                "variableName": "devhx_10h3_p",
+                "isAbout": "devhx_10h3_p"
+            },
+            {
+                "variableName": "devhx_10i3_p",
+                "isAbout": "devhx_10i3_p"
+            },
+            {
+                "variableName": "devhx_10j3_p",
+                "isAbout": "devhx_10j3_p"
+            },
+            {
+                "variableName": "devhx_10k3_p",
+                "isAbout": "devhx_10k3_p"
+            },
+            {
+                "variableName": "devhx_10l3_p",
+                "isAbout": "devhx_10l3_p"
+            },
+            {
+                "variableName": "devhx_10m3_p",
+                "isAbout": "devhx_10m3_p"
+            },
+            {
+                "variableName": "devhx_11_p",
+                "isAbout": "devhx_11_p"
+            },
+            {
+                "variableName": "devhx_11_p_dk",
+                "isAbout": "devhx_11_p_dk"
+            },
+            {
+                "variableName": "devhx_12_p",
+                "isAbout": "devhx_12_p"
+            },
+            {
+                "variableName": "devhx_12a_p",
+                "isAbout": "devhx_12a_p"
+            },
+            {
+                "variableName": "devhx_13_3_p",
+                "isAbout": "devhx_13_3_p"
+            },
+            {
+                "variableName": "devhx_14a3_p",
+                "isAbout": "devhx_14a3_p"
+            },
+            {
+                "variableName": "devhx_14b3_p",
+                "isAbout": "devhx_14b3_p"
+            },
+            {
+                "variableName": "devhx_14c3_p",
+                "isAbout": "devhx_14c3_p"
+            },
+            {
+                "variableName": "devhx_14d3_p",
+                "isAbout": "devhx_14d3_p"
+            },
+            {
+                "variableName": "devhx_14e3_p",
+                "isAbout": "devhx_14e3_p"
+            },
+            {
+                "variableName": "devhx_14f3_p",
+                "isAbout": "devhx_14f3_p"
+            },
+            {
+                "variableName": "devhx_14g3_p",
+                "isAbout": "devhx_14g3_p"
+            },
+            {
+                "variableName": "devhx_14h3_p",
+                "isAbout": "devhx_14h3_p"
+            },
+            {
+                "variableName": "devhx_15",
+                "isAbout": "devhx_15"
+            },
+            {
+                "variableName": "devhx_15_dk",
+                "isAbout": "devhx_15_dk"
+            },
+            {
+                "variableName": "devhx_16_p",
+                "isAbout": "devhx_16_p"
+            },
+            {
+                "variableName": "devhx_16_p_dk",
+                "isAbout": "devhx_16_p_dk"
+            },
+            {
+                "variableName": "devhx_17_p",
+                "isAbout": "devhx_17_p"
+            },
+            {
+                "variableName": "devhx_17_p_dk",
+                "isAbout": "devhx_17_p_dk"
+            },
+            {
+                "variableName": "devhx_18_p",
+                "isAbout": "devhx_18_p"
+            },
+            {
+                "variableName": "devhx_18_p_dk",
+                "isAbout": "devhx_18_p_dk"
+            },
+            {
+                "variableName": "devhx_19a_p",
+                "isAbout": "devhx_19a_p"
+            },
+            {
+                "variableName": "devhx_19a_p_dk",
+                "isAbout": "devhx_19a_p_dk"
+            },
+            {
+                "variableName": "devhx_19b_p",
+                "isAbout": "devhx_19b_p"
+            },
+            {
+                "variableName": "devhx_19b_p_dk",
+                "isAbout": "devhx_19b_p_dk"
+            },
+            {
+                "variableName": "devhx_19c_p",
+                "isAbout": "devhx_19c_p"
+            },
+            {
+                "variableName": "devhx_19c_p_dk",
+                "isAbout": "devhx_19c_p_dk"
+            },
+            {
+                "variableName": "devhx_19d_p",
+                "isAbout": "devhx_19d_p"
+            },
+            {
+                "variableName": "devhx_19d_p_dk",
+                "isAbout": "devhx_19d_p_dk"
+            },
+            {
+                "variableName": "devhx_2_p_dk",
+                "isAbout": "devhx_2_p_dk"
+            },
+            {
+                "variableName": "devhx_20_p",
+                "isAbout": "devhx_20_p"
+            },
+            {
+                "variableName": "devhx_21_p",
+                "isAbout": "devhx_21_p"
+            },
+            {
+                "variableName": "devhx_22_3_p",
+                "isAbout": "devhx_22_3_p"
+            },
+            {
+                "variableName": "devhx_23b_p",
+                "isAbout": "devhx_23b_p"
+            },
+            {
+                "variableName": "devhx_2b_p_dk",
+                "isAbout": "devhx_2b_p_dk"
+            },
+            {
+                "variableName": "devhx_3_p",
+                "isAbout": "devhx_3_p"
+            },
+            {
+                "variableName": "devhx_3_p_dk",
+                "isAbout": "devhx_3_p_dk"
+            },
+            {
+                "variableName": "devhx_4_p",
+                "isAbout": "devhx_4_p"
+            },
+            {
+                "variableName": "devhx_4_p_dk",
+                "isAbout": "devhx_4_p_dk"
+            },
+            {
+                "variableName": "devhx_5_p",
+                "isAbout": "devhx_5_p"
+            },
+            {
+                "variableName": "devhx_6_p",
+                "isAbout": "devhx_6_p"
+            },
+            {
+                "variableName": "devhx_7_p",
+                "isAbout": "devhx_7_p"
+            },
+            {
+                "variableName": "devhx_7_p_dk",
+                "isAbout": "devhx_7_p_dk"
+            },
+            {
+                "variableName": "devhx_8_alchohol_avg",
+                "isAbout": "devhx_8_alchohol_avg"
+            },
+            {
+                "variableName": "devhx_8_alchohol_avg_dk",
+                "isAbout": "devhx_8_alchohol_avg_dk"
+            },
+            {
+                "variableName": "devhx_8_alchohol_max",
+                "isAbout": "devhx_8_alchohol_max"
+            },
+            {
+                "variableName": "devhx_8_alchohol_max_dk",
+                "isAbout": "devhx_8_alchohol_max_dk"
+            },
+            {
+                "variableName": "devhx_8_alcohol",
+                "isAbout": "devhx_8_alcohol"
+            },
+            {
+                "variableName": "devhx_8_alcohol_effects",
+                "isAbout": "devhx_8_alcohol_effects"
+            },
+            {
+                "variableName": "devhx_8_alcohol_effects_dk",
+                "isAbout": "devhx_8_alcohol_effects_dk"
+            },
+            {
+                "variableName": "devhx_8_cigs_per_day",
+                "isAbout": "devhx_8_cigs_per_day"
+            },
+            {
+                "variableName": "devhx_8_cigs_per_day_dk",
+                "isAbout": "devhx_8_cigs_per_day_dk"
+            },
+            {
+                "variableName": "devhx_8_coc_crack",
+                "isAbout": "devhx_8_coc_crack"
+            },
+            {
+                "variableName": "devhx_8_coc_crack_amt",
+                "isAbout": "devhx_8_coc_crack_amt"
+            },
+            {
+                "variableName": "devhx_8_coc_crack_amt_dk",
+                "isAbout": "devhx_8_coc_crack_amt_dk"
+            },
+            {
+                "variableName": "devhx_8_her_morph",
+                "isAbout": "devhx_8_her_morph"
+            },
+            {
+                "variableName": "devhx_8_her_morph_amt",
+                "isAbout": "devhx_8_her_morph_amt"
+            },
+            {
+                "variableName": "devhx_8_her_morph_amt_dk",
+                "isAbout": "devhx_8_her_morph_amt_dk"
+            },
+            {
+                "variableName": "devhx_8_marijuana",
+                "isAbout": "devhx_8_marijuana"
+            },
+            {
+                "variableName": "devhx_8_marijuana_amt",
+                "isAbout": "devhx_8_marijuana_amt"
+            },
+            {
+                "variableName": "devhx_8_marijuana_amt_dk",
+                "isAbout": "devhx_8_marijuana_amt_dk"
+            },
+            {
+                "variableName": "devhx_8_med1_fu",
+                "isAbout": "devhx_8_med1_fu"
+            },
+            {
+                "variableName": "devhx_8_med1_how_much",
+                "isAbout": "devhx_8_med1_how_much"
+            },
+            {
+                "variableName": "devhx_8_med1_how_much_dk",
+                "isAbout": "devhx_8_med1_how_much_dk"
+            },
+            {
+                "variableName": "devhx_8_med1_prn",
+                "isAbout": "devhx_8_med1_prn"
+            },
+            {
+                "variableName": "devhx_8_med1_times",
+                "isAbout": "devhx_8_med1_times"
+            },
+            {
+                "variableName": "devhx_8_med1_times_dk",
+                "isAbout": "devhx_8_med1_times_dk"
+            },
+            {
+                "variableName": "devhx_8_med1_unit",
+                "isAbout": "devhx_8_med1_unit"
+            },
+            {
+                "variableName": "devhx_8_med2_fu",
+                "isAbout": "devhx_8_med2_fu"
+            },
+            {
+                "variableName": "devhx_8_med2_how_much",
+                "isAbout": "devhx_8_med2_how_much"
+            },
+            {
+                "variableName": "devhx_8_med2_how_much_dk",
+                "isAbout": "devhx_8_med2_how_much_dk"
+            },
+            {
+                "variableName": "devhx_8_med2_prn",
+                "isAbout": "devhx_8_med2_prn"
+            },
+            {
+                "variableName": "devhx_8_med2_times",
+                "isAbout": "devhx_8_med2_times"
+            },
+            {
+                "variableName": "devhx_8_med2_times_dk",
+                "isAbout": "devhx_8_med2_times_dk"
+            },
+            {
+                "variableName": "devhx_8_med2_unit",
+                "isAbout": "devhx_8_med2_unit"
+            },
+            {
+                "variableName": "devhx_8_med3_how_much",
+                "isAbout": "devhx_8_med3_how_much"
+            },
+            {
+                "variableName": "devhx_8_med3_how_much_dk",
+                "isAbout": "devhx_8_med3_how_much_dk"
+            },
+            {
+                "variableName": "devhx_8_med3_prn",
+                "isAbout": "devhx_8_med3_prn"
+            },
+            {
+                "variableName": "devhx_8_med3_times",
+                "isAbout": "devhx_8_med3_times"
+            },
+            {
+                "variableName": "devhx_8_med3_times_dk",
+                "isAbout": "devhx_8_med3_times_dk"
+            },
+            {
+                "variableName": "devhx_8_med3_unit",
+                "isAbout": "devhx_8_med3_unit"
+            },
+            {
+                "variableName": "devhx_8_other_drugs",
+                "isAbout": "devhx_8_other_drugs"
+            },
+            {
+                "variableName": "devhx_8_other1_amt",
+                "isAbout": "devhx_8_other1_amt"
+            },
+            {
+                "variableName": "devhx_8_other1_amt_dk",
+                "isAbout": "devhx_8_other1_amt_dk"
+            },
+            {
+                "variableName": "devhx_8_other1_name_2",
+                "isAbout": "devhx_8_other1_name_2"
+            },
+            {
+                "variableName": "devhx_8_other1_name_oth",
+                "isAbout": "devhx_8_other1_name_oth"
+            },
+            {
+                "variableName": "devhx_8_other1_times",
+                "isAbout": "devhx_8_other1_times"
+            },
+            {
+                "variableName": "devhx_8_other1_times_dk",
+                "isAbout": "devhx_8_other1_times_dk"
+            },
+            {
+                "variableName": "devhx_8_other1_unit",
+                "isAbout": "devhx_8_other1_unit"
+            },
+            {
+                "variableName": "devhx_8_other2_amt",
+                "isAbout": "devhx_8_other2_amt"
+            },
+            {
+                "variableName": "devhx_8_other2_amt_dk",
+                "isAbout": "devhx_8_other2_amt_dk"
+            },
+            {
+                "variableName": "devhx_8_other2_name_2",
+                "isAbout": "devhx_8_other2_name_2"
+            },
+            {
+                "variableName": "devhx_8_other2_name_oth",
+                "isAbout": "devhx_8_other2_name_oth"
+            },
+            {
+                "variableName": "devhx_8_other2_times",
+                "isAbout": "devhx_8_other2_times"
+            },
+            {
+                "variableName": "devhx_8_other2_times_dk",
+                "isAbout": "devhx_8_other2_times_dk"
+            },
+            {
+                "variableName": "devhx_8_other2_unit",
+                "isAbout": "devhx_8_other2_unit"
+            },
+            {
+                "variableName": "devhx_8_other3_amt",
+                "isAbout": "devhx_8_other3_amt"
+            },
+            {
+                "variableName": "devhx_8_other3_amt_dk",
+                "isAbout": "devhx_8_other3_amt_dk"
+            },
+            {
+                "variableName": "devhx_8_other3_name_2",
+                "isAbout": "devhx_8_other3_name_2"
+            },
+            {
+                "variableName": "devhx_8_other3_name_oth",
+                "isAbout": "devhx_8_other3_name_oth"
+            },
+            {
+                "variableName": "devhx_8_other3_times",
+                "isAbout": "devhx_8_other3_times"
+            },
+            {
+                "variableName": "devhx_8_other3_times_dk",
+                "isAbout": "devhx_8_other3_times_dk"
+            },
+            {
+                "variableName": "devhx_8_other3_unit",
+                "isAbout": "devhx_8_other3_unit"
+            },
+            {
+                "variableName": "devhx_8_other4_amt",
+                "isAbout": "devhx_8_other4_amt"
+            },
+            {
+                "variableName": "devhx_8_other4_amt_dk",
+                "isAbout": "devhx_8_other4_amt_dk"
+            },
+            {
+                "variableName": "devhx_8_other4_name_2",
+                "isAbout": "devhx_8_other4_name_2"
+            },
+            {
+                "variableName": "devhx_8_other4_name_oth",
+                "isAbout": "devhx_8_other4_name_oth"
+            },
+            {
+                "variableName": "devhx_8_other4_times",
+                "isAbout": "devhx_8_other4_times"
+            },
+            {
+                "variableName": "devhx_8_other4_times_dk",
+                "isAbout": "devhx_8_other4_times_dk"
+            },
+            {
+                "variableName": "devhx_8_other4_unit",
+                "isAbout": "devhx_8_other4_unit"
+            },
+            {
+                "variableName": "devhx_8_other5_amt",
+                "isAbout": "devhx_8_other5_amt"
+            },
+            {
+                "variableName": "devhx_8_other5_amt_dk",
+                "isAbout": "devhx_8_other5_amt_dk"
+            },
+            {
+                "variableName": "devhx_8_other5_name_2",
+                "isAbout": "devhx_8_other5_name_2"
+            },
+            {
+                "variableName": "devhx_8_other5_name_oth",
+                "isAbout": "devhx_8_other5_name_oth"
+            },
+            {
+                "variableName": "devhx_8_other5_times",
+                "isAbout": "devhx_8_other5_times"
+            },
+            {
+                "variableName": "devhx_8_other5_times_dk",
+                "isAbout": "devhx_8_other5_times_dk"
+            },
+            {
+                "variableName": "devhx_8_other5_unit",
+                "isAbout": "devhx_8_other5_unit"
+            },
+            {
+                "variableName": "devhx_8_oxycont",
+                "isAbout": "devhx_8_oxycont"
+            },
+            {
+                "variableName": "devhx_8_oxycont_amt",
+                "isAbout": "devhx_8_oxycont_amt"
+            },
+            {
+                "variableName": "devhx_8_oxycont_amt_dk",
+                "isAbout": "devhx_8_oxycont_amt_dk"
+            },
+            {
+                "variableName": "devhx_8_prescript_med",
+                "isAbout": "devhx_8_prescript_med"
+            },
+            {
+                "variableName": "devhx_8_prescript_yes",
+                "isAbout": "devhx_8_prescript_yes"
+            },
+            {
+                "variableName": "devhx_8_rxnorm_med1",
+                "isAbout": "devhx_8_rxnorm_med1"
+            },
+            {
+                "variableName": "devhx_8_rxnorm_med2",
+                "isAbout": "devhx_8_rxnorm_med2"
+            },
+            {
+                "variableName": "devhx_8_rxnorm_med3",
+                "isAbout": "devhx_8_rxnorm_med3"
+            },
+            {
+                "variableName": "devhx_8_tobacco",
+                "isAbout": "devhx_8_tobacco"
+            },
+            {
+                "variableName": "devhx_9_alchohol_avg",
+                "isAbout": "devhx_9_alchohol_avg"
+            },
+            {
+                "variableName": "devhx_9_alchohol_avg_dk",
+                "isAbout": "devhx_9_alchohol_avg_dk"
+            },
+            {
+                "variableName": "devhx_9_alchohol_max",
+                "isAbout": "devhx_9_alchohol_max"
+            },
+            {
+                "variableName": "devhx_9_alchohol_max_dk",
+                "isAbout": "devhx_9_alchohol_max_dk"
+            },
+            {
+                "variableName": "devhx_9_alcohol",
+                "isAbout": "devhx_9_alcohol"
+            },
+            {
+                "variableName": "devhx_9_alcohol_effects",
+                "isAbout": "devhx_9_alcohol_effects"
+            },
+            {
+                "variableName": "devhx_9_alcohol_effects_dk",
+                "isAbout": "devhx_9_alcohol_effects_dk"
+            },
+            {
+                "variableName": "devhx_9_cigs_per_day",
+                "isAbout": "devhx_9_cigs_per_day"
+            },
+            {
+                "variableName": "devhx_9_cigs_per_day_dk",
+                "isAbout": "devhx_9_cigs_per_day_dk"
+            },
+            {
+                "variableName": "devhx_9_coc_crack",
+                "isAbout": "devhx_9_coc_crack"
+            },
+            {
+                "variableName": "devhx_9_coc_crack_amt",
+                "isAbout": "devhx_9_coc_crack_amt"
+            },
+            {
+                "variableName": "devhx_9_coc_crack_amt_dk",
+                "isAbout": "devhx_9_coc_crack_amt_dk"
+            },
+            {
+                "variableName": "devhx_9_her_morph",
+                "isAbout": "devhx_9_her_morph"
+            },
+            {
+                "variableName": "devhx_9_her_morph_amt",
+                "isAbout": "devhx_9_her_morph_amt"
+            },
+            {
+                "variableName": "devhx_9_her_morph_amt_dk",
+                "isAbout": "devhx_9_her_morph_amt_dk"
+            },
+            {
+                "variableName": "devhx_9_marijuana",
+                "isAbout": "devhx_9_marijuana"
+            },
+            {
+                "variableName": "devhx_9_marijuana_amt",
+                "isAbout": "devhx_9_marijuana_amt"
+            },
+            {
+                "variableName": "devhx_9_marijuana_amt_dk",
+                "isAbout": "devhx_9_marijuana_amt_dk"
+            },
+            {
+                "variableName": "devhx_9_med1_fu",
+                "isAbout": "devhx_9_med1_fu"
+            },
+            {
+                "variableName": "devhx_9_med1_how_much",
+                "isAbout": "devhx_9_med1_how_much"
+            },
+            {
+                "variableName": "devhx_9_med1_how_much_dk",
+                "isAbout": "devhx_9_med1_how_much_dk"
+            },
+            {
+                "variableName": "devhx_9_med1_prn",
+                "isAbout": "devhx_9_med1_prn"
+            },
+            {
+                "variableName": "devhx_9_med1_rxnorm",
+                "isAbout": "devhx_9_med1_rxnorm"
+            },
+            {
+                "variableName": "devhx_9_med1_times",
+                "isAbout": "devhx_9_med1_times"
+            },
+            {
+                "variableName": "devhx_9_med1_times_dk",
+                "isAbout": "devhx_9_med1_times_dk"
+            },
+            {
+                "variableName": "devhx_9_med1_unit",
+                "isAbout": "devhx_9_med1_unit"
+            },
+            {
+                "variableName": "devhx_9_med2_fu2",
+                "isAbout": "devhx_9_med2_fu2"
+            },
+            {
+                "variableName": "devhx_9_med2_how_much",
+                "isAbout": "devhx_9_med2_how_much"
+            },
+            {
+                "variableName": "devhx_9_med2_how_much_dk",
+                "isAbout": "devhx_9_med2_how_much_dk"
+            },
+            {
+                "variableName": "devhx_9_med2_prn",
+                "isAbout": "devhx_9_med2_prn"
+            },
+            {
+                "variableName": "devhx_9_med2_rxnorm",
+                "isAbout": "devhx_9_med2_rxnorm"
+            },
+            {
+                "variableName": "devhx_9_med2_rxnorm_dk",
+                "isAbout": "devhx_9_med2_rxnorm_dk"
+            },
+            {
+                "variableName": "devhx_9_med2_times",
+                "isAbout": "devhx_9_med2_times"
+            },
+            {
+                "variableName": "devhx_9_med2_unit",
+                "isAbout": "devhx_9_med2_unit"
+            },
+            {
+                "variableName": "devhx_9_med3_fu",
+                "isAbout": "devhx_9_med3_fu"
+            },
+            {
+                "variableName": "devhx_9_med3_how_much",
+                "isAbout": "devhx_9_med3_how_much"
+            },
+            {
+                "variableName": "devhx_9_med3_how_much_dk",
+                "isAbout": "devhx_9_med3_how_much_dk"
+            },
+            {
+                "variableName": "devhx_9_med3_prn",
+                "isAbout": "devhx_9_med3_prn"
+            },
+            {
+                "variableName": "devhx_9_med3_rxnorm",
+                "isAbout": "devhx_9_med3_rxnorm"
+            },
+            {
+                "variableName": "devhx_9_med3_times",
+                "isAbout": "devhx_9_med3_times"
+            },
+            {
+                "variableName": "devhx_9_med3_times_dk",
+                "isAbout": "devhx_9_med3_times_dk"
+            },
+            {
+                "variableName": "devhx_9_med3_unit",
+                "isAbout": "devhx_9_med3_unit"
+            },
+            {
+                "variableName": "devhx_9_med4_fu",
+                "isAbout": "devhx_9_med4_fu"
+            },
+            {
+                "variableName": "devhx_9_med4_how_much",
+                "isAbout": "devhx_9_med4_how_much"
+            },
+            {
+                "variableName": "devhx_9_med4_how_much_dk",
+                "isAbout": "devhx_9_med4_how_much_dk"
+            },
+            {
+                "variableName": "devhx_9_med4_prn",
+                "isAbout": "devhx_9_med4_prn"
+            },
+            {
+                "variableName": "devhx_9_med4_rxnorm",
+                "isAbout": "devhx_9_med4_rxnorm"
+            },
+            {
+                "variableName": "devhx_9_med4_times",
+                "isAbout": "devhx_9_med4_times"
+            },
+            {
+                "variableName": "devhx_9_med4_times_dk",
+                "isAbout": "devhx_9_med4_times_dk"
+            },
+            {
+                "variableName": "devhx_9_med4_unit",
+                "isAbout": "devhx_9_med4_unit"
+            },
+            {
+                "variableName": "devhx_9_med5_how_much",
+                "isAbout": "devhx_9_med5_how_much"
+            },
+            {
+                "variableName": "devhx_9_med5_how_much_dk",
+                "isAbout": "devhx_9_med5_how_much_dk"
+            },
+            {
+                "variableName": "devhx_9_med5_prn",
+                "isAbout": "devhx_9_med5_prn"
+            },
+            {
+                "variableName": "devhx_9_med5_rxnorm",
+                "isAbout": "devhx_9_med5_rxnorm"
+            },
+            {
+                "variableName": "devhx_9_med5_times",
+                "isAbout": "devhx_9_med5_times"
+            },
+            {
+                "variableName": "devhx_9_med5_times_dk",
+                "isAbout": "devhx_9_med5_times_dk"
+            },
+            {
+                "variableName": "devhx_9_med5_unit",
+                "isAbout": "devhx_9_med5_unit"
+            },
+            {
+                "variableName": "devhx_9_other_drugs",
+                "isAbout": "devhx_9_other_drugs"
+            },
+            {
+                "variableName": "devhx_9_other1_amt",
+                "isAbout": "devhx_9_other1_amt"
+            },
+            {
+                "variableName": "devhx_9_other1_amt_dk",
+                "isAbout": "devhx_9_other1_amt_dk"
+            },
+            {
+                "variableName": "devhx_9_other1_name_2",
+                "isAbout": "devhx_9_other1_name_2"
+            },
+            {
+                "variableName": "devhx_9_other1_name_oth",
+                "isAbout": "devhx_9_other1_name_oth"
+            },
+            {
+                "variableName": "devhx_9_other1_times",
+                "isAbout": "devhx_9_other1_times"
+            },
+            {
+                "variableName": "devhx_9_other1_times_dk",
+                "isAbout": "devhx_9_other1_times_dk"
+            },
+            {
+                "variableName": "devhx_9_other1_unit",
+                "isAbout": "devhx_9_other1_unit"
+            },
+            {
+                "variableName": "devhx_9_other2_amt",
+                "isAbout": "devhx_9_other2_amt"
+            },
+            {
+                "variableName": "devhx_9_other2_amt_dk",
+                "isAbout": "devhx_9_other2_amt_dk"
+            },
+            {
+                "variableName": "devhx_9_other2_name_2",
+                "isAbout": "devhx_9_other2_name_2"
+            },
+            {
+                "variableName": "devhx_9_other2_name_oth",
+                "isAbout": "devhx_9_other2_name_oth"
+            },
+            {
+                "variableName": "devhx_9_other2_times",
+                "isAbout": "devhx_9_other2_times"
+            },
+            {
+                "variableName": "devhx_9_other2_times_dk",
+                "isAbout": "devhx_9_other2_times_dk"
+            },
+            {
+                "variableName": "devhx_9_other2_unit",
+                "isAbout": "devhx_9_other2_unit"
+            },
+            {
+                "variableName": "devhx_9_other3_amt",
+                "isAbout": "devhx_9_other3_amt"
+            },
+            {
+                "variableName": "devhx_9_other3_amt_dk",
+                "isAbout": "devhx_9_other3_amt_dk"
+            },
+            {
+                "variableName": "devhx_9_other3_name_2",
+                "isAbout": "devhx_9_other3_name_2"
+            },
+            {
+                "variableName": "devhx_9_other3_name_oth",
+                "isAbout": "devhx_9_other3_name_oth"
+            },
+            {
+                "variableName": "devhx_9_other3_times",
+                "isAbout": "devhx_9_other3_times"
+            },
+            {
+                "variableName": "devhx_9_other3_times_dk",
+                "isAbout": "devhx_9_other3_times_dk"
+            },
+            {
+                "variableName": "devhx_9_other3_unit",
+                "isAbout": "devhx_9_other3_unit"
+            },
+            {
+                "variableName": "devhx_9_other4_amt",
+                "isAbout": "devhx_9_other4_amt"
+            },
+            {
+                "variableName": "devhx_9_other4_amt_dk",
+                "isAbout": "devhx_9_other4_amt_dk"
+            },
+            {
+                "variableName": "devhx_9_other4_name_2",
+                "isAbout": "devhx_9_other4_name_2"
+            },
+            {
+                "variableName": "devhx_9_other4_name_oth",
+                "isAbout": "devhx_9_other4_name_oth"
+            },
+            {
+                "variableName": "devhx_9_other4_times",
+                "isAbout": "devhx_9_other4_times"
+            },
+            {
+                "variableName": "devhx_9_other4_times_dk",
+                "isAbout": "devhx_9_other4_times_dk"
+            },
+            {
+                "variableName": "devhx_9_other4_unit",
+                "isAbout": "devhx_9_other4_unit"
+            },
+            {
+                "variableName": "devhx_9_other5_amt",
+                "isAbout": "devhx_9_other5_amt"
+            },
+            {
+                "variableName": "devhx_9_other5_amt_dk",
+                "isAbout": "devhx_9_other5_amt_dk"
+            },
+            {
+                "variableName": "devhx_9_other5_name_2",
+                "isAbout": "devhx_9_other5_name_2"
+            },
+            {
+                "variableName": "devhx_9_other5_name_oth",
+                "isAbout": "devhx_9_other5_name_oth"
+            },
+            {
+                "variableName": "devhx_9_other5_times",
+                "isAbout": "devhx_9_other5_times"
+            },
+            {
+                "variableName": "devhx_9_other5_times_dk",
+                "isAbout": "devhx_9_other5_times_dk"
+            },
+            {
+                "variableName": "devhx_9_other5_unit",
+                "isAbout": "devhx_9_other5_unit"
+            },
+            {
+                "variableName": "devhx_9_oxycont",
+                "isAbout": "devhx_9_oxycont"
+            },
+            {
+                "variableName": "devhx_9_oxycont_amt",
+                "isAbout": "devhx_9_oxycont_amt"
+            },
+            {
+                "variableName": "devhx_9_oxycont_amt_dk",
+                "isAbout": "devhx_9_oxycont_amt_dk"
+            },
+            {
+                "variableName": "devhx_9_prescript_med",
+                "isAbout": "devhx_9_prescript_med"
+            },
+            {
+                "variableName": "devhx_9_tobacco",
+                "isAbout": "devhx_9_tobacco"
+            },
+            {
+                "variableName": "devhx_caff_amt_month",
+                "isAbout": "devhx_caff_amt_month"
+            },
+            {
+                "variableName": "devhx_caff_amt_month_dk",
+                "isAbout": "devhx_caff_amt_month_dk"
+            },
+            {
+                "variableName": "devhx_caff_amt_week",
+                "isAbout": "devhx_caff_amt_week"
+            },
+            {
+                "variableName": "devhx_caff_amt_week_dk",
+                "isAbout": "devhx_caff_amt_week_dk"
+            },
+            {
+                "variableName": "devhx_caffeine_11",
+                "isAbout": "devhx_caffeine_11"
+            },
+            {
+                "variableName": "devhx_caffeine_amt",
+                "isAbout": "devhx_caffeine_amt"
+            },
+            {
+                "variableName": "devhx_caffeine_amt_dk",
+                "isAbout": "devhx_caffeine_amt_dk"
+            },
+            {
+                "variableName": "visit",
+                "isAbout": "visit"
+            }
+        ]
+    }
+}

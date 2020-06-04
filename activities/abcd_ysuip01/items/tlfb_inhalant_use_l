@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "tlfb_inhalant_use_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "tlfb_inhalant_use_l",
+    "altLabel": "su_tlfb_inhalant_use_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Liquids, sprays, and gases that people sniff or inhale to get high or to make them feel good. (We are not interested in times when you inhaled a substance accidentally such as when painting, cleaning an oven, or filling a car with gasoline.) This includes substances like poppers, correction fluid, gasoline, glue, shoe polish, spray paints, or nitrous oxide of 'whippits'?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "No",
+                "value": 0
+            },
+            {
+                "name": "Yes / tlfb_inhalant_l   == '1' ",
+                "value": 1
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = No; 1 = Yes / tlfb_inhalant_l   == '1' ||  tlfb_inhalant_c_l   == '1'"
+        }
+    ]
+}

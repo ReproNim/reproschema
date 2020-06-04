@@ -1,0 +1,53 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+        "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/activities/abcd_mri01/abcd_mri01_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "abcd_mri01_schema",
+    "skos:prefLabel": "abcd_mri01",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "order": [
+            "mri_info_deviceserialnumber",
+            "mri_info_magneticfieldstrength",
+            "mri_info_manufacturer",
+            "mri_info_manufacturersmn",
+            "mri_info_softwareversion",
+            "mri_info_studydate",
+            "mri_info_visitid"
+        ],
+        "shuffle": false,
+        "addProperties": [
+            {
+                "variableName": "mri_info_deviceserialnumber",
+                "isAbout": "mri_info_deviceserialnumber"
+            },
+            {
+                "variableName": "mri_info_magneticfieldstrength",
+                "isAbout": "mri_info_magneticfieldstrength"
+            },
+            {
+                "variableName": "mri_info_manufacturer",
+                "isAbout": "mri_info_manufacturer"
+            },
+            {
+                "variableName": "mri_info_manufacturersmn",
+                "isAbout": "mri_info_manufacturersmn"
+            },
+            {
+                "variableName": "mri_info_softwareversion",
+                "isAbout": "mri_info_softwareversion"
+            },
+            {
+                "variableName": "mri_info_studydate",
+                "isAbout": "mri_info_studydate"
+            },
+            {
+                "variableName": "mri_info_visitid",
+                "isAbout": "mri_info_visitid"
+            }
+        ]
+    }
+}

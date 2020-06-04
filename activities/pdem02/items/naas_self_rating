@@ -1,0 +1,51 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "naas_self_rating",
+    "@type": "reproschema:Field",
+    "prefLabel": "naas_self_rating",
+    "altLabel": "naas_self_rating_2 native_amer_accult_self_rating_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "How would you rate your child? ¿Cómo calificaría a su niño(a)?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Very Native American Muy Nativo Americano",
+                "value": 1
+            },
+            {
+                "name": "Mostly Native American Mayormente Nativo Americano",
+                "value": 2
+            },
+            {
+                "name": "Bicultural Bicultural",
+                "value": 3
+            },
+            {
+                "name": "Mostly non-Native American Mayormente no Nativo Americano",
+                "value": 4
+            },
+            {
+                "name": "Very non-Native American Muy no Nativo Americano",
+                "value": 5
+            },
+            {
+                "name": "Don't Know No lo sÃ© // The following questions are about you or the child's family.",
+                "value": 999
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Very Native American Muy Nativo Americano; 2 = Mostly Native American Mayormente Nativo Americano; 3 = Bicultural Bicultural; 4 = Mostly non-Native American Mayormente no Nativo Americano; 5 = Very non-Native American Muy no Nativo Americano; 999 = Don't Know No lo sÃ© // The following questions are about you or the child's family."
+        }
+    ]
+}

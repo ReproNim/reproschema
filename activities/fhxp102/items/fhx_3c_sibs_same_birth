@@ -1,0 +1,23 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "fhx_3c_sibs_same_birth",
+    "@type": "reproschema:Field",
+    "prefLabel": "fhx_3c_sibs_same_birth",
+    "altLabel": "famhx_3c_sibs_same_birth_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "3a. Is the child a twin or triplet? Enter '0', if not a twin or triplet, '1' if a twin (one sibling of equal age), '2' if a triplet (2 siblings of equal age).   ¿El niño(a) es gemelo o trillizo? Escoja '0' si no es gemelo o trillizo, '1' si es gemelo (un hermano(a) de la misma edad), '2' si es trillizo (2 hermanos(as) de la misma edad).",
+    "ui": {
+        "inputType": "Integer"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "/ ( fhx_3a_p  > 0 ||  fhx_3b_p  > 0) &&  isNull(fhx_3f_younger_dk_p)"
+        }
+    ]
+}

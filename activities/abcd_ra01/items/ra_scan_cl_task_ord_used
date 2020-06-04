@@ -1,0 +1,51 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "ra_scan_cl_task_ord_used",
+    "@type": "reproschema:Field",
+    "prefLabel": "ra_scan_cl_task_ord_used",
+    "altLabel": "scan_check_task_ord_used",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "fMRI task order used instead",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "1 (SST -> MID -> NBACK)",
+                "value": 1
+            },
+            {
+                "name": "2 (SST ->NBACK -> MID)",
+                "value": 2
+            },
+            {
+                "name": "3 (MID -> SST  -> NBACK)",
+                "value": 3
+            },
+            {
+                "name": "4 (MID -> NBACK -> SST)",
+                "value": 4
+            },
+            {
+                "name": "5 (NBACK -> MID -> SST)",
+                "value": 5
+            },
+            {
+                "name": "6 (NBACK -> SST -> MID)",
+                "value": 6
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = 1 (SST -> MID -> NBACK); 2 = 2 (SST ->NBACK -> MID); 3 = 3 (MID -> SST  -> NBACK); 4 = 4 (MID -> NBACK -> SST); 5 = 5 (NBACK -> MID -> SST); 6 = 6 (NBACK -> SST -> MID)"
+        }
+    ]
+}

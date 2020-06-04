@@ -1,0 +1,39 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "cbd_usage_time",
+    "@type": "reproschema:Field",
+    "prefLabel": "cbd_usage_time",
+    "altLabel": "medinv_plus_cbd_usage_time",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "During the past year, how often did h/she use CBD products?  En el ?ltimo a?o, /Qu? tan seguido su hija/o uso productos de CBD? ",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "value": 1
+            },
+            {
+                "value": 2
+            },
+            {
+                "value": 3
+            },
+            {
+                "value": 4
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1=Every day or nearly daily / Todos los d?as o casi diariamente; 2= A few times a week / Unas cuantas veces por semana; 3=3-4 times a month/ 3-4 veces al mes; 4=12-24 times a year/ 12-24 veces al a?o| 5=1-11 times a year/1-11 veces al a?o; 999=Don't know / No se "
+        }
+    ]
+}

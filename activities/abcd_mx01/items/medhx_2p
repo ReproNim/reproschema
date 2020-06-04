@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "medhx_2p",
+    "@type": "reproschema:Field",
+    "prefLabel": "medhx_2p",
+    "altLabel": "medhx_2p_p medhx_2p_sickle_cell_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Has she/he ever been to a doctor for any of these things…Sickle Cell Anemia /Anemia de células falciformes",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 0,
+        "choices": [
+            {
+                "name": "Yes",
+                "value": 1
+            },
+            {
+                "name": "No//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes; 0 = No//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life."
+        }
+    ]
+}

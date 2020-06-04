@@ -1,0 +1,59 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "physical_activity1_y",
+    "@type": "reproschema:Field",
+    "prefLabel": "physical_activity1_y",
+    "altLabel": "physical_activity_1",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "During the past 7 days, on how many days were you physically active for a total of at least 60 minutes per day? (Add up all the time you spent in any kind of physical activity that increased your heart rate and made you breathe hard some of the time)",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "0 days",
+                "value": 0
+            },
+            {
+                "name": "1 day",
+                "value": 1
+            },
+            {
+                "name": "2 days",
+                "value": 2
+            },
+            {
+                "name": "3 days",
+                "value": 3
+            },
+            {
+                "name": "4 days",
+                "value": 4
+            },
+            {
+                "name": "5 days",
+                "value": 5
+            },
+            {
+                "name": "6 days",
+                "value": 6
+            },
+            {
+                "name": "7 days",
+                "value": 7
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = 0 days; 1 = 1 day; 2 = 2 days; 3 = 3 days; 4 = 4 days; 5 = 5 days; 6 = 6 days; 7 = 7 days"
+        }
+    ]
+}

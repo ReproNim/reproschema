@@ -1,0 +1,370 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "abcd_sst02": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/activities/abcd_sst02/items/",
+        "tfmri_sst_all_beh_crgo_mrt": {
+            "@id": "abcd_sst02:tfmri_sst_all_beh_crgo_mrt",
+            "@type": "@id"
+        },
+        "tfmri_sst_all_beh_crgo_nt": {
+            "@id": "abcd_sst02:tfmri_sst_all_beh_crgo_nt",
+            "@type": "@id"
+        },
+        "tfmri_sst_all_beh_crgo_rt": {
+            "@id": "abcd_sst02:tfmri_sst_all_beh_crgo_rt",
+            "@type": "@id"
+        },
+        "tfmri_sst_all_beh_crgo_stdrt": {
+            "@id": "abcd_sst02:tfmri_sst_all_beh_crgo_stdrt",
+            "@type": "@id"
+        },
+        "tfmri_sst_all_beh_crlg_mrt": {
+            "@id": "abcd_sst02:tfmri_sst_all_beh_crlg_mrt",
+            "@type": "@id"
+        },
+        "tfmri_sst_all_beh_crlg_nt": {
+            "@id": "abcd_sst02:tfmri_sst_all_beh_crlg_nt",
+            "@type": "@id"
+        },
+        "tfmri_sst_all_beh_crlg_rt": {
+            "@id": "abcd_sst02:tfmri_sst_all_beh_crlg_rt",
+            "@type": "@id"
+        },
+        "tfmri_sst_all_beh_crlg_stdrt": {
+            "@id": "abcd_sst02:tfmri_sst_all_beh_crlg_stdrt",
+            "@type": "@id"
+        },
+        "tfmri_sst_all_beh_crs_nt": {
+            "@id": "abcd_sst02:tfmri_sst_all_beh_crs_nt",
+            "@type": "@id"
+        },
+        "tfmri_sst_all_beh_crs_rt": {
+            "@id": "abcd_sst02:tfmri_sst_all_beh_crs_rt",
+            "@type": "@id"
+        },
+        "tfmri_sst_all_beh_go_nt": {
+            "@id": "abcd_sst02:tfmri_sst_all_beh_go_nt",
+            "@type": "@id"
+        },
+        "tfmri_sst_all_beh_incrgo_mrt": {
+            "@id": "abcd_sst02:tfmri_sst_all_beh_incrgo_mrt",
+            "@type": "@id"
+        },
+        "tfmri_sst_all_beh_incrgo_nt": {
+            "@id": "abcd_sst02:tfmri_sst_all_beh_incrgo_nt",
+            "@type": "@id"
+        },
+        "tfmri_sst_all_beh_incrgo_rt": {
+            "@id": "abcd_sst02:tfmri_sst_all_beh_incrgo_rt",
+            "@type": "@id"
+        },
+        "tfmri_sst_all_beh_incrgo_stdrt": {
+            "@id": "abcd_sst02:tfmri_sst_all_beh_incrgo_stdrt",
+            "@type": "@id"
+        },
+        "tfmri_sst_all_beh_incrlg_mrt": {
+            "@id": "abcd_sst02:tfmri_sst_all_beh_incrlg_mrt",
+            "@type": "@id"
+        },
+        "tfmri_sst_all_beh_incrlg_nt": {
+            "@id": "abcd_sst02:tfmri_sst_all_beh_incrlg_nt",
+            "@type": "@id"
+        },
+        "tfmri_sst_all_beh_incrlg_rt": {
+            "@id": "abcd_sst02:tfmri_sst_all_beh_incrlg_rt",
+            "@type": "@id"
+        },
+        "tfmri_sst_all_beh_incrlg_stdrt": {
+            "@id": "abcd_sst02:tfmri_sst_all_beh_incrlg_stdrt",
+            "@type": "@id"
+        },
+        "tfmri_sst_all_beh_incrs_mrt": {
+            "@id": "abcd_sst02:tfmri_sst_all_beh_incrs_mrt",
+            "@type": "@id"
+        },
+        "tfmri_sst_all_beh_incrs_nt": {
+            "@id": "abcd_sst02:tfmri_sst_all_beh_incrs_nt",
+            "@type": "@id"
+        },
+        "tfmri_sst_all_beh_incrs_rt": {
+            "@id": "abcd_sst02:tfmri_sst_all_beh_incrs_rt",
+            "@type": "@id"
+        },
+        "tfmri_sst_all_beh_incrs_stdrt": {
+            "@id": "abcd_sst02:tfmri_sst_all_beh_incrs_stdrt",
+            "@type": "@id"
+        },
+        "tfmri_sst_all_beh_nrgo_nt": {
+            "@id": "abcd_sst02:tfmri_sst_all_beh_nrgo_nt",
+            "@type": "@id"
+        },
+        "tfmri_sst_all_beh_nrgo_rt": {
+            "@id": "abcd_sst02:tfmri_sst_all_beh_nrgo_rt",
+            "@type": "@id"
+        },
+        "tfmri_sst_all_beh_s_nt": {
+            "@id": "abcd_sst02:tfmri_sst_all_beh_s_nt",
+            "@type": "@id"
+        },
+        "tfmri_sst_all_beh_ssds_nt": {
+            "@id": "abcd_sst02:tfmri_sst_all_beh_ssds_nt",
+            "@type": "@id"
+        },
+        "tfmri_sst_all_beh_ssds_rt": {
+            "@id": "abcd_sst02:tfmri_sst_all_beh_ssds_rt",
+            "@type": "@id"
+        },
+        "tfmri_sst_all_beh_tot_mssd": {
+            "@id": "abcd_sst02:tfmri_sst_all_beh_tot_mssd",
+            "@type": "@id"
+        },
+        "tfmri_sst_all_beh_total_meanrt": {
+            "@id": "abcd_sst02:tfmri_sst_all_beh_total_meanrt",
+            "@type": "@id"
+        },
+        "tfmri_sst_all_beh_total_nt": {
+            "@id": "abcd_sst02:tfmri_sst_all_beh_total_nt",
+            "@type": "@id"
+        },
+        "tfmri_sst_beh_performflag": {
+            "@id": "abcd_sst02:tfmri_sst_beh_performflag",
+            "@type": "@id"
+        },
+        "tfmri_sst_beh_switchflag": {
+            "@id": "abcd_sst02:tfmri_sst_beh_switchflag",
+            "@type": "@id"
+        },
+        "tfmri_sst_beh_visitid": {
+            "@id": "abcd_sst02:tfmri_sst_beh_visitid",
+            "@type": "@id"
+        },
+        "tfmri_sst_nbeh_nruns": {
+            "@id": "abcd_sst02:tfmri_sst_nbeh_nruns",
+            "@type": "@id"
+        },
+        "tfmri_sst_r1_beh_crgo_mrt": {
+            "@id": "abcd_sst02:tfmri_sst_r1_beh_crgo_mrt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r1_beh_crgo_nt": {
+            "@id": "abcd_sst02:tfmri_sst_r1_beh_crgo_nt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r1_beh_crgo_rt": {
+            "@id": "abcd_sst02:tfmri_sst_r1_beh_crgo_rt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r1_beh_crgo_stdrt": {
+            "@id": "abcd_sst02:tfmri_sst_r1_beh_crgo_stdrt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r1_beh_crlg_mrt": {
+            "@id": "abcd_sst02:tfmri_sst_r1_beh_crlg_mrt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r1_beh_crlg_nt": {
+            "@id": "abcd_sst02:tfmri_sst_r1_beh_crlg_nt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r1_beh_crlg_rt": {
+            "@id": "abcd_sst02:tfmri_sst_r1_beh_crlg_rt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r1_beh_crlg_stdrt": {
+            "@id": "abcd_sst02:tfmri_sst_r1_beh_crlg_stdrt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r1_beh_crs_nt": {
+            "@id": "abcd_sst02:tfmri_sst_r1_beh_crs_nt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r1_beh_crs_rt": {
+            "@id": "abcd_sst02:tfmri_sst_r1_beh_crs_rt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r1_beh_go_nt": {
+            "@id": "abcd_sst02:tfmri_sst_r1_beh_go_nt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r1_beh_incrgo_mrt": {
+            "@id": "abcd_sst02:tfmri_sst_r1_beh_incrgo_mrt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r1_beh_incrgo_nt": {
+            "@id": "abcd_sst02:tfmri_sst_r1_beh_incrgo_nt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r1_beh_incrgo_rt": {
+            "@id": "abcd_sst02:tfmri_sst_r1_beh_incrgo_rt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r1_beh_incrgo_stdrt": {
+            "@id": "abcd_sst02:tfmri_sst_r1_beh_incrgo_stdrt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r1_beh_incrlg_mrt": {
+            "@id": "abcd_sst02:tfmri_sst_r1_beh_incrlg_mrt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r1_beh_incrlg_nt": {
+            "@id": "abcd_sst02:tfmri_sst_r1_beh_incrlg_nt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r1_beh_incrlg_rt": {
+            "@id": "abcd_sst02:tfmri_sst_r1_beh_incrlg_rt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r1_beh_incrlg_stdrt": {
+            "@id": "abcd_sst02:tfmri_sst_r1_beh_incrlg_stdrt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r1_beh_incrs_mrt": {
+            "@id": "abcd_sst02:tfmri_sst_r1_beh_incrs_mrt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r1_beh_incrs_nt": {
+            "@id": "abcd_sst02:tfmri_sst_r1_beh_incrs_nt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r1_beh_incrs_rt": {
+            "@id": "abcd_sst02:tfmri_sst_r1_beh_incrs_rt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r1_beh_incrs_stdrt": {
+            "@id": "abcd_sst02:tfmri_sst_r1_beh_incrs_stdrt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r1_beh_nrgo_nt": {
+            "@id": "abcd_sst02:tfmri_sst_r1_beh_nrgo_nt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r1_beh_nrgo_rt": {
+            "@id": "abcd_sst02:tfmri_sst_r1_beh_nrgo_rt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r1_beh_s_nt": {
+            "@id": "abcd_sst02:tfmri_sst_r1_beh_s_nt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r1_beh_ssds_nt": {
+            "@id": "abcd_sst02:tfmri_sst_r1_beh_ssds_nt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r1_beh_ssds_rt": {
+            "@id": "abcd_sst02:tfmri_sst_r1_beh_ssds_rt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r2_beh_crgo_mrt": {
+            "@id": "abcd_sst02:tfmri_sst_r2_beh_crgo_mrt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r2_beh_crgo_nt": {
+            "@id": "abcd_sst02:tfmri_sst_r2_beh_crgo_nt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r2_beh_crgo_rt": {
+            "@id": "abcd_sst02:tfmri_sst_r2_beh_crgo_rt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r2_beh_crgo_stdrt": {
+            "@id": "abcd_sst02:tfmri_sst_r2_beh_crgo_stdrt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r2_beh_crlg_mrt": {
+            "@id": "abcd_sst02:tfmri_sst_r2_beh_crlg_mrt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r2_beh_crlg_nt": {
+            "@id": "abcd_sst02:tfmri_sst_r2_beh_crlg_nt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r2_beh_crlg_rt": {
+            "@id": "abcd_sst02:tfmri_sst_r2_beh_crlg_rt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r2_beh_crlg_stdrt": {
+            "@id": "abcd_sst02:tfmri_sst_r2_beh_crlg_stdrt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r2_beh_crs_nt": {
+            "@id": "abcd_sst02:tfmri_sst_r2_beh_crs_nt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r2_beh_crs_rt": {
+            "@id": "abcd_sst02:tfmri_sst_r2_beh_crs_rt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r2_beh_go_nt": {
+            "@id": "abcd_sst02:tfmri_sst_r2_beh_go_nt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r2_beh_incrgo_mrt": {
+            "@id": "abcd_sst02:tfmri_sst_r2_beh_incrgo_mrt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r2_beh_incrgo_nt": {
+            "@id": "abcd_sst02:tfmri_sst_r2_beh_incrgo_nt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r2_beh_incrgo_rt": {
+            "@id": "abcd_sst02:tfmri_sst_r2_beh_incrgo_rt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r2_beh_incrgo_stdrt": {
+            "@id": "abcd_sst02:tfmri_sst_r2_beh_incrgo_stdrt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r2_beh_incrlg_mrt": {
+            "@id": "abcd_sst02:tfmri_sst_r2_beh_incrlg_mrt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r2_beh_incrlg_nt": {
+            "@id": "abcd_sst02:tfmri_sst_r2_beh_incrlg_nt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r2_beh_incrlg_rt": {
+            "@id": "abcd_sst02:tfmri_sst_r2_beh_incrlg_rt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r2_beh_incrlg_stdrt": {
+            "@id": "abcd_sst02:tfmri_sst_r2_beh_incrlg_stdrt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r2_beh_incrs_mrt": {
+            "@id": "abcd_sst02:tfmri_sst_r2_beh_incrs_mrt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r2_beh_incrs_nt": {
+            "@id": "abcd_sst02:tfmri_sst_r2_beh_incrs_nt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r2_beh_incrs_rt": {
+            "@id": "abcd_sst02:tfmri_sst_r2_beh_incrs_rt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r2_beh_incrs_stdrt": {
+            "@id": "abcd_sst02:tfmri_sst_r2_beh_incrs_stdrt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r2_beh_nrgo_nt": {
+            "@id": "abcd_sst02:tfmri_sst_r2_beh_nrgo_nt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r2_beh_nrgo_rt": {
+            "@id": "abcd_sst02:tfmri_sst_r2_beh_nrgo_rt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r2_beh_s_nt": {
+            "@id": "abcd_sst02:tfmri_sst_r2_beh_s_nt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r2_beh_ssds_nt": {
+            "@id": "abcd_sst02:tfmri_sst_r2_beh_ssds_nt",
+            "@type": "@id"
+        },
+        "tfmri_sst_r2_beh_ssds_rt": {
+            "@id": "abcd_sst02:tfmri_sst_r2_beh_ssds_rt",
+            "@type": "@id"
+        }
+    }
+}

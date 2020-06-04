@@ -1,0 +1,2273 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+        "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/activities/abcd_mrirstv02/abcd_mrirstv02_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "abcd_mrirstv02_schema",
+    "skos:prefLabel": "abcd_mrirstv02",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "order": [
+            "rsfmri_var_cdk_banksstslh",
+            "rsfmri_var_cdk_banksstsrh",
+            "rsfmri_var_cdk_cdaclatelh",
+            "rsfmri_var_cdk_cdaclaterh",
+            "rsfmri_var_cdk_cdmdflh",
+            "rsfmri_var_cdk_cdmdfrh",
+            "rsfmri_var_cdk_cuneuslh",
+            "rsfmri_var_cdk_cuneusrh",
+            "rsfmri_var_cdk_entorhinallh",
+            "rsfmri_var_cdk_entorhinalrh",
+            "rsfmri_var_cdk_fflh",
+            "rsfmri_var_cdk_ffrh",
+            "rsfmri_var_cdk_fpolelh",
+            "rsfmri_var_cdk_fpolerh",
+            "rsfmri_var_cdk_ifpalh",
+            "rsfmri_var_cdk_ifparh",
+            "rsfmri_var_cdk_iftlh",
+            "rsfmri_var_cdk_iftrh",
+            "rsfmri_var_cdk_ihclatelh",
+            "rsfmri_var_cdk_ihclaterh",
+            "rsfmri_var_cdk_insulalh",
+            "rsfmri_var_cdk_insularh",
+            "rsfmri_var_cdk_linguallh",
+            "rsfmri_var_cdk_lingualrh",
+            "rsfmri_var_cdk_loboflh",
+            "rsfmri_var_cdk_lobofrh",
+            "rsfmri_var_cdk_loccipitallh",
+            "rsfmri_var_cdk_loccipitalrh",
+            "rsfmri_var_cdk_mdtlh",
+            "rsfmri_var_cdk_mdtrh",
+            "rsfmri_var_cdk_moboflh",
+            "rsfmri_var_cdk_mobofrh",
+            "rsfmri_var_cdk_paracentrallh",
+            "rsfmri_var_cdk_paracentralrh",
+            "rsfmri_var_cdk_parahpallh",
+            "rsfmri_var_cdk_parahpalrh",
+            "rsfmri_var_cdk_parsobalislh",
+            "rsfmri_var_cdk_parsobalisrh",
+            "rsfmri_var_cdk_parsopllh",
+            "rsfmri_var_cdk_parsoplrh",
+            "rsfmri_var_cdk_parstularislh",
+            "rsfmri_var_cdk_parstularisrh",
+            "rsfmri_var_cdk_pericclh",
+            "rsfmri_var_cdk_periccrh",
+            "rsfmri_var_cdk_postcentrallh",
+            "rsfmri_var_cdk_postcentralrh",
+            "rsfmri_var_cdk_precentrallh",
+            "rsfmri_var_cdk_precentralrh",
+            "rsfmri_var_cdk_precuneuslh",
+            "rsfmri_var_cdk_precuneusrh",
+            "rsfmri_var_cdk_psclatelh",
+            "rsfmri_var_cdk_psclaterh",
+            "rsfmri_var_cdk_rlaclatelh",
+            "rsfmri_var_cdk_rlaclaterh",
+            "rsfmri_var_cdk_rlmdflh",
+            "rsfmri_var_cdk_rlmdfrh",
+            "rsfmri_var_cdk_smlh",
+            "rsfmri_var_cdk_smrh",
+            "rsfmri_var_cdk_spetallh",
+            "rsfmri_var_cdk_spetalrh",
+            "rsfmri_var_cdk_suflh",
+            "rsfmri_var_cdk_sufrh",
+            "rsfmri_var_cdk_sutlh",
+            "rsfmri_var_cdk_sutrh",
+            "rsfmri_var_cdk_tpolelh",
+            "rsfmri_var_cdk_tpolerh",
+            "rsfmri_var_cdk_tvtlh",
+            "rsfmri_var_cdk_tvtrh",
+            "rsfmri_var_cortgordon_gp100lh",
+            "rsfmri_var_cortgordon_gp101lh",
+            "rsfmri_var_cortgordon_gp102lh",
+            "rsfmri_var_cortgordon_gp103lh",
+            "rsfmri_var_cortgordon_gp104lh",
+            "rsfmri_var_cortgordon_gp105lh",
+            "rsfmri_var_cortgordon_gp106lh",
+            "rsfmri_var_cortgordon_gp107lh",
+            "rsfmri_var_cortgordon_gp108lh",
+            "rsfmri_var_cortgordon_gp109lh",
+            "rsfmri_var_cortgordon_gp10lh",
+            "rsfmri_var_cortgordon_gp110lh",
+            "rsfmri_var_cortgordon_gp111lh",
+            "rsfmri_var_cortgordon_gp112lh",
+            "rsfmri_var_cortgordon_gp113lh",
+            "rsfmri_var_cortgordon_gp114lh",
+            "rsfmri_var_cortgordon_gp115lh",
+            "rsfmri_var_cortgordon_gp116lh",
+            "rsfmri_var_cortgordon_gp117lh",
+            "rsfmri_var_cortgordon_gp118lh",
+            "rsfmri_var_cortgordon_gp119lh",
+            "rsfmri_var_cortgordon_gp11lh",
+            "rsfmri_var_cortgordon_gp120lh",
+            "rsfmri_var_cortgordon_gp121lh",
+            "rsfmri_var_cortgordon_gp122lh",
+            "rsfmri_var_cortgordon_gp123lh",
+            "rsfmri_var_cortgordon_gp124lh",
+            "rsfmri_var_cortgordon_gp125lh",
+            "rsfmri_var_cortgordon_gp126lh",
+            "rsfmri_var_cortgordon_gp127lh",
+            "rsfmri_var_cortgordon_gp128lh",
+            "rsfmri_var_cortgordon_gp129lh",
+            "rsfmri_var_cortgordon_gp12lh",
+            "rsfmri_var_cortgordon_gp130lh",
+            "rsfmri_var_cortgordon_gp131lh",
+            "rsfmri_var_cortgordon_gp132lh",
+            "rsfmri_var_cortgordon_gp133lh",
+            "rsfmri_var_cortgordon_gp134lh",
+            "rsfmri_var_cortgordon_gp135lh",
+            "rsfmri_var_cortgordon_gp136lh",
+            "rsfmri_var_cortgordon_gp137lh",
+            "rsfmri_var_cortgordon_gp138lh",
+            "rsfmri_var_cortgordon_gp139lh",
+            "rsfmri_var_cortgordon_gp13lh",
+            "rsfmri_var_cortgordon_gp140lh",
+            "rsfmri_var_cortgordon_gp141lh",
+            "rsfmri_var_cortgordon_gp142lh",
+            "rsfmri_var_cortgordon_gp143lh",
+            "rsfmri_var_cortgordon_gp144lh",
+            "rsfmri_var_cortgordon_gp145lh",
+            "rsfmri_var_cortgordon_gp146lh",
+            "rsfmri_var_cortgordon_gp147lh",
+            "rsfmri_var_cortgordon_gp148lh",
+            "rsfmri_var_cortgordon_gp149lh",
+            "rsfmri_var_cortgordon_gp14lh",
+            "rsfmri_var_cortgordon_gp150lh",
+            "rsfmri_var_cortgordon_gp151lh",
+            "rsfmri_var_cortgordon_gp152lh",
+            "rsfmri_var_cortgordon_gp153lh",
+            "rsfmri_var_cortgordon_gp154lh",
+            "rsfmri_var_cortgordon_gp155lh",
+            "rsfmri_var_cortgordon_gp156lh",
+            "rsfmri_var_cortgordon_gp157lh",
+            "rsfmri_var_cortgordon_gp158lh",
+            "rsfmri_var_cortgordon_gp159lh",
+            "rsfmri_var_cortgordon_gp15lh",
+            "rsfmri_var_cortgordon_gp160lh",
+            "rsfmri_var_cortgordon_gp161lh",
+            "rsfmri_var_cortgordon_gp162rh",
+            "rsfmri_var_cortgordon_gp163rh",
+            "rsfmri_var_cortgordon_gp164rh",
+            "rsfmri_var_cortgordon_gp165rh",
+            "rsfmri_var_cortgordon_gp166rh",
+            "rsfmri_var_cortgordon_gp167rh",
+            "rsfmri_var_cortgordon_gp168rh",
+            "rsfmri_var_cortgordon_gp169rh",
+            "rsfmri_var_cortgordon_gp16lh",
+            "rsfmri_var_cortgordon_gp170rh",
+            "rsfmri_var_cortgordon_gp171rh",
+            "rsfmri_var_cortgordon_gp172rh",
+            "rsfmri_var_cortgordon_gp173rh",
+            "rsfmri_var_cortgordon_gp174rh",
+            "rsfmri_var_cortgordon_gp175rh",
+            "rsfmri_var_cortgordon_gp176rh",
+            "rsfmri_var_cortgordon_gp177rh",
+            "rsfmri_var_cortgordon_gp178rh",
+            "rsfmri_var_cortgordon_gp179rh",
+            "rsfmri_var_cortgordon_gp17lh",
+            "rsfmri_var_cortgordon_gp180rh",
+            "rsfmri_var_cortgordon_gp181rh",
+            "rsfmri_var_cortgordon_gp182rh",
+            "rsfmri_var_cortgordon_gp183rh",
+            "rsfmri_var_cortgordon_gp184rh",
+            "rsfmri_var_cortgordon_gp185rh",
+            "rsfmri_var_cortgordon_gp186rh",
+            "rsfmri_var_cortgordon_gp187rh",
+            "rsfmri_var_cortgordon_gp188rh",
+            "rsfmri_var_cortgordon_gp189rh",
+            "rsfmri_var_cortgordon_gp18lh",
+            "rsfmri_var_cortgordon_gp190rh",
+            "rsfmri_var_cortgordon_gp191rh",
+            "rsfmri_var_cortgordon_gp192rh",
+            "rsfmri_var_cortgordon_gp193rh",
+            "rsfmri_var_cortgordon_gp194rh",
+            "rsfmri_var_cortgordon_gp195rh",
+            "rsfmri_var_cortgordon_gp196rh",
+            "rsfmri_var_cortgordon_gp197rh",
+            "rsfmri_var_cortgordon_gp198rh",
+            "rsfmri_var_cortgordon_gp199rh",
+            "rsfmri_var_cortgordon_gp19lh",
+            "rsfmri_var_cortgordon_gp1lh",
+            "rsfmri_var_cortgordon_gp200rh",
+            "rsfmri_var_cortgordon_gp201rh",
+            "rsfmri_var_cortgordon_gp202rh",
+            "rsfmri_var_cortgordon_gp203rh",
+            "rsfmri_var_cortgordon_gp204rh",
+            "rsfmri_var_cortgordon_gp205rh",
+            "rsfmri_var_cortgordon_gp206rh",
+            "rsfmri_var_cortgordon_gp207rh",
+            "rsfmri_var_cortgordon_gp208rh",
+            "rsfmri_var_cortgordon_gp209rh",
+            "rsfmri_var_cortgordon_gp20lh",
+            "rsfmri_var_cortgordon_gp210rh",
+            "rsfmri_var_cortgordon_gp211rh",
+            "rsfmri_var_cortgordon_gp212rh",
+            "rsfmri_var_cortgordon_gp213rh",
+            "rsfmri_var_cortgordon_gp214rh",
+            "rsfmri_var_cortgordon_gp215rh",
+            "rsfmri_var_cortgordon_gp216rh",
+            "rsfmri_var_cortgordon_gp217rh",
+            "rsfmri_var_cortgordon_gp218rh",
+            "rsfmri_var_cortgordon_gp219rh",
+            "rsfmri_var_cortgordon_gp21lh",
+            "rsfmri_var_cortgordon_gp220rh",
+            "rsfmri_var_cortgordon_gp221rh",
+            "rsfmri_var_cortgordon_gp222rh",
+            "rsfmri_var_cortgordon_gp223rh",
+            "rsfmri_var_cortgordon_gp224rh",
+            "rsfmri_var_cortgordon_gp225rh",
+            "rsfmri_var_cortgordon_gp226rh",
+            "rsfmri_var_cortgordon_gp227rh",
+            "rsfmri_var_cortgordon_gp228rh",
+            "rsfmri_var_cortgordon_gp229rh",
+            "rsfmri_var_cortgordon_gp22lh",
+            "rsfmri_var_cortgordon_gp230rh",
+            "rsfmri_var_cortgordon_gp231rh",
+            "rsfmri_var_cortgordon_gp232rh",
+            "rsfmri_var_cortgordon_gp233rh",
+            "rsfmri_var_cortgordon_gp234rh",
+            "rsfmri_var_cortgordon_gp235rh",
+            "rsfmri_var_cortgordon_gp236rh",
+            "rsfmri_var_cortgordon_gp237rh",
+            "rsfmri_var_cortgordon_gp238rh",
+            "rsfmri_var_cortgordon_gp239rh",
+            "rsfmri_var_cortgordon_gp23lh",
+            "rsfmri_var_cortgordon_gp240rh",
+            "rsfmri_var_cortgordon_gp241rh",
+            "rsfmri_var_cortgordon_gp242rh",
+            "rsfmri_var_cortgordon_gp243rh",
+            "rsfmri_var_cortgordon_gp244rh",
+            "rsfmri_var_cortgordon_gp245rh",
+            "rsfmri_var_cortgordon_gp246rh",
+            "rsfmri_var_cortgordon_gp247rh",
+            "rsfmri_var_cortgordon_gp248rh",
+            "rsfmri_var_cortgordon_gp249rh",
+            "rsfmri_var_cortgordon_gp24lh",
+            "rsfmri_var_cortgordon_gp250rh",
+            "rsfmri_var_cortgordon_gp251rh",
+            "rsfmri_var_cortgordon_gp252rh",
+            "rsfmri_var_cortgordon_gp253rh",
+            "rsfmri_var_cortgordon_gp254rh",
+            "rsfmri_var_cortgordon_gp255rh",
+            "rsfmri_var_cortgordon_gp256rh",
+            "rsfmri_var_cortgordon_gp257rh",
+            "rsfmri_var_cortgordon_gp258rh",
+            "rsfmri_var_cortgordon_gp259rh",
+            "rsfmri_var_cortgordon_gp25lh",
+            "rsfmri_var_cortgordon_gp260rh",
+            "rsfmri_var_cortgordon_gp261rh",
+            "rsfmri_var_cortgordon_gp262rh",
+            "rsfmri_var_cortgordon_gp263rh",
+            "rsfmri_var_cortgordon_gp264rh",
+            "rsfmri_var_cortgordon_gp265rh",
+            "rsfmri_var_cortgordon_gp266rh",
+            "rsfmri_var_cortgordon_gp267rh",
+            "rsfmri_var_cortgordon_gp268rh",
+            "rsfmri_var_cortgordon_gp269rh",
+            "rsfmri_var_cortgordon_gp26lh",
+            "rsfmri_var_cortgordon_gp270rh",
+            "rsfmri_var_cortgordon_gp271rh",
+            "rsfmri_var_cortgordon_gp272rh",
+            "rsfmri_var_cortgordon_gp273rh",
+            "rsfmri_var_cortgordon_gp274rh",
+            "rsfmri_var_cortgordon_gp275rh",
+            "rsfmri_var_cortgordon_gp276rh",
+            "rsfmri_var_cortgordon_gp277rh",
+            "rsfmri_var_cortgordon_gp278rh",
+            "rsfmri_var_cortgordon_gp279rh",
+            "rsfmri_var_cortgordon_gp27lh",
+            "rsfmri_var_cortgordon_gp280rh",
+            "rsfmri_var_cortgordon_gp281rh",
+            "rsfmri_var_cortgordon_gp282rh",
+            "rsfmri_var_cortgordon_gp283rh",
+            "rsfmri_var_cortgordon_gp284rh",
+            "rsfmri_var_cortgordon_gp285rh",
+            "rsfmri_var_cortgordon_gp286rh",
+            "rsfmri_var_cortgordon_gp287rh",
+            "rsfmri_var_cortgordon_gp288rh",
+            "rsfmri_var_cortgordon_gp289rh",
+            "rsfmri_var_cortgordon_gp28lh",
+            "rsfmri_var_cortgordon_gp290rh",
+            "rsfmri_var_cortgordon_gp291rh",
+            "rsfmri_var_cortgordon_gp292rh",
+            "rsfmri_var_cortgordon_gp293rh",
+            "rsfmri_var_cortgordon_gp294rh",
+            "rsfmri_var_cortgordon_gp295rh",
+            "rsfmri_var_cortgordon_gp296rh",
+            "rsfmri_var_cortgordon_gp297rh",
+            "rsfmri_var_cortgordon_gp298rh",
+            "rsfmri_var_cortgordon_gp299rh",
+            "rsfmri_var_cortgordon_gp29lh",
+            "rsfmri_var_cortgordon_gp2lh",
+            "rsfmri_var_cortgordon_gp300rh",
+            "rsfmri_var_cortgordon_gp301rh",
+            "rsfmri_var_cortgordon_gp302rh",
+            "rsfmri_var_cortgordon_gp303rh",
+            "rsfmri_var_cortgordon_gp304rh",
+            "rsfmri_var_cortgordon_gp305rh",
+            "rsfmri_var_cortgordon_gp306rh",
+            "rsfmri_var_cortgordon_gp307rh",
+            "rsfmri_var_cortgordon_gp308rh",
+            "rsfmri_var_cortgordon_gp309rh",
+            "rsfmri_var_cortgordon_gp30lh",
+            "rsfmri_var_cortgordon_gp310rh",
+            "rsfmri_var_cortgordon_gp311rh",
+            "rsfmri_var_cortgordon_gp312rh",
+            "rsfmri_var_cortgordon_gp313rh",
+            "rsfmri_var_cortgordon_gp314rh",
+            "rsfmri_var_cortgordon_gp315rh",
+            "rsfmri_var_cortgordon_gp316rh",
+            "rsfmri_var_cortgordon_gp317rh",
+            "rsfmri_var_cortgordon_gp318rh",
+            "rsfmri_var_cortgordon_gp319rh",
+            "rsfmri_var_cortgordon_gp31lh",
+            "rsfmri_var_cortgordon_gp320rh",
+            "rsfmri_var_cortgordon_gp321rh",
+            "rsfmri_var_cortgordon_gp322rh",
+            "rsfmri_var_cortgordon_gp323rh",
+            "rsfmri_var_cortgordon_gp324rh",
+            "rsfmri_var_cortgordon_gp325rh",
+            "rsfmri_var_cortgordon_gp326rh",
+            "rsfmri_var_cortgordon_gp327rh",
+            "rsfmri_var_cortgordon_gp328rh",
+            "rsfmri_var_cortgordon_gp329rh",
+            "rsfmri_var_cortgordon_gp32lh",
+            "rsfmri_var_cortgordon_gp330rh",
+            "rsfmri_var_cortgordon_gp331rh",
+            "rsfmri_var_cortgordon_gp332rh",
+            "rsfmri_var_cortgordon_gp333rh",
+            "rsfmri_var_cortgordon_gp33lh",
+            "rsfmri_var_cortgordon_gp34lh",
+            "rsfmri_var_cortgordon_gp35lh",
+            "rsfmri_var_cortgordon_gp36lh",
+            "rsfmri_var_cortgordon_gp37lh",
+            "rsfmri_var_cortgordon_gp38lh",
+            "rsfmri_var_cortgordon_gp39lh",
+            "rsfmri_var_cortgordon_gp3lh",
+            "rsfmri_var_cortgordon_gp40lh",
+            "rsfmri_var_cortgordon_gp41lh",
+            "rsfmri_var_cortgordon_gp42lh",
+            "rsfmri_var_cortgordon_gp43lh",
+            "rsfmri_var_cortgordon_gp44lh",
+            "rsfmri_var_cortgordon_gp45lh",
+            "rsfmri_var_cortgordon_gp46lh",
+            "rsfmri_var_cortgordon_gp47lh",
+            "rsfmri_var_cortgordon_gp48lh",
+            "rsfmri_var_cortgordon_gp49lh",
+            "rsfmri_var_cortgordon_gp4lh",
+            "rsfmri_var_cortgordon_gp50lh",
+            "rsfmri_var_cortgordon_gp51lh",
+            "rsfmri_var_cortgordon_gp52lh",
+            "rsfmri_var_cortgordon_gp53lh",
+            "rsfmri_var_cortgordon_gp54lh",
+            "rsfmri_var_cortgordon_gp55lh",
+            "rsfmri_var_cortgordon_gp56lh",
+            "rsfmri_var_cortgordon_gp57lh",
+            "rsfmri_var_cortgordon_gp58lh",
+            "rsfmri_var_cortgordon_gp59lh",
+            "rsfmri_var_cortgordon_gp5lh",
+            "rsfmri_var_cortgordon_gp60lh",
+            "rsfmri_var_cortgordon_gp61lh",
+            "rsfmri_var_cortgordon_gp62lh",
+            "rsfmri_var_cortgordon_gp63lh",
+            "rsfmri_var_cortgordon_gp64lh",
+            "rsfmri_var_cortgordon_gp65lh",
+            "rsfmri_var_cortgordon_gp66lh",
+            "rsfmri_var_cortgordon_gp67lh",
+            "rsfmri_var_cortgordon_gp68lh",
+            "rsfmri_var_cortgordon_gp69lh",
+            "rsfmri_var_cortgordon_gp6lh",
+            "rsfmri_var_cortgordon_gp70lh",
+            "rsfmri_var_cortgordon_gp71lh",
+            "rsfmri_var_cortgordon_gp72lh",
+            "rsfmri_var_cortgordon_gp73lh",
+            "rsfmri_var_cortgordon_gp74lh",
+            "rsfmri_var_cortgordon_gp75lh",
+            "rsfmri_var_cortgordon_gp76lh",
+            "rsfmri_var_cortgordon_gp77lh",
+            "rsfmri_var_cortgordon_gp78lh",
+            "rsfmri_var_cortgordon_gp79lh",
+            "rsfmri_var_cortgordon_gp7lh",
+            "rsfmri_var_cortgordon_gp80lh",
+            "rsfmri_var_cortgordon_gp81lh",
+            "rsfmri_var_cortgordon_gp82lh",
+            "rsfmri_var_cortgordon_gp83lh",
+            "rsfmri_var_cortgordon_gp84lh",
+            "rsfmri_var_cortgordon_gp85lh",
+            "rsfmri_var_cortgordon_gp86lh",
+            "rsfmri_var_cortgordon_gp87lh",
+            "rsfmri_var_cortgordon_gp88lh",
+            "rsfmri_var_cortgordon_gp89lh",
+            "rsfmri_var_cortgordon_gp8lh",
+            "rsfmri_var_cortgordon_gp90lh",
+            "rsfmri_var_cortgordon_gp91lh",
+            "rsfmri_var_cortgordon_gp92lh",
+            "rsfmri_var_cortgordon_gp93lh",
+            "rsfmri_var_cortgordon_gp94lh",
+            "rsfmri_var_cortgordon_gp95lh",
+            "rsfmri_var_cortgordon_gp96lh",
+            "rsfmri_var_cortgordon_gp97lh",
+            "rsfmri_var_cortgordon_gp98lh",
+            "rsfmri_var_cortgordon_gp99lh",
+            "rsfmri_var_cortgordon_gp9lh",
+            "rsfmri_var_maxmotion",
+            "rsfmri_var_maxrot",
+            "rsfmri_var_maxtrans",
+            "rsfmri_var_meanmotion",
+            "rsfmri_var_meanrot",
+            "rsfmri_var_meantrans",
+            "rsfmri_var_ntpoints",
+            "rsfmri_var_numtrs",
+            "rsfmri_var_nvols",
+            "rsfmri_var_scs_3rdv",
+            "rsfmri_var_scs_4thv",
+            "rsfmri_var_scs_aalh",
+            "rsfmri_var_scs_aarh",
+            "rsfmri_var_scs_amygdalalh",
+            "rsfmri_var_scs_amygdalarh",
+            "rsfmri_var_scs_brainstem",
+            "rsfmri_var_scs_caudatelh",
+            "rsfmri_var_scs_caudaterh",
+            "rsfmri_var_scs_cbcortexlh",
+            "rsfmri_var_scs_cbcortexrh",
+            "rsfmri_var_scs_cbwmlh",
+            "rsfmri_var_scs_cbwmrh",
+            "rsfmri_var_scs_crbcortexlh",
+            "rsfmri_var_scs_crbcortexrh",
+            "rsfmri_var_scs_crbwmlh",
+            "rsfmri_var_scs_crbwmrh",
+            "rsfmri_var_scs_csf",
+            "rsfmri_var_scs_hpuslh",
+            "rsfmri_var_scs_hpusrh",
+            "rsfmri_var_scs_inflatventlh",
+            "rsfmri_var_scs_inflatventrh",
+            "rsfmri_var_scs_lavlh",
+            "rsfmri_var_scs_lavrh",
+            "rsfmri_var_scs_lesionlh",
+            "rsfmri_var_scs_lesionrh",
+            "rsfmri_var_scs_pallidumlh",
+            "rsfmri_var_scs_pallidumrh",
+            "rsfmri_var_scs_putamenlh",
+            "rsfmri_var_scs_putamenrh",
+            "rsfmri_var_scs_tplh",
+            "rsfmri_var_scs_tprh",
+            "rsfmri_var_scs_ventraldclh",
+            "rsfmri_var_scs_ventraldcrh",
+            "rsfmri_var_scs_wmhypin",
+            "rsfmri_var_scs_wmhypinlh",
+            "rsfmri_var_scs_wmhypinrh",
+            "rsfmri_var_subtcignvols",
+            "rsfmri_var_subthreshnvols",
+            "rsfmri_var_tr",
+            "rsfmri_var_visitid"
+        ],
+        "shuffle": false,
+        "addProperties": [
+            {
+                "variableName": "rsfmri_var_cdk_banksstslh",
+                "isAbout": "rsfmri_var_cdk_banksstslh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_banksstsrh",
+                "isAbout": "rsfmri_var_cdk_banksstsrh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_cdaclatelh",
+                "isAbout": "rsfmri_var_cdk_cdaclatelh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_cdaclaterh",
+                "isAbout": "rsfmri_var_cdk_cdaclaterh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_cdmdflh",
+                "isAbout": "rsfmri_var_cdk_cdmdflh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_cdmdfrh",
+                "isAbout": "rsfmri_var_cdk_cdmdfrh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_cuneuslh",
+                "isAbout": "rsfmri_var_cdk_cuneuslh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_cuneusrh",
+                "isAbout": "rsfmri_var_cdk_cuneusrh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_entorhinallh",
+                "isAbout": "rsfmri_var_cdk_entorhinallh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_entorhinalrh",
+                "isAbout": "rsfmri_var_cdk_entorhinalrh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_fflh",
+                "isAbout": "rsfmri_var_cdk_fflh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_ffrh",
+                "isAbout": "rsfmri_var_cdk_ffrh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_fpolelh",
+                "isAbout": "rsfmri_var_cdk_fpolelh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_fpolerh",
+                "isAbout": "rsfmri_var_cdk_fpolerh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_ifpalh",
+                "isAbout": "rsfmri_var_cdk_ifpalh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_ifparh",
+                "isAbout": "rsfmri_var_cdk_ifparh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_iftlh",
+                "isAbout": "rsfmri_var_cdk_iftlh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_iftrh",
+                "isAbout": "rsfmri_var_cdk_iftrh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_ihclatelh",
+                "isAbout": "rsfmri_var_cdk_ihclatelh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_ihclaterh",
+                "isAbout": "rsfmri_var_cdk_ihclaterh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_insulalh",
+                "isAbout": "rsfmri_var_cdk_insulalh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_insularh",
+                "isAbout": "rsfmri_var_cdk_insularh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_linguallh",
+                "isAbout": "rsfmri_var_cdk_linguallh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_lingualrh",
+                "isAbout": "rsfmri_var_cdk_lingualrh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_loboflh",
+                "isAbout": "rsfmri_var_cdk_loboflh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_lobofrh",
+                "isAbout": "rsfmri_var_cdk_lobofrh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_loccipitallh",
+                "isAbout": "rsfmri_var_cdk_loccipitallh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_loccipitalrh",
+                "isAbout": "rsfmri_var_cdk_loccipitalrh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_mdtlh",
+                "isAbout": "rsfmri_var_cdk_mdtlh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_mdtrh",
+                "isAbout": "rsfmri_var_cdk_mdtrh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_moboflh",
+                "isAbout": "rsfmri_var_cdk_moboflh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_mobofrh",
+                "isAbout": "rsfmri_var_cdk_mobofrh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_paracentrallh",
+                "isAbout": "rsfmri_var_cdk_paracentrallh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_paracentralrh",
+                "isAbout": "rsfmri_var_cdk_paracentralrh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_parahpallh",
+                "isAbout": "rsfmri_var_cdk_parahpallh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_parahpalrh",
+                "isAbout": "rsfmri_var_cdk_parahpalrh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_parsobalislh",
+                "isAbout": "rsfmri_var_cdk_parsobalislh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_parsobalisrh",
+                "isAbout": "rsfmri_var_cdk_parsobalisrh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_parsopllh",
+                "isAbout": "rsfmri_var_cdk_parsopllh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_parsoplrh",
+                "isAbout": "rsfmri_var_cdk_parsoplrh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_parstularislh",
+                "isAbout": "rsfmri_var_cdk_parstularislh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_parstularisrh",
+                "isAbout": "rsfmri_var_cdk_parstularisrh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_pericclh",
+                "isAbout": "rsfmri_var_cdk_pericclh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_periccrh",
+                "isAbout": "rsfmri_var_cdk_periccrh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_postcentrallh",
+                "isAbout": "rsfmri_var_cdk_postcentrallh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_postcentralrh",
+                "isAbout": "rsfmri_var_cdk_postcentralrh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_precentrallh",
+                "isAbout": "rsfmri_var_cdk_precentrallh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_precentralrh",
+                "isAbout": "rsfmri_var_cdk_precentralrh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_precuneuslh",
+                "isAbout": "rsfmri_var_cdk_precuneuslh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_precuneusrh",
+                "isAbout": "rsfmri_var_cdk_precuneusrh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_psclatelh",
+                "isAbout": "rsfmri_var_cdk_psclatelh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_psclaterh",
+                "isAbout": "rsfmri_var_cdk_psclaterh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_rlaclatelh",
+                "isAbout": "rsfmri_var_cdk_rlaclatelh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_rlaclaterh",
+                "isAbout": "rsfmri_var_cdk_rlaclaterh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_rlmdflh",
+                "isAbout": "rsfmri_var_cdk_rlmdflh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_rlmdfrh",
+                "isAbout": "rsfmri_var_cdk_rlmdfrh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_smlh",
+                "isAbout": "rsfmri_var_cdk_smlh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_smrh",
+                "isAbout": "rsfmri_var_cdk_smrh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_spetallh",
+                "isAbout": "rsfmri_var_cdk_spetallh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_spetalrh",
+                "isAbout": "rsfmri_var_cdk_spetalrh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_suflh",
+                "isAbout": "rsfmri_var_cdk_suflh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_sufrh",
+                "isAbout": "rsfmri_var_cdk_sufrh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_sutlh",
+                "isAbout": "rsfmri_var_cdk_sutlh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_sutrh",
+                "isAbout": "rsfmri_var_cdk_sutrh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_tpolelh",
+                "isAbout": "rsfmri_var_cdk_tpolelh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_tpolerh",
+                "isAbout": "rsfmri_var_cdk_tpolerh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_tvtlh",
+                "isAbout": "rsfmri_var_cdk_tvtlh"
+            },
+            {
+                "variableName": "rsfmri_var_cdk_tvtrh",
+                "isAbout": "rsfmri_var_cdk_tvtrh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp100lh",
+                "isAbout": "rsfmri_var_cortgordon_gp100lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp101lh",
+                "isAbout": "rsfmri_var_cortgordon_gp101lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp102lh",
+                "isAbout": "rsfmri_var_cortgordon_gp102lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp103lh",
+                "isAbout": "rsfmri_var_cortgordon_gp103lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp104lh",
+                "isAbout": "rsfmri_var_cortgordon_gp104lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp105lh",
+                "isAbout": "rsfmri_var_cortgordon_gp105lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp106lh",
+                "isAbout": "rsfmri_var_cortgordon_gp106lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp107lh",
+                "isAbout": "rsfmri_var_cortgordon_gp107lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp108lh",
+                "isAbout": "rsfmri_var_cortgordon_gp108lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp109lh",
+                "isAbout": "rsfmri_var_cortgordon_gp109lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp10lh",
+                "isAbout": "rsfmri_var_cortgordon_gp10lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp110lh",
+                "isAbout": "rsfmri_var_cortgordon_gp110lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp111lh",
+                "isAbout": "rsfmri_var_cortgordon_gp111lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp112lh",
+                "isAbout": "rsfmri_var_cortgordon_gp112lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp113lh",
+                "isAbout": "rsfmri_var_cortgordon_gp113lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp114lh",
+                "isAbout": "rsfmri_var_cortgordon_gp114lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp115lh",
+                "isAbout": "rsfmri_var_cortgordon_gp115lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp116lh",
+                "isAbout": "rsfmri_var_cortgordon_gp116lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp117lh",
+                "isAbout": "rsfmri_var_cortgordon_gp117lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp118lh",
+                "isAbout": "rsfmri_var_cortgordon_gp118lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp119lh",
+                "isAbout": "rsfmri_var_cortgordon_gp119lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp11lh",
+                "isAbout": "rsfmri_var_cortgordon_gp11lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp120lh",
+                "isAbout": "rsfmri_var_cortgordon_gp120lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp121lh",
+                "isAbout": "rsfmri_var_cortgordon_gp121lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp122lh",
+                "isAbout": "rsfmri_var_cortgordon_gp122lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp123lh",
+                "isAbout": "rsfmri_var_cortgordon_gp123lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp124lh",
+                "isAbout": "rsfmri_var_cortgordon_gp124lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp125lh",
+                "isAbout": "rsfmri_var_cortgordon_gp125lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp126lh",
+                "isAbout": "rsfmri_var_cortgordon_gp126lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp127lh",
+                "isAbout": "rsfmri_var_cortgordon_gp127lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp128lh",
+                "isAbout": "rsfmri_var_cortgordon_gp128lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp129lh",
+                "isAbout": "rsfmri_var_cortgordon_gp129lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp12lh",
+                "isAbout": "rsfmri_var_cortgordon_gp12lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp130lh",
+                "isAbout": "rsfmri_var_cortgordon_gp130lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp131lh",
+                "isAbout": "rsfmri_var_cortgordon_gp131lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp132lh",
+                "isAbout": "rsfmri_var_cortgordon_gp132lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp133lh",
+                "isAbout": "rsfmri_var_cortgordon_gp133lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp134lh",
+                "isAbout": "rsfmri_var_cortgordon_gp134lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp135lh",
+                "isAbout": "rsfmri_var_cortgordon_gp135lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp136lh",
+                "isAbout": "rsfmri_var_cortgordon_gp136lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp137lh",
+                "isAbout": "rsfmri_var_cortgordon_gp137lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp138lh",
+                "isAbout": "rsfmri_var_cortgordon_gp138lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp139lh",
+                "isAbout": "rsfmri_var_cortgordon_gp139lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp13lh",
+                "isAbout": "rsfmri_var_cortgordon_gp13lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp140lh",
+                "isAbout": "rsfmri_var_cortgordon_gp140lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp141lh",
+                "isAbout": "rsfmri_var_cortgordon_gp141lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp142lh",
+                "isAbout": "rsfmri_var_cortgordon_gp142lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp143lh",
+                "isAbout": "rsfmri_var_cortgordon_gp143lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp144lh",
+                "isAbout": "rsfmri_var_cortgordon_gp144lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp145lh",
+                "isAbout": "rsfmri_var_cortgordon_gp145lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp146lh",
+                "isAbout": "rsfmri_var_cortgordon_gp146lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp147lh",
+                "isAbout": "rsfmri_var_cortgordon_gp147lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp148lh",
+                "isAbout": "rsfmri_var_cortgordon_gp148lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp149lh",
+                "isAbout": "rsfmri_var_cortgordon_gp149lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp14lh",
+                "isAbout": "rsfmri_var_cortgordon_gp14lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp150lh",
+                "isAbout": "rsfmri_var_cortgordon_gp150lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp151lh",
+                "isAbout": "rsfmri_var_cortgordon_gp151lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp152lh",
+                "isAbout": "rsfmri_var_cortgordon_gp152lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp153lh",
+                "isAbout": "rsfmri_var_cortgordon_gp153lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp154lh",
+                "isAbout": "rsfmri_var_cortgordon_gp154lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp155lh",
+                "isAbout": "rsfmri_var_cortgordon_gp155lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp156lh",
+                "isAbout": "rsfmri_var_cortgordon_gp156lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp157lh",
+                "isAbout": "rsfmri_var_cortgordon_gp157lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp158lh",
+                "isAbout": "rsfmri_var_cortgordon_gp158lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp159lh",
+                "isAbout": "rsfmri_var_cortgordon_gp159lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp15lh",
+                "isAbout": "rsfmri_var_cortgordon_gp15lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp160lh",
+                "isAbout": "rsfmri_var_cortgordon_gp160lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp161lh",
+                "isAbout": "rsfmri_var_cortgordon_gp161lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp162rh",
+                "isAbout": "rsfmri_var_cortgordon_gp162rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp163rh",
+                "isAbout": "rsfmri_var_cortgordon_gp163rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp164rh",
+                "isAbout": "rsfmri_var_cortgordon_gp164rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp165rh",
+                "isAbout": "rsfmri_var_cortgordon_gp165rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp166rh",
+                "isAbout": "rsfmri_var_cortgordon_gp166rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp167rh",
+                "isAbout": "rsfmri_var_cortgordon_gp167rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp168rh",
+                "isAbout": "rsfmri_var_cortgordon_gp168rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp169rh",
+                "isAbout": "rsfmri_var_cortgordon_gp169rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp16lh",
+                "isAbout": "rsfmri_var_cortgordon_gp16lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp170rh",
+                "isAbout": "rsfmri_var_cortgordon_gp170rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp171rh",
+                "isAbout": "rsfmri_var_cortgordon_gp171rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp172rh",
+                "isAbout": "rsfmri_var_cortgordon_gp172rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp173rh",
+                "isAbout": "rsfmri_var_cortgordon_gp173rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp174rh",
+                "isAbout": "rsfmri_var_cortgordon_gp174rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp175rh",
+                "isAbout": "rsfmri_var_cortgordon_gp175rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp176rh",
+                "isAbout": "rsfmri_var_cortgordon_gp176rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp177rh",
+                "isAbout": "rsfmri_var_cortgordon_gp177rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp178rh",
+                "isAbout": "rsfmri_var_cortgordon_gp178rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp179rh",
+                "isAbout": "rsfmri_var_cortgordon_gp179rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp17lh",
+                "isAbout": "rsfmri_var_cortgordon_gp17lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp180rh",
+                "isAbout": "rsfmri_var_cortgordon_gp180rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp181rh",
+                "isAbout": "rsfmri_var_cortgordon_gp181rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp182rh",
+                "isAbout": "rsfmri_var_cortgordon_gp182rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp183rh",
+                "isAbout": "rsfmri_var_cortgordon_gp183rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp184rh",
+                "isAbout": "rsfmri_var_cortgordon_gp184rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp185rh",
+                "isAbout": "rsfmri_var_cortgordon_gp185rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp186rh",
+                "isAbout": "rsfmri_var_cortgordon_gp186rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp187rh",
+                "isAbout": "rsfmri_var_cortgordon_gp187rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp188rh",
+                "isAbout": "rsfmri_var_cortgordon_gp188rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp189rh",
+                "isAbout": "rsfmri_var_cortgordon_gp189rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp18lh",
+                "isAbout": "rsfmri_var_cortgordon_gp18lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp190rh",
+                "isAbout": "rsfmri_var_cortgordon_gp190rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp191rh",
+                "isAbout": "rsfmri_var_cortgordon_gp191rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp192rh",
+                "isAbout": "rsfmri_var_cortgordon_gp192rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp193rh",
+                "isAbout": "rsfmri_var_cortgordon_gp193rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp194rh",
+                "isAbout": "rsfmri_var_cortgordon_gp194rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp195rh",
+                "isAbout": "rsfmri_var_cortgordon_gp195rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp196rh",
+                "isAbout": "rsfmri_var_cortgordon_gp196rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp197rh",
+                "isAbout": "rsfmri_var_cortgordon_gp197rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp198rh",
+                "isAbout": "rsfmri_var_cortgordon_gp198rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp199rh",
+                "isAbout": "rsfmri_var_cortgordon_gp199rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp19lh",
+                "isAbout": "rsfmri_var_cortgordon_gp19lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp1lh",
+                "isAbout": "rsfmri_var_cortgordon_gp1lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp200rh",
+                "isAbout": "rsfmri_var_cortgordon_gp200rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp201rh",
+                "isAbout": "rsfmri_var_cortgordon_gp201rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp202rh",
+                "isAbout": "rsfmri_var_cortgordon_gp202rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp203rh",
+                "isAbout": "rsfmri_var_cortgordon_gp203rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp204rh",
+                "isAbout": "rsfmri_var_cortgordon_gp204rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp205rh",
+                "isAbout": "rsfmri_var_cortgordon_gp205rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp206rh",
+                "isAbout": "rsfmri_var_cortgordon_gp206rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp207rh",
+                "isAbout": "rsfmri_var_cortgordon_gp207rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp208rh",
+                "isAbout": "rsfmri_var_cortgordon_gp208rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp209rh",
+                "isAbout": "rsfmri_var_cortgordon_gp209rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp20lh",
+                "isAbout": "rsfmri_var_cortgordon_gp20lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp210rh",
+                "isAbout": "rsfmri_var_cortgordon_gp210rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp211rh",
+                "isAbout": "rsfmri_var_cortgordon_gp211rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp212rh",
+                "isAbout": "rsfmri_var_cortgordon_gp212rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp213rh",
+                "isAbout": "rsfmri_var_cortgordon_gp213rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp214rh",
+                "isAbout": "rsfmri_var_cortgordon_gp214rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp215rh",
+                "isAbout": "rsfmri_var_cortgordon_gp215rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp216rh",
+                "isAbout": "rsfmri_var_cortgordon_gp216rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp217rh",
+                "isAbout": "rsfmri_var_cortgordon_gp217rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp218rh",
+                "isAbout": "rsfmri_var_cortgordon_gp218rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp219rh",
+                "isAbout": "rsfmri_var_cortgordon_gp219rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp21lh",
+                "isAbout": "rsfmri_var_cortgordon_gp21lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp220rh",
+                "isAbout": "rsfmri_var_cortgordon_gp220rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp221rh",
+                "isAbout": "rsfmri_var_cortgordon_gp221rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp222rh",
+                "isAbout": "rsfmri_var_cortgordon_gp222rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp223rh",
+                "isAbout": "rsfmri_var_cortgordon_gp223rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp224rh",
+                "isAbout": "rsfmri_var_cortgordon_gp224rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp225rh",
+                "isAbout": "rsfmri_var_cortgordon_gp225rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp226rh",
+                "isAbout": "rsfmri_var_cortgordon_gp226rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp227rh",
+                "isAbout": "rsfmri_var_cortgordon_gp227rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp228rh",
+                "isAbout": "rsfmri_var_cortgordon_gp228rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp229rh",
+                "isAbout": "rsfmri_var_cortgordon_gp229rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp22lh",
+                "isAbout": "rsfmri_var_cortgordon_gp22lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp230rh",
+                "isAbout": "rsfmri_var_cortgordon_gp230rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp231rh",
+                "isAbout": "rsfmri_var_cortgordon_gp231rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp232rh",
+                "isAbout": "rsfmri_var_cortgordon_gp232rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp233rh",
+                "isAbout": "rsfmri_var_cortgordon_gp233rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp234rh",
+                "isAbout": "rsfmri_var_cortgordon_gp234rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp235rh",
+                "isAbout": "rsfmri_var_cortgordon_gp235rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp236rh",
+                "isAbout": "rsfmri_var_cortgordon_gp236rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp237rh",
+                "isAbout": "rsfmri_var_cortgordon_gp237rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp238rh",
+                "isAbout": "rsfmri_var_cortgordon_gp238rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp239rh",
+                "isAbout": "rsfmri_var_cortgordon_gp239rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp23lh",
+                "isAbout": "rsfmri_var_cortgordon_gp23lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp240rh",
+                "isAbout": "rsfmri_var_cortgordon_gp240rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp241rh",
+                "isAbout": "rsfmri_var_cortgordon_gp241rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp242rh",
+                "isAbout": "rsfmri_var_cortgordon_gp242rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp243rh",
+                "isAbout": "rsfmri_var_cortgordon_gp243rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp244rh",
+                "isAbout": "rsfmri_var_cortgordon_gp244rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp245rh",
+                "isAbout": "rsfmri_var_cortgordon_gp245rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp246rh",
+                "isAbout": "rsfmri_var_cortgordon_gp246rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp247rh",
+                "isAbout": "rsfmri_var_cortgordon_gp247rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp248rh",
+                "isAbout": "rsfmri_var_cortgordon_gp248rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp249rh",
+                "isAbout": "rsfmri_var_cortgordon_gp249rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp24lh",
+                "isAbout": "rsfmri_var_cortgordon_gp24lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp250rh",
+                "isAbout": "rsfmri_var_cortgordon_gp250rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp251rh",
+                "isAbout": "rsfmri_var_cortgordon_gp251rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp252rh",
+                "isAbout": "rsfmri_var_cortgordon_gp252rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp253rh",
+                "isAbout": "rsfmri_var_cortgordon_gp253rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp254rh",
+                "isAbout": "rsfmri_var_cortgordon_gp254rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp255rh",
+                "isAbout": "rsfmri_var_cortgordon_gp255rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp256rh",
+                "isAbout": "rsfmri_var_cortgordon_gp256rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp257rh",
+                "isAbout": "rsfmri_var_cortgordon_gp257rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp258rh",
+                "isAbout": "rsfmri_var_cortgordon_gp258rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp259rh",
+                "isAbout": "rsfmri_var_cortgordon_gp259rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp25lh",
+                "isAbout": "rsfmri_var_cortgordon_gp25lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp260rh",
+                "isAbout": "rsfmri_var_cortgordon_gp260rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp261rh",
+                "isAbout": "rsfmri_var_cortgordon_gp261rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp262rh",
+                "isAbout": "rsfmri_var_cortgordon_gp262rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp263rh",
+                "isAbout": "rsfmri_var_cortgordon_gp263rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp264rh",
+                "isAbout": "rsfmri_var_cortgordon_gp264rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp265rh",
+                "isAbout": "rsfmri_var_cortgordon_gp265rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp266rh",
+                "isAbout": "rsfmri_var_cortgordon_gp266rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp267rh",
+                "isAbout": "rsfmri_var_cortgordon_gp267rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp268rh",
+                "isAbout": "rsfmri_var_cortgordon_gp268rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp269rh",
+                "isAbout": "rsfmri_var_cortgordon_gp269rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp26lh",
+                "isAbout": "rsfmri_var_cortgordon_gp26lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp270rh",
+                "isAbout": "rsfmri_var_cortgordon_gp270rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp271rh",
+                "isAbout": "rsfmri_var_cortgordon_gp271rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp272rh",
+                "isAbout": "rsfmri_var_cortgordon_gp272rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp273rh",
+                "isAbout": "rsfmri_var_cortgordon_gp273rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp274rh",
+                "isAbout": "rsfmri_var_cortgordon_gp274rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp275rh",
+                "isAbout": "rsfmri_var_cortgordon_gp275rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp276rh",
+                "isAbout": "rsfmri_var_cortgordon_gp276rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp277rh",
+                "isAbout": "rsfmri_var_cortgordon_gp277rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp278rh",
+                "isAbout": "rsfmri_var_cortgordon_gp278rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp279rh",
+                "isAbout": "rsfmri_var_cortgordon_gp279rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp27lh",
+                "isAbout": "rsfmri_var_cortgordon_gp27lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp280rh",
+                "isAbout": "rsfmri_var_cortgordon_gp280rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp281rh",
+                "isAbout": "rsfmri_var_cortgordon_gp281rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp282rh",
+                "isAbout": "rsfmri_var_cortgordon_gp282rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp283rh",
+                "isAbout": "rsfmri_var_cortgordon_gp283rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp284rh",
+                "isAbout": "rsfmri_var_cortgordon_gp284rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp285rh",
+                "isAbout": "rsfmri_var_cortgordon_gp285rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp286rh",
+                "isAbout": "rsfmri_var_cortgordon_gp286rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp287rh",
+                "isAbout": "rsfmri_var_cortgordon_gp287rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp288rh",
+                "isAbout": "rsfmri_var_cortgordon_gp288rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp289rh",
+                "isAbout": "rsfmri_var_cortgordon_gp289rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp28lh",
+                "isAbout": "rsfmri_var_cortgordon_gp28lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp290rh",
+                "isAbout": "rsfmri_var_cortgordon_gp290rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp291rh",
+                "isAbout": "rsfmri_var_cortgordon_gp291rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp292rh",
+                "isAbout": "rsfmri_var_cortgordon_gp292rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp293rh",
+                "isAbout": "rsfmri_var_cortgordon_gp293rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp294rh",
+                "isAbout": "rsfmri_var_cortgordon_gp294rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp295rh",
+                "isAbout": "rsfmri_var_cortgordon_gp295rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp296rh",
+                "isAbout": "rsfmri_var_cortgordon_gp296rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp297rh",
+                "isAbout": "rsfmri_var_cortgordon_gp297rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp298rh",
+                "isAbout": "rsfmri_var_cortgordon_gp298rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp299rh",
+                "isAbout": "rsfmri_var_cortgordon_gp299rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp29lh",
+                "isAbout": "rsfmri_var_cortgordon_gp29lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp2lh",
+                "isAbout": "rsfmri_var_cortgordon_gp2lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp300rh",
+                "isAbout": "rsfmri_var_cortgordon_gp300rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp301rh",
+                "isAbout": "rsfmri_var_cortgordon_gp301rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp302rh",
+                "isAbout": "rsfmri_var_cortgordon_gp302rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp303rh",
+                "isAbout": "rsfmri_var_cortgordon_gp303rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp304rh",
+                "isAbout": "rsfmri_var_cortgordon_gp304rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp305rh",
+                "isAbout": "rsfmri_var_cortgordon_gp305rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp306rh",
+                "isAbout": "rsfmri_var_cortgordon_gp306rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp307rh",
+                "isAbout": "rsfmri_var_cortgordon_gp307rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp308rh",
+                "isAbout": "rsfmri_var_cortgordon_gp308rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp309rh",
+                "isAbout": "rsfmri_var_cortgordon_gp309rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp30lh",
+                "isAbout": "rsfmri_var_cortgordon_gp30lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp310rh",
+                "isAbout": "rsfmri_var_cortgordon_gp310rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp311rh",
+                "isAbout": "rsfmri_var_cortgordon_gp311rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp312rh",
+                "isAbout": "rsfmri_var_cortgordon_gp312rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp313rh",
+                "isAbout": "rsfmri_var_cortgordon_gp313rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp314rh",
+                "isAbout": "rsfmri_var_cortgordon_gp314rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp315rh",
+                "isAbout": "rsfmri_var_cortgordon_gp315rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp316rh",
+                "isAbout": "rsfmri_var_cortgordon_gp316rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp317rh",
+                "isAbout": "rsfmri_var_cortgordon_gp317rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp318rh",
+                "isAbout": "rsfmri_var_cortgordon_gp318rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp319rh",
+                "isAbout": "rsfmri_var_cortgordon_gp319rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp31lh",
+                "isAbout": "rsfmri_var_cortgordon_gp31lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp320rh",
+                "isAbout": "rsfmri_var_cortgordon_gp320rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp321rh",
+                "isAbout": "rsfmri_var_cortgordon_gp321rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp322rh",
+                "isAbout": "rsfmri_var_cortgordon_gp322rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp323rh",
+                "isAbout": "rsfmri_var_cortgordon_gp323rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp324rh",
+                "isAbout": "rsfmri_var_cortgordon_gp324rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp325rh",
+                "isAbout": "rsfmri_var_cortgordon_gp325rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp326rh",
+                "isAbout": "rsfmri_var_cortgordon_gp326rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp327rh",
+                "isAbout": "rsfmri_var_cortgordon_gp327rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp328rh",
+                "isAbout": "rsfmri_var_cortgordon_gp328rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp329rh",
+                "isAbout": "rsfmri_var_cortgordon_gp329rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp32lh",
+                "isAbout": "rsfmri_var_cortgordon_gp32lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp330rh",
+                "isAbout": "rsfmri_var_cortgordon_gp330rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp331rh",
+                "isAbout": "rsfmri_var_cortgordon_gp331rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp332rh",
+                "isAbout": "rsfmri_var_cortgordon_gp332rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp333rh",
+                "isAbout": "rsfmri_var_cortgordon_gp333rh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp33lh",
+                "isAbout": "rsfmri_var_cortgordon_gp33lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp34lh",
+                "isAbout": "rsfmri_var_cortgordon_gp34lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp35lh",
+                "isAbout": "rsfmri_var_cortgordon_gp35lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp36lh",
+                "isAbout": "rsfmri_var_cortgordon_gp36lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp37lh",
+                "isAbout": "rsfmri_var_cortgordon_gp37lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp38lh",
+                "isAbout": "rsfmri_var_cortgordon_gp38lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp39lh",
+                "isAbout": "rsfmri_var_cortgordon_gp39lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp3lh",
+                "isAbout": "rsfmri_var_cortgordon_gp3lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp40lh",
+                "isAbout": "rsfmri_var_cortgordon_gp40lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp41lh",
+                "isAbout": "rsfmri_var_cortgordon_gp41lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp42lh",
+                "isAbout": "rsfmri_var_cortgordon_gp42lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp43lh",
+                "isAbout": "rsfmri_var_cortgordon_gp43lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp44lh",
+                "isAbout": "rsfmri_var_cortgordon_gp44lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp45lh",
+                "isAbout": "rsfmri_var_cortgordon_gp45lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp46lh",
+                "isAbout": "rsfmri_var_cortgordon_gp46lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp47lh",
+                "isAbout": "rsfmri_var_cortgordon_gp47lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp48lh",
+                "isAbout": "rsfmri_var_cortgordon_gp48lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp49lh",
+                "isAbout": "rsfmri_var_cortgordon_gp49lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp4lh",
+                "isAbout": "rsfmri_var_cortgordon_gp4lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp50lh",
+                "isAbout": "rsfmri_var_cortgordon_gp50lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp51lh",
+                "isAbout": "rsfmri_var_cortgordon_gp51lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp52lh",
+                "isAbout": "rsfmri_var_cortgordon_gp52lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp53lh",
+                "isAbout": "rsfmri_var_cortgordon_gp53lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp54lh",
+                "isAbout": "rsfmri_var_cortgordon_gp54lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp55lh",
+                "isAbout": "rsfmri_var_cortgordon_gp55lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp56lh",
+                "isAbout": "rsfmri_var_cortgordon_gp56lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp57lh",
+                "isAbout": "rsfmri_var_cortgordon_gp57lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp58lh",
+                "isAbout": "rsfmri_var_cortgordon_gp58lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp59lh",
+                "isAbout": "rsfmri_var_cortgordon_gp59lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp5lh",
+                "isAbout": "rsfmri_var_cortgordon_gp5lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp60lh",
+                "isAbout": "rsfmri_var_cortgordon_gp60lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp61lh",
+                "isAbout": "rsfmri_var_cortgordon_gp61lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp62lh",
+                "isAbout": "rsfmri_var_cortgordon_gp62lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp63lh",
+                "isAbout": "rsfmri_var_cortgordon_gp63lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp64lh",
+                "isAbout": "rsfmri_var_cortgordon_gp64lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp65lh",
+                "isAbout": "rsfmri_var_cortgordon_gp65lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp66lh",
+                "isAbout": "rsfmri_var_cortgordon_gp66lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp67lh",
+                "isAbout": "rsfmri_var_cortgordon_gp67lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp68lh",
+                "isAbout": "rsfmri_var_cortgordon_gp68lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp69lh",
+                "isAbout": "rsfmri_var_cortgordon_gp69lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp6lh",
+                "isAbout": "rsfmri_var_cortgordon_gp6lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp70lh",
+                "isAbout": "rsfmri_var_cortgordon_gp70lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp71lh",
+                "isAbout": "rsfmri_var_cortgordon_gp71lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp72lh",
+                "isAbout": "rsfmri_var_cortgordon_gp72lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp73lh",
+                "isAbout": "rsfmri_var_cortgordon_gp73lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp74lh",
+                "isAbout": "rsfmri_var_cortgordon_gp74lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp75lh",
+                "isAbout": "rsfmri_var_cortgordon_gp75lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp76lh",
+                "isAbout": "rsfmri_var_cortgordon_gp76lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp77lh",
+                "isAbout": "rsfmri_var_cortgordon_gp77lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp78lh",
+                "isAbout": "rsfmri_var_cortgordon_gp78lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp79lh",
+                "isAbout": "rsfmri_var_cortgordon_gp79lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp7lh",
+                "isAbout": "rsfmri_var_cortgordon_gp7lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp80lh",
+                "isAbout": "rsfmri_var_cortgordon_gp80lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp81lh",
+                "isAbout": "rsfmri_var_cortgordon_gp81lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp82lh",
+                "isAbout": "rsfmri_var_cortgordon_gp82lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp83lh",
+                "isAbout": "rsfmri_var_cortgordon_gp83lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp84lh",
+                "isAbout": "rsfmri_var_cortgordon_gp84lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp85lh",
+                "isAbout": "rsfmri_var_cortgordon_gp85lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp86lh",
+                "isAbout": "rsfmri_var_cortgordon_gp86lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp87lh",
+                "isAbout": "rsfmri_var_cortgordon_gp87lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp88lh",
+                "isAbout": "rsfmri_var_cortgordon_gp88lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp89lh",
+                "isAbout": "rsfmri_var_cortgordon_gp89lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp8lh",
+                "isAbout": "rsfmri_var_cortgordon_gp8lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp90lh",
+                "isAbout": "rsfmri_var_cortgordon_gp90lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp91lh",
+                "isAbout": "rsfmri_var_cortgordon_gp91lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp92lh",
+                "isAbout": "rsfmri_var_cortgordon_gp92lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp93lh",
+                "isAbout": "rsfmri_var_cortgordon_gp93lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp94lh",
+                "isAbout": "rsfmri_var_cortgordon_gp94lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp95lh",
+                "isAbout": "rsfmri_var_cortgordon_gp95lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp96lh",
+                "isAbout": "rsfmri_var_cortgordon_gp96lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp97lh",
+                "isAbout": "rsfmri_var_cortgordon_gp97lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp98lh",
+                "isAbout": "rsfmri_var_cortgordon_gp98lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp99lh",
+                "isAbout": "rsfmri_var_cortgordon_gp99lh"
+            },
+            {
+                "variableName": "rsfmri_var_cortgordon_gp9lh",
+                "isAbout": "rsfmri_var_cortgordon_gp9lh"
+            },
+            {
+                "variableName": "rsfmri_var_maxmotion",
+                "isAbout": "rsfmri_var_maxmotion"
+            },
+            {
+                "variableName": "rsfmri_var_maxrot",
+                "isAbout": "rsfmri_var_maxrot"
+            },
+            {
+                "variableName": "rsfmri_var_maxtrans",
+                "isAbout": "rsfmri_var_maxtrans"
+            },
+            {
+                "variableName": "rsfmri_var_meanmotion",
+                "isAbout": "rsfmri_var_meanmotion"
+            },
+            {
+                "variableName": "rsfmri_var_meanrot",
+                "isAbout": "rsfmri_var_meanrot"
+            },
+            {
+                "variableName": "rsfmri_var_meantrans",
+                "isAbout": "rsfmri_var_meantrans"
+            },
+            {
+                "variableName": "rsfmri_var_ntpoints",
+                "isAbout": "rsfmri_var_ntpoints"
+            },
+            {
+                "variableName": "rsfmri_var_numtrs",
+                "isAbout": "rsfmri_var_numtrs"
+            },
+            {
+                "variableName": "rsfmri_var_nvols",
+                "isAbout": "rsfmri_var_nvols"
+            },
+            {
+                "variableName": "rsfmri_var_scs_3rdv",
+                "isAbout": "rsfmri_var_scs_3rdv"
+            },
+            {
+                "variableName": "rsfmri_var_scs_4thv",
+                "isAbout": "rsfmri_var_scs_4thv"
+            },
+            {
+                "variableName": "rsfmri_var_scs_aalh",
+                "isAbout": "rsfmri_var_scs_aalh"
+            },
+            {
+                "variableName": "rsfmri_var_scs_aarh",
+                "isAbout": "rsfmri_var_scs_aarh"
+            },
+            {
+                "variableName": "rsfmri_var_scs_amygdalalh",
+                "isAbout": "rsfmri_var_scs_amygdalalh"
+            },
+            {
+                "variableName": "rsfmri_var_scs_amygdalarh",
+                "isAbout": "rsfmri_var_scs_amygdalarh"
+            },
+            {
+                "variableName": "rsfmri_var_scs_brainstem",
+                "isAbout": "rsfmri_var_scs_brainstem"
+            },
+            {
+                "variableName": "rsfmri_var_scs_caudatelh",
+                "isAbout": "rsfmri_var_scs_caudatelh"
+            },
+            {
+                "variableName": "rsfmri_var_scs_caudaterh",
+                "isAbout": "rsfmri_var_scs_caudaterh"
+            },
+            {
+                "variableName": "rsfmri_var_scs_cbcortexlh",
+                "isAbout": "rsfmri_var_scs_cbcortexlh"
+            },
+            {
+                "variableName": "rsfmri_var_scs_cbcortexrh",
+                "isAbout": "rsfmri_var_scs_cbcortexrh"
+            },
+            {
+                "variableName": "rsfmri_var_scs_cbwmlh",
+                "isAbout": "rsfmri_var_scs_cbwmlh"
+            },
+            {
+                "variableName": "rsfmri_var_scs_cbwmrh",
+                "isAbout": "rsfmri_var_scs_cbwmrh"
+            },
+            {
+                "variableName": "rsfmri_var_scs_crbcortexlh",
+                "isAbout": "rsfmri_var_scs_crbcortexlh"
+            },
+            {
+                "variableName": "rsfmri_var_scs_crbcortexrh",
+                "isAbout": "rsfmri_var_scs_crbcortexrh"
+            },
+            {
+                "variableName": "rsfmri_var_scs_crbwmlh",
+                "isAbout": "rsfmri_var_scs_crbwmlh"
+            },
+            {
+                "variableName": "rsfmri_var_scs_crbwmrh",
+                "isAbout": "rsfmri_var_scs_crbwmrh"
+            },
+            {
+                "variableName": "rsfmri_var_scs_csf",
+                "isAbout": "rsfmri_var_scs_csf"
+            },
+            {
+                "variableName": "rsfmri_var_scs_hpuslh",
+                "isAbout": "rsfmri_var_scs_hpuslh"
+            },
+            {
+                "variableName": "rsfmri_var_scs_hpusrh",
+                "isAbout": "rsfmri_var_scs_hpusrh"
+            },
+            {
+                "variableName": "rsfmri_var_scs_inflatventlh",
+                "isAbout": "rsfmri_var_scs_inflatventlh"
+            },
+            {
+                "variableName": "rsfmri_var_scs_inflatventrh",
+                "isAbout": "rsfmri_var_scs_inflatventrh"
+            },
+            {
+                "variableName": "rsfmri_var_scs_lavlh",
+                "isAbout": "rsfmri_var_scs_lavlh"
+            },
+            {
+                "variableName": "rsfmri_var_scs_lavrh",
+                "isAbout": "rsfmri_var_scs_lavrh"
+            },
+            {
+                "variableName": "rsfmri_var_scs_lesionlh",
+                "isAbout": "rsfmri_var_scs_lesionlh"
+            },
+            {
+                "variableName": "rsfmri_var_scs_lesionrh",
+                "isAbout": "rsfmri_var_scs_lesionrh"
+            },
+            {
+                "variableName": "rsfmri_var_scs_pallidumlh",
+                "isAbout": "rsfmri_var_scs_pallidumlh"
+            },
+            {
+                "variableName": "rsfmri_var_scs_pallidumrh",
+                "isAbout": "rsfmri_var_scs_pallidumrh"
+            },
+            {
+                "variableName": "rsfmri_var_scs_putamenlh",
+                "isAbout": "rsfmri_var_scs_putamenlh"
+            },
+            {
+                "variableName": "rsfmri_var_scs_putamenrh",
+                "isAbout": "rsfmri_var_scs_putamenrh"
+            },
+            {
+                "variableName": "rsfmri_var_scs_tplh",
+                "isAbout": "rsfmri_var_scs_tplh"
+            },
+            {
+                "variableName": "rsfmri_var_scs_tprh",
+                "isAbout": "rsfmri_var_scs_tprh"
+            },
+            {
+                "variableName": "rsfmri_var_scs_ventraldclh",
+                "isAbout": "rsfmri_var_scs_ventraldclh"
+            },
+            {
+                "variableName": "rsfmri_var_scs_ventraldcrh",
+                "isAbout": "rsfmri_var_scs_ventraldcrh"
+            },
+            {
+                "variableName": "rsfmri_var_scs_wmhypin",
+                "isAbout": "rsfmri_var_scs_wmhypin"
+            },
+            {
+                "variableName": "rsfmri_var_scs_wmhypinlh",
+                "isAbout": "rsfmri_var_scs_wmhypinlh"
+            },
+            {
+                "variableName": "rsfmri_var_scs_wmhypinrh",
+                "isAbout": "rsfmri_var_scs_wmhypinrh"
+            },
+            {
+                "variableName": "rsfmri_var_subtcignvols",
+                "isAbout": "rsfmri_var_subtcignvols"
+            },
+            {
+                "variableName": "rsfmri_var_subthreshnvols",
+                "isAbout": "rsfmri_var_subthreshnvols"
+            },
+            {
+                "variableName": "rsfmri_var_tr",
+                "isAbout": "rsfmri_var_tr"
+            },
+            {
+                "variableName": "rsfmri_var_visitid",
+                "isAbout": "rsfmri_var_visitid"
+            }
+        ]
+    }
+}

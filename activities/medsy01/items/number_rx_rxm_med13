@@ -1,0 +1,23 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "number_rx_rxm_med13",
+    "@type": "reproschema:Field",
+    "prefLabel": "number_rx_rxm_med13",
+    "altLabel": "medinv_plus_rx_med13_freq_p number_prescribed_prescription_medication13",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Medication 13. On average during the last two weeks, how many of these pills (or other medication items) did your child take per day? En promedio durante las últimas dos semanas? /¿cuántas de estas píldoras (u otros medicamentos) tomó su hijo por día?",
+    "ui": {
+        "inputType": "text"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "RA: If participant took less than 1 pill per day, then input the decimal value representing daily use. For example, if someone took 1 pill in a week, enter 0.14 (i.e., 1 divided by 7 days).  If s/he took 1 pill in two weeks, enter 0.07 (i.e., 1 divided by 14 days). If s/he took less than 1 pill every two weeks, then enter 0."
+        }
+    ]
+}

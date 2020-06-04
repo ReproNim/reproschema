@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "isip_1b_yn",
+    "@type": "reproschema:Field",
+    "prefLabel": "isip_1b_yn",
+    "altLabel": "su_isip_1b_yn",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Have you ever had alcohol not as part of a religious ceremony such as in church or at a Seder dinner?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "Yes",
+                "value": 1
+            },
+            {
+                "name": "No ",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes; 0 = No | (quantity) // You mentioned earlier that you have had a sip of alcohol in the past. I want to ask some more questions about that."
+        }
+    ]
+}

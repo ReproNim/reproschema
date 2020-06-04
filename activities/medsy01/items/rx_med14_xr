@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "rx_med14_xr",
+    "@type": "reproschema:Field",
+    "prefLabel": "rx_med14_xr",
+    "altLabel": "medinv_plus_rx_med14_xr_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Medication 14. Is the medication extended-release (XR)? /¿Es un medicamento de liberación prolongada?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 0,
+        "choices": [
+            {
+                "name": "Yes /Sí",
+                "value": 1
+            },
+            {
+                "name": "No /No",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes /Sí; 0 = No /No"
+        }
+    ]
+}

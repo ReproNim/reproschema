@@ -1,0 +1,38 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "scrn_claustrophob",
+    "@type": "reproschema:Field",
+    "prefLabel": "scrn_claustrophob",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Does (Child's name) have serious problems with claustrophobia or being in small places? / ¿(Nombre del menor) tiene problemas serios de claustrofobia o para estar en lugares pequeños?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 2,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "Yes - GO TO END",
+                "value": 2
+            },
+            {
+                "name": "No",
+                "value": 1
+            },
+            {
+                "name": "Unsure",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "2 = Yes - GO TO END; 1 = No; 0 = Unsure"
+        }
+    ]
+}

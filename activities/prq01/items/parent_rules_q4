@@ -1,0 +1,54 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "parent_rules_q4",
+    "@type": "reproschema:Field",
+    "prefLabel": "parent_rules_q4",
+    "altLabel": "prq_q4_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "What are the family rules about smoking cigarettes for your son/daughter? / ¿Cuáles son las reglas familiares que debe seguir su niño(a) con respecto a fumar cigarrillos?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "name": "Not allowed to smoke under any circumstances /No tiene permitido fumar bajo ninguna circunstancia",
+                "value": 1
+            },
+            {
+                "name": "Not allowed to smoke in home - no family rules outside home /No tiene permitido fumar en casa",
+                "value": 2
+            },
+            {
+                "value": null
+            },
+            {
+                "name": "Allowed to smoke in designated areas at home Tiene permitido fumar en /áreas designadas de la casa",
+                "value": 3
+            },
+            {
+                "name": "Allowed to smoke anywhere /Tiene permitido fumar donde sea",
+                "value": 4
+            },
+            {
+                "name": "I don't set rules about smoking cigarettes /No le pongo reglas con respecto a fumar cigarrillos",
+                "value": 5
+            },
+            {
+                "name": "I haven't made rules yet about my child smoking cigarettes /Todavía no le he puesto reglas a mi niño(a) con respecto a fumar cigarrillos",
+                "value": 6
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Not allowed to smoke under any circumstances /No tiene permitido fumar bajo ninguna circunstancia; 2 = Not allowed to smoke in home - no family rules outside home /No tiene permitido fumar en casa; no hay reglas familiares con respecto a fumar fuera de la casa; 3 = Allowed to smoke in designated areas at home Tiene permitido fumar en /áreas designadas de la casa; 4 = Allowed to smoke anywhere /Tiene permitido fumar donde sea; 5 = I don't set rules about smoking cigarettes /No le pongo reglas con respecto a fumar cigarrillos; 6 = I haven't made rules yet about my child smoking cigarettes /Todavía no le he puesto reglas a mi niño(a) con respecto a fumar cigarrillos"
+        }
+    ]
+}

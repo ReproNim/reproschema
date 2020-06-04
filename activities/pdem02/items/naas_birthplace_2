@@ -1,0 +1,45 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "naas_birthplace_2",
+    "@type": "reproschema:Field",
+    "prefLabel": "naas_birthplace_2",
+    "altLabel": "naas_birthplace_2_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Where were your child's Native American parents  born?/ En donde nacieron los padres Nativo Americanos del nino / la nina?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 999,
+        "choices": [
+            {
+                "value": 1
+            },
+            {
+                "value": 2
+            },
+            {
+                "value": 3
+            },
+            {
+                "value": 4
+            },
+            {
+                "value": 5
+            },
+            {
+                "value": 999
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1= Reservation  Native American community/Reserva o comunidad de Americanos Nativos; 2= Rural area  Native American community/Comunidad rural de Americanos Nativos; 3= Urban area  Native American community/Comunidad urbana de Americanos Nativos; 4= Urban or Rural area  near Native American community/Zona rural o urbana cerca de una comunidad de Americanos Nativos; 5= Urban or Rural area  away from Native American community/Zona rural o urbana lejos de una comunidad de Americanos Nativos; 999= Don't KnowNo lo se"
+        }
+    ]
+}

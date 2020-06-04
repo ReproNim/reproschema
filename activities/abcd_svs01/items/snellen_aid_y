@@ -1,0 +1,38 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "snellen_aid_y",
+    "@type": "reproschema:Field",
+    "prefLabel": "snellen_aid_y",
+    "altLabel": "snellen_aid",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Do you wear any necessary corrective aids (glasses, contacts)?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 0,
+        "choices": [
+            {
+                "name": "Yes",
+                "value": 1
+            },
+            {
+                "name": "No",
+                "value": 0
+            },
+            {
+                "value": null
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes; 0 = No; Starting from the top of the chart, please read aloud one row at a time from left to right until I tell you to stop. If needed,  say  Keep going."
+        }
+    ]
+}

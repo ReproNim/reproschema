@@ -1,0 +1,42 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "irma_hurtec_c4",
+    "@type": "reproschema:Field",
+    "prefLabel": "irma_hurtec_c4",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Keep you from enjoying or doing other things?(For example: do you have problems sleeping, eating, or keeping your mind on things like work or school?) ¿Evita que disfrute o haga otras cosas?(Por ejemplo: ¿tiene problemas para dormir, comer o mantener la mente en cosas como la tarea?)",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "Not at all  De ningun modo",
+                "value": 0
+            },
+            {
+                "name": "A little  Un poco",
+                "value": 1
+            },
+            {
+                "name": "A lot  Mucho",
+                "value": 2
+            },
+            {
+                "name": "A whole lot Muchisimo",
+                "value": 3
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = Not at all  De ningun modo; 1 = A little  Un poco; 2 = A lot  Mucho; 3 = A whole lot Muchisimo"
+        }
+    ]
+}

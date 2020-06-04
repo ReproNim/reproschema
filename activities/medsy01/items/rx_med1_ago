@@ -1,0 +1,37 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "rx_med1_ago",
+    "@type": "reproschema:Field",
+    "prefLabel": "rx_med1_ago",
+    "altLabel": "medinv_plus_rx_med1_ago_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Medication 1. P. How long ago did your son/daughter take the medication? / Â¿Hace cuÃ¡nto tiempo que su niÃ±o(a) tomÃ³ o usÃ³ dicho medicamento? Y. How long ago did you take the medication?\n",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 30,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "value": null
+            },
+            {
+                "name": "24) / en horas",
+                "value": 30
+            },
+            {
+                "value": 30
+            }
+        ],
+        "valueType": "xsd:string"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "(in hours; 30 mins=0.5, max hours = 24) / en horas; 30 minutos=0.5, horas máximas=24)"
+        }
+    ]
+}

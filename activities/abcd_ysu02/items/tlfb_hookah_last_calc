@@ -1,0 +1,23 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "tlfb_hookah_last_calc",
+    "@type": "reproschema:Field",
+    "prefLabel": "tlfb_hookah_last_calc",
+    "altLabel": "su_tlfb_hookah_last_calc",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Days Ago:",
+    "ui": {
+        "inputType": "Float"
+    },
+    "responseOptions": {
+        "valueType": "Float"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "Calculation: datediff([tlfb_hookah_last], [su_today], \"d\", \"mdy\")"
+        }
+    ]
+}

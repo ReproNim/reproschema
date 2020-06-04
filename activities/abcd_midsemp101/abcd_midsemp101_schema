@@ -1,0 +1,1573 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+        "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/activities/abcd_midsemp101/abcd_midsemp101_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "abcd_midsemp101_schema",
+    "skos:prefLabel": "abcd_midsemp101",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "order": [
+            "tfmri_mid_run1_sem_dof",
+            "tfmri_mid_run1_sem_maxrot",
+            "tfmri_mid_run1_sem_maxtrans",
+            "tfmri_mid_run1_sem_meanrot",
+            "tfmri_mid_run1_sem_numtrs",
+            "tfmri_mid_run1_sem_nvols",
+            "tfmri_mid_run1_sem_tr",
+            "tfmri_mid_run1_sem_visitid",
+            "tfmri_mr1_allvn_sscs_3rdvicle",
+            "tfmri_mr1_allvn_sscs_4thvicle",
+            "tfmri_mr1_allvn_sscs_aalh",
+            "tfmri_mr1_allvn_sscs_aarh",
+            "tfmri_mr1_allvn_sscs_aylh",
+            "tfmri_mr1_allvn_sscs_ayrh",
+            "tfmri_mr1_allvn_sscs_bs",
+            "tfmri_mr1_allvn_sscs_cbwmlh",
+            "tfmri_mr1_allvn_sscs_cbwmrh",
+            "tfmri_mr1_allvn_sscs_crbcxlh",
+            "tfmri_mr1_allvn_sscs_crbcxrh",
+            "tfmri_mr1_allvn_sscs_crbwmlh",
+            "tfmri_mr1_allvn_sscs_crbwmrh",
+            "tfmri_mr1_allvn_sscs_csf",
+            "tfmri_mr1_allvn_sscs_ctelh",
+            "tfmri_mr1_allvn_sscs_cterh",
+            "tfmri_mr1_allvn_sscs_hpuslh",
+            "tfmri_mr1_allvn_sscs_hpusrh",
+            "tfmri_mr1_allvn_sscs_inflatvh",
+            "tfmri_mr1_allvn_sscs_inflatvlh",
+            "tfmri_mr1_allvn_sscs_laviclelh",
+            "tfmri_mr1_allvn_sscs_laviclerh",
+            "tfmri_mr1_allvn_sscs_pllh",
+            "tfmri_mr1_allvn_sscs_plrh",
+            "tfmri_mr1_allvn_sscs_ptlh",
+            "tfmri_mr1_allvn_sscs_ptrh",
+            "tfmri_mr1_allvn_sscs_tplh",
+            "tfmri_mr1_allvn_sscs_tprh",
+            "tfmri_mr1_allvn_sscs_valdclh",
+            "tfmri_mr1_allvn_sscs_valdcrh",
+            "tfmri_mr1_alrvn_sscs_3rdvicle",
+            "tfmri_mr1_alrvn_sscs_4thvicle",
+            "tfmri_mr1_alrvn_sscs_aalh",
+            "tfmri_mr1_alrvn_sscs_aarh",
+            "tfmri_mr1_alrvn_sscs_aylh",
+            "tfmri_mr1_alrvn_sscs_ayrh",
+            "tfmri_mr1_alrvn_sscs_bs",
+            "tfmri_mr1_alrvn_sscs_cbwmlh",
+            "tfmri_mr1_alrvn_sscs_cbwmrh",
+            "tfmri_mr1_alrvn_sscs_crbcxlh",
+            "tfmri_mr1_alrvn_sscs_crbcxrh",
+            "tfmri_mr1_alrvn_sscs_crbwmlh",
+            "tfmri_mr1_alrvn_sscs_crbwmrh",
+            "tfmri_mr1_alrvn_sscs_csf",
+            "tfmri_mr1_alrvn_sscs_ctelh",
+            "tfmri_mr1_alrvn_sscs_cterh",
+            "tfmri_mr1_alrvn_sscs_hpuslh",
+            "tfmri_mr1_alrvn_sscs_hpusrh",
+            "tfmri_mr1_alrvn_sscs_inflatvh",
+            "tfmri_mr1_alrvn_sscs_inflatvlh",
+            "tfmri_mr1_alrvn_sscs_laviclelh",
+            "tfmri_mr1_alrvn_sscs_laviclerh",
+            "tfmri_mr1_alrvn_sscs_pllh",
+            "tfmri_mr1_alrvn_sscs_plrh",
+            "tfmri_mr1_alrvn_sscs_ptlh",
+            "tfmri_mr1_alrvn_sscs_ptrh",
+            "tfmri_mr1_alrvn_sscs_tplh",
+            "tfmri_mr1_alrvn_sscs_tprh",
+            "tfmri_mr1_alrvn_sscs_valdclh",
+            "tfmri_mr1_alrvn_sscs_valdcrh",
+            "tfmri_mr1_alrvsr_sscs_3rdvicle",
+            "tfmri_mr1_alrvsr_sscs_4thvicle",
+            "tfmri_mr1_alrvsr_sscs_aalh",
+            "tfmri_mr1_alrvsr_sscs_aarh",
+            "tfmri_mr1_alrvsr_sscs_aylh",
+            "tfmri_mr1_alrvsr_sscs_ayrh",
+            "tfmri_mr1_alrvsr_sscs_bs",
+            "tfmri_mr1_alrvsr_sscs_cbwmlh",
+            "tfmri_mr1_alrvsr_sscs_cbwmrh",
+            "tfmri_mr1_alrvsr_sscs_crbcxlh",
+            "tfmri_mr1_alrvsr_sscs_crbcxrh",
+            "tfmri_mr1_alrvsr_sscs_crbwmlh",
+            "tfmri_mr1_alrvsr_sscs_crbwmrh",
+            "tfmri_mr1_alrvsr_sscs_csf",
+            "tfmri_mr1_alrvsr_sscs_ctelh",
+            "tfmri_mr1_alrvsr_sscs_cterh",
+            "tfmri_mr1_alrvsr_sscs_hpuslh",
+            "tfmri_mr1_alrvsr_sscs_hpusrh",
+            "tfmri_mr1_alrvsr_sscs_inflatvh",
+            "tfmri_mr1_alrvsr_sscs_inftvlh",
+            "tfmri_mr1_alrvsr_sscs_lvclelh",
+            "tfmri_mr1_alrvsr_sscs_lvclerh",
+            "tfmri_mr1_alrvsr_sscs_pllh",
+            "tfmri_mr1_alrvsr_sscs_plrh",
+            "tfmri_mr1_alrvsr_sscs_ptlh",
+            "tfmri_mr1_alrvsr_sscs_ptrh",
+            "tfmri_mr1_alrvsr_sscs_tplh",
+            "tfmri_mr1_alrvsr_sscs_tprh",
+            "tfmri_mr1_alrvsr_sscs_valdclh",
+            "tfmri_mr1_alrvsr_sscs_valdcrh",
+            "tfmri_mr1_alvn_sscs_3rdvicle",
+            "tfmri_mr1_alvn_sscs_4thvicle",
+            "tfmri_mr1_alvn_sscs_aalh",
+            "tfmri_mr1_alvn_sscs_aarh",
+            "tfmri_mr1_alvn_sscs_aylh",
+            "tfmri_mr1_alvn_sscs_ayrh",
+            "tfmri_mr1_alvn_sscs_bs",
+            "tfmri_mr1_alvn_sscs_cbwmlh",
+            "tfmri_mr1_alvn_sscs_cbwmrh",
+            "tfmri_mr1_alvn_sscs_crbcxlh",
+            "tfmri_mr1_alvn_sscs_crbcxrh",
+            "tfmri_mr1_alvn_sscs_crbwmlh",
+            "tfmri_mr1_alvn_sscs_crbwmrh",
+            "tfmri_mr1_alvn_sscs_csf",
+            "tfmri_mr1_alvn_sscs_ctelh",
+            "tfmri_mr1_alvn_sscs_cterh",
+            "tfmri_mr1_alvn_sscs_hpuslh",
+            "tfmri_mr1_alvn_sscs_hpusrh",
+            "tfmri_mr1_alvn_sscs_inflatvh",
+            "tfmri_mr1_alvn_sscs_inflatvlh",
+            "tfmri_mr1_alvn_sscs_laviclelh",
+            "tfmri_mr1_alvn_sscs_laviclerh",
+            "tfmri_mr1_alvn_sscs_pllh",
+            "tfmri_mr1_alvn_sscs_plrh",
+            "tfmri_mr1_alvn_sscs_ptlh",
+            "tfmri_mr1_alvn_sscs_ptrh",
+            "tfmri_mr1_alvn_sscs_tplh",
+            "tfmri_mr1_alvn_sscs_tprh",
+            "tfmri_mr1_alvn_sscs_valdclh",
+            "tfmri_mr1_alvn_sscs_valdcrh",
+            "tfmri_mr1_alvsl_sscs_3rdvicle",
+            "tfmri_mr1_alvsl_sscs_4thvicle",
+            "tfmri_mr1_alvsl_sscs_aalh",
+            "tfmri_mr1_alvsl_sscs_aarh",
+            "tfmri_mr1_alvsl_sscs_aylh",
+            "tfmri_mr1_alvsl_sscs_ayrh",
+            "tfmri_mr1_alvsl_sscs_bs",
+            "tfmri_mr1_alvsl_sscs_cbwmlh",
+            "tfmri_mr1_alvsl_sscs_cbwmrh",
+            "tfmri_mr1_alvsl_sscs_crbcxlh",
+            "tfmri_mr1_alvsl_sscs_crbcxrh",
+            "tfmri_mr1_alvsl_sscs_crbwmlh",
+            "tfmri_mr1_alvsl_sscs_crbwmrh",
+            "tfmri_mr1_alvsl_sscs_csf",
+            "tfmri_mr1_alvsl_sscs_ctelh",
+            "tfmri_mr1_alvsl_sscs_cterh",
+            "tfmri_mr1_alvsl_sscs_hpuslh",
+            "tfmri_mr1_alvsl_sscs_hpusrh",
+            "tfmri_mr1_alvsl_sscs_inflatvh",
+            "tfmri_mr1_alvsl_sscs_inflatvlh",
+            "tfmri_mr1_alvsl_sscs_laviclelh",
+            "tfmri_mr1_alvsl_sscs_laviclerh",
+            "tfmri_mr1_alvsl_sscs_pllh",
+            "tfmri_mr1_alvsl_sscs_plrh",
+            "tfmri_mr1_alvsl_sscs_ptlh",
+            "tfmri_mr1_alvsl_sscs_ptrh",
+            "tfmri_mr1_alvsl_sscs_tplh",
+            "tfmri_mr1_alvsl_sscs_tprh",
+            "tfmri_mr1_alvsl_sscs_valdclh",
+            "tfmri_mr1_arvn_sscs_3rdvicle",
+            "tfmri_mr1_arvn_sscs_4thvicle",
+            "tfmri_mr1_arvn_sscs_aalh",
+            "tfmri_mr1_arvn_sscs_aarh",
+            "tfmri_mr1_arvn_sscs_aylh",
+            "tfmri_mr1_arvn_sscs_ayrh",
+            "tfmri_mr1_arvn_sscs_bs",
+            "tfmri_mr1_arvn_sscs_cbwmlh",
+            "tfmri_mr1_arvn_sscs_cbwmrh",
+            "tfmri_mr1_arvn_sscs_crbcxlh",
+            "tfmri_mr1_arvn_sscs_crbcxrh",
+            "tfmri_mr1_arvn_sscs_crbwmlh",
+            "tfmri_mr1_arvn_sscs_crbwmrh",
+            "tfmri_mr1_arvn_sscs_csf",
+            "tfmri_mr1_arvn_sscs_ctelh",
+            "tfmri_mr1_arvn_sscs_cterh",
+            "tfmri_mr1_arvn_sscs_hpuslh",
+            "tfmri_mr1_arvn_sscs_hpusrh",
+            "tfmri_mr1_arvn_sscs_inflatvh",
+            "tfmri_mr1_arvn_sscs_inflatvlh",
+            "tfmri_mr1_arvn_sscs_laviclelh",
+            "tfmri_mr1_arvn_sscs_laviclerh",
+            "tfmri_mr1_arvn_sscs_pllh",
+            "tfmri_mr1_arvn_sscs_plrh",
+            "tfmri_mr1_arvn_sscs_ptlh",
+            "tfmri_mr1_arvn_sscs_ptrh",
+            "tfmri_mr1_arvn_sscs_tplh",
+            "tfmri_mr1_arvn_sscs_tprh",
+            "tfmri_mr1_arvn_sscs_valdclh",
+            "tfmri_mr1_arvn_sscs_valdcrh",
+            "tfmri_mr1_aslvn_sscs_3rdvicle",
+            "tfmri_mr1_aslvn_sscs_4thvicle",
+            "tfmri_mr1_aslvn_sscs_aalh",
+            "tfmri_mr1_aslvn_sscs_aarh",
+            "tfmri_mr1_aslvn_sscs_aylh",
+            "tfmri_mr1_aslvn_sscs_ayrh",
+            "tfmri_mr1_aslvn_sscs_bs",
+            "tfmri_mr1_aslvn_sscs_cbwmlh",
+            "tfmri_mr1_aslvn_sscs_cbwmrh",
+            "tfmri_mr1_aslvn_sscs_crbcxlh",
+            "tfmri_mr1_aslvn_sscs_crbcxrh",
+            "tfmri_mr1_aslvn_sscs_crbwmlh",
+            "tfmri_mr1_aslvn_sscs_crbwmrh",
+            "tfmri_mr1_aslvn_sscs_csf",
+            "tfmri_mr1_aslvn_sscs_ctelh",
+            "tfmri_mr1_aslvn_sscs_cterh",
+            "tfmri_mr1_aslvn_sscs_hpuslh",
+            "tfmri_mr1_aslvn_sscs_hpusrh",
+            "tfmri_mr1_aslvn_sscs_inflatvh",
+            "tfmri_mr1_aslvn_sscs_inflatvlh",
+            "tfmri_mr1_aslvn_sscs_laviclelh",
+            "tfmri_mr1_aslvn_sscs_laviclerh",
+            "tfmri_mr1_aslvn_sscs_pllh",
+            "tfmri_mr1_aslvn_sscs_plrh",
+            "tfmri_mr1_aslvn_sscs_ptlh",
+            "tfmri_mr1_aslvn_sscs_ptrh",
+            "tfmri_mr1_aslvn_sscs_tplh",
+            "tfmri_mr1_aslvn_sscs_tprh",
+            "tfmri_mr1_aslvn_sscs_valdclh",
+            "tfmri_mr1_aslvn_sscs_valdcrh",
+            "tfmri_mr1_asrvn_sscs_3rdvicle",
+            "tfmri_mr1_asrvn_sscs_4thvicle",
+            "tfmri_mr1_asrvn_sscs_aalh",
+            "tfmri_mr1_asrvn_sscs_aarh",
+            "tfmri_mr1_asrvn_sscs_aylh",
+            "tfmri_mr1_asrvn_sscs_ayrh",
+            "tfmri_mr1_asrvn_sscs_bs",
+            "tfmri_mr1_asrvn_sscs_cbwmlh",
+            "tfmri_mr1_asrvn_sscs_cbwmrh",
+            "tfmri_mr1_asrvn_sscs_crbcxlh",
+            "tfmri_mr1_asrvn_sscs_crbcxrh",
+            "tfmri_mr1_asrvn_sscs_crbwmlh",
+            "tfmri_mr1_asrvn_sscs_crbwmrh",
+            "tfmri_mr1_asrvn_sscs_csf",
+            "tfmri_mr1_asrvn_sscs_ctelh",
+            "tfmri_mr1_asrvn_sscs_cterh",
+            "tfmri_mr1_asrvn_sscs_hpuslh",
+            "tfmri_mr1_asrvn_sscs_hpusrh",
+            "tfmri_mr1_asrvn_sscs_inflatvh",
+            "tfmri_mr1_asrvn_sscs_inflatvlh",
+            "tfmri_mr1_asrvn_sscs_laviclelh",
+            "tfmri_mr1_asrvn_sscs_laviclerh",
+            "tfmri_mr1_asrvn_sscs_pllh",
+            "tfmri_mr1_asrvn_sscs_plrh",
+            "tfmri_mr1_asrvn_sscs_ptlh",
+            "tfmri_mr1_asrvn_sscs_ptrh",
+            "tfmri_mr1_asrvn_sscs_tplh",
+            "tfmri_mr1_asrvn_sscs_tprh",
+            "tfmri_mr1_asrvn_sscs_valdclh",
+            "tfmri_mr1_asrvn_sscs_valdcrh",
+            "tfmri_mr1_lpvnfb_sscs_3rdvicle",
+            "tfmri_mr1_lpvnfb_sscs_4thvicle",
+            "tfmri_mr1_lpvnfb_sscs_aalh",
+            "tfmri_mr1_lpvnfb_sscs_aarh",
+            "tfmri_mr1_lpvnfb_sscs_aylh",
+            "tfmri_mr1_lpvnfb_sscs_ayrh",
+            "tfmri_mr1_lpvnfb_sscs_bs",
+            "tfmri_mr1_lpvnfb_sscs_cbwmlh",
+            "tfmri_mr1_lpvnfb_sscs_cbwmrh",
+            "tfmri_mr1_lpvnfb_sscs_crbcxlh",
+            "tfmri_mr1_lpvnfb_sscs_crbcxrh",
+            "tfmri_mr1_lpvnfb_sscs_crbwmlh",
+            "tfmri_mr1_lpvnfb_sscs_crbwmrh",
+            "tfmri_mr1_lpvnfb_sscs_csf",
+            "tfmri_mr1_lpvnfb_sscs_ctelh",
+            "tfmri_mr1_lpvnfb_sscs_cterh",
+            "tfmri_mr1_lpvnfb_sscs_hpuslh",
+            "tfmri_mr1_lpvnfb_sscs_hpusrh",
+            "tfmri_mr1_lpvnfb_sscs_inftvh",
+            "tfmri_mr1_lpvnfb_sscs_inftvlh",
+            "tfmri_mr1_lpvnfb_sscs_lvclelh",
+            "tfmri_mr1_lpvnfb_sscs_lvclerh",
+            "tfmri_mr1_lpvnfb_sscs_pllh",
+            "tfmri_mr1_lpvnfb_sscs_plrh",
+            "tfmri_mr1_lpvnfb_sscs_ptlh",
+            "tfmri_mr1_lpvnfb_sscs_ptrh",
+            "tfmri_mr1_lpvnfb_sscs_tplh",
+            "tfmri_mr1_lpvnfb_sscs_tprh",
+            "tfmri_mr1_lpvnfb_sscs_valdclh",
+            "tfmri_mr1_lpvnfb_sscs_valdcrh",
+            "tfmri_mr1_rpvnfb_sscs_3rdvicle",
+            "tfmri_mr1_rpvnfb_sscs_4thvicle",
+            "tfmri_mr1_rpvnfb_sscs_aalh",
+            "tfmri_mr1_rpvnfb_sscs_aarh",
+            "tfmri_mr1_rpvnfb_sscs_aylh",
+            "tfmri_mr1_rpvnfb_sscs_ayrh",
+            "tfmri_mr1_rpvnfb_sscs_bs",
+            "tfmri_mr1_rpvnfb_sscs_cbwmlh",
+            "tfmri_mr1_rpvnfb_sscs_cbwmrh",
+            "tfmri_mr1_rpvnfb_sscs_crbcxlh",
+            "tfmri_mr1_rpvnfb_sscs_crbcxrh",
+            "tfmri_mr1_rpvnfb_sscs_crbwmlh",
+            "tfmri_mr1_rpvnfb_sscs_crbwmrh",
+            "tfmri_mr1_rpvnfb_sscs_csf",
+            "tfmri_mr1_rpvnfb_sscs_ctelh",
+            "tfmri_mr1_rpvnfb_sscs_cterh",
+            "tfmri_mr1_rpvnfb_sscs_hpuslh",
+            "tfmri_mr1_rpvnfb_sscs_hpusrh",
+            "tfmri_mr1_rpvnfb_sscs_inftvh",
+            "tfmri_mr1_rpvnfb_sscs_inftvlh",
+            "tfmri_mr1_rpvnfb_sscs_lvclelh",
+            "tfmri_mr1_rpvnfb_sscs_lvclerh",
+            "tfmri_mr1_rpvnfb_sscs_pllh",
+            "tfmri_mr1_rpvnfb_sscs_plrh",
+            "tfmri_mr1_rpvnfb_sscs_ptlh",
+            "tfmri_mr1_rpvnfb_sscs_ptrh",
+            "tfmri_mr1_rpvnfb_sscs_tplh",
+            "tfmri_mr1_rpvnfb_sscs_tprh",
+            "tfmri_mr1_rpvnfb_sscs_valdclh",
+            "tfmri_mr1_rpvnfb_sscs_valdcrh",
+            "tfmri_mr1_sem_maxmotion",
+            "tfmri_mr1_sem_meantrans",
+            "tfmri_mr1_sem_mm",
+            "tfmri_mr1_sem_stnvols"
+        ],
+        "shuffle": false,
+        "addProperties": [
+            {
+                "variableName": "tfmri_mid_run1_sem_dof",
+                "isAbout": "tfmri_mid_run1_sem_dof"
+            },
+            {
+                "variableName": "tfmri_mid_run1_sem_maxrot",
+                "isAbout": "tfmri_mid_run1_sem_maxrot"
+            },
+            {
+                "variableName": "tfmri_mid_run1_sem_maxtrans",
+                "isAbout": "tfmri_mid_run1_sem_maxtrans"
+            },
+            {
+                "variableName": "tfmri_mid_run1_sem_meanrot",
+                "isAbout": "tfmri_mid_run1_sem_meanrot"
+            },
+            {
+                "variableName": "tfmri_mid_run1_sem_numtrs",
+                "isAbout": "tfmri_mid_run1_sem_numtrs"
+            },
+            {
+                "variableName": "tfmri_mid_run1_sem_nvols",
+                "isAbout": "tfmri_mid_run1_sem_nvols"
+            },
+            {
+                "variableName": "tfmri_mid_run1_sem_tr",
+                "isAbout": "tfmri_mid_run1_sem_tr"
+            },
+            {
+                "variableName": "tfmri_mid_run1_sem_visitid",
+                "isAbout": "tfmri_mid_run1_sem_visitid"
+            },
+            {
+                "variableName": "tfmri_mr1_allvn_sscs_3rdvicle",
+                "isAbout": "tfmri_mr1_allvn_sscs_3rdvicle"
+            },
+            {
+                "variableName": "tfmri_mr1_allvn_sscs_4thvicle",
+                "isAbout": "tfmri_mr1_allvn_sscs_4thvicle"
+            },
+            {
+                "variableName": "tfmri_mr1_allvn_sscs_aalh",
+                "isAbout": "tfmri_mr1_allvn_sscs_aalh"
+            },
+            {
+                "variableName": "tfmri_mr1_allvn_sscs_aarh",
+                "isAbout": "tfmri_mr1_allvn_sscs_aarh"
+            },
+            {
+                "variableName": "tfmri_mr1_allvn_sscs_aylh",
+                "isAbout": "tfmri_mr1_allvn_sscs_aylh"
+            },
+            {
+                "variableName": "tfmri_mr1_allvn_sscs_ayrh",
+                "isAbout": "tfmri_mr1_allvn_sscs_ayrh"
+            },
+            {
+                "variableName": "tfmri_mr1_allvn_sscs_bs",
+                "isAbout": "tfmri_mr1_allvn_sscs_bs"
+            },
+            {
+                "variableName": "tfmri_mr1_allvn_sscs_cbwmlh",
+                "isAbout": "tfmri_mr1_allvn_sscs_cbwmlh"
+            },
+            {
+                "variableName": "tfmri_mr1_allvn_sscs_cbwmrh",
+                "isAbout": "tfmri_mr1_allvn_sscs_cbwmrh"
+            },
+            {
+                "variableName": "tfmri_mr1_allvn_sscs_crbcxlh",
+                "isAbout": "tfmri_mr1_allvn_sscs_crbcxlh"
+            },
+            {
+                "variableName": "tfmri_mr1_allvn_sscs_crbcxrh",
+                "isAbout": "tfmri_mr1_allvn_sscs_crbcxrh"
+            },
+            {
+                "variableName": "tfmri_mr1_allvn_sscs_crbwmlh",
+                "isAbout": "tfmri_mr1_allvn_sscs_crbwmlh"
+            },
+            {
+                "variableName": "tfmri_mr1_allvn_sscs_crbwmrh",
+                "isAbout": "tfmri_mr1_allvn_sscs_crbwmrh"
+            },
+            {
+                "variableName": "tfmri_mr1_allvn_sscs_csf",
+                "isAbout": "tfmri_mr1_allvn_sscs_csf"
+            },
+            {
+                "variableName": "tfmri_mr1_allvn_sscs_ctelh",
+                "isAbout": "tfmri_mr1_allvn_sscs_ctelh"
+            },
+            {
+                "variableName": "tfmri_mr1_allvn_sscs_cterh",
+                "isAbout": "tfmri_mr1_allvn_sscs_cterh"
+            },
+            {
+                "variableName": "tfmri_mr1_allvn_sscs_hpuslh",
+                "isAbout": "tfmri_mr1_allvn_sscs_hpuslh"
+            },
+            {
+                "variableName": "tfmri_mr1_allvn_sscs_hpusrh",
+                "isAbout": "tfmri_mr1_allvn_sscs_hpusrh"
+            },
+            {
+                "variableName": "tfmri_mr1_allvn_sscs_inflatvh",
+                "isAbout": "tfmri_mr1_allvn_sscs_inflatvh"
+            },
+            {
+                "variableName": "tfmri_mr1_allvn_sscs_inflatvlh",
+                "isAbout": "tfmri_mr1_allvn_sscs_inflatvlh"
+            },
+            {
+                "variableName": "tfmri_mr1_allvn_sscs_laviclelh",
+                "isAbout": "tfmri_mr1_allvn_sscs_laviclelh"
+            },
+            {
+                "variableName": "tfmri_mr1_allvn_sscs_laviclerh",
+                "isAbout": "tfmri_mr1_allvn_sscs_laviclerh"
+            },
+            {
+                "variableName": "tfmri_mr1_allvn_sscs_pllh",
+                "isAbout": "tfmri_mr1_allvn_sscs_pllh"
+            },
+            {
+                "variableName": "tfmri_mr1_allvn_sscs_plrh",
+                "isAbout": "tfmri_mr1_allvn_sscs_plrh"
+            },
+            {
+                "variableName": "tfmri_mr1_allvn_sscs_ptlh",
+                "isAbout": "tfmri_mr1_allvn_sscs_ptlh"
+            },
+            {
+                "variableName": "tfmri_mr1_allvn_sscs_ptrh",
+                "isAbout": "tfmri_mr1_allvn_sscs_ptrh"
+            },
+            {
+                "variableName": "tfmri_mr1_allvn_sscs_tplh",
+                "isAbout": "tfmri_mr1_allvn_sscs_tplh"
+            },
+            {
+                "variableName": "tfmri_mr1_allvn_sscs_tprh",
+                "isAbout": "tfmri_mr1_allvn_sscs_tprh"
+            },
+            {
+                "variableName": "tfmri_mr1_allvn_sscs_valdclh",
+                "isAbout": "tfmri_mr1_allvn_sscs_valdclh"
+            },
+            {
+                "variableName": "tfmri_mr1_allvn_sscs_valdcrh",
+                "isAbout": "tfmri_mr1_allvn_sscs_valdcrh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvn_sscs_3rdvicle",
+                "isAbout": "tfmri_mr1_alrvn_sscs_3rdvicle"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvn_sscs_4thvicle",
+                "isAbout": "tfmri_mr1_alrvn_sscs_4thvicle"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvn_sscs_aalh",
+                "isAbout": "tfmri_mr1_alrvn_sscs_aalh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvn_sscs_aarh",
+                "isAbout": "tfmri_mr1_alrvn_sscs_aarh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvn_sscs_aylh",
+                "isAbout": "tfmri_mr1_alrvn_sscs_aylh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvn_sscs_ayrh",
+                "isAbout": "tfmri_mr1_alrvn_sscs_ayrh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvn_sscs_bs",
+                "isAbout": "tfmri_mr1_alrvn_sscs_bs"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvn_sscs_cbwmlh",
+                "isAbout": "tfmri_mr1_alrvn_sscs_cbwmlh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvn_sscs_cbwmrh",
+                "isAbout": "tfmri_mr1_alrvn_sscs_cbwmrh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvn_sscs_crbcxlh",
+                "isAbout": "tfmri_mr1_alrvn_sscs_crbcxlh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvn_sscs_crbcxrh",
+                "isAbout": "tfmri_mr1_alrvn_sscs_crbcxrh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvn_sscs_crbwmlh",
+                "isAbout": "tfmri_mr1_alrvn_sscs_crbwmlh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvn_sscs_crbwmrh",
+                "isAbout": "tfmri_mr1_alrvn_sscs_crbwmrh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvn_sscs_csf",
+                "isAbout": "tfmri_mr1_alrvn_sscs_csf"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvn_sscs_ctelh",
+                "isAbout": "tfmri_mr1_alrvn_sscs_ctelh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvn_sscs_cterh",
+                "isAbout": "tfmri_mr1_alrvn_sscs_cterh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvn_sscs_hpuslh",
+                "isAbout": "tfmri_mr1_alrvn_sscs_hpuslh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvn_sscs_hpusrh",
+                "isAbout": "tfmri_mr1_alrvn_sscs_hpusrh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvn_sscs_inflatvh",
+                "isAbout": "tfmri_mr1_alrvn_sscs_inflatvh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvn_sscs_inflatvlh",
+                "isAbout": "tfmri_mr1_alrvn_sscs_inflatvlh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvn_sscs_laviclelh",
+                "isAbout": "tfmri_mr1_alrvn_sscs_laviclelh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvn_sscs_laviclerh",
+                "isAbout": "tfmri_mr1_alrvn_sscs_laviclerh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvn_sscs_pllh",
+                "isAbout": "tfmri_mr1_alrvn_sscs_pllh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvn_sscs_plrh",
+                "isAbout": "tfmri_mr1_alrvn_sscs_plrh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvn_sscs_ptlh",
+                "isAbout": "tfmri_mr1_alrvn_sscs_ptlh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvn_sscs_ptrh",
+                "isAbout": "tfmri_mr1_alrvn_sscs_ptrh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvn_sscs_tplh",
+                "isAbout": "tfmri_mr1_alrvn_sscs_tplh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvn_sscs_tprh",
+                "isAbout": "tfmri_mr1_alrvn_sscs_tprh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvn_sscs_valdclh",
+                "isAbout": "tfmri_mr1_alrvn_sscs_valdclh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvn_sscs_valdcrh",
+                "isAbout": "tfmri_mr1_alrvn_sscs_valdcrh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvsr_sscs_3rdvicle",
+                "isAbout": "tfmri_mr1_alrvsr_sscs_3rdvicle"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvsr_sscs_4thvicle",
+                "isAbout": "tfmri_mr1_alrvsr_sscs_4thvicle"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvsr_sscs_aalh",
+                "isAbout": "tfmri_mr1_alrvsr_sscs_aalh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvsr_sscs_aarh",
+                "isAbout": "tfmri_mr1_alrvsr_sscs_aarh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvsr_sscs_aylh",
+                "isAbout": "tfmri_mr1_alrvsr_sscs_aylh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvsr_sscs_ayrh",
+                "isAbout": "tfmri_mr1_alrvsr_sscs_ayrh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvsr_sscs_bs",
+                "isAbout": "tfmri_mr1_alrvsr_sscs_bs"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvsr_sscs_cbwmlh",
+                "isAbout": "tfmri_mr1_alrvsr_sscs_cbwmlh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvsr_sscs_cbwmrh",
+                "isAbout": "tfmri_mr1_alrvsr_sscs_cbwmrh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvsr_sscs_crbcxlh",
+                "isAbout": "tfmri_mr1_alrvsr_sscs_crbcxlh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvsr_sscs_crbcxrh",
+                "isAbout": "tfmri_mr1_alrvsr_sscs_crbcxrh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvsr_sscs_crbwmlh",
+                "isAbout": "tfmri_mr1_alrvsr_sscs_crbwmlh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvsr_sscs_crbwmrh",
+                "isAbout": "tfmri_mr1_alrvsr_sscs_crbwmrh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvsr_sscs_csf",
+                "isAbout": "tfmri_mr1_alrvsr_sscs_csf"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvsr_sscs_ctelh",
+                "isAbout": "tfmri_mr1_alrvsr_sscs_ctelh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvsr_sscs_cterh",
+                "isAbout": "tfmri_mr1_alrvsr_sscs_cterh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvsr_sscs_hpuslh",
+                "isAbout": "tfmri_mr1_alrvsr_sscs_hpuslh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvsr_sscs_hpusrh",
+                "isAbout": "tfmri_mr1_alrvsr_sscs_hpusrh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvsr_sscs_inflatvh",
+                "isAbout": "tfmri_mr1_alrvsr_sscs_inflatvh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvsr_sscs_inftvlh",
+                "isAbout": "tfmri_mr1_alrvsr_sscs_inftvlh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvsr_sscs_lvclelh",
+                "isAbout": "tfmri_mr1_alrvsr_sscs_lvclelh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvsr_sscs_lvclerh",
+                "isAbout": "tfmri_mr1_alrvsr_sscs_lvclerh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvsr_sscs_pllh",
+                "isAbout": "tfmri_mr1_alrvsr_sscs_pllh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvsr_sscs_plrh",
+                "isAbout": "tfmri_mr1_alrvsr_sscs_plrh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvsr_sscs_ptlh",
+                "isAbout": "tfmri_mr1_alrvsr_sscs_ptlh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvsr_sscs_ptrh",
+                "isAbout": "tfmri_mr1_alrvsr_sscs_ptrh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvsr_sscs_tplh",
+                "isAbout": "tfmri_mr1_alrvsr_sscs_tplh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvsr_sscs_tprh",
+                "isAbout": "tfmri_mr1_alrvsr_sscs_tprh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvsr_sscs_valdclh",
+                "isAbout": "tfmri_mr1_alrvsr_sscs_valdclh"
+            },
+            {
+                "variableName": "tfmri_mr1_alrvsr_sscs_valdcrh",
+                "isAbout": "tfmri_mr1_alrvsr_sscs_valdcrh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvn_sscs_3rdvicle",
+                "isAbout": "tfmri_mr1_alvn_sscs_3rdvicle"
+            },
+            {
+                "variableName": "tfmri_mr1_alvn_sscs_4thvicle",
+                "isAbout": "tfmri_mr1_alvn_sscs_4thvicle"
+            },
+            {
+                "variableName": "tfmri_mr1_alvn_sscs_aalh",
+                "isAbout": "tfmri_mr1_alvn_sscs_aalh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvn_sscs_aarh",
+                "isAbout": "tfmri_mr1_alvn_sscs_aarh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvn_sscs_aylh",
+                "isAbout": "tfmri_mr1_alvn_sscs_aylh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvn_sscs_ayrh",
+                "isAbout": "tfmri_mr1_alvn_sscs_ayrh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvn_sscs_bs",
+                "isAbout": "tfmri_mr1_alvn_sscs_bs"
+            },
+            {
+                "variableName": "tfmri_mr1_alvn_sscs_cbwmlh",
+                "isAbout": "tfmri_mr1_alvn_sscs_cbwmlh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvn_sscs_cbwmrh",
+                "isAbout": "tfmri_mr1_alvn_sscs_cbwmrh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvn_sscs_crbcxlh",
+                "isAbout": "tfmri_mr1_alvn_sscs_crbcxlh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvn_sscs_crbcxrh",
+                "isAbout": "tfmri_mr1_alvn_sscs_crbcxrh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvn_sscs_crbwmlh",
+                "isAbout": "tfmri_mr1_alvn_sscs_crbwmlh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvn_sscs_crbwmrh",
+                "isAbout": "tfmri_mr1_alvn_sscs_crbwmrh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvn_sscs_csf",
+                "isAbout": "tfmri_mr1_alvn_sscs_csf"
+            },
+            {
+                "variableName": "tfmri_mr1_alvn_sscs_ctelh",
+                "isAbout": "tfmri_mr1_alvn_sscs_ctelh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvn_sscs_cterh",
+                "isAbout": "tfmri_mr1_alvn_sscs_cterh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvn_sscs_hpuslh",
+                "isAbout": "tfmri_mr1_alvn_sscs_hpuslh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvn_sscs_hpusrh",
+                "isAbout": "tfmri_mr1_alvn_sscs_hpusrh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvn_sscs_inflatvh",
+                "isAbout": "tfmri_mr1_alvn_sscs_inflatvh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvn_sscs_inflatvlh",
+                "isAbout": "tfmri_mr1_alvn_sscs_inflatvlh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvn_sscs_laviclelh",
+                "isAbout": "tfmri_mr1_alvn_sscs_laviclelh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvn_sscs_laviclerh",
+                "isAbout": "tfmri_mr1_alvn_sscs_laviclerh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvn_sscs_pllh",
+                "isAbout": "tfmri_mr1_alvn_sscs_pllh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvn_sscs_plrh",
+                "isAbout": "tfmri_mr1_alvn_sscs_plrh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvn_sscs_ptlh",
+                "isAbout": "tfmri_mr1_alvn_sscs_ptlh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvn_sscs_ptrh",
+                "isAbout": "tfmri_mr1_alvn_sscs_ptrh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvn_sscs_tplh",
+                "isAbout": "tfmri_mr1_alvn_sscs_tplh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvn_sscs_tprh",
+                "isAbout": "tfmri_mr1_alvn_sscs_tprh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvn_sscs_valdclh",
+                "isAbout": "tfmri_mr1_alvn_sscs_valdclh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvn_sscs_valdcrh",
+                "isAbout": "tfmri_mr1_alvn_sscs_valdcrh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvsl_sscs_3rdvicle",
+                "isAbout": "tfmri_mr1_alvsl_sscs_3rdvicle"
+            },
+            {
+                "variableName": "tfmri_mr1_alvsl_sscs_4thvicle",
+                "isAbout": "tfmri_mr1_alvsl_sscs_4thvicle"
+            },
+            {
+                "variableName": "tfmri_mr1_alvsl_sscs_aalh",
+                "isAbout": "tfmri_mr1_alvsl_sscs_aalh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvsl_sscs_aarh",
+                "isAbout": "tfmri_mr1_alvsl_sscs_aarh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvsl_sscs_aylh",
+                "isAbout": "tfmri_mr1_alvsl_sscs_aylh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvsl_sscs_ayrh",
+                "isAbout": "tfmri_mr1_alvsl_sscs_ayrh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvsl_sscs_bs",
+                "isAbout": "tfmri_mr1_alvsl_sscs_bs"
+            },
+            {
+                "variableName": "tfmri_mr1_alvsl_sscs_cbwmlh",
+                "isAbout": "tfmri_mr1_alvsl_sscs_cbwmlh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvsl_sscs_cbwmrh",
+                "isAbout": "tfmri_mr1_alvsl_sscs_cbwmrh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvsl_sscs_crbcxlh",
+                "isAbout": "tfmri_mr1_alvsl_sscs_crbcxlh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvsl_sscs_crbcxrh",
+                "isAbout": "tfmri_mr1_alvsl_sscs_crbcxrh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvsl_sscs_crbwmlh",
+                "isAbout": "tfmri_mr1_alvsl_sscs_crbwmlh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvsl_sscs_crbwmrh",
+                "isAbout": "tfmri_mr1_alvsl_sscs_crbwmrh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvsl_sscs_csf",
+                "isAbout": "tfmri_mr1_alvsl_sscs_csf"
+            },
+            {
+                "variableName": "tfmri_mr1_alvsl_sscs_ctelh",
+                "isAbout": "tfmri_mr1_alvsl_sscs_ctelh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvsl_sscs_cterh",
+                "isAbout": "tfmri_mr1_alvsl_sscs_cterh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvsl_sscs_hpuslh",
+                "isAbout": "tfmri_mr1_alvsl_sscs_hpuslh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvsl_sscs_hpusrh",
+                "isAbout": "tfmri_mr1_alvsl_sscs_hpusrh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvsl_sscs_inflatvh",
+                "isAbout": "tfmri_mr1_alvsl_sscs_inflatvh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvsl_sscs_inflatvlh",
+                "isAbout": "tfmri_mr1_alvsl_sscs_inflatvlh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvsl_sscs_laviclelh",
+                "isAbout": "tfmri_mr1_alvsl_sscs_laviclelh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvsl_sscs_laviclerh",
+                "isAbout": "tfmri_mr1_alvsl_sscs_laviclerh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvsl_sscs_pllh",
+                "isAbout": "tfmri_mr1_alvsl_sscs_pllh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvsl_sscs_plrh",
+                "isAbout": "tfmri_mr1_alvsl_sscs_plrh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvsl_sscs_ptlh",
+                "isAbout": "tfmri_mr1_alvsl_sscs_ptlh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvsl_sscs_ptrh",
+                "isAbout": "tfmri_mr1_alvsl_sscs_ptrh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvsl_sscs_tplh",
+                "isAbout": "tfmri_mr1_alvsl_sscs_tplh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvsl_sscs_tprh",
+                "isAbout": "tfmri_mr1_alvsl_sscs_tprh"
+            },
+            {
+                "variableName": "tfmri_mr1_alvsl_sscs_valdclh",
+                "isAbout": "tfmri_mr1_alvsl_sscs_valdclh"
+            },
+            {
+                "variableName": "tfmri_mr1_arvn_sscs_3rdvicle",
+                "isAbout": "tfmri_mr1_arvn_sscs_3rdvicle"
+            },
+            {
+                "variableName": "tfmri_mr1_arvn_sscs_4thvicle",
+                "isAbout": "tfmri_mr1_arvn_sscs_4thvicle"
+            },
+            {
+                "variableName": "tfmri_mr1_arvn_sscs_aalh",
+                "isAbout": "tfmri_mr1_arvn_sscs_aalh"
+            },
+            {
+                "variableName": "tfmri_mr1_arvn_sscs_aarh",
+                "isAbout": "tfmri_mr1_arvn_sscs_aarh"
+            },
+            {
+                "variableName": "tfmri_mr1_arvn_sscs_aylh",
+                "isAbout": "tfmri_mr1_arvn_sscs_aylh"
+            },
+            {
+                "variableName": "tfmri_mr1_arvn_sscs_ayrh",
+                "isAbout": "tfmri_mr1_arvn_sscs_ayrh"
+            },
+            {
+                "variableName": "tfmri_mr1_arvn_sscs_bs",
+                "isAbout": "tfmri_mr1_arvn_sscs_bs"
+            },
+            {
+                "variableName": "tfmri_mr1_arvn_sscs_cbwmlh",
+                "isAbout": "tfmri_mr1_arvn_sscs_cbwmlh"
+            },
+            {
+                "variableName": "tfmri_mr1_arvn_sscs_cbwmrh",
+                "isAbout": "tfmri_mr1_arvn_sscs_cbwmrh"
+            },
+            {
+                "variableName": "tfmri_mr1_arvn_sscs_crbcxlh",
+                "isAbout": "tfmri_mr1_arvn_sscs_crbcxlh"
+            },
+            {
+                "variableName": "tfmri_mr1_arvn_sscs_crbcxrh",
+                "isAbout": "tfmri_mr1_arvn_sscs_crbcxrh"
+            },
+            {
+                "variableName": "tfmri_mr1_arvn_sscs_crbwmlh",
+                "isAbout": "tfmri_mr1_arvn_sscs_crbwmlh"
+            },
+            {
+                "variableName": "tfmri_mr1_arvn_sscs_crbwmrh",
+                "isAbout": "tfmri_mr1_arvn_sscs_crbwmrh"
+            },
+            {
+                "variableName": "tfmri_mr1_arvn_sscs_csf",
+                "isAbout": "tfmri_mr1_arvn_sscs_csf"
+            },
+            {
+                "variableName": "tfmri_mr1_arvn_sscs_ctelh",
+                "isAbout": "tfmri_mr1_arvn_sscs_ctelh"
+            },
+            {
+                "variableName": "tfmri_mr1_arvn_sscs_cterh",
+                "isAbout": "tfmri_mr1_arvn_sscs_cterh"
+            },
+            {
+                "variableName": "tfmri_mr1_arvn_sscs_hpuslh",
+                "isAbout": "tfmri_mr1_arvn_sscs_hpuslh"
+            },
+            {
+                "variableName": "tfmri_mr1_arvn_sscs_hpusrh",
+                "isAbout": "tfmri_mr1_arvn_sscs_hpusrh"
+            },
+            {
+                "variableName": "tfmri_mr1_arvn_sscs_inflatvh",
+                "isAbout": "tfmri_mr1_arvn_sscs_inflatvh"
+            },
+            {
+                "variableName": "tfmri_mr1_arvn_sscs_inflatvlh",
+                "isAbout": "tfmri_mr1_arvn_sscs_inflatvlh"
+            },
+            {
+                "variableName": "tfmri_mr1_arvn_sscs_laviclelh",
+                "isAbout": "tfmri_mr1_arvn_sscs_laviclelh"
+            },
+            {
+                "variableName": "tfmri_mr1_arvn_sscs_laviclerh",
+                "isAbout": "tfmri_mr1_arvn_sscs_laviclerh"
+            },
+            {
+                "variableName": "tfmri_mr1_arvn_sscs_pllh",
+                "isAbout": "tfmri_mr1_arvn_sscs_pllh"
+            },
+            {
+                "variableName": "tfmri_mr1_arvn_sscs_plrh",
+                "isAbout": "tfmri_mr1_arvn_sscs_plrh"
+            },
+            {
+                "variableName": "tfmri_mr1_arvn_sscs_ptlh",
+                "isAbout": "tfmri_mr1_arvn_sscs_ptlh"
+            },
+            {
+                "variableName": "tfmri_mr1_arvn_sscs_ptrh",
+                "isAbout": "tfmri_mr1_arvn_sscs_ptrh"
+            },
+            {
+                "variableName": "tfmri_mr1_arvn_sscs_tplh",
+                "isAbout": "tfmri_mr1_arvn_sscs_tplh"
+            },
+            {
+                "variableName": "tfmri_mr1_arvn_sscs_tprh",
+                "isAbout": "tfmri_mr1_arvn_sscs_tprh"
+            },
+            {
+                "variableName": "tfmri_mr1_arvn_sscs_valdclh",
+                "isAbout": "tfmri_mr1_arvn_sscs_valdclh"
+            },
+            {
+                "variableName": "tfmri_mr1_arvn_sscs_valdcrh",
+                "isAbout": "tfmri_mr1_arvn_sscs_valdcrh"
+            },
+            {
+                "variableName": "tfmri_mr1_aslvn_sscs_3rdvicle",
+                "isAbout": "tfmri_mr1_aslvn_sscs_3rdvicle"
+            },
+            {
+                "variableName": "tfmri_mr1_aslvn_sscs_4thvicle",
+                "isAbout": "tfmri_mr1_aslvn_sscs_4thvicle"
+            },
+            {
+                "variableName": "tfmri_mr1_aslvn_sscs_aalh",
+                "isAbout": "tfmri_mr1_aslvn_sscs_aalh"
+            },
+            {
+                "variableName": "tfmri_mr1_aslvn_sscs_aarh",
+                "isAbout": "tfmri_mr1_aslvn_sscs_aarh"
+            },
+            {
+                "variableName": "tfmri_mr1_aslvn_sscs_aylh",
+                "isAbout": "tfmri_mr1_aslvn_sscs_aylh"
+            },
+            {
+                "variableName": "tfmri_mr1_aslvn_sscs_ayrh",
+                "isAbout": "tfmri_mr1_aslvn_sscs_ayrh"
+            },
+            {
+                "variableName": "tfmri_mr1_aslvn_sscs_bs",
+                "isAbout": "tfmri_mr1_aslvn_sscs_bs"
+            },
+            {
+                "variableName": "tfmri_mr1_aslvn_sscs_cbwmlh",
+                "isAbout": "tfmri_mr1_aslvn_sscs_cbwmlh"
+            },
+            {
+                "variableName": "tfmri_mr1_aslvn_sscs_cbwmrh",
+                "isAbout": "tfmri_mr1_aslvn_sscs_cbwmrh"
+            },
+            {
+                "variableName": "tfmri_mr1_aslvn_sscs_crbcxlh",
+                "isAbout": "tfmri_mr1_aslvn_sscs_crbcxlh"
+            },
+            {
+                "variableName": "tfmri_mr1_aslvn_sscs_crbcxrh",
+                "isAbout": "tfmri_mr1_aslvn_sscs_crbcxrh"
+            },
+            {
+                "variableName": "tfmri_mr1_aslvn_sscs_crbwmlh",
+                "isAbout": "tfmri_mr1_aslvn_sscs_crbwmlh"
+            },
+            {
+                "variableName": "tfmri_mr1_aslvn_sscs_crbwmrh",
+                "isAbout": "tfmri_mr1_aslvn_sscs_crbwmrh"
+            },
+            {
+                "variableName": "tfmri_mr1_aslvn_sscs_csf",
+                "isAbout": "tfmri_mr1_aslvn_sscs_csf"
+            },
+            {
+                "variableName": "tfmri_mr1_aslvn_sscs_ctelh",
+                "isAbout": "tfmri_mr1_aslvn_sscs_ctelh"
+            },
+            {
+                "variableName": "tfmri_mr1_aslvn_sscs_cterh",
+                "isAbout": "tfmri_mr1_aslvn_sscs_cterh"
+            },
+            {
+                "variableName": "tfmri_mr1_aslvn_sscs_hpuslh",
+                "isAbout": "tfmri_mr1_aslvn_sscs_hpuslh"
+            },
+            {
+                "variableName": "tfmri_mr1_aslvn_sscs_hpusrh",
+                "isAbout": "tfmri_mr1_aslvn_sscs_hpusrh"
+            },
+            {
+                "variableName": "tfmri_mr1_aslvn_sscs_inflatvh",
+                "isAbout": "tfmri_mr1_aslvn_sscs_inflatvh"
+            },
+            {
+                "variableName": "tfmri_mr1_aslvn_sscs_inflatvlh",
+                "isAbout": "tfmri_mr1_aslvn_sscs_inflatvlh"
+            },
+            {
+                "variableName": "tfmri_mr1_aslvn_sscs_laviclelh",
+                "isAbout": "tfmri_mr1_aslvn_sscs_laviclelh"
+            },
+            {
+                "variableName": "tfmri_mr1_aslvn_sscs_laviclerh",
+                "isAbout": "tfmri_mr1_aslvn_sscs_laviclerh"
+            },
+            {
+                "variableName": "tfmri_mr1_aslvn_sscs_pllh",
+                "isAbout": "tfmri_mr1_aslvn_sscs_pllh"
+            },
+            {
+                "variableName": "tfmri_mr1_aslvn_sscs_plrh",
+                "isAbout": "tfmri_mr1_aslvn_sscs_plrh"
+            },
+            {
+                "variableName": "tfmri_mr1_aslvn_sscs_ptlh",
+                "isAbout": "tfmri_mr1_aslvn_sscs_ptlh"
+            },
+            {
+                "variableName": "tfmri_mr1_aslvn_sscs_ptrh",
+                "isAbout": "tfmri_mr1_aslvn_sscs_ptrh"
+            },
+            {
+                "variableName": "tfmri_mr1_aslvn_sscs_tplh",
+                "isAbout": "tfmri_mr1_aslvn_sscs_tplh"
+            },
+            {
+                "variableName": "tfmri_mr1_aslvn_sscs_tprh",
+                "isAbout": "tfmri_mr1_aslvn_sscs_tprh"
+            },
+            {
+                "variableName": "tfmri_mr1_aslvn_sscs_valdclh",
+                "isAbout": "tfmri_mr1_aslvn_sscs_valdclh"
+            },
+            {
+                "variableName": "tfmri_mr1_aslvn_sscs_valdcrh",
+                "isAbout": "tfmri_mr1_aslvn_sscs_valdcrh"
+            },
+            {
+                "variableName": "tfmri_mr1_asrvn_sscs_3rdvicle",
+                "isAbout": "tfmri_mr1_asrvn_sscs_3rdvicle"
+            },
+            {
+                "variableName": "tfmri_mr1_asrvn_sscs_4thvicle",
+                "isAbout": "tfmri_mr1_asrvn_sscs_4thvicle"
+            },
+            {
+                "variableName": "tfmri_mr1_asrvn_sscs_aalh",
+                "isAbout": "tfmri_mr1_asrvn_sscs_aalh"
+            },
+            {
+                "variableName": "tfmri_mr1_asrvn_sscs_aarh",
+                "isAbout": "tfmri_mr1_asrvn_sscs_aarh"
+            },
+            {
+                "variableName": "tfmri_mr1_asrvn_sscs_aylh",
+                "isAbout": "tfmri_mr1_asrvn_sscs_aylh"
+            },
+            {
+                "variableName": "tfmri_mr1_asrvn_sscs_ayrh",
+                "isAbout": "tfmri_mr1_asrvn_sscs_ayrh"
+            },
+            {
+                "variableName": "tfmri_mr1_asrvn_sscs_bs",
+                "isAbout": "tfmri_mr1_asrvn_sscs_bs"
+            },
+            {
+                "variableName": "tfmri_mr1_asrvn_sscs_cbwmlh",
+                "isAbout": "tfmri_mr1_asrvn_sscs_cbwmlh"
+            },
+            {
+                "variableName": "tfmri_mr1_asrvn_sscs_cbwmrh",
+                "isAbout": "tfmri_mr1_asrvn_sscs_cbwmrh"
+            },
+            {
+                "variableName": "tfmri_mr1_asrvn_sscs_crbcxlh",
+                "isAbout": "tfmri_mr1_asrvn_sscs_crbcxlh"
+            },
+            {
+                "variableName": "tfmri_mr1_asrvn_sscs_crbcxrh",
+                "isAbout": "tfmri_mr1_asrvn_sscs_crbcxrh"
+            },
+            {
+                "variableName": "tfmri_mr1_asrvn_sscs_crbwmlh",
+                "isAbout": "tfmri_mr1_asrvn_sscs_crbwmlh"
+            },
+            {
+                "variableName": "tfmri_mr1_asrvn_sscs_crbwmrh",
+                "isAbout": "tfmri_mr1_asrvn_sscs_crbwmrh"
+            },
+            {
+                "variableName": "tfmri_mr1_asrvn_sscs_csf",
+                "isAbout": "tfmri_mr1_asrvn_sscs_csf"
+            },
+            {
+                "variableName": "tfmri_mr1_asrvn_sscs_ctelh",
+                "isAbout": "tfmri_mr1_asrvn_sscs_ctelh"
+            },
+            {
+                "variableName": "tfmri_mr1_asrvn_sscs_cterh",
+                "isAbout": "tfmri_mr1_asrvn_sscs_cterh"
+            },
+            {
+                "variableName": "tfmri_mr1_asrvn_sscs_hpuslh",
+                "isAbout": "tfmri_mr1_asrvn_sscs_hpuslh"
+            },
+            {
+                "variableName": "tfmri_mr1_asrvn_sscs_hpusrh",
+                "isAbout": "tfmri_mr1_asrvn_sscs_hpusrh"
+            },
+            {
+                "variableName": "tfmri_mr1_asrvn_sscs_inflatvh",
+                "isAbout": "tfmri_mr1_asrvn_sscs_inflatvh"
+            },
+            {
+                "variableName": "tfmri_mr1_asrvn_sscs_inflatvlh",
+                "isAbout": "tfmri_mr1_asrvn_sscs_inflatvlh"
+            },
+            {
+                "variableName": "tfmri_mr1_asrvn_sscs_laviclelh",
+                "isAbout": "tfmri_mr1_asrvn_sscs_laviclelh"
+            },
+            {
+                "variableName": "tfmri_mr1_asrvn_sscs_laviclerh",
+                "isAbout": "tfmri_mr1_asrvn_sscs_laviclerh"
+            },
+            {
+                "variableName": "tfmri_mr1_asrvn_sscs_pllh",
+                "isAbout": "tfmri_mr1_asrvn_sscs_pllh"
+            },
+            {
+                "variableName": "tfmri_mr1_asrvn_sscs_plrh",
+                "isAbout": "tfmri_mr1_asrvn_sscs_plrh"
+            },
+            {
+                "variableName": "tfmri_mr1_asrvn_sscs_ptlh",
+                "isAbout": "tfmri_mr1_asrvn_sscs_ptlh"
+            },
+            {
+                "variableName": "tfmri_mr1_asrvn_sscs_ptrh",
+                "isAbout": "tfmri_mr1_asrvn_sscs_ptrh"
+            },
+            {
+                "variableName": "tfmri_mr1_asrvn_sscs_tplh",
+                "isAbout": "tfmri_mr1_asrvn_sscs_tplh"
+            },
+            {
+                "variableName": "tfmri_mr1_asrvn_sscs_tprh",
+                "isAbout": "tfmri_mr1_asrvn_sscs_tprh"
+            },
+            {
+                "variableName": "tfmri_mr1_asrvn_sscs_valdclh",
+                "isAbout": "tfmri_mr1_asrvn_sscs_valdclh"
+            },
+            {
+                "variableName": "tfmri_mr1_asrvn_sscs_valdcrh",
+                "isAbout": "tfmri_mr1_asrvn_sscs_valdcrh"
+            },
+            {
+                "variableName": "tfmri_mr1_lpvnfb_sscs_3rdvicle",
+                "isAbout": "tfmri_mr1_lpvnfb_sscs_3rdvicle"
+            },
+            {
+                "variableName": "tfmri_mr1_lpvnfb_sscs_4thvicle",
+                "isAbout": "tfmri_mr1_lpvnfb_sscs_4thvicle"
+            },
+            {
+                "variableName": "tfmri_mr1_lpvnfb_sscs_aalh",
+                "isAbout": "tfmri_mr1_lpvnfb_sscs_aalh"
+            },
+            {
+                "variableName": "tfmri_mr1_lpvnfb_sscs_aarh",
+                "isAbout": "tfmri_mr1_lpvnfb_sscs_aarh"
+            },
+            {
+                "variableName": "tfmri_mr1_lpvnfb_sscs_aylh",
+                "isAbout": "tfmri_mr1_lpvnfb_sscs_aylh"
+            },
+            {
+                "variableName": "tfmri_mr1_lpvnfb_sscs_ayrh",
+                "isAbout": "tfmri_mr1_lpvnfb_sscs_ayrh"
+            },
+            {
+                "variableName": "tfmri_mr1_lpvnfb_sscs_bs",
+                "isAbout": "tfmri_mr1_lpvnfb_sscs_bs"
+            },
+            {
+                "variableName": "tfmri_mr1_lpvnfb_sscs_cbwmlh",
+                "isAbout": "tfmri_mr1_lpvnfb_sscs_cbwmlh"
+            },
+            {
+                "variableName": "tfmri_mr1_lpvnfb_sscs_cbwmrh",
+                "isAbout": "tfmri_mr1_lpvnfb_sscs_cbwmrh"
+            },
+            {
+                "variableName": "tfmri_mr1_lpvnfb_sscs_crbcxlh",
+                "isAbout": "tfmri_mr1_lpvnfb_sscs_crbcxlh"
+            },
+            {
+                "variableName": "tfmri_mr1_lpvnfb_sscs_crbcxrh",
+                "isAbout": "tfmri_mr1_lpvnfb_sscs_crbcxrh"
+            },
+            {
+                "variableName": "tfmri_mr1_lpvnfb_sscs_crbwmlh",
+                "isAbout": "tfmri_mr1_lpvnfb_sscs_crbwmlh"
+            },
+            {
+                "variableName": "tfmri_mr1_lpvnfb_sscs_crbwmrh",
+                "isAbout": "tfmri_mr1_lpvnfb_sscs_crbwmrh"
+            },
+            {
+                "variableName": "tfmri_mr1_lpvnfb_sscs_csf",
+                "isAbout": "tfmri_mr1_lpvnfb_sscs_csf"
+            },
+            {
+                "variableName": "tfmri_mr1_lpvnfb_sscs_ctelh",
+                "isAbout": "tfmri_mr1_lpvnfb_sscs_ctelh"
+            },
+            {
+                "variableName": "tfmri_mr1_lpvnfb_sscs_cterh",
+                "isAbout": "tfmri_mr1_lpvnfb_sscs_cterh"
+            },
+            {
+                "variableName": "tfmri_mr1_lpvnfb_sscs_hpuslh",
+                "isAbout": "tfmri_mr1_lpvnfb_sscs_hpuslh"
+            },
+            {
+                "variableName": "tfmri_mr1_lpvnfb_sscs_hpusrh",
+                "isAbout": "tfmri_mr1_lpvnfb_sscs_hpusrh"
+            },
+            {
+                "variableName": "tfmri_mr1_lpvnfb_sscs_inftvh",
+                "isAbout": "tfmri_mr1_lpvnfb_sscs_inftvh"
+            },
+            {
+                "variableName": "tfmri_mr1_lpvnfb_sscs_inftvlh",
+                "isAbout": "tfmri_mr1_lpvnfb_sscs_inftvlh"
+            },
+            {
+                "variableName": "tfmri_mr1_lpvnfb_sscs_lvclelh",
+                "isAbout": "tfmri_mr1_lpvnfb_sscs_lvclelh"
+            },
+            {
+                "variableName": "tfmri_mr1_lpvnfb_sscs_lvclerh",
+                "isAbout": "tfmri_mr1_lpvnfb_sscs_lvclerh"
+            },
+            {
+                "variableName": "tfmri_mr1_lpvnfb_sscs_pllh",
+                "isAbout": "tfmri_mr1_lpvnfb_sscs_pllh"
+            },
+            {
+                "variableName": "tfmri_mr1_lpvnfb_sscs_plrh",
+                "isAbout": "tfmri_mr1_lpvnfb_sscs_plrh"
+            },
+            {
+                "variableName": "tfmri_mr1_lpvnfb_sscs_ptlh",
+                "isAbout": "tfmri_mr1_lpvnfb_sscs_ptlh"
+            },
+            {
+                "variableName": "tfmri_mr1_lpvnfb_sscs_ptrh",
+                "isAbout": "tfmri_mr1_lpvnfb_sscs_ptrh"
+            },
+            {
+                "variableName": "tfmri_mr1_lpvnfb_sscs_tplh",
+                "isAbout": "tfmri_mr1_lpvnfb_sscs_tplh"
+            },
+            {
+                "variableName": "tfmri_mr1_lpvnfb_sscs_tprh",
+                "isAbout": "tfmri_mr1_lpvnfb_sscs_tprh"
+            },
+            {
+                "variableName": "tfmri_mr1_lpvnfb_sscs_valdclh",
+                "isAbout": "tfmri_mr1_lpvnfb_sscs_valdclh"
+            },
+            {
+                "variableName": "tfmri_mr1_lpvnfb_sscs_valdcrh",
+                "isAbout": "tfmri_mr1_lpvnfb_sscs_valdcrh"
+            },
+            {
+                "variableName": "tfmri_mr1_rpvnfb_sscs_3rdvicle",
+                "isAbout": "tfmri_mr1_rpvnfb_sscs_3rdvicle"
+            },
+            {
+                "variableName": "tfmri_mr1_rpvnfb_sscs_4thvicle",
+                "isAbout": "tfmri_mr1_rpvnfb_sscs_4thvicle"
+            },
+            {
+                "variableName": "tfmri_mr1_rpvnfb_sscs_aalh",
+                "isAbout": "tfmri_mr1_rpvnfb_sscs_aalh"
+            },
+            {
+                "variableName": "tfmri_mr1_rpvnfb_sscs_aarh",
+                "isAbout": "tfmri_mr1_rpvnfb_sscs_aarh"
+            },
+            {
+                "variableName": "tfmri_mr1_rpvnfb_sscs_aylh",
+                "isAbout": "tfmri_mr1_rpvnfb_sscs_aylh"
+            },
+            {
+                "variableName": "tfmri_mr1_rpvnfb_sscs_ayrh",
+                "isAbout": "tfmri_mr1_rpvnfb_sscs_ayrh"
+            },
+            {
+                "variableName": "tfmri_mr1_rpvnfb_sscs_bs",
+                "isAbout": "tfmri_mr1_rpvnfb_sscs_bs"
+            },
+            {
+                "variableName": "tfmri_mr1_rpvnfb_sscs_cbwmlh",
+                "isAbout": "tfmri_mr1_rpvnfb_sscs_cbwmlh"
+            },
+            {
+                "variableName": "tfmri_mr1_rpvnfb_sscs_cbwmrh",
+                "isAbout": "tfmri_mr1_rpvnfb_sscs_cbwmrh"
+            },
+            {
+                "variableName": "tfmri_mr1_rpvnfb_sscs_crbcxlh",
+                "isAbout": "tfmri_mr1_rpvnfb_sscs_crbcxlh"
+            },
+            {
+                "variableName": "tfmri_mr1_rpvnfb_sscs_crbcxrh",
+                "isAbout": "tfmri_mr1_rpvnfb_sscs_crbcxrh"
+            },
+            {
+                "variableName": "tfmri_mr1_rpvnfb_sscs_crbwmlh",
+                "isAbout": "tfmri_mr1_rpvnfb_sscs_crbwmlh"
+            },
+            {
+                "variableName": "tfmri_mr1_rpvnfb_sscs_crbwmrh",
+                "isAbout": "tfmri_mr1_rpvnfb_sscs_crbwmrh"
+            },
+            {
+                "variableName": "tfmri_mr1_rpvnfb_sscs_csf",
+                "isAbout": "tfmri_mr1_rpvnfb_sscs_csf"
+            },
+            {
+                "variableName": "tfmri_mr1_rpvnfb_sscs_ctelh",
+                "isAbout": "tfmri_mr1_rpvnfb_sscs_ctelh"
+            },
+            {
+                "variableName": "tfmri_mr1_rpvnfb_sscs_cterh",
+                "isAbout": "tfmri_mr1_rpvnfb_sscs_cterh"
+            },
+            {
+                "variableName": "tfmri_mr1_rpvnfb_sscs_hpuslh",
+                "isAbout": "tfmri_mr1_rpvnfb_sscs_hpuslh"
+            },
+            {
+                "variableName": "tfmri_mr1_rpvnfb_sscs_hpusrh",
+                "isAbout": "tfmri_mr1_rpvnfb_sscs_hpusrh"
+            },
+            {
+                "variableName": "tfmri_mr1_rpvnfb_sscs_inftvh",
+                "isAbout": "tfmri_mr1_rpvnfb_sscs_inftvh"
+            },
+            {
+                "variableName": "tfmri_mr1_rpvnfb_sscs_inftvlh",
+                "isAbout": "tfmri_mr1_rpvnfb_sscs_inftvlh"
+            },
+            {
+                "variableName": "tfmri_mr1_rpvnfb_sscs_lvclelh",
+                "isAbout": "tfmri_mr1_rpvnfb_sscs_lvclelh"
+            },
+            {
+                "variableName": "tfmri_mr1_rpvnfb_sscs_lvclerh",
+                "isAbout": "tfmri_mr1_rpvnfb_sscs_lvclerh"
+            },
+            {
+                "variableName": "tfmri_mr1_rpvnfb_sscs_pllh",
+                "isAbout": "tfmri_mr1_rpvnfb_sscs_pllh"
+            },
+            {
+                "variableName": "tfmri_mr1_rpvnfb_sscs_plrh",
+                "isAbout": "tfmri_mr1_rpvnfb_sscs_plrh"
+            },
+            {
+                "variableName": "tfmri_mr1_rpvnfb_sscs_ptlh",
+                "isAbout": "tfmri_mr1_rpvnfb_sscs_ptlh"
+            },
+            {
+                "variableName": "tfmri_mr1_rpvnfb_sscs_ptrh",
+                "isAbout": "tfmri_mr1_rpvnfb_sscs_ptrh"
+            },
+            {
+                "variableName": "tfmri_mr1_rpvnfb_sscs_tplh",
+                "isAbout": "tfmri_mr1_rpvnfb_sscs_tplh"
+            },
+            {
+                "variableName": "tfmri_mr1_rpvnfb_sscs_tprh",
+                "isAbout": "tfmri_mr1_rpvnfb_sscs_tprh"
+            },
+            {
+                "variableName": "tfmri_mr1_rpvnfb_sscs_valdclh",
+                "isAbout": "tfmri_mr1_rpvnfb_sscs_valdclh"
+            },
+            {
+                "variableName": "tfmri_mr1_rpvnfb_sscs_valdcrh",
+                "isAbout": "tfmri_mr1_rpvnfb_sscs_valdcrh"
+            },
+            {
+                "variableName": "tfmri_mr1_sem_maxmotion",
+                "isAbout": "tfmri_mr1_sem_maxmotion"
+            },
+            {
+                "variableName": "tfmri_mr1_sem_meantrans",
+                "isAbout": "tfmri_mr1_sem_meantrans"
+            },
+            {
+                "variableName": "tfmri_mr1_sem_mm",
+                "isAbout": "tfmri_mr1_sem_mm"
+            },
+            {
+                "variableName": "tfmri_mr1_sem_stnvols",
+                "isAbout": "tfmri_mr1_sem_stnvols"
+            }
+        ]
+    }
+}

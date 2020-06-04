@@ -1,0 +1,51 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "devhx_21_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "devhx_21_p",
+    "altLabel": "devhx_21_speech_dev_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Would you say his/her speech development was earlier, average,  or later than most other children? /¿Diría usted que su desarrollo del habla fue más temprano, igual al promedio o más tardío que el de la mayoría de los niños?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 999,
+        "choices": [
+            {
+                "name": "Much earlier/ Mucho más temprano",
+                "value": 1
+            },
+            {
+                "name": "Somewhat earlier /Un poco más temprano",
+                "value": 2
+            },
+            {
+                "name": "About average /Más o menos igual al promedio",
+                "value": 3
+            },
+            {
+                "name": "Somewhat later /Un poco más tardío",
+                "value": 4
+            },
+            {
+                "name": "Much later /Mucho más tardío",
+                "value": 5
+            },
+            {
+                "name": "Don't know/ No lo sé",
+                "value": 999
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Much earlier/ Mucho más temprano; 2 = Somewhat earlier /Un poco más temprano; 3 = About average /Más o menos igual al promedio; 4 = Somewhat later /Un poco más tardío; 5 = Much later /Mucho más tardío; 999 = Don't know/ No lo sé"
+        }
+    ]
+}

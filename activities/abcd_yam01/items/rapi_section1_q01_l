@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "rapi_section1_q01_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "rapi_section1_q01_l",
+    "altLabel": "su_rapi_section1_q01_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Please indicate how many times each has happened to you within the past 6 months while you were drinking or as a result of your alcohol use: not able to do your homework or study for a test.",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "0",
+                "value": 0
+            },
+            {
+                "name": "1-2",
+                "value": 1
+            },
+            {
+                "name": "3-5",
+                "value": 2
+            },
+            {
+                "name": "5+ / xskipout_alc_l   == '1'",
+                "value": 3
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = 0; 1 = 1-2; 2 = 3-5; 3 = 5+ / xskipout_alc_l   == '1'"
+        }
+    ]
+}

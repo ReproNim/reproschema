@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "ksads_cdr_1098_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "ksads_cdr_1098_p",
+    "altLabel": "ksads_conduct_disorder_raw_1098_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Read each statement and decide how well it describes your child. I do not feel remorseful when I do something wrong.",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "Not at all true",
+                "value": 0
+            },
+            {
+                "name": "Somewhat true",
+                "value": 1
+            },
+            {
+                "name": "Very true",
+                "value": 2
+            },
+            {
+                "name": "Definitely true",
+                "value": 3
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = Not at all true; 1 = Somewhat true; 2 = Very true; 3 = Definitely true"
+        }
+    ]
+}

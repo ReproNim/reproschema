@@ -1,0 +1,34 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "pls3_cbd_product_p__5",
+    "@type": "reproschema:Field",
+    "prefLabel": "pls3_cbd_product_p__5",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "What type of CBD product did they use? (Choose all that apply) Qu? tipo de producto uso (Eliga todas las que correspondan)  Topical lotion or transdermal patch / Loci?n t?pica o parche transd?rmico",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "No",
+                "value": 0
+            },
+            {
+                "name": "Yes ",
+                "value": 1
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = No; 1 = Yes "
+        }
+    ]
+}

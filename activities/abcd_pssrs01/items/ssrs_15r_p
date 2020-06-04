@@ -1,0 +1,42 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "ssrs_15r_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "ssrs_15r_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Is able to understand the meaning of other people's tone of voice and facial expressions. Es capaz de entender el significado del tono de voz y las expresiones faciales de otras personas.",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 4,
+        "schema:maxValue": 3,
+        "choices": [
+            {
+                "name": "Not True No es cierto",
+                "value": 4
+            },
+            {
+                "name": "Sometimes True Algunas veces cierto",
+                "value": 3
+            },
+            {
+                "name": "Often True Frequentemente cierto",
+                "value": 2
+            },
+            {
+                "name": "Almost Always True Casi siempre cierto",
+                "value": 1
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "4 = Not True No es cierto; 3 = Sometimes True Algunas veces cierto; 2 = Often True Frequentemente cierto; 1 = Almost Always True Casi siempre cierto"
+        }
+    ]
+}

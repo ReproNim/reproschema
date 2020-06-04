@@ -1,0 +1,38 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "zygos_q5",
+    "@type": "reproschema:Field",
+    "prefLabel": "zygos_q5",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Based on their  appearance now, how often do people have trouble telling them apart?  Would you say never, sometimes, or always? /Con base en la apariencia actual de los niños, ¿con qué frecuencia tiene problemas la gente para distinguirlos? ¿Diría que nunca, a veces o siempre?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Never",
+                "value": 1
+            },
+            {
+                "name": "Sometimes",
+                "value": 2
+            },
+            {
+                "name": "Always",
+                "value": 3
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Never; 2 = Sometimes; 3 = Always"
+        }
+    ]
+}

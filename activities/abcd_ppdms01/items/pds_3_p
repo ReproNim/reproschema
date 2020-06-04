@@ -1,0 +1,47 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "pds_3_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "pds_3_p",
+    "altLabel": "pubertdev_3_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Have you noticed any changes to their skin, especially pimples? ¿Ha notado cambios en la piel de su niño(a), particularmente acné, granos o espinillas?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "skin has not yet started changing Su piel aún no ha empezado a mostrar cambios.",
+                "value": 1
+            },
+            {
+                "name": "skin has barely started changing Su piel apenas ha empezado a mostrar cambios.",
+                "value": 2
+            },
+            {
+                "name": "skin changes are definitely underway Definitivamente ya están ocurriendo cambios en su piel.",
+                "value": 3
+            },
+            {
+                "name": "skin changes seem complete Parece haber terminado de cambiarle la piel.",
+                "value": 4
+            },
+            {
+                "name": "I don't know No sé",
+                "value": 999
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = skin has not yet started changing Su piel aún no ha empezado a mostrar cambios.; 2 = skin has barely started changing Su piel apenas ha empezado a mostrar cambios.; 3 = skin changes are definitely underway Definitivamente ya están ocurriendo cambios en su piel.; 4 = skin changes seem complete Parece haber terminado de cambiarle la piel.; 999 = I don't know No sé"
+        }
+    ]
+}

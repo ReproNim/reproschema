@@ -1,0 +1,38 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "scrn_concerns_excl",
+    "@type": "reproschema:Field",
+    "prefLabel": "scrn_concerns_excl",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Are the concerns deemed exclusionary?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "Yes - GO TO END",
+                "value": 0
+            },
+            {
+                "name": "No",
+                "value": 1
+            },
+            {
+                "name": "Unsure - (Consult PI)",
+                "value": 2
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = Yes - GO TO END; 1 = No; 2 = Unsure - (Consult PI)"
+        }
+    ]
+}

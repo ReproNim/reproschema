@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "school_17_y",
+    "@type": "reproschema:Field",
+    "prefLabel": "school_17_y",
+    "altLabel": "school_risk_phenx_17",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Getting good grades is not so important to me.",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "name": "NO!",
+                "value": 1
+            },
+            {
+                "name": "no",
+                "value": 2
+            },
+            {
+                "name": "yes",
+                "value": 3
+            },
+            {
+                "name": "YES! //Mark (the BIG) YES! if you think the statement is definitely true for you. Mark (the little) yes if you think the statement is mostly true for you. Mark (the little) no if you think the statement is mostly not true for you. Mark (the BIG) NO! if you think the statement is definitely not true for you",
+                "value": 4
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = NO!; 2 = no; 3 = yes; 4 = YES! //Mark (the BIG) YES! if you think the statement is definitely true for you. Mark (the little) yes if you think the statement is mostly true for you. Mark (the little) no if you think the statement is mostly not true for you. Mark (the BIG) NO! if you think the statement is definitely not true for you"
+        }
+    ]
+}

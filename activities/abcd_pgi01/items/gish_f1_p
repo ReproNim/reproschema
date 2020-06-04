@@ -1,0 +1,54 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "gish_f1_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "gish_f1_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Her favorite playmates are Sus compañeros favoritos de juego son:",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Always boys Siempre niños ",
+                "value": 1
+            },
+            {
+                "name": "Usually boys Por lo general",
+                "value": 2
+            },
+            {
+                "name": "Boys and girls equally Niños y niñas por igual ",
+                "value": 3
+            },
+            {
+                "name": "Usually girls  Por lo general",
+                "value": 4
+            },
+            {
+                "name": "Always girls  Siempre niñas ",
+                "value": 5
+            },
+            {
+                "name": "Does not play with other children No juega con otros niños/as ",
+                "value": 0
+            },
+            {
+                "name": "Decline to answer Prefiero no responder",
+                "value": 777
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Always boys Siempre niños ; 2 = Usually boys Por lo general; 3 = Boys and girls equally Niños y niñas por igual ; 4 = Usually girls  Por lo general; 5 = Always girls  Siempre niñas ; 0 = Does not play with other children No juega con otros niños/as ; 777 = Decline to answer Prefiero no responder"
+        }
+    ]
+}

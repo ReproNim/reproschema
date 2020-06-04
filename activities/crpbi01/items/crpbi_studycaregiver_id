@@ -1,0 +1,54 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "crpbi_studycaregiver_id",
+    "@type": "reproschema:Field",
+    "prefLabel": "crpbi_studycaregiver_id",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Who is the caregiver that is participating in the study with you today?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "mother",
+                "value": 1
+            },
+            {
+                "name": "father",
+                "value": 2
+            },
+            {
+                "name": "grandmother",
+                "value": 3
+            },
+            {
+                "name": "grandfather",
+                "value": 4
+            },
+            {
+                "name": "aunt",
+                "value": 5
+            },
+            {
+                "name": "uncle",
+                "value": 6
+            },
+            {
+                "name": "other",
+                "value": 7
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = mother; 2 = father; 3 = grandmother; 4 = grandfather; 5 = aunt; 6 = uncle; 7 = other"
+        }
+    ]
+}

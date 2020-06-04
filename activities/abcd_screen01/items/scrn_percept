@@ -1,0 +1,34 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "scrn_percept",
+    "@type": "reproschema:Field",
+    "prefLabel": "scrn_percept",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Does (Child's name) have any vision, hearing, or coordination problems that would affect your child's understanding and responding to the tests, questionnaires, and brain scans? /¿(Nombre del menor) tiene algún problema visual, auditivo o de coordinación que pudiera afectar su comprensión de las pruebas, los cuestionarios y los estudios cerebrales y su capacidad de responder los mismos?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "Yes",
+                "value": 1
+            },
+            {
+                "name": "No",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes; 0 = No"
+        }
+    ]
+}

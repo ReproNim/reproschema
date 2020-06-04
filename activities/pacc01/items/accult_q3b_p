@@ -1,0 +1,51 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "accult_q3b_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "accult_q3b_p",
+    "altLabel": "accult_phenx_q3b_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "How well do you speak [accult_q3_dropdwn_p]?   ?Qu? tan bien habla usted el [accult_q3_dropdwn_p]?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": " Poor / Mal ",
+                "value": 1
+            },
+            {
+                "name": "Fair/  Regular ",
+                "value": 2
+            },
+            {
+                "name": " Good / Bien ",
+                "value": 3
+            },
+            {
+                "name": " Excellent/  Excelente ",
+                "value": 4
+            },
+            {
+                "name": "Don't Know / No se  ",
+                "value": 999
+            },
+            {
+                "name": " Refused / Niego contestar ",
+                "value": 777
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 =  Poor / Mal ; 2  = Fair/  Regular ; 3 =  Good / Bien ; 4 =  Excellent/  Excelente ; 999  = Don't Know / No se  ; 777 =  Refused / Niego contestar "
+        }
+    ]
+}

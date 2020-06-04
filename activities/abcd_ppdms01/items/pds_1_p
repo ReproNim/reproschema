@@ -1,0 +1,47 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "pds_1_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "pds_1_p",
+    "altLabel": "pubertdev_1_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Would you say that your child's growth in height: Con respecto a la estatura de su niño(a), ¿diría usted que...?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "has not yet begun to spurt Aún no ha empezado a crecer.",
+                "value": 1
+            },
+            {
+                "name": "has barely started Apenas ha empezado a crecer.",
+                "value": 2
+            },
+            {
+                "name": "is definitely underway Definitivamente está creciendo.",
+                "value": 3
+            },
+            {
+                "name": "seems complete Parece haber terminado de crecer.",
+                "value": 4
+            },
+            {
+                "name": "I don't know No sé",
+                "value": 999
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = has not yet begun to spurt Aún no ha empezado a crecer.; 2 = has barely started Apenas ha empezado a crecer.; 3 = is definitely underway Definitivamente está creciendo.; 4 = seems complete Parece haber terminado de crecer.; 999 = I don't know No sé"
+        }
+    ]
+}

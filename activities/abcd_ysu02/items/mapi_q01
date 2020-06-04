@@ -1,0 +1,47 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "mapi_q01",
+    "@type": "reproschema:Field",
+    "prefLabel": "mapi_q01",
+    "altLabel": "su_mapi_q01",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Different things happen to people while they are smoking MARIJUANA or as a result of their MARIJUANA use. Some of these things are listed below. Please indicate how many times each has happened to you during the last six months while you were smoking marijuana or as the result of your marijuana use. Not able to do your homework or study for a test.",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "0",
+                "value": 0
+            },
+            {
+                "name": "1-2",
+                "value": 1
+            },
+            {
+                "name": "3-5",
+                "value": 2
+            },
+            {
+                "name": "6-10",
+                "value": 3
+            },
+            {
+                "name": "10+",
+                "value": 4
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = 0; 1 = 1-2; 2 = 3-5; 3 = 6-10; 4 = 10+"
+        }
+    ]
+}

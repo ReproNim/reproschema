@@ -1,0 +1,46 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "su_tlfb_past_yr_prim_3_mj_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "su_tlfb_past_yr_prim_3_mj_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "In the past year, what was the primary way you inhaled or smoked marijuana?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "vaporizer (with flower",
+                "value": 1
+            },
+            {
+                "name": "bong",
+                "value": 2
+            },
+            {
+                "name": "hookah (with tobacco added)",
+                "value": 3
+            },
+            {
+                "name": "blunt with tobacco paper",
+                "value": 4
+            },
+            {
+                "name": "rolled joint or spliff / tlfb_6mo_skip_l___9   == '1'",
+                "value": 5
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = vaporizer (with flower; 2 = bong; 3 = hookah (with tobacco added); 4 = blunt with tobacco paper; 5 = rolled joint or spliff / tlfb_6mo_skip_l___9   == '1'"
+        }
+    ]
+}

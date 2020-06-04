@@ -1,0 +1,38 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "prosocial_q1_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "prosocial_q1_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "My child is… Considerate of other people's feelings. /Tiene consideración por los sentimientos de los demás.",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "name": "Not True/ Falso",
+                "value": 0
+            },
+            {
+                "name": "Somewhat True /Algo cierto",
+                "value": 1
+            },
+            {
+                "name": "Certainly True /Totalmente cierto//For each item, please mark the box for Not True, Somewhat True, or Certainly True. It would help us if you answered all items as best you can even if you are not absolutely certain. Please give your answers on the basis of  the child's behavior over the last six months or this school year",
+                "value": 2
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = Not True/ Falso; 1 = Somewhat True /Algo cierto; 2 = Certainly True /Totalmente cierto//For each item, please mark the box for Not True, Somewhat True, or Certainly True. It would help us if you answered all items as best you can even if you are not absolutely certain. Please give your answers on the basis of  the child's behavior over the last six months or this school year"
+        }
+    ]
+}

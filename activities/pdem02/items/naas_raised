@@ -1,0 +1,51 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "naas_raised",
+    "@type": "reproschema:Field",
+    "prefLabel": "naas_raised",
+    "altLabel": "naas_raised_2 native_amer_accult_raised_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Where were your child's Native American parents raised? ¿Dónde se crió el padre / la madre Americano(a) Nativo(a) del niño / la niña?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Reservation",
+                "value": 1
+            },
+            {
+                "name": "Rural area",
+                "value": 2
+            },
+            {
+                "name": "Urban area",
+                "value": 3
+            },
+            {
+                "name": "Urban or Rural area",
+                "value": 4
+            },
+            {
+                "name": "Urban or Rural area",
+                "value": 5
+            },
+            {
+                "name": "Don't Know No lo sÃ© // The following questions are about you or the child's family.",
+                "value": 999
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Reservation; 2 = Rural area; 3 = Urban area; 4 = Urban or Rural area; 5 = Urban or Rural area; 999 = Don't Know No lo sÃ© // The following questions are about you or the child's family."
+        }
+    ]
+}

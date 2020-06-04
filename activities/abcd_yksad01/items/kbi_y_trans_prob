@@ -1,0 +1,39 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "kbi_y_trans_prob",
+    "@type": "reproschema:Field",
+    "prefLabel": "kbi_y_trans_prob",
+    "altLabel": "ksads_back_trans_prob",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Has this caused any problems for you with your family or with kids at school?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Not at all",
+                "value": 1
+            },
+            {
+                "name": "Some",
+                "value": 2
+            },
+            {
+                "name": "A lot",
+                "value": 3
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Not at all; 2 = Some; 3 = A lot"
+        }
+    ]
+}

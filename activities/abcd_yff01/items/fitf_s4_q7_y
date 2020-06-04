@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "fitf_s4_q7_y",
+    "@type": "reproschema:Field",
+    "prefLabel": "fitf_s4_q7_y",
+    "altLabel": "fitbit_follow_up_s4_q7",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "How often did you have to remove the Fitbit?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "once per day",
+                "value": 1
+            },
+            {
+                "name": "twice per day",
+                "value": 2
+            },
+            {
+                "name": "3-4 times per day",
+                "value": 3
+            },
+            {
+                "name": "more than 4 times per day",
+                "value": 4
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = once per day; 2 = twice per day; 3 = 3-4 times per day; 4 = more than 4 times per day"
+        }
+    ]
+}

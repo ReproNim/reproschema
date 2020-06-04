@@ -1,0 +1,59 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "screentime_phone_scale",
+    "@type": "reproschema:Field",
+    "prefLabel": "screentime_phone_scale",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "On a scale of 1-10 (with 1=barely check it/can go days without it, and 10=check at least hourly when awake), how attached are you to your phone? ",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 9,
+        "choices": [
+            {
+                "value": 1
+            },
+            {
+                "value": 2
+            },
+            {
+                "value": 3
+            },
+            {
+                "value": 4
+            },
+            {
+                "value": 5
+            },
+            {
+                "value": 6
+            },
+            {
+                "value": 7
+            },
+            {
+                "value": 8
+            },
+            {
+                "value": 9
+            },
+            {
+                "value": 10
+            },
+            {
+                "value": 777
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1=1; 2=2; 3=3; 4=4; 5=5; 6=6; 7=7; 8=8; 9=9; 10=10; 777=Refuse to Answer"
+        }
+    ]
+}

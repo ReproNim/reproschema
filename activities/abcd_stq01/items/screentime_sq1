@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "screentime_sq1",
+    "@type": "reproschema:Field",
+    "prefLabel": "screentime_sq1",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Is there a TV set or an Internet connected electronic device (computer, iPad, phone) in your bedroom?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "value": 1
+            },
+            {
+                "value": 0
+            },
+            {
+                "value": 777
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1=Yes; 0=No; 777=Refuse to answer"
+        }
+    ]
+}

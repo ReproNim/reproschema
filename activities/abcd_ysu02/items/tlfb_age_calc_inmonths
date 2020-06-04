@@ -1,0 +1,23 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "tlfb_age_calc_inmonths",
+    "@type": "reproschema:Field",
+    "prefLabel": "tlfb_age_calc_inmonths",
+    "altLabel": "su_tlfb_age_calc_inmonths",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Age in months",
+    "ui": {
+        "inputType": "Float"
+    },
+    "responseOptions": {
+        "valueType": "Float"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "Calculation: ([tlfb_age] * 12)+ [tlfb_age_month]"
+        }
+    ]
+}

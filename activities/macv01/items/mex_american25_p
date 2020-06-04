@@ -1,0 +1,47 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "mex_american25_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "mex_american25_p",
+    "altLabel": "macvs_25_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Tell me how much you believe that . . .It is important to follow the Word of God. / Es importante seguir la palabra de Dios.",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "name": "Not at All /Nada",
+                "value": 1
+            },
+            {
+                "name": "A Little /Poquito",
+                "value": 2
+            },
+            {
+                "name": "Somewhat /Algo",
+                "value": 3
+            },
+            {
+                "name": "Very Much /Bastante",
+                "value": 4
+            },
+            {
+                "name": "Completely/ Completamente/ The next statements are about what people may think or believe. Remember, there are no right or wrong answers",
+                "value": 5
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Not at All /Nada; 2 = A Little /Poquito; 3 = Somewhat /Algo; 4 = Very Much /Bastante; 5 = Completely/ Completamente/ The next statements are about what people may think or believe. Remember, there are no right or wrong answers"
+        }
+    ]
+}

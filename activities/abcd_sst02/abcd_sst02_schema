@@ -1,0 +1,473 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+        "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/activities/abcd_sst02/abcd_sst02_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "abcd_sst02_schema",
+    "skos:prefLabel": "abcd_sst02",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "order": [
+            "tfmri_sst_all_beh_crgo_mrt",
+            "tfmri_sst_all_beh_crgo_nt",
+            "tfmri_sst_all_beh_crgo_rt",
+            "tfmri_sst_all_beh_crgo_stdrt",
+            "tfmri_sst_all_beh_crlg_mrt",
+            "tfmri_sst_all_beh_crlg_nt",
+            "tfmri_sst_all_beh_crlg_rt",
+            "tfmri_sst_all_beh_crlg_stdrt",
+            "tfmri_sst_all_beh_crs_nt",
+            "tfmri_sst_all_beh_crs_rt",
+            "tfmri_sst_all_beh_go_nt",
+            "tfmri_sst_all_beh_incrgo_mrt",
+            "tfmri_sst_all_beh_incrgo_nt",
+            "tfmri_sst_all_beh_incrgo_rt",
+            "tfmri_sst_all_beh_incrgo_stdrt",
+            "tfmri_sst_all_beh_incrlg_mrt",
+            "tfmri_sst_all_beh_incrlg_nt",
+            "tfmri_sst_all_beh_incrlg_rt",
+            "tfmri_sst_all_beh_incrlg_stdrt",
+            "tfmri_sst_all_beh_incrs_mrt",
+            "tfmri_sst_all_beh_incrs_nt",
+            "tfmri_sst_all_beh_incrs_rt",
+            "tfmri_sst_all_beh_incrs_stdrt",
+            "tfmri_sst_all_beh_nrgo_nt",
+            "tfmri_sst_all_beh_nrgo_rt",
+            "tfmri_sst_all_beh_s_nt",
+            "tfmri_sst_all_beh_ssds_nt",
+            "tfmri_sst_all_beh_ssds_rt",
+            "tfmri_sst_all_beh_tot_mssd",
+            "tfmri_sst_all_beh_total_meanrt",
+            "tfmri_sst_all_beh_total_nt",
+            "tfmri_sst_beh_performflag",
+            "tfmri_sst_beh_switchflag",
+            "tfmri_sst_beh_visitid",
+            "tfmri_sst_nbeh_nruns",
+            "tfmri_sst_r1_beh_crgo_mrt",
+            "tfmri_sst_r1_beh_crgo_nt",
+            "tfmri_sst_r1_beh_crgo_rt",
+            "tfmri_sst_r1_beh_crgo_stdrt",
+            "tfmri_sst_r1_beh_crlg_mrt",
+            "tfmri_sst_r1_beh_crlg_nt",
+            "tfmri_sst_r1_beh_crlg_rt",
+            "tfmri_sst_r1_beh_crlg_stdrt",
+            "tfmri_sst_r1_beh_crs_nt",
+            "tfmri_sst_r1_beh_crs_rt",
+            "tfmri_sst_r1_beh_go_nt",
+            "tfmri_sst_r1_beh_incrgo_mrt",
+            "tfmri_sst_r1_beh_incrgo_nt",
+            "tfmri_sst_r1_beh_incrgo_rt",
+            "tfmri_sst_r1_beh_incrgo_stdrt",
+            "tfmri_sst_r1_beh_incrlg_mrt",
+            "tfmri_sst_r1_beh_incrlg_nt",
+            "tfmri_sst_r1_beh_incrlg_rt",
+            "tfmri_sst_r1_beh_incrlg_stdrt",
+            "tfmri_sst_r1_beh_incrs_mrt",
+            "tfmri_sst_r1_beh_incrs_nt",
+            "tfmri_sst_r1_beh_incrs_rt",
+            "tfmri_sst_r1_beh_incrs_stdrt",
+            "tfmri_sst_r1_beh_nrgo_nt",
+            "tfmri_sst_r1_beh_nrgo_rt",
+            "tfmri_sst_r1_beh_s_nt",
+            "tfmri_sst_r1_beh_ssds_nt",
+            "tfmri_sst_r1_beh_ssds_rt",
+            "tfmri_sst_r2_beh_crgo_mrt",
+            "tfmri_sst_r2_beh_crgo_nt",
+            "tfmri_sst_r2_beh_crgo_rt",
+            "tfmri_sst_r2_beh_crgo_stdrt",
+            "tfmri_sst_r2_beh_crlg_mrt",
+            "tfmri_sst_r2_beh_crlg_nt",
+            "tfmri_sst_r2_beh_crlg_rt",
+            "tfmri_sst_r2_beh_crlg_stdrt",
+            "tfmri_sst_r2_beh_crs_nt",
+            "tfmri_sst_r2_beh_crs_rt",
+            "tfmri_sst_r2_beh_go_nt",
+            "tfmri_sst_r2_beh_incrgo_mrt",
+            "tfmri_sst_r2_beh_incrgo_nt",
+            "tfmri_sst_r2_beh_incrgo_rt",
+            "tfmri_sst_r2_beh_incrgo_stdrt",
+            "tfmri_sst_r2_beh_incrlg_mrt",
+            "tfmri_sst_r2_beh_incrlg_nt",
+            "tfmri_sst_r2_beh_incrlg_rt",
+            "tfmri_sst_r2_beh_incrlg_stdrt",
+            "tfmri_sst_r2_beh_incrs_mrt",
+            "tfmri_sst_r2_beh_incrs_nt",
+            "tfmri_sst_r2_beh_incrs_rt",
+            "tfmri_sst_r2_beh_incrs_stdrt",
+            "tfmri_sst_r2_beh_nrgo_nt",
+            "tfmri_sst_r2_beh_nrgo_rt",
+            "tfmri_sst_r2_beh_s_nt",
+            "tfmri_sst_r2_beh_ssds_nt",
+            "tfmri_sst_r2_beh_ssds_rt"
+        ],
+        "shuffle": false,
+        "addProperties": [
+            {
+                "variableName": "tfmri_sst_all_beh_crgo_mrt",
+                "isAbout": "tfmri_sst_all_beh_crgo_mrt"
+            },
+            {
+                "variableName": "tfmri_sst_all_beh_crgo_nt",
+                "isAbout": "tfmri_sst_all_beh_crgo_nt"
+            },
+            {
+                "variableName": "tfmri_sst_all_beh_crgo_rt",
+                "isAbout": "tfmri_sst_all_beh_crgo_rt"
+            },
+            {
+                "variableName": "tfmri_sst_all_beh_crgo_stdrt",
+                "isAbout": "tfmri_sst_all_beh_crgo_stdrt"
+            },
+            {
+                "variableName": "tfmri_sst_all_beh_crlg_mrt",
+                "isAbout": "tfmri_sst_all_beh_crlg_mrt"
+            },
+            {
+                "variableName": "tfmri_sst_all_beh_crlg_nt",
+                "isAbout": "tfmri_sst_all_beh_crlg_nt"
+            },
+            {
+                "variableName": "tfmri_sst_all_beh_crlg_rt",
+                "isAbout": "tfmri_sst_all_beh_crlg_rt"
+            },
+            {
+                "variableName": "tfmri_sst_all_beh_crlg_stdrt",
+                "isAbout": "tfmri_sst_all_beh_crlg_stdrt"
+            },
+            {
+                "variableName": "tfmri_sst_all_beh_crs_nt",
+                "isAbout": "tfmri_sst_all_beh_crs_nt"
+            },
+            {
+                "variableName": "tfmri_sst_all_beh_crs_rt",
+                "isAbout": "tfmri_sst_all_beh_crs_rt"
+            },
+            {
+                "variableName": "tfmri_sst_all_beh_go_nt",
+                "isAbout": "tfmri_sst_all_beh_go_nt"
+            },
+            {
+                "variableName": "tfmri_sst_all_beh_incrgo_mrt",
+                "isAbout": "tfmri_sst_all_beh_incrgo_mrt"
+            },
+            {
+                "variableName": "tfmri_sst_all_beh_incrgo_nt",
+                "isAbout": "tfmri_sst_all_beh_incrgo_nt"
+            },
+            {
+                "variableName": "tfmri_sst_all_beh_incrgo_rt",
+                "isAbout": "tfmri_sst_all_beh_incrgo_rt"
+            },
+            {
+                "variableName": "tfmri_sst_all_beh_incrgo_stdrt",
+                "isAbout": "tfmri_sst_all_beh_incrgo_stdrt"
+            },
+            {
+                "variableName": "tfmri_sst_all_beh_incrlg_mrt",
+                "isAbout": "tfmri_sst_all_beh_incrlg_mrt"
+            },
+            {
+                "variableName": "tfmri_sst_all_beh_incrlg_nt",
+                "isAbout": "tfmri_sst_all_beh_incrlg_nt"
+            },
+            {
+                "variableName": "tfmri_sst_all_beh_incrlg_rt",
+                "isAbout": "tfmri_sst_all_beh_incrlg_rt"
+            },
+            {
+                "variableName": "tfmri_sst_all_beh_incrlg_stdrt",
+                "isAbout": "tfmri_sst_all_beh_incrlg_stdrt"
+            },
+            {
+                "variableName": "tfmri_sst_all_beh_incrs_mrt",
+                "isAbout": "tfmri_sst_all_beh_incrs_mrt"
+            },
+            {
+                "variableName": "tfmri_sst_all_beh_incrs_nt",
+                "isAbout": "tfmri_sst_all_beh_incrs_nt"
+            },
+            {
+                "variableName": "tfmri_sst_all_beh_incrs_rt",
+                "isAbout": "tfmri_sst_all_beh_incrs_rt"
+            },
+            {
+                "variableName": "tfmri_sst_all_beh_incrs_stdrt",
+                "isAbout": "tfmri_sst_all_beh_incrs_stdrt"
+            },
+            {
+                "variableName": "tfmri_sst_all_beh_nrgo_nt",
+                "isAbout": "tfmri_sst_all_beh_nrgo_nt"
+            },
+            {
+                "variableName": "tfmri_sst_all_beh_nrgo_rt",
+                "isAbout": "tfmri_sst_all_beh_nrgo_rt"
+            },
+            {
+                "variableName": "tfmri_sst_all_beh_s_nt",
+                "isAbout": "tfmri_sst_all_beh_s_nt"
+            },
+            {
+                "variableName": "tfmri_sst_all_beh_ssds_nt",
+                "isAbout": "tfmri_sst_all_beh_ssds_nt"
+            },
+            {
+                "variableName": "tfmri_sst_all_beh_ssds_rt",
+                "isAbout": "tfmri_sst_all_beh_ssds_rt"
+            },
+            {
+                "variableName": "tfmri_sst_all_beh_tot_mssd",
+                "isAbout": "tfmri_sst_all_beh_tot_mssd"
+            },
+            {
+                "variableName": "tfmri_sst_all_beh_total_meanrt",
+                "isAbout": "tfmri_sst_all_beh_total_meanrt"
+            },
+            {
+                "variableName": "tfmri_sst_all_beh_total_nt",
+                "isAbout": "tfmri_sst_all_beh_total_nt"
+            },
+            {
+                "variableName": "tfmri_sst_beh_performflag",
+                "isAbout": "tfmri_sst_beh_performflag"
+            },
+            {
+                "variableName": "tfmri_sst_beh_switchflag",
+                "isAbout": "tfmri_sst_beh_switchflag"
+            },
+            {
+                "variableName": "tfmri_sst_beh_visitid",
+                "isAbout": "tfmri_sst_beh_visitid"
+            },
+            {
+                "variableName": "tfmri_sst_nbeh_nruns",
+                "isAbout": "tfmri_sst_nbeh_nruns"
+            },
+            {
+                "variableName": "tfmri_sst_r1_beh_crgo_mrt",
+                "isAbout": "tfmri_sst_r1_beh_crgo_mrt"
+            },
+            {
+                "variableName": "tfmri_sst_r1_beh_crgo_nt",
+                "isAbout": "tfmri_sst_r1_beh_crgo_nt"
+            },
+            {
+                "variableName": "tfmri_sst_r1_beh_crgo_rt",
+                "isAbout": "tfmri_sst_r1_beh_crgo_rt"
+            },
+            {
+                "variableName": "tfmri_sst_r1_beh_crgo_stdrt",
+                "isAbout": "tfmri_sst_r1_beh_crgo_stdrt"
+            },
+            {
+                "variableName": "tfmri_sst_r1_beh_crlg_mrt",
+                "isAbout": "tfmri_sst_r1_beh_crlg_mrt"
+            },
+            {
+                "variableName": "tfmri_sst_r1_beh_crlg_nt",
+                "isAbout": "tfmri_sst_r1_beh_crlg_nt"
+            },
+            {
+                "variableName": "tfmri_sst_r1_beh_crlg_rt",
+                "isAbout": "tfmri_sst_r1_beh_crlg_rt"
+            },
+            {
+                "variableName": "tfmri_sst_r1_beh_crlg_stdrt",
+                "isAbout": "tfmri_sst_r1_beh_crlg_stdrt"
+            },
+            {
+                "variableName": "tfmri_sst_r1_beh_crs_nt",
+                "isAbout": "tfmri_sst_r1_beh_crs_nt"
+            },
+            {
+                "variableName": "tfmri_sst_r1_beh_crs_rt",
+                "isAbout": "tfmri_sst_r1_beh_crs_rt"
+            },
+            {
+                "variableName": "tfmri_sst_r1_beh_go_nt",
+                "isAbout": "tfmri_sst_r1_beh_go_nt"
+            },
+            {
+                "variableName": "tfmri_sst_r1_beh_incrgo_mrt",
+                "isAbout": "tfmri_sst_r1_beh_incrgo_mrt"
+            },
+            {
+                "variableName": "tfmri_sst_r1_beh_incrgo_nt",
+                "isAbout": "tfmri_sst_r1_beh_incrgo_nt"
+            },
+            {
+                "variableName": "tfmri_sst_r1_beh_incrgo_rt",
+                "isAbout": "tfmri_sst_r1_beh_incrgo_rt"
+            },
+            {
+                "variableName": "tfmri_sst_r1_beh_incrgo_stdrt",
+                "isAbout": "tfmri_sst_r1_beh_incrgo_stdrt"
+            },
+            {
+                "variableName": "tfmri_sst_r1_beh_incrlg_mrt",
+                "isAbout": "tfmri_sst_r1_beh_incrlg_mrt"
+            },
+            {
+                "variableName": "tfmri_sst_r1_beh_incrlg_nt",
+                "isAbout": "tfmri_sst_r1_beh_incrlg_nt"
+            },
+            {
+                "variableName": "tfmri_sst_r1_beh_incrlg_rt",
+                "isAbout": "tfmri_sst_r1_beh_incrlg_rt"
+            },
+            {
+                "variableName": "tfmri_sst_r1_beh_incrlg_stdrt",
+                "isAbout": "tfmri_sst_r1_beh_incrlg_stdrt"
+            },
+            {
+                "variableName": "tfmri_sst_r1_beh_incrs_mrt",
+                "isAbout": "tfmri_sst_r1_beh_incrs_mrt"
+            },
+            {
+                "variableName": "tfmri_sst_r1_beh_incrs_nt",
+                "isAbout": "tfmri_sst_r1_beh_incrs_nt"
+            },
+            {
+                "variableName": "tfmri_sst_r1_beh_incrs_rt",
+                "isAbout": "tfmri_sst_r1_beh_incrs_rt"
+            },
+            {
+                "variableName": "tfmri_sst_r1_beh_incrs_stdrt",
+                "isAbout": "tfmri_sst_r1_beh_incrs_stdrt"
+            },
+            {
+                "variableName": "tfmri_sst_r1_beh_nrgo_nt",
+                "isAbout": "tfmri_sst_r1_beh_nrgo_nt"
+            },
+            {
+                "variableName": "tfmri_sst_r1_beh_nrgo_rt",
+                "isAbout": "tfmri_sst_r1_beh_nrgo_rt"
+            },
+            {
+                "variableName": "tfmri_sst_r1_beh_s_nt",
+                "isAbout": "tfmri_sst_r1_beh_s_nt"
+            },
+            {
+                "variableName": "tfmri_sst_r1_beh_ssds_nt",
+                "isAbout": "tfmri_sst_r1_beh_ssds_nt"
+            },
+            {
+                "variableName": "tfmri_sst_r1_beh_ssds_rt",
+                "isAbout": "tfmri_sst_r1_beh_ssds_rt"
+            },
+            {
+                "variableName": "tfmri_sst_r2_beh_crgo_mrt",
+                "isAbout": "tfmri_sst_r2_beh_crgo_mrt"
+            },
+            {
+                "variableName": "tfmri_sst_r2_beh_crgo_nt",
+                "isAbout": "tfmri_sst_r2_beh_crgo_nt"
+            },
+            {
+                "variableName": "tfmri_sst_r2_beh_crgo_rt",
+                "isAbout": "tfmri_sst_r2_beh_crgo_rt"
+            },
+            {
+                "variableName": "tfmri_sst_r2_beh_crgo_stdrt",
+                "isAbout": "tfmri_sst_r2_beh_crgo_stdrt"
+            },
+            {
+                "variableName": "tfmri_sst_r2_beh_crlg_mrt",
+                "isAbout": "tfmri_sst_r2_beh_crlg_mrt"
+            },
+            {
+                "variableName": "tfmri_sst_r2_beh_crlg_nt",
+                "isAbout": "tfmri_sst_r2_beh_crlg_nt"
+            },
+            {
+                "variableName": "tfmri_sst_r2_beh_crlg_rt",
+                "isAbout": "tfmri_sst_r2_beh_crlg_rt"
+            },
+            {
+                "variableName": "tfmri_sst_r2_beh_crlg_stdrt",
+                "isAbout": "tfmri_sst_r2_beh_crlg_stdrt"
+            },
+            {
+                "variableName": "tfmri_sst_r2_beh_crs_nt",
+                "isAbout": "tfmri_sst_r2_beh_crs_nt"
+            },
+            {
+                "variableName": "tfmri_sst_r2_beh_crs_rt",
+                "isAbout": "tfmri_sst_r2_beh_crs_rt"
+            },
+            {
+                "variableName": "tfmri_sst_r2_beh_go_nt",
+                "isAbout": "tfmri_sst_r2_beh_go_nt"
+            },
+            {
+                "variableName": "tfmri_sst_r2_beh_incrgo_mrt",
+                "isAbout": "tfmri_sst_r2_beh_incrgo_mrt"
+            },
+            {
+                "variableName": "tfmri_sst_r2_beh_incrgo_nt",
+                "isAbout": "tfmri_sst_r2_beh_incrgo_nt"
+            },
+            {
+                "variableName": "tfmri_sst_r2_beh_incrgo_rt",
+                "isAbout": "tfmri_sst_r2_beh_incrgo_rt"
+            },
+            {
+                "variableName": "tfmri_sst_r2_beh_incrgo_stdrt",
+                "isAbout": "tfmri_sst_r2_beh_incrgo_stdrt"
+            },
+            {
+                "variableName": "tfmri_sst_r2_beh_incrlg_mrt",
+                "isAbout": "tfmri_sst_r2_beh_incrlg_mrt"
+            },
+            {
+                "variableName": "tfmri_sst_r2_beh_incrlg_nt",
+                "isAbout": "tfmri_sst_r2_beh_incrlg_nt"
+            },
+            {
+                "variableName": "tfmri_sst_r2_beh_incrlg_rt",
+                "isAbout": "tfmri_sst_r2_beh_incrlg_rt"
+            },
+            {
+                "variableName": "tfmri_sst_r2_beh_incrlg_stdrt",
+                "isAbout": "tfmri_sst_r2_beh_incrlg_stdrt"
+            },
+            {
+                "variableName": "tfmri_sst_r2_beh_incrs_mrt",
+                "isAbout": "tfmri_sst_r2_beh_incrs_mrt"
+            },
+            {
+                "variableName": "tfmri_sst_r2_beh_incrs_nt",
+                "isAbout": "tfmri_sst_r2_beh_incrs_nt"
+            },
+            {
+                "variableName": "tfmri_sst_r2_beh_incrs_rt",
+                "isAbout": "tfmri_sst_r2_beh_incrs_rt"
+            },
+            {
+                "variableName": "tfmri_sst_r2_beh_incrs_stdrt",
+                "isAbout": "tfmri_sst_r2_beh_incrs_stdrt"
+            },
+            {
+                "variableName": "tfmri_sst_r2_beh_nrgo_nt",
+                "isAbout": "tfmri_sst_r2_beh_nrgo_nt"
+            },
+            {
+                "variableName": "tfmri_sst_r2_beh_nrgo_rt",
+                "isAbout": "tfmri_sst_r2_beh_nrgo_rt"
+            },
+            {
+                "variableName": "tfmri_sst_r2_beh_s_nt",
+                "isAbout": "tfmri_sst_r2_beh_s_nt"
+            },
+            {
+                "variableName": "tfmri_sst_r2_beh_ssds_nt",
+                "isAbout": "tfmri_sst_r2_beh_ssds_nt"
+            },
+            {
+                "variableName": "tfmri_sst_r2_beh_ssds_rt",
+                "isAbout": "tfmri_sst_r2_beh_ssds_rt"
+            }
+        ]
+    }
+}

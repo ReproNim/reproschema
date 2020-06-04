@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "ra_scan_cl_trial_ord_nback",
+    "@type": "reproschema:Field",
+    "prefLabel": "ra_scan_cl_trial_ord_nback",
+    "altLabel": "scan_check_trial_ord_nback",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "fMRI trial order N-BACK used instead",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "1",
+                "value": 1
+            },
+            {
+                "name": "2",
+                "value": 2
+            },
+            {
+                "name": "3",
+                "value": 3
+            },
+            {
+                "name": "4",
+                "value": 4
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = 1; 2 = 2; 3 = 3; 4 = 4"
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "gen_child_behav_3",
+    "@type": "reproschema:Field",
+    "prefLabel": "gen_child_behav_3",
+    "altLabel": "pgbi_3_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Has your child's mood or energy shifted rapidly back and forth from happy to sad or high to low? ¿El estado de ánimo o la energía de su niño(a) ha tenido cambios abruptos de felicidad a tristeza o de euforia a decaimiento y vice versa?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "Never - Hardly ever Nunca o casi nunca",
+                "value": 0
+            },
+            {
+                "name": "Sometimes A veces",
+                "value": 1
+            },
+            {
+                "name": "Often Con frecuencia",
+                "value": 2
+            },
+            {
+                "name": "Very often - almost constantly Con mucha frecuencia - casi constantemente",
+                "value": 3
+            },
+            {
+                "value": null
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = Never - Hardly ever Nunca o casi nunca; 1 = Sometimes A veces; 2 = Often Con frecuencia; 3 = Very often - almost constantly Con mucha frecuencia - casi constantemente; Keep the following points in mind: Frequency: you may have noticed a behavior as far back as childhood or early teens, or you may have noticed it more recently. In either case, estimate how frequently the behavior has occurred over the past year. For example: if you noticed a behavior when your child was 5, and you have noticed it over the past year, mark your answer \"often\" or \"very often - almost constantly\". However, if your child has experienced a behavior during only one isolated period in his/her life, but not outside that period, mark your answer \"never - hardly ever\" or \"sometimes\". Duration: many questions require that a behavior occur for an approximate duration of time (for example, \"several days or more\"). The duration given is a minimum duration. If your child usually experiences a behavior for shorter durations, mark the question \"never - hardly ever\" or \"sometimes\". Changeability: what matters is not whether your child can get rid of certain behaviors if he/she has them, but whether these behaviors have occurred at all. So even if your child can get rid of these behaviors, you should mark your answer according to how frequently he/she experiences them. Your job, then, is to rate how frequently your child has experienced a behavior, over the past year, for the duration described in the question. Please read each question carefully, and select your answer next to each question."
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "devhx_10h3_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "devhx_10h3_p",
+    "altLabel": "devhx_10h_p devhx_10h_urinary_infections_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "During the pregnancy with this child, did you/biological mother have any of the following conditions? Urinary tract infections? /¿Infecciones de vías urinarias?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 0,
+        "choices": [
+            {
+                "name": "Yes /Sí",
+                "value": 1
+            },
+            {
+                "name": "No /No",
+                "value": 0
+            },
+            {
+                "name": "Don't know/ No lo sé",
+                "value": 999
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes /Sí; 0 = No /No; 999 = Don't know/ No lo sé"
+        }
+    ]
+}

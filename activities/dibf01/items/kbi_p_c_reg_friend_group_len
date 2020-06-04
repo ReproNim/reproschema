@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "kbi_p_c_reg_friend_group_len",
+    "@type": "reproschema:Field",
+    "prefLabel": "kbi_p_c_reg_friend_group_len",
+    "altLabel": "ksads_back_c_reg_friend_group_len_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "How long has your child hung out with them?/  ¿Hace cuánto tiempo que su niño(a) comparte con ellos?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "name": "Less than a year /Menos de un año",
+                "value": 1
+            },
+            {
+                "name": "1-2 years/ De 1 a 2 años",
+                "value": 2
+            },
+            {
+                "name": "More than 3 years /Más de 3 años",
+                "value": 3
+            },
+            {
+                "name": "Not sure /No estoy seguro(a)",
+                "value": 4
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Less than a year /Menos de un año; 2 = 1-2 years/ De 1 a 2 años; 3 = More than 3 years /Más de 3 años; 4 = Not sure /No estoy seguro(a)"
+        }
+    ]
+}

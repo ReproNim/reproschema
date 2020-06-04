@@ -1,0 +1,38 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "demo_med_insur_e_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "demo_med_insur_e_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "e. TRICARE or other military health caree. TRICARE u otra asistencia m?dica militar",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "No No",
+                "value": 0
+            },
+            {
+                "name": "Yes Si?",
+                "value": 1
+            },
+            {
+                "name": "Refuse to answer Niego contestar",
+                "value": 777
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = No No; 1 = Yes Si?;  777 = Refuse to answer Niego contestar"
+        }
+    ]
+}

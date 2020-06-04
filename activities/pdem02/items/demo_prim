@@ -1,0 +1,47 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "demo_prim",
+    "@type": "reproschema:Field",
+    "prefLabel": "demo_prim",
+    "altLabel": "demo_prim_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "You are the: Usted es:",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Childs Biological Mother La madre biológica del niño / de la niña",
+                "value": 1
+            },
+            {
+                "name": "Childs Biological Father El padre biológico del niño / de la niña",
+                "value": 2
+            },
+            {
+                "name": "Adoptive Parent Padre o madre adoptivo(a)",
+                "value": 3
+            },
+            {
+                "name": "Childs Custodial Parent El padre o la madre que tiene la custodia del niño / de la niña",
+                "value": 4
+            },
+            {
+                "name": "Other Otro",
+                "value": 5
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Childs Biological Mother La madre biológica del niño / de la niña; 2 = Childs Biological Father El padre biológico del niño / de la niña; 3 = Adoptive Parent Padre o madre adoptivo(a); 4 = Childs Custodial Parent El padre o la madre que tiene la custodia del niño / de la niña; 5 = Other Otro"
+        }
+    ]
+}

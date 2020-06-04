@@ -1,0 +1,22 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "su_caff_ss_sum_calc",
+    "@type": "reproschema:Field",
+    "prefLabel": "su_caff_ss_sum_calc",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Sum of caff_intake_1, caff_intake_3, caff_intake_4, caff_intake_6 caff_intake_9 with \"0\" replacing blank when tlfb_caff = \"0\".",
+    "ui": {
+        "inputType": "Float"
+    },
+    "responseOptions": {
+        "valueType": "Float"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "When heard of caffeine was not endorsed, values for the sum of the five caffeine followup questions will be missing. Here, missing values for  the  caffeine summary scores have been replaced with \"0\"."
+        }
+    ]
+}

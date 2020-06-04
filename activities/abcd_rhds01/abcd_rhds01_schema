@@ -1,0 +1,1363 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+        "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/activities/abcd_rhds01/abcd_rhds01_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "abcd_rhds01_schema",
+    "skos:prefLabel": "abcd_rhds01",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "order": [
+            "reshist_addr1_adi_b138",
+            "reshist_addr1_adi_crowd",
+            "reshist_addr1_adi_edu_h",
+            "reshist_addr1_adi_edu_l",
+            "reshist_addr1_adi_home_o",
+            "reshist_addr1_adi_home_v",
+            "reshist_addr1_adi_in_dis",
+            "reshist_addr1_adi_income",
+            "reshist_addr1_adi_mortg",
+            "reshist_addr1_adi_ncar",
+            "reshist_addr1_adi_nplumb",
+            "reshist_addr1_adi_ntel",
+            "reshist_addr1_adi_perc",
+            "reshist_addr1_adi_pov",
+            "reshist_addr1_adi_rent",
+            "reshist_addr1_adi_sp",
+            "reshist_addr1_adi_unemp",
+            "reshist_addr1_adi_work_c",
+            "reshist_addr1_adi_wsum",
+            "reshist_addr1_d1a",
+            "reshist_addr1_drgposs",
+            "reshist_addr1_drgsale",
+            "reshist_addr1_drugtot",
+            "reshist_addr1_dui",
+            "reshist_addr1_duration",
+            "reshist_addr1_elevation",
+            "reshist_addr1_grndtot",
+            "reshist_addr1_id",
+            "reshist_addr1_leadrisk",
+            "reshist_addr1_leadrisk_housing",
+            "reshist_addr1_leadrisk_poverty",
+            "reshist_addr1_mjsale",
+            "reshist_addr1_move_in_year",
+            "reshist_addr1_move_out_year",
+            "reshist_addr1_no2",
+            "reshist_addr1_no2_2016_aavg",
+            "reshist_addr1_o3_2016_annavg",
+            "reshist_addr1_p1tot",
+            "reshist_addr1_p1vlnt",
+            "reshist_addr1_percentile",
+            "reshist_addr1_pm25",
+            "reshist_addr1_pm25_2016_aavg",
+            "reshist_addr1_pm252016aa",
+            "reshist_addr1_popdensity",
+            "reshist_addr1_proxrd",
+            "reshist_addr1_status",
+            "reshist_addr1_traffic_count",
+            "reshist_addr1_urban_area",
+            "reshist_addr1_valid",
+            "reshist_addr1_walkindex",
+            "reshist_addr1_years",
+            "reshist_addr2_adi_b138",
+            "reshist_addr2_adi_crowd",
+            "reshist_addr2_adi_edu_h",
+            "reshist_addr2_adi_edu_l",
+            "reshist_addr2_adi_home_o",
+            "reshist_addr2_adi_home_v",
+            "reshist_addr2_adi_in_dis",
+            "reshist_addr2_adi_income",
+            "reshist_addr2_adi_mortg",
+            "reshist_addr2_adi_ncar",
+            "reshist_addr2_adi_nplumb",
+            "reshist_addr2_adi_ntel",
+            "reshist_addr2_adi_perc",
+            "reshist_addr2_adi_pov",
+            "reshist_addr2_adi_rent",
+            "reshist_addr2_adi_sp",
+            "reshist_addr2_adi_unemp",
+            "reshist_addr2_adi_work_c",
+            "reshist_addr2_adi_wsum",
+            "reshist_addr2_d1a",
+            "reshist_addr2_drgposs",
+            "reshist_addr2_drgsale",
+            "reshist_addr2_drugtot",
+            "reshist_addr2_dui",
+            "reshist_addr2_duration",
+            "reshist_addr2_elevation",
+            "reshist_addr2_grndtot",
+            "reshist_addr2_id",
+            "reshist_addr2_leadrisk",
+            "reshist_addr2_leadrisk_housing",
+            "reshist_addr2_leadrisk_poverty",
+            "reshist_addr2_mjsale",
+            "reshist_addr2_move_in_year",
+            "reshist_addr2_move_out_year",
+            "reshist_addr2_no2",
+            "reshist_addr2_no2_2016_aavg",
+            "reshist_addr2_o3_2016_annavg",
+            "reshist_addr2_p1tot",
+            "reshist_addr2_p1vlnt",
+            "reshist_addr2_percentile",
+            "reshist_addr2_pm25",
+            "reshist_addr2_pm25_2016_aavg",
+            "reshist_addr2_pm252016aa",
+            "reshist_addr2_popdensity",
+            "reshist_addr2_proxrd",
+            "reshist_addr2_status",
+            "reshist_addr2_traffic_count",
+            "reshist_addr2_urban_area",
+            "reshist_addr2_valid",
+            "reshist_addr2_walkindex",
+            "reshist_addr2_years",
+            "reshist_addr3_adi_b138",
+            "reshist_addr3_adi_crowd",
+            "reshist_addr3_adi_edu_h",
+            "reshist_addr3_adi_edu_l",
+            "reshist_addr3_adi_home_o",
+            "reshist_addr3_adi_home_v",
+            "reshist_addr3_adi_in_dis",
+            "reshist_addr3_adi_income",
+            "reshist_addr3_adi_mortg",
+            "reshist_addr3_adi_ncar",
+            "reshist_addr3_adi_nplumb",
+            "reshist_addr3_adi_ntel",
+            "reshist_addr3_adi_perc",
+            "reshist_addr3_adi_pov",
+            "reshist_addr3_adi_rent",
+            "reshist_addr3_adi_sp",
+            "reshist_addr3_adi_unemp",
+            "reshist_addr3_adi_work_c",
+            "reshist_addr3_adi_wsum",
+            "reshist_addr3_d1a",
+            "reshist_addr3_drgposs",
+            "reshist_addr3_drgsale",
+            "reshist_addr3_drugtot",
+            "reshist_addr3_dui",
+            "reshist_addr3_duration",
+            "reshist_addr3_elevation",
+            "reshist_addr3_grndtot",
+            "reshist_addr3_id",
+            "reshist_addr3_leadrisk",
+            "reshist_addr3_leadrisk_housing",
+            "reshist_addr3_leadrisk_poverty",
+            "reshist_addr3_mjsale",
+            "reshist_addr3_move_in_year",
+            "reshist_addr3_move_out_year",
+            "reshist_addr3_no2",
+            "reshist_addr3_no2_2016_aavg",
+            "reshist_addr3_o3_2016_annavg",
+            "reshist_addr3_p1tot",
+            "reshist_addr3_p1vlnt",
+            "reshist_addr3_percentile",
+            "reshist_addr3_pm25",
+            "reshist_addr3_pm25_2016_aavg",
+            "reshist_addr3_pm252016aa",
+            "reshist_addr3_popdensity",
+            "reshist_addr3_proxrd",
+            "reshist_addr3_status",
+            "reshist_addr3_traffic_count",
+            "reshist_addr3_urban_area",
+            "reshist_addr3_valid",
+            "reshist_addr3_walkindex",
+            "reshist_addr3_years",
+            "reshist_addr4_adi_b138",
+            "reshist_addr4_adi_crowd",
+            "reshist_addr4_adi_edu_h",
+            "reshist_addr4_adi_edu_l",
+            "reshist_addr4_adi_home_o",
+            "reshist_addr4_adi_home_v",
+            "reshist_addr4_adi_in_dis",
+            "reshist_addr4_adi_income",
+            "reshist_addr4_adi_mortg",
+            "reshist_addr4_adi_ncar",
+            "reshist_addr4_adi_nplumb",
+            "reshist_addr4_adi_ntel",
+            "reshist_addr4_adi_perc",
+            "reshist_addr4_adi_pov",
+            "reshist_addr4_adi_rent",
+            "reshist_addr4_adi_sp",
+            "reshist_addr4_adi_unemp",
+            "reshist_addr4_adi_work_c",
+            "reshist_addr4_adi_wsum",
+            "reshist_addr4_d1a",
+            "reshist_addr4_drgposs",
+            "reshist_addr4_drgsale",
+            "reshist_addr4_drugtot",
+            "reshist_addr4_dui",
+            "reshist_addr4_elevation",
+            "reshist_addr4_grndtot",
+            "reshist_addr4_mjsale",
+            "reshist_addr4_no2",
+            "reshist_addr4_p1tot",
+            "reshist_addr4_p1vlnt",
+            "reshist_addr4_pm25",
+            "reshist_addr4_popdensity",
+            "reshist_addr4_proxrd",
+            "reshist_addr4_status",
+            "reshist_addr4_valid",
+            "reshist_addr4_walkindex",
+            "reshist_addr4_years",
+            "reshist_addr5_adi_b138",
+            "reshist_addr5_adi_crowd",
+            "reshist_addr5_adi_edu_h",
+            "reshist_addr5_adi_edu_l",
+            "reshist_addr5_adi_home_o",
+            "reshist_addr5_adi_home_v",
+            "reshist_addr5_adi_in_dis",
+            "reshist_addr5_adi_income",
+            "reshist_addr5_adi_mortg",
+            "reshist_addr5_adi_ncar",
+            "reshist_addr5_adi_nplumb",
+            "reshist_addr5_adi_ntel",
+            "reshist_addr5_adi_perc",
+            "reshist_addr5_adi_pov",
+            "reshist_addr5_adi_rent",
+            "reshist_addr5_adi_sp",
+            "reshist_addr5_adi_unemp",
+            "reshist_addr5_adi_work_c",
+            "reshist_addr5_adi_wsum",
+            "reshist_addr5_d1a",
+            "reshist_addr5_drgposs",
+            "reshist_addr5_drgsale",
+            "reshist_addr5_drugtot",
+            "reshist_addr5_dui",
+            "reshist_addr5_elevation",
+            "reshist_addr5_grndtot",
+            "reshist_addr5_mjsale",
+            "reshist_addr5_no2",
+            "reshist_addr5_p1tot",
+            "reshist_addr5_p1vlnt",
+            "reshist_addr5_pm25",
+            "reshist_addr5_popdensity",
+            "reshist_addr5_proxrd",
+            "reshist_addr5_status",
+            "reshist_addr5_valid",
+            "reshist_addr5_walkindex",
+            "reshist_addr5_years",
+            "reshist_addr6_adi_b138",
+            "reshist_addr6_adi_crowd",
+            "reshist_addr6_adi_edu_h",
+            "reshist_addr6_adi_edu_l",
+            "reshist_addr6_adi_home_o",
+            "reshist_addr6_adi_home_v",
+            "reshist_addr6_adi_in_dis",
+            "reshist_addr6_adi_income",
+            "reshist_addr6_adi_mortg",
+            "reshist_addr6_adi_ncar",
+            "reshist_addr6_adi_nplumb",
+            "reshist_addr6_adi_ntel",
+            "reshist_addr6_adi_perc",
+            "reshist_addr6_adi_pov",
+            "reshist_addr6_adi_rent",
+            "reshist_addr6_adi_sp",
+            "reshist_addr6_adi_unemp",
+            "reshist_addr6_adi_work_c",
+            "reshist_addr6_adi_wsum",
+            "reshist_addr6_d1a",
+            "reshist_addr6_drgposs",
+            "reshist_addr6_drgsale",
+            "reshist_addr6_drugtot",
+            "reshist_addr6_dui",
+            "reshist_addr6_elevation",
+            "reshist_addr6_grndtot",
+            "reshist_addr6_mjsale",
+            "reshist_addr6_no2",
+            "reshist_addr6_p1tot",
+            "reshist_addr6_p1vlnt",
+            "reshist_addr6_pm25",
+            "reshist_addr6_popdensity",
+            "reshist_addr6_proxrd",
+            "reshist_addr6_status",
+            "reshist_addr6_valid",
+            "reshist_addr6_walkindex",
+            "reshist_addr6_years",
+            "reshist_state_immigrant_factor",
+            "reshist_state_mj_laws",
+            "reshist_state_racism_factor",
+            "reshist_state_sexism_factor",
+            "reshist_state_so_factor"
+        ],
+        "shuffle": false,
+        "addProperties": [
+            {
+                "variableName": "reshist_addr1_adi_b138",
+                "isAbout": "reshist_addr1_adi_b138"
+            },
+            {
+                "variableName": "reshist_addr1_adi_crowd",
+                "isAbout": "reshist_addr1_adi_crowd"
+            },
+            {
+                "variableName": "reshist_addr1_adi_edu_h",
+                "isAbout": "reshist_addr1_adi_edu_h"
+            },
+            {
+                "variableName": "reshist_addr1_adi_edu_l",
+                "isAbout": "reshist_addr1_adi_edu_l"
+            },
+            {
+                "variableName": "reshist_addr1_adi_home_o",
+                "isAbout": "reshist_addr1_adi_home_o"
+            },
+            {
+                "variableName": "reshist_addr1_adi_home_v",
+                "isAbout": "reshist_addr1_adi_home_v"
+            },
+            {
+                "variableName": "reshist_addr1_adi_in_dis",
+                "isAbout": "reshist_addr1_adi_in_dis"
+            },
+            {
+                "variableName": "reshist_addr1_adi_income",
+                "isAbout": "reshist_addr1_adi_income"
+            },
+            {
+                "variableName": "reshist_addr1_adi_mortg",
+                "isAbout": "reshist_addr1_adi_mortg"
+            },
+            {
+                "variableName": "reshist_addr1_adi_ncar",
+                "isAbout": "reshist_addr1_adi_ncar"
+            },
+            {
+                "variableName": "reshist_addr1_adi_nplumb",
+                "isAbout": "reshist_addr1_adi_nplumb"
+            },
+            {
+                "variableName": "reshist_addr1_adi_ntel",
+                "isAbout": "reshist_addr1_adi_ntel"
+            },
+            {
+                "variableName": "reshist_addr1_adi_perc",
+                "isAbout": "reshist_addr1_adi_perc"
+            },
+            {
+                "variableName": "reshist_addr1_adi_pov",
+                "isAbout": "reshist_addr1_adi_pov"
+            },
+            {
+                "variableName": "reshist_addr1_adi_rent",
+                "isAbout": "reshist_addr1_adi_rent"
+            },
+            {
+                "variableName": "reshist_addr1_adi_sp",
+                "isAbout": "reshist_addr1_adi_sp"
+            },
+            {
+                "variableName": "reshist_addr1_adi_unemp",
+                "isAbout": "reshist_addr1_adi_unemp"
+            },
+            {
+                "variableName": "reshist_addr1_adi_work_c",
+                "isAbout": "reshist_addr1_adi_work_c"
+            },
+            {
+                "variableName": "reshist_addr1_adi_wsum",
+                "isAbout": "reshist_addr1_adi_wsum"
+            },
+            {
+                "variableName": "reshist_addr1_d1a",
+                "isAbout": "reshist_addr1_d1a"
+            },
+            {
+                "variableName": "reshist_addr1_drgposs",
+                "isAbout": "reshist_addr1_drgposs"
+            },
+            {
+                "variableName": "reshist_addr1_drgsale",
+                "isAbout": "reshist_addr1_drgsale"
+            },
+            {
+                "variableName": "reshist_addr1_drugtot",
+                "isAbout": "reshist_addr1_drugtot"
+            },
+            {
+                "variableName": "reshist_addr1_dui",
+                "isAbout": "reshist_addr1_dui"
+            },
+            {
+                "variableName": "reshist_addr1_duration",
+                "isAbout": "reshist_addr1_duration"
+            },
+            {
+                "variableName": "reshist_addr1_elevation",
+                "isAbout": "reshist_addr1_elevation"
+            },
+            {
+                "variableName": "reshist_addr1_grndtot",
+                "isAbout": "reshist_addr1_grndtot"
+            },
+            {
+                "variableName": "reshist_addr1_id",
+                "isAbout": "reshist_addr1_id"
+            },
+            {
+                "variableName": "reshist_addr1_leadrisk",
+                "isAbout": "reshist_addr1_leadrisk"
+            },
+            {
+                "variableName": "reshist_addr1_leadrisk_housing",
+                "isAbout": "reshist_addr1_leadrisk_housing"
+            },
+            {
+                "variableName": "reshist_addr1_leadrisk_poverty",
+                "isAbout": "reshist_addr1_leadrisk_poverty"
+            },
+            {
+                "variableName": "reshist_addr1_mjsale",
+                "isAbout": "reshist_addr1_mjsale"
+            },
+            {
+                "variableName": "reshist_addr1_move_in_year",
+                "isAbout": "reshist_addr1_move_in_year"
+            },
+            {
+                "variableName": "reshist_addr1_move_out_year",
+                "isAbout": "reshist_addr1_move_out_year"
+            },
+            {
+                "variableName": "reshist_addr1_no2",
+                "isAbout": "reshist_addr1_no2"
+            },
+            {
+                "variableName": "reshist_addr1_no2_2016_aavg",
+                "isAbout": "reshist_addr1_no2_2016_aavg"
+            },
+            {
+                "variableName": "reshist_addr1_o3_2016_annavg",
+                "isAbout": "reshist_addr1_o3_2016_annavg"
+            },
+            {
+                "variableName": "reshist_addr1_p1tot",
+                "isAbout": "reshist_addr1_p1tot"
+            },
+            {
+                "variableName": "reshist_addr1_p1vlnt",
+                "isAbout": "reshist_addr1_p1vlnt"
+            },
+            {
+                "variableName": "reshist_addr1_percentile",
+                "isAbout": "reshist_addr1_percentile"
+            },
+            {
+                "variableName": "reshist_addr1_pm25",
+                "isAbout": "reshist_addr1_pm25"
+            },
+            {
+                "variableName": "reshist_addr1_pm25_2016_aavg",
+                "isAbout": "reshist_addr1_pm25_2016_aavg"
+            },
+            {
+                "variableName": "reshist_addr1_pm252016aa",
+                "isAbout": "reshist_addr1_pm252016aa"
+            },
+            {
+                "variableName": "reshist_addr1_popdensity",
+                "isAbout": "reshist_addr1_popdensity"
+            },
+            {
+                "variableName": "reshist_addr1_proxrd",
+                "isAbout": "reshist_addr1_proxrd"
+            },
+            {
+                "variableName": "reshist_addr1_status",
+                "isAbout": "reshist_addr1_status"
+            },
+            {
+                "variableName": "reshist_addr1_traffic_count",
+                "isAbout": "reshist_addr1_traffic_count"
+            },
+            {
+                "variableName": "reshist_addr1_urban_area",
+                "isAbout": "reshist_addr1_urban_area"
+            },
+            {
+                "variableName": "reshist_addr1_valid",
+                "isAbout": "reshist_addr1_valid"
+            },
+            {
+                "variableName": "reshist_addr1_walkindex",
+                "isAbout": "reshist_addr1_walkindex"
+            },
+            {
+                "variableName": "reshist_addr1_years",
+                "isAbout": "reshist_addr1_years"
+            },
+            {
+                "variableName": "reshist_addr2_adi_b138",
+                "isAbout": "reshist_addr2_adi_b138"
+            },
+            {
+                "variableName": "reshist_addr2_adi_crowd",
+                "isAbout": "reshist_addr2_adi_crowd"
+            },
+            {
+                "variableName": "reshist_addr2_adi_edu_h",
+                "isAbout": "reshist_addr2_adi_edu_h"
+            },
+            {
+                "variableName": "reshist_addr2_adi_edu_l",
+                "isAbout": "reshist_addr2_adi_edu_l"
+            },
+            {
+                "variableName": "reshist_addr2_adi_home_o",
+                "isAbout": "reshist_addr2_adi_home_o"
+            },
+            {
+                "variableName": "reshist_addr2_adi_home_v",
+                "isAbout": "reshist_addr2_adi_home_v"
+            },
+            {
+                "variableName": "reshist_addr2_adi_in_dis",
+                "isAbout": "reshist_addr2_adi_in_dis"
+            },
+            {
+                "variableName": "reshist_addr2_adi_income",
+                "isAbout": "reshist_addr2_adi_income"
+            },
+            {
+                "variableName": "reshist_addr2_adi_mortg",
+                "isAbout": "reshist_addr2_adi_mortg"
+            },
+            {
+                "variableName": "reshist_addr2_adi_ncar",
+                "isAbout": "reshist_addr2_adi_ncar"
+            },
+            {
+                "variableName": "reshist_addr2_adi_nplumb",
+                "isAbout": "reshist_addr2_adi_nplumb"
+            },
+            {
+                "variableName": "reshist_addr2_adi_ntel",
+                "isAbout": "reshist_addr2_adi_ntel"
+            },
+            {
+                "variableName": "reshist_addr2_adi_perc",
+                "isAbout": "reshist_addr2_adi_perc"
+            },
+            {
+                "variableName": "reshist_addr2_adi_pov",
+                "isAbout": "reshist_addr2_adi_pov"
+            },
+            {
+                "variableName": "reshist_addr2_adi_rent",
+                "isAbout": "reshist_addr2_adi_rent"
+            },
+            {
+                "variableName": "reshist_addr2_adi_sp",
+                "isAbout": "reshist_addr2_adi_sp"
+            },
+            {
+                "variableName": "reshist_addr2_adi_unemp",
+                "isAbout": "reshist_addr2_adi_unemp"
+            },
+            {
+                "variableName": "reshist_addr2_adi_work_c",
+                "isAbout": "reshist_addr2_adi_work_c"
+            },
+            {
+                "variableName": "reshist_addr2_adi_wsum",
+                "isAbout": "reshist_addr2_adi_wsum"
+            },
+            {
+                "variableName": "reshist_addr2_d1a",
+                "isAbout": "reshist_addr2_d1a"
+            },
+            {
+                "variableName": "reshist_addr2_drgposs",
+                "isAbout": "reshist_addr2_drgposs"
+            },
+            {
+                "variableName": "reshist_addr2_drgsale",
+                "isAbout": "reshist_addr2_drgsale"
+            },
+            {
+                "variableName": "reshist_addr2_drugtot",
+                "isAbout": "reshist_addr2_drugtot"
+            },
+            {
+                "variableName": "reshist_addr2_dui",
+                "isAbout": "reshist_addr2_dui"
+            },
+            {
+                "variableName": "reshist_addr2_duration",
+                "isAbout": "reshist_addr2_duration"
+            },
+            {
+                "variableName": "reshist_addr2_elevation",
+                "isAbout": "reshist_addr2_elevation"
+            },
+            {
+                "variableName": "reshist_addr2_grndtot",
+                "isAbout": "reshist_addr2_grndtot"
+            },
+            {
+                "variableName": "reshist_addr2_id",
+                "isAbout": "reshist_addr2_id"
+            },
+            {
+                "variableName": "reshist_addr2_leadrisk",
+                "isAbout": "reshist_addr2_leadrisk"
+            },
+            {
+                "variableName": "reshist_addr2_leadrisk_housing",
+                "isAbout": "reshist_addr2_leadrisk_housing"
+            },
+            {
+                "variableName": "reshist_addr2_leadrisk_poverty",
+                "isAbout": "reshist_addr2_leadrisk_poverty"
+            },
+            {
+                "variableName": "reshist_addr2_mjsale",
+                "isAbout": "reshist_addr2_mjsale"
+            },
+            {
+                "variableName": "reshist_addr2_move_in_year",
+                "isAbout": "reshist_addr2_move_in_year"
+            },
+            {
+                "variableName": "reshist_addr2_move_out_year",
+                "isAbout": "reshist_addr2_move_out_year"
+            },
+            {
+                "variableName": "reshist_addr2_no2",
+                "isAbout": "reshist_addr2_no2"
+            },
+            {
+                "variableName": "reshist_addr2_no2_2016_aavg",
+                "isAbout": "reshist_addr2_no2_2016_aavg"
+            },
+            {
+                "variableName": "reshist_addr2_o3_2016_annavg",
+                "isAbout": "reshist_addr2_o3_2016_annavg"
+            },
+            {
+                "variableName": "reshist_addr2_p1tot",
+                "isAbout": "reshist_addr2_p1tot"
+            },
+            {
+                "variableName": "reshist_addr2_p1vlnt",
+                "isAbout": "reshist_addr2_p1vlnt"
+            },
+            {
+                "variableName": "reshist_addr2_percentile",
+                "isAbout": "reshist_addr2_percentile"
+            },
+            {
+                "variableName": "reshist_addr2_pm25",
+                "isAbout": "reshist_addr2_pm25"
+            },
+            {
+                "variableName": "reshist_addr2_pm25_2016_aavg",
+                "isAbout": "reshist_addr2_pm25_2016_aavg"
+            },
+            {
+                "variableName": "reshist_addr2_pm252016aa",
+                "isAbout": "reshist_addr2_pm252016aa"
+            },
+            {
+                "variableName": "reshist_addr2_popdensity",
+                "isAbout": "reshist_addr2_popdensity"
+            },
+            {
+                "variableName": "reshist_addr2_proxrd",
+                "isAbout": "reshist_addr2_proxrd"
+            },
+            {
+                "variableName": "reshist_addr2_status",
+                "isAbout": "reshist_addr2_status"
+            },
+            {
+                "variableName": "reshist_addr2_traffic_count",
+                "isAbout": "reshist_addr2_traffic_count"
+            },
+            {
+                "variableName": "reshist_addr2_urban_area",
+                "isAbout": "reshist_addr2_urban_area"
+            },
+            {
+                "variableName": "reshist_addr2_valid",
+                "isAbout": "reshist_addr2_valid"
+            },
+            {
+                "variableName": "reshist_addr2_walkindex",
+                "isAbout": "reshist_addr2_walkindex"
+            },
+            {
+                "variableName": "reshist_addr2_years",
+                "isAbout": "reshist_addr2_years"
+            },
+            {
+                "variableName": "reshist_addr3_adi_b138",
+                "isAbout": "reshist_addr3_adi_b138"
+            },
+            {
+                "variableName": "reshist_addr3_adi_crowd",
+                "isAbout": "reshist_addr3_adi_crowd"
+            },
+            {
+                "variableName": "reshist_addr3_adi_edu_h",
+                "isAbout": "reshist_addr3_adi_edu_h"
+            },
+            {
+                "variableName": "reshist_addr3_adi_edu_l",
+                "isAbout": "reshist_addr3_adi_edu_l"
+            },
+            {
+                "variableName": "reshist_addr3_adi_home_o",
+                "isAbout": "reshist_addr3_adi_home_o"
+            },
+            {
+                "variableName": "reshist_addr3_adi_home_v",
+                "isAbout": "reshist_addr3_adi_home_v"
+            },
+            {
+                "variableName": "reshist_addr3_adi_in_dis",
+                "isAbout": "reshist_addr3_adi_in_dis"
+            },
+            {
+                "variableName": "reshist_addr3_adi_income",
+                "isAbout": "reshist_addr3_adi_income"
+            },
+            {
+                "variableName": "reshist_addr3_adi_mortg",
+                "isAbout": "reshist_addr3_adi_mortg"
+            },
+            {
+                "variableName": "reshist_addr3_adi_ncar",
+                "isAbout": "reshist_addr3_adi_ncar"
+            },
+            {
+                "variableName": "reshist_addr3_adi_nplumb",
+                "isAbout": "reshist_addr3_adi_nplumb"
+            },
+            {
+                "variableName": "reshist_addr3_adi_ntel",
+                "isAbout": "reshist_addr3_adi_ntel"
+            },
+            {
+                "variableName": "reshist_addr3_adi_perc",
+                "isAbout": "reshist_addr3_adi_perc"
+            },
+            {
+                "variableName": "reshist_addr3_adi_pov",
+                "isAbout": "reshist_addr3_adi_pov"
+            },
+            {
+                "variableName": "reshist_addr3_adi_rent",
+                "isAbout": "reshist_addr3_adi_rent"
+            },
+            {
+                "variableName": "reshist_addr3_adi_sp",
+                "isAbout": "reshist_addr3_adi_sp"
+            },
+            {
+                "variableName": "reshist_addr3_adi_unemp",
+                "isAbout": "reshist_addr3_adi_unemp"
+            },
+            {
+                "variableName": "reshist_addr3_adi_work_c",
+                "isAbout": "reshist_addr3_adi_work_c"
+            },
+            {
+                "variableName": "reshist_addr3_adi_wsum",
+                "isAbout": "reshist_addr3_adi_wsum"
+            },
+            {
+                "variableName": "reshist_addr3_d1a",
+                "isAbout": "reshist_addr3_d1a"
+            },
+            {
+                "variableName": "reshist_addr3_drgposs",
+                "isAbout": "reshist_addr3_drgposs"
+            },
+            {
+                "variableName": "reshist_addr3_drgsale",
+                "isAbout": "reshist_addr3_drgsale"
+            },
+            {
+                "variableName": "reshist_addr3_drugtot",
+                "isAbout": "reshist_addr3_drugtot"
+            },
+            {
+                "variableName": "reshist_addr3_dui",
+                "isAbout": "reshist_addr3_dui"
+            },
+            {
+                "variableName": "reshist_addr3_duration",
+                "isAbout": "reshist_addr3_duration"
+            },
+            {
+                "variableName": "reshist_addr3_elevation",
+                "isAbout": "reshist_addr3_elevation"
+            },
+            {
+                "variableName": "reshist_addr3_grndtot",
+                "isAbout": "reshist_addr3_grndtot"
+            },
+            {
+                "variableName": "reshist_addr3_id",
+                "isAbout": "reshist_addr3_id"
+            },
+            {
+                "variableName": "reshist_addr3_leadrisk",
+                "isAbout": "reshist_addr3_leadrisk"
+            },
+            {
+                "variableName": "reshist_addr3_leadrisk_housing",
+                "isAbout": "reshist_addr3_leadrisk_housing"
+            },
+            {
+                "variableName": "reshist_addr3_leadrisk_poverty",
+                "isAbout": "reshist_addr3_leadrisk_poverty"
+            },
+            {
+                "variableName": "reshist_addr3_mjsale",
+                "isAbout": "reshist_addr3_mjsale"
+            },
+            {
+                "variableName": "reshist_addr3_move_in_year",
+                "isAbout": "reshist_addr3_move_in_year"
+            },
+            {
+                "variableName": "reshist_addr3_move_out_year",
+                "isAbout": "reshist_addr3_move_out_year"
+            },
+            {
+                "variableName": "reshist_addr3_no2",
+                "isAbout": "reshist_addr3_no2"
+            },
+            {
+                "variableName": "reshist_addr3_no2_2016_aavg",
+                "isAbout": "reshist_addr3_no2_2016_aavg"
+            },
+            {
+                "variableName": "reshist_addr3_o3_2016_annavg",
+                "isAbout": "reshist_addr3_o3_2016_annavg"
+            },
+            {
+                "variableName": "reshist_addr3_p1tot",
+                "isAbout": "reshist_addr3_p1tot"
+            },
+            {
+                "variableName": "reshist_addr3_p1vlnt",
+                "isAbout": "reshist_addr3_p1vlnt"
+            },
+            {
+                "variableName": "reshist_addr3_percentile",
+                "isAbout": "reshist_addr3_percentile"
+            },
+            {
+                "variableName": "reshist_addr3_pm25",
+                "isAbout": "reshist_addr3_pm25"
+            },
+            {
+                "variableName": "reshist_addr3_pm25_2016_aavg",
+                "isAbout": "reshist_addr3_pm25_2016_aavg"
+            },
+            {
+                "variableName": "reshist_addr3_pm252016aa",
+                "isAbout": "reshist_addr3_pm252016aa"
+            },
+            {
+                "variableName": "reshist_addr3_popdensity",
+                "isAbout": "reshist_addr3_popdensity"
+            },
+            {
+                "variableName": "reshist_addr3_proxrd",
+                "isAbout": "reshist_addr3_proxrd"
+            },
+            {
+                "variableName": "reshist_addr3_status",
+                "isAbout": "reshist_addr3_status"
+            },
+            {
+                "variableName": "reshist_addr3_traffic_count",
+                "isAbout": "reshist_addr3_traffic_count"
+            },
+            {
+                "variableName": "reshist_addr3_urban_area",
+                "isAbout": "reshist_addr3_urban_area"
+            },
+            {
+                "variableName": "reshist_addr3_valid",
+                "isAbout": "reshist_addr3_valid"
+            },
+            {
+                "variableName": "reshist_addr3_walkindex",
+                "isAbout": "reshist_addr3_walkindex"
+            },
+            {
+                "variableName": "reshist_addr3_years",
+                "isAbout": "reshist_addr3_years"
+            },
+            {
+                "variableName": "reshist_addr4_adi_b138",
+                "isAbout": "reshist_addr4_adi_b138"
+            },
+            {
+                "variableName": "reshist_addr4_adi_crowd",
+                "isAbout": "reshist_addr4_adi_crowd"
+            },
+            {
+                "variableName": "reshist_addr4_adi_edu_h",
+                "isAbout": "reshist_addr4_adi_edu_h"
+            },
+            {
+                "variableName": "reshist_addr4_adi_edu_l",
+                "isAbout": "reshist_addr4_adi_edu_l"
+            },
+            {
+                "variableName": "reshist_addr4_adi_home_o",
+                "isAbout": "reshist_addr4_adi_home_o"
+            },
+            {
+                "variableName": "reshist_addr4_adi_home_v",
+                "isAbout": "reshist_addr4_adi_home_v"
+            },
+            {
+                "variableName": "reshist_addr4_adi_in_dis",
+                "isAbout": "reshist_addr4_adi_in_dis"
+            },
+            {
+                "variableName": "reshist_addr4_adi_income",
+                "isAbout": "reshist_addr4_adi_income"
+            },
+            {
+                "variableName": "reshist_addr4_adi_mortg",
+                "isAbout": "reshist_addr4_adi_mortg"
+            },
+            {
+                "variableName": "reshist_addr4_adi_ncar",
+                "isAbout": "reshist_addr4_adi_ncar"
+            },
+            {
+                "variableName": "reshist_addr4_adi_nplumb",
+                "isAbout": "reshist_addr4_adi_nplumb"
+            },
+            {
+                "variableName": "reshist_addr4_adi_ntel",
+                "isAbout": "reshist_addr4_adi_ntel"
+            },
+            {
+                "variableName": "reshist_addr4_adi_perc",
+                "isAbout": "reshist_addr4_adi_perc"
+            },
+            {
+                "variableName": "reshist_addr4_adi_pov",
+                "isAbout": "reshist_addr4_adi_pov"
+            },
+            {
+                "variableName": "reshist_addr4_adi_rent",
+                "isAbout": "reshist_addr4_adi_rent"
+            },
+            {
+                "variableName": "reshist_addr4_adi_sp",
+                "isAbout": "reshist_addr4_adi_sp"
+            },
+            {
+                "variableName": "reshist_addr4_adi_unemp",
+                "isAbout": "reshist_addr4_adi_unemp"
+            },
+            {
+                "variableName": "reshist_addr4_adi_work_c",
+                "isAbout": "reshist_addr4_adi_work_c"
+            },
+            {
+                "variableName": "reshist_addr4_adi_wsum",
+                "isAbout": "reshist_addr4_adi_wsum"
+            },
+            {
+                "variableName": "reshist_addr4_d1a",
+                "isAbout": "reshist_addr4_d1a"
+            },
+            {
+                "variableName": "reshist_addr4_drgposs",
+                "isAbout": "reshist_addr4_drgposs"
+            },
+            {
+                "variableName": "reshist_addr4_drgsale",
+                "isAbout": "reshist_addr4_drgsale"
+            },
+            {
+                "variableName": "reshist_addr4_drugtot",
+                "isAbout": "reshist_addr4_drugtot"
+            },
+            {
+                "variableName": "reshist_addr4_dui",
+                "isAbout": "reshist_addr4_dui"
+            },
+            {
+                "variableName": "reshist_addr4_elevation",
+                "isAbout": "reshist_addr4_elevation"
+            },
+            {
+                "variableName": "reshist_addr4_grndtot",
+                "isAbout": "reshist_addr4_grndtot"
+            },
+            {
+                "variableName": "reshist_addr4_mjsale",
+                "isAbout": "reshist_addr4_mjsale"
+            },
+            {
+                "variableName": "reshist_addr4_no2",
+                "isAbout": "reshist_addr4_no2"
+            },
+            {
+                "variableName": "reshist_addr4_p1tot",
+                "isAbout": "reshist_addr4_p1tot"
+            },
+            {
+                "variableName": "reshist_addr4_p1vlnt",
+                "isAbout": "reshist_addr4_p1vlnt"
+            },
+            {
+                "variableName": "reshist_addr4_pm25",
+                "isAbout": "reshist_addr4_pm25"
+            },
+            {
+                "variableName": "reshist_addr4_popdensity",
+                "isAbout": "reshist_addr4_popdensity"
+            },
+            {
+                "variableName": "reshist_addr4_proxrd",
+                "isAbout": "reshist_addr4_proxrd"
+            },
+            {
+                "variableName": "reshist_addr4_status",
+                "isAbout": "reshist_addr4_status"
+            },
+            {
+                "variableName": "reshist_addr4_valid",
+                "isAbout": "reshist_addr4_valid"
+            },
+            {
+                "variableName": "reshist_addr4_walkindex",
+                "isAbout": "reshist_addr4_walkindex"
+            },
+            {
+                "variableName": "reshist_addr4_years",
+                "isAbout": "reshist_addr4_years"
+            },
+            {
+                "variableName": "reshist_addr5_adi_b138",
+                "isAbout": "reshist_addr5_adi_b138"
+            },
+            {
+                "variableName": "reshist_addr5_adi_crowd",
+                "isAbout": "reshist_addr5_adi_crowd"
+            },
+            {
+                "variableName": "reshist_addr5_adi_edu_h",
+                "isAbout": "reshist_addr5_adi_edu_h"
+            },
+            {
+                "variableName": "reshist_addr5_adi_edu_l",
+                "isAbout": "reshist_addr5_adi_edu_l"
+            },
+            {
+                "variableName": "reshist_addr5_adi_home_o",
+                "isAbout": "reshist_addr5_adi_home_o"
+            },
+            {
+                "variableName": "reshist_addr5_adi_home_v",
+                "isAbout": "reshist_addr5_adi_home_v"
+            },
+            {
+                "variableName": "reshist_addr5_adi_in_dis",
+                "isAbout": "reshist_addr5_adi_in_dis"
+            },
+            {
+                "variableName": "reshist_addr5_adi_income",
+                "isAbout": "reshist_addr5_adi_income"
+            },
+            {
+                "variableName": "reshist_addr5_adi_mortg",
+                "isAbout": "reshist_addr5_adi_mortg"
+            },
+            {
+                "variableName": "reshist_addr5_adi_ncar",
+                "isAbout": "reshist_addr5_adi_ncar"
+            },
+            {
+                "variableName": "reshist_addr5_adi_nplumb",
+                "isAbout": "reshist_addr5_adi_nplumb"
+            },
+            {
+                "variableName": "reshist_addr5_adi_ntel",
+                "isAbout": "reshist_addr5_adi_ntel"
+            },
+            {
+                "variableName": "reshist_addr5_adi_perc",
+                "isAbout": "reshist_addr5_adi_perc"
+            },
+            {
+                "variableName": "reshist_addr5_adi_pov",
+                "isAbout": "reshist_addr5_adi_pov"
+            },
+            {
+                "variableName": "reshist_addr5_adi_rent",
+                "isAbout": "reshist_addr5_adi_rent"
+            },
+            {
+                "variableName": "reshist_addr5_adi_sp",
+                "isAbout": "reshist_addr5_adi_sp"
+            },
+            {
+                "variableName": "reshist_addr5_adi_unemp",
+                "isAbout": "reshist_addr5_adi_unemp"
+            },
+            {
+                "variableName": "reshist_addr5_adi_work_c",
+                "isAbout": "reshist_addr5_adi_work_c"
+            },
+            {
+                "variableName": "reshist_addr5_adi_wsum",
+                "isAbout": "reshist_addr5_adi_wsum"
+            },
+            {
+                "variableName": "reshist_addr5_d1a",
+                "isAbout": "reshist_addr5_d1a"
+            },
+            {
+                "variableName": "reshist_addr5_drgposs",
+                "isAbout": "reshist_addr5_drgposs"
+            },
+            {
+                "variableName": "reshist_addr5_drgsale",
+                "isAbout": "reshist_addr5_drgsale"
+            },
+            {
+                "variableName": "reshist_addr5_drugtot",
+                "isAbout": "reshist_addr5_drugtot"
+            },
+            {
+                "variableName": "reshist_addr5_dui",
+                "isAbout": "reshist_addr5_dui"
+            },
+            {
+                "variableName": "reshist_addr5_elevation",
+                "isAbout": "reshist_addr5_elevation"
+            },
+            {
+                "variableName": "reshist_addr5_grndtot",
+                "isAbout": "reshist_addr5_grndtot"
+            },
+            {
+                "variableName": "reshist_addr5_mjsale",
+                "isAbout": "reshist_addr5_mjsale"
+            },
+            {
+                "variableName": "reshist_addr5_no2",
+                "isAbout": "reshist_addr5_no2"
+            },
+            {
+                "variableName": "reshist_addr5_p1tot",
+                "isAbout": "reshist_addr5_p1tot"
+            },
+            {
+                "variableName": "reshist_addr5_p1vlnt",
+                "isAbout": "reshist_addr5_p1vlnt"
+            },
+            {
+                "variableName": "reshist_addr5_pm25",
+                "isAbout": "reshist_addr5_pm25"
+            },
+            {
+                "variableName": "reshist_addr5_popdensity",
+                "isAbout": "reshist_addr5_popdensity"
+            },
+            {
+                "variableName": "reshist_addr5_proxrd",
+                "isAbout": "reshist_addr5_proxrd"
+            },
+            {
+                "variableName": "reshist_addr5_status",
+                "isAbout": "reshist_addr5_status"
+            },
+            {
+                "variableName": "reshist_addr5_valid",
+                "isAbout": "reshist_addr5_valid"
+            },
+            {
+                "variableName": "reshist_addr5_walkindex",
+                "isAbout": "reshist_addr5_walkindex"
+            },
+            {
+                "variableName": "reshist_addr5_years",
+                "isAbout": "reshist_addr5_years"
+            },
+            {
+                "variableName": "reshist_addr6_adi_b138",
+                "isAbout": "reshist_addr6_adi_b138"
+            },
+            {
+                "variableName": "reshist_addr6_adi_crowd",
+                "isAbout": "reshist_addr6_adi_crowd"
+            },
+            {
+                "variableName": "reshist_addr6_adi_edu_h",
+                "isAbout": "reshist_addr6_adi_edu_h"
+            },
+            {
+                "variableName": "reshist_addr6_adi_edu_l",
+                "isAbout": "reshist_addr6_adi_edu_l"
+            },
+            {
+                "variableName": "reshist_addr6_adi_home_o",
+                "isAbout": "reshist_addr6_adi_home_o"
+            },
+            {
+                "variableName": "reshist_addr6_adi_home_v",
+                "isAbout": "reshist_addr6_adi_home_v"
+            },
+            {
+                "variableName": "reshist_addr6_adi_in_dis",
+                "isAbout": "reshist_addr6_adi_in_dis"
+            },
+            {
+                "variableName": "reshist_addr6_adi_income",
+                "isAbout": "reshist_addr6_adi_income"
+            },
+            {
+                "variableName": "reshist_addr6_adi_mortg",
+                "isAbout": "reshist_addr6_adi_mortg"
+            },
+            {
+                "variableName": "reshist_addr6_adi_ncar",
+                "isAbout": "reshist_addr6_adi_ncar"
+            },
+            {
+                "variableName": "reshist_addr6_adi_nplumb",
+                "isAbout": "reshist_addr6_adi_nplumb"
+            },
+            {
+                "variableName": "reshist_addr6_adi_ntel",
+                "isAbout": "reshist_addr6_adi_ntel"
+            },
+            {
+                "variableName": "reshist_addr6_adi_perc",
+                "isAbout": "reshist_addr6_adi_perc"
+            },
+            {
+                "variableName": "reshist_addr6_adi_pov",
+                "isAbout": "reshist_addr6_adi_pov"
+            },
+            {
+                "variableName": "reshist_addr6_adi_rent",
+                "isAbout": "reshist_addr6_adi_rent"
+            },
+            {
+                "variableName": "reshist_addr6_adi_sp",
+                "isAbout": "reshist_addr6_adi_sp"
+            },
+            {
+                "variableName": "reshist_addr6_adi_unemp",
+                "isAbout": "reshist_addr6_adi_unemp"
+            },
+            {
+                "variableName": "reshist_addr6_adi_work_c",
+                "isAbout": "reshist_addr6_adi_work_c"
+            },
+            {
+                "variableName": "reshist_addr6_adi_wsum",
+                "isAbout": "reshist_addr6_adi_wsum"
+            },
+            {
+                "variableName": "reshist_addr6_d1a",
+                "isAbout": "reshist_addr6_d1a"
+            },
+            {
+                "variableName": "reshist_addr6_drgposs",
+                "isAbout": "reshist_addr6_drgposs"
+            },
+            {
+                "variableName": "reshist_addr6_drgsale",
+                "isAbout": "reshist_addr6_drgsale"
+            },
+            {
+                "variableName": "reshist_addr6_drugtot",
+                "isAbout": "reshist_addr6_drugtot"
+            },
+            {
+                "variableName": "reshist_addr6_dui",
+                "isAbout": "reshist_addr6_dui"
+            },
+            {
+                "variableName": "reshist_addr6_elevation",
+                "isAbout": "reshist_addr6_elevation"
+            },
+            {
+                "variableName": "reshist_addr6_grndtot",
+                "isAbout": "reshist_addr6_grndtot"
+            },
+            {
+                "variableName": "reshist_addr6_mjsale",
+                "isAbout": "reshist_addr6_mjsale"
+            },
+            {
+                "variableName": "reshist_addr6_no2",
+                "isAbout": "reshist_addr6_no2"
+            },
+            {
+                "variableName": "reshist_addr6_p1tot",
+                "isAbout": "reshist_addr6_p1tot"
+            },
+            {
+                "variableName": "reshist_addr6_p1vlnt",
+                "isAbout": "reshist_addr6_p1vlnt"
+            },
+            {
+                "variableName": "reshist_addr6_pm25",
+                "isAbout": "reshist_addr6_pm25"
+            },
+            {
+                "variableName": "reshist_addr6_popdensity",
+                "isAbout": "reshist_addr6_popdensity"
+            },
+            {
+                "variableName": "reshist_addr6_proxrd",
+                "isAbout": "reshist_addr6_proxrd"
+            },
+            {
+                "variableName": "reshist_addr6_status",
+                "isAbout": "reshist_addr6_status"
+            },
+            {
+                "variableName": "reshist_addr6_valid",
+                "isAbout": "reshist_addr6_valid"
+            },
+            {
+                "variableName": "reshist_addr6_walkindex",
+                "isAbout": "reshist_addr6_walkindex"
+            },
+            {
+                "variableName": "reshist_addr6_years",
+                "isAbout": "reshist_addr6_years"
+            },
+            {
+                "variableName": "reshist_state_immigrant_factor",
+                "isAbout": "reshist_state_immigrant_factor"
+            },
+            {
+                "variableName": "reshist_state_mj_laws",
+                "isAbout": "reshist_state_mj_laws"
+            },
+            {
+                "variableName": "reshist_state_racism_factor",
+                "isAbout": "reshist_state_racism_factor"
+            },
+            {
+                "variableName": "reshist_state_sexism_factor",
+                "isAbout": "reshist_state_sexism_factor"
+            },
+            {
+                "variableName": "reshist_state_so_factor",
+                "isAbout": "reshist_state_so_factor"
+            }
+        ]
+    }
+}

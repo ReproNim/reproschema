@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "screentime_phone_yn",
+    "@type": "reproschema:Field",
+    "prefLabel": "screentime_phone_yn",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Do you have your own mobile phone, smart watch or ipod?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 777,
+        "choices": [
+            {
+                "value": 0
+            },
+            {
+                "value": 1
+            },
+            {
+                "value": 777
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0=No; 1=Yes; 777=Refuse to Answer"
+        }
+    ]
+}

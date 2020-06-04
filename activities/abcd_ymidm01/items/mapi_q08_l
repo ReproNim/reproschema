@@ -1,0 +1,47 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "mapi_q08_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "mapi_q08_l",
+    "altLabel": "su_mapi_q08_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Please indicate how many times each has happened to you during the last six months while you were smoking marijuana or as the result of your marijuana use: felt that you needed more marijuana than you used to use in order to get the same effect.",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "0",
+                "value": 0
+            },
+            {
+                "name": "1-2",
+                "value": 1
+            },
+            {
+                "name": "3-5",
+                "value": 2
+            },
+            {
+                "name": "6-10",
+                "value": 3
+            },
+            {
+                "name": "10+ / xskipout_mj_l   == '1'",
+                "value": 4
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = 0; 1 = 1-2; 2 = 3-5; 3 = 6-10; 4 = 10+ / xskipout_mj_l   == '1'"
+        }
+    ]
+}

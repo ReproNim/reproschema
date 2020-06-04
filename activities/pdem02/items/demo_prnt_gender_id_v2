@@ -1,0 +1,59 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "demo_prnt_gender_id_v2",
+    "@type": "reproschema:Field",
+    "prefLabel": "demo_prnt_gender_id_v2",
+    "altLabel": "demo_prnt_gender_id_p demo_prnt_gender_id_v2b",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "What is your current gender identity? ¿Cuál es su identidad de género actual?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Male Hombre",
+                "value": 1
+            },
+            {
+                "name": "Female Mujer",
+                "value": 2
+            },
+            {
+                "name": "Trans male Transexual masculino / hombre transexual",
+                "value": 3
+            },
+            {
+                "name": "Trans female Transexual femenino / mujer transexual",
+                "value": 4
+            },
+            {
+                "name": "Gender queer IntergÃ©nero (\"genderqueer\") / No conforme con el gÃ©nero",
+                "value": 5
+            },
+            {
+                "name": "Different Otra identididad",
+                "value": 6
+            },
+            {
+                "name": "Refuse to answer Niego contestar",
+                "value": 777
+            },
+            {
+                "name": "Don't know No lo se  // The following questions are about you or the child's family.",
+                "value": 999
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Male Hombre; 2 = Female Mujer; 3 = Trans male Transexual masculino / hombre transexual; 4 = Trans female Transexual femenino / mujer transexual; 5 = Gender queer IntergÃ©nero (\"genderqueer\") / No conforme con el gÃ©nero; 6 = Different Otra identididad; 777 = Refuse to answer Niego contestar; 999 = Don't know No lo se  // The following questions are about you or the child's family."
+        }
+    ]
+}

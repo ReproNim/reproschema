@@ -1,0 +1,39 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "ra_scan_check_list_rcom",
+    "@type": "reproschema:Field",
+    "prefLabel": "ra_scan_check_list_rcom",
+    "altLabel": "scan_check_rcom",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "How many runs completed for MID?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "0",
+                "value": 0
+            },
+            {
+                "name": "1",
+                "value": 1
+            },
+            {
+                "name": "2",
+                "value": 2
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = 0; 1 = 1; 2 = 2"
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "vis_flg",
+    "@type": "reproschema:Field",
+    "prefLabel": "vis_flg",
+    "altLabel": "snellen_flg",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Can the participant read the stimuli on the iPad?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "YES",
+                "value": 1
+            },
+            {
+                "name": "NO",
+                "value": 2
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = YES = proceed with testing; 2 = NO = stop testing"
+        }
+    ]
+}

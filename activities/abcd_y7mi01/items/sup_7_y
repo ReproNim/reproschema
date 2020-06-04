@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "sup_7_y",
+    "@type": "reproschema:Field",
+    "prefLabel": "sup_7_y",
+    "altLabel": "sup_7",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Have you had times when your thoughts and ideas came so fast that you couldn't get them all out, or they came so quickly that others complained that they couldn't keep up with your ideas?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "Never or hardly ever",
+                "value": 0
+            },
+            {
+                "name": "Sometimes",
+                "value": 1
+            },
+            {
+                "name": "Often",
+                "value": 2
+            },
+            {
+                "name": "Very often or almost constantly",
+                "value": 3
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = Never or hardly ever; 1 = Sometimes; 2 = Often; 3 = Very often or almost constantly"
+        }
+    ]
+}

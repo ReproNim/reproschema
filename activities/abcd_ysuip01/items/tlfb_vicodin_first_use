@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "tlfb_vicodin_first_use",
+    "@type": "reproschema:Field",
+    "prefLabel": "tlfb_vicodin_first_use",
+    "altLabel": "su_tlfb_vicodin_first_use",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Was this the first time you tried PRESCRIPTION PAIN RELIEVERS such as Vicodin, Lortab, Norco, Hydrocodone, Oxycontin or Percocet that you used in any way a doctor did not direct you to use them (this does not include over-the-counter pain relievers such as aspirin, Tylenol, Advil)?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "Yes",
+                "value": 1
+            },
+            {
+                "name": "No / tlfb_vicodin_use_l  == '1'  &&  event_name_number  > '11'",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes; 0 = No / tlfb_vicodin_use_l  == '1'  &&  event_name_number  > '11'"
+        }
+    ]
+}

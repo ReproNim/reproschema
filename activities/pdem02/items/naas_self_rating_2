@@ -1,0 +1,45 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "naas_self_rating_2",
+    "@type": "reproschema:Field",
+    "prefLabel": "naas_self_rating_2",
+    "altLabel": "naas_self_rating_2_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "How would you rate your child?/ Como calificar?a a su nino(a)? ",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 999,
+        "choices": [
+            {
+                "value": 1
+            },
+            {
+                "value": 2
+            },
+            {
+                "value": 3
+            },
+            {
+                "value": 4
+            },
+            {
+                "value": 5
+            },
+            {
+                "value": 999
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1= Very Native American/Muy Nativo Americano; 2= Mostly Native American/Mayormente Nativo Americano; 3= Bicultural/Bicultural; 4= Mostly non-Native American/Mayormente no Nativo Americano; 5= Very non-Native American/Muy no Nativo Americano; 999= Don't Know/No lo se"
+        }
+    ]
+}

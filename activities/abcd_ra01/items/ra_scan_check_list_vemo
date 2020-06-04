@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "ra_scan_check_list_vemo",
+    "@type": "reproschema:Field",
+    "prefLabel": "ra_scan_check_list_vemo",
+    "altLabel": "scan_check_vemo",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Version of Emo Nback",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "1",
+                "value": 1
+            },
+            {
+                "name": "2",
+                "value": 2
+            },
+            {
+                "name": "3",
+                "value": 3
+            },
+            {
+                "name": "4",
+                "value": 4
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = 1; 2 = 2; 3 = 3; 4 = 4"
+        }
+    ]
+}

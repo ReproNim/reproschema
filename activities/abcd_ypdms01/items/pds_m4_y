@@ -1,0 +1,50 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "pds_m4_y",
+    "@type": "reproschema:Field",
+    "prefLabel": "pds_m4_y",
+    "altLabel": "pubertdev_m4",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Have you noticed a deepening of your voice?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Voice has not yet started to changing",
+                "value": 1
+            },
+            {
+                "name": "Voice has barely started changing",
+                "value": 2
+            },
+            {
+                "name": "Voice changes are definitely underway",
+                "value": 3
+            },
+            {
+                "name": "Voice changes seem complete",
+                "value": 4
+            },
+            {
+                "name": "I don't know",
+                "value": 999
+            },
+            {
+                "value": 777
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Voice has not yet started to changing; 2 = Voice has barely started changing; 3 = Voice changes are definitely underway; 4 = Voice changes seem complete; 999 = I don't know; 777= refuse to answer"
+        }
+    ]
+}

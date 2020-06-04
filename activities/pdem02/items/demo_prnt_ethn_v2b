@@ -1,0 +1,39 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "demo_prnt_ethn_v2b",
+    "@type": "reproschema:Field",
+    "prefLabel": "demo_prnt_ethn_v2b",
+    "altLabel": "demo_prnt_ethn_v2b_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Do you consider yourself Hispanic/Latino/Latina?/ Se considera usted hispano(a) o latino(a)?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "value": 1
+            },
+            {
+                "value": 2
+            },
+            {
+                "value": 777
+            },
+            {
+                "value": 999
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1= Ye/sS?; 2= No/No; 777= Refuse to answer/Niego contestar; 999= Don't know/No lo se"
+        }
+    ]
+}

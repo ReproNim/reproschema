@@ -1,0 +1,44 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "screentime_sq2",
+    "@type": "reproschema:Field",
+    "prefLabel": "screentime_sq2",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "What do you usually do with your phone when you are ready to go to sleep? Do you",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "value": -1
+            },
+            {
+                "value": 1
+            },
+            {
+                "value": 2
+            },
+            {
+                "value": 3
+            },
+            {
+                "value": 4
+            },
+            {
+                "value": 777
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "-1=Not Applicable; 1=Turn the phone off; 2=Put the ringer on silent or vibrate; 3=Leave the ringer on?; 4=Put it outside of the room where I sleep; 777=Refuse to answer"
+        }
+    ]
+}

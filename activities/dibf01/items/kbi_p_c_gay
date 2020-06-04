@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "kbi_p_c_gay",
+    "@type": "reproschema:Field",
+    "prefLabel": "kbi_p_c_gay",
+    "altLabel": "kbi_y_sex_orient ksads_back_c_gay_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Is you/your child gay?/  ¿Su niño(a) es homosexual?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "name": "Yes /Sí",
+                "value": 1
+            },
+            {
+                "name": "Maybe/Don't know /Tal vez/No sé",
+                "value": 2
+            },
+            {
+                "name": "No/ No",
+                "value": 0
+            },
+            {
+                "name": "Decline to answer /Niego contestar",
+                "value": 4
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes /Sí; 2 = Maybe/Don't know /Tal vez/No sé; 0 = No/ No; 4 = Decline to answer /Niego contestar"
+        }
+    ]
+}

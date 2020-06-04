@@ -1,0 +1,71 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "saip2_tennis_perwk",
+    "@type": "reproschema:Field",
+    "prefLabel": "saip2_tennis_perwk",
+    "altLabel": "sai_p_tennis_perwk sports_activity_tennis_perwk_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Tennis: About how many days per week? ¿Aproximadamente cuántos días a la semana?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "name": "1",
+                "value": 1
+            },
+            {
+                "name": "2",
+                "value": 2
+            },
+            {
+                "name": "3",
+                "value": 3
+            },
+            {
+                "name": "4",
+                "value": 4
+            },
+            {
+                "name": "5",
+                "value": 5
+            },
+            {
+                "name": "6",
+                "value": 6
+            },
+            {
+                "name": "7",
+                "value": 7
+            },
+            {
+                "name": "Once every 2 weeks Una vez cada 2 semanas",
+                "value": 8
+            },
+            {
+                "name": "One day every month Un día cada mes",
+                "value": 9
+            },
+            {
+                "name": "Less than one day per month Menos de un día al mes",
+                "value": 10
+            },
+            {
+                "name": "Don't know No lo sé  ",
+                "value": 999
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = Once every 2 weeks Una vez cada 2 semanas; 9 = One day every month Un día cada mes; 10 = Less than one day per month Menos de un día al mes; 999 = Don't know No lo sé  | (1-7)"
+        }
+    ]
+}

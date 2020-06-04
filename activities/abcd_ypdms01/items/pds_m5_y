@@ -1,0 +1,50 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "pds_m5_y",
+    "@type": "reproschema:Field",
+    "prefLabel": "pds_m5_y",
+    "altLabel": "pubertdev_m5",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Have you begun to grow hair on your face?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Facial hair not yet started growing",
+                "value": 1
+            },
+            {
+                "name": "Facial hair has barely started growing",
+                "value": 2
+            },
+            {
+                "name": "Facial hair has definitely started",
+                "value": 3
+            },
+            {
+                "name": "Facial hair growth seems complete",
+                "value": 4
+            },
+            {
+                "name": "I don't know",
+                "value": 999
+            },
+            {
+                "value": 777
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Facial hair not yet started growing; 2 = Facial hair has barely started growing; 3 = Facial hair has definitely started; 4 = Facial hair growth seems complete; 999 = I don't know; 777= refuse to answer"
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "gish_m2_y",
+    "@type": "reproschema:Field",
+    "prefLabel": "gish_m2_y",
+    "altLabel": "gish_m2",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "How much do you feel like a girl?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Totally",
+                "value": 1
+            },
+            {
+                "name": "Mostly",
+                "value": 2
+            },
+            {
+                "name": "Somewhat",
+                "value": 3
+            },
+            {
+                "name": "A little",
+                "value": 4
+            },
+            {
+                "name": "Not at all",
+                "value": 5
+            },
+            {
+                "name": "Decline to answer",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Totally; 2 = Mostly; 3 = Somewhat; 4 = A little; 5 = Not at all; 0 = Decline to answer"
+        }
+    ]
+}

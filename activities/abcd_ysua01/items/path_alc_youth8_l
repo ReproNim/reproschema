@@ -1,0 +1,51 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "path_alc_youth8_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "path_alc_youth8_l",
+    "altLabel": "su_intent_youth8_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "If one of your best friends were to offer you alcohol, would you try it?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Definitely yes",
+                "value": 1
+            },
+            {
+                "name": "Probably yes",
+                "value": 2
+            },
+            {
+                "name": "Probably not",
+                "value": 3
+            },
+            {
+                "name": "Definitely not",
+                "value": 4
+            },
+            {
+                "name": "Don't know",
+                "value": 5
+            },
+            {
+                "name": "Refused /( tlfb_alc_l  == '1' ",
+                "value": 6
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Definitely yes; 2 = Probably yes; 3 = Probably not; 4 = Definitely not; 5 = Don't know; 6 = Refused /( tlfb_alc_l  == '1' ||  tlfb_alc_c_l   == '1') && ( tlfb_alc_sip_l  == '0' &&  tlfb_alc_sip_c_l  == '0')"
+        }
+    ]
+}

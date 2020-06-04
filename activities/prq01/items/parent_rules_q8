@@ -1,0 +1,39 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "parent_rules_q8",
+    "@type": "reproschema:Field",
+    "prefLabel": "parent_rules_q8",
+    "altLabel": "prq_q8_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Are these the same rules for all family members? / ¿Estas reglas son las mismas para todos los miembros de la familia?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "name": "No, applies only to children, not teen or adults",
+                "value": 1
+            },
+            {
+                "name": "No, applies only to children and teen, not adults",
+                "value": 2
+            },
+            {
+                "name": "Yes",
+                "value": 3
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = No, applies only to children, not teen or adults; 2 = No, applies only to children and teen, not adults; 3 = Yes"
+        }
+    ]
+}

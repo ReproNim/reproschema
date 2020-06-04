@@ -1,0 +1,39 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "first_nicotine_13_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "first_nicotine_13_l",
+    "altLabel": "su_first_nicotine_13_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Was your smokeless tobacco product flavored with:",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Menthol or mint",
+                "value": 1
+            },
+            {
+                "name": "Other flavoring",
+                "value": 2
+            },
+            {
+                "name": "No flavoring / first_nicotine_3_l  =='1' &&   tlfb_chew_use_c_l   == '0'",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Menthol or mint; 2 = Other flavoring; 0 = No flavoring / first_nicotine_3_l  =='1' &&   tlfb_chew_use_c_l   == '0'"
+        }
+    ]
+}

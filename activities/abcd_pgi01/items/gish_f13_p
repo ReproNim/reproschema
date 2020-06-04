@@ -1,0 +1,50 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "gish_f13_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "gish_f13_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "She states that she is a boy or man Dice que es un niño o un hombre",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Every day Todos los días ",
+                "value": 1
+            },
+            {
+                "name": "Frequently Frecuentemente ",
+                "value": 2
+            },
+            {
+                "name": "Once in a while De vez en cuando ",
+                "value": 3
+            },
+            {
+                "name": "Rarely Casi nunca ",
+                "value": 4
+            },
+            {
+                "name": "Never Nunca ",
+                "value": 5
+            },
+            {
+                "name": "Decline to answer Prefiero no responder",
+                "value": 777
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Every day Todos los días ; 2 = Frequently Frecuentemente ; 3 = Once in a while De vez en cuando ; 4 = Rarely Casi nunca ; 5 = Never Nunca ; 777 = Decline to answer Prefiero no responder"
+        }
+    ]
+}

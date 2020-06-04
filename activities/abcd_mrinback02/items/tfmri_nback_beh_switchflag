@@ -1,0 +1,33 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "tfmri_nback_beh_switchflag",
+    "@type": "reproschema:Field",
+    "prefLabel": "tfmri_nback_beh_switchflag",
+    "altLabel": "tfmri_nback_beh_switch.flag",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Box was switched",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "value": 0
+            },
+            {
+                "value": 1
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0= no switch; 1= switch"
+        }
+    ]
+}

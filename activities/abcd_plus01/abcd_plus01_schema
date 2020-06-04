@@ -1,0 +1,643 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+        "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/activities/abcd_plus01/abcd_plus01_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "abcd_plus01_schema",
+    "skos:prefLabel": "abcd_plus01",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "order": [
+            "pls1_cbd",
+            "pls1_cbd_ago",
+            "pls1_cbd_product__1",
+            "pls1_cbd_product__2",
+            "pls1_cbd_product__3",
+            "pls1_cbd_product__4",
+            "pls1_cbd_product__5",
+            "pls1_cbd_product__6",
+            "pls1_med1_rxnorm",
+            "pls1_med2_rxnorm",
+            "pls1_med3_rxnorm",
+            "pls1_med4_rxnorm",
+            "pls1_med5_rxnorm",
+            "pls1_otc_rx_y",
+            "pls1_otc2_rx_days_y",
+            "pls1_otc2_rx_days_y_2",
+            "pls1_otc2_rx_days_y_3",
+            "pls1_otc2_rx_days_y_4",
+            "pls1_otc2_rx_days_y_5",
+            "pls1_sess",
+            "pls1_sess_date_time",
+            "pls1_y_caf",
+            "pls1_y_nic_tlfb",
+            "pls1_y_nic_use",
+            "pls1_youth_ago",
+            "pls1_youth_ago_2",
+            "pls1_youth_ago_3",
+            "pls1_youth_ago_4",
+            "pls1_youth_ago_5",
+            "pls1_youth_caffeine_t",
+            "pls1_youth_tobacco_t",
+            "pls2_cbd",
+            "pls2_cbd_ago",
+            "pls2_cbd_product__1",
+            "pls2_cbd_product__2",
+            "pls2_cbd_product__3",
+            "pls2_cbd_product__4",
+            "pls2_cbd_product__5",
+            "pls2_cbd_product__6",
+            "pls2_date_time",
+            "pls2_med1_rxnorm",
+            "pls2_med2_rxnorm",
+            "pls2_med3_rxnorm",
+            "pls2_med4_rxnorm",
+            "pls2_med5_rxnorm",
+            "pls2_med6_rxnorm",
+            "pls2_med7_rxnorm_2",
+            "pls2_need",
+            "pls2_otc_rx_y",
+            "pls2_otc2_rx_days_y",
+            "pls2_otc2_rx_days_y_2",
+            "pls2_otc2_rx_days_y_3",
+            "pls2_otc2_rx_days_y_4",
+            "pls2_otc2_rx_days_y_5",
+            "pls2_otc2_rx_days_y_6",
+            "pls2_otc2_rx_days_y_7",
+            "pls2_sess",
+            "pls2_y_caf",
+            "pls2_y_nic_tlfb",
+            "pls2_y_nic_use",
+            "pls2_youth_ago",
+            "pls2_youth_ago_2",
+            "pls2_youth_ago_3",
+            "pls2_youth_ago_4",
+            "pls2_youth_ago_5",
+            "pls2_youth_ago_6",
+            "pls2_youth_ago_7",
+            "pls2_youth_caffeine_t",
+            "pls2_youth_tobacco_t",
+            "pls3_cbd",
+            "pls3_cbd_ago",
+            "pls3_cbd_product__1",
+            "pls3_cbd_product__2",
+            "pls3_cbd_product__3",
+            "pls3_cbd_product__4",
+            "pls3_cbd_product__5",
+            "pls3_cbd_product__6",
+            "pls3_med1",
+            "pls3_med2",
+            "pls3_med3",
+            "pls3_med4",
+            "pls3_med5",
+            "pls3_need",
+            "pls3_otc_rx_days_y",
+            "pls3_otc_rx_days_y_2",
+            "pls3_otc_rx_days_y_3",
+            "pls3_otc_rx_days_y_4",
+            "pls3_otc_rx_days_y_5",
+            "pls3_otc_rx_y",
+            "pls3_sess",
+            "pls3_sess_date_time",
+            "pls3_y_caf",
+            "pls3_y_nic_tlfb",
+            "pls3_y_nic_use",
+            "pls3_youth_ago",
+            "pls3_youth_ago_2",
+            "pls3_youth_ago_3",
+            "pls3_youth_ago_4",
+            "pls3_youth_ago_5",
+            "pls3_youth_caffeine_t",
+            "pls3_youth_tobacco_t",
+            "pls4_med1",
+            "pls4_med2",
+            "pls4_med3",
+            "pls4_med4",
+            "pls4_med5",
+            "pls4_need",
+            "pls4_otc_rx_days_y",
+            "pls4_otc_rx_days_y_2",
+            "pls4_otc_rx_days_y_3",
+            "pls4_otc_rx_days_y_4",
+            "pls4_otc_rx_days_y_5",
+            "pls4_otc_rx_y",
+            "pls4_sess",
+            "pls4_sess_date_time",
+            "pls4_y_caf",
+            "pls4_y_nic_tlfb",
+            "pls4_y_nic_use",
+            "pls4_youth_ago",
+            "pls4_youth_ago_2",
+            "pls4_youth_ago_3",
+            "pls4_youth_ago_4",
+            "pls4_youth_ago_5",
+            "pls4_youth_caffeine_t",
+            "pls4_youth_tobacco_t"
+        ],
+        "shuffle": false,
+        "addProperties": [
+            {
+                "variableName": "pls1_cbd",
+                "isAbout": "pls1_cbd"
+            },
+            {
+                "variableName": "pls1_cbd_ago",
+                "isAbout": "pls1_cbd_ago"
+            },
+            {
+                "variableName": "pls1_cbd_product__1",
+                "isAbout": "pls1_cbd_product__1"
+            },
+            {
+                "variableName": "pls1_cbd_product__2",
+                "isAbout": "pls1_cbd_product__2"
+            },
+            {
+                "variableName": "pls1_cbd_product__3",
+                "isAbout": "pls1_cbd_product__3"
+            },
+            {
+                "variableName": "pls1_cbd_product__4",
+                "isAbout": "pls1_cbd_product__4"
+            },
+            {
+                "variableName": "pls1_cbd_product__5",
+                "isAbout": "pls1_cbd_product__5"
+            },
+            {
+                "variableName": "pls1_cbd_product__6",
+                "isAbout": "pls1_cbd_product__6"
+            },
+            {
+                "variableName": "pls1_med1_rxnorm",
+                "isAbout": "pls1_med1_rxnorm"
+            },
+            {
+                "variableName": "pls1_med2_rxnorm",
+                "isAbout": "pls1_med2_rxnorm"
+            },
+            {
+                "variableName": "pls1_med3_rxnorm",
+                "isAbout": "pls1_med3_rxnorm"
+            },
+            {
+                "variableName": "pls1_med4_rxnorm",
+                "isAbout": "pls1_med4_rxnorm"
+            },
+            {
+                "variableName": "pls1_med5_rxnorm",
+                "isAbout": "pls1_med5_rxnorm"
+            },
+            {
+                "variableName": "pls1_otc_rx_y",
+                "isAbout": "pls1_otc_rx_y"
+            },
+            {
+                "variableName": "pls1_otc2_rx_days_y",
+                "isAbout": "pls1_otc2_rx_days_y"
+            },
+            {
+                "variableName": "pls1_otc2_rx_days_y_2",
+                "isAbout": "pls1_otc2_rx_days_y_2"
+            },
+            {
+                "variableName": "pls1_otc2_rx_days_y_3",
+                "isAbout": "pls1_otc2_rx_days_y_3"
+            },
+            {
+                "variableName": "pls1_otc2_rx_days_y_4",
+                "isAbout": "pls1_otc2_rx_days_y_4"
+            },
+            {
+                "variableName": "pls1_otc2_rx_days_y_5",
+                "isAbout": "pls1_otc2_rx_days_y_5"
+            },
+            {
+                "variableName": "pls1_sess",
+                "isAbout": "pls1_sess"
+            },
+            {
+                "variableName": "pls1_sess_date_time",
+                "isAbout": "pls1_sess_date_time"
+            },
+            {
+                "variableName": "pls1_y_caf",
+                "isAbout": "pls1_y_caf"
+            },
+            {
+                "variableName": "pls1_y_nic_tlfb",
+                "isAbout": "pls1_y_nic_tlfb"
+            },
+            {
+                "variableName": "pls1_y_nic_use",
+                "isAbout": "pls1_y_nic_use"
+            },
+            {
+                "variableName": "pls1_youth_ago",
+                "isAbout": "pls1_youth_ago"
+            },
+            {
+                "variableName": "pls1_youth_ago_2",
+                "isAbout": "pls1_youth_ago_2"
+            },
+            {
+                "variableName": "pls1_youth_ago_3",
+                "isAbout": "pls1_youth_ago_3"
+            },
+            {
+                "variableName": "pls1_youth_ago_4",
+                "isAbout": "pls1_youth_ago_4"
+            },
+            {
+                "variableName": "pls1_youth_ago_5",
+                "isAbout": "pls1_youth_ago_5"
+            },
+            {
+                "variableName": "pls1_youth_caffeine_t",
+                "isAbout": "pls1_youth_caffeine_t"
+            },
+            {
+                "variableName": "pls1_youth_tobacco_t",
+                "isAbout": "pls1_youth_tobacco_t"
+            },
+            {
+                "variableName": "pls2_cbd",
+                "isAbout": "pls2_cbd"
+            },
+            {
+                "variableName": "pls2_cbd_ago",
+                "isAbout": "pls2_cbd_ago"
+            },
+            {
+                "variableName": "pls2_cbd_product__1",
+                "isAbout": "pls2_cbd_product__1"
+            },
+            {
+                "variableName": "pls2_cbd_product__2",
+                "isAbout": "pls2_cbd_product__2"
+            },
+            {
+                "variableName": "pls2_cbd_product__3",
+                "isAbout": "pls2_cbd_product__3"
+            },
+            {
+                "variableName": "pls2_cbd_product__4",
+                "isAbout": "pls2_cbd_product__4"
+            },
+            {
+                "variableName": "pls2_cbd_product__5",
+                "isAbout": "pls2_cbd_product__5"
+            },
+            {
+                "variableName": "pls2_cbd_product__6",
+                "isAbout": "pls2_cbd_product__6"
+            },
+            {
+                "variableName": "pls2_date_time",
+                "isAbout": "pls2_date_time"
+            },
+            {
+                "variableName": "pls2_med1_rxnorm",
+                "isAbout": "pls2_med1_rxnorm"
+            },
+            {
+                "variableName": "pls2_med2_rxnorm",
+                "isAbout": "pls2_med2_rxnorm"
+            },
+            {
+                "variableName": "pls2_med3_rxnorm",
+                "isAbout": "pls2_med3_rxnorm"
+            },
+            {
+                "variableName": "pls2_med4_rxnorm",
+                "isAbout": "pls2_med4_rxnorm"
+            },
+            {
+                "variableName": "pls2_med5_rxnorm",
+                "isAbout": "pls2_med5_rxnorm"
+            },
+            {
+                "variableName": "pls2_med6_rxnorm",
+                "isAbout": "pls2_med6_rxnorm"
+            },
+            {
+                "variableName": "pls2_med7_rxnorm_2",
+                "isAbout": "pls2_med7_rxnorm_2"
+            },
+            {
+                "variableName": "pls2_need",
+                "isAbout": "pls2_need"
+            },
+            {
+                "variableName": "pls2_otc_rx_y",
+                "isAbout": "pls2_otc_rx_y"
+            },
+            {
+                "variableName": "pls2_otc2_rx_days_y",
+                "isAbout": "pls2_otc2_rx_days_y"
+            },
+            {
+                "variableName": "pls2_otc2_rx_days_y_2",
+                "isAbout": "pls2_otc2_rx_days_y_2"
+            },
+            {
+                "variableName": "pls2_otc2_rx_days_y_3",
+                "isAbout": "pls2_otc2_rx_days_y_3"
+            },
+            {
+                "variableName": "pls2_otc2_rx_days_y_4",
+                "isAbout": "pls2_otc2_rx_days_y_4"
+            },
+            {
+                "variableName": "pls2_otc2_rx_days_y_5",
+                "isAbout": "pls2_otc2_rx_days_y_5"
+            },
+            {
+                "variableName": "pls2_otc2_rx_days_y_6",
+                "isAbout": "pls2_otc2_rx_days_y_6"
+            },
+            {
+                "variableName": "pls2_otc2_rx_days_y_7",
+                "isAbout": "pls2_otc2_rx_days_y_7"
+            },
+            {
+                "variableName": "pls2_sess",
+                "isAbout": "pls2_sess"
+            },
+            {
+                "variableName": "pls2_y_caf",
+                "isAbout": "pls2_y_caf"
+            },
+            {
+                "variableName": "pls2_y_nic_tlfb",
+                "isAbout": "pls2_y_nic_tlfb"
+            },
+            {
+                "variableName": "pls2_y_nic_use",
+                "isAbout": "pls2_y_nic_use"
+            },
+            {
+                "variableName": "pls2_youth_ago",
+                "isAbout": "pls2_youth_ago"
+            },
+            {
+                "variableName": "pls2_youth_ago_2",
+                "isAbout": "pls2_youth_ago_2"
+            },
+            {
+                "variableName": "pls2_youth_ago_3",
+                "isAbout": "pls2_youth_ago_3"
+            },
+            {
+                "variableName": "pls2_youth_ago_4",
+                "isAbout": "pls2_youth_ago_4"
+            },
+            {
+                "variableName": "pls2_youth_ago_5",
+                "isAbout": "pls2_youth_ago_5"
+            },
+            {
+                "variableName": "pls2_youth_ago_6",
+                "isAbout": "pls2_youth_ago_6"
+            },
+            {
+                "variableName": "pls2_youth_ago_7",
+                "isAbout": "pls2_youth_ago_7"
+            },
+            {
+                "variableName": "pls2_youth_caffeine_t",
+                "isAbout": "pls2_youth_caffeine_t"
+            },
+            {
+                "variableName": "pls2_youth_tobacco_t",
+                "isAbout": "pls2_youth_tobacco_t"
+            },
+            {
+                "variableName": "pls3_cbd",
+                "isAbout": "pls3_cbd"
+            },
+            {
+                "variableName": "pls3_cbd_ago",
+                "isAbout": "pls3_cbd_ago"
+            },
+            {
+                "variableName": "pls3_cbd_product__1",
+                "isAbout": "pls3_cbd_product__1"
+            },
+            {
+                "variableName": "pls3_cbd_product__2",
+                "isAbout": "pls3_cbd_product__2"
+            },
+            {
+                "variableName": "pls3_cbd_product__3",
+                "isAbout": "pls3_cbd_product__3"
+            },
+            {
+                "variableName": "pls3_cbd_product__4",
+                "isAbout": "pls3_cbd_product__4"
+            },
+            {
+                "variableName": "pls3_cbd_product__5",
+                "isAbout": "pls3_cbd_product__5"
+            },
+            {
+                "variableName": "pls3_cbd_product__6",
+                "isAbout": "pls3_cbd_product__6"
+            },
+            {
+                "variableName": "pls3_med1",
+                "isAbout": "pls3_med1"
+            },
+            {
+                "variableName": "pls3_med2",
+                "isAbout": "pls3_med2"
+            },
+            {
+                "variableName": "pls3_med3",
+                "isAbout": "pls3_med3"
+            },
+            {
+                "variableName": "pls3_med4",
+                "isAbout": "pls3_med4"
+            },
+            {
+                "variableName": "pls3_med5",
+                "isAbout": "pls3_med5"
+            },
+            {
+                "variableName": "pls3_need",
+                "isAbout": "pls3_need"
+            },
+            {
+                "variableName": "pls3_otc_rx_days_y",
+                "isAbout": "pls3_otc_rx_days_y"
+            },
+            {
+                "variableName": "pls3_otc_rx_days_y_2",
+                "isAbout": "pls3_otc_rx_days_y_2"
+            },
+            {
+                "variableName": "pls3_otc_rx_days_y_3",
+                "isAbout": "pls3_otc_rx_days_y_3"
+            },
+            {
+                "variableName": "pls3_otc_rx_days_y_4",
+                "isAbout": "pls3_otc_rx_days_y_4"
+            },
+            {
+                "variableName": "pls3_otc_rx_days_y_5",
+                "isAbout": "pls3_otc_rx_days_y_5"
+            },
+            {
+                "variableName": "pls3_otc_rx_y",
+                "isAbout": "pls3_otc_rx_y"
+            },
+            {
+                "variableName": "pls3_sess",
+                "isAbout": "pls3_sess"
+            },
+            {
+                "variableName": "pls3_sess_date_time",
+                "isAbout": "pls3_sess_date_time"
+            },
+            {
+                "variableName": "pls3_y_caf",
+                "isAbout": "pls3_y_caf"
+            },
+            {
+                "variableName": "pls3_y_nic_tlfb",
+                "isAbout": "pls3_y_nic_tlfb"
+            },
+            {
+                "variableName": "pls3_y_nic_use",
+                "isAbout": "pls3_y_nic_use"
+            },
+            {
+                "variableName": "pls3_youth_ago",
+                "isAbout": "pls3_youth_ago"
+            },
+            {
+                "variableName": "pls3_youth_ago_2",
+                "isAbout": "pls3_youth_ago_2"
+            },
+            {
+                "variableName": "pls3_youth_ago_3",
+                "isAbout": "pls3_youth_ago_3"
+            },
+            {
+                "variableName": "pls3_youth_ago_4",
+                "isAbout": "pls3_youth_ago_4"
+            },
+            {
+                "variableName": "pls3_youth_ago_5",
+                "isAbout": "pls3_youth_ago_5"
+            },
+            {
+                "variableName": "pls3_youth_caffeine_t",
+                "isAbout": "pls3_youth_caffeine_t"
+            },
+            {
+                "variableName": "pls3_youth_tobacco_t",
+                "isAbout": "pls3_youth_tobacco_t"
+            },
+            {
+                "variableName": "pls4_med1",
+                "isAbout": "pls4_med1"
+            },
+            {
+                "variableName": "pls4_med2",
+                "isAbout": "pls4_med2"
+            },
+            {
+                "variableName": "pls4_med3",
+                "isAbout": "pls4_med3"
+            },
+            {
+                "variableName": "pls4_med4",
+                "isAbout": "pls4_med4"
+            },
+            {
+                "variableName": "pls4_med5",
+                "isAbout": "pls4_med5"
+            },
+            {
+                "variableName": "pls4_need",
+                "isAbout": "pls4_need"
+            },
+            {
+                "variableName": "pls4_otc_rx_days_y",
+                "isAbout": "pls4_otc_rx_days_y"
+            },
+            {
+                "variableName": "pls4_otc_rx_days_y_2",
+                "isAbout": "pls4_otc_rx_days_y_2"
+            },
+            {
+                "variableName": "pls4_otc_rx_days_y_3",
+                "isAbout": "pls4_otc_rx_days_y_3"
+            },
+            {
+                "variableName": "pls4_otc_rx_days_y_4",
+                "isAbout": "pls4_otc_rx_days_y_4"
+            },
+            {
+                "variableName": "pls4_otc_rx_days_y_5",
+                "isAbout": "pls4_otc_rx_days_y_5"
+            },
+            {
+                "variableName": "pls4_otc_rx_y",
+                "isAbout": "pls4_otc_rx_y"
+            },
+            {
+                "variableName": "pls4_sess",
+                "isAbout": "pls4_sess"
+            },
+            {
+                "variableName": "pls4_sess_date_time",
+                "isAbout": "pls4_sess_date_time"
+            },
+            {
+                "variableName": "pls4_y_caf",
+                "isAbout": "pls4_y_caf"
+            },
+            {
+                "variableName": "pls4_y_nic_tlfb",
+                "isAbout": "pls4_y_nic_tlfb"
+            },
+            {
+                "variableName": "pls4_y_nic_use",
+                "isAbout": "pls4_y_nic_use"
+            },
+            {
+                "variableName": "pls4_youth_ago",
+                "isAbout": "pls4_youth_ago"
+            },
+            {
+                "variableName": "pls4_youth_ago_2",
+                "isAbout": "pls4_youth_ago_2"
+            },
+            {
+                "variableName": "pls4_youth_ago_3",
+                "isAbout": "pls4_youth_ago_3"
+            },
+            {
+                "variableName": "pls4_youth_ago_4",
+                "isAbout": "pls4_youth_ago_4"
+            },
+            {
+                "variableName": "pls4_youth_ago_5",
+                "isAbout": "pls4_youth_ago_5"
+            },
+            {
+                "variableName": "pls4_youth_caffeine_t",
+                "isAbout": "pls4_youth_caffeine_t"
+            },
+            {
+                "variableName": "pls4_youth_tobacco_t",
+                "isAbout": "pls4_youth_tobacco_t"
+            }
+        ]
+    }
+}

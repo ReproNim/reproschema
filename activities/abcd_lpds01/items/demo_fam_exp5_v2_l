@@ -1,0 +1,39 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "demo_fam_exp5_v2_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "demo_fam_exp5_v2_l",
+    "altLabel": "demo_fam_exp5_p_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Had services turned off by the gas or electric company, or the oil company wouldn't deliver oil because payments were not made? ¿Les suspendieron el servicio de gas o electricidad, o la compan-ía de petroleo se nego a abastecerles por falta de pago?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "No No",
+                "value": 0
+            },
+            {
+                "name": "Yes Sí",
+                "value": 1
+            },
+            {
+                "name": "Refuse to answer Niego contestar",
+                "value": 777
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = No No; 1 = Yes Sí;  777 = Refuse to answer Niego contestar"
+        }
+    ]
+}

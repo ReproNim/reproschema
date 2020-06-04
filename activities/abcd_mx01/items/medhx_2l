@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "medhx_2l",
+    "@type": "reproschema:Field",
+    "prefLabel": "medhx_2l",
+    "altLabel": "medhx_2l_musculary_dys_p medhx_2l_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Since we last saw you, has she/he been to a doctor for any of these things? Has she/he ever been to a doctor for any of these things…Muscular Dystrophy /Distrofia muscular",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 0,
+        "choices": [
+            {
+                "name": "Yes SÍ",
+                "value": 1
+            },
+            {
+                "name": "No No// Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes SÍ; 0 = No No// Now I'd like to ask you about your child's use of health services since we last saw you on_____. "
+        }
+    ]
+}

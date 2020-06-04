@@ -1,0 +1,51 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "ascq_section_q05",
+    "@type": "reproschema:Field",
+    "prefLabel": "ascq_section_q05",
+    "altLabel": "su_ascq_q05",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Smoking will make a person cough.",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Never",
+                "value": 1
+            },
+            {
+                "name": "Rarely",
+                "value": 2
+            },
+            {
+                "name": "Sometimes",
+                "value": 3
+            },
+            {
+                "name": "Often",
+                "value": 4
+            },
+            {
+                "name": "Always",
+                "value": 5
+            },
+            {
+                "name": "Uncertain / tlfb_tob_c_l   == '1' ",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Never; 2 = Rarely; 3 = Sometimes; 4 = Often; 5 = Always; 0 = Uncertain / tlfb_tob_c_l   == '1' ||  tlfb_tob_l   == '1'"
+        }
+    ]
+}

@@ -1,0 +1,506 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "abcd_plus01": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/activities/abcd_plus01/items/",
+        "pls1_cbd": {
+            "@id": "abcd_plus01:pls1_cbd",
+            "@type": "@id"
+        },
+        "pls1_cbd_ago": {
+            "@id": "abcd_plus01:pls1_cbd_ago",
+            "@type": "@id"
+        },
+        "pls1_cbd_product__1": {
+            "@id": "abcd_plus01:pls1_cbd_product__1",
+            "@type": "@id"
+        },
+        "pls1_cbd_product__2": {
+            "@id": "abcd_plus01:pls1_cbd_product__2",
+            "@type": "@id"
+        },
+        "pls1_cbd_product__3": {
+            "@id": "abcd_plus01:pls1_cbd_product__3",
+            "@type": "@id"
+        },
+        "pls1_cbd_product__4": {
+            "@id": "abcd_plus01:pls1_cbd_product__4",
+            "@type": "@id"
+        },
+        "pls1_cbd_product__5": {
+            "@id": "abcd_plus01:pls1_cbd_product__5",
+            "@type": "@id"
+        },
+        "pls1_cbd_product__6": {
+            "@id": "abcd_plus01:pls1_cbd_product__6",
+            "@type": "@id"
+        },
+        "pls1_med1_rxnorm": {
+            "@id": "abcd_plus01:pls1_med1_rxnorm",
+            "@type": "@id"
+        },
+        "pls1_med2_rxnorm": {
+            "@id": "abcd_plus01:pls1_med2_rxnorm",
+            "@type": "@id"
+        },
+        "pls1_med3_rxnorm": {
+            "@id": "abcd_plus01:pls1_med3_rxnorm",
+            "@type": "@id"
+        },
+        "pls1_med4_rxnorm": {
+            "@id": "abcd_plus01:pls1_med4_rxnorm",
+            "@type": "@id"
+        },
+        "pls1_med5_rxnorm": {
+            "@id": "abcd_plus01:pls1_med5_rxnorm",
+            "@type": "@id"
+        },
+        "pls1_otc_rx_y": {
+            "@id": "abcd_plus01:pls1_otc_rx_y",
+            "@type": "@id"
+        },
+        "pls1_otc2_rx_days_y": {
+            "@id": "abcd_plus01:pls1_otc2_rx_days_y",
+            "@type": "@id"
+        },
+        "pls1_otc2_rx_days_y_2": {
+            "@id": "abcd_plus01:pls1_otc2_rx_days_y_2",
+            "@type": "@id"
+        },
+        "pls1_otc2_rx_days_y_3": {
+            "@id": "abcd_plus01:pls1_otc2_rx_days_y_3",
+            "@type": "@id"
+        },
+        "pls1_otc2_rx_days_y_4": {
+            "@id": "abcd_plus01:pls1_otc2_rx_days_y_4",
+            "@type": "@id"
+        },
+        "pls1_otc2_rx_days_y_5": {
+            "@id": "abcd_plus01:pls1_otc2_rx_days_y_5",
+            "@type": "@id"
+        },
+        "pls1_sess": {
+            "@id": "abcd_plus01:pls1_sess",
+            "@type": "@id"
+        },
+        "pls1_sess_date_time": {
+            "@id": "abcd_plus01:pls1_sess_date_time",
+            "@type": "@id"
+        },
+        "pls1_y_caf": {
+            "@id": "abcd_plus01:pls1_y_caf",
+            "@type": "@id"
+        },
+        "pls1_y_nic_tlfb": {
+            "@id": "abcd_plus01:pls1_y_nic_tlfb",
+            "@type": "@id"
+        },
+        "pls1_y_nic_use": {
+            "@id": "abcd_plus01:pls1_y_nic_use",
+            "@type": "@id"
+        },
+        "pls1_youth_ago": {
+            "@id": "abcd_plus01:pls1_youth_ago",
+            "@type": "@id"
+        },
+        "pls1_youth_ago_2": {
+            "@id": "abcd_plus01:pls1_youth_ago_2",
+            "@type": "@id"
+        },
+        "pls1_youth_ago_3": {
+            "@id": "abcd_plus01:pls1_youth_ago_3",
+            "@type": "@id"
+        },
+        "pls1_youth_ago_4": {
+            "@id": "abcd_plus01:pls1_youth_ago_4",
+            "@type": "@id"
+        },
+        "pls1_youth_ago_5": {
+            "@id": "abcd_plus01:pls1_youth_ago_5",
+            "@type": "@id"
+        },
+        "pls1_youth_caffeine_t": {
+            "@id": "abcd_plus01:pls1_youth_caffeine_t",
+            "@type": "@id"
+        },
+        "pls1_youth_tobacco_t": {
+            "@id": "abcd_plus01:pls1_youth_tobacco_t",
+            "@type": "@id"
+        },
+        "pls2_cbd": {
+            "@id": "abcd_plus01:pls2_cbd",
+            "@type": "@id"
+        },
+        "pls2_cbd_ago": {
+            "@id": "abcd_plus01:pls2_cbd_ago",
+            "@type": "@id"
+        },
+        "pls2_cbd_product__1": {
+            "@id": "abcd_plus01:pls2_cbd_product__1",
+            "@type": "@id"
+        },
+        "pls2_cbd_product__2": {
+            "@id": "abcd_plus01:pls2_cbd_product__2",
+            "@type": "@id"
+        },
+        "pls2_cbd_product__3": {
+            "@id": "abcd_plus01:pls2_cbd_product__3",
+            "@type": "@id"
+        },
+        "pls2_cbd_product__4": {
+            "@id": "abcd_plus01:pls2_cbd_product__4",
+            "@type": "@id"
+        },
+        "pls2_cbd_product__5": {
+            "@id": "abcd_plus01:pls2_cbd_product__5",
+            "@type": "@id"
+        },
+        "pls2_cbd_product__6": {
+            "@id": "abcd_plus01:pls2_cbd_product__6",
+            "@type": "@id"
+        },
+        "pls2_date_time": {
+            "@id": "abcd_plus01:pls2_date_time",
+            "@type": "@id"
+        },
+        "pls2_med1_rxnorm": {
+            "@id": "abcd_plus01:pls2_med1_rxnorm",
+            "@type": "@id"
+        },
+        "pls2_med2_rxnorm": {
+            "@id": "abcd_plus01:pls2_med2_rxnorm",
+            "@type": "@id"
+        },
+        "pls2_med3_rxnorm": {
+            "@id": "abcd_plus01:pls2_med3_rxnorm",
+            "@type": "@id"
+        },
+        "pls2_med4_rxnorm": {
+            "@id": "abcd_plus01:pls2_med4_rxnorm",
+            "@type": "@id"
+        },
+        "pls2_med5_rxnorm": {
+            "@id": "abcd_plus01:pls2_med5_rxnorm",
+            "@type": "@id"
+        },
+        "pls2_med6_rxnorm": {
+            "@id": "abcd_plus01:pls2_med6_rxnorm",
+            "@type": "@id"
+        },
+        "pls2_med7_rxnorm_2": {
+            "@id": "abcd_plus01:pls2_med7_rxnorm_2",
+            "@type": "@id"
+        },
+        "pls2_need": {
+            "@id": "abcd_plus01:pls2_need",
+            "@type": "@id"
+        },
+        "pls2_otc_rx_y": {
+            "@id": "abcd_plus01:pls2_otc_rx_y",
+            "@type": "@id"
+        },
+        "pls2_otc2_rx_days_y": {
+            "@id": "abcd_plus01:pls2_otc2_rx_days_y",
+            "@type": "@id"
+        },
+        "pls2_otc2_rx_days_y_2": {
+            "@id": "abcd_plus01:pls2_otc2_rx_days_y_2",
+            "@type": "@id"
+        },
+        "pls2_otc2_rx_days_y_3": {
+            "@id": "abcd_plus01:pls2_otc2_rx_days_y_3",
+            "@type": "@id"
+        },
+        "pls2_otc2_rx_days_y_4": {
+            "@id": "abcd_plus01:pls2_otc2_rx_days_y_4",
+            "@type": "@id"
+        },
+        "pls2_otc2_rx_days_y_5": {
+            "@id": "abcd_plus01:pls2_otc2_rx_days_y_5",
+            "@type": "@id"
+        },
+        "pls2_otc2_rx_days_y_6": {
+            "@id": "abcd_plus01:pls2_otc2_rx_days_y_6",
+            "@type": "@id"
+        },
+        "pls2_otc2_rx_days_y_7": {
+            "@id": "abcd_plus01:pls2_otc2_rx_days_y_7",
+            "@type": "@id"
+        },
+        "pls2_sess": {
+            "@id": "abcd_plus01:pls2_sess",
+            "@type": "@id"
+        },
+        "pls2_y_caf": {
+            "@id": "abcd_plus01:pls2_y_caf",
+            "@type": "@id"
+        },
+        "pls2_y_nic_tlfb": {
+            "@id": "abcd_plus01:pls2_y_nic_tlfb",
+            "@type": "@id"
+        },
+        "pls2_y_nic_use": {
+            "@id": "abcd_plus01:pls2_y_nic_use",
+            "@type": "@id"
+        },
+        "pls2_youth_ago": {
+            "@id": "abcd_plus01:pls2_youth_ago",
+            "@type": "@id"
+        },
+        "pls2_youth_ago_2": {
+            "@id": "abcd_plus01:pls2_youth_ago_2",
+            "@type": "@id"
+        },
+        "pls2_youth_ago_3": {
+            "@id": "abcd_plus01:pls2_youth_ago_3",
+            "@type": "@id"
+        },
+        "pls2_youth_ago_4": {
+            "@id": "abcd_plus01:pls2_youth_ago_4",
+            "@type": "@id"
+        },
+        "pls2_youth_ago_5": {
+            "@id": "abcd_plus01:pls2_youth_ago_5",
+            "@type": "@id"
+        },
+        "pls2_youth_ago_6": {
+            "@id": "abcd_plus01:pls2_youth_ago_6",
+            "@type": "@id"
+        },
+        "pls2_youth_ago_7": {
+            "@id": "abcd_plus01:pls2_youth_ago_7",
+            "@type": "@id"
+        },
+        "pls2_youth_caffeine_t": {
+            "@id": "abcd_plus01:pls2_youth_caffeine_t",
+            "@type": "@id"
+        },
+        "pls2_youth_tobacco_t": {
+            "@id": "abcd_plus01:pls2_youth_tobacco_t",
+            "@type": "@id"
+        },
+        "pls3_cbd": {
+            "@id": "abcd_plus01:pls3_cbd",
+            "@type": "@id"
+        },
+        "pls3_cbd_ago": {
+            "@id": "abcd_plus01:pls3_cbd_ago",
+            "@type": "@id"
+        },
+        "pls3_cbd_product__1": {
+            "@id": "abcd_plus01:pls3_cbd_product__1",
+            "@type": "@id"
+        },
+        "pls3_cbd_product__2": {
+            "@id": "abcd_plus01:pls3_cbd_product__2",
+            "@type": "@id"
+        },
+        "pls3_cbd_product__3": {
+            "@id": "abcd_plus01:pls3_cbd_product__3",
+            "@type": "@id"
+        },
+        "pls3_cbd_product__4": {
+            "@id": "abcd_plus01:pls3_cbd_product__4",
+            "@type": "@id"
+        },
+        "pls3_cbd_product__5": {
+            "@id": "abcd_plus01:pls3_cbd_product__5",
+            "@type": "@id"
+        },
+        "pls3_cbd_product__6": {
+            "@id": "abcd_plus01:pls3_cbd_product__6",
+            "@type": "@id"
+        },
+        "pls3_med1": {
+            "@id": "abcd_plus01:pls3_med1",
+            "@type": "@id"
+        },
+        "pls3_med2": {
+            "@id": "abcd_plus01:pls3_med2",
+            "@type": "@id"
+        },
+        "pls3_med3": {
+            "@id": "abcd_plus01:pls3_med3",
+            "@type": "@id"
+        },
+        "pls3_med4": {
+            "@id": "abcd_plus01:pls3_med4",
+            "@type": "@id"
+        },
+        "pls3_med5": {
+            "@id": "abcd_plus01:pls3_med5",
+            "@type": "@id"
+        },
+        "pls3_need": {
+            "@id": "abcd_plus01:pls3_need",
+            "@type": "@id"
+        },
+        "pls3_otc_rx_days_y": {
+            "@id": "abcd_plus01:pls3_otc_rx_days_y",
+            "@type": "@id"
+        },
+        "pls3_otc_rx_days_y_2": {
+            "@id": "abcd_plus01:pls3_otc_rx_days_y_2",
+            "@type": "@id"
+        },
+        "pls3_otc_rx_days_y_3": {
+            "@id": "abcd_plus01:pls3_otc_rx_days_y_3",
+            "@type": "@id"
+        },
+        "pls3_otc_rx_days_y_4": {
+            "@id": "abcd_plus01:pls3_otc_rx_days_y_4",
+            "@type": "@id"
+        },
+        "pls3_otc_rx_days_y_5": {
+            "@id": "abcd_plus01:pls3_otc_rx_days_y_5",
+            "@type": "@id"
+        },
+        "pls3_otc_rx_y": {
+            "@id": "abcd_plus01:pls3_otc_rx_y",
+            "@type": "@id"
+        },
+        "pls3_sess": {
+            "@id": "abcd_plus01:pls3_sess",
+            "@type": "@id"
+        },
+        "pls3_sess_date_time": {
+            "@id": "abcd_plus01:pls3_sess_date_time",
+            "@type": "@id"
+        },
+        "pls3_y_caf": {
+            "@id": "abcd_plus01:pls3_y_caf",
+            "@type": "@id"
+        },
+        "pls3_y_nic_tlfb": {
+            "@id": "abcd_plus01:pls3_y_nic_tlfb",
+            "@type": "@id"
+        },
+        "pls3_y_nic_use": {
+            "@id": "abcd_plus01:pls3_y_nic_use",
+            "@type": "@id"
+        },
+        "pls3_youth_ago": {
+            "@id": "abcd_plus01:pls3_youth_ago",
+            "@type": "@id"
+        },
+        "pls3_youth_ago_2": {
+            "@id": "abcd_plus01:pls3_youth_ago_2",
+            "@type": "@id"
+        },
+        "pls3_youth_ago_3": {
+            "@id": "abcd_plus01:pls3_youth_ago_3",
+            "@type": "@id"
+        },
+        "pls3_youth_ago_4": {
+            "@id": "abcd_plus01:pls3_youth_ago_4",
+            "@type": "@id"
+        },
+        "pls3_youth_ago_5": {
+            "@id": "abcd_plus01:pls3_youth_ago_5",
+            "@type": "@id"
+        },
+        "pls3_youth_caffeine_t": {
+            "@id": "abcd_plus01:pls3_youth_caffeine_t",
+            "@type": "@id"
+        },
+        "pls3_youth_tobacco_t": {
+            "@id": "abcd_plus01:pls3_youth_tobacco_t",
+            "@type": "@id"
+        },
+        "pls4_med1": {
+            "@id": "abcd_plus01:pls4_med1",
+            "@type": "@id"
+        },
+        "pls4_med2": {
+            "@id": "abcd_plus01:pls4_med2",
+            "@type": "@id"
+        },
+        "pls4_med3": {
+            "@id": "abcd_plus01:pls4_med3",
+            "@type": "@id"
+        },
+        "pls4_med4": {
+            "@id": "abcd_plus01:pls4_med4",
+            "@type": "@id"
+        },
+        "pls4_med5": {
+            "@id": "abcd_plus01:pls4_med5",
+            "@type": "@id"
+        },
+        "pls4_need": {
+            "@id": "abcd_plus01:pls4_need",
+            "@type": "@id"
+        },
+        "pls4_otc_rx_days_y": {
+            "@id": "abcd_plus01:pls4_otc_rx_days_y",
+            "@type": "@id"
+        },
+        "pls4_otc_rx_days_y_2": {
+            "@id": "abcd_plus01:pls4_otc_rx_days_y_2",
+            "@type": "@id"
+        },
+        "pls4_otc_rx_days_y_3": {
+            "@id": "abcd_plus01:pls4_otc_rx_days_y_3",
+            "@type": "@id"
+        },
+        "pls4_otc_rx_days_y_4": {
+            "@id": "abcd_plus01:pls4_otc_rx_days_y_4",
+            "@type": "@id"
+        },
+        "pls4_otc_rx_days_y_5": {
+            "@id": "abcd_plus01:pls4_otc_rx_days_y_5",
+            "@type": "@id"
+        },
+        "pls4_otc_rx_y": {
+            "@id": "abcd_plus01:pls4_otc_rx_y",
+            "@type": "@id"
+        },
+        "pls4_sess": {
+            "@id": "abcd_plus01:pls4_sess",
+            "@type": "@id"
+        },
+        "pls4_sess_date_time": {
+            "@id": "abcd_plus01:pls4_sess_date_time",
+            "@type": "@id"
+        },
+        "pls4_y_caf": {
+            "@id": "abcd_plus01:pls4_y_caf",
+            "@type": "@id"
+        },
+        "pls4_y_nic_tlfb": {
+            "@id": "abcd_plus01:pls4_y_nic_tlfb",
+            "@type": "@id"
+        },
+        "pls4_y_nic_use": {
+            "@id": "abcd_plus01:pls4_y_nic_use",
+            "@type": "@id"
+        },
+        "pls4_youth_ago": {
+            "@id": "abcd_plus01:pls4_youth_ago",
+            "@type": "@id"
+        },
+        "pls4_youth_ago_2": {
+            "@id": "abcd_plus01:pls4_youth_ago_2",
+            "@type": "@id"
+        },
+        "pls4_youth_ago_3": {
+            "@id": "abcd_plus01:pls4_youth_ago_3",
+            "@type": "@id"
+        },
+        "pls4_youth_ago_4": {
+            "@id": "abcd_plus01:pls4_youth_ago_4",
+            "@type": "@id"
+        },
+        "pls4_youth_ago_5": {
+            "@id": "abcd_plus01:pls4_youth_ago_5",
+            "@type": "@id"
+        },
+        "pls4_youth_caffeine_t": {
+            "@id": "abcd_plus01:pls4_youth_caffeine_t",
+            "@type": "@id"
+        },
+        "pls4_youth_tobacco_t": {
+            "@id": "abcd_plus01:pls4_youth_tobacco_t",
+            "@type": "@id"
+        }
+    }
+}

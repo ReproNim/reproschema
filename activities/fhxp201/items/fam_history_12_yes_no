@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "fam_history_12_yes_no",
+    "@type": "reproschema:Field",
+    "prefLabel": "fam_history_12_yes_no",
+    "altLabel": "famhx_12_yes_no_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "12. Has ANY blood relative of your child ever been hospitalized because of emotional or mental problems, or drug or alcohol problems? ¿ALGÚN pariente consanguíneo de su niño(a) ha estado hospitalizado alguna vez por problemas emocionales o mentales, o por problemas con el alcohol o las drogas?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 0,
+        "choices": [
+            {
+                "name": "Yes Sí",
+                "value": 1
+            },
+            {
+                "name": "No No",
+                "value": 0
+            },
+            {
+                "name": "Don't know No lo sé",
+                "value": 999
+            },
+            {
+                "name": "Refuse to answer Niego contestar /  famhx_1   == 1",
+                "value": 7
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes Sí; 0 = No No; 999 = Don't know No lo sé; 7 = Refuse to answer Niego contestar /  famhx_1   == 1"
+        }
+    ]
+}

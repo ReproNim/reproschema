@@ -1,0 +1,42 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "ssrs_42_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "ssrs_42_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Seems overly sensitive to sounds, textures or smells. Parece demasiado/a sensible a los sonidos, las texturas o los olores.",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Not True No es cierto",
+                "value": 1
+            },
+            {
+                "name": "Sometimes True Algunas veces cierto",
+                "value": 2
+            },
+            {
+                "name": "Often True Frequentemente cierto",
+                "value": 3
+            },
+            {
+                "name": "Almost Always True Casi siempre cierto",
+                "value": 4
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Not True No es cierto; 2 = Sometimes True Algunas veces cierto; 3 = Often True Frequentemente cierto; 4 = Almost Always True Casi siempre cierto"
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "kbi_p_c_guard_l___1",
+    "@type": "reproschema:Field",
+    "prefLabel": "kbi_p_c_guard_l___1",
+    "altLabel": "kbi_c_guard_p_l___1 ksads_back_c_guard_p_l___1",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Since we last saw you, who else has your child lived with at least part of the time? Desde la última vez que nos vimos, ¿Con quién más pasa tiempo su niño(a)? (1, Biological Mother Madre biológica)",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "No",
+                "value": 0
+            },
+            {
+                "name": "Yes",
+                "value": 1
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = No; 1 = Yes"
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "pubertal_sex_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "pubertal_sex_p",
+    "altLabel": "pubertdev_sex_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "What sex was your child assigned at birth? ¿Qué sexo le fue asignado a su niño(a) al nacer?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Male Masculino",
+                "value": 1
+            },
+            {
+                "name": "Female Femenino",
+                "value": 2
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Male Masculino; 2 = Female Femenino"
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "hormons_sal_freeztemp_y",
+    "@type": "reproschema:Field",
+    "prefLabel": "hormons_sal_freeztemp_y",
+    "altLabel": "biospec_hormons_sal_freeztemp",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Hormone sample storage temperature:",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "-20 C freezer",
+                "value": 1
+            },
+            {
+                "name": "-80 C freezer ",
+                "value": 2
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = -20 C freezer; 2 = -80 C freezer | Indicate temperature of 3-month storage freezer here."
+        }
+    ]
+}

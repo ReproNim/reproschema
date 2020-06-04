@@ -1,0 +1,38 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "deconvolved",
+    "@type": "reproschema:Field",
+    "prefLabel": "deconvolved",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Was deconvolution used to obtain the image?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "name": "no",
+                "value": 0
+            },
+            {
+                "name": "yes",
+                "value": 1
+            },
+            {
+                "name": "unknown",
+                "value": 2
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = no; 1 = yes; 2 = unknown"
+        }
+    ]
+}

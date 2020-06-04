@@ -1,0 +1,47 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "wps_q3_y",
+    "@type": "reproschema:Field",
+    "prefLabel": "wps_q3_y",
+    "altLabel": "wps_q3",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "I think about the choices before I do anything.",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Never",
+                "value": 1
+            },
+            {
+                "name": "A Little",
+                "value": 2
+            },
+            {
+                "name": "Sometimes",
+                "value": 3
+            },
+            {
+                "name": "Pretty Often",
+                "value": 4
+            },
+            {
+                "name": "Usually",
+                "value": 5
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Never; 2 = A Little; 3 = Sometimes; 4 = Pretty Often; 5 = Usually"
+        }
+    ]
+}

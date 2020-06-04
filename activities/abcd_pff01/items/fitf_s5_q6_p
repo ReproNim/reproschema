@@ -1,0 +1,39 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "fitf_s5_q6_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "fitf_s5_q6_p",
+    "altLabel": "fitbit_follow_up_s5_q6_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Does your child eat or drink after dinner?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "They usually have something after dinner.",
+                "value": 1
+            },
+            {
+                "name": "They sometimes have something after dinner.",
+                "value": 2
+            },
+            {
+                "name": "They almost never have anything after dinner.",
+                "value": 3
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = They usually have something after dinner.; 2 = They sometimes have something after dinner.; 3 = They almost never have anything after dinner."
+        }
+    ]
+}

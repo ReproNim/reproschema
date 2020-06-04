@@ -1,0 +1,55 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "dim_matrix_q7",
+    "@type": "reproschema:Field",
+    "prefLabel": "dim_matrix_q7",
+    "altLabel": "discrimination_matrix_q7",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "I feel that other Americans have something against me:",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "almost never",
+                "value": 1
+            },
+            {
+                "name": "rarely",
+                "value": 2
+            },
+            {
+                "name": "sometimes",
+                "value": 3
+            },
+            {
+                "name": "often",
+                "value": 4
+            },
+            {
+                "name": "very often",
+                "value": 5
+            },
+            {
+                "name": "don't know",
+                "value": 777
+            },
+            {
+                "name": "refused to answer",
+                "value": 999
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = almost never; 2 = rarely; 3 = sometimes; 4 = often; 5 = very often; 777 = don't know; 999 = refused to answer"
+        }
+    ]
+}

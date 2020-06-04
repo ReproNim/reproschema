@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "tlfb_mj_con_first_use",
+    "@type": "reproschema:Field",
+    "prefLabel": "tlfb_mj_con_first_use",
+    "altLabel": "su_tlfb_mj_con_first_use",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Was this the first time you tried MARIJUANA OILS OR CONCENTRATES, such as 710; hash oil; BHO/butane hash oil/dabs/shatter/budder/honey oil; Co2 oil/vaporizer pen; Rick Simpson Oil/RSO/phoenix tears)?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "Yes",
+                "value": 1
+            },
+            {
+                "name": "No / tlfb_mj_conc_use_l  == '1'  &&  event_name_number  > '11'",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes; 0 = No / tlfb_mj_conc_use_l  == '1'  &&  event_name_number  > '11'"
+        }
+    ]
+}

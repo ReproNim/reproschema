@@ -1,0 +1,50 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "pds_ht2_y",
+    "@type": "reproschema:Field",
+    "prefLabel": "pds_ht2_y",
+    "altLabel": "pubertdev_ht",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Would you say that your growth in height:",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "has not yet begun to spurt",
+                "value": 1
+            },
+            {
+                "name": "has barely started",
+                "value": 2
+            },
+            {
+                "name": "is definitely underway",
+                "value": 3
+            },
+            {
+                "name": "seems complete",
+                "value": 4
+            },
+            {
+                "name": "I don't know",
+                "value": 999
+            },
+            {
+                "value": 777
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = has not yet begun to spurt; 2 = has barely started; 3 = is definitely underway; 4 = seems complete; 999 = I don't know; 777= refuse to answer. The next questions are about changes that may be happening to your body. These changes normally happen to different young people at different ages. Since they may have something to do with your brain image results, do your best to answer carefully. To give you some privacy, we will let you read and answer the questions on your own. However, if you would like help reading or you don't understand the questions, just let me know and I can help you."
+        }
+    ]
+}

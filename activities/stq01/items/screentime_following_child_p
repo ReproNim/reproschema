@@ -1,0 +1,36 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "screentime_following_child_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "screentime_following_child_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Are you following  or friends with  your child on any social media sites (e.g.  Facebook  Instagram  Snapchat)? /Est? siguiendo a su hijo/a o es amigo de ?l/ella en alguna red social (por ejemplo  Facebook  Instagram  Snapchat)?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "name": "Yes /S?",
+                "value": 1
+            },
+            {
+                "value": 0
+            },
+            {
+                "value": 777
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes /S?; 0=  No/No; 777=  Refuse to Answer/Niego contestar "
+        }
+    ]
+}

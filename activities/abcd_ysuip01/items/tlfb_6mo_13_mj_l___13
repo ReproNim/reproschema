@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "tlfb_6mo_13_mj_l___13",
+    "@type": "reproschema:Field",
+    "prefLabel": "tlfb_6mo_13_mj_l___13",
+    "altLabel": "su_tlfb_past_yr_13_mj_l___13",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "During the past year, where did you get your marijuana (Choose all that apply): (13, Family member or friend with prescription medical marijuana)",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "No",
+                "value": 0
+            },
+            {
+                "name": "Yes / tlfb_6mo_skip_l___9   == '1' ",
+                "value": 1
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = No; 1 = Yes / tlfb_6mo_skip_l___9   == '1' ||  tlfb_6mo_skip_l___10   == '1' ||  tlfb_6mo_skip_l___11   == '1' ||  tlfb_6mo_skip_l___12   == '1' ||  tlfb_6mo_skip_l___13   == '1'"
+        }
+    ]
+}

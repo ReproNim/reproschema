@@ -1,0 +1,51 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "path_alc_youth4",
+    "@type": "reproschema:Field",
+    "prefLabel": "path_alc_youth4",
+    "altLabel": "su_intent_youth4",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Do you think you will try a tobacco product soon?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Definitely yes",
+                "value": 1
+            },
+            {
+                "name": "Probably yes",
+                "value": 2
+            },
+            {
+                "name": "Probably not",
+                "value": 3
+            },
+            {
+                "name": "Definitely not",
+                "value": 4
+            },
+            {
+                "name": "Don't know",
+                "value": 5
+            },
+            {
+                "name": "Refused to answer",
+                "value": 6
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Definitely yes; 2 = Probably yes; 3 = Probably not; 4 = Definitely not; 5 = Don't know; 6 = Refused to answer"
+        }
+    ]
+}

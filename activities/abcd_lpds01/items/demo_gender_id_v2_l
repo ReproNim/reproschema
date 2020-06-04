@@ -1,0 +1,59 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "demo_gender_id_v2_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "demo_gender_id_v2_l",
+    "altLabel": "demo_gender_id_p_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "What is the child's current gender identity? ¿Cuál es la identidad de género actual de el/la nino(a)?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Male Hombre",
+                "value": 1
+            },
+            {
+                "name": "Female Mujer",
+                "value": 2
+            },
+            {
+                "name": "Trans male Transexual masculino / hombre transexual",
+                "value": 3
+            },
+            {
+                "name": "Trans female Transexual femenino / mujer transexual",
+                "value": 4
+            },
+            {
+                "name": "Gender queer Intergénero (\"genderqueer\") / No conforme con el género",
+                "value": 5
+            },
+            {
+                "name": "Different Otra identididad",
+                "value": 6
+            },
+            {
+                "name": "Refuse to answer Niego contestar",
+                "value": 777
+            },
+            {
+                "name": "Don't know No lo sé",
+                "value": 999
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Male Hombre; 2 = Female Mujer; 3 = Trans male Transexual masculino / hombre transexual; 4 = Trans female Transexual femenino / mujer transexual; 5 = Gender queer Intergénero (\"genderqueer\") / No conforme con el género; 6 = Different Otra identididad; 777 = Refuse to answer Niego contestar; 999 = Don't know No lo sé"
+        }
+    ]
+}

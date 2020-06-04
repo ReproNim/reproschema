@@ -1,0 +1,36 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "demo_child_time_v2b",
+    "@type": "reproschema:Field",
+    "prefLabel": "demo_child_time_v2b",
+    "altLabel": "demo_child_time_v2b_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Is there another household in which the child spends a significant amount of time?/ Hay otro hogar en donde su nino(a) pase una cantidad importante de tiempo?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "value": 0
+            },
+            {
+                "value": 1
+            },
+            {
+                "value": 777
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0= No/No; 1= Yes/S?; 777= Refuse to answer/Niego contestar"
+        }
+    ]
+}

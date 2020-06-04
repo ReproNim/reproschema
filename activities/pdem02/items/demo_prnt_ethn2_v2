@@ -1,0 +1,75 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "demo_prnt_ethn2_v2",
+    "@type": "reproschema:Field",
+    "prefLabel": "demo_prnt_ethn2_v2",
+    "altLabel": "demo_prnt_ethn2_p demo_prnt_ethn2_v2b",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Please choose the group that best represents your Hispanic origin or ancestry. Elija el grupo que mejor represente su origen o ascendencia hispana.",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 10,
+        "schema:maxValue": 12,
+        "choices": [
+            {
+                "name": "Puerto Rican",
+                "value": 10
+            },
+            {
+                "name": "Dominican (Republic)",
+                "value": 12
+            },
+            {
+                "name": "Mexican/Mexicano",
+                "value": 13
+            },
+            {
+                "name": "Mexican American",
+                "value": 14
+            },
+            {
+                "name": "Chicano",
+                "value": 15
+            },
+            {
+                "name": "Cuban",
+                "value": 18
+            },
+            {
+                "name": "Cuban American",
+                "value": 19
+            },
+            {
+                "name": "Central or South American",
+                "value": 20
+            },
+            {
+                "name": "Other Latin American",
+                "value": 40
+            },
+            {
+                "name": "Other Hispanic",
+                "value": 41
+            },
+            {
+                "name": "Refused to answer",
+                "value": 777
+            },
+            {
+                "name": "Don't know // The following questions are about you or the child's family.",
+                "value": 999
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "10 = Puerto Rican; 12 = Dominican (Republic); 13 = Mexican/Mexicano; 14 = Mexican American; 15 = Chicano; 18 = Cuban; 19 = Cuban American; 20 = Central or South American; 40 = Other Latin American; 41 = Other Hispanic; 777 = Refused to answer; 999 = Don't know // The following questions are about you or the child's family."
+        }
+    ]
+}

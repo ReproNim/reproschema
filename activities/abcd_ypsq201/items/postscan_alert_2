@@ -1,0 +1,47 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "postscan_alert_2",
+    "@type": "reproschema:Field",
+    "prefLabel": "postscan_alert_2",
+    "altLabel": "postscan_state_alert_2",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "This is a list of words that describe different feelings and emotions. Indicate how much you feel this way now.  1= little to none; and 5=extremely; Alert",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Very slightly or not at all",
+                "value": 1
+            },
+            {
+                "name": "A little",
+                "value": 2
+            },
+            {
+                "name": "Moderately",
+                "value": 3
+            },
+            {
+                "name": "Quite a bit",
+                "value": 4
+            },
+            {
+                "name": "Extremely//postscan_2_need == 1 ",
+                "value": 5
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Very slightly or not at all; 2 = A little; 3 = Moderately; 4 = Quite a bit; 5 = Extremely//postscan_2_need == 1 "
+        }
+    ]
+}

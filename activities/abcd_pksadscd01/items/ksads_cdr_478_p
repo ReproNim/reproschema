@@ -1,0 +1,47 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "ksads_cdr_478_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "ksads_cdr_478_p",
+    "altLabel": "ksads_conduct_disorder_raw_478_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "In the past two weeks, how often did your child make fun of other kids, or try to make them look bad by tripping them or knocking down their books, or try to scare them by threatening to hurt them if they did not give your child money or do what he or she said?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "Not at all",
+                "value": 0
+            },
+            {
+                "name": "Rarely",
+                "value": 1
+            },
+            {
+                "name": "Several days",
+                "value": 2
+            },
+            {
+                "name": "More than half the days",
+                "value": 3
+            },
+            {
+                "name": "Nearly every day",
+                "value": 4
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = Not at all; 1 = Rarely; 2 = Several days; 3 = More than half the days; 4 = Nearly every day"
+        }
+    ]
+}

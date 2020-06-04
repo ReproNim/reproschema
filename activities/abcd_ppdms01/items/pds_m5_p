@@ -1,0 +1,47 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "pds_m5_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "pds_m5_p",
+    "altLabel": "pubertdev_m5_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Has he begun to grow hair on his face? ¿A su niño le ha empezado a crecer vello en la cara?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "facial hair has not yet started growing Aún no le ha empezado a salir vello facial.",
+                "value": 1
+            },
+            {
+                "name": "facial hair has barely started growing Apenas le ha empezado a salir vello facial.",
+                "value": 2
+            },
+            {
+                "name": "facial hair has definitely started Definitivamente ya le ha empezado a salir vello facial.",
+                "value": 3
+            },
+            {
+                "name": "facial growth seems complete Ya parece haber terminado de salirle el vello facial.",
+                "value": 4
+            },
+            {
+                "name": "I don't know No sé",
+                "value": 999
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = facial hair has not yet started growing Aún no le ha empezado a salir vello facial.; 2 = facial hair has barely started growing Apenas le ha empezado a salir vello facial.; 3 = facial hair has definitely started Definitivamente ya le ha empezado a salir vello facial.; 4 = facial growth seems complete Ya parece haber terminado de salirle el vello facial.; 999 = I don't know No sé"
+        }
+    ]
+}

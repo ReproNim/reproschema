@@ -1,0 +1,45 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "accult_q1_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "accult_q1_p",
+    "altLabel": "accult_phenx_q1_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "How well do you speak English? ¿Qué tan bien habla usted el inglés?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 777,
+        "choices": [
+            {
+                "value": 1
+            },
+            {
+                "value": 2
+            },
+            {
+                "value": 3
+            },
+            {
+                "value": 4
+            },
+            {
+                "value": 999
+            },
+            {
+                "value": 777
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1-Poor/Mal; 2-Fair/Regular; 3-Good/Bien; 4-Excellent/Excelente; 999-Don't know/No se; 777-Refused/Niego contestar\n"
+        }
+    ]
+}

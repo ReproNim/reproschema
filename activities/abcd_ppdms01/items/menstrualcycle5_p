@@ -1,0 +1,47 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "menstrualcycle5_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "menstrualcycle5_p",
+    "altLabel": "menstrual_5_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Does she experience premenstrual irritability, fatigue, tearfulness, etc., which start before her period and stop within a few days of bleeding? ¿Presenta ella síntomas premenstruales, como irritabilidad, fatiga, propensión al llanto, etc., que comienzan antes de su periodo y desaparecen en los primeros días de sangrado?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Not at all Para nada",
+                "value": 1
+            },
+            {
+                "name": "Mild Leves",
+                "value": 2
+            },
+            {
+                "name": "Moderate Moderados",
+                "value": 3
+            },
+            {
+                "name": "Severe Graves",
+                "value": 4
+            },
+            {
+                "name": "Don't know No sé",
+                "value": 999
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Not at all Para nada; 2 = Mild Leves; 3 = Moderate Moderados; 4 = Severe Graves; 999 = Don't know No sé"
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "demo_prnt_marital_v2b",
+    "@type": "reproschema:Field",
+    "prefLabel": "demo_prnt_marital_v2b",
+    "altLabel": "demo_prnt_marital_v2b_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Are you now married  widowed  divorced  separated  never married or living with a partner?/ Usted actualmente est? casado(a)  viudo(a)  divorciado(a)  separado(a)  nunca se ha casado(a) o vive con una pareja?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 777,
+        "choices": [
+            {
+                "value": 1
+            },
+            {
+                "value": 2
+            },
+            {
+                "value": 3
+            },
+            {
+                "value": 4
+            },
+            {
+                "value": 5
+            },
+            {
+                "value": 6
+            },
+            {
+                "value": 777
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1= Married/Casado(a); 2= Widowed/Viudo(a); 3= Divorced/Divorciado(a); 4= Separated/Separado(a); 5= Never married/Nunca me he casado; 6= Living with partner/Vivo con una pareja; 777= Refused to answer/Prefiero no responder"
+        }
+    ]
+}

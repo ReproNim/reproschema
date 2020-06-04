@@ -1,0 +1,42 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "fsqc_qu_wmunder",
+    "@type": "reproschema:Field",
+    "prefLabel": "fsqc_qu_wmunder",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "White matter underestimation score",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "name": "absent",
+                "value": 0
+            },
+            {
+                "name": "mild",
+                "value": 1
+            },
+            {
+                "name": "moderate",
+                "value": 2
+            },
+            {
+                "name": "severe",
+                "value": 3
+            }
+        ],
+        "valueType": "Float"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = absent; 1 = mild; 2 = moderate; 3 = severe"
+        }
+    ]
+}

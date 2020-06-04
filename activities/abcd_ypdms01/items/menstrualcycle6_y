@@ -1,0 +1,50 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "menstrualcycle6_y",
+    "@type": "reproschema:Field",
+    "prefLabel": "menstrualcycle6_y",
+    "altLabel": "menstrual_6",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Do your/your child's premenstrual symptoms interfere with your/her relationships with family and friends, productivity, and/or social life activities?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "name": "Not at all",
+                "value": 1
+            },
+            {
+                "name": "Mild",
+                "value": 2
+            },
+            {
+                "name": "Moderate",
+                "value": 3
+            },
+            {
+                "name": "Severe",
+                "value": 4
+            },
+            {
+                "name": "Decline to answer",
+                "value": 777
+            },
+            {
+                "value": null
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Not at all; 2 = Mild; 3 = Moderate; 4 = Severe; 777 = Decline to answer; The following questions are about the history of your menstrual cycle. If you do not remember specific details, just try to answer as best you can."
+        }
+    ]
+}

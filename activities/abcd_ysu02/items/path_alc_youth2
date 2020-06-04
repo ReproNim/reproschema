@@ -1,0 +1,51 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "path_alc_youth2",
+    "@type": "reproschema:Field",
+    "prefLabel": "path_alc_youth2",
+    "altLabel": "su_intent_youth2",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Have you ever been curious about drinking alcohol?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Very curious",
+                "value": 1
+            },
+            {
+                "name": "Somewhat curious",
+                "value": 2
+            },
+            {
+                "name": "A little curious",
+                "value": 3
+            },
+            {
+                "name": "Not at all curious",
+                "value": 4
+            },
+            {
+                "name": "Don't know",
+                "value": 5
+            },
+            {
+                "name": "Refused to answer",
+                "value": 6
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Very curious; 2 = Somewhat curious; 3 = A little curious; 4 = Not at all curious; 5 = Don't know; 6 = Refused to answer"
+        }
+    ]
+}

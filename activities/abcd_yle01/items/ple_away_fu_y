@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "ple_away_fu_y",
+    "@type": "reproschema:Field",
+    "prefLabel": "ple_away_fu_y",
+    "altLabel": "life_events_phenx_away_fu",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Was this a good or bad experience?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Mostly good",
+                "value": 1
+            },
+            {
+                "name": "Mostly bad",
+                "value": 2
+            },
+            {
+                "name": "Not applicable",
+                "value": 6
+            },
+            {
+                "name": "Don't know",
+                "value": 7
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Mostly good; 2 = Mostly bad; 6 = Not applicable; 7 = Don't know"
+        }
+    ]
+}

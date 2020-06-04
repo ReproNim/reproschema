@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "res_tobacco_q01_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "res_tobacco_q01_l",
+    "altLabel": "su_subj_resp_nic_q01_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "While smoking your very first cigarette, did you have pleasurable sensations (did you feel a pleasurable buzz or rush; relaxed, dizzy)?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "None1",
+                "value": 1
+            },
+            {
+                "name": "2",
+                "value": 2
+            },
+            {
+                "name": "3",
+                "value": 3
+            },
+            {
+                "name": "Intense4 / tlfb_cig_use_l  == '1' &&  tlfb_cig_use_c_l   == 0",
+                "value": 4
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = None1; 2 = 2; 3 = 3; 4 = Intense4 / tlfb_cig_use_l  == '1' &&  tlfb_cig_use_c_l   == 0"
+        }
+    ]
+}

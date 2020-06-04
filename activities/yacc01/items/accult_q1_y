@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "accult_q1_y",
+    "@type": "reproschema:Field",
+    "prefLabel": "accult_q1_y",
+    "altLabel": "accult_phenx_q1",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "How well do you speak English?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Poor",
+                "value": 1
+            },
+            {
+                "name": "Fair",
+                "value": 2
+            },
+            {
+                "name": "Good",
+                "value": 3
+            },
+            {
+                "name": "Excellent",
+                "value": 4
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Poor; 2 = Fair; 3 = Good; 4 = Excellent"
+        }
+    ]
+}

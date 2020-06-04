@@ -1,0 +1,42 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "pds_f5_y",
+    "@type": "reproschema:Field",
+    "prefLabel": "pds_f5_y",
+    "altLabel": "pubertdev_f5",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Have you begun to menstruate (started to have your period)?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 4,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "Yes",
+                "value": 4
+            },
+            {
+                "name": "No",
+                "value": 1
+            },
+            {
+                "name": "I don't know",
+                "value": 999
+            },
+            {
+                "value": 777
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "4 = Yes; 1 = No; 999 = I don't know; 777= refuse to answer"
+        }
+    ]
+}

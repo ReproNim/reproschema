@@ -1,0 +1,38 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "zygos_q6",
+    "@type": "reproschema:Field",
+    "prefLabel": "zygos_q6",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Could one twin fool friends or family by pretending to be the other?  Would you say yes, maybe or no?/ ¿Uno de los gemelos podría engañar a sus amigos o familiares haciéndose pasar por el otro? ¿Diría que sí, tal vez o no?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Yes",
+                "value": 1
+            },
+            {
+                "name": "Maybe",
+                "value": 2
+            },
+            {
+                "name": "No",
+                "value": 3
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes; 2 = Maybe; 3 = No"
+        }
+    ]
+}

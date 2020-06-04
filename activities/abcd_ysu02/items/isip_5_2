@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "isip_5_2",
+    "@type": "reproschema:Field",
+    "prefLabel": "isip_5_2",
+    "altLabel": "su_isip_5",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Did the person the drink belonged to offer you a sip or did you take it when they weren't looking?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "Not applicable",
+                "value": 0
+            },
+            {
+                "name": "They offered me a sip",
+                "value": 1
+            },
+            {
+                "name": "I intentionally took it when they weren't looking",
+                "value": 2
+            },
+            {
+                "name": "I accidentally took it when they weren't looking // You mentioned earlier that you have had a sip of alcohol in the past. I want to ask some more questions about that.",
+                "value": 3
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = Not applicable; 1 = They offered me a sip; 2 = I intentionally took it when they weren't looking; 3 = I accidentally took it when they weren't looking // You mentioned earlier that you have had a sip of alcohol in the past. I want to ask some more questions about that."
+        }
+    ]
+}

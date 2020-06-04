@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "ple_step_fu2_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "ple_step_fu2_p",
+    "altLabel": "life_events_phenx_step_fu2_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "How much did the event affect your child? ¿Cuánto afectó el evento a su niño(a)?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "Not at All Para nada",
+                "value": 0
+            },
+            {
+                "name": "A Little Un poco",
+                "value": 1
+            },
+            {
+                "name": "Some Algo",
+                "value": 2
+            },
+            {
+                "name": "A lot Mucho",
+                "value": 3
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = Not at All Para nada; 1 = A Little Un poco; 2 = Some Algo; 3 = A lot Mucho"
+        }
+    ]
+}

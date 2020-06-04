@@ -1,0 +1,34 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "scrn_tbi_mem",
+    "@type": "reproschema:Field",
+    "prefLabel": "scrn_tbi_mem",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Has (Child's name) ever had a head injury that resulted in difficulties remembering that lasted for longer than a day? / ¿Alguna vez tuvo (nombre del menor) una lesión en la cabeza que haya causado que tuviera dificultades para recordar durante más de un día?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 0,
+        "choices": [
+            {
+                "name": "Yes - GO TO END",
+                "value": 1
+            },
+            {
+                "name": "No",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes - GO TO END; 0 = No"
+        }
+    ]
+}

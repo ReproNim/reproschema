@@ -1,0 +1,34 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "q5g_pat_uncle1_drugs___4",
+    "@type": "reproschema:Field",
+    "prefLabel": "q5g_pat_uncle1_drugs___4",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "paternal uncle TÃ­o paterno  (1) (Drug treatment program Programas por el uso de drogas)",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "No",
+                "value": 0
+            },
+            {
+                "name": "Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1 &&  famhx_2a_p  > 0",
+                "value": 1
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1 &&  famhx_2a_p  > 0"
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "pls2_p_used_med",
+    "@type": "reproschema:Field",
+    "prefLabel": "pls2_p_used_med",
+    "altLabel": "su_pls2_used_med_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "P. Has your son/daughter used any Over-the-Counter or Prescription medications in the last 24 hours? / ¿Su niño(a) ha tomado o usado algún medicamento recetado o de venta libre en las últimas 24 horas? Y. Have you used any over-the-counter or prescription medications in the last 24 hours?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 0,
+        "choices": [
+            {
+                "name": "Yes /Sí",
+                "value": 1
+            },
+            {
+                "name": "No /No",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes /Sí; 0 = No /No"
+        }
+    ]
+}

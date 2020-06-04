@@ -1,0 +1,23 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "isip_1d_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "isip_1d_l",
+    "altLabel": "su_isip_1d_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "How old were you the first time you had a sip of alcohol?",
+    "ui": {
+        "inputType": "Integer"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "Years /( isip_1b_yn_l   == '1' && ( isip_1d_c_l   == '0' ||   isip_2_c_l   == '0' ||  isip_3_c_l   == '0' ||  isip_4_c_l   == '0' ||  isip_5_c_l   == '0' ||  isip_6_c_l   == '0')) || ( isip_1b_c_l   == '1' && ( isip_2_c_l   == '0' ||  isip_3_c_l   == '0' ||  isip_4_c_l   == '0' ||  isip_5_c_l   == '0' ||  isip_6_c_l   == '0'))"
+        }
+    ]
+}

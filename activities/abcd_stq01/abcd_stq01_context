@@ -1,0 +1,498 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "abcd_stq01": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/activities/abcd_stq01/items/",
+        "screen_wkdy_y": {
+            "@id": "abcd_stq01:screen_wkdy_y",
+            "@type": "@id"
+        },
+        "screen1_wkdy_y": {
+            "@id": "abcd_stq01:screen1_wkdy_y",
+            "@type": "@id"
+        },
+        "screen10_wknd_y": {
+            "@id": "abcd_stq01:screen10_wknd_y",
+            "@type": "@id"
+        },
+        "screen11_wknd_y": {
+            "@id": "abcd_stq01:screen11_wknd_y",
+            "@type": "@id"
+        },
+        "screen12_wknd_y": {
+            "@id": "abcd_stq01:screen12_wknd_y",
+            "@type": "@id"
+        },
+        "screen13_y": {
+            "@id": "abcd_stq01:screen13_y",
+            "@type": "@id"
+        },
+        "screen14_y": {
+            "@id": "abcd_stq01:screen14_y",
+            "@type": "@id"
+        },
+        "screen2_wkdy_y": {
+            "@id": "abcd_stq01:screen2_wkdy_y",
+            "@type": "@id"
+        },
+        "screen3_wkdy_y": {
+            "@id": "abcd_stq01:screen3_wkdy_y",
+            "@type": "@id"
+        },
+        "screen4_wkdy_y": {
+            "@id": "abcd_stq01:screen4_wkdy_y",
+            "@type": "@id"
+        },
+        "screen5_wkdy_y": {
+            "@id": "abcd_stq01:screen5_wkdy_y",
+            "@type": "@id"
+        },
+        "screen7_wknd_y": {
+            "@id": "abcd_stq01:screen7_wknd_y",
+            "@type": "@id"
+        },
+        "screen8_wknd_y": {
+            "@id": "abcd_stq01:screen8_wknd_y",
+            "@type": "@id"
+        },
+        "screen9_wknd_y": {
+            "@id": "abcd_stq01:screen9_wknd_y",
+            "@type": "@id"
+        },
+        "screentime_1_wkdy_hr": {
+            "@id": "abcd_stq01:screentime_1_wkdy_hr",
+            "@type": "@id"
+        },
+        "screentime_1_wkdy_min": {
+            "@id": "abcd_stq01:screentime_1_wkdy_min",
+            "@type": "@id"
+        },
+        "screentime_10_wknd_hr": {
+            "@id": "abcd_stq01:screentime_10_wknd_hr",
+            "@type": "@id"
+        },
+        "screentime_10_wknd_min": {
+            "@id": "abcd_stq01:screentime_10_wknd_min",
+            "@type": "@id"
+        },
+        "screentime_11_wknd_hr": {
+            "@id": "abcd_stq01:screentime_11_wknd_hr",
+            "@type": "@id"
+        },
+        "screentime_11_wknd_min": {
+            "@id": "abcd_stq01:screentime_11_wknd_min",
+            "@type": "@id"
+        },
+        "screentime_12_wknd_hr": {
+            "@id": "abcd_stq01:screentime_12_wknd_hr",
+            "@type": "@id"
+        },
+        "screentime_12_wknd_min": {
+            "@id": "abcd_stq01:screentime_12_wknd_min",
+            "@type": "@id"
+        },
+        "screentime_13_wknd_hr": {
+            "@id": "abcd_stq01:screentime_13_wknd_hr",
+            "@type": "@id"
+        },
+        "screentime_13_wknd_min": {
+            "@id": "abcd_stq01:screentime_13_wknd_min",
+            "@type": "@id"
+        },
+        "screentime_14_wknd_hr": {
+            "@id": "abcd_stq01:screentime_14_wknd_hr",
+            "@type": "@id"
+        },
+        "screentime_14_wknd_min": {
+            "@id": "abcd_stq01:screentime_14_wknd_min",
+            "@type": "@id"
+        },
+        "screentime_15_wknd_hr": {
+            "@id": "abcd_stq01:screentime_15_wknd_hr",
+            "@type": "@id"
+        },
+        "screentime_15_wknd_min": {
+            "@id": "abcd_stq01:screentime_15_wknd_min",
+            "@type": "@id"
+        },
+        "screentime_2_wkdy_hr": {
+            "@id": "abcd_stq01:screentime_2_wkdy_hr",
+            "@type": "@id"
+        },
+        "screentime_2_wkdy_min": {
+            "@id": "abcd_stq01:screentime_2_wkdy_min",
+            "@type": "@id"
+        },
+        "screentime_3_wkdy_hr": {
+            "@id": "abcd_stq01:screentime_3_wkdy_hr",
+            "@type": "@id"
+        },
+        "screentime_3_wkdy_min": {
+            "@id": "abcd_stq01:screentime_3_wkdy_min",
+            "@type": "@id"
+        },
+        "screentime_4_wkdy_hr": {
+            "@id": "abcd_stq01:screentime_4_wkdy_hr",
+            "@type": "@id"
+        },
+        "screentime_4_wkdy_min": {
+            "@id": "abcd_stq01:screentime_4_wkdy_min",
+            "@type": "@id"
+        },
+        "screentime_5_wkdy_hr": {
+            "@id": "abcd_stq01:screentime_5_wkdy_hr",
+            "@type": "@id"
+        },
+        "screentime_5_wkdy_min": {
+            "@id": "abcd_stq01:screentime_5_wkdy_min",
+            "@type": "@id"
+        },
+        "screentime_6_wkdy_hr": {
+            "@id": "abcd_stq01:screentime_6_wkdy_hr",
+            "@type": "@id"
+        },
+        "screentime_6_wkdy_min": {
+            "@id": "abcd_stq01:screentime_6_wkdy_min",
+            "@type": "@id"
+        },
+        "screentime_7_wkdy_hr": {
+            "@id": "abcd_stq01:screentime_7_wkdy_hr",
+            "@type": "@id"
+        },
+        "screentime_7_wkdy_min": {
+            "@id": "abcd_stq01:screentime_7_wkdy_min",
+            "@type": "@id"
+        },
+        "screentime_7_wknd_hr": {
+            "@id": "abcd_stq01:screentime_7_wknd_hr",
+            "@type": "@id"
+        },
+        "screentime_7_wknd_min": {
+            "@id": "abcd_stq01:screentime_7_wknd_min",
+            "@type": "@id"
+        },
+        "screentime_8_wkdy_hr": {
+            "@id": "abcd_stq01:screentime_8_wkdy_hr",
+            "@type": "@id"
+        },
+        "screentime_8_wkdy_min": {
+            "@id": "abcd_stq01:screentime_8_wkdy_min",
+            "@type": "@id"
+        },
+        "screentime_8_wknd_hr": {
+            "@id": "abcd_stq01:screentime_8_wknd_hr",
+            "@type": "@id"
+        },
+        "screentime_8_wknd_min": {
+            "@id": "abcd_stq01:screentime_8_wknd_min",
+            "@type": "@id"
+        },
+        "screentime_9_wkdy_hr": {
+            "@id": "abcd_stq01:screentime_9_wkdy_hr",
+            "@type": "@id"
+        },
+        "screentime_9_wkdy_min": {
+            "@id": "abcd_stq01:screentime_9_wkdy_min",
+            "@type": "@id"
+        },
+        "screentime_9_wknd_hr": {
+            "@id": "abcd_stq01:screentime_9_wknd_hr",
+            "@type": "@id"
+        },
+        "screentime_9_wknd_min": {
+            "@id": "abcd_stq01:screentime_9_wknd_min",
+            "@type": "@id"
+        },
+        "screentime_admin": {
+            "@id": "abcd_stq01:screentime_admin",
+            "@type": "@id"
+        },
+        "screentime_odq1": {
+            "@id": "abcd_stq01:screentime_odq1",
+            "@type": "@id"
+        },
+        "screentime_odq2": {
+            "@id": "abcd_stq01:screentime_odq2",
+            "@type": "@id"
+        },
+        "screentime_odq3": {
+            "@id": "abcd_stq01:screentime_odq3",
+            "@type": "@id"
+        },
+        "screentime_odq4": {
+            "@id": "abcd_stq01:screentime_odq4",
+            "@type": "@id"
+        },
+        "screentime_phone_descript": {
+            "@id": "abcd_stq01:screentime_phone_descript",
+            "@type": "@id"
+        },
+        "screentime_phone_scale": {
+            "@id": "abcd_stq01:screentime_phone_scale",
+            "@type": "@id"
+        },
+        "screentime_phone_yn": {
+            "@id": "abcd_stq01:screentime_phone_yn",
+            "@type": "@id"
+        },
+        "screentime_phone1": {
+            "@id": "abcd_stq01:screentime_phone1",
+            "@type": "@id"
+        },
+        "screentime_phone2": {
+            "@id": "abcd_stq01:screentime_phone2",
+            "@type": "@id"
+        },
+        "screentime_phone3": {
+            "@id": "abcd_stq01:screentime_phone3",
+            "@type": "@id"
+        },
+        "screentime_phone4": {
+            "@id": "abcd_stq01:screentime_phone4",
+            "@type": "@id"
+        },
+        "screentime_phone5": {
+            "@id": "abcd_stq01:screentime_phone5",
+            "@type": "@id"
+        },
+        "screentime_phone6": {
+            "@id": "abcd_stq01:screentime_phone6",
+            "@type": "@id"
+        },
+        "screentime_phone7": {
+            "@id": "abcd_stq01:screentime_phone7",
+            "@type": "@id"
+        },
+        "screentime_phone8": {
+            "@id": "abcd_stq01:screentime_phone8",
+            "@type": "@id"
+        },
+        "screentime_smq_account": {
+            "@id": "abcd_stq01:screentime_smq_account",
+            "@type": "@id"
+        },
+        "screentime_smq_description": {
+            "@id": "abcd_stq01:screentime_smq_description",
+            "@type": "@id"
+        },
+        "screentime_smq_facebook": {
+            "@id": "abcd_stq01:screentime_smq_facebook",
+            "@type": "@id"
+        },
+        "screentime_smq_followers": {
+            "@id": "abcd_stq01:screentime_smq_followers",
+            "@type": "@id"
+        },
+        "screentime_smq_followers_dk": {
+            "@id": "abcd_stq01:screentime_smq_followers_dk",
+            "@type": "@id"
+        },
+        "screentime_smq_followers_na": {
+            "@id": "abcd_stq01:screentime_smq_followers_na",
+            "@type": "@id"
+        },
+        "screentime_smq_following": {
+            "@id": "abcd_stq01:screentime_smq_following",
+            "@type": "@id"
+        },
+        "screentime_smq_following_dk": {
+            "@id": "abcd_stq01:screentime_smq_following_dk",
+            "@type": "@id"
+        },
+        "screentime_smq_following_na": {
+            "@id": "abcd_stq01:screentime_smq_following_na",
+            "@type": "@id"
+        },
+        "screentime_smq_instagram": {
+            "@id": "abcd_stq01:screentime_smq_instagram",
+            "@type": "@id"
+        },
+        "screentime_smq_mg_chat": {
+            "@id": "abcd_stq01:screentime_smq_mg_chat",
+            "@type": "@id"
+        },
+        "screentime_smq_musical_ly": {
+            "@id": "abcd_stq01:screentime_smq_musical_ly",
+            "@type": "@id"
+        },
+        "screentime_smq_other": {
+            "@id": "abcd_stq01:screentime_smq_other",
+            "@type": "@id"
+        },
+        "screentime_smq_other_name": {
+            "@id": "abcd_stq01:screentime_smq_other_name",
+            "@type": "@id"
+        },
+        "screentime_smq_pinterest": {
+            "@id": "abcd_stq01:screentime_smq_pinterest",
+            "@type": "@id"
+        },
+        "screentime_smq_reddit": {
+            "@id": "abcd_stq01:screentime_smq_reddit",
+            "@type": "@id"
+        },
+        "screentime_smq_secret": {
+            "@id": "abcd_stq01:screentime_smq_secret",
+            "@type": "@id"
+        },
+        "screentime_smq_sm_min": {
+            "@id": "abcd_stq01:screentime_smq_sm_min",
+            "@type": "@id"
+        },
+        "screentime_smq_snapchat": {
+            "@id": "abcd_stq01:screentime_smq_snapchat",
+            "@type": "@id"
+        },
+        "screentime_smq_soc_med_hr": {
+            "@id": "abcd_stq01:screentime_smq_soc_med_hr",
+            "@type": "@id"
+        },
+        "screentime_smq_tumblr": {
+            "@id": "abcd_stq01:screentime_smq_tumblr",
+            "@type": "@id"
+        },
+        "screentime_smq_twitter": {
+            "@id": "abcd_stq01:screentime_smq_twitter",
+            "@type": "@id"
+        },
+        "screentime_smq_um_other": {
+            "@id": "abcd_stq01:screentime_smq_um_other",
+            "@type": "@id"
+        },
+        "screentime_smq_use": {
+            "@id": "abcd_stq01:screentime_smq_use",
+            "@type": "@id"
+        },
+        "screentime_smq_use_most": {
+            "@id": "abcd_stq01:screentime_smq_use_most",
+            "@type": "@id"
+        },
+        "screentime_smq_use_other": {
+            "@id": "abcd_stq01:screentime_smq_use_other",
+            "@type": "@id"
+        },
+        "screentime_smq_youtube": {
+            "@id": "abcd_stq01:screentime_smq_youtube",
+            "@type": "@id"
+        },
+        "screentime_smqa1": {
+            "@id": "abcd_stq01:screentime_smqa1",
+            "@type": "@id"
+        },
+        "screentime_smqa2": {
+            "@id": "abcd_stq01:screentime_smqa2",
+            "@type": "@id"
+        },
+        "screentime_smqa3": {
+            "@id": "abcd_stq01:screentime_smqa3",
+            "@type": "@id"
+        },
+        "screentime_smqa4": {
+            "@id": "abcd_stq01:screentime_smqa4",
+            "@type": "@id"
+        },
+        "screentime_smqa5": {
+            "@id": "abcd_stq01:screentime_smqa5",
+            "@type": "@id"
+        },
+        "screentime_smqa6": {
+            "@id": "abcd_stq01:screentime_smqa6",
+            "@type": "@id"
+        },
+        "screentime_sq1": {
+            "@id": "abcd_stq01:screentime_sq1",
+            "@type": "@id"
+        },
+        "screentime_sq10": {
+            "@id": "abcd_stq01:screentime_sq10",
+            "@type": "@id"
+        },
+        "screentime_sq11": {
+            "@id": "abcd_stq01:screentime_sq11",
+            "@type": "@id"
+        },
+        "screentime_sq12": {
+            "@id": "abcd_stq01:screentime_sq12",
+            "@type": "@id"
+        },
+        "screentime_sq13": {
+            "@id": "abcd_stq01:screentime_sq13",
+            "@type": "@id"
+        },
+        "screentime_sq2": {
+            "@id": "abcd_stq01:screentime_sq2",
+            "@type": "@id"
+        },
+        "screentime_sq3": {
+            "@id": "abcd_stq01:screentime_sq3",
+            "@type": "@id"
+        },
+        "screentime_sq4": {
+            "@id": "abcd_stq01:screentime_sq4",
+            "@type": "@id"
+        },
+        "screentime_sq5": {
+            "@id": "abcd_stq01:screentime_sq5",
+            "@type": "@id"
+        },
+        "screentime_sq6": {
+            "@id": "abcd_stq01:screentime_sq6",
+            "@type": "@id"
+        },
+        "screentime_sq7": {
+            "@id": "abcd_stq01:screentime_sq7",
+            "@type": "@id"
+        },
+        "screentime_sq8": {
+            "@id": "abcd_stq01:screentime_sq8",
+            "@type": "@id"
+        },
+        "screentime_sq9": {
+            "@id": "abcd_stq01:screentime_sq9",
+            "@type": "@id"
+        },
+        "screentime_usesoc": {
+            "@id": "abcd_stq01:screentime_usesoc",
+            "@type": "@id"
+        },
+        "screentime_vgaq1": {
+            "@id": "abcd_stq01:screentime_vgaq1",
+            "@type": "@id"
+        },
+        "screentime_vgaq2": {
+            "@id": "abcd_stq01:screentime_vgaq2",
+            "@type": "@id"
+        },
+        "screentime_vgaq3": {
+            "@id": "abcd_stq01:screentime_vgaq3",
+            "@type": "@id"
+        },
+        "screentime_vgaq4": {
+            "@id": "abcd_stq01:screentime_vgaq4",
+            "@type": "@id"
+        },
+        "screentime_vgaq5": {
+            "@id": "abcd_stq01:screentime_vgaq5",
+            "@type": "@id"
+        },
+        "screentime_vgaq6": {
+            "@id": "abcd_stq01:screentime_vgaq6",
+            "@type": "@id"
+        },
+        "screentime_wkdy_typical_hr": {
+            "@id": "abcd_stq01:screentime_wkdy_typical_hr",
+            "@type": "@id"
+        },
+        "screentime_wkdy_typical_min": {
+            "@id": "abcd_stq01:screentime_wkdy_typical_min",
+            "@type": "@id"
+        },
+        "screentime_wknd_t_min": {
+            "@id": "abcd_stq01:screentime_wknd_t_min",
+            "@type": "@id"
+        },
+        "screentime_wknd_typical_hr": {
+            "@id": "abcd_stq01:screentime_wknd_typical_hr",
+            "@type": "@id"
+        }
+    }
+}

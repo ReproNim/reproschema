@@ -1,0 +1,39 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "first_nicotine_1",
+    "@type": "reproschema:Field",
+    "prefLabel": "first_nicotine_1",
+    "altLabel": "su_first_nicotine_1",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Have you ever had a puff of a cigarette, e-cigarette, or vape pen, hookah, cigar or pipe?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Yes",
+                "value": 1
+            },
+            {
+                "name": "No",
+                "value": 2
+            },
+            {
+                "name": "No // You mentioned earlier that you have tried a tobacco product in the past. I want to ask some more questions about that. Remember your responses are confidential - we will not share your answers with anyone. When answering these questions, please do not include cigarettes or other tobacco products (e.g., hookah, e-cigarettes) you had as part of a religious ceremony. Please do include any other experiences you have had with cigarettes or tobacco including puffs or dips you may have had with your parents.",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes; 2 = No; 0 = No // You mentioned earlier that you have tried a tobacco product in the past. I want to ask some more questions about that. Remember your responses are confidential - we will not share your answers with anyone. When answering these questions, please do not include cigarettes or other tobacco products (e.g., hookah, e-cigarettes) you had as part of a religious ceremony. Please do include any other experiences you have had with cigarettes or tobacco including puffs or dips you may have had with your parents."
+        }
+    ]
+}

@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "sup_2_y",
+    "@type": "reproschema:Field",
+    "prefLabel": "sup_2_y",
+    "altLabel": "sup_2",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Have there been times lasting several days or more when you felt you must have lots of excitement, and you actually did a lot of new or different things?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "Never or hardly ever",
+                "value": 0
+            },
+            {
+                "name": "Sometimes",
+                "value": 1
+            },
+            {
+                "name": "Often",
+                "value": 2
+            },
+            {
+                "name": "Very often or almost constantly",
+                "value": 3
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = Never or hardly ever; 1 = Sometimes; 2 = Often; 3 = Very often or almost constantly"
+        }
+    ]
+}

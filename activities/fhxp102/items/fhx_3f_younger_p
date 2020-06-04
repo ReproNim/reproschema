@@ -1,0 +1,23 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "fhx_3f_younger_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "fhx_3f_younger_p",
+    "altLabel": "famhx_3f_younger_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "# of younger full siblings (please do not include a co-twin here as ABCD considers twins equal in age) # de hermanos y hermanas de doble vínculo menores (por favor no incluya el hermano(a) gemelo(a) aquí porque ABCD considera a los gemelos como iguales en edad.)",
+    "ui": {
+        "inputType": "Integer"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "If none, enter \"0\".  If you Don't know, please choose \"Don't know\" in what follows below Si la respuesta es \"ninguno\", ingrese \"0\".  Si no sabe, por favor escoja \"no se\" en lo que sigue abajo. / famhx_1   == 1 && ( fhx_3a_p  > 0 ||  fhx_3b_p  > 0) &&  isNull(fhx_3f_younger_dk_p)"
+        }
+    ]
+}

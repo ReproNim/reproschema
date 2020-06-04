@@ -1,0 +1,40 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "caff_ago",
+    "@type": "reproschema:Field",
+    "prefLabel": "caff_ago",
+    "altLabel": "medinv_plus_caff_ago_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "P. How long ago did your son/daughter last consume a caffeinated beverage? / ¿Hace cuánto tiempo que su niño(a) consumió una bebida con cafeína? Y. How long ago did you last consume a caffeinated beverage?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 30,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "value": null
+            },
+            {
+                "value": 30
+            },
+            {
+                "name": "24)  /en horas",
+                "value": 30
+            },
+            {
+                "value": 30
+            }
+        ],
+        "valueType": "Float"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "(in hours; 30 mins=0.5)(in hours; 30 mins=0.5, max hours = 24)  /en horas; 30 minutos=0.5, horas máximas=24)"
+        }
+    ]
+}

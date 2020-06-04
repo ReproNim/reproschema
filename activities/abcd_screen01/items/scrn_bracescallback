@@ -1,0 +1,34 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "scrn_bracescallback",
+    "@type": "reproschema:Field",
+    "prefLabel": "scrn_bracescallback",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "If metal braces will be removed before end of enrollment period, mark to Yes call back. If metal braces will not be removed before end of enrollment period, permanent metal retainer, or metal dental implant that is clearly contraindication, mark No call back. If parent is unsure, ask for their best guess, mark to Yes call back.",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 0,
+        "choices": [
+            {
+                "name": "Yes - Need to Call Back",
+                "value": 1
+            },
+            {
+                "name": "No Call Back - GO TO END",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes - Need to Call Back; 0 = No Call Back - GO TO END"
+        }
+    ]
+}

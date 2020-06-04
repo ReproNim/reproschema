@@ -1,0 +1,47 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "sleepdisturb17_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "sleepdisturb17_p",
+    "altLabel": "sleep_17_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "You have observed the child sleepwalking. Usted ha visto al niño / la niña caminar mientras duerme.",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Never /Nunca",
+                "value": 1
+            },
+            {
+                "name": "Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos)",
+                "value": 2
+            },
+            {
+                "name": "Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana)",
+                "value": 3
+            },
+            {
+                "name": "Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana)",
+                "value": 4
+            },
+            {
+                "name": "Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life",
+                "value": 5
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Never /Nunca; 2 = Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos); 3 = Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana); 4 = Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana); 5 = Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life"
+        }
+    ]
+}

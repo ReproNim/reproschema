@@ -1,0 +1,39 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "fitf_s4_q14_y",
+    "@type": "reproschema:Field",
+    "prefLabel": "fitf_s4_q14_y",
+    "altLabel": "fitbit_follow_up_s4_q14",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "How much did you change your sleep while wearing the Fitbit?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "A lot",
+                "value": 1
+            },
+            {
+                "name": "Not at all",
+                "value": 2
+            },
+            {
+                "name": "A little",
+                "value": 3
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = A lot; 2 = Not at all; 3 = A little"
+        }
+    ]
+}

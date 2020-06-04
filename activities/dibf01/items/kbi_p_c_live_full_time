@@ -1,0 +1,42 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "kbi_p_c_live_full_time",
+    "@type": "reproschema:Field",
+    "prefLabel": "kbi_p_c_live_full_time",
+    "altLabel": "ksads_back_c_live_full_time_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Does your child live with you full time?/  ¿Su niño(a) vive con usted todo el tiempo?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": -1,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "name": "Yes /Sí",
+                "value": 1
+            },
+            {
+                "name": "No /No",
+                "value": 0
+            },
+            {
+                "name": "Not applicable /No aplica",
+                "value": -1
+            },
+            {
+                "value": null
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes /Sí; 0 = No /No; -1 = Not applicable /No aplica; Thanks for agreeing to do this interview. You will now complete several measures on your own. To begin, here are some background questions. If you don't know the answer to a question, please just respond the best you can. When typing in responses, please do not type any names or any other information that may identify you or your child. Gracias por acceder a esta entrevista.  Ahora va a completar varios cuestionarios por su propria cuenta. Las siguientes preguntas tratan sobre antecedentes generales. Si no estÃ¡ seguro, por favor, dÃ© su mejor respuesta. Cuando escriba alguna respuesta, por favor no escriba ningÃºn nombre o cualquier otra informaciÃ³n que pueda identificarlo(a) a usted o su niÃ±o(a)."
+        }
+    ]
+}

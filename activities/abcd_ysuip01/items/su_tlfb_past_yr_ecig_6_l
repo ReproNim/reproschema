@@ -1,0 +1,54 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "su_tlfb_past_yr_ecig_6_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "su_tlfb_past_yr_ecig_6_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "When you smoked e-cigarettes during the past year, did you ever use the \"dripping\" method to add e-liquid to your e-cigarette?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Never",
+                "value": 1
+            },
+            {
+                "name": "Almost never",
+                "value": 2
+            },
+            {
+                "name": "Sometimes",
+                "value": 3
+            },
+            {
+                "name": "Most of the time",
+                "value": 4
+            },
+            {
+                "name": "Almost always",
+                "value": 5
+            },
+            {
+                "name": "Always",
+                "value": 6
+            },
+            {
+                "name": "Don't know / tlfb_6mo_skip_l___3   == '1'",
+                "value": 7
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Never; 2 = Almost never; 3 = Sometimes; 4 = Most of the time; 5 = Almost always; 6 = Always; 7 = Don't know / tlfb_6mo_skip_l___3   == '1'"
+        }
+    ]
+}

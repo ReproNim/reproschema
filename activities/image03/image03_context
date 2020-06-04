@@ -1,0 +1,418 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "image03": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/activities/image03/items/",
+        "visit": {
+            "@id": "image03:visit",
+            "@type": "@id"
+        },
+        "comments_misc": {
+            "@id": "image03:comments_misc",
+            "@type": "@id"
+        },
+        "data_file2": {
+            "@id": "image03:data_file2",
+            "@type": "@id"
+        },
+        "data_file2_type": {
+            "@id": "image03:data_file2_type",
+            "@type": "@id"
+        },
+        "experiment_id": {
+            "@id": "image03:experiment_id",
+            "@type": "@id"
+        },
+        "acquisition_matrix": {
+            "@id": "image03:acquisition_matrix",
+            "@type": "@id"
+        },
+        "block_number": {
+            "@id": "image03:block_number",
+            "@type": "@id"
+        },
+        "bvalfile": {
+            "@id": "image03:bvalfile",
+            "@type": "@id"
+        },
+        "bvecfile": {
+            "@id": "image03:bvecfile",
+            "@type": "@id"
+        },
+        "bvek_bval_files": {
+            "@id": "image03:bvek_bval_files",
+            "@type": "@id"
+        },
+        "camera_sn": {
+            "@id": "image03:camera_sn",
+            "@type": "@id"
+        },
+        "cut_thickness": {
+            "@id": "image03:cut_thickness",
+            "@type": "@id"
+        },
+        "decay_correction": {
+            "@id": "image03:decay_correction",
+            "@type": "@id"
+        },
+        "decon_iterations": {
+            "@id": "image03:decon_iterations",
+            "@type": "@id"
+        },
+        "decon_method": {
+            "@id": "image03:decon_method",
+            "@type": "@id"
+        },
+        "decon_snr": {
+            "@id": "image03:decon_snr",
+            "@type": "@id"
+        },
+        "decon_software": {
+            "@id": "image03:decon_software",
+            "@type": "@id"
+        },
+        "decon_template_name": {
+            "@id": "image03:decon_template_name",
+            "@type": "@id"
+        },
+        "deconvolved": {
+            "@id": "image03:deconvolved",
+            "@type": "@id"
+        },
+        "deviceserialnumber": {
+            "@id": "image03:deviceserialnumber",
+            "@type": "@id"
+        },
+        "emission_wavelingth": {
+            "@id": "image03:emission_wavelingth",
+            "@type": "@id"
+        },
+        "excitation_wavelength": {
+            "@id": "image03:excitation_wavelength",
+            "@type": "@id"
+        },
+        "experiment_description": {
+            "@id": "image03:experiment_description",
+            "@type": "@id"
+        },
+        "exposure_time": {
+            "@id": "image03:exposure_time",
+            "@type": "@id"
+        },
+        "extent4_type": {
+            "@id": "image03:extent4_type",
+            "@type": "@id"
+        },
+        "extent5_type": {
+            "@id": "image03:extent5_type",
+            "@type": "@id"
+        },
+        "flip_angle": {
+            "@id": "image03:flip_angle",
+            "@type": "@id"
+        },
+        "frame_end_times": {
+            "@id": "image03:frame_end_times",
+            "@type": "@id"
+        },
+        "frame_end_unit": {
+            "@id": "image03:frame_end_unit",
+            "@type": "@id"
+        },
+        "frame_start_times": {
+            "@id": "image03:frame_start_times",
+            "@type": "@id"
+        },
+        "frame_start_unit": {
+            "@id": "image03:frame_start_unit",
+            "@type": "@id"
+        },
+        "image_description": {
+            "@id": "image03:image_description",
+            "@type": "@id"
+        },
+        "image_extent1": {
+            "@id": "image03:image_extent1",
+            "@type": "@id"
+        },
+        "image_extent2": {
+            "@id": "image03:image_extent2",
+            "@type": "@id"
+        },
+        "image_extent3": {
+            "@id": "image03:image_extent3",
+            "@type": "@id"
+        },
+        "image_extent4": {
+            "@id": "image03:image_extent4",
+            "@type": "@id"
+        },
+        "image_extent5": {
+            "@id": "image03:image_extent5",
+            "@type": "@id"
+        },
+        "image_file": {
+            "@id": "image03:image_file",
+            "@type": "@id"
+        },
+        "image_file_format": {
+            "@id": "image03:image_file_format",
+            "@type": "@id"
+        },
+        "image_history": {
+            "@id": "image03:image_history",
+            "@type": "@id"
+        },
+        "image_modality": {
+            "@id": "image03:image_modality",
+            "@type": "@id"
+        },
+        "image_num_dimensions": {
+            "@id": "image03:image_num_dimensions",
+            "@type": "@id"
+        },
+        "image_orientation": {
+            "@id": "image03:image_orientation",
+            "@type": "@id"
+        },
+        "image_resolution1": {
+            "@id": "image03:image_resolution1",
+            "@type": "@id"
+        },
+        "image_resolution2": {
+            "@id": "image03:image_resolution2",
+            "@type": "@id"
+        },
+        "image_resolution3": {
+            "@id": "image03:image_resolution3",
+            "@type": "@id"
+        },
+        "image_resolution4": {
+            "@id": "image03:image_resolution4",
+            "@type": "@id"
+        },
+        "image_resolution5": {
+            "@id": "image03:image_resolution5",
+            "@type": "@id"
+        },
+        "image_slice_thickness": {
+            "@id": "image03:image_slice_thickness",
+            "@type": "@id"
+        },
+        "image_thumbnail_file": {
+            "@id": "image03:image_thumbnail_file",
+            "@type": "@id"
+        },
+        "image_unit1": {
+            "@id": "image03:image_unit1",
+            "@type": "@id"
+        },
+        "image_unit2": {
+            "@id": "image03:image_unit2",
+            "@type": "@id"
+        },
+        "image_unit3": {
+            "@id": "image03:image_unit3",
+            "@type": "@id"
+        },
+        "image_unit4": {
+            "@id": "image03:image_unit4",
+            "@type": "@id"
+        },
+        "image_unit5": {
+            "@id": "image03:image_unit5",
+            "@type": "@id"
+        },
+        "immersion": {
+            "@id": "image03:immersion",
+            "@type": "@id"
+        },
+        "in_stack": {
+            "@id": "image03:in_stack",
+            "@type": "@id"
+        },
+        "level": {
+            "@id": "image03:level",
+            "@type": "@id"
+        },
+        "magnetic_field_strength": {
+            "@id": "image03:magnetic_field_strength",
+            "@type": "@id"
+        },
+        "manifest": {
+            "@id": "image03:manifest",
+            "@type": "@id"
+        },
+        "micro_temmplate_name": {
+            "@id": "image03:micro_temmplate_name",
+            "@type": "@id"
+        },
+        "mri_echo_time_pd": {
+            "@id": "image03:mri_echo_time_pd",
+            "@type": "@id"
+        },
+        "mri_field_of_view_pd": {
+            "@id": "image03:mri_field_of_view_pd",
+            "@type": "@id"
+        },
+        "mri_repetition_time_pd": {
+            "@id": "image03:mri_repetition_time_pd",
+            "@type": "@id"
+        },
+        "objective_magnification": {
+            "@id": "image03:objective_magnification",
+            "@type": "@id"
+        },
+        "objective_na": {
+            "@id": "image03:objective_na",
+            "@type": "@id"
+        },
+        "patient_position": {
+            "@id": "image03:patient_position",
+            "@type": "@id"
+        },
+        "pet_isotope": {
+            "@id": "image03:pet_isotope",
+            "@type": "@id"
+        },
+        "pet_tracer": {
+            "@id": "image03:pet_tracer",
+            "@type": "@id"
+        },
+        "photomet_interpret": {
+            "@id": "image03:photomet_interpret",
+            "@type": "@id"
+        },
+        "pipeline_stage": {
+            "@id": "image03:pipeline_stage",
+            "@type": "@id"
+        },
+        "procdate": {
+            "@id": "image03:procdate",
+            "@type": "@id"
+        },
+        "psf_file": {
+            "@id": "image03:psf_file",
+            "@type": "@id"
+        },
+        "psf_type": {
+            "@id": "image03:psf_type",
+            "@type": "@id"
+        },
+        "pulse_seq": {
+            "@id": "image03:pulse_seq",
+            "@type": "@id"
+        },
+        "qc_description": {
+            "@id": "image03:qc_description",
+            "@type": "@id"
+        },
+        "qc_fail_quest_reason": {
+            "@id": "image03:qc_fail_quest_reason",
+            "@type": "@id"
+        },
+        "qc_outcome": {
+            "@id": "image03:qc_outcome",
+            "@type": "@id"
+        },
+        "receive_coil": {
+            "@id": "image03:receive_coil",
+            "@type": "@id"
+        },
+        "scan_object": {
+            "@id": "image03:scan_object",
+            "@type": "@id"
+        },
+        "scan_type": {
+            "@id": "image03:scan_type",
+            "@type": "@id"
+        },
+        "scanner_manufacturer_pd": {
+            "@id": "image03:scanner_manufacturer_pd",
+            "@type": "@id"
+        },
+        "scanner_software_versions_pd": {
+            "@id": "image03:scanner_software_versions_pd",
+            "@type": "@id"
+        },
+        "scanner_type_pd": {
+            "@id": "image03:scanner_type_pd",
+            "@type": "@id"
+        },
+        "slice_acquisition": {
+            "@id": "image03:slice_acquisition",
+            "@type": "@id"
+        },
+        "slice_number": {
+            "@id": "image03:slice_number",
+            "@type": "@id"
+        },
+        "slice_thickness": {
+            "@id": "image03:slice_thickness",
+            "@type": "@id"
+        },
+        "slice_timing": {
+            "@id": "image03:slice_timing",
+            "@type": "@id"
+        },
+        "slices": {
+            "@id": "image03:slices",
+            "@type": "@id"
+        },
+        "software_preproc": {
+            "@id": "image03:software_preproc",
+            "@type": "@id"
+        },
+        "stack": {
+            "@id": "image03:stack",
+            "@type": "@id"
+        },
+        "stain": {
+            "@id": "image03:stain",
+            "@type": "@id"
+        },
+        "stain_details": {
+            "@id": "image03:stain_details",
+            "@type": "@id"
+        },
+        "study": {
+            "@id": "image03:study",
+            "@type": "@id"
+        },
+        "time_diff_inject_to_image": {
+            "@id": "image03:time_diff_inject_to_image",
+            "@type": "@id"
+        },
+        "time_diff_units": {
+            "@id": "image03:time_diff_units",
+            "@type": "@id"
+        },
+        "transformation_performed": {
+            "@id": "image03:transformation_performed",
+            "@type": "@id"
+        },
+        "transformation_type": {
+            "@id": "image03:transformation_type",
+            "@type": "@id"
+        },
+        "transmit_coil": {
+            "@id": "image03:transmit_coil",
+            "@type": "@id"
+        },
+        "type_of_microscopy": {
+            "@id": "image03:type_of_microscopy",
+            "@type": "@id"
+        },
+        "visnum": {
+            "@id": "image03:visnum",
+            "@type": "@id"
+        },
+        "week": {
+            "@id": "image03:week",
+            "@type": "@id"
+        },
+        "year_mta": {
+            "@id": "image03:year_mta",
+            "@type": "@id"
+        }
+    }
+}

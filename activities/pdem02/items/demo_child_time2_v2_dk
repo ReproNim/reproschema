@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "demo_child_time2_v2_dk",
+    "@type": "reproschema:Field",
+    "prefLabel": "demo_child_time2_v2_dk",
+    "altLabel": "demo_child_time2_dk_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "About how much time does the child spend at this other household? Approximately how many hours per week ¿Aproximadamente cuánto tiempo pasa su niño(a) en ese otro hogar? ¿Aproximadamente cuántas horas por semana?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 999,
+        "schema:maxValue": 777,
+        "choices": [
+            {
+                "name": "Dont know No lo sé",
+                "value": 999
+            },
+            {
+                "name": "Refuse to answer Prefiere no contestar",
+                "value": 777
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "999 = Dont know No lo sé; 777 = Refuse to answer Prefiere no contestar"
+        }
+    ]
+}

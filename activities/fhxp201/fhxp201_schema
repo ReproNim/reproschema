@@ -1,0 +1,1738 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+        "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/activities/fhxp201/fhxp201_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "fhxp201_schema",
+    "skos:prefLabel": "fhxp201",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "order": [
+            "visit",
+            "fam_history_10_yes_no",
+            "fam_history_11_yes_no",
+            "fam_history_12_yes_no",
+            "fam_history_13_yes_no",
+            "fam_history_7_yes_no",
+            "fam_history_8_yes_no",
+            "fam_history_9_yes_no",
+            "fam_history_q10a_nerves",
+            "fam_history_q10b_nerves",
+            "fam_history_q10c_nerves",
+            "fam_history_q10d_nerves",
+            "fam_history_q10e_nerves",
+            "fam_history_q10f_nerves",
+            "fam_history_q11a_professional",
+            "fam_history_q11b_professional",
+            "fam_history_q11c_professional",
+            "fam_history_q11d_professional",
+            "fam_history_q11e_professional",
+            "fam_history_q11f_professional",
+            "fam_history_q12a_hospitalized",
+            "fam_history_q12b_hospitalized",
+            "fam_history_q12c_hospitalized",
+            "fam_history_q12d_hospitalized",
+            "fam_history_q12e_hospitalized",
+            "fam_history_q12f_hospitalized",
+            "fam_history_q13a_suicide",
+            "fam_history_q13b_suicide",
+            "fam_history_q13c_suicide",
+            "fam_history_q13d_suicide",
+            "fam_history_q13e_suicide",
+            "fam_history_q13f_suicide",
+            "fam_history_q7a_mania",
+            "fam_history_q7b_mania",
+            "fam_history_q7c_mania",
+            "fam_history_q7d_mania",
+            "fam_history_q7e_mania",
+            "fam_history_q7f_mania",
+            "fam_history_q8a_visions",
+            "fam_history_q8b_visions",
+            "fam_history_q8c_visions",
+            "fam_history_q8d_visions",
+            "fam_history_q8e_visions",
+            "fam_history_q8f_visions",
+            "fam_history_q9a_trouble",
+            "fam_history_q9b_trouble",
+            "fam_history_q9c_trouble",
+            "fam_history_q9d_trouble",
+            "fam_history_q9e_trouble",
+            "fam_history_q9f_trouble",
+            "q10g_pat_uncle1_nerves",
+            "q10g_pat_uncle2_nerves",
+            "q10g_pat_uncle3_nerves",
+            "q10g_pat_uncle4_nerves",
+            "q10g_pat_uncle5_nerves",
+            "q10h_pat_aunt1_nerves",
+            "q10h_pat_aunt2_nerves",
+            "q10h_pat_aunt3_nerves",
+            "q10h_pat_aunt4_nerves",
+            "q10h_pat_aunt5_nerves",
+            "q10i_mat_uncle1_nerves",
+            "q10i_mat_uncle2_nerves",
+            "q10i_mat_uncle3_nerves",
+            "q10i_mat_uncle4_nerves",
+            "q10i_mat_uncle5_nerves",
+            "q10j_mat_aunt1_nerves",
+            "q10j_mat_aunt2_nerves",
+            "q10j_mat_aunt3_nerves",
+            "q10j_mat_aunt4_nerves",
+            "q10j_mat_aunt5_nerves",
+            "q10k_full_sib_young1_nerves",
+            "q10k_full_sib_young2_nerves",
+            "q10k_full_sib_young3_nerves",
+            "q10k_full_sib_young4_nerves",
+            "q10k_full_sib_young5_nerves",
+            "q10l_full_sib_old1_nerves",
+            "q10l_full_sib_old2_nerves",
+            "q10l_full_sib_old3_nerves",
+            "q10l_full_sib_old4_nerves",
+            "q10l_full_sib_old5_nerves",
+            "q10m_full_sib_same1_nerves",
+            "q10m_full_sib_same2_nerves",
+            "q10m_half_sib_young1_nerves",
+            "q10m_half_sib_young2_nerves",
+            "q10m_half_sib_young3_nerves",
+            "q10m_half_sib_young4_nerves",
+            "q10m_half_sib_young5_nerves",
+            "q10n_half_sib_old1_nerves",
+            "q10n_half_sib_old2_nerves",
+            "q10n_half_sib_old3_nerves",
+            "q10n_half_sib_old4_nerves",
+            "q10n_half_sib_old5_nerves",
+            "q11g_pat_uncle1_professional",
+            "q11g_pat_uncle2_professional",
+            "q11g_pat_uncle3_professional",
+            "q11g_pat_uncle4_professional",
+            "q11g_pat_uncle5_professional",
+            "q11h_pat_aunt1_professional",
+            "q11h_pat_aunt2_professional",
+            "q11h_pat_aunt3_professional",
+            "q11h_pat_aunt4_professional",
+            "q11h_pat_aunt5_professional",
+            "q11i_mat_uncle1_professional",
+            "q11i_mat_uncle2_professional",
+            "q11i_mat_uncle3_professional",
+            "q11i_mat_uncle4_professional",
+            "q11i_mat_uncle5_professional",
+            "q11j_mat_aunt1_professional",
+            "q11j_mat_aunt2_professional",
+            "q11j_mat_aunt3_professional",
+            "q11j_mat_aunt4_professional",
+            "q11j_mat_aunt5_professional",
+            "q11k_full_sib_young1_prof",
+            "q11k_full_sib_young2_prof",
+            "q11k_full_sib_young3_prof",
+            "q11k_full_sib_young4_prof",
+            "q11k_full_sib_young5_prof",
+            "q11l_full_sib_old1_prof",
+            "q11l_full_sib_old2_prof",
+            "q11l_full_sib_old3_prof",
+            "q11l_full_sib_old4_prof",
+            "q11l_full_sib_old5_prof",
+            "q11m_full_sib_same1_prof",
+            "q11m_full_sib_same2_prof",
+            "q11m_half_sib_young1_prof",
+            "q11m_half_sib_young2_prof",
+            "q11m_half_sib_young3_prof",
+            "q11m_half_sib_young4_prof",
+            "q11m_half_sib_young5_prof",
+            "q11n_half_sib_old1_prof",
+            "q11n_half_sib_old2_prof",
+            "q11n_half_sib_old3_prof",
+            "q11n_half_sib_old4_prof",
+            "q11n_half_sib_old5_prof",
+            "q12g_pat_uncle1_hospitalized",
+            "q12g_pat_uncle2_hospitalized",
+            "q12g_pat_uncle3_hospitalized",
+            "q12g_pat_uncle4_hospitalized",
+            "q12g_pat_uncle5_hospitalized",
+            "q12h_pat_aunt1_hospitalized",
+            "q12h_pat_aunt2_hospitalized",
+            "q12h_pat_aunt3_hospitalized",
+            "q12h_pat_aunt4_hospitalized",
+            "q12h_pat_aunt5_hospitalized",
+            "q12i_mat_uncle1_hospitalized",
+            "q12i_mat_uncle2_hospitalized",
+            "q12i_mat_uncle3_hospitalized",
+            "q12i_mat_uncle4_hospitalized",
+            "q12i_mat_uncle5_hospitalized",
+            "q12j_mat_aunt1_hospitalized",
+            "q12j_mat_aunt2_hospitalized",
+            "q12j_mat_aunt3_hospitalized",
+            "q12j_mat_aunt4_hospitalized",
+            "q12j_mat_aunt5_hospitalized",
+            "q12k_full_sib_young1_hosp",
+            "q12k_full_sib_young2_hosp",
+            "q12k_full_sib_young3_hosp",
+            "q12k_full_sib_young4_hosp",
+            "q12k_full_sib_young5_hosp",
+            "q12l_full_sib_old1_hosp",
+            "q12l_full_sib_old2_hosp",
+            "q12l_full_sib_old3_hosp",
+            "q12l_full_sib_old4_hosp",
+            "q12l_full_sib_old5_hosp",
+            "q12m_full_sib_same1_hosp",
+            "q12m_full_sib_same2_hosp",
+            "q12m_half_sib_young1_hosp",
+            "q12m_half_sib_young2_hosp",
+            "q12m_half_sib_young3_hosp",
+            "q12m_half_sib_young4_hosp",
+            "q12m_half_sib_young5_hosp",
+            "q12n_half_sib_old1_hosp",
+            "q12n_half_sib_old2_hosp",
+            "q12n_half_sib_old3_hosp",
+            "q12n_half_sib_old4_hosp",
+            "q12n_half_sib_old5_hosp",
+            "q13g_pat_uncle1_suicide",
+            "q13g_pat_uncle2_suicide",
+            "q13g_pat_uncle3_suicide",
+            "q13g_pat_uncle4_suicide",
+            "q13g_pat_uncle5_suicide",
+            "q13h_pat_aunt1_suicide",
+            "q13h_pat_aunt2_suicide",
+            "q13h_pat_aunt3_suicide",
+            "q13h_pat_aunt4_suicide",
+            "q13h_pat_aunt5_suicide",
+            "q13i_mat_uncle1_suicide",
+            "q13i_mat_uncle2_suicide",
+            "q13i_mat_uncle3_suicide",
+            "q13i_mat_uncle4_suicide",
+            "q13i_mat_uncle5_suicide",
+            "q13j_mat_aunt1_suicide",
+            "q13j_mat_aunt2_suicide",
+            "q13j_mat_aunt3_suicide",
+            "q13j_mat_aunt4_suicide",
+            "q13j_mat_aunt5_suicide",
+            "q13k_full_sib_young1_suicide",
+            "q13k_full_sib_young2_suicide",
+            "q13k_full_sib_young3_suicide",
+            "q13k_full_sib_young4_suicide",
+            "q13k_full_sib_young5_suicide",
+            "q13l_full_sib_old1_suicide",
+            "q13l_full_sib_old2_suicide",
+            "q13l_full_sib_old3_suicide",
+            "q13l_full_sib_old4_suicide",
+            "q13l_full_sib_old5_suicide",
+            "q13m_full_sib_same1_suicide",
+            "q13m_full_sib_same2_suicide",
+            "q13m_half_sib_young1_suicide",
+            "q13m_half_sib_young2_suicide",
+            "q13m_half_sib_young3_suicide",
+            "q13m_half_sib_young4_suicide",
+            "q13m_half_sib_young5_suicide",
+            "q13n_half_sib_old1_suicide",
+            "q13n_half_sib_old2_suicide",
+            "q13n_half_sib_old3_suicide",
+            "q13n_half_sib_old4_suicide",
+            "q13n_half_sib_old5_suicide",
+            "q7g_pat_uncle1_mania",
+            "q7g_pat_uncle2_mania",
+            "q7g_pat_uncle3_mania",
+            "q7g_pat_uncle4_mania",
+            "q7g_pat_uncle5_mania",
+            "q7h_pat_aunt1_mania",
+            "q7h_pat_aunt2_mania",
+            "q7h_pat_aunt3_mania",
+            "q7h_pat_aunt4_mania",
+            "q7h_pat_aunt5_mania",
+            "q7i_mat_uncle1_mania",
+            "q7i_mat_uncle2_mania",
+            "q7i_mat_uncle3_mania",
+            "q7i_mat_uncle4_mania",
+            "q7i_mat_uncle5_mania",
+            "q7j_mat_aunt1_mania",
+            "q7j_mat_aunt2_mania",
+            "q7j_mat_aunt3_mania",
+            "q7j_mat_aunt4_mania",
+            "q7j_mat_aunt5_mania",
+            "q7k_full_sib_young1_mania",
+            "q7k_full_sib_young2_mania",
+            "q7k_full_sib_young3_mania",
+            "q7k_full_sib_young4_mania",
+            "q7k_full_sib_young5_mania",
+            "q7l_full_sib_old1_mania",
+            "q7l_full_sib_old2_mania",
+            "q7l_full_sib_old3_mania",
+            "q7l_full_sib_old4_mania",
+            "q7l_full_sib_old5_mania",
+            "q7m_full_sib_same1_mania",
+            "q7m_full_sib_same2_mania",
+            "q7m_half_sib_young1_mania",
+            "q7m_half_sib_young2_mania",
+            "q7m_half_sib_young3_mania",
+            "q7m_half_sib_young4_mania",
+            "q7m_half_sib_young5_mania",
+            "q7n_half_sib_old1_mania",
+            "q7n_half_sib_old2_mania",
+            "q7n_half_sib_old3_mania",
+            "q7n_half_sib_old4_mania",
+            "q7n_half_sib_old5_mania",
+            "q8g_pat_uncle1_visions",
+            "q8g_pat_uncle2_visions",
+            "q8g_pat_uncle3_visions",
+            "q8g_pat_uncle4_visions",
+            "q8g_pat_uncle5_visions",
+            "q8h_pat_aunt1_visions",
+            "q8h_pat_aunt2_visions",
+            "q8h_pat_aunt3_visions",
+            "q8h_pat_aunt4_visions",
+            "q8h_pat_aunt5_visions",
+            "q8i_mat_uncle1_visions",
+            "q8i_mat_uncle3_visions",
+            "q8i_mat_uncle4_visions",
+            "q8i_mat_uncle5_visions",
+            "q8i_pat_uncle2_visions",
+            "q8j_mat_aunt1_visions",
+            "q8j_mat_aunt2_visions",
+            "q8j_mat_aunt3_visions",
+            "q8j_mat_aunt4_visions",
+            "q8j_mat_aunt5_visions",
+            "q8k_full_sib_young1_visions",
+            "q8k_full_sib_young2_visions",
+            "q8k_full_sib_young3_visions",
+            "q8k_full_sib_young4_visions",
+            "q8k_full_sib_young5_visions",
+            "q8l_full_sib_old1_visions",
+            "q8l_full_sib_old2_visions",
+            "q8l_full_sib_old3_visions",
+            "q8l_full_sib_old4_visions",
+            "q8l_full_sib_old5_visions",
+            "q8m_full_sib_same1_visions",
+            "q8m_full_sib_same2_visions",
+            "q8m_half_sib_young1_visions",
+            "q8m_half_sib_young2_visions",
+            "q8m_half_sib_young3_visions",
+            "q8m_half_sib_young4_visions",
+            "q8m_half_sib_young5_visions",
+            "q8n_half_sib_old1_visions",
+            "q8n_half_sib_old2_visions",
+            "q8n_half_sib_old3_visions",
+            "q8n_half_sib_old4_visions",
+            "q8n_half_sib_old5_visions",
+            "q9g_pat_uncle1_trouble",
+            "q9g_pat_uncle2_trouble",
+            "q9g_pat_uncle3_trouble",
+            "q9g_pat_uncle4_trouble",
+            "q9g_pat_uncle5_trouble",
+            "q9h_pat_aunt1_trouble",
+            "q9h_pat_aunt2_trouble",
+            "q9h_pat_aunt3_trouble",
+            "q9h_pat_aunt4_trouble",
+            "q9h_pat_aunt5_trouble",
+            "q9i_mat_uncle1_trouble",
+            "q9i_mat_uncle2_trouble",
+            "q9i_mat_uncle3_trouble",
+            "q9i_mat_uncle4_trouble",
+            "q9i_mat_uncle5_trouble",
+            "q9j_mat_aunt1_trouble",
+            "q9j_mat_aunt2_trouble",
+            "q9j_mat_aunt3_trouble",
+            "q9j_mat_aunt4_trouble",
+            "q9j_mat_aunt5_trouble",
+            "q9k_full_sib_young1_trouble",
+            "q9k_full_sib_young2_trouble",
+            "q9k_full_sib_young3_trouble",
+            "q9k_full_sib_young4_trouble",
+            "q9k_full_sib_young5_trouble",
+            "q9l_full_sib_old1_trouble",
+            "q9l_full_sib_old2_trouble",
+            "q9l_full_sib_old3_trouble",
+            "q9l_full_sib_old4_trouble",
+            "q9l_full_sib_old5_trouble",
+            "q9m_full_sib_same1_trouble",
+            "q9m_full_sib_same2_trouble",
+            "q9m_half_sib_young1_trouble",
+            "q9m_half_sib_young2_trouble",
+            "q9m_half_sib_young3_trouble",
+            "q9m_half_sib_young4_trouble",
+            "q9m_half_sib_young5_trouble",
+            "q9n_half_sib_old1_trouble",
+            "q9n_half_sib_old2_trouble",
+            "q9n_half_sib_old3_trouble",
+            "q9n_half_sib_old4_trouble",
+            "q9n_half_sib_old5_trouble"
+        ],
+        "shuffle": false,
+        "addProperties": [
+            {
+                "variableName": "visit",
+                "isAbout": "visit"
+            },
+            {
+                "variableName": "fam_history_10_yes_no",
+                "isAbout": "fam_history_10_yes_no"
+            },
+            {
+                "variableName": "fam_history_11_yes_no",
+                "isAbout": "fam_history_11_yes_no"
+            },
+            {
+                "variableName": "fam_history_12_yes_no",
+                "isAbout": "fam_history_12_yes_no"
+            },
+            {
+                "variableName": "fam_history_13_yes_no",
+                "isAbout": "fam_history_13_yes_no"
+            },
+            {
+                "variableName": "fam_history_7_yes_no",
+                "isAbout": "fam_history_7_yes_no"
+            },
+            {
+                "variableName": "fam_history_8_yes_no",
+                "isAbout": "fam_history_8_yes_no"
+            },
+            {
+                "variableName": "fam_history_9_yes_no",
+                "isAbout": "fam_history_9_yes_no"
+            },
+            {
+                "variableName": "fam_history_q10a_nerves",
+                "isAbout": "fam_history_q10a_nerves"
+            },
+            {
+                "variableName": "fam_history_q10b_nerves",
+                "isAbout": "fam_history_q10b_nerves"
+            },
+            {
+                "variableName": "fam_history_q10c_nerves",
+                "isAbout": "fam_history_q10c_nerves"
+            },
+            {
+                "variableName": "fam_history_q10d_nerves",
+                "isAbout": "fam_history_q10d_nerves"
+            },
+            {
+                "variableName": "fam_history_q10e_nerves",
+                "isAbout": "fam_history_q10e_nerves"
+            },
+            {
+                "variableName": "fam_history_q10f_nerves",
+                "isAbout": "fam_history_q10f_nerves"
+            },
+            {
+                "variableName": "fam_history_q11a_professional",
+                "isAbout": "fam_history_q11a_professional"
+            },
+            {
+                "variableName": "fam_history_q11b_professional",
+                "isAbout": "fam_history_q11b_professional"
+            },
+            {
+                "variableName": "fam_history_q11c_professional",
+                "isAbout": "fam_history_q11c_professional"
+            },
+            {
+                "variableName": "fam_history_q11d_professional",
+                "isAbout": "fam_history_q11d_professional"
+            },
+            {
+                "variableName": "fam_history_q11e_professional",
+                "isAbout": "fam_history_q11e_professional"
+            },
+            {
+                "variableName": "fam_history_q11f_professional",
+                "isAbout": "fam_history_q11f_professional"
+            },
+            {
+                "variableName": "fam_history_q12a_hospitalized",
+                "isAbout": "fam_history_q12a_hospitalized"
+            },
+            {
+                "variableName": "fam_history_q12b_hospitalized",
+                "isAbout": "fam_history_q12b_hospitalized"
+            },
+            {
+                "variableName": "fam_history_q12c_hospitalized",
+                "isAbout": "fam_history_q12c_hospitalized"
+            },
+            {
+                "variableName": "fam_history_q12d_hospitalized",
+                "isAbout": "fam_history_q12d_hospitalized"
+            },
+            {
+                "variableName": "fam_history_q12e_hospitalized",
+                "isAbout": "fam_history_q12e_hospitalized"
+            },
+            {
+                "variableName": "fam_history_q12f_hospitalized",
+                "isAbout": "fam_history_q12f_hospitalized"
+            },
+            {
+                "variableName": "fam_history_q13a_suicide",
+                "isAbout": "fam_history_q13a_suicide"
+            },
+            {
+                "variableName": "fam_history_q13b_suicide",
+                "isAbout": "fam_history_q13b_suicide"
+            },
+            {
+                "variableName": "fam_history_q13c_suicide",
+                "isAbout": "fam_history_q13c_suicide"
+            },
+            {
+                "variableName": "fam_history_q13d_suicide",
+                "isAbout": "fam_history_q13d_suicide"
+            },
+            {
+                "variableName": "fam_history_q13e_suicide",
+                "isAbout": "fam_history_q13e_suicide"
+            },
+            {
+                "variableName": "fam_history_q13f_suicide",
+                "isAbout": "fam_history_q13f_suicide"
+            },
+            {
+                "variableName": "fam_history_q7a_mania",
+                "isAbout": "fam_history_q7a_mania"
+            },
+            {
+                "variableName": "fam_history_q7b_mania",
+                "isAbout": "fam_history_q7b_mania"
+            },
+            {
+                "variableName": "fam_history_q7c_mania",
+                "isAbout": "fam_history_q7c_mania"
+            },
+            {
+                "variableName": "fam_history_q7d_mania",
+                "isAbout": "fam_history_q7d_mania"
+            },
+            {
+                "variableName": "fam_history_q7e_mania",
+                "isAbout": "fam_history_q7e_mania"
+            },
+            {
+                "variableName": "fam_history_q7f_mania",
+                "isAbout": "fam_history_q7f_mania"
+            },
+            {
+                "variableName": "fam_history_q8a_visions",
+                "isAbout": "fam_history_q8a_visions"
+            },
+            {
+                "variableName": "fam_history_q8b_visions",
+                "isAbout": "fam_history_q8b_visions"
+            },
+            {
+                "variableName": "fam_history_q8c_visions",
+                "isAbout": "fam_history_q8c_visions"
+            },
+            {
+                "variableName": "fam_history_q8d_visions",
+                "isAbout": "fam_history_q8d_visions"
+            },
+            {
+                "variableName": "fam_history_q8e_visions",
+                "isAbout": "fam_history_q8e_visions"
+            },
+            {
+                "variableName": "fam_history_q8f_visions",
+                "isAbout": "fam_history_q8f_visions"
+            },
+            {
+                "variableName": "fam_history_q9a_trouble",
+                "isAbout": "fam_history_q9a_trouble"
+            },
+            {
+                "variableName": "fam_history_q9b_trouble",
+                "isAbout": "fam_history_q9b_trouble"
+            },
+            {
+                "variableName": "fam_history_q9c_trouble",
+                "isAbout": "fam_history_q9c_trouble"
+            },
+            {
+                "variableName": "fam_history_q9d_trouble",
+                "isAbout": "fam_history_q9d_trouble"
+            },
+            {
+                "variableName": "fam_history_q9e_trouble",
+                "isAbout": "fam_history_q9e_trouble"
+            },
+            {
+                "variableName": "fam_history_q9f_trouble",
+                "isAbout": "fam_history_q9f_trouble"
+            },
+            {
+                "variableName": "q10g_pat_uncle1_nerves",
+                "isAbout": "q10g_pat_uncle1_nerves"
+            },
+            {
+                "variableName": "q10g_pat_uncle2_nerves",
+                "isAbout": "q10g_pat_uncle2_nerves"
+            },
+            {
+                "variableName": "q10g_pat_uncle3_nerves",
+                "isAbout": "q10g_pat_uncle3_nerves"
+            },
+            {
+                "variableName": "q10g_pat_uncle4_nerves",
+                "isAbout": "q10g_pat_uncle4_nerves"
+            },
+            {
+                "variableName": "q10g_pat_uncle5_nerves",
+                "isAbout": "q10g_pat_uncle5_nerves"
+            },
+            {
+                "variableName": "q10h_pat_aunt1_nerves",
+                "isAbout": "q10h_pat_aunt1_nerves"
+            },
+            {
+                "variableName": "q10h_pat_aunt2_nerves",
+                "isAbout": "q10h_pat_aunt2_nerves"
+            },
+            {
+                "variableName": "q10h_pat_aunt3_nerves",
+                "isAbout": "q10h_pat_aunt3_nerves"
+            },
+            {
+                "variableName": "q10h_pat_aunt4_nerves",
+                "isAbout": "q10h_pat_aunt4_nerves"
+            },
+            {
+                "variableName": "q10h_pat_aunt5_nerves",
+                "isAbout": "q10h_pat_aunt5_nerves"
+            },
+            {
+                "variableName": "q10i_mat_uncle1_nerves",
+                "isAbout": "q10i_mat_uncle1_nerves"
+            },
+            {
+                "variableName": "q10i_mat_uncle2_nerves",
+                "isAbout": "q10i_mat_uncle2_nerves"
+            },
+            {
+                "variableName": "q10i_mat_uncle3_nerves",
+                "isAbout": "q10i_mat_uncle3_nerves"
+            },
+            {
+                "variableName": "q10i_mat_uncle4_nerves",
+                "isAbout": "q10i_mat_uncle4_nerves"
+            },
+            {
+                "variableName": "q10i_mat_uncle5_nerves",
+                "isAbout": "q10i_mat_uncle5_nerves"
+            },
+            {
+                "variableName": "q10j_mat_aunt1_nerves",
+                "isAbout": "q10j_mat_aunt1_nerves"
+            },
+            {
+                "variableName": "q10j_mat_aunt2_nerves",
+                "isAbout": "q10j_mat_aunt2_nerves"
+            },
+            {
+                "variableName": "q10j_mat_aunt3_nerves",
+                "isAbout": "q10j_mat_aunt3_nerves"
+            },
+            {
+                "variableName": "q10j_mat_aunt4_nerves",
+                "isAbout": "q10j_mat_aunt4_nerves"
+            },
+            {
+                "variableName": "q10j_mat_aunt5_nerves",
+                "isAbout": "q10j_mat_aunt5_nerves"
+            },
+            {
+                "variableName": "q10k_full_sib_young1_nerves",
+                "isAbout": "q10k_full_sib_young1_nerves"
+            },
+            {
+                "variableName": "q10k_full_sib_young2_nerves",
+                "isAbout": "q10k_full_sib_young2_nerves"
+            },
+            {
+                "variableName": "q10k_full_sib_young3_nerves",
+                "isAbout": "q10k_full_sib_young3_nerves"
+            },
+            {
+                "variableName": "q10k_full_sib_young4_nerves",
+                "isAbout": "q10k_full_sib_young4_nerves"
+            },
+            {
+                "variableName": "q10k_full_sib_young5_nerves",
+                "isAbout": "q10k_full_sib_young5_nerves"
+            },
+            {
+                "variableName": "q10l_full_sib_old1_nerves",
+                "isAbout": "q10l_full_sib_old1_nerves"
+            },
+            {
+                "variableName": "q10l_full_sib_old2_nerves",
+                "isAbout": "q10l_full_sib_old2_nerves"
+            },
+            {
+                "variableName": "q10l_full_sib_old3_nerves",
+                "isAbout": "q10l_full_sib_old3_nerves"
+            },
+            {
+                "variableName": "q10l_full_sib_old4_nerves",
+                "isAbout": "q10l_full_sib_old4_nerves"
+            },
+            {
+                "variableName": "q10l_full_sib_old5_nerves",
+                "isAbout": "q10l_full_sib_old5_nerves"
+            },
+            {
+                "variableName": "q10m_full_sib_same1_nerves",
+                "isAbout": "q10m_full_sib_same1_nerves"
+            },
+            {
+                "variableName": "q10m_full_sib_same2_nerves",
+                "isAbout": "q10m_full_sib_same2_nerves"
+            },
+            {
+                "variableName": "q10m_half_sib_young1_nerves",
+                "isAbout": "q10m_half_sib_young1_nerves"
+            },
+            {
+                "variableName": "q10m_half_sib_young2_nerves",
+                "isAbout": "q10m_half_sib_young2_nerves"
+            },
+            {
+                "variableName": "q10m_half_sib_young3_nerves",
+                "isAbout": "q10m_half_sib_young3_nerves"
+            },
+            {
+                "variableName": "q10m_half_sib_young4_nerves",
+                "isAbout": "q10m_half_sib_young4_nerves"
+            },
+            {
+                "variableName": "q10m_half_sib_young5_nerves",
+                "isAbout": "q10m_half_sib_young5_nerves"
+            },
+            {
+                "variableName": "q10n_half_sib_old1_nerves",
+                "isAbout": "q10n_half_sib_old1_nerves"
+            },
+            {
+                "variableName": "q10n_half_sib_old2_nerves",
+                "isAbout": "q10n_half_sib_old2_nerves"
+            },
+            {
+                "variableName": "q10n_half_sib_old3_nerves",
+                "isAbout": "q10n_half_sib_old3_nerves"
+            },
+            {
+                "variableName": "q10n_half_sib_old4_nerves",
+                "isAbout": "q10n_half_sib_old4_nerves"
+            },
+            {
+                "variableName": "q10n_half_sib_old5_nerves",
+                "isAbout": "q10n_half_sib_old5_nerves"
+            },
+            {
+                "variableName": "q11g_pat_uncle1_professional",
+                "isAbout": "q11g_pat_uncle1_professional"
+            },
+            {
+                "variableName": "q11g_pat_uncle2_professional",
+                "isAbout": "q11g_pat_uncle2_professional"
+            },
+            {
+                "variableName": "q11g_pat_uncle3_professional",
+                "isAbout": "q11g_pat_uncle3_professional"
+            },
+            {
+                "variableName": "q11g_pat_uncle4_professional",
+                "isAbout": "q11g_pat_uncle4_professional"
+            },
+            {
+                "variableName": "q11g_pat_uncle5_professional",
+                "isAbout": "q11g_pat_uncle5_professional"
+            },
+            {
+                "variableName": "q11h_pat_aunt1_professional",
+                "isAbout": "q11h_pat_aunt1_professional"
+            },
+            {
+                "variableName": "q11h_pat_aunt2_professional",
+                "isAbout": "q11h_pat_aunt2_professional"
+            },
+            {
+                "variableName": "q11h_pat_aunt3_professional",
+                "isAbout": "q11h_pat_aunt3_professional"
+            },
+            {
+                "variableName": "q11h_pat_aunt4_professional",
+                "isAbout": "q11h_pat_aunt4_professional"
+            },
+            {
+                "variableName": "q11h_pat_aunt5_professional",
+                "isAbout": "q11h_pat_aunt5_professional"
+            },
+            {
+                "variableName": "q11i_mat_uncle1_professional",
+                "isAbout": "q11i_mat_uncle1_professional"
+            },
+            {
+                "variableName": "q11i_mat_uncle2_professional",
+                "isAbout": "q11i_mat_uncle2_professional"
+            },
+            {
+                "variableName": "q11i_mat_uncle3_professional",
+                "isAbout": "q11i_mat_uncle3_professional"
+            },
+            {
+                "variableName": "q11i_mat_uncle4_professional",
+                "isAbout": "q11i_mat_uncle4_professional"
+            },
+            {
+                "variableName": "q11i_mat_uncle5_professional",
+                "isAbout": "q11i_mat_uncle5_professional"
+            },
+            {
+                "variableName": "q11j_mat_aunt1_professional",
+                "isAbout": "q11j_mat_aunt1_professional"
+            },
+            {
+                "variableName": "q11j_mat_aunt2_professional",
+                "isAbout": "q11j_mat_aunt2_professional"
+            },
+            {
+                "variableName": "q11j_mat_aunt3_professional",
+                "isAbout": "q11j_mat_aunt3_professional"
+            },
+            {
+                "variableName": "q11j_mat_aunt4_professional",
+                "isAbout": "q11j_mat_aunt4_professional"
+            },
+            {
+                "variableName": "q11j_mat_aunt5_professional",
+                "isAbout": "q11j_mat_aunt5_professional"
+            },
+            {
+                "variableName": "q11k_full_sib_young1_prof",
+                "isAbout": "q11k_full_sib_young1_prof"
+            },
+            {
+                "variableName": "q11k_full_sib_young2_prof",
+                "isAbout": "q11k_full_sib_young2_prof"
+            },
+            {
+                "variableName": "q11k_full_sib_young3_prof",
+                "isAbout": "q11k_full_sib_young3_prof"
+            },
+            {
+                "variableName": "q11k_full_sib_young4_prof",
+                "isAbout": "q11k_full_sib_young4_prof"
+            },
+            {
+                "variableName": "q11k_full_sib_young5_prof",
+                "isAbout": "q11k_full_sib_young5_prof"
+            },
+            {
+                "variableName": "q11l_full_sib_old1_prof",
+                "isAbout": "q11l_full_sib_old1_prof"
+            },
+            {
+                "variableName": "q11l_full_sib_old2_prof",
+                "isAbout": "q11l_full_sib_old2_prof"
+            },
+            {
+                "variableName": "q11l_full_sib_old3_prof",
+                "isAbout": "q11l_full_sib_old3_prof"
+            },
+            {
+                "variableName": "q11l_full_sib_old4_prof",
+                "isAbout": "q11l_full_sib_old4_prof"
+            },
+            {
+                "variableName": "q11l_full_sib_old5_prof",
+                "isAbout": "q11l_full_sib_old5_prof"
+            },
+            {
+                "variableName": "q11m_full_sib_same1_prof",
+                "isAbout": "q11m_full_sib_same1_prof"
+            },
+            {
+                "variableName": "q11m_full_sib_same2_prof",
+                "isAbout": "q11m_full_sib_same2_prof"
+            },
+            {
+                "variableName": "q11m_half_sib_young1_prof",
+                "isAbout": "q11m_half_sib_young1_prof"
+            },
+            {
+                "variableName": "q11m_half_sib_young2_prof",
+                "isAbout": "q11m_half_sib_young2_prof"
+            },
+            {
+                "variableName": "q11m_half_sib_young3_prof",
+                "isAbout": "q11m_half_sib_young3_prof"
+            },
+            {
+                "variableName": "q11m_half_sib_young4_prof",
+                "isAbout": "q11m_half_sib_young4_prof"
+            },
+            {
+                "variableName": "q11m_half_sib_young5_prof",
+                "isAbout": "q11m_half_sib_young5_prof"
+            },
+            {
+                "variableName": "q11n_half_sib_old1_prof",
+                "isAbout": "q11n_half_sib_old1_prof"
+            },
+            {
+                "variableName": "q11n_half_sib_old2_prof",
+                "isAbout": "q11n_half_sib_old2_prof"
+            },
+            {
+                "variableName": "q11n_half_sib_old3_prof",
+                "isAbout": "q11n_half_sib_old3_prof"
+            },
+            {
+                "variableName": "q11n_half_sib_old4_prof",
+                "isAbout": "q11n_half_sib_old4_prof"
+            },
+            {
+                "variableName": "q11n_half_sib_old5_prof",
+                "isAbout": "q11n_half_sib_old5_prof"
+            },
+            {
+                "variableName": "q12g_pat_uncle1_hospitalized",
+                "isAbout": "q12g_pat_uncle1_hospitalized"
+            },
+            {
+                "variableName": "q12g_pat_uncle2_hospitalized",
+                "isAbout": "q12g_pat_uncle2_hospitalized"
+            },
+            {
+                "variableName": "q12g_pat_uncle3_hospitalized",
+                "isAbout": "q12g_pat_uncle3_hospitalized"
+            },
+            {
+                "variableName": "q12g_pat_uncle4_hospitalized",
+                "isAbout": "q12g_pat_uncle4_hospitalized"
+            },
+            {
+                "variableName": "q12g_pat_uncle5_hospitalized",
+                "isAbout": "q12g_pat_uncle5_hospitalized"
+            },
+            {
+                "variableName": "q12h_pat_aunt1_hospitalized",
+                "isAbout": "q12h_pat_aunt1_hospitalized"
+            },
+            {
+                "variableName": "q12h_pat_aunt2_hospitalized",
+                "isAbout": "q12h_pat_aunt2_hospitalized"
+            },
+            {
+                "variableName": "q12h_pat_aunt3_hospitalized",
+                "isAbout": "q12h_pat_aunt3_hospitalized"
+            },
+            {
+                "variableName": "q12h_pat_aunt4_hospitalized",
+                "isAbout": "q12h_pat_aunt4_hospitalized"
+            },
+            {
+                "variableName": "q12h_pat_aunt5_hospitalized",
+                "isAbout": "q12h_pat_aunt5_hospitalized"
+            },
+            {
+                "variableName": "q12i_mat_uncle1_hospitalized",
+                "isAbout": "q12i_mat_uncle1_hospitalized"
+            },
+            {
+                "variableName": "q12i_mat_uncle2_hospitalized",
+                "isAbout": "q12i_mat_uncle2_hospitalized"
+            },
+            {
+                "variableName": "q12i_mat_uncle3_hospitalized",
+                "isAbout": "q12i_mat_uncle3_hospitalized"
+            },
+            {
+                "variableName": "q12i_mat_uncle4_hospitalized",
+                "isAbout": "q12i_mat_uncle4_hospitalized"
+            },
+            {
+                "variableName": "q12i_mat_uncle5_hospitalized",
+                "isAbout": "q12i_mat_uncle5_hospitalized"
+            },
+            {
+                "variableName": "q12j_mat_aunt1_hospitalized",
+                "isAbout": "q12j_mat_aunt1_hospitalized"
+            },
+            {
+                "variableName": "q12j_mat_aunt2_hospitalized",
+                "isAbout": "q12j_mat_aunt2_hospitalized"
+            },
+            {
+                "variableName": "q12j_mat_aunt3_hospitalized",
+                "isAbout": "q12j_mat_aunt3_hospitalized"
+            },
+            {
+                "variableName": "q12j_mat_aunt4_hospitalized",
+                "isAbout": "q12j_mat_aunt4_hospitalized"
+            },
+            {
+                "variableName": "q12j_mat_aunt5_hospitalized",
+                "isAbout": "q12j_mat_aunt5_hospitalized"
+            },
+            {
+                "variableName": "q12k_full_sib_young1_hosp",
+                "isAbout": "q12k_full_sib_young1_hosp"
+            },
+            {
+                "variableName": "q12k_full_sib_young2_hosp",
+                "isAbout": "q12k_full_sib_young2_hosp"
+            },
+            {
+                "variableName": "q12k_full_sib_young3_hosp",
+                "isAbout": "q12k_full_sib_young3_hosp"
+            },
+            {
+                "variableName": "q12k_full_sib_young4_hosp",
+                "isAbout": "q12k_full_sib_young4_hosp"
+            },
+            {
+                "variableName": "q12k_full_sib_young5_hosp",
+                "isAbout": "q12k_full_sib_young5_hosp"
+            },
+            {
+                "variableName": "q12l_full_sib_old1_hosp",
+                "isAbout": "q12l_full_sib_old1_hosp"
+            },
+            {
+                "variableName": "q12l_full_sib_old2_hosp",
+                "isAbout": "q12l_full_sib_old2_hosp"
+            },
+            {
+                "variableName": "q12l_full_sib_old3_hosp",
+                "isAbout": "q12l_full_sib_old3_hosp"
+            },
+            {
+                "variableName": "q12l_full_sib_old4_hosp",
+                "isAbout": "q12l_full_sib_old4_hosp"
+            },
+            {
+                "variableName": "q12l_full_sib_old5_hosp",
+                "isAbout": "q12l_full_sib_old5_hosp"
+            },
+            {
+                "variableName": "q12m_full_sib_same1_hosp",
+                "isAbout": "q12m_full_sib_same1_hosp"
+            },
+            {
+                "variableName": "q12m_full_sib_same2_hosp",
+                "isAbout": "q12m_full_sib_same2_hosp"
+            },
+            {
+                "variableName": "q12m_half_sib_young1_hosp",
+                "isAbout": "q12m_half_sib_young1_hosp"
+            },
+            {
+                "variableName": "q12m_half_sib_young2_hosp",
+                "isAbout": "q12m_half_sib_young2_hosp"
+            },
+            {
+                "variableName": "q12m_half_sib_young3_hosp",
+                "isAbout": "q12m_half_sib_young3_hosp"
+            },
+            {
+                "variableName": "q12m_half_sib_young4_hosp",
+                "isAbout": "q12m_half_sib_young4_hosp"
+            },
+            {
+                "variableName": "q12m_half_sib_young5_hosp",
+                "isAbout": "q12m_half_sib_young5_hosp"
+            },
+            {
+                "variableName": "q12n_half_sib_old1_hosp",
+                "isAbout": "q12n_half_sib_old1_hosp"
+            },
+            {
+                "variableName": "q12n_half_sib_old2_hosp",
+                "isAbout": "q12n_half_sib_old2_hosp"
+            },
+            {
+                "variableName": "q12n_half_sib_old3_hosp",
+                "isAbout": "q12n_half_sib_old3_hosp"
+            },
+            {
+                "variableName": "q12n_half_sib_old4_hosp",
+                "isAbout": "q12n_half_sib_old4_hosp"
+            },
+            {
+                "variableName": "q12n_half_sib_old5_hosp",
+                "isAbout": "q12n_half_sib_old5_hosp"
+            },
+            {
+                "variableName": "q13g_pat_uncle1_suicide",
+                "isAbout": "q13g_pat_uncle1_suicide"
+            },
+            {
+                "variableName": "q13g_pat_uncle2_suicide",
+                "isAbout": "q13g_pat_uncle2_suicide"
+            },
+            {
+                "variableName": "q13g_pat_uncle3_suicide",
+                "isAbout": "q13g_pat_uncle3_suicide"
+            },
+            {
+                "variableName": "q13g_pat_uncle4_suicide",
+                "isAbout": "q13g_pat_uncle4_suicide"
+            },
+            {
+                "variableName": "q13g_pat_uncle5_suicide",
+                "isAbout": "q13g_pat_uncle5_suicide"
+            },
+            {
+                "variableName": "q13h_pat_aunt1_suicide",
+                "isAbout": "q13h_pat_aunt1_suicide"
+            },
+            {
+                "variableName": "q13h_pat_aunt2_suicide",
+                "isAbout": "q13h_pat_aunt2_suicide"
+            },
+            {
+                "variableName": "q13h_pat_aunt3_suicide",
+                "isAbout": "q13h_pat_aunt3_suicide"
+            },
+            {
+                "variableName": "q13h_pat_aunt4_suicide",
+                "isAbout": "q13h_pat_aunt4_suicide"
+            },
+            {
+                "variableName": "q13h_pat_aunt5_suicide",
+                "isAbout": "q13h_pat_aunt5_suicide"
+            },
+            {
+                "variableName": "q13i_mat_uncle1_suicide",
+                "isAbout": "q13i_mat_uncle1_suicide"
+            },
+            {
+                "variableName": "q13i_mat_uncle2_suicide",
+                "isAbout": "q13i_mat_uncle2_suicide"
+            },
+            {
+                "variableName": "q13i_mat_uncle3_suicide",
+                "isAbout": "q13i_mat_uncle3_suicide"
+            },
+            {
+                "variableName": "q13i_mat_uncle4_suicide",
+                "isAbout": "q13i_mat_uncle4_suicide"
+            },
+            {
+                "variableName": "q13i_mat_uncle5_suicide",
+                "isAbout": "q13i_mat_uncle5_suicide"
+            },
+            {
+                "variableName": "q13j_mat_aunt1_suicide",
+                "isAbout": "q13j_mat_aunt1_suicide"
+            },
+            {
+                "variableName": "q13j_mat_aunt2_suicide",
+                "isAbout": "q13j_mat_aunt2_suicide"
+            },
+            {
+                "variableName": "q13j_mat_aunt3_suicide",
+                "isAbout": "q13j_mat_aunt3_suicide"
+            },
+            {
+                "variableName": "q13j_mat_aunt4_suicide",
+                "isAbout": "q13j_mat_aunt4_suicide"
+            },
+            {
+                "variableName": "q13j_mat_aunt5_suicide",
+                "isAbout": "q13j_mat_aunt5_suicide"
+            },
+            {
+                "variableName": "q13k_full_sib_young1_suicide",
+                "isAbout": "q13k_full_sib_young1_suicide"
+            },
+            {
+                "variableName": "q13k_full_sib_young2_suicide",
+                "isAbout": "q13k_full_sib_young2_suicide"
+            },
+            {
+                "variableName": "q13k_full_sib_young3_suicide",
+                "isAbout": "q13k_full_sib_young3_suicide"
+            },
+            {
+                "variableName": "q13k_full_sib_young4_suicide",
+                "isAbout": "q13k_full_sib_young4_suicide"
+            },
+            {
+                "variableName": "q13k_full_sib_young5_suicide",
+                "isAbout": "q13k_full_sib_young5_suicide"
+            },
+            {
+                "variableName": "q13l_full_sib_old1_suicide",
+                "isAbout": "q13l_full_sib_old1_suicide"
+            },
+            {
+                "variableName": "q13l_full_sib_old2_suicide",
+                "isAbout": "q13l_full_sib_old2_suicide"
+            },
+            {
+                "variableName": "q13l_full_sib_old3_suicide",
+                "isAbout": "q13l_full_sib_old3_suicide"
+            },
+            {
+                "variableName": "q13l_full_sib_old4_suicide",
+                "isAbout": "q13l_full_sib_old4_suicide"
+            },
+            {
+                "variableName": "q13l_full_sib_old5_suicide",
+                "isAbout": "q13l_full_sib_old5_suicide"
+            },
+            {
+                "variableName": "q13m_full_sib_same1_suicide",
+                "isAbout": "q13m_full_sib_same1_suicide"
+            },
+            {
+                "variableName": "q13m_full_sib_same2_suicide",
+                "isAbout": "q13m_full_sib_same2_suicide"
+            },
+            {
+                "variableName": "q13m_half_sib_young1_suicide",
+                "isAbout": "q13m_half_sib_young1_suicide"
+            },
+            {
+                "variableName": "q13m_half_sib_young2_suicide",
+                "isAbout": "q13m_half_sib_young2_suicide"
+            },
+            {
+                "variableName": "q13m_half_sib_young3_suicide",
+                "isAbout": "q13m_half_sib_young3_suicide"
+            },
+            {
+                "variableName": "q13m_half_sib_young4_suicide",
+                "isAbout": "q13m_half_sib_young4_suicide"
+            },
+            {
+                "variableName": "q13m_half_sib_young5_suicide",
+                "isAbout": "q13m_half_sib_young5_suicide"
+            },
+            {
+                "variableName": "q13n_half_sib_old1_suicide",
+                "isAbout": "q13n_half_sib_old1_suicide"
+            },
+            {
+                "variableName": "q13n_half_sib_old2_suicide",
+                "isAbout": "q13n_half_sib_old2_suicide"
+            },
+            {
+                "variableName": "q13n_half_sib_old3_suicide",
+                "isAbout": "q13n_half_sib_old3_suicide"
+            },
+            {
+                "variableName": "q13n_half_sib_old4_suicide",
+                "isAbout": "q13n_half_sib_old4_suicide"
+            },
+            {
+                "variableName": "q13n_half_sib_old5_suicide",
+                "isAbout": "q13n_half_sib_old5_suicide"
+            },
+            {
+                "variableName": "q7g_pat_uncle1_mania",
+                "isAbout": "q7g_pat_uncle1_mania"
+            },
+            {
+                "variableName": "q7g_pat_uncle2_mania",
+                "isAbout": "q7g_pat_uncle2_mania"
+            },
+            {
+                "variableName": "q7g_pat_uncle3_mania",
+                "isAbout": "q7g_pat_uncle3_mania"
+            },
+            {
+                "variableName": "q7g_pat_uncle4_mania",
+                "isAbout": "q7g_pat_uncle4_mania"
+            },
+            {
+                "variableName": "q7g_pat_uncle5_mania",
+                "isAbout": "q7g_pat_uncle5_mania"
+            },
+            {
+                "variableName": "q7h_pat_aunt1_mania",
+                "isAbout": "q7h_pat_aunt1_mania"
+            },
+            {
+                "variableName": "q7h_pat_aunt2_mania",
+                "isAbout": "q7h_pat_aunt2_mania"
+            },
+            {
+                "variableName": "q7h_pat_aunt3_mania",
+                "isAbout": "q7h_pat_aunt3_mania"
+            },
+            {
+                "variableName": "q7h_pat_aunt4_mania",
+                "isAbout": "q7h_pat_aunt4_mania"
+            },
+            {
+                "variableName": "q7h_pat_aunt5_mania",
+                "isAbout": "q7h_pat_aunt5_mania"
+            },
+            {
+                "variableName": "q7i_mat_uncle1_mania",
+                "isAbout": "q7i_mat_uncle1_mania"
+            },
+            {
+                "variableName": "q7i_mat_uncle2_mania",
+                "isAbout": "q7i_mat_uncle2_mania"
+            },
+            {
+                "variableName": "q7i_mat_uncle3_mania",
+                "isAbout": "q7i_mat_uncle3_mania"
+            },
+            {
+                "variableName": "q7i_mat_uncle4_mania",
+                "isAbout": "q7i_mat_uncle4_mania"
+            },
+            {
+                "variableName": "q7i_mat_uncle5_mania",
+                "isAbout": "q7i_mat_uncle5_mania"
+            },
+            {
+                "variableName": "q7j_mat_aunt1_mania",
+                "isAbout": "q7j_mat_aunt1_mania"
+            },
+            {
+                "variableName": "q7j_mat_aunt2_mania",
+                "isAbout": "q7j_mat_aunt2_mania"
+            },
+            {
+                "variableName": "q7j_mat_aunt3_mania",
+                "isAbout": "q7j_mat_aunt3_mania"
+            },
+            {
+                "variableName": "q7j_mat_aunt4_mania",
+                "isAbout": "q7j_mat_aunt4_mania"
+            },
+            {
+                "variableName": "q7j_mat_aunt5_mania",
+                "isAbout": "q7j_mat_aunt5_mania"
+            },
+            {
+                "variableName": "q7k_full_sib_young1_mania",
+                "isAbout": "q7k_full_sib_young1_mania"
+            },
+            {
+                "variableName": "q7k_full_sib_young2_mania",
+                "isAbout": "q7k_full_sib_young2_mania"
+            },
+            {
+                "variableName": "q7k_full_sib_young3_mania",
+                "isAbout": "q7k_full_sib_young3_mania"
+            },
+            {
+                "variableName": "q7k_full_sib_young4_mania",
+                "isAbout": "q7k_full_sib_young4_mania"
+            },
+            {
+                "variableName": "q7k_full_sib_young5_mania",
+                "isAbout": "q7k_full_sib_young5_mania"
+            },
+            {
+                "variableName": "q7l_full_sib_old1_mania",
+                "isAbout": "q7l_full_sib_old1_mania"
+            },
+            {
+                "variableName": "q7l_full_sib_old2_mania",
+                "isAbout": "q7l_full_sib_old2_mania"
+            },
+            {
+                "variableName": "q7l_full_sib_old3_mania",
+                "isAbout": "q7l_full_sib_old3_mania"
+            },
+            {
+                "variableName": "q7l_full_sib_old4_mania",
+                "isAbout": "q7l_full_sib_old4_mania"
+            },
+            {
+                "variableName": "q7l_full_sib_old5_mania",
+                "isAbout": "q7l_full_sib_old5_mania"
+            },
+            {
+                "variableName": "q7m_full_sib_same1_mania",
+                "isAbout": "q7m_full_sib_same1_mania"
+            },
+            {
+                "variableName": "q7m_full_sib_same2_mania",
+                "isAbout": "q7m_full_sib_same2_mania"
+            },
+            {
+                "variableName": "q7m_half_sib_young1_mania",
+                "isAbout": "q7m_half_sib_young1_mania"
+            },
+            {
+                "variableName": "q7m_half_sib_young2_mania",
+                "isAbout": "q7m_half_sib_young2_mania"
+            },
+            {
+                "variableName": "q7m_half_sib_young3_mania",
+                "isAbout": "q7m_half_sib_young3_mania"
+            },
+            {
+                "variableName": "q7m_half_sib_young4_mania",
+                "isAbout": "q7m_half_sib_young4_mania"
+            },
+            {
+                "variableName": "q7m_half_sib_young5_mania",
+                "isAbout": "q7m_half_sib_young5_mania"
+            },
+            {
+                "variableName": "q7n_half_sib_old1_mania",
+                "isAbout": "q7n_half_sib_old1_mania"
+            },
+            {
+                "variableName": "q7n_half_sib_old2_mania",
+                "isAbout": "q7n_half_sib_old2_mania"
+            },
+            {
+                "variableName": "q7n_half_sib_old3_mania",
+                "isAbout": "q7n_half_sib_old3_mania"
+            },
+            {
+                "variableName": "q7n_half_sib_old4_mania",
+                "isAbout": "q7n_half_sib_old4_mania"
+            },
+            {
+                "variableName": "q7n_half_sib_old5_mania",
+                "isAbout": "q7n_half_sib_old5_mania"
+            },
+            {
+                "variableName": "q8g_pat_uncle1_visions",
+                "isAbout": "q8g_pat_uncle1_visions"
+            },
+            {
+                "variableName": "q8g_pat_uncle2_visions",
+                "isAbout": "q8g_pat_uncle2_visions"
+            },
+            {
+                "variableName": "q8g_pat_uncle3_visions",
+                "isAbout": "q8g_pat_uncle3_visions"
+            },
+            {
+                "variableName": "q8g_pat_uncle4_visions",
+                "isAbout": "q8g_pat_uncle4_visions"
+            },
+            {
+                "variableName": "q8g_pat_uncle5_visions",
+                "isAbout": "q8g_pat_uncle5_visions"
+            },
+            {
+                "variableName": "q8h_pat_aunt1_visions",
+                "isAbout": "q8h_pat_aunt1_visions"
+            },
+            {
+                "variableName": "q8h_pat_aunt2_visions",
+                "isAbout": "q8h_pat_aunt2_visions"
+            },
+            {
+                "variableName": "q8h_pat_aunt3_visions",
+                "isAbout": "q8h_pat_aunt3_visions"
+            },
+            {
+                "variableName": "q8h_pat_aunt4_visions",
+                "isAbout": "q8h_pat_aunt4_visions"
+            },
+            {
+                "variableName": "q8h_pat_aunt5_visions",
+                "isAbout": "q8h_pat_aunt5_visions"
+            },
+            {
+                "variableName": "q8i_mat_uncle1_visions",
+                "isAbout": "q8i_mat_uncle1_visions"
+            },
+            {
+                "variableName": "q8i_mat_uncle3_visions",
+                "isAbout": "q8i_mat_uncle3_visions"
+            },
+            {
+                "variableName": "q8i_mat_uncle4_visions",
+                "isAbout": "q8i_mat_uncle4_visions"
+            },
+            {
+                "variableName": "q8i_mat_uncle5_visions",
+                "isAbout": "q8i_mat_uncle5_visions"
+            },
+            {
+                "variableName": "q8i_pat_uncle2_visions",
+                "isAbout": "q8i_pat_uncle2_visions"
+            },
+            {
+                "variableName": "q8j_mat_aunt1_visions",
+                "isAbout": "q8j_mat_aunt1_visions"
+            },
+            {
+                "variableName": "q8j_mat_aunt2_visions",
+                "isAbout": "q8j_mat_aunt2_visions"
+            },
+            {
+                "variableName": "q8j_mat_aunt3_visions",
+                "isAbout": "q8j_mat_aunt3_visions"
+            },
+            {
+                "variableName": "q8j_mat_aunt4_visions",
+                "isAbout": "q8j_mat_aunt4_visions"
+            },
+            {
+                "variableName": "q8j_mat_aunt5_visions",
+                "isAbout": "q8j_mat_aunt5_visions"
+            },
+            {
+                "variableName": "q8k_full_sib_young1_visions",
+                "isAbout": "q8k_full_sib_young1_visions"
+            },
+            {
+                "variableName": "q8k_full_sib_young2_visions",
+                "isAbout": "q8k_full_sib_young2_visions"
+            },
+            {
+                "variableName": "q8k_full_sib_young3_visions",
+                "isAbout": "q8k_full_sib_young3_visions"
+            },
+            {
+                "variableName": "q8k_full_sib_young4_visions",
+                "isAbout": "q8k_full_sib_young4_visions"
+            },
+            {
+                "variableName": "q8k_full_sib_young5_visions",
+                "isAbout": "q8k_full_sib_young5_visions"
+            },
+            {
+                "variableName": "q8l_full_sib_old1_visions",
+                "isAbout": "q8l_full_sib_old1_visions"
+            },
+            {
+                "variableName": "q8l_full_sib_old2_visions",
+                "isAbout": "q8l_full_sib_old2_visions"
+            },
+            {
+                "variableName": "q8l_full_sib_old3_visions",
+                "isAbout": "q8l_full_sib_old3_visions"
+            },
+            {
+                "variableName": "q8l_full_sib_old4_visions",
+                "isAbout": "q8l_full_sib_old4_visions"
+            },
+            {
+                "variableName": "q8l_full_sib_old5_visions",
+                "isAbout": "q8l_full_sib_old5_visions"
+            },
+            {
+                "variableName": "q8m_full_sib_same1_visions",
+                "isAbout": "q8m_full_sib_same1_visions"
+            },
+            {
+                "variableName": "q8m_full_sib_same2_visions",
+                "isAbout": "q8m_full_sib_same2_visions"
+            },
+            {
+                "variableName": "q8m_half_sib_young1_visions",
+                "isAbout": "q8m_half_sib_young1_visions"
+            },
+            {
+                "variableName": "q8m_half_sib_young2_visions",
+                "isAbout": "q8m_half_sib_young2_visions"
+            },
+            {
+                "variableName": "q8m_half_sib_young3_visions",
+                "isAbout": "q8m_half_sib_young3_visions"
+            },
+            {
+                "variableName": "q8m_half_sib_young4_visions",
+                "isAbout": "q8m_half_sib_young4_visions"
+            },
+            {
+                "variableName": "q8m_half_sib_young5_visions",
+                "isAbout": "q8m_half_sib_young5_visions"
+            },
+            {
+                "variableName": "q8n_half_sib_old1_visions",
+                "isAbout": "q8n_half_sib_old1_visions"
+            },
+            {
+                "variableName": "q8n_half_sib_old2_visions",
+                "isAbout": "q8n_half_sib_old2_visions"
+            },
+            {
+                "variableName": "q8n_half_sib_old3_visions",
+                "isAbout": "q8n_half_sib_old3_visions"
+            },
+            {
+                "variableName": "q8n_half_sib_old4_visions",
+                "isAbout": "q8n_half_sib_old4_visions"
+            },
+            {
+                "variableName": "q8n_half_sib_old5_visions",
+                "isAbout": "q8n_half_sib_old5_visions"
+            },
+            {
+                "variableName": "q9g_pat_uncle1_trouble",
+                "isAbout": "q9g_pat_uncle1_trouble"
+            },
+            {
+                "variableName": "q9g_pat_uncle2_trouble",
+                "isAbout": "q9g_pat_uncle2_trouble"
+            },
+            {
+                "variableName": "q9g_pat_uncle3_trouble",
+                "isAbout": "q9g_pat_uncle3_trouble"
+            },
+            {
+                "variableName": "q9g_pat_uncle4_trouble",
+                "isAbout": "q9g_pat_uncle4_trouble"
+            },
+            {
+                "variableName": "q9g_pat_uncle5_trouble",
+                "isAbout": "q9g_pat_uncle5_trouble"
+            },
+            {
+                "variableName": "q9h_pat_aunt1_trouble",
+                "isAbout": "q9h_pat_aunt1_trouble"
+            },
+            {
+                "variableName": "q9h_pat_aunt2_trouble",
+                "isAbout": "q9h_pat_aunt2_trouble"
+            },
+            {
+                "variableName": "q9h_pat_aunt3_trouble",
+                "isAbout": "q9h_pat_aunt3_trouble"
+            },
+            {
+                "variableName": "q9h_pat_aunt4_trouble",
+                "isAbout": "q9h_pat_aunt4_trouble"
+            },
+            {
+                "variableName": "q9h_pat_aunt5_trouble",
+                "isAbout": "q9h_pat_aunt5_trouble"
+            },
+            {
+                "variableName": "q9i_mat_uncle1_trouble",
+                "isAbout": "q9i_mat_uncle1_trouble"
+            },
+            {
+                "variableName": "q9i_mat_uncle2_trouble",
+                "isAbout": "q9i_mat_uncle2_trouble"
+            },
+            {
+                "variableName": "q9i_mat_uncle3_trouble",
+                "isAbout": "q9i_mat_uncle3_trouble"
+            },
+            {
+                "variableName": "q9i_mat_uncle4_trouble",
+                "isAbout": "q9i_mat_uncle4_trouble"
+            },
+            {
+                "variableName": "q9i_mat_uncle5_trouble",
+                "isAbout": "q9i_mat_uncle5_trouble"
+            },
+            {
+                "variableName": "q9j_mat_aunt1_trouble",
+                "isAbout": "q9j_mat_aunt1_trouble"
+            },
+            {
+                "variableName": "q9j_mat_aunt2_trouble",
+                "isAbout": "q9j_mat_aunt2_trouble"
+            },
+            {
+                "variableName": "q9j_mat_aunt3_trouble",
+                "isAbout": "q9j_mat_aunt3_trouble"
+            },
+            {
+                "variableName": "q9j_mat_aunt4_trouble",
+                "isAbout": "q9j_mat_aunt4_trouble"
+            },
+            {
+                "variableName": "q9j_mat_aunt5_trouble",
+                "isAbout": "q9j_mat_aunt5_trouble"
+            },
+            {
+                "variableName": "q9k_full_sib_young1_trouble",
+                "isAbout": "q9k_full_sib_young1_trouble"
+            },
+            {
+                "variableName": "q9k_full_sib_young2_trouble",
+                "isAbout": "q9k_full_sib_young2_trouble"
+            },
+            {
+                "variableName": "q9k_full_sib_young3_trouble",
+                "isAbout": "q9k_full_sib_young3_trouble"
+            },
+            {
+                "variableName": "q9k_full_sib_young4_trouble",
+                "isAbout": "q9k_full_sib_young4_trouble"
+            },
+            {
+                "variableName": "q9k_full_sib_young5_trouble",
+                "isAbout": "q9k_full_sib_young5_trouble"
+            },
+            {
+                "variableName": "q9l_full_sib_old1_trouble",
+                "isAbout": "q9l_full_sib_old1_trouble"
+            },
+            {
+                "variableName": "q9l_full_sib_old2_trouble",
+                "isAbout": "q9l_full_sib_old2_trouble"
+            },
+            {
+                "variableName": "q9l_full_sib_old3_trouble",
+                "isAbout": "q9l_full_sib_old3_trouble"
+            },
+            {
+                "variableName": "q9l_full_sib_old4_trouble",
+                "isAbout": "q9l_full_sib_old4_trouble"
+            },
+            {
+                "variableName": "q9l_full_sib_old5_trouble",
+                "isAbout": "q9l_full_sib_old5_trouble"
+            },
+            {
+                "variableName": "q9m_full_sib_same1_trouble",
+                "isAbout": "q9m_full_sib_same1_trouble"
+            },
+            {
+                "variableName": "q9m_full_sib_same2_trouble",
+                "isAbout": "q9m_full_sib_same2_trouble"
+            },
+            {
+                "variableName": "q9m_half_sib_young1_trouble",
+                "isAbout": "q9m_half_sib_young1_trouble"
+            },
+            {
+                "variableName": "q9m_half_sib_young2_trouble",
+                "isAbout": "q9m_half_sib_young2_trouble"
+            },
+            {
+                "variableName": "q9m_half_sib_young3_trouble",
+                "isAbout": "q9m_half_sib_young3_trouble"
+            },
+            {
+                "variableName": "q9m_half_sib_young4_trouble",
+                "isAbout": "q9m_half_sib_young4_trouble"
+            },
+            {
+                "variableName": "q9m_half_sib_young5_trouble",
+                "isAbout": "q9m_half_sib_young5_trouble"
+            },
+            {
+                "variableName": "q9n_half_sib_old1_trouble",
+                "isAbout": "q9n_half_sib_old1_trouble"
+            },
+            {
+                "variableName": "q9n_half_sib_old2_trouble",
+                "isAbout": "q9n_half_sib_old2_trouble"
+            },
+            {
+                "variableName": "q9n_half_sib_old3_trouble",
+                "isAbout": "q9n_half_sib_old3_trouble"
+            },
+            {
+                "variableName": "q9n_half_sib_old4_trouble",
+                "isAbout": "q9n_half_sib_old4_trouble"
+            },
+            {
+                "variableName": "q9n_half_sib_old5_trouble",
+                "isAbout": "q9n_half_sib_old5_trouble"
+            }
+        ]
+    }
+}

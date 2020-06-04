@@ -1,0 +1,39 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "tlfb_6mo_4_ecig",
+    "@type": "reproschema:Field",
+    "prefLabel": "tlfb_6mo_4_ecig",
+    "altLabel": "su_tlfb_6mo_4_ecig",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "In the past six months, did you typically use a closed (one you throw away) or a re-chargeable (one with a battery) e-cigarette?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Disposable (throw-away)",
+                "value": 1
+            },
+            {
+                "name": "Re-chargeable",
+                "value": 2
+            },
+            {
+                "name": "Don't know",
+                "value": 3
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Disposable (throw-away); 2 = Re-chargeable; 3 = Don't know"
+        }
+    ]
+}

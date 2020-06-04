@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "demo_ethn_v2",
+    "@type": "reproschema:Field",
+    "prefLabel": "demo_ethn_v2",
+    "altLabel": "demo_ethn_p demo_ethn_v2b",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Do you consider the child Hispanic/Latino/Latina? ¿Considera que el/la niño(a) es hispano(a) o latino(a)?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Yes SÃ­",
+                "value": 1
+            },
+            {
+                "name": "No No",
+                "value": 2
+            },
+            {
+                "name": "Refuse to answer Niego contestar",
+                "value": 777
+            },
+            {
+                "name": "Don't know No lo sÃ©",
+                "value": 999
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes SÃ­; 2 = No No; 777 = Refuse to answer Niego contestar; 999 = Don't know No lo sÃ©"
+        }
+    ]
+}

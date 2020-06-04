@@ -1,0 +1,38 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "tox2_results_yn_y",
+    "@type": "reproschema:Field",
+    "prefLabel": "tox2_results_yn_y",
+    "altLabel": "biospec_tox2_results_yn",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Are test results unexpected based on self-report and or clinical observation?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "Yes",
+                "value": 1
+            },
+            {
+                "name": "No",
+                "value": 0
+            },
+            {
+                "value": null
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes; 0 = No; Participant has NOT been assigned to Drager Toxicology Test. Select \"Not applicable (not part of 10%)\" within next field, change form status to complete, and save."
+        }
+    ]
+}

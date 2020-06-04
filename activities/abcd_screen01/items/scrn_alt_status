@@ -1,0 +1,42 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "scrn_alt_status",
+    "@type": "reproschema:Field",
+    "prefLabel": "scrn_alt_status",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Screener Status",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "Waiting for Doctor's note",
+                "value": 0
+            },
+            {
+                "name": "Waiting for PI Consult",
+                "value": 1
+            },
+            {
+                "name": "Doctor's note received",
+                "value": 2
+            },
+            {
+                "name": "Consulted PI //( scrn_met_injmdnote   == 1 &&  scrn_brain_scn   == 0) ",
+                "value": 3
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = Waiting for Doctor's note; 1 = Waiting for PI Consult; 2 = Doctor's note received; 3 = Consulted PI //( scrn_met_injmdnote   == 1 &&  scrn_brain_scn   == 0) || ( scrn_met_injmdnote   == 1 &&  scrn_abn_scan   == 1) ||  ( scrn_met_excl   == 2 &&  scrn_abn_scan   == 1) || ( scrn_met_excl   == 2 &&  scrn_brain_scn   == 0) ||  ( scrn_con_excl   == 2 &&  scrn_brain_scn   == 0) || ( scrn_con_excl   == 2 &&  scrn_abn_scan   == 1) ||  ( scrn_psych_excl   == 2 &&  scrn_abn_scan   == 1) || ( scrn_psych_excl   == 2 &&  scrn_brain_scn   == 0) ||  ( scrn_birthcomp_excl   == 2 &&  scrn_abn_scan   == 1) || ( scrn_birthcomp_excl   == 2 &&  scrn_brain_scn   == 0) || ( scrn_concerns_excl   == 2 &&  scrn_abn_scan   == 1) || ( scrn_concerns_excl   == 2 &&  scrn_brain_scn   == 0) || ( scrn_braces   == 2 &&  scrn_brain_scn   == 0) || ( scrn_abn_scan   == 1 &&  scrn_braces   == 2) ||  scrn_abn_scan   == 2 ||  scrn_tbi_scan_excl   == 2"
+        }
+    ]
+}

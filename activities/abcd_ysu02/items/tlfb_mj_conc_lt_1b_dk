@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "tlfb_mj_conc_lt_1b_dk",
+    "@type": "reproschema:Field",
+    "prefLabel": "tlfb_mj_conc_lt_1b_dk",
+    "altLabel": "su_tlfb_mj_conc_lt_1b_dk",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "INTERVIEWER Code: Do they know the typical dose of MARIJUANA OILS OR CONCENTRATES that they use? If unknown, click 'NO' to skip the next question.",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "Yes",
+                "value": 1
+            },
+            {
+                "name": "No// For the drugs you have tried, I want to know how many times you have used them in your life. We are going to measure this in standard units, do not worry, I will help you with each drug to measure this in standard units, such as one beer, one cigarette, or one gram of marijuana.",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes; 0 = No// For the drugs you have tried, I want to know how many times you have used them in your life. We are going to measure this in standard units, do not worry, I will help you with each drug to measure this in standard units, such as one beer, one cigarette, or one gram of marijuana."
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "demo_yrs_2_no_display_l___1",
+    "@type": "reproschema:Field",
+    "prefLabel": "demo_yrs_2_no_display_l___1",
+    "altLabel": "demo_yrs_2_no_display_p_l___1",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Prior to 2/28/18, demo_yrs_2a_l and demo_yrs_2b_l only opened if \"less than once a month\" or \"More than once a week\" were chosen,\nDid not display when \"Never,\" \"One to three times a month,\" \"About once a week,\" \"Don't know\" or \"Declined\" were chosen. Those pGUIDs associated with the items that should have displayed are marked as yes. (1, yes)",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "No",
+                "value": 0
+            },
+            {
+                "name": "Yes",
+                "value": 1
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = No; 1 = Yes"
+        }
+    ]
+}

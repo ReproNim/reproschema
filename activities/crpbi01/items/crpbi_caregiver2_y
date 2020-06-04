@@ -1,0 +1,55 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "crpbi_caregiver2_y",
+    "@type": "reproschema:Field",
+    "prefLabel": "crpbi_caregiver2_y",
+    "altLabel": "crpbi_acceptance_caregiver2",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Who is the second caregiver? If more than one caregiver, choose the person you spend the most time with.",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "name": "mother",
+                "value": 1
+            },
+            {
+                "name": "father",
+                "value": 2
+            },
+            {
+                "name": "grandmother",
+                "value": 3
+            },
+            {
+                "name": "grandfather",
+                "value": 4
+            },
+            {
+                "name": "aunt",
+                "value": 5
+            },
+            {
+                "name": "uncle",
+                "value": 6
+            },
+            {
+                "name": "other",
+                "value": 7
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = mother; 2 = father; 3 = grandmother; 4 = grandfather; 5 = aunt; 6 = uncle; 7 = other"
+        }
+    ]
+}

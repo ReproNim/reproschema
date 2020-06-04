@@ -1,0 +1,39 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "q13m_half_sib_young2_suicide",
+    "@type": "reproschema:Field",
+    "prefLabel": "q13m_half_sib_young2_suicide",
+    "altLabel": "famhx_q13m_half_sib_yng2_suic_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "half sibling-younger Medio hermano(a)- menor (2)",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "No No",
+                "value": 0
+            },
+            {
+                "name": "Yes Sí",
+                "value": 1
+            },
+            {
+                "name": "Don't know No lo sé/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1 &&  fhx_3h_younger_p  > 1 ",
+                "value": 999
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = No No; 1 = Yes Sí; 999 = Don't know No lo sé/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1 &&  fhx_3h_younger_p  > 1 "
+        }
+    ]
+}

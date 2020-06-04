@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "kbi_p_c_trans",
+    "@type": "reproschema:Field",
+    "prefLabel": "kbi_p_c_trans",
+    "altLabel": "kbi_y_trans_id ksads_back_c_trans_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Is you/your child transgender?/  ¿Su niño(a) es transgénero",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "name": "Yes /Sí",
+                "value": 1
+            },
+            {
+                "name": "Maybe/Don't know /Tal vez/No sé",
+                "value": 2
+            },
+            {
+                "name": "No/ No",
+                "value": 0
+            },
+            {
+                "name": "Decline to answer /Niego contestar",
+                "value": 4
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes /Sí; 2 = Maybe/Don't know /Tal vez/No sé; 0 = No/ No; 4 = Decline to answer /Niego contestar"
+        }
+    ]
+}

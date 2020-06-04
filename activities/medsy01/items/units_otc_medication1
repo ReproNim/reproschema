@@ -1,0 +1,95 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "units_otc_medication1",
+    "@type": "reproschema:Field",
+    "prefLabel": "units_otc_medication1",
+    "altLabel": "medinv_plus_otc_med1_units_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "OTC Med 1. Strength unit / Unidad",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "name": "capsule (cap.",
+                "value": 1
+            },
+            {
+                "name": "tablet (tab.)",
+                "value": 12
+            },
+            {
+                "name": "tablespoon (tbsp",
+                "value": 11
+            },
+            {
+                "name": "teaspoon (tsp",
+                "value": 13
+            },
+            {
+                "name": "drop (gtt)",
+                "value": 2
+            },
+            {
+                "name": "gram (g)",
+                "value": 3
+            },
+            {
+                "name": "milligram (mg)",
+                "value": 15
+            },
+            {
+                "name": "megagram (MGG)",
+                "value": 16
+            },
+            {
+                "name": "kilogram (kg)",
+                "value": 4
+            },
+            {
+                "name": "liter (L)",
+                "value": 5
+            },
+            {
+                "name": "microgram (msg)",
+                "value": 6
+            },
+            {
+                "name": "mililiter (mL)",
+                "value": 7
+            },
+            {
+                "name": "ounce (oz)",
+                "value": 8
+            },
+            {
+                "name": "pound (lb)",
+                "value": 9
+            },
+            {
+                "name": "quart (qt)",
+                "value": 10
+            },
+            {
+                "name": "OTHER",
+                "value": 14
+            },
+            {
+                "name": "International Units (IU)",
+                "value": 17
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = capsule (cap.; 12 = tablet (tab.); 11 = tablespoon (tbsp; 13 = teaspoon (tsp; 2 = drop (gtt); 3 = gram (g); 15 = milligram (mg); 16 = megagram (MGG); 4 = kilogram (kg); 5 = liter (L); 6 = microgram (msg); 7 = mililiter (mL); 8 = ounce (oz); 9 = pound (lb); 10 = quart (qt); 14 = OTHER; 17 = International Units (IU)"
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "tlfb_inhalant_first_use",
+    "@type": "reproschema:Field",
+    "prefLabel": "tlfb_inhalant_first_use",
+    "altLabel": "su_tlfb_inhalant_first_use",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Was this the first time you tried When did you first try LIQUIDS, SPRAYS, AND GASES that people sniff or inhale to get high or to make them feel good, such as poppers, correction fluid, gasoline, glue, shoe polish, spray paints, or nitrous oxide of 'whippits'?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "Yes",
+                "value": 1
+            },
+            {
+                "name": "No / tlfb_inhalant_use_l  == '1'  &&  event_name_number  > '11'",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes; 0 = No / tlfb_inhalant_use_l  == '1'  &&  event_name_number  > '11'"
+        }
+    ]
+}

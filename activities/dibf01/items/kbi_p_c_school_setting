@@ -1,0 +1,63 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "kbi_p_c_school_setting",
+    "@type": "reproschema:Field",
+    "prefLabel": "kbi_p_c_school_setting",
+    "altLabel": "ksads_back_c_school_setting_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Select your child's current school setting/ Seleccione la respuesta que mejor describa el entorno escolar actual de su niño(a):",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "name": "Not in School /No asiste a la escuela",
+                "value": 1
+            },
+            {
+                "name": "Regular Public School/ Escuela pública común",
+                "value": 2
+            },
+            {
+                "name": "Regular Private School /Escuela privada común",
+                "value": 3
+            },
+            {
+                "name": "Vocational-Technical School/ Escuela vocacional o técnica",
+                "value": 4
+            },
+            {
+                "name": "Charter School /Escuela autónoma subsidiada por el gobierno (\"charter school\")",
+                "value": 9
+            },
+            {
+                "name": "Cyber School/ Escuela virtual",
+                "value": 5
+            },
+            {
+                "name": "Home School/ Educación en casa",
+                "value": 6
+            },
+            {
+                "name": "Specialized School for Youth with Emotional/Behavioral Problems /Escuela especializada para jóvenes con problemas emocionales o de conducta",
+                "value": 7
+            },
+            {
+                "name": "Other/ Otra",
+                "value": 8
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Not in School /No asiste a la escuela; 2 = Regular Public School/ Escuela pública común; 3 = Regular Private School /Escuela privada común; 4 = Vocational-Technical School/ Escuela vocacional o técnica; 9 = Charter School /Escuela autónoma subsidiada por el gobierno (\"charter school\"); 5 = Cyber School/ Escuela virtual; 6 = Home School/ Educación en casa; 7 = Specialized School for Youth with Emotional/Behavioral Problems /Escuela especializada para jóvenes con problemas emocionales o de conducta; 8 = Other/ Otra"
+        }
+    ]
+}

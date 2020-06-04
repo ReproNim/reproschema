@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "tlfb_6mo_10_concmj_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "tlfb_6mo_10_concmj_l",
+    "altLabel": "su_tlfb_past_yr_10_concmj_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "During the past year, what was the typical route of administration you used for your concentrates (pipe, vaporizer, dab/butane)?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Pipe",
+                "value": 1
+            },
+            {
+                "name": "Vaporizer",
+                "value": 2
+            },
+            {
+                "name": "Dab/Butane",
+                "value": 3
+            },
+            {
+                "name": "Other / tlfb_6mo_skip_l___12   == '1'",
+                "value": 4
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Pipe; 2 = Vaporizer; 3 = Dab/Butane; 4 = Other / tlfb_6mo_skip_l___12   == '1'"
+        }
+    ]
+}

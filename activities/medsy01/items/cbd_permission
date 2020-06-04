@@ -1,0 +1,39 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "cbd_permission",
+    "@type": "reproschema:Field",
+    "prefLabel": "cbd_permission",
+    "altLabel": "medinv_plus_cbd_permission",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Has your son/daughter used any CBD (or cannabidiol) products with your or your doctor's permission, such as Epidiolex or other over the counter CBD product, in the past year?  Su hija/hijo ha usado alg?n producto de CBD (cannabidiol) con su permiso o el permiso de su doctor, tales como Epidiolex u otro producto de venta libre de CBD en el ?ltimo a?o?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 0,
+        "choices": [
+            {
+                "name": "Yes /Si",
+                "value": 1
+            },
+            {
+                "name": "No /No",
+                "value": 0
+            },
+            {
+                "name": "I don?t know/ No lo s?",
+                "value": 999
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes /Si; 0 = No /No; 999 = I don?t know/ No lo s?"
+        }
+    ]
+}

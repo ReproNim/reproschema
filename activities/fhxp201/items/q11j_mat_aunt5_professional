@@ -1,0 +1,39 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "q11j_mat_aunt5_professional",
+    "@type": "reproschema:Field",
+    "prefLabel": "q11j_mat_aunt5_professional",
+    "altLabel": "famhx_q11j_mat_aunt5_prof_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "maternal aunt Tía materna (5)",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "No No",
+                "value": 0
+            },
+            {
+                "name": "Yes Sí",
+                "value": 1
+            },
+            {
+                "name": "Don't know No lo sé/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1 &&  famhx_1b_p  > 4 ",
+                "value": 999
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = No No; 1 = Yes Sí; 999 = Don't know No lo sé/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1 &&  famhx_1b_p  > 4 "
+        }
+    ]
+}

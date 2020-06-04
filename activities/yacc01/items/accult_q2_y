@@ -1,0 +1,51 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "accult_q2_y",
+    "@type": "reproschema:Field",
+    "prefLabel": "accult_q2_y",
+    "altLabel": "accult_phenx_q2",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Besides English, do you speak or understand another language or dialect?\n\n If child asks about languages learned in school, the RA should state:  That's OK, as long as it is a language or dialect that you speak or understand.",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "name": "Poor Mal",
+                "value": 1
+            },
+            {
+                "name": "Fair Regular",
+                "value": 2
+            },
+            {
+                "name": "Good Bien",
+                "value": 3
+            },
+            {
+                "name": "Excellent Excelente",
+                "value": 4
+            },
+            {
+                "name": "Refused Niego contestar",
+                "value": 777
+            },
+            {
+                "name": "Don't Know No se",
+                "value": 999
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Poor Mal; 2 = Fair Regular; 3 = Good Bien; 4 = Excellent Excelente; 777 = Refused Niego contestar; 999 = Don't Know No se"
+        }
+    ]
+}

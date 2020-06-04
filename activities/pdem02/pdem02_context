@@ -1,0 +1,638 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "pdem02": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/activities/pdem02/items/",
+        "demo_adopt_agex_v2": {
+            "@id": "pdem02:demo_adopt_agex_v2",
+            "@type": "@id"
+        },
+        "demo_adopt_agex_v2_bl_dk": {
+            "@id": "pdem02:demo_adopt_agex_v2_bl_dk",
+            "@type": "@id"
+        },
+        "demo_biofather_v2": {
+            "@id": "pdem02:demo_biofather_v2",
+            "@type": "@id"
+        },
+        "demo_biomother_v2": {
+            "@id": "pdem02:demo_biomother_v2",
+            "@type": "@id"
+        },
+        "demo_brthdat_v2": {
+            "@id": "pdem02:demo_brthdat_v2",
+            "@type": "@id"
+        },
+        "demo_child_time_v2": {
+            "@id": "pdem02:demo_child_time_v2",
+            "@type": "@id"
+        },
+        "demo_child_time_v2b": {
+            "@id": "pdem02:demo_child_time_v2b",
+            "@type": "@id"
+        },
+        "demo_child_time2_v2": {
+            "@id": "pdem02:demo_child_time2_v2",
+            "@type": "@id"
+        },
+        "demo_child_time2_v2_dk": {
+            "@id": "pdem02:demo_child_time2_v2_dk",
+            "@type": "@id"
+        },
+        "demo_child_time3_v2": {
+            "@id": "pdem02:demo_child_time3_v2",
+            "@type": "@id"
+        },
+        "demo_comb_income_v2": {
+            "@id": "pdem02:demo_comb_income_v2",
+            "@type": "@id"
+        },
+        "demo_comb_income_v2b": {
+            "@id": "pdem02:demo_comb_income_v2b",
+            "@type": "@id"
+        },
+        "demo_ed_v2": {
+            "@id": "pdem02:demo_ed_v2",
+            "@type": "@id"
+        },
+        "demo_ethn_v2": {
+            "@id": "pdem02:demo_ethn_v2",
+            "@type": "@id"
+        },
+        "demo_ethn_v2b": {
+            "@id": "pdem02:demo_ethn_v2b",
+            "@type": "@id"
+        },
+        "demo_ethn2_v2": {
+            "@id": "pdem02:demo_ethn2_v2",
+            "@type": "@id"
+        },
+        "demo_ethn2_v2b": {
+            "@id": "pdem02:demo_ethn2_v2b",
+            "@type": "@id"
+        },
+        "demo_fam_exp1_v2": {
+            "@id": "pdem02:demo_fam_exp1_v2",
+            "@type": "@id"
+        },
+        "demo_fam_exp1_v2b": {
+            "@id": "pdem02:demo_fam_exp1_v2b",
+            "@type": "@id"
+        },
+        "demo_fam_exp2_v2": {
+            "@id": "pdem02:demo_fam_exp2_v2",
+            "@type": "@id"
+        },
+        "demo_fam_exp2_v2b": {
+            "@id": "pdem02:demo_fam_exp2_v2b",
+            "@type": "@id"
+        },
+        "demo_fam_exp3_v2": {
+            "@id": "pdem02:demo_fam_exp3_v2",
+            "@type": "@id"
+        },
+        "demo_fam_exp3_v2b": {
+            "@id": "pdem02:demo_fam_exp3_v2b",
+            "@type": "@id"
+        },
+        "demo_fam_exp4_v2": {
+            "@id": "pdem02:demo_fam_exp4_v2",
+            "@type": "@id"
+        },
+        "demo_fam_exp4_v2b": {
+            "@id": "pdem02:demo_fam_exp4_v2b",
+            "@type": "@id"
+        },
+        "demo_fam_exp5_v2": {
+            "@id": "pdem02:demo_fam_exp5_v2",
+            "@type": "@id"
+        },
+        "demo_fam_exp5_v2b": {
+            "@id": "pdem02:demo_fam_exp5_v2b",
+            "@type": "@id"
+        },
+        "demo_fam_exp6_v2": {
+            "@id": "pdem02:demo_fam_exp6_v2",
+            "@type": "@id"
+        },
+        "demo_fam_exp6_v2b": {
+            "@id": "pdem02:demo_fam_exp6_v2b",
+            "@type": "@id"
+        },
+        "demo_fam_exp7_v2": {
+            "@id": "pdem02:demo_fam_exp7_v2",
+            "@type": "@id"
+        },
+        "demo_fam_exp7_v2b": {
+            "@id": "pdem02:demo_fam_exp7_v2b",
+            "@type": "@id"
+        },
+        "demo_gender_id_v2": {
+            "@id": "pdem02:demo_gender_id_v2",
+            "@type": "@id"
+        },
+        "demo_gender_id_v2b": {
+            "@id": "pdem02:demo_gender_id_v2b",
+            "@type": "@id"
+        },
+        "demo_matgrandf_v2": {
+            "@id": "pdem02:demo_matgrandf_v2",
+            "@type": "@id"
+        },
+        "demo_matgrandm_v2": {
+            "@id": "pdem02:demo_matgrandm_v2",
+            "@type": "@id"
+        },
+        "demo_origin_v2": {
+            "@id": "pdem02:demo_origin_v2",
+            "@type": "@id"
+        },
+        "demo_patgrandf_v2": {
+            "@id": "pdem02:demo_patgrandf_v2",
+            "@type": "@id"
+        },
+        "demo_patgrandm_v2": {
+            "@id": "pdem02:demo_patgrandm_v2",
+            "@type": "@id"
+        },
+        "demo_prim": {
+            "@id": "pdem02:demo_prim",
+            "@type": "@id"
+        },
+        "demo_prnt_16": {
+            "@id": "pdem02:demo_prnt_16",
+            "@type": "@id"
+        },
+        "demo_prnt_16a": {
+            "@id": "pdem02:demo_prnt_16a",
+            "@type": "@id"
+        },
+        "demo_prnt_age_v2": {
+            "@id": "pdem02:demo_prnt_age_v2",
+            "@type": "@id"
+        },
+        "demo_prnt_age_v2_bl_refuse": {
+            "@id": "pdem02:demo_prnt_age_v2_bl_refuse",
+            "@type": "@id"
+        },
+        "demo_prnt_ed_v2": {
+            "@id": "pdem02:demo_prnt_ed_v2",
+            "@type": "@id"
+        },
+        "demo_prnt_ed_v2b": {
+            "@id": "pdem02:demo_prnt_ed_v2b",
+            "@type": "@id"
+        },
+        "demo_prnt_empl_time": {
+            "@id": "pdem02:demo_prnt_empl_time",
+            "@type": "@id"
+        },
+        "demo_prnt_empl_v2": {
+            "@id": "pdem02:demo_prnt_empl_v2",
+            "@type": "@id"
+        },
+        "demo_prnt_empl_v2b": {
+            "@id": "pdem02:demo_prnt_empl_v2b",
+            "@type": "@id"
+        },
+        "demo_prnt_ethn_v2": {
+            "@id": "pdem02:demo_prnt_ethn_v2",
+            "@type": "@id"
+        },
+        "demo_prnt_ethn_v2b": {
+            "@id": "pdem02:demo_prnt_ethn_v2b",
+            "@type": "@id"
+        },
+        "demo_prnt_ethn2_v2": {
+            "@id": "pdem02:demo_prnt_ethn2_v2",
+            "@type": "@id"
+        },
+        "demo_prnt_ethn2_v2b": {
+            "@id": "pdem02:demo_prnt_ethn2_v2b",
+            "@type": "@id"
+        },
+        "demo_prnt_gender_id_v2": {
+            "@id": "pdem02:demo_prnt_gender_id_v2",
+            "@type": "@id"
+        },
+        "demo_prnt_gender_id_v2b": {
+            "@id": "pdem02:demo_prnt_gender_id_v2b",
+            "@type": "@id"
+        },
+        "demo_prnt_income_v2": {
+            "@id": "pdem02:demo_prnt_income_v2",
+            "@type": "@id"
+        },
+        "demo_prnt_income_v2b": {
+            "@id": "pdem02:demo_prnt_income_v2b",
+            "@type": "@id"
+        },
+        "demo_prnt_marital_v2": {
+            "@id": "pdem02:demo_prnt_marital_v2",
+            "@type": "@id"
+        },
+        "demo_prnt_marital_v2b": {
+            "@id": "pdem02:demo_prnt_marital_v2b",
+            "@type": "@id"
+        },
+        "demo_prnt_origin_v2": {
+            "@id": "pdem02:demo_prnt_origin_v2",
+            "@type": "@id"
+        },
+        "demo_prnt_prtnr_adopt": {
+            "@id": "pdem02:demo_prnt_prtnr_adopt",
+            "@type": "@id"
+        },
+        "demo_prnt_prtnr_bio": {
+            "@id": "pdem02:demo_prnt_prtnr_bio",
+            "@type": "@id"
+        },
+        "demo_prnt_prtnr_bio_2": {
+            "@id": "pdem02:demo_prnt_prtnr_bio_2",
+            "@type": "@id"
+        },
+        "demo_prnt_prtnr_v2": {
+            "@id": "pdem02:demo_prnt_prtnr_v2",
+            "@type": "@id"
+        },
+        "demo_prnt_prtnr_v2b": {
+            "@id": "pdem02:demo_prnt_prtnr_v2b",
+            "@type": "@id"
+        },
+        "demo_prnt_race_a_v2___10": {
+            "@id": "pdem02:demo_prnt_race_a_v2___10",
+            "@type": "@id"
+        },
+        "demo_prnt_race_a_v2___11": {
+            "@id": "pdem02:demo_prnt_race_a_v2___11",
+            "@type": "@id"
+        },
+        "demo_prnt_race_a_v2___12": {
+            "@id": "pdem02:demo_prnt_race_a_v2___12",
+            "@type": "@id"
+        },
+        "demo_prnt_race_a_v2___13": {
+            "@id": "pdem02:demo_prnt_race_a_v2___13",
+            "@type": "@id"
+        },
+        "demo_prnt_race_a_v2___14": {
+            "@id": "pdem02:demo_prnt_race_a_v2___14",
+            "@type": "@id"
+        },
+        "demo_prnt_race_a_v2___15": {
+            "@id": "pdem02:demo_prnt_race_a_v2___15",
+            "@type": "@id"
+        },
+        "demo_prnt_race_a_v2___16": {
+            "@id": "pdem02:demo_prnt_race_a_v2___16",
+            "@type": "@id"
+        },
+        "demo_prnt_race_a_v2___17": {
+            "@id": "pdem02:demo_prnt_race_a_v2___17",
+            "@type": "@id"
+        },
+        "demo_prnt_race_a_v2___18": {
+            "@id": "pdem02:demo_prnt_race_a_v2___18",
+            "@type": "@id"
+        },
+        "demo_prnt_race_a_v2___19": {
+            "@id": "pdem02:demo_prnt_race_a_v2___19",
+            "@type": "@id"
+        },
+        "demo_prnt_race_a_v2___20": {
+            "@id": "pdem02:demo_prnt_race_a_v2___20",
+            "@type": "@id"
+        },
+        "demo_prnt_race_a_v2___21": {
+            "@id": "pdem02:demo_prnt_race_a_v2___21",
+            "@type": "@id"
+        },
+        "demo_prnt_race_a_v2___22": {
+            "@id": "pdem02:demo_prnt_race_a_v2___22",
+            "@type": "@id"
+        },
+        "demo_prnt_race_a_v2___23": {
+            "@id": "pdem02:demo_prnt_race_a_v2___23",
+            "@type": "@id"
+        },
+        "demo_prnt_race_a_v2___24": {
+            "@id": "pdem02:demo_prnt_race_a_v2___24",
+            "@type": "@id"
+        },
+        "demo_prnt_race_a_v2___25": {
+            "@id": "pdem02:demo_prnt_race_a_v2___25",
+            "@type": "@id"
+        },
+        "demo_prnt_race_a_v2___77": {
+            "@id": "pdem02:demo_prnt_race_a_v2___77",
+            "@type": "@id"
+        },
+        "demo_prnt_race_a_v2___99": {
+            "@id": "pdem02:demo_prnt_race_a_v2___99",
+            "@type": "@id"
+        },
+        "demo_prnt_years_us_v2": {
+            "@id": "pdem02:demo_prnt_years_us_v2",
+            "@type": "@id"
+        },
+        "demo_prnt_years_us_v2_dk": {
+            "@id": "pdem02:demo_prnt_years_us_v2_dk",
+            "@type": "@id"
+        },
+        "demo_prtnr_ed_v2": {
+            "@id": "pdem02:demo_prtnr_ed_v2",
+            "@type": "@id"
+        },
+        "demo_prtnr_ed_v2b": {
+            "@id": "pdem02:demo_prtnr_ed_v2b",
+            "@type": "@id"
+        },
+        "demo_prtnr_empl_time": {
+            "@id": "pdem02:demo_prtnr_empl_time",
+            "@type": "@id"
+        },
+        "demo_prtnr_empl_v2": {
+            "@id": "pdem02:demo_prtnr_empl_v2",
+            "@type": "@id"
+        },
+        "demo_prtnr_empl_v2b": {
+            "@id": "pdem02:demo_prtnr_empl_v2b",
+            "@type": "@id"
+        },
+        "demo_prtnr_income_v2": {
+            "@id": "pdem02:demo_prtnr_income_v2",
+            "@type": "@id"
+        },
+        "demo_prtnr_income_v2b": {
+            "@id": "pdem02:demo_prtnr_income_v2b",
+            "@type": "@id"
+        },
+        "demo_race_a_p___0": {
+            "@id": "pdem02:demo_race_a_p___0",
+            "@type": "@id"
+        },
+        "demo_race_a_p___10": {
+            "@id": "pdem02:demo_race_a_p___10",
+            "@type": "@id"
+        },
+        "demo_race_a_p___11": {
+            "@id": "pdem02:demo_race_a_p___11",
+            "@type": "@id"
+        },
+        "demo_race_a_p___12": {
+            "@id": "pdem02:demo_race_a_p___12",
+            "@type": "@id"
+        },
+        "demo_race_a_p___13": {
+            "@id": "pdem02:demo_race_a_p___13",
+            "@type": "@id"
+        },
+        "demo_race_a_p___14": {
+            "@id": "pdem02:demo_race_a_p___14",
+            "@type": "@id"
+        },
+        "demo_race_a_p___15": {
+            "@id": "pdem02:demo_race_a_p___15",
+            "@type": "@id"
+        },
+        "demo_race_a_p___16": {
+            "@id": "pdem02:demo_race_a_p___16",
+            "@type": "@id"
+        },
+        "demo_race_a_p___17": {
+            "@id": "pdem02:demo_race_a_p___17",
+            "@type": "@id"
+        },
+        "demo_race_a_p___18": {
+            "@id": "pdem02:demo_race_a_p___18",
+            "@type": "@id"
+        },
+        "demo_race_a_p___19": {
+            "@id": "pdem02:demo_race_a_p___19",
+            "@type": "@id"
+        },
+        "demo_race_a_p___20": {
+            "@id": "pdem02:demo_race_a_p___20",
+            "@type": "@id"
+        },
+        "demo_race_a_p___21": {
+            "@id": "pdem02:demo_race_a_p___21",
+            "@type": "@id"
+        },
+        "demo_race_a_p___22": {
+            "@id": "pdem02:demo_race_a_p___22",
+            "@type": "@id"
+        },
+        "demo_race_a_p___23": {
+            "@id": "pdem02:demo_race_a_p___23",
+            "@type": "@id"
+        },
+        "demo_race_a_p___24": {
+            "@id": "pdem02:demo_race_a_p___24",
+            "@type": "@id"
+        },
+        "demo_race_a_p___25": {
+            "@id": "pdem02:demo_race_a_p___25",
+            "@type": "@id"
+        },
+        "demo_race_a_p___77": {
+            "@id": "pdem02:demo_race_a_p___77",
+            "@type": "@id"
+        },
+        "demo_race_a_p___99": {
+            "@id": "pdem02:demo_race_a_p___99",
+            "@type": "@id"
+        },
+        "demo_race_notes_v2": {
+            "@id": "pdem02:demo_race_notes_v2",
+            "@type": "@id"
+        },
+        "demo_relig_v2": {
+            "@id": "pdem02:demo_relig_v2",
+            "@type": "@id"
+        },
+        "demo_relig2_v2": {
+            "@id": "pdem02:demo_relig2_v2",
+            "@type": "@id"
+        },
+        "demo_roster_v2": {
+            "@id": "pdem02:demo_roster_v2",
+            "@type": "@id"
+        },
+        "demo_roster_v2_refuse": {
+            "@id": "pdem02:demo_roster_v2_refuse",
+            "@type": "@id"
+        },
+        "demo_sex_v2": {
+            "@id": "pdem02:demo_sex_v2",
+            "@type": "@id"
+        },
+        "demo_sex_v2b": {
+            "@id": "pdem02:demo_sex_v2b",
+            "@type": "@id"
+        },
+        "demo_years_us_v2": {
+            "@id": "pdem02:demo_years_us_v2",
+            "@type": "@id"
+        },
+        "demo_years_us_v2_dk": {
+            "@id": "pdem02:demo_years_us_v2_dk",
+            "@type": "@id"
+        },
+        "demo_yrs_1": {
+            "@id": "pdem02:demo_yrs_1",
+            "@type": "@id"
+        },
+        "demo_yrs_1_2": {
+            "@id": "pdem02:demo_yrs_1_2",
+            "@type": "@id"
+        },
+        "demo_yrs_2": {
+            "@id": "pdem02:demo_yrs_2",
+            "@type": "@id"
+        },
+        "demo_yrs_2_2": {
+            "@id": "pdem02:demo_yrs_2_2",
+            "@type": "@id"
+        },
+        "demo_yrs_2_no_display___1": {
+            "@id": "pdem02:demo_yrs_2_no_display___1",
+            "@type": "@id"
+        },
+        "demo_yrs_2a_2": {
+            "@id": "pdem02:demo_yrs_2a_2",
+            "@type": "@id"
+        },
+        "demo_yrs_2b_2": {
+            "@id": "pdem02:demo_yrs_2b_2",
+            "@type": "@id"
+        },
+        "fam_roster_10c_v2": {
+            "@id": "pdem02:fam_roster_10c_v2",
+            "@type": "@id"
+        },
+        "fam_roster_11c_v2": {
+            "@id": "pdem02:fam_roster_11c_v2",
+            "@type": "@id"
+        },
+        "fam_roster_12c_v2": {
+            "@id": "pdem02:fam_roster_12c_v2",
+            "@type": "@id"
+        },
+        "fam_roster_13c_v2": {
+            "@id": "pdem02:fam_roster_13c_v2",
+            "@type": "@id"
+        },
+        "fam_roster_14c_v2": {
+            "@id": "pdem02:fam_roster_14c_v2",
+            "@type": "@id"
+        },
+        "fam_roster_15c_v2": {
+            "@id": "pdem02:fam_roster_15c_v2",
+            "@type": "@id"
+        },
+        "fam_roster_2c_v2": {
+            "@id": "pdem02:fam_roster_2c_v2",
+            "@type": "@id"
+        },
+        "fam_roster_3c_v2": {
+            "@id": "pdem02:fam_roster_3c_v2",
+            "@type": "@id"
+        },
+        "fam_roster_4c_v2": {
+            "@id": "pdem02:fam_roster_4c_v2",
+            "@type": "@id"
+        },
+        "fam_roster_5c_v2": {
+            "@id": "pdem02:fam_roster_5c_v2",
+            "@type": "@id"
+        },
+        "fam_roster_6c_v2": {
+            "@id": "pdem02:fam_roster_6c_v2",
+            "@type": "@id"
+        },
+        "fam_roster_7c_v2": {
+            "@id": "pdem02:fam_roster_7c_v2",
+            "@type": "@id"
+        },
+        "fam_roster_8c_v2": {
+            "@id": "pdem02:fam_roster_8c_v2",
+            "@type": "@id"
+        },
+        "fam_roster_9c_v2": {
+            "@id": "pdem02:fam_roster_9c_v2",
+            "@type": "@id"
+        },
+        "naas_birthplace": {
+            "@id": "pdem02:naas_birthplace",
+            "@type": "@id"
+        },
+        "naas_birthplace_2": {
+            "@id": "pdem02:naas_birthplace_2",
+            "@type": "@id"
+        },
+        "naas_comm_contact": {
+            "@id": "pdem02:naas_comm_contact",
+            "@type": "@id"
+        },
+        "naas_comm_contact_2": {
+            "@id": "pdem02:naas_comm_contact_2",
+            "@type": "@id"
+        },
+        "naas_id": {
+            "@id": "pdem02:naas_id",
+            "@type": "@id"
+        },
+        "naas_id_2": {
+            "@id": "pdem02:naas_id_2",
+            "@type": "@id"
+        },
+        "naas_id_dad": {
+            "@id": "pdem02:naas_id_dad",
+            "@type": "@id"
+        },
+        "naas_id_dad_2": {
+            "@id": "pdem02:naas_id_dad_2",
+            "@type": "@id"
+        },
+        "naas_mom_id": {
+            "@id": "pdem02:naas_mom_id",
+            "@type": "@id"
+        },
+        "naas_mom_id_2": {
+            "@id": "pdem02:naas_mom_id_2",
+            "@type": "@id"
+        },
+        "naas_pride": {
+            "@id": "pdem02:naas_pride",
+            "@type": "@id"
+        },
+        "naas_pride_2": {
+            "@id": "pdem02:naas_pride_2",
+            "@type": "@id"
+        },
+        "naas_raised": {
+            "@id": "pdem02:naas_raised",
+            "@type": "@id"
+        },
+        "naas_raised_2": {
+            "@id": "pdem02:naas_raised_2",
+            "@type": "@id"
+        },
+        "naas_self_rating": {
+            "@id": "pdem02:naas_self_rating",
+            "@type": "@id"
+        },
+        "naas_self_rating_2": {
+            "@id": "pdem02:naas_self_rating_2",
+            "@type": "@id"
+        },
+        "naas_traditions": {
+            "@id": "pdem02:naas_traditions",
+            "@type": "@id"
+        },
+        "naas_traditions_2": {
+            "@id": "pdem02:naas_traditions_2",
+            "@type": "@id"
+        }
+    }
+}

@@ -1,0 +1,47 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "first_nicotine_2",
+    "@type": "reproschema:Field",
+    "prefLabel": "first_nicotine_2",
+    "altLabel": "su_first_nicotine_2",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Which type of cigarette/e-cigarette product was it?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "cigarette",
+                "value": 1
+            },
+            {
+                "name": "e-cigarette or vape pen",
+                "value": 2
+            },
+            {
+                "name": "hookah",
+                "value": 3
+            },
+            {
+                "name": "cigar",
+                "value": 4
+            },
+            {
+                "name": "pipe ",
+                "value": 5
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = cigarette; 2 = e-cigarette or vape pen; 3 = hookah; 4 = cigar; 5 = pipe | Choose One"
+        }
+    ]
+}

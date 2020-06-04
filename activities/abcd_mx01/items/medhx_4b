@@ -1,0 +1,47 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "medhx_4b",
+    "@type": "reproschema:Field",
+    "prefLabel": "medhx_4b",
+    "altLabel": "medhx_4b_p medhx_4b_times_er_before_past_yr_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "How many times has he/she been to the emergency room in that past year? / ¿Cuántas veces ha visitado él/ella la sala de emergencias en este último año?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "name": "1 time /1 vez",
+                "value": 1
+            },
+            {
+                "name": "2 times /2 veces",
+                "value": 2
+            },
+            {
+                "name": "3-4 times/ 3-4 veces",
+                "value": 3
+            },
+            {
+                "name": "5-9 times /5-9 veces",
+                "value": 4
+            },
+            {
+                "name": "10+ times/ 10+ veces //Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+                "value": 5
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = 1 time /1 vez; 2 = 2 times /2 veces; 3 = 3-4 times/ 3-4 veces; 4 = 5-9 times /5-9 veces; 5 = 10+ times/ 10+ veces //Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life."
+        }
+    ]
+}

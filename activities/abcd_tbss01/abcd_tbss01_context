@@ -1,0 +1,394 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "abcd_tbss01": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/activities/abcd_tbss01/items/",
+        "nihtbx_cardsort_agecorrected": {
+            "@id": "abcd_tbss01:nihtbx_cardsort_agecorrected",
+            "@type": "@id"
+        },
+        "nihtbx_cardsort_cs": {
+            "@id": "abcd_tbss01:nihtbx_cardsort_cs",
+            "@type": "@id"
+        },
+        "nihtbx_cardsort_date": {
+            "@id": "abcd_tbss01:nihtbx_cardsort_date",
+            "@type": "@id"
+        },
+        "nihtbx_cardsort_fc": {
+            "@id": "abcd_tbss01:nihtbx_cardsort_fc",
+            "@type": "@id"
+        },
+        "nihtbx_cardsort_itmcnt": {
+            "@id": "abcd_tbss01:nihtbx_cardsort_itmcnt",
+            "@type": "@id"
+        },
+        "nihtbx_cardsort_language": {
+            "@id": "abcd_tbss01:nihtbx_cardsort_language",
+            "@type": "@id"
+        },
+        "nihtbx_cardsort_rawscore": {
+            "@id": "abcd_tbss01:nihtbx_cardsort_rawscore",
+            "@type": "@id"
+        },
+        "nihtbx_cardsort_theta": {
+            "@id": "abcd_tbss01:nihtbx_cardsort_theta",
+            "@type": "@id"
+        },
+        "nihtbx_cardsort_uncorrected": {
+            "@id": "abcd_tbss01:nihtbx_cardsort_uncorrected",
+            "@type": "@id"
+        },
+        "nihtbx_cardsort_v": {
+            "@id": "abcd_tbss01:nihtbx_cardsort_v",
+            "@type": "@id"
+        },
+        "nihtbx_cryst_agecorrected": {
+            "@id": "abcd_tbss01:nihtbx_cryst_agecorrected",
+            "@type": "@id"
+        },
+        "nihtbx_cryst_cs": {
+            "@id": "abcd_tbss01:nihtbx_cryst_cs",
+            "@type": "@id"
+        },
+        "nihtbx_cryst_fc": {
+            "@id": "abcd_tbss01:nihtbx_cryst_fc",
+            "@type": "@id"
+        },
+        "nihtbx_cryst_itmcnt": {
+            "@id": "abcd_tbss01:nihtbx_cryst_itmcnt",
+            "@type": "@id"
+        },
+        "nihtbx_cryst_language": {
+            "@id": "abcd_tbss01:nihtbx_cryst_language",
+            "@type": "@id"
+        },
+        "nihtbx_cryst_rawscore": {
+            "@id": "abcd_tbss01:nihtbx_cryst_rawscore",
+            "@type": "@id"
+        },
+        "nihtbx_cryst_theta": {
+            "@id": "abcd_tbss01:nihtbx_cryst_theta",
+            "@type": "@id"
+        },
+        "nihtbx_cryst_uncorrected": {
+            "@id": "abcd_tbss01:nihtbx_cryst_uncorrected",
+            "@type": "@id"
+        },
+        "nihtbx_cryst_v": {
+            "@id": "abcd_tbss01:nihtbx_cryst_v",
+            "@type": "@id"
+        },
+        "nihtbx_flanker_agecorrected": {
+            "@id": "abcd_tbss01:nihtbx_flanker_agecorrected",
+            "@type": "@id"
+        },
+        "nihtbx_flanker_cs": {
+            "@id": "abcd_tbss01:nihtbx_flanker_cs",
+            "@type": "@id"
+        },
+        "nihtbx_flanker_date": {
+            "@id": "abcd_tbss01:nihtbx_flanker_date",
+            "@type": "@id"
+        },
+        "nihtbx_flanker_fc": {
+            "@id": "abcd_tbss01:nihtbx_flanker_fc",
+            "@type": "@id"
+        },
+        "nihtbx_flanker_itmcnt": {
+            "@id": "abcd_tbss01:nihtbx_flanker_itmcnt",
+            "@type": "@id"
+        },
+        "nihtbx_flanker_language": {
+            "@id": "abcd_tbss01:nihtbx_flanker_language",
+            "@type": "@id"
+        },
+        "nihtbx_flanker_rawscore": {
+            "@id": "abcd_tbss01:nihtbx_flanker_rawscore",
+            "@type": "@id"
+        },
+        "nihtbx_flanker_theta": {
+            "@id": "abcd_tbss01:nihtbx_flanker_theta",
+            "@type": "@id"
+        },
+        "nihtbx_flanker_uncorrected": {
+            "@id": "abcd_tbss01:nihtbx_flanker_uncorrected",
+            "@type": "@id"
+        },
+        "nihtbx_flanker_v": {
+            "@id": "abcd_tbss01:nihtbx_flanker_v",
+            "@type": "@id"
+        },
+        "nihtbx_fluidcomp_agecorrected": {
+            "@id": "abcd_tbss01:nihtbx_fluidcomp_agecorrected",
+            "@type": "@id"
+        },
+        "nihtbx_fluidcomp_cs": {
+            "@id": "abcd_tbss01:nihtbx_fluidcomp_cs",
+            "@type": "@id"
+        },
+        "nihtbx_fluidcomp_fc": {
+            "@id": "abcd_tbss01:nihtbx_fluidcomp_fc",
+            "@type": "@id"
+        },
+        "nihtbx_fluidcomp_itmcnt": {
+            "@id": "abcd_tbss01:nihtbx_fluidcomp_itmcnt",
+            "@type": "@id"
+        },
+        "nihtbx_fluidcomp_language": {
+            "@id": "abcd_tbss01:nihtbx_fluidcomp_language",
+            "@type": "@id"
+        },
+        "nihtbx_fluidcomp_rs": {
+            "@id": "abcd_tbss01:nihtbx_fluidcomp_rs",
+            "@type": "@id"
+        },
+        "nihtbx_fluidcomp_theta": {
+            "@id": "abcd_tbss01:nihtbx_fluidcomp_theta",
+            "@type": "@id"
+        },
+        "nihtbx_fluidcomp_uncorrected": {
+            "@id": "abcd_tbss01:nihtbx_fluidcomp_uncorrected",
+            "@type": "@id"
+        },
+        "nihtbx_fluidcomp_v": {
+            "@id": "abcd_tbss01:nihtbx_fluidcomp_v",
+            "@type": "@id"
+        },
+        "nihtbx_list_agecorrected": {
+            "@id": "abcd_tbss01:nihtbx_list_agecorrected",
+            "@type": "@id"
+        },
+        "nihtbx_list_cs": {
+            "@id": "abcd_tbss01:nihtbx_list_cs",
+            "@type": "@id"
+        },
+        "nihtbx_list_date": {
+            "@id": "abcd_tbss01:nihtbx_list_date",
+            "@type": "@id"
+        },
+        "nihtbx_list_fc": {
+            "@id": "abcd_tbss01:nihtbx_list_fc",
+            "@type": "@id"
+        },
+        "nihtbx_list_itmcnt": {
+            "@id": "abcd_tbss01:nihtbx_list_itmcnt",
+            "@type": "@id"
+        },
+        "nihtbx_list_language": {
+            "@id": "abcd_tbss01:nihtbx_list_language",
+            "@type": "@id"
+        },
+        "nihtbx_list_rawscore": {
+            "@id": "abcd_tbss01:nihtbx_list_rawscore",
+            "@type": "@id"
+        },
+        "nihtbx_list_theta": {
+            "@id": "abcd_tbss01:nihtbx_list_theta",
+            "@type": "@id"
+        },
+        "nihtbx_list_uncorrected": {
+            "@id": "abcd_tbss01:nihtbx_list_uncorrected",
+            "@type": "@id"
+        },
+        "nihtbx_list_v": {
+            "@id": "abcd_tbss01:nihtbx_list_v",
+            "@type": "@id"
+        },
+        "nihtbx_pattern_agecorrected": {
+            "@id": "abcd_tbss01:nihtbx_pattern_agecorrected",
+            "@type": "@id"
+        },
+        "nihtbx_pattern_cs": {
+            "@id": "abcd_tbss01:nihtbx_pattern_cs",
+            "@type": "@id"
+        },
+        "nihtbx_pattern_date": {
+            "@id": "abcd_tbss01:nihtbx_pattern_date",
+            "@type": "@id"
+        },
+        "nihtbx_pattern_fc": {
+            "@id": "abcd_tbss01:nihtbx_pattern_fc",
+            "@type": "@id"
+        },
+        "nihtbx_pattern_itmcnt": {
+            "@id": "abcd_tbss01:nihtbx_pattern_itmcnt",
+            "@type": "@id"
+        },
+        "nihtbx_pattern_language": {
+            "@id": "abcd_tbss01:nihtbx_pattern_language",
+            "@type": "@id"
+        },
+        "nihtbx_pattern_rawscore": {
+            "@id": "abcd_tbss01:nihtbx_pattern_rawscore",
+            "@type": "@id"
+        },
+        "nihtbx_pattern_theta": {
+            "@id": "abcd_tbss01:nihtbx_pattern_theta",
+            "@type": "@id"
+        },
+        "nihtbx_pattern_uncorrected": {
+            "@id": "abcd_tbss01:nihtbx_pattern_uncorrected",
+            "@type": "@id"
+        },
+        "nihtbx_pattern_v": {
+            "@id": "abcd_tbss01:nihtbx_pattern_v",
+            "@type": "@id"
+        },
+        "nihtbx_picture_agecorrected": {
+            "@id": "abcd_tbss01:nihtbx_picture_agecorrected",
+            "@type": "@id"
+        },
+        "nihtbx_picture_cs": {
+            "@id": "abcd_tbss01:nihtbx_picture_cs",
+            "@type": "@id"
+        },
+        "nihtbx_picture_date": {
+            "@id": "abcd_tbss01:nihtbx_picture_date",
+            "@type": "@id"
+        },
+        "nihtbx_picture_fc": {
+            "@id": "abcd_tbss01:nihtbx_picture_fc",
+            "@type": "@id"
+        },
+        "nihtbx_picture_itmcnt": {
+            "@id": "abcd_tbss01:nihtbx_picture_itmcnt",
+            "@type": "@id"
+        },
+        "nihtbx_picture_language": {
+            "@id": "abcd_tbss01:nihtbx_picture_language",
+            "@type": "@id"
+        },
+        "nihtbx_picture_rawscore": {
+            "@id": "abcd_tbss01:nihtbx_picture_rawscore",
+            "@type": "@id"
+        },
+        "nihtbx_picture_theta": {
+            "@id": "abcd_tbss01:nihtbx_picture_theta",
+            "@type": "@id"
+        },
+        "nihtbx_picture_uncorrected": {
+            "@id": "abcd_tbss01:nihtbx_picture_uncorrected",
+            "@type": "@id"
+        },
+        "nihtbx_picture_v": {
+            "@id": "abcd_tbss01:nihtbx_picture_v",
+            "@type": "@id"
+        },
+        "nihtbx_picvocab_agecorrected": {
+            "@id": "abcd_tbss01:nihtbx_picvocab_agecorrected",
+            "@type": "@id"
+        },
+        "nihtbx_picvocab_cs": {
+            "@id": "abcd_tbss01:nihtbx_picvocab_cs",
+            "@type": "@id"
+        },
+        "nihtbx_picvocab_date": {
+            "@id": "abcd_tbss01:nihtbx_picvocab_date",
+            "@type": "@id"
+        },
+        "nihtbx_picvocab_fc": {
+            "@id": "abcd_tbss01:nihtbx_picvocab_fc",
+            "@type": "@id"
+        },
+        "nihtbx_picvocab_itmcnt": {
+            "@id": "abcd_tbss01:nihtbx_picvocab_itmcnt",
+            "@type": "@id"
+        },
+        "nihtbx_picvocab_language": {
+            "@id": "abcd_tbss01:nihtbx_picvocab_language",
+            "@type": "@id"
+        },
+        "nihtbx_picvocab_rs": {
+            "@id": "abcd_tbss01:nihtbx_picvocab_rs",
+            "@type": "@id"
+        },
+        "nihtbx_picvocab_theta": {
+            "@id": "abcd_tbss01:nihtbx_picvocab_theta",
+            "@type": "@id"
+        },
+        "nihtbx_picvocab_uncorrected": {
+            "@id": "abcd_tbss01:nihtbx_picvocab_uncorrected",
+            "@type": "@id"
+        },
+        "nihtbx_picvocab_v": {
+            "@id": "abcd_tbss01:nihtbx_picvocab_v",
+            "@type": "@id"
+        },
+        "nihtbx_reading_agecorrected": {
+            "@id": "abcd_tbss01:nihtbx_reading_agecorrected",
+            "@type": "@id"
+        },
+        "nihtbx_reading_cs": {
+            "@id": "abcd_tbss01:nihtbx_reading_cs",
+            "@type": "@id"
+        },
+        "nihtbx_reading_date": {
+            "@id": "abcd_tbss01:nihtbx_reading_date",
+            "@type": "@id"
+        },
+        "nihtbx_reading_fc": {
+            "@id": "abcd_tbss01:nihtbx_reading_fc",
+            "@type": "@id"
+        },
+        "nihtbx_reading_itmcnt": {
+            "@id": "abcd_tbss01:nihtbx_reading_itmcnt",
+            "@type": "@id"
+        },
+        "nihtbx_reading_language": {
+            "@id": "abcd_tbss01:nihtbx_reading_language",
+            "@type": "@id"
+        },
+        "nihtbx_reading_rawscore": {
+            "@id": "abcd_tbss01:nihtbx_reading_rawscore",
+            "@type": "@id"
+        },
+        "nihtbx_reading_theta": {
+            "@id": "abcd_tbss01:nihtbx_reading_theta",
+            "@type": "@id"
+        },
+        "nihtbx_reading_uncorrected": {
+            "@id": "abcd_tbss01:nihtbx_reading_uncorrected",
+            "@type": "@id"
+        },
+        "nihtbx_reading_v": {
+            "@id": "abcd_tbss01:nihtbx_reading_v",
+            "@type": "@id"
+        },
+        "nihtbx_totalcomp_agecorrected": {
+            "@id": "abcd_tbss01:nihtbx_totalcomp_agecorrected",
+            "@type": "@id"
+        },
+        "nihtbx_totalcomp_cs": {
+            "@id": "abcd_tbss01:nihtbx_totalcomp_cs",
+            "@type": "@id"
+        },
+        "nihtbx_totalcomp_fc": {
+            "@id": "abcd_tbss01:nihtbx_totalcomp_fc",
+            "@type": "@id"
+        },
+        "nihtbx_totalcomp_itmcnt": {
+            "@id": "abcd_tbss01:nihtbx_totalcomp_itmcnt",
+            "@type": "@id"
+        },
+        "nihtbx_totalcomp_language": {
+            "@id": "abcd_tbss01:nihtbx_totalcomp_language",
+            "@type": "@id"
+        },
+        "nihtbx_totalcomp_rawscore": {
+            "@id": "abcd_tbss01:nihtbx_totalcomp_rawscore",
+            "@type": "@id"
+        },
+        "nihtbx_totalcomp_theta": {
+            "@id": "abcd_tbss01:nihtbx_totalcomp_theta",
+            "@type": "@id"
+        },
+        "nihtbx_totalcomp_uncorrected": {
+            "@id": "abcd_tbss01:nihtbx_totalcomp_uncorrected",
+            "@type": "@id"
+        },
+        "nihtbx_totalcomp_v": {
+            "@id": "abcd_tbss01:nihtbx_totalcomp_v",
+            "@type": "@id"
+        }
+    }
+}

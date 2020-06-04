@@ -1,0 +1,47 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "race_ethnicity",
+    "@type": "reproschema:Field",
+    "prefLabel": "race_ethnicity",
+    "altLabel": "demo_race_ethnicity",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Race Ethnicity (Child)",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "name": "White",
+                "value": 1
+            },
+            {
+                "name": "Black",
+                "value": 2
+            },
+            {
+                "name": "Hispanic",
+                "value": 3
+            },
+            {
+                "name": "Asian",
+                "value": 4
+            },
+            {
+                "name": "Other",
+                "value": 5
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = White; 2 = Black; 3 = Hispanic; 4 = Asian; 5 = Other"
+        }
+    ]
+}

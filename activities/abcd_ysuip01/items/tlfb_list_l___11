@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "tlfb_list_l___11",
+    "@type": "reproschema:Field",
+    "prefLabel": "tlfb_list_l___11",
+    "altLabel": "su_tlfb_list_l___11",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "What other drugs have you heard of? Interviewer: Do not read this list to the child. Only click the drugs that they mention. (11, Steroids such as arnolds,  pumpers,  or roids)",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "No",
+                "value": 0
+            },
+            {
+                "name": "Yes / tlfb_list_yes_no_l   == '1'",
+                "value": 1
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = No; 1 = Yes / tlfb_list_yes_no_l   == '1'"
+        }
+    ]
+}

@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "ple_mh_fu2_y",
+    "@type": "reproschema:Field",
+    "prefLabel": "ple_mh_fu2_y",
+    "altLabel": "life_events_phenx_mh_fu2",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "How much did the event affect you?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "Not at All",
+                "value": 0
+            },
+            {
+                "name": "A Little",
+                "value": 1
+            },
+            {
+                "name": "Some",
+                "value": 2
+            },
+            {
+                "name": "A lot",
+                "value": 3
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = Not at All; 1 = A Little; 2 = Some; 3 = A lot"
+        }
+    ]
+}

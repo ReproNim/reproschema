@@ -1,0 +1,66 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "sai_p_ihock_tspent",
+    "@type": "reproschema:Field",
+    "prefLabel": "sai_p_ihock_tspent",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "About how many minutes per session? ¿Aproximadamente cuántos minutos por sesión?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": " less than 30 minutes menos de 30 minutos",
+                "value": 1
+            },
+            {
+                "name": "30",
+                "value": 2
+            },
+            {
+                "name": "45",
+                "value": 3
+            },
+            {
+                "name": " 60 (1 hr) 60 (1 hora)",
+                "value": 4
+            },
+            {
+                "name": " 90 (1.5 hrs) 90 (1.5 horas)",
+                "value": 5
+            },
+            {
+                "name": " 120 (2 hrs) 20 (2 horas)",
+                "value": 6
+            },
+            {
+                "name": " 150 (2.5 hrs) 150 (2.5 horas)",
+                "value": 7
+            },
+            {
+                "name": " 180 (3 hrs) 180 (3 horas)",
+                "value": 8
+            },
+            {
+                "name": " greater than 3 hours Mas de 3 horas",
+                "value": 9
+            },
+            {
+                "name": " Don't know No lo sé ",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 =  less than 30 minutes menos de 30 minutos; 2 = 30; 3 = 45; 4 =  60 (1 hr) 60 (1 hora); 5 =  90 (1.5 hrs) 90 (1.5 horas); 6 =  120 (2 hrs) 20 (2 horas); 7 =  150 (2.5 hrs) 150 (2.5 horas); 8 =  180 (3 hrs) 180 (3 horas); 9 =  greater than 3 hours Mas de 3 horas; 0 =  Don't know No lo sé | (minutes) (minutos)"
+        }
+    ]
+}

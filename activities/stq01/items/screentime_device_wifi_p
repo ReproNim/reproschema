@@ -1,0 +1,36 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "screentime_device_wifi_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "screentime_device_wifi_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Do they have internet or WiFi capabilities on any of these devices? /Tienen acceso a internet o WiFi en alguno de estos dispositivos?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "name": "Yes /S?",
+                "value": 1
+            },
+            {
+                "value": 0
+            },
+            {
+                "value": 777
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes /S?; 0=  No/No; 777=  Refuse to Answer/Niego contestar "
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "first_nicotine_4_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "first_nicotine_4_l",
+    "altLabel": "su_first_nicotine_4_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Which type of smokeless tobacco product was it?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 6,
+        "schema:maxValue": 7,
+        "choices": [
+            {
+                "name": "chew",
+                "value": 6
+            },
+            {
+                "name": "snus ",
+                "value": 7
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "6 = chew; 7 = snus | Choose One / first_nicotine_3_l  =='1' &&  tlfb_chew_use_c_l   == '0'"
+        }
+    ]
+}

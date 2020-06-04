@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "fam_history_7_yes_no",
+    "@type": "reproschema:Field",
+    "prefLabel": "fam_history_7_yes_no",
+    "altLabel": "famhx_7_yes_no_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "7. Has ANY blood relative of your child ever had a period of time when others were concerned  because they suddenly became more active day and night and seemed not to need any sleep and talked much more than usual for them? ¿ALGÚN pariente consanguíneo de su niño(a) ha pasado alguna vez por un período en el que otras personas se preocuparan por él o ella porque repentinamente se volvió  más activo(a) de día y de noche, parecía no necesitar dormir y hablaba mucho más de lo normal para él o ella?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 0,
+        "choices": [
+            {
+                "name": "Yes Sí",
+                "value": 1
+            },
+            {
+                "name": "No No",
+                "value": 0
+            },
+            {
+                "name": "Don't know No lo sé",
+                "value": 999
+            },
+            {
+                "name": "Refuse to answer Niego contestar /  famhx_1   == 1",
+                "value": 7
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes Sí; 0 = No No; 999 = Don't know No lo sé; 7 = Refuse to answer Niego contestar /  famhx_1   == 1"
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "prn_medicine_rx_med14",
+    "@type": "reproschema:Field",
+    "prefLabel": "prn_medicine_rx_med14",
+    "altLabel": "medinv_plus_rx_med14_prn_p prn_medicine_prescription_medication14",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Medication 14. PRN (as needed) Medication? ? /¿Es un medicamento PRN, es decir un medicamento que se puede tomar según necesidad?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 0,
+        "choices": [
+            {
+                "name": "Yes /Sí",
+                "value": 1
+            },
+            {
+                "name": "No /No",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes /Sí; 0 = No /No"
+        }
+    ]
+}

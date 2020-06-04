@@ -1,0 +1,38 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "kbi_p_c_reg_friend_group",
+    "@type": "reproschema:Field",
+    "prefLabel": "kbi_p_c_reg_friend_group",
+    "altLabel": "ksads_back_c_reg_friend_group_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Does your child have a regular group of kids he or she hangs out with at school or in your neighborhood?/  ¿Su niño(a) tiene un grupo de niños con quienes comparte habitualmente en la escuela o en su vecindario?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "name": "Yes/ Sí",
+                "value": 1
+            },
+            {
+                "value": 0
+            },
+            {
+                "name": "Not sure /No estoy seguro(a)",
+                "value": 3
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes/ Sí; 0= No /No; 3 = Not sure /No estoy seguro(a)"
+        }
+    ]
+}

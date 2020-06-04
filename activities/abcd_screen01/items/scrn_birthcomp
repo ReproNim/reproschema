@@ -1,0 +1,38 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "scrn_birthcomp",
+    "@type": "reproschema:Field",
+    "prefLabel": "scrn_birthcomp",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Were there any birth complications that resulted in (Child's name) being hospitalized for more than a month? /¿Hubo complicaciones en el parto que causaran que (nombre del menor) tuviera que estar hospitalizado(a) durante más de un mes?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 0,
+        "choices": [
+            {
+                "name": "Yes",
+                "value": 1
+            },
+            {
+                "name": "No",
+                "value": 0
+            },
+            {
+                "name": "Don't know ",
+                "value": 2
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes; 0 = No; 2 = Don't know | Note: If hospitalization was due to prematurity alone then that is not a basis for exclusion."
+        }
+    ]
+}

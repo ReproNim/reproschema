@@ -1,0 +1,47 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "menstrualcycle6_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "menstrualcycle6_p",
+    "altLabel": "menstrual_6_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Do her premenstrual symptoms interfere with her relationships with family and friends, productivity, and/or social life activities? ¿Los  síntomas premenstruales de ella interfieren con sus relaciones con amistades y familiares, su productividad y/o las actividades de su vida social?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Not at all Para nada",
+                "value": 1
+            },
+            {
+                "name": "Mild Leves",
+                "value": 2
+            },
+            {
+                "name": "Moderate Moderados",
+                "value": 3
+            },
+            {
+                "name": "Severe Graves",
+                "value": 4
+            },
+            {
+                "name": "Don't know No sé",
+                "value": 999
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Not at all Para nada; 2 = Mild Leves; 3 = Moderate Moderados; 4 = Severe Graves; 999 = Don't know No sé"
+        }
+    ]
+}

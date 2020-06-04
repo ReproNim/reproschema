@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "demo_prnt_16",
+    "@type": "reproschema:Field",
+    "prefLabel": "demo_prnt_16",
+    "altLabel": "demo_born_not_us_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Was anyone in your child's family born outside of the United States?  By your child's family, I mean you, your child's father (or mother if talking to father) or your child's maternal or paternal grandparents. ¿Hubo alguien en la familia de su niño(a) que nació fuera de los Estados Unidos? Por la familia de su niño(a), me refiero a usted, al padre de su niño(a) (o madre si habla con su padre) o los abuelos maternos o paternos de su niño(a).",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 0,
+        "choices": [
+            {
+                "name": "Yes Sí",
+                "value": 1
+            },
+            {
+                "name": "No No",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes Sí; 0 = No No"
+        }
+    ]
+}

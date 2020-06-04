@@ -1,0 +1,47 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "tlfb_6mo_11_concmj_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "tlfb_6mo_11_concmj_l",
+    "altLabel": "su_tlfb_past_yr_11_concmj_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "How strong or potent do you think your typical marijuana concentrate was during the past year? Try to estimate the potency:",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Low is around 20% THC",
+                "value": 1
+            },
+            {
+                "name": "Medium (40%)",
+                "value": 2
+            },
+            {
+                "name": "High (60%)",
+                "value": 3
+            },
+            {
+                "name": "Very high (80%+)",
+                "value": 4
+            },
+            {
+                "name": "If you do not know. / tlfb_6mo_skip_l___12   == '1'",
+                "value": 5
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Low is around 20% THC; 2 = Medium (40%); 3 = High (60%); 4 = Very high (80%+); 5 = If you do not know. / tlfb_6mo_skip_l___12   == '1'"
+        }
+    ]
+}

@@ -1,0 +1,77 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "visnum",
+    "@type": "reproschema:Field",
+    "prefLabel": "visnum",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Numeric Visit Number",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": -1,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "name": "Pre-Screening",
+                "value": -1
+            },
+            {
+                "name": "Screening",
+                "value": -1
+            },
+            {
+                "name": "Baseline",
+                "value": 0
+            },
+            {
+                "name": "Visit ## (from 1 to 10)",
+                "value": null
+            },
+            {
+                "name": "standard monthly visits",
+                "value": null
+            },
+            {
+                "name": "Unscheduled",
+                "value": null
+            },
+            {
+                "name": "End of Phase 1",
+                "value": null
+            },
+            {
+                "name": "End of Phase 2",
+                "value": null
+            },
+            {
+                "name": "End of Phase 3",
+                "value": null
+            },
+            {
+                "name": "End of Open Choice Phase",
+                "value": null
+            },
+            {
+                "name": "End of Study",
+                "value": null
+            },
+            {
+                "name": "Genetic Analysis",
+                "value": null
+            },
+            {
+                "value": 1000
+            }
+        ],
+        "valueType": "Float"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "-1.5 = Pre-Screening; -1 = Screening; 0 = Baseline; ## = Visit ## (from 1 to 10); Whole numbers = standard monthly visits; #.001 - #.009 = Unscheduled; #.1 = End of Phase 1; #.2 = End of Phase 2; #.3 = End of Phase 3; #.4 = End of Open Choice Phase; #.5 = End of Study; #.6 = Genetic Analysis; 1000=all visits"
+        }
+    ]
+}

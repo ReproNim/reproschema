@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "tbi_1_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "tbi_1_l",
+    "altLabel": "brain_injury_1_l tbi_1_p_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Since we last saw you on [asnt_timestamp_c], has your child been hospitalized or treated in an emergency room following an injury to his/her head or neck?  Desde la última vez que nos vimos en [asnt_timestamp_c], ¿han hospitalizado a su niño/a o le han tratado en una sala de emergencias después de sufrir una lesión en la cabeza o en el cuello?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 0,
+        "choices": [
+            {
+                "name": "Yes Si",
+                "value": 1
+            },
+            {
+                "name": "No No",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes Si; 0 = No No"
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "kbi_p_c_best_friend",
+    "@type": "reproschema:Field",
+    "prefLabel": "kbi_p_c_best_friend",
+    "altLabel": "ksads_back_c_best_friend_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Does your child have a best friend?/  ¿Su niño(a) tiene un mejor amigo o amiga?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "name": "Yes/ Sí",
+                "value": 1
+            },
+            {
+                "value": 0
+            },
+            {
+                "name": "Not sure /No estoy seguro(a)",
+                "value": 3
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes/ Sí; 0= No /No; 3 = Not sure /No estoy seguro(a)"
+        }
+    ]
+}

@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "upps24_y",
+    "@type": "reproschema:Field",
+    "prefLabel": "upps24_y",
+    "altLabel": "upps_24",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "I almost always finish projects that I start.",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 4,
+        "schema:maxValue": 3,
+        "choices": [
+            {
+                "name": "Not at all like me",
+                "value": 4
+            },
+            {
+                "name": "Not like me",
+                "value": 3
+            },
+            {
+                "name": "Somewhat like me",
+                "value": 2
+            },
+            {
+                "name": "Very much like me",
+                "value": 1
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "4 = Not at all like me; 3 = Not like me; 2 = Somewhat like me; 1 = Very much like me"
+        }
+    ]
+}

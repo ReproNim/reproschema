@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "tlfb_blunt_use_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "tlfb_blunt_use_l",
+    "altLabel": "su_tlfb_blunt_use_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Blunts, when you combine tobacco and marijuana in joints. Interviewer note:  Please  clarify that if any tobacco product is used either as the wrapper or inside,  code it as a blunt.",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "No",
+                "value": 0
+            },
+            {
+                "name": "Yes / tlfb_mj_puff_l   == '1'",
+                "value": 1
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = No; 1 = Yes / tlfb_mj_puff_l   == '1'"
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "zygos_q4",
+    "@type": "reproschema:Field",
+    "prefLabel": "zygos_q4",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Do the twins look like two peas in a pod or are they no more alike in appearance than ordinary sisters or brothers? / ¿Los gemelos se ven 'como dos gotas de agua' o solo parecen como si fueran hermanos normales?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Like \"two peas\"",
+                "value": 1
+            },
+            {
+                "name": "Ordinary likeness",
+                "value": 2
+            },
+            {
+                "name": "IF VOLUNTEERED- Quite unalike",
+                "value": 3
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Like \"two peas\"; 2 = Ordinary likeness; 3 = IF VOLUNTEERED- Quite unalike"
+        }
+    ]
+}

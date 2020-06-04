@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "first_mj_8_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "first_mj_8_l",
+    "altLabel": "su_first_mj_8_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Do you remember when this happened, or did you find out later (for example: your parents or somebody else told you about it)?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "I remember it",
+                "value": 1
+            },
+            {
+                "name": "I don't remember it - somebody told me about it / tlfb_mj_puff_l  =='1' &&  tlfb_mj_puff_c_l  =='0'",
+                "value": 2
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = I remember it; 2 = I don't remember it - somebody told me about it / tlfb_mj_puff_l  =='1' &&  tlfb_mj_puff_c_l  =='0'"
+        }
+    ]
+}

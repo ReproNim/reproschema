@@ -1,0 +1,55 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "tlfb_6mo_12_concmj_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "tlfb_6mo_12_concmj_l",
+    "altLabel": "su_tlfb_past_yr_12_concmj_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Of the times you used MJ concentrates during the past year, how often did you smoke highly potent marijuana concentrate (concentrate that is 80% THC or higher)? IF you do not know, that is ok too.",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Never",
+                "value": 1
+            },
+            {
+                "name": "Almost never",
+                "value": 2
+            },
+            {
+                "name": "Sometimes",
+                "value": 3
+            },
+            {
+                "name": "Most of the time",
+                "value": 4
+            },
+            {
+                "name": "Almost always",
+                "value": 5
+            },
+            {
+                "name": "Always",
+                "value": 6
+            },
+            {
+                "name": "Don't know / tlfb_6mo_skip_l___12   == '1'",
+                "value": 7
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Never; 2 = Almost never; 3 = Sometimes; 4 = Most of the time; 5 = Almost always; 6 = Always; 7 = Don't know / tlfb_6mo_skip_l___12   == '1'"
+        }
+    ]
+}

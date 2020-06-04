@@ -1,0 +1,32 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "iqc_rsfmri_11_complete",
+    "@type": "reproschema:Field",
+    "prefLabel": "iqc_rsfmri_11_complete",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "rsfMRI #11: DAIC received correct number of files for this series (1=pass, 0=fail)",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "value": 0
+            },
+            {
+                "value": 1
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0=Fail; 1=Pass"
+        }
+    ]
+}

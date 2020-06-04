@@ -1,0 +1,3342 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "mriqcrp202": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/activities/mriqcrp202/items/",
+        "iqc_mid_2_brain_mean": {
+            "@id": "mriqcrp202:iqc_mid_2_brain_mean",
+            "@type": "@id"
+        },
+        "iqc_mid_2_brain_std": {
+            "@id": "mriqcrp202:iqc_mid_2_brain_std",
+            "@type": "@id"
+        },
+        "iqc_mid_2_brain_tsnr_mean": {
+            "@id": "mriqcrp202:iqc_mid_2_brain_tsnr_mean",
+            "@type": "@id"
+        },
+        "iqc_mid_2_brain_tsnr_median": {
+            "@id": "mriqcrp202:iqc_mid_2_brain_tsnr_median",
+            "@type": "@id"
+        },
+        "iqc_mid_2_brain_tsnr_std": {
+            "@id": "mriqcrp202:iqc_mid_2_brain_tsnr_std",
+            "@type": "@id"
+        },
+        "iqc_mid_2_brainvol": {
+            "@id": "mriqcrp202:iqc_mid_2_brainvol",
+            "@type": "@id"
+        },
+        "iqc_mid_2_complete": {
+            "@id": "mriqcrp202:iqc_mid_2_complete",
+            "@type": "@id"
+        },
+        "iqc_mid_2_fm_complete": {
+            "@id": "mriqcrp202:iqc_mid_2_fm_complete",
+            "@type": "@id"
+        },
+        "iqc_mid_2_fm_pc_score": {
+            "@id": "mriqcrp202:iqc_mid_2_fm_pc_score",
+            "@type": "@id"
+        },
+        "iqc_mid_2_fm_qc_score": {
+            "@id": "mriqcrp202:iqc_mid_2_fm_qc_score",
+            "@type": "@id"
+        },
+        "iqc_mid_2_fwhm_x": {
+            "@id": "mriqcrp202:iqc_mid_2_fwhm_x",
+            "@type": "@id"
+        },
+        "iqc_mid_2_fwhm_y": {
+            "@id": "mriqcrp202:iqc_mid_2_fwhm_y",
+            "@type": "@id"
+        },
+        "iqc_mid_2_fwhm_z": {
+            "@id": "mriqcrp202:iqc_mid_2_fwhm_z",
+            "@type": "@id"
+        },
+        "iqc_mid_2_mean_motion": {
+            "@id": "mriqcrp202:iqc_mid_2_mean_motion",
+            "@type": "@id"
+        },
+        "iqc_mid_2_mean_motion_filt": {
+            "@id": "mriqcrp202:iqc_mid_2_mean_motion_filt",
+            "@type": "@id"
+        },
+        "iqc_mid_2_mean_motion_nody": {
+            "@id": "mriqcrp202:iqc_mid_2_mean_motion_nody",
+            "@type": "@id"
+        },
+        "iqc_mid_2_mm_filt_nody": {
+            "@id": "mriqcrp202:iqc_mid_2_mm_filt_nody",
+            "@type": "@id"
+        },
+        "iqc_mid_2_nreps": {
+            "@id": "mriqcrp202:iqc_mid_2_nreps",
+            "@type": "@id"
+        },
+        "iqc_mid_2_pc_score": {
+            "@id": "mriqcrp202:iqc_mid_2_pc_score",
+            "@type": "@id"
+        },
+        "iqc_mid_2_qc_score": {
+            "@id": "mriqcrp202:iqc_mid_2_qc_score",
+            "@type": "@id"
+        },
+        "iqc_mid_2_sub_02": {
+            "@id": "mriqcrp202:iqc_mid_2_sub_02",
+            "@type": "@id"
+        },
+        "iqc_mid_2_sub_02_filt": {
+            "@id": "mriqcrp202:iqc_mid_2_sub_02_filt",
+            "@type": "@id"
+        },
+        "iqc_mid_2_sub_02_filt_nody": {
+            "@id": "mriqcrp202:iqc_mid_2_sub_02_filt_nody",
+            "@type": "@id"
+        },
+        "iqc_mid_2_sub_02_nody": {
+            "@id": "mriqcrp202:iqc_mid_2_sub_02_nody",
+            "@type": "@id"
+        },
+        "iqc_mid_2_tr": {
+            "@id": "mriqcrp202:iqc_mid_2_tr",
+            "@type": "@id"
+        },
+        "iqc_mid_2_voxvol": {
+            "@id": "mriqcrp202:iqc_mid_2_voxvol",
+            "@type": "@id"
+        },
+        "iqc_mid_3_brain_mean": {
+            "@id": "mriqcrp202:iqc_mid_3_brain_mean",
+            "@type": "@id"
+        },
+        "iqc_mid_3_brain_std": {
+            "@id": "mriqcrp202:iqc_mid_3_brain_std",
+            "@type": "@id"
+        },
+        "iqc_mid_3_brain_tsnr_mean": {
+            "@id": "mriqcrp202:iqc_mid_3_brain_tsnr_mean",
+            "@type": "@id"
+        },
+        "iqc_mid_3_brain_tsnr_median": {
+            "@id": "mriqcrp202:iqc_mid_3_brain_tsnr_median",
+            "@type": "@id"
+        },
+        "iqc_mid_3_brain_tsnr_std": {
+            "@id": "mriqcrp202:iqc_mid_3_brain_tsnr_std",
+            "@type": "@id"
+        },
+        "iqc_mid_3_brainvol": {
+            "@id": "mriqcrp202:iqc_mid_3_brainvol",
+            "@type": "@id"
+        },
+        "iqc_mid_3_complete": {
+            "@id": "mriqcrp202:iqc_mid_3_complete",
+            "@type": "@id"
+        },
+        "iqc_mid_3_fm_complete": {
+            "@id": "mriqcrp202:iqc_mid_3_fm_complete",
+            "@type": "@id"
+        },
+        "iqc_mid_3_fm_invalid": {
+            "@id": "mriqcrp202:iqc_mid_3_fm_invalid",
+            "@type": "@id"
+        },
+        "iqc_mid_3_fm_missing": {
+            "@id": "mriqcrp202:iqc_mid_3_fm_missing",
+            "@type": "@id"
+        },
+        "iqc_mid_3_fm_pc_score": {
+            "@id": "mriqcrp202:iqc_mid_3_fm_pc_score",
+            "@type": "@id"
+        },
+        "iqc_mid_3_fm_qc_score": {
+            "@id": "mriqcrp202:iqc_mid_3_fm_qc_score",
+            "@type": "@id"
+        },
+        "iqc_mid_3_fm_wronglocus": {
+            "@id": "mriqcrp202:iqc_mid_3_fm_wronglocus",
+            "@type": "@id"
+        },
+        "iqc_mid_3_fwhm_x": {
+            "@id": "mriqcrp202:iqc_mid_3_fwhm_x",
+            "@type": "@id"
+        },
+        "iqc_mid_3_fwhm_y": {
+            "@id": "mriqcrp202:iqc_mid_3_fwhm_y",
+            "@type": "@id"
+        },
+        "iqc_mid_3_fwhm_z": {
+            "@id": "mriqcrp202:iqc_mid_3_fwhm_z",
+            "@type": "@id"
+        },
+        "iqc_mid_3_mean_motion": {
+            "@id": "mriqcrp202:iqc_mid_3_mean_motion",
+            "@type": "@id"
+        },
+        "iqc_mid_3_mean_motion_filt": {
+            "@id": "mriqcrp202:iqc_mid_3_mean_motion_filt",
+            "@type": "@id"
+        },
+        "iqc_mid_3_mean_motion_nody": {
+            "@id": "mriqcrp202:iqc_mid_3_mean_motion_nody",
+            "@type": "@id"
+        },
+        "iqc_mid_3_mm_filt_nody": {
+            "@id": "mriqcrp202:iqc_mid_3_mm_filt_nody",
+            "@type": "@id"
+        },
+        "iqc_mid_3_nreps": {
+            "@id": "mriqcrp202:iqc_mid_3_nreps",
+            "@type": "@id"
+        },
+        "iqc_mid_3_pc_score": {
+            "@id": "mriqcrp202:iqc_mid_3_pc_score",
+            "@type": "@id"
+        },
+        "iqc_mid_3_qc_score": {
+            "@id": "mriqcrp202:iqc_mid_3_qc_score",
+            "@type": "@id"
+        },
+        "iqc_mid_3_seriestime": {
+            "@id": "mriqcrp202:iqc_mid_3_seriestime",
+            "@type": "@id"
+        },
+        "iqc_mid_3_seuid": {
+            "@id": "mriqcrp202:iqc_mid_3_seuid",
+            "@type": "@id"
+        },
+        "iqc_mid_3_studydate": {
+            "@id": "mriqcrp202:iqc_mid_3_studydate",
+            "@type": "@id"
+        },
+        "iqc_mid_3_sub_02": {
+            "@id": "mriqcrp202:iqc_mid_3_sub_02",
+            "@type": "@id"
+        },
+        "iqc_mid_3_sub_02_filt": {
+            "@id": "mriqcrp202:iqc_mid_3_sub_02_filt",
+            "@type": "@id"
+        },
+        "iqc_mid_3_sub_02_filt_nody": {
+            "@id": "mriqcrp202:iqc_mid_3_sub_02_filt_nody",
+            "@type": "@id"
+        },
+        "iqc_mid_3_sub_02_nody": {
+            "@id": "mriqcrp202:iqc_mid_3_sub_02_nody",
+            "@type": "@id"
+        },
+        "iqc_mid_3_suid": {
+            "@id": "mriqcrp202:iqc_mid_3_suid",
+            "@type": "@id"
+        },
+        "iqc_mid_3_tr": {
+            "@id": "mriqcrp202:iqc_mid_3_tr",
+            "@type": "@id"
+        },
+        "iqc_mid_3_voxvol": {
+            "@id": "mriqcrp202:iqc_mid_3_voxvol",
+            "@type": "@id"
+        },
+        "iqc_mid_4_brain_mean": {
+            "@id": "mriqcrp202:iqc_mid_4_brain_mean",
+            "@type": "@id"
+        },
+        "iqc_mid_4_brain_std": {
+            "@id": "mriqcrp202:iqc_mid_4_brain_std",
+            "@type": "@id"
+        },
+        "iqc_mid_4_brain_tsnr_mean": {
+            "@id": "mriqcrp202:iqc_mid_4_brain_tsnr_mean",
+            "@type": "@id"
+        },
+        "iqc_mid_4_brain_tsnr_median": {
+            "@id": "mriqcrp202:iqc_mid_4_brain_tsnr_median",
+            "@type": "@id"
+        },
+        "iqc_mid_4_brain_tsnr_std": {
+            "@id": "mriqcrp202:iqc_mid_4_brain_tsnr_std",
+            "@type": "@id"
+        },
+        "iqc_mid_4_brainvol": {
+            "@id": "mriqcrp202:iqc_mid_4_brainvol",
+            "@type": "@id"
+        },
+        "iqc_mid_4_complete": {
+            "@id": "mriqcrp202:iqc_mid_4_complete",
+            "@type": "@id"
+        },
+        "iqc_mid_4_fm_complete": {
+            "@id": "mriqcrp202:iqc_mid_4_fm_complete",
+            "@type": "@id"
+        },
+        "iqc_mid_4_fm_invalid": {
+            "@id": "mriqcrp202:iqc_mid_4_fm_invalid",
+            "@type": "@id"
+        },
+        "iqc_mid_4_fm_missing": {
+            "@id": "mriqcrp202:iqc_mid_4_fm_missing",
+            "@type": "@id"
+        },
+        "iqc_mid_4_fm_pc_score": {
+            "@id": "mriqcrp202:iqc_mid_4_fm_pc_score",
+            "@type": "@id"
+        },
+        "iqc_mid_4_fm_qc_score": {
+            "@id": "mriqcrp202:iqc_mid_4_fm_qc_score",
+            "@type": "@id"
+        },
+        "iqc_mid_4_fm_wronglocus": {
+            "@id": "mriqcrp202:iqc_mid_4_fm_wronglocus",
+            "@type": "@id"
+        },
+        "iqc_mid_4_fwhm_x": {
+            "@id": "mriqcrp202:iqc_mid_4_fwhm_x",
+            "@type": "@id"
+        },
+        "iqc_mid_4_fwhm_y": {
+            "@id": "mriqcrp202:iqc_mid_4_fwhm_y",
+            "@type": "@id"
+        },
+        "iqc_mid_4_fwhm_z": {
+            "@id": "mriqcrp202:iqc_mid_4_fwhm_z",
+            "@type": "@id"
+        },
+        "iqc_mid_4_mean_motion": {
+            "@id": "mriqcrp202:iqc_mid_4_mean_motion",
+            "@type": "@id"
+        },
+        "iqc_mid_4_mean_motion_filt": {
+            "@id": "mriqcrp202:iqc_mid_4_mean_motion_filt",
+            "@type": "@id"
+        },
+        "iqc_mid_4_mean_motion_nody": {
+            "@id": "mriqcrp202:iqc_mid_4_mean_motion_nody",
+            "@type": "@id"
+        },
+        "iqc_mid_4_mm_filt_nody": {
+            "@id": "mriqcrp202:iqc_mid_4_mm_filt_nody",
+            "@type": "@id"
+        },
+        "iqc_mid_4_nreps": {
+            "@id": "mriqcrp202:iqc_mid_4_nreps",
+            "@type": "@id"
+        },
+        "iqc_mid_4_pc_score": {
+            "@id": "mriqcrp202:iqc_mid_4_pc_score",
+            "@type": "@id"
+        },
+        "iqc_mid_4_qc_score": {
+            "@id": "mriqcrp202:iqc_mid_4_qc_score",
+            "@type": "@id"
+        },
+        "iqc_mid_4_seriestime": {
+            "@id": "mriqcrp202:iqc_mid_4_seriestime",
+            "@type": "@id"
+        },
+        "iqc_mid_4_seuid": {
+            "@id": "mriqcrp202:iqc_mid_4_seuid",
+            "@type": "@id"
+        },
+        "iqc_mid_4_studydate": {
+            "@id": "mriqcrp202:iqc_mid_4_studydate",
+            "@type": "@id"
+        },
+        "iqc_mid_4_sub_02": {
+            "@id": "mriqcrp202:iqc_mid_4_sub_02",
+            "@type": "@id"
+        },
+        "iqc_mid_4_sub_02_filt": {
+            "@id": "mriqcrp202:iqc_mid_4_sub_02_filt",
+            "@type": "@id"
+        },
+        "iqc_mid_4_sub_02_filt_nody": {
+            "@id": "mriqcrp202:iqc_mid_4_sub_02_filt_nody",
+            "@type": "@id"
+        },
+        "iqc_mid_4_sub_02_nody": {
+            "@id": "mriqcrp202:iqc_mid_4_sub_02_nody",
+            "@type": "@id"
+        },
+        "iqc_mid_4_suid": {
+            "@id": "mriqcrp202:iqc_mid_4_suid",
+            "@type": "@id"
+        },
+        "iqc_mid_4_tr": {
+            "@id": "mriqcrp202:iqc_mid_4_tr",
+            "@type": "@id"
+        },
+        "iqc_mid_4_voxvol": {
+            "@id": "mriqcrp202:iqc_mid_4_voxvol",
+            "@type": "@id"
+        },
+        "iqc_mid_5_brain_mean": {
+            "@id": "mriqcrp202:iqc_mid_5_brain_mean",
+            "@type": "@id"
+        },
+        "iqc_mid_5_brain_std": {
+            "@id": "mriqcrp202:iqc_mid_5_brain_std",
+            "@type": "@id"
+        },
+        "iqc_mid_5_brain_tsnr_mean": {
+            "@id": "mriqcrp202:iqc_mid_5_brain_tsnr_mean",
+            "@type": "@id"
+        },
+        "iqc_mid_5_brain_tsnr_median": {
+            "@id": "mriqcrp202:iqc_mid_5_brain_tsnr_median",
+            "@type": "@id"
+        },
+        "iqc_mid_5_brain_tsnr_std": {
+            "@id": "mriqcrp202:iqc_mid_5_brain_tsnr_std",
+            "@type": "@id"
+        },
+        "iqc_mid_5_brainvol": {
+            "@id": "mriqcrp202:iqc_mid_5_brainvol",
+            "@type": "@id"
+        },
+        "iqc_mid_5_complete": {
+            "@id": "mriqcrp202:iqc_mid_5_complete",
+            "@type": "@id"
+        },
+        "iqc_mid_5_fm_complete": {
+            "@id": "mriqcrp202:iqc_mid_5_fm_complete",
+            "@type": "@id"
+        },
+        "iqc_mid_5_fm_invalid": {
+            "@id": "mriqcrp202:iqc_mid_5_fm_invalid",
+            "@type": "@id"
+        },
+        "iqc_mid_5_fm_missing": {
+            "@id": "mriqcrp202:iqc_mid_5_fm_missing",
+            "@type": "@id"
+        },
+        "iqc_mid_5_fm_pc_score": {
+            "@id": "mriqcrp202:iqc_mid_5_fm_pc_score",
+            "@type": "@id"
+        },
+        "iqc_mid_5_fm_qc_score": {
+            "@id": "mriqcrp202:iqc_mid_5_fm_qc_score",
+            "@type": "@id"
+        },
+        "iqc_mid_5_fm_wronglocus": {
+            "@id": "mriqcrp202:iqc_mid_5_fm_wronglocus",
+            "@type": "@id"
+        },
+        "iqc_mid_5_fwhm_x": {
+            "@id": "mriqcrp202:iqc_mid_5_fwhm_x",
+            "@type": "@id"
+        },
+        "iqc_mid_5_fwhm_y": {
+            "@id": "mriqcrp202:iqc_mid_5_fwhm_y",
+            "@type": "@id"
+        },
+        "iqc_mid_5_fwhm_z": {
+            "@id": "mriqcrp202:iqc_mid_5_fwhm_z",
+            "@type": "@id"
+        },
+        "iqc_mid_5_mean_motion": {
+            "@id": "mriqcrp202:iqc_mid_5_mean_motion",
+            "@type": "@id"
+        },
+        "iqc_mid_5_mean_motion_filt": {
+            "@id": "mriqcrp202:iqc_mid_5_mean_motion_filt",
+            "@type": "@id"
+        },
+        "iqc_mid_5_mean_motion_nody": {
+            "@id": "mriqcrp202:iqc_mid_5_mean_motion_nody",
+            "@type": "@id"
+        },
+        "iqc_mid_5_nreps": {
+            "@id": "mriqcrp202:iqc_mid_5_nreps",
+            "@type": "@id"
+        },
+        "iqc_mid_5_pc_score": {
+            "@id": "mriqcrp202:iqc_mid_5_pc_score",
+            "@type": "@id"
+        },
+        "iqc_mid_5_qc_score": {
+            "@id": "mriqcrp202:iqc_mid_5_qc_score",
+            "@type": "@id"
+        },
+        "iqc_mid_5_seriestime": {
+            "@id": "mriqcrp202:iqc_mid_5_seriestime",
+            "@type": "@id"
+        },
+        "iqc_mid_5_seuid": {
+            "@id": "mriqcrp202:iqc_mid_5_seuid",
+            "@type": "@id"
+        },
+        "iqc_mid_5_studydate": {
+            "@id": "mriqcrp202:iqc_mid_5_studydate",
+            "@type": "@id"
+        },
+        "iqc_mid_5_sub_02": {
+            "@id": "mriqcrp202:iqc_mid_5_sub_02",
+            "@type": "@id"
+        },
+        "iqc_mid_5_sub_02_filt": {
+            "@id": "mriqcrp202:iqc_mid_5_sub_02_filt",
+            "@type": "@id"
+        },
+        "iqc_mid_5_sub_02_filt_nody": {
+            "@id": "mriqcrp202:iqc_mid_5_sub_02_filt_nody",
+            "@type": "@id"
+        },
+        "iqc_mid_5_sub_02_nody": {
+            "@id": "mriqcrp202:iqc_mid_5_sub_02_nody",
+            "@type": "@id"
+        },
+        "iqc_mid_5_suid": {
+            "@id": "mriqcrp202:iqc_mid_5_suid",
+            "@type": "@id"
+        },
+        "iqc_mid_5_tr": {
+            "@id": "mriqcrp202:iqc_mid_5_tr",
+            "@type": "@id"
+        },
+        "iqc_mid_5_voxvol": {
+            "@id": "mriqcrp202:iqc_mid_5_voxvol",
+            "@type": "@id"
+        },
+        "iqc_mid_6_brain_mean": {
+            "@id": "mriqcrp202:iqc_mid_6_brain_mean",
+            "@type": "@id"
+        },
+        "iqc_mid_6_brain_std": {
+            "@id": "mriqcrp202:iqc_mid_6_brain_std",
+            "@type": "@id"
+        },
+        "iqc_mid_6_brain_tsnr_mean": {
+            "@id": "mriqcrp202:iqc_mid_6_brain_tsnr_mean",
+            "@type": "@id"
+        },
+        "iqc_mid_6_brain_tsnr_median": {
+            "@id": "mriqcrp202:iqc_mid_6_brain_tsnr_median",
+            "@type": "@id"
+        },
+        "iqc_mid_6_brain_tsnr_std": {
+            "@id": "mriqcrp202:iqc_mid_6_brain_tsnr_std",
+            "@type": "@id"
+        },
+        "iqc_mid_6_brainvol": {
+            "@id": "mriqcrp202:iqc_mid_6_brainvol",
+            "@type": "@id"
+        },
+        "iqc_mid_6_complete": {
+            "@id": "mriqcrp202:iqc_mid_6_complete",
+            "@type": "@id"
+        },
+        "iqc_mid_6_fm_complete": {
+            "@id": "mriqcrp202:iqc_mid_6_fm_complete",
+            "@type": "@id"
+        },
+        "iqc_mid_6_fm_invalid": {
+            "@id": "mriqcrp202:iqc_mid_6_fm_invalid",
+            "@type": "@id"
+        },
+        "iqc_mid_6_fm_missing": {
+            "@id": "mriqcrp202:iqc_mid_6_fm_missing",
+            "@type": "@id"
+        },
+        "iqc_mid_6_fm_pc_score": {
+            "@id": "mriqcrp202:iqc_mid_6_fm_pc_score",
+            "@type": "@id"
+        },
+        "iqc_mid_6_fm_qc_score": {
+            "@id": "mriqcrp202:iqc_mid_6_fm_qc_score",
+            "@type": "@id"
+        },
+        "iqc_mid_6_fm_wronglocus": {
+            "@id": "mriqcrp202:iqc_mid_6_fm_wronglocus",
+            "@type": "@id"
+        },
+        "iqc_mid_6_fwhm_x": {
+            "@id": "mriqcrp202:iqc_mid_6_fwhm_x",
+            "@type": "@id"
+        },
+        "iqc_mid_6_fwhm_y": {
+            "@id": "mriqcrp202:iqc_mid_6_fwhm_y",
+            "@type": "@id"
+        },
+        "iqc_mid_6_fwhm_z": {
+            "@id": "mriqcrp202:iqc_mid_6_fwhm_z",
+            "@type": "@id"
+        },
+        "iqc_mid_6_mean_motion": {
+            "@id": "mriqcrp202:iqc_mid_6_mean_motion",
+            "@type": "@id"
+        },
+        "iqc_mid_6_mean_motion_filt": {
+            "@id": "mriqcrp202:iqc_mid_6_mean_motion_filt",
+            "@type": "@id"
+        },
+        "iqc_mid_6_mean_motion_nody": {
+            "@id": "mriqcrp202:iqc_mid_6_mean_motion_nody",
+            "@type": "@id"
+        },
+        "iqc_mid_6_mm_filt_nody": {
+            "@id": "mriqcrp202:iqc_mid_6_mm_filt_nody",
+            "@type": "@id"
+        },
+        "iqc_mid_6_nreps": {
+            "@id": "mriqcrp202:iqc_mid_6_nreps",
+            "@type": "@id"
+        },
+        "iqc_mid_6_pc_score": {
+            "@id": "mriqcrp202:iqc_mid_6_pc_score",
+            "@type": "@id"
+        },
+        "iqc_mid_6_qc_score": {
+            "@id": "mriqcrp202:iqc_mid_6_qc_score",
+            "@type": "@id"
+        },
+        "iqc_mid_6_seriestime": {
+            "@id": "mriqcrp202:iqc_mid_6_seriestime",
+            "@type": "@id"
+        },
+        "iqc_mid_6_seuid": {
+            "@id": "mriqcrp202:iqc_mid_6_seuid",
+            "@type": "@id"
+        },
+        "iqc_mid_6_studydate": {
+            "@id": "mriqcrp202:iqc_mid_6_studydate",
+            "@type": "@id"
+        },
+        "iqc_mid_6_sub_02": {
+            "@id": "mriqcrp202:iqc_mid_6_sub_02",
+            "@type": "@id"
+        },
+        "iqc_mid_6_sub_02_filt": {
+            "@id": "mriqcrp202:iqc_mid_6_sub_02_filt",
+            "@type": "@id"
+        },
+        "iqc_mid_6_sub_02_filt_nody": {
+            "@id": "mriqcrp202:iqc_mid_6_sub_02_filt_nody",
+            "@type": "@id"
+        },
+        "iqc_mid_6_sub_02_nody": {
+            "@id": "mriqcrp202:iqc_mid_6_sub_02_nody",
+            "@type": "@id"
+        },
+        "iqc_mid_6_suid": {
+            "@id": "mriqcrp202:iqc_mid_6_suid",
+            "@type": "@id"
+        },
+        "iqc_mid_6_tr": {
+            "@id": "mriqcrp202:iqc_mid_6_tr",
+            "@type": "@id"
+        },
+        "iqc_mid_6_voxvol": {
+            "@id": "mriqcrp202:iqc_mid_6_voxvol",
+            "@type": "@id"
+        },
+        "iqc_mid_all_brain_mean": {
+            "@id": "mriqcrp202:iqc_mid_all_brain_mean",
+            "@type": "@id"
+        },
+        "iqc_mid_all_brain_std": {
+            "@id": "mriqcrp202:iqc_mid_all_brain_std",
+            "@type": "@id"
+        },
+        "iqc_mid_all_brain_tsnr_mean": {
+            "@id": "mriqcrp202:iqc_mid_all_brain_tsnr_mean",
+            "@type": "@id"
+        },
+        "iqc_mid_all_brain_tsnr_median": {
+            "@id": "mriqcrp202:iqc_mid_all_brain_tsnr_median",
+            "@type": "@id"
+        },
+        "iqc_mid_all_brain_tsnr_std": {
+            "@id": "mriqcrp202:iqc_mid_all_brain_tsnr_std",
+            "@type": "@id"
+        },
+        "iqc_mid_all_brainvol": {
+            "@id": "mriqcrp202:iqc_mid_all_brainvol",
+            "@type": "@id"
+        },
+        "iqc_mid_all_fwhm_x": {
+            "@id": "mriqcrp202:iqc_mid_all_fwhm_x",
+            "@type": "@id"
+        },
+        "iqc_mid_all_fwhm_y": {
+            "@id": "mriqcrp202:iqc_mid_all_fwhm_y",
+            "@type": "@id"
+        },
+        "iqc_mid_all_fwhm_z": {
+            "@id": "mriqcrp202:iqc_mid_all_fwhm_z",
+            "@type": "@id"
+        },
+        "iqc_mid_all_mean_motion": {
+            "@id": "mriqcrp202:iqc_mid_all_mean_motion",
+            "@type": "@id"
+        },
+        "iqc_mid_all_mean_motion_filt": {
+            "@id": "mriqcrp202:iqc_mid_all_mean_motion_filt",
+            "@type": "@id"
+        },
+        "iqc_mid_all_mean_motion_nody": {
+            "@id": "mriqcrp202:iqc_mid_all_mean_motion_nody",
+            "@type": "@id"
+        },
+        "iqc_mid_all_mm_filt_nody": {
+            "@id": "mriqcrp202:iqc_mid_all_mm_filt_nody",
+            "@type": "@id"
+        },
+        "iqc_mid_all_nreps": {
+            "@id": "mriqcrp202:iqc_mid_all_nreps",
+            "@type": "@id"
+        },
+        "iqc_mid_all_tr": {
+            "@id": "mriqcrp202:iqc_mid_all_tr",
+            "@type": "@id"
+        },
+        "iqc_mid_all_voxvol": {
+            "@id": "mriqcrp202:iqc_mid_all_voxvol",
+            "@type": "@id"
+        },
+        "iqc_mid_bad_ser": {
+            "@id": "mriqcrp202:iqc_mid_bad_ser",
+            "@type": "@id"
+        },
+        "iqc_mid_dark_qc": {
+            "@id": "mriqcrp202:iqc_mid_dark_qc",
+            "@type": "@id"
+        },
+        "iqc_mid_dco_qc": {
+            "@id": "mriqcrp202:iqc_mid_dco_qc",
+            "@type": "@id"
+        },
+        "iqc_mid_dis_qc": {
+            "@id": "mriqcrp202:iqc_mid_dis_qc",
+            "@type": "@id"
+        },
+        "iqc_mid_fa_qc": {
+            "@id": "mriqcrp202:iqc_mid_fa_qc",
+            "@type": "@id"
+        },
+        "iqc_mid_fm_dark_qc": {
+            "@id": "mriqcrp202:iqc_mid_fm_dark_qc",
+            "@type": "@id"
+        },
+        "iqc_mid_fm_dco_qc": {
+            "@id": "mriqcrp202:iqc_mid_fm_dco_qc",
+            "@type": "@id"
+        },
+        "iqc_mid_fm_dis_qc": {
+            "@id": "mriqcrp202:iqc_mid_fm_dis_qc",
+            "@type": "@id"
+        },
+        "iqc_mid_fm_fa_qc": {
+            "@id": "mriqcrp202:iqc_mid_fm_fa_qc",
+            "@type": "@id"
+        },
+        "iqc_mid_fm_gh_qc": {
+            "@id": "mriqcrp202:iqc_mid_fm_gh_qc",
+            "@type": "@id"
+        },
+        "iqc_mid_fm_hb_qc": {
+            "@id": "mriqcrp202:iqc_mid_fm_hb_qc",
+            "@type": "@id"
+        },
+        "iqc_mid_fm_ht_qc": {
+            "@id": "mriqcrp202:iqc_mid_fm_ht_qc",
+            "@type": "@id"
+        },
+        "iqc_mid_fm_incomp": {
+            "@id": "mriqcrp202:iqc_mid_fm_incomp",
+            "@type": "@id"
+        },
+        "iqc_mid_fm_invalid": {
+            "@id": "mriqcrp202:iqc_mid_fm_invalid",
+            "@type": "@id"
+        },
+        "iqc_mid_fm_miss_qc": {
+            "@id": "mriqcrp202:iqc_mid_fm_miss_qc",
+            "@type": "@id"
+        },
+        "iqc_mid_fm_missing": {
+            "@id": "mriqcrp202:iqc_mid_fm_missing",
+            "@type": "@id"
+        },
+        "iqc_mid_fm_mo_qc": {
+            "@id": "mriqcrp202:iqc_mid_fm_mo_qc",
+            "@type": "@id"
+        },
+        "iqc_mid_fm_moire_qc": {
+            "@id": "mriqcrp202:iqc_mid_fm_moire_qc",
+            "@type": "@id"
+        },
+        "iqc_mid_fm_other_qc": {
+            "@id": "mriqcrp202:iqc_mid_fm_other_qc",
+            "@type": "@id"
+        },
+        "iqc_mid_fm_pc_issues": {
+            "@id": "mriqcrp202:iqc_mid_fm_pc_issues",
+            "@type": "@id"
+        },
+        "iqc_mid_fm_qcs": {
+            "@id": "mriqcrp202:iqc_mid_fm_qcs",
+            "@type": "@id"
+        },
+        "iqc_mid_fm_recon_qc": {
+            "@id": "mriqcrp202:iqc_mid_fm_recon_qc",
+            "@type": "@id"
+        },
+        "iqc_mid_fm_rf_qc": {
+            "@id": "mriqcrp202:iqc_mid_fm_rf_qc",
+            "@type": "@id"
+        },
+        "iqc_mid_fm_sd_qc": {
+            "@id": "mriqcrp202:iqc_mid_fm_sd_qc",
+            "@type": "@id"
+        },
+        "iqc_mid_fm_si_qc": {
+            "@id": "mriqcrp202:iqc_mid_fm_si_qc",
+            "@type": "@id"
+        },
+        "iqc_mid_fm_slice_qc": {
+            "@id": "mriqcrp202:iqc_mid_fm_slice_qc",
+            "@type": "@id"
+        },
+        "iqc_mid_fm_sus_qc": {
+            "@id": "mriqcrp202:iqc_mid_fm_sus_qc",
+            "@type": "@id"
+        },
+        "iqc_mid_fm_vco_qc": {
+            "@id": "mriqcrp202:iqc_mid_fm_vco_qc",
+            "@type": "@id"
+        },
+        "iqc_mid_fm_wr_qc": {
+            "@id": "mriqcrp202:iqc_mid_fm_wr_qc",
+            "@type": "@id"
+        },
+        "iqc_mid_fm_wronglocus": {
+            "@id": "mriqcrp202:iqc_mid_fm_wronglocus",
+            "@type": "@id"
+        },
+        "iqc_mid_gh_qc": {
+            "@id": "mriqcrp202:iqc_mid_gh_qc",
+            "@type": "@id"
+        },
+        "iqc_mid_good_ser": {
+            "@id": "mriqcrp202:iqc_mid_good_ser",
+            "@type": "@id"
+        },
+        "iqc_mid_good_ser_wofm": {
+            "@id": "mriqcrp202:iqc_mid_good_ser_wofm",
+            "@type": "@id"
+        },
+        "iqc_mid_hb_qc": {
+            "@id": "mriqcrp202:iqc_mid_hb_qc",
+            "@type": "@id"
+        },
+        "iqc_mid_ht_qc": {
+            "@id": "mriqcrp202:iqc_mid_ht_qc",
+            "@type": "@id"
+        },
+        "iqc_mid_miss_qc": {
+            "@id": "mriqcrp202:iqc_mid_miss_qc",
+            "@type": "@id"
+        },
+        "iqc_mid_mo_qc": {
+            "@id": "mriqcrp202:iqc_mid_mo_qc",
+            "@type": "@id"
+        },
+        "iqc_mid_moire_qc": {
+            "@id": "mriqcrp202:iqc_mid_moire_qc",
+            "@type": "@id"
+        },
+        "iqc_mid_ok_brain_mean": {
+            "@id": "mriqcrp202:iqc_mid_ok_brain_mean",
+            "@type": "@id"
+        },
+        "iqc_mid_ok_brain_std": {
+            "@id": "mriqcrp202:iqc_mid_ok_brain_std",
+            "@type": "@id"
+        },
+        "iqc_mid_ok_brain_tsnr_mean": {
+            "@id": "mriqcrp202:iqc_mid_ok_brain_tsnr_mean",
+            "@type": "@id"
+        },
+        "iqc_mid_ok_brain_tsnr_median": {
+            "@id": "mriqcrp202:iqc_mid_ok_brain_tsnr_median",
+            "@type": "@id"
+        },
+        "iqc_mid_ok_brain_tsnr_std": {
+            "@id": "mriqcrp202:iqc_mid_ok_brain_tsnr_std",
+            "@type": "@id"
+        },
+        "iqc_mid_ok_brainvol": {
+            "@id": "mriqcrp202:iqc_mid_ok_brainvol",
+            "@type": "@id"
+        },
+        "iqc_mid_ok_fwhm_x": {
+            "@id": "mriqcrp202:iqc_mid_ok_fwhm_x",
+            "@type": "@id"
+        },
+        "iqc_mid_ok_fwhm_y": {
+            "@id": "mriqcrp202:iqc_mid_ok_fwhm_y",
+            "@type": "@id"
+        },
+        "iqc_mid_ok_fwhm_z": {
+            "@id": "mriqcrp202:iqc_mid_ok_fwhm_z",
+            "@type": "@id"
+        },
+        "iqc_mid_ok_mean_motion": {
+            "@id": "mriqcrp202:iqc_mid_ok_mean_motion",
+            "@type": "@id"
+        },
+        "iqc_mid_ok_mean_motion_filt": {
+            "@id": "mriqcrp202:iqc_mid_ok_mean_motion_filt",
+            "@type": "@id"
+        },
+        "iqc_mid_ok_mean_motion_nody": {
+            "@id": "mriqcrp202:iqc_mid_ok_mean_motion_nody",
+            "@type": "@id"
+        },
+        "iqc_mid_ok_mm_filt_nody": {
+            "@id": "mriqcrp202:iqc_mid_ok_mm_filt_nody",
+            "@type": "@id"
+        },
+        "iqc_mid_ok_nreps": {
+            "@id": "mriqcrp202:iqc_mid_ok_nreps",
+            "@type": "@id"
+        },
+        "iqc_mid_ok_ser": {
+            "@id": "mriqcrp202:iqc_mid_ok_ser",
+            "@type": "@id"
+        },
+        "iqc_mid_ok_sub_02": {
+            "@id": "mriqcrp202:iqc_mid_ok_sub_02",
+            "@type": "@id"
+        },
+        "iqc_mid_ok_sub_02_filt": {
+            "@id": "mriqcrp202:iqc_mid_ok_sub_02_filt",
+            "@type": "@id"
+        },
+        "iqc_mid_ok_sub_02_filt_nody": {
+            "@id": "mriqcrp202:iqc_mid_ok_sub_02_filt_nody",
+            "@type": "@id"
+        },
+        "iqc_mid_ok_sub_02_nody": {
+            "@id": "mriqcrp202:iqc_mid_ok_sub_02_nody",
+            "@type": "@id"
+        },
+        "iqc_mid_ok_tr": {
+            "@id": "mriqcrp202:iqc_mid_ok_tr",
+            "@type": "@id"
+        },
+        "iqc_mid_ok_voxvol": {
+            "@id": "mriqcrp202:iqc_mid_ok_voxvol",
+            "@type": "@id"
+        },
+        "iqc_mid_other_qc": {
+            "@id": "mriqcrp202:iqc_mid_other_qc",
+            "@type": "@id"
+        },
+        "iqc_mid_recon_qc": {
+            "@id": "mriqcrp202:iqc_mid_recon_qc",
+            "@type": "@id"
+        },
+        "iqc_mid_rf_qc": {
+            "@id": "mriqcrp202:iqc_mid_rf_qc",
+            "@type": "@id"
+        },
+        "iqc_mid_sd_qc": {
+            "@id": "mriqcrp202:iqc_mid_sd_qc",
+            "@type": "@id"
+        },
+        "iqc_mid_ser_incomp": {
+            "@id": "mriqcrp202:iqc_mid_ser_incomp",
+            "@type": "@id"
+        },
+        "iqc_mid_ser_pc_issues": {
+            "@id": "mriqcrp202:iqc_mid_ser_pc_issues",
+            "@type": "@id"
+        },
+        "iqc_mid_ser_qcs": {
+            "@id": "mriqcrp202:iqc_mid_ser_qcs",
+            "@type": "@id"
+        },
+        "iqc_mid_si_qc": {
+            "@id": "mriqcrp202:iqc_mid_si_qc",
+            "@type": "@id"
+        },
+        "iqc_mid_slice_qc": {
+            "@id": "mriqcrp202:iqc_mid_slice_qc",
+            "@type": "@id"
+        },
+        "iqc_mid_sus_qc": {
+            "@id": "mriqcrp202:iqc_mid_sus_qc",
+            "@type": "@id"
+        },
+        "iqc_mid_total_passpc": {
+            "@id": "mriqcrp202:iqc_mid_total_passpc",
+            "@type": "@id"
+        },
+        "iqc_mid_total_passqc": {
+            "@id": "mriqcrp202:iqc_mid_total_passqc",
+            "@type": "@id"
+        },
+        "iqc_mid_total_ser": {
+            "@id": "mriqcrp202:iqc_mid_total_ser",
+            "@type": "@id"
+        },
+        "iqc_mid_total_sub_02": {
+            "@id": "mriqcrp202:iqc_mid_total_sub_02",
+            "@type": "@id"
+        },
+        "iqc_mid_total_sub_02_filt": {
+            "@id": "mriqcrp202:iqc_mid_total_sub_02_filt",
+            "@type": "@id"
+        },
+        "iqc_mid_total_sub_02_filt_nody": {
+            "@id": "mriqcrp202:iqc_mid_total_sub_02_filt_nody",
+            "@type": "@id"
+        },
+        "iqc_mid_total_sub_02_nody": {
+            "@id": "mriqcrp202:iqc_mid_total_sub_02_nody",
+            "@type": "@id"
+        },
+        "iqc_mid_vco_qc": {
+            "@id": "mriqcrp202:iqc_mid_vco_qc",
+            "@type": "@id"
+        },
+        "iqc_mid_wr_qc": {
+            "@id": "mriqcrp202:iqc_mid_wr_qc",
+            "@type": "@id"
+        },
+        "iqc_nback_1_brain_mean": {
+            "@id": "mriqcrp202:iqc_nback_1_brain_mean",
+            "@type": "@id"
+        },
+        "iqc_nback_1_brain_std": {
+            "@id": "mriqcrp202:iqc_nback_1_brain_std",
+            "@type": "@id"
+        },
+        "iqc_nback_1_brain_tsnr_mean": {
+            "@id": "mriqcrp202:iqc_nback_1_brain_tsnr_mean",
+            "@type": "@id"
+        },
+        "iqc_nback_1_brain_tsnr_median": {
+            "@id": "mriqcrp202:iqc_nback_1_brain_tsnr_median",
+            "@type": "@id"
+        },
+        "iqc_nback_1_brain_tsnr_std": {
+            "@id": "mriqcrp202:iqc_nback_1_brain_tsnr_std",
+            "@type": "@id"
+        },
+        "iqc_nback_1_brainvol": {
+            "@id": "mriqcrp202:iqc_nback_1_brainvol",
+            "@type": "@id"
+        },
+        "iqc_nback_1_complete": {
+            "@id": "mriqcrp202:iqc_nback_1_complete",
+            "@type": "@id"
+        },
+        "iqc_nback_1_fm_complete": {
+            "@id": "mriqcrp202:iqc_nback_1_fm_complete",
+            "@type": "@id"
+        },
+        "iqc_nback_1_fm_invalid": {
+            "@id": "mriqcrp202:iqc_nback_1_fm_invalid",
+            "@type": "@id"
+        },
+        "iqc_nback_1_fm_missing": {
+            "@id": "mriqcrp202:iqc_nback_1_fm_missing",
+            "@type": "@id"
+        },
+        "iqc_nback_1_fm_pc_score": {
+            "@id": "mriqcrp202:iqc_nback_1_fm_pc_score",
+            "@type": "@id"
+        },
+        "iqc_nback_1_fm_qc_score": {
+            "@id": "mriqcrp202:iqc_nback_1_fm_qc_score",
+            "@type": "@id"
+        },
+        "iqc_nback_1_fm_wronglocus": {
+            "@id": "mriqcrp202:iqc_nback_1_fm_wronglocus",
+            "@type": "@id"
+        },
+        "iqc_nback_1_fwhm_x": {
+            "@id": "mriqcrp202:iqc_nback_1_fwhm_x",
+            "@type": "@id"
+        },
+        "iqc_nback_1_fwhm_y": {
+            "@id": "mriqcrp202:iqc_nback_1_fwhm_y",
+            "@type": "@id"
+        },
+        "iqc_nback_1_fwhm_z": {
+            "@id": "mriqcrp202:iqc_nback_1_fwhm_z",
+            "@type": "@id"
+        },
+        "iqc_nback_1_mean_motion": {
+            "@id": "mriqcrp202:iqc_nback_1_mean_motion",
+            "@type": "@id"
+        },
+        "iqc_nback_1_mean_motion_filt": {
+            "@id": "mriqcrp202:iqc_nback_1_mean_motion_filt",
+            "@type": "@id"
+        },
+        "iqc_nback_1_mean_motion_nody": {
+            "@id": "mriqcrp202:iqc_nback_1_mean_motion_nody",
+            "@type": "@id"
+        },
+        "iqc_nback_1_mm_filt_nody": {
+            "@id": "mriqcrp202:iqc_nback_1_mm_filt_nody",
+            "@type": "@id"
+        },
+        "iqc_nback_1_nreps": {
+            "@id": "mriqcrp202:iqc_nback_1_nreps",
+            "@type": "@id"
+        },
+        "iqc_nback_1_pc_score": {
+            "@id": "mriqcrp202:iqc_nback_1_pc_score",
+            "@type": "@id"
+        },
+        "iqc_nback_1_qc_score": {
+            "@id": "mriqcrp202:iqc_nback_1_qc_score",
+            "@type": "@id"
+        },
+        "iqc_nback_1_seriestime": {
+            "@id": "mriqcrp202:iqc_nback_1_seriestime",
+            "@type": "@id"
+        },
+        "iqc_nback_1_seuid": {
+            "@id": "mriqcrp202:iqc_nback_1_seuid",
+            "@type": "@id"
+        },
+        "iqc_nback_1_studydate": {
+            "@id": "mriqcrp202:iqc_nback_1_studydate",
+            "@type": "@id"
+        },
+        "iqc_nback_1_sub_02": {
+            "@id": "mriqcrp202:iqc_nback_1_sub_02",
+            "@type": "@id"
+        },
+        "iqc_nback_1_sub_02_filt": {
+            "@id": "mriqcrp202:iqc_nback_1_sub_02_filt",
+            "@type": "@id"
+        },
+        "iqc_nback_1_sub_02_filt_nody": {
+            "@id": "mriqcrp202:iqc_nback_1_sub_02_filt_nody",
+            "@type": "@id"
+        },
+        "iqc_nback_1_sub_02_nody": {
+            "@id": "mriqcrp202:iqc_nback_1_sub_02_nody",
+            "@type": "@id"
+        },
+        "iqc_nback_1_suid": {
+            "@id": "mriqcrp202:iqc_nback_1_suid",
+            "@type": "@id"
+        },
+        "iqc_nback_1_tr": {
+            "@id": "mriqcrp202:iqc_nback_1_tr",
+            "@type": "@id"
+        },
+        "iqc_nback_1_voxvol": {
+            "@id": "mriqcrp202:iqc_nback_1_voxvol",
+            "@type": "@id"
+        },
+        "iqc_nback_2_brain_mean": {
+            "@id": "mriqcrp202:iqc_nback_2_brain_mean",
+            "@type": "@id"
+        },
+        "iqc_nback_2_brain_std": {
+            "@id": "mriqcrp202:iqc_nback_2_brain_std",
+            "@type": "@id"
+        },
+        "iqc_nback_2_brain_tsnr_mean": {
+            "@id": "mriqcrp202:iqc_nback_2_brain_tsnr_mean",
+            "@type": "@id"
+        },
+        "iqc_nback_2_brain_tsnr_median": {
+            "@id": "mriqcrp202:iqc_nback_2_brain_tsnr_median",
+            "@type": "@id"
+        },
+        "iqc_nback_2_brain_tsnr_std": {
+            "@id": "mriqcrp202:iqc_nback_2_brain_tsnr_std",
+            "@type": "@id"
+        },
+        "iqc_nback_2_brainvol": {
+            "@id": "mriqcrp202:iqc_nback_2_brainvol",
+            "@type": "@id"
+        },
+        "iqc_nback_2_complete": {
+            "@id": "mriqcrp202:iqc_nback_2_complete",
+            "@type": "@id"
+        },
+        "iqc_nback_2_fm_complete": {
+            "@id": "mriqcrp202:iqc_nback_2_fm_complete",
+            "@type": "@id"
+        },
+        "iqc_nback_2_fm_invalid": {
+            "@id": "mriqcrp202:iqc_nback_2_fm_invalid",
+            "@type": "@id"
+        },
+        "iqc_nback_2_fm_missing": {
+            "@id": "mriqcrp202:iqc_nback_2_fm_missing",
+            "@type": "@id"
+        },
+        "iqc_nback_2_fm_pc_score": {
+            "@id": "mriqcrp202:iqc_nback_2_fm_pc_score",
+            "@type": "@id"
+        },
+        "iqc_nback_2_fm_qc_score": {
+            "@id": "mriqcrp202:iqc_nback_2_fm_qc_score",
+            "@type": "@id"
+        },
+        "iqc_nback_2_fm_wronglocus": {
+            "@id": "mriqcrp202:iqc_nback_2_fm_wronglocus",
+            "@type": "@id"
+        },
+        "iqc_nback_2_fwhm_x": {
+            "@id": "mriqcrp202:iqc_nback_2_fwhm_x",
+            "@type": "@id"
+        },
+        "iqc_nback_2_fwhm_y": {
+            "@id": "mriqcrp202:iqc_nback_2_fwhm_y",
+            "@type": "@id"
+        },
+        "iqc_nback_2_fwhm_z": {
+            "@id": "mriqcrp202:iqc_nback_2_fwhm_z",
+            "@type": "@id"
+        },
+        "iqc_nback_2_mean_motion": {
+            "@id": "mriqcrp202:iqc_nback_2_mean_motion",
+            "@type": "@id"
+        },
+        "iqc_nback_2_mean_motion_filt": {
+            "@id": "mriqcrp202:iqc_nback_2_mean_motion_filt",
+            "@type": "@id"
+        },
+        "iqc_nback_2_mean_motion_nody": {
+            "@id": "mriqcrp202:iqc_nback_2_mean_motion_nody",
+            "@type": "@id"
+        },
+        "iqc_nback_2_mm_filt_nody": {
+            "@id": "mriqcrp202:iqc_nback_2_mm_filt_nody",
+            "@type": "@id"
+        },
+        "iqc_nback_2_nreps": {
+            "@id": "mriqcrp202:iqc_nback_2_nreps",
+            "@type": "@id"
+        },
+        "iqc_nback_2_pc_score": {
+            "@id": "mriqcrp202:iqc_nback_2_pc_score",
+            "@type": "@id"
+        },
+        "iqc_nback_2_qc_score": {
+            "@id": "mriqcrp202:iqc_nback_2_qc_score",
+            "@type": "@id"
+        },
+        "iqc_nback_2_seriestime": {
+            "@id": "mriqcrp202:iqc_nback_2_seriestime",
+            "@type": "@id"
+        },
+        "iqc_nback_2_seuid": {
+            "@id": "mriqcrp202:iqc_nback_2_seuid",
+            "@type": "@id"
+        },
+        "iqc_nback_2_studydate": {
+            "@id": "mriqcrp202:iqc_nback_2_studydate",
+            "@type": "@id"
+        },
+        "iqc_nback_2_sub_02": {
+            "@id": "mriqcrp202:iqc_nback_2_sub_02",
+            "@type": "@id"
+        },
+        "iqc_nback_2_sub_02_filt": {
+            "@id": "mriqcrp202:iqc_nback_2_sub_02_filt",
+            "@type": "@id"
+        },
+        "iqc_nback_2_sub_02_filt_nody": {
+            "@id": "mriqcrp202:iqc_nback_2_sub_02_filt_nody",
+            "@type": "@id"
+        },
+        "iqc_nback_2_sub_02_nody": {
+            "@id": "mriqcrp202:iqc_nback_2_sub_02_nody",
+            "@type": "@id"
+        },
+        "iqc_nback_2_suid": {
+            "@id": "mriqcrp202:iqc_nback_2_suid",
+            "@type": "@id"
+        },
+        "iqc_nback_2_tr": {
+            "@id": "mriqcrp202:iqc_nback_2_tr",
+            "@type": "@id"
+        },
+        "iqc_nback_2_voxvol": {
+            "@id": "mriqcrp202:iqc_nback_2_voxvol",
+            "@type": "@id"
+        },
+        "iqc_nback_3_brain_mean": {
+            "@id": "mriqcrp202:iqc_nback_3_brain_mean",
+            "@type": "@id"
+        },
+        "iqc_nback_3_brain_std": {
+            "@id": "mriqcrp202:iqc_nback_3_brain_std",
+            "@type": "@id"
+        },
+        "iqc_nback_3_brain_tsnr_mean": {
+            "@id": "mriqcrp202:iqc_nback_3_brain_tsnr_mean",
+            "@type": "@id"
+        },
+        "iqc_nback_3_brain_tsnr_median": {
+            "@id": "mriqcrp202:iqc_nback_3_brain_tsnr_median",
+            "@type": "@id"
+        },
+        "iqc_nback_3_brain_tsnr_std": {
+            "@id": "mriqcrp202:iqc_nback_3_brain_tsnr_std",
+            "@type": "@id"
+        },
+        "iqc_nback_3_brainvol": {
+            "@id": "mriqcrp202:iqc_nback_3_brainvol",
+            "@type": "@id"
+        },
+        "iqc_nback_3_complete": {
+            "@id": "mriqcrp202:iqc_nback_3_complete",
+            "@type": "@id"
+        },
+        "iqc_nback_3_fm_complete": {
+            "@id": "mriqcrp202:iqc_nback_3_fm_complete",
+            "@type": "@id"
+        },
+        "iqc_nback_3_fm_invalid": {
+            "@id": "mriqcrp202:iqc_nback_3_fm_invalid",
+            "@type": "@id"
+        },
+        "iqc_nback_3_fm_missing": {
+            "@id": "mriqcrp202:iqc_nback_3_fm_missing",
+            "@type": "@id"
+        },
+        "iqc_nback_3_fm_pc_score": {
+            "@id": "mriqcrp202:iqc_nback_3_fm_pc_score",
+            "@type": "@id"
+        },
+        "iqc_nback_3_fm_qc_score": {
+            "@id": "mriqcrp202:iqc_nback_3_fm_qc_score",
+            "@type": "@id"
+        },
+        "iqc_nback_3_fm_wronglocus": {
+            "@id": "mriqcrp202:iqc_nback_3_fm_wronglocus",
+            "@type": "@id"
+        },
+        "iqc_nback_3_fwhm_x": {
+            "@id": "mriqcrp202:iqc_nback_3_fwhm_x",
+            "@type": "@id"
+        },
+        "iqc_nback_3_fwhm_y": {
+            "@id": "mriqcrp202:iqc_nback_3_fwhm_y",
+            "@type": "@id"
+        },
+        "iqc_nback_3_fwhm_z": {
+            "@id": "mriqcrp202:iqc_nback_3_fwhm_z",
+            "@type": "@id"
+        },
+        "iqc_nback_3_mean_motion": {
+            "@id": "mriqcrp202:iqc_nback_3_mean_motion",
+            "@type": "@id"
+        },
+        "iqc_nback_3_mean_motion_filt": {
+            "@id": "mriqcrp202:iqc_nback_3_mean_motion_filt",
+            "@type": "@id"
+        },
+        "iqc_nback_3_mean_motion_nody": {
+            "@id": "mriqcrp202:iqc_nback_3_mean_motion_nody",
+            "@type": "@id"
+        },
+        "iqc_nback_3_mm_filt_nody": {
+            "@id": "mriqcrp202:iqc_nback_3_mm_filt_nody",
+            "@type": "@id"
+        },
+        "iqc_nback_3_nreps": {
+            "@id": "mriqcrp202:iqc_nback_3_nreps",
+            "@type": "@id"
+        },
+        "iqc_nback_3_pc_score": {
+            "@id": "mriqcrp202:iqc_nback_3_pc_score",
+            "@type": "@id"
+        },
+        "iqc_nback_3_qc_score": {
+            "@id": "mriqcrp202:iqc_nback_3_qc_score",
+            "@type": "@id"
+        },
+        "iqc_nback_3_seriestime": {
+            "@id": "mriqcrp202:iqc_nback_3_seriestime",
+            "@type": "@id"
+        },
+        "iqc_nback_3_seuid": {
+            "@id": "mriqcrp202:iqc_nback_3_seuid",
+            "@type": "@id"
+        },
+        "iqc_nback_3_studydate": {
+            "@id": "mriqcrp202:iqc_nback_3_studydate",
+            "@type": "@id"
+        },
+        "iqc_nback_3_sub_02": {
+            "@id": "mriqcrp202:iqc_nback_3_sub_02",
+            "@type": "@id"
+        },
+        "iqc_nback_3_sub_02_filt": {
+            "@id": "mriqcrp202:iqc_nback_3_sub_02_filt",
+            "@type": "@id"
+        },
+        "iqc_nback_3_sub_02_filt_nody": {
+            "@id": "mriqcrp202:iqc_nback_3_sub_02_filt_nody",
+            "@type": "@id"
+        },
+        "iqc_nback_3_sub_02_nody": {
+            "@id": "mriqcrp202:iqc_nback_3_sub_02_nody",
+            "@type": "@id"
+        },
+        "iqc_nback_3_suid": {
+            "@id": "mriqcrp202:iqc_nback_3_suid",
+            "@type": "@id"
+        },
+        "iqc_nback_3_tr": {
+            "@id": "mriqcrp202:iqc_nback_3_tr",
+            "@type": "@id"
+        },
+        "iqc_nback_3_voxvol": {
+            "@id": "mriqcrp202:iqc_nback_3_voxvol",
+            "@type": "@id"
+        },
+        "iqc_nback_4_brain_mean": {
+            "@id": "mriqcrp202:iqc_nback_4_brain_mean",
+            "@type": "@id"
+        },
+        "iqc_nback_4_brain_std": {
+            "@id": "mriqcrp202:iqc_nback_4_brain_std",
+            "@type": "@id"
+        },
+        "iqc_nback_4_brain_tsnr_mean": {
+            "@id": "mriqcrp202:iqc_nback_4_brain_tsnr_mean",
+            "@type": "@id"
+        },
+        "iqc_nback_4_brain_tsnr_median": {
+            "@id": "mriqcrp202:iqc_nback_4_brain_tsnr_median",
+            "@type": "@id"
+        },
+        "iqc_nback_4_brain_tsnr_std": {
+            "@id": "mriqcrp202:iqc_nback_4_brain_tsnr_std",
+            "@type": "@id"
+        },
+        "iqc_nback_4_brainvol": {
+            "@id": "mriqcrp202:iqc_nback_4_brainvol",
+            "@type": "@id"
+        },
+        "iqc_nback_4_complete": {
+            "@id": "mriqcrp202:iqc_nback_4_complete",
+            "@type": "@id"
+        },
+        "iqc_nback_4_fm_complete": {
+            "@id": "mriqcrp202:iqc_nback_4_fm_complete",
+            "@type": "@id"
+        },
+        "iqc_nback_4_fm_invalid": {
+            "@id": "mriqcrp202:iqc_nback_4_fm_invalid",
+            "@type": "@id"
+        },
+        "iqc_nback_4_fm_missing": {
+            "@id": "mriqcrp202:iqc_nback_4_fm_missing",
+            "@type": "@id"
+        },
+        "iqc_nback_4_fm_pc_score": {
+            "@id": "mriqcrp202:iqc_nback_4_fm_pc_score",
+            "@type": "@id"
+        },
+        "iqc_nback_4_fm_qc_score": {
+            "@id": "mriqcrp202:iqc_nback_4_fm_qc_score",
+            "@type": "@id"
+        },
+        "iqc_nback_4_fm_wronglocus": {
+            "@id": "mriqcrp202:iqc_nback_4_fm_wronglocus",
+            "@type": "@id"
+        },
+        "iqc_nback_4_fwhm_x": {
+            "@id": "mriqcrp202:iqc_nback_4_fwhm_x",
+            "@type": "@id"
+        },
+        "iqc_nback_4_fwhm_y": {
+            "@id": "mriqcrp202:iqc_nback_4_fwhm_y",
+            "@type": "@id"
+        },
+        "iqc_nback_4_fwhm_z": {
+            "@id": "mriqcrp202:iqc_nback_4_fwhm_z",
+            "@type": "@id"
+        },
+        "iqc_nback_4_mean_motion": {
+            "@id": "mriqcrp202:iqc_nback_4_mean_motion",
+            "@type": "@id"
+        },
+        "iqc_nback_4_mean_motion_filt": {
+            "@id": "mriqcrp202:iqc_nback_4_mean_motion_filt",
+            "@type": "@id"
+        },
+        "iqc_nback_4_mean_motion_nody": {
+            "@id": "mriqcrp202:iqc_nback_4_mean_motion_nody",
+            "@type": "@id"
+        },
+        "iqc_nback_4_mm_filt_nody": {
+            "@id": "mriqcrp202:iqc_nback_4_mm_filt_nody",
+            "@type": "@id"
+        },
+        "iqc_nback_4_nreps": {
+            "@id": "mriqcrp202:iqc_nback_4_nreps",
+            "@type": "@id"
+        },
+        "iqc_nback_4_pc_score": {
+            "@id": "mriqcrp202:iqc_nback_4_pc_score",
+            "@type": "@id"
+        },
+        "iqc_nback_4_qc_score": {
+            "@id": "mriqcrp202:iqc_nback_4_qc_score",
+            "@type": "@id"
+        },
+        "iqc_nback_4_seriestime": {
+            "@id": "mriqcrp202:iqc_nback_4_seriestime",
+            "@type": "@id"
+        },
+        "iqc_nback_4_seuid": {
+            "@id": "mriqcrp202:iqc_nback_4_seuid",
+            "@type": "@id"
+        },
+        "iqc_nback_4_studydate": {
+            "@id": "mriqcrp202:iqc_nback_4_studydate",
+            "@type": "@id"
+        },
+        "iqc_nback_4_sub_02": {
+            "@id": "mriqcrp202:iqc_nback_4_sub_02",
+            "@type": "@id"
+        },
+        "iqc_nback_4_sub_02_filt": {
+            "@id": "mriqcrp202:iqc_nback_4_sub_02_filt",
+            "@type": "@id"
+        },
+        "iqc_nback_4_sub_02_filt_nody": {
+            "@id": "mriqcrp202:iqc_nback_4_sub_02_filt_nody",
+            "@type": "@id"
+        },
+        "iqc_nback_4_sub_02_nody": {
+            "@id": "mriqcrp202:iqc_nback_4_sub_02_nody",
+            "@type": "@id"
+        },
+        "iqc_nback_4_suid": {
+            "@id": "mriqcrp202:iqc_nback_4_suid",
+            "@type": "@id"
+        },
+        "iqc_nback_4_tr": {
+            "@id": "mriqcrp202:iqc_nback_4_tr",
+            "@type": "@id"
+        },
+        "iqc_nback_4_voxvol": {
+            "@id": "mriqcrp202:iqc_nback_4_voxvol",
+            "@type": "@id"
+        },
+        "iqc_nback_5_brain_mean": {
+            "@id": "mriqcrp202:iqc_nback_5_brain_mean",
+            "@type": "@id"
+        },
+        "iqc_nback_5_brain_std": {
+            "@id": "mriqcrp202:iqc_nback_5_brain_std",
+            "@type": "@id"
+        },
+        "iqc_nback_5_brain_tsnr_mean": {
+            "@id": "mriqcrp202:iqc_nback_5_brain_tsnr_mean",
+            "@type": "@id"
+        },
+        "iqc_nback_5_brain_tsnr_median": {
+            "@id": "mriqcrp202:iqc_nback_5_brain_tsnr_median",
+            "@type": "@id"
+        },
+        "iqc_nback_5_brain_tsnr_std": {
+            "@id": "mriqcrp202:iqc_nback_5_brain_tsnr_std",
+            "@type": "@id"
+        },
+        "iqc_nback_5_brainvol": {
+            "@id": "mriqcrp202:iqc_nback_5_brainvol",
+            "@type": "@id"
+        },
+        "iqc_nback_5_complete": {
+            "@id": "mriqcrp202:iqc_nback_5_complete",
+            "@type": "@id"
+        },
+        "iqc_nback_5_fm_complete": {
+            "@id": "mriqcrp202:iqc_nback_5_fm_complete",
+            "@type": "@id"
+        },
+        "iqc_nback_5_fm_invalid": {
+            "@id": "mriqcrp202:iqc_nback_5_fm_invalid",
+            "@type": "@id"
+        },
+        "iqc_nback_5_fm_missing": {
+            "@id": "mriqcrp202:iqc_nback_5_fm_missing",
+            "@type": "@id"
+        },
+        "iqc_nback_5_fm_pc_score": {
+            "@id": "mriqcrp202:iqc_nback_5_fm_pc_score",
+            "@type": "@id"
+        },
+        "iqc_nback_5_fm_qc_score": {
+            "@id": "mriqcrp202:iqc_nback_5_fm_qc_score",
+            "@type": "@id"
+        },
+        "iqc_nback_5_fm_wronglocus": {
+            "@id": "mriqcrp202:iqc_nback_5_fm_wronglocus",
+            "@type": "@id"
+        },
+        "iqc_nback_5_fwhm_x": {
+            "@id": "mriqcrp202:iqc_nback_5_fwhm_x",
+            "@type": "@id"
+        },
+        "iqc_nback_5_fwhm_y": {
+            "@id": "mriqcrp202:iqc_nback_5_fwhm_y",
+            "@type": "@id"
+        },
+        "iqc_nback_5_fwhm_z": {
+            "@id": "mriqcrp202:iqc_nback_5_fwhm_z",
+            "@type": "@id"
+        },
+        "iqc_nback_5_mean_motion": {
+            "@id": "mriqcrp202:iqc_nback_5_mean_motion",
+            "@type": "@id"
+        },
+        "iqc_nback_5_mean_motion_filt": {
+            "@id": "mriqcrp202:iqc_nback_5_mean_motion_filt",
+            "@type": "@id"
+        },
+        "iqc_nback_5_mean_motion_nody": {
+            "@id": "mriqcrp202:iqc_nback_5_mean_motion_nody",
+            "@type": "@id"
+        },
+        "iqc_nback_5_mm_filt_nody": {
+            "@id": "mriqcrp202:iqc_nback_5_mm_filt_nody",
+            "@type": "@id"
+        },
+        "iqc_nback_5_nreps": {
+            "@id": "mriqcrp202:iqc_nback_5_nreps",
+            "@type": "@id"
+        },
+        "iqc_nback_5_pc_score": {
+            "@id": "mriqcrp202:iqc_nback_5_pc_score",
+            "@type": "@id"
+        },
+        "iqc_nback_5_qc_score": {
+            "@id": "mriqcrp202:iqc_nback_5_qc_score",
+            "@type": "@id"
+        },
+        "iqc_nback_5_seriestime": {
+            "@id": "mriqcrp202:iqc_nback_5_seriestime",
+            "@type": "@id"
+        },
+        "iqc_nback_5_seuid": {
+            "@id": "mriqcrp202:iqc_nback_5_seuid",
+            "@type": "@id"
+        },
+        "iqc_nback_5_studydate": {
+            "@id": "mriqcrp202:iqc_nback_5_studydate",
+            "@type": "@id"
+        },
+        "iqc_nback_5_sub_02": {
+            "@id": "mriqcrp202:iqc_nback_5_sub_02",
+            "@type": "@id"
+        },
+        "iqc_nback_5_sub_02_filt": {
+            "@id": "mriqcrp202:iqc_nback_5_sub_02_filt",
+            "@type": "@id"
+        },
+        "iqc_nback_5_sub_02_filt_nody": {
+            "@id": "mriqcrp202:iqc_nback_5_sub_02_filt_nody",
+            "@type": "@id"
+        },
+        "iqc_nback_5_sub_02_nody": {
+            "@id": "mriqcrp202:iqc_nback_5_sub_02_nody",
+            "@type": "@id"
+        },
+        "iqc_nback_5_suid": {
+            "@id": "mriqcrp202:iqc_nback_5_suid",
+            "@type": "@id"
+        },
+        "iqc_nback_5_tr": {
+            "@id": "mriqcrp202:iqc_nback_5_tr",
+            "@type": "@id"
+        },
+        "iqc_nback_5_voxvol": {
+            "@id": "mriqcrp202:iqc_nback_5_voxvol",
+            "@type": "@id"
+        },
+        "iqc_nback_6_brain_mean": {
+            "@id": "mriqcrp202:iqc_nback_6_brain_mean",
+            "@type": "@id"
+        },
+        "iqc_nback_6_brain_std": {
+            "@id": "mriqcrp202:iqc_nback_6_brain_std",
+            "@type": "@id"
+        },
+        "iqc_nback_6_brain_tsnr_mean": {
+            "@id": "mriqcrp202:iqc_nback_6_brain_tsnr_mean",
+            "@type": "@id"
+        },
+        "iqc_nback_6_brain_tsnr_median": {
+            "@id": "mriqcrp202:iqc_nback_6_brain_tsnr_median",
+            "@type": "@id"
+        },
+        "iqc_nback_6_brain_tsnr_std": {
+            "@id": "mriqcrp202:iqc_nback_6_brain_tsnr_std",
+            "@type": "@id"
+        },
+        "iqc_nback_6_brainvol": {
+            "@id": "mriqcrp202:iqc_nback_6_brainvol",
+            "@type": "@id"
+        },
+        "iqc_nback_6_complete": {
+            "@id": "mriqcrp202:iqc_nback_6_complete",
+            "@type": "@id"
+        },
+        "iqc_nback_6_fm_complete": {
+            "@id": "mriqcrp202:iqc_nback_6_fm_complete",
+            "@type": "@id"
+        },
+        "iqc_nback_6_fm_invalid": {
+            "@id": "mriqcrp202:iqc_nback_6_fm_invalid",
+            "@type": "@id"
+        },
+        "iqc_nback_6_fm_missing": {
+            "@id": "mriqcrp202:iqc_nback_6_fm_missing",
+            "@type": "@id"
+        },
+        "iqc_nback_6_fm_pc_score": {
+            "@id": "mriqcrp202:iqc_nback_6_fm_pc_score",
+            "@type": "@id"
+        },
+        "iqc_nback_6_fm_qc_score": {
+            "@id": "mriqcrp202:iqc_nback_6_fm_qc_score",
+            "@type": "@id"
+        },
+        "iqc_nback_6_fm_wronglocus": {
+            "@id": "mriqcrp202:iqc_nback_6_fm_wronglocus",
+            "@type": "@id"
+        },
+        "iqc_nback_6_fwhm_x": {
+            "@id": "mriqcrp202:iqc_nback_6_fwhm_x",
+            "@type": "@id"
+        },
+        "iqc_nback_6_fwhm_y": {
+            "@id": "mriqcrp202:iqc_nback_6_fwhm_y",
+            "@type": "@id"
+        },
+        "iqc_nback_6_fwhm_z": {
+            "@id": "mriqcrp202:iqc_nback_6_fwhm_z",
+            "@type": "@id"
+        },
+        "iqc_nback_6_mean_motion": {
+            "@id": "mriqcrp202:iqc_nback_6_mean_motion",
+            "@type": "@id"
+        },
+        "iqc_nback_6_mean_motion_filt": {
+            "@id": "mriqcrp202:iqc_nback_6_mean_motion_filt",
+            "@type": "@id"
+        },
+        "iqc_nback_6_mean_motion_nody": {
+            "@id": "mriqcrp202:iqc_nback_6_mean_motion_nody",
+            "@type": "@id"
+        },
+        "iqc_nback_6_mm_filt_nody": {
+            "@id": "mriqcrp202:iqc_nback_6_mm_filt_nody",
+            "@type": "@id"
+        },
+        "iqc_nback_6_nreps": {
+            "@id": "mriqcrp202:iqc_nback_6_nreps",
+            "@type": "@id"
+        },
+        "iqc_nback_6_pc_score": {
+            "@id": "mriqcrp202:iqc_nback_6_pc_score",
+            "@type": "@id"
+        },
+        "iqc_nback_6_qc_score": {
+            "@id": "mriqcrp202:iqc_nback_6_qc_score",
+            "@type": "@id"
+        },
+        "iqc_nback_6_seriestime": {
+            "@id": "mriqcrp202:iqc_nback_6_seriestime",
+            "@type": "@id"
+        },
+        "iqc_nback_6_seuid": {
+            "@id": "mriqcrp202:iqc_nback_6_seuid",
+            "@type": "@id"
+        },
+        "iqc_nback_6_studydate": {
+            "@id": "mriqcrp202:iqc_nback_6_studydate",
+            "@type": "@id"
+        },
+        "iqc_nback_6_sub_02": {
+            "@id": "mriqcrp202:iqc_nback_6_sub_02",
+            "@type": "@id"
+        },
+        "iqc_nback_6_sub_02_filt": {
+            "@id": "mriqcrp202:iqc_nback_6_sub_02_filt",
+            "@type": "@id"
+        },
+        "iqc_nback_6_sub_02_filt_nody": {
+            "@id": "mriqcrp202:iqc_nback_6_sub_02_filt_nody",
+            "@type": "@id"
+        },
+        "iqc_nback_6_sub_02_nody": {
+            "@id": "mriqcrp202:iqc_nback_6_sub_02_nody",
+            "@type": "@id"
+        },
+        "iqc_nback_6_suid": {
+            "@id": "mriqcrp202:iqc_nback_6_suid",
+            "@type": "@id"
+        },
+        "iqc_nback_6_tr": {
+            "@id": "mriqcrp202:iqc_nback_6_tr",
+            "@type": "@id"
+        },
+        "iqc_nback_6_voxvol": {
+            "@id": "mriqcrp202:iqc_nback_6_voxvol",
+            "@type": "@id"
+        },
+        "iqc_nback_all_b_tsnr_median": {
+            "@id": "mriqcrp202:iqc_nback_all_b_tsnr_median",
+            "@type": "@id"
+        },
+        "iqc_nback_all_brain_mean": {
+            "@id": "mriqcrp202:iqc_nback_all_brain_mean",
+            "@type": "@id"
+        },
+        "iqc_nback_all_brain_std": {
+            "@id": "mriqcrp202:iqc_nback_all_brain_std",
+            "@type": "@id"
+        },
+        "iqc_nback_all_brain_tsnr_mean": {
+            "@id": "mriqcrp202:iqc_nback_all_brain_tsnr_mean",
+            "@type": "@id"
+        },
+        "iqc_nback_all_brain_tsnr_std": {
+            "@id": "mriqcrp202:iqc_nback_all_brain_tsnr_std",
+            "@type": "@id"
+        },
+        "iqc_nback_all_brainvol": {
+            "@id": "mriqcrp202:iqc_nback_all_brainvol",
+            "@type": "@id"
+        },
+        "iqc_nback_all_fwhm_x": {
+            "@id": "mriqcrp202:iqc_nback_all_fwhm_x",
+            "@type": "@id"
+        },
+        "iqc_nback_all_fwhm_y": {
+            "@id": "mriqcrp202:iqc_nback_all_fwhm_y",
+            "@type": "@id"
+        },
+        "iqc_nback_all_fwhm_z": {
+            "@id": "mriqcrp202:iqc_nback_all_fwhm_z",
+            "@type": "@id"
+        },
+        "iqc_nback_all_mean_motion": {
+            "@id": "mriqcrp202:iqc_nback_all_mean_motion",
+            "@type": "@id"
+        },
+        "iqc_nback_all_mean_motion_filt": {
+            "@id": "mriqcrp202:iqc_nback_all_mean_motion_filt",
+            "@type": "@id"
+        },
+        "iqc_nback_all_mean_motion_nody": {
+            "@id": "mriqcrp202:iqc_nback_all_mean_motion_nody",
+            "@type": "@id"
+        },
+        "iqc_nback_all_mm_filt_nody": {
+            "@id": "mriqcrp202:iqc_nback_all_mm_filt_nody",
+            "@type": "@id"
+        },
+        "iqc_nback_all_nreps": {
+            "@id": "mriqcrp202:iqc_nback_all_nreps",
+            "@type": "@id"
+        },
+        "iqc_nback_all_tr": {
+            "@id": "mriqcrp202:iqc_nback_all_tr",
+            "@type": "@id"
+        },
+        "iqc_nback_all_voxvol": {
+            "@id": "mriqcrp202:iqc_nback_all_voxvol",
+            "@type": "@id"
+        },
+        "iqc_nback_bad_ser": {
+            "@id": "mriqcrp202:iqc_nback_bad_ser",
+            "@type": "@id"
+        },
+        "iqc_nback_dark_qc": {
+            "@id": "mriqcrp202:iqc_nback_dark_qc",
+            "@type": "@id"
+        },
+        "iqc_nback_dco_qc": {
+            "@id": "mriqcrp202:iqc_nback_dco_qc",
+            "@type": "@id"
+        },
+        "iqc_nback_dis_qc": {
+            "@id": "mriqcrp202:iqc_nback_dis_qc",
+            "@type": "@id"
+        },
+        "iqc_nback_fa_qc": {
+            "@id": "mriqcrp202:iqc_nback_fa_qc",
+            "@type": "@id"
+        },
+        "iqc_nback_fm_dark_qc": {
+            "@id": "mriqcrp202:iqc_nback_fm_dark_qc",
+            "@type": "@id"
+        },
+        "iqc_nback_fm_dco_qc": {
+            "@id": "mriqcrp202:iqc_nback_fm_dco_qc",
+            "@type": "@id"
+        },
+        "iqc_nback_fm_dis_qc": {
+            "@id": "mriqcrp202:iqc_nback_fm_dis_qc",
+            "@type": "@id"
+        },
+        "iqc_nback_fm_fa_qc": {
+            "@id": "mriqcrp202:iqc_nback_fm_fa_qc",
+            "@type": "@id"
+        },
+        "iqc_nback_fm_gh_qc": {
+            "@id": "mriqcrp202:iqc_nback_fm_gh_qc",
+            "@type": "@id"
+        },
+        "iqc_nback_fm_hb_qc": {
+            "@id": "mriqcrp202:iqc_nback_fm_hb_qc",
+            "@type": "@id"
+        },
+        "iqc_nback_fm_ht_qc": {
+            "@id": "mriqcrp202:iqc_nback_fm_ht_qc",
+            "@type": "@id"
+        },
+        "iqc_nback_fm_incomp": {
+            "@id": "mriqcrp202:iqc_nback_fm_incomp",
+            "@type": "@id"
+        },
+        "iqc_nback_fm_invalid": {
+            "@id": "mriqcrp202:iqc_nback_fm_invalid",
+            "@type": "@id"
+        },
+        "iqc_nback_fm_miss_qc": {
+            "@id": "mriqcrp202:iqc_nback_fm_miss_qc",
+            "@type": "@id"
+        },
+        "iqc_nback_fm_missing": {
+            "@id": "mriqcrp202:iqc_nback_fm_missing",
+            "@type": "@id"
+        },
+        "iqc_nback_fm_mo_qc": {
+            "@id": "mriqcrp202:iqc_nback_fm_mo_qc",
+            "@type": "@id"
+        },
+        "iqc_nback_fm_moire_qc": {
+            "@id": "mriqcrp202:iqc_nback_fm_moire_qc",
+            "@type": "@id"
+        },
+        "iqc_nback_fm_other_qc": {
+            "@id": "mriqcrp202:iqc_nback_fm_other_qc",
+            "@type": "@id"
+        },
+        "iqc_nback_fm_pc_issues": {
+            "@id": "mriqcrp202:iqc_nback_fm_pc_issues",
+            "@type": "@id"
+        },
+        "iqc_nback_fm_qcs": {
+            "@id": "mriqcrp202:iqc_nback_fm_qcs",
+            "@type": "@id"
+        },
+        "iqc_nback_fm_recon_qc": {
+            "@id": "mriqcrp202:iqc_nback_fm_recon_qc",
+            "@type": "@id"
+        },
+        "iqc_nback_fm_rf_qc": {
+            "@id": "mriqcrp202:iqc_nback_fm_rf_qc",
+            "@type": "@id"
+        },
+        "iqc_nback_fm_sd_qc": {
+            "@id": "mriqcrp202:iqc_nback_fm_sd_qc",
+            "@type": "@id"
+        },
+        "iqc_nback_fm_si_qc": {
+            "@id": "mriqcrp202:iqc_nback_fm_si_qc",
+            "@type": "@id"
+        },
+        "iqc_nback_fm_slice_qc": {
+            "@id": "mriqcrp202:iqc_nback_fm_slice_qc",
+            "@type": "@id"
+        },
+        "iqc_nback_fm_sus_qc": {
+            "@id": "mriqcrp202:iqc_nback_fm_sus_qc",
+            "@type": "@id"
+        },
+        "iqc_nback_fm_vco_qc": {
+            "@id": "mriqcrp202:iqc_nback_fm_vco_qc",
+            "@type": "@id"
+        },
+        "iqc_nback_fm_wr_qc": {
+            "@id": "mriqcrp202:iqc_nback_fm_wr_qc",
+            "@type": "@id"
+        },
+        "iqc_nback_fm_wronglocus": {
+            "@id": "mriqcrp202:iqc_nback_fm_wronglocus",
+            "@type": "@id"
+        },
+        "iqc_nback_gh_qc": {
+            "@id": "mriqcrp202:iqc_nback_gh_qc",
+            "@type": "@id"
+        },
+        "iqc_nback_good_ser": {
+            "@id": "mriqcrp202:iqc_nback_good_ser",
+            "@type": "@id"
+        },
+        "iqc_nback_good_ser_wofm": {
+            "@id": "mriqcrp202:iqc_nback_good_ser_wofm",
+            "@type": "@id"
+        },
+        "iqc_nback_hb_qc": {
+            "@id": "mriqcrp202:iqc_nback_hb_qc",
+            "@type": "@id"
+        },
+        "iqc_nback_ht_qc": {
+            "@id": "mriqcrp202:iqc_nback_ht_qc",
+            "@type": "@id"
+        },
+        "iqc_nback_miss_qc": {
+            "@id": "mriqcrp202:iqc_nback_miss_qc",
+            "@type": "@id"
+        },
+        "iqc_nback_mo_qc": {
+            "@id": "mriqcrp202:iqc_nback_mo_qc",
+            "@type": "@id"
+        },
+        "iqc_nback_moire_qc": {
+            "@id": "mriqcrp202:iqc_nback_moire_qc",
+            "@type": "@id"
+        },
+        "iqc_nback_ok_brain_mean": {
+            "@id": "mriqcrp202:iqc_nback_ok_brain_mean",
+            "@type": "@id"
+        },
+        "iqc_nback_ok_brain_std": {
+            "@id": "mriqcrp202:iqc_nback_ok_brain_std",
+            "@type": "@id"
+        },
+        "iqc_nback_ok_brain_tsnr_mean": {
+            "@id": "mriqcrp202:iqc_nback_ok_brain_tsnr_mean",
+            "@type": "@id"
+        },
+        "iqc_nback_ok_brain_tsnr_median": {
+            "@id": "mriqcrp202:iqc_nback_ok_brain_tsnr_median",
+            "@type": "@id"
+        },
+        "iqc_nback_ok_brain_tsnr_std": {
+            "@id": "mriqcrp202:iqc_nback_ok_brain_tsnr_std",
+            "@type": "@id"
+        },
+        "iqc_nback_ok_brainvol": {
+            "@id": "mriqcrp202:iqc_nback_ok_brainvol",
+            "@type": "@id"
+        },
+        "iqc_nback_ok_fwhm_x": {
+            "@id": "mriqcrp202:iqc_nback_ok_fwhm_x",
+            "@type": "@id"
+        },
+        "iqc_nback_ok_fwhm_y": {
+            "@id": "mriqcrp202:iqc_nback_ok_fwhm_y",
+            "@type": "@id"
+        },
+        "iqc_nback_ok_fwhm_z": {
+            "@id": "mriqcrp202:iqc_nback_ok_fwhm_z",
+            "@type": "@id"
+        },
+        "iqc_nback_ok_mean_motion": {
+            "@id": "mriqcrp202:iqc_nback_ok_mean_motion",
+            "@type": "@id"
+        },
+        "iqc_nback_ok_mean_motion_filt": {
+            "@id": "mriqcrp202:iqc_nback_ok_mean_motion_filt",
+            "@type": "@id"
+        },
+        "iqc_nback_ok_mean_motion_nody": {
+            "@id": "mriqcrp202:iqc_nback_ok_mean_motion_nody",
+            "@type": "@id"
+        },
+        "iqc_nback_ok_mm_filt_nody": {
+            "@id": "mriqcrp202:iqc_nback_ok_mm_filt_nody",
+            "@type": "@id"
+        },
+        "iqc_nback_ok_nreps": {
+            "@id": "mriqcrp202:iqc_nback_ok_nreps",
+            "@type": "@id"
+        },
+        "iqc_nback_ok_ser": {
+            "@id": "mriqcrp202:iqc_nback_ok_ser",
+            "@type": "@id"
+        },
+        "iqc_nback_ok_sub_02": {
+            "@id": "mriqcrp202:iqc_nback_ok_sub_02",
+            "@type": "@id"
+        },
+        "iqc_nback_ok_sub_02_filt": {
+            "@id": "mriqcrp202:iqc_nback_ok_sub_02_filt",
+            "@type": "@id"
+        },
+        "iqc_nback_ok_sub_02_nody": {
+            "@id": "mriqcrp202:iqc_nback_ok_sub_02_nody",
+            "@type": "@id"
+        },
+        "iqc_nback_ok_tr": {
+            "@id": "mriqcrp202:iqc_nback_ok_tr",
+            "@type": "@id"
+        },
+        "iqc_nback_ok_voxvol": {
+            "@id": "mriqcrp202:iqc_nback_ok_voxvol",
+            "@type": "@id"
+        },
+        "iqc_nback_other_qc": {
+            "@id": "mriqcrp202:iqc_nback_other_qc",
+            "@type": "@id"
+        },
+        "iqc_nback_recon_qc": {
+            "@id": "mriqcrp202:iqc_nback_recon_qc",
+            "@type": "@id"
+        },
+        "iqc_nback_rf_qc": {
+            "@id": "mriqcrp202:iqc_nback_rf_qc",
+            "@type": "@id"
+        },
+        "iqc_nback_sd_qc": {
+            "@id": "mriqcrp202:iqc_nback_sd_qc",
+            "@type": "@id"
+        },
+        "iqc_nback_ser_incomp": {
+            "@id": "mriqcrp202:iqc_nback_ser_incomp",
+            "@type": "@id"
+        },
+        "iqc_nback_ser_pc_issues": {
+            "@id": "mriqcrp202:iqc_nback_ser_pc_issues",
+            "@type": "@id"
+        },
+        "iqc_nback_ser_qcs": {
+            "@id": "mriqcrp202:iqc_nback_ser_qcs",
+            "@type": "@id"
+        },
+        "iqc_nback_si_qc": {
+            "@id": "mriqcrp202:iqc_nback_si_qc",
+            "@type": "@id"
+        },
+        "iqc_nback_slice_qc": {
+            "@id": "mriqcrp202:iqc_nback_slice_qc",
+            "@type": "@id"
+        },
+        "iqc_nback_sus_qc": {
+            "@id": "mriqcrp202:iqc_nback_sus_qc",
+            "@type": "@id"
+        },
+        "iqc_nback_tl_sub_02_filt_nody": {
+            "@id": "mriqcrp202:iqc_nback_tl_sub_02_filt_nody",
+            "@type": "@id"
+        },
+        "iqc_nback_total_passpc": {
+            "@id": "mriqcrp202:iqc_nback_total_passpc",
+            "@type": "@id"
+        },
+        "iqc_nback_total_passqc": {
+            "@id": "mriqcrp202:iqc_nback_total_passqc",
+            "@type": "@id"
+        },
+        "iqc_nback_total_ser": {
+            "@id": "mriqcrp202:iqc_nback_total_ser",
+            "@type": "@id"
+        },
+        "iqc_nback_total_sub_02": {
+            "@id": "mriqcrp202:iqc_nback_total_sub_02",
+            "@type": "@id"
+        },
+        "iqc_nback_total_sub_02_filt": {
+            "@id": "mriqcrp202:iqc_nback_total_sub_02_filt",
+            "@type": "@id"
+        },
+        "iqc_nback_total_sub_02_nody": {
+            "@id": "mriqcrp202:iqc_nback_total_sub_02_nody",
+            "@type": "@id"
+        },
+        "iqc_nback_vco_qc": {
+            "@id": "mriqcrp202:iqc_nback_vco_qc",
+            "@type": "@id"
+        },
+        "iqc_nback_wr_qc": {
+            "@id": "mriqcrp202:iqc_nback_wr_qc",
+            "@type": "@id"
+        },
+        "iqc_sst_1_brain_mean": {
+            "@id": "mriqcrp202:iqc_sst_1_brain_mean",
+            "@type": "@id"
+        },
+        "iqc_sst_1_brain_std": {
+            "@id": "mriqcrp202:iqc_sst_1_brain_std",
+            "@type": "@id"
+        },
+        "iqc_sst_1_brain_tsnr_mean": {
+            "@id": "mriqcrp202:iqc_sst_1_brain_tsnr_mean",
+            "@type": "@id"
+        },
+        "iqc_sst_1_brain_tsnr_median": {
+            "@id": "mriqcrp202:iqc_sst_1_brain_tsnr_median",
+            "@type": "@id"
+        },
+        "iqc_sst_1_brain_tsnr_std": {
+            "@id": "mriqcrp202:iqc_sst_1_brain_tsnr_std",
+            "@type": "@id"
+        },
+        "iqc_sst_1_brainvol": {
+            "@id": "mriqcrp202:iqc_sst_1_brainvol",
+            "@type": "@id"
+        },
+        "iqc_sst_1_complete": {
+            "@id": "mriqcrp202:iqc_sst_1_complete",
+            "@type": "@id"
+        },
+        "iqc_sst_1_fm_complete": {
+            "@id": "mriqcrp202:iqc_sst_1_fm_complete",
+            "@type": "@id"
+        },
+        "iqc_sst_1_fm_invalid": {
+            "@id": "mriqcrp202:iqc_sst_1_fm_invalid",
+            "@type": "@id"
+        },
+        "iqc_sst_1_fm_missing": {
+            "@id": "mriqcrp202:iqc_sst_1_fm_missing",
+            "@type": "@id"
+        },
+        "iqc_sst_1_fm_pc_score": {
+            "@id": "mriqcrp202:iqc_sst_1_fm_pc_score",
+            "@type": "@id"
+        },
+        "iqc_sst_1_fm_qc_score": {
+            "@id": "mriqcrp202:iqc_sst_1_fm_qc_score",
+            "@type": "@id"
+        },
+        "iqc_sst_1_fm_wronglocus": {
+            "@id": "mriqcrp202:iqc_sst_1_fm_wronglocus",
+            "@type": "@id"
+        },
+        "iqc_sst_1_fwhm_x": {
+            "@id": "mriqcrp202:iqc_sst_1_fwhm_x",
+            "@type": "@id"
+        },
+        "iqc_sst_1_fwhm_y": {
+            "@id": "mriqcrp202:iqc_sst_1_fwhm_y",
+            "@type": "@id"
+        },
+        "iqc_sst_1_fwhm_z": {
+            "@id": "mriqcrp202:iqc_sst_1_fwhm_z",
+            "@type": "@id"
+        },
+        "iqc_sst_1_mean_motion": {
+            "@id": "mriqcrp202:iqc_sst_1_mean_motion",
+            "@type": "@id"
+        },
+        "iqc_sst_1_mean_motion_filt": {
+            "@id": "mriqcrp202:iqc_sst_1_mean_motion_filt",
+            "@type": "@id"
+        },
+        "iqc_sst_1_mean_motion_nody": {
+            "@id": "mriqcrp202:iqc_sst_1_mean_motion_nody",
+            "@type": "@id"
+        },
+        "iqc_sst_1_mm_filt_nody": {
+            "@id": "mriqcrp202:iqc_sst_1_mm_filt_nody",
+            "@type": "@id"
+        },
+        "iqc_sst_1_nreps": {
+            "@id": "mriqcrp202:iqc_sst_1_nreps",
+            "@type": "@id"
+        },
+        "iqc_sst_1_pc_score": {
+            "@id": "mriqcrp202:iqc_sst_1_pc_score",
+            "@type": "@id"
+        },
+        "iqc_sst_1_qc_score": {
+            "@id": "mriqcrp202:iqc_sst_1_qc_score",
+            "@type": "@id"
+        },
+        "iqc_sst_1_seriestime": {
+            "@id": "mriqcrp202:iqc_sst_1_seriestime",
+            "@type": "@id"
+        },
+        "iqc_sst_1_seuid": {
+            "@id": "mriqcrp202:iqc_sst_1_seuid",
+            "@type": "@id"
+        },
+        "iqc_sst_1_studydate": {
+            "@id": "mriqcrp202:iqc_sst_1_studydate",
+            "@type": "@id"
+        },
+        "iqc_sst_1_sub_02": {
+            "@id": "mriqcrp202:iqc_sst_1_sub_02",
+            "@type": "@id"
+        },
+        "iqc_sst_1_sub_02_filt": {
+            "@id": "mriqcrp202:iqc_sst_1_sub_02_filt",
+            "@type": "@id"
+        },
+        "iqc_sst_1_sub_02_filt_nody": {
+            "@id": "mriqcrp202:iqc_sst_1_sub_02_filt_nody",
+            "@type": "@id"
+        },
+        "iqc_sst_1_sub_02_nody": {
+            "@id": "mriqcrp202:iqc_sst_1_sub_02_nody",
+            "@type": "@id"
+        },
+        "iqc_sst_1_suid": {
+            "@id": "mriqcrp202:iqc_sst_1_suid",
+            "@type": "@id"
+        },
+        "iqc_sst_1_tr": {
+            "@id": "mriqcrp202:iqc_sst_1_tr",
+            "@type": "@id"
+        },
+        "iqc_sst_1_voxvol": {
+            "@id": "mriqcrp202:iqc_sst_1_voxvol",
+            "@type": "@id"
+        },
+        "iqc_sst_2_brain_mean": {
+            "@id": "mriqcrp202:iqc_sst_2_brain_mean",
+            "@type": "@id"
+        },
+        "iqc_sst_2_brain_std": {
+            "@id": "mriqcrp202:iqc_sst_2_brain_std",
+            "@type": "@id"
+        },
+        "iqc_sst_2_brain_tsnr_mean": {
+            "@id": "mriqcrp202:iqc_sst_2_brain_tsnr_mean",
+            "@type": "@id"
+        },
+        "iqc_sst_2_brain_tsnr_median": {
+            "@id": "mriqcrp202:iqc_sst_2_brain_tsnr_median",
+            "@type": "@id"
+        },
+        "iqc_sst_2_brain_tsnr_std": {
+            "@id": "mriqcrp202:iqc_sst_2_brain_tsnr_std",
+            "@type": "@id"
+        },
+        "iqc_sst_2_brainvol": {
+            "@id": "mriqcrp202:iqc_sst_2_brainvol",
+            "@type": "@id"
+        },
+        "iqc_sst_2_complete": {
+            "@id": "mriqcrp202:iqc_sst_2_complete",
+            "@type": "@id"
+        },
+        "iqc_sst_2_fm_complete": {
+            "@id": "mriqcrp202:iqc_sst_2_fm_complete",
+            "@type": "@id"
+        },
+        "iqc_sst_2_fm_invalid": {
+            "@id": "mriqcrp202:iqc_sst_2_fm_invalid",
+            "@type": "@id"
+        },
+        "iqc_sst_2_fm_missing": {
+            "@id": "mriqcrp202:iqc_sst_2_fm_missing",
+            "@type": "@id"
+        },
+        "iqc_sst_2_fm_pc_score": {
+            "@id": "mriqcrp202:iqc_sst_2_fm_pc_score",
+            "@type": "@id"
+        },
+        "iqc_sst_2_fm_qc_score": {
+            "@id": "mriqcrp202:iqc_sst_2_fm_qc_score",
+            "@type": "@id"
+        },
+        "iqc_sst_2_fm_wronglocus": {
+            "@id": "mriqcrp202:iqc_sst_2_fm_wronglocus",
+            "@type": "@id"
+        },
+        "iqc_sst_2_fwhm_x": {
+            "@id": "mriqcrp202:iqc_sst_2_fwhm_x",
+            "@type": "@id"
+        },
+        "iqc_sst_2_fwhm_y": {
+            "@id": "mriqcrp202:iqc_sst_2_fwhm_y",
+            "@type": "@id"
+        },
+        "iqc_sst_2_fwhm_z": {
+            "@id": "mriqcrp202:iqc_sst_2_fwhm_z",
+            "@type": "@id"
+        },
+        "iqc_sst_2_mean_motion": {
+            "@id": "mriqcrp202:iqc_sst_2_mean_motion",
+            "@type": "@id"
+        },
+        "iqc_sst_2_mean_motion_filt": {
+            "@id": "mriqcrp202:iqc_sst_2_mean_motion_filt",
+            "@type": "@id"
+        },
+        "iqc_sst_2_mean_motion_nody": {
+            "@id": "mriqcrp202:iqc_sst_2_mean_motion_nody",
+            "@type": "@id"
+        },
+        "iqc_sst_2_mm_filt_nody": {
+            "@id": "mriqcrp202:iqc_sst_2_mm_filt_nody",
+            "@type": "@id"
+        },
+        "iqc_sst_2_nreps": {
+            "@id": "mriqcrp202:iqc_sst_2_nreps",
+            "@type": "@id"
+        },
+        "iqc_sst_2_pc_score": {
+            "@id": "mriqcrp202:iqc_sst_2_pc_score",
+            "@type": "@id"
+        },
+        "iqc_sst_2_qc_score": {
+            "@id": "mriqcrp202:iqc_sst_2_qc_score",
+            "@type": "@id"
+        },
+        "iqc_sst_2_seriestime": {
+            "@id": "mriqcrp202:iqc_sst_2_seriestime",
+            "@type": "@id"
+        },
+        "iqc_sst_2_seuid": {
+            "@id": "mriqcrp202:iqc_sst_2_seuid",
+            "@type": "@id"
+        },
+        "iqc_sst_2_studydate": {
+            "@id": "mriqcrp202:iqc_sst_2_studydate",
+            "@type": "@id"
+        },
+        "iqc_sst_2_sub_02": {
+            "@id": "mriqcrp202:iqc_sst_2_sub_02",
+            "@type": "@id"
+        },
+        "iqc_sst_2_sub_02_filt": {
+            "@id": "mriqcrp202:iqc_sst_2_sub_02_filt",
+            "@type": "@id"
+        },
+        "iqc_sst_2_sub_02_filt_nody": {
+            "@id": "mriqcrp202:iqc_sst_2_sub_02_filt_nody",
+            "@type": "@id"
+        },
+        "iqc_sst_2_sub_02_nody": {
+            "@id": "mriqcrp202:iqc_sst_2_sub_02_nody",
+            "@type": "@id"
+        },
+        "iqc_sst_2_suid": {
+            "@id": "mriqcrp202:iqc_sst_2_suid",
+            "@type": "@id"
+        },
+        "iqc_sst_2_tr": {
+            "@id": "mriqcrp202:iqc_sst_2_tr",
+            "@type": "@id"
+        },
+        "iqc_sst_2_voxvol": {
+            "@id": "mriqcrp202:iqc_sst_2_voxvol",
+            "@type": "@id"
+        },
+        "iqc_sst_3_brain_mean": {
+            "@id": "mriqcrp202:iqc_sst_3_brain_mean",
+            "@type": "@id"
+        },
+        "iqc_sst_3_brain_std": {
+            "@id": "mriqcrp202:iqc_sst_3_brain_std",
+            "@type": "@id"
+        },
+        "iqc_sst_3_brain_tsnr_mean": {
+            "@id": "mriqcrp202:iqc_sst_3_brain_tsnr_mean",
+            "@type": "@id"
+        },
+        "iqc_sst_3_brain_tsnr_median": {
+            "@id": "mriqcrp202:iqc_sst_3_brain_tsnr_median",
+            "@type": "@id"
+        },
+        "iqc_sst_3_brain_tsnr_std": {
+            "@id": "mriqcrp202:iqc_sst_3_brain_tsnr_std",
+            "@type": "@id"
+        },
+        "iqc_sst_3_brainvol": {
+            "@id": "mriqcrp202:iqc_sst_3_brainvol",
+            "@type": "@id"
+        },
+        "iqc_sst_3_complete": {
+            "@id": "mriqcrp202:iqc_sst_3_complete",
+            "@type": "@id"
+        },
+        "iqc_sst_3_fm_complete": {
+            "@id": "mriqcrp202:iqc_sst_3_fm_complete",
+            "@type": "@id"
+        },
+        "iqc_sst_3_fm_invalid": {
+            "@id": "mriqcrp202:iqc_sst_3_fm_invalid",
+            "@type": "@id"
+        },
+        "iqc_sst_3_fm_missing": {
+            "@id": "mriqcrp202:iqc_sst_3_fm_missing",
+            "@type": "@id"
+        },
+        "iqc_sst_3_fm_pc_score": {
+            "@id": "mriqcrp202:iqc_sst_3_fm_pc_score",
+            "@type": "@id"
+        },
+        "iqc_sst_3_fm_qc_score": {
+            "@id": "mriqcrp202:iqc_sst_3_fm_qc_score",
+            "@type": "@id"
+        },
+        "iqc_sst_3_fm_wronglocus": {
+            "@id": "mriqcrp202:iqc_sst_3_fm_wronglocus",
+            "@type": "@id"
+        },
+        "iqc_sst_3_fwhm_x": {
+            "@id": "mriqcrp202:iqc_sst_3_fwhm_x",
+            "@type": "@id"
+        },
+        "iqc_sst_3_fwhm_y": {
+            "@id": "mriqcrp202:iqc_sst_3_fwhm_y",
+            "@type": "@id"
+        },
+        "iqc_sst_3_fwhm_z": {
+            "@id": "mriqcrp202:iqc_sst_3_fwhm_z",
+            "@type": "@id"
+        },
+        "iqc_sst_3_mean_motion": {
+            "@id": "mriqcrp202:iqc_sst_3_mean_motion",
+            "@type": "@id"
+        },
+        "iqc_sst_3_mean_motion_filt": {
+            "@id": "mriqcrp202:iqc_sst_3_mean_motion_filt",
+            "@type": "@id"
+        },
+        "iqc_sst_3_mean_motion_nody": {
+            "@id": "mriqcrp202:iqc_sst_3_mean_motion_nody",
+            "@type": "@id"
+        },
+        "iqc_sst_3_mm_filt_nody": {
+            "@id": "mriqcrp202:iqc_sst_3_mm_filt_nody",
+            "@type": "@id"
+        },
+        "iqc_sst_3_nreps": {
+            "@id": "mriqcrp202:iqc_sst_3_nreps",
+            "@type": "@id"
+        },
+        "iqc_sst_3_pc_score": {
+            "@id": "mriqcrp202:iqc_sst_3_pc_score",
+            "@type": "@id"
+        },
+        "iqc_sst_3_qc_score": {
+            "@id": "mriqcrp202:iqc_sst_3_qc_score",
+            "@type": "@id"
+        },
+        "iqc_sst_3_seriestime": {
+            "@id": "mriqcrp202:iqc_sst_3_seriestime",
+            "@type": "@id"
+        },
+        "iqc_sst_3_seuid": {
+            "@id": "mriqcrp202:iqc_sst_3_seuid",
+            "@type": "@id"
+        },
+        "iqc_sst_3_studydate": {
+            "@id": "mriqcrp202:iqc_sst_3_studydate",
+            "@type": "@id"
+        },
+        "iqc_sst_3_sub_02": {
+            "@id": "mriqcrp202:iqc_sst_3_sub_02",
+            "@type": "@id"
+        },
+        "iqc_sst_3_sub_02_filt": {
+            "@id": "mriqcrp202:iqc_sst_3_sub_02_filt",
+            "@type": "@id"
+        },
+        "iqc_sst_3_sub_02_filt_nody": {
+            "@id": "mriqcrp202:iqc_sst_3_sub_02_filt_nody",
+            "@type": "@id"
+        },
+        "iqc_sst_3_sub_02_nody": {
+            "@id": "mriqcrp202:iqc_sst_3_sub_02_nody",
+            "@type": "@id"
+        },
+        "iqc_sst_3_suid": {
+            "@id": "mriqcrp202:iqc_sst_3_suid",
+            "@type": "@id"
+        },
+        "iqc_sst_3_tr": {
+            "@id": "mriqcrp202:iqc_sst_3_tr",
+            "@type": "@id"
+        },
+        "iqc_sst_3_voxvol": {
+            "@id": "mriqcrp202:iqc_sst_3_voxvol",
+            "@type": "@id"
+        },
+        "iqc_sst_4_brain_mean": {
+            "@id": "mriqcrp202:iqc_sst_4_brain_mean",
+            "@type": "@id"
+        },
+        "iqc_sst_4_brain_std": {
+            "@id": "mriqcrp202:iqc_sst_4_brain_std",
+            "@type": "@id"
+        },
+        "iqc_sst_4_brain_tsnr_mean": {
+            "@id": "mriqcrp202:iqc_sst_4_brain_tsnr_mean",
+            "@type": "@id"
+        },
+        "iqc_sst_4_brain_tsnr_median": {
+            "@id": "mriqcrp202:iqc_sst_4_brain_tsnr_median",
+            "@type": "@id"
+        },
+        "iqc_sst_4_brain_tsnr_std": {
+            "@id": "mriqcrp202:iqc_sst_4_brain_tsnr_std",
+            "@type": "@id"
+        },
+        "iqc_sst_4_brainvol": {
+            "@id": "mriqcrp202:iqc_sst_4_brainvol",
+            "@type": "@id"
+        },
+        "iqc_sst_4_complete": {
+            "@id": "mriqcrp202:iqc_sst_4_complete",
+            "@type": "@id"
+        },
+        "iqc_sst_4_fm_complete": {
+            "@id": "mriqcrp202:iqc_sst_4_fm_complete",
+            "@type": "@id"
+        },
+        "iqc_sst_4_fm_invalid": {
+            "@id": "mriqcrp202:iqc_sst_4_fm_invalid",
+            "@type": "@id"
+        },
+        "iqc_sst_4_fm_missing": {
+            "@id": "mriqcrp202:iqc_sst_4_fm_missing",
+            "@type": "@id"
+        },
+        "iqc_sst_4_fm_pc_score": {
+            "@id": "mriqcrp202:iqc_sst_4_fm_pc_score",
+            "@type": "@id"
+        },
+        "iqc_sst_4_fm_qc_score": {
+            "@id": "mriqcrp202:iqc_sst_4_fm_qc_score",
+            "@type": "@id"
+        },
+        "iqc_sst_4_fm_wronglocus": {
+            "@id": "mriqcrp202:iqc_sst_4_fm_wronglocus",
+            "@type": "@id"
+        },
+        "iqc_sst_4_fwhm_x": {
+            "@id": "mriqcrp202:iqc_sst_4_fwhm_x",
+            "@type": "@id"
+        },
+        "iqc_sst_4_fwhm_y": {
+            "@id": "mriqcrp202:iqc_sst_4_fwhm_y",
+            "@type": "@id"
+        },
+        "iqc_sst_4_fwhm_z": {
+            "@id": "mriqcrp202:iqc_sst_4_fwhm_z",
+            "@type": "@id"
+        },
+        "iqc_sst_4_mean_motion": {
+            "@id": "mriqcrp202:iqc_sst_4_mean_motion",
+            "@type": "@id"
+        },
+        "iqc_sst_4_mean_motion_filt": {
+            "@id": "mriqcrp202:iqc_sst_4_mean_motion_filt",
+            "@type": "@id"
+        },
+        "iqc_sst_4_mean_motion_nody": {
+            "@id": "mriqcrp202:iqc_sst_4_mean_motion_nody",
+            "@type": "@id"
+        },
+        "iqc_sst_4_mm_filt_nody": {
+            "@id": "mriqcrp202:iqc_sst_4_mm_filt_nody",
+            "@type": "@id"
+        },
+        "iqc_sst_4_nreps": {
+            "@id": "mriqcrp202:iqc_sst_4_nreps",
+            "@type": "@id"
+        },
+        "iqc_sst_4_pc_score": {
+            "@id": "mriqcrp202:iqc_sst_4_pc_score",
+            "@type": "@id"
+        },
+        "iqc_sst_4_qc_score": {
+            "@id": "mriqcrp202:iqc_sst_4_qc_score",
+            "@type": "@id"
+        },
+        "iqc_sst_4_seriestime": {
+            "@id": "mriqcrp202:iqc_sst_4_seriestime",
+            "@type": "@id"
+        },
+        "iqc_sst_4_seuid": {
+            "@id": "mriqcrp202:iqc_sst_4_seuid",
+            "@type": "@id"
+        },
+        "iqc_sst_4_studydate": {
+            "@id": "mriqcrp202:iqc_sst_4_studydate",
+            "@type": "@id"
+        },
+        "iqc_sst_4_sub_02": {
+            "@id": "mriqcrp202:iqc_sst_4_sub_02",
+            "@type": "@id"
+        },
+        "iqc_sst_4_sub_02_filt": {
+            "@id": "mriqcrp202:iqc_sst_4_sub_02_filt",
+            "@type": "@id"
+        },
+        "iqc_sst_4_sub_02_filt_nody": {
+            "@id": "mriqcrp202:iqc_sst_4_sub_02_filt_nody",
+            "@type": "@id"
+        },
+        "iqc_sst_4_sub_02_nody": {
+            "@id": "mriqcrp202:iqc_sst_4_sub_02_nody",
+            "@type": "@id"
+        },
+        "iqc_sst_4_suid": {
+            "@id": "mriqcrp202:iqc_sst_4_suid",
+            "@type": "@id"
+        },
+        "iqc_sst_4_tr": {
+            "@id": "mriqcrp202:iqc_sst_4_tr",
+            "@type": "@id"
+        },
+        "iqc_sst_4_voxvol": {
+            "@id": "mriqcrp202:iqc_sst_4_voxvol",
+            "@type": "@id"
+        },
+        "iqc_sst_5_brain_mean": {
+            "@id": "mriqcrp202:iqc_sst_5_brain_mean",
+            "@type": "@id"
+        },
+        "iqc_sst_5_brain_std": {
+            "@id": "mriqcrp202:iqc_sst_5_brain_std",
+            "@type": "@id"
+        },
+        "iqc_sst_5_brain_tsnr_mean": {
+            "@id": "mriqcrp202:iqc_sst_5_brain_tsnr_mean",
+            "@type": "@id"
+        },
+        "iqc_sst_5_brain_tsnr_median": {
+            "@id": "mriqcrp202:iqc_sst_5_brain_tsnr_median",
+            "@type": "@id"
+        },
+        "iqc_sst_5_brain_tsnr_std": {
+            "@id": "mriqcrp202:iqc_sst_5_brain_tsnr_std",
+            "@type": "@id"
+        },
+        "iqc_sst_5_brainvol": {
+            "@id": "mriqcrp202:iqc_sst_5_brainvol",
+            "@type": "@id"
+        },
+        "iqc_sst_5_complete": {
+            "@id": "mriqcrp202:iqc_sst_5_complete",
+            "@type": "@id"
+        },
+        "iqc_sst_5_fm_complete": {
+            "@id": "mriqcrp202:iqc_sst_5_fm_complete",
+            "@type": "@id"
+        },
+        "iqc_sst_5_fm_invalid": {
+            "@id": "mriqcrp202:iqc_sst_5_fm_invalid",
+            "@type": "@id"
+        },
+        "iqc_sst_5_fm_missing": {
+            "@id": "mriqcrp202:iqc_sst_5_fm_missing",
+            "@type": "@id"
+        },
+        "iqc_sst_5_fm_pc_score": {
+            "@id": "mriqcrp202:iqc_sst_5_fm_pc_score",
+            "@type": "@id"
+        },
+        "iqc_sst_5_fm_qc_score": {
+            "@id": "mriqcrp202:iqc_sst_5_fm_qc_score",
+            "@type": "@id"
+        },
+        "iqc_sst_5_fm_wronglocus": {
+            "@id": "mriqcrp202:iqc_sst_5_fm_wronglocus",
+            "@type": "@id"
+        },
+        "iqc_sst_5_fwhm_x": {
+            "@id": "mriqcrp202:iqc_sst_5_fwhm_x",
+            "@type": "@id"
+        },
+        "iqc_sst_5_fwhm_y": {
+            "@id": "mriqcrp202:iqc_sst_5_fwhm_y",
+            "@type": "@id"
+        },
+        "iqc_sst_5_fwhm_z": {
+            "@id": "mriqcrp202:iqc_sst_5_fwhm_z",
+            "@type": "@id"
+        },
+        "iqc_sst_5_mean_motion": {
+            "@id": "mriqcrp202:iqc_sst_5_mean_motion",
+            "@type": "@id"
+        },
+        "iqc_sst_5_mean_motion_filt": {
+            "@id": "mriqcrp202:iqc_sst_5_mean_motion_filt",
+            "@type": "@id"
+        },
+        "iqc_sst_5_mean_motion_nody": {
+            "@id": "mriqcrp202:iqc_sst_5_mean_motion_nody",
+            "@type": "@id"
+        },
+        "iqc_sst_5_mm_filt_nody": {
+            "@id": "mriqcrp202:iqc_sst_5_mm_filt_nody",
+            "@type": "@id"
+        },
+        "iqc_sst_5_nreps": {
+            "@id": "mriqcrp202:iqc_sst_5_nreps",
+            "@type": "@id"
+        },
+        "iqc_sst_5_pc_score": {
+            "@id": "mriqcrp202:iqc_sst_5_pc_score",
+            "@type": "@id"
+        },
+        "iqc_sst_5_qc_score": {
+            "@id": "mriqcrp202:iqc_sst_5_qc_score",
+            "@type": "@id"
+        },
+        "iqc_sst_5_seriestime": {
+            "@id": "mriqcrp202:iqc_sst_5_seriestime",
+            "@type": "@id"
+        },
+        "iqc_sst_5_seuid": {
+            "@id": "mriqcrp202:iqc_sst_5_seuid",
+            "@type": "@id"
+        },
+        "iqc_sst_5_studydate": {
+            "@id": "mriqcrp202:iqc_sst_5_studydate",
+            "@type": "@id"
+        },
+        "iqc_sst_5_sub_02": {
+            "@id": "mriqcrp202:iqc_sst_5_sub_02",
+            "@type": "@id"
+        },
+        "iqc_sst_5_sub_02_filt": {
+            "@id": "mriqcrp202:iqc_sst_5_sub_02_filt",
+            "@type": "@id"
+        },
+        "iqc_sst_5_sub_02_filt_nody": {
+            "@id": "mriqcrp202:iqc_sst_5_sub_02_filt_nody",
+            "@type": "@id"
+        },
+        "iqc_sst_5_sub_02_nody": {
+            "@id": "mriqcrp202:iqc_sst_5_sub_02_nody",
+            "@type": "@id"
+        },
+        "iqc_sst_5_suid": {
+            "@id": "mriqcrp202:iqc_sst_5_suid",
+            "@type": "@id"
+        },
+        "iqc_sst_5_tr": {
+            "@id": "mriqcrp202:iqc_sst_5_tr",
+            "@type": "@id"
+        },
+        "iqc_sst_5_voxvol": {
+            "@id": "mriqcrp202:iqc_sst_5_voxvol",
+            "@type": "@id"
+        },
+        "iqc_sst_6_brain_mean": {
+            "@id": "mriqcrp202:iqc_sst_6_brain_mean",
+            "@type": "@id"
+        },
+        "iqc_sst_6_brain_std": {
+            "@id": "mriqcrp202:iqc_sst_6_brain_std",
+            "@type": "@id"
+        },
+        "iqc_sst_6_brain_tsnr_mean": {
+            "@id": "mriqcrp202:iqc_sst_6_brain_tsnr_mean",
+            "@type": "@id"
+        },
+        "iqc_sst_6_brain_tsnr_median": {
+            "@id": "mriqcrp202:iqc_sst_6_brain_tsnr_median",
+            "@type": "@id"
+        },
+        "iqc_sst_6_brain_tsnr_std": {
+            "@id": "mriqcrp202:iqc_sst_6_brain_tsnr_std",
+            "@type": "@id"
+        },
+        "iqc_sst_6_brainvol": {
+            "@id": "mriqcrp202:iqc_sst_6_brainvol",
+            "@type": "@id"
+        },
+        "iqc_sst_6_complete": {
+            "@id": "mriqcrp202:iqc_sst_6_complete",
+            "@type": "@id"
+        },
+        "iqc_sst_6_fm_complete": {
+            "@id": "mriqcrp202:iqc_sst_6_fm_complete",
+            "@type": "@id"
+        },
+        "iqc_sst_6_fm_invalid": {
+            "@id": "mriqcrp202:iqc_sst_6_fm_invalid",
+            "@type": "@id"
+        },
+        "iqc_sst_6_fm_missing": {
+            "@id": "mriqcrp202:iqc_sst_6_fm_missing",
+            "@type": "@id"
+        },
+        "iqc_sst_6_fm_pc_score": {
+            "@id": "mriqcrp202:iqc_sst_6_fm_pc_score",
+            "@type": "@id"
+        },
+        "iqc_sst_6_fm_qc_score": {
+            "@id": "mriqcrp202:iqc_sst_6_fm_qc_score",
+            "@type": "@id"
+        },
+        "iqc_sst_6_fm_wronglocus": {
+            "@id": "mriqcrp202:iqc_sst_6_fm_wronglocus",
+            "@type": "@id"
+        },
+        "iqc_sst_6_fwhm_x": {
+            "@id": "mriqcrp202:iqc_sst_6_fwhm_x",
+            "@type": "@id"
+        },
+        "iqc_sst_6_fwhm_y": {
+            "@id": "mriqcrp202:iqc_sst_6_fwhm_y",
+            "@type": "@id"
+        },
+        "iqc_sst_6_fwhm_z": {
+            "@id": "mriqcrp202:iqc_sst_6_fwhm_z",
+            "@type": "@id"
+        },
+        "iqc_sst_6_mean_motion": {
+            "@id": "mriqcrp202:iqc_sst_6_mean_motion",
+            "@type": "@id"
+        },
+        "iqc_sst_6_mean_motion_filt": {
+            "@id": "mriqcrp202:iqc_sst_6_mean_motion_filt",
+            "@type": "@id"
+        },
+        "iqc_sst_6_mean_motion_nody": {
+            "@id": "mriqcrp202:iqc_sst_6_mean_motion_nody",
+            "@type": "@id"
+        },
+        "iqc_sst_6_mm_filt_nody": {
+            "@id": "mriqcrp202:iqc_sst_6_mm_filt_nody",
+            "@type": "@id"
+        },
+        "iqc_sst_6_nreps": {
+            "@id": "mriqcrp202:iqc_sst_6_nreps",
+            "@type": "@id"
+        },
+        "iqc_sst_6_pc_score": {
+            "@id": "mriqcrp202:iqc_sst_6_pc_score",
+            "@type": "@id"
+        },
+        "iqc_sst_6_qc_score": {
+            "@id": "mriqcrp202:iqc_sst_6_qc_score",
+            "@type": "@id"
+        },
+        "iqc_sst_6_seriestime": {
+            "@id": "mriqcrp202:iqc_sst_6_seriestime",
+            "@type": "@id"
+        },
+        "iqc_sst_6_seuid": {
+            "@id": "mriqcrp202:iqc_sst_6_seuid",
+            "@type": "@id"
+        },
+        "iqc_sst_6_studydate": {
+            "@id": "mriqcrp202:iqc_sst_6_studydate",
+            "@type": "@id"
+        },
+        "iqc_sst_6_sub_02": {
+            "@id": "mriqcrp202:iqc_sst_6_sub_02",
+            "@type": "@id"
+        },
+        "iqc_sst_6_sub_02_filt": {
+            "@id": "mriqcrp202:iqc_sst_6_sub_02_filt",
+            "@type": "@id"
+        },
+        "iqc_sst_6_sub_02_filt_nody": {
+            "@id": "mriqcrp202:iqc_sst_6_sub_02_filt_nody",
+            "@type": "@id"
+        },
+        "iqc_sst_6_sub_02_nody": {
+            "@id": "mriqcrp202:iqc_sst_6_sub_02_nody",
+            "@type": "@id"
+        },
+        "iqc_sst_6_suid": {
+            "@id": "mriqcrp202:iqc_sst_6_suid",
+            "@type": "@id"
+        },
+        "iqc_sst_6_tr": {
+            "@id": "mriqcrp202:iqc_sst_6_tr",
+            "@type": "@id"
+        },
+        "iqc_sst_6_voxvol": {
+            "@id": "mriqcrp202:iqc_sst_6_voxvol",
+            "@type": "@id"
+        },
+        "iqc_sst_all_brain_mean": {
+            "@id": "mriqcrp202:iqc_sst_all_brain_mean",
+            "@type": "@id"
+        },
+        "iqc_sst_all_brain_std": {
+            "@id": "mriqcrp202:iqc_sst_all_brain_std",
+            "@type": "@id"
+        },
+        "iqc_sst_all_brain_tsnr_mean": {
+            "@id": "mriqcrp202:iqc_sst_all_brain_tsnr_mean",
+            "@type": "@id"
+        },
+        "iqc_sst_all_brain_tsnr_median": {
+            "@id": "mriqcrp202:iqc_sst_all_brain_tsnr_median",
+            "@type": "@id"
+        },
+        "iqc_sst_all_brain_tsnr_std": {
+            "@id": "mriqcrp202:iqc_sst_all_brain_tsnr_std",
+            "@type": "@id"
+        },
+        "iqc_sst_all_brainvol": {
+            "@id": "mriqcrp202:iqc_sst_all_brainvol",
+            "@type": "@id"
+        },
+        "iqc_sst_all_fwhm_x": {
+            "@id": "mriqcrp202:iqc_sst_all_fwhm_x",
+            "@type": "@id"
+        },
+        "iqc_sst_all_fwhm_y": {
+            "@id": "mriqcrp202:iqc_sst_all_fwhm_y",
+            "@type": "@id"
+        },
+        "iqc_sst_all_fwhm_z": {
+            "@id": "mriqcrp202:iqc_sst_all_fwhm_z",
+            "@type": "@id"
+        },
+        "iqc_sst_all_mean_motion": {
+            "@id": "mriqcrp202:iqc_sst_all_mean_motion",
+            "@type": "@id"
+        },
+        "iqc_sst_all_mean_motion_filt": {
+            "@id": "mriqcrp202:iqc_sst_all_mean_motion_filt",
+            "@type": "@id"
+        },
+        "iqc_sst_all_mean_motion_nody": {
+            "@id": "mriqcrp202:iqc_sst_all_mean_motion_nody",
+            "@type": "@id"
+        },
+        "iqc_sst_all_mm_filt_nody": {
+            "@id": "mriqcrp202:iqc_sst_all_mm_filt_nody",
+            "@type": "@id"
+        },
+        "iqc_sst_all_nreps": {
+            "@id": "mriqcrp202:iqc_sst_all_nreps",
+            "@type": "@id"
+        },
+        "iqc_sst_all_tr": {
+            "@id": "mriqcrp202:iqc_sst_all_tr",
+            "@type": "@id"
+        },
+        "iqc_sst_all_voxvol": {
+            "@id": "mriqcrp202:iqc_sst_all_voxvol",
+            "@type": "@id"
+        },
+        "iqc_sst_bad_ser": {
+            "@id": "mriqcrp202:iqc_sst_bad_ser",
+            "@type": "@id"
+        },
+        "iqc_sst_dark_qc": {
+            "@id": "mriqcrp202:iqc_sst_dark_qc",
+            "@type": "@id"
+        },
+        "iqc_sst_dco_qc": {
+            "@id": "mriqcrp202:iqc_sst_dco_qc",
+            "@type": "@id"
+        },
+        "iqc_sst_dis_qc": {
+            "@id": "mriqcrp202:iqc_sst_dis_qc",
+            "@type": "@id"
+        },
+        "iqc_sst_fa_qc": {
+            "@id": "mriqcrp202:iqc_sst_fa_qc",
+            "@type": "@id"
+        },
+        "iqc_sst_fm_dark_qc": {
+            "@id": "mriqcrp202:iqc_sst_fm_dark_qc",
+            "@type": "@id"
+        },
+        "iqc_sst_fm_dco_qc": {
+            "@id": "mriqcrp202:iqc_sst_fm_dco_qc",
+            "@type": "@id"
+        },
+        "iqc_sst_fm_dis_qc": {
+            "@id": "mriqcrp202:iqc_sst_fm_dis_qc",
+            "@type": "@id"
+        },
+        "iqc_sst_fm_fa_qc": {
+            "@id": "mriqcrp202:iqc_sst_fm_fa_qc",
+            "@type": "@id"
+        },
+        "iqc_sst_fm_gh_qc": {
+            "@id": "mriqcrp202:iqc_sst_fm_gh_qc",
+            "@type": "@id"
+        },
+        "iqc_sst_fm_hb_qc": {
+            "@id": "mriqcrp202:iqc_sst_fm_hb_qc",
+            "@type": "@id"
+        },
+        "iqc_sst_fm_ht_qc": {
+            "@id": "mriqcrp202:iqc_sst_fm_ht_qc",
+            "@type": "@id"
+        },
+        "iqc_sst_fm_incomp": {
+            "@id": "mriqcrp202:iqc_sst_fm_incomp",
+            "@type": "@id"
+        },
+        "iqc_sst_fm_invalid": {
+            "@id": "mriqcrp202:iqc_sst_fm_invalid",
+            "@type": "@id"
+        },
+        "iqc_sst_fm_miss_qc": {
+            "@id": "mriqcrp202:iqc_sst_fm_miss_qc",
+            "@type": "@id"
+        },
+        "iqc_sst_fm_missing": {
+            "@id": "mriqcrp202:iqc_sst_fm_missing",
+            "@type": "@id"
+        },
+        "iqc_sst_fm_mo_qc": {
+            "@id": "mriqcrp202:iqc_sst_fm_mo_qc",
+            "@type": "@id"
+        },
+        "iqc_sst_fm_moire_qc": {
+            "@id": "mriqcrp202:iqc_sst_fm_moire_qc",
+            "@type": "@id"
+        },
+        "iqc_sst_fm_other_qc": {
+            "@id": "mriqcrp202:iqc_sst_fm_other_qc",
+            "@type": "@id"
+        },
+        "iqc_sst_fm_pc_issues": {
+            "@id": "mriqcrp202:iqc_sst_fm_pc_issues",
+            "@type": "@id"
+        },
+        "iqc_sst_fm_qcs": {
+            "@id": "mriqcrp202:iqc_sst_fm_qcs",
+            "@type": "@id"
+        },
+        "iqc_sst_fm_recon_qc": {
+            "@id": "mriqcrp202:iqc_sst_fm_recon_qc",
+            "@type": "@id"
+        },
+        "iqc_sst_fm_rf_qc": {
+            "@id": "mriqcrp202:iqc_sst_fm_rf_qc",
+            "@type": "@id"
+        },
+        "iqc_sst_fm_sd_qc": {
+            "@id": "mriqcrp202:iqc_sst_fm_sd_qc",
+            "@type": "@id"
+        },
+        "iqc_sst_fm_si_qc": {
+            "@id": "mriqcrp202:iqc_sst_fm_si_qc",
+            "@type": "@id"
+        },
+        "iqc_sst_fm_slice_qc": {
+            "@id": "mriqcrp202:iqc_sst_fm_slice_qc",
+            "@type": "@id"
+        },
+        "iqc_sst_fm_sus_qc": {
+            "@id": "mriqcrp202:iqc_sst_fm_sus_qc",
+            "@type": "@id"
+        },
+        "iqc_sst_fm_vco_qc": {
+            "@id": "mriqcrp202:iqc_sst_fm_vco_qc",
+            "@type": "@id"
+        },
+        "iqc_sst_fm_wr_qc": {
+            "@id": "mriqcrp202:iqc_sst_fm_wr_qc",
+            "@type": "@id"
+        },
+        "iqc_sst_fm_wronglocus": {
+            "@id": "mriqcrp202:iqc_sst_fm_wronglocus",
+            "@type": "@id"
+        },
+        "iqc_sst_gh_qc": {
+            "@id": "mriqcrp202:iqc_sst_gh_qc",
+            "@type": "@id"
+        },
+        "iqc_sst_good_ser": {
+            "@id": "mriqcrp202:iqc_sst_good_ser",
+            "@type": "@id"
+        },
+        "iqc_sst_good_ser_wofm": {
+            "@id": "mriqcrp202:iqc_sst_good_ser_wofm",
+            "@type": "@id"
+        },
+        "iqc_sst_hb_qc": {
+            "@id": "mriqcrp202:iqc_sst_hb_qc",
+            "@type": "@id"
+        },
+        "iqc_sst_ht_qc": {
+            "@id": "mriqcrp202:iqc_sst_ht_qc",
+            "@type": "@id"
+        },
+        "iqc_sst_miss_qc": {
+            "@id": "mriqcrp202:iqc_sst_miss_qc",
+            "@type": "@id"
+        },
+        "iqc_sst_mo_qc": {
+            "@id": "mriqcrp202:iqc_sst_mo_qc",
+            "@type": "@id"
+        },
+        "iqc_sst_moire_qc": {
+            "@id": "mriqcrp202:iqc_sst_moire_qc",
+            "@type": "@id"
+        },
+        "iqc_sst_ok_brain_mean": {
+            "@id": "mriqcrp202:iqc_sst_ok_brain_mean",
+            "@type": "@id"
+        },
+        "iqc_sst_ok_brain_std": {
+            "@id": "mriqcrp202:iqc_sst_ok_brain_std",
+            "@type": "@id"
+        },
+        "iqc_sst_ok_brain_tsnr_mean": {
+            "@id": "mriqcrp202:iqc_sst_ok_brain_tsnr_mean",
+            "@type": "@id"
+        },
+        "iqc_sst_ok_brain_tsnr_median": {
+            "@id": "mriqcrp202:iqc_sst_ok_brain_tsnr_median",
+            "@type": "@id"
+        },
+        "iqc_sst_ok_brain_tsnr_std": {
+            "@id": "mriqcrp202:iqc_sst_ok_brain_tsnr_std",
+            "@type": "@id"
+        },
+        "iqc_sst_ok_brainvol": {
+            "@id": "mriqcrp202:iqc_sst_ok_brainvol",
+            "@type": "@id"
+        },
+        "iqc_sst_ok_fwhm_x": {
+            "@id": "mriqcrp202:iqc_sst_ok_fwhm_x",
+            "@type": "@id"
+        },
+        "iqc_sst_ok_fwhm_y": {
+            "@id": "mriqcrp202:iqc_sst_ok_fwhm_y",
+            "@type": "@id"
+        },
+        "iqc_sst_ok_fwhm_z": {
+            "@id": "mriqcrp202:iqc_sst_ok_fwhm_z",
+            "@type": "@id"
+        },
+        "iqc_sst_ok_mean_motion": {
+            "@id": "mriqcrp202:iqc_sst_ok_mean_motion",
+            "@type": "@id"
+        },
+        "iqc_sst_ok_mean_motion_filt": {
+            "@id": "mriqcrp202:iqc_sst_ok_mean_motion_filt",
+            "@type": "@id"
+        },
+        "iqc_sst_ok_mean_motion_nody": {
+            "@id": "mriqcrp202:iqc_sst_ok_mean_motion_nody",
+            "@type": "@id"
+        },
+        "iqc_sst_ok_mm_filt_nody": {
+            "@id": "mriqcrp202:iqc_sst_ok_mm_filt_nody",
+            "@type": "@id"
+        },
+        "iqc_sst_ok_nreps": {
+            "@id": "mriqcrp202:iqc_sst_ok_nreps",
+            "@type": "@id"
+        },
+        "iqc_sst_ok_ser": {
+            "@id": "mriqcrp202:iqc_sst_ok_ser",
+            "@type": "@id"
+        },
+        "iqc_sst_ok_sub_02": {
+            "@id": "mriqcrp202:iqc_sst_ok_sub_02",
+            "@type": "@id"
+        },
+        "iqc_sst_ok_sub_02_filt": {
+            "@id": "mriqcrp202:iqc_sst_ok_sub_02_filt",
+            "@type": "@id"
+        },
+        "iqc_sst_ok_sub_02_filt_nody": {
+            "@id": "mriqcrp202:iqc_sst_ok_sub_02_filt_nody",
+            "@type": "@id"
+        },
+        "iqc_sst_ok_sub_02_nody": {
+            "@id": "mriqcrp202:iqc_sst_ok_sub_02_nody",
+            "@type": "@id"
+        },
+        "iqc_sst_ok_tr": {
+            "@id": "mriqcrp202:iqc_sst_ok_tr",
+            "@type": "@id"
+        },
+        "iqc_sst_ok_voxvol": {
+            "@id": "mriqcrp202:iqc_sst_ok_voxvol",
+            "@type": "@id"
+        },
+        "iqc_sst_other_qc": {
+            "@id": "mriqcrp202:iqc_sst_other_qc",
+            "@type": "@id"
+        },
+        "iqc_sst_recon_qc": {
+            "@id": "mriqcrp202:iqc_sst_recon_qc",
+            "@type": "@id"
+        },
+        "iqc_sst_rf_qc": {
+            "@id": "mriqcrp202:iqc_sst_rf_qc",
+            "@type": "@id"
+        },
+        "iqc_sst_sd_qc": {
+            "@id": "mriqcrp202:iqc_sst_sd_qc",
+            "@type": "@id"
+        },
+        "iqc_sst_ser_incomp": {
+            "@id": "mriqcrp202:iqc_sst_ser_incomp",
+            "@type": "@id"
+        },
+        "iqc_sst_ser_pc_issues": {
+            "@id": "mriqcrp202:iqc_sst_ser_pc_issues",
+            "@type": "@id"
+        },
+        "iqc_sst_ser_qcs": {
+            "@id": "mriqcrp202:iqc_sst_ser_qcs",
+            "@type": "@id"
+        },
+        "iqc_sst_si_qc": {
+            "@id": "mriqcrp202:iqc_sst_si_qc",
+            "@type": "@id"
+        },
+        "iqc_sst_slice_qc": {
+            "@id": "mriqcrp202:iqc_sst_slice_qc",
+            "@type": "@id"
+        },
+        "iqc_sst_sus_qc": {
+            "@id": "mriqcrp202:iqc_sst_sus_qc",
+            "@type": "@id"
+        },
+        "iqc_sst_total_passpc": {
+            "@id": "mriqcrp202:iqc_sst_total_passpc",
+            "@type": "@id"
+        },
+        "iqc_sst_total_passqc": {
+            "@id": "mriqcrp202:iqc_sst_total_passqc",
+            "@type": "@id"
+        },
+        "iqc_sst_total_ser": {
+            "@id": "mriqcrp202:iqc_sst_total_ser",
+            "@type": "@id"
+        },
+        "iqc_sst_total_sub_02": {
+            "@id": "mriqcrp202:iqc_sst_total_sub_02",
+            "@type": "@id"
+        },
+        "iqc_sst_total_sub_02_filt": {
+            "@id": "mriqcrp202:iqc_sst_total_sub_02_filt",
+            "@type": "@id"
+        },
+        "iqc_sst_total_sub_02_filt_nody": {
+            "@id": "mriqcrp202:iqc_sst_total_sub_02_filt_nody",
+            "@type": "@id"
+        },
+        "iqc_sst_total_sub_02_nody": {
+            "@id": "mriqcrp202:iqc_sst_total_sub_02_nody",
+            "@type": "@id"
+        },
+        "iqc_sst_vco_qc": {
+            "@id": "mriqcrp202:iqc_sst_vco_qc",
+            "@type": "@id"
+        },
+        "iqc_sst_wr_qc": {
+            "@id": "mriqcrp202:iqc_sst_wr_qc",
+            "@type": "@id"
+        }
+    }
+}

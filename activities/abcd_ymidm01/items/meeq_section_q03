@@ -1,0 +1,47 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "meeq_section_q03",
+    "@type": "reproschema:Field",
+    "prefLabel": "meeq_section_q03",
+    "altLabel": "su_meeq_q03",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Marijuana helps people get along better with others (talk more; feel more romantic).",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Disagree Strongly",
+                "value": 1
+            },
+            {
+                "name": "Disagree Somewhat",
+                "value": 2
+            },
+            {
+                "name": "Uncertain",
+                "value": 3
+            },
+            {
+                "name": "Agree Somewhat",
+                "value": 4
+            },
+            {
+                "name": "Agree Strongly / tlfb_mj_l   == '1' ",
+                "value": 5
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Disagree Strongly; 2 = Disagree Somewhat; 3 = Uncertain; 4 = Agree Somewhat; 5 = Agree Strongly / tlfb_mj_l   == '1' ||   tlfb_mj_c_l   == '1' ||  tlfb_mj_synth_l   == '1' ||   tlfb_mj_synth_c_l   == '1'"
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "first_mj_8",
+    "@type": "reproschema:Field",
+    "prefLabel": "first_mj_8",
+    "altLabel": "su_first_mj_8",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "You mentioned earlier that you have had a puff of marijuana, weed or pot in the past. I want to ask some more questions about that.  Do you remember when this happened, or did you find out later (for example: your parents or somebody else told you about it)?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "I remember it",
+                "value": 1
+            },
+            {
+                "name": "I don't remember it - somebody told me about it",
+                "value": 2
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = I remember it; 2 = I don't remember it - somebody told me about it"
+        }
+    ]
+}

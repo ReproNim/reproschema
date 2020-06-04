@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "fam_enviro7r_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "fam_enviro7r_p",
+    "altLabel": "fes_7r_p fes_youth_q7",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "If there is a disagreement in our family, we try hard to smooth things over and keep the peace. /Si hay un desacuerdo en nuestra familia, hacemos todo lo posible por resolverlo y conservar la paz.",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "True /Verdadera",
+                "value": 0
+            },
+            {
+                "name": "False/ Falsa",
+                "value": 1
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = True /Verdadera; 1 = False/ Falsa"
+        }
+    ]
+}

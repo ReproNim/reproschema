@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "cbd_usage_type__5",
+    "@type": "reproschema:Field",
+    "prefLabel": "cbd_usage_type__5",
+    "altLabel": "medinv_plus_cbd_usage_type__5",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "During the past year, what type of CBD product did h/she use (choose all that apply)  En el ?ltimo a?o, /Qu? tipo de producto de CBD uso su hija/o? (elija todas las que correspondan) 5, Topical lotion or transdermal patch ",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "Yes",
+                "value": 1
+            },
+            {
+                "name": "No",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes; 0 = No"
+        }
+    ]
+}

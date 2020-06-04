@@ -1,0 +1,38 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "irma_hurtep_b4",
+    "@type": "reproschema:Field",
+    "prefLabel": "irma_hurtep_b4",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "When your child evacuated, did he or she stay in more than one place during the evacuation? Cuando tu hijo evacuA, ¿se quedA en más de un lugar durante la evacuaciAn?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "No  No",
+                "value": 0
+            },
+            {
+                "name": "Yes",
+                "value": 1
+            },
+            {
+                "name": "Yes",
+                "value": 2
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = No  No; 1 = Yes; 2 = Yes"
+        }
+    ]
+}

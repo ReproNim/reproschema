@@ -1,0 +1,2253 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+        "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/activities/abcd_smrip201/abcd_smrip201_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "abcd_smrip201_schema",
+    "skos:prefLabel": "abcd_smrip201",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "order": [
+            "smri_t1w_scs_3rdventricle",
+            "smri_t1w_scs_4thventricle",
+            "smri_t1w_scs_aal",
+            "smri_t1w_scs_aar",
+            "smri_t1w_scs_amygdalalh",
+            "smri_t1w_scs_amygdalarh",
+            "smri_t1w_scs_bstem",
+            "smri_t1w_scs_caudatelh",
+            "smri_t1w_scs_caudaterh",
+            "smri_t1w_scs_cbwmatterlh",
+            "smri_t1w_scs_cbwmatterrh",
+            "smri_t1w_scs_ccat",
+            "smri_t1w_scs_ccct",
+            "smri_t1w_scs_ccmidat",
+            "smri_t1w_scs_ccmidps",
+            "smri_t1w_scs_ccps",
+            "smri_t1w_scs_crbcortexlh",
+            "smri_t1w_scs_crbcortexrh",
+            "smri_t1w_scs_crbwmatterlh",
+            "smri_t1w_scs_crbwmatterrh",
+            "smri_t1w_scs_csf",
+            "smri_t1w_scs_hpuslh",
+            "smri_t1w_scs_hpusrh",
+            "smri_t1w_scs_inflatventlh",
+            "smri_t1w_scs_inflatventrh",
+            "smri_t1w_scs_lesionlh",
+            "smri_t1w_scs_lesionrh",
+            "smri_t1w_scs_ltventriclelh",
+            "smri_t1w_scs_ltventriclerh",
+            "smri_t1w_scs_pallidumlh",
+            "smri_t1w_scs_pallidumrh",
+            "smri_t1w_scs_putamenlh",
+            "smri_t1w_scs_putamenrh",
+            "smri_t1w_scs_tplh",
+            "smri_t1w_scs_tprh",
+            "smri_t1w_scs_vedclh",
+            "smri_t1w_scs_vedcrh",
+            "smri_t1w_scs_wmhint",
+            "smri_t1w_scs_wmhintlh",
+            "smri_t1w_scs_wmhintrh",
+            "smri_t2w_scs_3rdventricle",
+            "smri_t2w_scs_4thventricle",
+            "smri_t2w_scs_aal",
+            "smri_t2w_scs_aar",
+            "smri_t2w_scs_amygdalalh",
+            "smri_t2w_scs_amygdalarh",
+            "smri_t2w_scs_bstem",
+            "smri_t2w_scs_caudatelh",
+            "smri_t2w_scs_caudaterh",
+            "smri_t2w_scs_cbwmatterlh",
+            "smri_t2w_scs_cbwmatterrh",
+            "smri_t2w_scs_ccat",
+            "smri_t2w_scs_ccct",
+            "smri_t2w_scs_ccmidat",
+            "smri_t2w_scs_ccmidps",
+            "smri_t2w_scs_ccps",
+            "smri_t2w_scs_crbcortexlh",
+            "smri_t2w_scs_crbcortexrh",
+            "smri_t2w_scs_crbwmatterlh",
+            "smri_t2w_scs_crbwmatterrh",
+            "smri_t2w_scs_csf",
+            "smri_t2w_scs_hpuslh",
+            "smri_t2w_scs_hpusrh",
+            "smri_t2w_scs_inflatventlh",
+            "smri_t2w_scs_inflatventrh",
+            "smri_t2w_scs_lesionlh",
+            "smri_t2w_scs_lesionrh",
+            "smri_t2w_scs_ltventriclelh",
+            "smri_t2w_scs_ltventriclerh",
+            "smri_t2w_scs_pallidumlh",
+            "smri_t2w_scs_pallidumrh",
+            "smri_t2w_scs_putamenlh",
+            "smri_t2w_scs_putamenrh",
+            "smri_t2w_scs_tplh",
+            "smri_t2w_scs_tprh",
+            "smri_t2w_scs_vedclh",
+            "smri_t2w_scs_vedcrh",
+            "smri_t2w_scs_wmhint",
+            "smri_t2w_scs_wmhintlh",
+            "smri_t2w_scs_wmhintrh",
+            "smri_t2wcnt_cdk_banksstslh",
+            "smri_t2wcnt_cdk_banksstsrh",
+            "smri_t2wcnt_cdk_cdatcgatelh",
+            "smri_t2wcnt_cdk_cdatcgaterh",
+            "smri_t2wcnt_cdk_cdmdflh",
+            "smri_t2wcnt_cdk_cdmdfrh",
+            "smri_t2wcnt_cdk_cuneuslh",
+            "smri_t2wcnt_cdk_cuneusrh",
+            "smri_t2wcnt_cdk_ehinallh",
+            "smri_t2wcnt_cdk_ehinalrh",
+            "smri_t2wcnt_cdk_fpolelh",
+            "smri_t2wcnt_cdk_fpolerh",
+            "smri_t2wcnt_cdk_fusiformlh",
+            "smri_t2wcnt_cdk_fusiformrh",
+            "smri_t2wcnt_cdk_ifpllh",
+            "smri_t2wcnt_cdk_ifplrh",
+            "smri_t2wcnt_cdk_iftmlh",
+            "smri_t2wcnt_cdk_iftmrh",
+            "smri_t2wcnt_cdk_ihcgatelh",
+            "smri_t2wcnt_cdk_ihcgaterh",
+            "smri_t2wcnt_cdk_insulalh",
+            "smri_t2wcnt_cdk_insularh",
+            "smri_t2wcnt_cdk_linguallh",
+            "smri_t2wcnt_cdk_lingualrh",
+            "smri_t2wcnt_cdk_ltoboflh",
+            "smri_t2wcnt_cdk_ltobofrh",
+            "smri_t2wcnt_cdk_ltocclh",
+            "smri_t2wcnt_cdk_ltoccrh",
+            "smri_t2wcnt_cdk_mdtmlh",
+            "smri_t2wcnt_cdk_mdtmrh",
+            "smri_t2wcnt_cdk_mean",
+            "smri_t2wcnt_cdk_meanlh",
+            "smri_t2wcnt_cdk_meanrh",
+            "smri_t2wcnt_cdk_moboflh",
+            "smri_t2wcnt_cdk_mobofrh",
+            "smri_t2wcnt_cdk_paractlh",
+            "smri_t2wcnt_cdk_paractrh",
+            "smri_t2wcnt_cdk_parahpallh",
+            "smri_t2wcnt_cdk_parahpalrh",
+            "smri_t2wcnt_cdk_parstgslh",
+            "smri_t2wcnt_cdk_parstgsrh",
+            "smri_t2wcnt_cdk_pericclh",
+            "smri_t2wcnt_cdk_periccrh",
+            "smri_t2wcnt_cdk_pnlh",
+            "smri_t2wcnt_cdk_pnrh",
+            "smri_t2wcnt_cdk_pobalislh",
+            "smri_t2wcnt_cdk_pobalisrh",
+            "smri_t2wcnt_cdk_popclh",
+            "smri_t2wcnt_cdk_popcrh",
+            "smri_t2wcnt_cdk_postctlh",
+            "smri_t2wcnt_cdk_postctrh",
+            "smri_t2wcnt_cdk_prectlh",
+            "smri_t2wcnt_cdk_prectrh",
+            "smri_t2wcnt_cdk_pscgatelh",
+            "smri_t2wcnt_cdk_pscgaterh",
+            "smri_t2wcnt_cdk_rtatcgatelh",
+            "smri_t2wcnt_cdk_rtatcgaterh",
+            "smri_t2wcnt_cdk_rtmdflh",
+            "smri_t2wcnt_cdk_rtmdfrh",
+            "smri_t2wcnt_cdk_smlh",
+            "smri_t2wcnt_cdk_smrh",
+            "smri_t2wcnt_cdk_suflh",
+            "smri_t2wcnt_cdk_sufrh",
+            "smri_t2wcnt_cdk_supllh",
+            "smri_t2wcnt_cdk_suplrh",
+            "smri_t2wcnt_cdk_sutmlh",
+            "smri_t2wcnt_cdk_sutmrh",
+            "smri_t2wcnt_cdk_tmpolelh",
+            "smri_t2wcnt_cdk_tmpolerh",
+            "smri_t2wcnt_cdk_tvtmlh",
+            "smri_t2wcnt_cdk_tvtmrh",
+            "smri_t2wcnt_cf12_aomtmlh",
+            "smri_t2wcnt_cf12_aomtmrh",
+            "smri_t2wcnt_cf12_ctlh",
+            "smri_t2wcnt_cf12_ctrh",
+            "smri_t2wcnt_cf12_dltpreflh",
+            "smri_t2wcnt_cf12_dltprefrh",
+            "smri_t2wcnt_cf12_dmflh",
+            "smri_t2wcnt_cf12_dmfrh",
+            "smri_t2wcnt_cf12_ifpllh",
+            "smri_t2wcnt_cf12_ifplrh",
+            "smri_t2wcnt_cf12_oboflh",
+            "smri_t2wcnt_cf12_obofrh",
+            "smri_t2wcnt_cf12_occlh",
+            "smri_t2wcnt_cf12_occrh",
+            "smri_t2wcnt_cf12_pnlh",
+            "smri_t2wcnt_cf12_pnrh",
+            "smri_t2wcnt_cf12_polttmlh",
+            "smri_t2wcnt_cf12_polttmrh",
+            "smri_t2wcnt_cf12_popclh",
+            "smri_t2wcnt_cf12_popcrh",
+            "smri_t2wcnt_cf12_supllh",
+            "smri_t2wcnt_cf12_suplrh",
+            "smri_t2wcnt_cf12_sutmlh",
+            "smri_t2wcnt_cf12_sutmrh",
+            "smri_t2wcnt_cf2_flh",
+            "smri_t2wcnt_cf2_frh",
+            "smri_t2wcnt_cf2_pslh",
+            "smri_t2wcnt_cf2_psrh",
+            "smri_t2wcnt_cf4_flh",
+            "smri_t2wcnt_cf4_frh",
+            "smri_t2wcnt_cf4_occlh",
+            "smri_t2wcnt_cf4_occrh",
+            "smri_t2wcnt_cf4_pllh",
+            "smri_t2wcnt_cf4_plrh",
+            "smri_t2wcnt_cf4_tmlh",
+            "smri_t2wcnt_cf4_tmrh",
+            "smri_t2wg02_cdk_banksstslh",
+            "smri_t2wg02_cdk_banksstsrh",
+            "smri_t2wg02_cdk_cdatcgatelh",
+            "smri_t2wg02_cdk_cdatcgaterh",
+            "smri_t2wg02_cdk_cdmdflh",
+            "smri_t2wg02_cdk_cdmdfrh",
+            "smri_t2wg02_cdk_cuneuslh",
+            "smri_t2wg02_cdk_cuneusrh",
+            "smri_t2wg02_cdk_ehinallh",
+            "smri_t2wg02_cdk_ehinalrh",
+            "smri_t2wg02_cdk_fpolelh",
+            "smri_t2wg02_cdk_fpolerh",
+            "smri_t2wg02_cdk_fusiformlh",
+            "smri_t2wg02_cdk_fusiformrh",
+            "smri_t2wg02_cdk_ifpllh",
+            "smri_t2wg02_cdk_ifplrh",
+            "smri_t2wg02_cdk_iftmlh",
+            "smri_t2wg02_cdk_iftmrh",
+            "smri_t2wg02_cdk_ihcgatelh",
+            "smri_t2wg02_cdk_ihcgaterh",
+            "smri_t2wg02_cdk_insulalh",
+            "smri_t2wg02_cdk_insularh",
+            "smri_t2wg02_cdk_linguallh",
+            "smri_t2wg02_cdk_lingualrh",
+            "smri_t2wg02_cdk_ltoboflh",
+            "smri_t2wg02_cdk_ltobofrh",
+            "smri_t2wg02_cdk_ltocclh",
+            "smri_t2wg02_cdk_ltoccrh",
+            "smri_t2wg02_cdk_mdtmlh",
+            "smri_t2wg02_cdk_mdtmrh",
+            "smri_t2wg02_cdk_mean",
+            "smri_t2wg02_cdk_meanlh",
+            "smri_t2wg02_cdk_meanrh",
+            "smri_t2wg02_cdk_moboflh",
+            "smri_t2wg02_cdk_mobofrh",
+            "smri_t2wg02_cdk_paractlh",
+            "smri_t2wg02_cdk_paractrh",
+            "smri_t2wg02_cdk_parahpallh",
+            "smri_t2wg02_cdk_parahpalrh",
+            "smri_t2wg02_cdk_parstgslh",
+            "smri_t2wg02_cdk_parstgsrh",
+            "smri_t2wg02_cdk_pericclh",
+            "smri_t2wg02_cdk_periccrh",
+            "smri_t2wg02_cdk_pnlh",
+            "smri_t2wg02_cdk_pnrh",
+            "smri_t2wg02_cdk_pobalislh",
+            "smri_t2wg02_cdk_pobalisrh",
+            "smri_t2wg02_cdk_popclh",
+            "smri_t2wg02_cdk_popcrh",
+            "smri_t2wg02_cdk_postctlh",
+            "smri_t2wg02_cdk_postctrh",
+            "smri_t2wg02_cdk_prectlh",
+            "smri_t2wg02_cdk_prectrh",
+            "smri_t2wg02_cdk_pscgatelh",
+            "smri_t2wg02_cdk_pscgaterh",
+            "smri_t2wg02_cdk_rtatcgatelh",
+            "smri_t2wg02_cdk_rtatcgaterh",
+            "smri_t2wg02_cdk_rtmdflh",
+            "smri_t2wg02_cdk_rtmdfrh",
+            "smri_t2wg02_cdk_smlh",
+            "smri_t2wg02_cdk_smrh",
+            "smri_t2wg02_cdk_suflh",
+            "smri_t2wg02_cdk_sufrh",
+            "smri_t2wg02_cdk_supllh",
+            "smri_t2wg02_cdk_suplrh",
+            "smri_t2wg02_cdk_sutmlh",
+            "smri_t2wg02_cdk_sutmrh",
+            "smri_t2wg02_cdk_tmpolelh",
+            "smri_t2wg02_cdk_tmpolerh",
+            "smri_t2wg02_cdk_tvtmlh",
+            "smri_t2wg02_cdk_tvtmrh",
+            "smri_t2wg02_cf12_aomtmlh",
+            "smri_t2wg02_cf12_aomtmrh",
+            "smri_t2wg02_cf12_ctlh",
+            "smri_t2wg02_cf12_ctrh",
+            "smri_t2wg02_cf12_dltpreflh",
+            "smri_t2wg02_cf12_dltprefrh",
+            "smri_t2wg02_cf12_dmflh",
+            "smri_t2wg02_cf12_dmfrh",
+            "smri_t2wg02_cf12_ifpllh",
+            "smri_t2wg02_cf12_ifplrh",
+            "smri_t2wg02_cf12_oboflh",
+            "smri_t2wg02_cf12_obofrh",
+            "smri_t2wg02_cf12_occlh",
+            "smri_t2wg02_cf12_occrh",
+            "smri_t2wg02_cf12_pnlh",
+            "smri_t2wg02_cf12_pnrh",
+            "smri_t2wg02_cf12_polttmlh",
+            "smri_t2wg02_cf12_polttmrh",
+            "smri_t2wg02_cf12_popclh",
+            "smri_t2wg02_cf12_popcrh",
+            "smri_t2wg02_cf12_supllh",
+            "smri_t2wg02_cf12_suplrh",
+            "smri_t2wg02_cf12_sutmlh",
+            "smri_t2wg02_cf12_sutmrh",
+            "smri_t2wg02_cf2_flh",
+            "smri_t2wg02_cf2_frh",
+            "smri_t2wg02_cf2_pslh",
+            "smri_t2wg02_cf2_psrh",
+            "smri_t2wg02_cf4_flh",
+            "smri_t2wg02_cf4_frh",
+            "smri_t2wg02_cf4_occlh",
+            "smri_t2wg02_cf4_occrh",
+            "smri_t2wg02_cf4_pllh",
+            "smri_t2wg02_cf4_plrh",
+            "smri_t2wg02_cf4_tmlh",
+            "smri_t2wg02_cf4_tmrh",
+            "smri_t2ww02_cdk_banksstslh",
+            "smri_t2ww02_cdk_banksstsrh",
+            "smri_t2ww02_cdk_cdatcgatelh",
+            "smri_t2ww02_cdk_cdatcgaterh",
+            "smri_t2ww02_cdk_cdmdflh",
+            "smri_t2ww02_cdk_cdmdfrh",
+            "smri_t2ww02_cdk_cuneuslh",
+            "smri_t2ww02_cdk_cuneusrh",
+            "smri_t2ww02_cdk_ehinallh",
+            "smri_t2ww02_cdk_ehinalrh",
+            "smri_t2ww02_cdk_fpolelh",
+            "smri_t2ww02_cdk_fpolerh",
+            "smri_t2ww02_cdk_fusiformlh",
+            "smri_t2ww02_cdk_fusiformrh",
+            "smri_t2ww02_cdk_ifpllh",
+            "smri_t2ww02_cdk_ifplrh",
+            "smri_t2ww02_cdk_iftmlh",
+            "smri_t2ww02_cdk_iftmrh",
+            "smri_t2ww02_cdk_ihcgatelh",
+            "smri_t2ww02_cdk_ihcgaterh",
+            "smri_t2ww02_cdk_insulalh",
+            "smri_t2ww02_cdk_insularh",
+            "smri_t2ww02_cdk_linguallh",
+            "smri_t2ww02_cdk_lingualrh",
+            "smri_t2ww02_cdk_ltoboflh",
+            "smri_t2ww02_cdk_ltobofrh",
+            "smri_t2ww02_cdk_ltocclh",
+            "smri_t2ww02_cdk_ltoccrh",
+            "smri_t2ww02_cdk_mdtmlh",
+            "smri_t2ww02_cdk_mdtmrh",
+            "smri_t2ww02_cdk_mean",
+            "smri_t2ww02_cdk_meanlh",
+            "smri_t2ww02_cdk_meanrh",
+            "smri_t2ww02_cdk_moboflh",
+            "smri_t2ww02_cdk_mobofrh",
+            "smri_t2ww02_cdk_paractlh",
+            "smri_t2ww02_cdk_paractrh",
+            "smri_t2ww02_cdk_parahpallh",
+            "smri_t2ww02_cdk_parahpalrh",
+            "smri_t2ww02_cdk_parstgslh",
+            "smri_t2ww02_cdk_parstgsrh",
+            "smri_t2ww02_cdk_pericclh",
+            "smri_t2ww02_cdk_periccrh",
+            "smri_t2ww02_cdk_pnlh",
+            "smri_t2ww02_cdk_pnrh",
+            "smri_t2ww02_cdk_pobalislh",
+            "smri_t2ww02_cdk_pobalisrh",
+            "smri_t2ww02_cdk_popclh",
+            "smri_t2ww02_cdk_popcrh",
+            "smri_t2ww02_cdk_postctlh",
+            "smri_t2ww02_cdk_postctrh",
+            "smri_t2ww02_cdk_prectlh",
+            "smri_t2ww02_cdk_prectrh",
+            "smri_t2ww02_cdk_pscgatelh",
+            "smri_t2ww02_cdk_pscgaterh",
+            "smri_t2ww02_cdk_rtatcgatelh",
+            "smri_t2ww02_cdk_rtatcgaterh",
+            "smri_t2ww02_cdk_rtmdflh",
+            "smri_t2ww02_cdk_rtmdfrh",
+            "smri_t2ww02_cdk_smlh",
+            "smri_t2ww02_cdk_smrh",
+            "smri_t2ww02_cdk_suflh",
+            "smri_t2ww02_cdk_sufrh",
+            "smri_t2ww02_cdk_supllh",
+            "smri_t2ww02_cdk_suplrh",
+            "smri_t2ww02_cdk_sutmlh",
+            "smri_t2ww02_cdk_sutmrh",
+            "smri_t2ww02_cdk_tmpolelh",
+            "smri_t2ww02_cdk_tmpolerh",
+            "smri_t2ww02_cdk_tvtmlh",
+            "smri_t2ww02_cdk_tvtmrh",
+            "smri_t2ww02_cf12_aomtmlh",
+            "smri_t2ww02_cf12_aomtmrh",
+            "smri_t2ww02_cf12_ctlh",
+            "smri_t2ww02_cf12_ctrh",
+            "smri_t2ww02_cf12_dltpreflh",
+            "smri_t2ww02_cf12_dltprefrh",
+            "smri_t2ww02_cf12_dmflh",
+            "smri_t2ww02_cf12_dmfrh",
+            "smri_t2ww02_cf12_ifpllh",
+            "smri_t2ww02_cf12_ifplrh",
+            "smri_t2ww02_cf12_oboflh",
+            "smri_t2ww02_cf12_obofrh",
+            "smri_t2ww02_cf12_occlh",
+            "smri_t2ww02_cf12_occrh",
+            "smri_t2ww02_cf12_pnlh",
+            "smri_t2ww02_cf12_pnrh",
+            "smri_t2ww02_cf12_polttmlh",
+            "smri_t2ww02_cf12_polttmrh",
+            "smri_t2ww02_cf12_popclh",
+            "smri_t2ww02_cf12_popcrh",
+            "smri_t2ww02_cf12_supllh",
+            "smri_t2ww02_cf12_suplrh",
+            "smri_t2ww02_cf12_sutmlh",
+            "smri_t2ww02_cf12_sutmrh",
+            "smri_t2ww02_cf2_flh",
+            "smri_t2ww02_cf2_frh",
+            "smri_t2ww02_cf2_pslh",
+            "smri_t2ww02_cf2_psrh",
+            "smri_t2ww02_cf4_flh",
+            "smri_t2ww02_cf4_frh",
+            "smri_t2ww02_cf4_occlh",
+            "smri_t2ww02_cf4_occrh",
+            "smri_t2ww02_cf4_pllh",
+            "smri_t2ww02_cf4_plrh",
+            "smri_t2ww02_cf4_tmlh",
+            "smri_t2ww02_cf4_tmrh",
+            "smri_vol_scs_3rdventricle",
+            "smri_vol_scs_4thventricle",
+            "smri_vol_scs_aal",
+            "smri_vol_scs_aar",
+            "smri_vol_scs_allventricles",
+            "smri_vol_scs_amygdalalh",
+            "smri_vol_scs_amygdalarh",
+            "smri_vol_scs_bstem",
+            "smri_vol_scs_caudatelh",
+            "smri_vol_scs_caudaterh",
+            "smri_vol_scs_cbwmatterlh",
+            "smri_vol_scs_cbwmatterrh",
+            "smri_vol_scs_ccat",
+            "smri_vol_scs_ccct",
+            "smri_vol_scs_ccmidat",
+            "smri_vol_scs_ccmidps",
+            "smri_vol_scs_ccps",
+            "smri_vol_scs_crbcortexlh",
+            "smri_vol_scs_crbcortexrh",
+            "smri_vol_scs_crbwmatterlh",
+            "smri_vol_scs_crbwmatterrh",
+            "smri_vol_scs_csf",
+            "smri_vol_scs_hpuslh",
+            "smri_vol_scs_hpusrh",
+            "smri_vol_scs_inflatventlh",
+            "smri_vol_scs_inflatventrh",
+            "smri_vol_scs_intracranialv",
+            "smri_vol_scs_latventricles",
+            "smri_vol_scs_lesionlh",
+            "smri_vol_scs_lesionrh",
+            "smri_vol_scs_ltventriclelh",
+            "smri_vol_scs_ltventriclerh",
+            "smri_vol_scs_pallidumlh",
+            "smri_vol_scs_pallidumrh",
+            "smri_vol_scs_putamenlh",
+            "smri_vol_scs_putamenrh",
+            "smri_vol_scs_subcorticalgv",
+            "smri_vol_scs_suprateialv",
+            "smri_vol_scs_tplh",
+            "smri_vol_scs_tprh",
+            "smri_vol_scs_vedclh",
+            "smri_vol_scs_vedcrh",
+            "smri_vol_scs_wholeb",
+            "smri_vol_scs_wmhint",
+            "smri_vol_scs_wmhintlh",
+            "smri_vol_scs_wmhintrh"
+        ],
+        "shuffle": false,
+        "addProperties": [
+            {
+                "variableName": "smri_t1w_scs_3rdventricle",
+                "isAbout": "smri_t1w_scs_3rdventricle"
+            },
+            {
+                "variableName": "smri_t1w_scs_4thventricle",
+                "isAbout": "smri_t1w_scs_4thventricle"
+            },
+            {
+                "variableName": "smri_t1w_scs_aal",
+                "isAbout": "smri_t1w_scs_aal"
+            },
+            {
+                "variableName": "smri_t1w_scs_aar",
+                "isAbout": "smri_t1w_scs_aar"
+            },
+            {
+                "variableName": "smri_t1w_scs_amygdalalh",
+                "isAbout": "smri_t1w_scs_amygdalalh"
+            },
+            {
+                "variableName": "smri_t1w_scs_amygdalarh",
+                "isAbout": "smri_t1w_scs_amygdalarh"
+            },
+            {
+                "variableName": "smri_t1w_scs_bstem",
+                "isAbout": "smri_t1w_scs_bstem"
+            },
+            {
+                "variableName": "smri_t1w_scs_caudatelh",
+                "isAbout": "smri_t1w_scs_caudatelh"
+            },
+            {
+                "variableName": "smri_t1w_scs_caudaterh",
+                "isAbout": "smri_t1w_scs_caudaterh"
+            },
+            {
+                "variableName": "smri_t1w_scs_cbwmatterlh",
+                "isAbout": "smri_t1w_scs_cbwmatterlh"
+            },
+            {
+                "variableName": "smri_t1w_scs_cbwmatterrh",
+                "isAbout": "smri_t1w_scs_cbwmatterrh"
+            },
+            {
+                "variableName": "smri_t1w_scs_ccat",
+                "isAbout": "smri_t1w_scs_ccat"
+            },
+            {
+                "variableName": "smri_t1w_scs_ccct",
+                "isAbout": "smri_t1w_scs_ccct"
+            },
+            {
+                "variableName": "smri_t1w_scs_ccmidat",
+                "isAbout": "smri_t1w_scs_ccmidat"
+            },
+            {
+                "variableName": "smri_t1w_scs_ccmidps",
+                "isAbout": "smri_t1w_scs_ccmidps"
+            },
+            {
+                "variableName": "smri_t1w_scs_ccps",
+                "isAbout": "smri_t1w_scs_ccps"
+            },
+            {
+                "variableName": "smri_t1w_scs_crbcortexlh",
+                "isAbout": "smri_t1w_scs_crbcortexlh"
+            },
+            {
+                "variableName": "smri_t1w_scs_crbcortexrh",
+                "isAbout": "smri_t1w_scs_crbcortexrh"
+            },
+            {
+                "variableName": "smri_t1w_scs_crbwmatterlh",
+                "isAbout": "smri_t1w_scs_crbwmatterlh"
+            },
+            {
+                "variableName": "smri_t1w_scs_crbwmatterrh",
+                "isAbout": "smri_t1w_scs_crbwmatterrh"
+            },
+            {
+                "variableName": "smri_t1w_scs_csf",
+                "isAbout": "smri_t1w_scs_csf"
+            },
+            {
+                "variableName": "smri_t1w_scs_hpuslh",
+                "isAbout": "smri_t1w_scs_hpuslh"
+            },
+            {
+                "variableName": "smri_t1w_scs_hpusrh",
+                "isAbout": "smri_t1w_scs_hpusrh"
+            },
+            {
+                "variableName": "smri_t1w_scs_inflatventlh",
+                "isAbout": "smri_t1w_scs_inflatventlh"
+            },
+            {
+                "variableName": "smri_t1w_scs_inflatventrh",
+                "isAbout": "smri_t1w_scs_inflatventrh"
+            },
+            {
+                "variableName": "smri_t1w_scs_lesionlh",
+                "isAbout": "smri_t1w_scs_lesionlh"
+            },
+            {
+                "variableName": "smri_t1w_scs_lesionrh",
+                "isAbout": "smri_t1w_scs_lesionrh"
+            },
+            {
+                "variableName": "smri_t1w_scs_ltventriclelh",
+                "isAbout": "smri_t1w_scs_ltventriclelh"
+            },
+            {
+                "variableName": "smri_t1w_scs_ltventriclerh",
+                "isAbout": "smri_t1w_scs_ltventriclerh"
+            },
+            {
+                "variableName": "smri_t1w_scs_pallidumlh",
+                "isAbout": "smri_t1w_scs_pallidumlh"
+            },
+            {
+                "variableName": "smri_t1w_scs_pallidumrh",
+                "isAbout": "smri_t1w_scs_pallidumrh"
+            },
+            {
+                "variableName": "smri_t1w_scs_putamenlh",
+                "isAbout": "smri_t1w_scs_putamenlh"
+            },
+            {
+                "variableName": "smri_t1w_scs_putamenrh",
+                "isAbout": "smri_t1w_scs_putamenrh"
+            },
+            {
+                "variableName": "smri_t1w_scs_tplh",
+                "isAbout": "smri_t1w_scs_tplh"
+            },
+            {
+                "variableName": "smri_t1w_scs_tprh",
+                "isAbout": "smri_t1w_scs_tprh"
+            },
+            {
+                "variableName": "smri_t1w_scs_vedclh",
+                "isAbout": "smri_t1w_scs_vedclh"
+            },
+            {
+                "variableName": "smri_t1w_scs_vedcrh",
+                "isAbout": "smri_t1w_scs_vedcrh"
+            },
+            {
+                "variableName": "smri_t1w_scs_wmhint",
+                "isAbout": "smri_t1w_scs_wmhint"
+            },
+            {
+                "variableName": "smri_t1w_scs_wmhintlh",
+                "isAbout": "smri_t1w_scs_wmhintlh"
+            },
+            {
+                "variableName": "smri_t1w_scs_wmhintrh",
+                "isAbout": "smri_t1w_scs_wmhintrh"
+            },
+            {
+                "variableName": "smri_t2w_scs_3rdventricle",
+                "isAbout": "smri_t2w_scs_3rdventricle"
+            },
+            {
+                "variableName": "smri_t2w_scs_4thventricle",
+                "isAbout": "smri_t2w_scs_4thventricle"
+            },
+            {
+                "variableName": "smri_t2w_scs_aal",
+                "isAbout": "smri_t2w_scs_aal"
+            },
+            {
+                "variableName": "smri_t2w_scs_aar",
+                "isAbout": "smri_t2w_scs_aar"
+            },
+            {
+                "variableName": "smri_t2w_scs_amygdalalh",
+                "isAbout": "smri_t2w_scs_amygdalalh"
+            },
+            {
+                "variableName": "smri_t2w_scs_amygdalarh",
+                "isAbout": "smri_t2w_scs_amygdalarh"
+            },
+            {
+                "variableName": "smri_t2w_scs_bstem",
+                "isAbout": "smri_t2w_scs_bstem"
+            },
+            {
+                "variableName": "smri_t2w_scs_caudatelh",
+                "isAbout": "smri_t2w_scs_caudatelh"
+            },
+            {
+                "variableName": "smri_t2w_scs_caudaterh",
+                "isAbout": "smri_t2w_scs_caudaterh"
+            },
+            {
+                "variableName": "smri_t2w_scs_cbwmatterlh",
+                "isAbout": "smri_t2w_scs_cbwmatterlh"
+            },
+            {
+                "variableName": "smri_t2w_scs_cbwmatterrh",
+                "isAbout": "smri_t2w_scs_cbwmatterrh"
+            },
+            {
+                "variableName": "smri_t2w_scs_ccat",
+                "isAbout": "smri_t2w_scs_ccat"
+            },
+            {
+                "variableName": "smri_t2w_scs_ccct",
+                "isAbout": "smri_t2w_scs_ccct"
+            },
+            {
+                "variableName": "smri_t2w_scs_ccmidat",
+                "isAbout": "smri_t2w_scs_ccmidat"
+            },
+            {
+                "variableName": "smri_t2w_scs_ccmidps",
+                "isAbout": "smri_t2w_scs_ccmidps"
+            },
+            {
+                "variableName": "smri_t2w_scs_ccps",
+                "isAbout": "smri_t2w_scs_ccps"
+            },
+            {
+                "variableName": "smri_t2w_scs_crbcortexlh",
+                "isAbout": "smri_t2w_scs_crbcortexlh"
+            },
+            {
+                "variableName": "smri_t2w_scs_crbcortexrh",
+                "isAbout": "smri_t2w_scs_crbcortexrh"
+            },
+            {
+                "variableName": "smri_t2w_scs_crbwmatterlh",
+                "isAbout": "smri_t2w_scs_crbwmatterlh"
+            },
+            {
+                "variableName": "smri_t2w_scs_crbwmatterrh",
+                "isAbout": "smri_t2w_scs_crbwmatterrh"
+            },
+            {
+                "variableName": "smri_t2w_scs_csf",
+                "isAbout": "smri_t2w_scs_csf"
+            },
+            {
+                "variableName": "smri_t2w_scs_hpuslh",
+                "isAbout": "smri_t2w_scs_hpuslh"
+            },
+            {
+                "variableName": "smri_t2w_scs_hpusrh",
+                "isAbout": "smri_t2w_scs_hpusrh"
+            },
+            {
+                "variableName": "smri_t2w_scs_inflatventlh",
+                "isAbout": "smri_t2w_scs_inflatventlh"
+            },
+            {
+                "variableName": "smri_t2w_scs_inflatventrh",
+                "isAbout": "smri_t2w_scs_inflatventrh"
+            },
+            {
+                "variableName": "smri_t2w_scs_lesionlh",
+                "isAbout": "smri_t2w_scs_lesionlh"
+            },
+            {
+                "variableName": "smri_t2w_scs_lesionrh",
+                "isAbout": "smri_t2w_scs_lesionrh"
+            },
+            {
+                "variableName": "smri_t2w_scs_ltventriclelh",
+                "isAbout": "smri_t2w_scs_ltventriclelh"
+            },
+            {
+                "variableName": "smri_t2w_scs_ltventriclerh",
+                "isAbout": "smri_t2w_scs_ltventriclerh"
+            },
+            {
+                "variableName": "smri_t2w_scs_pallidumlh",
+                "isAbout": "smri_t2w_scs_pallidumlh"
+            },
+            {
+                "variableName": "smri_t2w_scs_pallidumrh",
+                "isAbout": "smri_t2w_scs_pallidumrh"
+            },
+            {
+                "variableName": "smri_t2w_scs_putamenlh",
+                "isAbout": "smri_t2w_scs_putamenlh"
+            },
+            {
+                "variableName": "smri_t2w_scs_putamenrh",
+                "isAbout": "smri_t2w_scs_putamenrh"
+            },
+            {
+                "variableName": "smri_t2w_scs_tplh",
+                "isAbout": "smri_t2w_scs_tplh"
+            },
+            {
+                "variableName": "smri_t2w_scs_tprh",
+                "isAbout": "smri_t2w_scs_tprh"
+            },
+            {
+                "variableName": "smri_t2w_scs_vedclh",
+                "isAbout": "smri_t2w_scs_vedclh"
+            },
+            {
+                "variableName": "smri_t2w_scs_vedcrh",
+                "isAbout": "smri_t2w_scs_vedcrh"
+            },
+            {
+                "variableName": "smri_t2w_scs_wmhint",
+                "isAbout": "smri_t2w_scs_wmhint"
+            },
+            {
+                "variableName": "smri_t2w_scs_wmhintlh",
+                "isAbout": "smri_t2w_scs_wmhintlh"
+            },
+            {
+                "variableName": "smri_t2w_scs_wmhintrh",
+                "isAbout": "smri_t2w_scs_wmhintrh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_banksstslh",
+                "isAbout": "smri_t2wcnt_cdk_banksstslh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_banksstsrh",
+                "isAbout": "smri_t2wcnt_cdk_banksstsrh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_cdatcgatelh",
+                "isAbout": "smri_t2wcnt_cdk_cdatcgatelh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_cdatcgaterh",
+                "isAbout": "smri_t2wcnt_cdk_cdatcgaterh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_cdmdflh",
+                "isAbout": "smri_t2wcnt_cdk_cdmdflh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_cdmdfrh",
+                "isAbout": "smri_t2wcnt_cdk_cdmdfrh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_cuneuslh",
+                "isAbout": "smri_t2wcnt_cdk_cuneuslh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_cuneusrh",
+                "isAbout": "smri_t2wcnt_cdk_cuneusrh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_ehinallh",
+                "isAbout": "smri_t2wcnt_cdk_ehinallh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_ehinalrh",
+                "isAbout": "smri_t2wcnt_cdk_ehinalrh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_fpolelh",
+                "isAbout": "smri_t2wcnt_cdk_fpolelh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_fpolerh",
+                "isAbout": "smri_t2wcnt_cdk_fpolerh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_fusiformlh",
+                "isAbout": "smri_t2wcnt_cdk_fusiformlh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_fusiformrh",
+                "isAbout": "smri_t2wcnt_cdk_fusiformrh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_ifpllh",
+                "isAbout": "smri_t2wcnt_cdk_ifpllh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_ifplrh",
+                "isAbout": "smri_t2wcnt_cdk_ifplrh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_iftmlh",
+                "isAbout": "smri_t2wcnt_cdk_iftmlh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_iftmrh",
+                "isAbout": "smri_t2wcnt_cdk_iftmrh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_ihcgatelh",
+                "isAbout": "smri_t2wcnt_cdk_ihcgatelh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_ihcgaterh",
+                "isAbout": "smri_t2wcnt_cdk_ihcgaterh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_insulalh",
+                "isAbout": "smri_t2wcnt_cdk_insulalh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_insularh",
+                "isAbout": "smri_t2wcnt_cdk_insularh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_linguallh",
+                "isAbout": "smri_t2wcnt_cdk_linguallh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_lingualrh",
+                "isAbout": "smri_t2wcnt_cdk_lingualrh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_ltoboflh",
+                "isAbout": "smri_t2wcnt_cdk_ltoboflh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_ltobofrh",
+                "isAbout": "smri_t2wcnt_cdk_ltobofrh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_ltocclh",
+                "isAbout": "smri_t2wcnt_cdk_ltocclh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_ltoccrh",
+                "isAbout": "smri_t2wcnt_cdk_ltoccrh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_mdtmlh",
+                "isAbout": "smri_t2wcnt_cdk_mdtmlh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_mdtmrh",
+                "isAbout": "smri_t2wcnt_cdk_mdtmrh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_mean",
+                "isAbout": "smri_t2wcnt_cdk_mean"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_meanlh",
+                "isAbout": "smri_t2wcnt_cdk_meanlh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_meanrh",
+                "isAbout": "smri_t2wcnt_cdk_meanrh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_moboflh",
+                "isAbout": "smri_t2wcnt_cdk_moboflh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_mobofrh",
+                "isAbout": "smri_t2wcnt_cdk_mobofrh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_paractlh",
+                "isAbout": "smri_t2wcnt_cdk_paractlh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_paractrh",
+                "isAbout": "smri_t2wcnt_cdk_paractrh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_parahpallh",
+                "isAbout": "smri_t2wcnt_cdk_parahpallh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_parahpalrh",
+                "isAbout": "smri_t2wcnt_cdk_parahpalrh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_parstgslh",
+                "isAbout": "smri_t2wcnt_cdk_parstgslh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_parstgsrh",
+                "isAbout": "smri_t2wcnt_cdk_parstgsrh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_pericclh",
+                "isAbout": "smri_t2wcnt_cdk_pericclh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_periccrh",
+                "isAbout": "smri_t2wcnt_cdk_periccrh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_pnlh",
+                "isAbout": "smri_t2wcnt_cdk_pnlh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_pnrh",
+                "isAbout": "smri_t2wcnt_cdk_pnrh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_pobalislh",
+                "isAbout": "smri_t2wcnt_cdk_pobalislh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_pobalisrh",
+                "isAbout": "smri_t2wcnt_cdk_pobalisrh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_popclh",
+                "isAbout": "smri_t2wcnt_cdk_popclh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_popcrh",
+                "isAbout": "smri_t2wcnt_cdk_popcrh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_postctlh",
+                "isAbout": "smri_t2wcnt_cdk_postctlh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_postctrh",
+                "isAbout": "smri_t2wcnt_cdk_postctrh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_prectlh",
+                "isAbout": "smri_t2wcnt_cdk_prectlh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_prectrh",
+                "isAbout": "smri_t2wcnt_cdk_prectrh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_pscgatelh",
+                "isAbout": "smri_t2wcnt_cdk_pscgatelh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_pscgaterh",
+                "isAbout": "smri_t2wcnt_cdk_pscgaterh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_rtatcgatelh",
+                "isAbout": "smri_t2wcnt_cdk_rtatcgatelh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_rtatcgaterh",
+                "isAbout": "smri_t2wcnt_cdk_rtatcgaterh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_rtmdflh",
+                "isAbout": "smri_t2wcnt_cdk_rtmdflh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_rtmdfrh",
+                "isAbout": "smri_t2wcnt_cdk_rtmdfrh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_smlh",
+                "isAbout": "smri_t2wcnt_cdk_smlh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_smrh",
+                "isAbout": "smri_t2wcnt_cdk_smrh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_suflh",
+                "isAbout": "smri_t2wcnt_cdk_suflh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_sufrh",
+                "isAbout": "smri_t2wcnt_cdk_sufrh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_supllh",
+                "isAbout": "smri_t2wcnt_cdk_supllh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_suplrh",
+                "isAbout": "smri_t2wcnt_cdk_suplrh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_sutmlh",
+                "isAbout": "smri_t2wcnt_cdk_sutmlh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_sutmrh",
+                "isAbout": "smri_t2wcnt_cdk_sutmrh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_tmpolelh",
+                "isAbout": "smri_t2wcnt_cdk_tmpolelh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_tmpolerh",
+                "isAbout": "smri_t2wcnt_cdk_tmpolerh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_tvtmlh",
+                "isAbout": "smri_t2wcnt_cdk_tvtmlh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cdk_tvtmrh",
+                "isAbout": "smri_t2wcnt_cdk_tvtmrh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cf12_aomtmlh",
+                "isAbout": "smri_t2wcnt_cf12_aomtmlh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cf12_aomtmrh",
+                "isAbout": "smri_t2wcnt_cf12_aomtmrh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cf12_ctlh",
+                "isAbout": "smri_t2wcnt_cf12_ctlh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cf12_ctrh",
+                "isAbout": "smri_t2wcnt_cf12_ctrh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cf12_dltpreflh",
+                "isAbout": "smri_t2wcnt_cf12_dltpreflh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cf12_dltprefrh",
+                "isAbout": "smri_t2wcnt_cf12_dltprefrh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cf12_dmflh",
+                "isAbout": "smri_t2wcnt_cf12_dmflh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cf12_dmfrh",
+                "isAbout": "smri_t2wcnt_cf12_dmfrh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cf12_ifpllh",
+                "isAbout": "smri_t2wcnt_cf12_ifpllh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cf12_ifplrh",
+                "isAbout": "smri_t2wcnt_cf12_ifplrh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cf12_oboflh",
+                "isAbout": "smri_t2wcnt_cf12_oboflh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cf12_obofrh",
+                "isAbout": "smri_t2wcnt_cf12_obofrh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cf12_occlh",
+                "isAbout": "smri_t2wcnt_cf12_occlh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cf12_occrh",
+                "isAbout": "smri_t2wcnt_cf12_occrh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cf12_pnlh",
+                "isAbout": "smri_t2wcnt_cf12_pnlh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cf12_pnrh",
+                "isAbout": "smri_t2wcnt_cf12_pnrh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cf12_polttmlh",
+                "isAbout": "smri_t2wcnt_cf12_polttmlh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cf12_polttmrh",
+                "isAbout": "smri_t2wcnt_cf12_polttmrh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cf12_popclh",
+                "isAbout": "smri_t2wcnt_cf12_popclh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cf12_popcrh",
+                "isAbout": "smri_t2wcnt_cf12_popcrh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cf12_supllh",
+                "isAbout": "smri_t2wcnt_cf12_supllh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cf12_suplrh",
+                "isAbout": "smri_t2wcnt_cf12_suplrh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cf12_sutmlh",
+                "isAbout": "smri_t2wcnt_cf12_sutmlh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cf12_sutmrh",
+                "isAbout": "smri_t2wcnt_cf12_sutmrh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cf2_flh",
+                "isAbout": "smri_t2wcnt_cf2_flh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cf2_frh",
+                "isAbout": "smri_t2wcnt_cf2_frh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cf2_pslh",
+                "isAbout": "smri_t2wcnt_cf2_pslh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cf2_psrh",
+                "isAbout": "smri_t2wcnt_cf2_psrh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cf4_flh",
+                "isAbout": "smri_t2wcnt_cf4_flh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cf4_frh",
+                "isAbout": "smri_t2wcnt_cf4_frh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cf4_occlh",
+                "isAbout": "smri_t2wcnt_cf4_occlh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cf4_occrh",
+                "isAbout": "smri_t2wcnt_cf4_occrh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cf4_pllh",
+                "isAbout": "smri_t2wcnt_cf4_pllh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cf4_plrh",
+                "isAbout": "smri_t2wcnt_cf4_plrh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cf4_tmlh",
+                "isAbout": "smri_t2wcnt_cf4_tmlh"
+            },
+            {
+                "variableName": "smri_t2wcnt_cf4_tmrh",
+                "isAbout": "smri_t2wcnt_cf4_tmrh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_banksstslh",
+                "isAbout": "smri_t2wg02_cdk_banksstslh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_banksstsrh",
+                "isAbout": "smri_t2wg02_cdk_banksstsrh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_cdatcgatelh",
+                "isAbout": "smri_t2wg02_cdk_cdatcgatelh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_cdatcgaterh",
+                "isAbout": "smri_t2wg02_cdk_cdatcgaterh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_cdmdflh",
+                "isAbout": "smri_t2wg02_cdk_cdmdflh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_cdmdfrh",
+                "isAbout": "smri_t2wg02_cdk_cdmdfrh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_cuneuslh",
+                "isAbout": "smri_t2wg02_cdk_cuneuslh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_cuneusrh",
+                "isAbout": "smri_t2wg02_cdk_cuneusrh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_ehinallh",
+                "isAbout": "smri_t2wg02_cdk_ehinallh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_ehinalrh",
+                "isAbout": "smri_t2wg02_cdk_ehinalrh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_fpolelh",
+                "isAbout": "smri_t2wg02_cdk_fpolelh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_fpolerh",
+                "isAbout": "smri_t2wg02_cdk_fpolerh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_fusiformlh",
+                "isAbout": "smri_t2wg02_cdk_fusiformlh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_fusiformrh",
+                "isAbout": "smri_t2wg02_cdk_fusiformrh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_ifpllh",
+                "isAbout": "smri_t2wg02_cdk_ifpllh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_ifplrh",
+                "isAbout": "smri_t2wg02_cdk_ifplrh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_iftmlh",
+                "isAbout": "smri_t2wg02_cdk_iftmlh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_iftmrh",
+                "isAbout": "smri_t2wg02_cdk_iftmrh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_ihcgatelh",
+                "isAbout": "smri_t2wg02_cdk_ihcgatelh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_ihcgaterh",
+                "isAbout": "smri_t2wg02_cdk_ihcgaterh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_insulalh",
+                "isAbout": "smri_t2wg02_cdk_insulalh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_insularh",
+                "isAbout": "smri_t2wg02_cdk_insularh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_linguallh",
+                "isAbout": "smri_t2wg02_cdk_linguallh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_lingualrh",
+                "isAbout": "smri_t2wg02_cdk_lingualrh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_ltoboflh",
+                "isAbout": "smri_t2wg02_cdk_ltoboflh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_ltobofrh",
+                "isAbout": "smri_t2wg02_cdk_ltobofrh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_ltocclh",
+                "isAbout": "smri_t2wg02_cdk_ltocclh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_ltoccrh",
+                "isAbout": "smri_t2wg02_cdk_ltoccrh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_mdtmlh",
+                "isAbout": "smri_t2wg02_cdk_mdtmlh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_mdtmrh",
+                "isAbout": "smri_t2wg02_cdk_mdtmrh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_mean",
+                "isAbout": "smri_t2wg02_cdk_mean"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_meanlh",
+                "isAbout": "smri_t2wg02_cdk_meanlh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_meanrh",
+                "isAbout": "smri_t2wg02_cdk_meanrh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_moboflh",
+                "isAbout": "smri_t2wg02_cdk_moboflh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_mobofrh",
+                "isAbout": "smri_t2wg02_cdk_mobofrh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_paractlh",
+                "isAbout": "smri_t2wg02_cdk_paractlh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_paractrh",
+                "isAbout": "smri_t2wg02_cdk_paractrh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_parahpallh",
+                "isAbout": "smri_t2wg02_cdk_parahpallh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_parahpalrh",
+                "isAbout": "smri_t2wg02_cdk_parahpalrh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_parstgslh",
+                "isAbout": "smri_t2wg02_cdk_parstgslh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_parstgsrh",
+                "isAbout": "smri_t2wg02_cdk_parstgsrh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_pericclh",
+                "isAbout": "smri_t2wg02_cdk_pericclh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_periccrh",
+                "isAbout": "smri_t2wg02_cdk_periccrh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_pnlh",
+                "isAbout": "smri_t2wg02_cdk_pnlh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_pnrh",
+                "isAbout": "smri_t2wg02_cdk_pnrh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_pobalislh",
+                "isAbout": "smri_t2wg02_cdk_pobalislh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_pobalisrh",
+                "isAbout": "smri_t2wg02_cdk_pobalisrh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_popclh",
+                "isAbout": "smri_t2wg02_cdk_popclh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_popcrh",
+                "isAbout": "smri_t2wg02_cdk_popcrh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_postctlh",
+                "isAbout": "smri_t2wg02_cdk_postctlh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_postctrh",
+                "isAbout": "smri_t2wg02_cdk_postctrh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_prectlh",
+                "isAbout": "smri_t2wg02_cdk_prectlh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_prectrh",
+                "isAbout": "smri_t2wg02_cdk_prectrh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_pscgatelh",
+                "isAbout": "smri_t2wg02_cdk_pscgatelh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_pscgaterh",
+                "isAbout": "smri_t2wg02_cdk_pscgaterh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_rtatcgatelh",
+                "isAbout": "smri_t2wg02_cdk_rtatcgatelh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_rtatcgaterh",
+                "isAbout": "smri_t2wg02_cdk_rtatcgaterh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_rtmdflh",
+                "isAbout": "smri_t2wg02_cdk_rtmdflh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_rtmdfrh",
+                "isAbout": "smri_t2wg02_cdk_rtmdfrh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_smlh",
+                "isAbout": "smri_t2wg02_cdk_smlh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_smrh",
+                "isAbout": "smri_t2wg02_cdk_smrh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_suflh",
+                "isAbout": "smri_t2wg02_cdk_suflh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_sufrh",
+                "isAbout": "smri_t2wg02_cdk_sufrh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_supllh",
+                "isAbout": "smri_t2wg02_cdk_supllh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_suplrh",
+                "isAbout": "smri_t2wg02_cdk_suplrh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_sutmlh",
+                "isAbout": "smri_t2wg02_cdk_sutmlh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_sutmrh",
+                "isAbout": "smri_t2wg02_cdk_sutmrh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_tmpolelh",
+                "isAbout": "smri_t2wg02_cdk_tmpolelh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_tmpolerh",
+                "isAbout": "smri_t2wg02_cdk_tmpolerh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_tvtmlh",
+                "isAbout": "smri_t2wg02_cdk_tvtmlh"
+            },
+            {
+                "variableName": "smri_t2wg02_cdk_tvtmrh",
+                "isAbout": "smri_t2wg02_cdk_tvtmrh"
+            },
+            {
+                "variableName": "smri_t2wg02_cf12_aomtmlh",
+                "isAbout": "smri_t2wg02_cf12_aomtmlh"
+            },
+            {
+                "variableName": "smri_t2wg02_cf12_aomtmrh",
+                "isAbout": "smri_t2wg02_cf12_aomtmrh"
+            },
+            {
+                "variableName": "smri_t2wg02_cf12_ctlh",
+                "isAbout": "smri_t2wg02_cf12_ctlh"
+            },
+            {
+                "variableName": "smri_t2wg02_cf12_ctrh",
+                "isAbout": "smri_t2wg02_cf12_ctrh"
+            },
+            {
+                "variableName": "smri_t2wg02_cf12_dltpreflh",
+                "isAbout": "smri_t2wg02_cf12_dltpreflh"
+            },
+            {
+                "variableName": "smri_t2wg02_cf12_dltprefrh",
+                "isAbout": "smri_t2wg02_cf12_dltprefrh"
+            },
+            {
+                "variableName": "smri_t2wg02_cf12_dmflh",
+                "isAbout": "smri_t2wg02_cf12_dmflh"
+            },
+            {
+                "variableName": "smri_t2wg02_cf12_dmfrh",
+                "isAbout": "smri_t2wg02_cf12_dmfrh"
+            },
+            {
+                "variableName": "smri_t2wg02_cf12_ifpllh",
+                "isAbout": "smri_t2wg02_cf12_ifpllh"
+            },
+            {
+                "variableName": "smri_t2wg02_cf12_ifplrh",
+                "isAbout": "smri_t2wg02_cf12_ifplrh"
+            },
+            {
+                "variableName": "smri_t2wg02_cf12_oboflh",
+                "isAbout": "smri_t2wg02_cf12_oboflh"
+            },
+            {
+                "variableName": "smri_t2wg02_cf12_obofrh",
+                "isAbout": "smri_t2wg02_cf12_obofrh"
+            },
+            {
+                "variableName": "smri_t2wg02_cf12_occlh",
+                "isAbout": "smri_t2wg02_cf12_occlh"
+            },
+            {
+                "variableName": "smri_t2wg02_cf12_occrh",
+                "isAbout": "smri_t2wg02_cf12_occrh"
+            },
+            {
+                "variableName": "smri_t2wg02_cf12_pnlh",
+                "isAbout": "smri_t2wg02_cf12_pnlh"
+            },
+            {
+                "variableName": "smri_t2wg02_cf12_pnrh",
+                "isAbout": "smri_t2wg02_cf12_pnrh"
+            },
+            {
+                "variableName": "smri_t2wg02_cf12_polttmlh",
+                "isAbout": "smri_t2wg02_cf12_polttmlh"
+            },
+            {
+                "variableName": "smri_t2wg02_cf12_polttmrh",
+                "isAbout": "smri_t2wg02_cf12_polttmrh"
+            },
+            {
+                "variableName": "smri_t2wg02_cf12_popclh",
+                "isAbout": "smri_t2wg02_cf12_popclh"
+            },
+            {
+                "variableName": "smri_t2wg02_cf12_popcrh",
+                "isAbout": "smri_t2wg02_cf12_popcrh"
+            },
+            {
+                "variableName": "smri_t2wg02_cf12_supllh",
+                "isAbout": "smri_t2wg02_cf12_supllh"
+            },
+            {
+                "variableName": "smri_t2wg02_cf12_suplrh",
+                "isAbout": "smri_t2wg02_cf12_suplrh"
+            },
+            {
+                "variableName": "smri_t2wg02_cf12_sutmlh",
+                "isAbout": "smri_t2wg02_cf12_sutmlh"
+            },
+            {
+                "variableName": "smri_t2wg02_cf12_sutmrh",
+                "isAbout": "smri_t2wg02_cf12_sutmrh"
+            },
+            {
+                "variableName": "smri_t2wg02_cf2_flh",
+                "isAbout": "smri_t2wg02_cf2_flh"
+            },
+            {
+                "variableName": "smri_t2wg02_cf2_frh",
+                "isAbout": "smri_t2wg02_cf2_frh"
+            },
+            {
+                "variableName": "smri_t2wg02_cf2_pslh",
+                "isAbout": "smri_t2wg02_cf2_pslh"
+            },
+            {
+                "variableName": "smri_t2wg02_cf2_psrh",
+                "isAbout": "smri_t2wg02_cf2_psrh"
+            },
+            {
+                "variableName": "smri_t2wg02_cf4_flh",
+                "isAbout": "smri_t2wg02_cf4_flh"
+            },
+            {
+                "variableName": "smri_t2wg02_cf4_frh",
+                "isAbout": "smri_t2wg02_cf4_frh"
+            },
+            {
+                "variableName": "smri_t2wg02_cf4_occlh",
+                "isAbout": "smri_t2wg02_cf4_occlh"
+            },
+            {
+                "variableName": "smri_t2wg02_cf4_occrh",
+                "isAbout": "smri_t2wg02_cf4_occrh"
+            },
+            {
+                "variableName": "smri_t2wg02_cf4_pllh",
+                "isAbout": "smri_t2wg02_cf4_pllh"
+            },
+            {
+                "variableName": "smri_t2wg02_cf4_plrh",
+                "isAbout": "smri_t2wg02_cf4_plrh"
+            },
+            {
+                "variableName": "smri_t2wg02_cf4_tmlh",
+                "isAbout": "smri_t2wg02_cf4_tmlh"
+            },
+            {
+                "variableName": "smri_t2wg02_cf4_tmrh",
+                "isAbout": "smri_t2wg02_cf4_tmrh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_banksstslh",
+                "isAbout": "smri_t2ww02_cdk_banksstslh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_banksstsrh",
+                "isAbout": "smri_t2ww02_cdk_banksstsrh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_cdatcgatelh",
+                "isAbout": "smri_t2ww02_cdk_cdatcgatelh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_cdatcgaterh",
+                "isAbout": "smri_t2ww02_cdk_cdatcgaterh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_cdmdflh",
+                "isAbout": "smri_t2ww02_cdk_cdmdflh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_cdmdfrh",
+                "isAbout": "smri_t2ww02_cdk_cdmdfrh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_cuneuslh",
+                "isAbout": "smri_t2ww02_cdk_cuneuslh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_cuneusrh",
+                "isAbout": "smri_t2ww02_cdk_cuneusrh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_ehinallh",
+                "isAbout": "smri_t2ww02_cdk_ehinallh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_ehinalrh",
+                "isAbout": "smri_t2ww02_cdk_ehinalrh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_fpolelh",
+                "isAbout": "smri_t2ww02_cdk_fpolelh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_fpolerh",
+                "isAbout": "smri_t2ww02_cdk_fpolerh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_fusiformlh",
+                "isAbout": "smri_t2ww02_cdk_fusiformlh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_fusiformrh",
+                "isAbout": "smri_t2ww02_cdk_fusiformrh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_ifpllh",
+                "isAbout": "smri_t2ww02_cdk_ifpllh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_ifplrh",
+                "isAbout": "smri_t2ww02_cdk_ifplrh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_iftmlh",
+                "isAbout": "smri_t2ww02_cdk_iftmlh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_iftmrh",
+                "isAbout": "smri_t2ww02_cdk_iftmrh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_ihcgatelh",
+                "isAbout": "smri_t2ww02_cdk_ihcgatelh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_ihcgaterh",
+                "isAbout": "smri_t2ww02_cdk_ihcgaterh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_insulalh",
+                "isAbout": "smri_t2ww02_cdk_insulalh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_insularh",
+                "isAbout": "smri_t2ww02_cdk_insularh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_linguallh",
+                "isAbout": "smri_t2ww02_cdk_linguallh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_lingualrh",
+                "isAbout": "smri_t2ww02_cdk_lingualrh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_ltoboflh",
+                "isAbout": "smri_t2ww02_cdk_ltoboflh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_ltobofrh",
+                "isAbout": "smri_t2ww02_cdk_ltobofrh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_ltocclh",
+                "isAbout": "smri_t2ww02_cdk_ltocclh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_ltoccrh",
+                "isAbout": "smri_t2ww02_cdk_ltoccrh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_mdtmlh",
+                "isAbout": "smri_t2ww02_cdk_mdtmlh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_mdtmrh",
+                "isAbout": "smri_t2ww02_cdk_mdtmrh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_mean",
+                "isAbout": "smri_t2ww02_cdk_mean"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_meanlh",
+                "isAbout": "smri_t2ww02_cdk_meanlh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_meanrh",
+                "isAbout": "smri_t2ww02_cdk_meanrh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_moboflh",
+                "isAbout": "smri_t2ww02_cdk_moboflh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_mobofrh",
+                "isAbout": "smri_t2ww02_cdk_mobofrh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_paractlh",
+                "isAbout": "smri_t2ww02_cdk_paractlh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_paractrh",
+                "isAbout": "smri_t2ww02_cdk_paractrh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_parahpallh",
+                "isAbout": "smri_t2ww02_cdk_parahpallh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_parahpalrh",
+                "isAbout": "smri_t2ww02_cdk_parahpalrh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_parstgslh",
+                "isAbout": "smri_t2ww02_cdk_parstgslh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_parstgsrh",
+                "isAbout": "smri_t2ww02_cdk_parstgsrh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_pericclh",
+                "isAbout": "smri_t2ww02_cdk_pericclh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_periccrh",
+                "isAbout": "smri_t2ww02_cdk_periccrh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_pnlh",
+                "isAbout": "smri_t2ww02_cdk_pnlh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_pnrh",
+                "isAbout": "smri_t2ww02_cdk_pnrh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_pobalislh",
+                "isAbout": "smri_t2ww02_cdk_pobalislh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_pobalisrh",
+                "isAbout": "smri_t2ww02_cdk_pobalisrh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_popclh",
+                "isAbout": "smri_t2ww02_cdk_popclh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_popcrh",
+                "isAbout": "smri_t2ww02_cdk_popcrh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_postctlh",
+                "isAbout": "smri_t2ww02_cdk_postctlh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_postctrh",
+                "isAbout": "smri_t2ww02_cdk_postctrh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_prectlh",
+                "isAbout": "smri_t2ww02_cdk_prectlh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_prectrh",
+                "isAbout": "smri_t2ww02_cdk_prectrh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_pscgatelh",
+                "isAbout": "smri_t2ww02_cdk_pscgatelh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_pscgaterh",
+                "isAbout": "smri_t2ww02_cdk_pscgaterh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_rtatcgatelh",
+                "isAbout": "smri_t2ww02_cdk_rtatcgatelh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_rtatcgaterh",
+                "isAbout": "smri_t2ww02_cdk_rtatcgaterh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_rtmdflh",
+                "isAbout": "smri_t2ww02_cdk_rtmdflh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_rtmdfrh",
+                "isAbout": "smri_t2ww02_cdk_rtmdfrh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_smlh",
+                "isAbout": "smri_t2ww02_cdk_smlh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_smrh",
+                "isAbout": "smri_t2ww02_cdk_smrh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_suflh",
+                "isAbout": "smri_t2ww02_cdk_suflh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_sufrh",
+                "isAbout": "smri_t2ww02_cdk_sufrh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_supllh",
+                "isAbout": "smri_t2ww02_cdk_supllh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_suplrh",
+                "isAbout": "smri_t2ww02_cdk_suplrh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_sutmlh",
+                "isAbout": "smri_t2ww02_cdk_sutmlh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_sutmrh",
+                "isAbout": "smri_t2ww02_cdk_sutmrh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_tmpolelh",
+                "isAbout": "smri_t2ww02_cdk_tmpolelh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_tmpolerh",
+                "isAbout": "smri_t2ww02_cdk_tmpolerh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_tvtmlh",
+                "isAbout": "smri_t2ww02_cdk_tvtmlh"
+            },
+            {
+                "variableName": "smri_t2ww02_cdk_tvtmrh",
+                "isAbout": "smri_t2ww02_cdk_tvtmrh"
+            },
+            {
+                "variableName": "smri_t2ww02_cf12_aomtmlh",
+                "isAbout": "smri_t2ww02_cf12_aomtmlh"
+            },
+            {
+                "variableName": "smri_t2ww02_cf12_aomtmrh",
+                "isAbout": "smri_t2ww02_cf12_aomtmrh"
+            },
+            {
+                "variableName": "smri_t2ww02_cf12_ctlh",
+                "isAbout": "smri_t2ww02_cf12_ctlh"
+            },
+            {
+                "variableName": "smri_t2ww02_cf12_ctrh",
+                "isAbout": "smri_t2ww02_cf12_ctrh"
+            },
+            {
+                "variableName": "smri_t2ww02_cf12_dltpreflh",
+                "isAbout": "smri_t2ww02_cf12_dltpreflh"
+            },
+            {
+                "variableName": "smri_t2ww02_cf12_dltprefrh",
+                "isAbout": "smri_t2ww02_cf12_dltprefrh"
+            },
+            {
+                "variableName": "smri_t2ww02_cf12_dmflh",
+                "isAbout": "smri_t2ww02_cf12_dmflh"
+            },
+            {
+                "variableName": "smri_t2ww02_cf12_dmfrh",
+                "isAbout": "smri_t2ww02_cf12_dmfrh"
+            },
+            {
+                "variableName": "smri_t2ww02_cf12_ifpllh",
+                "isAbout": "smri_t2ww02_cf12_ifpllh"
+            },
+            {
+                "variableName": "smri_t2ww02_cf12_ifplrh",
+                "isAbout": "smri_t2ww02_cf12_ifplrh"
+            },
+            {
+                "variableName": "smri_t2ww02_cf12_oboflh",
+                "isAbout": "smri_t2ww02_cf12_oboflh"
+            },
+            {
+                "variableName": "smri_t2ww02_cf12_obofrh",
+                "isAbout": "smri_t2ww02_cf12_obofrh"
+            },
+            {
+                "variableName": "smri_t2ww02_cf12_occlh",
+                "isAbout": "smri_t2ww02_cf12_occlh"
+            },
+            {
+                "variableName": "smri_t2ww02_cf12_occrh",
+                "isAbout": "smri_t2ww02_cf12_occrh"
+            },
+            {
+                "variableName": "smri_t2ww02_cf12_pnlh",
+                "isAbout": "smri_t2ww02_cf12_pnlh"
+            },
+            {
+                "variableName": "smri_t2ww02_cf12_pnrh",
+                "isAbout": "smri_t2ww02_cf12_pnrh"
+            },
+            {
+                "variableName": "smri_t2ww02_cf12_polttmlh",
+                "isAbout": "smri_t2ww02_cf12_polttmlh"
+            },
+            {
+                "variableName": "smri_t2ww02_cf12_polttmrh",
+                "isAbout": "smri_t2ww02_cf12_polttmrh"
+            },
+            {
+                "variableName": "smri_t2ww02_cf12_popclh",
+                "isAbout": "smri_t2ww02_cf12_popclh"
+            },
+            {
+                "variableName": "smri_t2ww02_cf12_popcrh",
+                "isAbout": "smri_t2ww02_cf12_popcrh"
+            },
+            {
+                "variableName": "smri_t2ww02_cf12_supllh",
+                "isAbout": "smri_t2ww02_cf12_supllh"
+            },
+            {
+                "variableName": "smri_t2ww02_cf12_suplrh",
+                "isAbout": "smri_t2ww02_cf12_suplrh"
+            },
+            {
+                "variableName": "smri_t2ww02_cf12_sutmlh",
+                "isAbout": "smri_t2ww02_cf12_sutmlh"
+            },
+            {
+                "variableName": "smri_t2ww02_cf12_sutmrh",
+                "isAbout": "smri_t2ww02_cf12_sutmrh"
+            },
+            {
+                "variableName": "smri_t2ww02_cf2_flh",
+                "isAbout": "smri_t2ww02_cf2_flh"
+            },
+            {
+                "variableName": "smri_t2ww02_cf2_frh",
+                "isAbout": "smri_t2ww02_cf2_frh"
+            },
+            {
+                "variableName": "smri_t2ww02_cf2_pslh",
+                "isAbout": "smri_t2ww02_cf2_pslh"
+            },
+            {
+                "variableName": "smri_t2ww02_cf2_psrh",
+                "isAbout": "smri_t2ww02_cf2_psrh"
+            },
+            {
+                "variableName": "smri_t2ww02_cf4_flh",
+                "isAbout": "smri_t2ww02_cf4_flh"
+            },
+            {
+                "variableName": "smri_t2ww02_cf4_frh",
+                "isAbout": "smri_t2ww02_cf4_frh"
+            },
+            {
+                "variableName": "smri_t2ww02_cf4_occlh",
+                "isAbout": "smri_t2ww02_cf4_occlh"
+            },
+            {
+                "variableName": "smri_t2ww02_cf4_occrh",
+                "isAbout": "smri_t2ww02_cf4_occrh"
+            },
+            {
+                "variableName": "smri_t2ww02_cf4_pllh",
+                "isAbout": "smri_t2ww02_cf4_pllh"
+            },
+            {
+                "variableName": "smri_t2ww02_cf4_plrh",
+                "isAbout": "smri_t2ww02_cf4_plrh"
+            },
+            {
+                "variableName": "smri_t2ww02_cf4_tmlh",
+                "isAbout": "smri_t2ww02_cf4_tmlh"
+            },
+            {
+                "variableName": "smri_t2ww02_cf4_tmrh",
+                "isAbout": "smri_t2ww02_cf4_tmrh"
+            },
+            {
+                "variableName": "smri_vol_scs_3rdventricle",
+                "isAbout": "smri_vol_scs_3rdventricle"
+            },
+            {
+                "variableName": "smri_vol_scs_4thventricle",
+                "isAbout": "smri_vol_scs_4thventricle"
+            },
+            {
+                "variableName": "smri_vol_scs_aal",
+                "isAbout": "smri_vol_scs_aal"
+            },
+            {
+                "variableName": "smri_vol_scs_aar",
+                "isAbout": "smri_vol_scs_aar"
+            },
+            {
+                "variableName": "smri_vol_scs_allventricles",
+                "isAbout": "smri_vol_scs_allventricles"
+            },
+            {
+                "variableName": "smri_vol_scs_amygdalalh",
+                "isAbout": "smri_vol_scs_amygdalalh"
+            },
+            {
+                "variableName": "smri_vol_scs_amygdalarh",
+                "isAbout": "smri_vol_scs_amygdalarh"
+            },
+            {
+                "variableName": "smri_vol_scs_bstem",
+                "isAbout": "smri_vol_scs_bstem"
+            },
+            {
+                "variableName": "smri_vol_scs_caudatelh",
+                "isAbout": "smri_vol_scs_caudatelh"
+            },
+            {
+                "variableName": "smri_vol_scs_caudaterh",
+                "isAbout": "smri_vol_scs_caudaterh"
+            },
+            {
+                "variableName": "smri_vol_scs_cbwmatterlh",
+                "isAbout": "smri_vol_scs_cbwmatterlh"
+            },
+            {
+                "variableName": "smri_vol_scs_cbwmatterrh",
+                "isAbout": "smri_vol_scs_cbwmatterrh"
+            },
+            {
+                "variableName": "smri_vol_scs_ccat",
+                "isAbout": "smri_vol_scs_ccat"
+            },
+            {
+                "variableName": "smri_vol_scs_ccct",
+                "isAbout": "smri_vol_scs_ccct"
+            },
+            {
+                "variableName": "smri_vol_scs_ccmidat",
+                "isAbout": "smri_vol_scs_ccmidat"
+            },
+            {
+                "variableName": "smri_vol_scs_ccmidps",
+                "isAbout": "smri_vol_scs_ccmidps"
+            },
+            {
+                "variableName": "smri_vol_scs_ccps",
+                "isAbout": "smri_vol_scs_ccps"
+            },
+            {
+                "variableName": "smri_vol_scs_crbcortexlh",
+                "isAbout": "smri_vol_scs_crbcortexlh"
+            },
+            {
+                "variableName": "smri_vol_scs_crbcortexrh",
+                "isAbout": "smri_vol_scs_crbcortexrh"
+            },
+            {
+                "variableName": "smri_vol_scs_crbwmatterlh",
+                "isAbout": "smri_vol_scs_crbwmatterlh"
+            },
+            {
+                "variableName": "smri_vol_scs_crbwmatterrh",
+                "isAbout": "smri_vol_scs_crbwmatterrh"
+            },
+            {
+                "variableName": "smri_vol_scs_csf",
+                "isAbout": "smri_vol_scs_csf"
+            },
+            {
+                "variableName": "smri_vol_scs_hpuslh",
+                "isAbout": "smri_vol_scs_hpuslh"
+            },
+            {
+                "variableName": "smri_vol_scs_hpusrh",
+                "isAbout": "smri_vol_scs_hpusrh"
+            },
+            {
+                "variableName": "smri_vol_scs_inflatventlh",
+                "isAbout": "smri_vol_scs_inflatventlh"
+            },
+            {
+                "variableName": "smri_vol_scs_inflatventrh",
+                "isAbout": "smri_vol_scs_inflatventrh"
+            },
+            {
+                "variableName": "smri_vol_scs_intracranialv",
+                "isAbout": "smri_vol_scs_intracranialv"
+            },
+            {
+                "variableName": "smri_vol_scs_latventricles",
+                "isAbout": "smri_vol_scs_latventricles"
+            },
+            {
+                "variableName": "smri_vol_scs_lesionlh",
+                "isAbout": "smri_vol_scs_lesionlh"
+            },
+            {
+                "variableName": "smri_vol_scs_lesionrh",
+                "isAbout": "smri_vol_scs_lesionrh"
+            },
+            {
+                "variableName": "smri_vol_scs_ltventriclelh",
+                "isAbout": "smri_vol_scs_ltventriclelh"
+            },
+            {
+                "variableName": "smri_vol_scs_ltventriclerh",
+                "isAbout": "smri_vol_scs_ltventriclerh"
+            },
+            {
+                "variableName": "smri_vol_scs_pallidumlh",
+                "isAbout": "smri_vol_scs_pallidumlh"
+            },
+            {
+                "variableName": "smri_vol_scs_pallidumrh",
+                "isAbout": "smri_vol_scs_pallidumrh"
+            },
+            {
+                "variableName": "smri_vol_scs_putamenlh",
+                "isAbout": "smri_vol_scs_putamenlh"
+            },
+            {
+                "variableName": "smri_vol_scs_putamenrh",
+                "isAbout": "smri_vol_scs_putamenrh"
+            },
+            {
+                "variableName": "smri_vol_scs_subcorticalgv",
+                "isAbout": "smri_vol_scs_subcorticalgv"
+            },
+            {
+                "variableName": "smri_vol_scs_suprateialv",
+                "isAbout": "smri_vol_scs_suprateialv"
+            },
+            {
+                "variableName": "smri_vol_scs_tplh",
+                "isAbout": "smri_vol_scs_tplh"
+            },
+            {
+                "variableName": "smri_vol_scs_tprh",
+                "isAbout": "smri_vol_scs_tprh"
+            },
+            {
+                "variableName": "smri_vol_scs_vedclh",
+                "isAbout": "smri_vol_scs_vedclh"
+            },
+            {
+                "variableName": "smri_vol_scs_vedcrh",
+                "isAbout": "smri_vol_scs_vedcrh"
+            },
+            {
+                "variableName": "smri_vol_scs_wholeb",
+                "isAbout": "smri_vol_scs_wholeb"
+            },
+            {
+                "variableName": "smri_vol_scs_wmhint",
+                "isAbout": "smri_vol_scs_wmhint"
+            },
+            {
+                "variableName": "smri_vol_scs_wmhintlh",
+                "isAbout": "smri_vol_scs_wmhintlh"
+            },
+            {
+                "variableName": "smri_vol_scs_wmhintrh",
+                "isAbout": "smri_vol_scs_wmhintrh"
+            }
+        ]
+    }
+}

@@ -1,0 +1,51 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "physical_activity5_y",
+    "@type": "reproschema:Field",
+    "prefLabel": "physical_activity5_y",
+    "altLabel": "physical_activity_5",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "In an average week when you are in school, on how many days do you go to physical education (PE) class?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "0 days",
+                "value": 0
+            },
+            {
+                "name": "1 day",
+                "value": 1
+            },
+            {
+                "name": "2 days",
+                "value": 2
+            },
+            {
+                "name": "3 days",
+                "value": 3
+            },
+            {
+                "name": "4 days",
+                "value": 4
+            },
+            {
+                "name": "5 days",
+                "value": 5
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = 0 days; 1 = 1 day; 2 = 2 days; 3 = 3 days; 4 = 4 days; 5 = 5 days"
+        }
+    ]
+}

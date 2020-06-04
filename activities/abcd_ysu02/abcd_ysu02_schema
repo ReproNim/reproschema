@@ -1,0 +1,3848 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+        "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/activities/abcd_ysu02/abcd_ysu02_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "abcd_ysu02_schema",
+    "skos:prefLabel": "abcd_ysu02",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "order": [
+            "caff_intake_1",
+            "caff_intake_3",
+            "caff_intake_4",
+            "caff_intake_6",
+            "caff_intake_9",
+            "caff_max",
+            "caff_max_type",
+            "dapi_q01",
+            "dapi_q02",
+            "dapi_q03",
+            "dapi_q04",
+            "dapi_q05",
+            "dapi_q06",
+            "dapi_q07",
+            "dapi_q08",
+            "dapi_q09",
+            "dapi_q10",
+            "dapi_q11",
+            "dapi_q12",
+            "dapi_q13",
+            "dapi_q14",
+            "dapi_q15",
+            "dapi_q16",
+            "dapi_q17",
+            "dapi_q18",
+            "first_mj_1a",
+            "first_mj_1b",
+            "first_mj_3",
+            "first_mj_4",
+            "first_mj_5",
+            "first_mj_6",
+            "first_mj_7",
+            "first_mj_8",
+            "first_nicotine_1",
+            "first_nicotine_11",
+            "first_nicotine_12",
+            "first_nicotine_13",
+            "first_nicotine_2",
+            "first_nicotine_3",
+            "first_nicotine_4",
+            "first_nicotine_5",
+            "first_nicotine_6",
+            "first_nicotine_7",
+            "hangover1",
+            "hangover10",
+            "hangover11",
+            "hangover12",
+            "hangover13",
+            "hangover14",
+            "hangover2",
+            "hangover3",
+            "hangover4",
+            "hangover5",
+            "hangover6",
+            "hangover7",
+            "hangover8",
+            "hangover9",
+            "isip_1",
+            "isip_1b_2",
+            "isip_1b_yn",
+            "isip_1d_2",
+            "isip_2_2",
+            "isip_3_2",
+            "isip_4_2",
+            "isip_5_2",
+            "isip_6_2",
+            "mapi_q01",
+            "mapi_q02",
+            "mapi_q03",
+            "mapi_q04",
+            "mapi_q05",
+            "mapi_q06",
+            "mapi_q07",
+            "mapi_q08",
+            "mapi_q09",
+            "mapi_q10",
+            "mapi_q11",
+            "mapi_q12",
+            "mapi_q13",
+            "mapi_q14",
+            "mapi_q15",
+            "mapi_q16",
+            "mapi_q17",
+            "mapi_q18",
+            "path_alc_youth1",
+            "path_alc_youth2",
+            "path_alc_youth3",
+            "path_alc_youth4",
+            "path_alc_youth5",
+            "path_alc_youth6",
+            "path_alc_youth7",
+            "path_alc_youth8",
+            "path_alc_youth9",
+            "path_nic_dep_q01",
+            "path_nic_dep_q02",
+            "path_nic_dep_q03",
+            "path_nic_dep_q04",
+            "path_nic_dep_q05",
+            "path_nic_dep_q06",
+            "path_nic_dep_q07",
+            "path_nic_dep_q08",
+            "path_nic_dep_q09",
+            "path_nic_dep_q10",
+            "peer_deviance_1_4bbe5d",
+            "peer_deviance_2_dd1457",
+            "peer_deviance_3_e1ec2e",
+            "peer_deviance_4_b6c588",
+            "peer_deviance_5_bffa44",
+            "peer_deviance_6_69562e",
+            "peer_deviance_7_beb683",
+            "peer_deviance_8_35702e",
+            "peer_deviance_9_6dd4ef",
+            "rapi_section1_q01",
+            "rapi_section1_q02",
+            "rapi_section1_q03",
+            "rapi_section1_q04",
+            "rapi_section1_q05",
+            "rapi_section1_q06",
+            "rapi_section1_q07",
+            "rapi_section2_q08",
+            "rapi_section2_q09",
+            "rapi_section2_q10",
+            "rapi_section2_q11",
+            "rapi_section2_q12",
+            "rapi_section2_q13",
+            "rapi_section2_q14",
+            "rapi_section3_q15",
+            "rapi_section3_q16",
+            "rapi_section3_q17",
+            "rapi_section3_q18",
+            "su_caff_intake_1_calc",
+            "su_caff_intake_3_calc",
+            "su_caff_intake_4_calc",
+            "su_caff_intake_6_calc",
+            "su_caff_intake_9_calc",
+            "su_caff_max_calc",
+            "su_isip_1_calc",
+            "su_isip_1b_2_calc",
+            "su_tlfb_6mo_1_ecig_calc",
+            "su_tlfb_6mo_2_ecig_calc",
+            "su_tlfb_alc_lt_calc",
+            "su_tlfb_alc_max_calc",
+            "su_tlfb_alc_sip_calc",
+            "su_tlfb_alc_use_calc",
+            "su_tlfb_amp_use_calc",
+            "su_tlfb_bitta_use_calc",
+            "su_tlfb_blunt_use_calc",
+            "su_tlfb_bsalts_use_calc",
+            "su_tlfb_chew_lt_calc",
+            "su_tlfb_chew_max_calc",
+            "su_tlfb_chew_use_calc",
+            "su_tlfb_cig_lt_calc",
+            "su_tlfb_cig_max_calc",
+            "su_tlfb_cig_use_calc",
+            "su_tlfb_cigar_lt_calc",
+            "su_tlfb_cigar_max_calc",
+            "su_tlfb_cigar_use_calc",
+            "su_tlfb_coc_use_calc",
+            "su_tlfb_cough_use_calc",
+            "su_tlfb_ecig_lt_calc",
+            "su_tlfb_ecig_max_calc",
+            "su_tlfb_ecig_use_calc",
+            "su_tlfb_edible_use_calc",
+            "su_tlfb_ghb_use_calc",
+            "su_tlfb_hall_use_calc",
+            "su_tlfb_hookah_lt_calc",
+            "su_tlfb_hookah_max_calc",
+            "su_tlfb_hookah_use_calc",
+            "su_tlfb_inhalant_use_calc",
+            "su_tlfb_ket_use_calc",
+            "su_tlfb_lt_nicotine_calc",
+            "su_tlfb_mdma_use_calc",
+            "su_tlfb_meth_use_calc",
+            "su_tlfb_mj_conc_use_calc",
+            "su_tlfb_mj_drink_use_calc",
+            "su_tlfb_mj_puff_calc",
+            "su_tlfb_mj_synth_use_calc",
+            "su_tlfb_mj_use_calc",
+            "su_tlfb_nicotine_max_calc",
+            "su_tlfb_nicotine_use_calc",
+            "su_tlfb_opi_use_calc",
+            "su_tlfb_other_use_calc",
+            "su_tlfb_pipes_lt_calc",
+            "su_tlfb_pipes_max_calc",
+            "su_tlfb_pipes_use_calc",
+            "su_tlfb_salvia_use_calc",
+            "su_tlfb_shrooms_use_calc",
+            "su_tlfb_steroids_use_calc",
+            "su_tlfb_tincture_use_calc",
+            "su_tlfb_tob_puff_calc",
+            "su_tlfb_tranq_use_calc",
+            "su_tlfb_vicodin_use_calc",
+            "su_today",
+            "sub_res_mj_q01",
+            "sub_res_mj_q02",
+            "sub_res_mj_q03",
+            "sub_res_mj_q04",
+            "sub_res_mj_q05",
+            "sub_res_mj_q06",
+            "sub_res_mj_q07",
+            "sub_res_mj_q08",
+            "sub_res_mj_q09",
+            "sub_res_mj_q10",
+            "sub_res_mj_q11",
+            "subj_resp_alc_1a",
+            "subj_resp_alc_1b",
+            "subj_resp_alc_1c",
+            "subj_resp_alc_2a",
+            "subj_resp_alc_2b",
+            "subj_resp_alc_2c",
+            "subj_resp_alc_3a",
+            "subj_resp_alc_3b",
+            "subj_resp_alc_3c",
+            "subj_resp_alc_4a",
+            "subj_resp_alc_4b",
+            "subj_resp_alc_4c",
+            "subj_resp_nic_q01",
+            "subj_resp_nic_q02",
+            "subj_resp_nic_q03",
+            "subj_resp_nic_q04",
+            "subj_resp_nic_q05",
+            "subj_resp_nic_q06",
+            "subj_resp_nic_q07",
+            "subj_resp_nic_q08",
+            "subj_resp_nic_q09",
+            "tlfb_6mo_1_cig",
+            "tlfb_6mo_1_ecig",
+            "tlfb_6mo_1_ecig_dk",
+            "tlfb_6mo_10_concmj",
+            "tlfb_6mo_10b_concmj",
+            "tlfb_6mo_11_concmj",
+            "tlfb_6mo_12_concmj",
+            "tlfb_6mo_13_mj___1",
+            "tlfb_6mo_13_mj___10",
+            "tlfb_6mo_13_mj___11",
+            "tlfb_6mo_13_mj___12",
+            "tlfb_6mo_13_mj___13",
+            "tlfb_6mo_13_mj___14",
+            "tlfb_6mo_13_mj___15",
+            "tlfb_6mo_13_mj___16",
+            "tlfb_6mo_13_mj___2",
+            "tlfb_6mo_13_mj___3",
+            "tlfb_6mo_13_mj___4",
+            "tlfb_6mo_13_mj___5",
+            "tlfb_6mo_13_mj___6",
+            "tlfb_6mo_13_mj___7",
+            "tlfb_6mo_13_mj___8",
+            "tlfb_6mo_13_mj___9",
+            "tlfb_6mo_14_coc",
+            "tlfb_6mo_15_coc",
+            "tlfb_6mo_16_coc",
+            "tlfb_6mo_17_coc",
+            "tlfb_6mo_18_meth",
+            "tlfb_6mo_19_meth",
+            "tlfb_6mo_2_ecig",
+            "tlfb_6mo_2_ecig_dk",
+            "tlfb_6mo_20_meth",
+            "tlfb_6mo_21_heroin",
+            "tlfb_6mo_22_heroin",
+            "tlfb_6mo_23_heroin",
+            "tlfb_6mo_3_ecig",
+            "tlfb_6mo_4_ecig",
+            "tlfb_6mo_4_mj",
+            "tlfb_6mo_4_mj_dk",
+            "tlfb_6mo_5_mj",
+            "tlfb_6mo_6_mj",
+            "tlfb_6mo_7_mj",
+            "tlfb_6mo_8_mj",
+            "tlfb_6mo_9_concmj",
+            "tlfb_6mo_9b_concmj",
+            "tlfb_6mo_hall_use_type___1",
+            "tlfb_6mo_hall_use_type___2",
+            "tlfb_6mo_hall_use_type___3",
+            "tlfb_6mo_hall_use_type___4",
+            "tlfb_6mo_hall_use_type___6",
+            "tlfb_6mo_hall_use_type___7",
+            "tlfb_6mo_hall_use_type___8",
+            "tlfb_6mo_hall_use_type___9",
+            "tlfb_6mo_mj_drink_type",
+            "tlfb_6mo_skip___1",
+            "tlfb_6mo_skip___10",
+            "tlfb_6mo_skip___11",
+            "tlfb_6mo_skip___12",
+            "tlfb_6mo_skip___13",
+            "tlfb_6mo_skip___14",
+            "tlfb_6mo_skip___15",
+            "tlfb_6mo_skip___16",
+            "tlfb_6mo_skip___17",
+            "tlfb_6mo_skip___18",
+            "tlfb_6mo_skip___19",
+            "tlfb_6mo_skip___2",
+            "tlfb_6mo_skip___20",
+            "tlfb_6mo_skip___21",
+            "tlfb_6mo_skip___22",
+            "tlfb_6mo_skip___23",
+            "tlfb_6mo_skip___24",
+            "tlfb_6mo_skip___25",
+            "tlfb_6mo_skip___26",
+            "tlfb_6mo_skip___27",
+            "tlfb_6mo_skip___28",
+            "tlfb_6mo_skip___29",
+            "tlfb_6mo_skip___3",
+            "tlfb_6mo_skip___30",
+            "tlfb_6mo_skip___31",
+            "tlfb_6mo_skip___32",
+            "tlfb_6mo_skip___4",
+            "tlfb_6mo_skip___5",
+            "tlfb_6mo_skip___6",
+            "tlfb_6mo_skip___7",
+            "tlfb_6mo_skip___8",
+            "tlfb_6mo_skip___9",
+            "tlfb_6mo_tincture_type",
+            "tlfb_age",
+            "tlfb_age_calc_inmonths",
+            "tlfb_age_month",
+            "tlfb_alc",
+            "tlfb_alc_calc",
+            "tlfb_alc_calc_reg",
+            "tlfb_alc_date1",
+            "tlfb_alc_date2",
+            "tlfb_alc_last",
+            "tlfb_alc_last_calc",
+            "tlfb_alc_lt",
+            "tlfb_alc_lt_dk",
+            "tlfb_alc_max",
+            "tlfb_alc_max_dk",
+            "tlfb_alc_reg",
+            "tlfb_alc_sip",
+            "tlfb_alc_use",
+            "tlfb_amp_calc",
+            "tlfb_amp_calc_reg",
+            "tlfb_amp_date1",
+            "tlfb_amp_date2",
+            "tlfb_amp_last",
+            "tlfb_amp_last_calc",
+            "tlfb_amp_lt",
+            "tlfb_amp_lt_dk",
+            "tlfb_amp_max",
+            "tlfb_amp_max_dk",
+            "tlfb_amp_reg",
+            "tlfb_amp_use",
+            "tlfb_bitta",
+            "tlfb_bitta_calc",
+            "tlfb_bitta_calc_reg",
+            "tlfb_bitta_date1",
+            "tlfb_bitta_date2",
+            "tlfb_bitta_last",
+            "tlfb_bitta_last_calc",
+            "tlfb_bitta_lt",
+            "tlfb_bitta_lt_dk",
+            "tlfb_bitta_max",
+            "tlfb_bitta_max_dk",
+            "tlfb_bitta_reg",
+            "tlfb_bitta_use",
+            "tlfb_blunt_calc",
+            "tlfb_blunt_calc_reg",
+            "tlfb_blunt_date1",
+            "tlfb_blunt_date2",
+            "tlfb_blunt_last",
+            "tlfb_blunt_last_calc",
+            "tlfb_blunt_lt",
+            "tlfb_blunt_lt_dk",
+            "tlfb_blunt_max",
+            "tlfb_blunt_max_dk",
+            "tlfb_blunt_reg",
+            "tlfb_blunt_use",
+            "tlfb_bsalts_calc",
+            "tlfb_bsalts_calc_reg",
+            "tlfb_bsalts_date1",
+            "tlfb_bsalts_date2",
+            "tlfb_bsalts_last",
+            "tlfb_bsalts_last_calc",
+            "tlfb_bsalts_lt",
+            "tlfb_bsalts_lt_dk",
+            "tlfb_bsalts_max",
+            "tlfb_bsalts_max_dk",
+            "tlfb_bsalts_reg",
+            "tlfb_bsalts_use",
+            "tlfb_caff",
+            "tlfb_chew_calc",
+            "tlfb_chew_calc_reg",
+            "tlfb_chew_date1",
+            "tlfb_chew_date2",
+            "tlfb_chew_last",
+            "tlfb_chew_last_calc",
+            "tlfb_chew_lt",
+            "tlfb_chew_lt_dk",
+            "tlfb_chew_max",
+            "tlfb_chew_max_dk",
+            "tlfb_chew_reg",
+            "tlfb_chew_use",
+            "tlfb_cig_calc",
+            "tlfb_cig_calc_reg",
+            "tlfb_cig_date1",
+            "tlfb_cig_date2",
+            "tlfb_cig_last",
+            "tlfb_cig_last_calc",
+            "tlfb_cig_lt",
+            "tlfb_cig_lt_dk",
+            "tlfb_cig_max",
+            "tlfb_cig_max_dk",
+            "tlfb_cig_reg",
+            "tlfb_cig_use",
+            "tlfb_cigar_calc",
+            "tlfb_cigar_calc_reg",
+            "tlfb_cigar_date1",
+            "tlfb_cigar_date2",
+            "tlfb_cigar_last",
+            "tlfb_cigar_last_calc",
+            "tlfb_cigar_lt",
+            "tlfb_cigar_lt_dk",
+            "tlfb_cigar_max",
+            "tlfb_cigar_max_dk",
+            "tlfb_cigar_reg",
+            "tlfb_cigar_use",
+            "tlfb_coc_calc",
+            "tlfb_coc_calc_reg",
+            "tlfb_coc_date1",
+            "tlfb_coc_date2",
+            "tlfb_coc_last",
+            "tlfb_coc_last_calc",
+            "tlfb_coc_lt",
+            "tlfb_coc_lt_dk",
+            "tlfb_coc_max",
+            "tlfb_coc_max_dk",
+            "tlfb_coc_reg",
+            "tlfb_coc_use",
+            "tlfb_cough_calc",
+            "tlfb_cough_calc_reg",
+            "tlfb_cough_date1",
+            "tlfb_cough_date2",
+            "tlfb_cough_last",
+            "tlfb_cough_last_calc",
+            "tlfb_cough_lt",
+            "tlfb_cough_lt_dk",
+            "tlfb_cough_max",
+            "tlfb_cough_max_dk",
+            "tlfb_cough_reg",
+            "tlfb_cough_use",
+            "tlfb_ecig_calc",
+            "tlfb_ecig_calc_reg",
+            "tlfb_ecig_date1",
+            "tlfb_ecig_date2",
+            "tlfb_ecig_last",
+            "tlfb_ecig_last_calc",
+            "tlfb_ecig_lt",
+            "tlfb_ecig_lt_dk",
+            "tlfb_ecig_lt_size",
+            "tlfb_ecig_lt_strength",
+            "tlfb_ecig_lt_strength_dk",
+            "tlfb_ecig_max",
+            "tlfb_ecig_max_dk",
+            "tlfb_ecig_reg",
+            "tlfb_ecig_use",
+            "tlfb_edible_calc",
+            "tlfb_edible_calc_reg",
+            "tlfb_edible_date1",
+            "tlfb_edible_date2",
+            "tlfb_edible_last",
+            "tlfb_edible_last_calc",
+            "tlfb_edible_lt",
+            "tlfb_edible_lt_dk",
+            "tlfb_edible_lt_mg",
+            "tlfb_edible_lt_mg_dk",
+            "tlfb_edible_max",
+            "tlfb_edible_max_dk",
+            "tlfb_edible_reg",
+            "tlfb_edible_use",
+            "tlfb_ghb_calc",
+            "tlfb_ghb_calc_reg",
+            "tlfb_ghb_date1",
+            "tlfb_ghb_date2",
+            "tlfb_ghb_last",
+            "tlfb_ghb_last_calc",
+            "tlfb_ghb_lt",
+            "tlfb_ghb_lt_dk",
+            "tlfb_ghb_max",
+            "tlfb_ghb_max_dk",
+            "tlfb_ghb_reg",
+            "tlfb_ghb_use",
+            "tlfb_hall_calc",
+            "tlfb_hall_calc_reg",
+            "tlfb_hall_date1",
+            "tlfb_hall_date2",
+            "tlfb_hall_last",
+            "tlfb_hall_last_calc",
+            "tlfb_hall_lt",
+            "tlfb_hall_lt_dk",
+            "tlfb_hall_max",
+            "tlfb_hall_max_dk",
+            "tlfb_hall_reg",
+            "tlfb_hall_use",
+            "tlfb_hall_use_type___1",
+            "tlfb_hall_use_type___10",
+            "tlfb_hall_use_type___2",
+            "tlfb_hall_use_type___3",
+            "tlfb_hall_use_type___4",
+            "tlfb_hall_use_type___6",
+            "tlfb_hall_use_type___7",
+            "tlfb_hall_use_type___8",
+            "tlfb_hookah_calc",
+            "tlfb_hookah_calc_reg",
+            "tlfb_hookah_date1",
+            "tlfb_hookah_date2",
+            "tlfb_hookah_last",
+            "tlfb_hookah_last_calc",
+            "tlfb_hookah_lt",
+            "tlfb_hookah_lt_dk",
+            "tlfb_hookah_max",
+            "tlfb_hookah_max_dk",
+            "tlfb_hookah_reg",
+            "tlfb_hookah_use",
+            "tlfb_inhalant",
+            "tlfb_inhalant_calc",
+            "tlfb_inhalant_calc_reg",
+            "tlfb_inhalant_date1",
+            "tlfb_inhalant_date2",
+            "tlfb_inhalant_last",
+            "tlfb_inhalant_last_calc",
+            "tlfb_inhalant_lt",
+            "tlfb_inhalant_lt_dk",
+            "tlfb_inhalant_max",
+            "tlfb_inhalant_max_dk",
+            "tlfb_inhalant_reg",
+            "tlfb_inhalant_use",
+            "tlfb_inhalant_use_type___1",
+            "tlfb_inhalant_use_type___2",
+            "tlfb_inhalant_use_type___3",
+            "tlfb_inhalant_use_type___4",
+            "tlfb_inhalant_use_type___5",
+            "tlfb_inhalant_use_type___6",
+            "tlfb_inhalant_use_type___7",
+            "tlfb_inhalant_use_type___8",
+            "tlfb_ket_calc",
+            "tlfb_ket_calc_reg",
+            "tlfb_ket_date1",
+            "tlfb_ket_date2",
+            "tlfb_ket_last",
+            "tlfb_ket_last_calc",
+            "tlfb_ket_lt",
+            "tlfb_ket_lt_dk",
+            "tlfb_ket_max",
+            "tlfb_ket_max_dk",
+            "tlfb_ket_reg",
+            "tlfb_ket_use",
+            "tlfb_list___1",
+            "tlfb_list___10",
+            "tlfb_list___11",
+            "tlfb_list___12",
+            "tlfb_list___18",
+            "tlfb_list___2",
+            "tlfb_list___3",
+            "tlfb_list___4",
+            "tlfb_list___5",
+            "tlfb_list___6",
+            "tlfb_list___7",
+            "tlfb_list___8",
+            "tlfb_list___9",
+            "tlfb_list_yes_no",
+            "tlfb_lt_nicotine",
+            "tlfb_lt_nicotine_dk",
+            "tlfb_mdma_calc",
+            "tlfb_mdma_calc_reg",
+            "tlfb_mdma_date1",
+            "tlfb_mdma_date2",
+            "tlfb_mdma_last",
+            "tlfb_mdma_last_calc",
+            "tlfb_mdma_lt",
+            "tlfb_mdma_lt_dk",
+            "tlfb_mdma_max",
+            "tlfb_mdma_max_dk",
+            "tlfb_mdma_reg",
+            "tlfb_mdma_use",
+            "tlfb_meth_calc",
+            "tlfb_meth_calc_reg",
+            "tlfb_meth_date1",
+            "tlfb_meth_date2",
+            "tlfb_meth_last",
+            "tlfb_meth_last_calc",
+            "tlfb_meth_lt",
+            "tlfb_meth_lt_dk",
+            "tlfb_meth_max",
+            "tlfb_meth_max_dk",
+            "tlfb_meth_reg",
+            "tlfb_meth_use",
+            "tlfb_mj",
+            "tlfb_mj_calc",
+            "tlfb_mj_calc_reg",
+            "tlfb_mj_conc_calc",
+            "tlfb_mj_conc_calc_reg",
+            "tlfb_mj_conc_date1",
+            "tlfb_mj_conc_date2",
+            "tlfb_mj_conc_last",
+            "tlfb_mj_conc_last_calc",
+            "tlfb_mj_conc_lt",
+            "tlfb_mj_conc_lt_1b",
+            "tlfb_mj_conc_lt_1b_dk",
+            "tlfb_mj_conc_lt_1c___1",
+            "tlfb_mj_conc_lt_1c___2",
+            "tlfb_mj_conc_lt_1c___3",
+            "tlfb_mj_conc_lt_1c___4",
+            "tlfb_mj_conc_lt_1c___5",
+            "tlfb_mj_conc_lt_1c___6",
+            "tlfb_mj_conc_lt_1d",
+            "tlfb_mj_conc_lt_1e",
+            "tlfb_mj_conc_lt_dk",
+            "tlfb_mj_conc_max",
+            "tlfb_mj_conc_max_dk",
+            "tlfb_mj_conc_reg",
+            "tlfb_mj_conc_use",
+            "tlfb_mj_date1",
+            "tlfb_mj_date2",
+            "tlfb_mj_drink_calc_reg",
+            "tlfb_mj_drink_date1",
+            "tlfb_mj_drink_date2",
+            "tlfb_mj_drink_last",
+            "tlfb_mj_drink_last_calc",
+            "tlfb_mj_drink_lt",
+            "tlfb_mj_drink_lt_dk",
+            "tlfb_mj_drink_max",
+            "tlfb_mj_drink_max_dk",
+            "tlfb_mj_drink_reg",
+            "tlfb_mj_drink_use",
+            "tlfb_mj_last",
+            "tlfb_mj_last_calc",
+            "tlfb_mj_lt",
+            "tlfb_mj_lt_dk",
+            "tlfb_mj_max",
+            "tlfb_mj_max_dk",
+            "tlfb_mj_puff",
+            "tlfb_mj_reg",
+            "tlfb_mj_synth",
+            "tlfb_mj_synth_calc",
+            "tlfb_mj_synth_calc_reg",
+            "tlfb_mj_synth_date1",
+            "tlfb_mj_synth_date2",
+            "tlfb_mj_synth_last",
+            "tlfb_mj_synth_last_calc",
+            "tlfb_mj_synth_lt",
+            "tlfb_mj_synth_lt_dk",
+            "tlfb_mj_synth_max",
+            "tlfb_mj_synth_max_dk",
+            "tlfb_mj_synth_reg",
+            "tlfb_mj_synth_use",
+            "tlfb_mj_use",
+            "tlfb_nicotine_calc",
+            "tlfb_nicotine_calc_reg",
+            "tlfb_nicotine_date1",
+            "tlfb_nicotine_date2",
+            "tlfb_nicotine_last",
+            "tlfb_nicotine_last_calc",
+            "tlfb_nicotine_max",
+            "tlfb_nicotine_max_dk",
+            "tlfb_nicotine_reg",
+            "tlfb_nicotine_use",
+            "tlfb_opi_calc",
+            "tlfb_opi_calc_reg",
+            "tlfb_opi_date1",
+            "tlfb_opi_date2",
+            "tlfb_opi_last",
+            "tlfb_opi_last_calc",
+            "tlfb_opi_lt",
+            "tlfb_opi_lt_dk",
+            "tlfb_opi_max",
+            "tlfb_opi_max_dk",
+            "tlfb_opi_reg",
+            "tlfb_opi_use",
+            "tlfb_other_last",
+            "tlfb_other_lt",
+            "tlfb_other_lt_dk",
+            "tlfb_other_max",
+            "tlfb_other_max_dk",
+            "tlfb_other_use",
+            "tlfb_pipes_calc",
+            "tlfb_pipes_calc_reg",
+            "tlfb_pipes_date1",
+            "tlfb_pipes_date2",
+            "tlfb_pipes_last",
+            "tlfb_pipes_last_calc",
+            "tlfb_pipes_lt",
+            "tlfb_pipes_lt_dk",
+            "tlfb_pipes_max",
+            "tlfb_pipes_max_dk",
+            "tlfb_pipes_reg",
+            "tlfb_pipes_use",
+            "tlfb_rx_misuse",
+            "tlfb_salvia_calc",
+            "tlfb_salvia_calc_reg",
+            "tlfb_salvia_date1",
+            "tlfb_salvia_date2",
+            "tlfb_salvia_last",
+            "tlfb_salvia_last_calc",
+            "tlfb_salvia_lt",
+            "tlfb_salvia_lt_dk",
+            "tlfb_salvia_max",
+            "tlfb_salvia_max_dk",
+            "tlfb_salvia_reg",
+            "tlfb_salvia_use",
+            "tlfb_shrooms_calc",
+            "tlfb_shrooms_calc_reg",
+            "tlfb_shrooms_date1",
+            "tlfb_shrooms_date2",
+            "tlfb_shrooms_last",
+            "tlfb_shrooms_last_calc",
+            "tlfb_shrooms_lt",
+            "tlfb_shrooms_lt_dk",
+            "tlfb_shrooms_max",
+            "tlfb_shrooms_max_dk",
+            "tlfb_shrooms_reg",
+            "tlfb_shrooms_use",
+            "tlfb_sniff_use",
+            "tlfb_steroids_calc",
+            "tlfb_steroids_calc_reg",
+            "tlfb_steroids_date1",
+            "tlfb_steroids_date2",
+            "tlfb_steroids_last",
+            "tlfb_steroids_last_calc",
+            "tlfb_steroids_lt",
+            "tlfb_steroids_lt_dk",
+            "tlfb_steroids_max",
+            "tlfb_steroids_max_dk",
+            "tlfb_steroids_reg",
+            "tlfb_steroids_use",
+            "tlfb_tincture_calc",
+            "tlfb_tincture_calc_reg",
+            "tlfb_tincture_date1",
+            "tlfb_tincture_date2",
+            "tlfb_tincture_last",
+            "tlfb_tincture_last_calc",
+            "tlfb_tincture_lt",
+            "tlfb_tincture_lt_dk",
+            "tlfb_tincture_max",
+            "tlfb_tincture_max_dk",
+            "tlfb_tincture_reg",
+            "tlfb_tincture_use",
+            "tlfb_tob",
+            "tlfb_tob_puff",
+            "tlfb_tranq_calc",
+            "tlfb_tranq_calc_reg",
+            "tlfb_tranq_date1",
+            "tlfb_tranq_date2",
+            "tlfb_tranq_last",
+            "tlfb_tranq_last_calc",
+            "tlfb_tranq_lt",
+            "tlfb_tranq_lt_dk",
+            "tlfb_tranq_max",
+            "tlfb_tranq_max_dk",
+            "tlfb_tranq_reg",
+            "tlfb_tranq_use",
+            "tlfb_vicodin_calc",
+            "tlfb_vicodin_calc_reg",
+            "tlfb_vicodin_date1",
+            "tlfb_vicodin_date2",
+            "tlfb_vicodin_last",
+            "tlfb_vicodin_last_calc",
+            "tlfb_vicodin_lt",
+            "tlfb_vicodin_lt_dk",
+            "tlfb_vicodin_max",
+            "tlfb_vicodin_max_dk",
+            "tlfb_vicodin_reg",
+            "tlfb_vicodin_use",
+            "xcalc_mj_drink",
+            "xskipout_alc",
+            "xskipout_mj",
+            "xskipout_other",
+            "xskipout_tob"
+        ],
+        "shuffle": false,
+        "addProperties": [
+            {
+                "variableName": "caff_intake_1",
+                "isAbout": "caff_intake_1"
+            },
+            {
+                "variableName": "caff_intake_3",
+                "isAbout": "caff_intake_3"
+            },
+            {
+                "variableName": "caff_intake_4",
+                "isAbout": "caff_intake_4"
+            },
+            {
+                "variableName": "caff_intake_6",
+                "isAbout": "caff_intake_6"
+            },
+            {
+                "variableName": "caff_intake_9",
+                "isAbout": "caff_intake_9"
+            },
+            {
+                "variableName": "caff_max",
+                "isAbout": "caff_max"
+            },
+            {
+                "variableName": "caff_max_type",
+                "isAbout": "caff_max_type"
+            },
+            {
+                "variableName": "dapi_q01",
+                "isAbout": "dapi_q01"
+            },
+            {
+                "variableName": "dapi_q02",
+                "isAbout": "dapi_q02"
+            },
+            {
+                "variableName": "dapi_q03",
+                "isAbout": "dapi_q03"
+            },
+            {
+                "variableName": "dapi_q04",
+                "isAbout": "dapi_q04"
+            },
+            {
+                "variableName": "dapi_q05",
+                "isAbout": "dapi_q05"
+            },
+            {
+                "variableName": "dapi_q06",
+                "isAbout": "dapi_q06"
+            },
+            {
+                "variableName": "dapi_q07",
+                "isAbout": "dapi_q07"
+            },
+            {
+                "variableName": "dapi_q08",
+                "isAbout": "dapi_q08"
+            },
+            {
+                "variableName": "dapi_q09",
+                "isAbout": "dapi_q09"
+            },
+            {
+                "variableName": "dapi_q10",
+                "isAbout": "dapi_q10"
+            },
+            {
+                "variableName": "dapi_q11",
+                "isAbout": "dapi_q11"
+            },
+            {
+                "variableName": "dapi_q12",
+                "isAbout": "dapi_q12"
+            },
+            {
+                "variableName": "dapi_q13",
+                "isAbout": "dapi_q13"
+            },
+            {
+                "variableName": "dapi_q14",
+                "isAbout": "dapi_q14"
+            },
+            {
+                "variableName": "dapi_q15",
+                "isAbout": "dapi_q15"
+            },
+            {
+                "variableName": "dapi_q16",
+                "isAbout": "dapi_q16"
+            },
+            {
+                "variableName": "dapi_q17",
+                "isAbout": "dapi_q17"
+            },
+            {
+                "variableName": "dapi_q18",
+                "isAbout": "dapi_q18"
+            },
+            {
+                "variableName": "first_mj_1a",
+                "isAbout": "first_mj_1a"
+            },
+            {
+                "variableName": "first_mj_1b",
+                "isAbout": "first_mj_1b"
+            },
+            {
+                "variableName": "first_mj_3",
+                "isAbout": "first_mj_3"
+            },
+            {
+                "variableName": "first_mj_4",
+                "isAbout": "first_mj_4"
+            },
+            {
+                "variableName": "first_mj_5",
+                "isAbout": "first_mj_5"
+            },
+            {
+                "variableName": "first_mj_6",
+                "isAbout": "first_mj_6"
+            },
+            {
+                "variableName": "first_mj_7",
+                "isAbout": "first_mj_7"
+            },
+            {
+                "variableName": "first_mj_8",
+                "isAbout": "first_mj_8"
+            },
+            {
+                "variableName": "first_nicotine_1",
+                "isAbout": "first_nicotine_1"
+            },
+            {
+                "variableName": "first_nicotine_11",
+                "isAbout": "first_nicotine_11"
+            },
+            {
+                "variableName": "first_nicotine_12",
+                "isAbout": "first_nicotine_12"
+            },
+            {
+                "variableName": "first_nicotine_13",
+                "isAbout": "first_nicotine_13"
+            },
+            {
+                "variableName": "first_nicotine_2",
+                "isAbout": "first_nicotine_2"
+            },
+            {
+                "variableName": "first_nicotine_3",
+                "isAbout": "first_nicotine_3"
+            },
+            {
+                "variableName": "first_nicotine_4",
+                "isAbout": "first_nicotine_4"
+            },
+            {
+                "variableName": "first_nicotine_5",
+                "isAbout": "first_nicotine_5"
+            },
+            {
+                "variableName": "first_nicotine_6",
+                "isAbout": "first_nicotine_6"
+            },
+            {
+                "variableName": "first_nicotine_7",
+                "isAbout": "first_nicotine_7"
+            },
+            {
+                "variableName": "hangover1",
+                "isAbout": "hangover1"
+            },
+            {
+                "variableName": "hangover10",
+                "isAbout": "hangover10"
+            },
+            {
+                "variableName": "hangover11",
+                "isAbout": "hangover11"
+            },
+            {
+                "variableName": "hangover12",
+                "isAbout": "hangover12"
+            },
+            {
+                "variableName": "hangover13",
+                "isAbout": "hangover13"
+            },
+            {
+                "variableName": "hangover14",
+                "isAbout": "hangover14"
+            },
+            {
+                "variableName": "hangover2",
+                "isAbout": "hangover2"
+            },
+            {
+                "variableName": "hangover3",
+                "isAbout": "hangover3"
+            },
+            {
+                "variableName": "hangover4",
+                "isAbout": "hangover4"
+            },
+            {
+                "variableName": "hangover5",
+                "isAbout": "hangover5"
+            },
+            {
+                "variableName": "hangover6",
+                "isAbout": "hangover6"
+            },
+            {
+                "variableName": "hangover7",
+                "isAbout": "hangover7"
+            },
+            {
+                "variableName": "hangover8",
+                "isAbout": "hangover8"
+            },
+            {
+                "variableName": "hangover9",
+                "isAbout": "hangover9"
+            },
+            {
+                "variableName": "isip_1",
+                "isAbout": "isip_1"
+            },
+            {
+                "variableName": "isip_1b_2",
+                "isAbout": "isip_1b_2"
+            },
+            {
+                "variableName": "isip_1b_yn",
+                "isAbout": "isip_1b_yn"
+            },
+            {
+                "variableName": "isip_1d_2",
+                "isAbout": "isip_1d_2"
+            },
+            {
+                "variableName": "isip_2_2",
+                "isAbout": "isip_2_2"
+            },
+            {
+                "variableName": "isip_3_2",
+                "isAbout": "isip_3_2"
+            },
+            {
+                "variableName": "isip_4_2",
+                "isAbout": "isip_4_2"
+            },
+            {
+                "variableName": "isip_5_2",
+                "isAbout": "isip_5_2"
+            },
+            {
+                "variableName": "isip_6_2",
+                "isAbout": "isip_6_2"
+            },
+            {
+                "variableName": "mapi_q01",
+                "isAbout": "mapi_q01"
+            },
+            {
+                "variableName": "mapi_q02",
+                "isAbout": "mapi_q02"
+            },
+            {
+                "variableName": "mapi_q03",
+                "isAbout": "mapi_q03"
+            },
+            {
+                "variableName": "mapi_q04",
+                "isAbout": "mapi_q04"
+            },
+            {
+                "variableName": "mapi_q05",
+                "isAbout": "mapi_q05"
+            },
+            {
+                "variableName": "mapi_q06",
+                "isAbout": "mapi_q06"
+            },
+            {
+                "variableName": "mapi_q07",
+                "isAbout": "mapi_q07"
+            },
+            {
+                "variableName": "mapi_q08",
+                "isAbout": "mapi_q08"
+            },
+            {
+                "variableName": "mapi_q09",
+                "isAbout": "mapi_q09"
+            },
+            {
+                "variableName": "mapi_q10",
+                "isAbout": "mapi_q10"
+            },
+            {
+                "variableName": "mapi_q11",
+                "isAbout": "mapi_q11"
+            },
+            {
+                "variableName": "mapi_q12",
+                "isAbout": "mapi_q12"
+            },
+            {
+                "variableName": "mapi_q13",
+                "isAbout": "mapi_q13"
+            },
+            {
+                "variableName": "mapi_q14",
+                "isAbout": "mapi_q14"
+            },
+            {
+                "variableName": "mapi_q15",
+                "isAbout": "mapi_q15"
+            },
+            {
+                "variableName": "mapi_q16",
+                "isAbout": "mapi_q16"
+            },
+            {
+                "variableName": "mapi_q17",
+                "isAbout": "mapi_q17"
+            },
+            {
+                "variableName": "mapi_q18",
+                "isAbout": "mapi_q18"
+            },
+            {
+                "variableName": "path_alc_youth1",
+                "isAbout": "path_alc_youth1"
+            },
+            {
+                "variableName": "path_alc_youth2",
+                "isAbout": "path_alc_youth2"
+            },
+            {
+                "variableName": "path_alc_youth3",
+                "isAbout": "path_alc_youth3"
+            },
+            {
+                "variableName": "path_alc_youth4",
+                "isAbout": "path_alc_youth4"
+            },
+            {
+                "variableName": "path_alc_youth5",
+                "isAbout": "path_alc_youth5"
+            },
+            {
+                "variableName": "path_alc_youth6",
+                "isAbout": "path_alc_youth6"
+            },
+            {
+                "variableName": "path_alc_youth7",
+                "isAbout": "path_alc_youth7"
+            },
+            {
+                "variableName": "path_alc_youth8",
+                "isAbout": "path_alc_youth8"
+            },
+            {
+                "variableName": "path_alc_youth9",
+                "isAbout": "path_alc_youth9"
+            },
+            {
+                "variableName": "path_nic_dep_q01",
+                "isAbout": "path_nic_dep_q01"
+            },
+            {
+                "variableName": "path_nic_dep_q02",
+                "isAbout": "path_nic_dep_q02"
+            },
+            {
+                "variableName": "path_nic_dep_q03",
+                "isAbout": "path_nic_dep_q03"
+            },
+            {
+                "variableName": "path_nic_dep_q04",
+                "isAbout": "path_nic_dep_q04"
+            },
+            {
+                "variableName": "path_nic_dep_q05",
+                "isAbout": "path_nic_dep_q05"
+            },
+            {
+                "variableName": "path_nic_dep_q06",
+                "isAbout": "path_nic_dep_q06"
+            },
+            {
+                "variableName": "path_nic_dep_q07",
+                "isAbout": "path_nic_dep_q07"
+            },
+            {
+                "variableName": "path_nic_dep_q08",
+                "isAbout": "path_nic_dep_q08"
+            },
+            {
+                "variableName": "path_nic_dep_q09",
+                "isAbout": "path_nic_dep_q09"
+            },
+            {
+                "variableName": "path_nic_dep_q10",
+                "isAbout": "path_nic_dep_q10"
+            },
+            {
+                "variableName": "peer_deviance_1_4bbe5d",
+                "isAbout": "peer_deviance_1_4bbe5d"
+            },
+            {
+                "variableName": "peer_deviance_2_dd1457",
+                "isAbout": "peer_deviance_2_dd1457"
+            },
+            {
+                "variableName": "peer_deviance_3_e1ec2e",
+                "isAbout": "peer_deviance_3_e1ec2e"
+            },
+            {
+                "variableName": "peer_deviance_4_b6c588",
+                "isAbout": "peer_deviance_4_b6c588"
+            },
+            {
+                "variableName": "peer_deviance_5_bffa44",
+                "isAbout": "peer_deviance_5_bffa44"
+            },
+            {
+                "variableName": "peer_deviance_6_69562e",
+                "isAbout": "peer_deviance_6_69562e"
+            },
+            {
+                "variableName": "peer_deviance_7_beb683",
+                "isAbout": "peer_deviance_7_beb683"
+            },
+            {
+                "variableName": "peer_deviance_8_35702e",
+                "isAbout": "peer_deviance_8_35702e"
+            },
+            {
+                "variableName": "peer_deviance_9_6dd4ef",
+                "isAbout": "peer_deviance_9_6dd4ef"
+            },
+            {
+                "variableName": "rapi_section1_q01",
+                "isAbout": "rapi_section1_q01"
+            },
+            {
+                "variableName": "rapi_section1_q02",
+                "isAbout": "rapi_section1_q02"
+            },
+            {
+                "variableName": "rapi_section1_q03",
+                "isAbout": "rapi_section1_q03"
+            },
+            {
+                "variableName": "rapi_section1_q04",
+                "isAbout": "rapi_section1_q04"
+            },
+            {
+                "variableName": "rapi_section1_q05",
+                "isAbout": "rapi_section1_q05"
+            },
+            {
+                "variableName": "rapi_section1_q06",
+                "isAbout": "rapi_section1_q06"
+            },
+            {
+                "variableName": "rapi_section1_q07",
+                "isAbout": "rapi_section1_q07"
+            },
+            {
+                "variableName": "rapi_section2_q08",
+                "isAbout": "rapi_section2_q08"
+            },
+            {
+                "variableName": "rapi_section2_q09",
+                "isAbout": "rapi_section2_q09"
+            },
+            {
+                "variableName": "rapi_section2_q10",
+                "isAbout": "rapi_section2_q10"
+            },
+            {
+                "variableName": "rapi_section2_q11",
+                "isAbout": "rapi_section2_q11"
+            },
+            {
+                "variableName": "rapi_section2_q12",
+                "isAbout": "rapi_section2_q12"
+            },
+            {
+                "variableName": "rapi_section2_q13",
+                "isAbout": "rapi_section2_q13"
+            },
+            {
+                "variableName": "rapi_section2_q14",
+                "isAbout": "rapi_section2_q14"
+            },
+            {
+                "variableName": "rapi_section3_q15",
+                "isAbout": "rapi_section3_q15"
+            },
+            {
+                "variableName": "rapi_section3_q16",
+                "isAbout": "rapi_section3_q16"
+            },
+            {
+                "variableName": "rapi_section3_q17",
+                "isAbout": "rapi_section3_q17"
+            },
+            {
+                "variableName": "rapi_section3_q18",
+                "isAbout": "rapi_section3_q18"
+            },
+            {
+                "variableName": "su_caff_intake_1_calc",
+                "isAbout": "su_caff_intake_1_calc"
+            },
+            {
+                "variableName": "su_caff_intake_3_calc",
+                "isAbout": "su_caff_intake_3_calc"
+            },
+            {
+                "variableName": "su_caff_intake_4_calc",
+                "isAbout": "su_caff_intake_4_calc"
+            },
+            {
+                "variableName": "su_caff_intake_6_calc",
+                "isAbout": "su_caff_intake_6_calc"
+            },
+            {
+                "variableName": "su_caff_intake_9_calc",
+                "isAbout": "su_caff_intake_9_calc"
+            },
+            {
+                "variableName": "su_caff_max_calc",
+                "isAbout": "su_caff_max_calc"
+            },
+            {
+                "variableName": "su_isip_1_calc",
+                "isAbout": "su_isip_1_calc"
+            },
+            {
+                "variableName": "su_isip_1b_2_calc",
+                "isAbout": "su_isip_1b_2_calc"
+            },
+            {
+                "variableName": "su_tlfb_6mo_1_ecig_calc",
+                "isAbout": "su_tlfb_6mo_1_ecig_calc"
+            },
+            {
+                "variableName": "su_tlfb_6mo_2_ecig_calc",
+                "isAbout": "su_tlfb_6mo_2_ecig_calc"
+            },
+            {
+                "variableName": "su_tlfb_alc_lt_calc",
+                "isAbout": "su_tlfb_alc_lt_calc"
+            },
+            {
+                "variableName": "su_tlfb_alc_max_calc",
+                "isAbout": "su_tlfb_alc_max_calc"
+            },
+            {
+                "variableName": "su_tlfb_alc_sip_calc",
+                "isAbout": "su_tlfb_alc_sip_calc"
+            },
+            {
+                "variableName": "su_tlfb_alc_use_calc",
+                "isAbout": "su_tlfb_alc_use_calc"
+            },
+            {
+                "variableName": "su_tlfb_amp_use_calc",
+                "isAbout": "su_tlfb_amp_use_calc"
+            },
+            {
+                "variableName": "su_tlfb_bitta_use_calc",
+                "isAbout": "su_tlfb_bitta_use_calc"
+            },
+            {
+                "variableName": "su_tlfb_blunt_use_calc",
+                "isAbout": "su_tlfb_blunt_use_calc"
+            },
+            {
+                "variableName": "su_tlfb_bsalts_use_calc",
+                "isAbout": "su_tlfb_bsalts_use_calc"
+            },
+            {
+                "variableName": "su_tlfb_chew_lt_calc",
+                "isAbout": "su_tlfb_chew_lt_calc"
+            },
+            {
+                "variableName": "su_tlfb_chew_max_calc",
+                "isAbout": "su_tlfb_chew_max_calc"
+            },
+            {
+                "variableName": "su_tlfb_chew_use_calc",
+                "isAbout": "su_tlfb_chew_use_calc"
+            },
+            {
+                "variableName": "su_tlfb_cig_lt_calc",
+                "isAbout": "su_tlfb_cig_lt_calc"
+            },
+            {
+                "variableName": "su_tlfb_cig_max_calc",
+                "isAbout": "su_tlfb_cig_max_calc"
+            },
+            {
+                "variableName": "su_tlfb_cig_use_calc",
+                "isAbout": "su_tlfb_cig_use_calc"
+            },
+            {
+                "variableName": "su_tlfb_cigar_lt_calc",
+                "isAbout": "su_tlfb_cigar_lt_calc"
+            },
+            {
+                "variableName": "su_tlfb_cigar_max_calc",
+                "isAbout": "su_tlfb_cigar_max_calc"
+            },
+            {
+                "variableName": "su_tlfb_cigar_use_calc",
+                "isAbout": "su_tlfb_cigar_use_calc"
+            },
+            {
+                "variableName": "su_tlfb_coc_use_calc",
+                "isAbout": "su_tlfb_coc_use_calc"
+            },
+            {
+                "variableName": "su_tlfb_cough_use_calc",
+                "isAbout": "su_tlfb_cough_use_calc"
+            },
+            {
+                "variableName": "su_tlfb_ecig_lt_calc",
+                "isAbout": "su_tlfb_ecig_lt_calc"
+            },
+            {
+                "variableName": "su_tlfb_ecig_max_calc",
+                "isAbout": "su_tlfb_ecig_max_calc"
+            },
+            {
+                "variableName": "su_tlfb_ecig_use_calc",
+                "isAbout": "su_tlfb_ecig_use_calc"
+            },
+            {
+                "variableName": "su_tlfb_edible_use_calc",
+                "isAbout": "su_tlfb_edible_use_calc"
+            },
+            {
+                "variableName": "su_tlfb_ghb_use_calc",
+                "isAbout": "su_tlfb_ghb_use_calc"
+            },
+            {
+                "variableName": "su_tlfb_hall_use_calc",
+                "isAbout": "su_tlfb_hall_use_calc"
+            },
+            {
+                "variableName": "su_tlfb_hookah_lt_calc",
+                "isAbout": "su_tlfb_hookah_lt_calc"
+            },
+            {
+                "variableName": "su_tlfb_hookah_max_calc",
+                "isAbout": "su_tlfb_hookah_max_calc"
+            },
+            {
+                "variableName": "su_tlfb_hookah_use_calc",
+                "isAbout": "su_tlfb_hookah_use_calc"
+            },
+            {
+                "variableName": "su_tlfb_inhalant_use_calc",
+                "isAbout": "su_tlfb_inhalant_use_calc"
+            },
+            {
+                "variableName": "su_tlfb_ket_use_calc",
+                "isAbout": "su_tlfb_ket_use_calc"
+            },
+            {
+                "variableName": "su_tlfb_lt_nicotine_calc",
+                "isAbout": "su_tlfb_lt_nicotine_calc"
+            },
+            {
+                "variableName": "su_tlfb_mdma_use_calc",
+                "isAbout": "su_tlfb_mdma_use_calc"
+            },
+            {
+                "variableName": "su_tlfb_meth_use_calc",
+                "isAbout": "su_tlfb_meth_use_calc"
+            },
+            {
+                "variableName": "su_tlfb_mj_conc_use_calc",
+                "isAbout": "su_tlfb_mj_conc_use_calc"
+            },
+            {
+                "variableName": "su_tlfb_mj_drink_use_calc",
+                "isAbout": "su_tlfb_mj_drink_use_calc"
+            },
+            {
+                "variableName": "su_tlfb_mj_puff_calc",
+                "isAbout": "su_tlfb_mj_puff_calc"
+            },
+            {
+                "variableName": "su_tlfb_mj_synth_use_calc",
+                "isAbout": "su_tlfb_mj_synth_use_calc"
+            },
+            {
+                "variableName": "su_tlfb_mj_use_calc",
+                "isAbout": "su_tlfb_mj_use_calc"
+            },
+            {
+                "variableName": "su_tlfb_nicotine_max_calc",
+                "isAbout": "su_tlfb_nicotine_max_calc"
+            },
+            {
+                "variableName": "su_tlfb_nicotine_use_calc",
+                "isAbout": "su_tlfb_nicotine_use_calc"
+            },
+            {
+                "variableName": "su_tlfb_opi_use_calc",
+                "isAbout": "su_tlfb_opi_use_calc"
+            },
+            {
+                "variableName": "su_tlfb_other_use_calc",
+                "isAbout": "su_tlfb_other_use_calc"
+            },
+            {
+                "variableName": "su_tlfb_pipes_lt_calc",
+                "isAbout": "su_tlfb_pipes_lt_calc"
+            },
+            {
+                "variableName": "su_tlfb_pipes_max_calc",
+                "isAbout": "su_tlfb_pipes_max_calc"
+            },
+            {
+                "variableName": "su_tlfb_pipes_use_calc",
+                "isAbout": "su_tlfb_pipes_use_calc"
+            },
+            {
+                "variableName": "su_tlfb_salvia_use_calc",
+                "isAbout": "su_tlfb_salvia_use_calc"
+            },
+            {
+                "variableName": "su_tlfb_shrooms_use_calc",
+                "isAbout": "su_tlfb_shrooms_use_calc"
+            },
+            {
+                "variableName": "su_tlfb_steroids_use_calc",
+                "isAbout": "su_tlfb_steroids_use_calc"
+            },
+            {
+                "variableName": "su_tlfb_tincture_use_calc",
+                "isAbout": "su_tlfb_tincture_use_calc"
+            },
+            {
+                "variableName": "su_tlfb_tob_puff_calc",
+                "isAbout": "su_tlfb_tob_puff_calc"
+            },
+            {
+                "variableName": "su_tlfb_tranq_use_calc",
+                "isAbout": "su_tlfb_tranq_use_calc"
+            },
+            {
+                "variableName": "su_tlfb_vicodin_use_calc",
+                "isAbout": "su_tlfb_vicodin_use_calc"
+            },
+            {
+                "variableName": "su_today",
+                "isAbout": "su_today"
+            },
+            {
+                "variableName": "sub_res_mj_q01",
+                "isAbout": "sub_res_mj_q01"
+            },
+            {
+                "variableName": "sub_res_mj_q02",
+                "isAbout": "sub_res_mj_q02"
+            },
+            {
+                "variableName": "sub_res_mj_q03",
+                "isAbout": "sub_res_mj_q03"
+            },
+            {
+                "variableName": "sub_res_mj_q04",
+                "isAbout": "sub_res_mj_q04"
+            },
+            {
+                "variableName": "sub_res_mj_q05",
+                "isAbout": "sub_res_mj_q05"
+            },
+            {
+                "variableName": "sub_res_mj_q06",
+                "isAbout": "sub_res_mj_q06"
+            },
+            {
+                "variableName": "sub_res_mj_q07",
+                "isAbout": "sub_res_mj_q07"
+            },
+            {
+                "variableName": "sub_res_mj_q08",
+                "isAbout": "sub_res_mj_q08"
+            },
+            {
+                "variableName": "sub_res_mj_q09",
+                "isAbout": "sub_res_mj_q09"
+            },
+            {
+                "variableName": "sub_res_mj_q10",
+                "isAbout": "sub_res_mj_q10"
+            },
+            {
+                "variableName": "sub_res_mj_q11",
+                "isAbout": "sub_res_mj_q11"
+            },
+            {
+                "variableName": "subj_resp_alc_1a",
+                "isAbout": "subj_resp_alc_1a"
+            },
+            {
+                "variableName": "subj_resp_alc_1b",
+                "isAbout": "subj_resp_alc_1b"
+            },
+            {
+                "variableName": "subj_resp_alc_1c",
+                "isAbout": "subj_resp_alc_1c"
+            },
+            {
+                "variableName": "subj_resp_alc_2a",
+                "isAbout": "subj_resp_alc_2a"
+            },
+            {
+                "variableName": "subj_resp_alc_2b",
+                "isAbout": "subj_resp_alc_2b"
+            },
+            {
+                "variableName": "subj_resp_alc_2c",
+                "isAbout": "subj_resp_alc_2c"
+            },
+            {
+                "variableName": "subj_resp_alc_3a",
+                "isAbout": "subj_resp_alc_3a"
+            },
+            {
+                "variableName": "subj_resp_alc_3b",
+                "isAbout": "subj_resp_alc_3b"
+            },
+            {
+                "variableName": "subj_resp_alc_3c",
+                "isAbout": "subj_resp_alc_3c"
+            },
+            {
+                "variableName": "subj_resp_alc_4a",
+                "isAbout": "subj_resp_alc_4a"
+            },
+            {
+                "variableName": "subj_resp_alc_4b",
+                "isAbout": "subj_resp_alc_4b"
+            },
+            {
+                "variableName": "subj_resp_alc_4c",
+                "isAbout": "subj_resp_alc_4c"
+            },
+            {
+                "variableName": "subj_resp_nic_q01",
+                "isAbout": "subj_resp_nic_q01"
+            },
+            {
+                "variableName": "subj_resp_nic_q02",
+                "isAbout": "subj_resp_nic_q02"
+            },
+            {
+                "variableName": "subj_resp_nic_q03",
+                "isAbout": "subj_resp_nic_q03"
+            },
+            {
+                "variableName": "subj_resp_nic_q04",
+                "isAbout": "subj_resp_nic_q04"
+            },
+            {
+                "variableName": "subj_resp_nic_q05",
+                "isAbout": "subj_resp_nic_q05"
+            },
+            {
+                "variableName": "subj_resp_nic_q06",
+                "isAbout": "subj_resp_nic_q06"
+            },
+            {
+                "variableName": "subj_resp_nic_q07",
+                "isAbout": "subj_resp_nic_q07"
+            },
+            {
+                "variableName": "subj_resp_nic_q08",
+                "isAbout": "subj_resp_nic_q08"
+            },
+            {
+                "variableName": "subj_resp_nic_q09",
+                "isAbout": "subj_resp_nic_q09"
+            },
+            {
+                "variableName": "tlfb_6mo_1_cig",
+                "isAbout": "tlfb_6mo_1_cig"
+            },
+            {
+                "variableName": "tlfb_6mo_1_ecig",
+                "isAbout": "tlfb_6mo_1_ecig"
+            },
+            {
+                "variableName": "tlfb_6mo_1_ecig_dk",
+                "isAbout": "tlfb_6mo_1_ecig_dk"
+            },
+            {
+                "variableName": "tlfb_6mo_10_concmj",
+                "isAbout": "tlfb_6mo_10_concmj"
+            },
+            {
+                "variableName": "tlfb_6mo_10b_concmj",
+                "isAbout": "tlfb_6mo_10b_concmj"
+            },
+            {
+                "variableName": "tlfb_6mo_11_concmj",
+                "isAbout": "tlfb_6mo_11_concmj"
+            },
+            {
+                "variableName": "tlfb_6mo_12_concmj",
+                "isAbout": "tlfb_6mo_12_concmj"
+            },
+            {
+                "variableName": "tlfb_6mo_13_mj___1",
+                "isAbout": "tlfb_6mo_13_mj___1"
+            },
+            {
+                "variableName": "tlfb_6mo_13_mj___10",
+                "isAbout": "tlfb_6mo_13_mj___10"
+            },
+            {
+                "variableName": "tlfb_6mo_13_mj___11",
+                "isAbout": "tlfb_6mo_13_mj___11"
+            },
+            {
+                "variableName": "tlfb_6mo_13_mj___12",
+                "isAbout": "tlfb_6mo_13_mj___12"
+            },
+            {
+                "variableName": "tlfb_6mo_13_mj___13",
+                "isAbout": "tlfb_6mo_13_mj___13"
+            },
+            {
+                "variableName": "tlfb_6mo_13_mj___14",
+                "isAbout": "tlfb_6mo_13_mj___14"
+            },
+            {
+                "variableName": "tlfb_6mo_13_mj___15",
+                "isAbout": "tlfb_6mo_13_mj___15"
+            },
+            {
+                "variableName": "tlfb_6mo_13_mj___16",
+                "isAbout": "tlfb_6mo_13_mj___16"
+            },
+            {
+                "variableName": "tlfb_6mo_13_mj___2",
+                "isAbout": "tlfb_6mo_13_mj___2"
+            },
+            {
+                "variableName": "tlfb_6mo_13_mj___3",
+                "isAbout": "tlfb_6mo_13_mj___3"
+            },
+            {
+                "variableName": "tlfb_6mo_13_mj___4",
+                "isAbout": "tlfb_6mo_13_mj___4"
+            },
+            {
+                "variableName": "tlfb_6mo_13_mj___5",
+                "isAbout": "tlfb_6mo_13_mj___5"
+            },
+            {
+                "variableName": "tlfb_6mo_13_mj___6",
+                "isAbout": "tlfb_6mo_13_mj___6"
+            },
+            {
+                "variableName": "tlfb_6mo_13_mj___7",
+                "isAbout": "tlfb_6mo_13_mj___7"
+            },
+            {
+                "variableName": "tlfb_6mo_13_mj___8",
+                "isAbout": "tlfb_6mo_13_mj___8"
+            },
+            {
+                "variableName": "tlfb_6mo_13_mj___9",
+                "isAbout": "tlfb_6mo_13_mj___9"
+            },
+            {
+                "variableName": "tlfb_6mo_14_coc",
+                "isAbout": "tlfb_6mo_14_coc"
+            },
+            {
+                "variableName": "tlfb_6mo_15_coc",
+                "isAbout": "tlfb_6mo_15_coc"
+            },
+            {
+                "variableName": "tlfb_6mo_16_coc",
+                "isAbout": "tlfb_6mo_16_coc"
+            },
+            {
+                "variableName": "tlfb_6mo_17_coc",
+                "isAbout": "tlfb_6mo_17_coc"
+            },
+            {
+                "variableName": "tlfb_6mo_18_meth",
+                "isAbout": "tlfb_6mo_18_meth"
+            },
+            {
+                "variableName": "tlfb_6mo_19_meth",
+                "isAbout": "tlfb_6mo_19_meth"
+            },
+            {
+                "variableName": "tlfb_6mo_2_ecig",
+                "isAbout": "tlfb_6mo_2_ecig"
+            },
+            {
+                "variableName": "tlfb_6mo_2_ecig_dk",
+                "isAbout": "tlfb_6mo_2_ecig_dk"
+            },
+            {
+                "variableName": "tlfb_6mo_20_meth",
+                "isAbout": "tlfb_6mo_20_meth"
+            },
+            {
+                "variableName": "tlfb_6mo_21_heroin",
+                "isAbout": "tlfb_6mo_21_heroin"
+            },
+            {
+                "variableName": "tlfb_6mo_22_heroin",
+                "isAbout": "tlfb_6mo_22_heroin"
+            },
+            {
+                "variableName": "tlfb_6mo_23_heroin",
+                "isAbout": "tlfb_6mo_23_heroin"
+            },
+            {
+                "variableName": "tlfb_6mo_3_ecig",
+                "isAbout": "tlfb_6mo_3_ecig"
+            },
+            {
+                "variableName": "tlfb_6mo_4_ecig",
+                "isAbout": "tlfb_6mo_4_ecig"
+            },
+            {
+                "variableName": "tlfb_6mo_4_mj",
+                "isAbout": "tlfb_6mo_4_mj"
+            },
+            {
+                "variableName": "tlfb_6mo_4_mj_dk",
+                "isAbout": "tlfb_6mo_4_mj_dk"
+            },
+            {
+                "variableName": "tlfb_6mo_5_mj",
+                "isAbout": "tlfb_6mo_5_mj"
+            },
+            {
+                "variableName": "tlfb_6mo_6_mj",
+                "isAbout": "tlfb_6mo_6_mj"
+            },
+            {
+                "variableName": "tlfb_6mo_7_mj",
+                "isAbout": "tlfb_6mo_7_mj"
+            },
+            {
+                "variableName": "tlfb_6mo_8_mj",
+                "isAbout": "tlfb_6mo_8_mj"
+            },
+            {
+                "variableName": "tlfb_6mo_9_concmj",
+                "isAbout": "tlfb_6mo_9_concmj"
+            },
+            {
+                "variableName": "tlfb_6mo_9b_concmj",
+                "isAbout": "tlfb_6mo_9b_concmj"
+            },
+            {
+                "variableName": "tlfb_6mo_hall_use_type___1",
+                "isAbout": "tlfb_6mo_hall_use_type___1"
+            },
+            {
+                "variableName": "tlfb_6mo_hall_use_type___2",
+                "isAbout": "tlfb_6mo_hall_use_type___2"
+            },
+            {
+                "variableName": "tlfb_6mo_hall_use_type___3",
+                "isAbout": "tlfb_6mo_hall_use_type___3"
+            },
+            {
+                "variableName": "tlfb_6mo_hall_use_type___4",
+                "isAbout": "tlfb_6mo_hall_use_type___4"
+            },
+            {
+                "variableName": "tlfb_6mo_hall_use_type___6",
+                "isAbout": "tlfb_6mo_hall_use_type___6"
+            },
+            {
+                "variableName": "tlfb_6mo_hall_use_type___7",
+                "isAbout": "tlfb_6mo_hall_use_type___7"
+            },
+            {
+                "variableName": "tlfb_6mo_hall_use_type___8",
+                "isAbout": "tlfb_6mo_hall_use_type___8"
+            },
+            {
+                "variableName": "tlfb_6mo_hall_use_type___9",
+                "isAbout": "tlfb_6mo_hall_use_type___9"
+            },
+            {
+                "variableName": "tlfb_6mo_mj_drink_type",
+                "isAbout": "tlfb_6mo_mj_drink_type"
+            },
+            {
+                "variableName": "tlfb_6mo_skip___1",
+                "isAbout": "tlfb_6mo_skip___1"
+            },
+            {
+                "variableName": "tlfb_6mo_skip___10",
+                "isAbout": "tlfb_6mo_skip___10"
+            },
+            {
+                "variableName": "tlfb_6mo_skip___11",
+                "isAbout": "tlfb_6mo_skip___11"
+            },
+            {
+                "variableName": "tlfb_6mo_skip___12",
+                "isAbout": "tlfb_6mo_skip___12"
+            },
+            {
+                "variableName": "tlfb_6mo_skip___13",
+                "isAbout": "tlfb_6mo_skip___13"
+            },
+            {
+                "variableName": "tlfb_6mo_skip___14",
+                "isAbout": "tlfb_6mo_skip___14"
+            },
+            {
+                "variableName": "tlfb_6mo_skip___15",
+                "isAbout": "tlfb_6mo_skip___15"
+            },
+            {
+                "variableName": "tlfb_6mo_skip___16",
+                "isAbout": "tlfb_6mo_skip___16"
+            },
+            {
+                "variableName": "tlfb_6mo_skip___17",
+                "isAbout": "tlfb_6mo_skip___17"
+            },
+            {
+                "variableName": "tlfb_6mo_skip___18",
+                "isAbout": "tlfb_6mo_skip___18"
+            },
+            {
+                "variableName": "tlfb_6mo_skip___19",
+                "isAbout": "tlfb_6mo_skip___19"
+            },
+            {
+                "variableName": "tlfb_6mo_skip___2",
+                "isAbout": "tlfb_6mo_skip___2"
+            },
+            {
+                "variableName": "tlfb_6mo_skip___20",
+                "isAbout": "tlfb_6mo_skip___20"
+            },
+            {
+                "variableName": "tlfb_6mo_skip___21",
+                "isAbout": "tlfb_6mo_skip___21"
+            },
+            {
+                "variableName": "tlfb_6mo_skip___22",
+                "isAbout": "tlfb_6mo_skip___22"
+            },
+            {
+                "variableName": "tlfb_6mo_skip___23",
+                "isAbout": "tlfb_6mo_skip___23"
+            },
+            {
+                "variableName": "tlfb_6mo_skip___24",
+                "isAbout": "tlfb_6mo_skip___24"
+            },
+            {
+                "variableName": "tlfb_6mo_skip___25",
+                "isAbout": "tlfb_6mo_skip___25"
+            },
+            {
+                "variableName": "tlfb_6mo_skip___26",
+                "isAbout": "tlfb_6mo_skip___26"
+            },
+            {
+                "variableName": "tlfb_6mo_skip___27",
+                "isAbout": "tlfb_6mo_skip___27"
+            },
+            {
+                "variableName": "tlfb_6mo_skip___28",
+                "isAbout": "tlfb_6mo_skip___28"
+            },
+            {
+                "variableName": "tlfb_6mo_skip___29",
+                "isAbout": "tlfb_6mo_skip___29"
+            },
+            {
+                "variableName": "tlfb_6mo_skip___3",
+                "isAbout": "tlfb_6mo_skip___3"
+            },
+            {
+                "variableName": "tlfb_6mo_skip___30",
+                "isAbout": "tlfb_6mo_skip___30"
+            },
+            {
+                "variableName": "tlfb_6mo_skip___31",
+                "isAbout": "tlfb_6mo_skip___31"
+            },
+            {
+                "variableName": "tlfb_6mo_skip___32",
+                "isAbout": "tlfb_6mo_skip___32"
+            },
+            {
+                "variableName": "tlfb_6mo_skip___4",
+                "isAbout": "tlfb_6mo_skip___4"
+            },
+            {
+                "variableName": "tlfb_6mo_skip___5",
+                "isAbout": "tlfb_6mo_skip___5"
+            },
+            {
+                "variableName": "tlfb_6mo_skip___6",
+                "isAbout": "tlfb_6mo_skip___6"
+            },
+            {
+                "variableName": "tlfb_6mo_skip___7",
+                "isAbout": "tlfb_6mo_skip___7"
+            },
+            {
+                "variableName": "tlfb_6mo_skip___8",
+                "isAbout": "tlfb_6mo_skip___8"
+            },
+            {
+                "variableName": "tlfb_6mo_skip___9",
+                "isAbout": "tlfb_6mo_skip___9"
+            },
+            {
+                "variableName": "tlfb_6mo_tincture_type",
+                "isAbout": "tlfb_6mo_tincture_type"
+            },
+            {
+                "variableName": "tlfb_age",
+                "isAbout": "tlfb_age"
+            },
+            {
+                "variableName": "tlfb_age_calc_inmonths",
+                "isAbout": "tlfb_age_calc_inmonths"
+            },
+            {
+                "variableName": "tlfb_age_month",
+                "isAbout": "tlfb_age_month"
+            },
+            {
+                "variableName": "tlfb_alc",
+                "isAbout": "tlfb_alc"
+            },
+            {
+                "variableName": "tlfb_alc_calc",
+                "isAbout": "tlfb_alc_calc"
+            },
+            {
+                "variableName": "tlfb_alc_calc_reg",
+                "isAbout": "tlfb_alc_calc_reg"
+            },
+            {
+                "variableName": "tlfb_alc_date1",
+                "isAbout": "tlfb_alc_date1"
+            },
+            {
+                "variableName": "tlfb_alc_date2",
+                "isAbout": "tlfb_alc_date2"
+            },
+            {
+                "variableName": "tlfb_alc_last",
+                "isAbout": "tlfb_alc_last"
+            },
+            {
+                "variableName": "tlfb_alc_last_calc",
+                "isAbout": "tlfb_alc_last_calc"
+            },
+            {
+                "variableName": "tlfb_alc_lt",
+                "isAbout": "tlfb_alc_lt"
+            },
+            {
+                "variableName": "tlfb_alc_lt_dk",
+                "isAbout": "tlfb_alc_lt_dk"
+            },
+            {
+                "variableName": "tlfb_alc_max",
+                "isAbout": "tlfb_alc_max"
+            },
+            {
+                "variableName": "tlfb_alc_max_dk",
+                "isAbout": "tlfb_alc_max_dk"
+            },
+            {
+                "variableName": "tlfb_alc_reg",
+                "isAbout": "tlfb_alc_reg"
+            },
+            {
+                "variableName": "tlfb_alc_sip",
+                "isAbout": "tlfb_alc_sip"
+            },
+            {
+                "variableName": "tlfb_alc_use",
+                "isAbout": "tlfb_alc_use"
+            },
+            {
+                "variableName": "tlfb_amp_calc",
+                "isAbout": "tlfb_amp_calc"
+            },
+            {
+                "variableName": "tlfb_amp_calc_reg",
+                "isAbout": "tlfb_amp_calc_reg"
+            },
+            {
+                "variableName": "tlfb_amp_date1",
+                "isAbout": "tlfb_amp_date1"
+            },
+            {
+                "variableName": "tlfb_amp_date2",
+                "isAbout": "tlfb_amp_date2"
+            },
+            {
+                "variableName": "tlfb_amp_last",
+                "isAbout": "tlfb_amp_last"
+            },
+            {
+                "variableName": "tlfb_amp_last_calc",
+                "isAbout": "tlfb_amp_last_calc"
+            },
+            {
+                "variableName": "tlfb_amp_lt",
+                "isAbout": "tlfb_amp_lt"
+            },
+            {
+                "variableName": "tlfb_amp_lt_dk",
+                "isAbout": "tlfb_amp_lt_dk"
+            },
+            {
+                "variableName": "tlfb_amp_max",
+                "isAbout": "tlfb_amp_max"
+            },
+            {
+                "variableName": "tlfb_amp_max_dk",
+                "isAbout": "tlfb_amp_max_dk"
+            },
+            {
+                "variableName": "tlfb_amp_reg",
+                "isAbout": "tlfb_amp_reg"
+            },
+            {
+                "variableName": "tlfb_amp_use",
+                "isAbout": "tlfb_amp_use"
+            },
+            {
+                "variableName": "tlfb_bitta",
+                "isAbout": "tlfb_bitta"
+            },
+            {
+                "variableName": "tlfb_bitta_calc",
+                "isAbout": "tlfb_bitta_calc"
+            },
+            {
+                "variableName": "tlfb_bitta_calc_reg",
+                "isAbout": "tlfb_bitta_calc_reg"
+            },
+            {
+                "variableName": "tlfb_bitta_date1",
+                "isAbout": "tlfb_bitta_date1"
+            },
+            {
+                "variableName": "tlfb_bitta_date2",
+                "isAbout": "tlfb_bitta_date2"
+            },
+            {
+                "variableName": "tlfb_bitta_last",
+                "isAbout": "tlfb_bitta_last"
+            },
+            {
+                "variableName": "tlfb_bitta_last_calc",
+                "isAbout": "tlfb_bitta_last_calc"
+            },
+            {
+                "variableName": "tlfb_bitta_lt",
+                "isAbout": "tlfb_bitta_lt"
+            },
+            {
+                "variableName": "tlfb_bitta_lt_dk",
+                "isAbout": "tlfb_bitta_lt_dk"
+            },
+            {
+                "variableName": "tlfb_bitta_max",
+                "isAbout": "tlfb_bitta_max"
+            },
+            {
+                "variableName": "tlfb_bitta_max_dk",
+                "isAbout": "tlfb_bitta_max_dk"
+            },
+            {
+                "variableName": "tlfb_bitta_reg",
+                "isAbout": "tlfb_bitta_reg"
+            },
+            {
+                "variableName": "tlfb_bitta_use",
+                "isAbout": "tlfb_bitta_use"
+            },
+            {
+                "variableName": "tlfb_blunt_calc",
+                "isAbout": "tlfb_blunt_calc"
+            },
+            {
+                "variableName": "tlfb_blunt_calc_reg",
+                "isAbout": "tlfb_blunt_calc_reg"
+            },
+            {
+                "variableName": "tlfb_blunt_date1",
+                "isAbout": "tlfb_blunt_date1"
+            },
+            {
+                "variableName": "tlfb_blunt_date2",
+                "isAbout": "tlfb_blunt_date2"
+            },
+            {
+                "variableName": "tlfb_blunt_last",
+                "isAbout": "tlfb_blunt_last"
+            },
+            {
+                "variableName": "tlfb_blunt_last_calc",
+                "isAbout": "tlfb_blunt_last_calc"
+            },
+            {
+                "variableName": "tlfb_blunt_lt",
+                "isAbout": "tlfb_blunt_lt"
+            },
+            {
+                "variableName": "tlfb_blunt_lt_dk",
+                "isAbout": "tlfb_blunt_lt_dk"
+            },
+            {
+                "variableName": "tlfb_blunt_max",
+                "isAbout": "tlfb_blunt_max"
+            },
+            {
+                "variableName": "tlfb_blunt_max_dk",
+                "isAbout": "tlfb_blunt_max_dk"
+            },
+            {
+                "variableName": "tlfb_blunt_reg",
+                "isAbout": "tlfb_blunt_reg"
+            },
+            {
+                "variableName": "tlfb_blunt_use",
+                "isAbout": "tlfb_blunt_use"
+            },
+            {
+                "variableName": "tlfb_bsalts_calc",
+                "isAbout": "tlfb_bsalts_calc"
+            },
+            {
+                "variableName": "tlfb_bsalts_calc_reg",
+                "isAbout": "tlfb_bsalts_calc_reg"
+            },
+            {
+                "variableName": "tlfb_bsalts_date1",
+                "isAbout": "tlfb_bsalts_date1"
+            },
+            {
+                "variableName": "tlfb_bsalts_date2",
+                "isAbout": "tlfb_bsalts_date2"
+            },
+            {
+                "variableName": "tlfb_bsalts_last",
+                "isAbout": "tlfb_bsalts_last"
+            },
+            {
+                "variableName": "tlfb_bsalts_last_calc",
+                "isAbout": "tlfb_bsalts_last_calc"
+            },
+            {
+                "variableName": "tlfb_bsalts_lt",
+                "isAbout": "tlfb_bsalts_lt"
+            },
+            {
+                "variableName": "tlfb_bsalts_lt_dk",
+                "isAbout": "tlfb_bsalts_lt_dk"
+            },
+            {
+                "variableName": "tlfb_bsalts_max",
+                "isAbout": "tlfb_bsalts_max"
+            },
+            {
+                "variableName": "tlfb_bsalts_max_dk",
+                "isAbout": "tlfb_bsalts_max_dk"
+            },
+            {
+                "variableName": "tlfb_bsalts_reg",
+                "isAbout": "tlfb_bsalts_reg"
+            },
+            {
+                "variableName": "tlfb_bsalts_use",
+                "isAbout": "tlfb_bsalts_use"
+            },
+            {
+                "variableName": "tlfb_caff",
+                "isAbout": "tlfb_caff"
+            },
+            {
+                "variableName": "tlfb_chew_calc",
+                "isAbout": "tlfb_chew_calc"
+            },
+            {
+                "variableName": "tlfb_chew_calc_reg",
+                "isAbout": "tlfb_chew_calc_reg"
+            },
+            {
+                "variableName": "tlfb_chew_date1",
+                "isAbout": "tlfb_chew_date1"
+            },
+            {
+                "variableName": "tlfb_chew_date2",
+                "isAbout": "tlfb_chew_date2"
+            },
+            {
+                "variableName": "tlfb_chew_last",
+                "isAbout": "tlfb_chew_last"
+            },
+            {
+                "variableName": "tlfb_chew_last_calc",
+                "isAbout": "tlfb_chew_last_calc"
+            },
+            {
+                "variableName": "tlfb_chew_lt",
+                "isAbout": "tlfb_chew_lt"
+            },
+            {
+                "variableName": "tlfb_chew_lt_dk",
+                "isAbout": "tlfb_chew_lt_dk"
+            },
+            {
+                "variableName": "tlfb_chew_max",
+                "isAbout": "tlfb_chew_max"
+            },
+            {
+                "variableName": "tlfb_chew_max_dk",
+                "isAbout": "tlfb_chew_max_dk"
+            },
+            {
+                "variableName": "tlfb_chew_reg",
+                "isAbout": "tlfb_chew_reg"
+            },
+            {
+                "variableName": "tlfb_chew_use",
+                "isAbout": "tlfb_chew_use"
+            },
+            {
+                "variableName": "tlfb_cig_calc",
+                "isAbout": "tlfb_cig_calc"
+            },
+            {
+                "variableName": "tlfb_cig_calc_reg",
+                "isAbout": "tlfb_cig_calc_reg"
+            },
+            {
+                "variableName": "tlfb_cig_date1",
+                "isAbout": "tlfb_cig_date1"
+            },
+            {
+                "variableName": "tlfb_cig_date2",
+                "isAbout": "tlfb_cig_date2"
+            },
+            {
+                "variableName": "tlfb_cig_last",
+                "isAbout": "tlfb_cig_last"
+            },
+            {
+                "variableName": "tlfb_cig_last_calc",
+                "isAbout": "tlfb_cig_last_calc"
+            },
+            {
+                "variableName": "tlfb_cig_lt",
+                "isAbout": "tlfb_cig_lt"
+            },
+            {
+                "variableName": "tlfb_cig_lt_dk",
+                "isAbout": "tlfb_cig_lt_dk"
+            },
+            {
+                "variableName": "tlfb_cig_max",
+                "isAbout": "tlfb_cig_max"
+            },
+            {
+                "variableName": "tlfb_cig_max_dk",
+                "isAbout": "tlfb_cig_max_dk"
+            },
+            {
+                "variableName": "tlfb_cig_reg",
+                "isAbout": "tlfb_cig_reg"
+            },
+            {
+                "variableName": "tlfb_cig_use",
+                "isAbout": "tlfb_cig_use"
+            },
+            {
+                "variableName": "tlfb_cigar_calc",
+                "isAbout": "tlfb_cigar_calc"
+            },
+            {
+                "variableName": "tlfb_cigar_calc_reg",
+                "isAbout": "tlfb_cigar_calc_reg"
+            },
+            {
+                "variableName": "tlfb_cigar_date1",
+                "isAbout": "tlfb_cigar_date1"
+            },
+            {
+                "variableName": "tlfb_cigar_date2",
+                "isAbout": "tlfb_cigar_date2"
+            },
+            {
+                "variableName": "tlfb_cigar_last",
+                "isAbout": "tlfb_cigar_last"
+            },
+            {
+                "variableName": "tlfb_cigar_last_calc",
+                "isAbout": "tlfb_cigar_last_calc"
+            },
+            {
+                "variableName": "tlfb_cigar_lt",
+                "isAbout": "tlfb_cigar_lt"
+            },
+            {
+                "variableName": "tlfb_cigar_lt_dk",
+                "isAbout": "tlfb_cigar_lt_dk"
+            },
+            {
+                "variableName": "tlfb_cigar_max",
+                "isAbout": "tlfb_cigar_max"
+            },
+            {
+                "variableName": "tlfb_cigar_max_dk",
+                "isAbout": "tlfb_cigar_max_dk"
+            },
+            {
+                "variableName": "tlfb_cigar_reg",
+                "isAbout": "tlfb_cigar_reg"
+            },
+            {
+                "variableName": "tlfb_cigar_use",
+                "isAbout": "tlfb_cigar_use"
+            },
+            {
+                "variableName": "tlfb_coc_calc",
+                "isAbout": "tlfb_coc_calc"
+            },
+            {
+                "variableName": "tlfb_coc_calc_reg",
+                "isAbout": "tlfb_coc_calc_reg"
+            },
+            {
+                "variableName": "tlfb_coc_date1",
+                "isAbout": "tlfb_coc_date1"
+            },
+            {
+                "variableName": "tlfb_coc_date2",
+                "isAbout": "tlfb_coc_date2"
+            },
+            {
+                "variableName": "tlfb_coc_last",
+                "isAbout": "tlfb_coc_last"
+            },
+            {
+                "variableName": "tlfb_coc_last_calc",
+                "isAbout": "tlfb_coc_last_calc"
+            },
+            {
+                "variableName": "tlfb_coc_lt",
+                "isAbout": "tlfb_coc_lt"
+            },
+            {
+                "variableName": "tlfb_coc_lt_dk",
+                "isAbout": "tlfb_coc_lt_dk"
+            },
+            {
+                "variableName": "tlfb_coc_max",
+                "isAbout": "tlfb_coc_max"
+            },
+            {
+                "variableName": "tlfb_coc_max_dk",
+                "isAbout": "tlfb_coc_max_dk"
+            },
+            {
+                "variableName": "tlfb_coc_reg",
+                "isAbout": "tlfb_coc_reg"
+            },
+            {
+                "variableName": "tlfb_coc_use",
+                "isAbout": "tlfb_coc_use"
+            },
+            {
+                "variableName": "tlfb_cough_calc",
+                "isAbout": "tlfb_cough_calc"
+            },
+            {
+                "variableName": "tlfb_cough_calc_reg",
+                "isAbout": "tlfb_cough_calc_reg"
+            },
+            {
+                "variableName": "tlfb_cough_date1",
+                "isAbout": "tlfb_cough_date1"
+            },
+            {
+                "variableName": "tlfb_cough_date2",
+                "isAbout": "tlfb_cough_date2"
+            },
+            {
+                "variableName": "tlfb_cough_last",
+                "isAbout": "tlfb_cough_last"
+            },
+            {
+                "variableName": "tlfb_cough_last_calc",
+                "isAbout": "tlfb_cough_last_calc"
+            },
+            {
+                "variableName": "tlfb_cough_lt",
+                "isAbout": "tlfb_cough_lt"
+            },
+            {
+                "variableName": "tlfb_cough_lt_dk",
+                "isAbout": "tlfb_cough_lt_dk"
+            },
+            {
+                "variableName": "tlfb_cough_max",
+                "isAbout": "tlfb_cough_max"
+            },
+            {
+                "variableName": "tlfb_cough_max_dk",
+                "isAbout": "tlfb_cough_max_dk"
+            },
+            {
+                "variableName": "tlfb_cough_reg",
+                "isAbout": "tlfb_cough_reg"
+            },
+            {
+                "variableName": "tlfb_cough_use",
+                "isAbout": "tlfb_cough_use"
+            },
+            {
+                "variableName": "tlfb_ecig_calc",
+                "isAbout": "tlfb_ecig_calc"
+            },
+            {
+                "variableName": "tlfb_ecig_calc_reg",
+                "isAbout": "tlfb_ecig_calc_reg"
+            },
+            {
+                "variableName": "tlfb_ecig_date1",
+                "isAbout": "tlfb_ecig_date1"
+            },
+            {
+                "variableName": "tlfb_ecig_date2",
+                "isAbout": "tlfb_ecig_date2"
+            },
+            {
+                "variableName": "tlfb_ecig_last",
+                "isAbout": "tlfb_ecig_last"
+            },
+            {
+                "variableName": "tlfb_ecig_last_calc",
+                "isAbout": "tlfb_ecig_last_calc"
+            },
+            {
+                "variableName": "tlfb_ecig_lt",
+                "isAbout": "tlfb_ecig_lt"
+            },
+            {
+                "variableName": "tlfb_ecig_lt_dk",
+                "isAbout": "tlfb_ecig_lt_dk"
+            },
+            {
+                "variableName": "tlfb_ecig_lt_size",
+                "isAbout": "tlfb_ecig_lt_size"
+            },
+            {
+                "variableName": "tlfb_ecig_lt_strength",
+                "isAbout": "tlfb_ecig_lt_strength"
+            },
+            {
+                "variableName": "tlfb_ecig_lt_strength_dk",
+                "isAbout": "tlfb_ecig_lt_strength_dk"
+            },
+            {
+                "variableName": "tlfb_ecig_max",
+                "isAbout": "tlfb_ecig_max"
+            },
+            {
+                "variableName": "tlfb_ecig_max_dk",
+                "isAbout": "tlfb_ecig_max_dk"
+            },
+            {
+                "variableName": "tlfb_ecig_reg",
+                "isAbout": "tlfb_ecig_reg"
+            },
+            {
+                "variableName": "tlfb_ecig_use",
+                "isAbout": "tlfb_ecig_use"
+            },
+            {
+                "variableName": "tlfb_edible_calc",
+                "isAbout": "tlfb_edible_calc"
+            },
+            {
+                "variableName": "tlfb_edible_calc_reg",
+                "isAbout": "tlfb_edible_calc_reg"
+            },
+            {
+                "variableName": "tlfb_edible_date1",
+                "isAbout": "tlfb_edible_date1"
+            },
+            {
+                "variableName": "tlfb_edible_date2",
+                "isAbout": "tlfb_edible_date2"
+            },
+            {
+                "variableName": "tlfb_edible_last",
+                "isAbout": "tlfb_edible_last"
+            },
+            {
+                "variableName": "tlfb_edible_last_calc",
+                "isAbout": "tlfb_edible_last_calc"
+            },
+            {
+                "variableName": "tlfb_edible_lt",
+                "isAbout": "tlfb_edible_lt"
+            },
+            {
+                "variableName": "tlfb_edible_lt_dk",
+                "isAbout": "tlfb_edible_lt_dk"
+            },
+            {
+                "variableName": "tlfb_edible_lt_mg",
+                "isAbout": "tlfb_edible_lt_mg"
+            },
+            {
+                "variableName": "tlfb_edible_lt_mg_dk",
+                "isAbout": "tlfb_edible_lt_mg_dk"
+            },
+            {
+                "variableName": "tlfb_edible_max",
+                "isAbout": "tlfb_edible_max"
+            },
+            {
+                "variableName": "tlfb_edible_max_dk",
+                "isAbout": "tlfb_edible_max_dk"
+            },
+            {
+                "variableName": "tlfb_edible_reg",
+                "isAbout": "tlfb_edible_reg"
+            },
+            {
+                "variableName": "tlfb_edible_use",
+                "isAbout": "tlfb_edible_use"
+            },
+            {
+                "variableName": "tlfb_ghb_calc",
+                "isAbout": "tlfb_ghb_calc"
+            },
+            {
+                "variableName": "tlfb_ghb_calc_reg",
+                "isAbout": "tlfb_ghb_calc_reg"
+            },
+            {
+                "variableName": "tlfb_ghb_date1",
+                "isAbout": "tlfb_ghb_date1"
+            },
+            {
+                "variableName": "tlfb_ghb_date2",
+                "isAbout": "tlfb_ghb_date2"
+            },
+            {
+                "variableName": "tlfb_ghb_last",
+                "isAbout": "tlfb_ghb_last"
+            },
+            {
+                "variableName": "tlfb_ghb_last_calc",
+                "isAbout": "tlfb_ghb_last_calc"
+            },
+            {
+                "variableName": "tlfb_ghb_lt",
+                "isAbout": "tlfb_ghb_lt"
+            },
+            {
+                "variableName": "tlfb_ghb_lt_dk",
+                "isAbout": "tlfb_ghb_lt_dk"
+            },
+            {
+                "variableName": "tlfb_ghb_max",
+                "isAbout": "tlfb_ghb_max"
+            },
+            {
+                "variableName": "tlfb_ghb_max_dk",
+                "isAbout": "tlfb_ghb_max_dk"
+            },
+            {
+                "variableName": "tlfb_ghb_reg",
+                "isAbout": "tlfb_ghb_reg"
+            },
+            {
+                "variableName": "tlfb_ghb_use",
+                "isAbout": "tlfb_ghb_use"
+            },
+            {
+                "variableName": "tlfb_hall_calc",
+                "isAbout": "tlfb_hall_calc"
+            },
+            {
+                "variableName": "tlfb_hall_calc_reg",
+                "isAbout": "tlfb_hall_calc_reg"
+            },
+            {
+                "variableName": "tlfb_hall_date1",
+                "isAbout": "tlfb_hall_date1"
+            },
+            {
+                "variableName": "tlfb_hall_date2",
+                "isAbout": "tlfb_hall_date2"
+            },
+            {
+                "variableName": "tlfb_hall_last",
+                "isAbout": "tlfb_hall_last"
+            },
+            {
+                "variableName": "tlfb_hall_last_calc",
+                "isAbout": "tlfb_hall_last_calc"
+            },
+            {
+                "variableName": "tlfb_hall_lt",
+                "isAbout": "tlfb_hall_lt"
+            },
+            {
+                "variableName": "tlfb_hall_lt_dk",
+                "isAbout": "tlfb_hall_lt_dk"
+            },
+            {
+                "variableName": "tlfb_hall_max",
+                "isAbout": "tlfb_hall_max"
+            },
+            {
+                "variableName": "tlfb_hall_max_dk",
+                "isAbout": "tlfb_hall_max_dk"
+            },
+            {
+                "variableName": "tlfb_hall_reg",
+                "isAbout": "tlfb_hall_reg"
+            },
+            {
+                "variableName": "tlfb_hall_use",
+                "isAbout": "tlfb_hall_use"
+            },
+            {
+                "variableName": "tlfb_hall_use_type___1",
+                "isAbout": "tlfb_hall_use_type___1"
+            },
+            {
+                "variableName": "tlfb_hall_use_type___10",
+                "isAbout": "tlfb_hall_use_type___10"
+            },
+            {
+                "variableName": "tlfb_hall_use_type___2",
+                "isAbout": "tlfb_hall_use_type___2"
+            },
+            {
+                "variableName": "tlfb_hall_use_type___3",
+                "isAbout": "tlfb_hall_use_type___3"
+            },
+            {
+                "variableName": "tlfb_hall_use_type___4",
+                "isAbout": "tlfb_hall_use_type___4"
+            },
+            {
+                "variableName": "tlfb_hall_use_type___6",
+                "isAbout": "tlfb_hall_use_type___6"
+            },
+            {
+                "variableName": "tlfb_hall_use_type___7",
+                "isAbout": "tlfb_hall_use_type___7"
+            },
+            {
+                "variableName": "tlfb_hall_use_type___8",
+                "isAbout": "tlfb_hall_use_type___8"
+            },
+            {
+                "variableName": "tlfb_hookah_calc",
+                "isAbout": "tlfb_hookah_calc"
+            },
+            {
+                "variableName": "tlfb_hookah_calc_reg",
+                "isAbout": "tlfb_hookah_calc_reg"
+            },
+            {
+                "variableName": "tlfb_hookah_date1",
+                "isAbout": "tlfb_hookah_date1"
+            },
+            {
+                "variableName": "tlfb_hookah_date2",
+                "isAbout": "tlfb_hookah_date2"
+            },
+            {
+                "variableName": "tlfb_hookah_last",
+                "isAbout": "tlfb_hookah_last"
+            },
+            {
+                "variableName": "tlfb_hookah_last_calc",
+                "isAbout": "tlfb_hookah_last_calc"
+            },
+            {
+                "variableName": "tlfb_hookah_lt",
+                "isAbout": "tlfb_hookah_lt"
+            },
+            {
+                "variableName": "tlfb_hookah_lt_dk",
+                "isAbout": "tlfb_hookah_lt_dk"
+            },
+            {
+                "variableName": "tlfb_hookah_max",
+                "isAbout": "tlfb_hookah_max"
+            },
+            {
+                "variableName": "tlfb_hookah_max_dk",
+                "isAbout": "tlfb_hookah_max_dk"
+            },
+            {
+                "variableName": "tlfb_hookah_reg",
+                "isAbout": "tlfb_hookah_reg"
+            },
+            {
+                "variableName": "tlfb_hookah_use",
+                "isAbout": "tlfb_hookah_use"
+            },
+            {
+                "variableName": "tlfb_inhalant",
+                "isAbout": "tlfb_inhalant"
+            },
+            {
+                "variableName": "tlfb_inhalant_calc",
+                "isAbout": "tlfb_inhalant_calc"
+            },
+            {
+                "variableName": "tlfb_inhalant_calc_reg",
+                "isAbout": "tlfb_inhalant_calc_reg"
+            },
+            {
+                "variableName": "tlfb_inhalant_date1",
+                "isAbout": "tlfb_inhalant_date1"
+            },
+            {
+                "variableName": "tlfb_inhalant_date2",
+                "isAbout": "tlfb_inhalant_date2"
+            },
+            {
+                "variableName": "tlfb_inhalant_last",
+                "isAbout": "tlfb_inhalant_last"
+            },
+            {
+                "variableName": "tlfb_inhalant_last_calc",
+                "isAbout": "tlfb_inhalant_last_calc"
+            },
+            {
+                "variableName": "tlfb_inhalant_lt",
+                "isAbout": "tlfb_inhalant_lt"
+            },
+            {
+                "variableName": "tlfb_inhalant_lt_dk",
+                "isAbout": "tlfb_inhalant_lt_dk"
+            },
+            {
+                "variableName": "tlfb_inhalant_max",
+                "isAbout": "tlfb_inhalant_max"
+            },
+            {
+                "variableName": "tlfb_inhalant_max_dk",
+                "isAbout": "tlfb_inhalant_max_dk"
+            },
+            {
+                "variableName": "tlfb_inhalant_reg",
+                "isAbout": "tlfb_inhalant_reg"
+            },
+            {
+                "variableName": "tlfb_inhalant_use",
+                "isAbout": "tlfb_inhalant_use"
+            },
+            {
+                "variableName": "tlfb_inhalant_use_type___1",
+                "isAbout": "tlfb_inhalant_use_type___1"
+            },
+            {
+                "variableName": "tlfb_inhalant_use_type___2",
+                "isAbout": "tlfb_inhalant_use_type___2"
+            },
+            {
+                "variableName": "tlfb_inhalant_use_type___3",
+                "isAbout": "tlfb_inhalant_use_type___3"
+            },
+            {
+                "variableName": "tlfb_inhalant_use_type___4",
+                "isAbout": "tlfb_inhalant_use_type___4"
+            },
+            {
+                "variableName": "tlfb_inhalant_use_type___5",
+                "isAbout": "tlfb_inhalant_use_type___5"
+            },
+            {
+                "variableName": "tlfb_inhalant_use_type___6",
+                "isAbout": "tlfb_inhalant_use_type___6"
+            },
+            {
+                "variableName": "tlfb_inhalant_use_type___7",
+                "isAbout": "tlfb_inhalant_use_type___7"
+            },
+            {
+                "variableName": "tlfb_inhalant_use_type___8",
+                "isAbout": "tlfb_inhalant_use_type___8"
+            },
+            {
+                "variableName": "tlfb_ket_calc",
+                "isAbout": "tlfb_ket_calc"
+            },
+            {
+                "variableName": "tlfb_ket_calc_reg",
+                "isAbout": "tlfb_ket_calc_reg"
+            },
+            {
+                "variableName": "tlfb_ket_date1",
+                "isAbout": "tlfb_ket_date1"
+            },
+            {
+                "variableName": "tlfb_ket_date2",
+                "isAbout": "tlfb_ket_date2"
+            },
+            {
+                "variableName": "tlfb_ket_last",
+                "isAbout": "tlfb_ket_last"
+            },
+            {
+                "variableName": "tlfb_ket_last_calc",
+                "isAbout": "tlfb_ket_last_calc"
+            },
+            {
+                "variableName": "tlfb_ket_lt",
+                "isAbout": "tlfb_ket_lt"
+            },
+            {
+                "variableName": "tlfb_ket_lt_dk",
+                "isAbout": "tlfb_ket_lt_dk"
+            },
+            {
+                "variableName": "tlfb_ket_max",
+                "isAbout": "tlfb_ket_max"
+            },
+            {
+                "variableName": "tlfb_ket_max_dk",
+                "isAbout": "tlfb_ket_max_dk"
+            },
+            {
+                "variableName": "tlfb_ket_reg",
+                "isAbout": "tlfb_ket_reg"
+            },
+            {
+                "variableName": "tlfb_ket_use",
+                "isAbout": "tlfb_ket_use"
+            },
+            {
+                "variableName": "tlfb_list___1",
+                "isAbout": "tlfb_list___1"
+            },
+            {
+                "variableName": "tlfb_list___10",
+                "isAbout": "tlfb_list___10"
+            },
+            {
+                "variableName": "tlfb_list___11",
+                "isAbout": "tlfb_list___11"
+            },
+            {
+                "variableName": "tlfb_list___12",
+                "isAbout": "tlfb_list___12"
+            },
+            {
+                "variableName": "tlfb_list___18",
+                "isAbout": "tlfb_list___18"
+            },
+            {
+                "variableName": "tlfb_list___2",
+                "isAbout": "tlfb_list___2"
+            },
+            {
+                "variableName": "tlfb_list___3",
+                "isAbout": "tlfb_list___3"
+            },
+            {
+                "variableName": "tlfb_list___4",
+                "isAbout": "tlfb_list___4"
+            },
+            {
+                "variableName": "tlfb_list___5",
+                "isAbout": "tlfb_list___5"
+            },
+            {
+                "variableName": "tlfb_list___6",
+                "isAbout": "tlfb_list___6"
+            },
+            {
+                "variableName": "tlfb_list___7",
+                "isAbout": "tlfb_list___7"
+            },
+            {
+                "variableName": "tlfb_list___8",
+                "isAbout": "tlfb_list___8"
+            },
+            {
+                "variableName": "tlfb_list___9",
+                "isAbout": "tlfb_list___9"
+            },
+            {
+                "variableName": "tlfb_list_yes_no",
+                "isAbout": "tlfb_list_yes_no"
+            },
+            {
+                "variableName": "tlfb_lt_nicotine",
+                "isAbout": "tlfb_lt_nicotine"
+            },
+            {
+                "variableName": "tlfb_lt_nicotine_dk",
+                "isAbout": "tlfb_lt_nicotine_dk"
+            },
+            {
+                "variableName": "tlfb_mdma_calc",
+                "isAbout": "tlfb_mdma_calc"
+            },
+            {
+                "variableName": "tlfb_mdma_calc_reg",
+                "isAbout": "tlfb_mdma_calc_reg"
+            },
+            {
+                "variableName": "tlfb_mdma_date1",
+                "isAbout": "tlfb_mdma_date1"
+            },
+            {
+                "variableName": "tlfb_mdma_date2",
+                "isAbout": "tlfb_mdma_date2"
+            },
+            {
+                "variableName": "tlfb_mdma_last",
+                "isAbout": "tlfb_mdma_last"
+            },
+            {
+                "variableName": "tlfb_mdma_last_calc",
+                "isAbout": "tlfb_mdma_last_calc"
+            },
+            {
+                "variableName": "tlfb_mdma_lt",
+                "isAbout": "tlfb_mdma_lt"
+            },
+            {
+                "variableName": "tlfb_mdma_lt_dk",
+                "isAbout": "tlfb_mdma_lt_dk"
+            },
+            {
+                "variableName": "tlfb_mdma_max",
+                "isAbout": "tlfb_mdma_max"
+            },
+            {
+                "variableName": "tlfb_mdma_max_dk",
+                "isAbout": "tlfb_mdma_max_dk"
+            },
+            {
+                "variableName": "tlfb_mdma_reg",
+                "isAbout": "tlfb_mdma_reg"
+            },
+            {
+                "variableName": "tlfb_mdma_use",
+                "isAbout": "tlfb_mdma_use"
+            },
+            {
+                "variableName": "tlfb_meth_calc",
+                "isAbout": "tlfb_meth_calc"
+            },
+            {
+                "variableName": "tlfb_meth_calc_reg",
+                "isAbout": "tlfb_meth_calc_reg"
+            },
+            {
+                "variableName": "tlfb_meth_date1",
+                "isAbout": "tlfb_meth_date1"
+            },
+            {
+                "variableName": "tlfb_meth_date2",
+                "isAbout": "tlfb_meth_date2"
+            },
+            {
+                "variableName": "tlfb_meth_last",
+                "isAbout": "tlfb_meth_last"
+            },
+            {
+                "variableName": "tlfb_meth_last_calc",
+                "isAbout": "tlfb_meth_last_calc"
+            },
+            {
+                "variableName": "tlfb_meth_lt",
+                "isAbout": "tlfb_meth_lt"
+            },
+            {
+                "variableName": "tlfb_meth_lt_dk",
+                "isAbout": "tlfb_meth_lt_dk"
+            },
+            {
+                "variableName": "tlfb_meth_max",
+                "isAbout": "tlfb_meth_max"
+            },
+            {
+                "variableName": "tlfb_meth_max_dk",
+                "isAbout": "tlfb_meth_max_dk"
+            },
+            {
+                "variableName": "tlfb_meth_reg",
+                "isAbout": "tlfb_meth_reg"
+            },
+            {
+                "variableName": "tlfb_meth_use",
+                "isAbout": "tlfb_meth_use"
+            },
+            {
+                "variableName": "tlfb_mj",
+                "isAbout": "tlfb_mj"
+            },
+            {
+                "variableName": "tlfb_mj_calc",
+                "isAbout": "tlfb_mj_calc"
+            },
+            {
+                "variableName": "tlfb_mj_calc_reg",
+                "isAbout": "tlfb_mj_calc_reg"
+            },
+            {
+                "variableName": "tlfb_mj_conc_calc",
+                "isAbout": "tlfb_mj_conc_calc"
+            },
+            {
+                "variableName": "tlfb_mj_conc_calc_reg",
+                "isAbout": "tlfb_mj_conc_calc_reg"
+            },
+            {
+                "variableName": "tlfb_mj_conc_date1",
+                "isAbout": "tlfb_mj_conc_date1"
+            },
+            {
+                "variableName": "tlfb_mj_conc_date2",
+                "isAbout": "tlfb_mj_conc_date2"
+            },
+            {
+                "variableName": "tlfb_mj_conc_last",
+                "isAbout": "tlfb_mj_conc_last"
+            },
+            {
+                "variableName": "tlfb_mj_conc_last_calc",
+                "isAbout": "tlfb_mj_conc_last_calc"
+            },
+            {
+                "variableName": "tlfb_mj_conc_lt",
+                "isAbout": "tlfb_mj_conc_lt"
+            },
+            {
+                "variableName": "tlfb_mj_conc_lt_1b",
+                "isAbout": "tlfb_mj_conc_lt_1b"
+            },
+            {
+                "variableName": "tlfb_mj_conc_lt_1b_dk",
+                "isAbout": "tlfb_mj_conc_lt_1b_dk"
+            },
+            {
+                "variableName": "tlfb_mj_conc_lt_1c___1",
+                "isAbout": "tlfb_mj_conc_lt_1c___1"
+            },
+            {
+                "variableName": "tlfb_mj_conc_lt_1c___2",
+                "isAbout": "tlfb_mj_conc_lt_1c___2"
+            },
+            {
+                "variableName": "tlfb_mj_conc_lt_1c___3",
+                "isAbout": "tlfb_mj_conc_lt_1c___3"
+            },
+            {
+                "variableName": "tlfb_mj_conc_lt_1c___4",
+                "isAbout": "tlfb_mj_conc_lt_1c___4"
+            },
+            {
+                "variableName": "tlfb_mj_conc_lt_1c___5",
+                "isAbout": "tlfb_mj_conc_lt_1c___5"
+            },
+            {
+                "variableName": "tlfb_mj_conc_lt_1c___6",
+                "isAbout": "tlfb_mj_conc_lt_1c___6"
+            },
+            {
+                "variableName": "tlfb_mj_conc_lt_1d",
+                "isAbout": "tlfb_mj_conc_lt_1d"
+            },
+            {
+                "variableName": "tlfb_mj_conc_lt_1e",
+                "isAbout": "tlfb_mj_conc_lt_1e"
+            },
+            {
+                "variableName": "tlfb_mj_conc_lt_dk",
+                "isAbout": "tlfb_mj_conc_lt_dk"
+            },
+            {
+                "variableName": "tlfb_mj_conc_max",
+                "isAbout": "tlfb_mj_conc_max"
+            },
+            {
+                "variableName": "tlfb_mj_conc_max_dk",
+                "isAbout": "tlfb_mj_conc_max_dk"
+            },
+            {
+                "variableName": "tlfb_mj_conc_reg",
+                "isAbout": "tlfb_mj_conc_reg"
+            },
+            {
+                "variableName": "tlfb_mj_conc_use",
+                "isAbout": "tlfb_mj_conc_use"
+            },
+            {
+                "variableName": "tlfb_mj_date1",
+                "isAbout": "tlfb_mj_date1"
+            },
+            {
+                "variableName": "tlfb_mj_date2",
+                "isAbout": "tlfb_mj_date2"
+            },
+            {
+                "variableName": "tlfb_mj_drink_calc_reg",
+                "isAbout": "tlfb_mj_drink_calc_reg"
+            },
+            {
+                "variableName": "tlfb_mj_drink_date1",
+                "isAbout": "tlfb_mj_drink_date1"
+            },
+            {
+                "variableName": "tlfb_mj_drink_date2",
+                "isAbout": "tlfb_mj_drink_date2"
+            },
+            {
+                "variableName": "tlfb_mj_drink_last",
+                "isAbout": "tlfb_mj_drink_last"
+            },
+            {
+                "variableName": "tlfb_mj_drink_last_calc",
+                "isAbout": "tlfb_mj_drink_last_calc"
+            },
+            {
+                "variableName": "tlfb_mj_drink_lt",
+                "isAbout": "tlfb_mj_drink_lt"
+            },
+            {
+                "variableName": "tlfb_mj_drink_lt_dk",
+                "isAbout": "tlfb_mj_drink_lt_dk"
+            },
+            {
+                "variableName": "tlfb_mj_drink_max",
+                "isAbout": "tlfb_mj_drink_max"
+            },
+            {
+                "variableName": "tlfb_mj_drink_max_dk",
+                "isAbout": "tlfb_mj_drink_max_dk"
+            },
+            {
+                "variableName": "tlfb_mj_drink_reg",
+                "isAbout": "tlfb_mj_drink_reg"
+            },
+            {
+                "variableName": "tlfb_mj_drink_use",
+                "isAbout": "tlfb_mj_drink_use"
+            },
+            {
+                "variableName": "tlfb_mj_last",
+                "isAbout": "tlfb_mj_last"
+            },
+            {
+                "variableName": "tlfb_mj_last_calc",
+                "isAbout": "tlfb_mj_last_calc"
+            },
+            {
+                "variableName": "tlfb_mj_lt",
+                "isAbout": "tlfb_mj_lt"
+            },
+            {
+                "variableName": "tlfb_mj_lt_dk",
+                "isAbout": "tlfb_mj_lt_dk"
+            },
+            {
+                "variableName": "tlfb_mj_max",
+                "isAbout": "tlfb_mj_max"
+            },
+            {
+                "variableName": "tlfb_mj_max_dk",
+                "isAbout": "tlfb_mj_max_dk"
+            },
+            {
+                "variableName": "tlfb_mj_puff",
+                "isAbout": "tlfb_mj_puff"
+            },
+            {
+                "variableName": "tlfb_mj_reg",
+                "isAbout": "tlfb_mj_reg"
+            },
+            {
+                "variableName": "tlfb_mj_synth",
+                "isAbout": "tlfb_mj_synth"
+            },
+            {
+                "variableName": "tlfb_mj_synth_calc",
+                "isAbout": "tlfb_mj_synth_calc"
+            },
+            {
+                "variableName": "tlfb_mj_synth_calc_reg",
+                "isAbout": "tlfb_mj_synth_calc_reg"
+            },
+            {
+                "variableName": "tlfb_mj_synth_date1",
+                "isAbout": "tlfb_mj_synth_date1"
+            },
+            {
+                "variableName": "tlfb_mj_synth_date2",
+                "isAbout": "tlfb_mj_synth_date2"
+            },
+            {
+                "variableName": "tlfb_mj_synth_last",
+                "isAbout": "tlfb_mj_synth_last"
+            },
+            {
+                "variableName": "tlfb_mj_synth_last_calc",
+                "isAbout": "tlfb_mj_synth_last_calc"
+            },
+            {
+                "variableName": "tlfb_mj_synth_lt",
+                "isAbout": "tlfb_mj_synth_lt"
+            },
+            {
+                "variableName": "tlfb_mj_synth_lt_dk",
+                "isAbout": "tlfb_mj_synth_lt_dk"
+            },
+            {
+                "variableName": "tlfb_mj_synth_max",
+                "isAbout": "tlfb_mj_synth_max"
+            },
+            {
+                "variableName": "tlfb_mj_synth_max_dk",
+                "isAbout": "tlfb_mj_synth_max_dk"
+            },
+            {
+                "variableName": "tlfb_mj_synth_reg",
+                "isAbout": "tlfb_mj_synth_reg"
+            },
+            {
+                "variableName": "tlfb_mj_synth_use",
+                "isAbout": "tlfb_mj_synth_use"
+            },
+            {
+                "variableName": "tlfb_mj_use",
+                "isAbout": "tlfb_mj_use"
+            },
+            {
+                "variableName": "tlfb_nicotine_calc",
+                "isAbout": "tlfb_nicotine_calc"
+            },
+            {
+                "variableName": "tlfb_nicotine_calc_reg",
+                "isAbout": "tlfb_nicotine_calc_reg"
+            },
+            {
+                "variableName": "tlfb_nicotine_date1",
+                "isAbout": "tlfb_nicotine_date1"
+            },
+            {
+                "variableName": "tlfb_nicotine_date2",
+                "isAbout": "tlfb_nicotine_date2"
+            },
+            {
+                "variableName": "tlfb_nicotine_last",
+                "isAbout": "tlfb_nicotine_last"
+            },
+            {
+                "variableName": "tlfb_nicotine_last_calc",
+                "isAbout": "tlfb_nicotine_last_calc"
+            },
+            {
+                "variableName": "tlfb_nicotine_max",
+                "isAbout": "tlfb_nicotine_max"
+            },
+            {
+                "variableName": "tlfb_nicotine_max_dk",
+                "isAbout": "tlfb_nicotine_max_dk"
+            },
+            {
+                "variableName": "tlfb_nicotine_reg",
+                "isAbout": "tlfb_nicotine_reg"
+            },
+            {
+                "variableName": "tlfb_nicotine_use",
+                "isAbout": "tlfb_nicotine_use"
+            },
+            {
+                "variableName": "tlfb_opi_calc",
+                "isAbout": "tlfb_opi_calc"
+            },
+            {
+                "variableName": "tlfb_opi_calc_reg",
+                "isAbout": "tlfb_opi_calc_reg"
+            },
+            {
+                "variableName": "tlfb_opi_date1",
+                "isAbout": "tlfb_opi_date1"
+            },
+            {
+                "variableName": "tlfb_opi_date2",
+                "isAbout": "tlfb_opi_date2"
+            },
+            {
+                "variableName": "tlfb_opi_last",
+                "isAbout": "tlfb_opi_last"
+            },
+            {
+                "variableName": "tlfb_opi_last_calc",
+                "isAbout": "tlfb_opi_last_calc"
+            },
+            {
+                "variableName": "tlfb_opi_lt",
+                "isAbout": "tlfb_opi_lt"
+            },
+            {
+                "variableName": "tlfb_opi_lt_dk",
+                "isAbout": "tlfb_opi_lt_dk"
+            },
+            {
+                "variableName": "tlfb_opi_max",
+                "isAbout": "tlfb_opi_max"
+            },
+            {
+                "variableName": "tlfb_opi_max_dk",
+                "isAbout": "tlfb_opi_max_dk"
+            },
+            {
+                "variableName": "tlfb_opi_reg",
+                "isAbout": "tlfb_opi_reg"
+            },
+            {
+                "variableName": "tlfb_opi_use",
+                "isAbout": "tlfb_opi_use"
+            },
+            {
+                "variableName": "tlfb_other_last",
+                "isAbout": "tlfb_other_last"
+            },
+            {
+                "variableName": "tlfb_other_lt",
+                "isAbout": "tlfb_other_lt"
+            },
+            {
+                "variableName": "tlfb_other_lt_dk",
+                "isAbout": "tlfb_other_lt_dk"
+            },
+            {
+                "variableName": "tlfb_other_max",
+                "isAbout": "tlfb_other_max"
+            },
+            {
+                "variableName": "tlfb_other_max_dk",
+                "isAbout": "tlfb_other_max_dk"
+            },
+            {
+                "variableName": "tlfb_other_use",
+                "isAbout": "tlfb_other_use"
+            },
+            {
+                "variableName": "tlfb_pipes_calc",
+                "isAbout": "tlfb_pipes_calc"
+            },
+            {
+                "variableName": "tlfb_pipes_calc_reg",
+                "isAbout": "tlfb_pipes_calc_reg"
+            },
+            {
+                "variableName": "tlfb_pipes_date1",
+                "isAbout": "tlfb_pipes_date1"
+            },
+            {
+                "variableName": "tlfb_pipes_date2",
+                "isAbout": "tlfb_pipes_date2"
+            },
+            {
+                "variableName": "tlfb_pipes_last",
+                "isAbout": "tlfb_pipes_last"
+            },
+            {
+                "variableName": "tlfb_pipes_last_calc",
+                "isAbout": "tlfb_pipes_last_calc"
+            },
+            {
+                "variableName": "tlfb_pipes_lt",
+                "isAbout": "tlfb_pipes_lt"
+            },
+            {
+                "variableName": "tlfb_pipes_lt_dk",
+                "isAbout": "tlfb_pipes_lt_dk"
+            },
+            {
+                "variableName": "tlfb_pipes_max",
+                "isAbout": "tlfb_pipes_max"
+            },
+            {
+                "variableName": "tlfb_pipes_max_dk",
+                "isAbout": "tlfb_pipes_max_dk"
+            },
+            {
+                "variableName": "tlfb_pipes_reg",
+                "isAbout": "tlfb_pipes_reg"
+            },
+            {
+                "variableName": "tlfb_pipes_use",
+                "isAbout": "tlfb_pipes_use"
+            },
+            {
+                "variableName": "tlfb_rx_misuse",
+                "isAbout": "tlfb_rx_misuse"
+            },
+            {
+                "variableName": "tlfb_salvia_calc",
+                "isAbout": "tlfb_salvia_calc"
+            },
+            {
+                "variableName": "tlfb_salvia_calc_reg",
+                "isAbout": "tlfb_salvia_calc_reg"
+            },
+            {
+                "variableName": "tlfb_salvia_date1",
+                "isAbout": "tlfb_salvia_date1"
+            },
+            {
+                "variableName": "tlfb_salvia_date2",
+                "isAbout": "tlfb_salvia_date2"
+            },
+            {
+                "variableName": "tlfb_salvia_last",
+                "isAbout": "tlfb_salvia_last"
+            },
+            {
+                "variableName": "tlfb_salvia_last_calc",
+                "isAbout": "tlfb_salvia_last_calc"
+            },
+            {
+                "variableName": "tlfb_salvia_lt",
+                "isAbout": "tlfb_salvia_lt"
+            },
+            {
+                "variableName": "tlfb_salvia_lt_dk",
+                "isAbout": "tlfb_salvia_lt_dk"
+            },
+            {
+                "variableName": "tlfb_salvia_max",
+                "isAbout": "tlfb_salvia_max"
+            },
+            {
+                "variableName": "tlfb_salvia_max_dk",
+                "isAbout": "tlfb_salvia_max_dk"
+            },
+            {
+                "variableName": "tlfb_salvia_reg",
+                "isAbout": "tlfb_salvia_reg"
+            },
+            {
+                "variableName": "tlfb_salvia_use",
+                "isAbout": "tlfb_salvia_use"
+            },
+            {
+                "variableName": "tlfb_shrooms_calc",
+                "isAbout": "tlfb_shrooms_calc"
+            },
+            {
+                "variableName": "tlfb_shrooms_calc_reg",
+                "isAbout": "tlfb_shrooms_calc_reg"
+            },
+            {
+                "variableName": "tlfb_shrooms_date1",
+                "isAbout": "tlfb_shrooms_date1"
+            },
+            {
+                "variableName": "tlfb_shrooms_date2",
+                "isAbout": "tlfb_shrooms_date2"
+            },
+            {
+                "variableName": "tlfb_shrooms_last",
+                "isAbout": "tlfb_shrooms_last"
+            },
+            {
+                "variableName": "tlfb_shrooms_last_calc",
+                "isAbout": "tlfb_shrooms_last_calc"
+            },
+            {
+                "variableName": "tlfb_shrooms_lt",
+                "isAbout": "tlfb_shrooms_lt"
+            },
+            {
+                "variableName": "tlfb_shrooms_lt_dk",
+                "isAbout": "tlfb_shrooms_lt_dk"
+            },
+            {
+                "variableName": "tlfb_shrooms_max",
+                "isAbout": "tlfb_shrooms_max"
+            },
+            {
+                "variableName": "tlfb_shrooms_max_dk",
+                "isAbout": "tlfb_shrooms_max_dk"
+            },
+            {
+                "variableName": "tlfb_shrooms_reg",
+                "isAbout": "tlfb_shrooms_reg"
+            },
+            {
+                "variableName": "tlfb_shrooms_use",
+                "isAbout": "tlfb_shrooms_use"
+            },
+            {
+                "variableName": "tlfb_sniff_use",
+                "isAbout": "tlfb_sniff_use"
+            },
+            {
+                "variableName": "tlfb_steroids_calc",
+                "isAbout": "tlfb_steroids_calc"
+            },
+            {
+                "variableName": "tlfb_steroids_calc_reg",
+                "isAbout": "tlfb_steroids_calc_reg"
+            },
+            {
+                "variableName": "tlfb_steroids_date1",
+                "isAbout": "tlfb_steroids_date1"
+            },
+            {
+                "variableName": "tlfb_steroids_date2",
+                "isAbout": "tlfb_steroids_date2"
+            },
+            {
+                "variableName": "tlfb_steroids_last",
+                "isAbout": "tlfb_steroids_last"
+            },
+            {
+                "variableName": "tlfb_steroids_last_calc",
+                "isAbout": "tlfb_steroids_last_calc"
+            },
+            {
+                "variableName": "tlfb_steroids_lt",
+                "isAbout": "tlfb_steroids_lt"
+            },
+            {
+                "variableName": "tlfb_steroids_lt_dk",
+                "isAbout": "tlfb_steroids_lt_dk"
+            },
+            {
+                "variableName": "tlfb_steroids_max",
+                "isAbout": "tlfb_steroids_max"
+            },
+            {
+                "variableName": "tlfb_steroids_max_dk",
+                "isAbout": "tlfb_steroids_max_dk"
+            },
+            {
+                "variableName": "tlfb_steroids_reg",
+                "isAbout": "tlfb_steroids_reg"
+            },
+            {
+                "variableName": "tlfb_steroids_use",
+                "isAbout": "tlfb_steroids_use"
+            },
+            {
+                "variableName": "tlfb_tincture_calc",
+                "isAbout": "tlfb_tincture_calc"
+            },
+            {
+                "variableName": "tlfb_tincture_calc_reg",
+                "isAbout": "tlfb_tincture_calc_reg"
+            },
+            {
+                "variableName": "tlfb_tincture_date1",
+                "isAbout": "tlfb_tincture_date1"
+            },
+            {
+                "variableName": "tlfb_tincture_date2",
+                "isAbout": "tlfb_tincture_date2"
+            },
+            {
+                "variableName": "tlfb_tincture_last",
+                "isAbout": "tlfb_tincture_last"
+            },
+            {
+                "variableName": "tlfb_tincture_last_calc",
+                "isAbout": "tlfb_tincture_last_calc"
+            },
+            {
+                "variableName": "tlfb_tincture_lt",
+                "isAbout": "tlfb_tincture_lt"
+            },
+            {
+                "variableName": "tlfb_tincture_lt_dk",
+                "isAbout": "tlfb_tincture_lt_dk"
+            },
+            {
+                "variableName": "tlfb_tincture_max",
+                "isAbout": "tlfb_tincture_max"
+            },
+            {
+                "variableName": "tlfb_tincture_max_dk",
+                "isAbout": "tlfb_tincture_max_dk"
+            },
+            {
+                "variableName": "tlfb_tincture_reg",
+                "isAbout": "tlfb_tincture_reg"
+            },
+            {
+                "variableName": "tlfb_tincture_use",
+                "isAbout": "tlfb_tincture_use"
+            },
+            {
+                "variableName": "tlfb_tob",
+                "isAbout": "tlfb_tob"
+            },
+            {
+                "variableName": "tlfb_tob_puff",
+                "isAbout": "tlfb_tob_puff"
+            },
+            {
+                "variableName": "tlfb_tranq_calc",
+                "isAbout": "tlfb_tranq_calc"
+            },
+            {
+                "variableName": "tlfb_tranq_calc_reg",
+                "isAbout": "tlfb_tranq_calc_reg"
+            },
+            {
+                "variableName": "tlfb_tranq_date1",
+                "isAbout": "tlfb_tranq_date1"
+            },
+            {
+                "variableName": "tlfb_tranq_date2",
+                "isAbout": "tlfb_tranq_date2"
+            },
+            {
+                "variableName": "tlfb_tranq_last",
+                "isAbout": "tlfb_tranq_last"
+            },
+            {
+                "variableName": "tlfb_tranq_last_calc",
+                "isAbout": "tlfb_tranq_last_calc"
+            },
+            {
+                "variableName": "tlfb_tranq_lt",
+                "isAbout": "tlfb_tranq_lt"
+            },
+            {
+                "variableName": "tlfb_tranq_lt_dk",
+                "isAbout": "tlfb_tranq_lt_dk"
+            },
+            {
+                "variableName": "tlfb_tranq_max",
+                "isAbout": "tlfb_tranq_max"
+            },
+            {
+                "variableName": "tlfb_tranq_max_dk",
+                "isAbout": "tlfb_tranq_max_dk"
+            },
+            {
+                "variableName": "tlfb_tranq_reg",
+                "isAbout": "tlfb_tranq_reg"
+            },
+            {
+                "variableName": "tlfb_tranq_use",
+                "isAbout": "tlfb_tranq_use"
+            },
+            {
+                "variableName": "tlfb_vicodin_calc",
+                "isAbout": "tlfb_vicodin_calc"
+            },
+            {
+                "variableName": "tlfb_vicodin_calc_reg",
+                "isAbout": "tlfb_vicodin_calc_reg"
+            },
+            {
+                "variableName": "tlfb_vicodin_date1",
+                "isAbout": "tlfb_vicodin_date1"
+            },
+            {
+                "variableName": "tlfb_vicodin_date2",
+                "isAbout": "tlfb_vicodin_date2"
+            },
+            {
+                "variableName": "tlfb_vicodin_last",
+                "isAbout": "tlfb_vicodin_last"
+            },
+            {
+                "variableName": "tlfb_vicodin_last_calc",
+                "isAbout": "tlfb_vicodin_last_calc"
+            },
+            {
+                "variableName": "tlfb_vicodin_lt",
+                "isAbout": "tlfb_vicodin_lt"
+            },
+            {
+                "variableName": "tlfb_vicodin_lt_dk",
+                "isAbout": "tlfb_vicodin_lt_dk"
+            },
+            {
+                "variableName": "tlfb_vicodin_max",
+                "isAbout": "tlfb_vicodin_max"
+            },
+            {
+                "variableName": "tlfb_vicodin_max_dk",
+                "isAbout": "tlfb_vicodin_max_dk"
+            },
+            {
+                "variableName": "tlfb_vicodin_reg",
+                "isAbout": "tlfb_vicodin_reg"
+            },
+            {
+                "variableName": "tlfb_vicodin_use",
+                "isAbout": "tlfb_vicodin_use"
+            },
+            {
+                "variableName": "xcalc_mj_drink",
+                "isAbout": "xcalc_mj_drink"
+            },
+            {
+                "variableName": "xskipout_alc",
+                "isAbout": "xskipout_alc"
+            },
+            {
+                "variableName": "xskipout_mj",
+                "isAbout": "xskipout_mj"
+            },
+            {
+                "variableName": "xskipout_other",
+                "isAbout": "xskipout_other"
+            },
+            {
+                "variableName": "xskipout_tob",
+                "isAbout": "xskipout_tob"
+            }
+        ]
+    }
+}

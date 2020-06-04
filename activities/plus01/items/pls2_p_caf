@@ -1,0 +1,39 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "pls2_p_caf",
+    "@type": "reproschema:Field",
+    "prefLabel": "pls2_p_caf",
+    "altLabel": "su_pls2_caf_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Has your son/daughter consumed a caffeinated beverage (such as Mountain Dew, Coke, Pepsi, Barq's root beer, energy drink like Red Bull or Monster, coffee or espresso or green tea, black tea, or sweet tea) in the last 24 hours? ¿Ha consumido su niño(a) en las últimas 24 horas alguna bebida con cafeína (tal como, Mountain Dew, Coca-cola, Pepsi, Barq's root beer, bebidas energizantes como Red Bull o Monster, café, o té verde, té negro, o 'sweet tea')?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "name": "Yes Sí",
+                "value": 1
+            },
+            {
+                "name": "No No",
+                "value": 0
+            },
+            {
+                "name": "Don't know No lo sé",
+                "value": 999
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes Sí; 0 = No No; 999 = Don't know No lo sé"
+        }
+    ]
+}

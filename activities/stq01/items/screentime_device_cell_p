@@ -1,0 +1,40 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "screentime_device_cell_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "screentime_device_cell_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "What kind of cell phone does your child have? /Qu? tipo de tel?fono celular tiene su hijo/a?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 777,
+        "choices": [
+            {
+                "name": "Apple/iPhone/Apple/iPhone",
+                "value": 1
+            },
+            {
+                "name": "Android/Android",
+                "value": 2
+            },
+            {
+                "value": 3
+            },
+            {
+                "value": 777
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Apple/iPhone/Apple/iPhone; 2 = Android/Android; 3=  Other/Otro; 777=  Refuse to Answer /Niego contestar "
+        }
+    ]
+}

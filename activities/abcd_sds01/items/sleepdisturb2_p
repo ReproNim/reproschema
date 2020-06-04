@@ -1,0 +1,47 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "sleepdisturb2_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "sleepdisturb2_p",
+    "altLabel": "sleep_2_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "How long after going to bed does your child usually fall asleep? Después de acostarse ¿generalmente cuánto tiempo tarda su niño(a) en quedarse dormido(a)?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Less than 15 minutes /Menos de 15 minutos",
+                "value": 1
+            },
+            {
+                "name": "15-30 minutes 15 a 30 minutos",
+                "value": 2
+            },
+            {
+                "name": "30-45 minutes /30 a 45 minutos",
+                "value": 3
+            },
+            {
+                "name": "45-60 minutes /45 a 60 minutos",
+                "value": 4
+            },
+            {
+                "name": "More than 60 minutes /Más de 60 minutos//Consider each question pertaining to the PAST 6 MONTHS of the child's life",
+                "value": 5
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Less than 15 minutes /Menos de 15 minutos; 2 = 15-30 minutes 15 a 30 minutos; 3 = 30-45 minutes /30 a 45 minutos; 4 = 45-60 minutes /45 a 60 minutos; 5 = More than 60 minutes /Más de 60 minutos//Consider each question pertaining to the PAST 6 MONTHS of the child's life"
+        }
+    ]
+}

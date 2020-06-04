@@ -1,0 +1,1794 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "abcd_smrip201": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/activities/abcd_smrip201/items/",
+        "smri_t1w_scs_3rdventricle": {
+            "@id": "abcd_smrip201:smri_t1w_scs_3rdventricle",
+            "@type": "@id"
+        },
+        "smri_t1w_scs_4thventricle": {
+            "@id": "abcd_smrip201:smri_t1w_scs_4thventricle",
+            "@type": "@id"
+        },
+        "smri_t1w_scs_aal": {
+            "@id": "abcd_smrip201:smri_t1w_scs_aal",
+            "@type": "@id"
+        },
+        "smri_t1w_scs_aar": {
+            "@id": "abcd_smrip201:smri_t1w_scs_aar",
+            "@type": "@id"
+        },
+        "smri_t1w_scs_amygdalalh": {
+            "@id": "abcd_smrip201:smri_t1w_scs_amygdalalh",
+            "@type": "@id"
+        },
+        "smri_t1w_scs_amygdalarh": {
+            "@id": "abcd_smrip201:smri_t1w_scs_amygdalarh",
+            "@type": "@id"
+        },
+        "smri_t1w_scs_bstem": {
+            "@id": "abcd_smrip201:smri_t1w_scs_bstem",
+            "@type": "@id"
+        },
+        "smri_t1w_scs_caudatelh": {
+            "@id": "abcd_smrip201:smri_t1w_scs_caudatelh",
+            "@type": "@id"
+        },
+        "smri_t1w_scs_caudaterh": {
+            "@id": "abcd_smrip201:smri_t1w_scs_caudaterh",
+            "@type": "@id"
+        },
+        "smri_t1w_scs_cbwmatterlh": {
+            "@id": "abcd_smrip201:smri_t1w_scs_cbwmatterlh",
+            "@type": "@id"
+        },
+        "smri_t1w_scs_cbwmatterrh": {
+            "@id": "abcd_smrip201:smri_t1w_scs_cbwmatterrh",
+            "@type": "@id"
+        },
+        "smri_t1w_scs_ccat": {
+            "@id": "abcd_smrip201:smri_t1w_scs_ccat",
+            "@type": "@id"
+        },
+        "smri_t1w_scs_ccct": {
+            "@id": "abcd_smrip201:smri_t1w_scs_ccct",
+            "@type": "@id"
+        },
+        "smri_t1w_scs_ccmidat": {
+            "@id": "abcd_smrip201:smri_t1w_scs_ccmidat",
+            "@type": "@id"
+        },
+        "smri_t1w_scs_ccmidps": {
+            "@id": "abcd_smrip201:smri_t1w_scs_ccmidps",
+            "@type": "@id"
+        },
+        "smri_t1w_scs_ccps": {
+            "@id": "abcd_smrip201:smri_t1w_scs_ccps",
+            "@type": "@id"
+        },
+        "smri_t1w_scs_crbcortexlh": {
+            "@id": "abcd_smrip201:smri_t1w_scs_crbcortexlh",
+            "@type": "@id"
+        },
+        "smri_t1w_scs_crbcortexrh": {
+            "@id": "abcd_smrip201:smri_t1w_scs_crbcortexrh",
+            "@type": "@id"
+        },
+        "smri_t1w_scs_crbwmatterlh": {
+            "@id": "abcd_smrip201:smri_t1w_scs_crbwmatterlh",
+            "@type": "@id"
+        },
+        "smri_t1w_scs_crbwmatterrh": {
+            "@id": "abcd_smrip201:smri_t1w_scs_crbwmatterrh",
+            "@type": "@id"
+        },
+        "smri_t1w_scs_csf": {
+            "@id": "abcd_smrip201:smri_t1w_scs_csf",
+            "@type": "@id"
+        },
+        "smri_t1w_scs_hpuslh": {
+            "@id": "abcd_smrip201:smri_t1w_scs_hpuslh",
+            "@type": "@id"
+        },
+        "smri_t1w_scs_hpusrh": {
+            "@id": "abcd_smrip201:smri_t1w_scs_hpusrh",
+            "@type": "@id"
+        },
+        "smri_t1w_scs_inflatventlh": {
+            "@id": "abcd_smrip201:smri_t1w_scs_inflatventlh",
+            "@type": "@id"
+        },
+        "smri_t1w_scs_inflatventrh": {
+            "@id": "abcd_smrip201:smri_t1w_scs_inflatventrh",
+            "@type": "@id"
+        },
+        "smri_t1w_scs_lesionlh": {
+            "@id": "abcd_smrip201:smri_t1w_scs_lesionlh",
+            "@type": "@id"
+        },
+        "smri_t1w_scs_lesionrh": {
+            "@id": "abcd_smrip201:smri_t1w_scs_lesionrh",
+            "@type": "@id"
+        },
+        "smri_t1w_scs_ltventriclelh": {
+            "@id": "abcd_smrip201:smri_t1w_scs_ltventriclelh",
+            "@type": "@id"
+        },
+        "smri_t1w_scs_ltventriclerh": {
+            "@id": "abcd_smrip201:smri_t1w_scs_ltventriclerh",
+            "@type": "@id"
+        },
+        "smri_t1w_scs_pallidumlh": {
+            "@id": "abcd_smrip201:smri_t1w_scs_pallidumlh",
+            "@type": "@id"
+        },
+        "smri_t1w_scs_pallidumrh": {
+            "@id": "abcd_smrip201:smri_t1w_scs_pallidumrh",
+            "@type": "@id"
+        },
+        "smri_t1w_scs_putamenlh": {
+            "@id": "abcd_smrip201:smri_t1w_scs_putamenlh",
+            "@type": "@id"
+        },
+        "smri_t1w_scs_putamenrh": {
+            "@id": "abcd_smrip201:smri_t1w_scs_putamenrh",
+            "@type": "@id"
+        },
+        "smri_t1w_scs_tplh": {
+            "@id": "abcd_smrip201:smri_t1w_scs_tplh",
+            "@type": "@id"
+        },
+        "smri_t1w_scs_tprh": {
+            "@id": "abcd_smrip201:smri_t1w_scs_tprh",
+            "@type": "@id"
+        },
+        "smri_t1w_scs_vedclh": {
+            "@id": "abcd_smrip201:smri_t1w_scs_vedclh",
+            "@type": "@id"
+        },
+        "smri_t1w_scs_vedcrh": {
+            "@id": "abcd_smrip201:smri_t1w_scs_vedcrh",
+            "@type": "@id"
+        },
+        "smri_t1w_scs_wmhint": {
+            "@id": "abcd_smrip201:smri_t1w_scs_wmhint",
+            "@type": "@id"
+        },
+        "smri_t1w_scs_wmhintlh": {
+            "@id": "abcd_smrip201:smri_t1w_scs_wmhintlh",
+            "@type": "@id"
+        },
+        "smri_t1w_scs_wmhintrh": {
+            "@id": "abcd_smrip201:smri_t1w_scs_wmhintrh",
+            "@type": "@id"
+        },
+        "smri_t2w_scs_3rdventricle": {
+            "@id": "abcd_smrip201:smri_t2w_scs_3rdventricle",
+            "@type": "@id"
+        },
+        "smri_t2w_scs_4thventricle": {
+            "@id": "abcd_smrip201:smri_t2w_scs_4thventricle",
+            "@type": "@id"
+        },
+        "smri_t2w_scs_aal": {
+            "@id": "abcd_smrip201:smri_t2w_scs_aal",
+            "@type": "@id"
+        },
+        "smri_t2w_scs_aar": {
+            "@id": "abcd_smrip201:smri_t2w_scs_aar",
+            "@type": "@id"
+        },
+        "smri_t2w_scs_amygdalalh": {
+            "@id": "abcd_smrip201:smri_t2w_scs_amygdalalh",
+            "@type": "@id"
+        },
+        "smri_t2w_scs_amygdalarh": {
+            "@id": "abcd_smrip201:smri_t2w_scs_amygdalarh",
+            "@type": "@id"
+        },
+        "smri_t2w_scs_bstem": {
+            "@id": "abcd_smrip201:smri_t2w_scs_bstem",
+            "@type": "@id"
+        },
+        "smri_t2w_scs_caudatelh": {
+            "@id": "abcd_smrip201:smri_t2w_scs_caudatelh",
+            "@type": "@id"
+        },
+        "smri_t2w_scs_caudaterh": {
+            "@id": "abcd_smrip201:smri_t2w_scs_caudaterh",
+            "@type": "@id"
+        },
+        "smri_t2w_scs_cbwmatterlh": {
+            "@id": "abcd_smrip201:smri_t2w_scs_cbwmatterlh",
+            "@type": "@id"
+        },
+        "smri_t2w_scs_cbwmatterrh": {
+            "@id": "abcd_smrip201:smri_t2w_scs_cbwmatterrh",
+            "@type": "@id"
+        },
+        "smri_t2w_scs_ccat": {
+            "@id": "abcd_smrip201:smri_t2w_scs_ccat",
+            "@type": "@id"
+        },
+        "smri_t2w_scs_ccct": {
+            "@id": "abcd_smrip201:smri_t2w_scs_ccct",
+            "@type": "@id"
+        },
+        "smri_t2w_scs_ccmidat": {
+            "@id": "abcd_smrip201:smri_t2w_scs_ccmidat",
+            "@type": "@id"
+        },
+        "smri_t2w_scs_ccmidps": {
+            "@id": "abcd_smrip201:smri_t2w_scs_ccmidps",
+            "@type": "@id"
+        },
+        "smri_t2w_scs_ccps": {
+            "@id": "abcd_smrip201:smri_t2w_scs_ccps",
+            "@type": "@id"
+        },
+        "smri_t2w_scs_crbcortexlh": {
+            "@id": "abcd_smrip201:smri_t2w_scs_crbcortexlh",
+            "@type": "@id"
+        },
+        "smri_t2w_scs_crbcortexrh": {
+            "@id": "abcd_smrip201:smri_t2w_scs_crbcortexrh",
+            "@type": "@id"
+        },
+        "smri_t2w_scs_crbwmatterlh": {
+            "@id": "abcd_smrip201:smri_t2w_scs_crbwmatterlh",
+            "@type": "@id"
+        },
+        "smri_t2w_scs_crbwmatterrh": {
+            "@id": "abcd_smrip201:smri_t2w_scs_crbwmatterrh",
+            "@type": "@id"
+        },
+        "smri_t2w_scs_csf": {
+            "@id": "abcd_smrip201:smri_t2w_scs_csf",
+            "@type": "@id"
+        },
+        "smri_t2w_scs_hpuslh": {
+            "@id": "abcd_smrip201:smri_t2w_scs_hpuslh",
+            "@type": "@id"
+        },
+        "smri_t2w_scs_hpusrh": {
+            "@id": "abcd_smrip201:smri_t2w_scs_hpusrh",
+            "@type": "@id"
+        },
+        "smri_t2w_scs_inflatventlh": {
+            "@id": "abcd_smrip201:smri_t2w_scs_inflatventlh",
+            "@type": "@id"
+        },
+        "smri_t2w_scs_inflatventrh": {
+            "@id": "abcd_smrip201:smri_t2w_scs_inflatventrh",
+            "@type": "@id"
+        },
+        "smri_t2w_scs_lesionlh": {
+            "@id": "abcd_smrip201:smri_t2w_scs_lesionlh",
+            "@type": "@id"
+        },
+        "smri_t2w_scs_lesionrh": {
+            "@id": "abcd_smrip201:smri_t2w_scs_lesionrh",
+            "@type": "@id"
+        },
+        "smri_t2w_scs_ltventriclelh": {
+            "@id": "abcd_smrip201:smri_t2w_scs_ltventriclelh",
+            "@type": "@id"
+        },
+        "smri_t2w_scs_ltventriclerh": {
+            "@id": "abcd_smrip201:smri_t2w_scs_ltventriclerh",
+            "@type": "@id"
+        },
+        "smri_t2w_scs_pallidumlh": {
+            "@id": "abcd_smrip201:smri_t2w_scs_pallidumlh",
+            "@type": "@id"
+        },
+        "smri_t2w_scs_pallidumrh": {
+            "@id": "abcd_smrip201:smri_t2w_scs_pallidumrh",
+            "@type": "@id"
+        },
+        "smri_t2w_scs_putamenlh": {
+            "@id": "abcd_smrip201:smri_t2w_scs_putamenlh",
+            "@type": "@id"
+        },
+        "smri_t2w_scs_putamenrh": {
+            "@id": "abcd_smrip201:smri_t2w_scs_putamenrh",
+            "@type": "@id"
+        },
+        "smri_t2w_scs_tplh": {
+            "@id": "abcd_smrip201:smri_t2w_scs_tplh",
+            "@type": "@id"
+        },
+        "smri_t2w_scs_tprh": {
+            "@id": "abcd_smrip201:smri_t2w_scs_tprh",
+            "@type": "@id"
+        },
+        "smri_t2w_scs_vedclh": {
+            "@id": "abcd_smrip201:smri_t2w_scs_vedclh",
+            "@type": "@id"
+        },
+        "smri_t2w_scs_vedcrh": {
+            "@id": "abcd_smrip201:smri_t2w_scs_vedcrh",
+            "@type": "@id"
+        },
+        "smri_t2w_scs_wmhint": {
+            "@id": "abcd_smrip201:smri_t2w_scs_wmhint",
+            "@type": "@id"
+        },
+        "smri_t2w_scs_wmhintlh": {
+            "@id": "abcd_smrip201:smri_t2w_scs_wmhintlh",
+            "@type": "@id"
+        },
+        "smri_t2w_scs_wmhintrh": {
+            "@id": "abcd_smrip201:smri_t2w_scs_wmhintrh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_banksstslh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_banksstslh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_banksstsrh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_banksstsrh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_cdatcgatelh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_cdatcgatelh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_cdatcgaterh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_cdatcgaterh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_cdmdflh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_cdmdflh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_cdmdfrh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_cdmdfrh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_cuneuslh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_cuneuslh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_cuneusrh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_cuneusrh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_ehinallh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_ehinallh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_ehinalrh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_ehinalrh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_fpolelh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_fpolelh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_fpolerh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_fpolerh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_fusiformlh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_fusiformlh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_fusiformrh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_fusiformrh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_ifpllh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_ifpllh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_ifplrh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_ifplrh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_iftmlh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_iftmlh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_iftmrh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_iftmrh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_ihcgatelh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_ihcgatelh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_ihcgaterh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_ihcgaterh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_insulalh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_insulalh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_insularh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_insularh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_linguallh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_linguallh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_lingualrh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_lingualrh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_ltoboflh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_ltoboflh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_ltobofrh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_ltobofrh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_ltocclh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_ltocclh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_ltoccrh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_ltoccrh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_mdtmlh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_mdtmlh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_mdtmrh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_mdtmrh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_mean": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_mean",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_meanlh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_meanlh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_meanrh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_meanrh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_moboflh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_moboflh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_mobofrh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_mobofrh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_paractlh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_paractlh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_paractrh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_paractrh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_parahpallh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_parahpallh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_parahpalrh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_parahpalrh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_parstgslh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_parstgslh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_parstgsrh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_parstgsrh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_pericclh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_pericclh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_periccrh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_periccrh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_pnlh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_pnlh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_pnrh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_pnrh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_pobalislh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_pobalislh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_pobalisrh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_pobalisrh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_popclh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_popclh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_popcrh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_popcrh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_postctlh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_postctlh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_postctrh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_postctrh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_prectlh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_prectlh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_prectrh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_prectrh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_pscgatelh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_pscgatelh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_pscgaterh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_pscgaterh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_rtatcgatelh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_rtatcgatelh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_rtatcgaterh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_rtatcgaterh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_rtmdflh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_rtmdflh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_rtmdfrh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_rtmdfrh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_smlh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_smlh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_smrh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_smrh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_suflh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_suflh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_sufrh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_sufrh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_supllh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_supllh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_suplrh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_suplrh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_sutmlh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_sutmlh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_sutmrh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_sutmrh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_tmpolelh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_tmpolelh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_tmpolerh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_tmpolerh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_tvtmlh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_tvtmlh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cdk_tvtmrh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cdk_tvtmrh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cf12_aomtmlh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cf12_aomtmlh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cf12_aomtmrh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cf12_aomtmrh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cf12_ctlh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cf12_ctlh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cf12_ctrh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cf12_ctrh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cf12_dltpreflh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cf12_dltpreflh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cf12_dltprefrh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cf12_dltprefrh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cf12_dmflh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cf12_dmflh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cf12_dmfrh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cf12_dmfrh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cf12_ifpllh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cf12_ifpllh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cf12_ifplrh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cf12_ifplrh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cf12_oboflh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cf12_oboflh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cf12_obofrh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cf12_obofrh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cf12_occlh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cf12_occlh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cf12_occrh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cf12_occrh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cf12_pnlh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cf12_pnlh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cf12_pnrh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cf12_pnrh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cf12_polttmlh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cf12_polttmlh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cf12_polttmrh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cf12_polttmrh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cf12_popclh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cf12_popclh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cf12_popcrh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cf12_popcrh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cf12_supllh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cf12_supllh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cf12_suplrh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cf12_suplrh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cf12_sutmlh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cf12_sutmlh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cf12_sutmrh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cf12_sutmrh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cf2_flh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cf2_flh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cf2_frh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cf2_frh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cf2_pslh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cf2_pslh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cf2_psrh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cf2_psrh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cf4_flh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cf4_flh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cf4_frh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cf4_frh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cf4_occlh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cf4_occlh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cf4_occrh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cf4_occrh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cf4_pllh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cf4_pllh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cf4_plrh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cf4_plrh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cf4_tmlh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cf4_tmlh",
+            "@type": "@id"
+        },
+        "smri_t2wcnt_cf4_tmrh": {
+            "@id": "abcd_smrip201:smri_t2wcnt_cf4_tmrh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_banksstslh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_banksstslh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_banksstsrh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_banksstsrh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_cdatcgatelh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_cdatcgatelh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_cdatcgaterh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_cdatcgaterh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_cdmdflh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_cdmdflh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_cdmdfrh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_cdmdfrh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_cuneuslh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_cuneuslh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_cuneusrh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_cuneusrh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_ehinallh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_ehinallh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_ehinalrh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_ehinalrh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_fpolelh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_fpolelh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_fpolerh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_fpolerh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_fusiformlh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_fusiformlh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_fusiformrh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_fusiformrh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_ifpllh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_ifpllh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_ifplrh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_ifplrh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_iftmlh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_iftmlh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_iftmrh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_iftmrh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_ihcgatelh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_ihcgatelh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_ihcgaterh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_ihcgaterh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_insulalh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_insulalh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_insularh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_insularh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_linguallh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_linguallh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_lingualrh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_lingualrh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_ltoboflh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_ltoboflh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_ltobofrh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_ltobofrh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_ltocclh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_ltocclh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_ltoccrh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_ltoccrh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_mdtmlh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_mdtmlh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_mdtmrh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_mdtmrh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_mean": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_mean",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_meanlh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_meanlh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_meanrh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_meanrh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_moboflh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_moboflh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_mobofrh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_mobofrh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_paractlh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_paractlh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_paractrh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_paractrh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_parahpallh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_parahpallh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_parahpalrh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_parahpalrh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_parstgslh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_parstgslh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_parstgsrh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_parstgsrh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_pericclh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_pericclh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_periccrh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_periccrh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_pnlh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_pnlh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_pnrh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_pnrh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_pobalislh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_pobalislh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_pobalisrh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_pobalisrh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_popclh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_popclh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_popcrh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_popcrh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_postctlh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_postctlh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_postctrh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_postctrh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_prectlh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_prectlh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_prectrh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_prectrh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_pscgatelh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_pscgatelh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_pscgaterh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_pscgaterh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_rtatcgatelh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_rtatcgatelh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_rtatcgaterh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_rtatcgaterh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_rtmdflh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_rtmdflh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_rtmdfrh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_rtmdfrh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_smlh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_smlh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_smrh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_smrh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_suflh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_suflh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_sufrh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_sufrh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_supllh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_supllh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_suplrh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_suplrh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_sutmlh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_sutmlh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_sutmrh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_sutmrh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_tmpolelh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_tmpolelh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_tmpolerh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_tmpolerh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_tvtmlh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_tvtmlh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cdk_tvtmrh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cdk_tvtmrh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cf12_aomtmlh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cf12_aomtmlh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cf12_aomtmrh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cf12_aomtmrh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cf12_ctlh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cf12_ctlh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cf12_ctrh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cf12_ctrh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cf12_dltpreflh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cf12_dltpreflh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cf12_dltprefrh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cf12_dltprefrh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cf12_dmflh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cf12_dmflh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cf12_dmfrh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cf12_dmfrh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cf12_ifpllh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cf12_ifpllh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cf12_ifplrh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cf12_ifplrh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cf12_oboflh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cf12_oboflh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cf12_obofrh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cf12_obofrh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cf12_occlh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cf12_occlh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cf12_occrh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cf12_occrh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cf12_pnlh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cf12_pnlh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cf12_pnrh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cf12_pnrh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cf12_polttmlh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cf12_polttmlh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cf12_polttmrh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cf12_polttmrh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cf12_popclh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cf12_popclh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cf12_popcrh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cf12_popcrh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cf12_supllh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cf12_supllh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cf12_suplrh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cf12_suplrh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cf12_sutmlh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cf12_sutmlh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cf12_sutmrh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cf12_sutmrh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cf2_flh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cf2_flh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cf2_frh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cf2_frh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cf2_pslh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cf2_pslh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cf2_psrh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cf2_psrh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cf4_flh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cf4_flh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cf4_frh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cf4_frh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cf4_occlh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cf4_occlh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cf4_occrh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cf4_occrh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cf4_pllh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cf4_pllh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cf4_plrh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cf4_plrh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cf4_tmlh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cf4_tmlh",
+            "@type": "@id"
+        },
+        "smri_t2wg02_cf4_tmrh": {
+            "@id": "abcd_smrip201:smri_t2wg02_cf4_tmrh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_banksstslh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_banksstslh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_banksstsrh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_banksstsrh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_cdatcgatelh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_cdatcgatelh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_cdatcgaterh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_cdatcgaterh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_cdmdflh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_cdmdflh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_cdmdfrh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_cdmdfrh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_cuneuslh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_cuneuslh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_cuneusrh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_cuneusrh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_ehinallh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_ehinallh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_ehinalrh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_ehinalrh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_fpolelh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_fpolelh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_fpolerh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_fpolerh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_fusiformlh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_fusiformlh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_fusiformrh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_fusiformrh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_ifpllh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_ifpllh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_ifplrh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_ifplrh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_iftmlh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_iftmlh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_iftmrh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_iftmrh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_ihcgatelh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_ihcgatelh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_ihcgaterh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_ihcgaterh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_insulalh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_insulalh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_insularh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_insularh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_linguallh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_linguallh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_lingualrh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_lingualrh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_ltoboflh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_ltoboflh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_ltobofrh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_ltobofrh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_ltocclh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_ltocclh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_ltoccrh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_ltoccrh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_mdtmlh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_mdtmlh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_mdtmrh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_mdtmrh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_mean": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_mean",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_meanlh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_meanlh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_meanrh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_meanrh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_moboflh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_moboflh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_mobofrh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_mobofrh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_paractlh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_paractlh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_paractrh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_paractrh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_parahpallh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_parahpallh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_parahpalrh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_parahpalrh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_parstgslh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_parstgslh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_parstgsrh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_parstgsrh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_pericclh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_pericclh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_periccrh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_periccrh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_pnlh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_pnlh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_pnrh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_pnrh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_pobalislh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_pobalislh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_pobalisrh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_pobalisrh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_popclh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_popclh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_popcrh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_popcrh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_postctlh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_postctlh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_postctrh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_postctrh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_prectlh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_prectlh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_prectrh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_prectrh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_pscgatelh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_pscgatelh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_pscgaterh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_pscgaterh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_rtatcgatelh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_rtatcgatelh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_rtatcgaterh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_rtatcgaterh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_rtmdflh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_rtmdflh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_rtmdfrh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_rtmdfrh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_smlh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_smlh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_smrh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_smrh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_suflh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_suflh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_sufrh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_sufrh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_supllh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_supllh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_suplrh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_suplrh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_sutmlh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_sutmlh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_sutmrh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_sutmrh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_tmpolelh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_tmpolelh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_tmpolerh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_tmpolerh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_tvtmlh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_tvtmlh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cdk_tvtmrh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cdk_tvtmrh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cf12_aomtmlh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cf12_aomtmlh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cf12_aomtmrh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cf12_aomtmrh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cf12_ctlh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cf12_ctlh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cf12_ctrh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cf12_ctrh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cf12_dltpreflh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cf12_dltpreflh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cf12_dltprefrh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cf12_dltprefrh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cf12_dmflh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cf12_dmflh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cf12_dmfrh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cf12_dmfrh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cf12_ifpllh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cf12_ifpllh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cf12_ifplrh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cf12_ifplrh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cf12_oboflh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cf12_oboflh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cf12_obofrh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cf12_obofrh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cf12_occlh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cf12_occlh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cf12_occrh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cf12_occrh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cf12_pnlh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cf12_pnlh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cf12_pnrh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cf12_pnrh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cf12_polttmlh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cf12_polttmlh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cf12_polttmrh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cf12_polttmrh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cf12_popclh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cf12_popclh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cf12_popcrh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cf12_popcrh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cf12_supllh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cf12_supllh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cf12_suplrh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cf12_suplrh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cf12_sutmlh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cf12_sutmlh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cf12_sutmrh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cf12_sutmrh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cf2_flh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cf2_flh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cf2_frh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cf2_frh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cf2_pslh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cf2_pslh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cf2_psrh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cf2_psrh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cf4_flh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cf4_flh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cf4_frh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cf4_frh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cf4_occlh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cf4_occlh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cf4_occrh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cf4_occrh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cf4_pllh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cf4_pllh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cf4_plrh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cf4_plrh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cf4_tmlh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cf4_tmlh",
+            "@type": "@id"
+        },
+        "smri_t2ww02_cf4_tmrh": {
+            "@id": "abcd_smrip201:smri_t2ww02_cf4_tmrh",
+            "@type": "@id"
+        },
+        "smri_vol_scs_3rdventricle": {
+            "@id": "abcd_smrip201:smri_vol_scs_3rdventricle",
+            "@type": "@id"
+        },
+        "smri_vol_scs_4thventricle": {
+            "@id": "abcd_smrip201:smri_vol_scs_4thventricle",
+            "@type": "@id"
+        },
+        "smri_vol_scs_aal": {
+            "@id": "abcd_smrip201:smri_vol_scs_aal",
+            "@type": "@id"
+        },
+        "smri_vol_scs_aar": {
+            "@id": "abcd_smrip201:smri_vol_scs_aar",
+            "@type": "@id"
+        },
+        "smri_vol_scs_allventricles": {
+            "@id": "abcd_smrip201:smri_vol_scs_allventricles",
+            "@type": "@id"
+        },
+        "smri_vol_scs_amygdalalh": {
+            "@id": "abcd_smrip201:smri_vol_scs_amygdalalh",
+            "@type": "@id"
+        },
+        "smri_vol_scs_amygdalarh": {
+            "@id": "abcd_smrip201:smri_vol_scs_amygdalarh",
+            "@type": "@id"
+        },
+        "smri_vol_scs_bstem": {
+            "@id": "abcd_smrip201:smri_vol_scs_bstem",
+            "@type": "@id"
+        },
+        "smri_vol_scs_caudatelh": {
+            "@id": "abcd_smrip201:smri_vol_scs_caudatelh",
+            "@type": "@id"
+        },
+        "smri_vol_scs_caudaterh": {
+            "@id": "abcd_smrip201:smri_vol_scs_caudaterh",
+            "@type": "@id"
+        },
+        "smri_vol_scs_cbwmatterlh": {
+            "@id": "abcd_smrip201:smri_vol_scs_cbwmatterlh",
+            "@type": "@id"
+        },
+        "smri_vol_scs_cbwmatterrh": {
+            "@id": "abcd_smrip201:smri_vol_scs_cbwmatterrh",
+            "@type": "@id"
+        },
+        "smri_vol_scs_ccat": {
+            "@id": "abcd_smrip201:smri_vol_scs_ccat",
+            "@type": "@id"
+        },
+        "smri_vol_scs_ccct": {
+            "@id": "abcd_smrip201:smri_vol_scs_ccct",
+            "@type": "@id"
+        },
+        "smri_vol_scs_ccmidat": {
+            "@id": "abcd_smrip201:smri_vol_scs_ccmidat",
+            "@type": "@id"
+        },
+        "smri_vol_scs_ccmidps": {
+            "@id": "abcd_smrip201:smri_vol_scs_ccmidps",
+            "@type": "@id"
+        },
+        "smri_vol_scs_ccps": {
+            "@id": "abcd_smrip201:smri_vol_scs_ccps",
+            "@type": "@id"
+        },
+        "smri_vol_scs_crbcortexlh": {
+            "@id": "abcd_smrip201:smri_vol_scs_crbcortexlh",
+            "@type": "@id"
+        },
+        "smri_vol_scs_crbcortexrh": {
+            "@id": "abcd_smrip201:smri_vol_scs_crbcortexrh",
+            "@type": "@id"
+        },
+        "smri_vol_scs_crbwmatterlh": {
+            "@id": "abcd_smrip201:smri_vol_scs_crbwmatterlh",
+            "@type": "@id"
+        },
+        "smri_vol_scs_crbwmatterrh": {
+            "@id": "abcd_smrip201:smri_vol_scs_crbwmatterrh",
+            "@type": "@id"
+        },
+        "smri_vol_scs_csf": {
+            "@id": "abcd_smrip201:smri_vol_scs_csf",
+            "@type": "@id"
+        },
+        "smri_vol_scs_hpuslh": {
+            "@id": "abcd_smrip201:smri_vol_scs_hpuslh",
+            "@type": "@id"
+        },
+        "smri_vol_scs_hpusrh": {
+            "@id": "abcd_smrip201:smri_vol_scs_hpusrh",
+            "@type": "@id"
+        },
+        "smri_vol_scs_inflatventlh": {
+            "@id": "abcd_smrip201:smri_vol_scs_inflatventlh",
+            "@type": "@id"
+        },
+        "smri_vol_scs_inflatventrh": {
+            "@id": "abcd_smrip201:smri_vol_scs_inflatventrh",
+            "@type": "@id"
+        },
+        "smri_vol_scs_intracranialv": {
+            "@id": "abcd_smrip201:smri_vol_scs_intracranialv",
+            "@type": "@id"
+        },
+        "smri_vol_scs_latventricles": {
+            "@id": "abcd_smrip201:smri_vol_scs_latventricles",
+            "@type": "@id"
+        },
+        "smri_vol_scs_lesionlh": {
+            "@id": "abcd_smrip201:smri_vol_scs_lesionlh",
+            "@type": "@id"
+        },
+        "smri_vol_scs_lesionrh": {
+            "@id": "abcd_smrip201:smri_vol_scs_lesionrh",
+            "@type": "@id"
+        },
+        "smri_vol_scs_ltventriclelh": {
+            "@id": "abcd_smrip201:smri_vol_scs_ltventriclelh",
+            "@type": "@id"
+        },
+        "smri_vol_scs_ltventriclerh": {
+            "@id": "abcd_smrip201:smri_vol_scs_ltventriclerh",
+            "@type": "@id"
+        },
+        "smri_vol_scs_pallidumlh": {
+            "@id": "abcd_smrip201:smri_vol_scs_pallidumlh",
+            "@type": "@id"
+        },
+        "smri_vol_scs_pallidumrh": {
+            "@id": "abcd_smrip201:smri_vol_scs_pallidumrh",
+            "@type": "@id"
+        },
+        "smri_vol_scs_putamenlh": {
+            "@id": "abcd_smrip201:smri_vol_scs_putamenlh",
+            "@type": "@id"
+        },
+        "smri_vol_scs_putamenrh": {
+            "@id": "abcd_smrip201:smri_vol_scs_putamenrh",
+            "@type": "@id"
+        },
+        "smri_vol_scs_subcorticalgv": {
+            "@id": "abcd_smrip201:smri_vol_scs_subcorticalgv",
+            "@type": "@id"
+        },
+        "smri_vol_scs_suprateialv": {
+            "@id": "abcd_smrip201:smri_vol_scs_suprateialv",
+            "@type": "@id"
+        },
+        "smri_vol_scs_tplh": {
+            "@id": "abcd_smrip201:smri_vol_scs_tplh",
+            "@type": "@id"
+        },
+        "smri_vol_scs_tprh": {
+            "@id": "abcd_smrip201:smri_vol_scs_tprh",
+            "@type": "@id"
+        },
+        "smri_vol_scs_vedclh": {
+            "@id": "abcd_smrip201:smri_vol_scs_vedclh",
+            "@type": "@id"
+        },
+        "smri_vol_scs_vedcrh": {
+            "@id": "abcd_smrip201:smri_vol_scs_vedcrh",
+            "@type": "@id"
+        },
+        "smri_vol_scs_wholeb": {
+            "@id": "abcd_smrip201:smri_vol_scs_wholeb",
+            "@type": "@id"
+        },
+        "smri_vol_scs_wmhint": {
+            "@id": "abcd_smrip201:smri_vol_scs_wmhint",
+            "@type": "@id"
+        },
+        "smri_vol_scs_wmhintlh": {
+            "@id": "abcd_smrip201:smri_vol_scs_wmhintlh",
+            "@type": "@id"
+        },
+        "smri_vol_scs_wmhintrh": {
+            "@id": "abcd_smrip201:smri_vol_scs_wmhintrh",
+            "@type": "@id"
+        }
+    }
+}

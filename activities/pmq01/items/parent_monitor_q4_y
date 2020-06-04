@@ -1,0 +1,47 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "parent_monitor_q4_y",
+    "@type": "reproschema:Field",
+    "prefLabel": "parent_monitor_q4_y",
+    "altLabel": "parental_monitoring_q4",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "How often do you talk to your mom/dad or guardian about your plans for the coming day, such as your plans about what will happen at school or what you are going to do with friends?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "name": "Never",
+                "value": 1
+            },
+            {
+                "name": "Almost Never",
+                "value": 2
+            },
+            {
+                "name": "Sometimes",
+                "value": 3
+            },
+            {
+                "name": "Often",
+                "value": 4
+            },
+            {
+                "name": "Always or Almost Always",
+                "value": 5
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Never; 2 = Almost Never; 3 = Sometimes; 4 = Often; 5 = Always or Almost Always"
+        }
+    ]
+}

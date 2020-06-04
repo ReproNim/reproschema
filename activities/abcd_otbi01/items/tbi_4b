@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "tbi_4b",
+    "@type": "reproschema:Field",
+    "prefLabel": "tbi_4b",
+    "altLabel": "brain_injury_4b_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Was he/she knocked out or did he/she lose consciousness (LOC)? If yes, how long? ¿Estuvo él o ella noqueado/a o perdió el conocimiento? ¿Si la respuesta es si, por cuánto tiempo?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "No LOC Sin pérdida de conocimiento",
+                "value": 0
+            },
+            {
+                "name": "< 30min < 30min",
+                "value": 1
+            },
+            {
+                "name": "30min-24hrs 30min-24hrs",
+                "value": 2
+            },
+            {
+                "name": ">24 hrs >24 hrs",
+                "value": 3
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = No LOC Sin pérdida de conocimiento; 1 = < 30min < 30min; 2 = 30min-24hrs 30min-24hrs; 3 = >24 hrs >24 hrs"
+        }
+    ]
+}

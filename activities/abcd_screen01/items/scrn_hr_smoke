@@ -1,0 +1,34 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "scrn_hr_smoke",
+    "@type": "reproschema:Field",
+    "prefLabel": "scrn_hr_smoke",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Finally, one last question about you and your family. In the past six months, has anyone who lives with your child (e.g., you, a spouse or partner) smoked a cigarette, e-cigarette, or used any other type of tobacco? \nPara terminar, le haré una última pregunta acerca de usted y su familia. En los últimos seis meses, ¿alguna persona que viva con su hijo (p. ej., usted, un cónyuge o una pareja) ha fumado un cigarrillo o un cigarrillo electrónico, o ha consumido cualquier otro tipo de tabaco?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "Yes",
+                "value": 1
+            },
+            {
+                "name": "No",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes; 0 = No"
+        }
+    ]
+}

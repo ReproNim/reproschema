@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "fam_enviro2r_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "fam_enviro2r_p",
+    "altLabel": "fes_2r_p fes_youth_q2",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Family members rarely become openly angry. /Los miembros de la familia raramente se enojan abiertamente.",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "True /Verdadera",
+                "value": 0
+            },
+            {
+                "name": "False/ Falsa",
+                "value": 1
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = True /Verdadera; 1 = False/ Falsa"
+        }
+    ]
+}

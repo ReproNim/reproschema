@@ -1,0 +1,39 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "parent_rules_q3",
+    "@type": "reproschema:Field",
+    "prefLabel": "parent_rules_q3",
+    "altLabel": "prq_q3_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Are these rules enforced? / ¿Se  hacen cumplir estas reglas?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "No",
+                "value": 0
+            },
+            {
+                "name": "Yes /Sí",
+                "value": 1
+            },
+            {
+                "name": "I have not had to enforce these rules /No he tenido que hacer cumplir estas reglas",
+                "value": 4
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = No; 1 = Yes /Sí; 4 = I have not had to enforce these rules /No he tenido que hacer cumplir estas reglas"
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "medhx_6m",
+    "@type": "reproschema:Field",
+    "prefLabel": "medhx_6m",
+    "altLabel": "medhx_6m_broken_teeth_p medhx_6m_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Has he/she ever been to a doctor, a nurse, nurse practitioner, the emergency room or a clinic because any of these things happened...Broken Teeth/ Dientes rotos",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 0,
+        "choices": [
+            {
+                "name": "Yes/ Sí",
+                "value": 1
+            },
+            {
+                "name": "No/ No//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes/ Sí; 0 = No/ No//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life."
+        }
+    ]
+}

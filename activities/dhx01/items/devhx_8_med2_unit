@@ -1,0 +1,66 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "devhx_8_med2_unit",
+    "@type": "reproschema:Field",
+    "prefLabel": "devhx_8_med2_unit",
+    "altLabel": "devhx_8_med2_unit_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Before knowing of pregnancy. Medication 2. Unit(s)/Unidad(es)",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "name": "gram (g)",
+                "value": 1
+            },
+            {
+                "name": "microgram (msg)",
+                "value": 2
+            },
+            {
+                "name": "milligram (mg)",
+                "value": 3
+            },
+            {
+                "name": "kilogram (kg)",
+                "value": 4
+            },
+            {
+                "name": "megagram (MGG)",
+                "value": 5
+            },
+            {
+                "name": "liter (L)",
+                "value": 6
+            },
+            {
+                "name": "ounce (oz)",
+                "value": 7
+            },
+            {
+                "name": "pound (lb)",
+                "value": 8
+            },
+            {
+                "name": "quart (qt)",
+                "value": 9
+            },
+            {
+                "value": 10
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = gram (g); 2 = microgram (msg); 3 = milligram (mg); 4 = kilogram (kg); 5 = megagram (MGG); 6 = liter (L); 7 = ounce (oz); 8 = pound (lb); 9 = quart (qt); 10=International Unites (IU)"
+        }
+    ]
+}

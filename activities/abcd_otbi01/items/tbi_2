@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "tbi_2",
+    "@type": "reproschema:Field",
+    "prefLabel": "tbi_2",
+    "altLabel": "brain_injury_2_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Has your child ever injured his/her head or neck in a car accident or from crashing some other moving vehicle like a bicycle, motorcyle, or ATV? ¿Su niño/a alguna vez se ha lastimado la cabeza o el cuello en un accidente de auto o por chocar cuando iba en algún otro vehículo en movimiento, como una bicicleta, motocicleta o vehículo todo terreno?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 0,
+        "choices": [
+            {
+                "name": "Yes Si",
+                "value": 1
+            },
+            {
+                "name": "No No",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes Si; 0 = No No"
+        }
+    ]
+}

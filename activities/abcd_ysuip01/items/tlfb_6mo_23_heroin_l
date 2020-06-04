@@ -1,0 +1,55 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "tlfb_6mo_23_heroin_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "tlfb_6mo_23_heroin_l",
+    "altLabel": "su_tlfb_past_yr_23_heroin_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Of the times you injected heroin during the past year, how often did you use clean needles?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "never",
+                "value": 1
+            },
+            {
+                "name": "Almost never",
+                "value": 2
+            },
+            {
+                "name": "Sometimes",
+                "value": 3
+            },
+            {
+                "name": "Most of the time",
+                "value": 4
+            },
+            {
+                "name": "Almost always",
+                "value": 5
+            },
+            {
+                "name": "Always",
+                "value": 6
+            },
+            {
+                "name": "I never injected heroin / tlfb_6mo_skip_l___22   == '1'",
+                "value": 7
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = never; 2 = Almost never; 3 = Sometimes; 4 = Most of the time; 5 = Almost always; 6 = Always; 7 = I never injected heroin / tlfb_6mo_skip_l___22   == '1'"
+        }
+    ]
+}

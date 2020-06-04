@@ -1,0 +1,29 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "su_tlfb_ecig_max_calc",
+    "@type": "reproschema:Field",
+    "prefLabel": "su_tlfb_ecig_max_calc",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Electronic cigarettes, vape pens or e-hookah? (ml) \n\nIf either  \"Have you heard of \"Tobacco products ...?\" or \"Have you had a puff ...?\" or \"Have you used Electronic cigarettes, vape pens or e-hookah is not endorsed ,\" values for  \"tlfb_ecig_max\" will be missing.  Here, these missing values have been replaced with \"0.\"",
+    "ui": {
+        "inputType": "Float"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "value": null
+            }
+        ],
+        "valueType": "Float"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "value in ml"
+        }
+    ]
+}

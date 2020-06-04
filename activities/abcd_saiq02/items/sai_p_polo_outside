@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "sai_p_polo_outside",
+    "@type": "reproschema:Field",
+    "prefLabel": "sai_p_polo_outside",
+    "altLabel": "sports_activity_polo_outside_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Horseback Riding, Polo: Was any of this activity part of an organized team, group, band, orchestra, chorus, or program outside of school? Â¿Alguna de estas actividades formÃ³ parte de algÃºn equipo, grupo, banda, orquesta, coro, o programa organizado fuera de la escuela?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 0,
+        "choices": [
+            {
+                "name": "Yes Sí",
+                "value": 1
+            },
+            {
+                "name": "No No",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes Sí; 0 = No No"
+        }
+    ]
+}

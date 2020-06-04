@@ -1,0 +1,51 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "demo_gender_id_v2b",
+    "@type": "reproschema:Field",
+    "prefLabel": "demo_gender_id_v2b",
+    "altLabel": "demo_gender_id_v2b_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "What is the child's current gender identity?/ Cu?l es la identidad de genero actual de el/la nino(a)?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 777,
+        "choices": [
+            {
+                "value": 1
+            },
+            {
+                "value": 2
+            },
+            {
+                "value": 3
+            },
+            {
+                "value": 4
+            },
+            {
+                "value": 5
+            },
+            {
+                "value": 6
+            },
+            {
+                "value": 777
+            },
+            {
+                "value": 999
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1= Male/Hombre; 2= Female/Mujer; 3= Trans male/Transexual masculino / hombre transexual; 4= Trans female/Transexual femenino / mujer transexual; 5= Gender queer/Intergenero (genderqueer) / No conforme con el genero; 6= Different/Otra identididad; 777= Refuse to answer/Niego contestar; 999= Don't know/No lo se"
+        }
+    ]
+}

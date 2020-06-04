@@ -1,0 +1,23 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "tbi_ss_ntbiloc",
+    "@type": "reproschema:Field",
+    "prefLabel": "tbi_ss_ntbiloc",
+    "altLabel": "brain_injury_ss_ntbiloc_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Number of TBI-LOC (number of TBIs with loss consciousness): SUM(AND([tbi_1]=1,[tbi_1b]>0), AND([tbi_2]=1,[tbi_2b]>0,AND([tbi_3]=1,[tbi_3b]>0),AND([tbi_4]=1,[tbi_4b]>0),AND([tbi_5]=1,[tbi_5b]>0),[tbi_6p], AND([tbi_7a]=1,[tbi_7c1]>0), AND([tbi_7g]=1,[tbi_7i]=1), AND([tbi_8g]=1,[tbi_8i]=1)); Validation: No minimum ",
+    "ui": {
+        "inputType": "Integer"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "Bogner, J. A., Whiteneck, G. G.,  et al. (2017)  Test-Retest Reliability of Traumatic Brain Injury Outcome Measures: A Traumatic Brain Injury Model Systems Study.  J Head Trauma Rehabil  32(5): E1-E16."
+        }
+    ]
+}

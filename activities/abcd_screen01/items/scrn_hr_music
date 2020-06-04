@@ -1,0 +1,38 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "scrn_hr_music",
+    "@type": "reproschema:Field",
+    "prefLabel": "scrn_hr_music",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Plays a musical instrument? ¿Toca un instrumento musical?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 2,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "very true or often true Muy cierto o frecuentemente cierto",
+                "value": 2
+            },
+            {
+                "name": "somewhat or sometimes true algo cierto o a veces cierto",
+                "value": 1
+            },
+            {
+                "name": "not true falso // I now have a few questions about (Child's name) behavior. Some of these questions may not apply to your child but it is important that we include a diverse group of children in our study. I'm going to read a list of items that describe children and youth. For each item that describes (Child's name) now or within the past 6 months, please indicate if it is very true or often true of your child, somewhat or sometimes true of your child, or not true of your child. Remember, the questions are about how your child is now or in the past 6 months.",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "2 = very true or often true Muy cierto o frecuentemente cierto; 1 = somewhat or sometimes true algo cierto o a veces cierto; 0 = not true falso // I now have a few questions about (Child's name) behavior. Some of these questions may not apply to your child but it is important that we include a diverse group of children in our study. I'm going to read a list of items that describe children and youth. For each item that describes (Child's name) now or within the past 6 months, please indicate if it is very true or often true of your child, somewhat or sometimes true of your child, or not true of your child. Remember, the questions are about how your child is now or in the past 6 months."
+        }
+    ]
+}

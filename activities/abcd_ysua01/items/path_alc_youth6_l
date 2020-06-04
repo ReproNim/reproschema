@@ -1,0 +1,51 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "path_alc_youth6_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "path_alc_youth6_l",
+    "altLabel": "su_intent_youth6_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Do you think you will try marijuana soon?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Definitely yes",
+                "value": 1
+            },
+            {
+                "name": "Probably yes",
+                "value": 2
+            },
+            {
+                "name": "Probably not",
+                "value": 3
+            },
+            {
+                "name": "Definitely not",
+                "value": 4
+            },
+            {
+                "name": "Don't know",
+                "value": 5
+            },
+            {
+                "name": "Refused /( tlfb_mj_l  == '1' ",
+                "value": 6
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Definitely yes; 2 = Probably yes; 3 = Probably not; 4 = Definitely not; 5 = Don't know; 6 = Refused /( tlfb_mj_l  == '1' ||  tlfb_mj_c_l   == '1') &&  tlfb_mj_puff_l  =='0' &&  tlfb_mj_conc_use_l  =='0' &&  tlfb_mj_drink_use_l  =='0' &&  tlfb_tincture_use_l  =='0' &&  tlfb_mj_puff_c_l  =='0' &&  tlfb_mj_conc_use_c_l  =='0' &&  tlfb_mj_drink_use_c_l  =='0' &&  tlfb_tincture_use_c_l  =='0'"
+        }
+    ]
+}

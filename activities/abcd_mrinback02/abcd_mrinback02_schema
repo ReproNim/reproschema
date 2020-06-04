@@ -1,0 +1,2923 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+        "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/activities/abcd_mrinback02/abcd_mrinback02_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "abcd_mrinback02_schema",
+    "skos:prefLabel": "abcd_mrinback02",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "order": [
+            "tfmri_nb_all_beh_0b_nt",
+            "tfmri_nb_all_beh_0bnf_nt",
+            "tfmri_nb_all_beh_0bnfl_nt",
+            "tfmri_nb_all_beh_0bnfnl_nt",
+            "tfmri_nb_all_beh_0bnft_nt",
+            "tfmri_nb_all_beh_0bngf_nt",
+            "tfmri_nb_all_beh_0bngfl_nt",
+            "tfmri_nb_all_beh_0bngfnl_nt",
+            "tfmri_nb_all_beh_0bngft_nt",
+            "tfmri_nb_all_beh_0bp_nt",
+            "tfmri_nb_all_beh_0bpf_nt",
+            "tfmri_nb_all_beh_0bpfl_nt",
+            "tfmri_nb_all_beh_0bpfnl_nt",
+            "tfmri_nb_all_beh_0bpft_nt",
+            "tfmri_nb_all_beh_0bpl_nt",
+            "tfmri_nb_all_beh_0bpnl_nt",
+            "tfmri_nb_all_beh_0bpt_nt",
+            "tfmri_nb_all_beh_2b_nt",
+            "tfmri_nb_all_beh_2bnf_nt",
+            "tfmri_nb_all_beh_2bnfl_nt",
+            "tfmri_nb_all_beh_2bnfnl_nt",
+            "tfmri_nb_all_beh_2bnft_nt",
+            "tfmri_nb_all_beh_2bngf_nt",
+            "tfmri_nb_all_beh_2bngfl_nt",
+            "tfmri_nb_all_beh_2bngfnl_nt",
+            "tfmri_nb_all_beh_2bngft_nt",
+            "tfmri_nb_all_beh_2bp_nt",
+            "tfmri_nb_all_beh_2bpf_nt",
+            "tfmri_nb_all_beh_2bpfl_nt",
+            "tfmri_nb_all_beh_2bpfnl_nt",
+            "tfmri_nb_all_beh_2bpft_nt",
+            "tfmri_nb_all_beh_2bpl_nt",
+            "tfmri_nb_all_beh_2bpnl_nt",
+            "tfmri_nb_all_beh_2bpt_nt",
+            "tfmri_nb_all_beh_c0b_mrt",
+            "tfmri_nb_all_beh_c0b_nt",
+            "tfmri_nb_all_beh_c0b_rate",
+            "tfmri_nb_all_beh_c0b_stdrt",
+            "tfmri_nb_all_beh_c0bnf_mrt",
+            "tfmri_nb_all_beh_c0bnf_nt",
+            "tfmri_nb_all_beh_c0bnf_rate",
+            "tfmri_nb_all_beh_c0bnf_stdrt",
+            "tfmri_nb_all_beh_c0bnfl_mrt",
+            "tfmri_nb_all_beh_c0bnfl_nt",
+            "tfmri_nb_all_beh_c0bnfl_rate",
+            "tfmri_nb_all_beh_c0bnfl_stdrt",
+            "tfmri_nb_all_beh_c0bnfnl_mrt",
+            "tfmri_nb_all_beh_c0bnfnl_nt",
+            "tfmri_nb_all_beh_c0bnfnl_rate",
+            "tfmri_nb_all_beh_c0bnfnl_stdrt",
+            "tfmri_nb_all_beh_c0bnft_mrt",
+            "tfmri_nb_all_beh_c0bnft_nt",
+            "tfmri_nb_all_beh_c0bnft_rate",
+            "tfmri_nb_all_beh_c0bnft_stdrt",
+            "tfmri_nb_all_beh_c0bngf_mrt",
+            "tfmri_nb_all_beh_c0bngf_nt",
+            "tfmri_nb_all_beh_c0bngf_rate",
+            "tfmri_nb_all_beh_c0bngf_stdrt",
+            "tfmri_nb_all_beh_c0bngfl_mrt",
+            "tfmri_nb_all_beh_c0bngfl_nt",
+            "tfmri_nb_all_beh_c0bngfl_rate",
+            "tfmri_nb_all_beh_c0bngfl_stdrt",
+            "tfmri_nb_all_beh_c0bngfnl_mrt",
+            "tfmri_nb_all_beh_c0bngfnl_nt",
+            "tfmri_nb_all_beh_c0bngfnl_rate",
+            "tfmri_nb_all_beh_c0bngfnl_stt",
+            "tfmri_nb_all_beh_c0bngft_mrt",
+            "tfmri_nb_all_beh_c0bngft_nt",
+            "tfmri_nb_all_beh_c0bngft_rate",
+            "tfmri_nb_all_beh_c0bngft_stdrt",
+            "tfmri_nb_all_beh_c0bp_mrt",
+            "tfmri_nb_all_beh_c0bp_nt",
+            "tfmri_nb_all_beh_c0bp_rate",
+            "tfmri_nb_all_beh_c0bp_stdrt",
+            "tfmri_nb_all_beh_c0bpf_mrt",
+            "tfmri_nb_all_beh_c0bpf_nt",
+            "tfmri_nb_all_beh_c0bpf_rate",
+            "tfmri_nb_all_beh_c0bpf_stdrt",
+            "tfmri_nb_all_beh_c0bpfl_mrt",
+            "tfmri_nb_all_beh_c0bpfl_nt",
+            "tfmri_nb_all_beh_c0bpfl_rate",
+            "tfmri_nb_all_beh_c0bpfl_stdrt",
+            "tfmri_nb_all_beh_c0bpfnl_mrt",
+            "tfmri_nb_all_beh_c0bpfnl_nt",
+            "tfmri_nb_all_beh_c0bpfnl_rate",
+            "tfmri_nb_all_beh_c0bpfnl_stdrt",
+            "tfmri_nb_all_beh_c0bpft_mrt",
+            "tfmri_nb_all_beh_c0bpft_nt",
+            "tfmri_nb_all_beh_c0bpft_rate",
+            "tfmri_nb_all_beh_c0bpft_stdrt",
+            "tfmri_nb_all_beh_c0bpl_mrt",
+            "tfmri_nb_all_beh_c0bpl_nt",
+            "tfmri_nb_all_beh_c0bpl_rate",
+            "tfmri_nb_all_beh_c0bpl_stdrt",
+            "tfmri_nb_all_beh_c0bpnl_mrt",
+            "tfmri_nb_all_beh_c0bpnl_nt",
+            "tfmri_nb_all_beh_c0bpnl_rate",
+            "tfmri_nb_all_beh_c0bpnl_stdrt",
+            "tfmri_nb_all_beh_c0bpt_mrt",
+            "tfmri_nb_all_beh_c0bpt_nt",
+            "tfmri_nb_all_beh_c0bpt_rate",
+            "tfmri_nb_all_beh_c0bpt_stdrt",
+            "tfmri_nb_all_beh_c2b_mrt",
+            "tfmri_nb_all_beh_c2b_nt",
+            "tfmri_nb_all_beh_c2b_rate",
+            "tfmri_nb_all_beh_c2b_stdrt",
+            "tfmri_nb_all_beh_c2bnf_mrt",
+            "tfmri_nb_all_beh_c2bnf_nt",
+            "tfmri_nb_all_beh_c2bnf_rate",
+            "tfmri_nb_all_beh_c2bnf_stdrt",
+            "tfmri_nb_all_beh_c2bnfl_mrt",
+            "tfmri_nb_all_beh_c2bnfl_nt",
+            "tfmri_nb_all_beh_c2bnfl_rate",
+            "tfmri_nb_all_beh_c2bnfl_stdrt",
+            "tfmri_nb_all_beh_c2bnfnl_mrt",
+            "tfmri_nb_all_beh_c2bnfnl_nt",
+            "tfmri_nb_all_beh_c2bnfnl_rate",
+            "tfmri_nb_all_beh_c2bnfnl_stdrt",
+            "tfmri_nb_all_beh_c2bnft_mrt",
+            "tfmri_nb_all_beh_c2bnft_nt",
+            "tfmri_nb_all_beh_c2bnft_rate",
+            "tfmri_nb_all_beh_c2bnft_stdrt",
+            "tfmri_nb_all_beh_c2bngf_mrt",
+            "tfmri_nb_all_beh_c2bngf_nt",
+            "tfmri_nb_all_beh_c2bngf_rate",
+            "tfmri_nb_all_beh_c2bngf_stdrt",
+            "tfmri_nb_all_beh_c2bngfl_mrt",
+            "tfmri_nb_all_beh_c2bngfl_nt",
+            "tfmri_nb_all_beh_c2bngfl_rate",
+            "tfmri_nb_all_beh_c2bngfl_stdrt",
+            "tfmri_nb_all_beh_c2bngfnl_mrt",
+            "tfmri_nb_all_beh_c2bngfnl_nt",
+            "tfmri_nb_all_beh_c2bngfnl_rate",
+            "tfmri_nb_all_beh_c2bngfnl_stt",
+            "tfmri_nb_all_beh_c2bngft_mrt",
+            "tfmri_nb_all_beh_c2bngft_nt",
+            "tfmri_nb_all_beh_c2bngft_rate",
+            "tfmri_nb_all_beh_c2bngft_stdrt",
+            "tfmri_nb_all_beh_c2bp_mrt",
+            "tfmri_nb_all_beh_c2bp_nt",
+            "tfmri_nb_all_beh_c2bp_rate",
+            "tfmri_nb_all_beh_c2bp_stdrt",
+            "tfmri_nb_all_beh_c2bpf_mrt",
+            "tfmri_nb_all_beh_c2bpf_nt",
+            "tfmri_nb_all_beh_c2bpf_rate",
+            "tfmri_nb_all_beh_c2bpf_stdrt",
+            "tfmri_nb_all_beh_c2bpfl_mrt",
+            "tfmri_nb_all_beh_c2bpfl_nt",
+            "tfmri_nb_all_beh_c2bpfl_rate",
+            "tfmri_nb_all_beh_c2bpfl_stdrt",
+            "tfmri_nb_all_beh_c2bpfnl_mrt",
+            "tfmri_nb_all_beh_c2bpfnl_nt",
+            "tfmri_nb_all_beh_c2bpfnl_rate",
+            "tfmri_nb_all_beh_c2bpfnl_stdrt",
+            "tfmri_nb_all_beh_c2bpft_mrt",
+            "tfmri_nb_all_beh_c2bpft_nt",
+            "tfmri_nb_all_beh_c2bpft_rate",
+            "tfmri_nb_all_beh_c2bpft_stdrt",
+            "tfmri_nb_all_beh_c2bpl_mrt",
+            "tfmri_nb_all_beh_c2bpl_nt",
+            "tfmri_nb_all_beh_c2bpl_rate",
+            "tfmri_nb_all_beh_c2bpl_stdrt",
+            "tfmri_nb_all_beh_c2bpnl_mrt",
+            "tfmri_nb_all_beh_c2bpnl_nt",
+            "tfmri_nb_all_beh_c2bpnl_rate",
+            "tfmri_nb_all_beh_c2bpnl_stdrt",
+            "tfmri_nb_all_beh_c2bpt_mrt",
+            "tfmri_nb_all_beh_c2bpt_nt",
+            "tfmri_nb_all_beh_c2bpt_rate",
+            "tfmri_nb_all_beh_c2bpt_stdrt",
+            "tfmri_nb_all_beh_cnf_mrt",
+            "tfmri_nb_all_beh_cnf_nt",
+            "tfmri_nb_all_beh_cnf_rate",
+            "tfmri_nb_all_beh_cnf_stdrt",
+            "tfmri_nb_all_beh_cngf_mrt",
+            "tfmri_nb_all_beh_cngf_nt",
+            "tfmri_nb_all_beh_cngf_rate",
+            "tfmri_nb_all_beh_cngf_stdrt",
+            "tfmri_nb_all_beh_cpf_mrt",
+            "tfmri_nb_all_beh_cpf_nt",
+            "tfmri_nb_all_beh_cpf_rate",
+            "tfmri_nb_all_beh_cpf_stdrt",
+            "tfmri_nb_all_beh_cplace_mrt",
+            "tfmri_nb_all_beh_cplace_nt",
+            "tfmri_nb_all_beh_cplace_rate",
+            "tfmri_nb_all_beh_cplace_stdrt",
+            "tfmri_nb_all_beh_ctotal_mrt",
+            "tfmri_nb_all_beh_ctotal_nt",
+            "tfmri_nb_all_beh_ctotal_rate",
+            "tfmri_nb_all_beh_ctotal_stdrt",
+            "tfmri_nb_all_beh_nf_nt",
+            "tfmri_nb_all_beh_ngf_nt",
+            "tfmri_nb_all_beh_pf_nt",
+            "tfmri_nb_all_beh_place_nt",
+            "tfmri_nb_all_beh_total_nt",
+            "tfmri_nb_r1_beh_0b_nt",
+            "tfmri_nb_r1_beh_0bnf_nt",
+            "tfmri_nb_r1_beh_0bnfl_nt",
+            "tfmri_nb_r1_beh_0bnfnl_nt",
+            "tfmri_nb_r1_beh_0bnft_nt",
+            "tfmri_nb_r1_beh_0bngf_nt",
+            "tfmri_nb_r1_beh_0bngfl_nt",
+            "tfmri_nb_r1_beh_0bngfnl_nt",
+            "tfmri_nb_r1_beh_0bngft_nt",
+            "tfmri_nb_r1_beh_0bp_nt",
+            "tfmri_nb_r1_beh_0bpf_nt",
+            "tfmri_nb_r1_beh_0bpfl_nt",
+            "tfmri_nb_r1_beh_0bpfnl_nt",
+            "tfmri_nb_r1_beh_0bpft_nt",
+            "tfmri_nb_r1_beh_0bpl_nt",
+            "tfmri_nb_r1_beh_0bpnl_nt",
+            "tfmri_nb_r1_beh_0bpt_nt",
+            "tfmri_nb_r1_beh_2b_nt",
+            "tfmri_nb_r1_beh_2bnf_nt",
+            "tfmri_nb_r1_beh_2bnfl_nt",
+            "tfmri_nb_r1_beh_2bnfnl_nt",
+            "tfmri_nb_r1_beh_2bnft_nt",
+            "tfmri_nb_r1_beh_2bngf_nt",
+            "tfmri_nb_r1_beh_2bngfl_nt",
+            "tfmri_nb_r1_beh_2bngfnl_nt",
+            "tfmri_nb_r1_beh_2bngft_nt",
+            "tfmri_nb_r1_beh_2bp_nt",
+            "tfmri_nb_r1_beh_2bpf_nt",
+            "tfmri_nb_r1_beh_2bpfl_nt",
+            "tfmri_nb_r1_beh_2bpfnl_nt",
+            "tfmri_nb_r1_beh_2bpft_nt",
+            "tfmri_nb_r1_beh_2bpl_nt",
+            "tfmri_nb_r1_beh_2bpnl_nt",
+            "tfmri_nb_r1_beh_2bpt_nt",
+            "tfmri_nb_r1_beh_c0b_mrt",
+            "tfmri_nb_r1_beh_c0b_nt",
+            "tfmri_nb_r1_beh_c0b_rate",
+            "tfmri_nb_r1_beh_c0b_stdrt",
+            "tfmri_nb_r1_beh_c0bnf_mrt",
+            "tfmri_nb_r1_beh_c0bnf_nt",
+            "tfmri_nb_r1_beh_c0bnf_rate",
+            "tfmri_nb_r1_beh_c0bnf_stdrt",
+            "tfmri_nb_r1_beh_c0bnfl_mrt",
+            "tfmri_nb_r1_beh_c0bnfl_nt",
+            "tfmri_nb_r1_beh_c0bnfl_rate",
+            "tfmri_nb_r1_beh_c0bnfl_stdrt",
+            "tfmri_nb_r1_beh_c0bnfnl_mrt",
+            "tfmri_nb_r1_beh_c0bnfnl_nt",
+            "tfmri_nb_r1_beh_c0bnfnl_rate",
+            "tfmri_nb_r1_beh_c0bnfnl_stdrt",
+            "tfmri_nb_r1_beh_c0bnft_mrt",
+            "tfmri_nb_r1_beh_c0bnft_nt",
+            "tfmri_nb_r1_beh_c0bnft_rate",
+            "tfmri_nb_r1_beh_c0bnft_stdrt",
+            "tfmri_nb_r1_beh_c0bngf_mrt",
+            "tfmri_nb_r1_beh_c0bngf_nt",
+            "tfmri_nb_r1_beh_c0bngf_rate",
+            "tfmri_nb_r1_beh_c0bngf_stdrt",
+            "tfmri_nb_r1_beh_c0bngfl_mrt",
+            "tfmri_nb_r1_beh_c0bngfl_nt",
+            "tfmri_nb_r1_beh_c0bngfl_rate",
+            "tfmri_nb_r1_beh_c0bngfl_stdrt",
+            "tfmri_nb_r1_beh_c0bngfnl_mrt",
+            "tfmri_nb_r1_beh_c0bngfnl_nt",
+            "tfmri_nb_r1_beh_c0bngfnl_rate",
+            "tfmri_nb_r1_beh_c0bngfnl_stdrt",
+            "tfmri_nb_r1_beh_c0bngft_mrt",
+            "tfmri_nb_r1_beh_c0bngft_nt",
+            "tfmri_nb_r1_beh_c0bngft_rate",
+            "tfmri_nb_r1_beh_c0bngft_stdrt",
+            "tfmri_nb_r1_beh_c0bp_mrt",
+            "tfmri_nb_r1_beh_c0bp_nt",
+            "tfmri_nb_r1_beh_c0bp_rate",
+            "tfmri_nb_r1_beh_c0bp_stdrt",
+            "tfmri_nb_r1_beh_c0bpf_mrt",
+            "tfmri_nb_r1_beh_c0bpf_nt",
+            "tfmri_nb_r1_beh_c0bpf_rate",
+            "tfmri_nb_r1_beh_c0bpf_stdrt",
+            "tfmri_nb_r1_beh_c0bpfl_mrt",
+            "tfmri_nb_r1_beh_c0bpfl_nt",
+            "tfmri_nb_r1_beh_c0bpfl_rate",
+            "tfmri_nb_r1_beh_c0bpfl_stdrt",
+            "tfmri_nb_r1_beh_c0bpfnl_mrt",
+            "tfmri_nb_r1_beh_c0bpfnl_nt",
+            "tfmri_nb_r1_beh_c0bpfnl_rate",
+            "tfmri_nb_r1_beh_c0bpfnl_stdrt",
+            "tfmri_nb_r1_beh_c0bpft_mrt",
+            "tfmri_nb_r1_beh_c0bpft_nt",
+            "tfmri_nb_r1_beh_c0bpft_rate",
+            "tfmri_nb_r1_beh_c0bpft_stdrt",
+            "tfmri_nb_r1_beh_c0bpl_mrt",
+            "tfmri_nb_r1_beh_c0bpl_nt",
+            "tfmri_nb_r1_beh_c0bpl_rate",
+            "tfmri_nb_r1_beh_c0bpl_stdrt",
+            "tfmri_nb_r1_beh_c0bpnl_mrt",
+            "tfmri_nb_r1_beh_c0bpnl_nt",
+            "tfmri_nb_r1_beh_c0bpnl_rate",
+            "tfmri_nb_r1_beh_c0bpnl_stdrt",
+            "tfmri_nb_r1_beh_c0bpt_mrt",
+            "tfmri_nb_r1_beh_c0bpt_nt",
+            "tfmri_nb_r1_beh_c0bpt_rate",
+            "tfmri_nb_r1_beh_c0bpt_stdrt",
+            "tfmri_nb_r1_beh_c2b_mrt",
+            "tfmri_nb_r1_beh_c2b_nt",
+            "tfmri_nb_r1_beh_c2b_rate",
+            "tfmri_nb_r1_beh_c2b_stdrt",
+            "tfmri_nb_r1_beh_c2bnf_mrt",
+            "tfmri_nb_r1_beh_c2bnf_nt",
+            "tfmri_nb_r1_beh_c2bnf_rate",
+            "tfmri_nb_r1_beh_c2bnf_stdrt",
+            "tfmri_nb_r1_beh_c2bnfl_mrt",
+            "tfmri_nb_r1_beh_c2bnfl_nt",
+            "tfmri_nb_r1_beh_c2bnfl_rate",
+            "tfmri_nb_r1_beh_c2bnfl_stdrt",
+            "tfmri_nb_r1_beh_c2bnfnl_mrt",
+            "tfmri_nb_r1_beh_c2bnfnl_nt",
+            "tfmri_nb_r1_beh_c2bnfnl_rate",
+            "tfmri_nb_r1_beh_c2bnfnl_stdrt",
+            "tfmri_nb_r1_beh_c2bnft_mrt",
+            "tfmri_nb_r1_beh_c2bnft_nt",
+            "tfmri_nb_r1_beh_c2bnft_rate",
+            "tfmri_nb_r1_beh_c2bnft_stdrt",
+            "tfmri_nb_r1_beh_c2bngf_mrt",
+            "tfmri_nb_r1_beh_c2bngf_nt",
+            "tfmri_nb_r1_beh_c2bngf_rate",
+            "tfmri_nb_r1_beh_c2bngf_stdrt",
+            "tfmri_nb_r1_beh_c2bngfl_mrt",
+            "tfmri_nb_r1_beh_c2bngfl_nt",
+            "tfmri_nb_r1_beh_c2bngfl_rate",
+            "tfmri_nb_r1_beh_c2bngfl_stdrt",
+            "tfmri_nb_r1_beh_c2bngfnl_mrt",
+            "tfmri_nb_r1_beh_c2bngfnl_nt",
+            "tfmri_nb_r1_beh_c2bngfnl_rate",
+            "tfmri_nb_r1_beh_c2bngfnl_stdrt",
+            "tfmri_nb_r1_beh_c2bngft_mrt",
+            "tfmri_nb_r1_beh_c2bngft_nt",
+            "tfmri_nb_r1_beh_c2bngft_rate",
+            "tfmri_nb_r1_beh_c2bngft_stdrt",
+            "tfmri_nb_r1_beh_c2bp_mrt",
+            "tfmri_nb_r1_beh_c2bp_nt",
+            "tfmri_nb_r1_beh_c2bp_rate",
+            "tfmri_nb_r1_beh_c2bp_stdrt",
+            "tfmri_nb_r1_beh_c2bpf_mrt",
+            "tfmri_nb_r1_beh_c2bpf_nt",
+            "tfmri_nb_r1_beh_c2bpf_rate",
+            "tfmri_nb_r1_beh_c2bpf_stdrt",
+            "tfmri_nb_r1_beh_c2bpfl_mrt",
+            "tfmri_nb_r1_beh_c2bpfl_nt",
+            "tfmri_nb_r1_beh_c2bpfl_rate",
+            "tfmri_nb_r1_beh_c2bpfl_stdrt",
+            "tfmri_nb_r1_beh_c2bpfnl_mrt",
+            "tfmri_nb_r1_beh_c2bpfnl_nt",
+            "tfmri_nb_r1_beh_c2bpfnl_rate",
+            "tfmri_nb_r1_beh_c2bpfnl_stdrt",
+            "tfmri_nb_r1_beh_c2bpft_mrt",
+            "tfmri_nb_r1_beh_c2bpft_nt",
+            "tfmri_nb_r1_beh_c2bpft_rate",
+            "tfmri_nb_r1_beh_c2bpft_stdrt",
+            "tfmri_nb_r1_beh_c2bpl_mrt",
+            "tfmri_nb_r1_beh_c2bpl_nt",
+            "tfmri_nb_r1_beh_c2bpl_rate",
+            "tfmri_nb_r1_beh_c2bpl_stdrt",
+            "tfmri_nb_r1_beh_c2bpnl_mrt",
+            "tfmri_nb_r1_beh_c2bpnl_nt",
+            "tfmri_nb_r1_beh_c2bpnl_rate",
+            "tfmri_nb_r1_beh_c2bpnl_stdrt",
+            "tfmri_nb_r1_beh_c2bpt_mrt",
+            "tfmri_nb_r1_beh_c2bpt_nt",
+            "tfmri_nb_r1_beh_c2bpt_rate",
+            "tfmri_nb_r1_beh_c2bpt_stdrt",
+            "tfmri_nb_r1_beh_cnf_mrt",
+            "tfmri_nb_r1_beh_cnf_nt",
+            "tfmri_nb_r1_beh_cnf_rate",
+            "tfmri_nb_r1_beh_cnf_stdrt",
+            "tfmri_nb_r1_beh_cngf_mrt",
+            "tfmri_nb_r1_beh_cngf_nt",
+            "tfmri_nb_r1_beh_cngf_rate",
+            "tfmri_nb_r1_beh_cngf_stdrt",
+            "tfmri_nb_r1_beh_cpf_mrt",
+            "tfmri_nb_r1_beh_cpf_nt",
+            "tfmri_nb_r1_beh_cpf_rate",
+            "tfmri_nb_r1_beh_cpf_stdrt",
+            "tfmri_nb_r1_beh_cplace_mrt",
+            "tfmri_nb_r1_beh_cplace_nt",
+            "tfmri_nb_r1_beh_cplace_rate",
+            "tfmri_nb_r1_beh_cplace_stdrt",
+            "tfmri_nb_r1_beh_nf_nt",
+            "tfmri_nb_r1_beh_ngf_nt",
+            "tfmri_nb_r1_beh_pf_nt",
+            "tfmri_nb_r1_beh_place_nt",
+            "tfmri_nb_r1_beh_total_nt",
+            "tfmri_nb_r2_beh_0b_nt",
+            "tfmri_nb_r2_beh_0bnf_nt",
+            "tfmri_nb_r2_beh_0bnfl_nt",
+            "tfmri_nb_r2_beh_0bnfnl_nt",
+            "tfmri_nb_r2_beh_0bnft_nt",
+            "tfmri_nb_r2_beh_0bngf_nt",
+            "tfmri_nb_r2_beh_0bngfl_nt",
+            "tfmri_nb_r2_beh_0bngfnl_nt",
+            "tfmri_nb_r2_beh_0bngft_nt",
+            "tfmri_nb_r2_beh_0bp_nt",
+            "tfmri_nb_r2_beh_0bpf_nt",
+            "tfmri_nb_r2_beh_0bpfl_nt",
+            "tfmri_nb_r2_beh_0bpfnl_nt",
+            "tfmri_nb_r2_beh_0bpft_nt",
+            "tfmri_nb_r2_beh_0bpl_nt",
+            "tfmri_nb_r2_beh_0bpnl_nt",
+            "tfmri_nb_r2_beh_0bpt_nt",
+            "tfmri_nb_r2_beh_2b_nt",
+            "tfmri_nb_r2_beh_2bnf_nt",
+            "tfmri_nb_r2_beh_2bnfl_nt",
+            "tfmri_nb_r2_beh_2bnfnl_nt",
+            "tfmri_nb_r2_beh_2bnft_nt",
+            "tfmri_nb_r2_beh_2bngf_nt",
+            "tfmri_nb_r2_beh_2bngfl_nt",
+            "tfmri_nb_r2_beh_2bngfnl_nt",
+            "tfmri_nb_r2_beh_2bngft_nt",
+            "tfmri_nb_r2_beh_2bp_nt",
+            "tfmri_nb_r2_beh_2bpf_nt",
+            "tfmri_nb_r2_beh_2bpfl_nt",
+            "tfmri_nb_r2_beh_2bpfnl_nt",
+            "tfmri_nb_r2_beh_2bpft_nt",
+            "tfmri_nb_r2_beh_2bpl_nt",
+            "tfmri_nb_r2_beh_2bpnl_nt",
+            "tfmri_nb_r2_beh_2bpt_nt",
+            "tfmri_nb_r2_beh_c0b_mrt",
+            "tfmri_nb_r2_beh_c0b_nt",
+            "tfmri_nb_r2_beh_c0b_rate",
+            "tfmri_nb_r2_beh_c0b_stdrt",
+            "tfmri_nb_r2_beh_c0bnf_mrt",
+            "tfmri_nb_r2_beh_c0bnf_nt",
+            "tfmri_nb_r2_beh_c0bnf_rate",
+            "tfmri_nb_r2_beh_c0bnf_stdrt",
+            "tfmri_nb_r2_beh_c0bnfl_mrt",
+            "tfmri_nb_r2_beh_c0bnfl_nt",
+            "tfmri_nb_r2_beh_c0bnfl_rate",
+            "tfmri_nb_r2_beh_c0bnfl_stdrt",
+            "tfmri_nb_r2_beh_c0bnfnl_mrt",
+            "tfmri_nb_r2_beh_c0bnfnl_nt",
+            "tfmri_nb_r2_beh_c0bnfnl_rate",
+            "tfmri_nb_r2_beh_c0bnfnl_stdrt",
+            "tfmri_nb_r2_beh_c0bnft_mrt",
+            "tfmri_nb_r2_beh_c0bnft_nt",
+            "tfmri_nb_r2_beh_c0bnft_rate",
+            "tfmri_nb_r2_beh_c0bnft_stdrt",
+            "tfmri_nb_r2_beh_c0bngf_mrt",
+            "tfmri_nb_r2_beh_c0bngf_nt",
+            "tfmri_nb_r2_beh_c0bngf_rate",
+            "tfmri_nb_r2_beh_c0bngf_stdrt",
+            "tfmri_nb_r2_beh_c0bngfl_mrt",
+            "tfmri_nb_r2_beh_c0bngfl_nt",
+            "tfmri_nb_r2_beh_c0bngfl_rate",
+            "tfmri_nb_r2_beh_c0bngfl_stdrt",
+            "tfmri_nb_r2_beh_c0bngfnl_mrt",
+            "tfmri_nb_r2_beh_c0bngfnl_nt",
+            "tfmri_nb_r2_beh_c0bngfnl_rate",
+            "tfmri_nb_r2_beh_c0bngfnl_stdrt",
+            "tfmri_nb_r2_beh_c0bngft_mrt",
+            "tfmri_nb_r2_beh_c0bngft_nt",
+            "tfmri_nb_r2_beh_c0bngft_rate",
+            "tfmri_nb_r2_beh_c0bngft_stdrt",
+            "tfmri_nb_r2_beh_c0bp_mrt",
+            "tfmri_nb_r2_beh_c0bp_nt",
+            "tfmri_nb_r2_beh_c0bp_rate",
+            "tfmri_nb_r2_beh_c0bp_stdrt",
+            "tfmri_nb_r2_beh_c0bpf_mrt",
+            "tfmri_nb_r2_beh_c0bpf_nt",
+            "tfmri_nb_r2_beh_c0bpf_rate",
+            "tfmri_nb_r2_beh_c0bpf_stdrt",
+            "tfmri_nb_r2_beh_c0bpfl_mrt",
+            "tfmri_nb_r2_beh_c0bpfl_nt",
+            "tfmri_nb_r2_beh_c0bpfl_rate",
+            "tfmri_nb_r2_beh_c0bpfl_stdrt",
+            "tfmri_nb_r2_beh_c0bpfnl_mrt",
+            "tfmri_nb_r2_beh_c0bpfnl_nt",
+            "tfmri_nb_r2_beh_c0bpfnl_rate",
+            "tfmri_nb_r2_beh_c0bpfnl_stdrt",
+            "tfmri_nb_r2_beh_c0bpft_mrt",
+            "tfmri_nb_r2_beh_c0bpft_nt",
+            "tfmri_nb_r2_beh_c0bpft_rate",
+            "tfmri_nb_r2_beh_c0bpft_stdrt",
+            "tfmri_nb_r2_beh_c0bpl_mrt",
+            "tfmri_nb_r2_beh_c0bpl_nt",
+            "tfmri_nb_r2_beh_c0bpl_rate",
+            "tfmri_nb_r2_beh_c0bpl_stdrt",
+            "tfmri_nb_r2_beh_c0bpnl_mrt",
+            "tfmri_nb_r2_beh_c0bpnl_nt",
+            "tfmri_nb_r2_beh_c0bpnl_rate",
+            "tfmri_nb_r2_beh_c0bpnl_stdrt",
+            "tfmri_nb_r2_beh_c0bpt_mrt",
+            "tfmri_nb_r2_beh_c0bpt_nt",
+            "tfmri_nb_r2_beh_c0bpt_rate",
+            "tfmri_nb_r2_beh_c0bpt_stdrt",
+            "tfmri_nb_r2_beh_c2b_mrt",
+            "tfmri_nb_r2_beh_c2b_nt",
+            "tfmri_nb_r2_beh_c2b_rate",
+            "tfmri_nb_r2_beh_c2b_stdrt",
+            "tfmri_nb_r2_beh_c2bnf_mrt",
+            "tfmri_nb_r2_beh_c2bnf_nt",
+            "tfmri_nb_r2_beh_c2bnf_rate",
+            "tfmri_nb_r2_beh_c2bnf_stdrt",
+            "tfmri_nb_r2_beh_c2bnfl_mrt",
+            "tfmri_nb_r2_beh_c2bnfl_nt",
+            "tfmri_nb_r2_beh_c2bnfl_rate",
+            "tfmri_nb_r2_beh_c2bnfl_stdrt",
+            "tfmri_nb_r2_beh_c2bnfnl_mrt",
+            "tfmri_nb_r2_beh_c2bnfnl_nt",
+            "tfmri_nb_r2_beh_c2bnfnl_rate",
+            "tfmri_nb_r2_beh_c2bnfnl_stdrt",
+            "tfmri_nb_r2_beh_c2bnft_mrt",
+            "tfmri_nb_r2_beh_c2bnft_nt",
+            "tfmri_nb_r2_beh_c2bnft_rate",
+            "tfmri_nb_r2_beh_c2bnft_stdrt",
+            "tfmri_nb_r2_beh_c2bngf_mrt",
+            "tfmri_nb_r2_beh_c2bngf_nt",
+            "tfmri_nb_r2_beh_c2bngf_rate",
+            "tfmri_nb_r2_beh_c2bngf_stdrt",
+            "tfmri_nb_r2_beh_c2bngfl_mrt",
+            "tfmri_nb_r2_beh_c2bngfl_nt",
+            "tfmri_nb_r2_beh_c2bngfl_rate",
+            "tfmri_nb_r2_beh_c2bngfl_stdrt",
+            "tfmri_nb_r2_beh_c2bngfnl_mrt",
+            "tfmri_nb_r2_beh_c2bngfnl_nt",
+            "tfmri_nb_r2_beh_c2bngfnl_rate",
+            "tfmri_nb_r2_beh_c2bngfnl_stdrt",
+            "tfmri_nb_r2_beh_c2bngft_mrt",
+            "tfmri_nb_r2_beh_c2bngft_nt",
+            "tfmri_nb_r2_beh_c2bngft_rate",
+            "tfmri_nb_r2_beh_c2bngft_stdrt",
+            "tfmri_nb_r2_beh_c2bp_mrt",
+            "tfmri_nb_r2_beh_c2bp_nt",
+            "tfmri_nb_r2_beh_c2bp_rate",
+            "tfmri_nb_r2_beh_c2bp_stdrt",
+            "tfmri_nb_r2_beh_c2bpf_mrt",
+            "tfmri_nb_r2_beh_c2bpf_nt",
+            "tfmri_nb_r2_beh_c2bpf_rate",
+            "tfmri_nb_r2_beh_c2bpf_stdrt",
+            "tfmri_nb_r2_beh_c2bpfl_mrt",
+            "tfmri_nb_r2_beh_c2bpfl_nt",
+            "tfmri_nb_r2_beh_c2bpfl_rate",
+            "tfmri_nb_r2_beh_c2bpfl_stdrt",
+            "tfmri_nb_r2_beh_c2bpfnl_mrt",
+            "tfmri_nb_r2_beh_c2bpfnl_nt",
+            "tfmri_nb_r2_beh_c2bpfnl_rate",
+            "tfmri_nb_r2_beh_c2bpfnl_stdrt",
+            "tfmri_nb_r2_beh_c2bpft_mrt",
+            "tfmri_nb_r2_beh_c2bpft_nt",
+            "tfmri_nb_r2_beh_c2bpft_rate",
+            "tfmri_nb_r2_beh_c2bpft_stdrt",
+            "tfmri_nb_r2_beh_c2bpl_mrt",
+            "tfmri_nb_r2_beh_c2bpl_nt",
+            "tfmri_nb_r2_beh_c2bpl_rate",
+            "tfmri_nb_r2_beh_c2bpl_stdrt",
+            "tfmri_nb_r2_beh_c2bpnl_mrt",
+            "tfmri_nb_r2_beh_c2bpnl_nt",
+            "tfmri_nb_r2_beh_c2bpnl_rate",
+            "tfmri_nb_r2_beh_c2bpnl_stdrt",
+            "tfmri_nb_r2_beh_c2bpt_mrt",
+            "tfmri_nb_r2_beh_c2bpt_nt",
+            "tfmri_nb_r2_beh_c2bpt_rate",
+            "tfmri_nb_r2_beh_c2bpt_stdrt",
+            "tfmri_nb_r2_beh_cnf_mrt",
+            "tfmri_nb_r2_beh_cnf_nt",
+            "tfmri_nb_r2_beh_cnf_rate",
+            "tfmri_nb_r2_beh_cnf_stdrt",
+            "tfmri_nb_r2_beh_cngf_mrt",
+            "tfmri_nb_r2_beh_cngf_nt",
+            "tfmri_nb_r2_beh_cngf_rate",
+            "tfmri_nb_r2_beh_cngf_stdrt",
+            "tfmri_nb_r2_beh_cpf_mrt",
+            "tfmri_nb_r2_beh_cpf_nt",
+            "tfmri_nb_r2_beh_cpf_rate",
+            "tfmri_nb_r2_beh_cpf_stdrt",
+            "tfmri_nb_r2_beh_cplace_mrt",
+            "tfmri_nb_r2_beh_cplace_nt",
+            "tfmri_nb_r2_beh_cplace_rate",
+            "tfmri_nb_r2_beh_cplace_stdrt",
+            "tfmri_nb_r2_beh_nf_nt",
+            "tfmri_nb_r2_beh_ngf_nt",
+            "tfmri_nb_r2_beh_pf_nt",
+            "tfmri_nb_r2_beh_place_nt",
+            "tfmri_nb_r2_beh_total_nt",
+            "tfmri_nback_beh_nruns",
+            "tfmri_nback_beh_performflag",
+            "tfmri_nback_beh_switchflag",
+            "tfmri_nback_beh_visitid"
+        ],
+        "shuffle": false,
+        "addProperties": [
+            {
+                "variableName": "tfmri_nb_all_beh_0b_nt",
+                "isAbout": "tfmri_nb_all_beh_0b_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_0bnf_nt",
+                "isAbout": "tfmri_nb_all_beh_0bnf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_0bnfl_nt",
+                "isAbout": "tfmri_nb_all_beh_0bnfl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_0bnfnl_nt",
+                "isAbout": "tfmri_nb_all_beh_0bnfnl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_0bnft_nt",
+                "isAbout": "tfmri_nb_all_beh_0bnft_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_0bngf_nt",
+                "isAbout": "tfmri_nb_all_beh_0bngf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_0bngfl_nt",
+                "isAbout": "tfmri_nb_all_beh_0bngfl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_0bngfnl_nt",
+                "isAbout": "tfmri_nb_all_beh_0bngfnl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_0bngft_nt",
+                "isAbout": "tfmri_nb_all_beh_0bngft_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_0bp_nt",
+                "isAbout": "tfmri_nb_all_beh_0bp_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_0bpf_nt",
+                "isAbout": "tfmri_nb_all_beh_0bpf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_0bpfl_nt",
+                "isAbout": "tfmri_nb_all_beh_0bpfl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_0bpfnl_nt",
+                "isAbout": "tfmri_nb_all_beh_0bpfnl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_0bpft_nt",
+                "isAbout": "tfmri_nb_all_beh_0bpft_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_0bpl_nt",
+                "isAbout": "tfmri_nb_all_beh_0bpl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_0bpnl_nt",
+                "isAbout": "tfmri_nb_all_beh_0bpnl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_0bpt_nt",
+                "isAbout": "tfmri_nb_all_beh_0bpt_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_2b_nt",
+                "isAbout": "tfmri_nb_all_beh_2b_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_2bnf_nt",
+                "isAbout": "tfmri_nb_all_beh_2bnf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_2bnfl_nt",
+                "isAbout": "tfmri_nb_all_beh_2bnfl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_2bnfnl_nt",
+                "isAbout": "tfmri_nb_all_beh_2bnfnl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_2bnft_nt",
+                "isAbout": "tfmri_nb_all_beh_2bnft_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_2bngf_nt",
+                "isAbout": "tfmri_nb_all_beh_2bngf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_2bngfl_nt",
+                "isAbout": "tfmri_nb_all_beh_2bngfl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_2bngfnl_nt",
+                "isAbout": "tfmri_nb_all_beh_2bngfnl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_2bngft_nt",
+                "isAbout": "tfmri_nb_all_beh_2bngft_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_2bp_nt",
+                "isAbout": "tfmri_nb_all_beh_2bp_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_2bpf_nt",
+                "isAbout": "tfmri_nb_all_beh_2bpf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_2bpfl_nt",
+                "isAbout": "tfmri_nb_all_beh_2bpfl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_2bpfnl_nt",
+                "isAbout": "tfmri_nb_all_beh_2bpfnl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_2bpft_nt",
+                "isAbout": "tfmri_nb_all_beh_2bpft_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_2bpl_nt",
+                "isAbout": "tfmri_nb_all_beh_2bpl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_2bpnl_nt",
+                "isAbout": "tfmri_nb_all_beh_2bpnl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_2bpt_nt",
+                "isAbout": "tfmri_nb_all_beh_2bpt_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0b_mrt",
+                "isAbout": "tfmri_nb_all_beh_c0b_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0b_nt",
+                "isAbout": "tfmri_nb_all_beh_c0b_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0b_rate",
+                "isAbout": "tfmri_nb_all_beh_c0b_rate"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0b_stdrt",
+                "isAbout": "tfmri_nb_all_beh_c0b_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bnf_mrt",
+                "isAbout": "tfmri_nb_all_beh_c0bnf_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bnf_nt",
+                "isAbout": "tfmri_nb_all_beh_c0bnf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bnf_rate",
+                "isAbout": "tfmri_nb_all_beh_c0bnf_rate"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bnf_stdrt",
+                "isAbout": "tfmri_nb_all_beh_c0bnf_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bnfl_mrt",
+                "isAbout": "tfmri_nb_all_beh_c0bnfl_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bnfl_nt",
+                "isAbout": "tfmri_nb_all_beh_c0bnfl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bnfl_rate",
+                "isAbout": "tfmri_nb_all_beh_c0bnfl_rate"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bnfl_stdrt",
+                "isAbout": "tfmri_nb_all_beh_c0bnfl_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bnfnl_mrt",
+                "isAbout": "tfmri_nb_all_beh_c0bnfnl_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bnfnl_nt",
+                "isAbout": "tfmri_nb_all_beh_c0bnfnl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bnfnl_rate",
+                "isAbout": "tfmri_nb_all_beh_c0bnfnl_rate"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bnfnl_stdrt",
+                "isAbout": "tfmri_nb_all_beh_c0bnfnl_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bnft_mrt",
+                "isAbout": "tfmri_nb_all_beh_c0bnft_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bnft_nt",
+                "isAbout": "tfmri_nb_all_beh_c0bnft_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bnft_rate",
+                "isAbout": "tfmri_nb_all_beh_c0bnft_rate"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bnft_stdrt",
+                "isAbout": "tfmri_nb_all_beh_c0bnft_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bngf_mrt",
+                "isAbout": "tfmri_nb_all_beh_c0bngf_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bngf_nt",
+                "isAbout": "tfmri_nb_all_beh_c0bngf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bngf_rate",
+                "isAbout": "tfmri_nb_all_beh_c0bngf_rate"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bngf_stdrt",
+                "isAbout": "tfmri_nb_all_beh_c0bngf_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bngfl_mrt",
+                "isAbout": "tfmri_nb_all_beh_c0bngfl_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bngfl_nt",
+                "isAbout": "tfmri_nb_all_beh_c0bngfl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bngfl_rate",
+                "isAbout": "tfmri_nb_all_beh_c0bngfl_rate"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bngfl_stdrt",
+                "isAbout": "tfmri_nb_all_beh_c0bngfl_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bngfnl_mrt",
+                "isAbout": "tfmri_nb_all_beh_c0bngfnl_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bngfnl_nt",
+                "isAbout": "tfmri_nb_all_beh_c0bngfnl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bngfnl_rate",
+                "isAbout": "tfmri_nb_all_beh_c0bngfnl_rate"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bngfnl_stt",
+                "isAbout": "tfmri_nb_all_beh_c0bngfnl_stt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bngft_mrt",
+                "isAbout": "tfmri_nb_all_beh_c0bngft_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bngft_nt",
+                "isAbout": "tfmri_nb_all_beh_c0bngft_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bngft_rate",
+                "isAbout": "tfmri_nb_all_beh_c0bngft_rate"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bngft_stdrt",
+                "isAbout": "tfmri_nb_all_beh_c0bngft_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bp_mrt",
+                "isAbout": "tfmri_nb_all_beh_c0bp_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bp_nt",
+                "isAbout": "tfmri_nb_all_beh_c0bp_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bp_rate",
+                "isAbout": "tfmri_nb_all_beh_c0bp_rate"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bp_stdrt",
+                "isAbout": "tfmri_nb_all_beh_c0bp_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bpf_mrt",
+                "isAbout": "tfmri_nb_all_beh_c0bpf_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bpf_nt",
+                "isAbout": "tfmri_nb_all_beh_c0bpf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bpf_rate",
+                "isAbout": "tfmri_nb_all_beh_c0bpf_rate"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bpf_stdrt",
+                "isAbout": "tfmri_nb_all_beh_c0bpf_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bpfl_mrt",
+                "isAbout": "tfmri_nb_all_beh_c0bpfl_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bpfl_nt",
+                "isAbout": "tfmri_nb_all_beh_c0bpfl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bpfl_rate",
+                "isAbout": "tfmri_nb_all_beh_c0bpfl_rate"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bpfl_stdrt",
+                "isAbout": "tfmri_nb_all_beh_c0bpfl_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bpfnl_mrt",
+                "isAbout": "tfmri_nb_all_beh_c0bpfnl_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bpfnl_nt",
+                "isAbout": "tfmri_nb_all_beh_c0bpfnl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bpfnl_rate",
+                "isAbout": "tfmri_nb_all_beh_c0bpfnl_rate"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bpfnl_stdrt",
+                "isAbout": "tfmri_nb_all_beh_c0bpfnl_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bpft_mrt",
+                "isAbout": "tfmri_nb_all_beh_c0bpft_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bpft_nt",
+                "isAbout": "tfmri_nb_all_beh_c0bpft_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bpft_rate",
+                "isAbout": "tfmri_nb_all_beh_c0bpft_rate"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bpft_stdrt",
+                "isAbout": "tfmri_nb_all_beh_c0bpft_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bpl_mrt",
+                "isAbout": "tfmri_nb_all_beh_c0bpl_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bpl_nt",
+                "isAbout": "tfmri_nb_all_beh_c0bpl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bpl_rate",
+                "isAbout": "tfmri_nb_all_beh_c0bpl_rate"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bpl_stdrt",
+                "isAbout": "tfmri_nb_all_beh_c0bpl_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bpnl_mrt",
+                "isAbout": "tfmri_nb_all_beh_c0bpnl_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bpnl_nt",
+                "isAbout": "tfmri_nb_all_beh_c0bpnl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bpnl_rate",
+                "isAbout": "tfmri_nb_all_beh_c0bpnl_rate"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bpnl_stdrt",
+                "isAbout": "tfmri_nb_all_beh_c0bpnl_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bpt_mrt",
+                "isAbout": "tfmri_nb_all_beh_c0bpt_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bpt_nt",
+                "isAbout": "tfmri_nb_all_beh_c0bpt_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bpt_rate",
+                "isAbout": "tfmri_nb_all_beh_c0bpt_rate"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c0bpt_stdrt",
+                "isAbout": "tfmri_nb_all_beh_c0bpt_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2b_mrt",
+                "isAbout": "tfmri_nb_all_beh_c2b_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2b_nt",
+                "isAbout": "tfmri_nb_all_beh_c2b_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2b_rate",
+                "isAbout": "tfmri_nb_all_beh_c2b_rate"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2b_stdrt",
+                "isAbout": "tfmri_nb_all_beh_c2b_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bnf_mrt",
+                "isAbout": "tfmri_nb_all_beh_c2bnf_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bnf_nt",
+                "isAbout": "tfmri_nb_all_beh_c2bnf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bnf_rate",
+                "isAbout": "tfmri_nb_all_beh_c2bnf_rate"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bnf_stdrt",
+                "isAbout": "tfmri_nb_all_beh_c2bnf_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bnfl_mrt",
+                "isAbout": "tfmri_nb_all_beh_c2bnfl_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bnfl_nt",
+                "isAbout": "tfmri_nb_all_beh_c2bnfl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bnfl_rate",
+                "isAbout": "tfmri_nb_all_beh_c2bnfl_rate"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bnfl_stdrt",
+                "isAbout": "tfmri_nb_all_beh_c2bnfl_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bnfnl_mrt",
+                "isAbout": "tfmri_nb_all_beh_c2bnfnl_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bnfnl_nt",
+                "isAbout": "tfmri_nb_all_beh_c2bnfnl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bnfnl_rate",
+                "isAbout": "tfmri_nb_all_beh_c2bnfnl_rate"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bnfnl_stdrt",
+                "isAbout": "tfmri_nb_all_beh_c2bnfnl_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bnft_mrt",
+                "isAbout": "tfmri_nb_all_beh_c2bnft_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bnft_nt",
+                "isAbout": "tfmri_nb_all_beh_c2bnft_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bnft_rate",
+                "isAbout": "tfmri_nb_all_beh_c2bnft_rate"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bnft_stdrt",
+                "isAbout": "tfmri_nb_all_beh_c2bnft_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bngf_mrt",
+                "isAbout": "tfmri_nb_all_beh_c2bngf_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bngf_nt",
+                "isAbout": "tfmri_nb_all_beh_c2bngf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bngf_rate",
+                "isAbout": "tfmri_nb_all_beh_c2bngf_rate"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bngf_stdrt",
+                "isAbout": "tfmri_nb_all_beh_c2bngf_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bngfl_mrt",
+                "isAbout": "tfmri_nb_all_beh_c2bngfl_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bngfl_nt",
+                "isAbout": "tfmri_nb_all_beh_c2bngfl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bngfl_rate",
+                "isAbout": "tfmri_nb_all_beh_c2bngfl_rate"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bngfl_stdrt",
+                "isAbout": "tfmri_nb_all_beh_c2bngfl_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bngfnl_mrt",
+                "isAbout": "tfmri_nb_all_beh_c2bngfnl_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bngfnl_nt",
+                "isAbout": "tfmri_nb_all_beh_c2bngfnl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bngfnl_rate",
+                "isAbout": "tfmri_nb_all_beh_c2bngfnl_rate"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bngfnl_stt",
+                "isAbout": "tfmri_nb_all_beh_c2bngfnl_stt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bngft_mrt",
+                "isAbout": "tfmri_nb_all_beh_c2bngft_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bngft_nt",
+                "isAbout": "tfmri_nb_all_beh_c2bngft_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bngft_rate",
+                "isAbout": "tfmri_nb_all_beh_c2bngft_rate"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bngft_stdrt",
+                "isAbout": "tfmri_nb_all_beh_c2bngft_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bp_mrt",
+                "isAbout": "tfmri_nb_all_beh_c2bp_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bp_nt",
+                "isAbout": "tfmri_nb_all_beh_c2bp_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bp_rate",
+                "isAbout": "tfmri_nb_all_beh_c2bp_rate"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bp_stdrt",
+                "isAbout": "tfmri_nb_all_beh_c2bp_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bpf_mrt",
+                "isAbout": "tfmri_nb_all_beh_c2bpf_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bpf_nt",
+                "isAbout": "tfmri_nb_all_beh_c2bpf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bpf_rate",
+                "isAbout": "tfmri_nb_all_beh_c2bpf_rate"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bpf_stdrt",
+                "isAbout": "tfmri_nb_all_beh_c2bpf_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bpfl_mrt",
+                "isAbout": "tfmri_nb_all_beh_c2bpfl_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bpfl_nt",
+                "isAbout": "tfmri_nb_all_beh_c2bpfl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bpfl_rate",
+                "isAbout": "tfmri_nb_all_beh_c2bpfl_rate"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bpfl_stdrt",
+                "isAbout": "tfmri_nb_all_beh_c2bpfl_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bpfnl_mrt",
+                "isAbout": "tfmri_nb_all_beh_c2bpfnl_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bpfnl_nt",
+                "isAbout": "tfmri_nb_all_beh_c2bpfnl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bpfnl_rate",
+                "isAbout": "tfmri_nb_all_beh_c2bpfnl_rate"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bpfnl_stdrt",
+                "isAbout": "tfmri_nb_all_beh_c2bpfnl_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bpft_mrt",
+                "isAbout": "tfmri_nb_all_beh_c2bpft_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bpft_nt",
+                "isAbout": "tfmri_nb_all_beh_c2bpft_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bpft_rate",
+                "isAbout": "tfmri_nb_all_beh_c2bpft_rate"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bpft_stdrt",
+                "isAbout": "tfmri_nb_all_beh_c2bpft_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bpl_mrt",
+                "isAbout": "tfmri_nb_all_beh_c2bpl_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bpl_nt",
+                "isAbout": "tfmri_nb_all_beh_c2bpl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bpl_rate",
+                "isAbout": "tfmri_nb_all_beh_c2bpl_rate"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bpl_stdrt",
+                "isAbout": "tfmri_nb_all_beh_c2bpl_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bpnl_mrt",
+                "isAbout": "tfmri_nb_all_beh_c2bpnl_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bpnl_nt",
+                "isAbout": "tfmri_nb_all_beh_c2bpnl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bpnl_rate",
+                "isAbout": "tfmri_nb_all_beh_c2bpnl_rate"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bpnl_stdrt",
+                "isAbout": "tfmri_nb_all_beh_c2bpnl_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bpt_mrt",
+                "isAbout": "tfmri_nb_all_beh_c2bpt_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bpt_nt",
+                "isAbout": "tfmri_nb_all_beh_c2bpt_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bpt_rate",
+                "isAbout": "tfmri_nb_all_beh_c2bpt_rate"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_c2bpt_stdrt",
+                "isAbout": "tfmri_nb_all_beh_c2bpt_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_cnf_mrt",
+                "isAbout": "tfmri_nb_all_beh_cnf_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_cnf_nt",
+                "isAbout": "tfmri_nb_all_beh_cnf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_cnf_rate",
+                "isAbout": "tfmri_nb_all_beh_cnf_rate"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_cnf_stdrt",
+                "isAbout": "tfmri_nb_all_beh_cnf_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_cngf_mrt",
+                "isAbout": "tfmri_nb_all_beh_cngf_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_cngf_nt",
+                "isAbout": "tfmri_nb_all_beh_cngf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_cngf_rate",
+                "isAbout": "tfmri_nb_all_beh_cngf_rate"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_cngf_stdrt",
+                "isAbout": "tfmri_nb_all_beh_cngf_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_cpf_mrt",
+                "isAbout": "tfmri_nb_all_beh_cpf_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_cpf_nt",
+                "isAbout": "tfmri_nb_all_beh_cpf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_cpf_rate",
+                "isAbout": "tfmri_nb_all_beh_cpf_rate"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_cpf_stdrt",
+                "isAbout": "tfmri_nb_all_beh_cpf_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_cplace_mrt",
+                "isAbout": "tfmri_nb_all_beh_cplace_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_cplace_nt",
+                "isAbout": "tfmri_nb_all_beh_cplace_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_cplace_rate",
+                "isAbout": "tfmri_nb_all_beh_cplace_rate"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_cplace_stdrt",
+                "isAbout": "tfmri_nb_all_beh_cplace_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_ctotal_mrt",
+                "isAbout": "tfmri_nb_all_beh_ctotal_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_ctotal_nt",
+                "isAbout": "tfmri_nb_all_beh_ctotal_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_ctotal_rate",
+                "isAbout": "tfmri_nb_all_beh_ctotal_rate"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_ctotal_stdrt",
+                "isAbout": "tfmri_nb_all_beh_ctotal_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_nf_nt",
+                "isAbout": "tfmri_nb_all_beh_nf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_ngf_nt",
+                "isAbout": "tfmri_nb_all_beh_ngf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_pf_nt",
+                "isAbout": "tfmri_nb_all_beh_pf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_place_nt",
+                "isAbout": "tfmri_nb_all_beh_place_nt"
+            },
+            {
+                "variableName": "tfmri_nb_all_beh_total_nt",
+                "isAbout": "tfmri_nb_all_beh_total_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_0b_nt",
+                "isAbout": "tfmri_nb_r1_beh_0b_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_0bnf_nt",
+                "isAbout": "tfmri_nb_r1_beh_0bnf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_0bnfl_nt",
+                "isAbout": "tfmri_nb_r1_beh_0bnfl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_0bnfnl_nt",
+                "isAbout": "tfmri_nb_r1_beh_0bnfnl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_0bnft_nt",
+                "isAbout": "tfmri_nb_r1_beh_0bnft_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_0bngf_nt",
+                "isAbout": "tfmri_nb_r1_beh_0bngf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_0bngfl_nt",
+                "isAbout": "tfmri_nb_r1_beh_0bngfl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_0bngfnl_nt",
+                "isAbout": "tfmri_nb_r1_beh_0bngfnl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_0bngft_nt",
+                "isAbout": "tfmri_nb_r1_beh_0bngft_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_0bp_nt",
+                "isAbout": "tfmri_nb_r1_beh_0bp_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_0bpf_nt",
+                "isAbout": "tfmri_nb_r1_beh_0bpf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_0bpfl_nt",
+                "isAbout": "tfmri_nb_r1_beh_0bpfl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_0bpfnl_nt",
+                "isAbout": "tfmri_nb_r1_beh_0bpfnl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_0bpft_nt",
+                "isAbout": "tfmri_nb_r1_beh_0bpft_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_0bpl_nt",
+                "isAbout": "tfmri_nb_r1_beh_0bpl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_0bpnl_nt",
+                "isAbout": "tfmri_nb_r1_beh_0bpnl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_0bpt_nt",
+                "isAbout": "tfmri_nb_r1_beh_0bpt_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_2b_nt",
+                "isAbout": "tfmri_nb_r1_beh_2b_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_2bnf_nt",
+                "isAbout": "tfmri_nb_r1_beh_2bnf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_2bnfl_nt",
+                "isAbout": "tfmri_nb_r1_beh_2bnfl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_2bnfnl_nt",
+                "isAbout": "tfmri_nb_r1_beh_2bnfnl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_2bnft_nt",
+                "isAbout": "tfmri_nb_r1_beh_2bnft_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_2bngf_nt",
+                "isAbout": "tfmri_nb_r1_beh_2bngf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_2bngfl_nt",
+                "isAbout": "tfmri_nb_r1_beh_2bngfl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_2bngfnl_nt",
+                "isAbout": "tfmri_nb_r1_beh_2bngfnl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_2bngft_nt",
+                "isAbout": "tfmri_nb_r1_beh_2bngft_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_2bp_nt",
+                "isAbout": "tfmri_nb_r1_beh_2bp_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_2bpf_nt",
+                "isAbout": "tfmri_nb_r1_beh_2bpf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_2bpfl_nt",
+                "isAbout": "tfmri_nb_r1_beh_2bpfl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_2bpfnl_nt",
+                "isAbout": "tfmri_nb_r1_beh_2bpfnl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_2bpft_nt",
+                "isAbout": "tfmri_nb_r1_beh_2bpft_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_2bpl_nt",
+                "isAbout": "tfmri_nb_r1_beh_2bpl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_2bpnl_nt",
+                "isAbout": "tfmri_nb_r1_beh_2bpnl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_2bpt_nt",
+                "isAbout": "tfmri_nb_r1_beh_2bpt_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0b_mrt",
+                "isAbout": "tfmri_nb_r1_beh_c0b_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0b_nt",
+                "isAbout": "tfmri_nb_r1_beh_c0b_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0b_rate",
+                "isAbout": "tfmri_nb_r1_beh_c0b_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0b_stdrt",
+                "isAbout": "tfmri_nb_r1_beh_c0b_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bnf_mrt",
+                "isAbout": "tfmri_nb_r1_beh_c0bnf_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bnf_nt",
+                "isAbout": "tfmri_nb_r1_beh_c0bnf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bnf_rate",
+                "isAbout": "tfmri_nb_r1_beh_c0bnf_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bnf_stdrt",
+                "isAbout": "tfmri_nb_r1_beh_c0bnf_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bnfl_mrt",
+                "isAbout": "tfmri_nb_r1_beh_c0bnfl_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bnfl_nt",
+                "isAbout": "tfmri_nb_r1_beh_c0bnfl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bnfl_rate",
+                "isAbout": "tfmri_nb_r1_beh_c0bnfl_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bnfl_stdrt",
+                "isAbout": "tfmri_nb_r1_beh_c0bnfl_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bnfnl_mrt",
+                "isAbout": "tfmri_nb_r1_beh_c0bnfnl_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bnfnl_nt",
+                "isAbout": "tfmri_nb_r1_beh_c0bnfnl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bnfnl_rate",
+                "isAbout": "tfmri_nb_r1_beh_c0bnfnl_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bnfnl_stdrt",
+                "isAbout": "tfmri_nb_r1_beh_c0bnfnl_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bnft_mrt",
+                "isAbout": "tfmri_nb_r1_beh_c0bnft_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bnft_nt",
+                "isAbout": "tfmri_nb_r1_beh_c0bnft_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bnft_rate",
+                "isAbout": "tfmri_nb_r1_beh_c0bnft_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bnft_stdrt",
+                "isAbout": "tfmri_nb_r1_beh_c0bnft_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bngf_mrt",
+                "isAbout": "tfmri_nb_r1_beh_c0bngf_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bngf_nt",
+                "isAbout": "tfmri_nb_r1_beh_c0bngf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bngf_rate",
+                "isAbout": "tfmri_nb_r1_beh_c0bngf_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bngf_stdrt",
+                "isAbout": "tfmri_nb_r1_beh_c0bngf_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bngfl_mrt",
+                "isAbout": "tfmri_nb_r1_beh_c0bngfl_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bngfl_nt",
+                "isAbout": "tfmri_nb_r1_beh_c0bngfl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bngfl_rate",
+                "isAbout": "tfmri_nb_r1_beh_c0bngfl_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bngfl_stdrt",
+                "isAbout": "tfmri_nb_r1_beh_c0bngfl_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bngfnl_mrt",
+                "isAbout": "tfmri_nb_r1_beh_c0bngfnl_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bngfnl_nt",
+                "isAbout": "tfmri_nb_r1_beh_c0bngfnl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bngfnl_rate",
+                "isAbout": "tfmri_nb_r1_beh_c0bngfnl_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bngfnl_stdrt",
+                "isAbout": "tfmri_nb_r1_beh_c0bngfnl_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bngft_mrt",
+                "isAbout": "tfmri_nb_r1_beh_c0bngft_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bngft_nt",
+                "isAbout": "tfmri_nb_r1_beh_c0bngft_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bngft_rate",
+                "isAbout": "tfmri_nb_r1_beh_c0bngft_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bngft_stdrt",
+                "isAbout": "tfmri_nb_r1_beh_c0bngft_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bp_mrt",
+                "isAbout": "tfmri_nb_r1_beh_c0bp_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bp_nt",
+                "isAbout": "tfmri_nb_r1_beh_c0bp_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bp_rate",
+                "isAbout": "tfmri_nb_r1_beh_c0bp_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bp_stdrt",
+                "isAbout": "tfmri_nb_r1_beh_c0bp_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bpf_mrt",
+                "isAbout": "tfmri_nb_r1_beh_c0bpf_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bpf_nt",
+                "isAbout": "tfmri_nb_r1_beh_c0bpf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bpf_rate",
+                "isAbout": "tfmri_nb_r1_beh_c0bpf_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bpf_stdrt",
+                "isAbout": "tfmri_nb_r1_beh_c0bpf_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bpfl_mrt",
+                "isAbout": "tfmri_nb_r1_beh_c0bpfl_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bpfl_nt",
+                "isAbout": "tfmri_nb_r1_beh_c0bpfl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bpfl_rate",
+                "isAbout": "tfmri_nb_r1_beh_c0bpfl_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bpfl_stdrt",
+                "isAbout": "tfmri_nb_r1_beh_c0bpfl_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bpfnl_mrt",
+                "isAbout": "tfmri_nb_r1_beh_c0bpfnl_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bpfnl_nt",
+                "isAbout": "tfmri_nb_r1_beh_c0bpfnl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bpfnl_rate",
+                "isAbout": "tfmri_nb_r1_beh_c0bpfnl_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bpfnl_stdrt",
+                "isAbout": "tfmri_nb_r1_beh_c0bpfnl_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bpft_mrt",
+                "isAbout": "tfmri_nb_r1_beh_c0bpft_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bpft_nt",
+                "isAbout": "tfmri_nb_r1_beh_c0bpft_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bpft_rate",
+                "isAbout": "tfmri_nb_r1_beh_c0bpft_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bpft_stdrt",
+                "isAbout": "tfmri_nb_r1_beh_c0bpft_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bpl_mrt",
+                "isAbout": "tfmri_nb_r1_beh_c0bpl_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bpl_nt",
+                "isAbout": "tfmri_nb_r1_beh_c0bpl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bpl_rate",
+                "isAbout": "tfmri_nb_r1_beh_c0bpl_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bpl_stdrt",
+                "isAbout": "tfmri_nb_r1_beh_c0bpl_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bpnl_mrt",
+                "isAbout": "tfmri_nb_r1_beh_c0bpnl_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bpnl_nt",
+                "isAbout": "tfmri_nb_r1_beh_c0bpnl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bpnl_rate",
+                "isAbout": "tfmri_nb_r1_beh_c0bpnl_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bpnl_stdrt",
+                "isAbout": "tfmri_nb_r1_beh_c0bpnl_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bpt_mrt",
+                "isAbout": "tfmri_nb_r1_beh_c0bpt_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bpt_nt",
+                "isAbout": "tfmri_nb_r1_beh_c0bpt_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bpt_rate",
+                "isAbout": "tfmri_nb_r1_beh_c0bpt_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c0bpt_stdrt",
+                "isAbout": "tfmri_nb_r1_beh_c0bpt_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2b_mrt",
+                "isAbout": "tfmri_nb_r1_beh_c2b_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2b_nt",
+                "isAbout": "tfmri_nb_r1_beh_c2b_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2b_rate",
+                "isAbout": "tfmri_nb_r1_beh_c2b_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2b_stdrt",
+                "isAbout": "tfmri_nb_r1_beh_c2b_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bnf_mrt",
+                "isAbout": "tfmri_nb_r1_beh_c2bnf_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bnf_nt",
+                "isAbout": "tfmri_nb_r1_beh_c2bnf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bnf_rate",
+                "isAbout": "tfmri_nb_r1_beh_c2bnf_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bnf_stdrt",
+                "isAbout": "tfmri_nb_r1_beh_c2bnf_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bnfl_mrt",
+                "isAbout": "tfmri_nb_r1_beh_c2bnfl_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bnfl_nt",
+                "isAbout": "tfmri_nb_r1_beh_c2bnfl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bnfl_rate",
+                "isAbout": "tfmri_nb_r1_beh_c2bnfl_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bnfl_stdrt",
+                "isAbout": "tfmri_nb_r1_beh_c2bnfl_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bnfnl_mrt",
+                "isAbout": "tfmri_nb_r1_beh_c2bnfnl_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bnfnl_nt",
+                "isAbout": "tfmri_nb_r1_beh_c2bnfnl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bnfnl_rate",
+                "isAbout": "tfmri_nb_r1_beh_c2bnfnl_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bnfnl_stdrt",
+                "isAbout": "tfmri_nb_r1_beh_c2bnfnl_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bnft_mrt",
+                "isAbout": "tfmri_nb_r1_beh_c2bnft_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bnft_nt",
+                "isAbout": "tfmri_nb_r1_beh_c2bnft_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bnft_rate",
+                "isAbout": "tfmri_nb_r1_beh_c2bnft_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bnft_stdrt",
+                "isAbout": "tfmri_nb_r1_beh_c2bnft_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bngf_mrt",
+                "isAbout": "tfmri_nb_r1_beh_c2bngf_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bngf_nt",
+                "isAbout": "tfmri_nb_r1_beh_c2bngf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bngf_rate",
+                "isAbout": "tfmri_nb_r1_beh_c2bngf_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bngf_stdrt",
+                "isAbout": "tfmri_nb_r1_beh_c2bngf_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bngfl_mrt",
+                "isAbout": "tfmri_nb_r1_beh_c2bngfl_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bngfl_nt",
+                "isAbout": "tfmri_nb_r1_beh_c2bngfl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bngfl_rate",
+                "isAbout": "tfmri_nb_r1_beh_c2bngfl_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bngfl_stdrt",
+                "isAbout": "tfmri_nb_r1_beh_c2bngfl_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bngfnl_mrt",
+                "isAbout": "tfmri_nb_r1_beh_c2bngfnl_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bngfnl_nt",
+                "isAbout": "tfmri_nb_r1_beh_c2bngfnl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bngfnl_rate",
+                "isAbout": "tfmri_nb_r1_beh_c2bngfnl_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bngfnl_stdrt",
+                "isAbout": "tfmri_nb_r1_beh_c2bngfnl_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bngft_mrt",
+                "isAbout": "tfmri_nb_r1_beh_c2bngft_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bngft_nt",
+                "isAbout": "tfmri_nb_r1_beh_c2bngft_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bngft_rate",
+                "isAbout": "tfmri_nb_r1_beh_c2bngft_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bngft_stdrt",
+                "isAbout": "tfmri_nb_r1_beh_c2bngft_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bp_mrt",
+                "isAbout": "tfmri_nb_r1_beh_c2bp_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bp_nt",
+                "isAbout": "tfmri_nb_r1_beh_c2bp_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bp_rate",
+                "isAbout": "tfmri_nb_r1_beh_c2bp_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bp_stdrt",
+                "isAbout": "tfmri_nb_r1_beh_c2bp_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bpf_mrt",
+                "isAbout": "tfmri_nb_r1_beh_c2bpf_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bpf_nt",
+                "isAbout": "tfmri_nb_r1_beh_c2bpf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bpf_rate",
+                "isAbout": "tfmri_nb_r1_beh_c2bpf_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bpf_stdrt",
+                "isAbout": "tfmri_nb_r1_beh_c2bpf_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bpfl_mrt",
+                "isAbout": "tfmri_nb_r1_beh_c2bpfl_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bpfl_nt",
+                "isAbout": "tfmri_nb_r1_beh_c2bpfl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bpfl_rate",
+                "isAbout": "tfmri_nb_r1_beh_c2bpfl_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bpfl_stdrt",
+                "isAbout": "tfmri_nb_r1_beh_c2bpfl_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bpfnl_mrt",
+                "isAbout": "tfmri_nb_r1_beh_c2bpfnl_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bpfnl_nt",
+                "isAbout": "tfmri_nb_r1_beh_c2bpfnl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bpfnl_rate",
+                "isAbout": "tfmri_nb_r1_beh_c2bpfnl_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bpfnl_stdrt",
+                "isAbout": "tfmri_nb_r1_beh_c2bpfnl_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bpft_mrt",
+                "isAbout": "tfmri_nb_r1_beh_c2bpft_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bpft_nt",
+                "isAbout": "tfmri_nb_r1_beh_c2bpft_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bpft_rate",
+                "isAbout": "tfmri_nb_r1_beh_c2bpft_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bpft_stdrt",
+                "isAbout": "tfmri_nb_r1_beh_c2bpft_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bpl_mrt",
+                "isAbout": "tfmri_nb_r1_beh_c2bpl_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bpl_nt",
+                "isAbout": "tfmri_nb_r1_beh_c2bpl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bpl_rate",
+                "isAbout": "tfmri_nb_r1_beh_c2bpl_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bpl_stdrt",
+                "isAbout": "tfmri_nb_r1_beh_c2bpl_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bpnl_mrt",
+                "isAbout": "tfmri_nb_r1_beh_c2bpnl_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bpnl_nt",
+                "isAbout": "tfmri_nb_r1_beh_c2bpnl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bpnl_rate",
+                "isAbout": "tfmri_nb_r1_beh_c2bpnl_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bpnl_stdrt",
+                "isAbout": "tfmri_nb_r1_beh_c2bpnl_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bpt_mrt",
+                "isAbout": "tfmri_nb_r1_beh_c2bpt_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bpt_nt",
+                "isAbout": "tfmri_nb_r1_beh_c2bpt_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bpt_rate",
+                "isAbout": "tfmri_nb_r1_beh_c2bpt_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_c2bpt_stdrt",
+                "isAbout": "tfmri_nb_r1_beh_c2bpt_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_cnf_mrt",
+                "isAbout": "tfmri_nb_r1_beh_cnf_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_cnf_nt",
+                "isAbout": "tfmri_nb_r1_beh_cnf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_cnf_rate",
+                "isAbout": "tfmri_nb_r1_beh_cnf_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_cnf_stdrt",
+                "isAbout": "tfmri_nb_r1_beh_cnf_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_cngf_mrt",
+                "isAbout": "tfmri_nb_r1_beh_cngf_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_cngf_nt",
+                "isAbout": "tfmri_nb_r1_beh_cngf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_cngf_rate",
+                "isAbout": "tfmri_nb_r1_beh_cngf_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_cngf_stdrt",
+                "isAbout": "tfmri_nb_r1_beh_cngf_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_cpf_mrt",
+                "isAbout": "tfmri_nb_r1_beh_cpf_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_cpf_nt",
+                "isAbout": "tfmri_nb_r1_beh_cpf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_cpf_rate",
+                "isAbout": "tfmri_nb_r1_beh_cpf_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_cpf_stdrt",
+                "isAbout": "tfmri_nb_r1_beh_cpf_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_cplace_mrt",
+                "isAbout": "tfmri_nb_r1_beh_cplace_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_cplace_nt",
+                "isAbout": "tfmri_nb_r1_beh_cplace_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_cplace_rate",
+                "isAbout": "tfmri_nb_r1_beh_cplace_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_cplace_stdrt",
+                "isAbout": "tfmri_nb_r1_beh_cplace_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_nf_nt",
+                "isAbout": "tfmri_nb_r1_beh_nf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_ngf_nt",
+                "isAbout": "tfmri_nb_r1_beh_ngf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_pf_nt",
+                "isAbout": "tfmri_nb_r1_beh_pf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_place_nt",
+                "isAbout": "tfmri_nb_r1_beh_place_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r1_beh_total_nt",
+                "isAbout": "tfmri_nb_r1_beh_total_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_0b_nt",
+                "isAbout": "tfmri_nb_r2_beh_0b_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_0bnf_nt",
+                "isAbout": "tfmri_nb_r2_beh_0bnf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_0bnfl_nt",
+                "isAbout": "tfmri_nb_r2_beh_0bnfl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_0bnfnl_nt",
+                "isAbout": "tfmri_nb_r2_beh_0bnfnl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_0bnft_nt",
+                "isAbout": "tfmri_nb_r2_beh_0bnft_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_0bngf_nt",
+                "isAbout": "tfmri_nb_r2_beh_0bngf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_0bngfl_nt",
+                "isAbout": "tfmri_nb_r2_beh_0bngfl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_0bngfnl_nt",
+                "isAbout": "tfmri_nb_r2_beh_0bngfnl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_0bngft_nt",
+                "isAbout": "tfmri_nb_r2_beh_0bngft_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_0bp_nt",
+                "isAbout": "tfmri_nb_r2_beh_0bp_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_0bpf_nt",
+                "isAbout": "tfmri_nb_r2_beh_0bpf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_0bpfl_nt",
+                "isAbout": "tfmri_nb_r2_beh_0bpfl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_0bpfnl_nt",
+                "isAbout": "tfmri_nb_r2_beh_0bpfnl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_0bpft_nt",
+                "isAbout": "tfmri_nb_r2_beh_0bpft_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_0bpl_nt",
+                "isAbout": "tfmri_nb_r2_beh_0bpl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_0bpnl_nt",
+                "isAbout": "tfmri_nb_r2_beh_0bpnl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_0bpt_nt",
+                "isAbout": "tfmri_nb_r2_beh_0bpt_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_2b_nt",
+                "isAbout": "tfmri_nb_r2_beh_2b_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_2bnf_nt",
+                "isAbout": "tfmri_nb_r2_beh_2bnf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_2bnfl_nt",
+                "isAbout": "tfmri_nb_r2_beh_2bnfl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_2bnfnl_nt",
+                "isAbout": "tfmri_nb_r2_beh_2bnfnl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_2bnft_nt",
+                "isAbout": "tfmri_nb_r2_beh_2bnft_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_2bngf_nt",
+                "isAbout": "tfmri_nb_r2_beh_2bngf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_2bngfl_nt",
+                "isAbout": "tfmri_nb_r2_beh_2bngfl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_2bngfnl_nt",
+                "isAbout": "tfmri_nb_r2_beh_2bngfnl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_2bngft_nt",
+                "isAbout": "tfmri_nb_r2_beh_2bngft_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_2bp_nt",
+                "isAbout": "tfmri_nb_r2_beh_2bp_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_2bpf_nt",
+                "isAbout": "tfmri_nb_r2_beh_2bpf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_2bpfl_nt",
+                "isAbout": "tfmri_nb_r2_beh_2bpfl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_2bpfnl_nt",
+                "isAbout": "tfmri_nb_r2_beh_2bpfnl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_2bpft_nt",
+                "isAbout": "tfmri_nb_r2_beh_2bpft_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_2bpl_nt",
+                "isAbout": "tfmri_nb_r2_beh_2bpl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_2bpnl_nt",
+                "isAbout": "tfmri_nb_r2_beh_2bpnl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_2bpt_nt",
+                "isAbout": "tfmri_nb_r2_beh_2bpt_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0b_mrt",
+                "isAbout": "tfmri_nb_r2_beh_c0b_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0b_nt",
+                "isAbout": "tfmri_nb_r2_beh_c0b_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0b_rate",
+                "isAbout": "tfmri_nb_r2_beh_c0b_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0b_stdrt",
+                "isAbout": "tfmri_nb_r2_beh_c0b_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bnf_mrt",
+                "isAbout": "tfmri_nb_r2_beh_c0bnf_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bnf_nt",
+                "isAbout": "tfmri_nb_r2_beh_c0bnf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bnf_rate",
+                "isAbout": "tfmri_nb_r2_beh_c0bnf_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bnf_stdrt",
+                "isAbout": "tfmri_nb_r2_beh_c0bnf_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bnfl_mrt",
+                "isAbout": "tfmri_nb_r2_beh_c0bnfl_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bnfl_nt",
+                "isAbout": "tfmri_nb_r2_beh_c0bnfl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bnfl_rate",
+                "isAbout": "tfmri_nb_r2_beh_c0bnfl_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bnfl_stdrt",
+                "isAbout": "tfmri_nb_r2_beh_c0bnfl_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bnfnl_mrt",
+                "isAbout": "tfmri_nb_r2_beh_c0bnfnl_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bnfnl_nt",
+                "isAbout": "tfmri_nb_r2_beh_c0bnfnl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bnfnl_rate",
+                "isAbout": "tfmri_nb_r2_beh_c0bnfnl_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bnfnl_stdrt",
+                "isAbout": "tfmri_nb_r2_beh_c0bnfnl_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bnft_mrt",
+                "isAbout": "tfmri_nb_r2_beh_c0bnft_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bnft_nt",
+                "isAbout": "tfmri_nb_r2_beh_c0bnft_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bnft_rate",
+                "isAbout": "tfmri_nb_r2_beh_c0bnft_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bnft_stdrt",
+                "isAbout": "tfmri_nb_r2_beh_c0bnft_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bngf_mrt",
+                "isAbout": "tfmri_nb_r2_beh_c0bngf_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bngf_nt",
+                "isAbout": "tfmri_nb_r2_beh_c0bngf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bngf_rate",
+                "isAbout": "tfmri_nb_r2_beh_c0bngf_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bngf_stdrt",
+                "isAbout": "tfmri_nb_r2_beh_c0bngf_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bngfl_mrt",
+                "isAbout": "tfmri_nb_r2_beh_c0bngfl_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bngfl_nt",
+                "isAbout": "tfmri_nb_r2_beh_c0bngfl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bngfl_rate",
+                "isAbout": "tfmri_nb_r2_beh_c0bngfl_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bngfl_stdrt",
+                "isAbout": "tfmri_nb_r2_beh_c0bngfl_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bngfnl_mrt",
+                "isAbout": "tfmri_nb_r2_beh_c0bngfnl_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bngfnl_nt",
+                "isAbout": "tfmri_nb_r2_beh_c0bngfnl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bngfnl_rate",
+                "isAbout": "tfmri_nb_r2_beh_c0bngfnl_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bngfnl_stdrt",
+                "isAbout": "tfmri_nb_r2_beh_c0bngfnl_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bngft_mrt",
+                "isAbout": "tfmri_nb_r2_beh_c0bngft_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bngft_nt",
+                "isAbout": "tfmri_nb_r2_beh_c0bngft_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bngft_rate",
+                "isAbout": "tfmri_nb_r2_beh_c0bngft_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bngft_stdrt",
+                "isAbout": "tfmri_nb_r2_beh_c0bngft_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bp_mrt",
+                "isAbout": "tfmri_nb_r2_beh_c0bp_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bp_nt",
+                "isAbout": "tfmri_nb_r2_beh_c0bp_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bp_rate",
+                "isAbout": "tfmri_nb_r2_beh_c0bp_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bp_stdrt",
+                "isAbout": "tfmri_nb_r2_beh_c0bp_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bpf_mrt",
+                "isAbout": "tfmri_nb_r2_beh_c0bpf_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bpf_nt",
+                "isAbout": "tfmri_nb_r2_beh_c0bpf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bpf_rate",
+                "isAbout": "tfmri_nb_r2_beh_c0bpf_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bpf_stdrt",
+                "isAbout": "tfmri_nb_r2_beh_c0bpf_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bpfl_mrt",
+                "isAbout": "tfmri_nb_r2_beh_c0bpfl_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bpfl_nt",
+                "isAbout": "tfmri_nb_r2_beh_c0bpfl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bpfl_rate",
+                "isAbout": "tfmri_nb_r2_beh_c0bpfl_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bpfl_stdrt",
+                "isAbout": "tfmri_nb_r2_beh_c0bpfl_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bpfnl_mrt",
+                "isAbout": "tfmri_nb_r2_beh_c0bpfnl_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bpfnl_nt",
+                "isAbout": "tfmri_nb_r2_beh_c0bpfnl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bpfnl_rate",
+                "isAbout": "tfmri_nb_r2_beh_c0bpfnl_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bpfnl_stdrt",
+                "isAbout": "tfmri_nb_r2_beh_c0bpfnl_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bpft_mrt",
+                "isAbout": "tfmri_nb_r2_beh_c0bpft_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bpft_nt",
+                "isAbout": "tfmri_nb_r2_beh_c0bpft_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bpft_rate",
+                "isAbout": "tfmri_nb_r2_beh_c0bpft_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bpft_stdrt",
+                "isAbout": "tfmri_nb_r2_beh_c0bpft_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bpl_mrt",
+                "isAbout": "tfmri_nb_r2_beh_c0bpl_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bpl_nt",
+                "isAbout": "tfmri_nb_r2_beh_c0bpl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bpl_rate",
+                "isAbout": "tfmri_nb_r2_beh_c0bpl_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bpl_stdrt",
+                "isAbout": "tfmri_nb_r2_beh_c0bpl_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bpnl_mrt",
+                "isAbout": "tfmri_nb_r2_beh_c0bpnl_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bpnl_nt",
+                "isAbout": "tfmri_nb_r2_beh_c0bpnl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bpnl_rate",
+                "isAbout": "tfmri_nb_r2_beh_c0bpnl_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bpnl_stdrt",
+                "isAbout": "tfmri_nb_r2_beh_c0bpnl_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bpt_mrt",
+                "isAbout": "tfmri_nb_r2_beh_c0bpt_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bpt_nt",
+                "isAbout": "tfmri_nb_r2_beh_c0bpt_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bpt_rate",
+                "isAbout": "tfmri_nb_r2_beh_c0bpt_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c0bpt_stdrt",
+                "isAbout": "tfmri_nb_r2_beh_c0bpt_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2b_mrt",
+                "isAbout": "tfmri_nb_r2_beh_c2b_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2b_nt",
+                "isAbout": "tfmri_nb_r2_beh_c2b_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2b_rate",
+                "isAbout": "tfmri_nb_r2_beh_c2b_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2b_stdrt",
+                "isAbout": "tfmri_nb_r2_beh_c2b_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bnf_mrt",
+                "isAbout": "tfmri_nb_r2_beh_c2bnf_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bnf_nt",
+                "isAbout": "tfmri_nb_r2_beh_c2bnf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bnf_rate",
+                "isAbout": "tfmri_nb_r2_beh_c2bnf_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bnf_stdrt",
+                "isAbout": "tfmri_nb_r2_beh_c2bnf_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bnfl_mrt",
+                "isAbout": "tfmri_nb_r2_beh_c2bnfl_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bnfl_nt",
+                "isAbout": "tfmri_nb_r2_beh_c2bnfl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bnfl_rate",
+                "isAbout": "tfmri_nb_r2_beh_c2bnfl_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bnfl_stdrt",
+                "isAbout": "tfmri_nb_r2_beh_c2bnfl_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bnfnl_mrt",
+                "isAbout": "tfmri_nb_r2_beh_c2bnfnl_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bnfnl_nt",
+                "isAbout": "tfmri_nb_r2_beh_c2bnfnl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bnfnl_rate",
+                "isAbout": "tfmri_nb_r2_beh_c2bnfnl_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bnfnl_stdrt",
+                "isAbout": "tfmri_nb_r2_beh_c2bnfnl_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bnft_mrt",
+                "isAbout": "tfmri_nb_r2_beh_c2bnft_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bnft_nt",
+                "isAbout": "tfmri_nb_r2_beh_c2bnft_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bnft_rate",
+                "isAbout": "tfmri_nb_r2_beh_c2bnft_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bnft_stdrt",
+                "isAbout": "tfmri_nb_r2_beh_c2bnft_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bngf_mrt",
+                "isAbout": "tfmri_nb_r2_beh_c2bngf_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bngf_nt",
+                "isAbout": "tfmri_nb_r2_beh_c2bngf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bngf_rate",
+                "isAbout": "tfmri_nb_r2_beh_c2bngf_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bngf_stdrt",
+                "isAbout": "tfmri_nb_r2_beh_c2bngf_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bngfl_mrt",
+                "isAbout": "tfmri_nb_r2_beh_c2bngfl_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bngfl_nt",
+                "isAbout": "tfmri_nb_r2_beh_c2bngfl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bngfl_rate",
+                "isAbout": "tfmri_nb_r2_beh_c2bngfl_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bngfl_stdrt",
+                "isAbout": "tfmri_nb_r2_beh_c2bngfl_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bngfnl_mrt",
+                "isAbout": "tfmri_nb_r2_beh_c2bngfnl_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bngfnl_nt",
+                "isAbout": "tfmri_nb_r2_beh_c2bngfnl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bngfnl_rate",
+                "isAbout": "tfmri_nb_r2_beh_c2bngfnl_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bngfnl_stdrt",
+                "isAbout": "tfmri_nb_r2_beh_c2bngfnl_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bngft_mrt",
+                "isAbout": "tfmri_nb_r2_beh_c2bngft_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bngft_nt",
+                "isAbout": "tfmri_nb_r2_beh_c2bngft_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bngft_rate",
+                "isAbout": "tfmri_nb_r2_beh_c2bngft_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bngft_stdrt",
+                "isAbout": "tfmri_nb_r2_beh_c2bngft_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bp_mrt",
+                "isAbout": "tfmri_nb_r2_beh_c2bp_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bp_nt",
+                "isAbout": "tfmri_nb_r2_beh_c2bp_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bp_rate",
+                "isAbout": "tfmri_nb_r2_beh_c2bp_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bp_stdrt",
+                "isAbout": "tfmri_nb_r2_beh_c2bp_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bpf_mrt",
+                "isAbout": "tfmri_nb_r2_beh_c2bpf_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bpf_nt",
+                "isAbout": "tfmri_nb_r2_beh_c2bpf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bpf_rate",
+                "isAbout": "tfmri_nb_r2_beh_c2bpf_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bpf_stdrt",
+                "isAbout": "tfmri_nb_r2_beh_c2bpf_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bpfl_mrt",
+                "isAbout": "tfmri_nb_r2_beh_c2bpfl_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bpfl_nt",
+                "isAbout": "tfmri_nb_r2_beh_c2bpfl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bpfl_rate",
+                "isAbout": "tfmri_nb_r2_beh_c2bpfl_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bpfl_stdrt",
+                "isAbout": "tfmri_nb_r2_beh_c2bpfl_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bpfnl_mrt",
+                "isAbout": "tfmri_nb_r2_beh_c2bpfnl_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bpfnl_nt",
+                "isAbout": "tfmri_nb_r2_beh_c2bpfnl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bpfnl_rate",
+                "isAbout": "tfmri_nb_r2_beh_c2bpfnl_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bpfnl_stdrt",
+                "isAbout": "tfmri_nb_r2_beh_c2bpfnl_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bpft_mrt",
+                "isAbout": "tfmri_nb_r2_beh_c2bpft_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bpft_nt",
+                "isAbout": "tfmri_nb_r2_beh_c2bpft_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bpft_rate",
+                "isAbout": "tfmri_nb_r2_beh_c2bpft_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bpft_stdrt",
+                "isAbout": "tfmri_nb_r2_beh_c2bpft_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bpl_mrt",
+                "isAbout": "tfmri_nb_r2_beh_c2bpl_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bpl_nt",
+                "isAbout": "tfmri_nb_r2_beh_c2bpl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bpl_rate",
+                "isAbout": "tfmri_nb_r2_beh_c2bpl_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bpl_stdrt",
+                "isAbout": "tfmri_nb_r2_beh_c2bpl_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bpnl_mrt",
+                "isAbout": "tfmri_nb_r2_beh_c2bpnl_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bpnl_nt",
+                "isAbout": "tfmri_nb_r2_beh_c2bpnl_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bpnl_rate",
+                "isAbout": "tfmri_nb_r2_beh_c2bpnl_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bpnl_stdrt",
+                "isAbout": "tfmri_nb_r2_beh_c2bpnl_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bpt_mrt",
+                "isAbout": "tfmri_nb_r2_beh_c2bpt_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bpt_nt",
+                "isAbout": "tfmri_nb_r2_beh_c2bpt_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bpt_rate",
+                "isAbout": "tfmri_nb_r2_beh_c2bpt_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_c2bpt_stdrt",
+                "isAbout": "tfmri_nb_r2_beh_c2bpt_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_cnf_mrt",
+                "isAbout": "tfmri_nb_r2_beh_cnf_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_cnf_nt",
+                "isAbout": "tfmri_nb_r2_beh_cnf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_cnf_rate",
+                "isAbout": "tfmri_nb_r2_beh_cnf_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_cnf_stdrt",
+                "isAbout": "tfmri_nb_r2_beh_cnf_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_cngf_mrt",
+                "isAbout": "tfmri_nb_r2_beh_cngf_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_cngf_nt",
+                "isAbout": "tfmri_nb_r2_beh_cngf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_cngf_rate",
+                "isAbout": "tfmri_nb_r2_beh_cngf_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_cngf_stdrt",
+                "isAbout": "tfmri_nb_r2_beh_cngf_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_cpf_mrt",
+                "isAbout": "tfmri_nb_r2_beh_cpf_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_cpf_nt",
+                "isAbout": "tfmri_nb_r2_beh_cpf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_cpf_rate",
+                "isAbout": "tfmri_nb_r2_beh_cpf_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_cpf_stdrt",
+                "isAbout": "tfmri_nb_r2_beh_cpf_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_cplace_mrt",
+                "isAbout": "tfmri_nb_r2_beh_cplace_mrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_cplace_nt",
+                "isAbout": "tfmri_nb_r2_beh_cplace_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_cplace_rate",
+                "isAbout": "tfmri_nb_r2_beh_cplace_rate"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_cplace_stdrt",
+                "isAbout": "tfmri_nb_r2_beh_cplace_stdrt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_nf_nt",
+                "isAbout": "tfmri_nb_r2_beh_nf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_ngf_nt",
+                "isAbout": "tfmri_nb_r2_beh_ngf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_pf_nt",
+                "isAbout": "tfmri_nb_r2_beh_pf_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_place_nt",
+                "isAbout": "tfmri_nb_r2_beh_place_nt"
+            },
+            {
+                "variableName": "tfmri_nb_r2_beh_total_nt",
+                "isAbout": "tfmri_nb_r2_beh_total_nt"
+            },
+            {
+                "variableName": "tfmri_nback_beh_nruns",
+                "isAbout": "tfmri_nback_beh_nruns"
+            },
+            {
+                "variableName": "tfmri_nback_beh_performflag",
+                "isAbout": "tfmri_nback_beh_performflag"
+            },
+            {
+                "variableName": "tfmri_nback_beh_switchflag",
+                "isAbout": "tfmri_nback_beh_switchflag"
+            },
+            {
+                "variableName": "tfmri_nback_beh_visitid",
+                "isAbout": "tfmri_nback_beh_visitid"
+            }
+        ]
+    }
+}

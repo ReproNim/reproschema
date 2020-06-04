@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "demo_prnt_age_v2_bl_refuse",
+    "@type": "reproschema:Field",
+    "prefLabel": "demo_prnt_age_v2_bl_refuse",
+    "altLabel": "demo_prnt_age_bl_refuse_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "How old are you? ¿Qué edad tiene usted?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 777,
+        "schema:maxValue": 999,
+        "choices": [
+            {
+                "name": "Refuse to answer Niego contestar",
+                "value": 777
+            },
+            {
+                "name": "Dont know No lo sé // The following questions are about you or the child's family.",
+                "value": 999
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "777 = Refuse to answer Niego contestar; 999 = Dont know No lo sé // The following questions are about you or the child's family."
+        }
+    ]
+}

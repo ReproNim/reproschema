@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "tlfb_mdma_reg",
+    "@type": "reproschema:Field",
+    "prefLabel": "tlfb_mdma_reg",
+    "altLabel": "su_tlfb_mdma_reg",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "INTERVIEWER (code silently): Have you begun using ECSTASY, molly, or MDMA regularly? (at least once a week for 6 months)",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "Yes",
+                "value": 1
+            },
+            {
+                "name": "No // Now I'm going to ask how old you were you when you first tried each of the drugs we have been talking about, and how old you were when you first started using the drug regularly (which means using it every week for at least SIX MONTHS).",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes; 0 = No // Now I'm going to ask how old you were you when you first tried each of the drugs we have been talking about, and how old you were when you first started using the drug regularly (which means using it every week for at least SIX MONTHS)."
+        }
+    ]
+}

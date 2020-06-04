@@ -1,0 +1,46 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "devhx_18_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "devhx_18_p",
+    "altLabel": "devhx_18_mnths_breast_fed_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "For how many months  was he/she breast fed? /¿Cuántos meses  le/la amamantó?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "name": "12 months, 2 years",
+                "value": null
+            },
+            {
+                "name": "12 meses",
+                "value": 1
+            },
+            {
+                "name": "24 meses",
+                "value": 2
+            },
+            {
+                "name": "36 meses",
+                "value": 3
+            },
+            {
+                "value": null
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "If he/she was not breast fed, enter \"0\", 1 year = 12 months, 2 years = 24 months, 3 years = 36 months, etc. Si no le/la amamantó, ingrese \"0\"; 1 año = 12 meses; 2 años = 24 meses; 3 años = 36 meses; etc. If you don't know, please choose \"don't know\" in what follows below    Si no sabe, por favor escoja \"no se\" en lo que sigue abajo."
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "hormone_sal_sex",
+    "@type": "reproschema:Field",
+    "prefLabel": "hormone_sal_sex",
+    "altLabel": "biospec_hormone_sal_sex",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Hormone saliva sample tube cap color:",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "name": "Pink (female)",
+                "value": 1
+            },
+            {
+                "name": "Blue (male)",
+                "value": 2
+            },
+            {
+                "name": "Participant unable to complete",
+                "value": 3
+            },
+            {
+                "name": "Participant/Parent refused",
+                "value": 4
+            },
+            {
+                "name": "Not collected (other)",
+                "value": 5
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Pink (female); 2 = Blue (male); 3 = Participant unable to complete; 4 = Participant/Parent refused; 5 = Not collected (other)"
+        }
+    ]
+}

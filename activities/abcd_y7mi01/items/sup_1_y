@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "sup_1_y",
+    "@type": "reproschema:Field",
+    "prefLabel": "sup_1_y",
+    "altLabel": "sup_1",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Have you had periods of extreme happiness and intense energy lasting several days or more when you also felt much more anxious or tense (jittery, nervous. uptight) than usual (other than related to the menstrual cycle)?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "Never or hardly ever",
+                "value": 0
+            },
+            {
+                "name": "Sometimes",
+                "value": 1
+            },
+            {
+                "name": "Often",
+                "value": 2
+            },
+            {
+                "name": "Very often or almost constantly",
+                "value": 3
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = Never or hardly ever; 1 = Sometimes; 2 = Often; 3 = Very often or almost constantly"
+        }
+    ]
+}

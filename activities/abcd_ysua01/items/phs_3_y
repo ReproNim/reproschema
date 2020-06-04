@@ -1,0 +1,47 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "phs_3_y",
+    "@type": "reproschema:Field",
+    "prefLabel": "phs_3_y",
+    "altLabel": "su_phs_3",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "How much do you think people risk harming themselves (physically or in other ways) if they have five or more drinks of an alcoholic beverage, once or twice each weekend?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "No Risk",
+                "value": 0
+            },
+            {
+                "name": "Slight Risk",
+                "value": 1
+            },
+            {
+                "name": "Moderate Risk",
+                "value": 2
+            },
+            {
+                "name": "Great Risk",
+                "value": 3
+            },
+            {
+                "name": "Don't Know / tlfb_alc_l  =='1'  ",
+                "value": 999
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = No Risk; 1 = Slight Risk; 2 = Moderate Risk; 3 = Great Risk; 999 = Don't Know / tlfb_alc_l  =='1'  ||  tlfb_alc_c_l  == '1'"
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "acs_raked_propensity_score",
+    "@type": "reproschema:Field",
+    "prefLabel": "acs_raked_propensity_score",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Imputed raked propensity weight. The raked propensity weight merges the ACS and ABCD data (with missing data imputed), estimates the propensity model, computes and scales/trims the propensity weights and finally rakes the scaled weights to final ACS control totals by age, sex and race/ethnicity.",
+    "ui": {
+        "inputType": "Float"
+    },
+    "responseOptions": {
+        "valueType": "Float"
+    }
+}

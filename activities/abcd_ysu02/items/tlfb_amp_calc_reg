@@ -1,0 +1,23 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "tlfb_amp_calc_reg",
+    "@type": "reproschema:Field",
+    "prefLabel": "tlfb_amp_calc_reg",
+    "altLabel": "su_tlfb_amp_calc_reg",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Age of regular use:",
+    "ui": {
+        "inputType": "Float"
+    },
+    "responseOptions": {
+        "valueType": "Float"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "Calculation: round(([tlfb_age_calc_inmonths]-(datediff([tlfb_amp_date2], [su_today], \"M\", \"mdy\")))/12,2) | years old // Now I'm going to ask how old you were you when you first tried each of the drugs we have been talking about, and how old you were when you first started using the drug regularly (which means using it every week for at least SIX MONTHS)."
+        }
+    ]
+}

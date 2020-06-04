@@ -1,0 +1,55 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "screen12_wknd_y",
+    "@type": "reproschema:Field",
+    "prefLabel": "screen12_wknd_y",
+    "altLabel": "screentime_wknd_12",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "On a typical weekend day, how many hours do you: Video chat (Skype, Facetime, etc.)?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "name": "None",
+                "value": 0
+            },
+            {
+                "name": "< 30 minutes",
+                "value": null
+            },
+            {
+                "name": "30 minutes",
+                "value": 0
+            },
+            {
+                "name": "1 hour",
+                "value": 1
+            },
+            {
+                "name": "2 hours",
+                "value": 2
+            },
+            {
+                "name": "3 hours",
+                "value": 3
+            },
+            {
+                "name": "4+ hours //Example: 1½ hours would be coded as 1 hour, rather than 2 hours.",
+                "value": 4
+            }
+        ],
+        "valueType": "Float"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = None; .25 = < 30 minutes; 0.5 = 30 minutes; 1 = 1 hour; 2 = 2 hours; 3 = 3 hours; 4 = 4+ hours //Example: 1½ hours would be coded as 1 hour, rather than 2 hours."
+        }
+    ]
+}

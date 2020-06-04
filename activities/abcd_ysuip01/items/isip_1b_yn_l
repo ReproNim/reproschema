@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "isip_1b_yn_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "isip_1b_yn_l",
+    "altLabel": "su_isip_1b_yn_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Some people have alcohol as part of a religious ceremony such as in church or at a Seder dinner. Since the last time we saw you, have have you had a sip of alcohol that was NOT part of a religious service ?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "Yes",
+                "value": 1
+            },
+            {
+                "name": "No / tlfb_alc_sip_l  > '0'",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes; 0 = No / tlfb_alc_sip_l  > '0'"
+        }
+    ]
+}

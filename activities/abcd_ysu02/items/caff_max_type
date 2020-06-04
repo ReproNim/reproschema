@@ -1,0 +1,51 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "caff_max_type",
+    "@type": "reproschema:Field",
+    "prefLabel": "caff_max_type",
+    "altLabel": "su_caff_max_type",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "What type of beverage was that? [Interviewer: list choices] Please choose \"Not Applicable\" if you entered \"0\" as your answer to the previous question, \"What was the largest amount of a caffeinated beverage...?\"",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "Not Applicable",
+                "value": 0
+            },
+            {
+                "name": "coffee",
+                "value": 1
+            },
+            {
+                "name": "espresso",
+                "value": 2
+            },
+            {
+                "name": "tea",
+                "value": 3
+            },
+            {
+                "name": "soda",
+                "value": 4
+            },
+            {
+                "name": "energy drink",
+                "value": 5
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = Not Applicable; 1 = coffee; 2 = espresso; 3 = tea; 4 = soda; 5 = energy drink"
+        }
+    ]
+}

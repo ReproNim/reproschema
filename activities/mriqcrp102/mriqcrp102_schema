@@ -1,0 +1,4883 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+        "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/activities/mriqcrp102/mriqcrp102_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "mriqcrp102_schema",
+    "skos:prefLabel": "mriqcrp102",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "order": [
+            "iqc_dmri_1_b0_mean",
+            "iqc_dmri_1_b0_median",
+            "iqc_dmri_1_b0_std",
+            "iqc_dmri_1_brain_mean",
+            "iqc_dmri_1_brain_std",
+            "iqc_dmri_1_brainvol",
+            "iqc_dmri_1_complete",
+            "iqc_dmri_1_dterr_mean",
+            "iqc_dmri_1_dterr_median",
+            "iqc_dmri_1_dterr_std",
+            "iqc_dmri_1_fa_mean",
+            "iqc_dmri_1_fa_median",
+            "iqc_dmri_1_fa_std",
+            "iqc_dmri_1_fm_complete",
+            "iqc_dmri_1_fm_invalid",
+            "iqc_dmri_1_fm_missing",
+            "iqc_dmri_1_fm_pc_score",
+            "iqc_dmri_1_fm_qc_score",
+            "iqc_dmri_1_fm_wronglocus",
+            "iqc_dmri_1_md_mean",
+            "iqc_dmri_1_md_median",
+            "iqc_dmri_1_md_std",
+            "iqc_dmri_1_mean_motion",
+            "iqc_dmri_1_mean_motion_nody",
+            "iqc_dmri_1_nbad_frame_slices",
+            "iqc_dmri_1_nbad_frames",
+            "iqc_dmri_1_nbad_slices",
+            "iqc_dmri_1_nreps",
+            "iqc_dmri_1_pc_score",
+            "iqc_dmri_1_qc_score",
+            "iqc_dmri_1_seriestime",
+            "iqc_dmri_1_seuid",
+            "iqc_dmri_1_studydate",
+            "iqc_dmri_1_suid",
+            "iqc_dmri_1_tr",
+            "iqc_dmri_1_voxvol",
+            "iqc_dmri_2_b0_mean",
+            "iqc_dmri_2_b0_median",
+            "iqc_dmri_2_b0_std",
+            "iqc_dmri_2_brain_mean",
+            "iqc_dmri_2_brain_std",
+            "iqc_dmri_2_brainvol",
+            "iqc_dmri_2_complete",
+            "iqc_dmri_2_dterr_mean",
+            "iqc_dmri_2_dterr_median",
+            "iqc_dmri_2_dterr_std",
+            "iqc_dmri_2_fa_mean",
+            "iqc_dmri_2_fa_median",
+            "iqc_dmri_2_fa_std",
+            "iqc_dmri_2_fm_complete",
+            "iqc_dmri_2_fm_invalid",
+            "iqc_dmri_2_fm_missing",
+            "iqc_dmri_2_fm_pc_score",
+            "iqc_dmri_2_fm_qc_score",
+            "iqc_dmri_2_fm_wronglocus",
+            "iqc_dmri_2_md_mean",
+            "iqc_dmri_2_md_median",
+            "iqc_dmri_2_md_std",
+            "iqc_dmri_2_mean_motion",
+            "iqc_dmri_2_mean_motion_nody",
+            "iqc_dmri_2_nbad_frame_slices",
+            "iqc_dmri_2_nbad_frames",
+            "iqc_dmri_2_nbad_slices",
+            "iqc_dmri_2_nreps",
+            "iqc_dmri_2_pc_score",
+            "iqc_dmri_2_qc_score",
+            "iqc_dmri_2_seriestime",
+            "iqc_dmri_2_seuid",
+            "iqc_dmri_2_studydate",
+            "iqc_dmri_2_suid",
+            "iqc_dmri_2_tr",
+            "iqc_dmri_2_voxvol",
+            "iqc_dmri_3_b0_mean",
+            "iqc_dmri_3_b0_median",
+            "iqc_dmri_3_b0_std",
+            "iqc_dmri_3_brain_mean",
+            "iqc_dmri_3_brain_std",
+            "iqc_dmri_3_brainvol",
+            "iqc_dmri_3_complete",
+            "iqc_dmri_3_dterr_mean",
+            "iqc_dmri_3_dterr_median",
+            "iqc_dmri_3_dterr_std",
+            "iqc_dmri_3_fa_mean",
+            "iqc_dmri_3_fa_median",
+            "iqc_dmri_3_fa_std",
+            "iqc_dmri_3_fm_complete",
+            "iqc_dmri_3_fm_invalid",
+            "iqc_dmri_3_fm_missing",
+            "iqc_dmri_3_fm_pc_score",
+            "iqc_dmri_3_fm_qc_score",
+            "iqc_dmri_3_fm_wronglocus",
+            "iqc_dmri_3_md_mean",
+            "iqc_dmri_3_md_median",
+            "iqc_dmri_3_md_std",
+            "iqc_dmri_3_mean_motion",
+            "iqc_dmri_3_mean_motion_nody",
+            "iqc_dmri_3_nbad_frame_slices",
+            "iqc_dmri_3_nbad_frames",
+            "iqc_dmri_3_nbad_slices",
+            "iqc_dmri_3_nreps",
+            "iqc_dmri_3_pc_score",
+            "iqc_dmri_3_qc_score",
+            "iqc_dmri_3_seriestime",
+            "iqc_dmri_3_seuid",
+            "iqc_dmri_3_studydate",
+            "iqc_dmri_3_suid",
+            "iqc_dmri_3_tr",
+            "iqc_dmri_3_voxvol",
+            "iqc_dmri_4_b0_mean",
+            "iqc_dmri_4_b0_median",
+            "iqc_dmri_4_b0_std",
+            "iqc_dmri_4_brain_mean",
+            "iqc_dmri_4_brain_std",
+            "iqc_dmri_4_brainvol",
+            "iqc_dmri_4_complete",
+            "iqc_dmri_4_dterr_mean",
+            "iqc_dmri_4_dterr_median",
+            "iqc_dmri_4_dterr_std",
+            "iqc_dmri_4_fa_mean",
+            "iqc_dmri_4_fa_median",
+            "iqc_dmri_4_fa_std",
+            "iqc_dmri_4_fm_complete",
+            "iqc_dmri_4_fm_invalid",
+            "iqc_dmri_4_fm_missing",
+            "iqc_dmri_4_fm_pc_score",
+            "iqc_dmri_4_fm_qc_score",
+            "iqc_dmri_4_fm_wronglocus",
+            "iqc_dmri_4_md_mean",
+            "iqc_dmri_4_md_median",
+            "iqc_dmri_4_md_std",
+            "iqc_dmri_4_mean_motion",
+            "iqc_dmri_4_mean_motion_nody",
+            "iqc_dmri_4_nbad_frame_slices",
+            "iqc_dmri_4_nbad_frames",
+            "iqc_dmri_4_nbad_slices",
+            "iqc_dmri_4_nreps",
+            "iqc_dmri_4_pc_score",
+            "iqc_dmri_4_qc_score",
+            "iqc_dmri_4_seriestime",
+            "iqc_dmri_4_seuid",
+            "iqc_dmri_4_studydate",
+            "iqc_dmri_4_suid",
+            "iqc_dmri_4_tr",
+            "iqc_dmri_4_voxvol",
+            "iqc_dmri_5_b0_mean",
+            "iqc_dmri_5_b0_median",
+            "iqc_dmri_5_b0_std",
+            "iqc_dmri_5_brain_mean",
+            "iqc_dmri_5_brain_std",
+            "iqc_dmri_5_brainvol",
+            "iqc_dmri_5_complete",
+            "iqc_dmri_5_dterr_mean",
+            "iqc_dmri_5_dterr_median",
+            "iqc_dmri_5_dterr_std",
+            "iqc_dmri_5_fa_mean",
+            "iqc_dmri_5_fa_median",
+            "iqc_dmri_5_fa_std",
+            "iqc_dmri_5_fm_complete",
+            "iqc_dmri_5_fm_invalid",
+            "iqc_dmri_5_fm_missing",
+            "iqc_dmri_5_fm_pc_score",
+            "iqc_dmri_5_fm_qc_score",
+            "iqc_dmri_5_fm_wronglocus",
+            "iqc_dmri_5_md_mean",
+            "iqc_dmri_5_md_median",
+            "iqc_dmri_5_md_std",
+            "iqc_dmri_5_mean_motion",
+            "iqc_dmri_5_mean_motion_nody",
+            "iqc_dmri_5_nbad_frame_slices",
+            "iqc_dmri_5_nbad_frames",
+            "iqc_dmri_5_nbad_slices",
+            "iqc_dmri_5_nreps",
+            "iqc_dmri_5_pc_score",
+            "iqc_dmri_5_qc_score",
+            "iqc_dmri_5_seriestime",
+            "iqc_dmri_5_seuid",
+            "iqc_dmri_5_studydate",
+            "iqc_dmri_5_suid",
+            "iqc_dmri_5_tr",
+            "iqc_dmri_5_voxvol",
+            "iqc_dmri_6_b0_mean",
+            "iqc_dmri_6_b0_median",
+            "iqc_dmri_6_b0_std",
+            "iqc_dmri_6_brain_mean",
+            "iqc_dmri_6_brain_std",
+            "iqc_dmri_6_brainvol",
+            "iqc_dmri_6_complete",
+            "iqc_dmri_6_dterr_mean",
+            "iqc_dmri_6_dterr_median",
+            "iqc_dmri_6_dterr_std",
+            "iqc_dmri_6_fa_mean",
+            "iqc_dmri_6_fa_median",
+            "iqc_dmri_6_fa_std",
+            "iqc_dmri_6_fm_complete",
+            "iqc_dmri_6_fm_invalid",
+            "iqc_dmri_6_fm_missing",
+            "iqc_dmri_6_fm_pc_score",
+            "iqc_dmri_6_fm_qc_score",
+            "iqc_dmri_6_fm_wronglocus",
+            "iqc_dmri_6_md_mean",
+            "iqc_dmri_6_md_median",
+            "iqc_dmri_6_md_std",
+            "iqc_dmri_6_mean_motion",
+            "iqc_dmri_6_mean_motion_nody",
+            "iqc_dmri_6_nbad_frame_slices",
+            "iqc_dmri_6_nbad_frames",
+            "iqc_dmri_6_nbad_slices",
+            "iqc_dmri_6_nreps",
+            "iqc_dmri_6_pc_score",
+            "iqc_dmri_6_qc_score",
+            "iqc_dmri_6_seriestime",
+            "iqc_dmri_6_seuid",
+            "iqc_dmri_6_studydate",
+            "iqc_dmri_6_suid",
+            "iqc_dmri_6_tr",
+            "iqc_dmri_6_voxvol",
+            "iqc_dmri_all_b0_mean",
+            "iqc_dmri_all_b0_median",
+            "iqc_dmri_all_b0_std",
+            "iqc_dmri_all_brain_mean",
+            "iqc_dmri_all_brain_std",
+            "iqc_dmri_all_brainvol",
+            "iqc_dmri_all_dterr_mean",
+            "iqc_dmri_all_dterr_median",
+            "iqc_dmri_all_dterr_std",
+            "iqc_dmri_all_fa_mean",
+            "iqc_dmri_all_fa_median",
+            "iqc_dmri_all_fa_std",
+            "iqc_dmri_all_md_mean",
+            "iqc_dmri_all_md_median",
+            "iqc_dmri_all_md_std",
+            "iqc_dmri_all_mean_motion",
+            "iqc_dmri_all_mean_motion_nody",
+            "iqc_dmri_all_nbad_frame_slices",
+            "iqc_dmri_all_nbad_frames",
+            "iqc_dmri_all_nbad_slices",
+            "iqc_dmri_all_nreps",
+            "iqc_dmri_all_tr",
+            "iqc_dmri_all_voxvol",
+            "iqc_dmri_bad_ser",
+            "iqc_dmri_dark_qc",
+            "iqc_dmri_dco_qc",
+            "iqc_dmri_dis_qc",
+            "iqc_dmri_fa_qc",
+            "iqc_dmri_fm_dark_qc",
+            "iqc_dmri_fm_dco_qc",
+            "iqc_dmri_fm_dis_qc",
+            "iqc_dmri_fm_fa_qc",
+            "iqc_dmri_fm_gh_qc",
+            "iqc_dmri_fm_hb_qc",
+            "iqc_dmri_fm_ht_qc",
+            "iqc_dmri_fm_incomp",
+            "iqc_dmri_fm_invalid",
+            "iqc_dmri_fm_miss_qc",
+            "iqc_dmri_fm_missing",
+            "iqc_dmri_fm_mo_qc",
+            "iqc_dmri_fm_moire_qc",
+            "iqc_dmri_fm_other_qc",
+            "iqc_dmri_fm_pc_issues",
+            "iqc_dmri_fm_qcs",
+            "iqc_dmri_fm_recon_qc",
+            "iqc_dmri_fm_rf_qc",
+            "iqc_dmri_fm_sd_qc",
+            "iqc_dmri_fm_si_qc",
+            "iqc_dmri_fm_slice_qc",
+            "iqc_dmri_fm_sus_qc",
+            "iqc_dmri_fm_vco_qc",
+            "iqc_dmri_fm_wr_qc",
+            "iqc_dmri_fm_wronglocus",
+            "iqc_dmri_gh_qc",
+            "iqc_dmri_good_ser",
+            "iqc_dmri_hb_qc",
+            "iqc_dmri_ht_qc",
+            "iqc_dmri_miss_qc",
+            "iqc_dmri_mo_qc",
+            "iqc_dmri_moire_qc",
+            "iqc_dmri_ok_b0_mean",
+            "iqc_dmri_ok_b0_median",
+            "iqc_dmri_ok_b0_std",
+            "iqc_dmri_ok_brain_mean",
+            "iqc_dmri_ok_brain_std",
+            "iqc_dmri_ok_brainvol",
+            "iqc_dmri_ok_dterr_mean",
+            "iqc_dmri_ok_dterr_median",
+            "iqc_dmri_ok_dterr_std",
+            "iqc_dmri_ok_fa_mean",
+            "iqc_dmri_ok_fa_median",
+            "iqc_dmri_ok_fa_std",
+            "iqc_dmri_ok_md_mean",
+            "iqc_dmri_ok_md_median",
+            "iqc_dmri_ok_md_std",
+            "iqc_dmri_ok_mean_motion",
+            "iqc_dmri_ok_mean_motion_nody",
+            "iqc_dmri_ok_nbad_frame_slices",
+            "iqc_dmri_ok_nbad_frames",
+            "iqc_dmri_ok_nbad_slices",
+            "iqc_dmri_ok_nreps",
+            "iqc_dmri_ok_ser",
+            "iqc_dmri_ok_tr",
+            "iqc_dmri_ok_voxvol",
+            "iqc_dmri_other_qc",
+            "iqc_dmri_recon_qc",
+            "iqc_dmri_rf_qc",
+            "iqc_dmri_sd_qc",
+            "iqc_dmri_ser_incomp",
+            "iqc_dmri_ser_pc_issues",
+            "iqc_dmri_ser_qcs",
+            "iqc_dmri_si_qc",
+            "iqc_dmri_slice_qc",
+            "iqc_dmri_sus_qc",
+            "iqc_dmri_total_passpc",
+            "iqc_dmri_total_passqc",
+            "iqc_dmri_total_ser",
+            "iqc_dmri_vco_qc",
+            "iqc_dmri_wr_qc",
+            "iqc_mid_1_brain_mean",
+            "iqc_mid_1_brain_std",
+            "iqc_mid_1_brain_tsnr_mean",
+            "iqc_mid_1_brain_tsnr_median",
+            "iqc_mid_1_brain_tsnr_std",
+            "iqc_mid_1_brainvol",
+            "iqc_mid_1_complete",
+            "iqc_mid_1_fm_complete",
+            "iqc_mid_1_fm_invalid",
+            "iqc_mid_1_fm_missing",
+            "iqc_mid_1_fm_pc_score",
+            "iqc_mid_1_fm_qc_score",
+            "iqc_mid_1_fm_wronglocus",
+            "iqc_mid_1_fwhm_x",
+            "iqc_mid_1_fwhm_y",
+            "iqc_mid_1_fwhm_z",
+            "iqc_mid_1_mean_motion",
+            "iqc_mid_1_mean_motion_filt",
+            "iqc_mid_1_mean_motion_nody",
+            "iqc_mid_1_mm_filt_nody",
+            "iqc_mid_1_nreps",
+            "iqc_mid_1_pc_score",
+            "iqc_mid_1_qc_score",
+            "iqc_mid_1_seriestime",
+            "iqc_mid_1_seuid",
+            "iqc_mid_1_studydate",
+            "iqc_mid_1_sub_02",
+            "iqc_mid_1_sub_02_filt",
+            "iqc_mid_1_sub_02_filt_nody",
+            "iqc_mid_1_sub_02_nody",
+            "iqc_mid_1_suid",
+            "iqc_mid_1_tr",
+            "iqc_mid_1_voxvol",
+            "iqc_mid_2_fm_invalid",
+            "iqc_mid_2_fm_missing",
+            "iqc_mid_2_fm_wronglocus",
+            "iqc_mid_2_seriestime",
+            "iqc_mid_2_seuid",
+            "iqc_mid_2_studydate",
+            "iqc_mid_2_suid",
+            "iqc_rsfmri_1_brain_mean",
+            "iqc_rsfmri_1_brain_std",
+            "iqc_rsfmri_1_brain_tsnr_mean",
+            "iqc_rsfmri_1_brain_tsnr_median",
+            "iqc_rsfmri_1_brain_tsnr_std",
+            "iqc_rsfmri_1_brainvol",
+            "iqc_rsfmri_1_complete",
+            "iqc_rsfmri_1_fm_complete",
+            "iqc_rsfmri_1_fm_invalid",
+            "iqc_rsfmri_1_fm_missing",
+            "iqc_rsfmri_1_fm_pc_score",
+            "iqc_rsfmri_1_fm_qc_score",
+            "iqc_rsfmri_1_fm_wronglocus",
+            "iqc_rsfmri_1_fwhm_x",
+            "iqc_rsfmri_1_fwhm_y",
+            "iqc_rsfmri_1_fwhm_z",
+            "iqc_rsfmri_1_mean_motion",
+            "iqc_rsfmri_1_mean_motion_filt",
+            "iqc_rsfmri_1_mean_motion_nody",
+            "iqc_rsfmri_1_mm_filt_nody",
+            "iqc_rsfmri_1_nreps",
+            "iqc_rsfmri_1_pc_score",
+            "iqc_rsfmri_1_qc_score",
+            "iqc_rsfmri_1_seriestime",
+            "iqc_rsfmri_1_seuid",
+            "iqc_rsfmri_1_studydate",
+            "iqc_rsfmri_1_sub_02",
+            "iqc_rsfmri_1_sub_02_filt",
+            "iqc_rsfmri_1_sub_02_filt_nody",
+            "iqc_rsfmri_1_sub_02_nody",
+            "iqc_rsfmri_1_suid",
+            "iqc_rsfmri_1_tr",
+            "iqc_rsfmri_1_voxvol",
+            "iqc_rsfmri_10_b_tsnr_median",
+            "iqc_rsfmri_10_brain_mean",
+            "iqc_rsfmri_10_brain_std",
+            "iqc_rsfmri_10_brain_tsnr_mean",
+            "iqc_rsfmri_10_brain_tsnr_std",
+            "iqc_rsfmri_10_brainvol",
+            "iqc_rsfmri_10_complete",
+            "iqc_rsfmri_10_fm_complete",
+            "iqc_rsfmri_10_fm_invalid",
+            "iqc_rsfmri_10_fm_missing",
+            "iqc_rsfmri_10_fm_pc_score",
+            "iqc_rsfmri_10_fm_qc_score",
+            "iqc_rsfmri_10_fm_wronglocus",
+            "iqc_rsfmri_10_fwhm_x",
+            "iqc_rsfmri_10_fwhm_y",
+            "iqc_rsfmri_10_fwhm_z",
+            "iqc_rsfmri_10_mean_motion",
+            "iqc_rsfmri_10_mean_motion_filt",
+            "iqc_rsfmri_10_mean_motion_nody",
+            "iqc_rsfmri_10_mm_filt_nody",
+            "iqc_rsfmri_10_nreps",
+            "iqc_rsfmri_10_pc_score",
+            "iqc_rsfmri_10_qc_score",
+            "iqc_rsfmri_10_seriestime",
+            "iqc_rsfmri_10_seuid",
+            "iqc_rsfmri_10_studydate",
+            "iqc_rsfmri_10_sub_02",
+            "iqc_rsfmri_10_sub_02_filt",
+            "iqc_rsfmri_10_sub_02_filt_nody",
+            "iqc_rsfmri_10_sub_02_nody",
+            "iqc_rsfmri_10_suid",
+            "iqc_rsfmri_10_tr",
+            "iqc_rsfmri_10_voxvol",
+            "iqc_rsfmri_11_b_tsnr_median",
+            "iqc_rsfmri_11_brain_mean",
+            "iqc_rsfmri_11_brain_std",
+            "iqc_rsfmri_11_brain_tsnr_mean",
+            "iqc_rsfmri_11_brain_tsnr_std",
+            "iqc_rsfmri_11_brainvol",
+            "iqc_rsfmri_11_complete",
+            "iqc_rsfmri_11_fm_complete",
+            "iqc_rsfmri_11_fm_invalid",
+            "iqc_rsfmri_11_fm_missing",
+            "iqc_rsfmri_11_fm_pc_score",
+            "iqc_rsfmri_11_fm_qc_score",
+            "iqc_rsfmri_11_fm_wronglocus",
+            "iqc_rsfmri_11_fwhm_x",
+            "iqc_rsfmri_11_fwhm_y",
+            "iqc_rsfmri_11_fwhm_z",
+            "iqc_rsfmri_11_mean_motion",
+            "iqc_rsfmri_11_mean_motion_filt",
+            "iqc_rsfmri_11_mean_motion_nody",
+            "iqc_rsfmri_11_mm_filt_nody",
+            "iqc_rsfmri_11_nreps",
+            "iqc_rsfmri_11_pc_score",
+            "iqc_rsfmri_11_qc_score",
+            "iqc_rsfmri_11_seriestime",
+            "iqc_rsfmri_11_seuid",
+            "iqc_rsfmri_11_studydate",
+            "iqc_rsfmri_11_sub_02",
+            "iqc_rsfmri_11_sub_02_filt",
+            "iqc_rsfmri_11_sub_02_filt_nody",
+            "iqc_rsfmri_11_sub_02_nody",
+            "iqc_rsfmri_11_suid",
+            "iqc_rsfmri_11_tr",
+            "iqc_rsfmri_11_voxvol",
+            "iqc_rsfmri_12_b_tsnr_median",
+            "iqc_rsfmri_12_brain_mean",
+            "iqc_rsfmri_12_brain_std",
+            "iqc_rsfmri_12_brain_tsnr_mean",
+            "iqc_rsfmri_12_brain_tsnr_std",
+            "iqc_rsfmri_12_brainvol",
+            "iqc_rsfmri_12_complete",
+            "iqc_rsfmri_12_fm_complete",
+            "iqc_rsfmri_12_fm_invalid",
+            "iqc_rsfmri_12_fm_missing",
+            "iqc_rsfmri_12_fm_pc_score",
+            "iqc_rsfmri_12_fm_qc_score",
+            "iqc_rsfmri_12_fm_wronglocus",
+            "iqc_rsfmri_12_fwhm_x",
+            "iqc_rsfmri_12_fwhm_y",
+            "iqc_rsfmri_12_fwhm_z",
+            "iqc_rsfmri_12_mean_motion",
+            "iqc_rsfmri_12_mean_motion_filt",
+            "iqc_rsfmri_12_mean_motion_nody",
+            "iqc_rsfmri_12_mm_filt_nody",
+            "iqc_rsfmri_12_nreps",
+            "iqc_rsfmri_12_pc_score",
+            "iqc_rsfmri_12_qc_score",
+            "iqc_rsfmri_12_seriestime",
+            "iqc_rsfmri_12_seuid",
+            "iqc_rsfmri_12_studydate",
+            "iqc_rsfmri_12_sub_02",
+            "iqc_rsfmri_12_sub_02_filt",
+            "iqc_rsfmri_12_sub_02_filt_nody",
+            "iqc_rsfmri_12_sub_02_nody",
+            "iqc_rsfmri_12_suid",
+            "iqc_rsfmri_12_tr",
+            "iqc_rsfmri_12_voxvol",
+            "iqc_rsfmri_2_brain_mean",
+            "iqc_rsfmri_2_brain_std",
+            "iqc_rsfmri_2_brainvol",
+            "iqc_rsfmri_2_complete",
+            "iqc_rsfmri_2_fm_complete",
+            "iqc_rsfmri_2_fm_invalid",
+            "iqc_rsfmri_2_fm_missing",
+            "iqc_rsfmri_2_fm_pc_score",
+            "iqc_rsfmri_2_fm_qc_score",
+            "iqc_rsfmri_2_fm_wronglocus",
+            "iqc_rsfmri_2_mean_motion",
+            "iqc_rsfmri_2_mean_motion_filt",
+            "iqc_rsfmri_2_mean_motion_nody",
+            "iqc_rsfmri_2_mm_filt_nody",
+            "iqc_rsfmri_2_nreps",
+            "iqc_rsfmri_2_pc_score",
+            "iqc_rsfmri_2_qc_score",
+            "iqc_rsfmri_2_seriestime",
+            "iqc_rsfmri_2_seuid",
+            "iqc_rsfmri_2_studydate",
+            "iqc_rsfmri_2_suid",
+            "iqc_rsfmri_2_tr",
+            "iqc_rsfmri_2_voxvol",
+            "iqc_rsfmri_3_brain_mean",
+            "iqc_rsfmri_3_brain_std",
+            "iqc_rsfmri_3_brain_tsnr_mean",
+            "iqc_rsfmri_3_brain_tsnr_median",
+            "iqc_rsfmri_3_brain_tsnr_std",
+            "iqc_rsfmri_3_brainvol",
+            "iqc_rsfmri_3_complete",
+            "iqc_rsfmri_3_fm_complete",
+            "iqc_rsfmri_3_fm_invalid",
+            "iqc_rsfmri_3_fm_missing",
+            "iqc_rsfmri_3_fm_pc_score",
+            "iqc_rsfmri_3_fm_qc_score",
+            "iqc_rsfmri_3_fm_wronglocus",
+            "iqc_rsfmri_3_fwhm_x",
+            "iqc_rsfmri_3_fwhm_y",
+            "iqc_rsfmri_3_fwhm_z",
+            "iqc_rsfmri_3_mean_motion",
+            "iqc_rsfmri_3_mean_motion_filt",
+            "iqc_rsfmri_3_mean_motion_nody",
+            "iqc_rsfmri_3_mm_filt_nody",
+            "iqc_rsfmri_3_nreps",
+            "iqc_rsfmri_3_pc_score",
+            "iqc_rsfmri_3_qc_score",
+            "iqc_rsfmri_3_seriestime",
+            "iqc_rsfmri_3_seuid",
+            "iqc_rsfmri_3_studydate",
+            "iqc_rsfmri_3_sub_02",
+            "iqc_rsfmri_3_sub_02_filt",
+            "iqc_rsfmri_3_sub_02_filt_nody",
+            "iqc_rsfmri_3_sub_02_nody",
+            "iqc_rsfmri_3_suid",
+            "iqc_rsfmri_3_tr",
+            "iqc_rsfmri_3_voxvol",
+            "iqc_rsfmri_4_brain_mean",
+            "iqc_rsfmri_4_brain_std",
+            "iqc_rsfmri_4_brain_tsnr_mean",
+            "iqc_rsfmri_4_brain_tsnr_median",
+            "iqc_rsfmri_4_brain_tsnr_std",
+            "iqc_rsfmri_4_brainvol",
+            "iqc_rsfmri_4_complete",
+            "iqc_rsfmri_4_fm_complete",
+            "iqc_rsfmri_4_fm_invalid",
+            "iqc_rsfmri_4_fm_missing",
+            "iqc_rsfmri_4_fm_pc_score",
+            "iqc_rsfmri_4_fm_qc_score",
+            "iqc_rsfmri_4_fm_wronglocus",
+            "iqc_rsfmri_4_fwhm_x",
+            "iqc_rsfmri_4_fwhm_y",
+            "iqc_rsfmri_4_fwhm_z",
+            "iqc_rsfmri_4_mean_motion",
+            "iqc_rsfmri_4_mean_motion_filt",
+            "iqc_rsfmri_4_mean_motion_nody",
+            "iqc_rsfmri_4_mm_filt_nody",
+            "iqc_rsfmri_4_nreps",
+            "iqc_rsfmri_4_pc_score",
+            "iqc_rsfmri_4_qc_score",
+            "iqc_rsfmri_4_seriestime",
+            "iqc_rsfmri_4_seuid",
+            "iqc_rsfmri_4_studydate",
+            "iqc_rsfmri_4_sub_02",
+            "iqc_rsfmri_4_sub_02_filt",
+            "iqc_rsfmri_4_sub_02_filt_nody",
+            "iqc_rsfmri_4_sub_02_nody",
+            "iqc_rsfmri_4_suid",
+            "iqc_rsfmri_4_tr",
+            "iqc_rsfmri_4_voxvol",
+            "iqc_rsfmri_5_brain_mean",
+            "iqc_rsfmri_5_brain_std",
+            "iqc_rsfmri_5_brain_tsnr_mean",
+            "iqc_rsfmri_5_brain_tsnr_median",
+            "iqc_rsfmri_5_brain_tsnr_std",
+            "iqc_rsfmri_5_brainvol",
+            "iqc_rsfmri_5_complete",
+            "iqc_rsfmri_5_fm_complete",
+            "iqc_rsfmri_5_fm_invalid",
+            "iqc_rsfmri_5_fm_missing",
+            "iqc_rsfmri_5_fm_pc_score",
+            "iqc_rsfmri_5_fm_qc_score",
+            "iqc_rsfmri_5_fm_wronglocus",
+            "iqc_rsfmri_5_fwhm_x",
+            "iqc_rsfmri_5_fwhm_y",
+            "iqc_rsfmri_5_fwhm_z",
+            "iqc_rsfmri_5_mean_motion",
+            "iqc_rsfmri_5_mean_motion_filt",
+            "iqc_rsfmri_5_mean_motion_nody",
+            "iqc_rsfmri_5_mm_filt_nody",
+            "iqc_rsfmri_5_nreps",
+            "iqc_rsfmri_5_pc_score",
+            "iqc_rsfmri_5_qc_score",
+            "iqc_rsfmri_5_seriestime",
+            "iqc_rsfmri_5_seuid",
+            "iqc_rsfmri_5_studydate",
+            "iqc_rsfmri_5_sub_02",
+            "iqc_rsfmri_5_sub_02_filt",
+            "iqc_rsfmri_5_sub_02_filt_nody",
+            "iqc_rsfmri_5_sub_02_nody",
+            "iqc_rsfmri_5_suid",
+            "iqc_rsfmri_5_tr",
+            "iqc_rsfmri_5_voxvol",
+            "iqc_rsfmri_6_brain_mean",
+            "iqc_rsfmri_6_brain_std",
+            "iqc_rsfmri_6_brain_tsnr_mean",
+            "iqc_rsfmri_6_brain_tsnr_median",
+            "iqc_rsfmri_6_brain_tsnr_std",
+            "iqc_rsfmri_6_brainvol",
+            "iqc_rsfmri_6_complete",
+            "iqc_rsfmri_6_fm_complete",
+            "iqc_rsfmri_6_fm_invalid",
+            "iqc_rsfmri_6_fm_missing",
+            "iqc_rsfmri_6_fm_pc_score",
+            "iqc_rsfmri_6_fm_qc_score",
+            "iqc_rsfmri_6_fm_wronglocus",
+            "iqc_rsfmri_6_fwhm_x",
+            "iqc_rsfmri_6_fwhm_y",
+            "iqc_rsfmri_6_fwhm_z",
+            "iqc_rsfmri_6_mean_motion",
+            "iqc_rsfmri_6_mean_motion_filt",
+            "iqc_rsfmri_6_mean_motion_nody",
+            "iqc_rsfmri_6_mm_filt_nody",
+            "iqc_rsfmri_6_nreps",
+            "iqc_rsfmri_6_pc_score",
+            "iqc_rsfmri_6_qc_score",
+            "iqc_rsfmri_6_seriestime",
+            "iqc_rsfmri_6_seuid",
+            "iqc_rsfmri_6_studydate",
+            "iqc_rsfmri_6_sub_02",
+            "iqc_rsfmri_6_sub_02_filt",
+            "iqc_rsfmri_6_sub_02_filt_nody",
+            "iqc_rsfmri_6_sub_02_nody",
+            "iqc_rsfmri_6_suid",
+            "iqc_rsfmri_6_tr",
+            "iqc_rsfmri_6_voxvol",
+            "iqc_rsfmri_7_brain_mean",
+            "iqc_rsfmri_7_brain_std",
+            "iqc_rsfmri_7_brain_tsnr_mean",
+            "iqc_rsfmri_7_brain_tsnr_median",
+            "iqc_rsfmri_7_brain_tsnr_std",
+            "iqc_rsfmri_7_brainvol",
+            "iqc_rsfmri_7_complete",
+            "iqc_rsfmri_7_fm_complete",
+            "iqc_rsfmri_7_fm_invalid",
+            "iqc_rsfmri_7_fm_missing",
+            "iqc_rsfmri_7_fm_pc_score",
+            "iqc_rsfmri_7_fm_qc_score",
+            "iqc_rsfmri_7_fm_wronglocus",
+            "iqc_rsfmri_7_fwhm_x",
+            "iqc_rsfmri_7_fwhm_y",
+            "iqc_rsfmri_7_fwhm_z",
+            "iqc_rsfmri_7_mean_motion",
+            "iqc_rsfmri_7_mean_motion_filt",
+            "iqc_rsfmri_7_mean_motion_nody",
+            "iqc_rsfmri_7_mm_filt_nody",
+            "iqc_rsfmri_7_nreps",
+            "iqc_rsfmri_7_pc_score",
+            "iqc_rsfmri_7_qc_score",
+            "iqc_rsfmri_7_seriestime",
+            "iqc_rsfmri_7_seuid",
+            "iqc_rsfmri_7_studydate",
+            "iqc_rsfmri_7_sub_02",
+            "iqc_rsfmri_7_sub_02_filt",
+            "iqc_rsfmri_7_sub_02_filt_nody",
+            "iqc_rsfmri_7_sub_02_nody",
+            "iqc_rsfmri_7_suid",
+            "iqc_rsfmri_7_tr",
+            "iqc_rsfmri_7_voxvol",
+            "iqc_rsfmri_8_brain_mean",
+            "iqc_rsfmri_8_brain_std",
+            "iqc_rsfmri_8_brain_tsnr_mean",
+            "iqc_rsfmri_8_brain_tsnr_median",
+            "iqc_rsfmri_8_brain_tsnr_std",
+            "iqc_rsfmri_8_brainvol",
+            "iqc_rsfmri_8_complete",
+            "iqc_rsfmri_8_fm_complete",
+            "iqc_rsfmri_8_fm_invalid",
+            "iqc_rsfmri_8_fm_missing",
+            "iqc_rsfmri_8_fm_pc_score",
+            "iqc_rsfmri_8_fm_qc_score",
+            "iqc_rsfmri_8_fm_wronglocus",
+            "iqc_rsfmri_8_fwhm_x",
+            "iqc_rsfmri_8_fwhm_y",
+            "iqc_rsfmri_8_fwhm_z",
+            "iqc_rsfmri_8_mean_motion",
+            "iqc_rsfmri_8_mean_motion_filt",
+            "iqc_rsfmri_8_mean_motion_nody",
+            "iqc_rsfmri_8_mm_filt_nody",
+            "iqc_rsfmri_8_nreps",
+            "iqc_rsfmri_8_pc_score",
+            "iqc_rsfmri_8_qc_score",
+            "iqc_rsfmri_8_seriestime",
+            "iqc_rsfmri_8_seuid",
+            "iqc_rsfmri_8_studydate",
+            "iqc_rsfmri_8_sub_02",
+            "iqc_rsfmri_8_sub_02_filt",
+            "iqc_rsfmri_8_sub_02_filt_nody",
+            "iqc_rsfmri_8_sub_02_nody",
+            "iqc_rsfmri_8_suid",
+            "iqc_rsfmri_8_tr",
+            "iqc_rsfmri_8_voxvol",
+            "iqc_rsfmri_9_brain_mean",
+            "iqc_rsfmri_9_brain_std",
+            "iqc_rsfmri_9_brain_tsnr_mean",
+            "iqc_rsfmri_9_brain_tsnr_median",
+            "iqc_rsfmri_9_brain_tsnr_std",
+            "iqc_rsfmri_9_brainvol",
+            "iqc_rsfmri_9_complete",
+            "iqc_rsfmri_9_fm_complete",
+            "iqc_rsfmri_9_fm_invalid",
+            "iqc_rsfmri_9_fm_missing",
+            "iqc_rsfmri_9_fm_pc_score",
+            "iqc_rsfmri_9_fm_qc_score",
+            "iqc_rsfmri_9_fm_wronglocus",
+            "iqc_rsfmri_9_fwhm_x",
+            "iqc_rsfmri_9_fwhm_y",
+            "iqc_rsfmri_9_fwhm_z",
+            "iqc_rsfmri_9_mean_motion",
+            "iqc_rsfmri_9_mean_motion_filt",
+            "iqc_rsfmri_9_mean_motion_nody",
+            "iqc_rsfmri_9_mm_filt_nody",
+            "iqc_rsfmri_9_nreps",
+            "iqc_rsfmri_9_pc_score",
+            "iqc_rsfmri_9_qc_score",
+            "iqc_rsfmri_9_seriestime",
+            "iqc_rsfmri_9_seuid",
+            "iqc_rsfmri_9_studydate",
+            "iqc_rsfmri_9_sub_02",
+            "iqc_rsfmri_9_sub_02_filt",
+            "iqc_rsfmri_9_sub_02_filt_nody",
+            "iqc_rsfmri_9_sub_02_nody",
+            "iqc_rsfmri_9_suid",
+            "iqc_rsfmri_9_tr",
+            "iqc_rsfmri_9_voxvol",
+            "iqc_rsfmri_all_b_tsnr_median",
+            "iqc_rsfmri_all_brain_mean",
+            "iqc_rsfmri_all_brain_std",
+            "iqc_rsfmri_all_brain_tsnr_mean",
+            "iqc_rsfmri_all_brain_tsnr_std",
+            "iqc_rsfmri_all_brainvol",
+            "iqc_rsfmri_all_fwhm_x",
+            "iqc_rsfmri_all_fwhm_y",
+            "iqc_rsfmri_all_fwhm_z",
+            "iqc_rsfmri_all_mean_motion",
+            "iqc_rsfmri_all_mm_filt",
+            "iqc_rsfmri_all_mm_filt_nody",
+            "iqc_rsfmri_all_mm_nody",
+            "iqc_rsfmri_all_nreps",
+            "iqc_rsfmri_all_tr",
+            "iqc_rsfmri_all_voxvol",
+            "iqc_rsfmri_bad_ser",
+            "iqc_rsfmri_dark_qc",
+            "iqc_rsfmri_dco_qc",
+            "iqc_rsfmri_dis_qc",
+            "iqc_rsfmri_fa_qc",
+            "iqc_rsfmri_fm_dark_qc",
+            "iqc_rsfmri_fm_dco_qc",
+            "iqc_rsfmri_fm_dis_qc",
+            "iqc_rsfmri_fm_fa_qc",
+            "iqc_rsfmri_fm_gh_qc",
+            "iqc_rsfmri_fm_hb_qc",
+            "iqc_rsfmri_fm_ht_qc",
+            "iqc_rsfmri_fm_incomp",
+            "iqc_rsfmri_fm_invalid",
+            "iqc_rsfmri_fm_miss_qc",
+            "iqc_rsfmri_fm_missing",
+            "iqc_rsfmri_fm_mo_qc",
+            "iqc_rsfmri_fm_moire_qc",
+            "iqc_rsfmri_fm_other_qc",
+            "iqc_rsfmri_fm_pc_issues",
+            "iqc_rsfmri_fm_qcs",
+            "iqc_rsfmri_fm_recon_qc",
+            "iqc_rsfmri_fm_rf_qc",
+            "iqc_rsfmri_fm_sd_qc",
+            "iqc_rsfmri_fm_si_qc",
+            "iqc_rsfmri_fm_slice_qc",
+            "iqc_rsfmri_fm_sus_qc",
+            "iqc_rsfmri_fm_vco_qc",
+            "iqc_rsfmri_fm_wr_qc",
+            "iqc_rsfmri_fm_wronglocus",
+            "iqc_rsfmri_gh_qc",
+            "iqc_rsfmri_good_ser",
+            "iqc_rsfmri_good_ser_wofm",
+            "iqc_rsfmri_hb_qc",
+            "iqc_rsfmri_ht_qc",
+            "iqc_rsfmri_miss_qc",
+            "iqc_rsfmri_mo_qc",
+            "iqc_rsfmri_moire_qc",
+            "iqc_rsfmri_ok_b_tsnr_median",
+            "iqc_rsfmri_ok_brain_mean",
+            "iqc_rsfmri_ok_brain_std",
+            "iqc_rsfmri_ok_brain_tsnr_mean",
+            "iqc_rsfmri_ok_brain_tsnr_std",
+            "iqc_rsfmri_ok_brainvol",
+            "iqc_rsfmri_ok_fwhm_x",
+            "iqc_rsfmri_ok_fwhm_y",
+            "iqc_rsfmri_ok_fwhm_z",
+            "iqc_rsfmri_ok_mean_motion",
+            "iqc_rsfmri_ok_mm_filt",
+            "iqc_rsfmri_ok_mm_filt_nody",
+            "iqc_rsfmri_ok_mm_nody",
+            "iqc_rsfmri_ok_nreps",
+            "iqc_rsfmri_ok_ser",
+            "iqc_rsfmri_ok_sub_02",
+            "iqc_rsfmri_ok_sub_02_filt",
+            "iqc_rsfmri_ok_sub_02_filt_nody",
+            "iqc_rsfmri_ok_sub_02_nody",
+            "iqc_rsfmri_ok_tr",
+            "iqc_rsfmri_ok_voxvol",
+            "iqc_rsfmri_other_qc",
+            "iqc_rsfmri_recon_qc",
+            "iqc_rsfmri_rf_qc",
+            "iqc_rsfmri_sd_qc",
+            "iqc_rsfmri_ser_incomp",
+            "iqc_rsfmri_ser_pc_issues",
+            "iqc_rsfmri_ser_qcs",
+            "iqc_rsfmri_si_qc",
+            "iqc_rsfmri_slice_qc",
+            "iqc_rsfmri_sus_qc",
+            "iqc_rsfmri_tl_sub_02_filt_nody",
+            "iqc_rsfmri_total_passpc",
+            "iqc_rsfmri_total_passqc",
+            "iqc_rsfmri_total_ser",
+            "iqc_rsfmri_total_sub_02",
+            "iqc_rsfmri_total_sub_02_filt",
+            "iqc_rsfmri_total_sub_02_nody",
+            "iqc_rsfmri_vco_qc",
+            "iqc_rsfmri_wr_qc",
+            "iqc_t1_1_brain_mean",
+            "iqc_t1_1_brain_std",
+            "iqc_t1_1_brainvol",
+            "iqc_t1_1_complete",
+            "iqc_t1_1_pc_score",
+            "iqc_t1_1_qc_score",
+            "iqc_t1_1_seriestime",
+            "iqc_t1_1_seuid",
+            "iqc_t1_1_studydate",
+            "iqc_t1_1_suid",
+            "iqc_t1_1_voxvol",
+            "iqc_t1_2_brain_mean",
+            "iqc_t1_2_brain_std",
+            "iqc_t1_2_brainvol",
+            "iqc_t1_2_complete",
+            "iqc_t1_2_pc_score",
+            "iqc_t1_2_qc_score",
+            "iqc_t1_2_seriestime",
+            "iqc_t1_2_seuid",
+            "iqc_t1_2_studydate",
+            "iqc_t1_2_suid",
+            "iqc_t1_2_voxvol",
+            "iqc_t1_3_brain_mean",
+            "iqc_t1_3_brain_std",
+            "iqc_t1_3_brainvol",
+            "iqc_t1_3_complete",
+            "iqc_t1_3_pc_score",
+            "iqc_t1_3_qc_score",
+            "iqc_t1_3_seriestime",
+            "iqc_t1_3_seuid",
+            "iqc_t1_3_studydate",
+            "iqc_t1_3_suid",
+            "iqc_t1_3_voxvol",
+            "iqc_t1_all_brain_mean",
+            "iqc_t1_all_brain_std",
+            "iqc_t1_all_brainvol",
+            "iqc_t1_all_voxvol",
+            "iqc_t1_bad_ser",
+            "iqc_t1_dark_qc",
+            "iqc_t1_dco_qc",
+            "iqc_t1_dis_qc",
+            "iqc_t1_fa_qc",
+            "iqc_t1_gh_qc",
+            "iqc_t1_good_ser",
+            "iqc_t1_hb_qc",
+            "iqc_t1_ht_qc",
+            "iqc_t1_miss_qc",
+            "iqc_t1_mo_qc",
+            "iqc_t1_moire_qc",
+            "iqc_t1_ok_brain_mean",
+            "iqc_t1_ok_brain_std",
+            "iqc_t1_ok_brainvol",
+            "iqc_t1_ok_ser",
+            "iqc_t1_ok_voxvol",
+            "iqc_t1_other_qc",
+            "iqc_t1_recon_qc",
+            "iqc_t1_rf_qc",
+            "iqc_t1_sd_qc",
+            "iqc_t1_ser_incomp",
+            "iqc_t1_ser_pc_issues",
+            "iqc_t1_ser_qcs",
+            "iqc_t1_si_qc",
+            "iqc_t1_slice_qc",
+            "iqc_t1_sus_qc",
+            "iqc_t1_total_passpc",
+            "iqc_t1_total_passqc",
+            "iqc_t1_total_ser",
+            "iqc_t1_vco_qc",
+            "iqc_t1_wr_qc",
+            "iqc_t2_1_brain_mean",
+            "iqc_t2_1_brain_std",
+            "iqc_t2_1_brainvol",
+            "iqc_t2_1_complete",
+            "iqc_t2_1_pc_score",
+            "iqc_t2_1_qc_score",
+            "iqc_t2_1_seriestime",
+            "iqc_t2_1_seuid",
+            "iqc_t2_1_studydate",
+            "iqc_t2_1_suid",
+            "iqc_t2_1_voxvol",
+            "iqc_t2_2_brain_mean",
+            "iqc_t2_2_brain_std",
+            "iqc_t2_2_brainvol",
+            "iqc_t2_2_complete",
+            "iqc_t2_2_pc_score",
+            "iqc_t2_2_qc_score",
+            "iqc_t2_2_seriestime",
+            "iqc_t2_2_seuid",
+            "iqc_t2_2_studydate",
+            "iqc_t2_2_suid",
+            "iqc_t2_2_voxvol",
+            "iqc_t2_3_brain_mean",
+            "iqc_t2_3_brain_std",
+            "iqc_t2_3_brainvol",
+            "iqc_t2_3_complete",
+            "iqc_t2_3_pc_score",
+            "iqc_t2_3_qc_score",
+            "iqc_t2_3_seriestime",
+            "iqc_t2_3_seuid",
+            "iqc_t2_3_studydate",
+            "iqc_t2_3_suid",
+            "iqc_t2_3_voxvol",
+            "iqc_t2_all_brain_mean",
+            "iqc_t2_all_brain_std",
+            "iqc_t2_all_brainvol",
+            "iqc_t2_all_voxvol",
+            "iqc_t2_bad_ser",
+            "iqc_t2_dark_qc",
+            "iqc_t2_dco_qc",
+            "iqc_t2_dis_qc",
+            "iqc_t2_fa_qc",
+            "iqc_t2_gh_qc",
+            "iqc_t2_good_ser",
+            "iqc_t2_hb_qc",
+            "iqc_t2_ht_qc",
+            "iqc_t2_miss_qc",
+            "iqc_t2_mo_qc",
+            "iqc_t2_moire_qc",
+            "iqc_t2_ok_brain_mean",
+            "iqc_t2_ok_brain_std",
+            "iqc_t2_ok_brainvol",
+            "iqc_t2_ok_ser",
+            "iqc_t2_ok_voxvol",
+            "iqc_t2_other_qc",
+            "iqc_t2_recon_qc",
+            "iqc_t2_rf_qc",
+            "iqc_t2_sd_qc",
+            "iqc_t2_ser_incomp",
+            "iqc_t2_ser_pc_issues",
+            "iqc_t2_ser_qcs",
+            "iqc_t2_si_qc",
+            "iqc_t2_slice_qc",
+            "iqc_t2_sus_qc",
+            "iqc_t2_total_passpc",
+            "iqc_t2_total_passqc",
+            "iqc_t2_total_ser",
+            "iqc_t2_vco_qc",
+            "iqc_t2_wr_qc"
+        ],
+        "shuffle": false,
+        "addProperties": [
+            {
+                "variableName": "iqc_dmri_1_b0_mean",
+                "isAbout": "iqc_dmri_1_b0_mean"
+            },
+            {
+                "variableName": "iqc_dmri_1_b0_median",
+                "isAbout": "iqc_dmri_1_b0_median"
+            },
+            {
+                "variableName": "iqc_dmri_1_b0_std",
+                "isAbout": "iqc_dmri_1_b0_std"
+            },
+            {
+                "variableName": "iqc_dmri_1_brain_mean",
+                "isAbout": "iqc_dmri_1_brain_mean"
+            },
+            {
+                "variableName": "iqc_dmri_1_brain_std",
+                "isAbout": "iqc_dmri_1_brain_std"
+            },
+            {
+                "variableName": "iqc_dmri_1_brainvol",
+                "isAbout": "iqc_dmri_1_brainvol"
+            },
+            {
+                "variableName": "iqc_dmri_1_complete",
+                "isAbout": "iqc_dmri_1_complete"
+            },
+            {
+                "variableName": "iqc_dmri_1_dterr_mean",
+                "isAbout": "iqc_dmri_1_dterr_mean"
+            },
+            {
+                "variableName": "iqc_dmri_1_dterr_median",
+                "isAbout": "iqc_dmri_1_dterr_median"
+            },
+            {
+                "variableName": "iqc_dmri_1_dterr_std",
+                "isAbout": "iqc_dmri_1_dterr_std"
+            },
+            {
+                "variableName": "iqc_dmri_1_fa_mean",
+                "isAbout": "iqc_dmri_1_fa_mean"
+            },
+            {
+                "variableName": "iqc_dmri_1_fa_median",
+                "isAbout": "iqc_dmri_1_fa_median"
+            },
+            {
+                "variableName": "iqc_dmri_1_fa_std",
+                "isAbout": "iqc_dmri_1_fa_std"
+            },
+            {
+                "variableName": "iqc_dmri_1_fm_complete",
+                "isAbout": "iqc_dmri_1_fm_complete"
+            },
+            {
+                "variableName": "iqc_dmri_1_fm_invalid",
+                "isAbout": "iqc_dmri_1_fm_invalid"
+            },
+            {
+                "variableName": "iqc_dmri_1_fm_missing",
+                "isAbout": "iqc_dmri_1_fm_missing"
+            },
+            {
+                "variableName": "iqc_dmri_1_fm_pc_score",
+                "isAbout": "iqc_dmri_1_fm_pc_score"
+            },
+            {
+                "variableName": "iqc_dmri_1_fm_qc_score",
+                "isAbout": "iqc_dmri_1_fm_qc_score"
+            },
+            {
+                "variableName": "iqc_dmri_1_fm_wronglocus",
+                "isAbout": "iqc_dmri_1_fm_wronglocus"
+            },
+            {
+                "variableName": "iqc_dmri_1_md_mean",
+                "isAbout": "iqc_dmri_1_md_mean"
+            },
+            {
+                "variableName": "iqc_dmri_1_md_median",
+                "isAbout": "iqc_dmri_1_md_median"
+            },
+            {
+                "variableName": "iqc_dmri_1_md_std",
+                "isAbout": "iqc_dmri_1_md_std"
+            },
+            {
+                "variableName": "iqc_dmri_1_mean_motion",
+                "isAbout": "iqc_dmri_1_mean_motion"
+            },
+            {
+                "variableName": "iqc_dmri_1_mean_motion_nody",
+                "isAbout": "iqc_dmri_1_mean_motion_nody"
+            },
+            {
+                "variableName": "iqc_dmri_1_nbad_frame_slices",
+                "isAbout": "iqc_dmri_1_nbad_frame_slices"
+            },
+            {
+                "variableName": "iqc_dmri_1_nbad_frames",
+                "isAbout": "iqc_dmri_1_nbad_frames"
+            },
+            {
+                "variableName": "iqc_dmri_1_nbad_slices",
+                "isAbout": "iqc_dmri_1_nbad_slices"
+            },
+            {
+                "variableName": "iqc_dmri_1_nreps",
+                "isAbout": "iqc_dmri_1_nreps"
+            },
+            {
+                "variableName": "iqc_dmri_1_pc_score",
+                "isAbout": "iqc_dmri_1_pc_score"
+            },
+            {
+                "variableName": "iqc_dmri_1_qc_score",
+                "isAbout": "iqc_dmri_1_qc_score"
+            },
+            {
+                "variableName": "iqc_dmri_1_seriestime",
+                "isAbout": "iqc_dmri_1_seriestime"
+            },
+            {
+                "variableName": "iqc_dmri_1_seuid",
+                "isAbout": "iqc_dmri_1_seuid"
+            },
+            {
+                "variableName": "iqc_dmri_1_studydate",
+                "isAbout": "iqc_dmri_1_studydate"
+            },
+            {
+                "variableName": "iqc_dmri_1_suid",
+                "isAbout": "iqc_dmri_1_suid"
+            },
+            {
+                "variableName": "iqc_dmri_1_tr",
+                "isAbout": "iqc_dmri_1_tr"
+            },
+            {
+                "variableName": "iqc_dmri_1_voxvol",
+                "isAbout": "iqc_dmri_1_voxvol"
+            },
+            {
+                "variableName": "iqc_dmri_2_b0_mean",
+                "isAbout": "iqc_dmri_2_b0_mean"
+            },
+            {
+                "variableName": "iqc_dmri_2_b0_median",
+                "isAbout": "iqc_dmri_2_b0_median"
+            },
+            {
+                "variableName": "iqc_dmri_2_b0_std",
+                "isAbout": "iqc_dmri_2_b0_std"
+            },
+            {
+                "variableName": "iqc_dmri_2_brain_mean",
+                "isAbout": "iqc_dmri_2_brain_mean"
+            },
+            {
+                "variableName": "iqc_dmri_2_brain_std",
+                "isAbout": "iqc_dmri_2_brain_std"
+            },
+            {
+                "variableName": "iqc_dmri_2_brainvol",
+                "isAbout": "iqc_dmri_2_brainvol"
+            },
+            {
+                "variableName": "iqc_dmri_2_complete",
+                "isAbout": "iqc_dmri_2_complete"
+            },
+            {
+                "variableName": "iqc_dmri_2_dterr_mean",
+                "isAbout": "iqc_dmri_2_dterr_mean"
+            },
+            {
+                "variableName": "iqc_dmri_2_dterr_median",
+                "isAbout": "iqc_dmri_2_dterr_median"
+            },
+            {
+                "variableName": "iqc_dmri_2_dterr_std",
+                "isAbout": "iqc_dmri_2_dterr_std"
+            },
+            {
+                "variableName": "iqc_dmri_2_fa_mean",
+                "isAbout": "iqc_dmri_2_fa_mean"
+            },
+            {
+                "variableName": "iqc_dmri_2_fa_median",
+                "isAbout": "iqc_dmri_2_fa_median"
+            },
+            {
+                "variableName": "iqc_dmri_2_fa_std",
+                "isAbout": "iqc_dmri_2_fa_std"
+            },
+            {
+                "variableName": "iqc_dmri_2_fm_complete",
+                "isAbout": "iqc_dmri_2_fm_complete"
+            },
+            {
+                "variableName": "iqc_dmri_2_fm_invalid",
+                "isAbout": "iqc_dmri_2_fm_invalid"
+            },
+            {
+                "variableName": "iqc_dmri_2_fm_missing",
+                "isAbout": "iqc_dmri_2_fm_missing"
+            },
+            {
+                "variableName": "iqc_dmri_2_fm_pc_score",
+                "isAbout": "iqc_dmri_2_fm_pc_score"
+            },
+            {
+                "variableName": "iqc_dmri_2_fm_qc_score",
+                "isAbout": "iqc_dmri_2_fm_qc_score"
+            },
+            {
+                "variableName": "iqc_dmri_2_fm_wronglocus",
+                "isAbout": "iqc_dmri_2_fm_wronglocus"
+            },
+            {
+                "variableName": "iqc_dmri_2_md_mean",
+                "isAbout": "iqc_dmri_2_md_mean"
+            },
+            {
+                "variableName": "iqc_dmri_2_md_median",
+                "isAbout": "iqc_dmri_2_md_median"
+            },
+            {
+                "variableName": "iqc_dmri_2_md_std",
+                "isAbout": "iqc_dmri_2_md_std"
+            },
+            {
+                "variableName": "iqc_dmri_2_mean_motion",
+                "isAbout": "iqc_dmri_2_mean_motion"
+            },
+            {
+                "variableName": "iqc_dmri_2_mean_motion_nody",
+                "isAbout": "iqc_dmri_2_mean_motion_nody"
+            },
+            {
+                "variableName": "iqc_dmri_2_nbad_frame_slices",
+                "isAbout": "iqc_dmri_2_nbad_frame_slices"
+            },
+            {
+                "variableName": "iqc_dmri_2_nbad_frames",
+                "isAbout": "iqc_dmri_2_nbad_frames"
+            },
+            {
+                "variableName": "iqc_dmri_2_nbad_slices",
+                "isAbout": "iqc_dmri_2_nbad_slices"
+            },
+            {
+                "variableName": "iqc_dmri_2_nreps",
+                "isAbout": "iqc_dmri_2_nreps"
+            },
+            {
+                "variableName": "iqc_dmri_2_pc_score",
+                "isAbout": "iqc_dmri_2_pc_score"
+            },
+            {
+                "variableName": "iqc_dmri_2_qc_score",
+                "isAbout": "iqc_dmri_2_qc_score"
+            },
+            {
+                "variableName": "iqc_dmri_2_seriestime",
+                "isAbout": "iqc_dmri_2_seriestime"
+            },
+            {
+                "variableName": "iqc_dmri_2_seuid",
+                "isAbout": "iqc_dmri_2_seuid"
+            },
+            {
+                "variableName": "iqc_dmri_2_studydate",
+                "isAbout": "iqc_dmri_2_studydate"
+            },
+            {
+                "variableName": "iqc_dmri_2_suid",
+                "isAbout": "iqc_dmri_2_suid"
+            },
+            {
+                "variableName": "iqc_dmri_2_tr",
+                "isAbout": "iqc_dmri_2_tr"
+            },
+            {
+                "variableName": "iqc_dmri_2_voxvol",
+                "isAbout": "iqc_dmri_2_voxvol"
+            },
+            {
+                "variableName": "iqc_dmri_3_b0_mean",
+                "isAbout": "iqc_dmri_3_b0_mean"
+            },
+            {
+                "variableName": "iqc_dmri_3_b0_median",
+                "isAbout": "iqc_dmri_3_b0_median"
+            },
+            {
+                "variableName": "iqc_dmri_3_b0_std",
+                "isAbout": "iqc_dmri_3_b0_std"
+            },
+            {
+                "variableName": "iqc_dmri_3_brain_mean",
+                "isAbout": "iqc_dmri_3_brain_mean"
+            },
+            {
+                "variableName": "iqc_dmri_3_brain_std",
+                "isAbout": "iqc_dmri_3_brain_std"
+            },
+            {
+                "variableName": "iqc_dmri_3_brainvol",
+                "isAbout": "iqc_dmri_3_brainvol"
+            },
+            {
+                "variableName": "iqc_dmri_3_complete",
+                "isAbout": "iqc_dmri_3_complete"
+            },
+            {
+                "variableName": "iqc_dmri_3_dterr_mean",
+                "isAbout": "iqc_dmri_3_dterr_mean"
+            },
+            {
+                "variableName": "iqc_dmri_3_dterr_median",
+                "isAbout": "iqc_dmri_3_dterr_median"
+            },
+            {
+                "variableName": "iqc_dmri_3_dterr_std",
+                "isAbout": "iqc_dmri_3_dterr_std"
+            },
+            {
+                "variableName": "iqc_dmri_3_fa_mean",
+                "isAbout": "iqc_dmri_3_fa_mean"
+            },
+            {
+                "variableName": "iqc_dmri_3_fa_median",
+                "isAbout": "iqc_dmri_3_fa_median"
+            },
+            {
+                "variableName": "iqc_dmri_3_fa_std",
+                "isAbout": "iqc_dmri_3_fa_std"
+            },
+            {
+                "variableName": "iqc_dmri_3_fm_complete",
+                "isAbout": "iqc_dmri_3_fm_complete"
+            },
+            {
+                "variableName": "iqc_dmri_3_fm_invalid",
+                "isAbout": "iqc_dmri_3_fm_invalid"
+            },
+            {
+                "variableName": "iqc_dmri_3_fm_missing",
+                "isAbout": "iqc_dmri_3_fm_missing"
+            },
+            {
+                "variableName": "iqc_dmri_3_fm_pc_score",
+                "isAbout": "iqc_dmri_3_fm_pc_score"
+            },
+            {
+                "variableName": "iqc_dmri_3_fm_qc_score",
+                "isAbout": "iqc_dmri_3_fm_qc_score"
+            },
+            {
+                "variableName": "iqc_dmri_3_fm_wronglocus",
+                "isAbout": "iqc_dmri_3_fm_wronglocus"
+            },
+            {
+                "variableName": "iqc_dmri_3_md_mean",
+                "isAbout": "iqc_dmri_3_md_mean"
+            },
+            {
+                "variableName": "iqc_dmri_3_md_median",
+                "isAbout": "iqc_dmri_3_md_median"
+            },
+            {
+                "variableName": "iqc_dmri_3_md_std",
+                "isAbout": "iqc_dmri_3_md_std"
+            },
+            {
+                "variableName": "iqc_dmri_3_mean_motion",
+                "isAbout": "iqc_dmri_3_mean_motion"
+            },
+            {
+                "variableName": "iqc_dmri_3_mean_motion_nody",
+                "isAbout": "iqc_dmri_3_mean_motion_nody"
+            },
+            {
+                "variableName": "iqc_dmri_3_nbad_frame_slices",
+                "isAbout": "iqc_dmri_3_nbad_frame_slices"
+            },
+            {
+                "variableName": "iqc_dmri_3_nbad_frames",
+                "isAbout": "iqc_dmri_3_nbad_frames"
+            },
+            {
+                "variableName": "iqc_dmri_3_nbad_slices",
+                "isAbout": "iqc_dmri_3_nbad_slices"
+            },
+            {
+                "variableName": "iqc_dmri_3_nreps",
+                "isAbout": "iqc_dmri_3_nreps"
+            },
+            {
+                "variableName": "iqc_dmri_3_pc_score",
+                "isAbout": "iqc_dmri_3_pc_score"
+            },
+            {
+                "variableName": "iqc_dmri_3_qc_score",
+                "isAbout": "iqc_dmri_3_qc_score"
+            },
+            {
+                "variableName": "iqc_dmri_3_seriestime",
+                "isAbout": "iqc_dmri_3_seriestime"
+            },
+            {
+                "variableName": "iqc_dmri_3_seuid",
+                "isAbout": "iqc_dmri_3_seuid"
+            },
+            {
+                "variableName": "iqc_dmri_3_studydate",
+                "isAbout": "iqc_dmri_3_studydate"
+            },
+            {
+                "variableName": "iqc_dmri_3_suid",
+                "isAbout": "iqc_dmri_3_suid"
+            },
+            {
+                "variableName": "iqc_dmri_3_tr",
+                "isAbout": "iqc_dmri_3_tr"
+            },
+            {
+                "variableName": "iqc_dmri_3_voxvol",
+                "isAbout": "iqc_dmri_3_voxvol"
+            },
+            {
+                "variableName": "iqc_dmri_4_b0_mean",
+                "isAbout": "iqc_dmri_4_b0_mean"
+            },
+            {
+                "variableName": "iqc_dmri_4_b0_median",
+                "isAbout": "iqc_dmri_4_b0_median"
+            },
+            {
+                "variableName": "iqc_dmri_4_b0_std",
+                "isAbout": "iqc_dmri_4_b0_std"
+            },
+            {
+                "variableName": "iqc_dmri_4_brain_mean",
+                "isAbout": "iqc_dmri_4_brain_mean"
+            },
+            {
+                "variableName": "iqc_dmri_4_brain_std",
+                "isAbout": "iqc_dmri_4_brain_std"
+            },
+            {
+                "variableName": "iqc_dmri_4_brainvol",
+                "isAbout": "iqc_dmri_4_brainvol"
+            },
+            {
+                "variableName": "iqc_dmri_4_complete",
+                "isAbout": "iqc_dmri_4_complete"
+            },
+            {
+                "variableName": "iqc_dmri_4_dterr_mean",
+                "isAbout": "iqc_dmri_4_dterr_mean"
+            },
+            {
+                "variableName": "iqc_dmri_4_dterr_median",
+                "isAbout": "iqc_dmri_4_dterr_median"
+            },
+            {
+                "variableName": "iqc_dmri_4_dterr_std",
+                "isAbout": "iqc_dmri_4_dterr_std"
+            },
+            {
+                "variableName": "iqc_dmri_4_fa_mean",
+                "isAbout": "iqc_dmri_4_fa_mean"
+            },
+            {
+                "variableName": "iqc_dmri_4_fa_median",
+                "isAbout": "iqc_dmri_4_fa_median"
+            },
+            {
+                "variableName": "iqc_dmri_4_fa_std",
+                "isAbout": "iqc_dmri_4_fa_std"
+            },
+            {
+                "variableName": "iqc_dmri_4_fm_complete",
+                "isAbout": "iqc_dmri_4_fm_complete"
+            },
+            {
+                "variableName": "iqc_dmri_4_fm_invalid",
+                "isAbout": "iqc_dmri_4_fm_invalid"
+            },
+            {
+                "variableName": "iqc_dmri_4_fm_missing",
+                "isAbout": "iqc_dmri_4_fm_missing"
+            },
+            {
+                "variableName": "iqc_dmri_4_fm_pc_score",
+                "isAbout": "iqc_dmri_4_fm_pc_score"
+            },
+            {
+                "variableName": "iqc_dmri_4_fm_qc_score",
+                "isAbout": "iqc_dmri_4_fm_qc_score"
+            },
+            {
+                "variableName": "iqc_dmri_4_fm_wronglocus",
+                "isAbout": "iqc_dmri_4_fm_wronglocus"
+            },
+            {
+                "variableName": "iqc_dmri_4_md_mean",
+                "isAbout": "iqc_dmri_4_md_mean"
+            },
+            {
+                "variableName": "iqc_dmri_4_md_median",
+                "isAbout": "iqc_dmri_4_md_median"
+            },
+            {
+                "variableName": "iqc_dmri_4_md_std",
+                "isAbout": "iqc_dmri_4_md_std"
+            },
+            {
+                "variableName": "iqc_dmri_4_mean_motion",
+                "isAbout": "iqc_dmri_4_mean_motion"
+            },
+            {
+                "variableName": "iqc_dmri_4_mean_motion_nody",
+                "isAbout": "iqc_dmri_4_mean_motion_nody"
+            },
+            {
+                "variableName": "iqc_dmri_4_nbad_frame_slices",
+                "isAbout": "iqc_dmri_4_nbad_frame_slices"
+            },
+            {
+                "variableName": "iqc_dmri_4_nbad_frames",
+                "isAbout": "iqc_dmri_4_nbad_frames"
+            },
+            {
+                "variableName": "iqc_dmri_4_nbad_slices",
+                "isAbout": "iqc_dmri_4_nbad_slices"
+            },
+            {
+                "variableName": "iqc_dmri_4_nreps",
+                "isAbout": "iqc_dmri_4_nreps"
+            },
+            {
+                "variableName": "iqc_dmri_4_pc_score",
+                "isAbout": "iqc_dmri_4_pc_score"
+            },
+            {
+                "variableName": "iqc_dmri_4_qc_score",
+                "isAbout": "iqc_dmri_4_qc_score"
+            },
+            {
+                "variableName": "iqc_dmri_4_seriestime",
+                "isAbout": "iqc_dmri_4_seriestime"
+            },
+            {
+                "variableName": "iqc_dmri_4_seuid",
+                "isAbout": "iqc_dmri_4_seuid"
+            },
+            {
+                "variableName": "iqc_dmri_4_studydate",
+                "isAbout": "iqc_dmri_4_studydate"
+            },
+            {
+                "variableName": "iqc_dmri_4_suid",
+                "isAbout": "iqc_dmri_4_suid"
+            },
+            {
+                "variableName": "iqc_dmri_4_tr",
+                "isAbout": "iqc_dmri_4_tr"
+            },
+            {
+                "variableName": "iqc_dmri_4_voxvol",
+                "isAbout": "iqc_dmri_4_voxvol"
+            },
+            {
+                "variableName": "iqc_dmri_5_b0_mean",
+                "isAbout": "iqc_dmri_5_b0_mean"
+            },
+            {
+                "variableName": "iqc_dmri_5_b0_median",
+                "isAbout": "iqc_dmri_5_b0_median"
+            },
+            {
+                "variableName": "iqc_dmri_5_b0_std",
+                "isAbout": "iqc_dmri_5_b0_std"
+            },
+            {
+                "variableName": "iqc_dmri_5_brain_mean",
+                "isAbout": "iqc_dmri_5_brain_mean"
+            },
+            {
+                "variableName": "iqc_dmri_5_brain_std",
+                "isAbout": "iqc_dmri_5_brain_std"
+            },
+            {
+                "variableName": "iqc_dmri_5_brainvol",
+                "isAbout": "iqc_dmri_5_brainvol"
+            },
+            {
+                "variableName": "iqc_dmri_5_complete",
+                "isAbout": "iqc_dmri_5_complete"
+            },
+            {
+                "variableName": "iqc_dmri_5_dterr_mean",
+                "isAbout": "iqc_dmri_5_dterr_mean"
+            },
+            {
+                "variableName": "iqc_dmri_5_dterr_median",
+                "isAbout": "iqc_dmri_5_dterr_median"
+            },
+            {
+                "variableName": "iqc_dmri_5_dterr_std",
+                "isAbout": "iqc_dmri_5_dterr_std"
+            },
+            {
+                "variableName": "iqc_dmri_5_fa_mean",
+                "isAbout": "iqc_dmri_5_fa_mean"
+            },
+            {
+                "variableName": "iqc_dmri_5_fa_median",
+                "isAbout": "iqc_dmri_5_fa_median"
+            },
+            {
+                "variableName": "iqc_dmri_5_fa_std",
+                "isAbout": "iqc_dmri_5_fa_std"
+            },
+            {
+                "variableName": "iqc_dmri_5_fm_complete",
+                "isAbout": "iqc_dmri_5_fm_complete"
+            },
+            {
+                "variableName": "iqc_dmri_5_fm_invalid",
+                "isAbout": "iqc_dmri_5_fm_invalid"
+            },
+            {
+                "variableName": "iqc_dmri_5_fm_missing",
+                "isAbout": "iqc_dmri_5_fm_missing"
+            },
+            {
+                "variableName": "iqc_dmri_5_fm_pc_score",
+                "isAbout": "iqc_dmri_5_fm_pc_score"
+            },
+            {
+                "variableName": "iqc_dmri_5_fm_qc_score",
+                "isAbout": "iqc_dmri_5_fm_qc_score"
+            },
+            {
+                "variableName": "iqc_dmri_5_fm_wronglocus",
+                "isAbout": "iqc_dmri_5_fm_wronglocus"
+            },
+            {
+                "variableName": "iqc_dmri_5_md_mean",
+                "isAbout": "iqc_dmri_5_md_mean"
+            },
+            {
+                "variableName": "iqc_dmri_5_md_median",
+                "isAbout": "iqc_dmri_5_md_median"
+            },
+            {
+                "variableName": "iqc_dmri_5_md_std",
+                "isAbout": "iqc_dmri_5_md_std"
+            },
+            {
+                "variableName": "iqc_dmri_5_mean_motion",
+                "isAbout": "iqc_dmri_5_mean_motion"
+            },
+            {
+                "variableName": "iqc_dmri_5_mean_motion_nody",
+                "isAbout": "iqc_dmri_5_mean_motion_nody"
+            },
+            {
+                "variableName": "iqc_dmri_5_nbad_frame_slices",
+                "isAbout": "iqc_dmri_5_nbad_frame_slices"
+            },
+            {
+                "variableName": "iqc_dmri_5_nbad_frames",
+                "isAbout": "iqc_dmri_5_nbad_frames"
+            },
+            {
+                "variableName": "iqc_dmri_5_nbad_slices",
+                "isAbout": "iqc_dmri_5_nbad_slices"
+            },
+            {
+                "variableName": "iqc_dmri_5_nreps",
+                "isAbout": "iqc_dmri_5_nreps"
+            },
+            {
+                "variableName": "iqc_dmri_5_pc_score",
+                "isAbout": "iqc_dmri_5_pc_score"
+            },
+            {
+                "variableName": "iqc_dmri_5_qc_score",
+                "isAbout": "iqc_dmri_5_qc_score"
+            },
+            {
+                "variableName": "iqc_dmri_5_seriestime",
+                "isAbout": "iqc_dmri_5_seriestime"
+            },
+            {
+                "variableName": "iqc_dmri_5_seuid",
+                "isAbout": "iqc_dmri_5_seuid"
+            },
+            {
+                "variableName": "iqc_dmri_5_studydate",
+                "isAbout": "iqc_dmri_5_studydate"
+            },
+            {
+                "variableName": "iqc_dmri_5_suid",
+                "isAbout": "iqc_dmri_5_suid"
+            },
+            {
+                "variableName": "iqc_dmri_5_tr",
+                "isAbout": "iqc_dmri_5_tr"
+            },
+            {
+                "variableName": "iqc_dmri_5_voxvol",
+                "isAbout": "iqc_dmri_5_voxvol"
+            },
+            {
+                "variableName": "iqc_dmri_6_b0_mean",
+                "isAbout": "iqc_dmri_6_b0_mean"
+            },
+            {
+                "variableName": "iqc_dmri_6_b0_median",
+                "isAbout": "iqc_dmri_6_b0_median"
+            },
+            {
+                "variableName": "iqc_dmri_6_b0_std",
+                "isAbout": "iqc_dmri_6_b0_std"
+            },
+            {
+                "variableName": "iqc_dmri_6_brain_mean",
+                "isAbout": "iqc_dmri_6_brain_mean"
+            },
+            {
+                "variableName": "iqc_dmri_6_brain_std",
+                "isAbout": "iqc_dmri_6_brain_std"
+            },
+            {
+                "variableName": "iqc_dmri_6_brainvol",
+                "isAbout": "iqc_dmri_6_brainvol"
+            },
+            {
+                "variableName": "iqc_dmri_6_complete",
+                "isAbout": "iqc_dmri_6_complete"
+            },
+            {
+                "variableName": "iqc_dmri_6_dterr_mean",
+                "isAbout": "iqc_dmri_6_dterr_mean"
+            },
+            {
+                "variableName": "iqc_dmri_6_dterr_median",
+                "isAbout": "iqc_dmri_6_dterr_median"
+            },
+            {
+                "variableName": "iqc_dmri_6_dterr_std",
+                "isAbout": "iqc_dmri_6_dterr_std"
+            },
+            {
+                "variableName": "iqc_dmri_6_fa_mean",
+                "isAbout": "iqc_dmri_6_fa_mean"
+            },
+            {
+                "variableName": "iqc_dmri_6_fa_median",
+                "isAbout": "iqc_dmri_6_fa_median"
+            },
+            {
+                "variableName": "iqc_dmri_6_fa_std",
+                "isAbout": "iqc_dmri_6_fa_std"
+            },
+            {
+                "variableName": "iqc_dmri_6_fm_complete",
+                "isAbout": "iqc_dmri_6_fm_complete"
+            },
+            {
+                "variableName": "iqc_dmri_6_fm_invalid",
+                "isAbout": "iqc_dmri_6_fm_invalid"
+            },
+            {
+                "variableName": "iqc_dmri_6_fm_missing",
+                "isAbout": "iqc_dmri_6_fm_missing"
+            },
+            {
+                "variableName": "iqc_dmri_6_fm_pc_score",
+                "isAbout": "iqc_dmri_6_fm_pc_score"
+            },
+            {
+                "variableName": "iqc_dmri_6_fm_qc_score",
+                "isAbout": "iqc_dmri_6_fm_qc_score"
+            },
+            {
+                "variableName": "iqc_dmri_6_fm_wronglocus",
+                "isAbout": "iqc_dmri_6_fm_wronglocus"
+            },
+            {
+                "variableName": "iqc_dmri_6_md_mean",
+                "isAbout": "iqc_dmri_6_md_mean"
+            },
+            {
+                "variableName": "iqc_dmri_6_md_median",
+                "isAbout": "iqc_dmri_6_md_median"
+            },
+            {
+                "variableName": "iqc_dmri_6_md_std",
+                "isAbout": "iqc_dmri_6_md_std"
+            },
+            {
+                "variableName": "iqc_dmri_6_mean_motion",
+                "isAbout": "iqc_dmri_6_mean_motion"
+            },
+            {
+                "variableName": "iqc_dmri_6_mean_motion_nody",
+                "isAbout": "iqc_dmri_6_mean_motion_nody"
+            },
+            {
+                "variableName": "iqc_dmri_6_nbad_frame_slices",
+                "isAbout": "iqc_dmri_6_nbad_frame_slices"
+            },
+            {
+                "variableName": "iqc_dmri_6_nbad_frames",
+                "isAbout": "iqc_dmri_6_nbad_frames"
+            },
+            {
+                "variableName": "iqc_dmri_6_nbad_slices",
+                "isAbout": "iqc_dmri_6_nbad_slices"
+            },
+            {
+                "variableName": "iqc_dmri_6_nreps",
+                "isAbout": "iqc_dmri_6_nreps"
+            },
+            {
+                "variableName": "iqc_dmri_6_pc_score",
+                "isAbout": "iqc_dmri_6_pc_score"
+            },
+            {
+                "variableName": "iqc_dmri_6_qc_score",
+                "isAbout": "iqc_dmri_6_qc_score"
+            },
+            {
+                "variableName": "iqc_dmri_6_seriestime",
+                "isAbout": "iqc_dmri_6_seriestime"
+            },
+            {
+                "variableName": "iqc_dmri_6_seuid",
+                "isAbout": "iqc_dmri_6_seuid"
+            },
+            {
+                "variableName": "iqc_dmri_6_studydate",
+                "isAbout": "iqc_dmri_6_studydate"
+            },
+            {
+                "variableName": "iqc_dmri_6_suid",
+                "isAbout": "iqc_dmri_6_suid"
+            },
+            {
+                "variableName": "iqc_dmri_6_tr",
+                "isAbout": "iqc_dmri_6_tr"
+            },
+            {
+                "variableName": "iqc_dmri_6_voxvol",
+                "isAbout": "iqc_dmri_6_voxvol"
+            },
+            {
+                "variableName": "iqc_dmri_all_b0_mean",
+                "isAbout": "iqc_dmri_all_b0_mean"
+            },
+            {
+                "variableName": "iqc_dmri_all_b0_median",
+                "isAbout": "iqc_dmri_all_b0_median"
+            },
+            {
+                "variableName": "iqc_dmri_all_b0_std",
+                "isAbout": "iqc_dmri_all_b0_std"
+            },
+            {
+                "variableName": "iqc_dmri_all_brain_mean",
+                "isAbout": "iqc_dmri_all_brain_mean"
+            },
+            {
+                "variableName": "iqc_dmri_all_brain_std",
+                "isAbout": "iqc_dmri_all_brain_std"
+            },
+            {
+                "variableName": "iqc_dmri_all_brainvol",
+                "isAbout": "iqc_dmri_all_brainvol"
+            },
+            {
+                "variableName": "iqc_dmri_all_dterr_mean",
+                "isAbout": "iqc_dmri_all_dterr_mean"
+            },
+            {
+                "variableName": "iqc_dmri_all_dterr_median",
+                "isAbout": "iqc_dmri_all_dterr_median"
+            },
+            {
+                "variableName": "iqc_dmri_all_dterr_std",
+                "isAbout": "iqc_dmri_all_dterr_std"
+            },
+            {
+                "variableName": "iqc_dmri_all_fa_mean",
+                "isAbout": "iqc_dmri_all_fa_mean"
+            },
+            {
+                "variableName": "iqc_dmri_all_fa_median",
+                "isAbout": "iqc_dmri_all_fa_median"
+            },
+            {
+                "variableName": "iqc_dmri_all_fa_std",
+                "isAbout": "iqc_dmri_all_fa_std"
+            },
+            {
+                "variableName": "iqc_dmri_all_md_mean",
+                "isAbout": "iqc_dmri_all_md_mean"
+            },
+            {
+                "variableName": "iqc_dmri_all_md_median",
+                "isAbout": "iqc_dmri_all_md_median"
+            },
+            {
+                "variableName": "iqc_dmri_all_md_std",
+                "isAbout": "iqc_dmri_all_md_std"
+            },
+            {
+                "variableName": "iqc_dmri_all_mean_motion",
+                "isAbout": "iqc_dmri_all_mean_motion"
+            },
+            {
+                "variableName": "iqc_dmri_all_mean_motion_nody",
+                "isAbout": "iqc_dmri_all_mean_motion_nody"
+            },
+            {
+                "variableName": "iqc_dmri_all_nbad_frame_slices",
+                "isAbout": "iqc_dmri_all_nbad_frame_slices"
+            },
+            {
+                "variableName": "iqc_dmri_all_nbad_frames",
+                "isAbout": "iqc_dmri_all_nbad_frames"
+            },
+            {
+                "variableName": "iqc_dmri_all_nbad_slices",
+                "isAbout": "iqc_dmri_all_nbad_slices"
+            },
+            {
+                "variableName": "iqc_dmri_all_nreps",
+                "isAbout": "iqc_dmri_all_nreps"
+            },
+            {
+                "variableName": "iqc_dmri_all_tr",
+                "isAbout": "iqc_dmri_all_tr"
+            },
+            {
+                "variableName": "iqc_dmri_all_voxvol",
+                "isAbout": "iqc_dmri_all_voxvol"
+            },
+            {
+                "variableName": "iqc_dmri_bad_ser",
+                "isAbout": "iqc_dmri_bad_ser"
+            },
+            {
+                "variableName": "iqc_dmri_dark_qc",
+                "isAbout": "iqc_dmri_dark_qc"
+            },
+            {
+                "variableName": "iqc_dmri_dco_qc",
+                "isAbout": "iqc_dmri_dco_qc"
+            },
+            {
+                "variableName": "iqc_dmri_dis_qc",
+                "isAbout": "iqc_dmri_dis_qc"
+            },
+            {
+                "variableName": "iqc_dmri_fa_qc",
+                "isAbout": "iqc_dmri_fa_qc"
+            },
+            {
+                "variableName": "iqc_dmri_fm_dark_qc",
+                "isAbout": "iqc_dmri_fm_dark_qc"
+            },
+            {
+                "variableName": "iqc_dmri_fm_dco_qc",
+                "isAbout": "iqc_dmri_fm_dco_qc"
+            },
+            {
+                "variableName": "iqc_dmri_fm_dis_qc",
+                "isAbout": "iqc_dmri_fm_dis_qc"
+            },
+            {
+                "variableName": "iqc_dmri_fm_fa_qc",
+                "isAbout": "iqc_dmri_fm_fa_qc"
+            },
+            {
+                "variableName": "iqc_dmri_fm_gh_qc",
+                "isAbout": "iqc_dmri_fm_gh_qc"
+            },
+            {
+                "variableName": "iqc_dmri_fm_hb_qc",
+                "isAbout": "iqc_dmri_fm_hb_qc"
+            },
+            {
+                "variableName": "iqc_dmri_fm_ht_qc",
+                "isAbout": "iqc_dmri_fm_ht_qc"
+            },
+            {
+                "variableName": "iqc_dmri_fm_incomp",
+                "isAbout": "iqc_dmri_fm_incomp"
+            },
+            {
+                "variableName": "iqc_dmri_fm_invalid",
+                "isAbout": "iqc_dmri_fm_invalid"
+            },
+            {
+                "variableName": "iqc_dmri_fm_miss_qc",
+                "isAbout": "iqc_dmri_fm_miss_qc"
+            },
+            {
+                "variableName": "iqc_dmri_fm_missing",
+                "isAbout": "iqc_dmri_fm_missing"
+            },
+            {
+                "variableName": "iqc_dmri_fm_mo_qc",
+                "isAbout": "iqc_dmri_fm_mo_qc"
+            },
+            {
+                "variableName": "iqc_dmri_fm_moire_qc",
+                "isAbout": "iqc_dmri_fm_moire_qc"
+            },
+            {
+                "variableName": "iqc_dmri_fm_other_qc",
+                "isAbout": "iqc_dmri_fm_other_qc"
+            },
+            {
+                "variableName": "iqc_dmri_fm_pc_issues",
+                "isAbout": "iqc_dmri_fm_pc_issues"
+            },
+            {
+                "variableName": "iqc_dmri_fm_qcs",
+                "isAbout": "iqc_dmri_fm_qcs"
+            },
+            {
+                "variableName": "iqc_dmri_fm_recon_qc",
+                "isAbout": "iqc_dmri_fm_recon_qc"
+            },
+            {
+                "variableName": "iqc_dmri_fm_rf_qc",
+                "isAbout": "iqc_dmri_fm_rf_qc"
+            },
+            {
+                "variableName": "iqc_dmri_fm_sd_qc",
+                "isAbout": "iqc_dmri_fm_sd_qc"
+            },
+            {
+                "variableName": "iqc_dmri_fm_si_qc",
+                "isAbout": "iqc_dmri_fm_si_qc"
+            },
+            {
+                "variableName": "iqc_dmri_fm_slice_qc",
+                "isAbout": "iqc_dmri_fm_slice_qc"
+            },
+            {
+                "variableName": "iqc_dmri_fm_sus_qc",
+                "isAbout": "iqc_dmri_fm_sus_qc"
+            },
+            {
+                "variableName": "iqc_dmri_fm_vco_qc",
+                "isAbout": "iqc_dmri_fm_vco_qc"
+            },
+            {
+                "variableName": "iqc_dmri_fm_wr_qc",
+                "isAbout": "iqc_dmri_fm_wr_qc"
+            },
+            {
+                "variableName": "iqc_dmri_fm_wronglocus",
+                "isAbout": "iqc_dmri_fm_wronglocus"
+            },
+            {
+                "variableName": "iqc_dmri_gh_qc",
+                "isAbout": "iqc_dmri_gh_qc"
+            },
+            {
+                "variableName": "iqc_dmri_good_ser",
+                "isAbout": "iqc_dmri_good_ser"
+            },
+            {
+                "variableName": "iqc_dmri_hb_qc",
+                "isAbout": "iqc_dmri_hb_qc"
+            },
+            {
+                "variableName": "iqc_dmri_ht_qc",
+                "isAbout": "iqc_dmri_ht_qc"
+            },
+            {
+                "variableName": "iqc_dmri_miss_qc",
+                "isAbout": "iqc_dmri_miss_qc"
+            },
+            {
+                "variableName": "iqc_dmri_mo_qc",
+                "isAbout": "iqc_dmri_mo_qc"
+            },
+            {
+                "variableName": "iqc_dmri_moire_qc",
+                "isAbout": "iqc_dmri_moire_qc"
+            },
+            {
+                "variableName": "iqc_dmri_ok_b0_mean",
+                "isAbout": "iqc_dmri_ok_b0_mean"
+            },
+            {
+                "variableName": "iqc_dmri_ok_b0_median",
+                "isAbout": "iqc_dmri_ok_b0_median"
+            },
+            {
+                "variableName": "iqc_dmri_ok_b0_std",
+                "isAbout": "iqc_dmri_ok_b0_std"
+            },
+            {
+                "variableName": "iqc_dmri_ok_brain_mean",
+                "isAbout": "iqc_dmri_ok_brain_mean"
+            },
+            {
+                "variableName": "iqc_dmri_ok_brain_std",
+                "isAbout": "iqc_dmri_ok_brain_std"
+            },
+            {
+                "variableName": "iqc_dmri_ok_brainvol",
+                "isAbout": "iqc_dmri_ok_brainvol"
+            },
+            {
+                "variableName": "iqc_dmri_ok_dterr_mean",
+                "isAbout": "iqc_dmri_ok_dterr_mean"
+            },
+            {
+                "variableName": "iqc_dmri_ok_dterr_median",
+                "isAbout": "iqc_dmri_ok_dterr_median"
+            },
+            {
+                "variableName": "iqc_dmri_ok_dterr_std",
+                "isAbout": "iqc_dmri_ok_dterr_std"
+            },
+            {
+                "variableName": "iqc_dmri_ok_fa_mean",
+                "isAbout": "iqc_dmri_ok_fa_mean"
+            },
+            {
+                "variableName": "iqc_dmri_ok_fa_median",
+                "isAbout": "iqc_dmri_ok_fa_median"
+            },
+            {
+                "variableName": "iqc_dmri_ok_fa_std",
+                "isAbout": "iqc_dmri_ok_fa_std"
+            },
+            {
+                "variableName": "iqc_dmri_ok_md_mean",
+                "isAbout": "iqc_dmri_ok_md_mean"
+            },
+            {
+                "variableName": "iqc_dmri_ok_md_median",
+                "isAbout": "iqc_dmri_ok_md_median"
+            },
+            {
+                "variableName": "iqc_dmri_ok_md_std",
+                "isAbout": "iqc_dmri_ok_md_std"
+            },
+            {
+                "variableName": "iqc_dmri_ok_mean_motion",
+                "isAbout": "iqc_dmri_ok_mean_motion"
+            },
+            {
+                "variableName": "iqc_dmri_ok_mean_motion_nody",
+                "isAbout": "iqc_dmri_ok_mean_motion_nody"
+            },
+            {
+                "variableName": "iqc_dmri_ok_nbad_frame_slices",
+                "isAbout": "iqc_dmri_ok_nbad_frame_slices"
+            },
+            {
+                "variableName": "iqc_dmri_ok_nbad_frames",
+                "isAbout": "iqc_dmri_ok_nbad_frames"
+            },
+            {
+                "variableName": "iqc_dmri_ok_nbad_slices",
+                "isAbout": "iqc_dmri_ok_nbad_slices"
+            },
+            {
+                "variableName": "iqc_dmri_ok_nreps",
+                "isAbout": "iqc_dmri_ok_nreps"
+            },
+            {
+                "variableName": "iqc_dmri_ok_ser",
+                "isAbout": "iqc_dmri_ok_ser"
+            },
+            {
+                "variableName": "iqc_dmri_ok_tr",
+                "isAbout": "iqc_dmri_ok_tr"
+            },
+            {
+                "variableName": "iqc_dmri_ok_voxvol",
+                "isAbout": "iqc_dmri_ok_voxvol"
+            },
+            {
+                "variableName": "iqc_dmri_other_qc",
+                "isAbout": "iqc_dmri_other_qc"
+            },
+            {
+                "variableName": "iqc_dmri_recon_qc",
+                "isAbout": "iqc_dmri_recon_qc"
+            },
+            {
+                "variableName": "iqc_dmri_rf_qc",
+                "isAbout": "iqc_dmri_rf_qc"
+            },
+            {
+                "variableName": "iqc_dmri_sd_qc",
+                "isAbout": "iqc_dmri_sd_qc"
+            },
+            {
+                "variableName": "iqc_dmri_ser_incomp",
+                "isAbout": "iqc_dmri_ser_incomp"
+            },
+            {
+                "variableName": "iqc_dmri_ser_pc_issues",
+                "isAbout": "iqc_dmri_ser_pc_issues"
+            },
+            {
+                "variableName": "iqc_dmri_ser_qcs",
+                "isAbout": "iqc_dmri_ser_qcs"
+            },
+            {
+                "variableName": "iqc_dmri_si_qc",
+                "isAbout": "iqc_dmri_si_qc"
+            },
+            {
+                "variableName": "iqc_dmri_slice_qc",
+                "isAbout": "iqc_dmri_slice_qc"
+            },
+            {
+                "variableName": "iqc_dmri_sus_qc",
+                "isAbout": "iqc_dmri_sus_qc"
+            },
+            {
+                "variableName": "iqc_dmri_total_passpc",
+                "isAbout": "iqc_dmri_total_passpc"
+            },
+            {
+                "variableName": "iqc_dmri_total_passqc",
+                "isAbout": "iqc_dmri_total_passqc"
+            },
+            {
+                "variableName": "iqc_dmri_total_ser",
+                "isAbout": "iqc_dmri_total_ser"
+            },
+            {
+                "variableName": "iqc_dmri_vco_qc",
+                "isAbout": "iqc_dmri_vco_qc"
+            },
+            {
+                "variableName": "iqc_dmri_wr_qc",
+                "isAbout": "iqc_dmri_wr_qc"
+            },
+            {
+                "variableName": "iqc_mid_1_brain_mean",
+                "isAbout": "iqc_mid_1_brain_mean"
+            },
+            {
+                "variableName": "iqc_mid_1_brain_std",
+                "isAbout": "iqc_mid_1_brain_std"
+            },
+            {
+                "variableName": "iqc_mid_1_brain_tsnr_mean",
+                "isAbout": "iqc_mid_1_brain_tsnr_mean"
+            },
+            {
+                "variableName": "iqc_mid_1_brain_tsnr_median",
+                "isAbout": "iqc_mid_1_brain_tsnr_median"
+            },
+            {
+                "variableName": "iqc_mid_1_brain_tsnr_std",
+                "isAbout": "iqc_mid_1_brain_tsnr_std"
+            },
+            {
+                "variableName": "iqc_mid_1_brainvol",
+                "isAbout": "iqc_mid_1_brainvol"
+            },
+            {
+                "variableName": "iqc_mid_1_complete",
+                "isAbout": "iqc_mid_1_complete"
+            },
+            {
+                "variableName": "iqc_mid_1_fm_complete",
+                "isAbout": "iqc_mid_1_fm_complete"
+            },
+            {
+                "variableName": "iqc_mid_1_fm_invalid",
+                "isAbout": "iqc_mid_1_fm_invalid"
+            },
+            {
+                "variableName": "iqc_mid_1_fm_missing",
+                "isAbout": "iqc_mid_1_fm_missing"
+            },
+            {
+                "variableName": "iqc_mid_1_fm_pc_score",
+                "isAbout": "iqc_mid_1_fm_pc_score"
+            },
+            {
+                "variableName": "iqc_mid_1_fm_qc_score",
+                "isAbout": "iqc_mid_1_fm_qc_score"
+            },
+            {
+                "variableName": "iqc_mid_1_fm_wronglocus",
+                "isAbout": "iqc_mid_1_fm_wronglocus"
+            },
+            {
+                "variableName": "iqc_mid_1_fwhm_x",
+                "isAbout": "iqc_mid_1_fwhm_x"
+            },
+            {
+                "variableName": "iqc_mid_1_fwhm_y",
+                "isAbout": "iqc_mid_1_fwhm_y"
+            },
+            {
+                "variableName": "iqc_mid_1_fwhm_z",
+                "isAbout": "iqc_mid_1_fwhm_z"
+            },
+            {
+                "variableName": "iqc_mid_1_mean_motion",
+                "isAbout": "iqc_mid_1_mean_motion"
+            },
+            {
+                "variableName": "iqc_mid_1_mean_motion_filt",
+                "isAbout": "iqc_mid_1_mean_motion_filt"
+            },
+            {
+                "variableName": "iqc_mid_1_mean_motion_nody",
+                "isAbout": "iqc_mid_1_mean_motion_nody"
+            },
+            {
+                "variableName": "iqc_mid_1_mm_filt_nody",
+                "isAbout": "iqc_mid_1_mm_filt_nody"
+            },
+            {
+                "variableName": "iqc_mid_1_nreps",
+                "isAbout": "iqc_mid_1_nreps"
+            },
+            {
+                "variableName": "iqc_mid_1_pc_score",
+                "isAbout": "iqc_mid_1_pc_score"
+            },
+            {
+                "variableName": "iqc_mid_1_qc_score",
+                "isAbout": "iqc_mid_1_qc_score"
+            },
+            {
+                "variableName": "iqc_mid_1_seriestime",
+                "isAbout": "iqc_mid_1_seriestime"
+            },
+            {
+                "variableName": "iqc_mid_1_seuid",
+                "isAbout": "iqc_mid_1_seuid"
+            },
+            {
+                "variableName": "iqc_mid_1_studydate",
+                "isAbout": "iqc_mid_1_studydate"
+            },
+            {
+                "variableName": "iqc_mid_1_sub_02",
+                "isAbout": "iqc_mid_1_sub_02"
+            },
+            {
+                "variableName": "iqc_mid_1_sub_02_filt",
+                "isAbout": "iqc_mid_1_sub_02_filt"
+            },
+            {
+                "variableName": "iqc_mid_1_sub_02_filt_nody",
+                "isAbout": "iqc_mid_1_sub_02_filt_nody"
+            },
+            {
+                "variableName": "iqc_mid_1_sub_02_nody",
+                "isAbout": "iqc_mid_1_sub_02_nody"
+            },
+            {
+                "variableName": "iqc_mid_1_suid",
+                "isAbout": "iqc_mid_1_suid"
+            },
+            {
+                "variableName": "iqc_mid_1_tr",
+                "isAbout": "iqc_mid_1_tr"
+            },
+            {
+                "variableName": "iqc_mid_1_voxvol",
+                "isAbout": "iqc_mid_1_voxvol"
+            },
+            {
+                "variableName": "iqc_mid_2_fm_invalid",
+                "isAbout": "iqc_mid_2_fm_invalid"
+            },
+            {
+                "variableName": "iqc_mid_2_fm_missing",
+                "isAbout": "iqc_mid_2_fm_missing"
+            },
+            {
+                "variableName": "iqc_mid_2_fm_wronglocus",
+                "isAbout": "iqc_mid_2_fm_wronglocus"
+            },
+            {
+                "variableName": "iqc_mid_2_seriestime",
+                "isAbout": "iqc_mid_2_seriestime"
+            },
+            {
+                "variableName": "iqc_mid_2_seuid",
+                "isAbout": "iqc_mid_2_seuid"
+            },
+            {
+                "variableName": "iqc_mid_2_studydate",
+                "isAbout": "iqc_mid_2_studydate"
+            },
+            {
+                "variableName": "iqc_mid_2_suid",
+                "isAbout": "iqc_mid_2_suid"
+            },
+            {
+                "variableName": "iqc_rsfmri_1_brain_mean",
+                "isAbout": "iqc_rsfmri_1_brain_mean"
+            },
+            {
+                "variableName": "iqc_rsfmri_1_brain_std",
+                "isAbout": "iqc_rsfmri_1_brain_std"
+            },
+            {
+                "variableName": "iqc_rsfmri_1_brain_tsnr_mean",
+                "isAbout": "iqc_rsfmri_1_brain_tsnr_mean"
+            },
+            {
+                "variableName": "iqc_rsfmri_1_brain_tsnr_median",
+                "isAbout": "iqc_rsfmri_1_brain_tsnr_median"
+            },
+            {
+                "variableName": "iqc_rsfmri_1_brain_tsnr_std",
+                "isAbout": "iqc_rsfmri_1_brain_tsnr_std"
+            },
+            {
+                "variableName": "iqc_rsfmri_1_brainvol",
+                "isAbout": "iqc_rsfmri_1_brainvol"
+            },
+            {
+                "variableName": "iqc_rsfmri_1_complete",
+                "isAbout": "iqc_rsfmri_1_complete"
+            },
+            {
+                "variableName": "iqc_rsfmri_1_fm_complete",
+                "isAbout": "iqc_rsfmri_1_fm_complete"
+            },
+            {
+                "variableName": "iqc_rsfmri_1_fm_invalid",
+                "isAbout": "iqc_rsfmri_1_fm_invalid"
+            },
+            {
+                "variableName": "iqc_rsfmri_1_fm_missing",
+                "isAbout": "iqc_rsfmri_1_fm_missing"
+            },
+            {
+                "variableName": "iqc_rsfmri_1_fm_pc_score",
+                "isAbout": "iqc_rsfmri_1_fm_pc_score"
+            },
+            {
+                "variableName": "iqc_rsfmri_1_fm_qc_score",
+                "isAbout": "iqc_rsfmri_1_fm_qc_score"
+            },
+            {
+                "variableName": "iqc_rsfmri_1_fm_wronglocus",
+                "isAbout": "iqc_rsfmri_1_fm_wronglocus"
+            },
+            {
+                "variableName": "iqc_rsfmri_1_fwhm_x",
+                "isAbout": "iqc_rsfmri_1_fwhm_x"
+            },
+            {
+                "variableName": "iqc_rsfmri_1_fwhm_y",
+                "isAbout": "iqc_rsfmri_1_fwhm_y"
+            },
+            {
+                "variableName": "iqc_rsfmri_1_fwhm_z",
+                "isAbout": "iqc_rsfmri_1_fwhm_z"
+            },
+            {
+                "variableName": "iqc_rsfmri_1_mean_motion",
+                "isAbout": "iqc_rsfmri_1_mean_motion"
+            },
+            {
+                "variableName": "iqc_rsfmri_1_mean_motion_filt",
+                "isAbout": "iqc_rsfmri_1_mean_motion_filt"
+            },
+            {
+                "variableName": "iqc_rsfmri_1_mean_motion_nody",
+                "isAbout": "iqc_rsfmri_1_mean_motion_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_1_mm_filt_nody",
+                "isAbout": "iqc_rsfmri_1_mm_filt_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_1_nreps",
+                "isAbout": "iqc_rsfmri_1_nreps"
+            },
+            {
+                "variableName": "iqc_rsfmri_1_pc_score",
+                "isAbout": "iqc_rsfmri_1_pc_score"
+            },
+            {
+                "variableName": "iqc_rsfmri_1_qc_score",
+                "isAbout": "iqc_rsfmri_1_qc_score"
+            },
+            {
+                "variableName": "iqc_rsfmri_1_seriestime",
+                "isAbout": "iqc_rsfmri_1_seriestime"
+            },
+            {
+                "variableName": "iqc_rsfmri_1_seuid",
+                "isAbout": "iqc_rsfmri_1_seuid"
+            },
+            {
+                "variableName": "iqc_rsfmri_1_studydate",
+                "isAbout": "iqc_rsfmri_1_studydate"
+            },
+            {
+                "variableName": "iqc_rsfmri_1_sub_02",
+                "isAbout": "iqc_rsfmri_1_sub_02"
+            },
+            {
+                "variableName": "iqc_rsfmri_1_sub_02_filt",
+                "isAbout": "iqc_rsfmri_1_sub_02_filt"
+            },
+            {
+                "variableName": "iqc_rsfmri_1_sub_02_filt_nody",
+                "isAbout": "iqc_rsfmri_1_sub_02_filt_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_1_sub_02_nody",
+                "isAbout": "iqc_rsfmri_1_sub_02_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_1_suid",
+                "isAbout": "iqc_rsfmri_1_suid"
+            },
+            {
+                "variableName": "iqc_rsfmri_1_tr",
+                "isAbout": "iqc_rsfmri_1_tr"
+            },
+            {
+                "variableName": "iqc_rsfmri_1_voxvol",
+                "isAbout": "iqc_rsfmri_1_voxvol"
+            },
+            {
+                "variableName": "iqc_rsfmri_10_b_tsnr_median",
+                "isAbout": "iqc_rsfmri_10_b_tsnr_median"
+            },
+            {
+                "variableName": "iqc_rsfmri_10_brain_mean",
+                "isAbout": "iqc_rsfmri_10_brain_mean"
+            },
+            {
+                "variableName": "iqc_rsfmri_10_brain_std",
+                "isAbout": "iqc_rsfmri_10_brain_std"
+            },
+            {
+                "variableName": "iqc_rsfmri_10_brain_tsnr_mean",
+                "isAbout": "iqc_rsfmri_10_brain_tsnr_mean"
+            },
+            {
+                "variableName": "iqc_rsfmri_10_brain_tsnr_std",
+                "isAbout": "iqc_rsfmri_10_brain_tsnr_std"
+            },
+            {
+                "variableName": "iqc_rsfmri_10_brainvol",
+                "isAbout": "iqc_rsfmri_10_brainvol"
+            },
+            {
+                "variableName": "iqc_rsfmri_10_complete",
+                "isAbout": "iqc_rsfmri_10_complete"
+            },
+            {
+                "variableName": "iqc_rsfmri_10_fm_complete",
+                "isAbout": "iqc_rsfmri_10_fm_complete"
+            },
+            {
+                "variableName": "iqc_rsfmri_10_fm_invalid",
+                "isAbout": "iqc_rsfmri_10_fm_invalid"
+            },
+            {
+                "variableName": "iqc_rsfmri_10_fm_missing",
+                "isAbout": "iqc_rsfmri_10_fm_missing"
+            },
+            {
+                "variableName": "iqc_rsfmri_10_fm_pc_score",
+                "isAbout": "iqc_rsfmri_10_fm_pc_score"
+            },
+            {
+                "variableName": "iqc_rsfmri_10_fm_qc_score",
+                "isAbout": "iqc_rsfmri_10_fm_qc_score"
+            },
+            {
+                "variableName": "iqc_rsfmri_10_fm_wronglocus",
+                "isAbout": "iqc_rsfmri_10_fm_wronglocus"
+            },
+            {
+                "variableName": "iqc_rsfmri_10_fwhm_x",
+                "isAbout": "iqc_rsfmri_10_fwhm_x"
+            },
+            {
+                "variableName": "iqc_rsfmri_10_fwhm_y",
+                "isAbout": "iqc_rsfmri_10_fwhm_y"
+            },
+            {
+                "variableName": "iqc_rsfmri_10_fwhm_z",
+                "isAbout": "iqc_rsfmri_10_fwhm_z"
+            },
+            {
+                "variableName": "iqc_rsfmri_10_mean_motion",
+                "isAbout": "iqc_rsfmri_10_mean_motion"
+            },
+            {
+                "variableName": "iqc_rsfmri_10_mean_motion_filt",
+                "isAbout": "iqc_rsfmri_10_mean_motion_filt"
+            },
+            {
+                "variableName": "iqc_rsfmri_10_mean_motion_nody",
+                "isAbout": "iqc_rsfmri_10_mean_motion_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_10_mm_filt_nody",
+                "isAbout": "iqc_rsfmri_10_mm_filt_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_10_nreps",
+                "isAbout": "iqc_rsfmri_10_nreps"
+            },
+            {
+                "variableName": "iqc_rsfmri_10_pc_score",
+                "isAbout": "iqc_rsfmri_10_pc_score"
+            },
+            {
+                "variableName": "iqc_rsfmri_10_qc_score",
+                "isAbout": "iqc_rsfmri_10_qc_score"
+            },
+            {
+                "variableName": "iqc_rsfmri_10_seriestime",
+                "isAbout": "iqc_rsfmri_10_seriestime"
+            },
+            {
+                "variableName": "iqc_rsfmri_10_seuid",
+                "isAbout": "iqc_rsfmri_10_seuid"
+            },
+            {
+                "variableName": "iqc_rsfmri_10_studydate",
+                "isAbout": "iqc_rsfmri_10_studydate"
+            },
+            {
+                "variableName": "iqc_rsfmri_10_sub_02",
+                "isAbout": "iqc_rsfmri_10_sub_02"
+            },
+            {
+                "variableName": "iqc_rsfmri_10_sub_02_filt",
+                "isAbout": "iqc_rsfmri_10_sub_02_filt"
+            },
+            {
+                "variableName": "iqc_rsfmri_10_sub_02_filt_nody",
+                "isAbout": "iqc_rsfmri_10_sub_02_filt_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_10_sub_02_nody",
+                "isAbout": "iqc_rsfmri_10_sub_02_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_10_suid",
+                "isAbout": "iqc_rsfmri_10_suid"
+            },
+            {
+                "variableName": "iqc_rsfmri_10_tr",
+                "isAbout": "iqc_rsfmri_10_tr"
+            },
+            {
+                "variableName": "iqc_rsfmri_10_voxvol",
+                "isAbout": "iqc_rsfmri_10_voxvol"
+            },
+            {
+                "variableName": "iqc_rsfmri_11_b_tsnr_median",
+                "isAbout": "iqc_rsfmri_11_b_tsnr_median"
+            },
+            {
+                "variableName": "iqc_rsfmri_11_brain_mean",
+                "isAbout": "iqc_rsfmri_11_brain_mean"
+            },
+            {
+                "variableName": "iqc_rsfmri_11_brain_std",
+                "isAbout": "iqc_rsfmri_11_brain_std"
+            },
+            {
+                "variableName": "iqc_rsfmri_11_brain_tsnr_mean",
+                "isAbout": "iqc_rsfmri_11_brain_tsnr_mean"
+            },
+            {
+                "variableName": "iqc_rsfmri_11_brain_tsnr_std",
+                "isAbout": "iqc_rsfmri_11_brain_tsnr_std"
+            },
+            {
+                "variableName": "iqc_rsfmri_11_brainvol",
+                "isAbout": "iqc_rsfmri_11_brainvol"
+            },
+            {
+                "variableName": "iqc_rsfmri_11_complete",
+                "isAbout": "iqc_rsfmri_11_complete"
+            },
+            {
+                "variableName": "iqc_rsfmri_11_fm_complete",
+                "isAbout": "iqc_rsfmri_11_fm_complete"
+            },
+            {
+                "variableName": "iqc_rsfmri_11_fm_invalid",
+                "isAbout": "iqc_rsfmri_11_fm_invalid"
+            },
+            {
+                "variableName": "iqc_rsfmri_11_fm_missing",
+                "isAbout": "iqc_rsfmri_11_fm_missing"
+            },
+            {
+                "variableName": "iqc_rsfmri_11_fm_pc_score",
+                "isAbout": "iqc_rsfmri_11_fm_pc_score"
+            },
+            {
+                "variableName": "iqc_rsfmri_11_fm_qc_score",
+                "isAbout": "iqc_rsfmri_11_fm_qc_score"
+            },
+            {
+                "variableName": "iqc_rsfmri_11_fm_wronglocus",
+                "isAbout": "iqc_rsfmri_11_fm_wronglocus"
+            },
+            {
+                "variableName": "iqc_rsfmri_11_fwhm_x",
+                "isAbout": "iqc_rsfmri_11_fwhm_x"
+            },
+            {
+                "variableName": "iqc_rsfmri_11_fwhm_y",
+                "isAbout": "iqc_rsfmri_11_fwhm_y"
+            },
+            {
+                "variableName": "iqc_rsfmri_11_fwhm_z",
+                "isAbout": "iqc_rsfmri_11_fwhm_z"
+            },
+            {
+                "variableName": "iqc_rsfmri_11_mean_motion",
+                "isAbout": "iqc_rsfmri_11_mean_motion"
+            },
+            {
+                "variableName": "iqc_rsfmri_11_mean_motion_filt",
+                "isAbout": "iqc_rsfmri_11_mean_motion_filt"
+            },
+            {
+                "variableName": "iqc_rsfmri_11_mean_motion_nody",
+                "isAbout": "iqc_rsfmri_11_mean_motion_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_11_mm_filt_nody",
+                "isAbout": "iqc_rsfmri_11_mm_filt_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_11_nreps",
+                "isAbout": "iqc_rsfmri_11_nreps"
+            },
+            {
+                "variableName": "iqc_rsfmri_11_pc_score",
+                "isAbout": "iqc_rsfmri_11_pc_score"
+            },
+            {
+                "variableName": "iqc_rsfmri_11_qc_score",
+                "isAbout": "iqc_rsfmri_11_qc_score"
+            },
+            {
+                "variableName": "iqc_rsfmri_11_seriestime",
+                "isAbout": "iqc_rsfmri_11_seriestime"
+            },
+            {
+                "variableName": "iqc_rsfmri_11_seuid",
+                "isAbout": "iqc_rsfmri_11_seuid"
+            },
+            {
+                "variableName": "iqc_rsfmri_11_studydate",
+                "isAbout": "iqc_rsfmri_11_studydate"
+            },
+            {
+                "variableName": "iqc_rsfmri_11_sub_02",
+                "isAbout": "iqc_rsfmri_11_sub_02"
+            },
+            {
+                "variableName": "iqc_rsfmri_11_sub_02_filt",
+                "isAbout": "iqc_rsfmri_11_sub_02_filt"
+            },
+            {
+                "variableName": "iqc_rsfmri_11_sub_02_filt_nody",
+                "isAbout": "iqc_rsfmri_11_sub_02_filt_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_11_sub_02_nody",
+                "isAbout": "iqc_rsfmri_11_sub_02_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_11_suid",
+                "isAbout": "iqc_rsfmri_11_suid"
+            },
+            {
+                "variableName": "iqc_rsfmri_11_tr",
+                "isAbout": "iqc_rsfmri_11_tr"
+            },
+            {
+                "variableName": "iqc_rsfmri_11_voxvol",
+                "isAbout": "iqc_rsfmri_11_voxvol"
+            },
+            {
+                "variableName": "iqc_rsfmri_12_b_tsnr_median",
+                "isAbout": "iqc_rsfmri_12_b_tsnr_median"
+            },
+            {
+                "variableName": "iqc_rsfmri_12_brain_mean",
+                "isAbout": "iqc_rsfmri_12_brain_mean"
+            },
+            {
+                "variableName": "iqc_rsfmri_12_brain_std",
+                "isAbout": "iqc_rsfmri_12_brain_std"
+            },
+            {
+                "variableName": "iqc_rsfmri_12_brain_tsnr_mean",
+                "isAbout": "iqc_rsfmri_12_brain_tsnr_mean"
+            },
+            {
+                "variableName": "iqc_rsfmri_12_brain_tsnr_std",
+                "isAbout": "iqc_rsfmri_12_brain_tsnr_std"
+            },
+            {
+                "variableName": "iqc_rsfmri_12_brainvol",
+                "isAbout": "iqc_rsfmri_12_brainvol"
+            },
+            {
+                "variableName": "iqc_rsfmri_12_complete",
+                "isAbout": "iqc_rsfmri_12_complete"
+            },
+            {
+                "variableName": "iqc_rsfmri_12_fm_complete",
+                "isAbout": "iqc_rsfmri_12_fm_complete"
+            },
+            {
+                "variableName": "iqc_rsfmri_12_fm_invalid",
+                "isAbout": "iqc_rsfmri_12_fm_invalid"
+            },
+            {
+                "variableName": "iqc_rsfmri_12_fm_missing",
+                "isAbout": "iqc_rsfmri_12_fm_missing"
+            },
+            {
+                "variableName": "iqc_rsfmri_12_fm_pc_score",
+                "isAbout": "iqc_rsfmri_12_fm_pc_score"
+            },
+            {
+                "variableName": "iqc_rsfmri_12_fm_qc_score",
+                "isAbout": "iqc_rsfmri_12_fm_qc_score"
+            },
+            {
+                "variableName": "iqc_rsfmri_12_fm_wronglocus",
+                "isAbout": "iqc_rsfmri_12_fm_wronglocus"
+            },
+            {
+                "variableName": "iqc_rsfmri_12_fwhm_x",
+                "isAbout": "iqc_rsfmri_12_fwhm_x"
+            },
+            {
+                "variableName": "iqc_rsfmri_12_fwhm_y",
+                "isAbout": "iqc_rsfmri_12_fwhm_y"
+            },
+            {
+                "variableName": "iqc_rsfmri_12_fwhm_z",
+                "isAbout": "iqc_rsfmri_12_fwhm_z"
+            },
+            {
+                "variableName": "iqc_rsfmri_12_mean_motion",
+                "isAbout": "iqc_rsfmri_12_mean_motion"
+            },
+            {
+                "variableName": "iqc_rsfmri_12_mean_motion_filt",
+                "isAbout": "iqc_rsfmri_12_mean_motion_filt"
+            },
+            {
+                "variableName": "iqc_rsfmri_12_mean_motion_nody",
+                "isAbout": "iqc_rsfmri_12_mean_motion_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_12_mm_filt_nody",
+                "isAbout": "iqc_rsfmri_12_mm_filt_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_12_nreps",
+                "isAbout": "iqc_rsfmri_12_nreps"
+            },
+            {
+                "variableName": "iqc_rsfmri_12_pc_score",
+                "isAbout": "iqc_rsfmri_12_pc_score"
+            },
+            {
+                "variableName": "iqc_rsfmri_12_qc_score",
+                "isAbout": "iqc_rsfmri_12_qc_score"
+            },
+            {
+                "variableName": "iqc_rsfmri_12_seriestime",
+                "isAbout": "iqc_rsfmri_12_seriestime"
+            },
+            {
+                "variableName": "iqc_rsfmri_12_seuid",
+                "isAbout": "iqc_rsfmri_12_seuid"
+            },
+            {
+                "variableName": "iqc_rsfmri_12_studydate",
+                "isAbout": "iqc_rsfmri_12_studydate"
+            },
+            {
+                "variableName": "iqc_rsfmri_12_sub_02",
+                "isAbout": "iqc_rsfmri_12_sub_02"
+            },
+            {
+                "variableName": "iqc_rsfmri_12_sub_02_filt",
+                "isAbout": "iqc_rsfmri_12_sub_02_filt"
+            },
+            {
+                "variableName": "iqc_rsfmri_12_sub_02_filt_nody",
+                "isAbout": "iqc_rsfmri_12_sub_02_filt_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_12_sub_02_nody",
+                "isAbout": "iqc_rsfmri_12_sub_02_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_12_suid",
+                "isAbout": "iqc_rsfmri_12_suid"
+            },
+            {
+                "variableName": "iqc_rsfmri_12_tr",
+                "isAbout": "iqc_rsfmri_12_tr"
+            },
+            {
+                "variableName": "iqc_rsfmri_12_voxvol",
+                "isAbout": "iqc_rsfmri_12_voxvol"
+            },
+            {
+                "variableName": "iqc_rsfmri_2_brain_mean",
+                "isAbout": "iqc_rsfmri_2_brain_mean"
+            },
+            {
+                "variableName": "iqc_rsfmri_2_brain_std",
+                "isAbout": "iqc_rsfmri_2_brain_std"
+            },
+            {
+                "variableName": "iqc_rsfmri_2_brainvol",
+                "isAbout": "iqc_rsfmri_2_brainvol"
+            },
+            {
+                "variableName": "iqc_rsfmri_2_complete",
+                "isAbout": "iqc_rsfmri_2_complete"
+            },
+            {
+                "variableName": "iqc_rsfmri_2_fm_complete",
+                "isAbout": "iqc_rsfmri_2_fm_complete"
+            },
+            {
+                "variableName": "iqc_rsfmri_2_fm_invalid",
+                "isAbout": "iqc_rsfmri_2_fm_invalid"
+            },
+            {
+                "variableName": "iqc_rsfmri_2_fm_missing",
+                "isAbout": "iqc_rsfmri_2_fm_missing"
+            },
+            {
+                "variableName": "iqc_rsfmri_2_fm_pc_score",
+                "isAbout": "iqc_rsfmri_2_fm_pc_score"
+            },
+            {
+                "variableName": "iqc_rsfmri_2_fm_qc_score",
+                "isAbout": "iqc_rsfmri_2_fm_qc_score"
+            },
+            {
+                "variableName": "iqc_rsfmri_2_fm_wronglocus",
+                "isAbout": "iqc_rsfmri_2_fm_wronglocus"
+            },
+            {
+                "variableName": "iqc_rsfmri_2_mean_motion",
+                "isAbout": "iqc_rsfmri_2_mean_motion"
+            },
+            {
+                "variableName": "iqc_rsfmri_2_mean_motion_filt",
+                "isAbout": "iqc_rsfmri_2_mean_motion_filt"
+            },
+            {
+                "variableName": "iqc_rsfmri_2_mean_motion_nody",
+                "isAbout": "iqc_rsfmri_2_mean_motion_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_2_mm_filt_nody",
+                "isAbout": "iqc_rsfmri_2_mm_filt_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_2_nreps",
+                "isAbout": "iqc_rsfmri_2_nreps"
+            },
+            {
+                "variableName": "iqc_rsfmri_2_pc_score",
+                "isAbout": "iqc_rsfmri_2_pc_score"
+            },
+            {
+                "variableName": "iqc_rsfmri_2_qc_score",
+                "isAbout": "iqc_rsfmri_2_qc_score"
+            },
+            {
+                "variableName": "iqc_rsfmri_2_seriestime",
+                "isAbout": "iqc_rsfmri_2_seriestime"
+            },
+            {
+                "variableName": "iqc_rsfmri_2_seuid",
+                "isAbout": "iqc_rsfmri_2_seuid"
+            },
+            {
+                "variableName": "iqc_rsfmri_2_studydate",
+                "isAbout": "iqc_rsfmri_2_studydate"
+            },
+            {
+                "variableName": "iqc_rsfmri_2_suid",
+                "isAbout": "iqc_rsfmri_2_suid"
+            },
+            {
+                "variableName": "iqc_rsfmri_2_tr",
+                "isAbout": "iqc_rsfmri_2_tr"
+            },
+            {
+                "variableName": "iqc_rsfmri_2_voxvol",
+                "isAbout": "iqc_rsfmri_2_voxvol"
+            },
+            {
+                "variableName": "iqc_rsfmri_3_brain_mean",
+                "isAbout": "iqc_rsfmri_3_brain_mean"
+            },
+            {
+                "variableName": "iqc_rsfmri_3_brain_std",
+                "isAbout": "iqc_rsfmri_3_brain_std"
+            },
+            {
+                "variableName": "iqc_rsfmri_3_brain_tsnr_mean",
+                "isAbout": "iqc_rsfmri_3_brain_tsnr_mean"
+            },
+            {
+                "variableName": "iqc_rsfmri_3_brain_tsnr_median",
+                "isAbout": "iqc_rsfmri_3_brain_tsnr_median"
+            },
+            {
+                "variableName": "iqc_rsfmri_3_brain_tsnr_std",
+                "isAbout": "iqc_rsfmri_3_brain_tsnr_std"
+            },
+            {
+                "variableName": "iqc_rsfmri_3_brainvol",
+                "isAbout": "iqc_rsfmri_3_brainvol"
+            },
+            {
+                "variableName": "iqc_rsfmri_3_complete",
+                "isAbout": "iqc_rsfmri_3_complete"
+            },
+            {
+                "variableName": "iqc_rsfmri_3_fm_complete",
+                "isAbout": "iqc_rsfmri_3_fm_complete"
+            },
+            {
+                "variableName": "iqc_rsfmri_3_fm_invalid",
+                "isAbout": "iqc_rsfmri_3_fm_invalid"
+            },
+            {
+                "variableName": "iqc_rsfmri_3_fm_missing",
+                "isAbout": "iqc_rsfmri_3_fm_missing"
+            },
+            {
+                "variableName": "iqc_rsfmri_3_fm_pc_score",
+                "isAbout": "iqc_rsfmri_3_fm_pc_score"
+            },
+            {
+                "variableName": "iqc_rsfmri_3_fm_qc_score",
+                "isAbout": "iqc_rsfmri_3_fm_qc_score"
+            },
+            {
+                "variableName": "iqc_rsfmri_3_fm_wronglocus",
+                "isAbout": "iqc_rsfmri_3_fm_wronglocus"
+            },
+            {
+                "variableName": "iqc_rsfmri_3_fwhm_x",
+                "isAbout": "iqc_rsfmri_3_fwhm_x"
+            },
+            {
+                "variableName": "iqc_rsfmri_3_fwhm_y",
+                "isAbout": "iqc_rsfmri_3_fwhm_y"
+            },
+            {
+                "variableName": "iqc_rsfmri_3_fwhm_z",
+                "isAbout": "iqc_rsfmri_3_fwhm_z"
+            },
+            {
+                "variableName": "iqc_rsfmri_3_mean_motion",
+                "isAbout": "iqc_rsfmri_3_mean_motion"
+            },
+            {
+                "variableName": "iqc_rsfmri_3_mean_motion_filt",
+                "isAbout": "iqc_rsfmri_3_mean_motion_filt"
+            },
+            {
+                "variableName": "iqc_rsfmri_3_mean_motion_nody",
+                "isAbout": "iqc_rsfmri_3_mean_motion_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_3_mm_filt_nody",
+                "isAbout": "iqc_rsfmri_3_mm_filt_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_3_nreps",
+                "isAbout": "iqc_rsfmri_3_nreps"
+            },
+            {
+                "variableName": "iqc_rsfmri_3_pc_score",
+                "isAbout": "iqc_rsfmri_3_pc_score"
+            },
+            {
+                "variableName": "iqc_rsfmri_3_qc_score",
+                "isAbout": "iqc_rsfmri_3_qc_score"
+            },
+            {
+                "variableName": "iqc_rsfmri_3_seriestime",
+                "isAbout": "iqc_rsfmri_3_seriestime"
+            },
+            {
+                "variableName": "iqc_rsfmri_3_seuid",
+                "isAbout": "iqc_rsfmri_3_seuid"
+            },
+            {
+                "variableName": "iqc_rsfmri_3_studydate",
+                "isAbout": "iqc_rsfmri_3_studydate"
+            },
+            {
+                "variableName": "iqc_rsfmri_3_sub_02",
+                "isAbout": "iqc_rsfmri_3_sub_02"
+            },
+            {
+                "variableName": "iqc_rsfmri_3_sub_02_filt",
+                "isAbout": "iqc_rsfmri_3_sub_02_filt"
+            },
+            {
+                "variableName": "iqc_rsfmri_3_sub_02_filt_nody",
+                "isAbout": "iqc_rsfmri_3_sub_02_filt_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_3_sub_02_nody",
+                "isAbout": "iqc_rsfmri_3_sub_02_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_3_suid",
+                "isAbout": "iqc_rsfmri_3_suid"
+            },
+            {
+                "variableName": "iqc_rsfmri_3_tr",
+                "isAbout": "iqc_rsfmri_3_tr"
+            },
+            {
+                "variableName": "iqc_rsfmri_3_voxvol",
+                "isAbout": "iqc_rsfmri_3_voxvol"
+            },
+            {
+                "variableName": "iqc_rsfmri_4_brain_mean",
+                "isAbout": "iqc_rsfmri_4_brain_mean"
+            },
+            {
+                "variableName": "iqc_rsfmri_4_brain_std",
+                "isAbout": "iqc_rsfmri_4_brain_std"
+            },
+            {
+                "variableName": "iqc_rsfmri_4_brain_tsnr_mean",
+                "isAbout": "iqc_rsfmri_4_brain_tsnr_mean"
+            },
+            {
+                "variableName": "iqc_rsfmri_4_brain_tsnr_median",
+                "isAbout": "iqc_rsfmri_4_brain_tsnr_median"
+            },
+            {
+                "variableName": "iqc_rsfmri_4_brain_tsnr_std",
+                "isAbout": "iqc_rsfmri_4_brain_tsnr_std"
+            },
+            {
+                "variableName": "iqc_rsfmri_4_brainvol",
+                "isAbout": "iqc_rsfmri_4_brainvol"
+            },
+            {
+                "variableName": "iqc_rsfmri_4_complete",
+                "isAbout": "iqc_rsfmri_4_complete"
+            },
+            {
+                "variableName": "iqc_rsfmri_4_fm_complete",
+                "isAbout": "iqc_rsfmri_4_fm_complete"
+            },
+            {
+                "variableName": "iqc_rsfmri_4_fm_invalid",
+                "isAbout": "iqc_rsfmri_4_fm_invalid"
+            },
+            {
+                "variableName": "iqc_rsfmri_4_fm_missing",
+                "isAbout": "iqc_rsfmri_4_fm_missing"
+            },
+            {
+                "variableName": "iqc_rsfmri_4_fm_pc_score",
+                "isAbout": "iqc_rsfmri_4_fm_pc_score"
+            },
+            {
+                "variableName": "iqc_rsfmri_4_fm_qc_score",
+                "isAbout": "iqc_rsfmri_4_fm_qc_score"
+            },
+            {
+                "variableName": "iqc_rsfmri_4_fm_wronglocus",
+                "isAbout": "iqc_rsfmri_4_fm_wronglocus"
+            },
+            {
+                "variableName": "iqc_rsfmri_4_fwhm_x",
+                "isAbout": "iqc_rsfmri_4_fwhm_x"
+            },
+            {
+                "variableName": "iqc_rsfmri_4_fwhm_y",
+                "isAbout": "iqc_rsfmri_4_fwhm_y"
+            },
+            {
+                "variableName": "iqc_rsfmri_4_fwhm_z",
+                "isAbout": "iqc_rsfmri_4_fwhm_z"
+            },
+            {
+                "variableName": "iqc_rsfmri_4_mean_motion",
+                "isAbout": "iqc_rsfmri_4_mean_motion"
+            },
+            {
+                "variableName": "iqc_rsfmri_4_mean_motion_filt",
+                "isAbout": "iqc_rsfmri_4_mean_motion_filt"
+            },
+            {
+                "variableName": "iqc_rsfmri_4_mean_motion_nody",
+                "isAbout": "iqc_rsfmri_4_mean_motion_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_4_mm_filt_nody",
+                "isAbout": "iqc_rsfmri_4_mm_filt_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_4_nreps",
+                "isAbout": "iqc_rsfmri_4_nreps"
+            },
+            {
+                "variableName": "iqc_rsfmri_4_pc_score",
+                "isAbout": "iqc_rsfmri_4_pc_score"
+            },
+            {
+                "variableName": "iqc_rsfmri_4_qc_score",
+                "isAbout": "iqc_rsfmri_4_qc_score"
+            },
+            {
+                "variableName": "iqc_rsfmri_4_seriestime",
+                "isAbout": "iqc_rsfmri_4_seriestime"
+            },
+            {
+                "variableName": "iqc_rsfmri_4_seuid",
+                "isAbout": "iqc_rsfmri_4_seuid"
+            },
+            {
+                "variableName": "iqc_rsfmri_4_studydate",
+                "isAbout": "iqc_rsfmri_4_studydate"
+            },
+            {
+                "variableName": "iqc_rsfmri_4_sub_02",
+                "isAbout": "iqc_rsfmri_4_sub_02"
+            },
+            {
+                "variableName": "iqc_rsfmri_4_sub_02_filt",
+                "isAbout": "iqc_rsfmri_4_sub_02_filt"
+            },
+            {
+                "variableName": "iqc_rsfmri_4_sub_02_filt_nody",
+                "isAbout": "iqc_rsfmri_4_sub_02_filt_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_4_sub_02_nody",
+                "isAbout": "iqc_rsfmri_4_sub_02_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_4_suid",
+                "isAbout": "iqc_rsfmri_4_suid"
+            },
+            {
+                "variableName": "iqc_rsfmri_4_tr",
+                "isAbout": "iqc_rsfmri_4_tr"
+            },
+            {
+                "variableName": "iqc_rsfmri_4_voxvol",
+                "isAbout": "iqc_rsfmri_4_voxvol"
+            },
+            {
+                "variableName": "iqc_rsfmri_5_brain_mean",
+                "isAbout": "iqc_rsfmri_5_brain_mean"
+            },
+            {
+                "variableName": "iqc_rsfmri_5_brain_std",
+                "isAbout": "iqc_rsfmri_5_brain_std"
+            },
+            {
+                "variableName": "iqc_rsfmri_5_brain_tsnr_mean",
+                "isAbout": "iqc_rsfmri_5_brain_tsnr_mean"
+            },
+            {
+                "variableName": "iqc_rsfmri_5_brain_tsnr_median",
+                "isAbout": "iqc_rsfmri_5_brain_tsnr_median"
+            },
+            {
+                "variableName": "iqc_rsfmri_5_brain_tsnr_std",
+                "isAbout": "iqc_rsfmri_5_brain_tsnr_std"
+            },
+            {
+                "variableName": "iqc_rsfmri_5_brainvol",
+                "isAbout": "iqc_rsfmri_5_brainvol"
+            },
+            {
+                "variableName": "iqc_rsfmri_5_complete",
+                "isAbout": "iqc_rsfmri_5_complete"
+            },
+            {
+                "variableName": "iqc_rsfmri_5_fm_complete",
+                "isAbout": "iqc_rsfmri_5_fm_complete"
+            },
+            {
+                "variableName": "iqc_rsfmri_5_fm_invalid",
+                "isAbout": "iqc_rsfmri_5_fm_invalid"
+            },
+            {
+                "variableName": "iqc_rsfmri_5_fm_missing",
+                "isAbout": "iqc_rsfmri_5_fm_missing"
+            },
+            {
+                "variableName": "iqc_rsfmri_5_fm_pc_score",
+                "isAbout": "iqc_rsfmri_5_fm_pc_score"
+            },
+            {
+                "variableName": "iqc_rsfmri_5_fm_qc_score",
+                "isAbout": "iqc_rsfmri_5_fm_qc_score"
+            },
+            {
+                "variableName": "iqc_rsfmri_5_fm_wronglocus",
+                "isAbout": "iqc_rsfmri_5_fm_wronglocus"
+            },
+            {
+                "variableName": "iqc_rsfmri_5_fwhm_x",
+                "isAbout": "iqc_rsfmri_5_fwhm_x"
+            },
+            {
+                "variableName": "iqc_rsfmri_5_fwhm_y",
+                "isAbout": "iqc_rsfmri_5_fwhm_y"
+            },
+            {
+                "variableName": "iqc_rsfmri_5_fwhm_z",
+                "isAbout": "iqc_rsfmri_5_fwhm_z"
+            },
+            {
+                "variableName": "iqc_rsfmri_5_mean_motion",
+                "isAbout": "iqc_rsfmri_5_mean_motion"
+            },
+            {
+                "variableName": "iqc_rsfmri_5_mean_motion_filt",
+                "isAbout": "iqc_rsfmri_5_mean_motion_filt"
+            },
+            {
+                "variableName": "iqc_rsfmri_5_mean_motion_nody",
+                "isAbout": "iqc_rsfmri_5_mean_motion_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_5_mm_filt_nody",
+                "isAbout": "iqc_rsfmri_5_mm_filt_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_5_nreps",
+                "isAbout": "iqc_rsfmri_5_nreps"
+            },
+            {
+                "variableName": "iqc_rsfmri_5_pc_score",
+                "isAbout": "iqc_rsfmri_5_pc_score"
+            },
+            {
+                "variableName": "iqc_rsfmri_5_qc_score",
+                "isAbout": "iqc_rsfmri_5_qc_score"
+            },
+            {
+                "variableName": "iqc_rsfmri_5_seriestime",
+                "isAbout": "iqc_rsfmri_5_seriestime"
+            },
+            {
+                "variableName": "iqc_rsfmri_5_seuid",
+                "isAbout": "iqc_rsfmri_5_seuid"
+            },
+            {
+                "variableName": "iqc_rsfmri_5_studydate",
+                "isAbout": "iqc_rsfmri_5_studydate"
+            },
+            {
+                "variableName": "iqc_rsfmri_5_sub_02",
+                "isAbout": "iqc_rsfmri_5_sub_02"
+            },
+            {
+                "variableName": "iqc_rsfmri_5_sub_02_filt",
+                "isAbout": "iqc_rsfmri_5_sub_02_filt"
+            },
+            {
+                "variableName": "iqc_rsfmri_5_sub_02_filt_nody",
+                "isAbout": "iqc_rsfmri_5_sub_02_filt_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_5_sub_02_nody",
+                "isAbout": "iqc_rsfmri_5_sub_02_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_5_suid",
+                "isAbout": "iqc_rsfmri_5_suid"
+            },
+            {
+                "variableName": "iqc_rsfmri_5_tr",
+                "isAbout": "iqc_rsfmri_5_tr"
+            },
+            {
+                "variableName": "iqc_rsfmri_5_voxvol",
+                "isAbout": "iqc_rsfmri_5_voxvol"
+            },
+            {
+                "variableName": "iqc_rsfmri_6_brain_mean",
+                "isAbout": "iqc_rsfmri_6_brain_mean"
+            },
+            {
+                "variableName": "iqc_rsfmri_6_brain_std",
+                "isAbout": "iqc_rsfmri_6_brain_std"
+            },
+            {
+                "variableName": "iqc_rsfmri_6_brain_tsnr_mean",
+                "isAbout": "iqc_rsfmri_6_brain_tsnr_mean"
+            },
+            {
+                "variableName": "iqc_rsfmri_6_brain_tsnr_median",
+                "isAbout": "iqc_rsfmri_6_brain_tsnr_median"
+            },
+            {
+                "variableName": "iqc_rsfmri_6_brain_tsnr_std",
+                "isAbout": "iqc_rsfmri_6_brain_tsnr_std"
+            },
+            {
+                "variableName": "iqc_rsfmri_6_brainvol",
+                "isAbout": "iqc_rsfmri_6_brainvol"
+            },
+            {
+                "variableName": "iqc_rsfmri_6_complete",
+                "isAbout": "iqc_rsfmri_6_complete"
+            },
+            {
+                "variableName": "iqc_rsfmri_6_fm_complete",
+                "isAbout": "iqc_rsfmri_6_fm_complete"
+            },
+            {
+                "variableName": "iqc_rsfmri_6_fm_invalid",
+                "isAbout": "iqc_rsfmri_6_fm_invalid"
+            },
+            {
+                "variableName": "iqc_rsfmri_6_fm_missing",
+                "isAbout": "iqc_rsfmri_6_fm_missing"
+            },
+            {
+                "variableName": "iqc_rsfmri_6_fm_pc_score",
+                "isAbout": "iqc_rsfmri_6_fm_pc_score"
+            },
+            {
+                "variableName": "iqc_rsfmri_6_fm_qc_score",
+                "isAbout": "iqc_rsfmri_6_fm_qc_score"
+            },
+            {
+                "variableName": "iqc_rsfmri_6_fm_wronglocus",
+                "isAbout": "iqc_rsfmri_6_fm_wronglocus"
+            },
+            {
+                "variableName": "iqc_rsfmri_6_fwhm_x",
+                "isAbout": "iqc_rsfmri_6_fwhm_x"
+            },
+            {
+                "variableName": "iqc_rsfmri_6_fwhm_y",
+                "isAbout": "iqc_rsfmri_6_fwhm_y"
+            },
+            {
+                "variableName": "iqc_rsfmri_6_fwhm_z",
+                "isAbout": "iqc_rsfmri_6_fwhm_z"
+            },
+            {
+                "variableName": "iqc_rsfmri_6_mean_motion",
+                "isAbout": "iqc_rsfmri_6_mean_motion"
+            },
+            {
+                "variableName": "iqc_rsfmri_6_mean_motion_filt",
+                "isAbout": "iqc_rsfmri_6_mean_motion_filt"
+            },
+            {
+                "variableName": "iqc_rsfmri_6_mean_motion_nody",
+                "isAbout": "iqc_rsfmri_6_mean_motion_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_6_mm_filt_nody",
+                "isAbout": "iqc_rsfmri_6_mm_filt_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_6_nreps",
+                "isAbout": "iqc_rsfmri_6_nreps"
+            },
+            {
+                "variableName": "iqc_rsfmri_6_pc_score",
+                "isAbout": "iqc_rsfmri_6_pc_score"
+            },
+            {
+                "variableName": "iqc_rsfmri_6_qc_score",
+                "isAbout": "iqc_rsfmri_6_qc_score"
+            },
+            {
+                "variableName": "iqc_rsfmri_6_seriestime",
+                "isAbout": "iqc_rsfmri_6_seriestime"
+            },
+            {
+                "variableName": "iqc_rsfmri_6_seuid",
+                "isAbout": "iqc_rsfmri_6_seuid"
+            },
+            {
+                "variableName": "iqc_rsfmri_6_studydate",
+                "isAbout": "iqc_rsfmri_6_studydate"
+            },
+            {
+                "variableName": "iqc_rsfmri_6_sub_02",
+                "isAbout": "iqc_rsfmri_6_sub_02"
+            },
+            {
+                "variableName": "iqc_rsfmri_6_sub_02_filt",
+                "isAbout": "iqc_rsfmri_6_sub_02_filt"
+            },
+            {
+                "variableName": "iqc_rsfmri_6_sub_02_filt_nody",
+                "isAbout": "iqc_rsfmri_6_sub_02_filt_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_6_sub_02_nody",
+                "isAbout": "iqc_rsfmri_6_sub_02_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_6_suid",
+                "isAbout": "iqc_rsfmri_6_suid"
+            },
+            {
+                "variableName": "iqc_rsfmri_6_tr",
+                "isAbout": "iqc_rsfmri_6_tr"
+            },
+            {
+                "variableName": "iqc_rsfmri_6_voxvol",
+                "isAbout": "iqc_rsfmri_6_voxvol"
+            },
+            {
+                "variableName": "iqc_rsfmri_7_brain_mean",
+                "isAbout": "iqc_rsfmri_7_brain_mean"
+            },
+            {
+                "variableName": "iqc_rsfmri_7_brain_std",
+                "isAbout": "iqc_rsfmri_7_brain_std"
+            },
+            {
+                "variableName": "iqc_rsfmri_7_brain_tsnr_mean",
+                "isAbout": "iqc_rsfmri_7_brain_tsnr_mean"
+            },
+            {
+                "variableName": "iqc_rsfmri_7_brain_tsnr_median",
+                "isAbout": "iqc_rsfmri_7_brain_tsnr_median"
+            },
+            {
+                "variableName": "iqc_rsfmri_7_brain_tsnr_std",
+                "isAbout": "iqc_rsfmri_7_brain_tsnr_std"
+            },
+            {
+                "variableName": "iqc_rsfmri_7_brainvol",
+                "isAbout": "iqc_rsfmri_7_brainvol"
+            },
+            {
+                "variableName": "iqc_rsfmri_7_complete",
+                "isAbout": "iqc_rsfmri_7_complete"
+            },
+            {
+                "variableName": "iqc_rsfmri_7_fm_complete",
+                "isAbout": "iqc_rsfmri_7_fm_complete"
+            },
+            {
+                "variableName": "iqc_rsfmri_7_fm_invalid",
+                "isAbout": "iqc_rsfmri_7_fm_invalid"
+            },
+            {
+                "variableName": "iqc_rsfmri_7_fm_missing",
+                "isAbout": "iqc_rsfmri_7_fm_missing"
+            },
+            {
+                "variableName": "iqc_rsfmri_7_fm_pc_score",
+                "isAbout": "iqc_rsfmri_7_fm_pc_score"
+            },
+            {
+                "variableName": "iqc_rsfmri_7_fm_qc_score",
+                "isAbout": "iqc_rsfmri_7_fm_qc_score"
+            },
+            {
+                "variableName": "iqc_rsfmri_7_fm_wronglocus",
+                "isAbout": "iqc_rsfmri_7_fm_wronglocus"
+            },
+            {
+                "variableName": "iqc_rsfmri_7_fwhm_x",
+                "isAbout": "iqc_rsfmri_7_fwhm_x"
+            },
+            {
+                "variableName": "iqc_rsfmri_7_fwhm_y",
+                "isAbout": "iqc_rsfmri_7_fwhm_y"
+            },
+            {
+                "variableName": "iqc_rsfmri_7_fwhm_z",
+                "isAbout": "iqc_rsfmri_7_fwhm_z"
+            },
+            {
+                "variableName": "iqc_rsfmri_7_mean_motion",
+                "isAbout": "iqc_rsfmri_7_mean_motion"
+            },
+            {
+                "variableName": "iqc_rsfmri_7_mean_motion_filt",
+                "isAbout": "iqc_rsfmri_7_mean_motion_filt"
+            },
+            {
+                "variableName": "iqc_rsfmri_7_mean_motion_nody",
+                "isAbout": "iqc_rsfmri_7_mean_motion_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_7_mm_filt_nody",
+                "isAbout": "iqc_rsfmri_7_mm_filt_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_7_nreps",
+                "isAbout": "iqc_rsfmri_7_nreps"
+            },
+            {
+                "variableName": "iqc_rsfmri_7_pc_score",
+                "isAbout": "iqc_rsfmri_7_pc_score"
+            },
+            {
+                "variableName": "iqc_rsfmri_7_qc_score",
+                "isAbout": "iqc_rsfmri_7_qc_score"
+            },
+            {
+                "variableName": "iqc_rsfmri_7_seriestime",
+                "isAbout": "iqc_rsfmri_7_seriestime"
+            },
+            {
+                "variableName": "iqc_rsfmri_7_seuid",
+                "isAbout": "iqc_rsfmri_7_seuid"
+            },
+            {
+                "variableName": "iqc_rsfmri_7_studydate",
+                "isAbout": "iqc_rsfmri_7_studydate"
+            },
+            {
+                "variableName": "iqc_rsfmri_7_sub_02",
+                "isAbout": "iqc_rsfmri_7_sub_02"
+            },
+            {
+                "variableName": "iqc_rsfmri_7_sub_02_filt",
+                "isAbout": "iqc_rsfmri_7_sub_02_filt"
+            },
+            {
+                "variableName": "iqc_rsfmri_7_sub_02_filt_nody",
+                "isAbout": "iqc_rsfmri_7_sub_02_filt_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_7_sub_02_nody",
+                "isAbout": "iqc_rsfmri_7_sub_02_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_7_suid",
+                "isAbout": "iqc_rsfmri_7_suid"
+            },
+            {
+                "variableName": "iqc_rsfmri_7_tr",
+                "isAbout": "iqc_rsfmri_7_tr"
+            },
+            {
+                "variableName": "iqc_rsfmri_7_voxvol",
+                "isAbout": "iqc_rsfmri_7_voxvol"
+            },
+            {
+                "variableName": "iqc_rsfmri_8_brain_mean",
+                "isAbout": "iqc_rsfmri_8_brain_mean"
+            },
+            {
+                "variableName": "iqc_rsfmri_8_brain_std",
+                "isAbout": "iqc_rsfmri_8_brain_std"
+            },
+            {
+                "variableName": "iqc_rsfmri_8_brain_tsnr_mean",
+                "isAbout": "iqc_rsfmri_8_brain_tsnr_mean"
+            },
+            {
+                "variableName": "iqc_rsfmri_8_brain_tsnr_median",
+                "isAbout": "iqc_rsfmri_8_brain_tsnr_median"
+            },
+            {
+                "variableName": "iqc_rsfmri_8_brain_tsnr_std",
+                "isAbout": "iqc_rsfmri_8_brain_tsnr_std"
+            },
+            {
+                "variableName": "iqc_rsfmri_8_brainvol",
+                "isAbout": "iqc_rsfmri_8_brainvol"
+            },
+            {
+                "variableName": "iqc_rsfmri_8_complete",
+                "isAbout": "iqc_rsfmri_8_complete"
+            },
+            {
+                "variableName": "iqc_rsfmri_8_fm_complete",
+                "isAbout": "iqc_rsfmri_8_fm_complete"
+            },
+            {
+                "variableName": "iqc_rsfmri_8_fm_invalid",
+                "isAbout": "iqc_rsfmri_8_fm_invalid"
+            },
+            {
+                "variableName": "iqc_rsfmri_8_fm_missing",
+                "isAbout": "iqc_rsfmri_8_fm_missing"
+            },
+            {
+                "variableName": "iqc_rsfmri_8_fm_pc_score",
+                "isAbout": "iqc_rsfmri_8_fm_pc_score"
+            },
+            {
+                "variableName": "iqc_rsfmri_8_fm_qc_score",
+                "isAbout": "iqc_rsfmri_8_fm_qc_score"
+            },
+            {
+                "variableName": "iqc_rsfmri_8_fm_wronglocus",
+                "isAbout": "iqc_rsfmri_8_fm_wronglocus"
+            },
+            {
+                "variableName": "iqc_rsfmri_8_fwhm_x",
+                "isAbout": "iqc_rsfmri_8_fwhm_x"
+            },
+            {
+                "variableName": "iqc_rsfmri_8_fwhm_y",
+                "isAbout": "iqc_rsfmri_8_fwhm_y"
+            },
+            {
+                "variableName": "iqc_rsfmri_8_fwhm_z",
+                "isAbout": "iqc_rsfmri_8_fwhm_z"
+            },
+            {
+                "variableName": "iqc_rsfmri_8_mean_motion",
+                "isAbout": "iqc_rsfmri_8_mean_motion"
+            },
+            {
+                "variableName": "iqc_rsfmri_8_mean_motion_filt",
+                "isAbout": "iqc_rsfmri_8_mean_motion_filt"
+            },
+            {
+                "variableName": "iqc_rsfmri_8_mean_motion_nody",
+                "isAbout": "iqc_rsfmri_8_mean_motion_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_8_mm_filt_nody",
+                "isAbout": "iqc_rsfmri_8_mm_filt_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_8_nreps",
+                "isAbout": "iqc_rsfmri_8_nreps"
+            },
+            {
+                "variableName": "iqc_rsfmri_8_pc_score",
+                "isAbout": "iqc_rsfmri_8_pc_score"
+            },
+            {
+                "variableName": "iqc_rsfmri_8_qc_score",
+                "isAbout": "iqc_rsfmri_8_qc_score"
+            },
+            {
+                "variableName": "iqc_rsfmri_8_seriestime",
+                "isAbout": "iqc_rsfmri_8_seriestime"
+            },
+            {
+                "variableName": "iqc_rsfmri_8_seuid",
+                "isAbout": "iqc_rsfmri_8_seuid"
+            },
+            {
+                "variableName": "iqc_rsfmri_8_studydate",
+                "isAbout": "iqc_rsfmri_8_studydate"
+            },
+            {
+                "variableName": "iqc_rsfmri_8_sub_02",
+                "isAbout": "iqc_rsfmri_8_sub_02"
+            },
+            {
+                "variableName": "iqc_rsfmri_8_sub_02_filt",
+                "isAbout": "iqc_rsfmri_8_sub_02_filt"
+            },
+            {
+                "variableName": "iqc_rsfmri_8_sub_02_filt_nody",
+                "isAbout": "iqc_rsfmri_8_sub_02_filt_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_8_sub_02_nody",
+                "isAbout": "iqc_rsfmri_8_sub_02_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_8_suid",
+                "isAbout": "iqc_rsfmri_8_suid"
+            },
+            {
+                "variableName": "iqc_rsfmri_8_tr",
+                "isAbout": "iqc_rsfmri_8_tr"
+            },
+            {
+                "variableName": "iqc_rsfmri_8_voxvol",
+                "isAbout": "iqc_rsfmri_8_voxvol"
+            },
+            {
+                "variableName": "iqc_rsfmri_9_brain_mean",
+                "isAbout": "iqc_rsfmri_9_brain_mean"
+            },
+            {
+                "variableName": "iqc_rsfmri_9_brain_std",
+                "isAbout": "iqc_rsfmri_9_brain_std"
+            },
+            {
+                "variableName": "iqc_rsfmri_9_brain_tsnr_mean",
+                "isAbout": "iqc_rsfmri_9_brain_tsnr_mean"
+            },
+            {
+                "variableName": "iqc_rsfmri_9_brain_tsnr_median",
+                "isAbout": "iqc_rsfmri_9_brain_tsnr_median"
+            },
+            {
+                "variableName": "iqc_rsfmri_9_brain_tsnr_std",
+                "isAbout": "iqc_rsfmri_9_brain_tsnr_std"
+            },
+            {
+                "variableName": "iqc_rsfmri_9_brainvol",
+                "isAbout": "iqc_rsfmri_9_brainvol"
+            },
+            {
+                "variableName": "iqc_rsfmri_9_complete",
+                "isAbout": "iqc_rsfmri_9_complete"
+            },
+            {
+                "variableName": "iqc_rsfmri_9_fm_complete",
+                "isAbout": "iqc_rsfmri_9_fm_complete"
+            },
+            {
+                "variableName": "iqc_rsfmri_9_fm_invalid",
+                "isAbout": "iqc_rsfmri_9_fm_invalid"
+            },
+            {
+                "variableName": "iqc_rsfmri_9_fm_missing",
+                "isAbout": "iqc_rsfmri_9_fm_missing"
+            },
+            {
+                "variableName": "iqc_rsfmri_9_fm_pc_score",
+                "isAbout": "iqc_rsfmri_9_fm_pc_score"
+            },
+            {
+                "variableName": "iqc_rsfmri_9_fm_qc_score",
+                "isAbout": "iqc_rsfmri_9_fm_qc_score"
+            },
+            {
+                "variableName": "iqc_rsfmri_9_fm_wronglocus",
+                "isAbout": "iqc_rsfmri_9_fm_wronglocus"
+            },
+            {
+                "variableName": "iqc_rsfmri_9_fwhm_x",
+                "isAbout": "iqc_rsfmri_9_fwhm_x"
+            },
+            {
+                "variableName": "iqc_rsfmri_9_fwhm_y",
+                "isAbout": "iqc_rsfmri_9_fwhm_y"
+            },
+            {
+                "variableName": "iqc_rsfmri_9_fwhm_z",
+                "isAbout": "iqc_rsfmri_9_fwhm_z"
+            },
+            {
+                "variableName": "iqc_rsfmri_9_mean_motion",
+                "isAbout": "iqc_rsfmri_9_mean_motion"
+            },
+            {
+                "variableName": "iqc_rsfmri_9_mean_motion_filt",
+                "isAbout": "iqc_rsfmri_9_mean_motion_filt"
+            },
+            {
+                "variableName": "iqc_rsfmri_9_mean_motion_nody",
+                "isAbout": "iqc_rsfmri_9_mean_motion_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_9_mm_filt_nody",
+                "isAbout": "iqc_rsfmri_9_mm_filt_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_9_nreps",
+                "isAbout": "iqc_rsfmri_9_nreps"
+            },
+            {
+                "variableName": "iqc_rsfmri_9_pc_score",
+                "isAbout": "iqc_rsfmri_9_pc_score"
+            },
+            {
+                "variableName": "iqc_rsfmri_9_qc_score",
+                "isAbout": "iqc_rsfmri_9_qc_score"
+            },
+            {
+                "variableName": "iqc_rsfmri_9_seriestime",
+                "isAbout": "iqc_rsfmri_9_seriestime"
+            },
+            {
+                "variableName": "iqc_rsfmri_9_seuid",
+                "isAbout": "iqc_rsfmri_9_seuid"
+            },
+            {
+                "variableName": "iqc_rsfmri_9_studydate",
+                "isAbout": "iqc_rsfmri_9_studydate"
+            },
+            {
+                "variableName": "iqc_rsfmri_9_sub_02",
+                "isAbout": "iqc_rsfmri_9_sub_02"
+            },
+            {
+                "variableName": "iqc_rsfmri_9_sub_02_filt",
+                "isAbout": "iqc_rsfmri_9_sub_02_filt"
+            },
+            {
+                "variableName": "iqc_rsfmri_9_sub_02_filt_nody",
+                "isAbout": "iqc_rsfmri_9_sub_02_filt_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_9_sub_02_nody",
+                "isAbout": "iqc_rsfmri_9_sub_02_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_9_suid",
+                "isAbout": "iqc_rsfmri_9_suid"
+            },
+            {
+                "variableName": "iqc_rsfmri_9_tr",
+                "isAbout": "iqc_rsfmri_9_tr"
+            },
+            {
+                "variableName": "iqc_rsfmri_9_voxvol",
+                "isAbout": "iqc_rsfmri_9_voxvol"
+            },
+            {
+                "variableName": "iqc_rsfmri_all_b_tsnr_median",
+                "isAbout": "iqc_rsfmri_all_b_tsnr_median"
+            },
+            {
+                "variableName": "iqc_rsfmri_all_brain_mean",
+                "isAbout": "iqc_rsfmri_all_brain_mean"
+            },
+            {
+                "variableName": "iqc_rsfmri_all_brain_std",
+                "isAbout": "iqc_rsfmri_all_brain_std"
+            },
+            {
+                "variableName": "iqc_rsfmri_all_brain_tsnr_mean",
+                "isAbout": "iqc_rsfmri_all_brain_tsnr_mean"
+            },
+            {
+                "variableName": "iqc_rsfmri_all_brain_tsnr_std",
+                "isAbout": "iqc_rsfmri_all_brain_tsnr_std"
+            },
+            {
+                "variableName": "iqc_rsfmri_all_brainvol",
+                "isAbout": "iqc_rsfmri_all_brainvol"
+            },
+            {
+                "variableName": "iqc_rsfmri_all_fwhm_x",
+                "isAbout": "iqc_rsfmri_all_fwhm_x"
+            },
+            {
+                "variableName": "iqc_rsfmri_all_fwhm_y",
+                "isAbout": "iqc_rsfmri_all_fwhm_y"
+            },
+            {
+                "variableName": "iqc_rsfmri_all_fwhm_z",
+                "isAbout": "iqc_rsfmri_all_fwhm_z"
+            },
+            {
+                "variableName": "iqc_rsfmri_all_mean_motion",
+                "isAbout": "iqc_rsfmri_all_mean_motion"
+            },
+            {
+                "variableName": "iqc_rsfmri_all_mm_filt",
+                "isAbout": "iqc_rsfmri_all_mm_filt"
+            },
+            {
+                "variableName": "iqc_rsfmri_all_mm_filt_nody",
+                "isAbout": "iqc_rsfmri_all_mm_filt_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_all_mm_nody",
+                "isAbout": "iqc_rsfmri_all_mm_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_all_nreps",
+                "isAbout": "iqc_rsfmri_all_nreps"
+            },
+            {
+                "variableName": "iqc_rsfmri_all_tr",
+                "isAbout": "iqc_rsfmri_all_tr"
+            },
+            {
+                "variableName": "iqc_rsfmri_all_voxvol",
+                "isAbout": "iqc_rsfmri_all_voxvol"
+            },
+            {
+                "variableName": "iqc_rsfmri_bad_ser",
+                "isAbout": "iqc_rsfmri_bad_ser"
+            },
+            {
+                "variableName": "iqc_rsfmri_dark_qc",
+                "isAbout": "iqc_rsfmri_dark_qc"
+            },
+            {
+                "variableName": "iqc_rsfmri_dco_qc",
+                "isAbout": "iqc_rsfmri_dco_qc"
+            },
+            {
+                "variableName": "iqc_rsfmri_dis_qc",
+                "isAbout": "iqc_rsfmri_dis_qc"
+            },
+            {
+                "variableName": "iqc_rsfmri_fa_qc",
+                "isAbout": "iqc_rsfmri_fa_qc"
+            },
+            {
+                "variableName": "iqc_rsfmri_fm_dark_qc",
+                "isAbout": "iqc_rsfmri_fm_dark_qc"
+            },
+            {
+                "variableName": "iqc_rsfmri_fm_dco_qc",
+                "isAbout": "iqc_rsfmri_fm_dco_qc"
+            },
+            {
+                "variableName": "iqc_rsfmri_fm_dis_qc",
+                "isAbout": "iqc_rsfmri_fm_dis_qc"
+            },
+            {
+                "variableName": "iqc_rsfmri_fm_fa_qc",
+                "isAbout": "iqc_rsfmri_fm_fa_qc"
+            },
+            {
+                "variableName": "iqc_rsfmri_fm_gh_qc",
+                "isAbout": "iqc_rsfmri_fm_gh_qc"
+            },
+            {
+                "variableName": "iqc_rsfmri_fm_hb_qc",
+                "isAbout": "iqc_rsfmri_fm_hb_qc"
+            },
+            {
+                "variableName": "iqc_rsfmri_fm_ht_qc",
+                "isAbout": "iqc_rsfmri_fm_ht_qc"
+            },
+            {
+                "variableName": "iqc_rsfmri_fm_incomp",
+                "isAbout": "iqc_rsfmri_fm_incomp"
+            },
+            {
+                "variableName": "iqc_rsfmri_fm_invalid",
+                "isAbout": "iqc_rsfmri_fm_invalid"
+            },
+            {
+                "variableName": "iqc_rsfmri_fm_miss_qc",
+                "isAbout": "iqc_rsfmri_fm_miss_qc"
+            },
+            {
+                "variableName": "iqc_rsfmri_fm_missing",
+                "isAbout": "iqc_rsfmri_fm_missing"
+            },
+            {
+                "variableName": "iqc_rsfmri_fm_mo_qc",
+                "isAbout": "iqc_rsfmri_fm_mo_qc"
+            },
+            {
+                "variableName": "iqc_rsfmri_fm_moire_qc",
+                "isAbout": "iqc_rsfmri_fm_moire_qc"
+            },
+            {
+                "variableName": "iqc_rsfmri_fm_other_qc",
+                "isAbout": "iqc_rsfmri_fm_other_qc"
+            },
+            {
+                "variableName": "iqc_rsfmri_fm_pc_issues",
+                "isAbout": "iqc_rsfmri_fm_pc_issues"
+            },
+            {
+                "variableName": "iqc_rsfmri_fm_qcs",
+                "isAbout": "iqc_rsfmri_fm_qcs"
+            },
+            {
+                "variableName": "iqc_rsfmri_fm_recon_qc",
+                "isAbout": "iqc_rsfmri_fm_recon_qc"
+            },
+            {
+                "variableName": "iqc_rsfmri_fm_rf_qc",
+                "isAbout": "iqc_rsfmri_fm_rf_qc"
+            },
+            {
+                "variableName": "iqc_rsfmri_fm_sd_qc",
+                "isAbout": "iqc_rsfmri_fm_sd_qc"
+            },
+            {
+                "variableName": "iqc_rsfmri_fm_si_qc",
+                "isAbout": "iqc_rsfmri_fm_si_qc"
+            },
+            {
+                "variableName": "iqc_rsfmri_fm_slice_qc",
+                "isAbout": "iqc_rsfmri_fm_slice_qc"
+            },
+            {
+                "variableName": "iqc_rsfmri_fm_sus_qc",
+                "isAbout": "iqc_rsfmri_fm_sus_qc"
+            },
+            {
+                "variableName": "iqc_rsfmri_fm_vco_qc",
+                "isAbout": "iqc_rsfmri_fm_vco_qc"
+            },
+            {
+                "variableName": "iqc_rsfmri_fm_wr_qc",
+                "isAbout": "iqc_rsfmri_fm_wr_qc"
+            },
+            {
+                "variableName": "iqc_rsfmri_fm_wronglocus",
+                "isAbout": "iqc_rsfmri_fm_wronglocus"
+            },
+            {
+                "variableName": "iqc_rsfmri_gh_qc",
+                "isAbout": "iqc_rsfmri_gh_qc"
+            },
+            {
+                "variableName": "iqc_rsfmri_good_ser",
+                "isAbout": "iqc_rsfmri_good_ser"
+            },
+            {
+                "variableName": "iqc_rsfmri_good_ser_wofm",
+                "isAbout": "iqc_rsfmri_good_ser_wofm"
+            },
+            {
+                "variableName": "iqc_rsfmri_hb_qc",
+                "isAbout": "iqc_rsfmri_hb_qc"
+            },
+            {
+                "variableName": "iqc_rsfmri_ht_qc",
+                "isAbout": "iqc_rsfmri_ht_qc"
+            },
+            {
+                "variableName": "iqc_rsfmri_miss_qc",
+                "isAbout": "iqc_rsfmri_miss_qc"
+            },
+            {
+                "variableName": "iqc_rsfmri_mo_qc",
+                "isAbout": "iqc_rsfmri_mo_qc"
+            },
+            {
+                "variableName": "iqc_rsfmri_moire_qc",
+                "isAbout": "iqc_rsfmri_moire_qc"
+            },
+            {
+                "variableName": "iqc_rsfmri_ok_b_tsnr_median",
+                "isAbout": "iqc_rsfmri_ok_b_tsnr_median"
+            },
+            {
+                "variableName": "iqc_rsfmri_ok_brain_mean",
+                "isAbout": "iqc_rsfmri_ok_brain_mean"
+            },
+            {
+                "variableName": "iqc_rsfmri_ok_brain_std",
+                "isAbout": "iqc_rsfmri_ok_brain_std"
+            },
+            {
+                "variableName": "iqc_rsfmri_ok_brain_tsnr_mean",
+                "isAbout": "iqc_rsfmri_ok_brain_tsnr_mean"
+            },
+            {
+                "variableName": "iqc_rsfmri_ok_brain_tsnr_std",
+                "isAbout": "iqc_rsfmri_ok_brain_tsnr_std"
+            },
+            {
+                "variableName": "iqc_rsfmri_ok_brainvol",
+                "isAbout": "iqc_rsfmri_ok_brainvol"
+            },
+            {
+                "variableName": "iqc_rsfmri_ok_fwhm_x",
+                "isAbout": "iqc_rsfmri_ok_fwhm_x"
+            },
+            {
+                "variableName": "iqc_rsfmri_ok_fwhm_y",
+                "isAbout": "iqc_rsfmri_ok_fwhm_y"
+            },
+            {
+                "variableName": "iqc_rsfmri_ok_fwhm_z",
+                "isAbout": "iqc_rsfmri_ok_fwhm_z"
+            },
+            {
+                "variableName": "iqc_rsfmri_ok_mean_motion",
+                "isAbout": "iqc_rsfmri_ok_mean_motion"
+            },
+            {
+                "variableName": "iqc_rsfmri_ok_mm_filt",
+                "isAbout": "iqc_rsfmri_ok_mm_filt"
+            },
+            {
+                "variableName": "iqc_rsfmri_ok_mm_filt_nody",
+                "isAbout": "iqc_rsfmri_ok_mm_filt_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_ok_mm_nody",
+                "isAbout": "iqc_rsfmri_ok_mm_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_ok_nreps",
+                "isAbout": "iqc_rsfmri_ok_nreps"
+            },
+            {
+                "variableName": "iqc_rsfmri_ok_ser",
+                "isAbout": "iqc_rsfmri_ok_ser"
+            },
+            {
+                "variableName": "iqc_rsfmri_ok_sub_02",
+                "isAbout": "iqc_rsfmri_ok_sub_02"
+            },
+            {
+                "variableName": "iqc_rsfmri_ok_sub_02_filt",
+                "isAbout": "iqc_rsfmri_ok_sub_02_filt"
+            },
+            {
+                "variableName": "iqc_rsfmri_ok_sub_02_filt_nody",
+                "isAbout": "iqc_rsfmri_ok_sub_02_filt_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_ok_sub_02_nody",
+                "isAbout": "iqc_rsfmri_ok_sub_02_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_ok_tr",
+                "isAbout": "iqc_rsfmri_ok_tr"
+            },
+            {
+                "variableName": "iqc_rsfmri_ok_voxvol",
+                "isAbout": "iqc_rsfmri_ok_voxvol"
+            },
+            {
+                "variableName": "iqc_rsfmri_other_qc",
+                "isAbout": "iqc_rsfmri_other_qc"
+            },
+            {
+                "variableName": "iqc_rsfmri_recon_qc",
+                "isAbout": "iqc_rsfmri_recon_qc"
+            },
+            {
+                "variableName": "iqc_rsfmri_rf_qc",
+                "isAbout": "iqc_rsfmri_rf_qc"
+            },
+            {
+                "variableName": "iqc_rsfmri_sd_qc",
+                "isAbout": "iqc_rsfmri_sd_qc"
+            },
+            {
+                "variableName": "iqc_rsfmri_ser_incomp",
+                "isAbout": "iqc_rsfmri_ser_incomp"
+            },
+            {
+                "variableName": "iqc_rsfmri_ser_pc_issues",
+                "isAbout": "iqc_rsfmri_ser_pc_issues"
+            },
+            {
+                "variableName": "iqc_rsfmri_ser_qcs",
+                "isAbout": "iqc_rsfmri_ser_qcs"
+            },
+            {
+                "variableName": "iqc_rsfmri_si_qc",
+                "isAbout": "iqc_rsfmri_si_qc"
+            },
+            {
+                "variableName": "iqc_rsfmri_slice_qc",
+                "isAbout": "iqc_rsfmri_slice_qc"
+            },
+            {
+                "variableName": "iqc_rsfmri_sus_qc",
+                "isAbout": "iqc_rsfmri_sus_qc"
+            },
+            {
+                "variableName": "iqc_rsfmri_tl_sub_02_filt_nody",
+                "isAbout": "iqc_rsfmri_tl_sub_02_filt_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_total_passpc",
+                "isAbout": "iqc_rsfmri_total_passpc"
+            },
+            {
+                "variableName": "iqc_rsfmri_total_passqc",
+                "isAbout": "iqc_rsfmri_total_passqc"
+            },
+            {
+                "variableName": "iqc_rsfmri_total_ser",
+                "isAbout": "iqc_rsfmri_total_ser"
+            },
+            {
+                "variableName": "iqc_rsfmri_total_sub_02",
+                "isAbout": "iqc_rsfmri_total_sub_02"
+            },
+            {
+                "variableName": "iqc_rsfmri_total_sub_02_filt",
+                "isAbout": "iqc_rsfmri_total_sub_02_filt"
+            },
+            {
+                "variableName": "iqc_rsfmri_total_sub_02_nody",
+                "isAbout": "iqc_rsfmri_total_sub_02_nody"
+            },
+            {
+                "variableName": "iqc_rsfmri_vco_qc",
+                "isAbout": "iqc_rsfmri_vco_qc"
+            },
+            {
+                "variableName": "iqc_rsfmri_wr_qc",
+                "isAbout": "iqc_rsfmri_wr_qc"
+            },
+            {
+                "variableName": "iqc_t1_1_brain_mean",
+                "isAbout": "iqc_t1_1_brain_mean"
+            },
+            {
+                "variableName": "iqc_t1_1_brain_std",
+                "isAbout": "iqc_t1_1_brain_std"
+            },
+            {
+                "variableName": "iqc_t1_1_brainvol",
+                "isAbout": "iqc_t1_1_brainvol"
+            },
+            {
+                "variableName": "iqc_t1_1_complete",
+                "isAbout": "iqc_t1_1_complete"
+            },
+            {
+                "variableName": "iqc_t1_1_pc_score",
+                "isAbout": "iqc_t1_1_pc_score"
+            },
+            {
+                "variableName": "iqc_t1_1_qc_score",
+                "isAbout": "iqc_t1_1_qc_score"
+            },
+            {
+                "variableName": "iqc_t1_1_seriestime",
+                "isAbout": "iqc_t1_1_seriestime"
+            },
+            {
+                "variableName": "iqc_t1_1_seuid",
+                "isAbout": "iqc_t1_1_seuid"
+            },
+            {
+                "variableName": "iqc_t1_1_studydate",
+                "isAbout": "iqc_t1_1_studydate"
+            },
+            {
+                "variableName": "iqc_t1_1_suid",
+                "isAbout": "iqc_t1_1_suid"
+            },
+            {
+                "variableName": "iqc_t1_1_voxvol",
+                "isAbout": "iqc_t1_1_voxvol"
+            },
+            {
+                "variableName": "iqc_t1_2_brain_mean",
+                "isAbout": "iqc_t1_2_brain_mean"
+            },
+            {
+                "variableName": "iqc_t1_2_brain_std",
+                "isAbout": "iqc_t1_2_brain_std"
+            },
+            {
+                "variableName": "iqc_t1_2_brainvol",
+                "isAbout": "iqc_t1_2_brainvol"
+            },
+            {
+                "variableName": "iqc_t1_2_complete",
+                "isAbout": "iqc_t1_2_complete"
+            },
+            {
+                "variableName": "iqc_t1_2_pc_score",
+                "isAbout": "iqc_t1_2_pc_score"
+            },
+            {
+                "variableName": "iqc_t1_2_qc_score",
+                "isAbout": "iqc_t1_2_qc_score"
+            },
+            {
+                "variableName": "iqc_t1_2_seriestime",
+                "isAbout": "iqc_t1_2_seriestime"
+            },
+            {
+                "variableName": "iqc_t1_2_seuid",
+                "isAbout": "iqc_t1_2_seuid"
+            },
+            {
+                "variableName": "iqc_t1_2_studydate",
+                "isAbout": "iqc_t1_2_studydate"
+            },
+            {
+                "variableName": "iqc_t1_2_suid",
+                "isAbout": "iqc_t1_2_suid"
+            },
+            {
+                "variableName": "iqc_t1_2_voxvol",
+                "isAbout": "iqc_t1_2_voxvol"
+            },
+            {
+                "variableName": "iqc_t1_3_brain_mean",
+                "isAbout": "iqc_t1_3_brain_mean"
+            },
+            {
+                "variableName": "iqc_t1_3_brain_std",
+                "isAbout": "iqc_t1_3_brain_std"
+            },
+            {
+                "variableName": "iqc_t1_3_brainvol",
+                "isAbout": "iqc_t1_3_brainvol"
+            },
+            {
+                "variableName": "iqc_t1_3_complete",
+                "isAbout": "iqc_t1_3_complete"
+            },
+            {
+                "variableName": "iqc_t1_3_pc_score",
+                "isAbout": "iqc_t1_3_pc_score"
+            },
+            {
+                "variableName": "iqc_t1_3_qc_score",
+                "isAbout": "iqc_t1_3_qc_score"
+            },
+            {
+                "variableName": "iqc_t1_3_seriestime",
+                "isAbout": "iqc_t1_3_seriestime"
+            },
+            {
+                "variableName": "iqc_t1_3_seuid",
+                "isAbout": "iqc_t1_3_seuid"
+            },
+            {
+                "variableName": "iqc_t1_3_studydate",
+                "isAbout": "iqc_t1_3_studydate"
+            },
+            {
+                "variableName": "iqc_t1_3_suid",
+                "isAbout": "iqc_t1_3_suid"
+            },
+            {
+                "variableName": "iqc_t1_3_voxvol",
+                "isAbout": "iqc_t1_3_voxvol"
+            },
+            {
+                "variableName": "iqc_t1_all_brain_mean",
+                "isAbout": "iqc_t1_all_brain_mean"
+            },
+            {
+                "variableName": "iqc_t1_all_brain_std",
+                "isAbout": "iqc_t1_all_brain_std"
+            },
+            {
+                "variableName": "iqc_t1_all_brainvol",
+                "isAbout": "iqc_t1_all_brainvol"
+            },
+            {
+                "variableName": "iqc_t1_all_voxvol",
+                "isAbout": "iqc_t1_all_voxvol"
+            },
+            {
+                "variableName": "iqc_t1_bad_ser",
+                "isAbout": "iqc_t1_bad_ser"
+            },
+            {
+                "variableName": "iqc_t1_dark_qc",
+                "isAbout": "iqc_t1_dark_qc"
+            },
+            {
+                "variableName": "iqc_t1_dco_qc",
+                "isAbout": "iqc_t1_dco_qc"
+            },
+            {
+                "variableName": "iqc_t1_dis_qc",
+                "isAbout": "iqc_t1_dis_qc"
+            },
+            {
+                "variableName": "iqc_t1_fa_qc",
+                "isAbout": "iqc_t1_fa_qc"
+            },
+            {
+                "variableName": "iqc_t1_gh_qc",
+                "isAbout": "iqc_t1_gh_qc"
+            },
+            {
+                "variableName": "iqc_t1_good_ser",
+                "isAbout": "iqc_t1_good_ser"
+            },
+            {
+                "variableName": "iqc_t1_hb_qc",
+                "isAbout": "iqc_t1_hb_qc"
+            },
+            {
+                "variableName": "iqc_t1_ht_qc",
+                "isAbout": "iqc_t1_ht_qc"
+            },
+            {
+                "variableName": "iqc_t1_miss_qc",
+                "isAbout": "iqc_t1_miss_qc"
+            },
+            {
+                "variableName": "iqc_t1_mo_qc",
+                "isAbout": "iqc_t1_mo_qc"
+            },
+            {
+                "variableName": "iqc_t1_moire_qc",
+                "isAbout": "iqc_t1_moire_qc"
+            },
+            {
+                "variableName": "iqc_t1_ok_brain_mean",
+                "isAbout": "iqc_t1_ok_brain_mean"
+            },
+            {
+                "variableName": "iqc_t1_ok_brain_std",
+                "isAbout": "iqc_t1_ok_brain_std"
+            },
+            {
+                "variableName": "iqc_t1_ok_brainvol",
+                "isAbout": "iqc_t1_ok_brainvol"
+            },
+            {
+                "variableName": "iqc_t1_ok_ser",
+                "isAbout": "iqc_t1_ok_ser"
+            },
+            {
+                "variableName": "iqc_t1_ok_voxvol",
+                "isAbout": "iqc_t1_ok_voxvol"
+            },
+            {
+                "variableName": "iqc_t1_other_qc",
+                "isAbout": "iqc_t1_other_qc"
+            },
+            {
+                "variableName": "iqc_t1_recon_qc",
+                "isAbout": "iqc_t1_recon_qc"
+            },
+            {
+                "variableName": "iqc_t1_rf_qc",
+                "isAbout": "iqc_t1_rf_qc"
+            },
+            {
+                "variableName": "iqc_t1_sd_qc",
+                "isAbout": "iqc_t1_sd_qc"
+            },
+            {
+                "variableName": "iqc_t1_ser_incomp",
+                "isAbout": "iqc_t1_ser_incomp"
+            },
+            {
+                "variableName": "iqc_t1_ser_pc_issues",
+                "isAbout": "iqc_t1_ser_pc_issues"
+            },
+            {
+                "variableName": "iqc_t1_ser_qcs",
+                "isAbout": "iqc_t1_ser_qcs"
+            },
+            {
+                "variableName": "iqc_t1_si_qc",
+                "isAbout": "iqc_t1_si_qc"
+            },
+            {
+                "variableName": "iqc_t1_slice_qc",
+                "isAbout": "iqc_t1_slice_qc"
+            },
+            {
+                "variableName": "iqc_t1_sus_qc",
+                "isAbout": "iqc_t1_sus_qc"
+            },
+            {
+                "variableName": "iqc_t1_total_passpc",
+                "isAbout": "iqc_t1_total_passpc"
+            },
+            {
+                "variableName": "iqc_t1_total_passqc",
+                "isAbout": "iqc_t1_total_passqc"
+            },
+            {
+                "variableName": "iqc_t1_total_ser",
+                "isAbout": "iqc_t1_total_ser"
+            },
+            {
+                "variableName": "iqc_t1_vco_qc",
+                "isAbout": "iqc_t1_vco_qc"
+            },
+            {
+                "variableName": "iqc_t1_wr_qc",
+                "isAbout": "iqc_t1_wr_qc"
+            },
+            {
+                "variableName": "iqc_t2_1_brain_mean",
+                "isAbout": "iqc_t2_1_brain_mean"
+            },
+            {
+                "variableName": "iqc_t2_1_brain_std",
+                "isAbout": "iqc_t2_1_brain_std"
+            },
+            {
+                "variableName": "iqc_t2_1_brainvol",
+                "isAbout": "iqc_t2_1_brainvol"
+            },
+            {
+                "variableName": "iqc_t2_1_complete",
+                "isAbout": "iqc_t2_1_complete"
+            },
+            {
+                "variableName": "iqc_t2_1_pc_score",
+                "isAbout": "iqc_t2_1_pc_score"
+            },
+            {
+                "variableName": "iqc_t2_1_qc_score",
+                "isAbout": "iqc_t2_1_qc_score"
+            },
+            {
+                "variableName": "iqc_t2_1_seriestime",
+                "isAbout": "iqc_t2_1_seriestime"
+            },
+            {
+                "variableName": "iqc_t2_1_seuid",
+                "isAbout": "iqc_t2_1_seuid"
+            },
+            {
+                "variableName": "iqc_t2_1_studydate",
+                "isAbout": "iqc_t2_1_studydate"
+            },
+            {
+                "variableName": "iqc_t2_1_suid",
+                "isAbout": "iqc_t2_1_suid"
+            },
+            {
+                "variableName": "iqc_t2_1_voxvol",
+                "isAbout": "iqc_t2_1_voxvol"
+            },
+            {
+                "variableName": "iqc_t2_2_brain_mean",
+                "isAbout": "iqc_t2_2_brain_mean"
+            },
+            {
+                "variableName": "iqc_t2_2_brain_std",
+                "isAbout": "iqc_t2_2_brain_std"
+            },
+            {
+                "variableName": "iqc_t2_2_brainvol",
+                "isAbout": "iqc_t2_2_brainvol"
+            },
+            {
+                "variableName": "iqc_t2_2_complete",
+                "isAbout": "iqc_t2_2_complete"
+            },
+            {
+                "variableName": "iqc_t2_2_pc_score",
+                "isAbout": "iqc_t2_2_pc_score"
+            },
+            {
+                "variableName": "iqc_t2_2_qc_score",
+                "isAbout": "iqc_t2_2_qc_score"
+            },
+            {
+                "variableName": "iqc_t2_2_seriestime",
+                "isAbout": "iqc_t2_2_seriestime"
+            },
+            {
+                "variableName": "iqc_t2_2_seuid",
+                "isAbout": "iqc_t2_2_seuid"
+            },
+            {
+                "variableName": "iqc_t2_2_studydate",
+                "isAbout": "iqc_t2_2_studydate"
+            },
+            {
+                "variableName": "iqc_t2_2_suid",
+                "isAbout": "iqc_t2_2_suid"
+            },
+            {
+                "variableName": "iqc_t2_2_voxvol",
+                "isAbout": "iqc_t2_2_voxvol"
+            },
+            {
+                "variableName": "iqc_t2_3_brain_mean",
+                "isAbout": "iqc_t2_3_brain_mean"
+            },
+            {
+                "variableName": "iqc_t2_3_brain_std",
+                "isAbout": "iqc_t2_3_brain_std"
+            },
+            {
+                "variableName": "iqc_t2_3_brainvol",
+                "isAbout": "iqc_t2_3_brainvol"
+            },
+            {
+                "variableName": "iqc_t2_3_complete",
+                "isAbout": "iqc_t2_3_complete"
+            },
+            {
+                "variableName": "iqc_t2_3_pc_score",
+                "isAbout": "iqc_t2_3_pc_score"
+            },
+            {
+                "variableName": "iqc_t2_3_qc_score",
+                "isAbout": "iqc_t2_3_qc_score"
+            },
+            {
+                "variableName": "iqc_t2_3_seriestime",
+                "isAbout": "iqc_t2_3_seriestime"
+            },
+            {
+                "variableName": "iqc_t2_3_seuid",
+                "isAbout": "iqc_t2_3_seuid"
+            },
+            {
+                "variableName": "iqc_t2_3_studydate",
+                "isAbout": "iqc_t2_3_studydate"
+            },
+            {
+                "variableName": "iqc_t2_3_suid",
+                "isAbout": "iqc_t2_3_suid"
+            },
+            {
+                "variableName": "iqc_t2_3_voxvol",
+                "isAbout": "iqc_t2_3_voxvol"
+            },
+            {
+                "variableName": "iqc_t2_all_brain_mean",
+                "isAbout": "iqc_t2_all_brain_mean"
+            },
+            {
+                "variableName": "iqc_t2_all_brain_std",
+                "isAbout": "iqc_t2_all_brain_std"
+            },
+            {
+                "variableName": "iqc_t2_all_brainvol",
+                "isAbout": "iqc_t2_all_brainvol"
+            },
+            {
+                "variableName": "iqc_t2_all_voxvol",
+                "isAbout": "iqc_t2_all_voxvol"
+            },
+            {
+                "variableName": "iqc_t2_bad_ser",
+                "isAbout": "iqc_t2_bad_ser"
+            },
+            {
+                "variableName": "iqc_t2_dark_qc",
+                "isAbout": "iqc_t2_dark_qc"
+            },
+            {
+                "variableName": "iqc_t2_dco_qc",
+                "isAbout": "iqc_t2_dco_qc"
+            },
+            {
+                "variableName": "iqc_t2_dis_qc",
+                "isAbout": "iqc_t2_dis_qc"
+            },
+            {
+                "variableName": "iqc_t2_fa_qc",
+                "isAbout": "iqc_t2_fa_qc"
+            },
+            {
+                "variableName": "iqc_t2_gh_qc",
+                "isAbout": "iqc_t2_gh_qc"
+            },
+            {
+                "variableName": "iqc_t2_good_ser",
+                "isAbout": "iqc_t2_good_ser"
+            },
+            {
+                "variableName": "iqc_t2_hb_qc",
+                "isAbout": "iqc_t2_hb_qc"
+            },
+            {
+                "variableName": "iqc_t2_ht_qc",
+                "isAbout": "iqc_t2_ht_qc"
+            },
+            {
+                "variableName": "iqc_t2_miss_qc",
+                "isAbout": "iqc_t2_miss_qc"
+            },
+            {
+                "variableName": "iqc_t2_mo_qc",
+                "isAbout": "iqc_t2_mo_qc"
+            },
+            {
+                "variableName": "iqc_t2_moire_qc",
+                "isAbout": "iqc_t2_moire_qc"
+            },
+            {
+                "variableName": "iqc_t2_ok_brain_mean",
+                "isAbout": "iqc_t2_ok_brain_mean"
+            },
+            {
+                "variableName": "iqc_t2_ok_brain_std",
+                "isAbout": "iqc_t2_ok_brain_std"
+            },
+            {
+                "variableName": "iqc_t2_ok_brainvol",
+                "isAbout": "iqc_t2_ok_brainvol"
+            },
+            {
+                "variableName": "iqc_t2_ok_ser",
+                "isAbout": "iqc_t2_ok_ser"
+            },
+            {
+                "variableName": "iqc_t2_ok_voxvol",
+                "isAbout": "iqc_t2_ok_voxvol"
+            },
+            {
+                "variableName": "iqc_t2_other_qc",
+                "isAbout": "iqc_t2_other_qc"
+            },
+            {
+                "variableName": "iqc_t2_recon_qc",
+                "isAbout": "iqc_t2_recon_qc"
+            },
+            {
+                "variableName": "iqc_t2_rf_qc",
+                "isAbout": "iqc_t2_rf_qc"
+            },
+            {
+                "variableName": "iqc_t2_sd_qc",
+                "isAbout": "iqc_t2_sd_qc"
+            },
+            {
+                "variableName": "iqc_t2_ser_incomp",
+                "isAbout": "iqc_t2_ser_incomp"
+            },
+            {
+                "variableName": "iqc_t2_ser_pc_issues",
+                "isAbout": "iqc_t2_ser_pc_issues"
+            },
+            {
+                "variableName": "iqc_t2_ser_qcs",
+                "isAbout": "iqc_t2_ser_qcs"
+            },
+            {
+                "variableName": "iqc_t2_si_qc",
+                "isAbout": "iqc_t2_si_qc"
+            },
+            {
+                "variableName": "iqc_t2_slice_qc",
+                "isAbout": "iqc_t2_slice_qc"
+            },
+            {
+                "variableName": "iqc_t2_sus_qc",
+                "isAbout": "iqc_t2_sus_qc"
+            },
+            {
+                "variableName": "iqc_t2_total_passpc",
+                "isAbout": "iqc_t2_total_passpc"
+            },
+            {
+                "variableName": "iqc_t2_total_passqc",
+                "isAbout": "iqc_t2_total_passqc"
+            },
+            {
+                "variableName": "iqc_t2_total_ser",
+                "isAbout": "iqc_t2_total_ser"
+            },
+            {
+                "variableName": "iqc_t2_vco_qc",
+                "isAbout": "iqc_t2_vco_qc"
+            },
+            {
+                "variableName": "iqc_t2_wr_qc",
+                "isAbout": "iqc_t2_wr_qc"
+            }
+        ]
+    }
+}

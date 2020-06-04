@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "isip_2_2",
+    "@type": "reproschema:Field",
+    "prefLabel": "isip_2_2",
+    "altLabel": "su_isip_2",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Did you continue to drink the alcoholic drink (and finish it) after the first sip?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "Yes",
+                "value": 1
+            },
+            {
+                "name": "No //You mentioned earlier that you have had a sip of alcohol in the past. I want to ask some more questions about that.",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes; 0 = No //You mentioned earlier that you have had a sip of alcohol in the past. I want to ask some more questions about that."
+        }
+    ]
+}

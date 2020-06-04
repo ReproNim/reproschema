@@ -1,0 +1,42 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "scrn_status_2",
+    "@type": "reproschema:Field",
+    "prefLabel": "scrn_status_2",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Screener Status",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 3,
+        "schema:maxValue": 0,
+        "choices": [
+            {
+                "name": "Delayed screening for age- SCHEDULE AD HOC EVENT FOR SCREENING",
+                "value": 3
+            },
+            {
+                "name": "Eligible",
+                "value": 0
+            },
+            {
+                "name": "Eligible- Delayed scheduling for dental",
+                "value": 1
+            },
+            {
+                "name": "Ineligible //  scrn_met_injremove   == 0 ",
+                "value": 2
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "3 = Delayed screening for age- SCHEDULE AD HOC EVENT FOR SCREENING; 0 = Eligible; 1 = Eligible- Delayed scheduling for dental; 2 = Ineligible //  scrn_met_injremove   == 0 ||  scrn_met_injmdnote   == 0 ||  scrn_met_excl   == 0 ||  scrn_nr_hair   == 1 ||  scrn_eyeliner   == 1 ||  scrn_nr_piercing   == 1 ||  scrn_claustrophob   == 2 ||  scrn_claustrophobexcl   == 1 ||  scrn_speakeng   == 0 ||  scrn_fluency   == 0 ||  scrn_percept_corr   == 0 ||  scrn_cpalsy   == 0 ||  scrn_tumor   == 0 ||  scrn_stroke   == 0 ||  scrn_aneurysm   == 0 ||  scrn_hemorrhage   == 0 ||  scrn_hemotoma   == 0 ||  scrn_con_excl   == 0 ||  scrn_gestage   == 1 ||  scrn_birthwt   == 1 ||  scrn_birthcomp_excl   == 0 ||  scrn_schiz   == 1 ||  scrn_asd_regclasses   == 0 ||  scrn_sud   == 1 ||  scrn_intdisab   == 1 ||  scrn_psych_excl   == 1 ||  scrn_concerns_excl   == 0 ||  scrn_tbi_loc   == 1 ||  scrn_tbi_mem   == 1 ||  scrn_tbi_scan_excl   == 0 ||  scrn_abn_scan   == 0 ||  scrn_seizure   == 1 ||  scrn_weight_mri   == 1  || ( scrn_met_injmdnote  <> 1 &&  scrn_met_excl  <> 2 &&  scrn_con_excl  <> 2 &&  scrn_psych_excl  <> 2 &&  scrn_birthcomp_excl  <> 2 &&  scrn_concerns_excl  <> 2 &&  scrn_abn_scan  <> 2 &&  scrn_braces  <> 2 &&  scrn_tbi_scan_excl  <> 2) ||  scrn_alt_status   == 2 ||  scrn_alt_status   == 3"
+        }
+    ]
+}

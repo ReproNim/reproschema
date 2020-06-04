@@ -1,0 +1,34 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "hair_results_unexpected",
+    "@type": "reproschema:Field",
+    "prefLabel": "hair_results_unexpected",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Unexpected result, based on self- and part-reported past-month meds and use?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "no/expected",
+                "value": 0
+            },
+            {
+                "name": "yes/unexpected",
+                "value": 1
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = no/expected; 1 = yes/unexpected"
+        }
+    ]
+}

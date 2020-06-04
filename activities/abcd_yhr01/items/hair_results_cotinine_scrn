@@ -1,0 +1,38 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "hair_results_cotinine_scrn",
+    "@type": "reproschema:Field",
+    "prefLabel": "hair_results_cotinine_scrn",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Cotinine",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "NEG",
+                "value": 0
+            },
+            {
+                "name": "POS",
+                "value": 1
+            },
+            {
+                "name": "QNS",
+                "value": 2
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = NEG; 1 = POS; 2 = QNS"
+        }
+    ]
+}

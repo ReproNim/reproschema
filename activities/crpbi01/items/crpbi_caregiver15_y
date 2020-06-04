@@ -1,0 +1,39 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "crpbi_caregiver15_y",
+    "@type": "reproschema:Field",
+    "prefLabel": "crpbi_caregiver15_y",
+    "altLabel": "crpbi_acceptance_caregiver15",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Second caregiver. Believes in showing his/her love for me.",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "name": "Not like him/her",
+                "value": 1
+            },
+            {
+                "name": "Somewhat like him/her",
+                "value": 2
+            },
+            {
+                "name": "A lot like him/her",
+                "value": 3
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Not like him/her; 2 = Somewhat like him/her; 3 = A lot like him/her"
+        }
+    ]
+}

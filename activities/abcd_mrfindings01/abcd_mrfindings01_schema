@@ -1,0 +1,33 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+        "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/activities/abcd_mrfindings01/abcd_mrfindings01_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "abcd_mrfindings01_schema",
+    "skos:prefLabel": "abcd_mrfindings01",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "order": [
+            "mrif_herniation",
+            "mrif_hydrocephalus",
+            "mrif_score"
+        ],
+        "shuffle": false,
+        "addProperties": [
+            {
+                "variableName": "mrif_herniation",
+                "isAbout": "mrif_herniation"
+            },
+            {
+                "variableName": "mrif_hydrocephalus",
+                "isAbout": "mrif_hydrocephalus"
+            },
+            {
+                "variableName": "mrif_score",
+                "isAbout": "mrif_score"
+            }
+        ]
+    }
+}

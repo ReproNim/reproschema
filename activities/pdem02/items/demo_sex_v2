@@ -1,0 +1,51 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "demo_sex_v2",
+    "@type": "reproschema:Field",
+    "prefLabel": "demo_sex_v2",
+    "altLabel": "demo_sex_p demo_sex_v2b",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "What sex was the child assigned at birth, on the original birth certificate? ¿Qué sexo se le asignó al/la niño(a) cuando nació, en su acta de nacimiento original?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Male Masculino",
+                "value": 1
+            },
+            {
+                "name": "Female Femenino",
+                "value": 2
+            },
+            {
+                "name": "Intersex-Male Entre sexo-masculino",
+                "value": 3
+            },
+            {
+                "name": "Intersex-Female Entre sexo-femenino",
+                "value": 4
+            },
+            {
+                "name": "Don't know No lo sÃ©",
+                "value": 999
+            },
+            {
+                "name": "Refuse to answer Prefiero no responder",
+                "value": 777
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Male Masculino; 2 = Female Femenino; 3 = Intersex-Male Entre sexo-masculino; 4 = Intersex-Female Entre sexo-femenino; 999 = Don't know No lo sÃ©; 777 = Refuse to answer Prefiero no responder"
+        }
+    ]
+}

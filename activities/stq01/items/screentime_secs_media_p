@@ -1,0 +1,37 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "screentime_secs_media_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "screentime_secs_media_p",
+    "altLabel": "screentime_secret_social_media_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Do you suspect that your child has social media accounts that you are unaware of? /Sospecha que su hijo/a tiene cuentas de redes sociales de las que usted no est? enterado/a?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "name": "Yes /S?",
+                "value": 1
+            },
+            {
+                "value": 0
+            },
+            {
+                "value": 777
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes /S?; 0=  No/No; 777=  Refuse to Answer/Niego contestar "
+        }
+    ]
+}

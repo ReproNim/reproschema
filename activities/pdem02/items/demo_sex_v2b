@@ -1,0 +1,45 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "demo_sex_v2b",
+    "@type": "reproschema:Field",
+    "prefLabel": "demo_sex_v2b",
+    "altLabel": "demo_sex_v2b_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "What sex was the child assigned at birth  on the original birth certificate?/ Que sexo se le asigno al/la nino(a) cuando nacio  en su acta de nacimiento original?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 777,
+        "choices": [
+            {
+                "value": 1
+            },
+            {
+                "value": 2
+            },
+            {
+                "value": 3
+            },
+            {
+                "value": 4
+            },
+            {
+                "value": 999
+            },
+            {
+                "value": 777
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1= Male/Masculino; 2= Female/Femenino; 3= Intersex-Male/Entre sexo-masculino; 4= Intersex-Female/Entre sexo-femenino; 999= Don't know/No lo se; 777= Refuse to answer/Prefiero no responder"
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "neighborhood2r_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "neighborhood2r_p",
+    "altLabel": "neighb_phenx_2r_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Violence is not a problem in my neighborhood./ La violencia no es un problema en mi vecindario.",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "name": "Strongly Disagree /Muy en desacuerdo",
+                "value": 1
+            },
+            {
+                "name": "Disagree /En desacuerdo",
+                "value": 2
+            },
+            {
+                "name": "Neutral (neither agree nor disagree)/ Neutral (ni de acuerdo ni en desacuerdo)",
+                "value": 3
+            },
+            {
+                "name": "Agree /De acuerdo",
+                "value": 4
+            },
+            {
+                "name": "Strongly Agree/ Muy de acuerdo//The following questions are about your neighborhood. Your neighborhood is the area within about a 20-minute walk (or about a mile) from your home. For each of the statements please indicate whether you strongly agree, agree, neither agree nor disagree, disagree, or strongly disagree",
+                "value": 5
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Strongly Disagree /Muy en desacuerdo; 2 = Disagree /En desacuerdo; 3 = Neutral (neither agree nor disagree)/ Neutral (ni de acuerdo ni en desacuerdo); 4 = Agree /De acuerdo; 5 = Strongly Agree/ Muy de acuerdo//The following questions are about your neighborhood. Your neighborhood is the area within about a 20-minute walk (or about a mile) from your home. For each of the statements please indicate whether you strongly agree, agree, neither agree nor disagree, disagree, or strongly disagree"
+        }
+    ]
+}

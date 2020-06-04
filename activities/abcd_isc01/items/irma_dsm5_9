@@ -1,0 +1,46 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "irma_dsm5_9",
+    "@type": "reproschema:Field",
+    "prefLabel": "irma_dsm5_9",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "9. I have thoughts like, \"The world is really dangerous.\" 9. Tengo pensamientos como: \"El mundo es realmente peligroso.\"",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "None (Never)0  De ningun modo (Nunca)0",
+                "value": 0
+            },
+            {
+                "name": "Little (2 days over the past month)1  Un poco (2 dias durante el ultimo mes)1",
+                "value": 1
+            },
+            {
+                "name": "Some (1-2 days a week)2  A veces (1-2 dias a la semana)2",
+                "value": 2
+            },
+            {
+                "name": "Much (2-3 days a week)3  Mucho (2-3 dias a la semana)3",
+                "value": 3
+            },
+            {
+                "name": "Most (Almost every day)4 Munchisimo (Casi todos los dias)4",
+                "value": 4
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = None (Never)0  De ningun modo (Nunca)0; 1 = Little (2 days over the past month)1  Un poco (2 dias durante el ultimo mes)1; 2 = Some (1-2 days a week)2  A veces (1-2 dias a la semana)2; 3 = Much (2-3 days a week)3  Mucho (2-3 dias a la semana)3; 4 = Most (Almost every day)4 Munchisimo (Casi todos los dias)4"
+        }
+    ]
+}

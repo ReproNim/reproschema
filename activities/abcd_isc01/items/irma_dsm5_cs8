@@ -1,0 +1,34 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "irma_dsm5_cs8",
+    "@type": "reproschema:Field",
+    "prefLabel": "irma_dsm5_cs8",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "CS8. Do these reactions, thoughts, and feelings make it harder for you to do important things that other kids your age are doing? CS8. ¿Estas reacciones, pensamientos y sentimientos hace más difícil para usted hacer cosas importantes que otros niños de su edad están haciendo?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 0,
+        "choices": [
+            {
+                "name": "Yes  Si",
+                "value": 1
+            },
+            {
+                "name": "No No",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes  Si; 0 = No No"
+        }
+    ]
+}

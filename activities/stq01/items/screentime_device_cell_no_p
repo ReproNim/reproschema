@@ -1,0 +1,40 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "screentime_device_cell_no_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "screentime_device_cell_no_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "If your child does not have their own cell phone  do you allow them to use yours? Si su hijo/a no tiene su propio tel?fono celular  /le permite usar el suyo?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "value": 1
+            },
+            {
+                "name": "No/No",
+                "value": 0
+            },
+            {
+                "value": 2
+            },
+            {
+                "name": "Refuse to Answer/Niego contestar ",
+                "value": 777
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1=  Yes/S?; 0 = No/No; 2=  Sometimes /A Veces; 777 = Refuse to Answer/Niego contestar "
+        }
+    ]
+}

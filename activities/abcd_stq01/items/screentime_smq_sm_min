@@ -1,0 +1,39 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "screentime_smq_sm_min",
+    "@type": "reproschema:Field",
+    "prefLabel": "screentime_smq_sm_min",
+    "altLabel": "screentime_smq_soc_med_min",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "How much TIME per day do you spend on social media apps?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 45,
+        "choices": [
+            {
+                "value": 0
+            },
+            {
+                "value": 15
+            },
+            {
+                "value": 30
+            },
+            {
+                "value": 45
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0=0; 15=15; 30=30; 45=45"
+        }
+    ]
+}

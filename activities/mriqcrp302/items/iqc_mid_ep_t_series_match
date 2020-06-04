@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "iqc_mid_ep_t_series_match",
+    "@type": "reproschema:Field",
+    "prefLabel": "iqc_mid_ep_t_series_match",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "MID imaging-series and behavioral-data files match, i.e. time difference less than a threshold time.",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": -1,
+        "schema:maxValue": 0,
+        "choices": [
+            {
+                "value": -1
+            },
+            {
+                "value": 0
+            },
+            {
+                "value": 1
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "-1= Either file not found; 0= No match; 1= Match"
+        }
+    ]
+}

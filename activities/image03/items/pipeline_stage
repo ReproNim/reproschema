@@ -1,0 +1,38 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "pipeline_stage",
+    "@type": "reproschema:Field",
+    "prefLabel": "pipeline_stage",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Stage of image in processing pipeline.",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "name": "original",
+                "value": 1
+            },
+            {
+                "name": "intermediate",
+                "value": 2
+            },
+            {
+                "name": "final",
+                "value": 3
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = original; 2 = intermediate; 3 = final"
+        }
+    ]
+}

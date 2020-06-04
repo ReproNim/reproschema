@@ -1,0 +1,1382 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "fhxp201": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/activities/fhxp201/items/",
+        "visit": {
+            "@id": "fhxp201:visit",
+            "@type": "@id"
+        },
+        "fam_history_10_yes_no": {
+            "@id": "fhxp201:fam_history_10_yes_no",
+            "@type": "@id"
+        },
+        "fam_history_11_yes_no": {
+            "@id": "fhxp201:fam_history_11_yes_no",
+            "@type": "@id"
+        },
+        "fam_history_12_yes_no": {
+            "@id": "fhxp201:fam_history_12_yes_no",
+            "@type": "@id"
+        },
+        "fam_history_13_yes_no": {
+            "@id": "fhxp201:fam_history_13_yes_no",
+            "@type": "@id"
+        },
+        "fam_history_7_yes_no": {
+            "@id": "fhxp201:fam_history_7_yes_no",
+            "@type": "@id"
+        },
+        "fam_history_8_yes_no": {
+            "@id": "fhxp201:fam_history_8_yes_no",
+            "@type": "@id"
+        },
+        "fam_history_9_yes_no": {
+            "@id": "fhxp201:fam_history_9_yes_no",
+            "@type": "@id"
+        },
+        "fam_history_q10a_nerves": {
+            "@id": "fhxp201:fam_history_q10a_nerves",
+            "@type": "@id"
+        },
+        "fam_history_q10b_nerves": {
+            "@id": "fhxp201:fam_history_q10b_nerves",
+            "@type": "@id"
+        },
+        "fam_history_q10c_nerves": {
+            "@id": "fhxp201:fam_history_q10c_nerves",
+            "@type": "@id"
+        },
+        "fam_history_q10d_nerves": {
+            "@id": "fhxp201:fam_history_q10d_nerves",
+            "@type": "@id"
+        },
+        "fam_history_q10e_nerves": {
+            "@id": "fhxp201:fam_history_q10e_nerves",
+            "@type": "@id"
+        },
+        "fam_history_q10f_nerves": {
+            "@id": "fhxp201:fam_history_q10f_nerves",
+            "@type": "@id"
+        },
+        "fam_history_q11a_professional": {
+            "@id": "fhxp201:fam_history_q11a_professional",
+            "@type": "@id"
+        },
+        "fam_history_q11b_professional": {
+            "@id": "fhxp201:fam_history_q11b_professional",
+            "@type": "@id"
+        },
+        "fam_history_q11c_professional": {
+            "@id": "fhxp201:fam_history_q11c_professional",
+            "@type": "@id"
+        },
+        "fam_history_q11d_professional": {
+            "@id": "fhxp201:fam_history_q11d_professional",
+            "@type": "@id"
+        },
+        "fam_history_q11e_professional": {
+            "@id": "fhxp201:fam_history_q11e_professional",
+            "@type": "@id"
+        },
+        "fam_history_q11f_professional": {
+            "@id": "fhxp201:fam_history_q11f_professional",
+            "@type": "@id"
+        },
+        "fam_history_q12a_hospitalized": {
+            "@id": "fhxp201:fam_history_q12a_hospitalized",
+            "@type": "@id"
+        },
+        "fam_history_q12b_hospitalized": {
+            "@id": "fhxp201:fam_history_q12b_hospitalized",
+            "@type": "@id"
+        },
+        "fam_history_q12c_hospitalized": {
+            "@id": "fhxp201:fam_history_q12c_hospitalized",
+            "@type": "@id"
+        },
+        "fam_history_q12d_hospitalized": {
+            "@id": "fhxp201:fam_history_q12d_hospitalized",
+            "@type": "@id"
+        },
+        "fam_history_q12e_hospitalized": {
+            "@id": "fhxp201:fam_history_q12e_hospitalized",
+            "@type": "@id"
+        },
+        "fam_history_q12f_hospitalized": {
+            "@id": "fhxp201:fam_history_q12f_hospitalized",
+            "@type": "@id"
+        },
+        "fam_history_q13a_suicide": {
+            "@id": "fhxp201:fam_history_q13a_suicide",
+            "@type": "@id"
+        },
+        "fam_history_q13b_suicide": {
+            "@id": "fhxp201:fam_history_q13b_suicide",
+            "@type": "@id"
+        },
+        "fam_history_q13c_suicide": {
+            "@id": "fhxp201:fam_history_q13c_suicide",
+            "@type": "@id"
+        },
+        "fam_history_q13d_suicide": {
+            "@id": "fhxp201:fam_history_q13d_suicide",
+            "@type": "@id"
+        },
+        "fam_history_q13e_suicide": {
+            "@id": "fhxp201:fam_history_q13e_suicide",
+            "@type": "@id"
+        },
+        "fam_history_q13f_suicide": {
+            "@id": "fhxp201:fam_history_q13f_suicide",
+            "@type": "@id"
+        },
+        "fam_history_q7a_mania": {
+            "@id": "fhxp201:fam_history_q7a_mania",
+            "@type": "@id"
+        },
+        "fam_history_q7b_mania": {
+            "@id": "fhxp201:fam_history_q7b_mania",
+            "@type": "@id"
+        },
+        "fam_history_q7c_mania": {
+            "@id": "fhxp201:fam_history_q7c_mania",
+            "@type": "@id"
+        },
+        "fam_history_q7d_mania": {
+            "@id": "fhxp201:fam_history_q7d_mania",
+            "@type": "@id"
+        },
+        "fam_history_q7e_mania": {
+            "@id": "fhxp201:fam_history_q7e_mania",
+            "@type": "@id"
+        },
+        "fam_history_q7f_mania": {
+            "@id": "fhxp201:fam_history_q7f_mania",
+            "@type": "@id"
+        },
+        "fam_history_q8a_visions": {
+            "@id": "fhxp201:fam_history_q8a_visions",
+            "@type": "@id"
+        },
+        "fam_history_q8b_visions": {
+            "@id": "fhxp201:fam_history_q8b_visions",
+            "@type": "@id"
+        },
+        "fam_history_q8c_visions": {
+            "@id": "fhxp201:fam_history_q8c_visions",
+            "@type": "@id"
+        },
+        "fam_history_q8d_visions": {
+            "@id": "fhxp201:fam_history_q8d_visions",
+            "@type": "@id"
+        },
+        "fam_history_q8e_visions": {
+            "@id": "fhxp201:fam_history_q8e_visions",
+            "@type": "@id"
+        },
+        "fam_history_q8f_visions": {
+            "@id": "fhxp201:fam_history_q8f_visions",
+            "@type": "@id"
+        },
+        "fam_history_q9a_trouble": {
+            "@id": "fhxp201:fam_history_q9a_trouble",
+            "@type": "@id"
+        },
+        "fam_history_q9b_trouble": {
+            "@id": "fhxp201:fam_history_q9b_trouble",
+            "@type": "@id"
+        },
+        "fam_history_q9c_trouble": {
+            "@id": "fhxp201:fam_history_q9c_trouble",
+            "@type": "@id"
+        },
+        "fam_history_q9d_trouble": {
+            "@id": "fhxp201:fam_history_q9d_trouble",
+            "@type": "@id"
+        },
+        "fam_history_q9e_trouble": {
+            "@id": "fhxp201:fam_history_q9e_trouble",
+            "@type": "@id"
+        },
+        "fam_history_q9f_trouble": {
+            "@id": "fhxp201:fam_history_q9f_trouble",
+            "@type": "@id"
+        },
+        "q10g_pat_uncle1_nerves": {
+            "@id": "fhxp201:q10g_pat_uncle1_nerves",
+            "@type": "@id"
+        },
+        "q10g_pat_uncle2_nerves": {
+            "@id": "fhxp201:q10g_pat_uncle2_nerves",
+            "@type": "@id"
+        },
+        "q10g_pat_uncle3_nerves": {
+            "@id": "fhxp201:q10g_pat_uncle3_nerves",
+            "@type": "@id"
+        },
+        "q10g_pat_uncle4_nerves": {
+            "@id": "fhxp201:q10g_pat_uncle4_nerves",
+            "@type": "@id"
+        },
+        "q10g_pat_uncle5_nerves": {
+            "@id": "fhxp201:q10g_pat_uncle5_nerves",
+            "@type": "@id"
+        },
+        "q10h_pat_aunt1_nerves": {
+            "@id": "fhxp201:q10h_pat_aunt1_nerves",
+            "@type": "@id"
+        },
+        "q10h_pat_aunt2_nerves": {
+            "@id": "fhxp201:q10h_pat_aunt2_nerves",
+            "@type": "@id"
+        },
+        "q10h_pat_aunt3_nerves": {
+            "@id": "fhxp201:q10h_pat_aunt3_nerves",
+            "@type": "@id"
+        },
+        "q10h_pat_aunt4_nerves": {
+            "@id": "fhxp201:q10h_pat_aunt4_nerves",
+            "@type": "@id"
+        },
+        "q10h_pat_aunt5_nerves": {
+            "@id": "fhxp201:q10h_pat_aunt5_nerves",
+            "@type": "@id"
+        },
+        "q10i_mat_uncle1_nerves": {
+            "@id": "fhxp201:q10i_mat_uncle1_nerves",
+            "@type": "@id"
+        },
+        "q10i_mat_uncle2_nerves": {
+            "@id": "fhxp201:q10i_mat_uncle2_nerves",
+            "@type": "@id"
+        },
+        "q10i_mat_uncle3_nerves": {
+            "@id": "fhxp201:q10i_mat_uncle3_nerves",
+            "@type": "@id"
+        },
+        "q10i_mat_uncle4_nerves": {
+            "@id": "fhxp201:q10i_mat_uncle4_nerves",
+            "@type": "@id"
+        },
+        "q10i_mat_uncle5_nerves": {
+            "@id": "fhxp201:q10i_mat_uncle5_nerves",
+            "@type": "@id"
+        },
+        "q10j_mat_aunt1_nerves": {
+            "@id": "fhxp201:q10j_mat_aunt1_nerves",
+            "@type": "@id"
+        },
+        "q10j_mat_aunt2_nerves": {
+            "@id": "fhxp201:q10j_mat_aunt2_nerves",
+            "@type": "@id"
+        },
+        "q10j_mat_aunt3_nerves": {
+            "@id": "fhxp201:q10j_mat_aunt3_nerves",
+            "@type": "@id"
+        },
+        "q10j_mat_aunt4_nerves": {
+            "@id": "fhxp201:q10j_mat_aunt4_nerves",
+            "@type": "@id"
+        },
+        "q10j_mat_aunt5_nerves": {
+            "@id": "fhxp201:q10j_mat_aunt5_nerves",
+            "@type": "@id"
+        },
+        "q10k_full_sib_young1_nerves": {
+            "@id": "fhxp201:q10k_full_sib_young1_nerves",
+            "@type": "@id"
+        },
+        "q10k_full_sib_young2_nerves": {
+            "@id": "fhxp201:q10k_full_sib_young2_nerves",
+            "@type": "@id"
+        },
+        "q10k_full_sib_young3_nerves": {
+            "@id": "fhxp201:q10k_full_sib_young3_nerves",
+            "@type": "@id"
+        },
+        "q10k_full_sib_young4_nerves": {
+            "@id": "fhxp201:q10k_full_sib_young4_nerves",
+            "@type": "@id"
+        },
+        "q10k_full_sib_young5_nerves": {
+            "@id": "fhxp201:q10k_full_sib_young5_nerves",
+            "@type": "@id"
+        },
+        "q10l_full_sib_old1_nerves": {
+            "@id": "fhxp201:q10l_full_sib_old1_nerves",
+            "@type": "@id"
+        },
+        "q10l_full_sib_old2_nerves": {
+            "@id": "fhxp201:q10l_full_sib_old2_nerves",
+            "@type": "@id"
+        },
+        "q10l_full_sib_old3_nerves": {
+            "@id": "fhxp201:q10l_full_sib_old3_nerves",
+            "@type": "@id"
+        },
+        "q10l_full_sib_old4_nerves": {
+            "@id": "fhxp201:q10l_full_sib_old4_nerves",
+            "@type": "@id"
+        },
+        "q10l_full_sib_old5_nerves": {
+            "@id": "fhxp201:q10l_full_sib_old5_nerves",
+            "@type": "@id"
+        },
+        "q10m_full_sib_same1_nerves": {
+            "@id": "fhxp201:q10m_full_sib_same1_nerves",
+            "@type": "@id"
+        },
+        "q10m_full_sib_same2_nerves": {
+            "@id": "fhxp201:q10m_full_sib_same2_nerves",
+            "@type": "@id"
+        },
+        "q10m_half_sib_young1_nerves": {
+            "@id": "fhxp201:q10m_half_sib_young1_nerves",
+            "@type": "@id"
+        },
+        "q10m_half_sib_young2_nerves": {
+            "@id": "fhxp201:q10m_half_sib_young2_nerves",
+            "@type": "@id"
+        },
+        "q10m_half_sib_young3_nerves": {
+            "@id": "fhxp201:q10m_half_sib_young3_nerves",
+            "@type": "@id"
+        },
+        "q10m_half_sib_young4_nerves": {
+            "@id": "fhxp201:q10m_half_sib_young4_nerves",
+            "@type": "@id"
+        },
+        "q10m_half_sib_young5_nerves": {
+            "@id": "fhxp201:q10m_half_sib_young5_nerves",
+            "@type": "@id"
+        },
+        "q10n_half_sib_old1_nerves": {
+            "@id": "fhxp201:q10n_half_sib_old1_nerves",
+            "@type": "@id"
+        },
+        "q10n_half_sib_old2_nerves": {
+            "@id": "fhxp201:q10n_half_sib_old2_nerves",
+            "@type": "@id"
+        },
+        "q10n_half_sib_old3_nerves": {
+            "@id": "fhxp201:q10n_half_sib_old3_nerves",
+            "@type": "@id"
+        },
+        "q10n_half_sib_old4_nerves": {
+            "@id": "fhxp201:q10n_half_sib_old4_nerves",
+            "@type": "@id"
+        },
+        "q10n_half_sib_old5_nerves": {
+            "@id": "fhxp201:q10n_half_sib_old5_nerves",
+            "@type": "@id"
+        },
+        "q11g_pat_uncle1_professional": {
+            "@id": "fhxp201:q11g_pat_uncle1_professional",
+            "@type": "@id"
+        },
+        "q11g_pat_uncle2_professional": {
+            "@id": "fhxp201:q11g_pat_uncle2_professional",
+            "@type": "@id"
+        },
+        "q11g_pat_uncle3_professional": {
+            "@id": "fhxp201:q11g_pat_uncle3_professional",
+            "@type": "@id"
+        },
+        "q11g_pat_uncle4_professional": {
+            "@id": "fhxp201:q11g_pat_uncle4_professional",
+            "@type": "@id"
+        },
+        "q11g_pat_uncle5_professional": {
+            "@id": "fhxp201:q11g_pat_uncle5_professional",
+            "@type": "@id"
+        },
+        "q11h_pat_aunt1_professional": {
+            "@id": "fhxp201:q11h_pat_aunt1_professional",
+            "@type": "@id"
+        },
+        "q11h_pat_aunt2_professional": {
+            "@id": "fhxp201:q11h_pat_aunt2_professional",
+            "@type": "@id"
+        },
+        "q11h_pat_aunt3_professional": {
+            "@id": "fhxp201:q11h_pat_aunt3_professional",
+            "@type": "@id"
+        },
+        "q11h_pat_aunt4_professional": {
+            "@id": "fhxp201:q11h_pat_aunt4_professional",
+            "@type": "@id"
+        },
+        "q11h_pat_aunt5_professional": {
+            "@id": "fhxp201:q11h_pat_aunt5_professional",
+            "@type": "@id"
+        },
+        "q11i_mat_uncle1_professional": {
+            "@id": "fhxp201:q11i_mat_uncle1_professional",
+            "@type": "@id"
+        },
+        "q11i_mat_uncle2_professional": {
+            "@id": "fhxp201:q11i_mat_uncle2_professional",
+            "@type": "@id"
+        },
+        "q11i_mat_uncle3_professional": {
+            "@id": "fhxp201:q11i_mat_uncle3_professional",
+            "@type": "@id"
+        },
+        "q11i_mat_uncle4_professional": {
+            "@id": "fhxp201:q11i_mat_uncle4_professional",
+            "@type": "@id"
+        },
+        "q11i_mat_uncle5_professional": {
+            "@id": "fhxp201:q11i_mat_uncle5_professional",
+            "@type": "@id"
+        },
+        "q11j_mat_aunt1_professional": {
+            "@id": "fhxp201:q11j_mat_aunt1_professional",
+            "@type": "@id"
+        },
+        "q11j_mat_aunt2_professional": {
+            "@id": "fhxp201:q11j_mat_aunt2_professional",
+            "@type": "@id"
+        },
+        "q11j_mat_aunt3_professional": {
+            "@id": "fhxp201:q11j_mat_aunt3_professional",
+            "@type": "@id"
+        },
+        "q11j_mat_aunt4_professional": {
+            "@id": "fhxp201:q11j_mat_aunt4_professional",
+            "@type": "@id"
+        },
+        "q11j_mat_aunt5_professional": {
+            "@id": "fhxp201:q11j_mat_aunt5_professional",
+            "@type": "@id"
+        },
+        "q11k_full_sib_young1_prof": {
+            "@id": "fhxp201:q11k_full_sib_young1_prof",
+            "@type": "@id"
+        },
+        "q11k_full_sib_young2_prof": {
+            "@id": "fhxp201:q11k_full_sib_young2_prof",
+            "@type": "@id"
+        },
+        "q11k_full_sib_young3_prof": {
+            "@id": "fhxp201:q11k_full_sib_young3_prof",
+            "@type": "@id"
+        },
+        "q11k_full_sib_young4_prof": {
+            "@id": "fhxp201:q11k_full_sib_young4_prof",
+            "@type": "@id"
+        },
+        "q11k_full_sib_young5_prof": {
+            "@id": "fhxp201:q11k_full_sib_young5_prof",
+            "@type": "@id"
+        },
+        "q11l_full_sib_old1_prof": {
+            "@id": "fhxp201:q11l_full_sib_old1_prof",
+            "@type": "@id"
+        },
+        "q11l_full_sib_old2_prof": {
+            "@id": "fhxp201:q11l_full_sib_old2_prof",
+            "@type": "@id"
+        },
+        "q11l_full_sib_old3_prof": {
+            "@id": "fhxp201:q11l_full_sib_old3_prof",
+            "@type": "@id"
+        },
+        "q11l_full_sib_old4_prof": {
+            "@id": "fhxp201:q11l_full_sib_old4_prof",
+            "@type": "@id"
+        },
+        "q11l_full_sib_old5_prof": {
+            "@id": "fhxp201:q11l_full_sib_old5_prof",
+            "@type": "@id"
+        },
+        "q11m_full_sib_same1_prof": {
+            "@id": "fhxp201:q11m_full_sib_same1_prof",
+            "@type": "@id"
+        },
+        "q11m_full_sib_same2_prof": {
+            "@id": "fhxp201:q11m_full_sib_same2_prof",
+            "@type": "@id"
+        },
+        "q11m_half_sib_young1_prof": {
+            "@id": "fhxp201:q11m_half_sib_young1_prof",
+            "@type": "@id"
+        },
+        "q11m_half_sib_young2_prof": {
+            "@id": "fhxp201:q11m_half_sib_young2_prof",
+            "@type": "@id"
+        },
+        "q11m_half_sib_young3_prof": {
+            "@id": "fhxp201:q11m_half_sib_young3_prof",
+            "@type": "@id"
+        },
+        "q11m_half_sib_young4_prof": {
+            "@id": "fhxp201:q11m_half_sib_young4_prof",
+            "@type": "@id"
+        },
+        "q11m_half_sib_young5_prof": {
+            "@id": "fhxp201:q11m_half_sib_young5_prof",
+            "@type": "@id"
+        },
+        "q11n_half_sib_old1_prof": {
+            "@id": "fhxp201:q11n_half_sib_old1_prof",
+            "@type": "@id"
+        },
+        "q11n_half_sib_old2_prof": {
+            "@id": "fhxp201:q11n_half_sib_old2_prof",
+            "@type": "@id"
+        },
+        "q11n_half_sib_old3_prof": {
+            "@id": "fhxp201:q11n_half_sib_old3_prof",
+            "@type": "@id"
+        },
+        "q11n_half_sib_old4_prof": {
+            "@id": "fhxp201:q11n_half_sib_old4_prof",
+            "@type": "@id"
+        },
+        "q11n_half_sib_old5_prof": {
+            "@id": "fhxp201:q11n_half_sib_old5_prof",
+            "@type": "@id"
+        },
+        "q12g_pat_uncle1_hospitalized": {
+            "@id": "fhxp201:q12g_pat_uncle1_hospitalized",
+            "@type": "@id"
+        },
+        "q12g_pat_uncle2_hospitalized": {
+            "@id": "fhxp201:q12g_pat_uncle2_hospitalized",
+            "@type": "@id"
+        },
+        "q12g_pat_uncle3_hospitalized": {
+            "@id": "fhxp201:q12g_pat_uncle3_hospitalized",
+            "@type": "@id"
+        },
+        "q12g_pat_uncle4_hospitalized": {
+            "@id": "fhxp201:q12g_pat_uncle4_hospitalized",
+            "@type": "@id"
+        },
+        "q12g_pat_uncle5_hospitalized": {
+            "@id": "fhxp201:q12g_pat_uncle5_hospitalized",
+            "@type": "@id"
+        },
+        "q12h_pat_aunt1_hospitalized": {
+            "@id": "fhxp201:q12h_pat_aunt1_hospitalized",
+            "@type": "@id"
+        },
+        "q12h_pat_aunt2_hospitalized": {
+            "@id": "fhxp201:q12h_pat_aunt2_hospitalized",
+            "@type": "@id"
+        },
+        "q12h_pat_aunt3_hospitalized": {
+            "@id": "fhxp201:q12h_pat_aunt3_hospitalized",
+            "@type": "@id"
+        },
+        "q12h_pat_aunt4_hospitalized": {
+            "@id": "fhxp201:q12h_pat_aunt4_hospitalized",
+            "@type": "@id"
+        },
+        "q12h_pat_aunt5_hospitalized": {
+            "@id": "fhxp201:q12h_pat_aunt5_hospitalized",
+            "@type": "@id"
+        },
+        "q12i_mat_uncle1_hospitalized": {
+            "@id": "fhxp201:q12i_mat_uncle1_hospitalized",
+            "@type": "@id"
+        },
+        "q12i_mat_uncle2_hospitalized": {
+            "@id": "fhxp201:q12i_mat_uncle2_hospitalized",
+            "@type": "@id"
+        },
+        "q12i_mat_uncle3_hospitalized": {
+            "@id": "fhxp201:q12i_mat_uncle3_hospitalized",
+            "@type": "@id"
+        },
+        "q12i_mat_uncle4_hospitalized": {
+            "@id": "fhxp201:q12i_mat_uncle4_hospitalized",
+            "@type": "@id"
+        },
+        "q12i_mat_uncle5_hospitalized": {
+            "@id": "fhxp201:q12i_mat_uncle5_hospitalized",
+            "@type": "@id"
+        },
+        "q12j_mat_aunt1_hospitalized": {
+            "@id": "fhxp201:q12j_mat_aunt1_hospitalized",
+            "@type": "@id"
+        },
+        "q12j_mat_aunt2_hospitalized": {
+            "@id": "fhxp201:q12j_mat_aunt2_hospitalized",
+            "@type": "@id"
+        },
+        "q12j_mat_aunt3_hospitalized": {
+            "@id": "fhxp201:q12j_mat_aunt3_hospitalized",
+            "@type": "@id"
+        },
+        "q12j_mat_aunt4_hospitalized": {
+            "@id": "fhxp201:q12j_mat_aunt4_hospitalized",
+            "@type": "@id"
+        },
+        "q12j_mat_aunt5_hospitalized": {
+            "@id": "fhxp201:q12j_mat_aunt5_hospitalized",
+            "@type": "@id"
+        },
+        "q12k_full_sib_young1_hosp": {
+            "@id": "fhxp201:q12k_full_sib_young1_hosp",
+            "@type": "@id"
+        },
+        "q12k_full_sib_young2_hosp": {
+            "@id": "fhxp201:q12k_full_sib_young2_hosp",
+            "@type": "@id"
+        },
+        "q12k_full_sib_young3_hosp": {
+            "@id": "fhxp201:q12k_full_sib_young3_hosp",
+            "@type": "@id"
+        },
+        "q12k_full_sib_young4_hosp": {
+            "@id": "fhxp201:q12k_full_sib_young4_hosp",
+            "@type": "@id"
+        },
+        "q12k_full_sib_young5_hosp": {
+            "@id": "fhxp201:q12k_full_sib_young5_hosp",
+            "@type": "@id"
+        },
+        "q12l_full_sib_old1_hosp": {
+            "@id": "fhxp201:q12l_full_sib_old1_hosp",
+            "@type": "@id"
+        },
+        "q12l_full_sib_old2_hosp": {
+            "@id": "fhxp201:q12l_full_sib_old2_hosp",
+            "@type": "@id"
+        },
+        "q12l_full_sib_old3_hosp": {
+            "@id": "fhxp201:q12l_full_sib_old3_hosp",
+            "@type": "@id"
+        },
+        "q12l_full_sib_old4_hosp": {
+            "@id": "fhxp201:q12l_full_sib_old4_hosp",
+            "@type": "@id"
+        },
+        "q12l_full_sib_old5_hosp": {
+            "@id": "fhxp201:q12l_full_sib_old5_hosp",
+            "@type": "@id"
+        },
+        "q12m_full_sib_same1_hosp": {
+            "@id": "fhxp201:q12m_full_sib_same1_hosp",
+            "@type": "@id"
+        },
+        "q12m_full_sib_same2_hosp": {
+            "@id": "fhxp201:q12m_full_sib_same2_hosp",
+            "@type": "@id"
+        },
+        "q12m_half_sib_young1_hosp": {
+            "@id": "fhxp201:q12m_half_sib_young1_hosp",
+            "@type": "@id"
+        },
+        "q12m_half_sib_young2_hosp": {
+            "@id": "fhxp201:q12m_half_sib_young2_hosp",
+            "@type": "@id"
+        },
+        "q12m_half_sib_young3_hosp": {
+            "@id": "fhxp201:q12m_half_sib_young3_hosp",
+            "@type": "@id"
+        },
+        "q12m_half_sib_young4_hosp": {
+            "@id": "fhxp201:q12m_half_sib_young4_hosp",
+            "@type": "@id"
+        },
+        "q12m_half_sib_young5_hosp": {
+            "@id": "fhxp201:q12m_half_sib_young5_hosp",
+            "@type": "@id"
+        },
+        "q12n_half_sib_old1_hosp": {
+            "@id": "fhxp201:q12n_half_sib_old1_hosp",
+            "@type": "@id"
+        },
+        "q12n_half_sib_old2_hosp": {
+            "@id": "fhxp201:q12n_half_sib_old2_hosp",
+            "@type": "@id"
+        },
+        "q12n_half_sib_old3_hosp": {
+            "@id": "fhxp201:q12n_half_sib_old3_hosp",
+            "@type": "@id"
+        },
+        "q12n_half_sib_old4_hosp": {
+            "@id": "fhxp201:q12n_half_sib_old4_hosp",
+            "@type": "@id"
+        },
+        "q12n_half_sib_old5_hosp": {
+            "@id": "fhxp201:q12n_half_sib_old5_hosp",
+            "@type": "@id"
+        },
+        "q13g_pat_uncle1_suicide": {
+            "@id": "fhxp201:q13g_pat_uncle1_suicide",
+            "@type": "@id"
+        },
+        "q13g_pat_uncle2_suicide": {
+            "@id": "fhxp201:q13g_pat_uncle2_suicide",
+            "@type": "@id"
+        },
+        "q13g_pat_uncle3_suicide": {
+            "@id": "fhxp201:q13g_pat_uncle3_suicide",
+            "@type": "@id"
+        },
+        "q13g_pat_uncle4_suicide": {
+            "@id": "fhxp201:q13g_pat_uncle4_suicide",
+            "@type": "@id"
+        },
+        "q13g_pat_uncle5_suicide": {
+            "@id": "fhxp201:q13g_pat_uncle5_suicide",
+            "@type": "@id"
+        },
+        "q13h_pat_aunt1_suicide": {
+            "@id": "fhxp201:q13h_pat_aunt1_suicide",
+            "@type": "@id"
+        },
+        "q13h_pat_aunt2_suicide": {
+            "@id": "fhxp201:q13h_pat_aunt2_suicide",
+            "@type": "@id"
+        },
+        "q13h_pat_aunt3_suicide": {
+            "@id": "fhxp201:q13h_pat_aunt3_suicide",
+            "@type": "@id"
+        },
+        "q13h_pat_aunt4_suicide": {
+            "@id": "fhxp201:q13h_pat_aunt4_suicide",
+            "@type": "@id"
+        },
+        "q13h_pat_aunt5_suicide": {
+            "@id": "fhxp201:q13h_pat_aunt5_suicide",
+            "@type": "@id"
+        },
+        "q13i_mat_uncle1_suicide": {
+            "@id": "fhxp201:q13i_mat_uncle1_suicide",
+            "@type": "@id"
+        },
+        "q13i_mat_uncle2_suicide": {
+            "@id": "fhxp201:q13i_mat_uncle2_suicide",
+            "@type": "@id"
+        },
+        "q13i_mat_uncle3_suicide": {
+            "@id": "fhxp201:q13i_mat_uncle3_suicide",
+            "@type": "@id"
+        },
+        "q13i_mat_uncle4_suicide": {
+            "@id": "fhxp201:q13i_mat_uncle4_suicide",
+            "@type": "@id"
+        },
+        "q13i_mat_uncle5_suicide": {
+            "@id": "fhxp201:q13i_mat_uncle5_suicide",
+            "@type": "@id"
+        },
+        "q13j_mat_aunt1_suicide": {
+            "@id": "fhxp201:q13j_mat_aunt1_suicide",
+            "@type": "@id"
+        },
+        "q13j_mat_aunt2_suicide": {
+            "@id": "fhxp201:q13j_mat_aunt2_suicide",
+            "@type": "@id"
+        },
+        "q13j_mat_aunt3_suicide": {
+            "@id": "fhxp201:q13j_mat_aunt3_suicide",
+            "@type": "@id"
+        },
+        "q13j_mat_aunt4_suicide": {
+            "@id": "fhxp201:q13j_mat_aunt4_suicide",
+            "@type": "@id"
+        },
+        "q13j_mat_aunt5_suicide": {
+            "@id": "fhxp201:q13j_mat_aunt5_suicide",
+            "@type": "@id"
+        },
+        "q13k_full_sib_young1_suicide": {
+            "@id": "fhxp201:q13k_full_sib_young1_suicide",
+            "@type": "@id"
+        },
+        "q13k_full_sib_young2_suicide": {
+            "@id": "fhxp201:q13k_full_sib_young2_suicide",
+            "@type": "@id"
+        },
+        "q13k_full_sib_young3_suicide": {
+            "@id": "fhxp201:q13k_full_sib_young3_suicide",
+            "@type": "@id"
+        },
+        "q13k_full_sib_young4_suicide": {
+            "@id": "fhxp201:q13k_full_sib_young4_suicide",
+            "@type": "@id"
+        },
+        "q13k_full_sib_young5_suicide": {
+            "@id": "fhxp201:q13k_full_sib_young5_suicide",
+            "@type": "@id"
+        },
+        "q13l_full_sib_old1_suicide": {
+            "@id": "fhxp201:q13l_full_sib_old1_suicide",
+            "@type": "@id"
+        },
+        "q13l_full_sib_old2_suicide": {
+            "@id": "fhxp201:q13l_full_sib_old2_suicide",
+            "@type": "@id"
+        },
+        "q13l_full_sib_old3_suicide": {
+            "@id": "fhxp201:q13l_full_sib_old3_suicide",
+            "@type": "@id"
+        },
+        "q13l_full_sib_old4_suicide": {
+            "@id": "fhxp201:q13l_full_sib_old4_suicide",
+            "@type": "@id"
+        },
+        "q13l_full_sib_old5_suicide": {
+            "@id": "fhxp201:q13l_full_sib_old5_suicide",
+            "@type": "@id"
+        },
+        "q13m_full_sib_same1_suicide": {
+            "@id": "fhxp201:q13m_full_sib_same1_suicide",
+            "@type": "@id"
+        },
+        "q13m_full_sib_same2_suicide": {
+            "@id": "fhxp201:q13m_full_sib_same2_suicide",
+            "@type": "@id"
+        },
+        "q13m_half_sib_young1_suicide": {
+            "@id": "fhxp201:q13m_half_sib_young1_suicide",
+            "@type": "@id"
+        },
+        "q13m_half_sib_young2_suicide": {
+            "@id": "fhxp201:q13m_half_sib_young2_suicide",
+            "@type": "@id"
+        },
+        "q13m_half_sib_young3_suicide": {
+            "@id": "fhxp201:q13m_half_sib_young3_suicide",
+            "@type": "@id"
+        },
+        "q13m_half_sib_young4_suicide": {
+            "@id": "fhxp201:q13m_half_sib_young4_suicide",
+            "@type": "@id"
+        },
+        "q13m_half_sib_young5_suicide": {
+            "@id": "fhxp201:q13m_half_sib_young5_suicide",
+            "@type": "@id"
+        },
+        "q13n_half_sib_old1_suicide": {
+            "@id": "fhxp201:q13n_half_sib_old1_suicide",
+            "@type": "@id"
+        },
+        "q13n_half_sib_old2_suicide": {
+            "@id": "fhxp201:q13n_half_sib_old2_suicide",
+            "@type": "@id"
+        },
+        "q13n_half_sib_old3_suicide": {
+            "@id": "fhxp201:q13n_half_sib_old3_suicide",
+            "@type": "@id"
+        },
+        "q13n_half_sib_old4_suicide": {
+            "@id": "fhxp201:q13n_half_sib_old4_suicide",
+            "@type": "@id"
+        },
+        "q13n_half_sib_old5_suicide": {
+            "@id": "fhxp201:q13n_half_sib_old5_suicide",
+            "@type": "@id"
+        },
+        "q7g_pat_uncle1_mania": {
+            "@id": "fhxp201:q7g_pat_uncle1_mania",
+            "@type": "@id"
+        },
+        "q7g_pat_uncle2_mania": {
+            "@id": "fhxp201:q7g_pat_uncle2_mania",
+            "@type": "@id"
+        },
+        "q7g_pat_uncle3_mania": {
+            "@id": "fhxp201:q7g_pat_uncle3_mania",
+            "@type": "@id"
+        },
+        "q7g_pat_uncle4_mania": {
+            "@id": "fhxp201:q7g_pat_uncle4_mania",
+            "@type": "@id"
+        },
+        "q7g_pat_uncle5_mania": {
+            "@id": "fhxp201:q7g_pat_uncle5_mania",
+            "@type": "@id"
+        },
+        "q7h_pat_aunt1_mania": {
+            "@id": "fhxp201:q7h_pat_aunt1_mania",
+            "@type": "@id"
+        },
+        "q7h_pat_aunt2_mania": {
+            "@id": "fhxp201:q7h_pat_aunt2_mania",
+            "@type": "@id"
+        },
+        "q7h_pat_aunt3_mania": {
+            "@id": "fhxp201:q7h_pat_aunt3_mania",
+            "@type": "@id"
+        },
+        "q7h_pat_aunt4_mania": {
+            "@id": "fhxp201:q7h_pat_aunt4_mania",
+            "@type": "@id"
+        },
+        "q7h_pat_aunt5_mania": {
+            "@id": "fhxp201:q7h_pat_aunt5_mania",
+            "@type": "@id"
+        },
+        "q7i_mat_uncle1_mania": {
+            "@id": "fhxp201:q7i_mat_uncle1_mania",
+            "@type": "@id"
+        },
+        "q7i_mat_uncle2_mania": {
+            "@id": "fhxp201:q7i_mat_uncle2_mania",
+            "@type": "@id"
+        },
+        "q7i_mat_uncle3_mania": {
+            "@id": "fhxp201:q7i_mat_uncle3_mania",
+            "@type": "@id"
+        },
+        "q7i_mat_uncle4_mania": {
+            "@id": "fhxp201:q7i_mat_uncle4_mania",
+            "@type": "@id"
+        },
+        "q7i_mat_uncle5_mania": {
+            "@id": "fhxp201:q7i_mat_uncle5_mania",
+            "@type": "@id"
+        },
+        "q7j_mat_aunt1_mania": {
+            "@id": "fhxp201:q7j_mat_aunt1_mania",
+            "@type": "@id"
+        },
+        "q7j_mat_aunt2_mania": {
+            "@id": "fhxp201:q7j_mat_aunt2_mania",
+            "@type": "@id"
+        },
+        "q7j_mat_aunt3_mania": {
+            "@id": "fhxp201:q7j_mat_aunt3_mania",
+            "@type": "@id"
+        },
+        "q7j_mat_aunt4_mania": {
+            "@id": "fhxp201:q7j_mat_aunt4_mania",
+            "@type": "@id"
+        },
+        "q7j_mat_aunt5_mania": {
+            "@id": "fhxp201:q7j_mat_aunt5_mania",
+            "@type": "@id"
+        },
+        "q7k_full_sib_young1_mania": {
+            "@id": "fhxp201:q7k_full_sib_young1_mania",
+            "@type": "@id"
+        },
+        "q7k_full_sib_young2_mania": {
+            "@id": "fhxp201:q7k_full_sib_young2_mania",
+            "@type": "@id"
+        },
+        "q7k_full_sib_young3_mania": {
+            "@id": "fhxp201:q7k_full_sib_young3_mania",
+            "@type": "@id"
+        },
+        "q7k_full_sib_young4_mania": {
+            "@id": "fhxp201:q7k_full_sib_young4_mania",
+            "@type": "@id"
+        },
+        "q7k_full_sib_young5_mania": {
+            "@id": "fhxp201:q7k_full_sib_young5_mania",
+            "@type": "@id"
+        },
+        "q7l_full_sib_old1_mania": {
+            "@id": "fhxp201:q7l_full_sib_old1_mania",
+            "@type": "@id"
+        },
+        "q7l_full_sib_old2_mania": {
+            "@id": "fhxp201:q7l_full_sib_old2_mania",
+            "@type": "@id"
+        },
+        "q7l_full_sib_old3_mania": {
+            "@id": "fhxp201:q7l_full_sib_old3_mania",
+            "@type": "@id"
+        },
+        "q7l_full_sib_old4_mania": {
+            "@id": "fhxp201:q7l_full_sib_old4_mania",
+            "@type": "@id"
+        },
+        "q7l_full_sib_old5_mania": {
+            "@id": "fhxp201:q7l_full_sib_old5_mania",
+            "@type": "@id"
+        },
+        "q7m_full_sib_same1_mania": {
+            "@id": "fhxp201:q7m_full_sib_same1_mania",
+            "@type": "@id"
+        },
+        "q7m_full_sib_same2_mania": {
+            "@id": "fhxp201:q7m_full_sib_same2_mania",
+            "@type": "@id"
+        },
+        "q7m_half_sib_young1_mania": {
+            "@id": "fhxp201:q7m_half_sib_young1_mania",
+            "@type": "@id"
+        },
+        "q7m_half_sib_young2_mania": {
+            "@id": "fhxp201:q7m_half_sib_young2_mania",
+            "@type": "@id"
+        },
+        "q7m_half_sib_young3_mania": {
+            "@id": "fhxp201:q7m_half_sib_young3_mania",
+            "@type": "@id"
+        },
+        "q7m_half_sib_young4_mania": {
+            "@id": "fhxp201:q7m_half_sib_young4_mania",
+            "@type": "@id"
+        },
+        "q7m_half_sib_young5_mania": {
+            "@id": "fhxp201:q7m_half_sib_young5_mania",
+            "@type": "@id"
+        },
+        "q7n_half_sib_old1_mania": {
+            "@id": "fhxp201:q7n_half_sib_old1_mania",
+            "@type": "@id"
+        },
+        "q7n_half_sib_old2_mania": {
+            "@id": "fhxp201:q7n_half_sib_old2_mania",
+            "@type": "@id"
+        },
+        "q7n_half_sib_old3_mania": {
+            "@id": "fhxp201:q7n_half_sib_old3_mania",
+            "@type": "@id"
+        },
+        "q7n_half_sib_old4_mania": {
+            "@id": "fhxp201:q7n_half_sib_old4_mania",
+            "@type": "@id"
+        },
+        "q7n_half_sib_old5_mania": {
+            "@id": "fhxp201:q7n_half_sib_old5_mania",
+            "@type": "@id"
+        },
+        "q8g_pat_uncle1_visions": {
+            "@id": "fhxp201:q8g_pat_uncle1_visions",
+            "@type": "@id"
+        },
+        "q8g_pat_uncle2_visions": {
+            "@id": "fhxp201:q8g_pat_uncle2_visions",
+            "@type": "@id"
+        },
+        "q8g_pat_uncle3_visions": {
+            "@id": "fhxp201:q8g_pat_uncle3_visions",
+            "@type": "@id"
+        },
+        "q8g_pat_uncle4_visions": {
+            "@id": "fhxp201:q8g_pat_uncle4_visions",
+            "@type": "@id"
+        },
+        "q8g_pat_uncle5_visions": {
+            "@id": "fhxp201:q8g_pat_uncle5_visions",
+            "@type": "@id"
+        },
+        "q8h_pat_aunt1_visions": {
+            "@id": "fhxp201:q8h_pat_aunt1_visions",
+            "@type": "@id"
+        },
+        "q8h_pat_aunt2_visions": {
+            "@id": "fhxp201:q8h_pat_aunt2_visions",
+            "@type": "@id"
+        },
+        "q8h_pat_aunt3_visions": {
+            "@id": "fhxp201:q8h_pat_aunt3_visions",
+            "@type": "@id"
+        },
+        "q8h_pat_aunt4_visions": {
+            "@id": "fhxp201:q8h_pat_aunt4_visions",
+            "@type": "@id"
+        },
+        "q8h_pat_aunt5_visions": {
+            "@id": "fhxp201:q8h_pat_aunt5_visions",
+            "@type": "@id"
+        },
+        "q8i_mat_uncle1_visions": {
+            "@id": "fhxp201:q8i_mat_uncle1_visions",
+            "@type": "@id"
+        },
+        "q8i_mat_uncle3_visions": {
+            "@id": "fhxp201:q8i_mat_uncle3_visions",
+            "@type": "@id"
+        },
+        "q8i_mat_uncle4_visions": {
+            "@id": "fhxp201:q8i_mat_uncle4_visions",
+            "@type": "@id"
+        },
+        "q8i_mat_uncle5_visions": {
+            "@id": "fhxp201:q8i_mat_uncle5_visions",
+            "@type": "@id"
+        },
+        "q8i_pat_uncle2_visions": {
+            "@id": "fhxp201:q8i_pat_uncle2_visions",
+            "@type": "@id"
+        },
+        "q8j_mat_aunt1_visions": {
+            "@id": "fhxp201:q8j_mat_aunt1_visions",
+            "@type": "@id"
+        },
+        "q8j_mat_aunt2_visions": {
+            "@id": "fhxp201:q8j_mat_aunt2_visions",
+            "@type": "@id"
+        },
+        "q8j_mat_aunt3_visions": {
+            "@id": "fhxp201:q8j_mat_aunt3_visions",
+            "@type": "@id"
+        },
+        "q8j_mat_aunt4_visions": {
+            "@id": "fhxp201:q8j_mat_aunt4_visions",
+            "@type": "@id"
+        },
+        "q8j_mat_aunt5_visions": {
+            "@id": "fhxp201:q8j_mat_aunt5_visions",
+            "@type": "@id"
+        },
+        "q8k_full_sib_young1_visions": {
+            "@id": "fhxp201:q8k_full_sib_young1_visions",
+            "@type": "@id"
+        },
+        "q8k_full_sib_young2_visions": {
+            "@id": "fhxp201:q8k_full_sib_young2_visions",
+            "@type": "@id"
+        },
+        "q8k_full_sib_young3_visions": {
+            "@id": "fhxp201:q8k_full_sib_young3_visions",
+            "@type": "@id"
+        },
+        "q8k_full_sib_young4_visions": {
+            "@id": "fhxp201:q8k_full_sib_young4_visions",
+            "@type": "@id"
+        },
+        "q8k_full_sib_young5_visions": {
+            "@id": "fhxp201:q8k_full_sib_young5_visions",
+            "@type": "@id"
+        },
+        "q8l_full_sib_old1_visions": {
+            "@id": "fhxp201:q8l_full_sib_old1_visions",
+            "@type": "@id"
+        },
+        "q8l_full_sib_old2_visions": {
+            "@id": "fhxp201:q8l_full_sib_old2_visions",
+            "@type": "@id"
+        },
+        "q8l_full_sib_old3_visions": {
+            "@id": "fhxp201:q8l_full_sib_old3_visions",
+            "@type": "@id"
+        },
+        "q8l_full_sib_old4_visions": {
+            "@id": "fhxp201:q8l_full_sib_old4_visions",
+            "@type": "@id"
+        },
+        "q8l_full_sib_old5_visions": {
+            "@id": "fhxp201:q8l_full_sib_old5_visions",
+            "@type": "@id"
+        },
+        "q8m_full_sib_same1_visions": {
+            "@id": "fhxp201:q8m_full_sib_same1_visions",
+            "@type": "@id"
+        },
+        "q8m_full_sib_same2_visions": {
+            "@id": "fhxp201:q8m_full_sib_same2_visions",
+            "@type": "@id"
+        },
+        "q8m_half_sib_young1_visions": {
+            "@id": "fhxp201:q8m_half_sib_young1_visions",
+            "@type": "@id"
+        },
+        "q8m_half_sib_young2_visions": {
+            "@id": "fhxp201:q8m_half_sib_young2_visions",
+            "@type": "@id"
+        },
+        "q8m_half_sib_young3_visions": {
+            "@id": "fhxp201:q8m_half_sib_young3_visions",
+            "@type": "@id"
+        },
+        "q8m_half_sib_young4_visions": {
+            "@id": "fhxp201:q8m_half_sib_young4_visions",
+            "@type": "@id"
+        },
+        "q8m_half_sib_young5_visions": {
+            "@id": "fhxp201:q8m_half_sib_young5_visions",
+            "@type": "@id"
+        },
+        "q8n_half_sib_old1_visions": {
+            "@id": "fhxp201:q8n_half_sib_old1_visions",
+            "@type": "@id"
+        },
+        "q8n_half_sib_old2_visions": {
+            "@id": "fhxp201:q8n_half_sib_old2_visions",
+            "@type": "@id"
+        },
+        "q8n_half_sib_old3_visions": {
+            "@id": "fhxp201:q8n_half_sib_old3_visions",
+            "@type": "@id"
+        },
+        "q8n_half_sib_old4_visions": {
+            "@id": "fhxp201:q8n_half_sib_old4_visions",
+            "@type": "@id"
+        },
+        "q8n_half_sib_old5_visions": {
+            "@id": "fhxp201:q8n_half_sib_old5_visions",
+            "@type": "@id"
+        },
+        "q9g_pat_uncle1_trouble": {
+            "@id": "fhxp201:q9g_pat_uncle1_trouble",
+            "@type": "@id"
+        },
+        "q9g_pat_uncle2_trouble": {
+            "@id": "fhxp201:q9g_pat_uncle2_trouble",
+            "@type": "@id"
+        },
+        "q9g_pat_uncle3_trouble": {
+            "@id": "fhxp201:q9g_pat_uncle3_trouble",
+            "@type": "@id"
+        },
+        "q9g_pat_uncle4_trouble": {
+            "@id": "fhxp201:q9g_pat_uncle4_trouble",
+            "@type": "@id"
+        },
+        "q9g_pat_uncle5_trouble": {
+            "@id": "fhxp201:q9g_pat_uncle5_trouble",
+            "@type": "@id"
+        },
+        "q9h_pat_aunt1_trouble": {
+            "@id": "fhxp201:q9h_pat_aunt1_trouble",
+            "@type": "@id"
+        },
+        "q9h_pat_aunt2_trouble": {
+            "@id": "fhxp201:q9h_pat_aunt2_trouble",
+            "@type": "@id"
+        },
+        "q9h_pat_aunt3_trouble": {
+            "@id": "fhxp201:q9h_pat_aunt3_trouble",
+            "@type": "@id"
+        },
+        "q9h_pat_aunt4_trouble": {
+            "@id": "fhxp201:q9h_pat_aunt4_trouble",
+            "@type": "@id"
+        },
+        "q9h_pat_aunt5_trouble": {
+            "@id": "fhxp201:q9h_pat_aunt5_trouble",
+            "@type": "@id"
+        },
+        "q9i_mat_uncle1_trouble": {
+            "@id": "fhxp201:q9i_mat_uncle1_trouble",
+            "@type": "@id"
+        },
+        "q9i_mat_uncle2_trouble": {
+            "@id": "fhxp201:q9i_mat_uncle2_trouble",
+            "@type": "@id"
+        },
+        "q9i_mat_uncle3_trouble": {
+            "@id": "fhxp201:q9i_mat_uncle3_trouble",
+            "@type": "@id"
+        },
+        "q9i_mat_uncle4_trouble": {
+            "@id": "fhxp201:q9i_mat_uncle4_trouble",
+            "@type": "@id"
+        },
+        "q9i_mat_uncle5_trouble": {
+            "@id": "fhxp201:q9i_mat_uncle5_trouble",
+            "@type": "@id"
+        },
+        "q9j_mat_aunt1_trouble": {
+            "@id": "fhxp201:q9j_mat_aunt1_trouble",
+            "@type": "@id"
+        },
+        "q9j_mat_aunt2_trouble": {
+            "@id": "fhxp201:q9j_mat_aunt2_trouble",
+            "@type": "@id"
+        },
+        "q9j_mat_aunt3_trouble": {
+            "@id": "fhxp201:q9j_mat_aunt3_trouble",
+            "@type": "@id"
+        },
+        "q9j_mat_aunt4_trouble": {
+            "@id": "fhxp201:q9j_mat_aunt4_trouble",
+            "@type": "@id"
+        },
+        "q9j_mat_aunt5_trouble": {
+            "@id": "fhxp201:q9j_mat_aunt5_trouble",
+            "@type": "@id"
+        },
+        "q9k_full_sib_young1_trouble": {
+            "@id": "fhxp201:q9k_full_sib_young1_trouble",
+            "@type": "@id"
+        },
+        "q9k_full_sib_young2_trouble": {
+            "@id": "fhxp201:q9k_full_sib_young2_trouble",
+            "@type": "@id"
+        },
+        "q9k_full_sib_young3_trouble": {
+            "@id": "fhxp201:q9k_full_sib_young3_trouble",
+            "@type": "@id"
+        },
+        "q9k_full_sib_young4_trouble": {
+            "@id": "fhxp201:q9k_full_sib_young4_trouble",
+            "@type": "@id"
+        },
+        "q9k_full_sib_young5_trouble": {
+            "@id": "fhxp201:q9k_full_sib_young5_trouble",
+            "@type": "@id"
+        },
+        "q9l_full_sib_old1_trouble": {
+            "@id": "fhxp201:q9l_full_sib_old1_trouble",
+            "@type": "@id"
+        },
+        "q9l_full_sib_old2_trouble": {
+            "@id": "fhxp201:q9l_full_sib_old2_trouble",
+            "@type": "@id"
+        },
+        "q9l_full_sib_old3_trouble": {
+            "@id": "fhxp201:q9l_full_sib_old3_trouble",
+            "@type": "@id"
+        },
+        "q9l_full_sib_old4_trouble": {
+            "@id": "fhxp201:q9l_full_sib_old4_trouble",
+            "@type": "@id"
+        },
+        "q9l_full_sib_old5_trouble": {
+            "@id": "fhxp201:q9l_full_sib_old5_trouble",
+            "@type": "@id"
+        },
+        "q9m_full_sib_same1_trouble": {
+            "@id": "fhxp201:q9m_full_sib_same1_trouble",
+            "@type": "@id"
+        },
+        "q9m_full_sib_same2_trouble": {
+            "@id": "fhxp201:q9m_full_sib_same2_trouble",
+            "@type": "@id"
+        },
+        "q9m_half_sib_young1_trouble": {
+            "@id": "fhxp201:q9m_half_sib_young1_trouble",
+            "@type": "@id"
+        },
+        "q9m_half_sib_young2_trouble": {
+            "@id": "fhxp201:q9m_half_sib_young2_trouble",
+            "@type": "@id"
+        },
+        "q9m_half_sib_young3_trouble": {
+            "@id": "fhxp201:q9m_half_sib_young3_trouble",
+            "@type": "@id"
+        },
+        "q9m_half_sib_young4_trouble": {
+            "@id": "fhxp201:q9m_half_sib_young4_trouble",
+            "@type": "@id"
+        },
+        "q9m_half_sib_young5_trouble": {
+            "@id": "fhxp201:q9m_half_sib_young5_trouble",
+            "@type": "@id"
+        },
+        "q9n_half_sib_old1_trouble": {
+            "@id": "fhxp201:q9n_half_sib_old1_trouble",
+            "@type": "@id"
+        },
+        "q9n_half_sib_old2_trouble": {
+            "@id": "fhxp201:q9n_half_sib_old2_trouble",
+            "@type": "@id"
+        },
+        "q9n_half_sib_old3_trouble": {
+            "@id": "fhxp201:q9n_half_sib_old3_trouble",
+            "@type": "@id"
+        },
+        "q9n_half_sib_old4_trouble": {
+            "@id": "fhxp201:q9n_half_sib_old4_trouble",
+            "@type": "@id"
+        },
+        "q9n_half_sib_old5_trouble": {
+            "@id": "fhxp201:q9n_half_sib_old5_trouble",
+            "@type": "@id"
+        }
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+        "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/activities/abcd_svs01/abcd_svs01_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "abcd_svs01_schema",
+    "skos:prefLabel": "abcd_svs01",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "order": [
+            "snellen_aid_y",
+            "snellen_aidpres_y",
+            "snellen_va_y",
+            "vis_flg"
+        ],
+        "shuffle": false,
+        "addProperties": [
+            {
+                "variableName": "snellen_aid_y",
+                "isAbout": "snellen_aid_y"
+            },
+            {
+                "variableName": "snellen_aidpres_y",
+                "isAbout": "snellen_aidpres_y"
+            },
+            {
+                "variableName": "snellen_va_y",
+                "isAbout": "snellen_va_y"
+            },
+            {
+                "variableName": "vis_flg",
+                "isAbout": "vis_flg"
+            }
+        ]
+    }
+}

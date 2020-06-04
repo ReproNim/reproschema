@@ -1,0 +1,51 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "su_tlfb_cbd_follow_up_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "su_tlfb_cbd_follow_up_l",
+    "altLabel": "su_tlfb_cbd_follow_up",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "What type of CBD product did you use during the past year? (choose all that apply)",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 999,
+        "choices": [
+            {
+                "name": " Epidiolex",
+                "value": 1
+            },
+            {
+                "name": "Oil or tincture by mouth",
+                "value": 2
+            },
+            {
+                "name": " Inhaled or smoked product ",
+                "value": 3
+            },
+            {
+                "name": "Edible, capsule, or pill ",
+                "value": 4
+            },
+            {
+                "name": "Topical lotion or transdermal patch",
+                "value": 5
+            },
+            {
+                "name": "Dont know /  tlfb_6mo_skip_l___33   == 1  &&  event_name_number > 20",
+                "value": 999
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 =  Epidiolex; 2 = Oil or tincture by mouth; 3 =  Inhaled or smoked product ; 4 = Edible, capsule, or pill ; 5 = Topical lotion or transdermal patch; 999 = Dont know /  tlfb_6mo_skip_l___33   == 1  &&  event_name_number > 20"
+        }
+    ]
+}

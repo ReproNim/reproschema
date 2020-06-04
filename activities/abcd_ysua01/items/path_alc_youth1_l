@@ -1,0 +1,51 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "path_alc_youth1_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "path_alc_youth1_l",
+    "altLabel": "su_intent_youth1_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Have you ever been curious about using a tobacco product such as cigarettes, e-cigarettes, hookah, or cigars?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Very curious",
+                "value": 1
+            },
+            {
+                "name": "Somewhat curious",
+                "value": 2
+            },
+            {
+                "name": "A little curious",
+                "value": 3
+            },
+            {
+                "name": "Not at all curious",
+                "value": 4
+            },
+            {
+                "name": "Don't Know",
+                "value": 5
+            },
+            {
+                "name": "Refused /( tlfb_tob_l   == '1' ",
+                "value": 6
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Very curious; 2 = Somewhat curious; 3 = A little curious; 4 = Not at all curious; 5 = Don't Know; 6 = Refused /( tlfb_tob_l   == '1' ||   tlfb_tob_c_l   == '1') && ( tlfb_tob_puff_l  =='0' &&  tlfb_chew_use_l  =='0' &&  tlfb_cigar_use_l  =='0' &&  tlfb_hookah_use_l  =='0' &&  tlfb_pipes_use_l  =='0' &&  tlfb_nicotine_use_l  =='0' &&  tlfb_tob_puff_c_l  =='0' &&  tlfb_chew_use_c_l  =='0' &&  tlfb_cigar_use_c_l  =='0' &&  tlfb_hookah_use_c_l  =='0' &&  tlfb_pipes_use_c_l  =='0' &&  tlfb_nicotine_use_c_l  =='0')"
+        }
+    ]
+}

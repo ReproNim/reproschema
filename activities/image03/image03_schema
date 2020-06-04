@@ -1,0 +1,533 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+        "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/activities/image03/image03_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "image03_schema",
+    "skos:prefLabel": "image03",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "order": [
+            "visit",
+            "comments_misc",
+            "data_file2",
+            "data_file2_type",
+            "experiment_id",
+            "acquisition_matrix",
+            "block_number",
+            "bvalfile",
+            "bvecfile",
+            "bvek_bval_files",
+            "camera_sn",
+            "cut_thickness",
+            "decay_correction",
+            "decon_iterations",
+            "decon_method",
+            "decon_snr",
+            "decon_software",
+            "decon_template_name",
+            "deconvolved",
+            "deviceserialnumber",
+            "emission_wavelingth",
+            "excitation_wavelength",
+            "experiment_description",
+            "exposure_time",
+            "extent4_type",
+            "extent5_type",
+            "flip_angle",
+            "frame_end_times",
+            "frame_end_unit",
+            "frame_start_times",
+            "frame_start_unit",
+            "image_description",
+            "image_extent1",
+            "image_extent2",
+            "image_extent3",
+            "image_extent4",
+            "image_extent5",
+            "image_file",
+            "image_file_format",
+            "image_history",
+            "image_modality",
+            "image_num_dimensions",
+            "image_orientation",
+            "image_resolution1",
+            "image_resolution2",
+            "image_resolution3",
+            "image_resolution4",
+            "image_resolution5",
+            "image_slice_thickness",
+            "image_thumbnail_file",
+            "image_unit1",
+            "image_unit2",
+            "image_unit3",
+            "image_unit4",
+            "image_unit5",
+            "immersion",
+            "in_stack",
+            "level",
+            "magnetic_field_strength",
+            "manifest",
+            "micro_temmplate_name",
+            "mri_echo_time_pd",
+            "mri_field_of_view_pd",
+            "mri_repetition_time_pd",
+            "objective_magnification",
+            "objective_na",
+            "patient_position",
+            "pet_isotope",
+            "pet_tracer",
+            "photomet_interpret",
+            "pipeline_stage",
+            "procdate",
+            "psf_file",
+            "psf_type",
+            "pulse_seq",
+            "qc_description",
+            "qc_fail_quest_reason",
+            "qc_outcome",
+            "receive_coil",
+            "scan_object",
+            "scan_type",
+            "scanner_manufacturer_pd",
+            "scanner_software_versions_pd",
+            "scanner_type_pd",
+            "slice_acquisition",
+            "slice_number",
+            "slice_thickness",
+            "slice_timing",
+            "slices",
+            "software_preproc",
+            "stack",
+            "stain",
+            "stain_details",
+            "study",
+            "time_diff_inject_to_image",
+            "time_diff_units",
+            "transformation_performed",
+            "transformation_type",
+            "transmit_coil",
+            "type_of_microscopy",
+            "visnum",
+            "week",
+            "year_mta"
+        ],
+        "shuffle": false,
+        "addProperties": [
+            {
+                "variableName": "visit",
+                "isAbout": "visit"
+            },
+            {
+                "variableName": "comments_misc",
+                "isAbout": "comments_misc"
+            },
+            {
+                "variableName": "data_file2",
+                "isAbout": "data_file2"
+            },
+            {
+                "variableName": "data_file2_type",
+                "isAbout": "data_file2_type"
+            },
+            {
+                "variableName": "experiment_id",
+                "isAbout": "experiment_id"
+            },
+            {
+                "variableName": "acquisition_matrix",
+                "isAbout": "acquisition_matrix"
+            },
+            {
+                "variableName": "block_number",
+                "isAbout": "block_number"
+            },
+            {
+                "variableName": "bvalfile",
+                "isAbout": "bvalfile"
+            },
+            {
+                "variableName": "bvecfile",
+                "isAbout": "bvecfile"
+            },
+            {
+                "variableName": "bvek_bval_files",
+                "isAbout": "bvek_bval_files"
+            },
+            {
+                "variableName": "camera_sn",
+                "isAbout": "camera_sn"
+            },
+            {
+                "variableName": "cut_thickness",
+                "isAbout": "cut_thickness"
+            },
+            {
+                "variableName": "decay_correction",
+                "isAbout": "decay_correction"
+            },
+            {
+                "variableName": "decon_iterations",
+                "isAbout": "decon_iterations"
+            },
+            {
+                "variableName": "decon_method",
+                "isAbout": "decon_method"
+            },
+            {
+                "variableName": "decon_snr",
+                "isAbout": "decon_snr"
+            },
+            {
+                "variableName": "decon_software",
+                "isAbout": "decon_software"
+            },
+            {
+                "variableName": "decon_template_name",
+                "isAbout": "decon_template_name"
+            },
+            {
+                "variableName": "deconvolved",
+                "isAbout": "deconvolved"
+            },
+            {
+                "variableName": "deviceserialnumber",
+                "isAbout": "deviceserialnumber"
+            },
+            {
+                "variableName": "emission_wavelingth",
+                "isAbout": "emission_wavelingth"
+            },
+            {
+                "variableName": "excitation_wavelength",
+                "isAbout": "excitation_wavelength"
+            },
+            {
+                "variableName": "experiment_description",
+                "isAbout": "experiment_description"
+            },
+            {
+                "variableName": "exposure_time",
+                "isAbout": "exposure_time"
+            },
+            {
+                "variableName": "extent4_type",
+                "isAbout": "extent4_type"
+            },
+            {
+                "variableName": "extent5_type",
+                "isAbout": "extent5_type"
+            },
+            {
+                "variableName": "flip_angle",
+                "isAbout": "flip_angle"
+            },
+            {
+                "variableName": "frame_end_times",
+                "isAbout": "frame_end_times"
+            },
+            {
+                "variableName": "frame_end_unit",
+                "isAbout": "frame_end_unit"
+            },
+            {
+                "variableName": "frame_start_times",
+                "isAbout": "frame_start_times"
+            },
+            {
+                "variableName": "frame_start_unit",
+                "isAbout": "frame_start_unit"
+            },
+            {
+                "variableName": "image_description",
+                "isAbout": "image_description"
+            },
+            {
+                "variableName": "image_extent1",
+                "isAbout": "image_extent1"
+            },
+            {
+                "variableName": "image_extent2",
+                "isAbout": "image_extent2"
+            },
+            {
+                "variableName": "image_extent3",
+                "isAbout": "image_extent3"
+            },
+            {
+                "variableName": "image_extent4",
+                "isAbout": "image_extent4"
+            },
+            {
+                "variableName": "image_extent5",
+                "isAbout": "image_extent5"
+            },
+            {
+                "variableName": "image_file",
+                "isAbout": "image_file"
+            },
+            {
+                "variableName": "image_file_format",
+                "isAbout": "image_file_format"
+            },
+            {
+                "variableName": "image_history",
+                "isAbout": "image_history"
+            },
+            {
+                "variableName": "image_modality",
+                "isAbout": "image_modality"
+            },
+            {
+                "variableName": "image_num_dimensions",
+                "isAbout": "image_num_dimensions"
+            },
+            {
+                "variableName": "image_orientation",
+                "isAbout": "image_orientation"
+            },
+            {
+                "variableName": "image_resolution1",
+                "isAbout": "image_resolution1"
+            },
+            {
+                "variableName": "image_resolution2",
+                "isAbout": "image_resolution2"
+            },
+            {
+                "variableName": "image_resolution3",
+                "isAbout": "image_resolution3"
+            },
+            {
+                "variableName": "image_resolution4",
+                "isAbout": "image_resolution4"
+            },
+            {
+                "variableName": "image_resolution5",
+                "isAbout": "image_resolution5"
+            },
+            {
+                "variableName": "image_slice_thickness",
+                "isAbout": "image_slice_thickness"
+            },
+            {
+                "variableName": "image_thumbnail_file",
+                "isAbout": "image_thumbnail_file"
+            },
+            {
+                "variableName": "image_unit1",
+                "isAbout": "image_unit1"
+            },
+            {
+                "variableName": "image_unit2",
+                "isAbout": "image_unit2"
+            },
+            {
+                "variableName": "image_unit3",
+                "isAbout": "image_unit3"
+            },
+            {
+                "variableName": "image_unit4",
+                "isAbout": "image_unit4"
+            },
+            {
+                "variableName": "image_unit5",
+                "isAbout": "image_unit5"
+            },
+            {
+                "variableName": "immersion",
+                "isAbout": "immersion"
+            },
+            {
+                "variableName": "in_stack",
+                "isAbout": "in_stack"
+            },
+            {
+                "variableName": "level",
+                "isAbout": "level"
+            },
+            {
+                "variableName": "magnetic_field_strength",
+                "isAbout": "magnetic_field_strength"
+            },
+            {
+                "variableName": "manifest",
+                "isAbout": "manifest"
+            },
+            {
+                "variableName": "micro_temmplate_name",
+                "isAbout": "micro_temmplate_name"
+            },
+            {
+                "variableName": "mri_echo_time_pd",
+                "isAbout": "mri_echo_time_pd"
+            },
+            {
+                "variableName": "mri_field_of_view_pd",
+                "isAbout": "mri_field_of_view_pd"
+            },
+            {
+                "variableName": "mri_repetition_time_pd",
+                "isAbout": "mri_repetition_time_pd"
+            },
+            {
+                "variableName": "objective_magnification",
+                "isAbout": "objective_magnification"
+            },
+            {
+                "variableName": "objective_na",
+                "isAbout": "objective_na"
+            },
+            {
+                "variableName": "patient_position",
+                "isAbout": "patient_position"
+            },
+            {
+                "variableName": "pet_isotope",
+                "isAbout": "pet_isotope"
+            },
+            {
+                "variableName": "pet_tracer",
+                "isAbout": "pet_tracer"
+            },
+            {
+                "variableName": "photomet_interpret",
+                "isAbout": "photomet_interpret"
+            },
+            {
+                "variableName": "pipeline_stage",
+                "isAbout": "pipeline_stage"
+            },
+            {
+                "variableName": "procdate",
+                "isAbout": "procdate"
+            },
+            {
+                "variableName": "psf_file",
+                "isAbout": "psf_file"
+            },
+            {
+                "variableName": "psf_type",
+                "isAbout": "psf_type"
+            },
+            {
+                "variableName": "pulse_seq",
+                "isAbout": "pulse_seq"
+            },
+            {
+                "variableName": "qc_description",
+                "isAbout": "qc_description"
+            },
+            {
+                "variableName": "qc_fail_quest_reason",
+                "isAbout": "qc_fail_quest_reason"
+            },
+            {
+                "variableName": "qc_outcome",
+                "isAbout": "qc_outcome"
+            },
+            {
+                "variableName": "receive_coil",
+                "isAbout": "receive_coil"
+            },
+            {
+                "variableName": "scan_object",
+                "isAbout": "scan_object"
+            },
+            {
+                "variableName": "scan_type",
+                "isAbout": "scan_type"
+            },
+            {
+                "variableName": "scanner_manufacturer_pd",
+                "isAbout": "scanner_manufacturer_pd"
+            },
+            {
+                "variableName": "scanner_software_versions_pd",
+                "isAbout": "scanner_software_versions_pd"
+            },
+            {
+                "variableName": "scanner_type_pd",
+                "isAbout": "scanner_type_pd"
+            },
+            {
+                "variableName": "slice_acquisition",
+                "isAbout": "slice_acquisition"
+            },
+            {
+                "variableName": "slice_number",
+                "isAbout": "slice_number"
+            },
+            {
+                "variableName": "slice_thickness",
+                "isAbout": "slice_thickness"
+            },
+            {
+                "variableName": "slice_timing",
+                "isAbout": "slice_timing"
+            },
+            {
+                "variableName": "slices",
+                "isAbout": "slices"
+            },
+            {
+                "variableName": "software_preproc",
+                "isAbout": "software_preproc"
+            },
+            {
+                "variableName": "stack",
+                "isAbout": "stack"
+            },
+            {
+                "variableName": "stain",
+                "isAbout": "stain"
+            },
+            {
+                "variableName": "stain_details",
+                "isAbout": "stain_details"
+            },
+            {
+                "variableName": "study",
+                "isAbout": "study"
+            },
+            {
+                "variableName": "time_diff_inject_to_image",
+                "isAbout": "time_diff_inject_to_image"
+            },
+            {
+                "variableName": "time_diff_units",
+                "isAbout": "time_diff_units"
+            },
+            {
+                "variableName": "transformation_performed",
+                "isAbout": "transformation_performed"
+            },
+            {
+                "variableName": "transformation_type",
+                "isAbout": "transformation_type"
+            },
+            {
+                "variableName": "transmit_coil",
+                "isAbout": "transmit_coil"
+            },
+            {
+                "variableName": "type_of_microscopy",
+                "isAbout": "type_of_microscopy"
+            },
+            {
+                "variableName": "visnum",
+                "isAbout": "visnum"
+            },
+            {
+                "variableName": "week",
+                "isAbout": "week"
+            },
+            {
+                "variableName": "year_mta",
+                "isAbout": "year_mta"
+            }
+        ]
+    }
+}

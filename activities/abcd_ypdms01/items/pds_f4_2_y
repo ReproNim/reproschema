@@ -1,0 +1,50 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "pds_f4_2_y",
+    "@type": "reproschema:Field",
+    "prefLabel": "pds_f4_2_y",
+    "altLabel": "pubertdev_f4",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Have you noticed that your breasts have begun to grow?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "have not yet started growing",
+                "value": 1
+            },
+            {
+                "name": "have barely started growing",
+                "value": 2
+            },
+            {
+                "name": "breast growth is definitely underway",
+                "value": 3
+            },
+            {
+                "name": "breast growth seems complete",
+                "value": 4
+            },
+            {
+                "name": "I don't know",
+                "value": 999
+            },
+            {
+                "value": 777
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = have not yet started growing; 2 = have barely started growing; 3 = breast growth is definitely underway; 4 = breast growth seems complete; 999 = I don't know; 777= refuse to answer"
+        }
+    ]
+}

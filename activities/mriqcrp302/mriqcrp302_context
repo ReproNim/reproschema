@@ -1,0 +1,914 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "mriqcrp302": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/activities/mriqcrp302/items/",
+        "eprime_mismatch_ok_mid": {
+            "@id": "mriqcrp302:eprime_mismatch_ok_mid",
+            "@type": "@id"
+        },
+        "eprime_mismatch_ok_nback": {
+            "@id": "mriqcrp302:eprime_mismatch_ok_nback",
+            "@type": "@id"
+        },
+        "eprime_mismatch_ok_sst": {
+            "@id": "mriqcrp302:eprime_mismatch_ok_sst",
+            "@type": "@id"
+        },
+        "iqc_1st_series_time": {
+            "@id": "mriqcrp302:iqc_1st_series_time",
+            "@type": "@id"
+        },
+        "iqc_dmri_fm_ap_imported": {
+            "@id": "mriqcrp302:iqc_dmri_fm_ap_imported",
+            "@type": "@id"
+        },
+        "iqc_dmri_fm_ap_missing_ks": {
+            "@id": "mriqcrp302:iqc_dmri_fm_ap_missing_ks",
+            "@type": "@id"
+        },
+        "iqc_dmri_fm_ap_needrawqc": {
+            "@id": "mriqcrp302:iqc_dmri_fm_ap_needrawqc",
+            "@type": "@id"
+        },
+        "iqc_dmri_fm_ap_procfail": {
+            "@id": "mriqcrp302:iqc_dmri_fm_ap_procfail",
+            "@type": "@id"
+        },
+        "iqc_dmri_fm_ap_received": {
+            "@id": "mriqcrp302:iqc_dmri_fm_ap_received",
+            "@type": "@id"
+        },
+        "iqc_dmri_fm_ap_recon_err": {
+            "@id": "mriqcrp302:iqc_dmri_fm_ap_recon_err",
+            "@type": "@id"
+        },
+        "iqc_dmri_fm_ap_recon_req": {
+            "@id": "mriqcrp302:iqc_dmri_fm_ap_recon_req",
+            "@type": "@id"
+        },
+        "iqc_dmri_fm_ap_reconned": {
+            "@id": "mriqcrp302:iqc_dmri_fm_ap_reconned",
+            "@type": "@id"
+        },
+        "iqc_dmri_fm_ap_rename_err": {
+            "@id": "mriqcrp302:iqc_dmri_fm_ap_rename_err",
+            "@type": "@id"
+        },
+        "iqc_dmri_fm_ap_unpack_err": {
+            "@id": "mriqcrp302:iqc_dmri_fm_ap_unpack_err",
+            "@type": "@id"
+        },
+        "iqc_dmri_fm_ap_unpacked": {
+            "@id": "mriqcrp302:iqc_dmri_fm_ap_unpacked",
+            "@type": "@id"
+        },
+        "iqc_dmri_fm_ap_waitautoqc": {
+            "@id": "mriqcrp302:iqc_dmri_fm_ap_waitautoqc",
+            "@type": "@id"
+        },
+        "iqc_dmri_fm_imported": {
+            "@id": "mriqcrp302:iqc_dmri_fm_imported",
+            "@type": "@id"
+        },
+        "iqc_dmri_fm_missing_ks": {
+            "@id": "mriqcrp302:iqc_dmri_fm_missing_ks",
+            "@type": "@id"
+        },
+        "iqc_dmri_fm_needrawqc": {
+            "@id": "mriqcrp302:iqc_dmri_fm_needrawqc",
+            "@type": "@id"
+        },
+        "iqc_dmri_fm_pa_imported": {
+            "@id": "mriqcrp302:iqc_dmri_fm_pa_imported",
+            "@type": "@id"
+        },
+        "iqc_dmri_fm_pa_missing_ks": {
+            "@id": "mriqcrp302:iqc_dmri_fm_pa_missing_ks",
+            "@type": "@id"
+        },
+        "iqc_dmri_fm_pa_needrawqc": {
+            "@id": "mriqcrp302:iqc_dmri_fm_pa_needrawqc",
+            "@type": "@id"
+        },
+        "iqc_dmri_fm_pa_procfail": {
+            "@id": "mriqcrp302:iqc_dmri_fm_pa_procfail",
+            "@type": "@id"
+        },
+        "iqc_dmri_fm_pa_received": {
+            "@id": "mriqcrp302:iqc_dmri_fm_pa_received",
+            "@type": "@id"
+        },
+        "iqc_dmri_fm_pa_recon_err": {
+            "@id": "mriqcrp302:iqc_dmri_fm_pa_recon_err",
+            "@type": "@id"
+        },
+        "iqc_dmri_fm_pa_recon_req": {
+            "@id": "mriqcrp302:iqc_dmri_fm_pa_recon_req",
+            "@type": "@id"
+        },
+        "iqc_dmri_fm_pa_reconned": {
+            "@id": "mriqcrp302:iqc_dmri_fm_pa_reconned",
+            "@type": "@id"
+        },
+        "iqc_dmri_fm_pa_rename_err": {
+            "@id": "mriqcrp302:iqc_dmri_fm_pa_rename_err",
+            "@type": "@id"
+        },
+        "iqc_dmri_fm_pa_unpack_err": {
+            "@id": "mriqcrp302:iqc_dmri_fm_pa_unpack_err",
+            "@type": "@id"
+        },
+        "iqc_dmri_fm_pa_unpacked": {
+            "@id": "mriqcrp302:iqc_dmri_fm_pa_unpacked",
+            "@type": "@id"
+        },
+        "iqc_dmri_fm_pa_waitautoqc": {
+            "@id": "mriqcrp302:iqc_dmri_fm_pa_waitautoqc",
+            "@type": "@id"
+        },
+        "iqc_dmri_fm_procfail": {
+            "@id": "mriqcrp302:iqc_dmri_fm_procfail",
+            "@type": "@id"
+        },
+        "iqc_dmri_fm_received": {
+            "@id": "mriqcrp302:iqc_dmri_fm_received",
+            "@type": "@id"
+        },
+        "iqc_dmri_fm_recon_err": {
+            "@id": "mriqcrp302:iqc_dmri_fm_recon_err",
+            "@type": "@id"
+        },
+        "iqc_dmri_fm_recon_req": {
+            "@id": "mriqcrp302:iqc_dmri_fm_recon_req",
+            "@type": "@id"
+        },
+        "iqc_dmri_fm_reconned": {
+            "@id": "mriqcrp302:iqc_dmri_fm_reconned",
+            "@type": "@id"
+        },
+        "iqc_dmri_fm_rename_err": {
+            "@id": "mriqcrp302:iqc_dmri_fm_rename_err",
+            "@type": "@id"
+        },
+        "iqc_dmri_fm_unpack_err": {
+            "@id": "mriqcrp302:iqc_dmri_fm_unpack_err",
+            "@type": "@id"
+        },
+        "iqc_dmri_fm_unpacked": {
+            "@id": "mriqcrp302:iqc_dmri_fm_unpacked",
+            "@type": "@id"
+        },
+        "iqc_dmri_fm_waitautoqc": {
+            "@id": "mriqcrp302:iqc_dmri_fm_waitautoqc",
+            "@type": "@id"
+        },
+        "iqc_dmri_imported": {
+            "@id": "mriqcrp302:iqc_dmri_imported",
+            "@type": "@id"
+        },
+        "iqc_dmri_missing": {
+            "@id": "mriqcrp302:iqc_dmri_missing",
+            "@type": "@id"
+        },
+        "iqc_dmri_missing_ks": {
+            "@id": "mriqcrp302:iqc_dmri_missing_ks",
+            "@type": "@id"
+        },
+        "iqc_dmri_needrawqc": {
+            "@id": "mriqcrp302:iqc_dmri_needrawqc",
+            "@type": "@id"
+        },
+        "iqc_dmri_procfail": {
+            "@id": "mriqcrp302:iqc_dmri_procfail",
+            "@type": "@id"
+        },
+        "iqc_dmri_received": {
+            "@id": "mriqcrp302:iqc_dmri_received",
+            "@type": "@id"
+        },
+        "iqc_dmri_recon_err": {
+            "@id": "mriqcrp302:iqc_dmri_recon_err",
+            "@type": "@id"
+        },
+        "iqc_dmri_recon_req": {
+            "@id": "mriqcrp302:iqc_dmri_recon_req",
+            "@type": "@id"
+        },
+        "iqc_dmri_reconned": {
+            "@id": "mriqcrp302:iqc_dmri_reconned",
+            "@type": "@id"
+        },
+        "iqc_dmri_rename_err": {
+            "@id": "mriqcrp302:iqc_dmri_rename_err",
+            "@type": "@id"
+        },
+        "iqc_dmri_unpack_err": {
+            "@id": "mriqcrp302:iqc_dmri_unpack_err",
+            "@type": "@id"
+        },
+        "iqc_dmri_unpacked": {
+            "@id": "mriqcrp302:iqc_dmri_unpacked",
+            "@type": "@id"
+        },
+        "iqc_dmri_waitautoqc": {
+            "@id": "mriqcrp302:iqc_dmri_waitautoqc",
+            "@type": "@id"
+        },
+        "iqc_eprime_lap_missing": {
+            "@id": "mriqcrp302:iqc_eprime_lap_missing",
+            "@type": "@id"
+        },
+        "iqc_eprime_lost_mid": {
+            "@id": "mriqcrp302:iqc_eprime_lost_mid",
+            "@type": "@id"
+        },
+        "iqc_eprime_lost_nback": {
+            "@id": "mriqcrp302:iqc_eprime_lost_nback",
+            "@type": "@id"
+        },
+        "iqc_eprime_lost_nback_rec": {
+            "@id": "mriqcrp302:iqc_eprime_lost_nback_rec",
+            "@type": "@id"
+        },
+        "iqc_eprime_lost_sst": {
+            "@id": "mriqcrp302:iqc_eprime_lost_sst",
+            "@type": "@id"
+        },
+        "iqc_eprime_missing": {
+            "@id": "mriqcrp302:iqc_eprime_missing",
+            "@type": "@id"
+        },
+        "iqc_eprime_scan_missing": {
+            "@id": "mriqcrp302:iqc_eprime_scan_missing",
+            "@type": "@id"
+        },
+        "iqc_eprime_scan_t_match": {
+            "@id": "mriqcrp302:iqc_eprime_scan_t_match",
+            "@type": "@id"
+        },
+        "iqc_eprime_status": {
+            "@id": "mriqcrp302:iqc_eprime_status",
+            "@type": "@id"
+        },
+        "iqc_event_multirev": {
+            "@id": "mriqcrp302:iqc_event_multirev",
+            "@type": "@id"
+        },
+        "iqc_event_needrawqc": {
+            "@id": "mriqcrp302:iqc_event_needrawqc",
+            "@type": "@id"
+        },
+        "iqc_event_procfail": {
+            "@id": "mriqcrp302:iqc_event_procfail",
+            "@type": "@id"
+        },
+        "iqc_event_qcd": {
+            "@id": "mriqcrp302:iqc_event_qcd",
+            "@type": "@id"
+        },
+        "iqc_event_revdisagree": {
+            "@id": "mriqcrp302:iqc_event_revdisagree",
+            "@type": "@id"
+        },
+        "iqc_event_rsfmri_autoqcd": {
+            "@id": "mriqcrp302:iqc_event_rsfmri_autoqcd",
+            "@type": "@id"
+        },
+        "iqc_event_waitautoqc": {
+            "@id": "mriqcrp302:iqc_event_waitautoqc",
+            "@type": "@id"
+        },
+        "iqc_eventcomplete": {
+            "@id": "mriqcrp302:iqc_eventcomplete",
+            "@type": "@id"
+        },
+        "iqc_eventcomplete_c_pc_qc": {
+            "@id": "mriqcrp302:iqc_eventcomplete_c_pc_qc",
+            "@type": "@id"
+        },
+        "iqc_fmri_fm_ap_imported": {
+            "@id": "mriqcrp302:iqc_fmri_fm_ap_imported",
+            "@type": "@id"
+        },
+        "iqc_fmri_fm_ap_needrawqc": {
+            "@id": "mriqcrp302:iqc_fmri_fm_ap_needrawqc",
+            "@type": "@id"
+        },
+        "iqc_fmri_fm_ap_procfail": {
+            "@id": "mriqcrp302:iqc_fmri_fm_ap_procfail",
+            "@type": "@id"
+        },
+        "iqc_fmri_fm_ap_received": {
+            "@id": "mriqcrp302:iqc_fmri_fm_ap_received",
+            "@type": "@id"
+        },
+        "iqc_fmri_fm_ap_rename_err": {
+            "@id": "mriqcrp302:iqc_fmri_fm_ap_rename_err",
+            "@type": "@id"
+        },
+        "iqc_fmri_fm_ap_unpack_err": {
+            "@id": "mriqcrp302:iqc_fmri_fm_ap_unpack_err",
+            "@type": "@id"
+        },
+        "iqc_fmri_fm_ap_unpacked": {
+            "@id": "mriqcrp302:iqc_fmri_fm_ap_unpacked",
+            "@type": "@id"
+        },
+        "iqc_fmri_fm_ap_waitautoqc": {
+            "@id": "mriqcrp302:iqc_fmri_fm_ap_waitautoqc",
+            "@type": "@id"
+        },
+        "iqc_fmri_fm_imported": {
+            "@id": "mriqcrp302:iqc_fmri_fm_imported",
+            "@type": "@id"
+        },
+        "iqc_fmri_fm_needrawqc": {
+            "@id": "mriqcrp302:iqc_fmri_fm_needrawqc",
+            "@type": "@id"
+        },
+        "iqc_fmri_fm_pa_imported": {
+            "@id": "mriqcrp302:iqc_fmri_fm_pa_imported",
+            "@type": "@id"
+        },
+        "iqc_fmri_fm_pa_needrawqc": {
+            "@id": "mriqcrp302:iqc_fmri_fm_pa_needrawqc",
+            "@type": "@id"
+        },
+        "iqc_fmri_fm_pa_procfail": {
+            "@id": "mriqcrp302:iqc_fmri_fm_pa_procfail",
+            "@type": "@id"
+        },
+        "iqc_fmri_fm_pa_received": {
+            "@id": "mriqcrp302:iqc_fmri_fm_pa_received",
+            "@type": "@id"
+        },
+        "iqc_fmri_fm_pa_rename_err": {
+            "@id": "mriqcrp302:iqc_fmri_fm_pa_rename_err",
+            "@type": "@id"
+        },
+        "iqc_fmri_fm_pa_unpack_err": {
+            "@id": "mriqcrp302:iqc_fmri_fm_pa_unpack_err",
+            "@type": "@id"
+        },
+        "iqc_fmri_fm_pa_unpacked": {
+            "@id": "mriqcrp302:iqc_fmri_fm_pa_unpacked",
+            "@type": "@id"
+        },
+        "iqc_fmri_fm_pa_waitautoqc": {
+            "@id": "mriqcrp302:iqc_fmri_fm_pa_waitautoqc",
+            "@type": "@id"
+        },
+        "iqc_fmri_fm_procfail": {
+            "@id": "mriqcrp302:iqc_fmri_fm_procfail",
+            "@type": "@id"
+        },
+        "iqc_fmri_fm_received": {
+            "@id": "mriqcrp302:iqc_fmri_fm_received",
+            "@type": "@id"
+        },
+        "iqc_fmri_fm_rename_err": {
+            "@id": "mriqcrp302:iqc_fmri_fm_rename_err",
+            "@type": "@id"
+        },
+        "iqc_fmri_fm_unpack_err": {
+            "@id": "mriqcrp302:iqc_fmri_fm_unpack_err",
+            "@type": "@id"
+        },
+        "iqc_fmri_fm_unpacked": {
+            "@id": "mriqcrp302:iqc_fmri_fm_unpacked",
+            "@type": "@id"
+        },
+        "iqc_fmri_fm_waitautoqc": {
+            "@id": "mriqcrp302:iqc_fmri_fm_waitautoqc",
+            "@type": "@id"
+        },
+        "iqc_incomingtopc_event": {
+            "@id": "mriqcrp302:iqc_incomingtopc_event",
+            "@type": "@id"
+        },
+        "iqc_initial_rec": {
+            "@id": "mriqcrp302:iqc_initial_rec",
+            "@type": "@id"
+        },
+        "iqc_mid_ep_date": {
+            "@id": "mriqcrp302:iqc_mid_ep_date",
+            "@type": "@id"
+        },
+        "iqc_mid_ep_datetime_found": {
+            "@id": "mriqcrp302:iqc_mid_ep_datetime_found",
+            "@type": "@id"
+        },
+        "iqc_mid_ep_file_found": {
+            "@id": "mriqcrp302:iqc_mid_ep_file_found",
+            "@type": "@id"
+        },
+        "iqc_mid_ep_file_resf": {
+            "@id": "mriqcrp302:iqc_mid_ep_file_resf",
+            "@type": "@id"
+        },
+        "iqc_mid_ep_folder_found": {
+            "@id": "mriqcrp302:iqc_mid_ep_folder_found",
+            "@type": "@id"
+        },
+        "iqc_mid_ep_lap_missing": {
+            "@id": "mriqcrp302:iqc_mid_ep_lap_missing",
+            "@type": "@id"
+        },
+        "iqc_mid_ep_pguid_match": {
+            "@id": "mriqcrp302:iqc_mid_ep_pguid_match",
+            "@type": "@id"
+        },
+        "iqc_mid_ep_pguid_mis": {
+            "@id": "mriqcrp302:iqc_mid_ep_pguid_mis",
+            "@type": "@id"
+        },
+        "iqc_mid_ep_scan_missing": {
+            "@id": "mriqcrp302:iqc_mid_ep_scan_missing",
+            "@type": "@id"
+        },
+        "iqc_mid_ep_t_rel_to_series_max": {
+            "@id": "mriqcrp302:iqc_mid_ep_t_rel_to_series_max",
+            "@type": "@id"
+        },
+        "iqc_mid_ep_t_rel_to_series_min": {
+            "@id": "mriqcrp302:iqc_mid_ep_t_rel_to_series_min",
+            "@type": "@id"
+        },
+        "iqc_mid_ep_t_series_match": {
+            "@id": "mriqcrp302:iqc_mid_ep_t_series_match",
+            "@type": "@id"
+        },
+        "iqc_mid_ep_time": {
+            "@id": "mriqcrp302:iqc_mid_ep_time",
+            "@type": "@id"
+        },
+        "iqc_mid_eprime_missing": {
+            "@id": "mriqcrp302:iqc_mid_eprime_missing",
+            "@type": "@id"
+        },
+        "iqc_mid_imported": {
+            "@id": "mriqcrp302:iqc_mid_imported",
+            "@type": "@id"
+        },
+        "iqc_mid_missing": {
+            "@id": "mriqcrp302:iqc_mid_missing",
+            "@type": "@id"
+        },
+        "iqc_mid_missing_ks": {
+            "@id": "mriqcrp302:iqc_mid_missing_ks",
+            "@type": "@id"
+        },
+        "iqc_mid_needrawqc": {
+            "@id": "mriqcrp302:iqc_mid_needrawqc",
+            "@type": "@id"
+        },
+        "iqc_mid_procfail": {
+            "@id": "mriqcrp302:iqc_mid_procfail",
+            "@type": "@id"
+        },
+        "iqc_mid_received": {
+            "@id": "mriqcrp302:iqc_mid_received",
+            "@type": "@id"
+        },
+        "iqc_mid_recon_err": {
+            "@id": "mriqcrp302:iqc_mid_recon_err",
+            "@type": "@id"
+        },
+        "iqc_mid_recon_req": {
+            "@id": "mriqcrp302:iqc_mid_recon_req",
+            "@type": "@id"
+        },
+        "iqc_mid_reconned": {
+            "@id": "mriqcrp302:iqc_mid_reconned",
+            "@type": "@id"
+        },
+        "iqc_mid_rename_err": {
+            "@id": "mriqcrp302:iqc_mid_rename_err",
+            "@type": "@id"
+        },
+        "iqc_mid_series_time": {
+            "@id": "mriqcrp302:iqc_mid_series_time",
+            "@type": "@id"
+        },
+        "iqc_mid_study_date": {
+            "@id": "mriqcrp302:iqc_mid_study_date",
+            "@type": "@id"
+        },
+        "iqc_mid_unpack_err": {
+            "@id": "mriqcrp302:iqc_mid_unpack_err",
+            "@type": "@id"
+        },
+        "iqc_mid_unpacked": {
+            "@id": "mriqcrp302:iqc_mid_unpacked",
+            "@type": "@id"
+        },
+        "iqc_mid_waitautoqc": {
+            "@id": "mriqcrp302:iqc_mid_waitautoqc",
+            "@type": "@id"
+        },
+        "iqc_missing_ks": {
+            "@id": "mriqcrp302:iqc_missing_ks",
+            "@type": "@id"
+        },
+        "iqc_nback_ep_date": {
+            "@id": "mriqcrp302:iqc_nback_ep_date",
+            "@type": "@id"
+        },
+        "iqc_nback_ep_datetime_found": {
+            "@id": "mriqcrp302:iqc_nback_ep_datetime_found",
+            "@type": "@id"
+        },
+        "iqc_nback_ep_file_found": {
+            "@id": "mriqcrp302:iqc_nback_ep_file_found",
+            "@type": "@id"
+        },
+        "iqc_nback_ep_file_resf": {
+            "@id": "mriqcrp302:iqc_nback_ep_file_resf",
+            "@type": "@id"
+        },
+        "iqc_nback_ep_folder_found": {
+            "@id": "mriqcrp302:iqc_nback_ep_folder_found",
+            "@type": "@id"
+        },
+        "iqc_nback_ep_lap_missing": {
+            "@id": "mriqcrp302:iqc_nback_ep_lap_missing",
+            "@type": "@id"
+        },
+        "iqc_nback_ep_pguid_match": {
+            "@id": "mriqcrp302:iqc_nback_ep_pguid_match",
+            "@type": "@id"
+        },
+        "iqc_nback_ep_pguid_mis": {
+            "@id": "mriqcrp302:iqc_nback_ep_pguid_mis",
+            "@type": "@id"
+        },
+        "iqc_nback_ep_scan_missing": {
+            "@id": "mriqcrp302:iqc_nback_ep_scan_missing",
+            "@type": "@id"
+        },
+        "iqc_nback_ep_t_series_match": {
+            "@id": "mriqcrp302:iqc_nback_ep_t_series_match",
+            "@type": "@id"
+        },
+        "iqc_nback_ep_time": {
+            "@id": "mriqcrp302:iqc_nback_ep_time",
+            "@type": "@id"
+        },
+        "iqc_nback_eprime_missing": {
+            "@id": "mriqcrp302:iqc_nback_eprime_missing",
+            "@type": "@id"
+        },
+        "iqc_nback_epx_file_found": {
+            "@id": "mriqcrp302:iqc_nback_epx_file_found",
+            "@type": "@id"
+        },
+        "iqc_nback_epx_folder_found": {
+            "@id": "mriqcrp302:iqc_nback_epx_folder_found",
+            "@type": "@id"
+        },
+        "iqc_nback_epx_missing": {
+            "@id": "mriqcrp302:iqc_nback_epx_missing",
+            "@type": "@id"
+        },
+        "iqc_nback_epx_pguid_match": {
+            "@id": "mriqcrp302:iqc_nback_epx_pguid_match",
+            "@type": "@id"
+        },
+        "iqc_nback_epx_pguid_mis": {
+            "@id": "mriqcrp302:iqc_nback_epx_pguid_mis",
+            "@type": "@id"
+        },
+        "iqc_nback_imported": {
+            "@id": "mriqcrp302:iqc_nback_imported",
+            "@type": "@id"
+        },
+        "iqc_nback_missing": {
+            "@id": "mriqcrp302:iqc_nback_missing",
+            "@type": "@id"
+        },
+        "iqc_nback_missing_ks": {
+            "@id": "mriqcrp302:iqc_nback_missing_ks",
+            "@type": "@id"
+        },
+        "iqc_nback_needrawqc": {
+            "@id": "mriqcrp302:iqc_nback_needrawqc",
+            "@type": "@id"
+        },
+        "iqc_nback_procfail": {
+            "@id": "mriqcrp302:iqc_nback_procfail",
+            "@type": "@id"
+        },
+        "iqc_nback_received": {
+            "@id": "mriqcrp302:iqc_nback_received",
+            "@type": "@id"
+        },
+        "iqc_nback_recon_err": {
+            "@id": "mriqcrp302:iqc_nback_recon_err",
+            "@type": "@id"
+        },
+        "iqc_nback_recon_req": {
+            "@id": "mriqcrp302:iqc_nback_recon_req",
+            "@type": "@id"
+        },
+        "iqc_nback_reconned": {
+            "@id": "mriqcrp302:iqc_nback_reconned",
+            "@type": "@id"
+        },
+        "iqc_nback_rename_err": {
+            "@id": "mriqcrp302:iqc_nback_rename_err",
+            "@type": "@id"
+        },
+        "iqc_nback_series_time": {
+            "@id": "mriqcrp302:iqc_nback_series_time",
+            "@type": "@id"
+        },
+        "iqc_nback_study_date": {
+            "@id": "mriqcrp302:iqc_nback_study_date",
+            "@type": "@id"
+        },
+        "iqc_nback_unpack_err": {
+            "@id": "mriqcrp302:iqc_nback_unpack_err",
+            "@type": "@id"
+        },
+        "iqc_nback_unpacked": {
+            "@id": "mriqcrp302:iqc_nback_unpacked",
+            "@type": "@id"
+        },
+        "iqc_nback_waitautoqc": {
+            "@id": "mriqcrp302:iqc_nback_waitautoqc",
+            "@type": "@id"
+        },
+        "iqc_ra_series_missing_memo": {
+            "@id": "mriqcrp302:iqc_ra_series_missing_memo",
+            "@type": "@id"
+        },
+        "iqc_recon_err": {
+            "@id": "mriqcrp302:iqc_recon_err",
+            "@type": "@id"
+        },
+        "iqc_rename_err": {
+            "@id": "mriqcrp302:iqc_rename_err",
+            "@type": "@id"
+        },
+        "iqc_rsfmri_imported": {
+            "@id": "mriqcrp302:iqc_rsfmri_imported",
+            "@type": "@id"
+        },
+        "iqc_rsfmri_missing": {
+            "@id": "mriqcrp302:iqc_rsfmri_missing",
+            "@type": "@id"
+        },
+        "iqc_rsfmri_missing_ks": {
+            "@id": "mriqcrp302:iqc_rsfmri_missing_ks",
+            "@type": "@id"
+        },
+        "iqc_rsfmri_needrawqc": {
+            "@id": "mriqcrp302:iqc_rsfmri_needrawqc",
+            "@type": "@id"
+        },
+        "iqc_rsfmri_procfail": {
+            "@id": "mriqcrp302:iqc_rsfmri_procfail",
+            "@type": "@id"
+        },
+        "iqc_rsfmri_received": {
+            "@id": "mriqcrp302:iqc_rsfmri_received",
+            "@type": "@id"
+        },
+        "iqc_rsfmri_recon_err": {
+            "@id": "mriqcrp302:iqc_rsfmri_recon_err",
+            "@type": "@id"
+        },
+        "iqc_rsfmri_recon_req": {
+            "@id": "mriqcrp302:iqc_rsfmri_recon_req",
+            "@type": "@id"
+        },
+        "iqc_rsfmri_reconned": {
+            "@id": "mriqcrp302:iqc_rsfmri_reconned",
+            "@type": "@id"
+        },
+        "iqc_rsfmri_rename_err": {
+            "@id": "mriqcrp302:iqc_rsfmri_rename_err",
+            "@type": "@id"
+        },
+        "iqc_rsfmri_unpack_err": {
+            "@id": "mriqcrp302:iqc_rsfmri_unpack_err",
+            "@type": "@id"
+        },
+        "iqc_rsfmri_unpacked": {
+            "@id": "mriqcrp302:iqc_rsfmri_unpacked",
+            "@type": "@id"
+        },
+        "iqc_rsfmri_waitautoqc": {
+            "@id": "mriqcrp302:iqc_rsfmri_waitautoqc",
+            "@type": "@id"
+        },
+        "iqc_series_missing": {
+            "@id": "mriqcrp302:iqc_series_missing",
+            "@type": "@id"
+        },
+        "iqc_sst_ep_date": {
+            "@id": "mriqcrp302:iqc_sst_ep_date",
+            "@type": "@id"
+        },
+        "iqc_sst_ep_datetime_found": {
+            "@id": "mriqcrp302:iqc_sst_ep_datetime_found",
+            "@type": "@id"
+        },
+        "iqc_sst_ep_file_found": {
+            "@id": "mriqcrp302:iqc_sst_ep_file_found",
+            "@type": "@id"
+        },
+        "iqc_sst_ep_file_resf": {
+            "@id": "mriqcrp302:iqc_sst_ep_file_resf",
+            "@type": "@id"
+        },
+        "iqc_sst_ep_folder_found": {
+            "@id": "mriqcrp302:iqc_sst_ep_folder_found",
+            "@type": "@id"
+        },
+        "iqc_sst_ep_lap_missing": {
+            "@id": "mriqcrp302:iqc_sst_ep_lap_missing",
+            "@type": "@id"
+        },
+        "iqc_sst_ep_pguid_match": {
+            "@id": "mriqcrp302:iqc_sst_ep_pguid_match",
+            "@type": "@id"
+        },
+        "iqc_sst_ep_pguid_mis": {
+            "@id": "mriqcrp302:iqc_sst_ep_pguid_mis",
+            "@type": "@id"
+        },
+        "iqc_sst_ep_scan_missing": {
+            "@id": "mriqcrp302:iqc_sst_ep_scan_missing",
+            "@type": "@id"
+        },
+        "iqc_sst_ep_t_rel_to_series_max": {
+            "@id": "mriqcrp302:iqc_sst_ep_t_rel_to_series_max",
+            "@type": "@id"
+        },
+        "iqc_sst_ep_t_rel_to_series_min": {
+            "@id": "mriqcrp302:iqc_sst_ep_t_rel_to_series_min",
+            "@type": "@id"
+        },
+        "iqc_sst_ep_t_series_match": {
+            "@id": "mriqcrp302:iqc_sst_ep_t_series_match",
+            "@type": "@id"
+        },
+        "iqc_sst_ep_time": {
+            "@id": "mriqcrp302:iqc_sst_ep_time",
+            "@type": "@id"
+        },
+        "iqc_sst_eprime_missing": {
+            "@id": "mriqcrp302:iqc_sst_eprime_missing",
+            "@type": "@id"
+        },
+        "iqc_sst_imported": {
+            "@id": "mriqcrp302:iqc_sst_imported",
+            "@type": "@id"
+        },
+        "iqc_sst_missing": {
+            "@id": "mriqcrp302:iqc_sst_missing",
+            "@type": "@id"
+        },
+        "iqc_sst_missing_ks": {
+            "@id": "mriqcrp302:iqc_sst_missing_ks",
+            "@type": "@id"
+        },
+        "iqc_sst_needrawqc": {
+            "@id": "mriqcrp302:iqc_sst_needrawqc",
+            "@type": "@id"
+        },
+        "iqc_sst_procfail": {
+            "@id": "mriqcrp302:iqc_sst_procfail",
+            "@type": "@id"
+        },
+        "iqc_sst_received": {
+            "@id": "mriqcrp302:iqc_sst_received",
+            "@type": "@id"
+        },
+        "iqc_sst_recon_err": {
+            "@id": "mriqcrp302:iqc_sst_recon_err",
+            "@type": "@id"
+        },
+        "iqc_sst_recon_req": {
+            "@id": "mriqcrp302:iqc_sst_recon_req",
+            "@type": "@id"
+        },
+        "iqc_sst_reconned": {
+            "@id": "mriqcrp302:iqc_sst_reconned",
+            "@type": "@id"
+        },
+        "iqc_sst_rename_err": {
+            "@id": "mriqcrp302:iqc_sst_rename_err",
+            "@type": "@id"
+        },
+        "iqc_sst_series_time": {
+            "@id": "mriqcrp302:iqc_sst_series_time",
+            "@type": "@id"
+        },
+        "iqc_sst_study_date": {
+            "@id": "mriqcrp302:iqc_sst_study_date",
+            "@type": "@id"
+        },
+        "iqc_sst_unpack_err": {
+            "@id": "mriqcrp302:iqc_sst_unpack_err",
+            "@type": "@id"
+        },
+        "iqc_sst_unpacked": {
+            "@id": "mriqcrp302:iqc_sst_unpacked",
+            "@type": "@id"
+        },
+        "iqc_sst_waitautoqc": {
+            "@id": "mriqcrp302:iqc_sst_waitautoqc",
+            "@type": "@id"
+        },
+        "iqc_study_date": {
+            "@id": "mriqcrp302:iqc_study_date",
+            "@type": "@id"
+        },
+        "iqc_t1_imported": {
+            "@id": "mriqcrp302:iqc_t1_imported",
+            "@type": "@id"
+        },
+        "iqc_t1_missing": {
+            "@id": "mriqcrp302:iqc_t1_missing",
+            "@type": "@id"
+        },
+        "iqc_t1_needrawqc": {
+            "@id": "mriqcrp302:iqc_t1_needrawqc",
+            "@type": "@id"
+        },
+        "iqc_t1_procfail": {
+            "@id": "mriqcrp302:iqc_t1_procfail",
+            "@type": "@id"
+        },
+        "iqc_t1_received": {
+            "@id": "mriqcrp302:iqc_t1_received",
+            "@type": "@id"
+        },
+        "iqc_t1_rename_err": {
+            "@id": "mriqcrp302:iqc_t1_rename_err",
+            "@type": "@id"
+        },
+        "iqc_t1_unpack_err": {
+            "@id": "mriqcrp302:iqc_t1_unpack_err",
+            "@type": "@id"
+        },
+        "iqc_t1_unpacked": {
+            "@id": "mriqcrp302:iqc_t1_unpacked",
+            "@type": "@id"
+        },
+        "iqc_t1_waitautoqc": {
+            "@id": "mriqcrp302:iqc_t1_waitautoqc",
+            "@type": "@id"
+        },
+        "iqc_t2_imported": {
+            "@id": "mriqcrp302:iqc_t2_imported",
+            "@type": "@id"
+        },
+        "iqc_t2_missing": {
+            "@id": "mriqcrp302:iqc_t2_missing",
+            "@type": "@id"
+        },
+        "iqc_t2_needrawqc": {
+            "@id": "mriqcrp302:iqc_t2_needrawqc",
+            "@type": "@id"
+        },
+        "iqc_t2_procfail": {
+            "@id": "mriqcrp302:iqc_t2_procfail",
+            "@type": "@id"
+        },
+        "iqc_t2_received": {
+            "@id": "mriqcrp302:iqc_t2_received",
+            "@type": "@id"
+        },
+        "iqc_t2_rename_err": {
+            "@id": "mriqcrp302:iqc_t2_rename_err",
+            "@type": "@id"
+        },
+        "iqc_t2_unpack_err": {
+            "@id": "mriqcrp302:iqc_t2_unpack_err",
+            "@type": "@id"
+        },
+        "iqc_t2_unpacked": {
+            "@id": "mriqcrp302:iqc_t2_unpacked",
+            "@type": "@id"
+        },
+        "iqc_t2_waitautoqc": {
+            "@id": "mriqcrp302:iqc_t2_waitautoqc",
+            "@type": "@id"
+        },
+        "iqc_unpack_err": {
+            "@id": "mriqcrp302:iqc_unpack_err",
+            "@type": "@id"
+        },
+        "iqcnbackeptreltoseriesmax": {
+            "@id": "mriqcrp302:iqcnbackeptreltoseriesmax",
+            "@type": "@id"
+        },
+        "iqcnbackeptreltoseriesmin": {
+            "@id": "mriqcrp302:iqcnbackeptreltoseriesmin",
+            "@type": "@id"
+        }
+    }
+}

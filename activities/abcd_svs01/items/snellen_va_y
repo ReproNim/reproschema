@@ -1,0 +1,75 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "snellen_va_y",
+    "@type": "reproschema:Field",
+    "prefLabel": "snellen_va_y",
+    "altLabel": "snellen_va",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "1. Ensure that the chart is located in a well lit area and readily readable. 2. Verify if the child has corrective lenses and if so, whether he or she is wearing them. 3. Ascertain whether h/she can appropriately respond to stimuli on an iPad screen.\nSmallest line subject was able to see without error? Line numbers are represented on the right-most side of the chart.",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "Can't read line 1",
+                "value": 0
+            },
+            {
+                "name": "Line 1",
+                "value": 1
+            },
+            {
+                "name": "Line 2",
+                "value": 2
+            },
+            {
+                "name": "Line 3",
+                "value": 3
+            },
+            {
+                "name": "Line 4",
+                "value": 4
+            },
+            {
+                "name": "Line 5",
+                "value": 5
+            },
+            {
+                "name": "Line 6",
+                "value": 6
+            },
+            {
+                "name": "Line 7",
+                "value": 7
+            },
+            {
+                "name": "Line 8",
+                "value": 8
+            },
+            {
+                "name": "Line 9",
+                "value": 9
+            },
+            {
+                "name": "Line 10",
+                "value": 10
+            },
+            {
+                "name": "Line 11 // Users should consider variations in visual status (Snellen) before analyzing the neurocognition data. Many children have scores indicating poor vision.",
+                "value": 11
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = Can't read line 1; 1 = Line 1; 2 = Line 2; 3 = Line 3; 4 = Line 4; 5 = Line 5; 6 = Line 6; 7 = Line 7; 8 = Line 8; 9 = Line 9; 10 = Line 10; 11 = Line 11 // Users should consider variations in visual status (Snellen) before analyzing the neurocognition data. Many children have scores indicating poor vision."
+        }
+    ]
+}

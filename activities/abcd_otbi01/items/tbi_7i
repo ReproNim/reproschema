@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "tbi_7i",
+    "@type": "reproschema:Field",
+    "prefLabel": "tbi_7i",
+    "altLabel": "brain_injury_7i_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "What was the typical effect of the injury? Cuál fue el efecto típico de la lesión?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Dazed/memory gap",
+                "value": 1
+            },
+            {
+                "name": "LOC pérdida de conocimiento",
+                "value": 2
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Dazed/memory gap; 2 = LOC pérdida de conocimiento"
+        }
+    ]
+}

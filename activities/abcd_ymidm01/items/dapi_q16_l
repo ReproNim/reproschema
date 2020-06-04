@@ -1,0 +1,47 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "dapi_q16_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "dapi_q16_l",
+    "altLabel": "su_dapi_q16_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Please indicate how many times each has happened to you during the last six months while you were consuming drugs or as the result of your drug use (consider any drugs you've used, except caffeine, alcohol, nicotine and marijuana): kept consuming drugs when you promised yourself not to.",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "0",
+                "value": 1
+            },
+            {
+                "name": "1-2",
+                "value": 2
+            },
+            {
+                "name": "3-5",
+                "value": 3
+            },
+            {
+                "name": "6-10",
+                "value": 4
+            },
+            {
+                "name": "10+ / xskipout_other_l   == '1'",
+                "value": 5
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = 0; 2 = 1-2; 3 = 3-5; 4 = 6-10; 5 = 10+ / xskipout_other_l   == '1'"
+        }
+    ]
+}

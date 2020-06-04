@@ -1,0 +1,39 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "devhx_8_prescript_med",
+    "@type": "reproschema:Field",
+    "prefLabel": "devhx_8_prescript_med",
+    "altLabel": "devhx_8_prescript_med_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Before  the biological mother/you found out  she was pregnant, but while  she/you might have been pregnant with this child, did  she/you  use any of the following?/ Antes de que la madre biológica se halla enterado que estaba embarazada, pero mientras ella pudiera haber estado embarazada con este(a) niño(a), utilizó algo de los siguiente?  Prescription medications?  /¿Medicamentos recetados?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 0,
+        "choices": [
+            {
+                "name": "Yes /Sí",
+                "value": 1
+            },
+            {
+                "name": "No /No",
+                "value": 0
+            },
+            {
+                "name": "Don't know/ No lo sé",
+                "value": 999
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes /Sí; 0 = No /No; 999 = Don't know/ No lo sé"
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "devhx_caffeine_11",
+    "@type": "reproschema:Field",
+    "prefLabel": "devhx_caffeine_11",
+    "altLabel": "devhx_caffeine_11_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Did you/biological mother have any caffeine during pregnancy (from conception until delivery)?/ ¿Consumió usted o la madre biológica cafeína durante el embarazo (desde la concepción hasta el parto)?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": -1,
+        "schema:maxValue": 999,
+        "choices": [
+            {
+                "name": "Yes - at least once a day Sí- por lo menos una vez al día",
+                "value": 1
+            },
+            {
+                "name": "Yes - less than once a day but more than once a week Si - menos de una vez al día pero más de una vez a la semana",
+                "value": 2
+            },
+            {
+                "name": "Yes - less than once a week Sí - menos de una vez a la semana",
+                "value": 3
+            },
+            {
+                "name": "No No",
+                "value": 0
+            },
+            {
+                "name": "Don't know No lo sé",
+                "value": 999
+            },
+            {
+                "name": "Not applicable No aplica",
+                "value": -1
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes - at least once a day Sí- por lo menos una vez al día; 2 = Yes - less than once a day but more than once a week Si - menos de una vez al día pero más de una vez a la semana; 3 = Yes - less than once a week Sí - menos de una vez a la semana; 0 = No No; 999 = Don't know No lo sé; -1 = Not applicable No aplica"
+        }
+    ]
+}

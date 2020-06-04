@@ -1,0 +1,48 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "demo_yrs_1_2",
+    "@type": "reproschema:Field",
+    "prefLabel": "demo_yrs_1_2",
+    "altLabel": "demo_yrs_1_2_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "How often does your child attend religious services?/ Con que frecuencia asiste su nino(a) a servicios religiosos?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 999,
+        "choices": [
+            {
+                "value": 0
+            },
+            {
+                "value": 1
+            },
+            {
+                "value": 2
+            },
+            {
+                "value": 3
+            },
+            {
+                "value": 4
+            },
+            {
+                "value": 999
+            },
+            {
+                "value": 777
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0= Never/Nunca; 1= Less than once a month/Menos de una vez al mes; 2= One to three times a month/De una a tres veces al mes; 3= About once a week/Como una vez a la semana; 4= More than once a week/M?s de una vez a la semana; 999= Don't know/No lo se; 777= Declined/Niego contestar"
+        }
+    ]
+}

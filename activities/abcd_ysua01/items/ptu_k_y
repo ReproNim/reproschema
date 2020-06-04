@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "ptu_k_y",
+    "@type": "reproschema:Field",
+    "prefLabel": "ptu_k_y",
+    "altLabel": "su_ptu_k",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "How do you think your CLOSE FRIENDS feel (or would feel) about YOU doing each of the following things?\nSmoking marijuana regularly",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "Not Disapprove",
+                "value": 0
+            },
+            {
+                "name": "Disapprove",
+                "value": 1
+            },
+            {
+                "name": "Strongly Disapprove",
+                "value": 2
+            },
+            {
+                "name": "Don't Know / tlfb_mj_l  == '1' ",
+                "value": 999
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = Not Disapprove; 1 = Disapprove; 2 = Strongly Disapprove; 999 = Don't Know / tlfb_mj_l  == '1' ||  tlfb_mj_c_l  == '1'"
+        }
+    ]
+}

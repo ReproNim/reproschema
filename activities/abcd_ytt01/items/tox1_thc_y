@@ -1,0 +1,42 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "tox1_thc_y",
+    "@type": "reproschema:Field",
+    "prefLabel": "tox1_thc_y",
+    "altLabel": "biospec_tox1_thc",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Positive for THC?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Yes",
+                "value": 1
+            },
+            {
+                "name": "No",
+                "value": 2
+            },
+            {
+                "name": "Invalid",
+                "value": 3
+            },
+            {
+                "value": null
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes; 2 = No; 3 = Invalid; Participant has NOT been assigned to Drager Toxicology Test. Select \"Not applicable (not part of 10%)\" within next field, change form status to complete, and save."
+        }
+    ]
+}

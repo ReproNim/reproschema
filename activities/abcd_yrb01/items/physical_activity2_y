@@ -1,0 +1,59 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "physical_activity2_y",
+    "@type": "reproschema:Field",
+    "prefLabel": "physical_activity2_y",
+    "altLabel": "physical_activity_2",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "On how many of the past 7 days did you do exercises to strengthen or tone your muscles, such as push-ups, sit-ups, or weight lifting?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "0 days",
+                "value": 1
+            },
+            {
+                "name": "1 day",
+                "value": 2
+            },
+            {
+                "name": "2 days",
+                "value": 3
+            },
+            {
+                "name": "3 days",
+                "value": 4
+            },
+            {
+                "name": "4 days",
+                "value": 5
+            },
+            {
+                "name": "5 days",
+                "value": 6
+            },
+            {
+                "name": "6 days",
+                "value": 7
+            },
+            {
+                "name": "7 days",
+                "value": 8
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = 0 days; 2 = 1 day; 3 = 2 days; 4 = 3 days; 5 = 4 days; 6 = 5 days; 7 = 6 days; 8 = 7 days"
+        }
+    ]
+}

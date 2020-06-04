@@ -1,0 +1,55 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "fitf_s5_q5a_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "fitf_s5_q5a_p",
+    "altLabel": "fitbit_follow_up_s5_q5a_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "On weekdays",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "5-6 am",
+                "value": 1
+            },
+            {
+                "name": "6-7 am",
+                "value": 2
+            },
+            {
+                "name": "7-8 am",
+                "value": 3
+            },
+            {
+                "name": "8-9 am",
+                "value": 4
+            },
+            {
+                "name": "9-10 am",
+                "value": 5
+            },
+            {
+                "name": "10-11 am",
+                "value": 6
+            },
+            {
+                "name": "11am-12pm",
+                "value": 7
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = 5-6 am; 2 = 6-7 am; 3 = 7-8 am; 4 = 8-9 am; 5 = 9-10 am; 6 = 10-11 am; 7 = 11am-12pm"
+        }
+    ]
+}

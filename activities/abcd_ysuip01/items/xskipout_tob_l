@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "xskipout_tob_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "xskipout_tob_l",
+    "altLabel": "su_xskipout_tob_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Did the participant use one or more full cigarette(s) or other tobacco products for at least 2 days in the past 12 months?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "Yes",
+                "value": 1
+            },
+            {
+                "name": "No / tlfb_cig_use_l  == '1' ",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes; 0 = No / tlfb_cig_use_l  == '1' ||  tlfb_ecig_use_l  == '1' ||  tlfb_hookah_use_l  == '1' ||  tlfb_chew_use_l  == '1'"
+        }
+    ]
+}

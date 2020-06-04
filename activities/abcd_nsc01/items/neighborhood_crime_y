@@ -1,0 +1,47 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "neighborhood_crime_y",
+    "@type": "reproschema:Field",
+    "prefLabel": "neighborhood_crime_y",
+    "altLabel": "neighb_phenx",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "My neighborhood is safe from crime.",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "name": "Strongly Disagree",
+                "value": 1
+            },
+            {
+                "name": "Disagree",
+                "value": 2
+            },
+            {
+                "name": "Neutral (neither agree nor disagree)",
+                "value": 3
+            },
+            {
+                "name": "Agree",
+                "value": 4
+            },
+            {
+                "name": "Strongly Agree//The following question is about your neighborhood. Your neighborhood is the area within about a 20-minute walk (or about a mile) from your home. For the statement I read, please tell me whether you strongly agree, agree, neither agree nor disagree, disagree or strongly disagree.",
+                "value": 5
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Strongly Disagree; 2 = Disagree; 3 = Neutral (neither agree nor disagree); 4 = Agree; 5 = Strongly Agree//The following question is about your neighborhood. Your neighborhood is the area within about a 20-minute walk (or about a mile) from your home. For the statement I read, please tell me whether you strongly agree, agree, neither agree nor disagree, disagree or strongly disagree."
+        }
+    ]
+}

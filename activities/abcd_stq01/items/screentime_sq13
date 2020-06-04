@@ -1,0 +1,44 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "screentime_sq13",
+    "@type": "reproschema:Field",
+    "prefLabel": "screentime_sq13",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "In the past week, when you woke up during the night, how often have you used your phone or other device to send messages/play games/search or browse the internet/use social media/read or write emails?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": null,
+        "choices": [
+            {
+                "value": -1
+            },
+            {
+                "value": 1
+            },
+            {
+                "value": 2
+            },
+            {
+                "value": 3
+            },
+            {
+                "value": 4
+            },
+            {
+                "value": 777
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "-1=Not Applicable; 1=0 nights in the past week; 2=1-2 nights; 3=3-4 nights; 4=5-7 nights; 777=Refused to answer"
+        }
+    ]
+}

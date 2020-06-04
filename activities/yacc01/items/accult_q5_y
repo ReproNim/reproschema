@@ -1,0 +1,47 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "accult_q5_y",
+    "@type": "reproschema:Field",
+    "prefLabel": "accult_q5_y",
+    "altLabel": "accult_phenx_q5",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "What language do you speak with most of your family?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "(Other language) all the time",
+                "value": 1
+            },
+            {
+                "name": "(Other language) most of the time",
+                "value": 2
+            },
+            {
+                "name": "(Other language) and English equally",
+                "value": 3
+            },
+            {
+                "name": "English most of the time",
+                "value": 4
+            },
+            {
+                "name": "English all the time",
+                "value": 5
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = (Other language) all the time; 2 = (Other language) most of the time; 3 = (Other language) and English equally; 4 = English most of the time; 5 = English all the time"
+        }
+    ]
+}

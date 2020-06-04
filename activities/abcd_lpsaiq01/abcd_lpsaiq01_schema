@@ -1,0 +1,1223 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+        "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/activities/abcd_lpsaiq01/abcd_lpsaiq01_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "abcd_lpsaiq01_schema",
+    "skos:prefLabel": "abcd_lpsaiq01",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "order": [
+            "sai_p_activities_l___0",
+            "sai_p_activities_l___1",
+            "sai_p_activities_l___10",
+            "sai_p_activities_l___11",
+            "sai_p_activities_l___12",
+            "sai_p_activities_l___13",
+            "sai_p_activities_l___14",
+            "sai_p_activities_l___15",
+            "sai_p_activities_l___16",
+            "sai_p_activities_l___17",
+            "sai_p_activities_l___18",
+            "sai_p_activities_l___19",
+            "sai_p_activities_l___2",
+            "sai_p_activities_l___20",
+            "sai_p_activities_l___21",
+            "sai_p_activities_l___22",
+            "sai_p_activities_l___23",
+            "sai_p_activities_l___24",
+            "sai_p_activities_l___25",
+            "sai_p_activities_l___26",
+            "sai_p_activities_l___27",
+            "sai_p_activities_l___28",
+            "sai_p_activities_l___29",
+            "sai_p_activities_l___3",
+            "sai_p_activities_l___4",
+            "sai_p_activities_l___5",
+            "sai_p_activities_l___6",
+            "sai_p_activities_l___7",
+            "sai_p_activities_l___8",
+            "sai_p_activities_l___9",
+            "sai_p_art_nmonth_l",
+            "sai_p_art_outside_l",
+            "sai_p_art_perwk_l",
+            "sai_p_art_private_l",
+            "sai_p_art_school_l",
+            "sai_p_art_self_l",
+            "sai_p_art_tspent_l",
+            "sai_p_base_nmonth_l",
+            "sai_p_base_outside_l",
+            "sai_p_base_perwk_l",
+            "sai_p_base_private_l",
+            "sai_p_base_school_l",
+            "sai_p_base_self_l",
+            "sai_p_base_tspent_l",
+            "sai_p_basket_nmonth_l",
+            "sai_p_basket_outside_l",
+            "sai_p_basket_perwk_l",
+            "sai_p_basket_private_l",
+            "sai_p_basket_school_l",
+            "sai_p_basket_self_l",
+            "sai_p_basket_tspent_l",
+            "sai_p_chess_nmonth_l",
+            "sai_p_chess_outside_l",
+            "sai_p_chess_perwk_l",
+            "sai_p_chess_private_l",
+            "sai_p_chess_school_l",
+            "sai_p_chess_self_l",
+            "sai_p_chess_tspent_l",
+            "sai_p_climb_nmonth_l",
+            "sai_p_climb_outside_l",
+            "sai_p_climb_perwk_l",
+            "sai_p_climb_private_l",
+            "sai_p_climb_school_l",
+            "sai_p_climb_self_l",
+            "sai_p_climb_tspent_l",
+            "sai_p_collect_nmonth_l",
+            "sai_p_collect_outside_l",
+            "sai_p_collect_perwk_l",
+            "sai_p_collect_private_l",
+            "sai_p_collect_school_l",
+            "sai_p_collect_self_l",
+            "sai_p_collect_tspent_l",
+            "sai_p_crafts_nmonth_l",
+            "sai_p_crafts_outside_l",
+            "sai_p_crafts_perwk_l",
+            "sai_p_crafts_private_l",
+            "sai_p_crafts_school_l",
+            "sai_p_crafts_self_l",
+            "sai_p_crafts_tspent_l",
+            "sai_p_dance_nmonth_l",
+            "sai_p_dance_outside_l",
+            "sai_p_dance_perwk_l",
+            "sai_p_dance_private_l",
+            "sai_p_dance_school_l",
+            "sai_p_dance_self_l",
+            "sai_p_dance_tspent_l",
+            "sai_p_drama_nmonth_l",
+            "sai_p_drama_outside_l",
+            "sai_p_drama_perwk_l",
+            "sai_p_drama_private_l",
+            "sai_p_drama_school_l",
+            "sai_p_drama_self_l",
+            "sai_p_drama_tspent_l",
+            "sai_p_fball_nmonth_l",
+            "sai_p_fball_outside_l",
+            "sai_p_fball_perwk_l",
+            "sai_p_fball_private_l",
+            "sai_p_fball_school_l",
+            "sai_p_fball_self_l",
+            "sai_p_fball_tspent_l",
+            "sai_p_fhock_nmonth_l",
+            "sai_p_fhock_outside_l",
+            "sai_p_fhock_perwk_l",
+            "sai_p_fhock_private_l",
+            "sai_p_fhock_school_l",
+            "sai_p_fhock_self_l",
+            "sai_p_fhock_tspent_l",
+            "sai_p_gym_nmonth_l",
+            "sai_p_gym_outside_l",
+            "sai_p_gym_perwk_l",
+            "sai_p_gym_private_l",
+            "sai_p_gym_school_l",
+            "sai_p_gym_self_l",
+            "sai_p_gym_tspent_l",
+            "sai_p_ihock_nmonth_l",
+            "sai_p_ihock_outside_l",
+            "sai_p_ihock_perwk_l",
+            "sai_p_ihock_private_l",
+            "sai_p_ihock_school_l",
+            "sai_p_ihock_self_l",
+            "sai_p_ihock_tspent_l",
+            "sai_p_iskate_nmonth_l",
+            "sai_p_iskate_outside_l",
+            "sai_p_iskate_perwk_l",
+            "sai_p_iskate_private_l",
+            "sai_p_iskate_school_l",
+            "sai_p_iskate_self_l",
+            "sai_p_iskate_tspent_l",
+            "sai_p_lax_nmonth_l",
+            "sai_p_lax_outside_l",
+            "sai_p_lax_perwk_l",
+            "sai_p_lax_private_l",
+            "sai_p_lax_school_l",
+            "sai_p_lax_self_l",
+            "sai_p_lax_tspent_l",
+            "sai_p_lmusic_hours_2_l",
+            "sai_p_lmusic_hours_dk_l",
+            "sai_p_lmusic_hours_l",
+            "sai_p_lmusic_l",
+            "sai_p_m_arts_nmonth_l",
+            "sai_p_m_arts_outside_l",
+            "sai_p_m_arts_perwk_l",
+            "sai_p_m_arts_private_l",
+            "sai_p_m_arts_school_l",
+            "sai_p_m_arts_self_l",
+            "sai_p_m_arts_tspent_l",
+            "sai_p_mma_nmonth_l",
+            "sai_p_mma_outside_l",
+            "sai_p_mma_perwk_l",
+            "sai_p_mma_private_l",
+            "sai_p_mma_school_l",
+            "sai_p_mma_self_l",
+            "sai_p_mma_tspent_l",
+            "sai_p_music_nmonth_l",
+            "sai_p_music_outside_l",
+            "sai_p_music_perwk_l",
+            "sai_p_music_private_l",
+            "sai_p_music_school_l",
+            "sai_p_music_self_l",
+            "sai_p_music_tspent_l",
+            "sai_p_polo_nmonth_l",
+            "sai_p_polo_outside_l",
+            "sai_p_polo_perwk_l",
+            "sai_p_polo_private_l",
+            "sai_p_polo_school_l",
+            "sai_p_polo_self_l",
+            "sai_p_polo_tspent_l",
+            "sai_p_read_hours_2_l",
+            "sai_p_read_hours_dk_l",
+            "sai_p_read_hours_l",
+            "sai_p_read_l",
+            "sai_p_rugby_nmonth_l",
+            "sai_p_rugby_outside_l",
+            "sai_p_rugby_perwk_l",
+            "sai_p_rugby_private_l",
+            "sai_p_rugby_school_l",
+            "sai_p_rugby_self_l",
+            "sai_p_rugby_tspent_l",
+            "sai_p_run_nmonth_l",
+            "sai_p_run_outside_l",
+            "sai_p_run_perwk_l",
+            "sai_p_run_private_l",
+            "sai_p_run_school_l",
+            "sai_p_run_self_l",
+            "sai_p_run_tspent_l",
+            "sai_p_sboard_nmonth_l",
+            "sai_p_sboard_outside_l",
+            "sai_p_sboard_perwk_l",
+            "sai_p_sboard_private_l",
+            "sai_p_sboard_school_l",
+            "sai_p_sboard_self_l",
+            "sai_p_sboard_tspent_l",
+            "sai_p_skate_nmonth_l",
+            "sai_p_skate_outside_l",
+            "sai_p_skate_perwk_l",
+            "sai_p_skate_private_l",
+            "sai_p_skate_school_l",
+            "sai_p_skate_self_l",
+            "sai_p_skate_tspent_l",
+            "sai_p_soc_nmonth_l",
+            "sai_p_soc_outside_l",
+            "sai_p_soc_perwk_l",
+            "sai_p_soc_private_l",
+            "sai_p_soc_school_l",
+            "sai_p_soc_self_l",
+            "sai_p_soc_tspent_l",
+            "sai_p_surf_nmonth_l",
+            "sai_p_surf_outside_l",
+            "sai_p_surf_perwk_l",
+            "sai_p_surf_private_l",
+            "sai_p_surf_school_l",
+            "sai_p_surf_self_l",
+            "sai_p_surf_tspent_l",
+            "sai_p_tennis_nmonth_l",
+            "sai_p_tennis_outside_l",
+            "sai_p_tennis_perwk_l",
+            "sai_p_tennis_private_l",
+            "sai_p_tennis_school_l",
+            "sai_p_tennis_self_l",
+            "sai_p_tennis_tspent_l",
+            "sai_p_vball_nmonth_l",
+            "sai_p_vball_outside_l",
+            "sai_p_vball_perwk_l",
+            "sai_p_vball_private_l",
+            "sai_p_vball_school_l",
+            "sai_p_vball_self_l",
+            "sai_p_vball_tspent_l",
+            "sai_p_wpolo_nmonth_l",
+            "sai_p_wpolo_outside_l",
+            "sai_p_wpolo_perwk_l",
+            "sai_p_wpolo_private_l",
+            "sai_p_wpolo_school_l",
+            "sai_p_wpolo_self_l",
+            "sai_p_wpolo_tspent_l",
+            "sai_p_yoga_nmonth_l",
+            "sai_p_yoga_outside_l",
+            "sai_p_yoga_perwk_l",
+            "sai_p_yoga_private_l",
+            "sai_p_yoga_school_l",
+            "sai_p_yoga_self_l",
+            "sai_p_yoga_tspent_l"
+        ],
+        "shuffle": false,
+        "addProperties": [
+            {
+                "variableName": "sai_p_activities_l___0",
+                "isAbout": "sai_p_activities_l___0"
+            },
+            {
+                "variableName": "sai_p_activities_l___1",
+                "isAbout": "sai_p_activities_l___1"
+            },
+            {
+                "variableName": "sai_p_activities_l___10",
+                "isAbout": "sai_p_activities_l___10"
+            },
+            {
+                "variableName": "sai_p_activities_l___11",
+                "isAbout": "sai_p_activities_l___11"
+            },
+            {
+                "variableName": "sai_p_activities_l___12",
+                "isAbout": "sai_p_activities_l___12"
+            },
+            {
+                "variableName": "sai_p_activities_l___13",
+                "isAbout": "sai_p_activities_l___13"
+            },
+            {
+                "variableName": "sai_p_activities_l___14",
+                "isAbout": "sai_p_activities_l___14"
+            },
+            {
+                "variableName": "sai_p_activities_l___15",
+                "isAbout": "sai_p_activities_l___15"
+            },
+            {
+                "variableName": "sai_p_activities_l___16",
+                "isAbout": "sai_p_activities_l___16"
+            },
+            {
+                "variableName": "sai_p_activities_l___17",
+                "isAbout": "sai_p_activities_l___17"
+            },
+            {
+                "variableName": "sai_p_activities_l___18",
+                "isAbout": "sai_p_activities_l___18"
+            },
+            {
+                "variableName": "sai_p_activities_l___19",
+                "isAbout": "sai_p_activities_l___19"
+            },
+            {
+                "variableName": "sai_p_activities_l___2",
+                "isAbout": "sai_p_activities_l___2"
+            },
+            {
+                "variableName": "sai_p_activities_l___20",
+                "isAbout": "sai_p_activities_l___20"
+            },
+            {
+                "variableName": "sai_p_activities_l___21",
+                "isAbout": "sai_p_activities_l___21"
+            },
+            {
+                "variableName": "sai_p_activities_l___22",
+                "isAbout": "sai_p_activities_l___22"
+            },
+            {
+                "variableName": "sai_p_activities_l___23",
+                "isAbout": "sai_p_activities_l___23"
+            },
+            {
+                "variableName": "sai_p_activities_l___24",
+                "isAbout": "sai_p_activities_l___24"
+            },
+            {
+                "variableName": "sai_p_activities_l___25",
+                "isAbout": "sai_p_activities_l___25"
+            },
+            {
+                "variableName": "sai_p_activities_l___26",
+                "isAbout": "sai_p_activities_l___26"
+            },
+            {
+                "variableName": "sai_p_activities_l___27",
+                "isAbout": "sai_p_activities_l___27"
+            },
+            {
+                "variableName": "sai_p_activities_l___28",
+                "isAbout": "sai_p_activities_l___28"
+            },
+            {
+                "variableName": "sai_p_activities_l___29",
+                "isAbout": "sai_p_activities_l___29"
+            },
+            {
+                "variableName": "sai_p_activities_l___3",
+                "isAbout": "sai_p_activities_l___3"
+            },
+            {
+                "variableName": "sai_p_activities_l___4",
+                "isAbout": "sai_p_activities_l___4"
+            },
+            {
+                "variableName": "sai_p_activities_l___5",
+                "isAbout": "sai_p_activities_l___5"
+            },
+            {
+                "variableName": "sai_p_activities_l___6",
+                "isAbout": "sai_p_activities_l___6"
+            },
+            {
+                "variableName": "sai_p_activities_l___7",
+                "isAbout": "sai_p_activities_l___7"
+            },
+            {
+                "variableName": "sai_p_activities_l___8",
+                "isAbout": "sai_p_activities_l___8"
+            },
+            {
+                "variableName": "sai_p_activities_l___9",
+                "isAbout": "sai_p_activities_l___9"
+            },
+            {
+                "variableName": "sai_p_art_nmonth_l",
+                "isAbout": "sai_p_art_nmonth_l"
+            },
+            {
+                "variableName": "sai_p_art_outside_l",
+                "isAbout": "sai_p_art_outside_l"
+            },
+            {
+                "variableName": "sai_p_art_perwk_l",
+                "isAbout": "sai_p_art_perwk_l"
+            },
+            {
+                "variableName": "sai_p_art_private_l",
+                "isAbout": "sai_p_art_private_l"
+            },
+            {
+                "variableName": "sai_p_art_school_l",
+                "isAbout": "sai_p_art_school_l"
+            },
+            {
+                "variableName": "sai_p_art_self_l",
+                "isAbout": "sai_p_art_self_l"
+            },
+            {
+                "variableName": "sai_p_art_tspent_l",
+                "isAbout": "sai_p_art_tspent_l"
+            },
+            {
+                "variableName": "sai_p_base_nmonth_l",
+                "isAbout": "sai_p_base_nmonth_l"
+            },
+            {
+                "variableName": "sai_p_base_outside_l",
+                "isAbout": "sai_p_base_outside_l"
+            },
+            {
+                "variableName": "sai_p_base_perwk_l",
+                "isAbout": "sai_p_base_perwk_l"
+            },
+            {
+                "variableName": "sai_p_base_private_l",
+                "isAbout": "sai_p_base_private_l"
+            },
+            {
+                "variableName": "sai_p_base_school_l",
+                "isAbout": "sai_p_base_school_l"
+            },
+            {
+                "variableName": "sai_p_base_self_l",
+                "isAbout": "sai_p_base_self_l"
+            },
+            {
+                "variableName": "sai_p_base_tspent_l",
+                "isAbout": "sai_p_base_tspent_l"
+            },
+            {
+                "variableName": "sai_p_basket_nmonth_l",
+                "isAbout": "sai_p_basket_nmonth_l"
+            },
+            {
+                "variableName": "sai_p_basket_outside_l",
+                "isAbout": "sai_p_basket_outside_l"
+            },
+            {
+                "variableName": "sai_p_basket_perwk_l",
+                "isAbout": "sai_p_basket_perwk_l"
+            },
+            {
+                "variableName": "sai_p_basket_private_l",
+                "isAbout": "sai_p_basket_private_l"
+            },
+            {
+                "variableName": "sai_p_basket_school_l",
+                "isAbout": "sai_p_basket_school_l"
+            },
+            {
+                "variableName": "sai_p_basket_self_l",
+                "isAbout": "sai_p_basket_self_l"
+            },
+            {
+                "variableName": "sai_p_basket_tspent_l",
+                "isAbout": "sai_p_basket_tspent_l"
+            },
+            {
+                "variableName": "sai_p_chess_nmonth_l",
+                "isAbout": "sai_p_chess_nmonth_l"
+            },
+            {
+                "variableName": "sai_p_chess_outside_l",
+                "isAbout": "sai_p_chess_outside_l"
+            },
+            {
+                "variableName": "sai_p_chess_perwk_l",
+                "isAbout": "sai_p_chess_perwk_l"
+            },
+            {
+                "variableName": "sai_p_chess_private_l",
+                "isAbout": "sai_p_chess_private_l"
+            },
+            {
+                "variableName": "sai_p_chess_school_l",
+                "isAbout": "sai_p_chess_school_l"
+            },
+            {
+                "variableName": "sai_p_chess_self_l",
+                "isAbout": "sai_p_chess_self_l"
+            },
+            {
+                "variableName": "sai_p_chess_tspent_l",
+                "isAbout": "sai_p_chess_tspent_l"
+            },
+            {
+                "variableName": "sai_p_climb_nmonth_l",
+                "isAbout": "sai_p_climb_nmonth_l"
+            },
+            {
+                "variableName": "sai_p_climb_outside_l",
+                "isAbout": "sai_p_climb_outside_l"
+            },
+            {
+                "variableName": "sai_p_climb_perwk_l",
+                "isAbout": "sai_p_climb_perwk_l"
+            },
+            {
+                "variableName": "sai_p_climb_private_l",
+                "isAbout": "sai_p_climb_private_l"
+            },
+            {
+                "variableName": "sai_p_climb_school_l",
+                "isAbout": "sai_p_climb_school_l"
+            },
+            {
+                "variableName": "sai_p_climb_self_l",
+                "isAbout": "sai_p_climb_self_l"
+            },
+            {
+                "variableName": "sai_p_climb_tspent_l",
+                "isAbout": "sai_p_climb_tspent_l"
+            },
+            {
+                "variableName": "sai_p_collect_nmonth_l",
+                "isAbout": "sai_p_collect_nmonth_l"
+            },
+            {
+                "variableName": "sai_p_collect_outside_l",
+                "isAbout": "sai_p_collect_outside_l"
+            },
+            {
+                "variableName": "sai_p_collect_perwk_l",
+                "isAbout": "sai_p_collect_perwk_l"
+            },
+            {
+                "variableName": "sai_p_collect_private_l",
+                "isAbout": "sai_p_collect_private_l"
+            },
+            {
+                "variableName": "sai_p_collect_school_l",
+                "isAbout": "sai_p_collect_school_l"
+            },
+            {
+                "variableName": "sai_p_collect_self_l",
+                "isAbout": "sai_p_collect_self_l"
+            },
+            {
+                "variableName": "sai_p_collect_tspent_l",
+                "isAbout": "sai_p_collect_tspent_l"
+            },
+            {
+                "variableName": "sai_p_crafts_nmonth_l",
+                "isAbout": "sai_p_crafts_nmonth_l"
+            },
+            {
+                "variableName": "sai_p_crafts_outside_l",
+                "isAbout": "sai_p_crafts_outside_l"
+            },
+            {
+                "variableName": "sai_p_crafts_perwk_l",
+                "isAbout": "sai_p_crafts_perwk_l"
+            },
+            {
+                "variableName": "sai_p_crafts_private_l",
+                "isAbout": "sai_p_crafts_private_l"
+            },
+            {
+                "variableName": "sai_p_crafts_school_l",
+                "isAbout": "sai_p_crafts_school_l"
+            },
+            {
+                "variableName": "sai_p_crafts_self_l",
+                "isAbout": "sai_p_crafts_self_l"
+            },
+            {
+                "variableName": "sai_p_crafts_tspent_l",
+                "isAbout": "sai_p_crafts_tspent_l"
+            },
+            {
+                "variableName": "sai_p_dance_nmonth_l",
+                "isAbout": "sai_p_dance_nmonth_l"
+            },
+            {
+                "variableName": "sai_p_dance_outside_l",
+                "isAbout": "sai_p_dance_outside_l"
+            },
+            {
+                "variableName": "sai_p_dance_perwk_l",
+                "isAbout": "sai_p_dance_perwk_l"
+            },
+            {
+                "variableName": "sai_p_dance_private_l",
+                "isAbout": "sai_p_dance_private_l"
+            },
+            {
+                "variableName": "sai_p_dance_school_l",
+                "isAbout": "sai_p_dance_school_l"
+            },
+            {
+                "variableName": "sai_p_dance_self_l",
+                "isAbout": "sai_p_dance_self_l"
+            },
+            {
+                "variableName": "sai_p_dance_tspent_l",
+                "isAbout": "sai_p_dance_tspent_l"
+            },
+            {
+                "variableName": "sai_p_drama_nmonth_l",
+                "isAbout": "sai_p_drama_nmonth_l"
+            },
+            {
+                "variableName": "sai_p_drama_outside_l",
+                "isAbout": "sai_p_drama_outside_l"
+            },
+            {
+                "variableName": "sai_p_drama_perwk_l",
+                "isAbout": "sai_p_drama_perwk_l"
+            },
+            {
+                "variableName": "sai_p_drama_private_l",
+                "isAbout": "sai_p_drama_private_l"
+            },
+            {
+                "variableName": "sai_p_drama_school_l",
+                "isAbout": "sai_p_drama_school_l"
+            },
+            {
+                "variableName": "sai_p_drama_self_l",
+                "isAbout": "sai_p_drama_self_l"
+            },
+            {
+                "variableName": "sai_p_drama_tspent_l",
+                "isAbout": "sai_p_drama_tspent_l"
+            },
+            {
+                "variableName": "sai_p_fball_nmonth_l",
+                "isAbout": "sai_p_fball_nmonth_l"
+            },
+            {
+                "variableName": "sai_p_fball_outside_l",
+                "isAbout": "sai_p_fball_outside_l"
+            },
+            {
+                "variableName": "sai_p_fball_perwk_l",
+                "isAbout": "sai_p_fball_perwk_l"
+            },
+            {
+                "variableName": "sai_p_fball_private_l",
+                "isAbout": "sai_p_fball_private_l"
+            },
+            {
+                "variableName": "sai_p_fball_school_l",
+                "isAbout": "sai_p_fball_school_l"
+            },
+            {
+                "variableName": "sai_p_fball_self_l",
+                "isAbout": "sai_p_fball_self_l"
+            },
+            {
+                "variableName": "sai_p_fball_tspent_l",
+                "isAbout": "sai_p_fball_tspent_l"
+            },
+            {
+                "variableName": "sai_p_fhock_nmonth_l",
+                "isAbout": "sai_p_fhock_nmonth_l"
+            },
+            {
+                "variableName": "sai_p_fhock_outside_l",
+                "isAbout": "sai_p_fhock_outside_l"
+            },
+            {
+                "variableName": "sai_p_fhock_perwk_l",
+                "isAbout": "sai_p_fhock_perwk_l"
+            },
+            {
+                "variableName": "sai_p_fhock_private_l",
+                "isAbout": "sai_p_fhock_private_l"
+            },
+            {
+                "variableName": "sai_p_fhock_school_l",
+                "isAbout": "sai_p_fhock_school_l"
+            },
+            {
+                "variableName": "sai_p_fhock_self_l",
+                "isAbout": "sai_p_fhock_self_l"
+            },
+            {
+                "variableName": "sai_p_fhock_tspent_l",
+                "isAbout": "sai_p_fhock_tspent_l"
+            },
+            {
+                "variableName": "sai_p_gym_nmonth_l",
+                "isAbout": "sai_p_gym_nmonth_l"
+            },
+            {
+                "variableName": "sai_p_gym_outside_l",
+                "isAbout": "sai_p_gym_outside_l"
+            },
+            {
+                "variableName": "sai_p_gym_perwk_l",
+                "isAbout": "sai_p_gym_perwk_l"
+            },
+            {
+                "variableName": "sai_p_gym_private_l",
+                "isAbout": "sai_p_gym_private_l"
+            },
+            {
+                "variableName": "sai_p_gym_school_l",
+                "isAbout": "sai_p_gym_school_l"
+            },
+            {
+                "variableName": "sai_p_gym_self_l",
+                "isAbout": "sai_p_gym_self_l"
+            },
+            {
+                "variableName": "sai_p_gym_tspent_l",
+                "isAbout": "sai_p_gym_tspent_l"
+            },
+            {
+                "variableName": "sai_p_ihock_nmonth_l",
+                "isAbout": "sai_p_ihock_nmonth_l"
+            },
+            {
+                "variableName": "sai_p_ihock_outside_l",
+                "isAbout": "sai_p_ihock_outside_l"
+            },
+            {
+                "variableName": "sai_p_ihock_perwk_l",
+                "isAbout": "sai_p_ihock_perwk_l"
+            },
+            {
+                "variableName": "sai_p_ihock_private_l",
+                "isAbout": "sai_p_ihock_private_l"
+            },
+            {
+                "variableName": "sai_p_ihock_school_l",
+                "isAbout": "sai_p_ihock_school_l"
+            },
+            {
+                "variableName": "sai_p_ihock_self_l",
+                "isAbout": "sai_p_ihock_self_l"
+            },
+            {
+                "variableName": "sai_p_ihock_tspent_l",
+                "isAbout": "sai_p_ihock_tspent_l"
+            },
+            {
+                "variableName": "sai_p_iskate_nmonth_l",
+                "isAbout": "sai_p_iskate_nmonth_l"
+            },
+            {
+                "variableName": "sai_p_iskate_outside_l",
+                "isAbout": "sai_p_iskate_outside_l"
+            },
+            {
+                "variableName": "sai_p_iskate_perwk_l",
+                "isAbout": "sai_p_iskate_perwk_l"
+            },
+            {
+                "variableName": "sai_p_iskate_private_l",
+                "isAbout": "sai_p_iskate_private_l"
+            },
+            {
+                "variableName": "sai_p_iskate_school_l",
+                "isAbout": "sai_p_iskate_school_l"
+            },
+            {
+                "variableName": "sai_p_iskate_self_l",
+                "isAbout": "sai_p_iskate_self_l"
+            },
+            {
+                "variableName": "sai_p_iskate_tspent_l",
+                "isAbout": "sai_p_iskate_tspent_l"
+            },
+            {
+                "variableName": "sai_p_lax_nmonth_l",
+                "isAbout": "sai_p_lax_nmonth_l"
+            },
+            {
+                "variableName": "sai_p_lax_outside_l",
+                "isAbout": "sai_p_lax_outside_l"
+            },
+            {
+                "variableName": "sai_p_lax_perwk_l",
+                "isAbout": "sai_p_lax_perwk_l"
+            },
+            {
+                "variableName": "sai_p_lax_private_l",
+                "isAbout": "sai_p_lax_private_l"
+            },
+            {
+                "variableName": "sai_p_lax_school_l",
+                "isAbout": "sai_p_lax_school_l"
+            },
+            {
+                "variableName": "sai_p_lax_self_l",
+                "isAbout": "sai_p_lax_self_l"
+            },
+            {
+                "variableName": "sai_p_lax_tspent_l",
+                "isAbout": "sai_p_lax_tspent_l"
+            },
+            {
+                "variableName": "sai_p_lmusic_hours_2_l",
+                "isAbout": "sai_p_lmusic_hours_2_l"
+            },
+            {
+                "variableName": "sai_p_lmusic_hours_dk_l",
+                "isAbout": "sai_p_lmusic_hours_dk_l"
+            },
+            {
+                "variableName": "sai_p_lmusic_hours_l",
+                "isAbout": "sai_p_lmusic_hours_l"
+            },
+            {
+                "variableName": "sai_p_lmusic_l",
+                "isAbout": "sai_p_lmusic_l"
+            },
+            {
+                "variableName": "sai_p_m_arts_nmonth_l",
+                "isAbout": "sai_p_m_arts_nmonth_l"
+            },
+            {
+                "variableName": "sai_p_m_arts_outside_l",
+                "isAbout": "sai_p_m_arts_outside_l"
+            },
+            {
+                "variableName": "sai_p_m_arts_perwk_l",
+                "isAbout": "sai_p_m_arts_perwk_l"
+            },
+            {
+                "variableName": "sai_p_m_arts_private_l",
+                "isAbout": "sai_p_m_arts_private_l"
+            },
+            {
+                "variableName": "sai_p_m_arts_school_l",
+                "isAbout": "sai_p_m_arts_school_l"
+            },
+            {
+                "variableName": "sai_p_m_arts_self_l",
+                "isAbout": "sai_p_m_arts_self_l"
+            },
+            {
+                "variableName": "sai_p_m_arts_tspent_l",
+                "isAbout": "sai_p_m_arts_tspent_l"
+            },
+            {
+                "variableName": "sai_p_mma_nmonth_l",
+                "isAbout": "sai_p_mma_nmonth_l"
+            },
+            {
+                "variableName": "sai_p_mma_outside_l",
+                "isAbout": "sai_p_mma_outside_l"
+            },
+            {
+                "variableName": "sai_p_mma_perwk_l",
+                "isAbout": "sai_p_mma_perwk_l"
+            },
+            {
+                "variableName": "sai_p_mma_private_l",
+                "isAbout": "sai_p_mma_private_l"
+            },
+            {
+                "variableName": "sai_p_mma_school_l",
+                "isAbout": "sai_p_mma_school_l"
+            },
+            {
+                "variableName": "sai_p_mma_self_l",
+                "isAbout": "sai_p_mma_self_l"
+            },
+            {
+                "variableName": "sai_p_mma_tspent_l",
+                "isAbout": "sai_p_mma_tspent_l"
+            },
+            {
+                "variableName": "sai_p_music_nmonth_l",
+                "isAbout": "sai_p_music_nmonth_l"
+            },
+            {
+                "variableName": "sai_p_music_outside_l",
+                "isAbout": "sai_p_music_outside_l"
+            },
+            {
+                "variableName": "sai_p_music_perwk_l",
+                "isAbout": "sai_p_music_perwk_l"
+            },
+            {
+                "variableName": "sai_p_music_private_l",
+                "isAbout": "sai_p_music_private_l"
+            },
+            {
+                "variableName": "sai_p_music_school_l",
+                "isAbout": "sai_p_music_school_l"
+            },
+            {
+                "variableName": "sai_p_music_self_l",
+                "isAbout": "sai_p_music_self_l"
+            },
+            {
+                "variableName": "sai_p_music_tspent_l",
+                "isAbout": "sai_p_music_tspent_l"
+            },
+            {
+                "variableName": "sai_p_polo_nmonth_l",
+                "isAbout": "sai_p_polo_nmonth_l"
+            },
+            {
+                "variableName": "sai_p_polo_outside_l",
+                "isAbout": "sai_p_polo_outside_l"
+            },
+            {
+                "variableName": "sai_p_polo_perwk_l",
+                "isAbout": "sai_p_polo_perwk_l"
+            },
+            {
+                "variableName": "sai_p_polo_private_l",
+                "isAbout": "sai_p_polo_private_l"
+            },
+            {
+                "variableName": "sai_p_polo_school_l",
+                "isAbout": "sai_p_polo_school_l"
+            },
+            {
+                "variableName": "sai_p_polo_self_l",
+                "isAbout": "sai_p_polo_self_l"
+            },
+            {
+                "variableName": "sai_p_polo_tspent_l",
+                "isAbout": "sai_p_polo_tspent_l"
+            },
+            {
+                "variableName": "sai_p_read_hours_2_l",
+                "isAbout": "sai_p_read_hours_2_l"
+            },
+            {
+                "variableName": "sai_p_read_hours_dk_l",
+                "isAbout": "sai_p_read_hours_dk_l"
+            },
+            {
+                "variableName": "sai_p_read_hours_l",
+                "isAbout": "sai_p_read_hours_l"
+            },
+            {
+                "variableName": "sai_p_read_l",
+                "isAbout": "sai_p_read_l"
+            },
+            {
+                "variableName": "sai_p_rugby_nmonth_l",
+                "isAbout": "sai_p_rugby_nmonth_l"
+            },
+            {
+                "variableName": "sai_p_rugby_outside_l",
+                "isAbout": "sai_p_rugby_outside_l"
+            },
+            {
+                "variableName": "sai_p_rugby_perwk_l",
+                "isAbout": "sai_p_rugby_perwk_l"
+            },
+            {
+                "variableName": "sai_p_rugby_private_l",
+                "isAbout": "sai_p_rugby_private_l"
+            },
+            {
+                "variableName": "sai_p_rugby_school_l",
+                "isAbout": "sai_p_rugby_school_l"
+            },
+            {
+                "variableName": "sai_p_rugby_self_l",
+                "isAbout": "sai_p_rugby_self_l"
+            },
+            {
+                "variableName": "sai_p_rugby_tspent_l",
+                "isAbout": "sai_p_rugby_tspent_l"
+            },
+            {
+                "variableName": "sai_p_run_nmonth_l",
+                "isAbout": "sai_p_run_nmonth_l"
+            },
+            {
+                "variableName": "sai_p_run_outside_l",
+                "isAbout": "sai_p_run_outside_l"
+            },
+            {
+                "variableName": "sai_p_run_perwk_l",
+                "isAbout": "sai_p_run_perwk_l"
+            },
+            {
+                "variableName": "sai_p_run_private_l",
+                "isAbout": "sai_p_run_private_l"
+            },
+            {
+                "variableName": "sai_p_run_school_l",
+                "isAbout": "sai_p_run_school_l"
+            },
+            {
+                "variableName": "sai_p_run_self_l",
+                "isAbout": "sai_p_run_self_l"
+            },
+            {
+                "variableName": "sai_p_run_tspent_l",
+                "isAbout": "sai_p_run_tspent_l"
+            },
+            {
+                "variableName": "sai_p_sboard_nmonth_l",
+                "isAbout": "sai_p_sboard_nmonth_l"
+            },
+            {
+                "variableName": "sai_p_sboard_outside_l",
+                "isAbout": "sai_p_sboard_outside_l"
+            },
+            {
+                "variableName": "sai_p_sboard_perwk_l",
+                "isAbout": "sai_p_sboard_perwk_l"
+            },
+            {
+                "variableName": "sai_p_sboard_private_l",
+                "isAbout": "sai_p_sboard_private_l"
+            },
+            {
+                "variableName": "sai_p_sboard_school_l",
+                "isAbout": "sai_p_sboard_school_l"
+            },
+            {
+                "variableName": "sai_p_sboard_self_l",
+                "isAbout": "sai_p_sboard_self_l"
+            },
+            {
+                "variableName": "sai_p_sboard_tspent_l",
+                "isAbout": "sai_p_sboard_tspent_l"
+            },
+            {
+                "variableName": "sai_p_skate_nmonth_l",
+                "isAbout": "sai_p_skate_nmonth_l"
+            },
+            {
+                "variableName": "sai_p_skate_outside_l",
+                "isAbout": "sai_p_skate_outside_l"
+            },
+            {
+                "variableName": "sai_p_skate_perwk_l",
+                "isAbout": "sai_p_skate_perwk_l"
+            },
+            {
+                "variableName": "sai_p_skate_private_l",
+                "isAbout": "sai_p_skate_private_l"
+            },
+            {
+                "variableName": "sai_p_skate_school_l",
+                "isAbout": "sai_p_skate_school_l"
+            },
+            {
+                "variableName": "sai_p_skate_self_l",
+                "isAbout": "sai_p_skate_self_l"
+            },
+            {
+                "variableName": "sai_p_skate_tspent_l",
+                "isAbout": "sai_p_skate_tspent_l"
+            },
+            {
+                "variableName": "sai_p_soc_nmonth_l",
+                "isAbout": "sai_p_soc_nmonth_l"
+            },
+            {
+                "variableName": "sai_p_soc_outside_l",
+                "isAbout": "sai_p_soc_outside_l"
+            },
+            {
+                "variableName": "sai_p_soc_perwk_l",
+                "isAbout": "sai_p_soc_perwk_l"
+            },
+            {
+                "variableName": "sai_p_soc_private_l",
+                "isAbout": "sai_p_soc_private_l"
+            },
+            {
+                "variableName": "sai_p_soc_school_l",
+                "isAbout": "sai_p_soc_school_l"
+            },
+            {
+                "variableName": "sai_p_soc_self_l",
+                "isAbout": "sai_p_soc_self_l"
+            },
+            {
+                "variableName": "sai_p_soc_tspent_l",
+                "isAbout": "sai_p_soc_tspent_l"
+            },
+            {
+                "variableName": "sai_p_surf_nmonth_l",
+                "isAbout": "sai_p_surf_nmonth_l"
+            },
+            {
+                "variableName": "sai_p_surf_outside_l",
+                "isAbout": "sai_p_surf_outside_l"
+            },
+            {
+                "variableName": "sai_p_surf_perwk_l",
+                "isAbout": "sai_p_surf_perwk_l"
+            },
+            {
+                "variableName": "sai_p_surf_private_l",
+                "isAbout": "sai_p_surf_private_l"
+            },
+            {
+                "variableName": "sai_p_surf_school_l",
+                "isAbout": "sai_p_surf_school_l"
+            },
+            {
+                "variableName": "sai_p_surf_self_l",
+                "isAbout": "sai_p_surf_self_l"
+            },
+            {
+                "variableName": "sai_p_surf_tspent_l",
+                "isAbout": "sai_p_surf_tspent_l"
+            },
+            {
+                "variableName": "sai_p_tennis_nmonth_l",
+                "isAbout": "sai_p_tennis_nmonth_l"
+            },
+            {
+                "variableName": "sai_p_tennis_outside_l",
+                "isAbout": "sai_p_tennis_outside_l"
+            },
+            {
+                "variableName": "sai_p_tennis_perwk_l",
+                "isAbout": "sai_p_tennis_perwk_l"
+            },
+            {
+                "variableName": "sai_p_tennis_private_l",
+                "isAbout": "sai_p_tennis_private_l"
+            },
+            {
+                "variableName": "sai_p_tennis_school_l",
+                "isAbout": "sai_p_tennis_school_l"
+            },
+            {
+                "variableName": "sai_p_tennis_self_l",
+                "isAbout": "sai_p_tennis_self_l"
+            },
+            {
+                "variableName": "sai_p_tennis_tspent_l",
+                "isAbout": "sai_p_tennis_tspent_l"
+            },
+            {
+                "variableName": "sai_p_vball_nmonth_l",
+                "isAbout": "sai_p_vball_nmonth_l"
+            },
+            {
+                "variableName": "sai_p_vball_outside_l",
+                "isAbout": "sai_p_vball_outside_l"
+            },
+            {
+                "variableName": "sai_p_vball_perwk_l",
+                "isAbout": "sai_p_vball_perwk_l"
+            },
+            {
+                "variableName": "sai_p_vball_private_l",
+                "isAbout": "sai_p_vball_private_l"
+            },
+            {
+                "variableName": "sai_p_vball_school_l",
+                "isAbout": "sai_p_vball_school_l"
+            },
+            {
+                "variableName": "sai_p_vball_self_l",
+                "isAbout": "sai_p_vball_self_l"
+            },
+            {
+                "variableName": "sai_p_vball_tspent_l",
+                "isAbout": "sai_p_vball_tspent_l"
+            },
+            {
+                "variableName": "sai_p_wpolo_nmonth_l",
+                "isAbout": "sai_p_wpolo_nmonth_l"
+            },
+            {
+                "variableName": "sai_p_wpolo_outside_l",
+                "isAbout": "sai_p_wpolo_outside_l"
+            },
+            {
+                "variableName": "sai_p_wpolo_perwk_l",
+                "isAbout": "sai_p_wpolo_perwk_l"
+            },
+            {
+                "variableName": "sai_p_wpolo_private_l",
+                "isAbout": "sai_p_wpolo_private_l"
+            },
+            {
+                "variableName": "sai_p_wpolo_school_l",
+                "isAbout": "sai_p_wpolo_school_l"
+            },
+            {
+                "variableName": "sai_p_wpolo_self_l",
+                "isAbout": "sai_p_wpolo_self_l"
+            },
+            {
+                "variableName": "sai_p_wpolo_tspent_l",
+                "isAbout": "sai_p_wpolo_tspent_l"
+            },
+            {
+                "variableName": "sai_p_yoga_nmonth_l",
+                "isAbout": "sai_p_yoga_nmonth_l"
+            },
+            {
+                "variableName": "sai_p_yoga_outside_l",
+                "isAbout": "sai_p_yoga_outside_l"
+            },
+            {
+                "variableName": "sai_p_yoga_perwk_l",
+                "isAbout": "sai_p_yoga_perwk_l"
+            },
+            {
+                "variableName": "sai_p_yoga_private_l",
+                "isAbout": "sai_p_yoga_private_l"
+            },
+            {
+                "variableName": "sai_p_yoga_school_l",
+                "isAbout": "sai_p_yoga_school_l"
+            },
+            {
+                "variableName": "sai_p_yoga_self_l",
+                "isAbout": "sai_p_yoga_self_l"
+            },
+            {
+                "variableName": "sai_p_yoga_tspent_l",
+                "isAbout": "sai_p_yoga_tspent_l"
+            }
+        ]
+    }
+}

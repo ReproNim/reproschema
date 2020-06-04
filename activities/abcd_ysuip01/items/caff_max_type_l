@@ -1,0 +1,47 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "caff_max_type_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "caff_max_type_l",
+    "altLabel": "su_caff_max_type_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "What type of beverage was that? [Interviewer: list choices]",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "coffee",
+                "value": 1
+            },
+            {
+                "name": "espresso",
+                "value": 2
+            },
+            {
+                "name": "tea",
+                "value": 3
+            },
+            {
+                "name": "soda",
+                "value": 4
+            },
+            {
+                "name": "energy drink / caff_max_yn_l    == '1'",
+                "value": 5
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = coffee; 2 = espresso; 3 = tea; 4 = soda; 5 = energy drink / caff_max_yn_l    == '1'"
+        }
+    ]
+}

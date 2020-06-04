@@ -1,0 +1,322 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "abcd_screen01": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/activities/abcd_screen01/items/",
+        "scrn_abn_scan": {
+            "@id": "abcd_screen01:scrn_abn_scan",
+            "@type": "@id"
+        },
+        "scrn_alt_status": {
+            "@id": "abcd_screen01:scrn_alt_status",
+            "@type": "@id"
+        },
+        "scrn_aneurysm": {
+            "@id": "abcd_screen01:scrn_aneurysm",
+            "@type": "@id"
+        },
+        "scrn_asd": {
+            "@id": "abcd_screen01:scrn_asd",
+            "@type": "@id"
+        },
+        "scrn_asd_regclasses": {
+            "@id": "abcd_screen01:scrn_asd_regclasses",
+            "@type": "@id"
+        },
+        "scrn_birthcomp": {
+            "@id": "abcd_screen01:scrn_birthcomp",
+            "@type": "@id"
+        },
+        "scrn_birthcomp_excl": {
+            "@id": "abcd_screen01:scrn_birthcomp_excl",
+            "@type": "@id"
+        },
+        "scrn_birthcomp_y": {
+            "@id": "abcd_screen01:scrn_birthcomp_y",
+            "@type": "@id"
+        },
+        "scrn_birthwt": {
+            "@id": "abcd_screen01:scrn_birthwt",
+            "@type": "@id"
+        },
+        "scrn_braces": {
+            "@id": "abcd_screen01:scrn_braces",
+            "@type": "@id"
+        },
+        "scrn_bracescallback": {
+            "@id": "abcd_screen01:scrn_bracescallback",
+            "@type": "@id"
+        },
+        "scrn_bracesdate": {
+            "@id": "abcd_screen01:scrn_bracesdate",
+            "@type": "@id"
+        },
+        "scrn_brain_scn": {
+            "@id": "abcd_screen01:scrn_brain_scn",
+            "@type": "@id"
+        },
+        "scrn_claustrophob": {
+            "@id": "abcd_screen01:scrn_claustrophob",
+            "@type": "@id"
+        },
+        "scrn_claustrophobexcl": {
+            "@id": "abcd_screen01:scrn_claustrophobexcl",
+            "@type": "@id"
+        },
+        "scrn_commondx": {
+            "@id": "abcd_screen01:scrn_commondx",
+            "@type": "@id"
+        },
+        "scrn_con_excl": {
+            "@id": "abcd_screen01:scrn_con_excl",
+            "@type": "@id"
+        },
+        "scrn_concerns_excl": {
+            "@id": "abcd_screen01:scrn_concerns_excl",
+            "@type": "@id"
+        },
+        "scrn_concerns_p": {
+            "@id": "abcd_screen01:scrn_concerns_p",
+            "@type": "@id"
+        },
+        "scrn_cpalsy": {
+            "@id": "abcd_screen01:scrn_cpalsy",
+            "@type": "@id"
+        },
+        "scrn_epls": {
+            "@id": "abcd_screen01:scrn_epls",
+            "@type": "@id"
+        },
+        "scrn_eyeliner": {
+            "@id": "abcd_screen01:scrn_eyeliner",
+            "@type": "@id"
+        },
+        "scrn_fluency": {
+            "@id": "abcd_screen01:scrn_fluency",
+            "@type": "@id"
+        },
+        "scrn_gestage": {
+            "@id": "abcd_screen01:scrn_gestage",
+            "@type": "@id"
+        },
+        "scrn_hemorrhage": {
+            "@id": "abcd_screen01:scrn_hemorrhage",
+            "@type": "@id"
+        },
+        "scrn_hemotoma": {
+            "@id": "abcd_screen01:scrn_hemotoma",
+            "@type": "@id"
+        },
+        "scrn_hr_dep": {
+            "@id": "abcd_screen01:scrn_hr_dep",
+            "@type": "@id"
+        },
+        "scrn_hr_destroy": {
+            "@id": "abcd_screen01:scrn_hr_destroy",
+            "@type": "@id"
+        },
+        "scrn_hr_disobey": {
+            "@id": "abcd_screen01:scrn_hr_disobey",
+            "@type": "@id"
+        },
+        "scrn_hr_fear": {
+            "@id": "abcd_screen01:scrn_hr_fear",
+            "@type": "@id"
+        },
+        "scrn_hr_help": {
+            "@id": "abcd_screen01:scrn_hr_help",
+            "@type": "@id"
+        },
+        "scrn_hr_liecheat": {
+            "@id": "abcd_screen01:scrn_hr_liecheat",
+            "@type": "@id"
+        },
+        "scrn_hr_music": {
+            "@id": "abcd_screen01:scrn_hr_music",
+            "@type": "@id"
+        },
+        "scrn_hr_read": {
+            "@id": "abcd_screen01:scrn_hr_read",
+            "@type": "@id"
+        },
+        "scrn_hr_school": {
+            "@id": "abcd_screen01:scrn_hr_school",
+            "@type": "@id"
+        },
+        "scrn_hr_sleep": {
+            "@id": "abcd_screen01:scrn_hr_sleep",
+            "@type": "@id"
+        },
+        "scrn_hr_slowfriend": {
+            "@id": "abcd_screen01:scrn_hr_slowfriend",
+            "@type": "@id"
+        },
+        "scrn_hr_smoke": {
+            "@id": "abcd_screen01:scrn_hr_smoke",
+            "@type": "@id"
+        },
+        "scrn_hr_som": {
+            "@id": "abcd_screen01:scrn_hr_som",
+            "@type": "@id"
+        },
+        "scrn_hr_sport": {
+            "@id": "abcd_screen01:scrn_hr_sport",
+            "@type": "@id"
+        },
+        "scrn_hr_steal": {
+            "@id": "abcd_screen01:scrn_hr_steal",
+            "@type": "@id"
+        },
+        "scrn_hr_stress": {
+            "@id": "abcd_screen01:scrn_hr_stress",
+            "@type": "@id"
+        },
+        "scrn_intdisab": {
+            "@id": "abcd_screen01:scrn_intdisab",
+            "@type": "@id"
+        },
+        "scrn_medcond_other": {
+            "@id": "abcd_screen01:scrn_medcond_other",
+            "@type": "@id"
+        },
+        "scrn_met_excl": {
+            "@id": "abcd_screen01:scrn_met_excl",
+            "@type": "@id"
+        },
+        "scrn_met_inj": {
+            "@id": "abcd_screen01:scrn_met_inj",
+            "@type": "@id"
+        },
+        "scrn_met_injenter": {
+            "@id": "abcd_screen01:scrn_met_injenter",
+            "@type": "@id"
+        },
+        "scrn_met_injmdnote": {
+            "@id": "abcd_screen01:scrn_met_injmdnote",
+            "@type": "@id"
+        },
+        "scrn_met_injremove": {
+            "@id": "abcd_screen01:scrn_met_injremove",
+            "@type": "@id"
+        },
+        "scrn_met_obj": {
+            "@id": "abcd_screen01:scrn_met_obj",
+            "@type": "@id"
+        },
+        "scrn_met_objyear": {
+            "@id": "abcd_screen01:scrn_met_objyear",
+            "@type": "@id"
+        },
+        "scrn_nr_hair": {
+            "@id": "abcd_screen01:scrn_nr_hair",
+            "@type": "@id"
+        },
+        "scrn_nr_piercing": {
+            "@id": "abcd_screen01:scrn_nr_piercing",
+            "@type": "@id"
+        },
+        "scrn_percept": {
+            "@id": "abcd_screen01:scrn_percept",
+            "@type": "@id"
+        },
+        "scrn_percept_corr": {
+            "@id": "abcd_screen01:scrn_percept_corr",
+            "@type": "@id"
+        },
+        "scrn_psych_excl": {
+            "@id": "abcd_screen01:scrn_psych_excl",
+            "@type": "@id"
+        },
+        "scrn_psychdx_other": {
+            "@id": "abcd_screen01:scrn_psychdx_other",
+            "@type": "@id"
+        },
+        "scrn_schiz": {
+            "@id": "abcd_screen01:scrn_schiz",
+            "@type": "@id"
+        },
+        "scrn_seizure": {
+            "@id": "abcd_screen01:scrn_seizure",
+            "@type": "@id"
+        },
+        "scrn_speakeng": {
+            "@id": "abcd_screen01:scrn_speakeng",
+            "@type": "@id"
+        },
+        "scrn_status_2": {
+            "@id": "abcd_screen01:scrn_status_2",
+            "@type": "@id"
+        },
+        "scrn_stroke": {
+            "@id": "abcd_screen01:scrn_stroke",
+            "@type": "@id"
+        },
+        "scrn_sud": {
+            "@id": "abcd_screen01:scrn_sud",
+            "@type": "@id"
+        },
+        "scrn_surgery": {
+            "@id": "abcd_screen01:scrn_surgery",
+            "@type": "@id"
+        },
+        "scrn_tbi_loc": {
+            "@id": "abcd_screen01:scrn_tbi_loc",
+            "@type": "@id"
+        },
+        "scrn_tbi_mem": {
+            "@id": "abcd_screen01:scrn_tbi_mem",
+            "@type": "@id"
+        },
+        "scrn_tbi_scan": {
+            "@id": "abcd_screen01:scrn_tbi_scan",
+            "@type": "@id"
+        },
+        "scrn_tbi_scan_excl": {
+            "@id": "abcd_screen01:scrn_tbi_scan_excl",
+            "@type": "@id"
+        },
+        "scrn_time": {
+            "@id": "abcd_screen01:scrn_time",
+            "@type": "@id"
+        },
+        "scrn_tumor": {
+            "@id": "abcd_screen01:scrn_tumor",
+            "@type": "@id"
+        },
+        "scrn_twin_reg___1": {
+            "@id": "abcd_screen01:scrn_twin_reg___1",
+            "@type": "@id"
+        },
+        "scrn_twin_reg___2": {
+            "@id": "abcd_screen01:scrn_twin_reg___2",
+            "@type": "@id"
+        },
+        "scrn_weight_mri": {
+            "@id": "abcd_screen01:scrn_weight_mri",
+            "@type": "@id"
+        },
+        "zygos_q1": {
+            "@id": "abcd_screen01:zygos_q1",
+            "@type": "@id"
+        },
+        "zygos_q2": {
+            "@id": "abcd_screen01:zygos_q2",
+            "@type": "@id"
+        },
+        "zygos_q4": {
+            "@id": "abcd_screen01:zygos_q4",
+            "@type": "@id"
+        },
+        "zygos_q5": {
+            "@id": "abcd_screen01:zygos_q5",
+            "@type": "@id"
+        },
+        "zygos_q6": {
+            "@id": "abcd_screen01:zygos_q6",
+            "@type": "@id"
+        },
+        "zygos_quest___1": {
+            "@id": "abcd_screen01:zygos_quest___1",
+            "@type": "@id"
+        }
+    }
+}

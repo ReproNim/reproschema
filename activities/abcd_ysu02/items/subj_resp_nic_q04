@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "subj_resp_nic_q04",
+    "@type": "reproschema:Field",
+    "prefLabel": "subj_resp_nic_q04",
+    "altLabel": "res_tobacco_q09_f99ddd su_subj_resp_nic_q04",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Please rate the extent to which these words describe your feelings the very first time you used an e-cigarette or e-hookah. The number 1 indicates none, and 4 represents intense. While using your very first e-cigarette or e-hookah, did you have pleasurable sensations (did you feel a pleasurable buzz or rush, relaxed, dizzy)?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "None1",
+                "value": 1
+            },
+            {
+                "name": "2",
+                "value": 2
+            },
+            {
+                "name": "3",
+                "value": 3
+            },
+            {
+                "name": "Intense4",
+                "value": 4
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = None1; 2 = 2; 3 = 3; 4 = Intense4"
+        }
+    ]
+}

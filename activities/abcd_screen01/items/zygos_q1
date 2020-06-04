@@ -1,0 +1,38 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
+    "@id": "zygos_q1",
+    "@type": "reproschema:Field",
+    "prefLabel": "zygos_q1",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "When standing together, how do the twins' eyes compare... are their eyes the same color and shade,  different shade, or different color? /Cuando están parados uno junto al otro, ¿cómo se comparan los ojos de los gemelos? ¿Son del mismo color y tonalidad, de diferente tonalidad o de diferente color?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Same Color and Shade",
+                "value": 1
+            },
+            {
+                "name": "Different Shade",
+                "value": 2
+            },
+            {
+                "name": "Different Color",
+                "value": 3
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Same Color and Shade; 2 = Different Shade; 3 = Different Color"
+        }
+    ]
+}
