@@ -27,7 +27,6 @@ reproschema:FieldShape
     sh:property [
         sh:path schema:description ;
         sh:datatype rdf:langString ;
-        sh:maxCount 1 ;
     ] ;
     sh:property [
         sh:path schema:schemaVersion ;
@@ -59,10 +58,31 @@ reproschema:FieldShape
         sh:datatype xsd:boolean ;
         sh:maxCount 1 ;
     ] ;
-   sh:property [
+    sh:property [
+        sh:path reproterms:additionalNotesObj ;
+        sh:node reproterms:AdditionalNotesObjShape ;
+    ] ;
+    sh:property [
         sh:path reproterms:responseOptions ;
         sh:node reproterms:ResponseOptionsShape ;
-   ] .
+    ] .
+
+reproterms:AdditionalNotesObjShape
+    a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [
+        sh:path reproterms:source ;
+        sh:datatype xsd:string ;
+    ] ;
+    sh:property [
+        sh:path reproterms:column ;
+        sh:datatype xsd:string ;
+    ] ;
+    sh:property [
+        sh:path reproterms:value ;
+        sh:datatype schema:Boolean ;
+    ] .
 
 reproterms:ResponseOptionsShape
     a sh:NodeShape ;
@@ -74,15 +94,19 @@ reproterms:ResponseOptionsShape
     ] ;
     sh:property [
         sh:path schema:minValue ;
-        sh:datatype xsd:integer ;
+        sh:or ( [ sh:datatype xsd:integer ] [ sh:datatype xsd:string ] ) ;
     ] ;
     sh:property [
         sh:path schema:maxValue ;
-        sh:datatype xsd:integer ;
+        sh:or ( [ sh:datatype xsd:integer ] [ sh:datatype xsd:string ] ) ;
     ] ;
     sh:property [
         sh:path reproterms:valueType ;
         sh:nodeKind sh:IRI ;
+    ] ;
+    sh:property [
+        sh:path schema:image ;
+        sh:or ( [ sh:datatype schema:URL ] [sh:datatype schema:ImageObject ] ) ;
     ] ;
     sh:property [
         sh:path schema:itemListElement ;
@@ -99,11 +123,11 @@ schema:ChoicesShape
     ] ;
     sh:property [
         sh:path schema:value ;
-        sh:datatype xsd:integer ;
+        sh:or ( [ sh:datatype schema:Boolean ] [sh:datatype schema:StructuredValue ] [sh:datatype schema:Number ] [sh:datatype rdf:langString ]) ;
     ] ;
     sh:property [
         sh:path schema:image ;
-        sh:datatype xsd:string ;
+        sh:or ( [ sh:datatype schema:URL ] [ sh:datatype schema:ImageObject ] ) ;
     ] ;
     sh:property [
         sh:path reproterms:dontKnow ;
