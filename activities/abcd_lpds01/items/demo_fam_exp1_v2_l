@@ -1,0 +1,39 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments-part1/contexts/generic",
+    "@id": "demo_fam_exp1_v2_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "demo_fam_exp1_v2_l",
+    "altLabel": "demo_fam_exp1_p_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Needed food but couldn't afford to buy it or couldn't afford to go out to get it? ¿Necesitaban comida pero no les alcanzaba el dinero para comprarla o para salir a comprarla?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 777,
+        "choices": [
+            {
+                "name": "No No",
+                "value": 0
+            },
+            {
+                "name": "Yes Sí",
+                "value": 1
+            },
+            {
+                "name": "Refuse to answer Niego contestar",
+                "value": 777
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = No No; 1 = Yes Sí;  777 = Refuse to answer Niego contestar"
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments-part1/contexts/generic",
+    "@id": "irma_hurtec_a21a",
+    "@type": "reproschema:Field",
+    "prefLabel": "irma_hurtec_a21a",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "a. The way things look in your neighborhood a. La forma en que se ven las cosas en tu vecindario",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 3,
+        "choices": [
+            {
+                "name": "Not at all  De ningun modo",
+                "value": 0
+            },
+            {
+                "name": "A little  Un poco",
+                "value": 1
+            },
+            {
+                "name": "A lot  Mucho",
+                "value": 2
+            },
+            {
+                "name": "A whole lot Muchisimo",
+                "value": 3
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = Not at all  De ningun modo; 1 = A little  Un poco; 2 = A lot  Mucho; 3 = A whole lot Muchisimo"
+        }
+    ]
+}

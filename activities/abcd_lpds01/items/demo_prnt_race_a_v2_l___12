@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments-part1/contexts/generic",
+    "@id": "demo_prnt_race_a_v2_l___12",
+    "@type": "reproschema:Field",
+    "prefLabel": "demo_prnt_race_a_v2_l___12",
+    "altLabel": "demo_prnt_race_a_p_l___12",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "What race do you consider yourself to be? Please check all that apply. ¿De qué raza se considera usted? Seleccione 1 o más de estas categorías: (12, American Indian,  Native American India Americana,  India Nativa Americana)",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "No",
+                "value": 0
+            },
+            {
+                "name": "Yes",
+                "value": 1
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = No; 1 = Yes"
+        }
+    ]
+}

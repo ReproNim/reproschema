@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments-part1/contexts/generic",
+    "@id": "tbi_6o_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "tbi_6o_l",
+    "altLabel": "brain_injury_6o_l tbi_6o_p_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Do you want to report any more injuries with loss of consciousness since we last saw you on [asnt_timestamp_c]? Desde la última vez que nos vimos en [baseline_year_1_arm_1][asnt_timestamp] ¿quisiera reportar otras lesiones que hayan resultado en la pérdida de conocimiento ?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 0,
+        "choices": [
+            {
+                "name": "Yes Si",
+                "value": 1
+            },
+            {
+                "name": "No No",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes Si; 0 = No No"
+        }
+    ]
+}

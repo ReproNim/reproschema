@@ -1,0 +1,47 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments-part1/contexts/generic",
+    "@id": "ehi3b",
+    "@type": "reproschema:Field",
+    "prefLabel": "ehi3b",
+    "altLabel": "ehi_3b",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Toothbrush",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 100,
+        "schema:maxValue": -100,
+        "choices": [
+            {
+                "name": "Always Right",
+                "value": 100
+            },
+            {
+                "name": "Usually Right",
+                "value": 50
+            },
+            {
+                "name": "Both Equally",
+                "value": 0
+            },
+            {
+                "name": "Usually Left",
+                "value": -50
+            },
+            {
+                "name": "Always Left",
+                "value": -100
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "100 = Always Right; 50 = Usually Right; 0 = Both Equally; -50 = Usually Left; -100 = Always Left"
+        }
+    ]
+}

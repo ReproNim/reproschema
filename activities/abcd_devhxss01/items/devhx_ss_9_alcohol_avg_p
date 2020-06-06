@@ -1,0 +1,22 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments-part1/contexts/generic",
+    "@id": "devhx_ss_9_alcohol_avg_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "devhx_ss_9_alcohol_avg_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Alcohol? \rAverage drinks per week?",
+    "ui": {
+        "inputType": "number"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "In the Developmental History survey, if \"No\" was endorsed for use of a substance, the answer for \"Average drinks per week?\" was stored as missing. Here we have replaced missing with \"0\"."
+        }
+    ]
+}

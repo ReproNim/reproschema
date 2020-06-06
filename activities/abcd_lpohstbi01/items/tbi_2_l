@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments-part1/contexts/generic",
+    "@id": "tbi_2_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "tbi_2_l",
+    "altLabel": "brain_injury_2_l tbi_2_p_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Since we last saw you on [asnt_timestamp_c], has your child injured his/her head or neck in a car accident or from crashing some other moving vehicle like a bicycle, motorcyle, or ATV? Desde la última vez que nos vimos en [asnt_timestamp_c], ¿su niño/a se ha lesionado  la cabeza o el cuello en un accidente de auto o al chocar cuando iba en algún otro vehículo en movimiento, como una bicicleta, motocicleta o vehículo todo terreno?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 0,
+        "choices": [
+            {
+                "name": "Yes Si",
+                "value": 1
+            },
+            {
+                "name": "No No",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes Si; 0 = No No"
+        }
+    ]
+}

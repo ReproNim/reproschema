@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments-part1/contexts/generic",
+    "@id": "sai_p_lmusic_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "sai_p_lmusic_l",
+    "altLabel": "sai_p_lmusic_p_l sports_activity_lmusic_p_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Since we last saw you on [asnt_timestamp_c], has your child listened to music for pleasure? Desde la última vez que nos vimos en [asnt_timestamp_c], ¿su niño(a) ha escuchado música por placer?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 0,
+        "choices": [
+            {
+                "name": "Yes Sí",
+                "value": 1
+            },
+            {
+                "name": "No No",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes Sí; 0 = No No"
+        }
+    ]
+}

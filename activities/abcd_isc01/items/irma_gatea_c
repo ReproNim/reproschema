@@ -1,0 +1,34 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments-part1/contexts/generic",
+    "@id": "irma_gatea_c",
+    "@type": "reproschema:Field",
+    "prefLabel": "irma_gatea_c",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Do you live in the state of Florida? ¿Vives en el estado de la Florida?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 0,
+        "choices": [
+            {
+                "name": "Yes  Si",
+                "value": 1
+            },
+            {
+                "name": "No No",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes  Si; 0 = No No"
+        }
+    ]
+}

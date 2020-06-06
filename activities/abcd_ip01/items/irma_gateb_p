@@ -1,0 +1,34 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments-part1/contexts/generic",
+    "@id": "irma_gateb_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "irma_gateb_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Were you and your child living in South Carolina at the time that Hurricane Irma hit the United States (September 2017)?  ¿Estaban usted y su hijo(a)  viviendo en la Carolina del Sur  en el momento en que el huracán Irma llegA a los Estados Unidos (Septiembre de 2017)?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 0,
+        "choices": [
+            {
+                "name": "Yes  Si",
+                "value": 1
+            },
+            {
+                "name": "No No",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes  Si; 0 = No No"
+        }
+    ]
+}

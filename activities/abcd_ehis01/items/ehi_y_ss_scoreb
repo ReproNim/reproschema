@@ -1,0 +1,39 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments-part1/contexts/generic",
+    "@id": "ehi_y_ss_scoreb",
+    "@type": "reproschema:Field",
+    "prefLabel": "ehi_y_ss_scoreb",
+    "altLabel": "ehi_handedness ehi_ss_score",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Handedness score rating",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "value": 1
+            },
+            {
+                "value": 2
+            },
+            {
+                "value": 3
+            },
+            {
+                "value": 1
+            }
+        ],
+        "valueType": "xsd:float"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1=right handed; 2=left handed; 3=mixed handed//Calculation: if ((mean([ehi1b], [ehi2b], [ehi3b],[ehi4b]) < -60),2, if ((mean([ehi1b], [ehi2b], [ehi3b],[ehi4b]) > 60),1,3)); 1.  Veale, J. F. (2014) Edinburgh Handedness Inventory - Short Form: a revised version based on confirmatory factor analysis. Laterality 19(2):164-77.  //If mixed handed, use the hand that the child writes with for NeuroCog and fMRI tasks."
+        }
+    ]
+}

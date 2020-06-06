@@ -1,0 +1,75 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments-part1/contexts/generic",
+    "@id": "demo_prnt_empl_v2_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "demo_prnt_empl_v2_l",
+    "altLabel": "demo_prnt_empl_p_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Are you working now, looking for work, retired, stay at home parent, a student, or something else? ¿Trabaja actualmente, está buscando trabajo, está retirado, se dedica al hogar, estudia o realiza alguna otra actividad?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 777,
+        "choices": [
+            {
+                "name": "Working now: FULL TIME/PART TIME Trabajo de TIEMPO COMPLETO o MEDIO TIEMPO ",
+                "value": 1
+            },
+            {
+                "name": "Temporarily Laid off Desempleado(a) temporalmente ",
+                "value": 2
+            },
+            {
+                "name": "Sick Leave En licencia por enfermedad ",
+                "value": 9
+            },
+            {
+                "name": "Maternity Leave En licencia por maternidad ",
+                "value": 10
+            },
+            {
+                "name": "Looking for work",
+                "value": 3
+            },
+            {
+                "name": "Unemployed not looking for work Desempleado(a)",
+                "value": 11
+            },
+            {
+                "name": "Retired Retirado(a) ",
+                "value": 4
+            },
+            {
+                "name": "Disabled: Permanently or Temporarily Incapacitado(a): permanente o temporalmente ",
+                "value": 5
+            },
+            {
+                "name": "Stay at Home Parent Se dedica al hogar ",
+                "value": 6
+            },
+            {
+                "name": "Student Estudiante ",
+                "value": 7
+            },
+            {
+                "name": "Other (Specify): Otro (especifique): ",
+                "value": 8
+            },
+            {
+                "name": "Refused to answer  Prefiero no responder",
+                "value": 777
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Working now: FULL TIME/PART TIME Trabajo de TIEMPO COMPLETO o MEDIO TIEMPO ; 2 = Temporarily Laid off Desempleado(a) temporalmente ; 9 = Sick Leave En licencia por enfermedad ; 10 = Maternity Leave En licencia por maternidad ; 3 = Looking for work; 11 = Unemployed not looking for work Desempleado(a); 4 = Retired Retirado(a) ; 5 = Disabled: Permanently or Temporarily Incapacitado(a): permanente o temporalmente ; 6 = Stay at Home Parent Se dedica al hogar ; 7 = Student Estudiante ; 8 = Other (Specify): Otro (especifique): ;  777 = Refused to answer  Prefiero no responder"
+        }
+    ]
+}

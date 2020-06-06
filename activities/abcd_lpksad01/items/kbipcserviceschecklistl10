@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments-part1/contexts/generic",
+    "@id": "kbipcserviceschecklistl10",
+    "@type": "reproschema:Field",
+    "prefLabel": "kbipcserviceschecklistl10",
+    "altLabel": "kbi_c_services_checklist_p_l___10 kbi_p_c_services_checklist_l___10 ksads_back_c_services_checklist_p_l___10",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Click below all types of mental health or substance abuse services your child has received since we last saw you: Seleccione todos los tipos de servicios de salud mental o para el abuso de sustancias que haya recibido su niño(a) desde la última vez que nos vimos: (10, None Ninguno)",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 1,
+        "choices": [
+            {
+                "name": "No",
+                "value": 0
+            },
+            {
+                "name": "Yes",
+                "value": 1
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = No; 1 = Yes"
+        }
+    ]
+}

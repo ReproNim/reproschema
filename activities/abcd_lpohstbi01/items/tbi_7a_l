@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments-part1/contexts/generic",
+    "@id": "tbi_7a_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "tbi_7a_l",
+    "altLabel": "brain_injury_7a_l tbi_7a_p_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Since we last saw you on [asnt_timestamp_c], did your child experience a period of time when he/she experienced multiple, repeated impacts to the head? (e.g., abused, contact sports)? Desde la última vez que nos vimos en [asnt_timestamp_c], ¿ha su niño/a ha recibido golpes o impactos múltiples y repetidos en la cabeza (p. ej., abuso infantil, deportes de contacto)?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 0,
+        "choices": [
+            {
+                "name": "Yes Si",
+                "value": 1
+            },
+            {
+                "name": "No No",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes Si; 0 = No No"
+        }
+    ]
+}

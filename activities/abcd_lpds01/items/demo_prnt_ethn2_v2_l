@@ -1,0 +1,75 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments-part1/contexts/generic",
+    "@id": "demo_prnt_ethn2_v2_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "demo_prnt_ethn2_v2_l",
+    "altLabel": "demo_prnt_ethn2_p_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Please choose the group that best represents your Hispanic origin or ancestry. Elija el grupo que mejor represente su origen o ascendencia hispana.",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 10,
+        "schema:maxValue": 999,
+        "choices": [
+            {
+                "name": "Puerto Rican Puertorriqueño) ",
+                "value": 10
+            },
+            {
+                "name": "Dominican (Republic) Dominicano (Republica) ",
+                "value": 12
+            },
+            {
+                "name": "Mexican/Mexicano Mexicano ",
+                "value": 13
+            },
+            {
+                "name": "Mexican American Mexicano Americano ",
+                "value": 14
+            },
+            {
+                "name": "Chicano Chicano ",
+                "value": 15
+            },
+            {
+                "name": "Cuban Cubano ",
+                "value": 18
+            },
+            {
+                "name": "Cuban American Cubano Americano ",
+                "value": 19
+            },
+            {
+                "name": "Central or South American Centro o Sur Americano ",
+                "value": 20
+            },
+            {
+                "name": "Other Latin American Otro Latino Americano ",
+                "value": 40
+            },
+            {
+                "name": "Other Hispanic Otro Hispánico ",
+                "value": 41
+            },
+            {
+                "name": "Refused to answer Prefiero no responder ",
+                "value": 777
+            },
+            {
+                "name": "Don't know No lo se",
+                "value": 999
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "10 = Puerto Rican Puertorriqueño) ; 12 = Dominican (Republic) Dominicano (Republica) ; 13 = Mexican/Mexicano Mexicano ; 14 = Mexican American Mexicano Americano ; 15 = Chicano Chicano ; 18 = Cuban Cubano ; 19 = Cuban American Cubano Americano ; 20 = Central or South American Centro o Sur Americano ; 40 = Other Latin American Otro Latino Americano ; 41 = Other Hispanic Otro Hispánico ;  777 = Refused to answer Prefiero no responder ; 999 = Don't know No lo se"
+        }
+    ]
+}

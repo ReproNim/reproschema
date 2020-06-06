@@ -1,0 +1,42 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments-part1/contexts/generic",
+    "@id": "irma_hurtep_b5",
+    "@type": "reproschema:Field",
+    "prefLabel": "irma_hurtep_b5",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "How many hours in total did your child spend traveling before the hurricane? ¿Cuántas horas en total paso tu hijo viajando antes del huracán?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 4,
+        "choices": [
+            {
+                "name": "Under 2 hours  Menos de 2 horas",
+                "value": 1
+            },
+            {
+                "name": "2-5 hours  2-5 horas",
+                "value": 2
+            },
+            {
+                "name": "5-10 hours  5-10 horas",
+                "value": 3
+            },
+            {
+                "name": "More than 10 hours total Más de 10 horas en total",
+                "value": 4
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Under 2 hours  Menos de 2 horas; 2 = 2-5 hours  2-5 horas; 3 = 5-10 hours  5-10 horas; 4 = More than 10 hours total Más de 10 horas en total"
+        }
+    ]
+}

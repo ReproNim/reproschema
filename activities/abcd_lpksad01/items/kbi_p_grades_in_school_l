@@ -1,0 +1,55 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments-part1/contexts/generic",
+    "@id": "kbi_p_grades_in_school_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "kbi_p_grades_in_school_l",
+    "altLabel": "kbi_grades_in_school_p_l ksads_back_grades_in_school_p_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "What kind of grades does your child get on average? ¿Cuál es el promedio de calificaciones de su niño(a)?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": -1,
+        "choices": [
+            {
+                "name": "A's / Excellent A / Excelente",
+                "value": 1
+            },
+            {
+                "name": "B's / Good B / Bien",
+                "value": 2
+            },
+            {
+                "name": "C's / Average C / Promedio",
+                "value": 3
+            },
+            {
+                "name": "D's / Below Average D / Por debajo del promedio",
+                "value": 4
+            },
+            {
+                "name": "F's / Struggling a lot F / Tiene mucha dificultad",
+                "value": 5
+            },
+            {
+                "name": "ungraded No se le califica",
+                "value": 6
+            },
+            {
+                "name": "Not applicable No aplica",
+                "value": -1
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = A's / Excellent A / Excelente; 2 = B's / Good B / Bien; 3 = C's / Average C / Promedio; 4 = D's / Below Average D / Por debajo del promedio; 5 = F's / Struggling a lot F / Tiene mucha dificultad; 6 = ungraded No se le califica; -1 = Not applicable No aplica"
+        }
+    ]
+}

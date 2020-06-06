@@ -1,0 +1,16 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments-part1/contexts/generic",
+    "@id": "tbi_ss_agefirst_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "tbi_ss_agefirst_l",
+    "altLabel": "brain_injury_ss_agefirst_p_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Age at first TBI-LOC: IF(OR(AND([tbi_1]=1,[tbi_1b]>0),AND([tbi_2]=1,[tbi_2b]>0),AND([tbi_3]=1,[tbi_3b]>0), AND([tbi_4]=1,[tbi_4b]>0),AND([tbi_5]=1,[tbi_5b]>0),[tbi_6o]=1,AND([tbi_7a]=1,[tbi_7c1]>0)), MIN([tbi_1d],[tbi_2d],[tbi_3d],[tbi_4d],[tbi_5d],[tbi_6s],[tbi_7e],\"\"); Validation: No minimum",
+    "ui": {
+        "inputType": "number"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

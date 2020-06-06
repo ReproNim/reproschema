@@ -1,0 +1,32 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments-part1/contexts/generic",
+    "@id": "ftq_usable",
+    "@type": "reproschema:Field",
+    "prefLabel": "ftq_usable",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Whether series is recommended for use",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 0,
+        "choices": [
+            {
+                "value": 1
+            },
+            {
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1=usable; 0=do not use"
+        }
+    ]
+}

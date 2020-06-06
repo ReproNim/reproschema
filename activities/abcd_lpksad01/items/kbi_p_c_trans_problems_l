@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments-part1/contexts/generic",
+    "@id": "kbi_p_c_trans_problems_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "kbi_p_c_trans_problems_l",
+    "altLabel": "kbi_c_trans_problems_p_l ksads_back_c_trans_prob_p_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Since we last saw you, has this caused any problems for your child with your family or with kids at school? Desde la última vez que nos vimos, ¿esto le ha causado a su niño(a) algún problema con su familia o con los niños en la escuela?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 4,
+        "choices": [
+            {
+                "name": "Not at all Para nada",
+                "value": 1
+            },
+            {
+                "name": "Some Algo",
+                "value": 2
+            },
+            {
+                "name": "A lot Mucho",
+                "value": 3
+            },
+            {
+                "name": "Decline to answer Niego contestar",
+                "value": 4
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Not at all Para nada; 2 = Some Algo; 3 = A lot Mucho; 4 = Decline to answer Niego contestar"
+        }
+    ]
+}
