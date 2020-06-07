@@ -9,16 +9,17 @@
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
     "scoringLogic": [
-        {"variableName": "anthroheightcalc", "jsExpression": "if (antro_weight3_1b) { (anthro_weight3_lb + anthro_weight2_lb + anthro_weight1_lb)/3 } else {(anthro_weight1_lb + anthro_weight2_lb)/2}"},
+        {"variableName": "anthroheightcalc", "jsExpression": "if (anthro3heightin) { (anthro_1_height_in + anthro2heightin + anthro3heightin)/3 } else { (anthro_1_height_in + anthro2heightin)/2 }"},
+        {"variableName": "anthroweightcalc", "jsExpression": "if (anthroweight3lb) { (anthroweight3lb + anthroweight2lb + anthroweight1lb)/3 } else {(anthroweight1lb + anthroweight2lb)/2}"}
+    ],
     "ui": {
         "order": [
-            "anthro_1_height_in",
             "anthro_timestamp",
             "anthro_waist_cm",
             "anthro_weight_a_location",
+            "anthro_1_height_in",
             "anthro2heightin",
             "anthro3heightin",
-            "anthroheightcalc",
             "anthroweight1lb",
             "anthroweight2lb",
             "anthroweight3lb",
