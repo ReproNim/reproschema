@@ -7,7 +7,7 @@ import os
 data_file_format = 'nquads'
 shapes_file_format = 'turtle'
 
-for root, dirs, files in os.walk('./protocols'):
+for root, dirs, files in os.walk('./protocols/ABCD'):
     for name in files:
         # files without extension or with .jsonld extn
         # print(18, '--- ', name)
@@ -18,7 +18,7 @@ for root, dirs, files in os.walk('./protocols'):
                     data_file = json.load(json_file)
                     if '@type' in data_file:
                         base_path = root.split('protocols/')[1]
-                        base_url = 'https://raw.githubusercontent.com/ReproNim/reproschema/master/protocols/' + base_path + '/'
+                        base_url = 'https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/protocols/' + base_path + '/'
 
                         if data_file['@type'] == 'reproschema:Protocol':
                             shape_file_path = 'validation/ProtocolShape.ttl'

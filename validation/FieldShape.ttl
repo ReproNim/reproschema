@@ -74,15 +74,19 @@ reproterms:ResponseOptionsShape
     ] ;
     sh:property [
         sh:path schema:minValue ;
-        sh:datatype xsd:integer ;
+        sh:or ( [ sh:datatype xsd:integer ] [ sh:datatype rdf:langString ] ) ;
     ] ;
     sh:property [
         sh:path schema:maxValue ;
-        sh:datatype xsd:integer ;
+        sh:or ( [ sh:datatype xsd:integer ] [ sh:datatype rdf:langString ] ) ;
     ] ;
     sh:property [
         sh:path reproterms:valueType ;
         sh:nodeKind sh:IRI ;
+    ] ;
+    sh:property [
+        sh:path schema:image ;
+        sh:datatype rdf:langString ;
     ] ;
     sh:property [
         sh:path schema:itemListElement ;
@@ -103,7 +107,7 @@ schema:ChoicesShape
     ] ;
     sh:property [
         sh:path schema:image ;
-        sh:datatype xsd:string ;
+        sh:datatype rdf:langString ;
     ] ;
     sh:property [
         sh:path reproterms:dontKnow ;
