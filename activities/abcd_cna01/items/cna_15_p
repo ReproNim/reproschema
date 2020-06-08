@@ -1,12 +1,15 @@
 {
-    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments-part1/contexts/generic",
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
     "@id": "cna_15_p",
     "@type": "reproschema:Field",
     "prefLabel": "cna_15_p",
     "altLabel": "child_nutrition_15_p",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
-    "question": "Were you/biological mother taking daily prenatal vitamins or folic acid supplements before you/she became pregnant? ¿Tomo usted o la madre biológica vitaminas prenatales diarias o acido fólico antes de quedar embarazada?",
+    "question": {
+        "en": "Were you/biological mother taking daily prenatal vitamins or folic acid supplements before you/she became pregnant?",
+        "es": "¿Tomo usted o la madre biológica vitaminas prenatales diarias o acido fólico antes de quedar embarazada?"
+    },
     "ui": {
         "inputType": "radio"
     },
@@ -15,15 +18,24 @@
         "schema:maxValue": 999,
         "choices": [
             {
-                "name": "Yes Si",
+                "name": {
+                    "en": "Yes",
+                    "es": "Si"
+                },
                 "value": 1
             },
             {
-                "name": "No No",
+                "name": {
+                    "en": "No",
+                    "es": "No"
+                },
                 "value": 0
             },
             {
-                "name": "Don't Know No Recuerdo",
+                "name": {
+                    "en": "Don't Know",
+                    "es": "No Recuerdo"
+                },
                 "value": 999
             }
         ],

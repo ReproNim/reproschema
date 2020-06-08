@@ -1,12 +1,15 @@
 {
-    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments-part1/contexts/generic",
+    "@context": "https://raw.githubusercontent.com/sanuann/reproschema/abcd-assessments/contexts/generic",
     "@id": "cna_12_p",
     "@type": "reproschema:Field",
     "prefLabel": "cna_12_p",
     "altLabel": "child_nutrition_12_p",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
-    "question": "Think about what your child eats in a typical week, during this past year since we last saw you.  In a typical week, does your child eat Piense en lo que su niño(a) come durante una semana  típica, durante el último año; desde la última vez que lo vimos.  En una semana típica, su niño(a) come: Butter or margarine is used less than 1 Tablespoon per day Mantequilla o margarina es utilizado menos de una cucharada por día.",
+    "question": {
+        "en": "Think about what your child eats in a typical week, during this past year since we last saw you. In a typical week, does your child eat: Butter or margarine is used less than 1 Tablespoon per day",
+        "es": "Piense en lo que su niño(a) come durante una semana  típica, durante el último año; desde la última vez que lo vimos.  En una semana típica, su niño(a) come: Mantequilla o margarina es utilizado menos de una cucharada por día."
+    },
     "ui": {
         "inputType": "radio"
     },
@@ -15,15 +18,24 @@
         "schema:maxValue": 999,
         "choices": [
             {
-                "name": "Yes Si",
+                "name": {
+                    "en": "Yes",
+                    "es": "Si"
+                },
                 "value": 1
             },
             {
-                "name": "No No",
+                "name": {
+                    "en": "No",
+                    "es": "No"
+                },
                 "value": 0
             },
             {
-                "name": "Don't Know No Recuerdo",
+                "name": {
+                    "en": "Don't Know",
+                    "es": "No Recuerdo"
+                },
                 "value": 999
             }
         ],
