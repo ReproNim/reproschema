@@ -20,7 +20,11 @@
         },
         "value": {
             "@id": "schema:value",
-            "@type": "xsd:integer"
+            "@container": "@language"
+        },
+        "image": {
+            "@id": "schema:image",
+            "@type": "@vocab"
         },
         "schema:citation": {
             "@container": "@language"
@@ -34,11 +38,9 @@
             "@type": "xsd:string"
         },
         "prefLabel": {
-            "@id": "skos:prefLabel",
             "@container": "@language"
         },
         "altLabel": {
-            "@id": "skos:altLabel",
             "@container": "@language"
         },
         "preamble": {
