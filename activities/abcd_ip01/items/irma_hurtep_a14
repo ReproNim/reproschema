@@ -1,0 +1,34 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@id": "irma_hurtep_a14",
+    "@type": "reproschema:Field",
+    "prefLabel": "irma_hurtep_a14",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Has there been lots of damage in your neighborhood, such as large unearthed trees or badly damaged homes? ¿Hubo mucho daño en su vecindario, como grandes árboles sin segar o casas gravemente dañadas?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 0,
+        "choices": [
+            {
+                "name": "Yes  Si",
+                "value": 1
+            },
+            {
+                "name": "No No",
+                "value": 0
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes  Si; 0 = No No"
+        }
+    ]
+}

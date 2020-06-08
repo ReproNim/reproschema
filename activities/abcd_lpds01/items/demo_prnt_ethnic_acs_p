@@ -1,0 +1,54 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@id": "demo_prnt_ethnic_acs_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "demo_prnt_ethnic_acs_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Do you consider yourself Hispanic/Latino/Latina??Se considera usted hispano(a) o latino(a)?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 0,
+        "choices": [
+            {
+                "name": "No, not of Hispanic, Latino, or Spanish origin No, no soy de origen Hispano, Latino, o Espa?ol",
+                "value": 0
+            },
+            {
+                "name": "?Yes, Mexican, Mexican Am., Chicano S?, Mexicano(a), Mexicano Americano(a), Chicano(a)",
+                "value": 1
+            },
+            {
+                "name": "Yes, Puerto Rican S?, Puertorrique?o(a)",
+                "value": 2
+            },
+            {
+                "name": "Yes, Cuban S?, Cubano(a)",
+                "value": 3
+            },
+            {
+                "name": "Yes, another Hispanic, Latino, or Spanish origin, for example, Argentinean, Colombian, Dominican, Nicaraguan, Salvadoran, Spaniard, and so on S?, otro tipo de Hispano, Latino, o Espa?ol, por ejemplo Argentino(a), Colombiano(a), Dominicano(a), Nicarag?ense, Salvadore?o(a), Espa?ol(a)",
+                "value": null
+            },
+            {
+                "name": "?Refused to answer Niego contestar",
+                "value": 777
+            },
+            {
+                "name": "Don't know No lo s?",
+                "value": 999
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = No, not of Hispanic, Latino, or Spanish origin No, no soy de origen Hispano, Latino, o Espa?ol; 1 = ?Yes, Mexican, Mexican Am., Chicano S?, Mexicano(a), Mexicano Americano(a), Chicano(a); 2 = Yes, Puerto Rican S?, Puertorrique?o(a); 3 = Yes, Cuban S?, Cubano(a); ?4 = Yes, another Hispanic, Latino, or Spanish origin, for example, Argentinean, Colombian, Dominican, Nicaraguan, Salvadoran, Spaniard, and so on S?, otro tipo de Hispano, Latino, o Espa?ol, por ejemplo Argentino(a), Colombiano(a), Dominicano(a), Nicarag?ense, Salvadore?o(a), Espa?ol(a); 777 = ?Refused to answer Niego contestar; 999 = Don't know No lo s?"
+        }
+    ]
+}

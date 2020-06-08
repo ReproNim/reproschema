@@ -1,0 +1,38 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@id": "demo_med_insur_c_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "demo_med_insur_c_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "c. Medicare, forc. Medicare, for people 65 and older, or people with certain disabilitiesc. Medicare, forc. Medicare, para personas de 65 a?os o m?s, o personas con ciertas discapacidades",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 777,
+        "choices": [
+            {
+                "name": "No No",
+                "value": 0
+            },
+            {
+                "name": "Yes Si?",
+                "value": 1
+            },
+            {
+                "name": "Refuse to answer Niego contestar",
+                "value": 777
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = No No; 1 = Yes Si?;  777 = Refuse to answer Niego contestar"
+        }
+    ]
+}

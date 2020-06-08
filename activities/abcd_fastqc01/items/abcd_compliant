@@ -1,0 +1,33 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@id": "abcd_compliant",
+    "@type": "reproschema:Field",
+    "prefLabel": "abcd_compliant",
+    "altLabel": "ftq_compliant",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Sequence parameters compliant with the ABCD imaging protocol",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 0,
+        "choices": [
+            {
+                "value": 0
+            },
+            {
+                "value": 1
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0=Non ABCD Compliant; 1= ABCD Compliant"
+        }
+    ]
+}

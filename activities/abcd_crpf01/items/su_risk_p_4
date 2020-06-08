@@ -1,0 +1,50 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@id": "su_risk_p_4",
+    "@type": "reproschema:Field",
+    "prefLabel": "su_risk_p_4",
+    "altLabel": "su_crpf_avail_4_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "If your child wanted to get some marijuana, how easy would it be for her/him to get some? Si su niño(a) quisiera conseguir marihuana, ¿qué tan fácil le sería?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 4,
+        "choices": [
+            {
+                "name": "Very hard Muy difícil",
+                "value": 0
+            },
+            {
+                "name": "Sort of hard Algo difícil",
+                "value": 1
+            },
+            {
+                "name": "Sort of easy Algo fácil",
+                "value": 2
+            },
+            {
+                "name": "Very easy Muy fácil",
+                "value": 3
+            },
+            {
+                "name": "Don't know No lo sé",
+                "value": 4
+            },
+            {
+                "value": null
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = Very hard Muy difícil; 1 = Sort of hard Algo difícil; 2 = Sort of easy Algo fácil; 3 = Very easy Muy fácil; 4 = Don't know No lo sé; Now I am going to ask you about how easy it is to get certain substances. /Ahora le voy a preguntar quÃ© tan fÃ¡cil es conseguir ciertas sustancias."
+        }
+    ]
+}

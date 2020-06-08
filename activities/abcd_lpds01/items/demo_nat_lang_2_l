@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@id": "demo_nat_lang_2_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "demo_nat_lang_2_l",
+    "altLabel": "demo_nat_lang_2_p demo_nat_lang_2_p_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Please choose one of these four options regarding the first language or languages most spoken to your child by their parents or guardians after birth.  Por favor escoja una de estas cuatro opciones sobre el primer idioma o idiomas mas hablados a su hijo(a), después de nacer, por sus padres o guardianes.",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 3,
+        "choices": [
+            {
+                "name": "The child's parents or guardians spoke in English more than any other language after birth Los padres o guardianes del niño(a) le hablaron en ingles",
+                "value": 1
+            },
+            {
+                "name": "English and another language were spoken equally Hablaron tanto en ingles como en otro idioma.",
+                "value": 2
+            },
+            {
+                "name": "The child's parents or guardians spoke a language other than English more than any other language after birth Los padres o tutores del niño(a) hablaban un idioma diferente al Inglés",
+                "value": 4
+            },
+            {
+                "name": "Two languages",
+                "value": 3
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = The child's parents or guardians spoke in English more than any other language after birth Los padres o guardianes del niño(a) le hablaron en ingles; 2 = English and another language were spoken equally Hablaron tanto en ingles como en otro idioma.; 4 = The child's parents or guardians spoke a language other than English more than any other language after birth Los padres o tutores del niño(a) hablaban un idioma diferente al Inglés; 3 = Two languages"
+        }
+    ]
+}

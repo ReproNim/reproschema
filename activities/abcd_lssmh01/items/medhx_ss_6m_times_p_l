@@ -1,0 +1,25 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@id": "medhx_ss_6m_times_p_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "medhx_ss_6m_times_p_l",
+    "altLabel": "medhx_ss_6m_broken_bones_times_p_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Broken Teeth\nHow many times?",
+    "ui": {
+        "inputType": "number"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float",
+        "schema:minValue": 0,
+        "schema:maxValue": 100
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "If yes is endorsed,  parent is then asked \"How many times.\" If no is endorsed, \"0\" has replaced missing [medhx_6m_times_l]."
+        }
+    ]
+}

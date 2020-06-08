@@ -1,0 +1,51 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@id": "demo_yrs_2_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "demo_yrs_2_l",
+    "altLabel": "demo_yrs_2_p_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "In general, how important are your child's religious and spiritual beliefs in his/her daily life? ¿En general,  cuán importantes son las creencias religiosas y espirituales en la vida diaria de su nin-o(a)?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 777,
+        "choices": [
+            {
+                "name": "Not at all Para nada",
+                "value": 1
+            },
+            {
+                "name": "Not very No mucho",
+                "value": 2
+            },
+            {
+                "name": "Somewhat Algo",
+                "value": 3
+            },
+            {
+                "name": "Very Mucho",
+                "value": 4
+            },
+            {
+                "name": "Don't know No lo sé",
+                "value": 999
+            },
+            {
+                "name": "Declined Niego contestar",
+                "value": 777
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Not at all Para nada; 2 = Not very No mucho; 3 = Somewhat Algo; 4 = Very Mucho; 999 = Don't know No lo sé; 777 = Declined Niego contestar"
+        }
+    ]
+}

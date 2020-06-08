@@ -1,0 +1,418 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/abcd_asrs01/abcd_asrs01_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "abcd_asrs01_schema",
+    "skos:prefLabel": "abcd_asrs01",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "order": [
+            "asr_scr_adhd_nm",
+            "asr_scr_adhd_r",
+            "asr_scr_adhd_t",
+            "asr_scr_adhd_total",
+            "asr_scr_aggressive_nm",
+            "asr_scr_aggressive_r",
+            "asr_scr_aggressive_t",
+            "asr_scr_aggressive_total",
+            "asr_scr_antisocial_nm",
+            "asr_scr_antisocial_r",
+            "asr_scr_antisocial_t",
+            "asr_scr_antisocial_total",
+            "asr_scr_anxdep_nm",
+            "asr_scr_anxdep_r",
+            "asr_scr_anxdep_t",
+            "asr_scr_anxdep_total",
+            "asr_scr_anxdisord_nm",
+            "asr_scr_anxdisord_r",
+            "asr_scr_anxdisord_t",
+            "asr_scr_anxdisord_total",
+            "asr_scr_attention_nm",
+            "asr_scr_attention_r",
+            "asr_scr_attention_t",
+            "asr_scr_attention_total",
+            "asr_scr_avoidant_nm",
+            "asr_scr_avoidant_r",
+            "asr_scr_avoidant_t",
+            "asr_scr_avoidant_total",
+            "asr_scr_depress_nm",
+            "asr_scr_depress_r",
+            "asr_scr_depress_t",
+            "asr_scr_depress_total",
+            "asr_scr_external_nm",
+            "asr_scr_external_r",
+            "asr_scr_external_t",
+            "asr_scr_external_total",
+            "asr_scr_hyperactive_nm",
+            "asr_scr_hyperactive_r",
+            "asr_scr_hyperactive_t",
+            "asr_scr_hyperactive_total",
+            "asr_scr_inattention_nm",
+            "asr_scr_inattention_r",
+            "asr_scr_inattention_t",
+            "asr_scr_inattention_total",
+            "asr_scr_internal_nm",
+            "asr_scr_internal_r",
+            "asr_scr_internal_t",
+            "asr_scr_internal_total",
+            "asr_scr_intrusive_nm",
+            "asr_scr_intrusive_r",
+            "asr_scr_intrusive_t",
+            "asr_scr_intrusive_total",
+            "asr_scr_perstr_nm",
+            "asr_scr_perstr_r",
+            "asr_scr_perstr_t",
+            "asr_scr_perstr_total",
+            "asr_scr_rulebreak_nm",
+            "asr_scr_rulebreak_r",
+            "asr_scr_rulebreak_t",
+            "asr_scr_rulebreak_total",
+            "asr_scr_somatic_nm",
+            "asr_scr_somatic_r",
+            "asr_scr_somatic_t",
+            "asr_scr_somatic_total",
+            "asr_scr_somaticpr_nm",
+            "asr_scr_somaticpr_r",
+            "asr_scr_somaticpr_t",
+            "asr_scr_somaticpr_total",
+            "asr_scr_thought_nm",
+            "asr_scr_thought_r",
+            "asr_scr_thought_t",
+            "asr_scr_thought_total",
+            "asr_scr_totprob_nm",
+            "asr_scr_totprob_r",
+            "asr_scr_totprob_t",
+            "asr_scr_totprob_total",
+            "asr_scr_withdrawn_nm",
+            "asr_scr_withdrawn_r",
+            "asr_scr_withdrawn_t",
+            "asr_scr_withdrawn_total"
+        ],
+        "shuffle": false,
+        "addProperties": [
+            {
+                "variableName": "asr_scr_adhd_nm",
+                "isAbout": "asr_scr_adhd_nm"
+            },
+            {
+                "variableName": "asr_scr_adhd_r",
+                "isAbout": "asr_scr_adhd_r"
+            },
+            {
+                "variableName": "asr_scr_adhd_t",
+                "isAbout": "asr_scr_adhd_t"
+            },
+            {
+                "variableName": "asr_scr_adhd_total",
+                "isAbout": "asr_scr_adhd_total"
+            },
+            {
+                "variableName": "asr_scr_aggressive_nm",
+                "isAbout": "asr_scr_aggressive_nm"
+            },
+            {
+                "variableName": "asr_scr_aggressive_r",
+                "isAbout": "asr_scr_aggressive_r"
+            },
+            {
+                "variableName": "asr_scr_aggressive_t",
+                "isAbout": "asr_scr_aggressive_t"
+            },
+            {
+                "variableName": "asr_scr_aggressive_total",
+                "isAbout": "asr_scr_aggressive_total"
+            },
+            {
+                "variableName": "asr_scr_antisocial_nm",
+                "isAbout": "asr_scr_antisocial_nm"
+            },
+            {
+                "variableName": "asr_scr_antisocial_r",
+                "isAbout": "asr_scr_antisocial_r"
+            },
+            {
+                "variableName": "asr_scr_antisocial_t",
+                "isAbout": "asr_scr_antisocial_t"
+            },
+            {
+                "variableName": "asr_scr_antisocial_total",
+                "isAbout": "asr_scr_antisocial_total"
+            },
+            {
+                "variableName": "asr_scr_anxdep_nm",
+                "isAbout": "asr_scr_anxdep_nm"
+            },
+            {
+                "variableName": "asr_scr_anxdep_r",
+                "isAbout": "asr_scr_anxdep_r"
+            },
+            {
+                "variableName": "asr_scr_anxdep_t",
+                "isAbout": "asr_scr_anxdep_t"
+            },
+            {
+                "variableName": "asr_scr_anxdep_total",
+                "isAbout": "asr_scr_anxdep_total"
+            },
+            {
+                "variableName": "asr_scr_anxdisord_nm",
+                "isAbout": "asr_scr_anxdisord_nm"
+            },
+            {
+                "variableName": "asr_scr_anxdisord_r",
+                "isAbout": "asr_scr_anxdisord_r"
+            },
+            {
+                "variableName": "asr_scr_anxdisord_t",
+                "isAbout": "asr_scr_anxdisord_t"
+            },
+            {
+                "variableName": "asr_scr_anxdisord_total",
+                "isAbout": "asr_scr_anxdisord_total"
+            },
+            {
+                "variableName": "asr_scr_attention_nm",
+                "isAbout": "asr_scr_attention_nm"
+            },
+            {
+                "variableName": "asr_scr_attention_r",
+                "isAbout": "asr_scr_attention_r"
+            },
+            {
+                "variableName": "asr_scr_attention_t",
+                "isAbout": "asr_scr_attention_t"
+            },
+            {
+                "variableName": "asr_scr_attention_total",
+                "isAbout": "asr_scr_attention_total"
+            },
+            {
+                "variableName": "asr_scr_avoidant_nm",
+                "isAbout": "asr_scr_avoidant_nm"
+            },
+            {
+                "variableName": "asr_scr_avoidant_r",
+                "isAbout": "asr_scr_avoidant_r"
+            },
+            {
+                "variableName": "asr_scr_avoidant_t",
+                "isAbout": "asr_scr_avoidant_t"
+            },
+            {
+                "variableName": "asr_scr_avoidant_total",
+                "isAbout": "asr_scr_avoidant_total"
+            },
+            {
+                "variableName": "asr_scr_depress_nm",
+                "isAbout": "asr_scr_depress_nm"
+            },
+            {
+                "variableName": "asr_scr_depress_r",
+                "isAbout": "asr_scr_depress_r"
+            },
+            {
+                "variableName": "asr_scr_depress_t",
+                "isAbout": "asr_scr_depress_t"
+            },
+            {
+                "variableName": "asr_scr_depress_total",
+                "isAbout": "asr_scr_depress_total"
+            },
+            {
+                "variableName": "asr_scr_external_nm",
+                "isAbout": "asr_scr_external_nm"
+            },
+            {
+                "variableName": "asr_scr_external_r",
+                "isAbout": "asr_scr_external_r"
+            },
+            {
+                "variableName": "asr_scr_external_t",
+                "isAbout": "asr_scr_external_t"
+            },
+            {
+                "variableName": "asr_scr_external_total",
+                "isAbout": "asr_scr_external_total"
+            },
+            {
+                "variableName": "asr_scr_hyperactive_nm",
+                "isAbout": "asr_scr_hyperactive_nm"
+            },
+            {
+                "variableName": "asr_scr_hyperactive_r",
+                "isAbout": "asr_scr_hyperactive_r"
+            },
+            {
+                "variableName": "asr_scr_hyperactive_t",
+                "isAbout": "asr_scr_hyperactive_t"
+            },
+            {
+                "variableName": "asr_scr_hyperactive_total",
+                "isAbout": "asr_scr_hyperactive_total"
+            },
+            {
+                "variableName": "asr_scr_inattention_nm",
+                "isAbout": "asr_scr_inattention_nm"
+            },
+            {
+                "variableName": "asr_scr_inattention_r",
+                "isAbout": "asr_scr_inattention_r"
+            },
+            {
+                "variableName": "asr_scr_inattention_t",
+                "isAbout": "asr_scr_inattention_t"
+            },
+            {
+                "variableName": "asr_scr_inattention_total",
+                "isAbout": "asr_scr_inattention_total"
+            },
+            {
+                "variableName": "asr_scr_internal_nm",
+                "isAbout": "asr_scr_internal_nm"
+            },
+            {
+                "variableName": "asr_scr_internal_r",
+                "isAbout": "asr_scr_internal_r"
+            },
+            {
+                "variableName": "asr_scr_internal_t",
+                "isAbout": "asr_scr_internal_t"
+            },
+            {
+                "variableName": "asr_scr_internal_total",
+                "isAbout": "asr_scr_internal_total"
+            },
+            {
+                "variableName": "asr_scr_intrusive_nm",
+                "isAbout": "asr_scr_intrusive_nm"
+            },
+            {
+                "variableName": "asr_scr_intrusive_r",
+                "isAbout": "asr_scr_intrusive_r"
+            },
+            {
+                "variableName": "asr_scr_intrusive_t",
+                "isAbout": "asr_scr_intrusive_t"
+            },
+            {
+                "variableName": "asr_scr_intrusive_total",
+                "isAbout": "asr_scr_intrusive_total"
+            },
+            {
+                "variableName": "asr_scr_perstr_nm",
+                "isAbout": "asr_scr_perstr_nm"
+            },
+            {
+                "variableName": "asr_scr_perstr_r",
+                "isAbout": "asr_scr_perstr_r"
+            },
+            {
+                "variableName": "asr_scr_perstr_t",
+                "isAbout": "asr_scr_perstr_t"
+            },
+            {
+                "variableName": "asr_scr_perstr_total",
+                "isAbout": "asr_scr_perstr_total"
+            },
+            {
+                "variableName": "asr_scr_rulebreak_nm",
+                "isAbout": "asr_scr_rulebreak_nm"
+            },
+            {
+                "variableName": "asr_scr_rulebreak_r",
+                "isAbout": "asr_scr_rulebreak_r"
+            },
+            {
+                "variableName": "asr_scr_rulebreak_t",
+                "isAbout": "asr_scr_rulebreak_t"
+            },
+            {
+                "variableName": "asr_scr_rulebreak_total",
+                "isAbout": "asr_scr_rulebreak_total"
+            },
+            {
+                "variableName": "asr_scr_somatic_nm",
+                "isAbout": "asr_scr_somatic_nm"
+            },
+            {
+                "variableName": "asr_scr_somatic_r",
+                "isAbout": "asr_scr_somatic_r"
+            },
+            {
+                "variableName": "asr_scr_somatic_t",
+                "isAbout": "asr_scr_somatic_t"
+            },
+            {
+                "variableName": "asr_scr_somatic_total",
+                "isAbout": "asr_scr_somatic_total"
+            },
+            {
+                "variableName": "asr_scr_somaticpr_nm",
+                "isAbout": "asr_scr_somaticpr_nm"
+            },
+            {
+                "variableName": "asr_scr_somaticpr_r",
+                "isAbout": "asr_scr_somaticpr_r"
+            },
+            {
+                "variableName": "asr_scr_somaticpr_t",
+                "isAbout": "asr_scr_somaticpr_t"
+            },
+            {
+                "variableName": "asr_scr_somaticpr_total",
+                "isAbout": "asr_scr_somaticpr_total"
+            },
+            {
+                "variableName": "asr_scr_thought_nm",
+                "isAbout": "asr_scr_thought_nm"
+            },
+            {
+                "variableName": "asr_scr_thought_r",
+                "isAbout": "asr_scr_thought_r"
+            },
+            {
+                "variableName": "asr_scr_thought_t",
+                "isAbout": "asr_scr_thought_t"
+            },
+            {
+                "variableName": "asr_scr_thought_total",
+                "isAbout": "asr_scr_thought_total"
+            },
+            {
+                "variableName": "asr_scr_totprob_nm",
+                "isAbout": "asr_scr_totprob_nm"
+            },
+            {
+                "variableName": "asr_scr_totprob_r",
+                "isAbout": "asr_scr_totprob_r"
+            },
+            {
+                "variableName": "asr_scr_totprob_t",
+                "isAbout": "asr_scr_totprob_t"
+            },
+            {
+                "variableName": "asr_scr_totprob_total",
+                "isAbout": "asr_scr_totprob_total"
+            },
+            {
+                "variableName": "asr_scr_withdrawn_nm",
+                "isAbout": "asr_scr_withdrawn_nm"
+            },
+            {
+                "variableName": "asr_scr_withdrawn_r",
+                "isAbout": "asr_scr_withdrawn_r"
+            },
+            {
+                "variableName": "asr_scr_withdrawn_t",
+                "isAbout": "asr_scr_withdrawn_t"
+            },
+            {
+                "variableName": "asr_scr_withdrawn_total",
+                "isAbout": "asr_scr_withdrawn_total"
+            }
+        ]
+    }
+}

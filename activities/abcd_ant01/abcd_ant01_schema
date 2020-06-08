@@ -1,0 +1,80 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/abcd_ant01/abcd_ant01_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "abcd_ant01_schema",
+    "skos:prefLabel": "abcd_ant01",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "scoringLogic": [
+        {"variableName": "anthroheightcalc", "jsExpression": "anthro3heightin? (anthro_1_height_in + anthro2heightin + anthro3heightin)/3 : (anthro_1_height_in + anthro2heightin)/2"},
+        {"variableName": "anthroweightcalc", "jsExpression": "anthro_weight3_1b? (anthro_weight3_1b + anthro_weight2_lb + anthro_weight1_lb)/3 : (anthro_weight1_lb + anthro_weight2_lb)/2"}
+    ],
+    "ui": {
+        "order": [
+            "anthro_timestamp",
+            "anthro_waist_cm",
+            "anthro_weight_a_location",
+            "anthro_1_height_in",
+            "anthro2heightin",
+            "anthro3heightin",
+            "anthroweight1lb",
+            "anthroweight2lb",
+            "anthroweight3lb",
+            "anthroweightcast"
+        ],
+        "shuffle": false,
+        "addProperties": [
+            {
+                "variableName": "anthro_1_height_in",
+                "isAbout": "anthro_1_height_in"
+            },
+            {
+                "variableName": "anthro_timestamp",
+                "isAbout": "anthro_timestamp"
+            },
+            {
+                "variableName": "anthro_waist_cm",
+                "isAbout": "anthro_waist_cm"
+            },
+            {
+                "variableName": "anthro_weight_a_location",
+                "isAbout": "anthro_weight_a_location"
+            },
+            {
+                "variableName": "anthro2heightin",
+                "isAbout": "anthro2heightin"
+            },
+            {
+                "variableName": "anthro3heightin",
+                "isAbout": "anthro3heightin"
+            },
+            {
+                "variableName": "anthroheightcalc",
+                "isAbout": "anthroheightcalc"
+            },
+            {
+                "variableName": "anthroweight1lb",
+                "isAbout": "anthroweight1lb"
+            },
+            {
+                "variableName": "anthroweight2lb",
+                "isAbout": "anthroweight2lb"
+            },
+            {
+                "variableName": "anthroweight3lb",
+                "isAbout": "anthroweight3lb"
+            },
+            {
+                "variableName": "anthroweightcalc",
+                "isAbout": "anthroweightcalc"
+            },
+            {
+                "variableName": "anthroweightcast",
+                "isAbout": "anthroweightcast"
+            }
+        ]
+    }
+}

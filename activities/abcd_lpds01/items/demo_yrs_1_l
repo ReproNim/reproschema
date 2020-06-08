@@ -1,0 +1,55 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@id": "demo_yrs_1_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "demo_yrs_1_l",
+    "altLabel": "demo_yrs_1_p_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "How often does your child attend religious services? ¿Con qué frecuencia asiste su nin-o(a) a servicios religiosos?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 777,
+        "choices": [
+            {
+                "name": "Never Nunca",
+                "value": 0
+            },
+            {
+                "name": "Less than once a month Menos de una vez al mes",
+                "value": 1
+            },
+            {
+                "name": "One to three times a month De una a tres veces al mes",
+                "value": 2
+            },
+            {
+                "name": "About once a week Como una vez a la semana",
+                "value": 3
+            },
+            {
+                "name": "More than once a week Más de una vez a la semana",
+                "value": 4
+            },
+            {
+                "name": "Don't know No lo sé",
+                "value": 999
+            },
+            {
+                "name": "Declined Niego contestar",
+                "value": 777
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = Never Nunca; 1 = Less than once a month Menos de una vez al mes; 2 = One to three times a month De una a tres veces al mes; 3 = About once a week Como una vez a la semana; 4 = More than once a week Más de una vez a la semana;  999 = Don't know No lo sé; 777 = Declined Niego contestar"
+        }
+    ]
+}

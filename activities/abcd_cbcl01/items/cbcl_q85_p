@@ -1,0 +1,38 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@id": "cbcl_q85_p",
+    "@type": "reproschema:Field",
+    "prefLabel": "cbcl_q85_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Strange ideas Ideas raras",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 0,
+        "schema:maxValue": 2,
+        "choices": [
+            {
+                "name": "Not True /No es cierto (que sepa usted)",
+                "value": 0
+            },
+            {
+                "name": "Somewhat/Sometimes True  /En cierta manera",
+                "value": 1
+            },
+            {
+                "name": "Very True/Often True/ Muy cierto o cierto con frecuencia// Below is a list of items that describe children and youths. For each item that describes your child now or within the past 6 months",
+                "value": 2
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "0 = Not True /No es cierto (que sepa usted); 1 = Somewhat/Sometimes True  /En cierta manera; 2 = Very True/Often True/ Muy cierto o cierto con frecuencia// Below is a list of items that describe children and youths. For each item that describes your child now or within the past 6 months"
+        }
+    ]
+}

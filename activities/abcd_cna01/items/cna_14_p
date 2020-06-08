@@ -1,0 +1,51 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/abcd-assessments/contexts/generic",
+    "@id": "cna_14_p",
+    "@type": "reproschema:Field",
+    "prefLabel": {"en": "cna_14_p", "es": "cna_14_p_es"},
+    "altLabel": "child_nutrition_14_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": {
+        "en": "Think about what your child eats in a typical week, during this past year since we last saw you. In a typical week, does your child eat: Pastries or sweets less than 5 times per week",
+        "es": "Piense en lo que su niño(a) come durante una semana  típica, durante el último año; desde la última vez que lo vimos.  En una semana típica, su niño(a) come: Postres o dulces menos de 5 veces por semana."
+    },
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 999,
+        "choices": [
+            {
+                "name": {
+                    "en": "Yes",
+                    "es": "Si"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "No",
+                    "es": "No"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "Don't Know",
+                    "es": "No Recuerdo"
+                },
+                "value": 999
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes Si; 0 = No No; 999 = Don't Know No Recuerdo"
+        }
+    ]
+}
