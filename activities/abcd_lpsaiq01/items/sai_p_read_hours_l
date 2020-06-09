@@ -1,0 +1,25 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@id": "sai_p_read_hours_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "sai_p_read_hours_l",
+    "altLabel": "sai_read_hours_p_l sports_activity_read_hours_p_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Since we last saw you on [asnt_timestamp_c], about how many hours per week has your child spent reading for pleasure? Desde la última vez que nos vimos en [asnt_timestamp_c], ¿aproximadamente  cuántas horas por semana pasa su niño(a) leyendo por placer?",
+    "ui": {
+        "inputType": "number"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float",
+        "schema:minValue": 0,
+        "schema:maxValue": 168
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "If you don't know, please choose \"don't know\" in what follows below    Si no sabe, por favor escoja \"no se\" en lo que sigue abajo."
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@id": "medhx_1a_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "medhx_1a_l",
+    "altLabel": "medhx_1a_dr_past_yr_p_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "During the past year, has your child been to see a doctor, nurse, nurse practitioner, dentist, or any other health professional like that, OTHER than for regular checkups? En el último año, ¿su niño(a) ha visto a un médico, enfermero(a), dentista o algún otro profesional similar de la salud, por algún motivo DISTINTO a sus chequeos periódicos?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 6,
+        "choices": [
+            {
+                "name": "Yes SÍ",
+                "value": 1
+            },
+            {
+                "name": "No No",
+                "value": 0
+            },
+            {
+                "name": "Don't know No sé",
+                "value": 6
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes SÍ; 0 = No No; 6 = Don't know No sé"
+        }
+    ]
+}

@@ -10,6 +10,9 @@
         "reproschema": "https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/",
         "schema": "http://schema.org/",
         "@language": "en",
+        "schema:description": {
+            "@container": "@language"
+        },
         "description": {
             "@id": "schema:description",
             "@container": "@language"
@@ -20,18 +23,31 @@
         },
         "value": {
             "@id": "schema:value",
-            "@type": "xsd:integer"
+            "@container": "@language"
+        },
+        "schema:name": {
+            "@container": "@language"
+        },
+        "schema:value": {
+            "@container": "@language"
+        },
+        "schema:image": {
+            "@type": "@vocab"
         },
         "schema:citation": {
             "@container": "@language"
         },
-        "version": {
-            "@id": "schema:version",
-            "@type": "xsd:string"
+        "schema:version": {
+            "@container": "@language"
         },
-        "schemaVersion": {
-            "@id": "schema:schemaVersion",
-            "@type": "xsd:string"
+        "schema:schemaVersion": {
+            "@container": "@language"
+        },
+        "skos:prefLabel": {
+            "@container": "@language"
+        },
+        "skos:altLabel": {
+            "@container": "@language"
         },
         "prefLabel": {
             "@id": "skos:prefLabel",

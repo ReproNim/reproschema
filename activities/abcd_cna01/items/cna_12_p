@@ -1,0 +1,51 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/abcd-assessments/contexts/generic",
+    "@id": "cna_12_p",
+    "@type": "reproschema:Field",
+    "prefLabel": {"en": "cna_12_p", "es": "cna_12_p_es"},
+    "altLabel": "child_nutrition_12_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": {
+        "en": "Think about what your child eats in a typical week, during this past year since we last saw you. In a typical week, does your child eat: Butter or margarine is used less than 1 Tablespoon per day",
+        "es": "Piense en lo que su niño(a) come durante una semana  típica, durante el último año; desde la última vez que lo vimos.  En una semana típica, su niño(a) come: Mantequilla o margarina es utilizado menos de una cucharada por día."
+    },
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 999,
+        "choices": [
+            {
+                "name": {
+                    "en": "Yes",
+                    "es": "Si"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "No",
+                    "es": "No"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "Don't Know",
+                    "es": "No Recuerdo"
+                },
+                "value": 999
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes Si; 0 = No No; 999 = Don't Know No Recuerdo"
+        }
+    ]
+}

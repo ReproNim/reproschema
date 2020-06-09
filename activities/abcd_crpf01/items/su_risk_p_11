@@ -1,0 +1,42 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@id": "su_risk_p_11",
+    "@type": "reproschema:Field",
+    "prefLabel": "su_risk_p_11",
+    "altLabel": "su_crpf_avail_11_p",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "If you wanted to get prescription pain relievers (such as Vicodin, hydrocodone, or Oxycontin; not over the counter drugs like Tylenol) (that were not prescribed to you by a doctor), how easy would it be for you to get some?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 4,
+        "choices": [
+            {
+                "value": 1
+            },
+            {
+                "value": 2
+            },
+            {
+                "value": 3
+            },
+            {
+                "value": 4
+            },
+            {
+                "value": 999
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1=Very Hard; 2=Sort of hard; 3=Sort of easy; 4=Very easy; 999=Don't know"
+        }
+    ]
+}

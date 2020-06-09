@@ -1,0 +1,39 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@id": "kbipcregfriend_groupopin_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "kbipcregfriend_groupopin_l",
+    "altLabel": "kbi_c_reg_friend_group_opin_p_l kbi_p_c_reg_friend_group_opin_l ksads_back_c_reg_friend_group_opin_p_l ksads_c_reg_friend_group_opin_p_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Do you like your child's friends? ¿A usted le caen bien los amigos de su niño(a)?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 3,
+        "choices": [
+            {
+                "name": "Yes Sí",
+                "value": 1
+            },
+            {
+                "name": "Some Algo",
+                "value": 2
+            },
+            {
+                "name": "No No",
+                "value": 3
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes Sí; 2 = Some Algo; 3 = No No"
+        }
+    ]
+}

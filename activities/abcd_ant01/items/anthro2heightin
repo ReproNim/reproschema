@@ -1,0 +1,55 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@id": "anthro2heightin",
+    "@type": "reproschema:Field",
+    "prefLabel": "anthro2heightin",
+    "altLabel": "anthro_2_height_in",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "STANDING HEIGHT #2 (in inches)",
+    "ui": {
+        "inputType": "select"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 7,
+        "choices": [
+            {
+                "name": "12 inches",
+                "value": 1
+            },
+            {
+                "name": "24 inches",
+                "value": 2
+            },
+            {
+                "name": "36 inches",
+                "value": 3
+            },
+            {
+                "name": "48 inches",
+                "value": 4
+            },
+            {
+                "name": "60 inches",
+                "value": 5
+            },
+            {
+                "name": "72 inches",
+                "value": 6
+            },
+            {
+                "name": "84 inches",
+                "value": 7
+            }
+        ],
+        "valueType": "xsd:string"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 ft = 12 inches, 2 ft = 24 inches, 3 ft = 36 inches, 4 ft = 48 inches, 5 ft = 60 inches, 6 ft = 72 inches, 7 ft = 84 inches"
+        }
+    ]
+}

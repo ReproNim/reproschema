@@ -1,0 +1,39 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@id": "kbi_p_c_best_friend_l",
+    "@type": "reproschema:Field",
+    "prefLabel": "kbi_p_c_best_friend_l",
+    "altLabel": "kbi_c_best_friend_p_l ksads_back_c_best_friend_p_l",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "Does your child have a best friend? ¿Su niño(a) tiene un mejor amigo o amiga?",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 3,
+        "choices": [
+            {
+                "name": "Yes Sí",
+                "value": 1
+            },
+            {
+                "name": "No No",
+                "value": 2
+            },
+            {
+                "name": "Not sure No estoy seguro(a)",
+                "value": 3
+            }
+        ],
+        "valueType": "xsd:integer"
+    },
+    "additionalNotesObj": [
+        {
+            "source": "ABCD_NDA",
+            "column": "notes",
+            "value": "1 = Yes Sí; 2 = No No; 3 = Not sure No estoy seguro(a)"
+        }
+    ]
+}
