@@ -50,9 +50,9 @@ We have developed cleaner JSON-LD representation to represent:
   - __Field__: Elements of individual assessments
 
 Properties of each of the above schema are described below:
-- [Properties of a Protocol](protocol_props.md)
-- [Properties of an Activity](activity_props.md)
-- [Properties of Field](field_props.md)
+- [Properties of a Protocol](docs/pages/protocol_props.md)
+- [Properties of an Activity](docs/pages/activity_props.md)
+- [Properties of Field](docs/pages/field_props.md)
 
 ## 5.0: How can I create a new activity and protocol
 
