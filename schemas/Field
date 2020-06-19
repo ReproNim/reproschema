@@ -38,7 +38,7 @@
             "rdfs:comment": "A description of the item.",
             "rdfs:label": "description",
             "schema:domainIncludes": {
-                "@id": "schema:Thing"
+                "@id": "reproschema:Field"
             },
             "schema:rangeIncludes": {
                 "@id": "schema:Text"
@@ -190,16 +190,12 @@
         {
             "@id": "http://schema.org/associatedMedia",
             "@type": "rdf:Property",
-            "schema:domainIncludes": [
-                {
-                    "@id": "http://schema.org/CreativeWork"
-                }
-            ],
-            "schema:rangeIncludes": [
-                {
-                    "@id": "http://schema.org/MediaObject"
-                }
-            ],
+            "schema:domainIncludes": {
+                "@id": "reproschema:Field"
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:MediaObject"
+            },
             "rdfs:comment": A media object that encodes this CreativeWork. This property is a synonym for encoding.",
             "rdfs:label": "associatedMedia"
         },

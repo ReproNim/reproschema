@@ -19,17 +19,9 @@
             "@type": "rdf:Property",
             "rdfs:comment": "The preferred name of the assessment.",
             "rdfs:label": "prefLabel",
-            "schema:domainIncludes": [
-                {
-                    "@id": "reproschema:Protocol"
-                },
-                {
+            "schema:domainIncludes": {
                     "@id": "reproschema:Activity"
-                },
-                {
-                    "@id": "reproschema:Field"
-                }
-            ],
+            },
             "schema:rangeIncludes": {
                 "@id": "schema:Text"
             },
@@ -46,7 +38,7 @@
             "rdfs:comment": "A description of the item.",
             "rdfs:label": "description",
             "schema:domainIncludes": {
-                "@id": "schema:Thing"
+                "@id": "reproschema:Activity"
             },
             "schema:rangeIncludes": {
                 "@id": "schema:Text"
@@ -58,7 +50,7 @@
             "rdfs:comment": "Indicates (by URL or string) a particular version of a schema used in some CreativeWork. For example, a document could declare a schemaVersion using an URL such as http://schema.org/version/2.0/ if precise indication of schema version was required by some application.",
             "rdfs:label": "schemaVersion",
             "schema:domainIncludes": {
-                "@id": "schema:CreativeWork"
+                "@id": "reproschema:Activity"
             },
             "schema:rangeIncludes": [
                 {
@@ -75,7 +67,7 @@
             "rdfs:comment": "The version of the CreativeWork embodied by a specified resource.",
             "rdfs:label": "version",
             "schema:domainIncludes": {
-                "@id": "schema:CreativeWork"
+                "@id": "reproschema:Activity"
             },
             "schema:rangeIncludes": [
                 {
@@ -92,7 +84,7 @@
             "rdfs:comment": "A citation or reference to another creative work, such as another publication, web page, scholarly article, etc.",
             "rdfs:label": "citation",
             "schema:domainIncludes": {
-                "@id": "schema:CreativeWork"
+                "@id": "reproschema:Activity"
             },
             "schema:rangeIncludes": [
                 {
@@ -123,14 +115,9 @@
             "@type": "rdf:Property",
             "rdfs:comment": "An array to describe the order in which the Fields of an instrument appear in the ui. It represents a list of node ids of the items and not the variable names.",
             "rdfs:label": "order",
-            "schema:domainIncludes": [
-                {
-                    "@id": "reproschema:Protocol"
-                },
-                {
+            "schema:domainIncludes": {
                     "@id": "reproschema:Activity"
-                }
-            ],
+            },
             "schema:rangeIncludes": {
                 "@id": "schema:URL"
             },
@@ -143,14 +130,9 @@
             "@type": "rdf:Property",
             "rdfs:comment": "An element (bool) to determine if the list of items is shuffled or in order.",
             "rdfs:label": "shuffle",
-            "schema:domainIncludes": [
-                {
-                    "@id": "reproschema:Protocol"
-                },
-                {
+            "schema:domainIncludes": {
                     "@id": "reproschema:Activity"
-                }
-            ],
+            },
             "schema:rangeIncludes": {
                 "@id": "schema:boolean"
             },
@@ -163,14 +145,9 @@
             "@type": "rdf:Property",
             "rdfs:comment": "An array of objects to describe the various properties added to assessments and fields.",
             "rdfs:label": "addProperties",
-            "schema:domainIncludes": [
-                {
-                    "@id": "reproschema:Protocol"
-                },
-                {
+            "schema:domainIncludes": {
                     "@id": "reproschema:Activity"
-                }
-            ],
+            },
             "schema:rangeIncludes": {
                 "@id": "reproschema:AddProperties"
             },
@@ -183,14 +160,9 @@
             "@type": "rdf:Property",
             "rdfs:comment": "An array of objects indicating score in an activity or protocol and the score Field item ",
             "rdfs:label": "scoringLogic",
-            "schema:domainIncludes": [
-                {
-                    "@id": "reproschema:Protocol"
-                },
-                {
+            "schema:domainIncludes": {
                     "@id": "reproschema:Activity"
-                }
-            ],
+            },
             "schema:rangeIncludes": {
                 "@id": "reproschema:ScoringLogic"
             }
