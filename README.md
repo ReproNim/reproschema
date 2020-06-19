@@ -32,10 +32,6 @@ Cognitive and clinical assessments are used throughout neuroscience, but little 
     - CONP
 - Collaborations: ABCD, Healthy Brain Network, LORIS/CONP
 - We used CEDAR templates as a starting point
-- Developed cleaner JSON-LD representation to represent:
-  - __Protocols__: Collections of activities performed by a participant
-  - __Activity__: Individual assessments
-  - __Items__: Elements of individual assessments
 
 ## 3.0: Advantages of current representation
 - Rich contexts with JSON-LD
@@ -48,28 +44,15 @@ Cognitive and clinical assessments are used throughout neuroscience, but little 
 - Still a linked data graph and can be validated using [SHACL](https://www.w3.org/TR/shacl/)
 
 ## 4.0: Schema
-We have defined 3 different types of schema –
-- [Protocol](https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/Protocol)
-- [Activity](https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/Activity)
-- [Item](https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/Field)
+We have developed cleaner JSON-LD representation to represent:
+  - __Protocols__: Collections of activities performed by a participant
+  - __Activity__: Individual assessments
+  - __Field__: Elements of individual assessments
 
-Schema overall structure:
-
-- protocol directory structure: name the directory in the CamelCase naming convention. It contains the following:
-  - `protocolName_schema` : schema to define the protocol
-  - `protocolName_context` : context to define keys used specific to the protocol schema
-- activity directory structure: name the directory with name of activity in the CamelCase naming convention. It contains the following:
-  - `/items`: directory containing the jsonld files for individual items of the activity schema
-    - `item_1`
-    - ...
-  - `activityName_schema` : schema to define the activity
-  - `activityName_context` : context to define keys used specific to the activity schema
-  - sub-activity jsonld schemas (if any)
-  
-Note: All schema and context files above are saved without a `.jsonld` files extension.
-
-The generic keys are defined in the generic context file (contexts/generic)
-
+Properties of each of the above schema are described below:
+- [Properties of a Protocol](protocol_props.md)
+- [Properties of an Activity](activity_props.md)
+- [Properties of Field](field_props.md)
 
 ## 5.0: How can I create a new activity and protocol
 
