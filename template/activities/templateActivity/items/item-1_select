@@ -1,0 +1,31 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@id": "item_1",
+    "@type": "reproschema:Field",
+    "prefLabel": "item_1",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": "This is the item 1: a select item",
+    "ui": {
+        "inputType": "select"
+    },
+    "responseOptions": {
+        "schema:minValue": 1,
+        "schema:maxValue": 3,
+        "choices": [
+            {
+                "name": "response choice 1",
+                "value": 1
+            },
+            {
+                "name": "response choice 2",
+                "value": 2
+            },
+            {
+                "name": "response choice 3",
+                "value": 3
+            }
+        ],
+        "valueType": "xsd:string"
+    },
+}
