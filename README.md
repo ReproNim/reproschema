@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/ReproNim/reproschema.svg?branch=master)](https://travis-ci.org/ReproNim/reproschema)
+
 # Schema Standardization
 
 This documentation describes and explains the ReproNim schema specification.
