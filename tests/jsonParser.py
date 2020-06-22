@@ -1,25 +1,15 @@
 import os
 import json
 
-# invalid_json_files = []
-# read_json_files = []
+schema_dirs = ["contexts", "schemas", "terms"]
 
-
-for root, dirs, files in os.walk('./activities', topdown=True):
-    for name in files:
-        # files without extension or with .jsonld extn
-        if not os.path.splitext(name)[1] or os.path.splitext(name)[1] == '.jsonld':
-            # print(18, '--- ', name)
-            full_file_name = os.path.join(root, name)
-            with open(full_file_name) as json_file:
+for root, dirs, files in os.walk('.', topdown=True):
+    if os.path.basename(root) in schema_dirs:
+        for name in files:
+            with open(os.path.join(root, name)) as fp:
                 try:
-                    #print(25, json_file.read())
-                    #d = json.dumps(json_file)
-                    json.load(json_file)
-                    # read_json_files.append(files)
-                except ValueError as e:
-                    print ("File '%s' has JSON validation errors. %s" %(full_file_name, e))
+                    json.load(fp)
+                except json.decoder.JSONDecodeError:
+                    print(f"{root}/{name} could not be loaded")
                     raise
-                    # invalid_json_files.append(files)
 
-# print(invalid_json_files, len(read_json_files))
