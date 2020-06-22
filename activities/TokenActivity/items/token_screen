@@ -1,11 +1,8 @@
 {
-    "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/activities/TokenActivity/TokenActivity_context"
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Field",
     "@id": "token_screen",
-    "skos:prefLabel": "Q1 of TokenActivity Questionnaire",
-    "skos:altLabel": "token_screen",
+    "skos:prefLabel": "token_screen",
     "schema:description": "Q1 of the TokenActivity Assessment",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
@@ -16,7 +13,7 @@
         "inputType": "radio"
     },
     "responseOptions": {
-        "type": "xsd:integer",
+        "valueType": "xsd:integer",
         "schema:minValue": 0,
         "schema:maxValue": 5,
         "multipleChoice": true,
