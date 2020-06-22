@@ -1,0 +1,36 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/refactor-1.0/contexts/generic",
+        {
+            "item1": {
+                "@id": "https://raw.githubusercontent.com/ReproNim/reproschema/refactor-1.0/examples/activities/items/item1",
+                "@type": "@id"
+            }
+        }
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "activity1",
+    "skos:prefLabel": "Example 1",
+    "schema:description": "Activity example 1",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "schema:citation": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1495268/",
+    "preamble": {
+        "en": "Over the last 2 weeks, how often have you been bothered by any of the following problems?",
+        "es": "Durante las últimas 2 semanas, ¿con qué frecuencia le han molestado los siguintes problemas?"
+    },
+    "ui": {
+        "addProperties": [
+            {
+                "isAbout": "item1",
+                "variableName": "item1",
+                "requiredValue": true,
+                "isVis": true
+            }
+        ],
+        "order": [
+            "item1"
+        ],
+        "shuffle": false
+    }
+}

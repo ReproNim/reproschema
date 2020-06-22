@@ -1,0 +1,53 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/refactor-1.0/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "item1",
+    "skos:prefLabel": "item1",
+    "schema:description": "Q1 of example 1",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "question": {
+        "en": "Little interest or pleasure in doing things",
+        "es": "Poco interés o placer en hacer cosas"
+    },
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "schema:minValue": 0,
+        "schema:maxValue": 3,
+        "multipleChoice": false,
+        "choices": [
+        {
+            "name": {
+                "en": "Not at all",
+                "es": "Para nada"
+            },
+            "value": 0
+        },
+        {
+            "name": {
+                "en": "Several days",
+                "es": "Varios días"
+            },
+            "value": 1
+        },
+        {
+            "name": {
+                "en": "More than half the days",
+                "es": "Más de la mitad de los días"
+            },
+            "value": 2
+        },
+        {
+            "name": {
+                "en": "Nearly everyday",
+                "es": "Casi todos los días"
+            },
+            "value": 3
+        }
+        ]
+    }
+
+}

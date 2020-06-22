@@ -1,0 +1,42 @@
+{
+	"@context": [
+		"https://raw.githubusercontent.com/ReproNim/reproschema/refactor-1.0/contexts/generic",
+		{
+            "activity1": {
+                "@id": "https://raw.githubusercontent.com/ReproNim/reproschema/refactor-1.0/examples/activities/activity1.jsonld",
+                "@type": "@id"
+            }
+        }
+	],
+	"@type": "reproschema:Protocol",
+	"@id": "protocol1",
+	"prefLabel": {
+		"en": "Protocol1",
+		"es": "Protocol1_es"
+	},
+	"schema:description": "example Protocol",
+	"schema:schemaVersion": "0.0.1",
+	"schema:version": "0.0.1",
+	"ui": {
+		"addProperties": [
+			{
+			"isAbout": "activity1",
+			"variableName": "activity1",
+			"prefLabel": {
+				"en": "Screening",
+				"es": "Screening_es"
+			},
+			"isVis": true
+			}
+		],
+		"order": [
+			"activity1"
+		],
+		"shuffle": false,
+		"allow": [
+			"autoAdvance",
+			"disableBack",
+			"allowExport"
+		]
+	}
+}
