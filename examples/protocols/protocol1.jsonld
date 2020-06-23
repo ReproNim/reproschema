@@ -1,13 +1,5 @@
 {
-	"@context": [
-		"https://raw.githubusercontent.com/ReproNim/reproschema/refactor-1.0/contexts/generic",
-		{
-            "activity1": {
-                "@id": "../activities/activity1.jsonld",
-                "@type": "@id"
-            }
-        }
-	],
+	"@context": "../../contexts/generic",
 	"@type": "reproschema:Protocol",
 	"@id": "protocol1.jsonld",
 	"prefLabel": {
@@ -20,17 +12,17 @@
 	"ui": {
 		"addProperties": [
 			{
-			"isAbout": "activity1",
-			"variableName": "activity1",
-			"prefLabel": {
-				"en": "Screening",
-				"es": "Screening_es"
-			},
-			"isVis": true
+				"isAbout": "activities/activity1.jsonld",
+				"variableName": "activity1",
+				"prefLabel": {
+					"en": "Screening",
+					"es": "Screening_es"
+				},
+				"isVis": true
 			}
 		],
 		"order": [
-			"activity1"
+			"activities/activity1.jsonld"
 		],
 		"shuffle": false,
 		"allow": [
