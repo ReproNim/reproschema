@@ -1,13 +1,5 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/refactor-1.0/contexts/generic",
-        {
-            "item1": {
-                "@id": "/items/item1.jsonld",
-                "@type": "@id"
-            }
-        }
-    ],
+    "@context": "../../contexts/generic",
     "@type": "reproschema:Activity",
     "@id": "activity1.jsonld",
     "skos:prefLabel": "Example 1",
@@ -21,15 +13,13 @@
     },
     "ui": {
         "addProperties": [
-            {
-                "isAbout": "item1",
+            {   "isAbout": "items/item1.jsonld",
                 "variableName": "item1",
                 "requiredValue": true,
-                "isVis": true
-            }
+                "isVis": true}
         ],
         "order": [
-            "item1"
+            "items/item1.jsonld"
         ],
         "shuffle": false
     }
