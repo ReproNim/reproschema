@@ -1,13 +1,5 @@
 {
-	"@context": [
-		"../../contexts/generic",
-		{
-            "activity1": {
-                "@id": "../activities/activity1.jsonld",
-                "@type": "@id"
-            }
-        }
-	],
+	"@context": "../../contexts/generic",
 	"@type": "reproschema:Protocol",
 	"@id": "protocol1.jsonld",
 	"prefLabel": {
@@ -18,19 +10,18 @@
 	"schema:schemaVersion": "0.0.1",
 	"schema:version": "0.0.1",
 	"ui": {
-		"addProperties": [
-			{
-			"isAbout": "activity1",
-			"variableName": "activity1",
-			"prefLabel": {
-				"en": "Screening",
-				"es": "Screening_es"
-			},
-			"isVis": true
+		"addProperties": {
+			"activities/activity1.jsonld": {
+				"variableName": "activity1",
+				"prefLabel": {
+					"en": "Screening",
+					"es": "Screening_es"
+				},
+				"isVis": true
 			}
-		],
+		},
 		"order": [
-			"activity1"
+			"activities/activity1.jsonld"
 		],
 		"shuffle": false,
 		"allow": [

@@ -9,7 +9,7 @@ data_file_format = 'nquads'
 shape_file_format = 'turtle'
 
 
-def validate(data, root, shape_file_path):
+def validate_data(data, root, shape_file_path):
     base_url = f"http://localhost:8000/{root}/"
     print(base_url)
     normalized = jsonld.normalize(data,
@@ -42,7 +42,7 @@ for root, dirs, files in os.walk('examples'):
                     shape_file_path = 'validation/ActivityShape.ttl'
                 elif data['@type'] == 'reproschema:Field':
                     shape_file_path = 'validation/FieldShape.ttl'
-                validate(data, root, shape_file_path)
+                validate_data(data, root, shape_file_path)
             except ValueError as e:
                 print ("File '%s' has validation errors: \n %s" %(full_file_name, e))
                 raise
