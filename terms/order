@@ -6,8 +6,8 @@
         "reproschema": "https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/"
     },
     "@id": "order",
-    "@type": "rdf:property",
-    "rdfs:comment": "An ordered list of items to describe the order in which the items of an assessment appear in the original questionnaire.",
+    "@type": "rdf:Property",
+    "rdfs:comment": "An ordered list to describe the order in which the items of an assessment or protocol appear in the user interface.",
     "rdfs:label": "order",
     "schema:domainIncludes": [
         {
@@ -16,17 +16,11 @@
         {
             "@id": "reproschema:Activity"
         }
-
     ],
-    "schema:rangeIncludes": [
-        {
-            "@id": "reproschema:Protocol"
-        },
-        {
-            "@id": "reproschema:Activity"
-        },
-        {
-            "@id": "reproschema:Field"
-        }
-    ]
+    "schema:rangeIncludes": {
+        "@id": "schema:URL"
+    },
+    "schema:sameAs": {
+        "@id": "reproterms:order"
+    }
 }

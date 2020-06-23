@@ -5,22 +5,20 @@
         "schema": "http://schema.org/",
         "reproschema": "https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/"
     },
-    "@id": "reproterms:responseOptions",
     "@type": "rdf:Property",
-    "rdfs:comment": "An element (object or by URL)to describe the properties of response of the Field item.",
-    "rdfs:label": "responseOptions",
+    "@id": "valueType",
+    "rdfs:comment": "The type of the response of an item. For example, string, integer, etc.",
+    "rdfs:label": "valueType",
     "schema:domainIncludes": {
-        "@id": "reproschema:Field"
+        "@id": "reproschema:ResponseOptions"
     },
     "schema:rangeIncludes": [
         {
-            "@id": "reproschema:ResponseOptions"
+            "@id": "schema:Text"
         },
         {
-            "@id": "schema:URL"
+            "@id": "rdf:langString"
         }
-    ],
-    "schema:sameAs": {
-        "@id": "reproschema:responseOptions"
-    }
+    ]
 }
+

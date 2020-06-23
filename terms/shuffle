@@ -1,9 +1,28 @@
 {
     "@context": {
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "schema": "http://schema.org/",
+        "reproschema": "https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/",
+        "reproterms": "https://raw.githubusercontent.com/ReproNim/reproschema/master/terms/"
     },
-    "@id": "shuffle",
-    "@type": "rdfs:Class",
-    "rdfs:comment": "An element to determine if a list of items is shuffled or in order.",
-    "rdfs:label": "shuffle"
+    "@id": "reproterms:shuffle",
+    "@type": "rdf:Property",
+    "rdfs:comment": "An element (bool) to determine if the list of items is shuffled or in order.",
+    "rdfs:label": "shuffle",
+    "schema:domainIncludes": [
+        {
+            "@id": "reproschema:Protocol"
+        },
+        {
+            "@id": "reproschema:Activity"
+        }
+    ],
+    "schema:rangeIncludes": {
+        "@id": "schema:boolean"
+    },
+    "schema:sameAs": {
+        "@id": "reproterms:shuffle"
+    }
 }
+

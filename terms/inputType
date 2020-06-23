@@ -6,13 +6,16 @@
         "reproschema": "https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/"
     },
     "@id": "inputType",
-    "@type": "rdf:property",
-    "rdfs:comment": "Describes the type of input for an item in an assessment.",
+    "@type": "rdf:Property",
+    "rdfs:comment": "An element to describe the input type of the Field item.",
     "rdfs:label": "inputType",
     "schema:domainIncludes": {
         "@id": "reproschema:Field"
     },
     "schema:rangeIncludes": {
         "@id": "schema:Text"
+    },
+    "schema:sameAs": {
+        "@id": "reproterms:inputType"
     }
 }

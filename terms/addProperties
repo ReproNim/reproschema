@@ -6,28 +6,22 @@
         "reproschema": "https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/",
         "reproterms": "https://raw.githubusercontent.com/ReproNim/reproschema/master/terms/"
     },
+    "@id": "reproterms:addProperties",
     "@type": "rdf:Property",
-    "@id": "preamble",
-    "rdfs:comment": "The preamble for an assessment",
-    "rdfs:label": "preamble",
+    "rdfs:comment": "An array of objects to describe the various properties added to assessments and fields.",
+    "rdfs:label": "addProperties",
     "schema:domainIncludes": [
         {
             "@id": "reproschema:Protocol"
         },
         {
             "@id": "reproschema:Activity"
-        },
-        {
-            "@id": "reproschema:Field"
         }
     ],
-    "schema:rangeIncludes": [
-        {
-            "@id": "schema:Text"
-        },
-        {
-            "@id": "rdf:langString"
-        }
-    ]
+    "schema:rangeIncludes": {
+        "@id": "reproschema:AddProperties"
+    },
+    "schema:sameAs": {
+        "@id": "reproterms:addProperties"
+    }
 }
-
