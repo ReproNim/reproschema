@@ -5,6 +5,36 @@ from pyshacl import validate
 import json
 import os
 
+import os
+import threading
+import webbrowser
+from http.server import HTTPServer, SimpleHTTPRequestHandler
+
+
+def simple_http_server(host='localhost', port=4001, path='.'):
+    """
+    From: https://stackoverflow.com/a/38943044
+    """
+
+    server = HTTPServer((host, port), SimpleHTTPRequestHandler)
+    thread = threading.Thread(target=server.serve_forever)
+    thread.deamon = True
+
+    cwd = os.getcwd()
+
+    def start():
+        os.chdir(path)
+        thread.start()
+        print('starting server on port {}'.format(server.server_port))
+
+    def stop():
+        os.chdir(cwd)
+        server.shutdown()
+        server.socket.close()
+        print('stopping server on port {}'.format(server.server_port))
+
+    return start, stop
+
 data_file_format = 'nquads'
 shape_file_format = 'turtle'
 
@@ -25,7 +55,9 @@ def validate_data(data, root, shape_file_path):
     if not conforms:
         raise ValueError(v_text)
 
+start, stop = simple_http_server(port=8000, path=os.getcwd())
 
+start()
 for root, dirs, files in os.walk('examples'):
     for name in files:
         full_file_name = os.path.join(root, name)
@@ -43,5 +75,6 @@ for root, dirs, files in os.walk('examples'):
                 validate_data(data, root, shape_file_path)
             except ValueError as e:
                 print ("File '%s' has validation errors: \n %s" %(full_file_name, e))
+                stop()
                 raise
-
+stop()
