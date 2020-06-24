@@ -5,14 +5,8 @@
         "schema": "http://schema.org/",
         "reproschema": "https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/"
     },
-    "@id": "allow_export",
-    "@type": "rdf:property",
+    "@id": "allowExport",
+    "@type": "rdfs:Class",
     "rdfs:comment": "Indicates (by boolean) if data can be exported or not.",
-    "rdfs:label": "allow export",
-    "schema:domainIncludes": {
-            "@id": "reproschema:Protocol"
-        },
-    "schema:rangeIncludes": {
-        "@id": "schema:boolean"
-    }
+    "rdfs:label": "allow export"
 }

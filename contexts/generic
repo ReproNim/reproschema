@@ -84,6 +84,7 @@
             "@id": "reproterms:requiredValue",
             "@type": "schema:Boolean"
         },
+        "valueRequired": "https://schema.org/valueRequired",
         "multipleChoice": {
             "@id": "reproterms:multipleChoice",
             "@type": "schema:Boolean"
@@ -106,27 +107,18 @@
         "order": {
             "@id": "reproterms:order",
             "@container": "@list",
-            "@type": "@vocab",
+            "@type": "@id",
             "@nest": "ui"
         },
         "addProperties": {
             "@id": "reproterms:addProperties",
-            "@container": "@index",
+            "@type": "reproschema:AddProperties",
+            "@container": "@set",
             "@nest": "ui"
         },
         "shuffle": {
             "@id": "reproterms:shuffle",
             "@type": "schema:Boolean",
-            "@nest": "ui"
-        },
-        "activity_display_name": {
-            "@id": "reproterms:activity_display_name",
-            "@type": "schema:alternateName",
-            "@nest": "ui"
-        },
-        "displayNameMap": {
-            "@id": "reproterms:displayNameMap",
-            "@type": "schema:alternateName",
             "@nest": "ui"
         },
         "inputOptions": {
@@ -144,42 +136,13 @@
             "@type": "xsd:boolean",
             "@nest": "ui"
         },
-        "headerLevel": {
-            "@id": "reproterms:headerLevel",
-            "@type": "xsd:int",
-            "@nest": "ui"
-        },
-        "headers": {
-            "@id": "reproterms:tableheaders",
-            "@container": "@list",
-            "@nest": "ui"
-        },
-        "rows": {
-            "@id": "reproterms:tablerows",
-            "@container": "@list",
-            "@type": "@vocab",
-            "@nest": "ui"
-        },
+        "readonlyValue": "https://schema.org/readonlyValue",
         "scoringLogic": {
             "@id": "reproterms:scoringLogic",
             "@container": "@index"
         },
-        "scoring_logic": {
-            "@id": "reproterms:scoring_logic",
-            "@container": "@index"
-        },
         "jsExpression": {
             "@id": "reproterms:jsExpression"
-        },
-        "visibility": {
-            "@id": "reproterms:visibility",
-            "@container": "@index",
-            "@nest": "ui"
-        },
-        "vis": {
-            "@id": "reproterms:vis",
-            "@container": "@index",
-            "@nest": "ui"
         },
         "isVis": {
             "@id": "reproterms:isVis"
@@ -189,23 +152,15 @@
             "@container": "@index",
             "@nest": "ui"
         },
-        "variableMap": {
-            "@id": "reproterms:variableMap",
-            "@container": "@index"
-        },
         "variableName": "reproterms:variableName",
-        "alternateName": {
-            "@id": "schema:alternateName",
-            "@container": "@language"
-        },
         "isAbout": {
             "@id": "reproterms:isAbout",
-            "@type": "@vocab"
+            "@type": "@id"
         },
         "allow": {
             "@id": "reproterms:allow",
             "@container": "@list",
-            "@type": "@vocab",
+            "@type": "@id",
             "@nest": "ui"
         },
         "addAllow": {

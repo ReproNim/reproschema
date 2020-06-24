@@ -4,12 +4,12 @@
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
         "schema": "http://schema.org/",
         "reproschema": "https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/",
-        "reproterms": "https://raw.githubusercontent.com/ReproNim/reproschema/master/terms/"
+	    "reproterms": "https://raw.githubusercontent.com/ReproNim/reproschema/master/terms/"
     },
-    "@id": "statusOptions",
+    "@id": "isVis",
     "@type": "rdf:Property",
-    "rdfs:comment": "Provides information on whether or not a field item wants to be accompanied by the additional status option(s) defined in “statusOptions”",
-    "rdfs:label": "status options",
+    "rdfs:comment": "An element to describe (by boolean or conditional statement) visibility conditions of items in an assessment.",
+    "rdfs:label": "visibility",
     "schema:domainIncludes": [
         {
             "@id": "reproschema:Protocol"
@@ -18,10 +18,15 @@
             "@id": "reproschema:Activity"
         }
     ],
-    "schema:rangeIncludes": {
-        "@id": "schema:Text"
-    },
+    "schema:rangeIncludes": [
+        {
+            "@id": "schema:Boolean"
+        },
+        {
+            "@id": "schema:Text"
+        }
+    ],
     "schema:sameAs": {
-        "@id": "reproterms:statusOptions"
+        "@id": "reproterms:isVis"
     }
 }

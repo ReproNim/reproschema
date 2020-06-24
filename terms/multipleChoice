@@ -3,16 +3,21 @@
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
         "schema": "http://schema.org/",
-        "reproschema": "https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/"
+        "reproschema": "https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/",
+	    "reproterms": "https://raw.githubusercontent.com/ReproNim/reproschema/master/terms/"
     },
     "@id": "multipleChoice",
-    "@type": "rdf:property",
-    "rdfs:comment": "Indicates (by boolean) if a radio item of an assessment has one or more options as its answer",
-    "rdfs:label": "multiple choice",
+    "@type": "rdf:Property",
+    "rdfs:comment": "Indicates (by bool) if response for the Field item has one or more answer.",
+    "rdfs:label": "multipleChoice",
     "schema:domainIncludes": {
-        "@id": "reproschema:Field"
+        "@id": "reproschema:ResponseOptions"
     },
     "schema:rangeIncludes": {
-        "@id": "schema:boolean"
+        "@id": "schema:Boolean"
+    },
+    "schema:sameAs": {
+        "@id": "reproterms:multipleChoice"
     }
 }
+

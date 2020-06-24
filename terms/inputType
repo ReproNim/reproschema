@@ -7,11 +7,16 @@
     },
     "@id": "inputType",
     "@type": "rdf:Property",
-    "rdfs:comment": "An element to describe the input type of the Field item.",
+    "rdfs:comment": "An element to describe the input type of a Field item.",
     "rdfs:label": "inputType",
-    "schema:domainIncludes": {
-        "@id": "reproschema:Field"
-    },
+    "schema:domainIncludes": [
+        {
+            "@id": "reproschema:Activity"
+        },
+        {
+            "@id": "reproschema:Field"
+        }
+    ],
     "schema:rangeIncludes": {
         "@id": "schema:Text"
     },

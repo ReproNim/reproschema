@@ -13,12 +13,12 @@
     },
     "@graph": [
         {
-            "@id": "reproschema:variableName",
+            "@id": "reproterms:variableName",
             "@type": "rdf:Property",
             "rdfs:comment": "The name used to represent an item.",
             "rdfs:label": "variableName",
             "schema:domainIncludes": {
-                "@id": "reproschema:scoringLogic"
+                "@id": "reproschema:ScoringLogic"
             },
             "schema:rangeIncludes": {
                 "@id": "schema:Text"
@@ -28,12 +28,12 @@
             }
         },
         {
-            "@id": "reproschema:jsExpression",
+            "@id": "reproterms:jsExpression",
             "@type": "rdf:Property",
             "rdfs:comment": "An element (string or boolean) to represent boolean logic for score.",
             "rdfs:label": "jsExpression",
             "schema:domainIncludes": {
-                "@id": "reproschema:scoringLogic"
+                "@id": "reproschema:ScoringLogic"
             },
             "schema:rangeIncludes": [
                 {
