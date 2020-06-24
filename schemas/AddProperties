@@ -13,7 +13,7 @@
     },
     "@graph": [
         {
-            "@id": "reproschema:variableName",
+            "@id": "reproterms:variableName",
             "@type": "rdf:Property",
             "rdfs:comment": "The name used to represent an item.",
             "rdfs:label": "variableName",
@@ -27,9 +27,6 @@
             ],
             "schema:rangeIncludes": {
                 "@id": "schema:Text"
-            },
-            "schema:sameAs": {
-                "@id": "reproschema:variableName"
             }
         },
         {
@@ -55,18 +52,15 @@
             ]
         },
         {
-            "@id": "reproterms:requiredValue",
+            "@id": "schema:valueRequired",
             "@type": "rdf:Property",
-            "rdfs:comment": "Indicates (by bool) if the response for the Field item is mandatory or not.",
-            "rdfs:label": "requiredValue",
+            "rdfs:comment": "Whether the property must be filled in to complete the action.  Default is false.",
+            "rdfs:label": "valueRequired",
             "schema:domainIncludes": {
                 "@id": "reproterms:addProperties"
             },
             "schema:rangeIncludes": {
                 "@id": "schema:Boolean"
-            },
-            "schema:sameAs": {
-                "@id": "reproterms:requiredValue"
             }
         },
         {
@@ -84,15 +78,12 @@
             ],
             "schema:rangeIncludes": {
                 "@id": "schema:Text"
-            },
-            "schema:sameAs": {
-                "@id": "http://www.w3.org/2004/02/skos/core#prefLabel"
             }
         },
         {
             "@id": "reproterms:isVis",
             "@type": "rdf:Property",
-            "rdfs:comment": "An element to describe visibility conditions of items in an assessment.",
+            "rdfs:comment": "An element to describe (by bool or conditional statement) visibility conditions of items in an assessment.",
             "rdfs:label": "isVis",
             "schema:domainIncludes": [
                 {

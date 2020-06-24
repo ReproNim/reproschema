@@ -32,9 +32,6 @@
             ],
             "schema:rangeIncludes": {
                 "@id": "schema:Text"
-            },
-            "schema:sameAs": {
-                "@id": "http://www.w3.org/2004/02/skos/core#prefLabel"
             }
         },
         {
@@ -46,7 +43,7 @@
             "rdfs:comment": "A description of the item.",
             "rdfs:label": "description",
             "schema:domainIncludes": {
-                "@id": "schema:Thing"
+                "@id": "reproschema:Activity"
             },
             "schema:rangeIncludes": {
                 "@id": "schema:Text"
@@ -58,7 +55,7 @@
             "rdfs:comment": "Indicates (by URL or string) a particular version of a schema used in some CreativeWork. For example, a document could declare a schemaVersion using an URL such as http://schema.org/version/2.0/ if precise indication of schema version was required by some application.",
             "rdfs:label": "schemaVersion",
             "schema:domainIncludes": {
-                "@id": "schema:CreativeWork"
+                "@id": "reproschema:Activity"
             },
             "schema:rangeIncludes": [
                 {
@@ -75,7 +72,7 @@
             "rdfs:comment": "The version of the CreativeWork embodied by a specified resource.",
             "rdfs:label": "version",
             "schema:domainIncludes": {
-                "@id": "schema:CreativeWork"
+                "@id": "reproschema:Activity"
             },
             "schema:rangeIncludes": [
                 {
@@ -92,7 +89,7 @@
             "rdfs:comment": "A citation or reference to another creative work, such as another publication, web page, scholarly article, etc.",
             "rdfs:label": "citation",
             "schema:domainIncludes": {
-                "@id": "schema:CreativeWork"
+                "@id": "reproschema:Activity"
             },
             "schema:rangeIncludes": [
                 {
@@ -113,9 +110,6 @@
             },
             "schema:rangeIncludes": {
                 "@id": "schema:Text"
-            },
-            "schema:sameAs": {
-                "@id": "reproterms:preamble"
             }
         },
         {
@@ -133,9 +127,6 @@
             ],
             "schema:rangeIncludes": {
                 "@id": "schema:URL"
-            },
-            "schema:sameAs": {
-                "@id": "reproterms:order"
             }
         },
         {
@@ -153,9 +144,6 @@
             ],
             "schema:rangeIncludes": {
                 "@id": "schema:boolean"
-            },
-            "schema:sameAs": {
-                "@id": "reproterms:shuffle"
             }
         },
         {
@@ -173,9 +161,6 @@
             ],
             "schema:rangeIncludes": {
                 "@id": "reproschema:AddProperties"
-            },
-            "schema:sameAs": {
-                "@id": "reproschema:addProperties"
             }
         },
         {

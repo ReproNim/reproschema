@@ -10,9 +10,14 @@
     "@type": "rdf:Property",
     "rdfs:comment": "The name used to represent an item.",
     "rdfs:label": "variableName",
-    "schema:domainIncludes": {
-        "@id": "reproschema:ScoringLogic"
-    },
+    "schema:domainIncludes": [
+        {
+            "@id": "reproschema:ScoringLogic"
+        },
+        {
+            "@id": "reproschema:AddProperties"
+        }
+    ],
     "schema:rangeIncludes": {
         "@id": "schema:Text"
     }

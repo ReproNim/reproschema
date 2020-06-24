@@ -6,19 +6,22 @@
         "reproschema": "https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/",
         "reproterms": "https://raw.githubusercontent.com/ReproNim/reproschema/master/terms/"
     },
-    "@id": "addProperties",
+    "@id": "choices",
     "@type": "rdf:Property",
-    "rdfs:comment": "An array of objects to describe the various properties added to assessments and fields.",
-    "rdfs:label": "addProperties",
-    "schema:domainIncludes": [
+    "rdfs:comment": "An array to list the available options in responseOptions of the Field item.",
+    "rdfs:label": "choices",
+    "schema:domainIncludes": {
+        "@id": "reproschema:ResponseOptions"
+    },
+    "schema:rangeIncludes": [
         {
-            "@id": "reproschema:Protocol"
+        "@id": "reproschema:Choices"
         },
         {
-            "@id": "reproschema:Activity"
+            "@id": "schema:URL"
         }
     ],
-    "schema:rangeIncludes": {
-        "@id": "reproschema:AddProperties"
+    "schema:sameAs": {
+        "@id": "schema:itemListElement"
     }
 }
