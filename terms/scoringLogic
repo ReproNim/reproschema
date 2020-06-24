@@ -3,11 +3,12 @@
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
         "schema": "http://schema.org/",
-        "reproschema": "https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/"
+        "reproschema": "https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/",
+        "reproterms": "https://raw.githubusercontent.com/ReproNim/reproschema/master/terms/"
     },
     "@id": "scoringLogic",
-    "@type": "rdf:property",
-    "rdfs:comment": "An array of items indicating score in an activity or protocol.",
+    "@type": "rdf:Property",
+    "rdfs:comment": "An array of objects indicating score in an activity or protocol and maps it to the score Field item ",
     "rdfs:label": "scoringLogic",
     "schema:domainIncludes": [
         {
@@ -16,9 +17,8 @@
         {
             "@id": "reproschema:Activity"
         }
-
     ],
     "schema:rangeIncludes": {
-        "@id": "schema:Text"
+        "@id": "reproschema:ScoringLogic"
     }
 }

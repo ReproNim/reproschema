@@ -24,9 +24,6 @@
             },
             "schema:rangeIncludes": {
                 "@id": "schema:Text"
-            },
-            "schema:sameAs": {
-                "@id": "http://www.w3.org/2004/02/skos/core#prefLabel"
             }
         },
         {
@@ -38,7 +35,7 @@
             "rdfs:comment": "A description of the item.",
             "rdfs:label": "description",
             "schema:domainIncludes": {
-                "@id": "schema:Thing"
+                "@id": "reproschema:Field"
             },
             "schema:rangeIncludes": {
                 "@id": "schema:Text"
@@ -59,10 +56,7 @@
                 {
                     "@id": "schema:URL"
                 }
-            ],
-            "schema:sameAs": {
-                "@id": "https://schema.org/schemaVersion"
-            }
+            ]
         },
         {
             "@id": "schema:version",
@@ -79,10 +73,7 @@
                 {
                     "@id": "schema:URL"
                 }
-            ],
-            "schema:sameAs": {
-                "@id": "https://schema.org/version"
-            }
+            ]
         },
         {
             "@id": "reproterms:preamble",
@@ -94,9 +85,6 @@
             },
             "schema:rangeIncludes": {
                 "@id": "schema:Text"
-            },
-            "schema:sameAs": {
-                "@id": "reproterms:preamble"
             }
         },
         {
@@ -109,9 +97,6 @@
             },
             "schema:rangeIncludes": {
                 "@id": "schema:Text"
-            },
-            "schema:sameAs": {
-                "@id": "https://schema.org/question"
             }
         },
         {
@@ -123,31 +108,25 @@
                 "@id": "reproschema:Field"
             },
             "schema:rangeIncludes": {
-                "@id": "schema:text"
-            },
-            "schema:sameAs": {
-                "@id": "reproterms:inputType"
+                "@id": "schema:Text"
             }
         },
         {
-            "@id": "reproterms:readOnly",
+            "@id": "schema:readonlyValue",
             "@type": "rdf:Property",
-            "rdfs:comment": "An element( by Boolean) to indicate a readOnly Field. ",
-            "rdfs:label": "readOnly",
+            "rdfs:comment": "Whether or not a property is mutable. Default is false. Specifying this for a property that also has a value makes it act similar to a \"hidden\" input in an HTML form.",
+            "rdfs:label": "readonlyValue",
             "schema:domainIncludes": {
-                "@id": "reproschema:Field"
+                "@id": "schema:PropertyValueSpecification"
             },
             "schema:rangeIncludes": {
                 "@id": "schema:Boolean"
-            },
-            "schema:sameAs": {
-                "@id": "reproterms:readOnly"
             }
         },
         {
             "@id": "schema:isPartOf",
             "@type": "rdf:Property",
-            "rdfs:comment": "Indicates an item that this item is part of.",
+            "rdfs:comment": "Indicates an item or CreativeWork that this item, or CreativeWork (in some sense), is part of.",
             "rdfs:label": "isPartOf",
             "schema:domainIncludes": {
                 "@id": "reproterms:Field"
@@ -162,10 +141,7 @@
                 {
                     "@id": "schema:URL"
                 }
-            ],
-            "schema:sameAs": {
-                "@id": "schema:isPartOf"
-            }
+            ]
         },
         {
             "@id": "reproterms:responseOptions",
@@ -182,24 +158,17 @@
                 {
                     "@id": "schema:URL"
                 }
-            ],
-            "schema:sameAs": {
-                "@id": "reproschema:responseOptions"
-            }
+            ]
         },
         {
-            "@id": "http://schema.org/associatedMedia",
+            "@id": "schema:associatedMedia",
             "@type": "rdf:Property",
-            "schema:domainIncludes": [
-                {
-                    "@id": "http://schema.org/CreativeWork"
-                }
-            ],
-            "schema:rangeIncludes": [
-                {
-                    "@id": "http://schema.org/MediaObject"
-                }
-            ],
+            "schema:domainIncludes": {
+                "@id": "reproschema:Field"
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:MediaObject"
+            },
             "rdfs:comment": "A media object that encodes this CreativeWork. This property is a synonym for encoding.",
             "rdfs:label": "associatedMedia"
         },

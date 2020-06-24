@@ -4,21 +4,24 @@
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
         "schema": "http://schema.org/",
         "reproschema": "https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/",
-	    "reproterms": "https://raw.githubusercontent.com/ReproNim/reproschema/master/terms/"
+        "reproterms": "https://raw.githubusercontent.com/ReproNim/reproschema/master/terms/"
     },
-    "@id": "responseOptions",
+    "@id": "choices",
     "@type": "rdf:Property",
-    "rdfs:comment": "An element (object or by URL)to describe the properties of response of the Field item.",
-    "rdfs:label": "responseOptions",
+    "rdfs:comment": "An array to list the available options in responseOptions of the Field item.",
+    "rdfs:label": "choices",
     "schema:domainIncludes": {
-        "@id": "reproschema:Field"
+        "@id": "reproschema:ResponseOptions"
     },
     "schema:rangeIncludes": [
         {
-            "@id": "reproschema:ResponseOptions"
+        "@id": "reproschema:Choices"
         },
         {
             "@id": "schema:URL"
         }
-    ]
+    ],
+    "schema:sameAs": {
+        "@id": "schema:itemListElement"
+    }
 }

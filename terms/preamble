@@ -1,9 +1,33 @@
 {
     "@context": {
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "schema": "http://schema.org/",
+        "reproschema": "https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/",
+        "reproterms": "https://raw.githubusercontent.com/ReproNim/reproschema/master/terms/"
     },
-    "@type": "rdfs:Class",
+    "@type": "rdf:Property",
     "@id": "preamble",
     "rdfs:comment": "The preamble for an assessment",
-    "rdfs:label": "preamble"
+    "rdfs:label": "preamble",
+    "schema:domainIncludes": [
+        {
+            "@id": "reproschema:Protocol"
+        },
+        {
+            "@id": "reproschema:Activity"
+        },
+        {
+            "@id": "reproschema:Field"
+        }
+    ],
+    "schema:rangeIncludes": [
+        {
+            "@id": "schema:Text"
+        },
+        {
+            "@id": "rdf:langString"
+        }
+    ]
 }
+

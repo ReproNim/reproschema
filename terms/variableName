@@ -1,9 +1,24 @@
 {
     "@context": {
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "schema": "http://schema.org/",
+        "reproschema": "https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/",
+	    "reproterms": "https://raw.githubusercontent.com/ReproNim/reproschema/master/terms/"
     },
     "@id": "variableName",
-    "@type": "rdfs:property",
-    "rdfs:comment": "An element to describe the variable name used.",
-    "rdfs:label": "variableName"
+    "@type": "rdf:Property",
+    "rdfs:comment": "The name used to represent an item.",
+    "rdfs:label": "variableName",
+    "schema:domainIncludes": [
+        {
+            "@id": "reproschema:ScoringLogic"
+        },
+        {
+            "@id": "reproschema:AddProperties"
+        }
+    ],
+    "schema:rangeIncludes": {
+        "@id": "schema:Text"
+    }
 }

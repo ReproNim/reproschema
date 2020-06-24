@@ -84,6 +84,7 @@
             "@id": "reproterms:requiredValue",
             "@type": "schema:Boolean"
         },
+        "valueRequired": "https://schema.org/valueRequired",
         "multipleChoice": {
             "@id": "reproterms:multipleChoice",
             "@type": "schema:Boolean"
@@ -120,16 +121,6 @@
             "@type": "schema:Boolean",
             "@nest": "ui"
         },
-        "activity_display_name": {
-            "@id": "reproterms:activity_display_name",
-            "@type": "schema:alternateName",
-            "@nest": "ui"
-        },
-        "displayNameMap": {
-            "@id": "reproterms:displayNameMap",
-            "@type": "schema:alternateName",
-            "@nest": "ui"
-        },
         "inputOptions": {
             "@id": "reproterms:inputs",
             "@container": "@index",
@@ -145,42 +136,13 @@
             "@type": "xsd:boolean",
             "@nest": "ui"
         },
-        "headerLevel": {
-            "@id": "reproterms:headerLevel",
-            "@type": "xsd:int",
-            "@nest": "ui"
-        },
-        "headers": {
-            "@id": "reproterms:tableheaders",
-            "@container": "@list",
-            "@nest": "ui"
-        },
-        "rows": {
-            "@id": "reproterms:tablerows",
-            "@container": "@list",
-            "@type": "@vocab",
-            "@nest": "ui"
-        },
+        "readonlyValue": "https://schema.org/readonlyValue",
         "scoringLogic": {
             "@id": "reproterms:scoringLogic",
             "@container": "@index"
         },
-        "scoring_logic": {
-            "@id": "reproterms:scoring_logic",
-            "@container": "@index"
-        },
         "jsExpression": {
             "@id": "reproterms:jsExpression"
-        },
-        "visibility": {
-            "@id": "reproterms:visibility",
-            "@container": "@index",
-            "@nest": "ui"
-        },
-        "vis": {
-            "@id": "reproterms:vis",
-            "@container": "@index",
-            "@nest": "ui"
         },
         "isVis": {
             "@id": "reproterms:isVis"
@@ -190,15 +152,7 @@
             "@container": "@index",
             "@nest": "ui"
         },
-        "variableMap": {
-            "@id": "reproterms:variableMap",
-            "@container": "@index"
-        },
         "variableName": "reproterms:variableName",
-        "alternateName": {
-            "@id": "schema:alternateName",
-            "@container": "@language"
-        },
         "isAbout": {
             "@id": "reproterms:isAbout",
             "@type": "@id"
@@ -209,19 +163,12 @@
             "@type": "@id",
             "@nest": "ui"
         },
-        "addAllow": {
-            "@id": "reproterms:addAllow",
-            "@container": "@index",
-            "@nest": "ui"
-        },
-        "skipped": "reproterms:refused_to_answer",
-        "dontKnow": "reproterms:dont_know_answer",
-        "timedOut": "reproterms:timed_out",
-        "fullScreen": "reproterms:full_screen",
-        "autoAdvance": "reproterms:auto_advance",
-        "disableBack": "reproterms:disable_back",
-        "allowExport": "reproterms:allow_export",
-        "media": "reproterms:media",
+        "skipped": "reproterms:Skipped",
+        "dontKnow": "reproterms:DontKnow",
+        "timedOut": "reproterms:TimedOut",
+        "autoAdvance": "reproterms:AutoAdvance",
+        "disableBack": "reproterms:DisableBack",
+        "allowExport": "reproterms:AllowExport",
         "timer": {
             "@id": "reproterms:timer",
             "@type": "@id",
@@ -232,9 +179,6 @@
             "@type": "@id",
             "@nest": "ui"
         },
-        "method": "schema:httpMethod",
-        "url": "schema:url",
-        "payload": "reproterms:payload",
         "importedFrom": {
             "@id": "pav:importedFrom",
             "@type": "@id"
