@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/ReproNim/reproschema.svg?branch=master)](https://travis-ci.org/ReproNim/reproschema)
+![Python package](https://github.com/ReproNim/reproschema/workflows/Python%20package/badge.svg)
 
 # Schema Standardization
 
