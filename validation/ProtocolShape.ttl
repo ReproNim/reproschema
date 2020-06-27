@@ -5,8 +5,8 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dash: <http://datashapes.org/dash#> .
-@prefix reproterms: <https://raw.githubusercontent.com/ReproNim/reproschema/master/terms/> .
-@prefix reproschema: <https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/> .
+@prefix reproterms: <http://schema.repronim.org/terms/> .
+@prefix reproschema: <http://schema.repronim.org/schemas/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 
@@ -52,7 +52,7 @@ reproschema:ProtocolShape
     ] ;
     sh:property [
         sh:path reproterms:scoringLogic ;
-        sh:node reproterms:ScoringShape ;
+        sh:node reproschema:ScoringShape ;
         sh:maxCount 1 ;
     ] ;
     sh:property [
@@ -67,7 +67,7 @@ reproschema:ProtocolShape
     ] ;
     sh:property [
         sh:path reproterms:addProperties ;
-        sh:node reproterms:AddPropertiesShape ;
+        sh:node reproschema:AddPropertiesShape ;
     ] ;
     sh:property [
         sh:path reproterms:shuffle ;
@@ -83,7 +83,7 @@ reproschema:ProtocolShape
         ]
     ] .
 
-reproterms:AddPropertiesShape
+reproschema:AddPropertiesShape
     a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
@@ -99,14 +99,14 @@ reproterms:AddPropertiesShape
     ] ;
     sh:property [
         sh:path reproterms:isVis ;
-        sh:or ( [ sh:datatype rdf:langString ] [ sh:datatype xsd:boolean ] [ sh:node reproterms:IsVisShape ]) ;
+        sh:or ( [ sh:datatype rdf:langString ] [ sh:datatype xsd:boolean ] [ sh:node reproschema:IsVisShape ]) ;
     ] ;
     sh:property [
         sh:path skos:prefLabel ;
         sh:datatype rdf:langString ;
     ] .
 
-reproterms:IsVisShape
+reproschema:IsVisShape
     a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
@@ -123,7 +123,7 @@ reproterms:IsVisShape
         sh:datatype rdf:langString ;
     ] .
 
-reproterms:ScoringShape
+reproschema:ScoringShape
     a sh:NodeShape ;
     sh:closed true ;
     sh:property [

@@ -6,8 +6,8 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dash: <http://datashapes.org/dash#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix reproterms: <https://raw.githubusercontent.com/ReproNim/reproschema/master/terms/> .
-@prefix reproschema: <https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/> .
+@prefix reproterms: <http://schema.repronim.org/terms/> .
+@prefix reproschema: <http://schema.repronim.org/schemas/> .
 
 reproschema:FieldShape
     a sh:NodeShape ;
@@ -61,10 +61,10 @@ reproschema:FieldShape
     ] ;
    sh:property [
         sh:path reproterms:responseOptions ;
-        sh:node reproterms:ResponseOptionsShape ;
+        sh:node reproschema:ResponseOptionsShape ;
    ] .
 
-reproterms:ResponseOptionsShape
+reproschema:ResponseOptionsShape
     a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
@@ -86,10 +86,10 @@ reproterms:ResponseOptionsShape
     ] ;
     sh:property [
         sh:path schema:itemListElement ;
-        sh:node schema:ChoicesShape ;
+        sh:node reproschema:ChoicesShape ;
     ] .
 
-schema:ChoicesShape
+reproschema:ChoicesShape
     a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
