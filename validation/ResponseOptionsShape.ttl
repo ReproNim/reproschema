@@ -1,0 +1,76 @@
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix reproterms: <http://schema.repronim.org/terms/> .
+@prefix reproschema: <http://schema.repronim.org/schemas/> .
+
+reproschema:ResponseOptionsShape
+    a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:targetClass reproschema:ResponseOptions ;
+    sh:property [
+        sh:path reproterms:valueType;
+        sh:nodeKind sh:IRI ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path schema:minValue ;
+        sh:datatype xsd:integer ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path schema:maxValue ;
+        sh:datatype xsd:integer ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path reproterms:multipleChoice;
+        sh:datatype schema:Boolean ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path reproterms:datumType ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path schema:unitCode ;
+        sh:or ( [ sh:datatype schema:URL ] [ sh:datatype rdf:langString ] ) ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path schema:itemListElement ;
+        sh:node reproschema:ChoicesShape ;
+    ] .
+
+
+reproschema:ChoicesShape
+    a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [
+        sh:path schema:name ;
+        sh:datatype rdf:langString ;
+    ] ;
+    sh:property [
+        sh:path schema:value ;
+        sh:datatype xsd:integer ;
+    ] ;
+    sh:property [
+        sh:path schema:image ;
+        sh:datatype xsd:string ;
+    ] ;
+    sh:property [
+        sh:path reproterms:dontKnow ;
+        sh:nodeKind sh:IRI ;
+    ] ;
+    sh:property [
+        sh:path reproterms:skipped ;
+        sh:nodeKind sh:IRI ;
+    ] .
