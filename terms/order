@@ -1,21 +1,15 @@
 {
-    "@context": {
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "schema": "http://schema.org/",
-        "reproschema": "https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/",
-	    "reproterms": "https://raw.githubusercontent.com/ReproNim/reproschema/master/terms/"
-    },
+    "@context": "../contexts/base",
     "@id": "order",
     "@type": "rdf:Property",
     "rdfs:comment": "An ordered list to describe the order in which the items of an assessment or protocol appear in the user interface.",
     "rdfs:label": "order",
     "schema:domainIncludes": [
         {
-            "@id": "reproschema:Protocol"
+            "@id": "../schemas/Protocol"
         },
         {
-            "@id": "reproschema:Activity"
+            "@id": "../schemas/Activity"
         }
     ],
     "schema:rangeIncludes": {

@@ -1,18 +1,5 @@
 {
-    "@context": {
-        "dct": "http://purl.org/dc/terms/",
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "rdfa": "http://www.w3.org/ns/rdfa#",
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "schema": "http://schema.org/",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "skos": "http://www.w3.org/2004/02/skos/core#",
-        "prov": "http://www.w3.org/ns/prov#",
-        "nidm": "http://purl.org/nidash/nidm#",
-        "reproterms": "https://raw.githubusercontent.com/ReproNim/reproschema/master/terms/",
-        "reproschema": "https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/"
-    },
+    "@context": "../contexts/base",
     "@graph": [
         {
             "@id": "skos:prefLabel",
@@ -20,7 +7,7 @@
             "rdfs:comment": "Indicates the label of the Field.",
             "rdfs:label": "prefLabel",
             "schema:domainIncludes": {
-                "@id": "reproschema:Field"
+                "@id": "Field"
             },
             "schema:rangeIncludes": {
                 "@id": "schema:Text"
@@ -35,7 +22,7 @@
             "rdfs:comment": "A description of the item.",
             "rdfs:label": "description",
             "schema:domainIncludes": {
-                "@id": "reproschema:Field"
+                "@id": "Field"
             },
             "schema:rangeIncludes": {
                 "@id": "schema:Text"
@@ -47,7 +34,7 @@
             "rdfs:comment": "Indicates (by URL or string) a particular version of the reproschema.",
             "rdfs:label": "schemaVersion",
             "schema:domainIncludes": {
-                "@id": "reproschema:Field"
+                "@id": "Field"
             },
             "schema:rangeIncludes": [
                 {
@@ -64,7 +51,7 @@
             "rdfs:comment": "Indicates (by URL or string) a particular version of the item.",
             "rdfs:label": "version",
             "schema:domainIncludes": {
-                "@id": "reproschema:Field"
+                "@id": "Field"
             },
             "schema:rangeIncludes": [
                 {
@@ -76,12 +63,12 @@
             ]
         },
         {
-            "@id": "reproterms:preamble",
+            "@id": "../terms/preamble",
             "@type": "rdf:Property",
             "rdfs:comment": "The preamble for the Field item.",
             "rdfs:label": "preamble",
             "schema:domainIncludes": {
-                "@id": "reproschema:Field"
+                "@id": "Field"
             },
             "schema:rangeIncludes": {
                 "@id": "schema:Text"
@@ -93,19 +80,19 @@
             "rdfs:comment": "The text displayed for the item.",
             "rdfs:label": "question",
             "schema:domainIncludes": {
-                "@id": "reproschema:Field"
+                "@id": "Field"
             },
             "schema:rangeIncludes": {
                 "@id": "schema:Text"
             }
         },
         {
-            "@id": "reproterms:inputType",
+            "@id": "../terms/inputType",
             "@type": "rdf:Property",
             "rdfs:comment": "An element to describe the input type of the Field item.",
             "rdfs:label": "inputType",
             "schema:domainIncludes": {
-                "@id": "reproschema:Field"
+                "@id": "Field"
             },
             "schema:rangeIncludes": {
                 "@id": "schema:Text"
@@ -117,7 +104,7 @@
             "rdfs:comment": "Whether or not a property is mutable. Default is false. Specifying this for a property that also has a value makes it act similar to a \"hidden\" input in an HTML form.",
             "rdfs:label": "readonlyValue",
             "schema:domainIncludes": {
-                "@id": "schema:PropertyValueSpecification"
+                "@id": "Field"
             },
             "schema:rangeIncludes": {
                 "@id": "schema:Boolean"
@@ -129,14 +116,14 @@
             "rdfs:comment": "Indicates an item or CreativeWork that this item, or CreativeWork (in some sense), is part of.",
             "rdfs:label": "isPartOf",
             "schema:domainIncludes": {
-                "@id": "reproterms:Field"
+                "@id": "Field"
             },
             "schema:inverseOf": {
               "@id": "schema:hasPart"
             },
             "schema:rangeIncludes": [
                 {
-                    "@id": "reproschema:Activity"
+                    "@id": "Activity"
                 },
                 {
                     "@id": "schema:URL"
@@ -144,16 +131,16 @@
             ]
         },
         {
-            "@id": "reproterms:responseOptions",
+            "@id": "../terms/responseOptions",
             "@type": "rdf:Property",
             "rdfs:comment": "An element (object or by URL)to describe the properties of response of the Field item.",
             "rdfs:label": "responseOptions",
             "schema:domainIncludes": {
-                "@id": "reproschema:Field"
+                "@id": "Field"
             },
             "schema:rangeIncludes": [
                 {
-                    "@id": "reproschema:ResponseOptions"
+                    "@id": "ResponseOptions"
                 },
                 {
                     "@id": "schema:URL"
@@ -164,7 +151,7 @@
             "@id": "schema:associatedMedia",
             "@type": "rdf:Property",
             "schema:domainIncludes": {
-                "@id": "reproschema:Field"
+                "@id": "Field"
             },
             "schema:rangeIncludes": {
                 "@id": "schema:MediaObject"
@@ -173,7 +160,7 @@
             "rdfs:label": "associatedMedia"
         },
         {
-            "@id": "reproschema:Field",
+            "@id": "Field",
             "@type": [
                 "rdfs:Class",
                 "prov:Entity",
@@ -182,7 +169,7 @@
             "rdfs:comment": "An item in an assessment.",
             "rdfs:label": "Field",
             "rdfs:subClassOf": {
-                "@id": "http://schema.org/CreativeWork"
+                "@id": "schema:CreativeWork"
             }
         }
     ]

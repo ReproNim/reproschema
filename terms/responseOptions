@@ -1,21 +1,15 @@
 {
-    "@context": {
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "schema": "http://schema.org/",
-        "reproschema": "https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/",
-	    "reproterms": "https://raw.githubusercontent.com/ReproNim/reproschema/master/terms/"
-    },
+    "@context": "../contexts/base",
     "@id": "responseOptions",
     "@type": "rdf:Property",
     "rdfs:comment": "An element (object or by URL)to describe the properties of response of the Field item.",
     "rdfs:label": "responseOptions",
     "schema:domainIncludes": {
-        "@id": "reproschema:Field"
+        "@id": "../schemas/Field"
     },
     "schema:rangeIncludes": [
         {
-            "@id": "reproschema:ResponseOptions"
+            "@id": "../schemas/ResponseOptions"
         },
         {
             "@id": "schema:URL"

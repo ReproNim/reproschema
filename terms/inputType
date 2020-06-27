@@ -1,20 +1,15 @@
 {
-    "@context": {
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "schema": "http://schema.org/",
-        "reproschema": "https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/"
-    },
+    "@context": "../contexts/base",
     "@id": "inputType",
     "@type": "rdf:Property",
     "rdfs:comment": "An element to describe the input type of a Field item.",
     "rdfs:label": "inputType",
     "schema:domainIncludes": [
         {
-            "@id": "reproschema:Activity"
+            "@id": "../schemas/Activity"
         },
         {
-            "@id": "reproschema:Field"
+            "@id": "../schemas/Field"
         }
     ],
     "schema:rangeIncludes": {

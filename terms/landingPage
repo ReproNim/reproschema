@@ -1,17 +1,11 @@
 {
-    "@context": {
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "schema": "http://schema.org/",
-        "reproschema": "https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/",
-	    "reproterms": "https://raw.githubusercontent.com/ReproNim/reproschema/master/terms/"
-    },
+    "@context": "../contexts/base",
     "@type": "rdf:Property",
     "@id": "landingPage",
     "rdfs:comment": "An element (by URL) to point to the protocol readme or landing page.",
     "rdfs:label": "landing page",
     "schema:domainIncludes": {
-        "@id": "reproschema:Protocol"
+        "@id": "../schemas/Protocol"
     },
     "schema:rangeIncludes": {
         "@id": "schema:URL"

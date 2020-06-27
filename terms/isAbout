@@ -1,29 +1,20 @@
 {
-    "@context": {
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "schema": "http://schema.org/",
-        "reproschema": "https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/",
-	    "reproterms": "https://raw.githubusercontent.com/ReproNim/reproschema/master/terms/"
-    },
+    "@context": "../contexts/base",
     "@id": "isAbout",
     "@type": "rdf:Property",
     "rdfs:comment": "An element to define (by URL) the corresponding nodes.",
     "rdfs:label": "isAbout",
     "schema:domainIncludes": [
         {
-            "@id": "reproschema:Protocol"
-        },
-        {
-            "@id": "reproschema:Activity"
+            "@id": "../schemas/AddProperties"
         }
     ],
     "schema:rangeIncludes": [
         {
-            "@id": "reproschema:Activity"
+            "@id": "../schemas/Activity"
         },
         {
-            "@id": "reproschema:Field"
+            "@id": "../schemas/Field"
         }
     ]
 }

@@ -1,36 +1,25 @@
 {
-    "@context": {
-        "dct": "http://purl.org/dc/terms/",
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "rdfa": "http://www.w3.org/ns/rdfa#",
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "schema": "http://schema.org/",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "skos": "http://www.w3.org/2004/02/skos/core#",
-        "reproterms": "https://raw.githubusercontent.com/ReproNim/reproschema/master/terms/",
-        "reproschema": "https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/"
-    },
+    "@context": "../contexts/base",
     "@graph": [
         {
-            "@id": "reproterms:variableName",
+            "@id": "../terms/variableName",
             "@type": "rdf:Property",
             "rdfs:comment": "The name used to represent an item.",
             "rdfs:label": "variableName",
             "schema:domainIncludes": {
-                "@id": "reproschema:ScoringLogic"
+                "@id": "ScoringLogic"
             },
             "schema:rangeIncludes": {
                 "@id": "schema:Text"
             }
         },
         {
-            "@id": "reproterms:jsExpression",
+            "@id": "../terms/jsExpression",
             "@type": "rdf:Property",
             "rdfs:comment": "An element (string or boolean) to represent boolean logic for score.",
             "rdfs:label": "jsExpression",
             "schema:domainIncludes": {
-                "@id": "reproschema:ScoringLogic"
+                "@id": "ScoringLogic"
             },
             "schema:rangeIncludes": [
                 {
@@ -42,7 +31,7 @@
             ]
         },
         {
-            "@id": "reproschema:ScoringLogic",
+            "@id": "ScoringLogic",
             "@type": "rdfs:Class",
             "rdfs:comment": "An array of objects indicating score in an activity or protocol and the score Field item ",
             "rdfs:label": "ScoringLogic"
