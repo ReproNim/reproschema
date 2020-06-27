@@ -27,4 +27,4 @@ jobs:
     - name: Test with pyshacl
       run: |
         python tests/jsonParser.py
-        python tests/validate.py
+        reproschema -l DEBUG validate --shapedir validation examples
