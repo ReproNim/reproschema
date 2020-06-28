@@ -1,12 +1,9 @@
 {
     "@context": "../contexts/base",
-    "@id": "jsExpression",
+    "@id": "reproschema:jsExpression",
     "@type": "rdf:Property",
-    "rdfs:comment": "An element (string or boolean) to represent boolean logic for score.",
-    "rdfs:label": "jsExpression",
-    "schema:domainIncludes": {
-        "@id": "../schemas/ScoringLogic"
-    },
+    "rdfs:comment": "A JavaScript expression to compute a score from other variables.",
+    "rdfs:label": "JavaScript Expression",
     "schema:rangeIncludes": [
         {
             "@id": "schema:Text"

@@ -1,15 +1,12 @@
 {
     "@context": "../contexts/base",
-    "@id": "responseOptions",
+    "@id": "reproschema:responseOptions",
     "@type": "rdf:Property",
     "rdfs:comment": "An element (object or by URL)to describe the properties of response of the Field item.",
-    "rdfs:label": "responseOptions",
-    "schema:domainIncludes": {
-        "@id": "../schemas/Field"
-    },
+    "rdfs:label": "Response options",
     "schema:rangeIncludes": [
         {
-            "@id": "../schemas/ResponseOptions"
+            "@id": "reproschema:ResponseOption"
         },
         {
             "@id": "schema:URL"

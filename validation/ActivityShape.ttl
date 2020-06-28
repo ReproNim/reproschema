@@ -5,8 +5,7 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dash: <http://datashapes.org/dash#> .
-@prefix reproterms: <http://schema.repronim.org/terms/> .
-@prefix reproschema: <http://schema.repronim.org/schemas/> .
+@prefix reproschema: <http://schema.repronim.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 
@@ -37,15 +36,15 @@ reproschema:ActivityShape
         sh:minCount 1 ;
     ] ;
     sh:property [
-        sh:path reproterms:preamble;
+        sh:path reproschema:preamble;
         sh:datatype rdf:langString ;
     ] ;
     sh:property [
-        sh:path reproterms:scoringLogic ;
+        sh:path reproschema:scoringLogic ;
         sh:node reproschema:ScoringShape ;
     ] ;
     sh:property [
-        sh:path reproterms:order ;
+        sh:path reproschema:order ;
         sh:node dash:ListShape ;
         sh:maxCount 1 ;
         sh:property [
@@ -55,19 +54,19 @@ reproschema:ActivityShape
         ]
     ] ;
     sh:property [
-        sh:path reproterms:addProperties ;
+        sh:path reproschema:addProperties ;
         sh:node reproschema:AddPropertiesShape ;
     ] ;
     sh:property [
-        sh:path reproterms:inputType ;
+        sh:path reproschema:inputType ;
         sh:datatype xsd:string ;
     ] ;
     sh:property [
-        sh:path reproterms:shuffle ;
+        sh:path reproschema:shuffle ;
         sh:datatype schema:Boolean ;
     ] ;
     sh:property [
-        sh:path reproterms:allow ;
+        sh:path reproschema:allow ;
         sh:node dash:ListShape ;
         sh:maxCount 1 ;
         sh:property [
@@ -82,21 +81,21 @@ reproschema:AddPropertiesShape
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:property [
-        sh:path reproterms:variableName ;
+        sh:path reproschema:variableName ;
         sh:datatype rdf:langString ;
         sh:minCount 1 ;
     ] ;
     sh:property [
-        sh:path reproterms:isAbout ;
+        sh:path reproschema:isAbout ;
         sh:nodeKind sh:IRI ;
         sh:minCount 1 ;
     ] ;
     sh:property [
-        sh:path reproterms:requiredValue ;
+        sh:path reproschema:requiredValue ;
         sh:datatype schema:Boolean ;
     ] ;
     sh:property [
-        sh:path reproterms:isVis ;
+        sh:path reproschema:isVis ;
         sh:or ( [ sh:datatype rdf:langString ] [ sh:datatype xsd:boolean ] [ sh:node reproschema:IsVisShape ]) ;
     ] ;
     sh:property [
@@ -108,13 +107,13 @@ reproschema:ScoringShape
     a sh:NodeShape ;
     sh:closed true ;
     sh:property [
-        sh:path reproterms:variableName ;
+        sh:path reproschema:variableName ;
         sh:datatype rdf:langString ;
         sh:minCount 1 ;
         sh:maxCount 1 ;
     ] ;
     sh:property [
-        sh:path reproterms:jsExpression ;
+        sh:path reproschema:jsExpression ;
         sh:datatype rdf:langString ;
         sh:minCount 1 ;
         sh:maxCount 1 ;
@@ -133,6 +132,6 @@ reproschema:IsVisShape
         sh:datatype rdf:langString ;
     ] ;
     sh:property [
-        sh:path reproterms:payload ;
+        sh:path reproschema:payload ;
         sh:datatype rdf:langString ;
     ] .

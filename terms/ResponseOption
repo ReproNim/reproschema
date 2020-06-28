@@ -2,107 +2,52 @@
     "@context": "../contexts/base",
     "@graph": [
         {
-            "@id": "../terms/valueType",
-            "@type": "rdf:Property",
-            "rdfs:comment": "An element to describe the value type of the response for the Field item.",
-            "rdfs:label": "valueType",
+            "@id": "reproschema:valueType",
             "schema:domainIncludes": {
-                "@id": "ResponseOptions"
-            },
-            "schema:rangeIncludes": {
-                "@id": "schema:text"
+                "@id": "reproschema:ResponseOption"
             }
         },
         {
             "@id": "schema:minValue",
-            "@type": "rdf:Property",
-            "rdfs:comment": "Indicates the lower value of the response for the Field item.",
-            "rdfs:label": "minValue",
             "schema:domainIncludes": {
-                "@id": "ResponseOptions"
-            },
-            "schema:rangeIncludes": {
-                "@id": "schema:Number"
+                "@id": "reproschema:ResponseOption"
             }
         },
         {
             "@id": "schema:maxValue",
-            "@type": "rdf:Property",
-            "rdfs:comment": "Indicates the upper value of the response for the Field item.",
-            "rdfs:label": "maxValue",
             "schema:domainIncludes": {
-                "@id": "ResponseOptions"
-            },
-            "schema:rangeIncludes": {
-                "@id": "schema:Number"
+                "@id": "reproschema:ResponseOption"
             }
         },
         {
-            "@id": "../terms/multipleChoice",
-            "@type": "rdf:Property",
-            "rdfs:comment": "Indicates (by bool) if response for the Field item is a multiple choice type.",
-            "rdfs:label": "multipleChoice",
+            "@id": "reproschema:multipleChoice",
             "schema:domainIncludes": {
-                "@id": "ResponseOptions"
-            },
-            "schema:rangeIncludes": {
-                "@id": "schema:Boolean"
+                "@id": "reproschema:ResponseOption"
             }
         },
         {
-            "@id": "../terms/datumType",
-            "@type": "rdf:Property",
-            "rdfs:comment": "Indicates what type of datum the response is (e.g. range,count,scalar etc.) for the Field item.",
-            "rdfs:label": "datumType",
+            "@id": "reproschema:datumType",
             "schema:domainIncludes": {
-                "@id": "ResponseOptions"
-            },
-            "schema:rangeIncludes": {
-                "@id": "schema:Text"
+                "@id": "reproschema:ResponseOption"
             }
         },
         {
             "@id": "schema:unitCode",
-            "@type": "rdf:Property",
-            "rdfs:comment": "The unit of measurement given using the UN/CEFACT Common Code (3 characters) or a URL. Other codes than the UN/CEFACT Common Code may be used with a prefix followed by a colon.",
-            "rdfs:label": "unitCode",
             "schema:domainIncludes": {
-                "@id": "ResponseOptions"
-            },
-            "http://schema.org/rangeIncludes": [
-                {
-                    "@id": "schema:URL"
-                },
-                {
-                    "@id": "schema:Text"
-                }
-            ]
-        },
-        {
-            "@id": "../terms/choices",
-            "@type": "rdf:Property",
-            "rdfs:comment": "An array to list the available options in responseOptions of the Field item.",
-            "rdfs:label": "choices",
-            "schema:domainIncludes": {
-                "@id": "ResponseOptions"
-            },
-            "schema:rangeIncludes": [
-                {
-                "@id": "Choices"
-                },
-                {
-                    "@id": "schema:URL"
-                }
-            ],
-            "schema:sameAs": {
-                "@id": "schema:itemListElement"
+                "@id": "reproschema:ResponseOption"
             }
         },
         {
-            "@id": "ResponseOptions",
+            "@id": "reproschema:choices",
+            "schema:domainIncludes": {
+                "@id": "reproschema:ResponseOption"
+            }
+        },
+        {
+            "@id": "reproschema:ResponseOption",
             "@type": "rdfs:Class",
             "rdfs:comment": "An element (object or by URL)to describe the properties of response of the Field item.",
-            "rdfs:label": "ResponseOptions"
+            "rdfs:label": "Response option"
         }
     ]
 }

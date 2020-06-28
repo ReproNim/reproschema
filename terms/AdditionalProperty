@@ -2,50 +2,29 @@
     "@context": "../contexts/base",
     "@graph": [
         {
-            "@id": "../terms/variableName",
-            "@type": "rdf:Property",
-            "rdfs:comment": "The name used to represent an item.",
-            "rdfs:label": "variableName",
-            "schema:domainIncludes": [
-                {
-                    "@id": "AddProperties"
-                }
-            ],
-            "schema:rangeIncludes": {
-                "@id": "schema:Text"
+            "@id": "reproschema:variableName",
+            "schema:domainIncludes": {
+               "@id": "reproschema:AdditionalProperty"
             }
         },
         {
-            "@id": "../terms/isAbout",
-            "@type": "rdf:Property",
-            "rdfs:comment": "An element to define (by URL) the corresponding nodes.",
-            "rdfs:label": "isAbout",
-            "schema:domainIncludes": [
-                {
-                    "@id": "AddProperties"
-                }
-            ],
+            "@id": "reproschema:isAbout",
+            "schema:domainIncludes": {
+               "@id": "reproschema:AdditionalProperty"
+            }
             "schema:rangeIncludes": [
                 {
-                    "@id": "Activity"
+                    "@id": "reproschema:Activity"
                 },
                 {
-                    "@id": "Field"
+                    "@id": "reproschema:Field"
                 }
             ]
         },
         {
             "@id": "schema:valueRequired",
-            "@type": "rdf:Property",
-            "rdfs:comment": "Whether the property must be filled in to complete the action.  Default is false.",
-            "rdfs:label": "valueRequired",
-            "schema:domainIncludes": [
-                {
-                    "@id": "AddProperties"
-                }
-            ],
-            "schema:rangeIncludes": {
-                "@id": "schema:Boolean"
+            "schema:domainIncludes": {
+               "@id": "reproschema:AdditionalProperty"
             }
         },
         {
@@ -53,36 +32,21 @@
             "@type": "rdf:Property",
             "rdfs:comment": "Indicates the label of an Activity or Field to be used as display name.",
             "rdfs:label": "prefLabel",
-            "schema:domainIncludes": [
-                {
-                    "@id": "AddProperties"
-                }
-            ],
+            "schema:domainIncludes": {
+               "@id": "reproschema:AdditionalProperty"
+            },
             "schema:rangeIncludes": {
                 "@id": "schema:Text"
             }
         },
         {
-            "@id": "../terms/isVis",
-            "@type": "rdf:Property",
-            "rdfs:comment": "An element to describe (by bool or conditional statement) visibility conditions of items in an assessment.",
-            "rdfs:label": "isVis",
-            "schema:domainIncludes": [
-                {
-                    "@id": "AddProperties"
-                }
-            ],
-            "schema:rangeIncludes": [
-                {
-                    "@id": "schema:Boolean"
-                },
-                {
-                    "@id": "schema:Text"
-                }
-            ]
+            "@id": "reproschema:isVis",
+            "schema:domainIncludes": {
+               "@id": "reproschema:AdditionalProperty"
+            }
         },
         {
-            "@id": "AddProperties",
+            "@id": "reproschema:AdditionalProperty",
             "@type": "rdfs:Class",
             "rdfs:comment": "An object to describe the various properties added to assessments and fields.",
             "rdfs:label": "Additional properties"

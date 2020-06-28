@@ -2,8 +2,6 @@
     "@context": [ "base",
         {
             "@version": 1.1,
-            "reproterms": "http://schema.repronim.org/terms/",
-            "reproschema": "http://schema.repronim.org/schemas/",
             "@language": "en",
             "schema:description": {
                 "@container": "@language"
@@ -53,15 +51,15 @@
                 "@container": "@language"
             },
             "preamble": {
-                "@id": "reproterms:preamble",
+                "@id": "reproschema:preamble",
                 "@container": "@language"
             },
             "valueType": {
-                "@id": "reproterms:valueType",
+                "@id": "reproschema:valueType",
                 "@type": "@vocab"
             },
             "landingPage": {
-                "@id": "reproterms:landingPage",
+                "@id": "reproschema:landingPage",
                 "@container": "@language"
             },
             "question": {
@@ -76,16 +74,16 @@
                 "@type": "@id"
             },
             "requiredValue": {
-                "@id": "reproterms:requiredValue",
+                "@id": "reproschema:requiredValue",
                 "@type": "schema:Boolean"
             },
             "valueRequired": "https://schema.org/valueRequired",
             "multipleChoice": {
-                "@id": "reproterms:multipleChoice",
+                "@id": "reproschema:multipleChoice",
                 "@type": "schema:Boolean"
             },
             "responseOptions": {
-                "@id": "reproterms:responseOptions",
+                "@id": "reproschema:responseOptions",
                 "@type": "@vocab"
             },
             "dataType": {
@@ -100,77 +98,77 @@
             },
             "ui" : "@nest",
             "order": {
-                "@id": "reproterms:order",
+                "@id": "reproschema:order",
                 "@container": "@list",
                 "@type": "@id",
                 "@nest": "ui"
             },
             "addProperties": {
-                "@id": "reproterms:addProperties",
+                "@id": "reproschema:addProperties",
                 "@type": "reproschema:AddProperties",
                 "@container": "@set",
                 "@nest": "ui"
             },
             "shuffle": {
-                "@id": "reproterms:shuffle",
+                "@id": "reproschema:shuffle",
                 "@type": "schema:Boolean",
                 "@nest": "ui"
             },
             "inputOptions": {
-                "@id": "reproterms:inputs",
+                "@id": "reproschema:inputs",
                 "@container": "@index",
                 "@nest": "ui"
             },
             "inputType": {
-                "@id": "reproterms:inputType",
+                "@id": "reproschema:inputType",
                 "@type": "xsd:string",
                 "@nest": "ui"
             },
             "readOnly": {
-                "@id": "reproterms:readOnly",
+                "@id": "reproschema:readOnly",
                 "@type": "xsd:boolean",
                 "@nest": "ui"
             },
             "readonlyValue": "https://schema.org/readonlyValue",
             "scoringLogic": {
-                "@id": "reproterms:scoringLogic",
+                "@id": "reproschema:scoringLogic",
                 "@container": "@index"
             },
             "jsExpression": {
-                "@id": "reproterms:jsExpression"
+                "@id": "reproschema:jsExpression"
             },
             "isVis": {
-                "@id": "reproterms:isVis"
+                "@id": "reproschema:isVis"
             },
             "required": {
-                "@id": "reproterms:required",
+                "@id": "reproschema:required",
                 "@container": "@index",
                 "@nest": "ui"
             },
-            "variableName": "reproterms:variableName",
+            "variableName": "reproschema:variableName",
             "isAbout": {
-                "@id": "reproterms:isAbout",
+                "@id": "reproschema:isAbout",
                 "@type": "@id"
             },
             "allow": {
-                "@id": "reproterms:allow",
+                "@id": "reproschema:allow",
                 "@container": "@list",
                 "@type": "@id",
                 "@nest": "ui"
             },
-            "skipped": "reproterms:Skipped",
-            "dontKnow": "reproterms:DontKnow",
-            "timedOut": "reproterms:TimedOut",
-            "autoAdvance": "reproterms:AutoAdvance",
-            "disableBack": "reproterms:DisableBack",
-            "allowExport": "reproterms:AllowExport",
+            "skipped": "reproschema:Skipped",
+            "dontKnow": "reproschema:DontKnow",
+            "timedOut": "reproschema:TimedOut",
+            "autoAdvance": "reproschema:AutoAdvance",
+            "disableBack": "reproschema:DisableBack",
+            "allowExport": "reproschema:AllowExport",
             "timer": {
-                "@id": "reproterms:timer",
+                "@id": "reproschema:timer",
                 "@type": "@id",
                 "@nest": "ui"
             },
             "delay": {
-                "@id": "reproterms:delay",
+                "@id": "reproschema:delay",
                 "@type": "@id",
                 "@nest": "ui"
             },
@@ -192,7 +190,7 @@
             },
             "createdOn": {
                 "@id": "pav:createdOn",
-                "@type": "@id"
+                "@type": "date"
             },
             "previousVersion": {
                 "@id": "pav:previousVersion",
@@ -200,10 +198,10 @@
             },
             "lastUpdateOn": {
                 "@id": "pav:lastUpdateOn",
-                "@type": "@id"
+                "@type": "date"
             },
             "derivedFrom": {
-                "@id": "pav:derivedFrom",
+                "@id": "prov:wasDerivedFrom",
                 "@type": "@id"
             }
         }

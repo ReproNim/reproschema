@@ -1,18 +1,18 @@
 {
     "@context": "../contexts/base",
-    "@id": "order",
+    "@id": "reproschema:order",
     "@type": "rdf:Property",
     "rdfs:comment": "An ordered list to describe the order in which the items of an assessment or protocol appear in the user interface.",
-    "rdfs:label": "order",
-    "schema:domainIncludes": [
+    "rdfs:label": "Order",
+    "schema:rangeIncludes": [
         {
-            "@id": "../schemas/Protocol"
+            "@id": "reproschema:Activity"
         },
         {
-            "@id": "../schemas/Activity"
+            "@id": "reproschema:Field"
+        },
+        {
+            "@id": "schema:URL"
         }
-    ],
-    "schema:rangeIncludes": {
-        "@id": "schema:URL"
-    }
+    ]
 }

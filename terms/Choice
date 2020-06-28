@@ -3,76 +3,35 @@
     "@graph": [
         {
             "@id": "schema:image",
-            "@type": "rdf:Property",
-            "rdfs:comment": "An image of the item. This can be a <a class=\"localLink\" href=\"http://schema.org/URL\">URL</a> or a fully described <a class=\"localLink\" href=\"http://schema.org/ImageObject\">ImageObject</a>.",
-            "rdfs:label": "image",
             "schema:domainIncludes": {
-                "@id": "Choices"
-            },
-            "schema:rangeIncludes": [
-                {
-                "@id": "schema:ImageObject"
-                },
-                {
-                "@id": "schema:URL"
-                }
-            ]
+                "@id": "reproschema:Choice"
+            }
         },
         {
             "@id": "schema:name",
-            "@type": "rdf:Property",
-            "rdfs:comment": "An element to describe the name of each choice option in responseOptions of the Field item.",
-            "rdfs:label": "name",
-            "owl:equivalentProperty": {
-                "@id": "dct:title"
-            },
             "schema:domainIncludes": {
-                "@id": "Choices"
-            },
-            "schema:rangeIncludes": {
-                "@id": "schema:Text"
-            },
-            "rdfs:subPropertyOf": {
-                "@id": "rdfs:label"
+                "@id": "reproschema:Choice"
             }
         },
         {
             "@id": "schema:value",
-            "@type": "rdf:Property",
-            "rdfs:comment": "An element to describe the numerical value of a choice in responseOptions of the Field item.",
-            "rdfs:label": "value",
             "schema:domainIncludes": {
-                "@id": "Choices"
-            },
+                "@id": "reproschema:Choice"
+            }
             "schema:rangeIncludes": [
                 {
-                    "@id": "schema:Boolean"
+                    "@id": "reproschema:Skipped"
                 },
                 {
-                    "@id": "schema:StructuredValue"
-                },
-                {
-                    "@id": "schema:Number"
-                },
-                {
-                    "@id": "schema:Text"
-                },
-                {
-                    "@id": "../terms/Skipped"
-                },
-                {
-                    "@id": "../terms/DontKnow"
+                    "@id": "reproschema:DontKnow"
                 }
-            ],
-            "schema:source": {
-                "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms"
-            }
+            ]
         },
         {
-            "@id": "Choices",
+            "@id": "reproschema:Choice",
             "@type": "rdfs:Class",
             "rdfs:comment": "An array to list the available options in responseOptions of the Field item.",
-            "rdfs:label": "Choices"
+            "rdfs:label": "Response choice"
         }
     ]
 }

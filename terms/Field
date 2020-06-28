@@ -7,7 +7,7 @@
             "rdfs:comment": "Indicates the label of the Field.",
             "rdfs:label": "prefLabel",
             "schema:domainIncludes": {
-                "@id": "Field"
+                "@id": "reproschema:Field"
             },
             "schema:rangeIncludes": {
                 "@id": "schema:Text"
@@ -15,152 +15,75 @@
         },
         {
             "@id": "schema:description",
-            "@type": "rdf:Property",
-            "owl:equivalentProperty": {
-                "@id": "dct:description"
-            },
-            "rdfs:comment": "A description of the item.",
-            "rdfs:label": "description",
             "schema:domainIncludes": {
-                "@id": "Field"
-            },
-            "schema:rangeIncludes": {
-                "@id": "schema:Text"
+                "@id": "reproschema:Field"
             }
         },
         {
             "@id": "schema:schemaVersion",
-            "@type": "rdf:Property",
-            "rdfs:comment": "Indicates (by URL or string) a particular version of the reproschema.",
-            "rdfs:label": "schemaVersion",
             "schema:domainIncludes": {
-                "@id": "Field"
-            },
-            "schema:rangeIncludes": [
-                {
-                    "@id": "schema:Text"
-                },
-                {
-                    "@id": "schema:URL"
-                }
-            ]
+                "@id": "reproschema:Field"
+            }            
         },
         {
             "@id": "schema:version",
-            "@type": "rdf:Property",
-            "rdfs:comment": "Indicates (by URL or string) a particular version of the item.",
-            "rdfs:label": "version",
             "schema:domainIncludes": {
-                "@id": "Field"
-            },
-            "schema:rangeIncludes": [
-                {
-                    "@id": "schema:Text"
-                },
-                {
-                    "@id": "schema:URL"
-                }
-            ]
+                "@id": "reproschema:Field"
+            }
         },
         {
-            "@id": "../terms/preamble",
-            "@type": "rdf:Property",
-            "rdfs:comment": "The preamble for the Field item.",
-            "rdfs:label": "preamble",
+            "@id": "reproschema:preamble",
             "schema:domainIncludes": {
-                "@id": "Field"
-            },
-            "schema:rangeIncludes": {
-                "@id": "schema:Text"
+                "@id": "reproschema:Field"
             }
         },
         {
             "@id": "schema:question",
-            "@type": "rdf:Property",
-            "rdfs:comment": "The text displayed for the item.",
-            "rdfs:label": "question",
             "schema:domainIncludes": {
-                "@id": "Field"
-            },
-            "schema:rangeIncludes": {
-                "@id": "schema:Text"
+                "@id": "reproschema:Field"
             }
         },
         {
-            "@id": "../terms/inputType",
-            "@type": "rdf:Property",
-            "rdfs:comment": "An element to describe the input type of the Field item.",
-            "rdfs:label": "inputType",
+            "@id": "reproschema:inputType",
             "schema:domainIncludes": {
-                "@id": "Field"
-            },
-            "schema:rangeIncludes": {
-                "@id": "schema:Text"
+                "@id": "reproschema:Field"
             }
         },
         {
             "@id": "schema:readonlyValue",
-            "@type": "rdf:Property",
-            "rdfs:comment": "Whether or not a property is mutable. Default is false. Specifying this for a property that also has a value makes it act similar to a \"hidden\" input in an HTML form.",
-            "rdfs:label": "readonlyValue",
             "schema:domainIncludes": {
-                "@id": "Field"
-            },
-            "schema:rangeIncludes": {
-                "@id": "schema:Boolean"
+                "@id": "reproschema:Field"
             }
         },
         {
             "@id": "schema:isPartOf",
-            "@type": "rdf:Property",
-            "rdfs:comment": "Indicates an item or CreativeWork that this item, or CreativeWork (in some sense), is part of.",
-            "rdfs:label": "isPartOf",
             "schema:domainIncludes": {
-                "@id": "Field"
+                "@id": "reproschema:Field"
             },
-            "schema:inverseOf": {
-              "@id": "schema:hasPart"
-            },
-            "schema:rangeIncludes": [
-                {
-                    "@id": "Activity"
-                },
-                {
-                    "@id": "schema:URL"
-                }
-            ]
+            "schema:rangeIncludes": {
+                "@id": "reproschema:Activity"
+            }
         },
         {
-            "@id": "../terms/responseOptions",
-            "@type": "rdf:Property",
-            "rdfs:comment": "An element (object or by URL)to describe the properties of response of the Field item.",
-            "rdfs:label": "responseOptions",
+            "@id": "reproschema:responseOptions",
             "schema:domainIncludes": {
-                "@id": "Field"
-            },
-            "schema:rangeIncludes": [
-                {
-                    "@id": "ResponseOptions"
-                },
-                {
-                    "@id": "schema:URL"
-                }
-            ]
+                "@id": "reproschema:Field"
+            }
         },
         {
             "@id": "schema:associatedMedia",
-            "@type": "rdf:Property",
             "schema:domainIncludes": {
-                "@id": "Field"
-            },
-            "schema:rangeIncludes": {
-                "@id": "schema:MediaObject"
-            },
-            "rdfs:comment": "A media object that encodes this CreativeWork. This property is a synonym for encoding.",
-            "rdfs:label": "associatedMedia"
+                "@id": "reproschema:Field"
+            }
         },
         {
-            "@id": "Field",
+            "@id": "schema:about",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Field"
+            }
+        },
+        {
+            "@id": "reproschema:Field",
             "@type": [
                 "rdfs:Class",
                 "prov:Entity",

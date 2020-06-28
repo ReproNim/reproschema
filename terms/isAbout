@@ -1,20 +1,15 @@
 {
     "@context": "../contexts/base",
-    "@id": "isAbout",
+    "@id": "reproschema:isAbout",
     "@type": "rdf:Property",
     "rdfs:comment": "An element to define (by URL) the corresponding nodes.",
     "rdfs:label": "isAbout",
-    "schema:domainIncludes": [
-        {
-            "@id": "../schemas/AddProperties"
-        }
-    ],
     "schema:rangeIncludes": [
         {
-            "@id": "../schemas/Activity"
+            "@id": "reproschema:Activity"
         },
         {
-            "@id": "../schemas/Field"
+            "@id": "reproschema:Field"
         }
     ]
 }

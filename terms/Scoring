@@ -2,39 +2,28 @@
     "@context": "../contexts/base",
     "@graph": [
         {
-            "@id": "../terms/variableName",
+            "@id": "reproschema:variableName",
             "@type": "rdf:Property",
             "rdfs:comment": "The name used to represent an item.",
             "rdfs:label": "variableName",
             "schema:domainIncludes": {
-                "@id": "ScoringLogic"
+                "@id": "reproschema:Scoring"
             },
             "schema:rangeIncludes": {
                 "@id": "schema:Text"
             }
         },
         {
-            "@id": "../terms/jsExpression",
-            "@type": "rdf:Property",
-            "rdfs:comment": "An element (string or boolean) to represent boolean logic for score.",
-            "rdfs:label": "jsExpression",
+            "@id": "reproschema:jsExpression",
             "schema:domainIncludes": {
-                "@id": "ScoringLogic"
-            },
-            "schema:rangeIncludes": [
-                {
-                    "@id": "schema:Text"
-                },
-                {
-                    "@id": "schema:Boolean"
-                }
-            ]
+                "@id": "reproschema:Scoring"
+            }
         },
         {
-            "@id": "ScoringLogic",
+            "@id": "reproschema:Scoring",
             "@type": "rdfs:Class",
-            "rdfs:comment": "An array of objects indicating score in an activity or protocol and the score Field item ",
-            "rdfs:label": "ScoringLogic"
+            "rdfs:comment": "An object indicating score in an activity or protocol and the score Field item ",
+            "rdfs:label": "Scoring logic"
         }
     ]
 }

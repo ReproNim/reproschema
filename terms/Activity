@@ -6,169 +6,75 @@
             "@type": "rdf:Property",
             "rdfs:comment": "The preferred name of the assessment.",
             "rdfs:label": "prefLabel",
-            "schema:domainIncludes": [
-                {
-                    "@id": "Protocol"
-                },
-                {
-                    "@id": "Activity"
-                },
-                {
-                    "@id": "Field"
-                }
-            ],
+            "schema:domainIncludes": {
+                    "@id": "reproschema:Activity"
+            },
             "schema:rangeIncludes": {
                 "@id": "schema:Text"
             }
         },
         {
             "@id": "schema:description",
-            "@type": "rdf:Property",
-            "owl:equivalentProperty": {
-                "@id": "dct:description"
-            },
-            "rdfs:comment": "A description of the item.",
-            "rdfs:label": "description",
             "schema:domainIncludes": {
-                "@id": "Activity"
-            },
-            "schema:rangeIncludes": {
-                "@id": "schema:Text"
+                "@id": "reproschema:Activity"
             }
         },
         {
             "@id": "schema:schemaVersion",
-            "@type": "rdf:Property",
-            "rdfs:comment": "Indicates (by URL or string) a particular version of a schema used in some CreativeWork. For example, a document could declare a schemaVersion using an URL such as http://schema.org/version/2.0/ if precise indication of schema version was required by some application.",
-            "rdfs:label": "schemaVersion",
             "schema:domainIncludes": {
-                "@id": "Activity"
-            },
-            "schema:rangeIncludes": [
-                {
-                    "@id": "schema:Text"
-                },
-                {
-                    "@id": "schema:URL"
-                }
-            ]
+                "@id": "reproschema:Activity"
+            }
         },
         {
             "@id": "schema:version",
-            "@type": "rdf:Property",
-            "rdfs:comment": "The version of the CreativeWork embodied by a specified resource.",
-            "rdfs:label": "version",
             "schema:domainIncludes": {
-                "@id": "Activity"
-            },
-            "schema:rangeIncludes": [
-                {
-                    "@id": "schema:Text"
-                },
-                {
-                    "@id": "schema:Number"
-                }
-            ]
+                "@id": "reproschema:Activity"
+            }
         },
         {
             "@id": "schema:citation",
-            "@type": "rdf:Property",
-            "rdfs:comment": "A citation or reference to another creative work, such as another publication, web page, scholarly article, etc.",
-            "rdfs:label": "citation",
             "schema:domainIncludes": {
-                "@id": "Activity"
-            },
-            "schema:rangeIncludes": [
-                {
-                    "@id": "schema:Text"
-                },
-                {
-                    "@id": "schema:CreativeWork"
-                }
-            ]
+                "@id": "reproschema:Activity"
+            }
         },
         {
-            "@id": "../terms/preamble",
-            "@type": "rdf:Property",
-            "rdfs:comment": "The preamble for the instrument.",
-            "rdfs:label": "preamble",
+            "@id": "reproschema:preamble",
             "schema:domainIncludes": {
-                "@id": "Activity"
-            },
-            "schema:rangeIncludes": {
-                "@id": "schema:Text"
+                "@id": "reproschema:Activity"
             }
         },
         {
-            "@id": "../terms/order",
-            "@type": "rdf:Property",
-            "rdfs:comment": "An array to describe the order in which the Fields of an instrument appear in the ui. It represents a list of node ids of the items and not the variable names.",
-            "rdfs:label": "order",
-            "schema:domainIncludes": [
-                {
-                    "@id": "Protocol"
-                },
-                {
-                    "@id": "Activity"
-                }
-            ],
-            "schema:rangeIncludes": {
-                "@id": "schema:URL"
+            "@id": "reproschema:order",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Activity"
             }
         },
         {
-            "@id": "../terms/shuffle",
-            "@type": "rdf:Property",
-            "rdfs:comment": "An element (bool) to determine if the list of items is shuffled or in order.",
-            "rdfs:label": "shuffle",
-            "schema:domainIncludes": [
-                {
-                    "@id": "Protocol"
-                },
-                {
-                    "@id": "Activity"
-                }
-            ],
-            "schema:rangeIncludes": {
-                "@id": "schema:boolean"
+            "@id": "reproschema:shuffle",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Activity"
             }
         },
         {
-            "@id": "../terms/addProperties",
-            "@type": "rdf:Property",
-            "rdfs:comment": "An array of objects to describe the various properties added to assessments and fields.",
-            "rdfs:label": "addProperties",
-            "schema:domainIncludes": [
-                {
-                    "@id": "Protocol"
-                },
-                {
-                    "@id": "Activity"
-                }
-            ],
-            "schema:rangeIncludes": {
-                "@id": "AddProperties"
+            "@id": "reproschema:addProperties",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Activity"
             }
         },
         {
-            "@id": "../terms/scoringLogic",
-            "@type": "rdf:Property",
-            "rdfs:comment": "An array of objects indicating score in an activity or protocol and the score Field item ",
-            "rdfs:label": "scoringLogic",
-            "schema:domainIncludes": [
-                {
-                    "@id": "Protocol"
-                },
-                {
-                    "@id": "Activity"
-                }
-            ],
-            "schema:rangeIncludes": {
-                "@id": "ScoringLogic"
+            "@id": "reproschema:scoringLogic",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Activity"
             }
         },
         {
-            "@id": "Activity",
+            "@id": "schema:about",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Activity"
+            }
+        },
+        {
+            "@id": "reproschema:Activity",
             "@type": [
                 "rdfs:Class",
                 "prov:Entity",

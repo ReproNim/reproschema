@@ -1,18 +1,10 @@
 {
     "@context": "../contexts/base",
-    "@id": "scoringLogic",
+    "@id": "reproschema:scoringLogic",
     "@type": "rdf:Property",
     "rdfs:comment": "An array of objects indicating score in an activity or protocol and maps it to the score Field item ",
-    "rdfs:label": "scoringLogic",
-    "schema:domainIncludes": [
-        {
-            "@id": "../schemas/Protocol"
-        },
-        {
-            "@id": "../schemas/Activity"
-        }
-    ],
+    "rdfs:label": "Scoring logic objects",
     "schema:rangeIncludes": {
-        "@id": "../schemas/ScoringLogic"
+        "@id": "reproschema:Scoring"
     }
 }

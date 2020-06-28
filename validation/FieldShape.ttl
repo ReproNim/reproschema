@@ -6,8 +6,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dash: <http://datashapes.org/dash#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix reproterms: <http://schema.repronim.org/terms/> .
-@prefix reproschema: <http://schema.repronim.org/schemas/> .
+@prefix reproschema: <http://schema.repronim.org/> .
 
 reproschema:FieldShape
     a sh:NodeShape ;
@@ -44,23 +43,23 @@ reproschema:FieldShape
         sh:datatype rdf:langString ;
     ] ;
     sh:property [
-        sh:path reproterms:preamble;
+        sh:path reproschema:preamble;
         sh:datatype rdf:langString ;
         sh:maxCount 1 ;
     ] ;
     sh:property [
-        sh:path reproterms:inputType ;
+        sh:path reproschema:inputType ;
         sh:datatype xsd:string ;
         sh:maxCount 1 ;
         sh:minCount 1 ;
     ] ;
     sh:property [
-        sh:path reproterms:readOnly ;
+        sh:path reproschema:readOnly ;
         sh:datatype xsd:boolean ;
         sh:maxCount 1 ;
     ] ;
    sh:property [
-        sh:path reproterms:responseOptions ;
+        sh:path reproschema:responseOptions ;
         sh:node reproschema:ResponseOptionsShape ;
    ] .
 
@@ -69,7 +68,7 @@ reproschema:ResponseOptionsShape
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:property [
-        sh:path reproterms:multipleChoice ;
+        sh:path reproschema:multipleChoice ;
         sh:datatype schema:Boolean ;
     ] ;
     sh:property [
@@ -81,7 +80,7 @@ reproschema:ResponseOptionsShape
         sh:datatype xsd:integer ;
     ] ;
     sh:property [
-        sh:path reproterms:valueType ;
+        sh:path reproschema:valueType ;
         sh:nodeKind sh:IRI ;
     ] ;
     sh:property [
@@ -106,10 +105,10 @@ reproschema:ChoicesShape
         sh:datatype xsd:string ;
     ] ;
     sh:property [
-        sh:path reproterms:dontKnow ;
+        sh:path reproschema:dontKnow ;
         sh:nodeKind sh:IRI ;
     ] ;
     sh:property [
-        sh:path reproterms:skipped ;
+        sh:path reproschema:skipped ;
         sh:nodeKind sh:IRI ;
     ] .
