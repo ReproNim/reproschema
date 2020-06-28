@@ -1,18 +1,9 @@
 {
-	"@context": {
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "schema": "http://schema.org/",
-        "reproschema": "https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/",
-		"reproterms": "https://raw.githubusercontent.com/ReproNim/reproschema/master/terms/"
-    },
-    "@id": "jsExpression",
+    "@context": "../contexts/base",
+    "@id": "reproschema:jsExpression",
     "@type": "rdf:Property",
-    "rdfs:comment": "An element (string or boolean) to represent boolean logic for score.",
-    "rdfs:label": "jsExpression",
-    "schema:domainIncludes": {
-        "@id": "reproschema:ScoringLogic"
-    },
+    "rdfs:comment": "A JavaScript expression to compute a score from other variables.",
+    "rdfs:label": "JavaScript Expression",
     "schema:rangeIncludes": [
         {
             "@id": "schema:Text"

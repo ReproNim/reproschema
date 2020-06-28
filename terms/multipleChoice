@@ -1,18 +1,9 @@
 {
-    "@context": {
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "schema": "http://schema.org/",
-        "reproschema": "https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/",
-	    "reproterms": "https://raw.githubusercontent.com/ReproNim/reproschema/master/terms/"
-    },
-    "@id": "multipleChoice",
+    "@context": "../contexts/base",
+    "@id": "reproschema:multipleChoice",
     "@type": "rdf:Property",
     "rdfs:comment": "Indicates (by bool) if response for the Field item has one or more answer.",
-    "rdfs:label": "multipleChoice",
-    "schema:domainIncludes": {
-        "@id": "reproschema:ResponseOptions"
-    },
+    "rdfs:label": "Multiple choice response expectation",
     "schema:rangeIncludes": {
         "@id": "schema:Boolean"
     }

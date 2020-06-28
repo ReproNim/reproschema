@@ -1,0 +1,29 @@
+{
+    "@context": "../contexts/base",
+    "@graph": [
+        {
+            "@id": "reproschema:variableName",
+            "@type": "rdf:Property",
+            "rdfs:comment": "The name used to represent an item.",
+            "rdfs:label": "variableName",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Scoring"
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:Text"
+            }
+        },
+        {
+            "@id": "reproschema:jsExpression",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Scoring"
+            }
+        },
+        {
+            "@id": "reproschema:Scoring",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "An object indicating score in an activity or protocol and the score Field item ",
+            "rdfs:label": "Scoring logic"
+        }
+    ]
+}

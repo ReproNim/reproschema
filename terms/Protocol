@@ -1,0 +1,90 @@
+{
+    "@context": "../contexts/base",
+    "@graph": [
+        {
+            "@id": "skos:prefLabel",
+            "@type": "rdf:Property",
+            "rdfs:comment": "The preferred name of the assessment.",
+            "rdfs:label": "prefLabel",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Protocol"
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:Text"
+            }
+        },
+        {
+            "@id": "schema:description",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Protocol"
+            }
+        },
+        {
+            "@id": "schema:schemaVersion",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Protocol"
+            }
+        },
+        {
+            "@id": "schema:version",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Protocol"
+            }
+        },
+        {
+            "@id": "reproschema:order",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Protocol"
+            }
+        },
+        {
+            "@id": "reproschema:shuffle",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Protocol"
+            }
+        },
+        {
+            "@id": "reproschema:addProperties",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Protocol"
+            }
+        },
+        {
+            "@id": "reproschema:allow",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Protocol"
+            }
+        },
+        {
+            "@id": "reproschema:landingPage",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Protocol"
+            }
+        },
+        {
+            "@id": "reproschema:scoringLogic",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Protocol"
+            }
+        },
+        {
+            "@id": "schema:about",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Protocol"
+            }
+        },
+        {
+            "@id": "reproschema:Protocol",
+            "@type": [
+                "rdfs:Class",
+                "prov:Plan",
+                "prov:Entity"
+            ],
+            "rdfs:comment": "A representation of a study which comprises one or more assessments.",
+            "rdfs:label": "Protocol",
+            "rdfs:subClassOf": {
+                "@id": "http://schema.org/CreativeWork"
+            }
+        }
+    ]
+}

@@ -1,215 +1,209 @@
 {
-    "@context": {
-        "@version": 1.1,
-        "pav": "http://purl.org/pav/",
-        "prov": "http://www.w3.org/ns/prov#",
-        "nidm": "http://purl.org/nidash/nidm#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "skos": "http://www.w3.org/2004/02/skos/core#",
-        "reproterms": "https://raw.githubusercontent.com/ReproNim/reproschema/master/terms/",
-        "reproschema": "https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/",
-        "schema": "http://schema.org/",
-        "@language": "en",
-        "schema:description": {
-            "@container": "@language"
-        },
-        "description": {
-            "@id": "schema:description",
-            "@container": "@language"
-        },
-        "name": {
-            "@id": "schema:name",
-            "@container": "@language"
-        },
-        "value": {
-            "@id": "schema:value",
-            "@container": "@language"
-        },
-        "schema:name": {
-            "@container": "@language"
-        },
-        "schema:value": {
-            "@container": "@language"
-        },
-        "schema:image": {
-            "@type": "@vocab"
-        },
-        "schema:citation": {
-            "@container": "@language"
-        },
-        "schema:version": {
-            "@container": "@language"
-        },
-        "schema:schemaVersion": {
-            "@container": "@language"
-        },
-        "skos:prefLabel": {
-            "@container": "@language"
-        },
-        "skos:altLabel": {
-            "@container": "@language"
-        },
-        "prefLabel": {
-            "@id": "skos:prefLabel",
-            "@container": "@language"
-        },
-        "altLabel": {
-            "@id": "skos:altLabel",
-            "@container": "@language"
-        },
-        "preamble": {
-            "@id": "reproterms:preamble",
-            "@container": "@language"
-        },
-        "valueType": {
-            "@id": "reproterms:valueType",
-            "@type": "@vocab"
-        },
-        "landingPage": {
-            "@id": "reproterms:landingPage",
-            "@container": "@language"
-        },
-        "question": {
-            "@id": "schema:question",
-            "@container": "@language"
-        },
-        "choices": {
-            "@id": "schema:itemListElement"
-        },
-        "choiceUrl": {
-            "@id": "schema:DigitalDocument",
-            "@type": "@id"
-        },
-        "requiredValue": {
-            "@id": "reproterms:requiredValue",
-            "@type": "schema:Boolean"
-        },
-        "valueRequired": "https://schema.org/valueRequired",
-        "multipleChoice": {
-            "@id": "reproterms:multipleChoice",
-            "@type": "schema:Boolean"
-        },
-        "responseOptions": {
-            "@id": "reproterms:responseOptions",
-            "@type": "@vocab"
-        },
-        "dataType": {
-            "@id": "schema:DataType",
-            "@type": "@id"
-        },
-        "minValue": {
-            "@id": "schema:minValue"
-        },
-        "maxValue": {
-            "@id": "schema:maxValue"
-        },
-        "ui" : "@nest",
-        "order": {
-            "@id": "reproterms:order",
-            "@container": "@list",
-            "@type": "@id",
-            "@nest": "ui"
-        },
-        "addProperties": {
-            "@id": "reproterms:addProperties",
-            "@type": "reproschema:AddProperties",
-            "@container": "@set",
-            "@nest": "ui"
-        },
-        "shuffle": {
-            "@id": "reproterms:shuffle",
-            "@type": "schema:Boolean",
-            "@nest": "ui"
-        },
-        "inputOptions": {
-            "@id": "reproterms:inputs",
-            "@container": "@index",
-            "@nest": "ui"
-        },
-        "inputType": {
-            "@id": "reproterms:inputType",
-            "@type": "xsd:string",
-            "@nest": "ui"
-        },
-        "readOnly": {
-            "@id": "reproterms:readOnly",
-            "@type": "xsd:boolean",
-            "@nest": "ui"
-        },
-        "readonlyValue": "https://schema.org/readonlyValue",
-        "scoringLogic": {
-            "@id": "reproterms:scoringLogic",
-            "@container": "@index"
-        },
-        "jsExpression": {
-            "@id": "reproterms:jsExpression"
-        },
-        "isVis": {
-            "@id": "reproterms:isVis"
-        },
-        "required": {
-            "@id": "reproterms:required",
-            "@container": "@index",
-            "@nest": "ui"
-        },
-        "variableName": "reproterms:variableName",
-        "isAbout": {
-            "@id": "reproterms:isAbout",
-            "@type": "@id"
-        },
-        "allow": {
-            "@id": "reproterms:allow",
-            "@container": "@list",
-            "@type": "@id",
-            "@nest": "ui"
-        },
-        "skipped": "reproterms:Skipped",
-        "dontKnow": "reproterms:DontKnow",
-        "timedOut": "reproterms:TimedOut",
-        "autoAdvance": "reproterms:AutoAdvance",
-        "disableBack": "reproterms:DisableBack",
-        "allowExport": "reproterms:AllowExport",
-        "timer": {
-            "@id": "reproterms:timer",
-            "@type": "@id",
-            "@nest": "ui"
-        },
-        "delay": {
-            "@id": "reproterms:delay",
-            "@type": "@id",
-            "@nest": "ui"
-        },
-        "importedFrom": {
-            "@id": "pav:importedFrom",
-            "@type": "@id"
-        },
-        "importedBy": {
-            "@id": "pav:importedBy",
-            "@type": "@id"
-        },
-        "createdWith": {
-            "@id": "pav:createdWith",
-            "@type": "@id"
-        },
-        "createdBy": {
-            "@id": "pav:createdBy",
-            "@type": "@id"
-        },
-        "createdOn": {
-            "@id": "pav:createdOn",
-            "@type": "@id"
-        },
-        "previousVersion": {
-            "@id": "pav:previousVersion",
-            "@type": "@id"
-        },
-        "lastUpdateOn": {
-            "@id": "pav:lastUpdateOn",
-            "@type": "@id"
-        },
-        "derivedFrom": {
-            "@id": "pav:derivedFrom",
-            "@type": "@id"
+    "@context": [ "base",
+        {
+            "@version": 1.1,
+            "@language": "en",
+            "schema:description": {
+                "@container": "@language"
+            },
+            "description": {
+                "@id": "schema:description",
+                "@container": "@language"
+            },
+            "name": {
+                "@id": "schema:name",
+                "@container": "@language"
+            },
+            "value": {
+                "@id": "schema:value",
+                "@container": "@language"
+            },
+            "schema:name": {
+                "@container": "@language"
+            },
+            "schema:value": {
+                "@container": "@language"
+            },
+            "schema:image": {
+                "@type": "@vocab"
+            },
+            "schema:citation": {
+                "@container": "@language"
+            },
+            "schema:version": {
+                "@container": "@language"
+            },
+            "schema:schemaVersion": {
+                "@container": "@language"
+            },
+            "skos:prefLabel": {
+                "@container": "@language"
+            },
+            "skos:altLabel": {
+                "@container": "@language"
+            },
+            "prefLabel": {
+                "@id": "skos:prefLabel",
+                "@container": "@language"
+            },
+            "altLabel": {
+                "@id": "skos:altLabel",
+                "@container": "@language"
+            },
+            "preamble": {
+                "@id": "reproschema:preamble",
+                "@container": "@language"
+            },
+            "valueType": {
+                "@id": "reproschema:valueType",
+                "@type": "@vocab"
+            },
+            "landingPage": {
+                "@id": "reproschema:landingPage",
+                "@container": "@language"
+            },
+            "question": {
+                "@id": "schema:question",
+                "@container": "@language"
+            },
+            "choices": {
+                "@id": "schema:itemListElement"
+            },
+            "choiceUrl": {
+                "@id": "schema:DigitalDocument",
+                "@type": "@id"
+            },
+            "requiredValue": {
+                "@id": "reproschema:requiredValue",
+                "@type": "schema:Boolean"
+            },
+            "valueRequired": "https://schema.org/valueRequired",
+            "multipleChoice": {
+                "@id": "reproschema:multipleChoice",
+                "@type": "schema:Boolean"
+            },
+            "responseOptions": {
+                "@id": "reproschema:responseOptions",
+                "@type": "@vocab"
+            },
+            "dataType": {
+                "@id": "schema:DataType",
+                "@type": "@id"
+            },
+            "minValue": {
+                "@id": "schema:minValue"
+            },
+            "maxValue": {
+                "@id": "schema:maxValue"
+            },
+            "ui" : "@nest",
+            "order": {
+                "@id": "reproschema:order",
+                "@container": "@list",
+                "@type": "@id",
+                "@nest": "ui"
+            },
+            "addProperties": {
+                "@id": "reproschema:addProperties",
+                "@type": "reproschema:AddProperties",
+                "@container": "@set",
+                "@nest": "ui"
+            },
+            "shuffle": {
+                "@id": "reproschema:shuffle",
+                "@type": "schema:Boolean",
+                "@nest": "ui"
+            },
+            "inputOptions": {
+                "@id": "reproschema:inputs",
+                "@container": "@index",
+                "@nest": "ui"
+            },
+            "inputType": {
+                "@id": "reproschema:inputType",
+                "@type": "xsd:string",
+                "@nest": "ui"
+            },
+            "readOnly": {
+                "@id": "reproschema:readOnly",
+                "@type": "xsd:boolean",
+                "@nest": "ui"
+            },
+            "readonlyValue": "https://schema.org/readonlyValue",
+            "scoringLogic": {
+                "@id": "reproschema:scoringLogic",
+                "@container": "@index"
+            },
+            "jsExpression": {
+                "@id": "reproschema:jsExpression"
+            },
+            "isVis": {
+                "@id": "reproschema:isVis"
+            },
+            "required": {
+                "@id": "reproschema:required",
+                "@container": "@index",
+                "@nest": "ui"
+            },
+            "variableName": "reproschema:variableName",
+            "isAbout": {
+                "@id": "reproschema:isAbout",
+                "@type": "@id"
+            },
+            "allow": {
+                "@id": "reproschema:allow",
+                "@container": "@list",
+                "@type": "@id",
+                "@nest": "ui"
+            },
+            "skipped": "reproschema:Skipped",
+            "dontKnow": "reproschema:DontKnow",
+            "timedOut": "reproschema:TimedOut",
+            "autoAdvance": "reproschema:AutoAdvance",
+            "disableBack": "reproschema:DisableBack",
+            "allowExport": "reproschema:AllowExport",
+            "timer": {
+                "@id": "reproschema:timer",
+                "@type": "@id",
+                "@nest": "ui"
+            },
+            "delay": {
+                "@id": "reproschema:delay",
+                "@type": "@id",
+                "@nest": "ui"
+            },
+            "importedFrom": {
+                "@id": "pav:importedFrom",
+                "@type": "@id"
+            },
+            "importedBy": {
+                "@id": "pav:importedBy",
+                "@type": "@id"
+            },
+            "createdWith": {
+                "@id": "pav:createdWith",
+                "@type": "@id"
+            },
+            "createdBy": {
+                "@id": "pav:createdBy",
+                "@type": "@id"
+            },
+            "createdOn": {
+                "@id": "pav:createdOn",
+                "@type": "xsd:date"
+            },
+            "previousVersion": {
+                "@id": "pav:previousVersion",
+                "@type": "@id"
+            },
+            "lastUpdateOn": {
+                "@id": "pav:lastUpdateOn",
+                "@type": "xsd:date"
+            },
+            "derivedFrom": {
+                "@id": "prov:wasDerivedFrom",
+                "@type": "@id"
+            }
         }
-    }
+    ]
 }
