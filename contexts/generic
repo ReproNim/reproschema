@@ -3,9 +3,6 @@
         {
             "@version": 1.1,
             "@language": "en",
-            "schema:description": {
-                "@container": "@language"
-            },
             "description": {
                 "@id": "schema:description",
                 "@container": "@language"
@@ -18,28 +15,20 @@
                 "@id": "schema:value",
                 "@container": "@language"
             },
-            "schema:name": {
-                "@container": "@language"
-            },
-            "schema:value": {
-                "@container": "@language"
-            },
-            "schema:image": {
+            "image": {
+                "@id": "schema:image",
                 "@type": "@vocab"
             },
-            "schema:citation": {
+            "citation": {
+                "@id": "schema:citation",
                 "@container": "@language"
             },
-            "schema:version": {
+            "version": {
+                "@id": "schema:version",
                 "@container": "@language"
             },
-            "schema:schemaVersion": {
-                "@container": "@language"
-            },
-            "skos:prefLabel": {
-                "@container": "@language"
-            },
-            "skos:altLabel": {
+            "schemaVersion": {
+                "@id": "schema:schemaVersion",
                 "@container": "@language"
             },
             "prefLabel": {
@@ -68,14 +57,6 @@
             },
             "choices": {
                 "@id": "schema:itemListElement"
-            },
-            "choiceUrl": {
-                "@id": "schema:DigitalDocument",
-                "@type": "@id"
-            },
-            "requiredValue": {
-                "@id": "reproschema:requiredValue",
-                "@type": "schema:Boolean"
             },
             "valueRequired": "https://schema.org/valueRequired",
             "multipleChoice": {
@@ -124,12 +105,10 @@
                 "@type": "xsd:string",
                 "@nest": "ui"
             },
-            "readOnly": {
-                "@id": "reproschema:readOnly",
-                "@type": "xsd:boolean",
+            "readonlyValue": {
+                "@id": "https://schema.org/readonlyValue",
                 "@nest": "ui"
             },
-            "readonlyValue": "https://schema.org/readonlyValue",
             "scoringLogic": {
                 "@id": "reproschema:scoringLogic",
                 "@container": "@index"
@@ -156,12 +135,12 @@
                 "@type": "@id",
                 "@nest": "ui"
             },
-            "Skipped": "reproschema:Skipped",
-            "DontKnow": "reproschema:DontKnow",
-            "TimedOut": "reproschema:TimedOut",
-            "AutoAdvance": "reproschema:AutoAdvance",
-            "DisableBack": "reproschema:DisableBack",
-            "AllowExport": "reproschema:AllowExport",
+            "Skipped": {"@id": "reproschema:Skipped"},
+            "DontKnow": {"@id": "reproschema:DontKnow"},
+            "TimedOut": {"@id": "reproschema:TimedOut"},
+            "AutoAdvance": {"@id": "reproschema:AutoAdvance"},
+            "DisableBack": {"@id": "reproschema:DisableBack"},
+            "AllowExport": {"@id": "reproschema:AllowExport"},
             "timer": {
                 "@id": "reproschema:timer",
                 "@type": "@id",
