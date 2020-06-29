@@ -3,9 +3,6 @@
         {
             "@version": 1.1,
             "@language": "en",
-            "schema:description": {
-                "@container": "@language"
-            },
             "description": {
                 "@id": "schema:description",
                 "@container": "@language"
@@ -18,28 +15,20 @@
                 "@id": "schema:value",
                 "@container": "@language"
             },
-            "schema:name": {
-                "@container": "@language"
-            },
-            "schema:value": {
-                "@container": "@language"
-            },
-            "schema:image": {
+            "image": {
+                "@id": "schema:image",
                 "@type": "@vocab"
             },
-            "schema:citation": {
+            "citation": {
+                "@id": "schema:citation",
                 "@container": "@language"
             },
-            "schema:version": {
+            "version": {
+                "@id": "schema:version",
                 "@container": "@language"
             },
-            "schema:schemaVersion": {
-                "@container": "@language"
-            },
-            "skos:prefLabel": {
-                "@container": "@language"
-            },
-            "skos:altLabel": {
+            "schemaVersion": {
+                "@id": "schema:schemaVersion",
                 "@container": "@language"
             },
             "prefLabel": {
@@ -129,7 +118,10 @@
                 "@type": "xsd:boolean",
                 "@nest": "ui"
             },
-            "readonlyValue": "https://schema.org/readonlyValue",
+            "readonlyValue": {
+                "@id": "https://schema.org/readonlyValue",
+                "@nest": "ui"
+            },
             "scoringLogic": {
                 "@id": "reproschema:scoringLogic",
                 "@container": "@index"
