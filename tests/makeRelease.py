@@ -19,6 +19,8 @@ def create_release(version):
     with open("contexts/base") as fp:
         base_context = json.load(fp)
 
+    compacted = jsonld.compact(terms, ctx=base_context)
+
     g = rl.Graph()
     for key, val in base_context["@context"].items():
         if not key.startswith("@"):
@@ -27,8 +29,10 @@ def create_release(version):
 
     # write n-triples and turtle files
     os.makedirs(f"releases/{version}", exist_ok=True)
+    with open(f"releases/{version}/reproschema.jsonld", "w") as fp:
+        json.dump(compacted, fp, indent=2)
     with open(f"releases/{version}/reproschema.nt", "w") as fp:
-        fp.write(data) #g.serialize(format="nt").decode())
+        fp.write(data)
     with open(f"releases/{version}/reproschema.ttl", "w") as fp:
         fp.write(g.serialize(format="turtle").decode())
     return g
