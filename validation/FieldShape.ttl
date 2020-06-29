@@ -60,10 +60,10 @@ reproschema:FieldShape
     ] ;
    sh:property [
         sh:path reproschema:responseOptions ;
-        sh:node reproschema:ResponseOptionsShape ;
+        sh:node reproschema:ResponseOptionShape ;
    ] .
 
-reproschema:ResponseOptionsShape
+reproschema:ResponseOptionShape
     a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
@@ -85,10 +85,10 @@ reproschema:ResponseOptionsShape
     ] ;
     sh:property [
         sh:path schema:itemListElement ;
-        sh:node reproschema:ChoicesShape ;
+        sh:node reproschema:ChoiceShape ;
     ] .
 
-reproschema:ChoicesShape
+reproschema:ChoiceShape
     a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;

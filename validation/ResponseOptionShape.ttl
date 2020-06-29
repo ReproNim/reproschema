@@ -8,11 +8,11 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix reproschema: <http://schema.repronim.org/> .
 
-reproschema:ResponseOptionsShape
+reproschema:ResponseOptionShape
     a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
-    sh:targetClass reproschema:ResponseOptions ;
+    sh:targetClass reproschema:ResponseOption ;
     sh:property [
         sh:path reproschema:valueType;
         sh:nodeKind sh:IRI ;
