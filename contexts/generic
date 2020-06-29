@@ -131,16 +131,16 @@
             },
             "allow": {
                 "@id": "reproschema:allow",
-                "@container": "@list",
+                "@container": "@set",
                 "@type": "@id",
                 "@nest": "ui"
             },
-            "Skipped": {"@id": "reproschema:Skipped"},
-            "DontKnow": {"@id": "reproschema:DontKnow"},
-            "TimedOut": {"@id": "reproschema:TimedOut"},
-            "AutoAdvance": {"@id": "reproschema:AutoAdvance"},
-            "DisableBack": {"@id": "reproschema:DisableBack"},
-            "AllowExport": {"@id": "reproschema:AllowExport"},
+            "reproschema:Skipped": {"@id": "reproschema:Skipped"},
+            "reproschema:DontKnow": {"@id": "reproschema:DontKnow"},
+            "reproschema:TimedOut": {"@id": "reproschema:TimedOut"},
+            "reproschema:AutoAdvance": {"@id": "reproschema:AutoAdvance"},
+            "reproschema:DisableBack": {"@id": "reproschema:DisableBack"},
+            "reproschema:AllowExport": {"@id": "reproschema:AllowExport"},
             "timer": {
                 "@id": "reproschema:timer",
                 "@type": "@id",
@@ -169,7 +169,7 @@
             },
             "createdOn": {
                 "@id": "pav:createdOn",
-                "@type": "xsd:date"
+                "@type": "xsd:dateTime"
             },
             "previousVersion": {
                 "@id": "pav:previousVersion",
@@ -177,7 +177,7 @@
             },
             "lastUpdateOn": {
                 "@id": "pav:lastUpdateOn",
-                "@type": "xsd:date"
+                "@type": "xsd:dateTime"
             },
             "derivedFrom": {
                 "@id": "prov:wasDerivedFrom",

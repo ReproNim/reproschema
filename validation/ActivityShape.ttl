@@ -67,13 +67,7 @@ reproschema:ActivityShape
     ] ;
     sh:property [
         sh:path reproschema:allow ;
-        sh:node dash:ListShape ;
-        sh:maxCount 1 ;
-        sh:property [
-            sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
-            sh:nodeKind sh:IRI ;
-            sh:minCount 1 ;
-        ]
+        sh:nodeKind sh:IRI ;
     ] .
 
 reproschema:AddPropertiesShape
