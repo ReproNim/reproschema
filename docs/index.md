@@ -7,10 +7,9 @@ style="width: 350px; height: auto; display: block; margin-left: auto;  margin-ri
 
 ## How to use this documentation
 
-- [1.0: Introduction](#10-introduction)
+- If you want to know more about the Reproschema project, its goals and the problems it tries to solve: check out our [introduction](./01_introduction.md).
 
-## 1.0: Introduction
-Cognitive and clinical assessments are used throughout neuroscience, but little consistency exists in assessment data acquisition or response representation across studies. Harmonizing data after acquisition is resource intensive. Currently, the NIMH Data Archive (NDA) enforces harmonization during data submission. This approach can create a mismatch between collected and submitted data. Reverse engineering NDA data dictionaries to their original assessments using a tool like Brainverse can be tedious. To enforce consistency at the data acquisition stage, we created a standard schema and a set of reusable common assessments. The schema extends and modifies the CEDAR metadata representation. Using JSON-LD, we represent Items (elements of individual assessments) or Scores, Activities (individual assessments), and Protocols (collections of activities performed by a participant). An implementation of the schema  can specify scoring logic, branching logic, and user interface rendering options. The schema allows internationalization (multiple languages), is implementation agnostic, and tracks variations in assessments (e.g., PHQ-9, PHQ-8). This open and accessible schema library with appropriate conversion (e.g., to RedCap) and data collection tools (e.g., [MindLogger](https://mindlogger.org/), LORIS, RedCap) enables more consistent acquisition across projects, with results being harmonized by design.
+- The Reproschema is related to the `semantic web` and relies on `linked data` and the `JSON-LD` format. If you are unfamiliar with such things, head over to our [FAQ](./98_FAQ.md). You do not need an in depth understanding of what those things are to use the Reproschema but some "big picture" conceptual understanding could save you from a lot of confusion. 😉
 
 ## 2.0: Need for Standardizing assessments
 
@@ -30,4 +29,4 @@ We are looking for people to give us feedback on this documentation if anything 
 
 You can also get in touch on [our channel on the mattermost Brainhack](???).
 
-If you want to get started right away and contribut directly to this documentation,you can find references and how-to in the [about section](./100_about_this_doc.md).
+If you want to get started right away and contribute directly to this documentation,you can find references and how-to in the [about section](./100_about_this_doc.md).

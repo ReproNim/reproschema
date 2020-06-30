@@ -13,7 +13,7 @@
 
 ## The problem
 
-Cognitive and clinical questionnaires and assessments are used throughout neuroscience. Despite many efforts
+Cognitive and clinical questionnaires and assessments are used throughout neuroscience. Despite many efforts 
 ([Cognitive Atlas](https://www.cognitiveatlas.org/), [Cognitive Paradigm Ontology](http://www.cogpo.org/), [OOve](???)...)
 there is little consistency in assessment data acquisition or response representation across studies or laboratories. Each
 project tends to use its own format and data collection tool (paper, form, ...). In the long run, this can the source of a
@@ -62,8 +62,8 @@ With this schema we can represent:
 All those elements are specified text files in a `JSON-LD` format (JavaScript Object Notation for Linked Data) and each 
 `item`, `activity`, and `protocol` provides unique and persistent identifiers.
 
-Below we show an example of how the questionnaire with 3 question for a study could be organized with a `protocol` for 
-that study, one `activity` and 3 `items`.
+Below we show an example of one of the possible ways a questionnaire with 3 question for a study could be organized 
+with a `protocol` for that study, one `activity` and 3 `items`.
 
 ```json
 ├── activities
