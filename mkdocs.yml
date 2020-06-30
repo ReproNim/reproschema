@@ -1,1 +1,26 @@
-site_name: My Docs
+site_name: Reproschema documentation
+repo_name: "ReproNim/reproschema"
+repo_url: "https://github.com/ReproNim/reproschema"
+copyright: "CC-BY 4.0"
+
+# This will use Material them
+theme:
+  name: "material"
+  language: "en"
+  favicon: img/favicon.png
+  logo: img/favicon_on_white.png
+  palette:
+    primary: "dark blue"
+    accent: "light blue"
+
+# Pages
+nav:
+  - Welcome: "index.md"
+  - Introduction: "01_introduction.md"
+  - About this doc: "100_about_this_doc.md"
+
+# list of extension
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.critic
