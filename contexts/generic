@@ -12,12 +12,12 @@
                 "@container": "@language"
             },
             "value": {
-                "@id": "schema:value",
+                "@id": "reproschema:value",
                 "@container": "@language"
             },
             "image": {
                 "@id": "schema:image",
-                "@type": "@vocab"
+                "@type": "@id"
             },
             "citation": {
                 "@id": "schema:citation",
@@ -56,7 +56,7 @@
                 "@container": "@language"
             },
             "choices": {
-                "@id": "schema:itemListElement"
+                "@id": "reproschema:choices"
             },
             "valueRequired": "schema:valueRequired",
             "multipleChoice": {
@@ -77,6 +77,10 @@
             },
             "maxValue": {
                 "@id": "schema:maxValue"
+            },
+            "unitCode": {
+                "@id": "schema:unitCode",
+                "@container": "@set"
             },
             "ui" : "@nest",
             "order": {
