@@ -152,7 +152,6 @@ reproschema:ResponseOptionsShape a sh:NodeShape ;
             sh:path reproschema:multipleChoice ],
 
         [ sh:nodeKind sh:IRI ;
-            sh:maxCount 1 ;
             sh:path reproschema:valueType ],
 
         [ sh:datatype xsd:integer ;
@@ -171,7 +170,7 @@ reproschema:ResponseOptionsShape a sh:NodeShape ;
             sh:path schema:unitCode ],
 
         [ sh:node reproschema:ChoicesShape ;
-            sh:path schema:itemListElement ] ;
+            sh:path reproschema:choices ] ;
     sh:targetClass reproschema:ResponseOptions .
 
 reproschema:AddPropertiesShape a sh:NodeShape ;
@@ -209,8 +208,8 @@ reproschema:ChoicesShape a sh:NodeShape ;
         [ sh:datatype rdf:langString ;
             sh:path schema:name ],
 
-        [ sh:datatype xsd:integer ;
-            sh:path schema:value ] .
+        [ sh:or ( [ sh:datatype xsd:integer ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path reproschema:value ] .
 
 reproschema:IsVisShape a sh:NodeShape ;
     sh:closed true ;
