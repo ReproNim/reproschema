@@ -2,8 +2,6 @@
 
 ## What is the semantic web?
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/OGg8A2zfWKg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 When you request access to a certain document by clicking on a hyperlink, the computer will give a visual rendering of the html code of this document. But computer used to do that in pretty "silly" fashion: it would give you a human-readable version of the content, but the computer would not make the distinction if a certain element in the webpage (for example a paragraph) was referring to a person or a place or a song.
 
 What the semantic wed allows is to "inject" additional information into a webpage so that a machine can know what certain elements are about (e.g "*this image is about a cat.*") or how they are linked to other elements (on the same page or somewhere else on the web). The tagged content of a webpage thus acquires "meaning" from the point of view of the computer, making the semantic content of the code machine-readable. 
@@ -11,17 +9,17 @@ What the semantic wed allows is to "inject" additional information into a webpag
 ### More info
 
 - [wikipedia article on the semantic web](https://en.wikipedia.org/wiki/Semantic_Web)
+- A short video intro to the semantic web by Manu Sporny:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OGg8A2zfWKg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## What is linked data?
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4x_xzT5eF5Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### The theory
 
 The same way that an element in webpage could be given "meaning" by tagging with extra information about the nature of this element, the same can be done with data. Hence a given row on a spreadsheet stored somewhere on the web can be tagged and linked to another piece of data on another website.
 
 "*Linked data is a way to create a network of standards-based machine interpretable data across different documents and Web sites. It allows an application to start at one piece of Linked Data, and follow embedded links to other pieces of Linked Data that are hosted on different sites across the Web.*" [[source](https://w3c.github.io/json-ld-bp/#terminology)]
-
 
 Linked data has some basic principles behind it ([adapted from wikipedia](https://en.wikipedia.org/wiki/Linked_data)):
 
@@ -32,7 +30,7 @@ Linked data has some basic principles behind it ([adapted from wikipedia](https:
 
 ### A more concrete example
 
-As things might be be quite abstract, here is a simple example of linked data to help you make things more concrete:
+As things might be be quite abstract, here is a simple example of linked data to help make things more concrete:
 
 ```json
 {
@@ -44,9 +42,9 @@ As things might be be quite abstract, here is a simple example of linked data to
 }
 ```
 
-The `@context` gives you the base URL of the website where you can find more information about the properties of this piece of data.
+You can see that the file is organised in pairs of `"key": "value"`. The `@context` gives you the base URL of the website where you can find more information about the different properties of this piece of data.
 
-What follows (`name`, `givenNAme`, `familyName`, ...) are the actual different properties about this data and in front of it the values that this data takes for each property (in this case: "Barack Obama", "Barack", "Obama").
+What follows (`name`, `givenNAme`, `familyName`, ...) are the actual properties about this data and in front of it the values that this data takes for each property (in this case: "Barack Obama", "Barack", "Obama").
 
 Now go and look up what is hiding behind one of those property by going to the URL made of the **base URL + the property name**, for example [https://schema.org/familyName](https://schema.org/familyName). This is the HTTP URI of `familyName` and this gives you a description of the `familyName` property. 
 
@@ -55,11 +53,11 @@ Well "*So what?*" you might say. Well it also tells you which type of data this 
 ### More info
 
 - Here is [a TED talk](https://www.ted.com/talks/tim_berners_lee_the_next_web) by Tim Berners-Lee on linked data.
+- A short video intro to linked data by Manu Sporny:
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4x_xzT5eF5Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## What is JSON-LD?
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/vioCbTo3C-4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### What is JSON?
 
@@ -102,7 +100,7 @@ Looks familiar? It is very close to the one we had at the end of the previous FA
 
 ### From JSON to JSON-LD
 
-Now say you would like to use this JSON file to represent a piece of linked-data. The only thing you would need to do in this specific case is to provide the `@context` line we saw before.
+Now say you would like to use this JSON file to represent a piece of linked-data. The only thing you would need to do in this specific case is to provide the `@context` line we saw before that will give a precise and unambiguous meaning to the following lines.
 
 ```json
 {
@@ -126,9 +124,25 @@ https://raw.githubusercontent.com/ReproNim/reproschema/master/protocols/VoicePil
 
 directly into the [JSON-LD playground](https://json-ld.org/playground/) to see whether it is a valid JSON-LD and how the different elements are connected.
 
+### More info
+
+- It would be a stretch to say that the [JSON-LD specifications](https://www.w3.org/TR/json-ld11/) make for a fascinating read that will keep you up at night (although they might but mostly out of frustration) but it is good to know that it is out there in case you eventually need to look something up
+- Two short videos by Manu Sporny about JSON-LD and core mark up features JSON-LD:
+ 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vioCbTo3C-4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UmvWk_TQ30A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-## Which tools will/are supporting this standard?
+## Why is linked data important for the Reproschema ?
+
+## Which assessments tools will/are supporting this standard?
+
+At the moment, all the assessments that support this standard are listed in [this folder](https://github.com/ReproNim/reproschema-library/tree/master/activities) or the [Reproschema-library repository](https://github.com/ReproNim/reproschema-library).
+
+If you want to see those different tools in action using our user interface, you can explore them on [schema.repronim.org/](https://schema.repronim.org/rl/).
+
+The Reproschema is also used to develop a checklist to [improve methods and results reporting in neuroimaging](https://github.com/ohbm/cobidas). 
 
 **🛠 Work in progress 🛠**
 
@@ -151,3 +165,29 @@ directly into the [JSON-LD playground](https://json-ld.org/playground/) to see w
 ## How are these assessments licensed?
 
 **🛠 Work in progress 🛠**
+
+## How can I contribute to the project?
+
+**🛠 Work in progress 🛠**
+
+## An assessment tool I regularly use is not supported by Reproschema: how can I add it?
+
+**🛠 Work in progress 🛠**
+
+## How can I visualize the schema for a `protocol` or an `activity`?
+
+If you want to see what the assessment that are already supported by the Reproschema would look like using our Reproschema user-interface, you can visualize them directly on [schema.repronim.org](https://schema.repronim.org/rl).
+
+If you just want to view a protocol or activity you are developing using the `reproschema-ui`, you can pass the URL of the schema to the `url` query parameter like this:
+
+```https://schema.repronim.org/ui/#/?url=url-to-your-schema```
+
+If you are hosting a schema on github, make sure that you are passing the URL of the **raw** content of the schema. For example, our demo protocol can be accessed at this URL:
+
+[https://github.com/ReproNim/demo-protocol/blob/master/VoicePilot/VoicePilot_schema](https://github.com/ReproNim/demo-protocol/blob/master/VoicePilot/VoicePilot_schema)
+
+But to get access to the raw content of that file you must click on the `Raw` button once you have opened that page on github that will open this URL:
+
+[https://raw.githubusercontent.com/ReproNim/demo-protocol/master/VoicePilot/VoicePilot_schema](https://raw.githubusercontent.com/ReproNim/demo-protocol/master/VoicePilot/VoicePilot_schema).
+
+If you want to visualize the graph represented by the JSON-LD file, we explain how to do this in [From JSON to JSON-LD](#From-JSON-to-JSON-LD).
