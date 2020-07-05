@@ -38,16 +38,14 @@ of the assessment.
 
 This is the goal of the Reproschema project that covers:
 
-1. a schema that can be found [in the present repository](???) that describes the content and relations of the different 
-2. elements of a questionnaire or set of assessment tools,
-3. an [associated curated library of reusable common assessments and questionnaires](???),
-4. a [python package](???) to help create and validate the schemas of new assessments,
-5. a [user interface](???) to visualize questionnaire and collect data.
+1. a schema that can be found [in the present repository](https://github.com/ReproNim/reproschema) that describes the content and relations of the different elements of a questionnaire or set of assessment tools,
+2. an [associated curated library of reusable common assessments and questionnaires](https://github.com/ReproNim/reproschema-library),
+3. a [python package](https://github.com/ReproNim/reproschema-py) to help create and validate the schemas of new assessments,
+4. a [user interface](https://github.com/ReproNim/reproschema-ui) to visualize questionnaire and collect data.
 
 In brief, Reproschema offers a way to standardize the underlying representation of assessment tools. It comes with an open 
-and accessible library of questionnaire with appropriate conversion (e.g., to RedCap) and data collection 
-tools (e.g., [MindLogger](https://mindlogger.org/), LORIS, RedCap) to enable a more consistent acquisition across projects, 
-with results being harmonized by design.
+and accessible library of questionnaire with appropriate conversion (e.g., to [RedCap](https://www.project-redcap.org/)) and data collection 
+tools (e.g., [MindLogger](https://mindlogger.org/), LORIS, [RedCap](https://www.project-redcap.org/)) to enable a more consistent acquisition across projects, with results being harmonized by design.
 
 ## General description
 
