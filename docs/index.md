@@ -11,7 +11,7 @@ style="width: 350px; height: auto; display: block; margin-left: auto;  margin-ri
 
 - The Reproschema is related to the `semantic web` and relies on `linked data` and the `JSON-LD` format. If you are unfamiliar with such things, head over to our [FAQ](./98_FAQ.md). You do not need an in depth understanding of what those things are to use the Reproschema but some "big picture" conceptual understanding could save you from a lot of confusion. 😉
 
-## 2.0: Need for Standardizing assessments
+- Not sure how the project is organized? Check out the [project structure](./20_project_structure) page.
 
 ## 3.0: Advantages of current representation
 
