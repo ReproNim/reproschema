@@ -93,6 +93,9 @@ reproschema:FieldShape a sh:NodeShape ;
             sh:maxCount 1 ;
             sh:path schema:readonlyValue ],
 
+        [ sh:node reproschema:AdditionalNoteObj ;
+            sh:path reproschema:additionalNotesObj ],
+
         [ sh:or ( [ sh:nodeKind sh:IRI ] [ sh:node reproschema:ResponseOptionsShape ] ) ;
             sh:path reproschema:responseOptions ] ;
     sh:targetClass reproschema:Field .
@@ -208,7 +211,7 @@ reproschema:ChoicesShape a sh:NodeShape ;
         [ sh:datatype rdf:langString ;
             sh:path schema:name ],
 
-        [ sh:or ( [ sh:datatype xsd:integer ] [ sh:nodeKind sh:IRI ] ) ;
+        [ sh:or ( [ sh:datatype xsd:integer ] [ sh:nodeKind sh:IRI ] [ sh:datatype schema:Boolean ] [ sh:datatype schema:StructuredValue ] [ sh:datatype schema:Text ]) ;
             sh:path reproschema:value ] .
 
 reproschema:IsVisShape a sh:NodeShape ;
@@ -235,4 +238,18 @@ reproschema:ScoringShape a sh:NodeShape ;
         [ sh:datatype rdf:langString ;
             sh:minCount 1 ;
             sh:path reproschema:jsExpression ] .
+
+reproschema:AdditionalNoteObjShape a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:datatype rdf:langString ;
+            sh:minCount 1 ;
+            sh:path reproschema:source ],
+
+        [ sh:datatype rdf:langString ;
+            sh:minCount 1 ;
+            sh:path reproschema:column ],
+
+        [ sh:or ( [ sh:datatype xsd:integer ] [ sh:nodeKind sh:IRI ] [ sh:datatype schema:Boolean ] [ sh:datatype schema:StructuredValue ] [ sh:datatype schema:Text ]) ;
+            sh:path reproschema:value ] .
 
