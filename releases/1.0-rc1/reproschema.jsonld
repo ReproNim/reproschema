@@ -57,6 +57,12 @@
       "rdfs:label": "inputType"
     },
     {
+      "@id": "reproschema:AllowReplay",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Indicates (by boolean) if items can be replayed or not.",
+      "rdfs:label": "Allow replay"
+    },
+    {
       "@id": "reproschema:shuffle",
       "@type": "rdf:Property",
       "schema:rangeIncludes": {
@@ -222,6 +228,41 @@
       "rdfs:label": "Skipped"
     },
     {
+      "@id": "reproschema:source",
+      "@type": "rdf:Property",
+      "schema:rangeIncludes": {
+        "@id": "rdf:langString"
+      },
+      "rdfs:comment": "An element to define the source (eg. RedCap, NDA) where the note was taken from.",
+      "rdfs:label": "source"
+    },
+    {
+      "@id": "reproschema:value",
+      "@type": "rdf:Property",
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:Boolean"
+        },
+        {
+          "@id": "schema:StructuredValue"
+        },
+        {
+          "@id": "schema:Number"
+        },
+        {
+          "@id": "schema:Text"
+        },
+        {
+          "@id": "schema:URL"
+        }
+      ],
+      "schema:sameAs": {
+        "@id": "schema:value"
+      },
+      "rdfs:comment": "The value for each option in choices or in additionalNotesObj",
+      "rdfs:label": "value"
+    },
+    {
       "@id": "reproschema:statusOptions",
       "@type": "rdf:Property",
       "schema:rangeIncludes": {
@@ -261,6 +302,15 @@
       "@type": "rdfs:Class",
       "rdfs:comment": "An array to list the available options in responseOptions of the Field item.",
       "rdfs:label": "Response choice"
+    },
+    {
+      "@id": "reproschema:column",
+      "@type": "rdf:Property",
+      "schema:rangeIncludes": {
+        "@id": "rdf:langString"
+      },
+      "rdfs:comment": "An element to define the column name where the note was taken from.",
+      "rdfs:label": "column"
     },
     {
       "@id": "skos:prefLabel",
@@ -388,6 +438,15 @@
       "schema:domainIncludes": {
         "@id": "reproschema:Field"
       }
+    },
+    {
+      "@id": "schema:image",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "reproschema:Field"
+      },
+      "rdfs:comment": "An image of the item. This can be a <a class=\"localLink\" href=\"http://schema.org/URL\">URL</a> or a fully described <a class=\"localLink\" href=\"http://schema.org/ImageObject\">ImageObject</a>.",
+      "rdfs:label": "image"
     },
     {
       "@id": "reproschema:inputType",
@@ -536,6 +595,15 @@
       "rdfs:label": "datumType"
     },
     {
+      "@id": "reproschema:additionalNotesObj",
+      "@type": "rdf:Property",
+      "schema:rangeIncludes": {
+        "@id": "reproschema:AdditionalNoteObj"
+      },
+      "rdfs:comment": "A set of objects to define notes in a field. For example, most Redcap and NDA data dictionaries have notes for each item which needs to be captured in reproschema.",
+      "rdfs:label": "additional notes"
+    },
+    {
       "@id": "reproschema:valueType",
       "@type": "rdf:Property",
       "schema:rangeIncludes": [
@@ -611,6 +679,30 @@
       "rdfs:label": "Response options"
     },
     {
+      "@id": "reproschema:source",
+      "schema:domainIncludes": {
+        "@id": "reproschema:AdditionalNoteObj"
+      }
+    },
+    {
+      "@id": "reproschema:column",
+      "schema:domainIncludes": {
+        "@id": "reproschema:AdditionalNoteObj"
+      }
+    },
+    {
+      "@id": "reproschema:value",
+      "schema:domainIncludes": {
+        "@id": "reproschema:AdditionalNoteObj"
+      }
+    },
+    {
+      "@id": "reproschema:AdditionalNoteObj",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A set of objects to define notes in a field. For example, most Redcap and NDA data dictionaries have notes for each item which needs to be captured in reproschema",
+      "rdfs:label": "Additional Notes Object"
+    },
+    {
       "@id": "reproschema:landingPage",
       "@type": "rdf:Property",
       "schema:rangeIncludes": [
@@ -634,15 +726,7 @@
       "@id": "reproschema:isAbout",
       "schema:domainIncludes": {
         "@id": "reproschema:AdditionalProperty"
-      },
-      "schema:rangeIncludes": [
-        {
-          "@id": "reproschema:Activity"
-        },
-        {
-          "@id": "reproschema:Field"
-        }
-      ]
+      }
     },
     {
       "@id": "schema:valueRequired",

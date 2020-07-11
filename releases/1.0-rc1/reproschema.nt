@@ -7,6 +7,10 @@
 <http://schema.org/description> <http://schema.org/domainIncludes> <http://schema.repronim.org/Field> .
 <http://schema.org/description> <http://schema.org/domainIncludes> <http://schema.repronim.org/Protocol> .
 <http://schema.org/image> <http://schema.org/domainIncludes> <http://schema.repronim.org/Choice> .
+<http://schema.org/image> <http://schema.org/domainIncludes> <http://schema.repronim.org/Field> .
+<http://schema.org/image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://schema.org/image> <http://www.w3.org/2000/01/rdf-schema#comment> "An image of the item. This can be a <a class=\"localLink\" href=\"http://schema.org/URL\">URL</a> or a fully described <a class=\"localLink\" href=\"http://schema.org/ImageObject\">ImageObject</a>." .
+<http://schema.org/image> <http://www.w3.org/2000/01/rdf-schema#label> "image" .
 <http://schema.org/isPartOf> <http://schema.org/domainIncludes> <http://schema.repronim.org/Field> .
 <http://schema.org/isPartOf> <http://schema.org/rangeIncludes> <http://schema.repronim.org/Activity> .
 <http://schema.org/maxValue> <http://schema.org/domainIncludes> <http://schema.repronim.org/ResponseOption> .
@@ -32,12 +36,18 @@
 <http://schema.repronim.org/Activity> <http://www.w3.org/2000/01/rdf-schema#comment> "An assessment in a protocol." .
 <http://schema.repronim.org/Activity> <http://www.w3.org/2000/01/rdf-schema#label> "Activity" .
 <http://schema.repronim.org/Activity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/CreativeWork> .
+<http://schema.repronim.org/AdditionalNoteObj> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://schema.repronim.org/AdditionalNoteObj> <http://www.w3.org/2000/01/rdf-schema#comment> "A set of objects to define notes in a field. For example, most Redcap and NDA data dictionaries have notes for each item which needs to be captured in reproschema" .
+<http://schema.repronim.org/AdditionalNoteObj> <http://www.w3.org/2000/01/rdf-schema#label> "Additional Notes Object" .
 <http://schema.repronim.org/AdditionalProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://schema.repronim.org/AdditionalProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "An object to describe the various properties added to assessments and fields." .
 <http://schema.repronim.org/AdditionalProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Additional properties" .
 <http://schema.repronim.org/AllowExport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://schema.repronim.org/AllowExport> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates (by boolean) if data can be exported or not." .
 <http://schema.repronim.org/AllowExport> <http://www.w3.org/2000/01/rdf-schema#label> "Allow export" .
+<http://schema.repronim.org/AllowReplay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://schema.repronim.org/AllowReplay> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates (by boolean) if items can be replayed or not." .
+<http://schema.repronim.org/AllowReplay> <http://www.w3.org/2000/01/rdf-schema#label> "Allow replay" .
 <http://schema.repronim.org/AutoAdvance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://schema.repronim.org/AutoAdvance> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates (by boolean) if assessments in a protocol can auto advance or not." .
 <http://schema.repronim.org/AutoAdvance> <http://www.w3.org/2000/01/rdf-schema#label> "Auto advance" .
@@ -80,6 +90,10 @@
 <http://schema.repronim.org/addProperties> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <http://schema.repronim.org/addProperties> <http://www.w3.org/2000/01/rdf-schema#comment> "An array of objects to describe the various properties added to assessments and fields." .
 <http://schema.repronim.org/addProperties> <http://www.w3.org/2000/01/rdf-schema#label> "addProperties" .
+<http://schema.repronim.org/additionalNotesObj> <http://schema.org/rangeIncludes> <http://schema.repronim.org/AdditionalNoteObj> .
+<http://schema.repronim.org/additionalNotesObj> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://schema.repronim.org/additionalNotesObj> <http://www.w3.org/2000/01/rdf-schema#comment> "A set of objects to define notes in a field. For example, most Redcap and NDA data dictionaries have notes for each item which needs to be captured in reproschema." .
+<http://schema.repronim.org/additionalNotesObj> <http://www.w3.org/2000/01/rdf-schema#label> "additional notes" .
 <http://schema.repronim.org/allow> <http://schema.org/domainIncludes> <http://schema.repronim.org/Protocol> .
 <http://schema.repronim.org/allow> <http://schema.org/rangeIncludes> <http://schema.org/Thing> .
 <http://schema.repronim.org/allow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
@@ -92,6 +106,11 @@
 <http://schema.repronim.org/choices> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <http://schema.repronim.org/choices> <http://www.w3.org/2000/01/rdf-schema#comment> "An array to list the available options in responseOptions of the Field item." .
 <http://schema.repronim.org/choices> <http://www.w3.org/2000/01/rdf-schema#label> "choices" .
+<http://schema.repronim.org/column> <http://schema.org/domainIncludes> <http://schema.repronim.org/AdditionalNoteObj> .
+<http://schema.repronim.org/column> <http://schema.org/rangeIncludes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<http://schema.repronim.org/column> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://schema.repronim.org/column> <http://www.w3.org/2000/01/rdf-schema#comment> "An element to define the column name where the note was taken from." .
+<http://schema.repronim.org/column> <http://www.w3.org/2000/01/rdf-schema#label> "column" .
 <http://schema.repronim.org/datumType> <http://schema.org/domainIncludes> <http://schema.repronim.org/ResponseOption> .
 <http://schema.repronim.org/datumType> <http://schema.org/rangeIncludes> <http://schema.org/Text> .
 <http://schema.repronim.org/datumType> <http://schema.org/rangeIncludes> <http://schema.org/URL> .
@@ -165,10 +184,25 @@
 <http://schema.repronim.org/shuffle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <http://schema.repronim.org/shuffle> <http://www.w3.org/2000/01/rdf-schema#comment> "An element (bool) to determine if the list of items is shuffled or in order." .
 <http://schema.repronim.org/shuffle> <http://www.w3.org/2000/01/rdf-schema#label> "Shuffle" .
+<http://schema.repronim.org/source> <http://schema.org/domainIncludes> <http://schema.repronim.org/AdditionalNoteObj> .
+<http://schema.repronim.org/source> <http://schema.org/rangeIncludes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<http://schema.repronim.org/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://schema.repronim.org/source> <http://www.w3.org/2000/01/rdf-schema#comment> "An element to define the source (eg. RedCap, NDA) where the note was taken from." .
+<http://schema.repronim.org/source> <http://www.w3.org/2000/01/rdf-schema#label> "source" .
 <http://schema.repronim.org/statusOptions> <http://schema.org/rangeIncludes> <http://schema.org/Text> .
 <http://schema.repronim.org/statusOptions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <http://schema.repronim.org/statusOptions> <http://www.w3.org/2000/01/rdf-schema#comment> "Provides information on whether or not a field item wants to be accompanied by the additional status option(s) defined in “statusOptions”" .
 <http://schema.repronim.org/statusOptions> <http://www.w3.org/2000/01/rdf-schema#label> "Status options" .
+<http://schema.repronim.org/value> <http://schema.org/domainIncludes> <http://schema.repronim.org/AdditionalNoteObj> .
+<http://schema.repronim.org/value> <http://schema.org/rangeIncludes> <http://schema.org/Boolean> .
+<http://schema.repronim.org/value> <http://schema.org/rangeIncludes> <http://schema.org/Number> .
+<http://schema.repronim.org/value> <http://schema.org/rangeIncludes> <http://schema.org/StructuredValue> .
+<http://schema.repronim.org/value> <http://schema.org/rangeIncludes> <http://schema.org/Text> .
+<http://schema.repronim.org/value> <http://schema.org/rangeIncludes> <http://schema.org/URL> .
+<http://schema.repronim.org/value> <http://schema.org/sameAs> <http://schema.org/value> .
+<http://schema.repronim.org/value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://schema.repronim.org/value> <http://www.w3.org/2000/01/rdf-schema#comment> "The value for each option in choices or in additionalNotesObj" .
+<http://schema.repronim.org/value> <http://www.w3.org/2000/01/rdf-schema#label> "value" .
 <http://schema.repronim.org/valueType> <http://schema.org/domainIncludes> <http://schema.repronim.org/ResponseOption> .
 <http://schema.repronim.org/valueType> <http://schema.org/rangeIncludes> <http://schema.org/Text> .
 <http://schema.repronim.org/valueType> <http://schema.org/rangeIncludes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .

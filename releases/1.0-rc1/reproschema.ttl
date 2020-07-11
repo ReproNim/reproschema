@@ -14,6 +14,10 @@ reproschema:Activity a nidm:Assessment,
     rdfs:comment "An assessment in a protocol." ;
     rdfs:subClassOf schema:CreativeWork .
 
+reproschema:AdditionalNoteObj a rdfs:Class ;
+    rdfs:label "Additional Notes Object" ;
+    rdfs:comment "A set of objects to define notes in a field. For example, most Redcap and NDA data dictionaries have notes for each item which needs to be captured in reproschema" .
+
 reproschema:AdditionalProperty a rdfs:Class ;
     rdfs:label "Additional properties" ;
     rdfs:comment "An object to describe the various properties added to assessments and fields." .
@@ -21,6 +25,10 @@ reproschema:AdditionalProperty a rdfs:Class ;
 reproschema:AllowExport a rdfs:Class ;
     rdfs:label "Allow export" ;
     rdfs:comment "Indicates (by boolean) if data can be exported or not." .
+
+reproschema:AllowReplay a rdfs:Class ;
+    rdfs:label "Allow replay" ;
+    rdfs:comment "Indicates (by boolean) if items can be replayed or not." .
 
 reproschema:AutoAdvance a rdfs:Class ;
     rdfs:label "Auto advance" ;
@@ -80,7 +88,11 @@ schema:description schema:domainIncludes reproschema:Activity,
         reproschema:Field,
         reproschema:Protocol .
 
-schema:image schema:domainIncludes reproschema:Choice .
+schema:image a rdf:Property ;
+    rdfs:label "image" ;
+    schema:domainIncludes reproschema:Choice,
+        reproschema:Field ;
+    rdfs:comment "An image of the item. This can be a <a class=\"localLink\" href=\"http://schema.org/URL\">URL</a> or a fully described <a class=\"localLink\" href=\"http://schema.org/ImageObject\">ImageObject</a>." .
 
 schema:isPartOf schema:domainIncludes reproschema:Field ;
     schema:rangeIncludes reproschema:Activity .
@@ -101,10 +113,6 @@ schema:schemaVersion schema:domainIncludes reproschema:Activity,
 
 schema:unitCode schema:domainIncludes reproschema:ResponseOption .
 
-schema:value schema:domainIncludes reproschema:Choice ;
-    schema:rangeIncludes reproschema:DontKnow,
-        reproschema:Skipped .
-
 schema:valueRequired schema:domainIncludes reproschema:AdditionalProperty .
 
 schema:version schema:domainIncludes reproschema:Activity,
@@ -117,6 +125,11 @@ reproschema:addProperties a rdf:Property ;
         reproschema:Protocol ;
     schema:rangeIncludes reproschema:AdditionalProperty ;
     rdfs:comment "An array of objects to describe the various properties added to assessments and fields." .
+
+reproschema:additionalNotesObj a rdf:Property ;
+    rdfs:label "additional notes" ;
+    schema:rangeIncludes reproschema:AdditionalNoteObj ;
+    rdfs:comment "A set of objects to define notes in a field. For example, most Redcap and NDA data dictionaries have notes for each item which needs to be captured in reproschema." .
 
 reproschema:allow a rdf:Property ;
     rdfs:label "allow" ;
@@ -131,6 +144,12 @@ reproschema:choices a rdf:Property ;
         reproschema:Choice ;
     schema:sameAs schema:itemListElement ;
     rdfs:comment "An array to list the available options in responseOptions of the Field item." .
+
+reproschema:column a rdf:Property ;
+    rdfs:label "column" ;
+    schema:domainIncludes reproschema:AdditionalNoteObj ;
+    schema:rangeIncludes rdf:langString ;
+    rdfs:comment "An element to define the column name where the note was taken from." .
 
 reproschema:datumType a rdf:Property ;
     rdfs:label "datumType" ;
@@ -217,10 +236,27 @@ reproschema:shuffle a rdf:Property ;
     schema:rangeIncludes schema:boolean ;
     rdfs:comment "An element (bool) to determine if the list of items is shuffled or in order." .
 
+reproschema:source a rdf:Property ;
+    rdfs:label "source" ;
+    schema:domainIncludes reproschema:AdditionalNoteObj ;
+    schema:rangeIncludes rdf:langString ;
+    rdfs:comment "An element to define the source (eg. RedCap, NDA) where the note was taken from." .
+
 reproschema:statusOptions a rdf:Property ;
     rdfs:label "Status options" ;
     schema:rangeIncludes schema:Text ;
     rdfs:comment "Provides information on whether or not a field item wants to be accompanied by the additional status option(s) defined in “statusOptions”" .
+
+reproschema:value a rdf:Property ;
+    rdfs:label "value" ;
+    schema:domainIncludes reproschema:AdditionalNoteObj ;
+    schema:rangeIncludes schema:Boolean,
+        schema:Number,
+        schema:StructuredValue,
+        schema:Text,
+        schema:URL ;
+    schema:sameAs schema:value ;
+    rdfs:comment "The value for each option in choices or in additionalNotesObj" .
 
 reproschema:valueType a rdf:Property ;
     rdfs:label "The type of the response" ;
@@ -246,4 +282,8 @@ skos:prefLabel a rdf:Property ;
     rdfs:comment "Indicates the label of an Activity or Field to be used as display name.",
         "Indicates the label of the Field.",
         "The preferred name of the assessment." .
+
+schema:value schema:domainIncludes reproschema:Choice ;
+    schema:rangeIncludes reproschema:DontKnow,
+        reproschema:Skipped .
 
