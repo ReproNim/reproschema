@@ -12,12 +12,13 @@
                 "@container": "@language"
             },
             "value": {
-                "@id": "schema:value",
+                "@id": "reproschema:value",
+                "@type": "@id",
                 "@container": "@language"
             },
             "image": {
                 "@id": "schema:image",
-                "@type": "@vocab"
+                "@type": "@id"
             },
             "citation": {
                 "@id": "schema:citation",
@@ -45,27 +46,29 @@
             },
             "valueType": {
                 "@id": "reproschema:valueType",
-                "@type": "@vocab"
+                "@type": "@id",
+                "@container": "@set"
             },
             "landingPage": {
                 "@id": "reproschema:landingPage",
-                "@container": "@language"
+                "@container": "@set"
             },
             "question": {
                 "@id": "schema:question",
                 "@container": "@language"
             },
             "choices": {
-                "@id": "schema:itemListElement"
+                "@id": "reproschema:choices"
             },
-            "valueRequired": "https://schema.org/valueRequired",
+            "valueRequired": "schema:valueRequired",
             "multipleChoice": {
                 "@id": "reproschema:multipleChoice",
                 "@type": "schema:Boolean"
             },
             "responseOptions": {
                 "@id": "reproschema:responseOptions",
-                "@type": "@vocab"
+                "@container": "@set",
+                "@type": "@id"
             },
             "dataType": {
                 "@id": "schema:DataType",
@@ -76,6 +79,10 @@
             },
             "maxValue": {
                 "@id": "schema:maxValue"
+            },
+            "unitCode": {
+                "@id": "schema:unitCode",
+                "@container": "@set"
             },
             "ui" : "@nest",
             "order": {
@@ -106,11 +113,11 @@
                 "@nest": "ui"
             },
             "readonlyValue": {
-                "@id": "https://schema.org/readonlyValue",
+                "@id": "schema:readonlyValue",
                 "@nest": "ui"
             },
-            "scoringLogic": {
-                "@id": "reproschema:scoringLogic",
+            "compute": {
+                "@id": "reproschema:compute",
                 "@container": "@index"
             },
             "jsExpression": {
@@ -118,11 +125,6 @@
             },
             "isVis": {
                 "@id": "reproschema:isVis"
-            },
-            "required": {
-                "@id": "reproschema:required",
-                "@container": "@index",
-                "@nest": "ui"
             },
             "variableName": "reproschema:variableName",
             "isAbout": {
@@ -141,6 +143,7 @@
             "reproschema:AutoAdvance": {"@id": "reproschema:AutoAdvance"},
             "reproschema:DisableBack": {"@id": "reproschema:DisableBack"},
             "reproschema:AllowExport": {"@id": "reproschema:AllowExport"},
+            "reproschema:AllowReplay": {"@id": "reproschema:AllowReplay"},
             "timer": {
                 "@id": "reproschema:timer",
                 "@type": "@id",
@@ -150,6 +153,18 @@
                 "@id": "reproschema:delay",
                 "@type": "@id",
                 "@nest": "ui"
+            },
+            "additionalNotesObj": {
+                "@id": "reproschema:additionalNotesObj",
+                "@container": "@set"
+            },
+            "source": {
+                "@id": "reproschema:source",
+                "@type": "xsd:string"
+            },
+            "column": {
+                "@id": "reproschema:column",
+                "@type": "xsd:string"
             },
             "importedFrom": {
                 "@id": "pav:importedFrom",
