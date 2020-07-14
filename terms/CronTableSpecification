@@ -1,0 +1,56 @@
+{
+    "@context": "../contexts/base",
+    "@graph": [
+        {
+            "@id": "reproschema:randomMaxDelay",
+            "@type": "rdf:Property",
+            "rdfs:comment": "Present activity/item within some random offset of activity available time up to the maximum specified by this.",
+            "rdfs:label": "randomMaxDelay",
+            "schema:domainIncludes": {
+                "@id": "reproschema:CronTableSpecification"
+            }
+        },
+        {
+            "@id": "reproschema:schedule",
+	        "@type": "rdf:Property",
+            "rdfs:comment": "An element to set make activity available/repeat info using cron format.",
+            "rdfs:label": "schedule",
+            "schema:domainIncludes": {
+                "@id": "reproschema:CronTableSpecification"
+            }
+        },
+	    {
+            "@id": "reproschema:limit",
+	        "@type": "rdf:Property",
+            "rdfs:comment": "An element to limit the duration this activity is allowed to be completed by once activity is available.",
+            "rdfs:label": "limit",
+            "schema:domainIncludes": {
+                "@id": "reproschema:CronTableSpecification"
+            }
+        },
+	    {
+            "@id": "reproschema:isAbout",
+	        "@type": "rdf:Property",
+            "rdfs:comment": "A pointer to the node describing the item.",
+            "rdfs:label": "isAbout",
+            "schema:domainIncludes": {
+                "@id": "reproschema:CronTableSpecification"
+            }
+        },
+	    {
+            "@id": "reproschema:maxRetakes",
+	        "@type": "rdf:Property",
+            "rdfs:comment": "Defines number of times the item is allowed to be redone.",
+            "rdfs:label": "maxRetakes",
+            "schema:domainIncludes": {
+                "@id": "reproschema:CronTableSpecification"
+            }
+        },
+        {
+            "@id": "reproschema:CronTableSpecification",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "An object to define cron table specs in an activity or protocol.",
+            "rdfs:label": "CronTableSpecification"
+        }
+    ]
+}

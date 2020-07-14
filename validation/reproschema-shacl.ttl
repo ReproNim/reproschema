@@ -52,7 +52,10 @@ reproschema:ActivityShape a sh:NodeShape ;
 
         [ sh:nodeKind sh:IRI ;
             sh:in ( reproschema:AllowExport reproschema:DisableBack reproschema:AutoAdvance reproschema:AllowReplay reproschema:Skipped reproschema:DontKnow reproschema:TimedOut ) ;
-            sh:path reproschema:allow ] ;
+            sh:path reproschema:allow ],
+
+        [ sh:node reproschema:CronTableShape ;
+            sh:path reproschema:cronTable ] ;
     sh:targetClass reproschema:Activity .
 
 reproschema:FieldShape a sh:NodeShape ;
@@ -144,7 +147,10 @@ reproschema:ProtocolShape a sh:NodeShape ;
 
         [ sh:nodeKind sh:IRI ;
             sh:in ( reproschema:AllowExport reproschema:DisableBack reproschema:AutoAdvance reproschema:AllowReplay reproschema:Skipped reproschema:DontKnow reproschema:TimedOut ) ;
-            sh:path reproschema:allow ] ;
+            sh:path reproschema:allow ],
+
+        [ sh:node reproschema:CronTableShape ;
+            sh:path reproschema:cronTable ] ;
     sh:targetClass reproschema:Protocol .
 
 reproschema:ResponseOptionsShape a sh:NodeShape ;
@@ -253,3 +259,22 @@ reproschema:AdditionalNoteObjShape a sh:NodeShape ;
         [ sh:or ( [ sh:datatype xsd:integer ] [ sh:nodeKind sh:IRI ] [ sh:datatype schema:Boolean ] [ sh:datatype schema:StructuredValue ] [ sh:datatype schema:Text ]) ;
             sh:path reproschema:value ] .
 
+reproschema:CronTableShape a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:datatype schema:Text ;
+            sh:path reproschema:randomMaxDelay ],
+
+        [ sh:datatype schema:Text ;
+            sh:minCount 1 ;
+            sh:path reproschema:schedule ],
+
+        [ sh:datatype schema:Text ;
+            sh:path reproschema:limit ],
+
+        [ sh:nodeKind sh:IRI ;
+            sh:minCount 1 ;
+            sh:path reproschema:isAbout ],
+
+        [ sh:datatype schema:Number ;
+            sh:path reproschema:maxRetakes ] .
