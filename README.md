@@ -2,14 +2,14 @@
 
 # Schema Standardization
 
-To see the documentation concerning the ReproNim schema specification [click here]( ??? ).
+To see the documentation concerning the ReproNim schema specification [click here](https://www.repronim.org/reproschema/).
 
 This repository contains:
 
 -   the [different terms of the Reproschema](./terms)
 -   the [corresponding context files](./contexts)
 -   a example of [a protocol based on the reproschema](./examples)
--   the [validation turtle files](./validation):
+-   the [validation SHACL files](./validation)
 -   the [documentation](./docs)
 
 
@@ -17,10 +17,12 @@ This repository contains:
 
 ### Code
 
-The content of this repository is distributed under the [Apache 2.0 licence]( ??? ).
+The content of this repository is distributed under the [Apache 2.0 licence](./LICENSE).
 
 ### Documentation
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />The corresponding documentation is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
 ## Contributors
+
+https://github.com/ReproNim/reproschema/graphs/contributors
