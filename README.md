@@ -1,5 +1,7 @@
 ![Python package](https://github.com/ReproNim/reproschema/workflows/Python%20package/badge.svg)
 
+<img src="docs/img/reproschema_logo.png" width="100px" />
+
 # Schema Standardization
 
 To see the documentation concerning the ReproNim schema specification [click here](https://www.repronim.org/reproschema/).
