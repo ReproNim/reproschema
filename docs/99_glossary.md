@@ -1,10 +1,11 @@
 # Glossary
 
--   item
 -   activity
--   protocols
--   JSON-LD
--   JSON
+-   compute specification
 -   input type
+-   item
+-   JSON
+-   JSON-LD
+-   protocol
+-   SHACL
 -   visibility
--   scoring logic
