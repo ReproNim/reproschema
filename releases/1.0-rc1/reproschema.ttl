@@ -38,6 +38,10 @@ reproschema:Choice a rdfs:Class ;
     rdfs:label "Response choice" ;
     rdfs:comment "An array to list the available options in responseOptions of the Field item." .
 
+reproschema:ComputeSpecification a rdfs:Class ;
+    rdfs:label "Compute Specification" ;
+    rdfs:comment "An object to define computations in an activity or protocol." .
+
 reproschema:DisableBack a rdfs:Class ;
     rdfs:label "Disable redo" ;
     rdfs:comment "Indicates (by boolean) if we can go back to a completed assessment in a protocol." .
@@ -63,10 +67,6 @@ reproschema:Protocol a rdfs:Class,
 reproschema:ResponseOption a rdfs:Class ;
     rdfs:label "Response option" ;
     rdfs:comment "An element (object or by URL)to describe the properties of response of the Field item." .
-
-reproschema:Scoring a rdfs:Class ;
-    rdfs:label "Scoring logic" ;
-    rdfs:comment "An object indicating score in an activity or protocol and the score Field item " .
 
 reproschema:Skipped a rdfs:Class ;
     rdfs:label "Skipped" ;
@@ -151,6 +151,11 @@ reproschema:column a rdf:Property ;
     schema:rangeIncludes rdf:langString ;
     rdfs:comment "An element to define the column name where the note was taken from." .
 
+reproschema:compute a rdf:Property ;
+    rdfs:label "computation" ;
+    schema:rangeIncludes reproschema:ComputeSpecification ;
+    rdfs:comment "An array of objects indicating computations in an activity or protocol and maps it to the corresponding Field item. scoring logic is a subset of all computations that could be performed and not all computations will be scoring. For example, one may want to do conversion from one unit to another. " .
+
 reproschema:datumType a rdf:Property ;
     rdfs:label "datumType" ;
     schema:domainIncludes reproschema:ResponseOption ;
@@ -180,7 +185,7 @@ reproschema:isVis a rdf:Property ;
 
 reproschema:jsExpression a rdf:Property ;
     rdfs:label "JavaScript Expression" ;
-    schema:domainIncludes reproschema:Scoring ;
+    schema:domainIncludes reproschema:ComputeSpecification ;
     schema:rangeIncludes schema:Boolean,
         schema:Text ;
     rdfs:comment "A JavaScript expression to compute a score from other variables." .
@@ -222,12 +227,8 @@ reproschema:responseOptions a rdf:Property ;
         reproschema:ResponseOption ;
     rdfs:comment "An element (object or by URL)to describe the properties of response of the Field item." .
 
-reproschema:scoringLogic a rdf:Property ;
-    rdfs:label "Scoring logic objects" ;
-    schema:domainIncludes reproschema:Activity,
-        reproschema:Protocol ;
-    schema:rangeIncludes reproschema:Scoring ;
-    rdfs:comment "An array of objects indicating score in an activity or protocol and maps it to the score Field item " .
+reproschema:scoringLogic schema:domainIncludes reproschema:Activity,
+        reproschema:Protocol .
 
 reproschema:shuffle a rdf:Property ;
     rdfs:label "Shuffle" ;
@@ -268,7 +269,7 @@ reproschema:valueType a rdf:Property ;
 reproschema:variableName a rdf:Property ;
     rdfs:label "variableName" ;
     schema:domainIncludes reproschema:AdditionalProperty,
-        reproschema:Scoring ;
+        reproschema:ComputeSpecification ;
     schema:rangeIncludes schema:Text ;
     rdfs:comment "The name used to represent an item." .
 

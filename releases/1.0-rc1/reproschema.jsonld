@@ -572,6 +572,30 @@
       "rdfs:label": "isAbout"
     },
     {
+      "@id": "reproschema:variableName",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "reproschema:ComputeSpecification"
+      },
+      "schema:rangeIncludes": {
+        "@id": "schema:Text"
+      },
+      "rdfs:comment": "The name used to represent an item.",
+      "rdfs:label": "variableName"
+    },
+    {
+      "@id": "reproschema:jsExpression",
+      "schema:domainIncludes": {
+        "@id": "reproschema:ComputeSpecification"
+      }
+    },
+    {
+      "@id": "reproschema:ComputeSpecification",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "An object to define computations in an activity or protocol.",
+      "rdfs:label": "Compute Specification"
+    },
+    {
       "@id": "reproschema:addProperties",
       "@type": "rdf:Property",
       "schema:rangeIncludes": {
@@ -579,6 +603,15 @@
       },
       "rdfs:comment": "An array of objects to describe the various properties added to assessments and fields.",
       "rdfs:label": "addProperties"
+    },
+    {
+      "@id": "reproschema:compute",
+      "@type": "rdf:Property",
+      "schema:rangeIncludes": {
+        "@id": "reproschema:ComputeSpecification"
+      },
+      "rdfs:comment": "An array of objects indicating computations in an activity or protocol and maps it to the corresponding Field item. scoring logic is a subset of all computations that could be performed and not all computations will be scoring. For example, one may want to do conversion from one unit to another. ",
+      "rdfs:label": "computation"
     },
     {
       "@id": "reproschema:datumType",
@@ -618,30 +651,6 @@
       "rdfs:label": "The type of the response"
     },
     {
-      "@id": "reproschema:variableName",
-      "@type": "rdf:Property",
-      "schema:domainIncludes": {
-        "@id": "reproschema:Scoring"
-      },
-      "schema:rangeIncludes": {
-        "@id": "schema:Text"
-      },
-      "rdfs:comment": "The name used to represent an item.",
-      "rdfs:label": "variableName"
-    },
-    {
-      "@id": "reproschema:jsExpression",
-      "schema:domainIncludes": {
-        "@id": "reproschema:Scoring"
-      }
-    },
-    {
-      "@id": "reproschema:Scoring",
-      "@type": "rdfs:Class",
-      "rdfs:comment": "An object indicating score in an activity or protocol and the score Field item ",
-      "rdfs:label": "Scoring logic"
-    },
-    {
       "@id": "reproschema:isVis",
       "@type": "rdf:Property",
       "schema:rangeIncludes": [
@@ -654,15 +663,6 @@
       ],
       "rdfs:comment": "An element to describe (by boolean or conditional statement) visibility conditions of items in an assessment.",
       "rdfs:label": "visibility"
-    },
-    {
-      "@id": "reproschema:scoringLogic",
-      "@type": "rdf:Property",
-      "schema:rangeIncludes": {
-        "@id": "reproschema:Scoring"
-      },
-      "rdfs:comment": "An array of objects indicating score in an activity or protocol and maps it to the score Field item ",
-      "rdfs:label": "Scoring logic objects"
     },
     {
       "@id": "reproschema:responseOptions",

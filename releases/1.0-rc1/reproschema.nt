@@ -54,6 +54,9 @@
 <http://schema.repronim.org/Choice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://schema.repronim.org/Choice> <http://www.w3.org/2000/01/rdf-schema#comment> "An array to list the available options in responseOptions of the Field item." .
 <http://schema.repronim.org/Choice> <http://www.w3.org/2000/01/rdf-schema#label> "Response choice" .
+<http://schema.repronim.org/ComputeSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://schema.repronim.org/ComputeSpecification> <http://www.w3.org/2000/01/rdf-schema#comment> "An object to define computations in an activity or protocol." .
+<http://schema.repronim.org/ComputeSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "Compute Specification" .
 <http://schema.repronim.org/DisableBack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://schema.repronim.org/DisableBack> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates (by boolean) if we can go back to a completed assessment in a protocol." .
 <http://schema.repronim.org/DisableBack> <http://www.w3.org/2000/01/rdf-schema#label> "Disable redo" .
@@ -75,9 +78,6 @@
 <http://schema.repronim.org/ResponseOption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://schema.repronim.org/ResponseOption> <http://www.w3.org/2000/01/rdf-schema#comment> "An element (object or by URL)to describe the properties of response of the Field item." .
 <http://schema.repronim.org/ResponseOption> <http://www.w3.org/2000/01/rdf-schema#label> "Response option" .
-<http://schema.repronim.org/Scoring> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<http://schema.repronim.org/Scoring> <http://www.w3.org/2000/01/rdf-schema#comment> "An object indicating score in an activity or protocol and the score Field item " .
-<http://schema.repronim.org/Scoring> <http://www.w3.org/2000/01/rdf-schema#label> "Scoring logic" .
 <http://schema.repronim.org/Skipped> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://schema.repronim.org/Skipped> <http://www.w3.org/2000/01/rdf-schema#comment> "An element to describe the choice when the item is skipped." .
 <http://schema.repronim.org/Skipped> <http://www.w3.org/2000/01/rdf-schema#label> "Skipped" .
@@ -111,6 +111,10 @@
 <http://schema.repronim.org/column> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <http://schema.repronim.org/column> <http://www.w3.org/2000/01/rdf-schema#comment> "An element to define the column name where the note was taken from." .
 <http://schema.repronim.org/column> <http://www.w3.org/2000/01/rdf-schema#label> "column" .
+<http://schema.repronim.org/compute> <http://schema.org/rangeIncludes> <http://schema.repronim.org/ComputeSpecification> .
+<http://schema.repronim.org/compute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://schema.repronim.org/compute> <http://www.w3.org/2000/01/rdf-schema#comment> "An array of objects indicating computations in an activity or protocol and maps it to the corresponding Field item. scoring logic is a subset of all computations that could be performed and not all computations will be scoring. For example, one may want to do conversion from one unit to another. " .
+<http://schema.repronim.org/compute> <http://www.w3.org/2000/01/rdf-schema#label> "computation" .
 <http://schema.repronim.org/datumType> <http://schema.org/domainIncludes> <http://schema.repronim.org/ResponseOption> .
 <http://schema.repronim.org/datumType> <http://schema.org/rangeIncludes> <http://schema.org/Text> .
 <http://schema.repronim.org/datumType> <http://schema.org/rangeIncludes> <http://schema.org/URL> .
@@ -134,7 +138,7 @@
 <http://schema.repronim.org/isVis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <http://schema.repronim.org/isVis> <http://www.w3.org/2000/01/rdf-schema#comment> "An element to describe (by boolean or conditional statement) visibility conditions of items in an assessment." .
 <http://schema.repronim.org/isVis> <http://www.w3.org/2000/01/rdf-schema#label> "visibility" .
-<http://schema.repronim.org/jsExpression> <http://schema.org/domainIncludes> <http://schema.repronim.org/Scoring> .
+<http://schema.repronim.org/jsExpression> <http://schema.org/domainIncludes> <http://schema.repronim.org/ComputeSpecification> .
 <http://schema.repronim.org/jsExpression> <http://schema.org/rangeIncludes> <http://schema.org/Boolean> .
 <http://schema.repronim.org/jsExpression> <http://schema.org/rangeIncludes> <http://schema.org/Text> .
 <http://schema.repronim.org/jsExpression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
@@ -174,10 +178,6 @@
 <http://schema.repronim.org/responseOptions> <http://www.w3.org/2000/01/rdf-schema#label> "Response options" .
 <http://schema.repronim.org/scoringLogic> <http://schema.org/domainIncludes> <http://schema.repronim.org/Activity> .
 <http://schema.repronim.org/scoringLogic> <http://schema.org/domainIncludes> <http://schema.repronim.org/Protocol> .
-<http://schema.repronim.org/scoringLogic> <http://schema.org/rangeIncludes> <http://schema.repronim.org/Scoring> .
-<http://schema.repronim.org/scoringLogic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<http://schema.repronim.org/scoringLogic> <http://www.w3.org/2000/01/rdf-schema#comment> "An array of objects indicating score in an activity or protocol and maps it to the score Field item " .
-<http://schema.repronim.org/scoringLogic> <http://www.w3.org/2000/01/rdf-schema#label> "Scoring logic objects" .
 <http://schema.repronim.org/shuffle> <http://schema.org/domainIncludes> <http://schema.repronim.org/Activity> .
 <http://schema.repronim.org/shuffle> <http://schema.org/domainIncludes> <http://schema.repronim.org/Protocol> .
 <http://schema.repronim.org/shuffle> <http://schema.org/rangeIncludes> <http://schema.org/boolean> .
@@ -210,7 +210,7 @@
 <http://schema.repronim.org/valueType> <http://www.w3.org/2000/01/rdf-schema#comment> "The type of the response of an item. For example, string, integer, etc." .
 <http://schema.repronim.org/valueType> <http://www.w3.org/2000/01/rdf-schema#label> "The type of the response" .
 <http://schema.repronim.org/variableName> <http://schema.org/domainIncludes> <http://schema.repronim.org/AdditionalProperty> .
-<http://schema.repronim.org/variableName> <http://schema.org/domainIncludes> <http://schema.repronim.org/Scoring> .
+<http://schema.repronim.org/variableName> <http://schema.org/domainIncludes> <http://schema.repronim.org/ComputeSpecification> .
 <http://schema.repronim.org/variableName> <http://schema.org/rangeIncludes> <http://schema.org/Text> .
 <http://schema.repronim.org/variableName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <http://schema.repronim.org/variableName> <http://www.w3.org/2000/01/rdf-schema#comment> "The name used to represent an item." .

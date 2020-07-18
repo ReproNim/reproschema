@@ -24,8 +24,8 @@ reproschema:ActivityShape a sh:NodeShape ;
             sh:path skos:prefLabel ],
         [ sh:datatype rdf:langString ;
             sh:path reproschema:preamble ],
-        [ sh:node reproschema:ScoringShape ;
-            sh:path reproschema:scoringLogic ],
+        [ sh:node reproschema:ComputeSpecificationShape ;
+            sh:path reproschema:compute ],
         [ sh:maxCount 1 ;
             sh:node dash:ListShape ;
             sh:path reproschema:order ;
@@ -108,8 +108,8 @@ reproschema:ProtocolShape a sh:NodeShape ;
             sh:path skos:prefLabel ],
         [ sh:datatype rdf:langString ;
             sh:path reproschema:preamble ],
-        [ sh:node reproschema:ScoringShape ;
-            sh:path reproschema:scoringLogic ],
+        [ sh:node reproschema:ComputeSpecificationShape ;
+            sh:path reproschema:compute ],
         [ sh:minCount 1 ;
             sh:node dash:ListShape ;
             sh:path reproschema:order ;
@@ -191,7 +191,7 @@ reproschema:AddPropertiesShape a sh:NodeShape ;
         [ sh:datatype xsd:boolean ;
             sh:path schema:valueRequired ] .
 
-reproschema:ScoringShape a sh:NodeShape ;
+reproschema:ComputeSpecificationShape a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:property [ sh:datatype rdf:langString ;
