@@ -1,0 +1,29 @@
+{
+    "@context": "../contexts/base",
+    "@graph": [
+        {
+            "@id": "reproschema:source",
+            "schema:domainIncludes": {
+               "@id": "reproschema:AdditionalNoteObj"
+            }
+        },
+        {
+            "@id": "reproschema:column",
+            "schema:domainIncludes": {
+               "@id": "reproschema:AdditionalNoteObj"
+            }
+        },
+        {
+            "@id": "reproschema:value",
+            "schema:domainIncludes": {
+               "@id": "reproschema:AdditionalNoteObj"
+            }
+        },
+        {
+            "@id": "reproschema:AdditionalNoteObj",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "A set of objects to define notes in a field. For example, most Redcap and NDA data dictionaries have notes for each item which needs to be captured in reproschema",
+            "rdfs:label": "Additional Notes Object"
+        }
+    ]
+}

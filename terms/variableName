@@ -1,9 +1,10 @@
 {
-    "@context": {
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
-    },
-    "@id": "variableName",
-    "@type": "rdfs:property",
-    "rdfs:comment": "An element to describe the variable name used.",
-    "rdfs:label": "variableName"
+    "@context": "../contexts/base",
+    "@id": "reproschema:variableName",
+    "@type": "rdf:Property",
+    "rdfs:comment": "The name used to represent an item.",
+    "rdfs:label": "variableName",
+    "schema:rangeIncludes": {
+        "@id": "schema:Text"
+    }
 }

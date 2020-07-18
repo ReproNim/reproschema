@@ -1,3 +1,5 @@
+![Python package](https://github.com/ReproNim/reproschema/workflows/Python%20package/badge.svg)
+
 # Schema Standardization
 
 This documentation describes and explains the ReproNim schema specification.

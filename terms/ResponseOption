@@ -1,0 +1,53 @@
+{
+    "@context": "../contexts/base",
+    "@graph": [
+        {
+            "@id": "reproschema:valueType",
+            "schema:domainIncludes": {
+                "@id": "reproschema:ResponseOption"
+            }
+        },
+        {
+            "@id": "schema:minValue",
+            "schema:domainIncludes": {
+                "@id": "reproschema:ResponseOption"
+            }
+        },
+        {
+            "@id": "schema:maxValue",
+            "schema:domainIncludes": {
+                "@id": "reproschema:ResponseOption"
+            }
+        },
+        {
+            "@id": "reproschema:multipleChoice",
+            "schema:domainIncludes": {
+                "@id": "reproschema:ResponseOption"
+            }
+        },
+        {
+            "@id": "reproschema:datumType",
+            "schema:domainIncludes": {
+                "@id": "reproschema:ResponseOption"
+            }
+        },
+        {
+            "@id": "schema:unitCode",
+            "schema:domainIncludes": {
+                "@id": "reproschema:ResponseOption"
+            }
+        },
+        {
+            "@id": "reproschema:choices",
+            "schema:domainIncludes": {
+                "@id": "reproschema:ResponseOption"
+            }
+        },
+        {
+            "@id": "reproschema:ResponseOption",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "An element (object or by URL)to describe the properties of response of the Field item.",
+            "rdfs:label": "Response option"
+        }
+    ]
+}

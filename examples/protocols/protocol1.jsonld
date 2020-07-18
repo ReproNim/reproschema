@@ -1,0 +1,34 @@
+{
+	"@context": "../../contexts/generic",
+	"@type": "reproschema:Protocol",
+	"@id": "protocol1.jsonld",
+	"prefLabel": {
+		"en": "Protocol1",
+		"es": "Protocol1_es"
+	},
+	"description": "example Protocol",
+	"schemaVersion": "0.0.1",
+	"version": "0.0.1",
+	"ui": {
+		"addProperties": [
+			{
+				"isAbout": "../activities/activity1.jsonld",
+				"variableName": "activity1",
+				"prefLabel": {
+					"en": "Screening",
+					"es": "Screening_es"
+				},
+				"isVis": true
+			}
+		],
+		"order": [
+			"../activities/activity1.jsonld"
+		],
+		"shuffle": false,
+		"allow": [
+			"reproschema:AutoAdvance",
+			"reproschema:DisableBack",
+			"reproschema:AllowExport"
+		]
+	}
+}

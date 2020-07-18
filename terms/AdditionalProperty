@@ -1,0 +1,47 @@
+{
+    "@context": "../contexts/base",
+    "@graph": [
+        {
+            "@id": "reproschema:variableName",
+            "schema:domainIncludes": {
+               "@id": "reproschema:AdditionalProperty"
+            }
+        },
+        {
+            "@id": "reproschema:isAbout",
+            "schema:domainIncludes": {
+               "@id": "reproschema:AdditionalProperty"
+            }
+        },
+        {
+            "@id": "schema:valueRequired",
+            "schema:domainIncludes": {
+               "@id": "reproschema:AdditionalProperty"
+            }
+        },
+        {
+            "@id": "skos:prefLabel",
+            "@type": "rdf:Property",
+            "rdfs:comment": "Indicates the label of an Activity or Field to be used as display name.",
+            "rdfs:label": "prefLabel",
+            "schema:domainIncludes": {
+               "@id": "reproschema:AdditionalProperty"
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:Text"
+            }
+        },
+        {
+            "@id": "reproschema:isVis",
+            "schema:domainIncludes": {
+               "@id": "reproschema:AdditionalProperty"
+            }
+        },
+        {
+            "@id": "reproschema:AdditionalProperty",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "An object to describe the various properties added to assessments and fields.",
+            "rdfs:label": "Additional properties"
+        }
+    ]
+}
