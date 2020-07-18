@@ -13,11 +13,11 @@ This repository contains:
 -   the [documentation](./docs)
 
 
-## Licences
+## Licenses
 
 ### Code
 
-The content of this repository is distributed under the [Apache 2.0 licence](./LICENSE).
+The content of this repository is distributed under the [Apache 2.0 license](./LICENSE).
 
 ### Documentation
 
