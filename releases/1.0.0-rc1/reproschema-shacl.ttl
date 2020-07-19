@@ -53,7 +53,8 @@ reproschema:AdditionalNoteObjShape a sh:NodeShape ;
             sh:minCount 1 ;
             sh:path reproschema:column ],
         [ sh:or ( [ sh:datatype xsd:integer ] [ sh:nodeKind sh:IRI ] [ sh:datatype schema:Boolean ] [ sh:datatype schema:StructuredValue ] [ sh:datatype schema:Text ] ) ;
-            sh:path reproschema:value ] .
+            sh:path reproschema:value ] ;
+    sh:targetClass reproschema:AdditionalNoteObj .
 
 reproschema:FieldShape a sh:NodeShape ;
     sh:closed true ;
@@ -61,8 +62,6 @@ reproschema:FieldShape a sh:NodeShape ;
     sh:property [ sh:datatype rdf:langString ;
             sh:minCount 1 ;
             sh:path skos:prefLabel ],
-        [ sh:datatype rdf:langString ;
-            sh:path skos:altLabel ],
         [ sh:datatype rdf:langString ;
             sh:path schema:description ],
         [ sh:datatype rdf:langString ;
@@ -85,7 +84,7 @@ reproschema:FieldShape a sh:NodeShape ;
             sh:path schema:readonlyValue ],
         [ sh:node reproschema:AdditionalNoteObj ;
             sh:path reproschema:additionalNotesObj ],
-        [ sh:or ( [ sh:nodeKind sh:IRI ] [ sh:node reproschema:ResponseOptionsShape ] ) ;
+        [ sh:or ( [ sh:nodeKind sh:IRI ] [ sh:node reproschema:ResponseOptionShape ] ) ;
             sh:path reproschema:responseOptions ] ;
     sh:targetClass reproschema:Field .
 
@@ -130,14 +129,11 @@ reproschema:ChoicesShape a sh:NodeShape ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:property [ sh:nodeKind sh:IRI ;
             sh:path schema:image ],
-        [ sh:nodeKind sh:IRI ;
-            sh:path reproschema:DontKnow ],
-        [ sh:nodeKind sh:IRI ;
-            sh:path reproschema:Skipped ],
         [ sh:datatype rdf:langString ;
             sh:path schema:name ],
         [ sh:or ( [ sh:datatype xsd:integer ] [ sh:nodeKind sh:IRI ] [ sh:datatype schema:Boolean ] [ sh:datatype schema:StructuredValue ] [ sh:datatype schema:Text ] ) ;
-            sh:path reproschema:value ] .
+            sh:path reproschema:value ] ;
+    sh:targetClass reproschema:Choice .
 
 reproschema:IsVisShape a sh:NodeShape ;
     sh:closed true ;
@@ -152,7 +148,7 @@ reproschema:IsVisShape a sh:NodeShape ;
             sh:minCount 1 ;
             sh:path reproschema:payload ] .
 
-reproschema:ResponseOptionsShape a sh:NodeShape ;
+reproschema:ResponseOptionShape a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:property [ sh:datatype schema:Boolean ;
@@ -173,7 +169,7 @@ reproschema:ResponseOptionsShape a sh:NodeShape ;
             sh:path schema:unitCode ],
         [ sh:node reproschema:ChoicesShape ;
             sh:path reproschema:choices ] ;
-    sh:targetClass reproschema:ResponseOptions .
+    sh:targetClass reproschema:ResponseOption .
 
 reproschema:AddPropertiesShape a sh:NodeShape ;
     sh:closed true ;
@@ -189,7 +185,8 @@ reproschema:AddPropertiesShape a sh:NodeShape ;
         [ sh:datatype rdf:langString ;
             sh:path skos:prefLabel ],
         [ sh:datatype xsd:boolean ;
-            sh:path schema:valueRequired ] .
+            sh:path schema:valueRequired ] ;
+    sh:targetClass reproschema:AdditionalProperty .
 
 reproschema:ComputeSpecificationShape a sh:NodeShape ;
     sh:closed true ;
@@ -199,5 +196,6 @@ reproschema:ComputeSpecificationShape a sh:NodeShape ;
             sh:path reproschema:variableName ],
         [ sh:datatype rdf:langString ;
             sh:minCount 1 ;
-            sh:path reproschema:jsExpression ] .
+            sh:path reproschema:jsExpression ] ;
+    sh:targetClass reproschema:ComputeSpecification .
 

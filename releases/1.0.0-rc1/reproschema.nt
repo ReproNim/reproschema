@@ -52,7 +52,7 @@
 <http://schema.repronim.org/AutoAdvance> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates (by boolean) if assessments in a protocol can auto advance or not." .
 <http://schema.repronim.org/AutoAdvance> <http://www.w3.org/2000/01/rdf-schema#label> "Auto advance" .
 <http://schema.repronim.org/Choice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<http://schema.repronim.org/Choice> <http://www.w3.org/2000/01/rdf-schema#comment> "An array to list the available options in responseOptions of the Field item." .
+<http://schema.repronim.org/Choice> <http://www.w3.org/2000/01/rdf-schema#comment> "An object to describe a response option." .
 <http://schema.repronim.org/Choice> <http://www.w3.org/2000/01/rdf-schema#label> "Response choice" .
 <http://schema.repronim.org/ComputeSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://schema.repronim.org/ComputeSpecification> <http://www.w3.org/2000/01/rdf-schema#comment> "An object to define computations in an activity or protocol." .
@@ -104,7 +104,7 @@
 <http://schema.repronim.org/choices> <http://schema.org/rangeIncludes> <http://schema.repronim.org/Choice> .
 <http://schema.repronim.org/choices> <http://schema.org/sameAs> <http://schema.org/itemListElement> .
 <http://schema.repronim.org/choices> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<http://schema.repronim.org/choices> <http://www.w3.org/2000/01/rdf-schema#comment> "An array to list the available options in responseOptions of the Field item." .
+<http://schema.repronim.org/choices> <http://www.w3.org/2000/01/rdf-schema#comment> "An array to list the available options for response of the Field item." .
 <http://schema.repronim.org/choices> <http://www.w3.org/2000/01/rdf-schema#label> "choices" .
 <http://schema.repronim.org/column> <http://schema.org/domainIncludes> <http://schema.repronim.org/AdditionalNoteObj> .
 <http://schema.repronim.org/column> <http://schema.org/rangeIncludes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
@@ -221,7 +221,5 @@
 <http://www.w3.org/2004/02/skos/core#prefLabel> <http://schema.org/domainIncludes> <http://schema.repronim.org/Protocol> .
 <http://www.w3.org/2004/02/skos/core#prefLabel> <http://schema.org/rangeIncludes> <http://schema.org/Text> .
 <http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the label of an Activity or Field to be used as display name." .
-<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the label of the Field." .
-<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/2000/01/rdf-schema#comment> "The preferred name of the assessment." .
-<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/2000/01/rdf-schema#label> "prefLabel" .
+<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/2000/01/rdf-schema#comment> "The preferred label." .
+<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/2000/01/rdf-schema#label> "preferred label" .

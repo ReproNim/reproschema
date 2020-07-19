@@ -10,7 +10,7 @@ style="width: 350px; height: auto; display: block; margin-left: auto;  margin-ri
 - If you want to know more about the Reproschema project, its goals and the problems 
 it tries to solve: check out our [introduction](./01_introduction.md).
 
-- The Reproschema is related to the `semantic web` and relies on `linked data` 
+- The Reproschema is related to the `Semantic Web` and relies on `linked data` 
 and the `JSON-LD` format. If you are unfamiliar with such things, head over to 
 our [FAQ](./98_FAQ.md). You do not need an in depth understanding of what those 
 things are to use the Reproschema but some "big picture" conceptual understanding 

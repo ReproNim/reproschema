@@ -1,4 +1,5 @@
 import os
+import sys
 import json
 from pyld import jsonld
 import rdflib as rl
@@ -45,5 +46,9 @@ def create_release(version):
 
 
 if __name__ == "__main__":
-    version = "1.0-rc1"
+    if len(sys.argv) < 2:
+        version = "master"
+    else:
+        version = sys.argv[1]
+    print(f"Generating release for version: {version}")
     create_release(version)
