@@ -1,0 +1,203 @@
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix reproschema: <http://schema.repronim.org/> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+reproschema:ActivityShape a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:datatype rdf:langString ;
+            sh:path schema:description ],
+        [ sh:datatype rdf:langString ;
+            sh:path schema:schemaVersion ],
+        [ sh:datatype rdf:langString ;
+            sh:path schema:version ],
+        [ sh:datatype rdf:langString ;
+            sh:path schema:citation ],
+        [ sh:nodeKind sh:IRI ;
+            sh:path schema:image ],
+        [ sh:datatype rdf:langString ;
+            sh:minCount 1 ;
+            sh:path skos:prefLabel ],
+        [ sh:datatype rdf:langString ;
+            sh:path reproschema:preamble ],
+        [ sh:node reproschema:ComputeSpecificationShape ;
+            sh:path reproschema:compute ],
+        [ sh:maxCount 1 ;
+            sh:node dash:ListShape ;
+            sh:path reproschema:order ;
+            sh:property [ sh:minCount 1 ;
+                    sh:nodeKind sh:IRI ;
+                    sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ] ],
+        [ sh:node reproschema:AddPropertiesShape ;
+            sh:path reproschema:addProperties ],
+        [ sh:datatype xsd:string ;
+            sh:path reproschema:inputType ],
+        [ sh:datatype schema:Boolean ;
+            sh:path reproschema:shuffle ],
+        [ sh:in ( reproschema:AllowExport reproschema:DisableBack reproschema:AutoAdvance reproschema:AllowReplay reproschema:Skipped reproschema:DontKnow reproschema:TimedOut ) ;
+            sh:nodeKind sh:IRI ;
+            sh:path reproschema:allow ] ;
+    sh:targetClass reproschema:Activity .
+
+reproschema:AdditionalNoteObjShape a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:datatype rdf:langString ;
+            sh:minCount 1 ;
+            sh:path reproschema:source ],
+        [ sh:datatype rdf:langString ;
+            sh:minCount 1 ;
+            sh:path reproschema:column ],
+        [ sh:or ( [ sh:datatype xsd:integer ] [ sh:nodeKind sh:IRI ] [ sh:datatype schema:Boolean ] [ sh:datatype schema:StructuredValue ] [ sh:datatype schema:Text ] ) ;
+            sh:path reproschema:value ] .
+
+reproschema:FieldShape a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:datatype rdf:langString ;
+            sh:minCount 1 ;
+            sh:path skos:prefLabel ],
+        [ sh:datatype rdf:langString ;
+            sh:path skos:altLabel ],
+        [ sh:datatype rdf:langString ;
+            sh:path schema:description ],
+        [ sh:datatype rdf:langString ;
+            sh:path schema:schemaVersion ],
+        [ sh:datatype rdf:langString ;
+            sh:path schema:version ],
+        [ sh:datatype rdf:langString ;
+            sh:path schema:question ],
+        [ sh:maxCount 1 ;
+            sh:nodeKind sh:IRI ;
+            sh:path schema:image ],
+        [ sh:datatype rdf:langString ;
+            sh:path reproschema:preamble ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path reproschema:inputType ],
+        [ sh:datatype xsd:boolean ;
+            sh:maxCount 1 ;
+            sh:path schema:readonlyValue ],
+        [ sh:node reproschema:AdditionalNoteObj ;
+            sh:path reproschema:additionalNotesObj ],
+        [ sh:or ( [ sh:nodeKind sh:IRI ] [ sh:node reproschema:ResponseOptionsShape ] ) ;
+            sh:path reproschema:responseOptions ] ;
+    sh:targetClass reproschema:Field .
+
+reproschema:ProtocolShape a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:datatype rdf:langString ;
+            sh:path schema:description ],
+        [ sh:datatype rdf:langString ;
+            sh:path schema:schemaVersion ],
+        [ sh:datatype rdf:langString ;
+            sh:path schema:version ],
+        [ sh:maxCount 1 ;
+            sh:nodeKind sh:IRI ;
+            sh:path schema:image ],
+        [ sh:nodeKind sh:IRI ;
+            sh:path reproschema:landingPage ],
+        [ sh:datatype rdf:langString ;
+            sh:minCount 1 ;
+            sh:path skos:prefLabel ],
+        [ sh:datatype rdf:langString ;
+            sh:path reproschema:preamble ],
+        [ sh:node reproschema:ComputeSpecificationShape ;
+            sh:path reproschema:compute ],
+        [ sh:minCount 1 ;
+            sh:node dash:ListShape ;
+            sh:path reproschema:order ;
+            sh:property [ sh:minCount 1 ;
+                    sh:nodeKind sh:IRI ;
+                    sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ] ],
+        [ sh:node reproschema:AddPropertiesShape ;
+            sh:path reproschema:addProperties ],
+        [ sh:datatype schema:Boolean ;
+            sh:path reproschema:shuffle ],
+        [ sh:in ( reproschema:AllowExport reproschema:DisableBack reproschema:AutoAdvance reproschema:AllowReplay reproschema:Skipped reproschema:DontKnow reproschema:TimedOut ) ;
+            sh:nodeKind sh:IRI ;
+            sh:path reproschema:allow ] ;
+    sh:targetClass reproschema:Protocol .
+
+reproschema:ChoicesShape a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:nodeKind sh:IRI ;
+            sh:path schema:image ],
+        [ sh:nodeKind sh:IRI ;
+            sh:path reproschema:DontKnow ],
+        [ sh:nodeKind sh:IRI ;
+            sh:path reproschema:Skipped ],
+        [ sh:datatype rdf:langString ;
+            sh:path schema:name ],
+        [ sh:or ( [ sh:datatype xsd:integer ] [ sh:nodeKind sh:IRI ] [ sh:datatype schema:Boolean ] [ sh:datatype schema:StructuredValue ] [ sh:datatype schema:Text ] ) ;
+            sh:path reproschema:value ] .
+
+reproschema:IsVisShape a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:datatype rdf:langString ;
+            sh:minCount 1 ;
+            sh:path schema:method ],
+        [ sh:datatype rdf:langString ;
+            sh:minCount 1 ;
+            sh:path schema:url ],
+        [ sh:datatype rdf:langString ;
+            sh:minCount 1 ;
+            sh:path reproschema:payload ] .
+
+reproschema:ResponseOptionsShape a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:datatype schema:Boolean ;
+            sh:maxCount 1 ;
+            sh:path reproschema:multipleChoice ],
+        [ sh:nodeKind sh:IRI ;
+            sh:path reproschema:valueType ],
+        [ sh:datatype xsd:integer ;
+            sh:maxCount 1 ;
+            sh:path schema:minValue ],
+        [ sh:datatype xsd:integer ;
+            sh:maxCount 1 ;
+            sh:path schema:maxValue ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:path reproschema:datumType ],
+        [ sh:or ( [ sh:datatype schema:URL ] [ sh:datatype rdf:langString ] ) ;
+            sh:path schema:unitCode ],
+        [ sh:node reproschema:ChoicesShape ;
+            sh:path reproschema:choices ] ;
+    sh:targetClass reproschema:ResponseOptions .
+
+reproschema:AddPropertiesShape a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:datatype rdf:langString ;
+            sh:minCount 1 ;
+            sh:path reproschema:variableName ],
+        [ sh:minCount 1 ;
+            sh:nodeKind sh:IRI ;
+            sh:path reproschema:isAbout ],
+        [ sh:or ( [ sh:datatype rdf:langString ] [ sh:datatype xsd:boolean ] [ sh:node reproschema:IsVisShape ] ) ;
+            sh:path reproschema:isVis ],
+        [ sh:datatype rdf:langString ;
+            sh:path skos:prefLabel ],
+        [ sh:datatype xsd:boolean ;
+            sh:path schema:valueRequired ] .
+
+reproschema:ComputeSpecificationShape a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:datatype rdf:langString ;
+            sh:minCount 1 ;
+            sh:path reproschema:variableName ],
+        [ sh:datatype rdf:langString ;
+            sh:minCount 1 ;
+            sh:path reproschema:jsExpression ] .
+
