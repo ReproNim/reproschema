@@ -36,7 +36,7 @@ reproschema:AutoAdvance a rdfs:Class ;
 
 reproschema:Choice a rdfs:Class ;
     rdfs:label "Response choice" ;
-    rdfs:comment "An array to list the available options in responseOptions of the Field item." .
+    rdfs:comment "An object to describe a response option." .
 
 reproschema:ComputeSpecification a rdfs:Class ;
     rdfs:label "Compute Specification" ;
@@ -143,7 +143,7 @@ reproschema:choices a rdf:Property ;
     schema:rangeIncludes schema:URL,
         reproschema:Choice ;
     schema:sameAs schema:itemListElement ;
-    rdfs:comment "An array to list the available options in responseOptions of the Field item." .
+    rdfs:comment "An array to list the available options for response of the Field item." .
 
 reproschema:column a rdf:Property ;
     rdfs:label "column" ;
@@ -274,15 +274,13 @@ reproschema:variableName a rdf:Property ;
     rdfs:comment "The name used to represent an item." .
 
 skos:prefLabel a rdf:Property ;
-    rdfs:label "prefLabel" ;
+    rdfs:label "preferred label" ;
     schema:domainIncludes reproschema:Activity,
         reproschema:AdditionalProperty,
         reproschema:Field,
         reproschema:Protocol ;
     schema:rangeIncludes schema:Text ;
-    rdfs:comment "Indicates the label of an Activity or Field to be used as display name.",
-        "Indicates the label of the Field.",
-        "The preferred name of the assessment." .
+    rdfs:comment "The preferred label." .
 
 schema:value schema:domainIncludes reproschema:Choice ;
     schema:rangeIncludes reproschema:DontKnow,
