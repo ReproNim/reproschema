@@ -22,14 +22,15 @@
             {   "isAbout": "items/item1.jsonld",
                 "variableName": "item1",
                 "requiredValue": true,
-                "isVis": true}
+                "isVis": true,
+                "randomMaxDelay": "2:0:0",
+                "limit": "2-0",
+                "schedule": "0 8 * * *"
+            }
         ],
         "order": [
             "items/item1.jsonld"
         ],
         "shuffle": false
-    },
-    "cronTable": [
-        {"randomMaxDelay": "2:0:0", "schedule": "0 8 * * *", "isAbout": "items/item1.jsonld"}
-    ]
+    }
 }
