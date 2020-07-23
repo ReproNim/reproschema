@@ -11,52 +11,50 @@ reproschema:ActivityShape a sh:NodeShape ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:property [ sh:datatype rdf:langString ;
             sh:path schema:description ],
-
         [ sh:datatype rdf:langString ;
             sh:path schema:schemaVersion ],
-
         [ sh:datatype rdf:langString ;
             sh:path schema:version ],
-
         [ sh:datatype rdf:langString ;
             sh:path schema:citation ],
-
         [ sh:nodeKind sh:IRI ;
             sh:path schema:image ],
-
         [ sh:datatype rdf:langString ;
             sh:minCount 1 ;
             sh:path skos:prefLabel ],
-
         [ sh:datatype rdf:langString ;
             sh:path reproschema:preamble ],
-
         [ sh:node reproschema:ComputeSpecificationShape ;
             sh:path reproschema:compute ],
-
         [ sh:maxCount 1 ;
             sh:node dash:ListShape ;
             sh:path reproschema:order ;
             sh:property [ sh:minCount 1 ;
                     sh:nodeKind sh:IRI ;
                     sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ] ],
-
         [ sh:node reproschema:AddPropertiesShape ;
             sh:path reproschema:addProperties ],
-
         [ sh:datatype xsd:string ;
             sh:path reproschema:inputType ],
-
         [ sh:datatype schema:Boolean ;
             sh:path reproschema:shuffle ],
-
-        [ sh:nodeKind sh:IRI ;
-            sh:in ( reproschema:AllowExport reproschema:DisableBack reproschema:AutoAdvance reproschema:AllowReplay reproschema:Skipped reproschema:DontKnow reproschema:TimedOut ) ;
-            sh:path reproschema:allow ],
-
-        [ sh:node reproschema:CronTableShape ;
-            sh:path reproschema:cronTable ] ;
+        [ sh:in ( reproschema:AllowExport reproschema:DisableBack reproschema:AutoAdvance reproschema:AllowReplay reproschema:Skipped reproschema:DontKnow reproschema:TimedOut ) ;
+            sh:nodeKind sh:IRI ;
+            sh:path reproschema:allow ] ;
     sh:targetClass reproschema:Activity .
+
+reproschema:AdditionalNoteObjShape a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:datatype rdf:langString ;
+            sh:minCount 1 ;
+            sh:path reproschema:source ],
+        [ sh:datatype rdf:langString ;
+            sh:minCount 1 ;
+            sh:path reproschema:column ],
+        [ sh:or ( [ sh:datatype xsd:integer ] [ sh:nodeKind sh:IRI ] [ sh:datatype schema:Boolean ] [ sh:datatype schema:StructuredValue ] [ sh:datatype schema:Text ] ) ;
+            sh:path reproschema:value ] ;
+    sh:targetClass reproschema:AdditionalNoteObj .
 
 reproschema:FieldShape a sh:NodeShape ;
     sh:closed true ;
@@ -64,42 +62,29 @@ reproschema:FieldShape a sh:NodeShape ;
     sh:property [ sh:datatype rdf:langString ;
             sh:minCount 1 ;
             sh:path skos:prefLabel ],
-
-        [ sh:datatype rdf:langString ;
-            sh:path skos:altLabel ],
-
         [ sh:datatype rdf:langString ;
             sh:path schema:description ],
-
         [ sh:datatype rdf:langString ;
             sh:path schema:schemaVersion ],
-
         [ sh:datatype rdf:langString ;
             sh:path schema:version ],
-
         [ sh:datatype rdf:langString ;
             sh:path schema:question ],
-
-        [ sh:nodeKind sh:IRI ;
-            sh:maxCount 1 ;
+        [ sh:maxCount 1 ;
+            sh:nodeKind sh:IRI ;
             sh:path schema:image ],
-
         [ sh:datatype rdf:langString ;
             sh:path reproschema:preamble ],
-
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:path reproschema:inputType ],
-
         [ sh:datatype xsd:boolean ;
             sh:maxCount 1 ;
             sh:path schema:readonlyValue ],
-
         [ sh:node reproschema:AdditionalNoteObj ;
             sh:path reproschema:additionalNotesObj ],
-
-        [ sh:or ( [ sh:nodeKind sh:IRI ] [ sh:node reproschema:ResponseOptionsShape ] ) ;
+        [ sh:or ( [ sh:nodeKind sh:IRI ] [ sh:node reproschema:ResponseOptionShape ] ) ;
             sh:path reproschema:responseOptions ] ;
     sh:targetClass reproschema:Field .
 
@@ -108,76 +93,80 @@ reproschema:ProtocolShape a sh:NodeShape ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:property [ sh:datatype rdf:langString ;
             sh:path schema:description ],
-
         [ sh:datatype rdf:langString ;
             sh:path schema:schemaVersion ],
-
         [ sh:datatype rdf:langString ;
             sh:path schema:version ],
-
-        [ sh:nodeKind sh:IRI ;
-            sh:maxCount 1 ;
+        [ sh:maxCount 1 ;
+            sh:nodeKind sh:IRI ;
             sh:path schema:image ],
-
         [ sh:nodeKind sh:IRI ;
             sh:path reproschema:landingPage ],
-
         [ sh:datatype rdf:langString ;
             sh:minCount 1 ;
             sh:path skos:prefLabel ],
-
         [ sh:datatype rdf:langString ;
             sh:path reproschema:preamble ],
-
         [ sh:node reproschema:ComputeSpecificationShape ;
             sh:path reproschema:compute ],
-
         [ sh:minCount 1 ;
             sh:node dash:ListShape ;
             sh:path reproschema:order ;
             sh:property [ sh:minCount 1 ;
                     sh:nodeKind sh:IRI ;
                     sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ] ],
-
         [ sh:node reproschema:AddPropertiesShape ;
             sh:path reproschema:addProperties ],
-
         [ sh:datatype schema:Boolean ;
             sh:path reproschema:shuffle ],
-
-        [ sh:nodeKind sh:IRI ;
-            sh:in ( reproschema:AllowExport reproschema:DisableBack reproschema:AutoAdvance reproschema:AllowReplay reproschema:Skipped reproschema:DontKnow reproschema:TimedOut ) ;
-            sh:path reproschema:allow ],
-
-        [ sh:node reproschema:CronTableShape ;
-            sh:path reproschema:cronTable ] ;
+        [ sh:in ( reproschema:AllowExport reproschema:DisableBack reproschema:AutoAdvance reproschema:AllowReplay reproschema:Skipped reproschema:DontKnow reproschema:TimedOut ) ;
+            sh:nodeKind sh:IRI ;
+            sh:path reproschema:allow ] ;
     sh:targetClass reproschema:Protocol .
 
-reproschema:ResponseOptionsShape a sh:NodeShape ;
+reproschema:ChoicesShape a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:nodeKind sh:IRI ;
+            sh:path schema:image ],
+        [ sh:datatype rdf:langString ;
+            sh:path schema:name ],
+        [ sh:or ( [ sh:datatype xsd:integer ] [ sh:nodeKind sh:IRI ] [ sh:datatype schema:Boolean ] [ sh:datatype schema:StructuredValue ] [ sh:datatype schema:Text ] ) ;
+            sh:path reproschema:value ] ;
+    sh:targetClass reproschema:Choice .
+
+reproschema:IsVisShape a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:datatype rdf:langString ;
+            sh:minCount 1 ;
+            sh:path schema:method ],
+        [ sh:datatype rdf:langString ;
+            sh:minCount 1 ;
+            sh:path schema:url ],
+        [ sh:datatype rdf:langString ;
+            sh:minCount 1 ;
+            sh:path reproschema:payload ] .
+
+reproschema:ResponseOptionShape a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:property [ sh:datatype schema:Boolean ;
             sh:maxCount 1 ;
             sh:path reproschema:multipleChoice ],
-
         [ sh:nodeKind sh:IRI ;
             sh:path reproschema:valueType ],
-
         [ sh:datatype xsd:integer ;
             sh:maxCount 1 ;
             sh:path schema:minValue ],
-
         [ sh:datatype xsd:integer ;
             sh:maxCount 1 ;
             sh:path schema:maxValue ],
-
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:path reproschema:datumType ],
-
         [ sh:or ( [ sh:datatype schema:URL ] [ sh:datatype rdf:langString ] ) ;
             sh:path schema:unitCode ],
-
         [ sh:node reproschema:ChoicesShape ;
             sh:path reproschema:choices ] ;
     sh:targetClass reproschema:ResponseOption .
@@ -188,67 +177,16 @@ reproschema:AddPropertiesShape a sh:NodeShape ;
     sh:property [ sh:datatype rdf:langString ;
             sh:minCount 1 ;
             sh:path reproschema:variableName ],
-
         [ sh:minCount 1 ;
             sh:nodeKind sh:IRI ;
             sh:path reproschema:isAbout ],
-
         [ sh:or ( [ sh:datatype rdf:langString ] [ sh:datatype xsd:boolean ] [ sh:node reproschema:IsVisShape ] ) ;
             sh:path reproschema:isVis ],
-
         [ sh:datatype rdf:langString ;
             sh:path skos:prefLabel ],
-
         [ sh:datatype xsd:boolean ;
-            sh:path schema:valueRequired ],
-
-        [ sh:datatype rdf:langString ;
-            sh:path reproschema:randomMaxDelay ],
-
-        [ sh:datatype rdf:langString ;
-            sh:pattern "(@(annually|yearly|monthly|weekly|daily|hourly|reboot))|(@every (\\d+(ns|us|µs|ms|s|m|h))+)|((((\\d+,)+\\d+|(\\d+(\\/|-)\\d+)|\\d+|\\*) ?){5,7})" ;
-            sh:path reproschema:schedule ],
-
-        [ sh:datatype rdf:langString ;
-            sh:path reproschema:limit ],
-
-        [ sh:datatype xsd:integer ;
-            sh:path reproschema:maxRetakes ] ;
+            sh:path schema:valueRequired ] ;
     sh:targetClass reproschema:AdditionalProperty .
-
-reproschema:ChoicesShape a sh:NodeShape ;
-    sh:closed true ;
-    sh:ignoredProperties ( rdf:type ) ;
-    sh:property [ sh:nodeKind sh:IRI ;
-            sh:path schema:image ],
-
-        [ sh:nodeKind sh:IRI ;
-            sh:path reproschema:DontKnow ],
-
-        [ sh:nodeKind sh:IRI ;
-            sh:path reproschema:Skipped ],
-
-        [ sh:datatype rdf:langString ;
-            sh:path schema:name ],
-
-        [ sh:or ( [ sh:datatype xsd:integer ] [ sh:nodeKind sh:IRI ] [ sh:datatype schema:Boolean ] [ sh:datatype schema:StructuredValue ] [ sh:datatype schema:Text ]) ;
-            sh:path reproschema:value ] ;
-    sh:targetClass reproschema:Choice .
-
-reproschema:IsVisShape a sh:NodeShape ;
-    sh:closed true ;
-    sh:ignoredProperties ( rdf:type ) ;
-    sh:property [ sh:datatype rdf:langString ;
-            sh:minCount 1 ;
-            sh:path schema:method ],
-
-        [ sh:datatype rdf:langString ;
-            sh:minCount 1 ;
-            sh:path schema:url ],
-
-        [ sh:datatype rdf:langString ;
-            sh:minCount 1 ;
-            sh:path reproschema:payload ] .
 
 reproschema:ComputeSpecificationShape a sh:NodeShape ;
     sh:closed true ;
@@ -261,17 +199,3 @@ reproschema:ComputeSpecificationShape a sh:NodeShape ;
             sh:path reproschema:jsExpression ] ;
     sh:targetClass reproschema:ComputeSpecification .
 
-reproschema:AdditionalNoteObjShape a sh:NodeShape ;
-    sh:closed true ;
-    sh:ignoredProperties ( rdf:type ) ;
-    sh:property [ sh:datatype rdf:langString ;
-            sh:minCount 1 ;
-            sh:path reproschema:source ],
-
-        [ sh:datatype rdf:langString ;
-            sh:minCount 1 ;
-            sh:path reproschema:column ],
-
-        [ sh:or ( [ sh:datatype xsd:integer ] [ sh:nodeKind sh:IRI ] [ sh:datatype schema:Boolean ] [ sh:datatype schema:StructuredValue ] [ sh:datatype schema:Text ]) ;
-            sh:path reproschema:value ] ;
-    sh:targetClass reproschema:AdditionalNoteObj .
