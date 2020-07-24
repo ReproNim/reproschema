@@ -26,5 +26,5 @@ jobs:
         pip install reproschema
     - name: Test with pyshacl
       run: |
-        python tests/jsonParser.py
+        python scripts/jsonParser.py
         reproschema -l DEBUG validate --shapefile validation/reproschema-shacl.ttl examples
