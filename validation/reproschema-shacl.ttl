@@ -66,6 +66,9 @@ reproschema:FieldShape a sh:NodeShape ;
             sh:path skos:prefLabel ],
 
         [ sh:datatype rdf:langString ;
+            sh:path skos:altLabel ],
+
+        [ sh:datatype rdf:langString ;
             sh:path schema:description ],
 
         [ sh:datatype rdf:langString ;
@@ -96,7 +99,7 @@ reproschema:FieldShape a sh:NodeShape ;
         [ sh:node reproschema:AdditionalNoteObj ;
             sh:path reproschema:additionalNotesObj ],
 
-        [ sh:or ( [ sh:nodeKind sh:IRI ] [ sh:node reproschema:ResponseOptionShape ] ) ;
+        [ sh:or ( [ sh:nodeKind sh:IRI ] [ sh:node reproschema:ResponseOptionsShape ] ) ;
             sh:path reproschema:responseOptions ] ;
     sh:targetClass reproschema:Field .
 
@@ -150,7 +153,7 @@ reproschema:ProtocolShape a sh:NodeShape ;
             sh:path reproschema:cronTable ] ;
     sh:targetClass reproschema:Protocol .
 
-reproschema:ResponseOptionShape a sh:NodeShape ;
+reproschema:ResponseOptionsShape a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:property [ sh:datatype schema:Boolean ;
@@ -197,7 +200,20 @@ reproschema:AddPropertiesShape a sh:NodeShape ;
             sh:path skos:prefLabel ],
 
         [ sh:datatype xsd:boolean ;
-            sh:path schema:valueRequired ] ;
+            sh:path schema:valueRequired ],
+
+        [ sh:datatype rdf:langString ;
+            sh:path reproschema:randomMaxDelay ],
+
+        [ sh:datatype rdf:langString ;
+            sh:pattern "(@(annually|yearly|monthly|weekly|daily|hourly|reboot))|(@every (\\d+(ns|us|µs|ms|s|m|h))+)|((((\\d+,)+\\d+|(\\d+(\\/|-)\\d+)|\\d+|\\*) ?){5,7})" ;
+            sh:path reproschema:schedule ],
+
+        [ sh:datatype rdf:langString ;
+            sh:path reproschema:limit ],
+
+        [ sh:datatype xsd:integer ;
+            sh:path reproschema:maxRetakes ] ;
     sh:targetClass reproschema:AdditionalProperty .
 
 reproschema:ChoicesShape a sh:NodeShape ;
@@ -210,7 +226,7 @@ reproschema:ChoicesShape a sh:NodeShape ;
             sh:path schema:name ],
 
         [ sh:or ( [ sh:datatype xsd:integer ] [ sh:nodeKind sh:IRI ] [ sh:datatype schema:Boolean ] [ sh:datatype schema:StructuredValue ] [ sh:datatype schema:Text ]) ;
-            sh:path reproschema:value ];
+            sh:path reproschema:value ] ;
     sh:targetClass reproschema:Choice .
 
 reproschema:IsVisShape a sh:NodeShape ;
@@ -253,24 +269,3 @@ reproschema:AdditionalNoteObjShape a sh:NodeShape ;
         [ sh:or ( [ sh:datatype xsd:integer ] [ sh:nodeKind sh:IRI ] [ sh:datatype schema:Boolean ] [ sh:datatype schema:StructuredValue ] [ sh:datatype schema:Text ]) ;
             sh:path reproschema:value ] ;
     sh:targetClass reproschema:AdditionalNoteObj .
-
-
-reproschema:CronTableShape a sh:NodeShape ;
-    sh:closed true ;
-    sh:ignoredProperties ( rdf:type ) ;
-    sh:property [ sh:datatype schema:Text ;
-            sh:path reproschema:randomMaxDelay ],
-
-        [ sh:datatype schema:Text ;
-            sh:minCount 1 ;
-            sh:path reproschema:schedule ],
-
-        [ sh:datatype schema:Text ;
-            sh:path reproschema:limit ],
-
-        [ sh:nodeKind sh:IRI ;
-            sh:minCount 1 ;
-            sh:path reproschema:isAbout ],
-
-        [ sh:datatype schema:Number ;
-            sh:path reproschema:maxRetakes ] .
