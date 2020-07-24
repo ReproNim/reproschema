@@ -180,7 +180,7 @@ reproschema:ResponseOptionsShape a sh:NodeShape ;
 
         [ sh:node reproschema:ChoicesShape ;
             sh:path reproschema:choices ] ;
-    sh:targetClass reproschema:ResponseOptions .
+    sh:targetClass reproschema:ResponseOption .
 
 reproschema:AddPropertiesShape a sh:NodeShape ;
     sh:closed true ;
@@ -213,7 +213,8 @@ reproschema:AddPropertiesShape a sh:NodeShape ;
             sh:path reproschema:limit ],
 
         [ sh:datatype xsd:integer ;
-            sh:path reproschema:maxRetakes ] .
+            sh:path reproschema:maxRetakes ] ;
+    sh:targetClass reproschema:AdditionalProperty .
 
 reproschema:ChoicesShape a sh:NodeShape ;
     sh:closed true ;
@@ -221,17 +222,12 @@ reproschema:ChoicesShape a sh:NodeShape ;
     sh:property [ sh:nodeKind sh:IRI ;
             sh:path schema:image ],
 
-        [ sh:nodeKind sh:IRI ;
-            sh:path reproschema:DontKnow ],
-
-        [ sh:nodeKind sh:IRI ;
-            sh:path reproschema:Skipped ],
-
         [ sh:datatype rdf:langString ;
             sh:path schema:name ],
 
         [ sh:or ( [ sh:datatype xsd:integer ] [ sh:nodeKind sh:IRI ] [ sh:datatype schema:Boolean ] [ sh:datatype schema:StructuredValue ] [ sh:datatype schema:Text ]) ;
-            sh:path reproschema:value ] .
+            sh:path reproschema:value ] ;
+    sh:targetClass reproschema:Choice .
 
 reproschema:IsVisShape a sh:NodeShape ;
     sh:closed true ;
@@ -256,7 +252,8 @@ reproschema:ComputeSpecificationShape a sh:NodeShape ;
             sh:path reproschema:variableName ],
         [ sh:datatype rdf:langString ;
             sh:minCount 1 ;
-            sh:path reproschema:jsExpression ] .
+            sh:path reproschema:jsExpression ] ;
+    sh:targetClass reproschema:ComputeSpecification .
 
 reproschema:AdditionalNoteObjShape a sh:NodeShape ;
     sh:closed true ;
@@ -270,5 +267,5 @@ reproschema:AdditionalNoteObjShape a sh:NodeShape ;
             sh:path reproschema:column ],
 
         [ sh:or ( [ sh:datatype xsd:integer ] [ sh:nodeKind sh:IRI ] [ sh:datatype schema:Boolean ] [ sh:datatype schema:StructuredValue ] [ sh:datatype schema:Text ]) ;
-            sh:path reproschema:value ] .
-
+            sh:path reproschema:value ] ;
+    sh:targetClass reproschema:AdditionalNoteObj .
