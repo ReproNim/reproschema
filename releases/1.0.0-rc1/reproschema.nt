@@ -130,7 +130,7 @@
 <http://schema.repronim.org/isAbout> <http://schema.org/rangeIncludes> <http://schema.repronim.org/Activity> .
 <http://schema.repronim.org/isAbout> <http://schema.org/rangeIncludes> <http://schema.repronim.org/Field> .
 <http://schema.repronim.org/isAbout> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<http://schema.repronim.org/isAbout> <http://www.w3.org/2000/01/rdf-schema#comment> "An element to define (by URL) the corresponding nodes." .
+<http://schema.repronim.org/isAbout> <http://www.w3.org/2000/01/rdf-schema#comment> "A pointer to the node describing the item." .
 <http://schema.repronim.org/isAbout> <http://www.w3.org/2000/01/rdf-schema#label> "isAbout" .
 <http://schema.repronim.org/isVis> <http://schema.org/domainIncludes> <http://schema.repronim.org/AdditionalProperty> .
 <http://schema.repronim.org/isVis> <http://schema.org/rangeIncludes> <http://schema.org/Boolean> .
@@ -142,6 +142,7 @@
 <http://schema.repronim.org/jsExpression> <http://schema.org/rangeIncludes> <http://schema.org/Boolean> .
 <http://schema.repronim.org/jsExpression> <http://schema.org/rangeIncludes> <http://schema.org/Text> .
 <http://schema.repronim.org/jsExpression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://schema.repronim.org/jsExpression> <http://www.w3.org/2000/01/rdf-schema#comment> "A JavaScript expression for computations." .
 <http://schema.repronim.org/jsExpression> <http://www.w3.org/2000/01/rdf-schema#comment> "A JavaScript expression to compute a score from other variables." .
 <http://schema.repronim.org/jsExpression> <http://www.w3.org/2000/01/rdf-schema#label> "JavaScript Expression" .
 <http://schema.repronim.org/landingPage> <http://schema.org/domainIncludes> <http://schema.repronim.org/Protocol> .
@@ -150,6 +151,16 @@
 <http://schema.repronim.org/landingPage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <http://schema.repronim.org/landingPage> <http://www.w3.org/2000/01/rdf-schema#comment> "An element (by URL) to point to the protocol readme or landing page." .
 <http://schema.repronim.org/landingPage> <http://www.w3.org/2000/01/rdf-schema#label> "Landing page content" .
+<http://schema.repronim.org/limit> <http://schema.org/domainIncludes> <http://schema.repronim.org/AdditionalProperty> .
+<http://schema.repronim.org/limit> <http://schema.org/rangeIncludes> <http://schema.org/Text> .
+<http://schema.repronim.org/limit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://schema.repronim.org/limit> <http://www.w3.org/2000/01/rdf-schema#comment> "An element to limit the duration this activity is allowed to be completed by once activity is available." .
+<http://schema.repronim.org/limit> <http://www.w3.org/2000/01/rdf-schema#label> "limit" .
+<http://schema.repronim.org/maxRetakes> <http://schema.org/domainIncludes> <http://schema.repronim.org/AdditionalProperty> .
+<http://schema.repronim.org/maxRetakes> <http://schema.org/rangeIncludes> <http://schema.org/Number> .
+<http://schema.repronim.org/maxRetakes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://schema.repronim.org/maxRetakes> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines number of times the item is allowed to be redone." .
+<http://schema.repronim.org/maxRetakes> <http://www.w3.org/2000/01/rdf-schema#label> "maxRetakes" .
 <http://schema.repronim.org/multipleChoice> <http://schema.org/domainIncludes> <http://schema.repronim.org/ResponseOption> .
 <http://schema.repronim.org/multipleChoice> <http://schema.org/rangeIncludes> <http://schema.org/Boolean> .
 <http://schema.repronim.org/multipleChoice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
@@ -170,12 +181,25 @@
 <http://schema.repronim.org/preamble> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <http://schema.repronim.org/preamble> <http://www.w3.org/2000/01/rdf-schema#comment> "The preamble for an assessment" .
 <http://schema.repronim.org/preamble> <http://www.w3.org/2000/01/rdf-schema#label> "Preamble" .
+<http://schema.repronim.org/randomMaxDelay> <http://schema.org/domainIncludes> <http://schema.repronim.org/AdditionalProperty> .
+<http://schema.repronim.org/randomMaxDelay> <http://schema.org/rangeIncludes> <http://schema.org/Text> .
+<http://schema.repronim.org/randomMaxDelay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://schema.repronim.org/randomMaxDelay> <http://www.w3.org/2000/01/rdf-schema#comment> "Present activity/item within some random offset of activity available time up to the maximum specified by this" .
+<http://schema.repronim.org/randomMaxDelay> <http://www.w3.org/2000/01/rdf-schema#comment> "Present activity/item within some random offset of activity available time up to the maximum specified by this." .
+<http://schema.repronim.org/randomMaxDelay> <http://www.w3.org/2000/01/rdf-schema#label> "randomMaxDelay" .
 <http://schema.repronim.org/responseOptions> <http://schema.org/domainIncludes> <http://schema.repronim.org/Field> .
 <http://schema.repronim.org/responseOptions> <http://schema.org/rangeIncludes> <http://schema.org/URL> .
 <http://schema.repronim.org/responseOptions> <http://schema.org/rangeIncludes> <http://schema.repronim.org/ResponseOption> .
 <http://schema.repronim.org/responseOptions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <http://schema.repronim.org/responseOptions> <http://www.w3.org/2000/01/rdf-schema#comment> "An element (object or by URL)to describe the properties of response of the Field item." .
 <http://schema.repronim.org/responseOptions> <http://www.w3.org/2000/01/rdf-schema#label> "Response options" .
+<http://schema.repronim.org/schedule> <http://schema.org/domainIncludes> <http://schema.repronim.org/AdditionalProperty> .
+<http://schema.repronim.org/schedule> <http://schema.org/rangeIncludes> <http://schema.org/Schedule> .
+<http://schema.repronim.org/schedule> <http://schema.org/rangeIncludes> <http://schema.org/Text> .
+<http://schema.repronim.org/schedule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://schema.repronim.org/schedule> <http://www.w3.org/2000/01/rdf-schema#comment> "An element to set make activity available/repeat info using cron format." .
+<http://schema.repronim.org/schedule> <http://www.w3.org/2000/01/rdf-schema#label> "Schedule" .
+<http://schema.repronim.org/schedule> <http://www.w3.org/2000/01/rdf-schema#label> "schedule" .
 <http://schema.repronim.org/scoringLogic> <http://schema.org/domainIncludes> <http://schema.repronim.org/Activity> .
 <http://schema.repronim.org/scoringLogic> <http://schema.org/domainIncludes> <http://schema.repronim.org/Protocol> .
 <http://schema.repronim.org/shuffle> <http://schema.org/domainIncludes> <http://schema.repronim.org/Activity> .

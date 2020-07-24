@@ -28,7 +28,7 @@ python scripts/editProperties.py <version>
     # read all the terms
     g = rl.Graph()
     g.parse(
-        "https://raw.githubusercontent.com/schemaorg/schemaorg/master/data/releases/9.0/schema.ttl",
+        "https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/9.0/schema.ttl",
         format="turtle")
     g.parse(f"releases/{version}/reproschema.ttl", format="turtle")
     g.parse(f"releases/{version}/reproschema-shacl.ttl", format="turtle")

@@ -57,10 +57,33 @@
       "rdfs:label": "inputType"
     },
     {
+      "@id": "reproschema:maxRetakes",
+      "@type": "rdf:Property",
+      "schema:rangeIncludes": {
+        "@id": "schema:Number"
+      },
+      "rdfs:comment": "Defines number of times the item is allowed to be redone.",
+      "rdfs:label": "maxRetakes"
+    },
+    {
       "@id": "reproschema:AllowReplay",
       "@type": "rdfs:Class",
       "rdfs:comment": "Indicates (by boolean) if items can be replayed or not.",
       "rdfs:label": "Allow replay"
+    },
+    {
+      "@id": "reproschema:schedule",
+      "@type": "rdf:Property",
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:Text"
+        },
+        {
+          "@id": "schema:Schedule"
+        }
+      ],
+      "rdfs:comment": "An element to set make activity available/repeat info using cron format.",
+      "rdfs:label": "Schedule"
     },
     {
       "@id": "reproschema:shuffle",
@@ -99,6 +122,15 @@
       },
       "rdfs:comment": "An array of items indicating properties allowed on an activity or protocol ",
       "rdfs:label": "allow"
+    },
+    {
+      "@id": "reproschema:limit",
+      "@type": "rdf:Property",
+      "schema:rangeIncludes": {
+        "@id": "schema:Text"
+      },
+      "rdfs:comment": "An element to limit the duration this activity is allowed to be completed by once activity is available.",
+      "rdfs:label": "limit"
     },
     {
       "@id": "reproschema:DisableBack",
@@ -568,7 +600,7 @@
           "@id": "reproschema:Field"
         }
       ],
-      "rdfs:comment": "An element to define (by URL) the corresponding nodes.",
+      "rdfs:comment": "A pointer to the node describing the item.",
       "rdfs:label": "isAbout"
     },
     {
@@ -577,17 +609,17 @@
       "schema:domainIncludes": {
         "@id": "reproschema:ComputeSpecification"
       },
-      "schema:rangeIncludes": {
-        "@id": "schema:Text"
-      },
       "rdfs:comment": "The name used to represent an item.",
       "rdfs:label": "variableName"
     },
     {
       "@id": "reproschema:jsExpression",
+      "@type": "rdf:Property",
       "schema:domainIncludes": {
         "@id": "reproschema:ComputeSpecification"
-      }
+      },
+      "rdfs:comment": "A JavaScript expression for computations.",
+      "rdfs:label": "JavaScript Expression"
     },
     {
       "@id": "reproschema:ComputeSpecification",
@@ -703,6 +735,15 @@
       "rdfs:label": "Additional Notes Object"
     },
     {
+      "@id": "reproschema:randomMaxDelay",
+      "@type": "rdf:Property",
+      "schema:rangeIncludes": {
+        "@id": "schema:Text"
+      },
+      "rdfs:comment": "Present activity/item within some random offset of activity available time up to the maximum specified by this",
+      "rdfs:label": "randomMaxDelay"
+    },
+    {
       "@id": "reproschema:landingPage",
       "@type": "rdf:Property",
       "schema:rangeIncludes": [
@@ -740,9 +781,6 @@
       "schema:domainIncludes": {
         "@id": "reproschema:AdditionalProperty"
       },
-      "schema:rangeIncludes": {
-        "@id": "schema:Text"
-      },
       "rdfs:comment": "The preferred label.",
       "rdfs:label": "preferred label"
     },
@@ -751,6 +789,42 @@
       "schema:domainIncludes": {
         "@id": "reproschema:AdditionalProperty"
       }
+    },
+    {
+      "@id": "reproschema:randomMaxDelay",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "reproschema:AdditionalProperty"
+      },
+      "rdfs:comment": "Present activity/item within some random offset of activity available time up to the maximum specified by this.",
+      "rdfs:label": "randomMaxDelay"
+    },
+    {
+      "@id": "reproschema:schedule",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "reproschema:AdditionalProperty"
+      },
+      "rdfs:comment": "An element to set make activity available/repeat info using cron format.",
+      "rdfs:label": "schedule"
+    },
+    {
+      "@id": "reproschema:limit",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "reproschema:AdditionalProperty"
+      },
+      "rdfs:comment": "An element to limit the duration this activity is allowed to be completed by once activity is available.",
+      "rdfs:label": "limit"
+    },
+    {
+      "@id": "reproschema:maxRetakes",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "reproschema:AdditionalProperty"
+      },
+      "rdfs:comment": "Defines number of times the item is allowed to be redone.",
+      "rdfs:label": "maxRetakes"
     },
     {
       "@id": "reproschema:AdditionalProperty",

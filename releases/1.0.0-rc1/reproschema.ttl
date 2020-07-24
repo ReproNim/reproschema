@@ -174,7 +174,7 @@ reproschema:isAbout a rdf:Property ;
     schema:domainIncludes reproschema:AdditionalProperty ;
     schema:rangeIncludes reproschema:Activity,
         reproschema:Field ;
-    rdfs:comment "An element to define (by URL) the corresponding nodes." .
+    rdfs:comment "A pointer to the node describing the item." .
 
 reproschema:isVis a rdf:Property ;
     rdfs:label "visibility" ;
@@ -188,7 +188,8 @@ reproschema:jsExpression a rdf:Property ;
     schema:domainIncludes reproschema:ComputeSpecification ;
     schema:rangeIncludes schema:Boolean,
         schema:Text ;
-    rdfs:comment "A JavaScript expression to compute a score from other variables." .
+    rdfs:comment "A JavaScript expression for computations.",
+        "A JavaScript expression to compute a score from other variables." .
 
 reproschema:landingPage a rdf:Property ;
     rdfs:label "Landing page content" ;
@@ -196,6 +197,18 @@ reproschema:landingPage a rdf:Property ;
     schema:rangeIncludes schema:Text,
         schema:URL ;
     rdfs:comment "An element (by URL) to point to the protocol readme or landing page." .
+
+reproschema:limit a rdf:Property ;
+    rdfs:label "limit" ;
+    schema:domainIncludes reproschema:AdditionalProperty ;
+    schema:rangeIncludes schema:Text ;
+    rdfs:comment "An element to limit the duration this activity is allowed to be completed by once activity is available." .
+
+reproschema:maxRetakes a rdf:Property ;
+    rdfs:label "maxRetakes" ;
+    schema:domainIncludes reproschema:AdditionalProperty ;
+    schema:rangeIncludes schema:Number ;
+    rdfs:comment "Defines number of times the item is allowed to be redone." .
 
 reproschema:multipleChoice a rdf:Property ;
     rdfs:label "Multiple choice response expectation" ;
@@ -220,12 +233,27 @@ reproschema:preamble a rdf:Property ;
         rdf:langString ;
     rdfs:comment "The preamble for an assessment" .
 
+reproschema:randomMaxDelay a rdf:Property ;
+    rdfs:label "randomMaxDelay" ;
+    schema:domainIncludes reproschema:AdditionalProperty ;
+    schema:rangeIncludes schema:Text ;
+    rdfs:comment "Present activity/item within some random offset of activity available time up to the maximum specified by this",
+        "Present activity/item within some random offset of activity available time up to the maximum specified by this." .
+
 reproschema:responseOptions a rdf:Property ;
     rdfs:label "Response options" ;
     schema:domainIncludes reproschema:Field ;
     schema:rangeIncludes schema:URL,
         reproschema:ResponseOption ;
     rdfs:comment "An element (object or by URL)to describe the properties of response of the Field item." .
+
+reproschema:schedule a rdf:Property ;
+    rdfs:label "Schedule",
+        "schedule" ;
+    schema:domainIncludes reproschema:AdditionalProperty ;
+    schema:rangeIncludes schema:Schedule,
+        schema:Text ;
+    rdfs:comment "An element to set make activity available/repeat info using cron format." .
 
 reproschema:scoringLogic schema:domainIncludes reproschema:Activity,
         reproschema:Protocol .
