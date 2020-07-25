@@ -1,0 +1,53 @@
+{
+    "@context": "../contexts/base",
+    "@graph": [
+        {
+            "@id": "prov:used",
+            "schema:domainIncludes": {
+               "@id": "reproschema:ResponseActivity"
+            }
+        },
+        {
+            "@id": "schema:inLanguage",
+            "schema:domainIncludes": {
+               "@id": "reproschema:ResponseActivity"
+            }
+        },
+        {
+            "@id": "prov:startedAtTime",
+            "schema:domainIncludes": {
+                "@id": "reproschema:ResponseActivity"
+            }
+        },
+        {
+            "@id": "prov:endedAtTime",
+            "schema:domainIncludes": {
+                "@id": "reproschema:ResponseActivity"
+            }
+        },
+        {
+            "@id": "prov:endedAtTime",
+            "schema:domainIncludes": {
+                "@id": "reproschema:ResponseActivity"
+            }
+        },
+        {
+            "@id": "prov:generated",
+            "schema:domainIncludes": {
+                "@id": "reproschema:ResponseActivity"
+            }
+        },
+        {
+            "@id": "reproschema:ResponseActivity",
+            "@type": [
+                "rdfs:Class",
+                "prov:Activity"
+            ],
+            "rdfs:comment": "Captures information about some action that took place. It also links to information (entities) that were used during the activity",
+            "rdfs:label": "ResponseActivity",
+            "rdfs:subClassOf": {
+                "@id": "schema:CreativeWork"
+            }
+        }
+    ]
+}

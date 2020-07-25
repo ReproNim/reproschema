@@ -20,6 +20,13 @@
                 "@id": "schema:image",
                 "@type": "@id"
             },
+            "inLanguage": {
+                "@id": "schema:inLanguage"
+            },
+            "url": {
+                "@id": "schema:url",
+                "@type": "@id"
+            },
             "citation": {
                 "@id": "schema:citation",
                 "@container": "@language"
@@ -209,6 +216,32 @@
             "derivedFrom": {
                 "@id": "prov:wasDerivedFrom",
                 "@type": "@id"
+            },
+            "used": {
+                "@id": "prov:used",
+                "@container": "@set",
+                "@type": "@id"
+            },
+            "wasAttributedTo": {
+                "@id": "prov:wasAttributedTo",
+                "@type": "reproschema:Participant",
+                "@container": "@set"
+            },
+            "wasAssociatedWith": {
+                "@id": "prov:wasAssociatedWith",
+                "@type": "reproschema:SoftwareAgent",
+                "@container": "@set"
+            },
+            "subject_id": {
+                "@id": "nidm:subject_id"
+            },
+            "startedAtTime": {
+                "@id": "prov:startedAtTime",
+                "@type": "xsd:dateTime"
+            },
+            "endedAtTime": {
+                "@id": "prov:endedAtTime",
+                "@type": "xsd:dateTime"
             }
         }
     ]

@@ -5,6 +5,9 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix nidm: <http://purl.org/nidash/nidm#> .
+@prefix uuid: <http://uuid.repronim.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 
 reproschema:ActivityShape a sh:NodeShape ;
     sh:closed true ;
@@ -269,3 +272,55 @@ reproschema:AdditionalNoteObjShape a sh:NodeShape ;
         [ sh:or ( [ sh:datatype xsd:integer ] [ sh:nodeKind sh:IRI ] [ sh:datatype schema:Boolean ] [ sh:datatype schema:StructuredValue ] [ sh:datatype schema:Text ]) ;
             sh:path reproschema:value ] ;
     sh:targetClass reproschema:AdditionalNoteObj .
+
+reproschema:ResponseShape a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:node prov:ParticipantShape ;
+            sh:path prov:wasAttributedTo ],
+
+        [ sh:nodeKind sh:IRI ;
+            sh:path reproschema:isAbout ],
+
+        [ sh:or ( [ sh:datatype xsd:integer ] [ sh:nodeKind sh:IRI ] [ sh:datatype schema:Boolean ] [ sh:datatype schema:StructuredValue ] [ sh:datatype schema:Text ]) ;
+            sh:path reproschema:value ] ;
+    sh:targetClass reproschema:Response .
+
+prov:ParticipantShape a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:datatype rdf:langString ;
+            sh:path nidm:subject_id ] ;
+    sh:targetClass reproschema:Participant .
+
+reproschema:ResponseActivityShape a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:nodeKind sh:IRI ;
+            sh:path prov:used ],
+
+        [ sh:datatype rdf:langString ;
+            sh:path schema:inLanguage ],
+
+        [ sh:datatype xsd:dateTime ;
+            sh:path prov:startedAtTime ],
+
+        [ sh:datatype xsd:dateTime ;
+            sh:path prov:endedAtTime ],
+
+        [ sh:node prov:SoftwareAgentShape ;
+            sh:path prov:wasAssociatedWith ],
+
+        [ sh:datatype rdf:langString ;
+            sh:path prov:generated ] ;
+    sh:targetClass reproschema:ResponseActivity .
+
+prov:SoftwareAgentShape a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:datatype rdf:langString ;
+            sh:path schema:version ],
+
+        [ sh:nodeKind sh:IRI ;
+            sh:path schema:url ] ;
+    sh:targetClass reproschema:SoftwareAgent .
