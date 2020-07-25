@@ -276,8 +276,8 @@ reproschema:AdditionalNoteObjShape a sh:NodeShape ;
 reproschema:ResponseShape a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
-    sh:property [ sh:node prov:WasAttributedToShape ;
-            sh:path prov:wasAttributedTo ],
+    sh:property [ sh:node prov:ParticipantShape ;
+            sh:path reproschema:wasAttributedTo ],
 
         [ sh:nodeKind sh:IRI ;
             sh:path reproschema:isAbout ],
@@ -286,12 +286,12 @@ reproschema:ResponseShape a sh:NodeShape ;
             sh:path reproschema:value ] ;
     sh:targetClass reproschema:Response .
 
-prov:WasAttributedToShape a sh:NodeShape ;
+prov:ParticipantShape a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:property [ sh:datatype rdf:langString ;
             sh:path nidm:subject_id ] ;
-    sh:targetClass reproschema:WasAttributedTo .
+    sh:targetClass reproschema:Participant .
 
 reproschema:ResponseActivityShape a sh:NodeShape ;
     sh:closed true ;
@@ -302,20 +302,20 @@ reproschema:ResponseActivityShape a sh:NodeShape ;
         [ sh:datatype rdf:langString ;
             sh:path schema:inLanguage ],
 
-        [ sh:datatype rdf:langString ;
+        [ sh:datatype xsd:dateTime ;
             sh:path prov:startedAtTime ],
 
-        [ sh:datatype rdf:langString ;
+        [ sh:datatype xsd:dateTime ;
             sh:path prov:endedAtTime ],
 
-        [ sh:node prov:WasAssociatedWithShape ;
-            sh:path prov:wasAssociatedWith ],
+        [ sh:node prov:SoftwareAgentShape ;
+            sh:path reproschema:wasAssociatedWith ],
 
         [ sh:datatype rdf:langString ;
             sh:path prov:generated ] ;
     sh:targetClass reproschema:ResponseActivity .
 
-prov:WasAssociatedWithShape a sh:NodeShape ;
+prov:SoftwareAgentShape a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:property [ sh:datatype rdf:langString ;
@@ -323,4 +323,4 @@ prov:WasAssociatedWithShape a sh:NodeShape ;
 
         [ sh:nodeKind sh:IRI ;
             sh:path schema:url ] ;
-    sh:targetClass reproschema:WasAssociatedWith .
+    sh:targetClass reproschema:SoftwareAgent .

@@ -4,26 +4,25 @@
         {
             "@id": "schema:version",
             "schema:domainIncludes": {
-                "@id": "reproschema:ResponseActivity"
+                "@id": "reproschema:SoftwareAgent"
             }
         },
         {
             "@id": "schema:url",
             "schema:domainIncludes": {
-                "@id": "reproschema:ResponseActivity"
+                "@id": "reproschema:SoftwareAgent"
             }
         },
         {
-            "@id": "reproschema:ResponseActivity",
+            "@id": "reproschema:SoftwareAgent",
             "@type": [
                 "rdfs:Class",
-                "prov:Entity",
-                "nidm:DataElement"
+                "prov:Entity"
             ],
             "rdfs:comment": "Captures information about some action that took place. It also links to information (entities) that were used during the activity",
-            "rdfs:label": "ResponseActivity",
+            "rdfs:label": "SoftwareAgent",
             "rdfs:subClassOf": {
-                "@id": "schema:CreativeWork"
+                "@id": "prov:SoftwareAgent"
             }
         }
     ]
