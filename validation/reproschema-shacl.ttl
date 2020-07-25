@@ -277,7 +277,7 @@ reproschema:ResponseShape a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:property [ sh:node prov:ParticipantShape ;
-            sh:path reproschema:wasAttributedTo ],
+            sh:path prov:wasAttributedTo ],
 
         [ sh:nodeKind sh:IRI ;
             sh:path reproschema:isAbout ],
@@ -309,7 +309,7 @@ reproschema:ResponseActivityShape a sh:NodeShape ;
             sh:path prov:endedAtTime ],
 
         [ sh:node prov:SoftwareAgentShape ;
-            sh:path reproschema:wasAssociatedWith ],
+            sh:path prov:wasAssociatedWith ],
 
         [ sh:datatype rdf:langString ;
             sh:path prov:generated ] ;
