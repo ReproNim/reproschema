@@ -11,8 +11,7 @@ def create_release(version):
     terms = []
     for root, dirs, files in os.walk("terms"):
         for name in files:
-            terms.extend(json.loads(to_newformat(os.path.join(root, name),
-                                                 "jsonld")))
+            terms.extend(json.loads(to_newformat(os.path.join(root, name), "jsonld")))
 
     kwargs = {"algorithm": "URDNA2015", "format": "application/n-quads"}
     data = jsonld.normalize(terms, kwargs)
