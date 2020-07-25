@@ -3,6 +3,7 @@ import sys
 import json
 from pyld import jsonld
 import rdflib as rl
+from shutil import copyfile
 from reproschema.jsonldutils import to_newformat
 
 
@@ -16,9 +17,11 @@ def create_release(version):
     kwargs = {"algorithm": "URDNA2015", "format": "application/n-quads"}
     data = jsonld.normalize(terms, kwargs)
 
-    with open("contexts/base") as fp:
+    os.makedirs(f"releases/{version}", exist_ok=True)
+    copyfile("contexts/base", f"releases/{version}/base")
+    copyfile("contexts/generic", f"releases/{version}/generic")
+    with open(f"releases/{version}/base") as fp:
         base_context = json.load(fp)
-
     compacted = jsonld.compact(terms, ctx=base_context)
 
     g = rl.Graph()
@@ -28,7 +31,6 @@ def create_release(version):
     g.parse(data=data, format="nt")
 
     # write n-triples and turtle files
-    os.makedirs(f"releases/{version}", exist_ok=True)
     with open(f"releases/{version}/reproschema.jsonld", "w") as fp:
         json.dump(compacted, fp, indent=2)
     with open(f"releases/{version}/reproschema.nt", "w") as fp:
