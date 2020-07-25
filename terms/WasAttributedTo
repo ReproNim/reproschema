@@ -1,0 +1,24 @@
+{
+    "@context": "../contexts/base",
+    "@graph": [
+        {
+            "@id": "nidm:subject_id",
+            "schema:domainIncludes": {
+                "@id": "reproschema:WasAttributedTo"
+            }
+        },
+        {
+            "@id": "reproschema:Response",
+            "@type": [
+                "rdfs:Class",
+                "prov:Entity",
+                "nidm:DataElement"
+            ],
+            "rdfs:comment": "Describes the response of an item.",
+            "rdfs:label": "Response",
+            "rdfs:subClassOf": {
+                "@id": "schema:CreativeWork"
+            }
+        }
+    ]
+}
