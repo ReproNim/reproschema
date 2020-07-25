@@ -33,5 +33,10 @@ https://github.com/ReproNim/reproschema/graphs/contributors
 To run the Python scripts in the scripts directory, you will need to install the
 following libraries via pip
 
-- reproschema (makeRelease.py) 
+- reproschema (makeRelease.py)
 - pytablewriter (editProperties.py)
+
+In addition, this repo uses pre-commit to check styling.
+
+Install: `pip install pre-commit`
+Use: run `pre-commit install` in the root directory of the repo.

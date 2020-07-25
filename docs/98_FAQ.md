@@ -4,7 +4,7 @@
 
 When you request access to a certain document by clicking on a hyperlink, the computer will give a visual rendering of the html code of this document. But computer used to do that in pretty "silly" fashion: it would give you a human-readable version of the content, but the computer would not make the distinction if a certain element in the webpage (for example a paragraph) was referring to a person or a place or a song.
 
-What the semantic wed allows is to "inject" additional information into a webpage so that a machine can know what certain elements are about (e.g "*this image is about a cat.*") or how they are linked to other elements (on the same page or somewhere else on the web). The tagged content of a webpage thus acquires "meaning" from the point of view of the computer, making the semantic content of the code machine-readable. 
+What the semantic wed allows is to "inject" additional information into a webpage so that a machine can know what certain elements are about (e.g "*this image is about a cat.*") or how they are linked to other elements (on the same page or somewhere else on the web). The tagged content of a webpage thus acquires "meaning" from the point of view of the computer, making the semantic content of the code machine-readable.
 
 ### More info
 
@@ -46,7 +46,7 @@ You can see that the file is organised in pairs of `"key": "value"`. The `@conte
 
 What follows (`name`, `givenNAme`, `familyName`, ...) are the actual properties about this data and in front of it the values that this data takes for each property (in this case: "Barack Obama", "Barack", "Obama").
 
-Now go and look up what is hiding behind one of those property by going to the URL made of the **base URL + the property name**, for example [https://schema.org/familyName](https://schema.org/familyName). This is the HTTP URI of `familyName` and this gives you a description of the `familyName` property. 
+Now go and look up what is hiding behind one of those property by going to the URL made of the **base URL + the property name**, for example [https://schema.org/familyName](https://schema.org/familyName). This is the HTTP URI of `familyName` and this gives you a description of the `familyName` property.
 
 Well "*So what?*" you might say. Well it also tells you which type of data this property it can be applied to: in this case, the `Person` type (see its description [here](https://schema.org/Person)). So even though, we never wrote anywhere explicitly that this data describes a person, a computer able to parse that piece of linked data above would "know" this.
 
@@ -96,7 +96,7 @@ OK but let's start with a much simpler example of a JSON file, like the one belo
 }
 ```
 
-Looks familiar? It is very close to the one we had at the end of the previous FAQ section. 
+Looks familiar? It is very close to the one we had at the end of the previous FAQ section.
 
 ### From JSON to JSON-LD
 
@@ -112,9 +112,9 @@ Now say you would like to use this JSON file to represent a piece of linked-data
 }
 ```
 
-🎉 **Congratulations!** 🎉 
+🎉 **Congratulations!** 🎉
 
-You now have a valid JSON-LD. If you want to make sure it is valid, you can copy-paste that into the [JSON-LD playground](https://json-ld.org/playground/). If you to to visualize the "linked" aspect of that data, you can click on the `Visualized` tab and this will give you a graph where that connects the different nodes (piece of information to one another). 
+You now have a valid JSON-LD. If you want to make sure it is valid, you can copy-paste that into the [JSON-LD playground](https://json-ld.org/playground/). If you to to visualize the "linked" aspect of that data, you can click on the `Visualized` tab and this will give you a graph where that connects the different nodes (piece of information to one another).
 
 If you want to visualize a more complex graph, we can try that with one of the JSON-LD file that describe one of the `protocols` of the reproschema like the one [here](https://github.com/ReproNim/reproschema/blob/master/protocols/VoicePilot/VoicePilot_schema). Actually if you want to test get the raw content of the file you should click on `Raw`. You can then either use the raw content of the file or the URL of this raw file which should be something like:
 
@@ -128,7 +128,7 @@ directly into the [JSON-LD playground](https://json-ld.org/playground/) to see w
 
 - It would be a stretch to say that the [JSON-LD specifications](https://www.w3.org/TR/json-ld11/) make for a fascinating read that will keep you up at night (although they might but mostly out of frustration) but it is good to know that it is out there in case you eventually need to look something up
 - Two short videos by Manu Sporny about JSON-LD and core mark up features JSON-LD:
- 
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vioCbTo3C-4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UmvWk_TQ30A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -142,7 +142,7 @@ At the moment, all the assessments that support this standard are listed in [thi
 
 If you want to see those different tools in action using our user interface, you can explore them on [schema.repronim.org/](https://schema.repronim.org/rl/).
 
-The Reproschema is also used to develop a checklist to [improve methods and results reporting in neuroimaging](https://github.com/ohbm/cobidas). 
+The Reproschema is also used to develop a checklist to [improve methods and results reporting in neuroimaging](https://github.com/ohbm/cobidas).
 
 **🛠 Work in progress 🛠**
 
@@ -154,7 +154,7 @@ The Reproschema is also used to develop a checklist to [improve methods and resu
 
 **🛠 Work in progress 🛠**
 
-## How can I know if a certain property is supported by Reproschema? 
+## How can I know if a certain property is supported by Reproschema?
 
 **🛠 Work in progress 🛠**
 

@@ -4,7 +4,7 @@ This documentation is a work in progress and we wellcome any input: if something
 
 ## Serving the doc locally
 
-This project uses [MkDocs](https://www.mkdocs.org/) tool with [Material theme](https://squidfunk.github.io/mkdocs-material/) 
+This project uses [MkDocs](https://www.mkdocs.org/) tool with [Material theme](https://squidfunk.github.io/mkdocs-material/)
 and extra plugins to generate the website.
 
 To test locally, you will need to install the Python dependencies. To do that, type the following commands:

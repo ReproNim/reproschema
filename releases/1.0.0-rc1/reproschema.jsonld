@@ -12,6 +12,7 @@
     "prov": "http://www.w3.org/ns/prov#",
     "pav": "http://purl.org/pav/",
     "nidm": "http://purl.org/nidash/nidm#",
+    "uuid": "http://uuid.repronim.org/",
     "reproschema": "http://schema.repronim.org/"
   },
   "@graph": [
@@ -82,7 +83,7 @@
           "@id": "schema:Schedule"
         }
       ],
-      "rdfs:comment": "An element to set make activity available/repeat info using cron format.",
+      "rdfs:comment": "An element to set make activity available/repeat info using ISO 8601 repeating interval format.",
       "rdfs:label": "Schedule"
     },
     {
@@ -99,6 +100,62 @@
       "@type": "rdfs:Class",
       "rdfs:comment": "An element to describe the choice when response is not known.",
       "rdfs:label": "Do not know"
+    },
+    {
+      "@id": "reproschema:isAbout",
+      "schema:domainIncludes": {
+        "@id": "reproschema:Response"
+      }
+    },
+    {
+      "@id": "schema:value",
+      "schema:domainIncludes": {
+        "@id": "reproschema:Response"
+      },
+      "schema:rangeIncludes": [
+        {
+          "@id": "reproschema:Skipped"
+        },
+        {
+          "@id": "reproschema:DontKnow"
+        },
+        {
+          "@id": "schema:Number"
+        },
+        {
+          "@id": "schema:Text"
+        },
+        {
+          "@id": "schema:URL"
+        },
+        {
+          "@id": "schema:Boolean"
+        },
+        {
+          "@id": "schema:StructuredValue"
+        }
+      ]
+    },
+    {
+      "@id": "prov:wasAttributedTo",
+      "schema:domainIncludes": {
+        "@id": "reproschema:Response"
+      },
+      "schema:rangeIncludes": {
+        "@id": "reproschema:Participant"
+      }
+    },
+    {
+      "@id": "reproschema:Response",
+      "@type": [
+        "rdfs:Class",
+        "prov:Entity"
+      ],
+      "rdfs:comment": "Describes the response of an item.",
+      "rdfs:label": "Response",
+      "rdfs:subClassOf": {
+        "@id": "schema:CreativeWork"
+      }
     },
     {
       "@id": "reproschema:preamble",
@@ -129,7 +186,7 @@
       "schema:rangeIncludes": {
         "@id": "schema:Text"
       },
-      "rdfs:comment": "An element to limit the duration this activity is allowed to be completed by once activity is available.",
+      "rdfs:comment": "An element to limit the duration (uses ISO 8601) this activity is allowed to be completed by once activity is available.",
       "rdfs:label": "limit"
     },
     {
@@ -237,6 +294,24 @@
       }
     },
     {
+      "@id": "nidm:subject_id",
+      "schema:domainIncludes": {
+        "@id": "reproschema:Participant"
+      }
+    },
+    {
+      "@id": "reproschema:Participant",
+      "@type": [
+        "rdfs:Class",
+        "prov:Person"
+      ],
+      "rdfs:comment": "An Agent describing characteristics associated with a participant.",
+      "rdfs:label": "Participant",
+      "rdfs:subClassOf": {
+        "@id": "prov:Agent"
+      }
+    },
+    {
       "@id": "reproschema:choices",
       "@type": "rdf:Property",
       "schema:rangeIncludes": [
@@ -293,6 +368,27 @@
       },
       "rdfs:comment": "The value for each option in choices or in additionalNotesObj",
       "rdfs:label": "value"
+    },
+    {
+      "@id": "schema:version",
+      "schema:domainIncludes": {
+        "@id": "reproschema:SoftwareAgent"
+      }
+    },
+    {
+      "@id": "schema:url",
+      "schema:domainIncludes": {
+        "@id": "reproschema:SoftwareAgent"
+      }
+    },
+    {
+      "@id": "reproschema:SoftwareAgent",
+      "@type": [
+        "rdfs:Class",
+        "prov:SoftwareAgent"
+      ],
+      "rdfs:comment": "Captures information about some action that took place. It also links to information (entities) that were used during the activity",
+      "rdfs:label": "Software Agent"
     },
     {
       "@id": "reproschema:statusOptions",
@@ -533,6 +629,54 @@
       }
     },
     {
+      "@id": "prov:used",
+      "schema:domainIncludes": {
+        "@id": "reproschema:ResponseActivity"
+      }
+    },
+    {
+      "@id": "schema:inLanguage",
+      "schema:domainIncludes": {
+        "@id": "reproschema:ResponseActivity"
+      }
+    },
+    {
+      "@id": "prov:startedAtTime",
+      "schema:domainIncludes": {
+        "@id": "reproschema:ResponseActivity"
+      }
+    },
+    {
+      "@id": "prov:endedAtTime",
+      "schema:domainIncludes": {
+        "@id": "reproschema:ResponseActivity"
+      }
+    },
+    {
+      "@id": "prov:endedAtTime",
+      "schema:domainIncludes": {
+        "@id": "reproschema:ResponseActivity"
+      }
+    },
+    {
+      "@id": "prov:generated",
+      "schema:domainIncludes": {
+        "@id": "reproschema:ResponseActivity"
+      }
+    },
+    {
+      "@id": "reproschema:ResponseActivity",
+      "@type": [
+        "rdfs:Class",
+        "prov:Activity"
+      ],
+      "rdfs:comment": "Captures information about some action that took place. It also links to information (entities) that were used during the activity",
+      "rdfs:label": "ResponseActivity",
+      "rdfs:subClassOf": {
+        "@id": "schema:CreativeWork"
+      }
+    },
+    {
       "@id": "reproschema:valueType",
       "schema:domainIncludes": {
         "@id": "reproschema:ResponseOption"
@@ -740,7 +884,7 @@
       "schema:rangeIncludes": {
         "@id": "schema:Text"
       },
-      "rdfs:comment": "Present activity/item within some random offset of activity available time up to the maximum specified by this",
+      "rdfs:comment": "Present activity/item within some random offset of activity available time up to the maximum specified by this ISO 8601 duration",
       "rdfs:label": "randomMaxDelay"
     },
     {
