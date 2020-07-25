@@ -1,3 +1,4 @@
+<http://purl.org/nidash/nidm#subject_id> <http://schema.org/domainIncludes> <http://schema.repronim.org/Participant> .
 <http://schema.org/about> <http://schema.org/domainIncludes> <http://schema.repronim.org/Activity> .
 <http://schema.org/about> <http://schema.org/domainIncludes> <http://schema.repronim.org/Field> .
 <http://schema.org/about> <http://schema.org/domainIncludes> <http://schema.repronim.org/Protocol> .
@@ -11,6 +12,7 @@
 <http://schema.org/image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <http://schema.org/image> <http://www.w3.org/2000/01/rdf-schema#comment> "An image of the item. This can be a <a class=\"localLink\" href=\"http://schema.org/URL\">URL</a> or a fully described <a class=\"localLink\" href=\"http://schema.org/ImageObject\">ImageObject</a>." .
 <http://schema.org/image> <http://www.w3.org/2000/01/rdf-schema#label> "image" .
+<http://schema.org/inLanguage> <http://schema.org/domainIncludes> <http://schema.repronim.org/ResponseActivity> .
 <http://schema.org/isPartOf> <http://schema.org/domainIncludes> <http://schema.repronim.org/Field> .
 <http://schema.org/isPartOf> <http://schema.org/rangeIncludes> <http://schema.repronim.org/Activity> .
 <http://schema.org/maxValue> <http://schema.org/domainIncludes> <http://schema.repronim.org/ResponseOption> .
@@ -22,13 +24,21 @@
 <http://schema.org/schemaVersion> <http://schema.org/domainIncludes> <http://schema.repronim.org/Field> .
 <http://schema.org/schemaVersion> <http://schema.org/domainIncludes> <http://schema.repronim.org/Protocol> .
 <http://schema.org/unitCode> <http://schema.org/domainIncludes> <http://schema.repronim.org/ResponseOption> .
+<http://schema.org/url> <http://schema.org/domainIncludes> <http://schema.repronim.org/SoftwareAgent> .
 <http://schema.org/value> <http://schema.org/domainIncludes> <http://schema.repronim.org/Choice> .
+<http://schema.org/value> <http://schema.org/domainIncludes> <http://schema.repronim.org/Response> .
+<http://schema.org/value> <http://schema.org/rangeIncludes> <http://schema.org/Boolean> .
+<http://schema.org/value> <http://schema.org/rangeIncludes> <http://schema.org/Number> .
+<http://schema.org/value> <http://schema.org/rangeIncludes> <http://schema.org/StructuredValue> .
+<http://schema.org/value> <http://schema.org/rangeIncludes> <http://schema.org/Text> .
+<http://schema.org/value> <http://schema.org/rangeIncludes> <http://schema.org/URL> .
 <http://schema.org/value> <http://schema.org/rangeIncludes> <http://schema.repronim.org/DontKnow> .
 <http://schema.org/value> <http://schema.org/rangeIncludes> <http://schema.repronim.org/Skipped> .
 <http://schema.org/valueRequired> <http://schema.org/domainIncludes> <http://schema.repronim.org/AdditionalProperty> .
 <http://schema.org/version> <http://schema.org/domainIncludes> <http://schema.repronim.org/Activity> .
 <http://schema.org/version> <http://schema.org/domainIncludes> <http://schema.repronim.org/Field> .
 <http://schema.org/version> <http://schema.org/domainIncludes> <http://schema.repronim.org/Protocol> .
+<http://schema.org/version> <http://schema.org/domainIncludes> <http://schema.repronim.org/SoftwareAgent> .
 <http://schema.repronim.org/Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/nidash/nidm#Assessment> .
 <http://schema.repronim.org/Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://schema.repronim.org/Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
@@ -69,18 +79,37 @@
 <http://schema.repronim.org/Field> <http://www.w3.org/2000/01/rdf-schema#comment> "An item in an assessment." .
 <http://schema.repronim.org/Field> <http://www.w3.org/2000/01/rdf-schema#label> "Field" .
 <http://schema.repronim.org/Field> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/CreativeWork> .
+<http://schema.repronim.org/Participant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://schema.repronim.org/Participant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Person> .
+<http://schema.repronim.org/Participant> <http://www.w3.org/2000/01/rdf-schema#comment> "An Agent describing characteristics associated with a participant." .
+<http://schema.repronim.org/Participant> <http://www.w3.org/2000/01/rdf-schema#label> "Participant" .
+<http://schema.repronim.org/Participant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Agent> .
 <http://schema.repronim.org/Protocol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://schema.repronim.org/Protocol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
 <http://schema.repronim.org/Protocol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Plan> .
 <http://schema.repronim.org/Protocol> <http://www.w3.org/2000/01/rdf-schema#comment> "A representation of a study which comprises one or more assessments." .
 <http://schema.repronim.org/Protocol> <http://www.w3.org/2000/01/rdf-schema#label> "Protocol" .
 <http://schema.repronim.org/Protocol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/CreativeWork> .
+<http://schema.repronim.org/Response> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://schema.repronim.org/Response> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<http://schema.repronim.org/Response> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes the response of an item." .
+<http://schema.repronim.org/Response> <http://www.w3.org/2000/01/rdf-schema#label> "Response" .
+<http://schema.repronim.org/Response> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/CreativeWork> .
+<http://schema.repronim.org/ResponseActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://schema.repronim.org/ResponseActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Activity> .
+<http://schema.repronim.org/ResponseActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "Captures information about some action that took place. It also links to information (entities) that were used during the activity" .
+<http://schema.repronim.org/ResponseActivity> <http://www.w3.org/2000/01/rdf-schema#label> "ResponseActivity" .
+<http://schema.repronim.org/ResponseActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/CreativeWork> .
 <http://schema.repronim.org/ResponseOption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://schema.repronim.org/ResponseOption> <http://www.w3.org/2000/01/rdf-schema#comment> "An element (object or by URL)to describe the properties of response of the Field item." .
 <http://schema.repronim.org/ResponseOption> <http://www.w3.org/2000/01/rdf-schema#label> "Response option" .
 <http://schema.repronim.org/Skipped> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://schema.repronim.org/Skipped> <http://www.w3.org/2000/01/rdf-schema#comment> "An element to describe the choice when the item is skipped." .
 <http://schema.repronim.org/Skipped> <http://www.w3.org/2000/01/rdf-schema#label> "Skipped" .
+<http://schema.repronim.org/SoftwareAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://schema.repronim.org/SoftwareAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#SoftwareAgent> .
+<http://schema.repronim.org/SoftwareAgent> <http://www.w3.org/2000/01/rdf-schema#comment> "Captures information about some action that took place. It also links to information (entities) that were used during the activity" .
+<http://schema.repronim.org/SoftwareAgent> <http://www.w3.org/2000/01/rdf-schema#label> "Software Agent" .
 <http://schema.repronim.org/TimedOut> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://schema.repronim.org/TimedOut> <http://www.w3.org/2000/01/rdf-schema#comment> "A boolean element to describe if the response did not occur within the prescribed time." .
 <http://schema.repronim.org/TimedOut> <http://www.w3.org/2000/01/rdf-schema#label> "Response timed out" .
@@ -127,6 +156,7 @@
 <http://schema.repronim.org/inputType> <http://www.w3.org/2000/01/rdf-schema#comment> "An element to describe the input type of a Field item." .
 <http://schema.repronim.org/inputType> <http://www.w3.org/2000/01/rdf-schema#label> "inputType" .
 <http://schema.repronim.org/isAbout> <http://schema.org/domainIncludes> <http://schema.repronim.org/AdditionalProperty> .
+<http://schema.repronim.org/isAbout> <http://schema.org/domainIncludes> <http://schema.repronim.org/Response> .
 <http://schema.repronim.org/isAbout> <http://schema.org/rangeIncludes> <http://schema.repronim.org/Activity> .
 <http://schema.repronim.org/isAbout> <http://schema.org/rangeIncludes> <http://schema.repronim.org/Field> .
 <http://schema.repronim.org/isAbout> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
@@ -154,6 +184,7 @@
 <http://schema.repronim.org/limit> <http://schema.org/domainIncludes> <http://schema.repronim.org/AdditionalProperty> .
 <http://schema.repronim.org/limit> <http://schema.org/rangeIncludes> <http://schema.org/Text> .
 <http://schema.repronim.org/limit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://schema.repronim.org/limit> <http://www.w3.org/2000/01/rdf-schema#comment> "An element to limit the duration (uses ISO 8601) this activity is allowed to be completed by once activity is available." .
 <http://schema.repronim.org/limit> <http://www.w3.org/2000/01/rdf-schema#comment> "An element to limit the duration this activity is allowed to be completed by once activity is available." .
 <http://schema.repronim.org/limit> <http://www.w3.org/2000/01/rdf-schema#label> "limit" .
 <http://schema.repronim.org/maxRetakes> <http://schema.org/domainIncludes> <http://schema.repronim.org/AdditionalProperty> .
@@ -184,7 +215,7 @@
 <http://schema.repronim.org/randomMaxDelay> <http://schema.org/domainIncludes> <http://schema.repronim.org/AdditionalProperty> .
 <http://schema.repronim.org/randomMaxDelay> <http://schema.org/rangeIncludes> <http://schema.org/Text> .
 <http://schema.repronim.org/randomMaxDelay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<http://schema.repronim.org/randomMaxDelay> <http://www.w3.org/2000/01/rdf-schema#comment> "Present activity/item within some random offset of activity available time up to the maximum specified by this" .
+<http://schema.repronim.org/randomMaxDelay> <http://www.w3.org/2000/01/rdf-schema#comment> "Present activity/item within some random offset of activity available time up to the maximum specified by this ISO 8601 duration" .
 <http://schema.repronim.org/randomMaxDelay> <http://www.w3.org/2000/01/rdf-schema#comment> "Present activity/item within some random offset of activity available time up to the maximum specified by this." .
 <http://schema.repronim.org/randomMaxDelay> <http://www.w3.org/2000/01/rdf-schema#label> "randomMaxDelay" .
 <http://schema.repronim.org/responseOptions> <http://schema.org/domainIncludes> <http://schema.repronim.org/Field> .
@@ -197,6 +228,7 @@
 <http://schema.repronim.org/schedule> <http://schema.org/rangeIncludes> <http://schema.org/Schedule> .
 <http://schema.repronim.org/schedule> <http://schema.org/rangeIncludes> <http://schema.org/Text> .
 <http://schema.repronim.org/schedule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://schema.repronim.org/schedule> <http://www.w3.org/2000/01/rdf-schema#comment> "An element to set make activity available/repeat info using ISO 8601 repeating interval format." .
 <http://schema.repronim.org/schedule> <http://www.w3.org/2000/01/rdf-schema#comment> "An element to set make activity available/repeat info using cron format." .
 <http://schema.repronim.org/schedule> <http://www.w3.org/2000/01/rdf-schema#label> "Schedule" .
 <http://schema.repronim.org/schedule> <http://www.w3.org/2000/01/rdf-schema#label> "schedule" .
@@ -247,3 +279,9 @@
 <http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/2000/01/rdf-schema#comment> "The preferred label." .
 <http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/2000/01/rdf-schema#label> "preferred label" .
+<http://www.w3.org/ns/prov#endedAtTime> <http://schema.org/domainIncludes> <http://schema.repronim.org/ResponseActivity> .
+<http://www.w3.org/ns/prov#generated> <http://schema.org/domainIncludes> <http://schema.repronim.org/ResponseActivity> .
+<http://www.w3.org/ns/prov#startedAtTime> <http://schema.org/domainIncludes> <http://schema.repronim.org/ResponseActivity> .
+<http://www.w3.org/ns/prov#used> <http://schema.org/domainIncludes> <http://schema.repronim.org/ResponseActivity> .
+<http://www.w3.org/ns/prov#wasAttributedTo> <http://schema.org/domainIncludes> <http://schema.repronim.org/Response> .
+<http://www.w3.org/ns/prov#wasAttributedTo> <http://schema.org/rangeIncludes> <http://schema.repronim.org/Participant> .

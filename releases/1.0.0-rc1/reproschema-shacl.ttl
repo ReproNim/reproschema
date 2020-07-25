@@ -1,4 +1,6 @@
 @prefix dash: <http://datashapes.org/dash#> .
+@prefix nidm: <http://purl.org/nidash/nidm#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix reproschema: <http://schema.repronim.org/> .
 @prefix schema: <http://schema.org/> .
@@ -61,7 +63,9 @@ reproschema:AdditionalNoteObjShape a sh:NodeShape ;
 reproschema:FieldShape a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
-    sh:property [ sh:or ( [ sh:nodeKind sh:IRI ] [ sh:node reproschema:ResponseOptionsShape ] ) ;
+    sh:property [ sh:node reproschema:AdditionalNoteObj ;
+            sh:path reproschema:additionalNotesObj ],
+        [ sh:or ( [ sh:nodeKind sh:IRI ] [ sh:node reproschema:ResponseOptionsShape ] ) ;
             sh:path reproschema:responseOptions ],
         [ sh:datatype rdf:langString ;
             sh:minCount 1 ;
@@ -87,9 +91,7 @@ reproschema:FieldShape a sh:NodeShape ;
             sh:path reproschema:inputType ],
         [ sh:datatype xsd:boolean ;
             sh:maxCount 1 ;
-            sh:path schema:readonlyValue ],
-        [ sh:node reproschema:AdditionalNoteObj ;
-            sh:path reproschema:additionalNotesObj ] ;
+            sh:path schema:readonlyValue ] ;
     sh:targetClass reproschema:Field .
 
 reproschema:ProtocolShape a sh:NodeShape ;
@@ -129,6 +131,34 @@ reproschema:ProtocolShape a sh:NodeShape ;
         [ sh:node reproschema:CronTableShape ;
             sh:path reproschema:cronTable ] ;
     sh:targetClass reproschema:Protocol .
+
+reproschema:ResponseActivityShape a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:nodeKind sh:IRI ;
+            sh:path prov:used ],
+        [ sh:datatype rdf:langString ;
+            sh:path schema:inLanguage ],
+        [ sh:datatype xsd:dateTime ;
+            sh:path prov:startedAtTime ],
+        [ sh:datatype xsd:dateTime ;
+            sh:path prov:endedAtTime ],
+        [ sh:node prov:SoftwareAgentShape ;
+            sh:path prov:wasAssociatedWith ],
+        [ sh:datatype rdf:langString ;
+            sh:path prov:generated ] ;
+    sh:targetClass reproschema:ResponseActivity .
+
+reproschema:ResponseShape a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:node prov:ParticipantShape ;
+            sh:path prov:wasAttributedTo ],
+        [ sh:nodeKind sh:IRI ;
+            sh:path reproschema:isAbout ],
+        [ sh:or ( [ sh:datatype xsd:integer ] [ sh:nodeKind sh:IRI ] [ sh:datatype schema:Boolean ] [ sh:datatype schema:StructuredValue ] [ sh:datatype schema:Text ] ) ;
+            sh:path reproschema:value ] ;
+    sh:targetClass reproschema:Response .
 
 reproschema:ChoicesShape a sh:NodeShape ;
     sh:closed true ;
@@ -177,6 +207,22 @@ reproschema:ResponseOptionsShape a sh:NodeShape ;
             sh:path reproschema:choices ] ;
     sh:targetClass reproschema:ResponseOption .
 
+prov:ParticipantShape a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:datatype rdf:langString ;
+            sh:path nidm:subject_id ] ;
+    sh:targetClass reproschema:Participant .
+
+prov:SoftwareAgentShape a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:datatype rdf:langString ;
+            sh:path schema:version ],
+        [ sh:nodeKind sh:IRI ;
+            sh:path schema:url ] ;
+    sh:targetClass reproschema:SoftwareAgent .
+
 reproschema:AddPropertiesShape a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
@@ -193,11 +239,13 @@ reproschema:AddPropertiesShape a sh:NodeShape ;
         [ sh:datatype xsd:boolean ;
             sh:path schema:valueRequired ],
         [ sh:datatype rdf:langString ;
-            sh:path reproschema:randomMaxDelay ],
+            sh:path reproschema:randomMaxDelay ;
+            sh:pattern "^P(?!$)(\\d+(?:\\.\\d+)?Y)?(\\d+(?:\\.\\d+)?M)?(\\d+(?:\\.\\d+)?W)?(\\d+(?:\\.\\d+)?D)?(T(?=\\d)(\\d+(?:\\.\\d+)?H)?(\\d+(?:\\.\\d+)?M)?(\\d+(?:\\.\\d+)?S)?)?$" ],
         [ sh:datatype rdf:langString ;
-            sh:path reproschema:schedule ;
-            sh:pattern "(@(annually|yearly|monthly|weekly|daily|hourly|reboot))|(@every (\\d+(ns|us|µs|ms|s|m|h))+)|((((\\d+,)+\\d+|(\\d+(\\/|-)\\d+)|\\d+|\\*) ?){5,7})" ],
+            sh:or ( [ sh:pattern "^([\\+-]?\\d{4}(?!\\d{2}\\b))((-?)((0[1-9]|1[0-2])(\\3([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\17[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?$" ] [ sh:pattern "^(R\\d*\\/)?P(?:\\d+(?:\\.\\d+)?Y)?(?:\\d+(?:\\.\\d+)?M)?(?:\\d+(?:\\.\\d+)?W)?(?:\\d+(?:\\.\\d+)?D)?(?:T(?:\\d+(?:\\.\\d+)?H)?(?:\\d+(?:\\.\\d+)?M)?(?:\\d+(?:\\.\\d+)?S)?)?$" ] [ sh:pattern "^([\\+-]?\\d{4}(?!\\d{2}\\b))((-?)((0[1-9]|1[0-2])(\\3([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\17[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?(\\/)([\\+-]?\\d{4}(?!\\d{2}\\b))((-?)((0[1-9]|1[0-2])(\\3([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\17[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?$" ] [ sh:pattern "^(R\\d*\\/)?([\\+-]?\\d{4}(?!\\d{2}\\b))((-?)((0[1-9]|1[0-2])(\\4([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\18[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?(\\/)P(?:\\d+(?:\\.\\d+)?Y)?(?:\\d+(?:\\.\\d+)?M)?(?:\\d+(?:\\.\\d+)?W)?(?:\\d+(?:\\.\\d+)?D)?(?:T(?:\\d+(?:\\.\\d+)?H)?(?:\\d+(?:\\.\\d+)?M)?(?:\\d+(?:\\.\\d+)?S)?)?$" ] [ sh:pattern "^(R\\d*\\/)?P(?:\\d+(?:\\.\\d+)?Y)?(?:\\d+(?:\\.\\d+)?M)?(?:\\d+(?:\\.\\d+)?W)?(?:\\d+(?:\\.\\d+)?D)?(?:T(?:\\d+(?:\\.\\d+)?H)?(?:\\d+(?:\\.\\d+)?M)?(?:\\d+(?:\\.\\d+)?S)?)?\\/([\\+-]?\\d{4}(?!\\d{2}\\b))((-?)((0[1-9]|1[0-2])(\\4([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\18[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?$" ] ) ;
+            sh:path reproschema:schedule ],
         [ sh:datatype rdf:langString ;
+            sh:or ( [ sh:pattern "^P(?!$)(\\d+(?:\\.\\d+)?Y)?(\\d+(?:\\.\\d+)?M)?(\\d+(?:\\.\\d+)?W)?(\\d+(?:\\.\\d+)?D)?(T(?=\\d)(\\d+(?:\\.\\d+)?H)?(\\d+(?:\\.\\d+)?M)?(\\d+(?:\\.\\d+)?S)?)?$" ] [ sh:pattern "^(R\\d*\\/)?P(?:\\d+(?:\\.\\d+)?Y)?(?:\\d+(?:\\.\\d+)?M)?(?:\\d+(?:\\.\\d+)?W)?(?:\\d+(?:\\.\\d+)?D)?(?:T(?:\\d+(?:\\.\\d+)?H)?(?:\\d+(?:\\.\\d+)?M)?(?:\\d+(?:\\.\\d+)?S)?)?\\/([\\+-]?\\d{4}(?!\\d{2}\\b))((-?)((0[1-9]|1[0-2])(\\4([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\18[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?$" ] ) ;
             sh:path reproschema:limit ],
         [ sh:datatype xsd:integer ;
             sh:path reproschema:maxRetakes ] ;

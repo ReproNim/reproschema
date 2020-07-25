@@ -57,11 +57,29 @@ reproschema:Field a nidm:DataElement,
     rdfs:comment "An item in an assessment." ;
     rdfs:subClassOf schema:CreativeWork .
 
+reproschema:Participant a rdfs:Class,
+        prov:Person ;
+    rdfs:label "Participant" ;
+    rdfs:comment "An Agent describing characteristics associated with a participant." ;
+    rdfs:subClassOf prov:Agent .
+
 reproschema:Protocol a rdfs:Class,
         prov:Entity,
         prov:Plan ;
     rdfs:label "Protocol" ;
     rdfs:comment "A representation of a study which comprises one or more assessments." ;
+    rdfs:subClassOf schema:CreativeWork .
+
+reproschema:Response a rdfs:Class,
+        prov:Entity ;
+    rdfs:label "Response" ;
+    rdfs:comment "Describes the response of an item." ;
+    rdfs:subClassOf schema:CreativeWork .
+
+reproschema:ResponseActivity a rdfs:Class,
+        prov:Activity ;
+    rdfs:label "ResponseActivity" ;
+    rdfs:comment "Captures information about some action that took place. It also links to information (entities) that were used during the activity" ;
     rdfs:subClassOf schema:CreativeWork .
 
 reproschema:ResponseOption a rdfs:Class ;
@@ -72,9 +90,16 @@ reproschema:Skipped a rdfs:Class ;
     rdfs:label "Skipped" ;
     rdfs:comment "An element to describe the choice when the item is skipped." .
 
+reproschema:SoftwareAgent a rdfs:Class,
+        prov:SoftwareAgent ;
+    rdfs:label "Software Agent" ;
+    rdfs:comment "Captures information about some action that took place. It also links to information (entities) that were used during the activity" .
+
 reproschema:TimedOut a rdfs:Class ;
     rdfs:label "Response timed out" ;
     rdfs:comment "A boolean element to describe if the response did not occur within the prescribed time." .
+
+nidm:subject_id schema:domainIncludes reproschema:Participant .
 
 schema:about schema:domainIncludes reproschema:Activity,
         reproschema:Field,
@@ -93,6 +118,8 @@ schema:image a rdf:Property ;
     schema:domainIncludes reproschema:Choice,
         reproschema:Field ;
     rdfs:comment "An image of the item. This can be a <a class=\"localLink\" href=\"http://schema.org/URL\">URL</a> or a fully described <a class=\"localLink\" href=\"http://schema.org/ImageObject\">ImageObject</a>." .
+
+schema:inLanguage schema:domainIncludes reproschema:ResponseActivity .
 
 schema:isPartOf schema:domainIncludes reproschema:Field ;
     schema:rangeIncludes reproschema:Activity .
@@ -113,11 +140,14 @@ schema:schemaVersion schema:domainIncludes reproschema:Activity,
 
 schema:unitCode schema:domainIncludes reproschema:ResponseOption .
 
+schema:url schema:domainIncludes reproschema:SoftwareAgent .
+
 schema:valueRequired schema:domainIncludes reproschema:AdditionalProperty .
 
 schema:version schema:domainIncludes reproschema:Activity,
         reproschema:Field,
-        reproschema:Protocol .
+        reproschema:Protocol,
+        reproschema:SoftwareAgent .
 
 reproschema:addProperties a rdf:Property ;
     rdfs:label "addProperties" ;
@@ -171,7 +201,8 @@ reproschema:inputType a rdf:Property ;
 
 reproschema:isAbout a rdf:Property ;
     rdfs:label "isAbout" ;
-    schema:domainIncludes reproschema:AdditionalProperty ;
+    schema:domainIncludes reproschema:AdditionalProperty,
+        reproschema:Response ;
     schema:rangeIncludes reproschema:Activity,
         reproschema:Field ;
     rdfs:comment "A pointer to the node describing the item." .
@@ -202,7 +233,8 @@ reproschema:limit a rdf:Property ;
     rdfs:label "limit" ;
     schema:domainIncludes reproschema:AdditionalProperty ;
     schema:rangeIncludes schema:Text ;
-    rdfs:comment "An element to limit the duration this activity is allowed to be completed by once activity is available." .
+    rdfs:comment "An element to limit the duration (uses ISO 8601) this activity is allowed to be completed by once activity is available.",
+        "An element to limit the duration this activity is allowed to be completed by once activity is available." .
 
 reproschema:maxRetakes a rdf:Property ;
     rdfs:label "maxRetakes" ;
@@ -237,7 +269,7 @@ reproschema:randomMaxDelay a rdf:Property ;
     rdfs:label "randomMaxDelay" ;
     schema:domainIncludes reproschema:AdditionalProperty ;
     schema:rangeIncludes schema:Text ;
-    rdfs:comment "Present activity/item within some random offset of activity available time up to the maximum specified by this",
+    rdfs:comment "Present activity/item within some random offset of activity available time up to the maximum specified by this ISO 8601 duration",
         "Present activity/item within some random offset of activity available time up to the maximum specified by this." .
 
 reproschema:responseOptions a rdf:Property ;
@@ -253,7 +285,8 @@ reproschema:schedule a rdf:Property ;
     schema:domainIncludes reproschema:AdditionalProperty ;
     schema:rangeIncludes schema:Schedule,
         schema:Text ;
-    rdfs:comment "An element to set make activity available/repeat info using cron format." .
+    rdfs:comment "An element to set make activity available/repeat info using ISO 8601 repeating interval format.",
+        "An element to set make activity available/repeat info using cron format." .
 
 reproschema:scoringLogic schema:domainIncludes reproschema:Activity,
         reproschema:Protocol .
@@ -310,6 +343,23 @@ skos:prefLabel a rdf:Property ;
     schema:rangeIncludes schema:Text ;
     rdfs:comment "The preferred label." .
 
-schema:value schema:domainIncludes reproschema:Choice ;
-    schema:rangeIncludes reproschema:DontKnow,
+prov:endedAtTime schema:domainIncludes reproschema:ResponseActivity .
+
+prov:generated schema:domainIncludes reproschema:ResponseActivity .
+
+prov:startedAtTime schema:domainIncludes reproschema:ResponseActivity .
+
+prov:used schema:domainIncludes reproschema:ResponseActivity .
+
+prov:wasAttributedTo schema:domainIncludes reproschema:Response ;
+    schema:rangeIncludes reproschema:Participant .
+
+schema:value schema:domainIncludes reproschema:Choice,
+        reproschema:Response ;
+    schema:rangeIncludes schema:Boolean,
+        schema:Number,
+        schema:StructuredValue,
+        schema:Text,
+        schema:URL,
+        reproschema:DontKnow,
         reproschema:Skipped .
