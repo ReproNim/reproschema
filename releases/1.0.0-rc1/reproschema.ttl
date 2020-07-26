@@ -99,7 +99,9 @@ reproschema:TimedOut a rdfs:Class ;
     rdfs:label "Response timed out" ;
     rdfs:comment "A boolean element to describe if the response did not occur within the prescribed time." .
 
-nidm:subject_id schema:domainIncludes reproschema:Participant .
+nidm:subject_id rdfs:label "Participant identifier" ;
+    schema:domainIncludes reproschema:Participant ;
+    rdfs:comment "The identifier of a participant" .
 
 schema:about schema:domainIncludes reproschema:Activity,
         reproschema:Field,
@@ -233,8 +235,7 @@ reproschema:limit a rdf:Property ;
     rdfs:label "limit" ;
     schema:domainIncludes reproschema:AdditionalProperty ;
     schema:rangeIncludes schema:Text ;
-    rdfs:comment "An element to limit the duration (uses ISO 8601) this activity is allowed to be completed by once activity is available.",
-        "An element to limit the duration this activity is allowed to be completed by once activity is available." .
+    rdfs:comment "An element to limit the duration (uses ISO 8601) this activity is allowed to be completed by once activity is available." .
 
 reproschema:maxRetakes a rdf:Property ;
     rdfs:label "maxRetakes" ;
@@ -269,8 +270,7 @@ reproschema:randomMaxDelay a rdf:Property ;
     rdfs:label "randomMaxDelay" ;
     schema:domainIncludes reproschema:AdditionalProperty ;
     schema:rangeIncludes schema:Text ;
-    rdfs:comment "Present activity/item within some random offset of activity available time up to the maximum specified by this ISO 8601 duration",
-        "Present activity/item within some random offset of activity available time up to the maximum specified by this." .
+    rdfs:comment "Present activity/item within some random offset of activity available time up to the maximum specified by this ISO 8601 duration" .
 
 reproschema:responseOptions a rdf:Property ;
     rdfs:label "Response options" ;
@@ -280,13 +280,11 @@ reproschema:responseOptions a rdf:Property ;
     rdfs:comment "An element (object or by URL)to describe the properties of response of the Field item." .
 
 reproschema:schedule a rdf:Property ;
-    rdfs:label "Schedule",
-        "schedule" ;
+    rdfs:label "Schedule" ;
     schema:domainIncludes reproschema:AdditionalProperty ;
     schema:rangeIncludes schema:Schedule,
         schema:Text ;
-    rdfs:comment "An element to set make activity available/repeat info using ISO 8601 repeating interval format.",
-        "An element to set make activity available/repeat info using cron format." .
+    rdfs:comment "An element to set make activity available/repeat info using ISO 8601 repeating interval format." .
 
 reproschema:scoringLogic schema:domainIncludes reproschema:Activity,
         reproschema:Protocol .
