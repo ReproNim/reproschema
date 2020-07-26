@@ -297,7 +297,9 @@
       "@id": "nidm:subject_id",
       "schema:domainIncludes": {
         "@id": "reproschema:Participant"
-      }
+      },
+      "rdfs:comment": "The identifier of a participant",
+      "rdfs:label": "Participant identifier"
     },
     {
       "@id": "reproschema:Participant",
@@ -939,36 +941,28 @@
       "@type": "rdf:Property",
       "schema:domainIncludes": {
         "@id": "reproschema:AdditionalProperty"
-      },
-      "rdfs:comment": "Present activity/item within some random offset of activity available time up to the maximum specified by this.",
-      "rdfs:label": "randomMaxDelay"
+      }
     },
     {
       "@id": "reproschema:schedule",
       "@type": "rdf:Property",
       "schema:domainIncludes": {
         "@id": "reproschema:AdditionalProperty"
-      },
-      "rdfs:comment": "An element to set make activity available/repeat info using cron format.",
-      "rdfs:label": "schedule"
+      }
     },
     {
       "@id": "reproschema:limit",
       "@type": "rdf:Property",
       "schema:domainIncludes": {
         "@id": "reproschema:AdditionalProperty"
-      },
-      "rdfs:comment": "An element to limit the duration this activity is allowed to be completed by once activity is available.",
-      "rdfs:label": "limit"
+      }
     },
     {
       "@id": "reproschema:maxRetakes",
       "@type": "rdf:Property",
       "schema:domainIncludes": {
         "@id": "reproschema:AdditionalProperty"
-      },
-      "rdfs:comment": "Defines number of times the item is allowed to be redone.",
-      "rdfs:label": "maxRetakes"
+      }
     },
     {
       "@id": "reproschema:AdditionalProperty",

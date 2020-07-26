@@ -124,17 +124,17 @@ An object to describe the various properties added to assessments and fields.
 
 **URI:** [http://schema.repronim.org/AdditionalProperty](http://schema.repronim.org/AdditionalProperty)
 
-|      Name      |                                                   Description                                                   |                                              URI                                               |
-|----------------|-----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
-| isAbout        | A pointer to the node describing the item.                                                                      | [http://schema.repronim.org/isAbout](http://schema.repronim.org/isAbout)                       |
-| isVis          | An element to describe (by boolean or conditional statement) visibility conditions of items in an assessment.   | [http://schema.repronim.org/isVis](http://schema.repronim.org/isVis)                           |
-| limit          | An element to limit the duration this activity is allowed to be completed by once activity is available.        | [http://schema.repronim.org/limit](http://schema.repronim.org/limit)                           |
-| maxRetakes     | Defines number of times the item is allowed to be redone.                                                       | [http://schema.repronim.org/maxRetakes](http://schema.repronim.org/maxRetakes)                 |
-| randomMaxDelay | Present activity/item within some random offset of activity available time up to the maximum specified by this. | [http://schema.repronim.org/randomMaxDelay](http://schema.repronim.org/randomMaxDelay)         |
-| schedule       | An element to set make activity available/repeat info using cron format.                                        | [http://schema.repronim.org/schedule](http://schema.repronim.org/schedule)                     |
-| variableName   | The name used to represent an item.                                                                             | [http://schema.repronim.org/variableName](http://schema.repronim.org/variableName)             |
-| valueRequired  | Whether the property must be filled in to complete the action.  Default is false.                               | [http://schema.org/valueRequired](http://schema.org/valueRequired)                             |
-| prefLabel      | The preferred label.                                                                                            | [http://www.w3.org/2004/02/skos/core#prefLabel](http://www.w3.org/2004/02/skos/core#prefLabel) |
+|      Name      |                                                           Description                                                            |                                              URI                                               |
+|----------------|----------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
+| isAbout        | A pointer to the node describing the item.                                                                                       | [http://schema.repronim.org/isAbout](http://schema.repronim.org/isAbout)                       |
+| isVis          | An element to describe (by boolean or conditional statement) visibility conditions of items in an assessment.                    | [http://schema.repronim.org/isVis](http://schema.repronim.org/isVis)                           |
+| limit          | An element to limit the duration (uses ISO 8601) this activity is allowed to be completed by once activity is available.         | [http://schema.repronim.org/limit](http://schema.repronim.org/limit)                           |
+| maxRetakes     | Defines number of times the item is allowed to be redone.                                                                        | [http://schema.repronim.org/maxRetakes](http://schema.repronim.org/maxRetakes)                 |
+| randomMaxDelay | Present activity/item within some random offset of activity available time up to the maximum specified by this ISO 8601 duration | [http://schema.repronim.org/randomMaxDelay](http://schema.repronim.org/randomMaxDelay)         |
+| schedule       | An element to set make activity available/repeat info using ISO 8601 repeating interval format.                                  | [http://schema.repronim.org/schedule](http://schema.repronim.org/schedule)                     |
+| variableName   | The name used to represent an item.                                                                                              | [http://schema.repronim.org/variableName](http://schema.repronim.org/variableName)             |
+| valueRequired  | Whether the property must be filled in to complete the action.  Default is false.                                                | [http://schema.org/valueRequired](http://schema.org/valueRequired)                             |
+| prefLabel      | The preferred label.                                                                                                             | [http://www.w3.org/2004/02/skos/core#prefLabel](http://www.w3.org/2004/02/skos/core#prefLabel) |
 
 ### ResponseOption
 An element (object or by URL)to describe the properties of response of the Field item.
@@ -213,9 +213,9 @@ An Agent describing characteristics associated with a participant.
 
 **URI:** [http://schema.repronim.org/Participant](http://schema.repronim.org/Participant)
 
-|    Name    | Description |                                       URI                                        |
-|------------|-------------|----------------------------------------------------------------------------------|
-| subject_id | None        | [http://purl.org/nidash/nidm#subject_id](http://purl.org/nidash/nidm#subject_id) |
+|    Name    |           Description           |                                       URI                                        |
+|------------|---------------------------------|----------------------------------------------------------------------------------|
+| subject_id | The identifier of a participant | [http://purl.org/nidash/nidm#subject_id](http://purl.org/nidash/nidm#subject_id) |
 
 ### SoftwareAgent
 Captures information about some action that took place. It also links to information (entities) that were used during the activity
