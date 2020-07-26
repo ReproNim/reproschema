@@ -19,6 +19,12 @@ could save you from a lot of confusion. 😉
 - Not sure how the project is organized? Check out the [project structure](./20_project_structure)
 page.
 
+- Want more details on how the `Reproschema` itself is structured: check out our [schema page](./30_schema)
+
+<!-- - If you want to use the schema to create your own questionnaire: check out our
+
+- Looking for ways to contribute to the project: check out our -->
+
 ## Licence
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
