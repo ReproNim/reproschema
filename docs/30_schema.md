@@ -18,7 +18,7 @@ This schema is defined by the [Field schema](https://raw.githubusercontent.com/R
 
 <img
 src="../img/reproschema.png"
-alt="reposchema"
+alt="reproschema"
 style="width: 800px; height: auto; display: block; margin-left: auto;  margin-right: auto;"/>
 
 You can see an example of those in the [examples folder](https://github.com/ReproNim/reproschema/examples)
