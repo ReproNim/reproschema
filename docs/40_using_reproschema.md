@@ -29,3 +29,57 @@ So we would want to have a set of questionnaires:
 - to assess the severity of the depression of our participants,
 - check which participants can go in an MRI scanner,
 - estimate the handedness of the participants (because of the language lateralization organization of the brain).
+
+
+## A note about this tutorial
+
+We will be creating several jsonld files in this tutorial. Those can quickly grow big and it can be hard to see what was added to a certain file from one step to the next. This gets even more confusing when you know that the order of the lines does not really matter. So to makes things easier to follow (and unless we explicitly say so) any new content we add to a file we have already worked on will be put at the end of this file.
+
+So if step 1 looked like this: 
+
+```json
+{
+  "@context": "some_URL",
+  "@type": "reproschema:Protocol",
+  "@id": "some_id",
+  "schemaVersion": "1.0.0",
+  "version": "0.0.1",
+}
+```
+
+We will make sure that step 2 where we add a `landingPage` field looks like this:
+
+```json
+{
+  "@context": "some_URL",
+  "@type": "reproschema:Protocol",
+  "@id": "some_id",
+  "schemaVersion": "1.0.0",
+  "version": "0.0.1",
+  "landingPage": {"@id": "README.md"}
+}
+```
+
+Although some other possibility would be equivalent:
+
+```json
+{
+  "landingPage": {"@id": "README.md"},
+  "@context": "some_URL",
+  "@type": "reproschema:Protocol",
+  "@id": "some_id",
+  "schemaVersion": "1.0.0",
+  "version": "0.0.1",
+}
+```
+
+```json
+{
+  "@context": "some_URL",
+  "@type": "reproschema:Protocol",
+  "@id": "some_id",
+  "landingPage": {"@id": "README.md"},
+  "schemaVersion": "1.0.0",
+  "version": "0.0.1",
+}
+```

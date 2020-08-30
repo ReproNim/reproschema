@@ -90,10 +90,10 @@ jobs:
       - uses: actions/checkout@v2
 
       # Checks that our JSON are valid
-      # Installing `jsonlint` validate the JSON files
+      # Installing `jsonlint` to validate the JSON files
       # Looking recursively through the directories `protocol` 
       # and `activities` for any file with "@context" in them 
-      # (that makes them jsonld files) and validating their content 
+      # (that makes them jsonld files) and validate their content 
       # with jsonlint  
       - name: Check for syntax errors
         run: |
@@ -121,7 +121,7 @@ jobs:
           reproschema -l DEBUG validate protocols
 ```
 
-### Using git hooks and precommit
+### Using git hooks and pre-commit
 
 
 ## Using a template for a new protocol
@@ -136,47 +136,49 @@ If you are starting a new study from scratch and already familiar with some of t
 
 If you have to create several items that always have the same set of response options, then it might be easier to create a separate file with those response options and point each item to that file instead. This way, if you need to change the characteristics of one response, you only have to change things in one file rather than in many.
 
-For example, you could create response set file to constrains the possible answers on all the yes / no questions by organizing things this way.
+For example, you could create response set file to constrains the possible answers on the questions of the Edinburgh Handedness Inventory we have been working on by organizing things this way.
 
 ```bash
 activities
-├── activity1.jsonld
-├── yesNoValueConstraints.jsonld
+├── edinburgh_handedness_inventory_short.jsonld
+├── leftRightValueConstraints.jsonld
 └── items
-    ├── item1.jsonld
+    ├── writing.jsonld
     ├ ...
     ...
 ```
 
-The content of the `valueConstraints` file would look like this:
+The content of the `leftRightValueConstraints.jsonld` file would look like this:
 
 ```json
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
-    "@id": "yesNoValueConstraints.jsonld",
+    "@id": "leftRightValueConstraints.jsonld",
     "@type": "reproschema:ResponseOption",
     "valueType": "xsd:integer",
-    "minValue": 0,
-    "maxValue": 2,
+    "minValue": -100,
+    "maxValue": 100,
     "multipleChoice": false,
     "choices": [
         {
-            "name": {
-                "en": "Yes"
-            },
-            "value": 1
+            "name": "Always right",
+            "value": 100
         },
         {
-            "name": {
-                "en": "No"
-            },
+            "name": "Usually right",
+            "value": 50
+        },
+        {
+            "name": "Both equally",
             "value": 0
         },
         {
-            "name": {
-                "en": "Don't know"
-            },
-            "value": 2
+            "name": "Usually left",
+            "value": -50
+        },
+        {
+            "name": "Always left",
+            "value": -100
         }
     ]
 }
@@ -188,17 +190,21 @@ And you can point each item to it by referring to the local file in the `respons
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "item1.jsonld",
-    "prefLabel": "pizza",
-    "description": "favorite food",
+    "@id": "writing",
+    "prefLabel": "writing",
+    "description": "writing item of the EHI",
     "schemaVersion": "1.0.0-rc1",
     "version": "0.0.1",
-    "ui": {
-        "inputType": "radio"
-    },
-    "question": {
-        "en": "Do you like pizza?"
-    },
-    "responseOptions": "../response_options/booleanValueConstraints"
+    "question": "Writing",
+    "ui": {"inputType": "radio"},
+    "responseOptions": "../leftRightValueConstraints.jsonld"
 }
 ```
+
+
+<!-- ## Programmatic schema generation
+
+Tool to convert redcap CSVs to our schema format. But it cannot be used to convert every
+redcap-formatted table as some are customized redcap tables (for example the 100s that are in ABCD)
+but does cover most cases. A template of the CSV and how to use the tool can be found
+[here](https://github.com/sanuann/reproschema-builder) -->

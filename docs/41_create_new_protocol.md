@@ -5,7 +5,10 @@
 We first need to create some folders to host the schema that will represent all our questionnaires.
 
 ```bash
-# FYI: this is comment and it will not be executed
+# Type this in a terminal window
+
+# FYI: this line starts with # 
+#  it is comment and it will not be executed
 #  if you copy paste it in the command line
 
 # Creating the directory for the depression neuroimaging study
@@ -15,11 +18,12 @@ mkdir depression_nimg_schema
 cd depression_nimg_schema
 ```
 
-Now let's create the `protocol` folder, a protocol file named after our study.
+Now let's create the `protocols` folder, a protocol file named after our study.
 
 ```bash
-mkdir protocol
-touch protocol/depression_nimg_schema.jsonld
+# Type this in a terminal window
+mkdir protocols
+touch protocols/depression_nimg_schema.jsonld
 ```
 
 Ok so now we are ready to start putting some content into those files.
@@ -30,7 +34,7 @@ Open the `depression_nimg_schema.jsonld` with a text editor and add the followin
 {
   "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
   "@type": "reproschema:Protocol",
-  "@id": "depression_nimg_schema",
+  "@id": "depression_nimg_schema.jsonld",
   "prefLabel": "depression neuroimaging study",
   "description": "a study on linguistic processing in depression",
   "schemaVersion": "1.0.0-rc1",
@@ -52,13 +56,14 @@ You must also specify the version of the schema you are using.
 
 Let's now take care of adding a landing page to the list of assessments our participants will have to fill in.
 
-Let's create a markdown readme file in the `protocol` folder.
+Let's create a markdown readme file in the `protocols` folder.
 
 ```bash
-touch protocol/README.md
+# Type this in a terminal window
+touch protocols/README.md
 ```
 
-Add some content to it just to get things started, like for example
+Add some content in [markdown](https://daringfireball.net/projects/markdown/basics) to it just to get things started, like for example
 
 ```markdown
 # README
@@ -72,7 +77,7 @@ Now we want to add this file to our protocol and make it the landing page for th
 {
   "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
   "@type": "reproschema:Protocol",
-  "@id": "depression_nimg_schema",
+  "@id": "depression_nimg_schema.jsonld",
   "prefLabel": "depression neuroimaging study",
   "description": "a study on linguistic processing in depression",
   "schemaVersion": "1.0.0-rc1",
@@ -133,7 +138,7 @@ To do this, the content of your `depression_nimg_schema.jsonld` should now look 
     }
   ],
   "@type": "reproschema:Protocol",
-  "@id": "depression_nimg_schema",
+  "@id": "depression_nimg_schema.jsonld",
   "prefLabel": "depression neuroimaging study",
   "description": "a study on linguistic processing in depression",
   "schemaVersion": "1.0.0-rc1",
@@ -155,20 +160,29 @@ To do this, the content of your `depression_nimg_schema.jsonld` should now look 
 }
 ```
 
+### What did we add ?
+
 Let's just highlight the things that have changed.
 
 We have added a `ui` and an `order` fields.
 
-`ui` contains `addProperties` where we will be listing all the assessments that we add to our protocol.
+`ui` is for things realted to the user interface and contains `addProperties` where we will be listing all the assessments that we add to our protocol.
 
-Each assessment is represented by an activity that is given a `variableName` and a `prefLabel`. The latter will be used in this case as the name to display on the UI in english.
+Each assessment is represented by an activity that is given a `variableName` and a `prefLabel`. The latter will be used as the name to display on the UI in english.
 
-The field `isAbout` is the URL to point to the schema of that activity. You might notice that `rl:PHQ-9/PHQ9_schema` does not look like a typical URL and clearly does not match the one we fed the UI earlier (https://raw.githubusercontent.com/ReproNim/reproschema-library/master/activities/PHQ-9/PHQ9_schema). Well this is because we have defined, in the `@context` part of our jsonld, that the `rl` from `rl:PHQ-9/PHQ9_schema` will actually stand for `https://raw.githubusercontent.com/ReproNim/reproschema-library/master/activities/`. This shorthand makes it faster for us to write URL but the UI will know how to `expand` this into an actual URL.
+The field `isAbout` is the URL to point to the schema of that activity. 
 
 The field `order` is there to indicate which activity should be presented first, second...
 
 ??? "Making sure you have a valid json file"
     Json files can get a bit long and you might sometimes forget a coma of a closing square brackets, so to make sure that your json file is correctly formatted you can use a linter. For example, you can test individual files on the [json linter website](`https://jsonlint.com/`).
+
+??? "JSON-LD expansion"
+    You might notice that `rl:PHQ-9/PHQ9_schema` does not look like a typical URL and clearly does not match the one we fed the UI earlier (https://raw.githubusercontent.com/ReproNim/reproschema-library/master/activities/PHQ-9/PHQ9_schema). Well this is because we have defined, in the `@context` part of our jsonld, that the `rl` from `rl:PHQ-9/PHQ9_schema` will actually stand for `https://raw.githubusercontent.com/ReproNim/reproschema-library/master/activities/`. This shorthand makes it faster for us to write URL but the UI will know how to `expand` this into an actual URL.
+    
+    Similarly the `reproschema:Protocol` in `"@type": "reproschema:Protocol"` expands in `http://schema.repronim.org/Protocol` because `reproschema` has been indirectly defined in the context of `depression_nimg_schema.jsonld`. To be more precise `reproschema` is defined in the [base file](https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/base) which is part of the context of the [generic file](https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic) that our protocol points to. 
+
+
 
 ### Starting to put things online to see how they look
 
@@ -179,12 +193,14 @@ To do that we will use Git and Github.
 Let's first initialize a repository in the folder where we have have been working.
 
 ```bash
+# Type this in a terminal window
 git init . # the dot signifies the directory where you currently are
 ```
 
 Now we tell git to make a snapshot of the current state of your folder.
 
 ```bash
+# Type this in a terminal window
 git add --all # tell git to include all the new changes into the next snapshot
 
 git commit -m 'add protocol and README' # make a first snapshot of your protocol
@@ -201,6 +217,8 @@ https://github.com/your_user_name/depression_nimg_schema.git
 You "push" the content of the `depression_nimg_schema` onto the empty "remote" repository you have just created.
 
 ```bash
+# Type this in a terminal window
+
 # tell git about the existence of this new online repository you have just created
 git remote add origin https://github.com/your_user_name/depression_nimg_schema.git
 
@@ -229,6 +247,7 @@ You can find it [here](https://github.com/ReproNim/reproschema-library/tree/mast
 Once you have changed the `depression_nimg_schema.jsonld`, you can update the online content with the following git commands.
 
 ```bash
+# Type this in a terminal window
 git add --all
 git commit -m 'add a thank you activity'
 git push
