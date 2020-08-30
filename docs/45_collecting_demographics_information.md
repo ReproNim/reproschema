@@ -68,3 +68,73 @@ demographics_and_background_information_v1/
     ├── stateOfResidence
     └── verification_id
 ```
+
+```json
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+        {
+            "demo": "https://github.com/ReproNim/reproschema-library/tree/master/activities/demographics_and_background_information_v1/items"
+        }
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "demographics.jsonld",
+    "prefLabel": "demographics",
+    "description": "information about the participant",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "order": [
+            "demo:writing.jsonld",
+            "demo:throwing.jsonld",
+            "demo:EHI_results.jsonld"
+        ],
+        "shuffle": false,
+        "addProperties": [
+            {
+                "variableName": "participant_id",
+                "isAbout": "demo:participant_id",
+            },
+            {
+                "variableName": "fullName",
+                "isAbout": "demo:fullName",
+            },
+            {
+                "variableName": "sex",
+                "isAbout": "demo:sex",
+            },
+            {
+                "variableName": "age_years",
+                "isAbout": "demo:age_years",
+            },
+            {
+                "isAbout": "demo:email",
+                "variableName": "email",
+            },
+            {
+                "isAbout": "demo:participant_education",
+                "variableName": "participant_education",
+            },
+            {
+                "isAbout": "demo:nativeLanguage",
+                "variableName": "nativeLanguage",
+            },
+            {
+                "isAbout": "demo:healthCondition",
+                "variableName": "healthCondition",
+            },
+            {
+                "isAbout": "demo:mentalHealth",
+                "variableName": "mentalHealth",
+            },
+            {
+                "isAbout": "demo:share_data",
+                "variableName": "share_data",
+            },
+            {
+                "isAbout": "demo:medication",
+                "variableName": "medication",
+            }
+        ]
+    }
+}
+```

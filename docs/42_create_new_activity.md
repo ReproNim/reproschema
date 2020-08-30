@@ -64,7 +64,7 @@ Now let's create the `activities` folder, an activity file for the new assessmen
 ```bash
 # Type this in a terminal window
 mkdir activities
-touch activities/edinburgh_handedness_inventory_short.jsonld
+touch activities/EHI/edinburgh_handedness_inventory_short.jsonld
 ```
 
 Now let's start by adding the following content in the activity file we have just created.
@@ -109,8 +109,8 @@ Let's first start with the item for `writing`
 
 ```bash
 # Type this in a terminal window
-mkdir activities/items
-touch activities/items/writing.jsonld
+mkdir activities/EHI/items
+touch activities/EHI/items/writing.jsonld
 ```
 
 The content for items starts like the ones we have seen so far but `"reproschema:Field"` for the `@type` field.
@@ -418,3 +418,62 @@ touch activities/items/EHI_results.jsonld
 ```
 
 ## Adding the activity to the protocol
+
+
+```json
+{
+  "@context": [
+    "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    {
+      "rl": "https://raw.githubusercontent.com/ReproNim/reproschema-library/master/activities/"
+    }
+  ],
+  "@type": "reproschema:Protocol",
+  "@id": "depression_nimg_schema.jsonld",
+  "prefLabel": "depression neuroimaging study",
+  "description": "a study on linguistic processing in depression",
+  "schemaVersion": "1.0.0-rc1",
+  "version": "0.0.1",
+  "landingPage": {EHI
+    "@id": "README.md",
+    "@language": "en"
+  },
+  "ui": {
+    "addProperties": [
+      {
+        "isAbout": "rl:PHQ-9/PHQ9_schema",
+        "variableName": "PHQ9_schema",
+        "prefLabel": { "en": "Depression" }
+      },
+        {
+        "isAbout": "../activities/EHI/edinburgh_handedness_inventory_short.jsonld",
+        "variableName": "EHI_short_schema",
+        "prefLabel": { "en": "EHI" }
+      }
+    ],
+    "order": [
+        "rl:PHQ-9/PHQ9_schema",
+        "EHI_short_schema"
+        ]
+  }
+}
+```
+
+### What did we add ?
+
+```json
+"ui": {
+"addProperties": [
+    ...
+    {
+    "isAbout": "../activities/edinburgh_handedness_inventory_short.jsonld",
+    "variableName": "EHI_short_schema",
+    "prefLabel": { "en": "EHI" }
+    }
+],
+"order": [
+    ...
+    "EHI_short_schema"
+    ]
+}
+```
