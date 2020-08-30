@@ -73,7 +73,7 @@ demographics_and_background_information_v1/
 {
     "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
         {
-            "demo": "https://github.com/ReproNim/reproschema-library/tree/master/activities/demographics_and_background_information_v1/items"
+            "demo": "https://raw.githubusercontent.com/ReproNim/reproschema-library/master/activities/demographics_and_background_information_v1/items"
         }
     ],
     "@type": "reproschema:Activity",
@@ -84,57 +84,68 @@ demographics_and_background_information_v1/
     "version": "0.0.1",
     "ui": {
         "order": [
-            "demo:writing.jsonld",
-            "demo:throwing.jsonld",
-            "demo:EHI_results.jsonld"
+            "demo:participant_id",
+            "demo:fullName",
+            "demo:sex",
+            "demo:age_years",
+            "demo:email",
+            "demo:participant_education",
+            "demo:nativeLanguage",
+            "demo:healthCondition",
+            "demo:mentalHealth",
+            "demo:share_data",
+            "demo:medication"
         ],
         "shuffle": false,
         "addProperties": [
             {
                 "variableName": "participant_id",
-                "isAbout": "demo:participant_id",
+                "isAbout": "demo:participant_id"
             },
             {
                 "variableName": "fullName",
-                "isAbout": "demo:fullName",
+                "isAbout": "demo:fullName"
             },
             {
                 "variableName": "sex",
-                "isAbout": "demo:sex",
+                "isAbout": "demo:sex"
             },
             {
                 "variableName": "age_years",
-                "isAbout": "demo:age_years",
+                "isAbout": "demo:age_years"
             },
             {
                 "isAbout": "demo:email",
-                "variableName": "email",
+                "variableName": "email"
             },
             {
                 "isAbout": "demo:participant_education",
-                "variableName": "participant_education",
+                "variableName": "participant_education"
             },
             {
                 "isAbout": "demo:nativeLanguage",
-                "variableName": "nativeLanguage",
+                "variableName": "nativeLanguage"
             },
             {
                 "isAbout": "demo:healthCondition",
-                "variableName": "healthCondition",
+                "variableName": "healthCondition"
             },
             {
                 "isAbout": "demo:mentalHealth",
-                "variableName": "mentalHealth",
+                "variableName": "mentalHealth"
             },
             {
                 "isAbout": "demo:share_data",
-                "variableName": "share_data",
+                "variableName": "share_data"
             },
             {
                 "isAbout": "demo:medication",
-                "variableName": "medication",
+                "variableName": "medication"
             }
         ]
     }
 }
 ```
+
+
+
