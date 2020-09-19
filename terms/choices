@@ -1,0 +1,18 @@
+{
+    "@context": "../contexts/base",
+    "@id": "reproschema:choices",
+    "@type": "rdf:Property",
+    "rdfs:comment": "An array to list the available options for response of the Field item.",
+    "rdfs:label": "choices",
+    "schema:rangeIncludes": [
+        {
+        "@id": "reproschema:Choice"
+        },
+        {
+            "@id": "schema:URL"
+        }
+    ],
+    "schema:sameAs": {
+        "@id": "schema:itemListElement"
+    }
+}

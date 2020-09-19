@@ -1,20 +1,12 @@
 {
-    "@context": {
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "schema": "http://schema.org/",
-        "reproschema": "https://raw.githubusercontent.com/ReproNim/reproschema/master/schemas/"
-    },
-    "@id": "responseOptions",
-    "@type": "rdf:property",
-    "rdfs:comment": "Indicates (by URL or object) the value constraints on an item of an assessment.",
-    "rdfs:label": "responseOptions",
-    "schema:domainIncludes": {
-        "@id": "reproschema:Field"
-    },
+    "@context": "../contexts/base",
+    "@id": "reproschema:responseOptions",
+    "@type": "rdf:Property",
+    "rdfs:comment": "An element (object or by URL)to describe the properties of response of the Field item.",
+    "rdfs:label": "Response options",
     "schema:rangeIncludes": [
         {
-            "@id": "reproschema:ResponseOptions"
+            "@id": "reproschema:ResponseOption"
         },
         {
             "@id": "schema:URL"

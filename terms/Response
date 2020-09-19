@@ -1,0 +1,62 @@
+{
+    "@context": "../contexts/base",
+    "@graph": [
+        {
+            "@id": "reproschema:isAbout",
+            "schema:domainIncludes": {
+               "@id": "reproschema:Response"
+            }
+        },
+        {
+            "@id": "schema:value",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Response"
+            },
+            "schema:rangeIncludes": [
+                {
+                    "@id": "reproschema:Skipped"
+                },
+                {
+                    "@id": "reproschema:DontKnow"
+                },
+				{
+                    "@id": "schema:Number"
+                },
+				{
+                    "@id": "schema:Text"
+                },
+				{
+                    "@id": "schema:URL"
+                },
+				{
+                    "@id": "schema:Boolean"
+                },
+				{
+                    "@id": "schema:StructuredValue"
+                }
+            ]
+        },
+        {
+            "@id": "prov:wasAttributedTo",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Response"
+            },
+            "schema:rangeIncludes": [
+            {
+                "@id": "reproschema:Participant"
+            }]
+        },
+        {
+            "@id": "reproschema:Response",
+            "@type": [
+                "rdfs:Class",
+                "prov:Entity"
+            ],
+            "rdfs:comment": "Describes the response of an item.",
+            "rdfs:label": "Response",
+            "rdfs:subClassOf": {
+                "@id": "schema:CreativeWork"
+            }
+        }
+    ]
+}

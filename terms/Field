@@ -1,0 +1,108 @@
+{
+    "@context": "../contexts/base",
+    "@graph": [
+        {
+            "@id": "skos:prefLabel",
+            "@type": "rdf:Property",
+            "rdfs:comment": "The preferred label.",
+            "rdfs:label": "preferred label",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Field"
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:Text"
+            }
+        },
+        {
+            "@id": "schema:description",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Field"
+            }
+        },
+        {
+            "@id": "schema:schemaVersion",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Field"
+            }
+        },
+        {
+            "@id": "schema:version",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Field"
+            }
+        },
+        {
+            "@id": "reproschema:preamble",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Field"
+            }
+        },
+        {
+            "@id": "schema:question",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Field"
+            }
+        },
+        {
+            "@id": "schema:image",
+            "@type": "rdf:Property",
+            "rdfs:comment": "An image of the item. This can be a <a class=\"localLink\" href=\"http://schema.org/URL\">URL</a> or a fully described <a class=\"localLink\" href=\"http://schema.org/ImageObject\">ImageObject</a>.",
+            "rdfs:label": "image",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Field"
+            }
+        },
+        {
+            "@id": "reproschema:inputType",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Field"
+            }
+        },
+        {
+            "@id": "schema:readonlyValue",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Field"
+            }
+        },
+        {
+            "@id": "schema:isPartOf",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Field"
+            },
+            "schema:rangeIncludes": {
+                "@id": "reproschema:Activity"
+            }
+        },
+        {
+            "@id": "reproschema:responseOptions",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Field"
+            }
+        },
+        {
+            "@id": "schema:associatedMedia",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Field"
+            }
+        },
+        {
+            "@id": "schema:about",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Field"
+            }
+        },
+        {
+            "@id": "reproschema:Field",
+            "@type": [
+                "rdfs:Class",
+                "prov:Entity",
+                "nidm:DataElement"
+            ],
+            "rdfs:comment": "An item in an assessment.",
+            "rdfs:label": "Field",
+            "rdfs:subClassOf": {
+                "@id": "schema:CreativeWork"
+            }
+        }
+    ]
+}

@@ -1,9 +1,10 @@
 {
-    "@context": {
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
-    },
-    "@id": "shuffle",
-    "@type": "rdfs:Class",
-    "rdfs:comment": "An element to determine if a list of items is shuffled or in order.",
-    "rdfs:label": "shuffle"
+    "@context": "../contexts/base",
+    "@id": "reproschema:shuffle",
+    "@type": "rdf:Property",
+    "rdfs:comment": "An element (bool) to determine if the list of items is shuffled or in order.",
+    "rdfs:label": "Shuffle",
+    "schema:rangeIncludes": {
+        "@id": "schema:boolean"
+    }
 }

@@ -1,0 +1,988 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "dct": "http://purl.org/dc/terms/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfa": "http://www.w3.org/ns/rdfa#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "pav": "http://purl.org/pav/",
+    "nidm": "http://purl.org/nidash/nidm#",
+    "uuid": "http://uuid.repronim.org/",
+    "reproschema": "http://schema.repronim.org/"
+  },
+  "@graph": [
+    {
+      "@id": "reproschema:AllowExport",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Indicates (by boolean) if data can be exported or not.",
+      "rdfs:label": "Allow export"
+    },
+    {
+      "@id": "reproschema:multipleChoice",
+      "@type": "rdf:Property",
+      "schema:rangeIncludes": {
+        "@id": "schema:Boolean"
+      },
+      "rdfs:comment": "Indicates (by bool) if response for the Field item has one or more answer.",
+      "rdfs:label": "Multiple choice response expectation"
+    },
+    {
+      "@id": "reproschema:order",
+      "@type": "rdf:Property",
+      "schema:rangeIncludes": [
+        {
+          "@id": "reproschema:Activity"
+        },
+        {
+          "@id": "reproschema:Field"
+        },
+        {
+          "@id": "schema:URL"
+        }
+      ],
+      "rdfs:comment": "An ordered list to describe the order in which the items of an assessment or protocol appear in the user interface.",
+      "rdfs:label": "Order"
+    },
+    {
+      "@id": "reproschema:inputType",
+      "@type": "rdf:Property",
+      "schema:rangeIncludes": {
+        "@id": "schema:Text"
+      },
+      "rdfs:comment": "An element to describe the input type of a Field item.",
+      "rdfs:label": "inputType"
+    },
+    {
+      "@id": "reproschema:maxRetakes",
+      "@type": "rdf:Property",
+      "schema:rangeIncludes": {
+        "@id": "schema:Number"
+      },
+      "rdfs:comment": "Defines number of times the item is allowed to be redone.",
+      "rdfs:label": "maxRetakes"
+    },
+    {
+      "@id": "reproschema:AllowReplay",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Indicates (by boolean) if items can be replayed or not.",
+      "rdfs:label": "Allow replay"
+    },
+    {
+      "@id": "reproschema:schedule",
+      "@type": "rdf:Property",
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:Text"
+        },
+        {
+          "@id": "schema:Schedule"
+        }
+      ],
+      "rdfs:comment": "An element to set make activity available/repeat info using ISO 8601 repeating interval format.",
+      "rdfs:label": "Schedule"
+    },
+    {
+      "@id": "reproschema:shuffle",
+      "@type": "rdf:Property",
+      "schema:rangeIncludes": {
+        "@id": "schema:boolean"
+      },
+      "rdfs:comment": "An element (bool) to determine if the list of items is shuffled or in order.",
+      "rdfs:label": "Shuffle"
+    },
+    {
+      "@id": "reproschema:DontKnow",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "An element to describe the choice when response is not known.",
+      "rdfs:label": "Do not know"
+    },
+    {
+      "@id": "reproschema:isAbout",
+      "schema:domainIncludes": {
+        "@id": "reproschema:Response"
+      }
+    },
+    {
+      "@id": "schema:value",
+      "schema:domainIncludes": {
+        "@id": "reproschema:Response"
+      },
+      "schema:rangeIncludes": [
+        {
+          "@id": "reproschema:Skipped"
+        },
+        {
+          "@id": "reproschema:DontKnow"
+        },
+        {
+          "@id": "schema:Number"
+        },
+        {
+          "@id": "schema:Text"
+        },
+        {
+          "@id": "schema:URL"
+        },
+        {
+          "@id": "schema:Boolean"
+        },
+        {
+          "@id": "schema:StructuredValue"
+        }
+      ]
+    },
+    {
+      "@id": "prov:wasAttributedTo",
+      "schema:domainIncludes": {
+        "@id": "reproschema:Response"
+      },
+      "schema:rangeIncludes": {
+        "@id": "reproschema:Participant"
+      }
+    },
+    {
+      "@id": "reproschema:Response",
+      "@type": [
+        "rdfs:Class",
+        "prov:Entity"
+      ],
+      "rdfs:comment": "Describes the response of an item.",
+      "rdfs:label": "Response",
+      "rdfs:subClassOf": {
+        "@id": "schema:CreativeWork"
+      }
+    },
+    {
+      "@id": "reproschema:preamble",
+      "@type": "rdf:Property",
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:Text"
+        },
+        {
+          "@id": "rdf:langString"
+        }
+      ],
+      "rdfs:comment": "The preamble for an assessment",
+      "rdfs:label": "Preamble"
+    },
+    {
+      "@id": "reproschema:allow",
+      "@type": "rdf:Property",
+      "schema:rangeIncludes": {
+        "@id": "schema:Thing"
+      },
+      "rdfs:comment": "An array of items indicating properties allowed on an activity or protocol ",
+      "rdfs:label": "allow"
+    },
+    {
+      "@id": "reproschema:limit",
+      "@type": "rdf:Property",
+      "schema:rangeIncludes": {
+        "@id": "schema:Text"
+      },
+      "rdfs:comment": "An element to limit the duration (uses ISO 8601) this activity is allowed to be completed by once activity is available.",
+      "rdfs:label": "limit"
+    },
+    {
+      "@id": "reproschema:DisableBack",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Indicates (by boolean) if we can go back to a completed assessment in a protocol.",
+      "rdfs:label": "Disable redo"
+    },
+    {
+      "@id": "reproschema:AutoAdvance",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Indicates (by boolean) if assessments in a protocol can auto advance or not.",
+      "rdfs:label": "Auto advance"
+    },
+    {
+      "@id": "reproschema:TimedOut",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A boolean element to describe if the response did not occur within the prescribed time.",
+      "rdfs:label": "Response timed out"
+    },
+    {
+      "@id": "skos:prefLabel",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "reproschema:Activity"
+      },
+      "schema:rangeIncludes": {
+        "@id": "schema:Text"
+      },
+      "rdfs:comment": "The preferred label.",
+      "rdfs:label": "preferred label"
+    },
+    {
+      "@id": "schema:description",
+      "schema:domainIncludes": {
+        "@id": "reproschema:Activity"
+      }
+    },
+    {
+      "@id": "schema:schemaVersion",
+      "schema:domainIncludes": {
+        "@id": "reproschema:Activity"
+      }
+    },
+    {
+      "@id": "schema:version",
+      "schema:domainIncludes": {
+        "@id": "reproschema:Activity"
+      }
+    },
+    {
+      "@id": "schema:citation",
+      "schema:domainIncludes": {
+        "@id": "reproschema:Activity"
+      }
+    },
+    {
+      "@id": "reproschema:preamble",
+      "schema:domainIncludes": {
+        "@id": "reproschema:Activity"
+      }
+    },
+    {
+      "@id": "reproschema:order",
+      "schema:domainIncludes": {
+        "@id": "reproschema:Activity"
+      }
+    },
+    {
+      "@id": "reproschema:shuffle",
+      "schema:domainIncludes": {
+        "@id": "reproschema:Activity"
+      }
+    },
+    {
+      "@id": "reproschema:addProperties",
+      "schema:domainIncludes": {
+        "@id": "reproschema:Activity"
+      }
+    },
+    {
+      "@id": "reproschema:scoringLogic",
+      "schema:domainIncludes": {
+        "@id": "reproschema:Activity"
+      }
+    },
+    {
+      "@id": "schema:about",
+      "schema:domainIncludes": {
+        "@id": "reproschema:Activity"
+      }
+    },
+    {
+      "@id": "reproschema:Activity",
+      "@type": [
+        "rdfs:Class",
+        "prov:Entity",
+        "prov:Plan",
+        "nidm:Assessment"
+      ],
+      "rdfs:comment": "An assessment in a protocol.",
+      "rdfs:label": "Activity",
+      "rdfs:subClassOf": {
+        "@id": "schema:CreativeWork"
+      }
+    },
+    {
+      "@id": "nidm:subject_id",
+      "schema:domainIncludes": {
+        "@id": "reproschema:Participant"
+      },
+      "rdfs:comment": "The identifier of a participant",
+      "rdfs:label": "Participant identifier"
+    },
+    {
+      "@id": "reproschema:Participant",
+      "@type": [
+        "rdfs:Class",
+        "prov:Person"
+      ],
+      "rdfs:comment": "An Agent describing characteristics associated with a participant.",
+      "rdfs:label": "Participant",
+      "rdfs:subClassOf": {
+        "@id": "prov:Agent"
+      }
+    },
+    {
+      "@id": "reproschema:choices",
+      "@type": "rdf:Property",
+      "schema:rangeIncludes": [
+        {
+          "@id": "reproschema:Choice"
+        },
+        {
+          "@id": "schema:URL"
+        }
+      ],
+      "schema:sameAs": {
+        "@id": "schema:itemListElement"
+      },
+      "rdfs:comment": "An array to list the available options for response of the Field item.",
+      "rdfs:label": "choices"
+    },
+    {
+      "@id": "reproschema:Skipped",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "An element to describe the choice when the item is skipped.",
+      "rdfs:label": "Skipped"
+    },
+    {
+      "@id": "reproschema:source",
+      "@type": "rdf:Property",
+      "schema:rangeIncludes": {
+        "@id": "rdf:langString"
+      },
+      "rdfs:comment": "An element to define the source (eg. RedCap, NDA) where the note was taken from.",
+      "rdfs:label": "source"
+    },
+    {
+      "@id": "reproschema:value",
+      "@type": "rdf:Property",
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:Boolean"
+        },
+        {
+          "@id": "schema:StructuredValue"
+        },
+        {
+          "@id": "schema:Number"
+        },
+        {
+          "@id": "schema:Text"
+        },
+        {
+          "@id": "schema:URL"
+        }
+      ],
+      "schema:sameAs": {
+        "@id": "schema:value"
+      },
+      "rdfs:comment": "The value for each option in choices or in additionalNotesObj",
+      "rdfs:label": "value"
+    },
+    {
+      "@id": "schema:version",
+      "schema:domainIncludes": {
+        "@id": "reproschema:SoftwareAgent"
+      }
+    },
+    {
+      "@id": "schema:url",
+      "schema:domainIncludes": {
+        "@id": "reproschema:SoftwareAgent"
+      }
+    },
+    {
+      "@id": "reproschema:SoftwareAgent",
+      "@type": [
+        "rdfs:Class",
+        "prov:SoftwareAgent"
+      ],
+      "rdfs:comment": "Captures information about some action that took place. It also links to information (entities) that were used during the activity",
+      "rdfs:label": "Software Agent"
+    },
+    {
+      "@id": "reproschema:statusOptions",
+      "@type": "rdf:Property",
+      "schema:rangeIncludes": {
+        "@id": "schema:Text"
+      },
+      "rdfs:comment": "Provides information on whether or not a field item wants to be accompanied by the additional status option(s) defined in \u201cstatusOptions\u201d",
+      "rdfs:label": "Status options"
+    },
+    {
+      "@id": "schema:image",
+      "schema:domainIncludes": {
+        "@id": "reproschema:Choice"
+      }
+    },
+    {
+      "@id": "schema:name",
+      "schema:domainIncludes": {
+        "@id": "reproschema:Choice"
+      }
+    },
+    {
+      "@id": "schema:value",
+      "schema:domainIncludes": {
+        "@id": "reproschema:Choice"
+      },
+      "schema:rangeIncludes": [
+        {
+          "@id": "reproschema:Skipped"
+        },
+        {
+          "@id": "reproschema:DontKnow"
+        }
+      ]
+    },
+    {
+      "@id": "reproschema:Choice",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "An object to describe a response option.",
+      "rdfs:label": "Response choice"
+    },
+    {
+      "@id": "reproschema:column",
+      "@type": "rdf:Property",
+      "schema:rangeIncludes": {
+        "@id": "rdf:langString"
+      },
+      "rdfs:comment": "An element to define the column name where the note was taken from.",
+      "rdfs:label": "column"
+    },
+    {
+      "@id": "skos:prefLabel",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "reproschema:Protocol"
+      },
+      "schema:rangeIncludes": {
+        "@id": "schema:Text"
+      },
+      "rdfs:comment": "The preferred label.",
+      "rdfs:label": "preferred label"
+    },
+    {
+      "@id": "schema:description",
+      "schema:domainIncludes": {
+        "@id": "reproschema:Protocol"
+      }
+    },
+    {
+      "@id": "schema:schemaVersion",
+      "schema:domainIncludes": {
+        "@id": "reproschema:Protocol"
+      }
+    },
+    {
+      "@id": "schema:version",
+      "schema:domainIncludes": {
+        "@id": "reproschema:Protocol"
+      }
+    },
+    {
+      "@id": "reproschema:order",
+      "schema:domainIncludes": {
+        "@id": "reproschema:Protocol"
+      }
+    },
+    {
+      "@id": "reproschema:shuffle",
+      "schema:domainIncludes": {
+        "@id": "reproschema:Protocol"
+      }
+    },
+    {
+      "@id": "reproschema:addProperties",
+      "schema:domainIncludes": {
+        "@id": "reproschema:Protocol"
+      }
+    },
+    {
+      "@id": "reproschema:allow",
+      "schema:domainIncludes": {
+        "@id": "reproschema:Protocol"
+      }
+    },
+    {
+      "@id": "reproschema:landingPage",
+      "schema:domainIncludes": {
+        "@id": "reproschema:Protocol"
+      }
+    },
+    {
+      "@id": "reproschema:scoringLogic",
+      "schema:domainIncludes": {
+        "@id": "reproschema:Protocol"
+      }
+    },
+    {
+      "@id": "schema:about",
+      "schema:domainIncludes": {
+        "@id": "reproschema:Protocol"
+      }
+    },
+    {
+      "@id": "reproschema:Protocol",
+      "@type": [
+        "rdfs:Class",
+        "prov:Plan",
+        "prov:Entity"
+      ],
+      "rdfs:comment": "A representation of a study which comprises one or more assessments.",
+      "rdfs:label": "Protocol",
+      "rdfs:subClassOf": {
+        "@id": "schema:CreativeWork"
+      }
+    },
+    {
+      "@id": "skos:prefLabel",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "reproschema:Field"
+      },
+      "schema:rangeIncludes": {
+        "@id": "schema:Text"
+      },
+      "rdfs:comment": "The preferred label.",
+      "rdfs:label": "preferred label"
+    },
+    {
+      "@id": "schema:description",
+      "schema:domainIncludes": {
+        "@id": "reproschema:Field"
+      }
+    },
+    {
+      "@id": "schema:schemaVersion",
+      "schema:domainIncludes": {
+        "@id": "reproschema:Field"
+      }
+    },
+    {
+      "@id": "schema:version",
+      "schema:domainIncludes": {
+        "@id": "reproschema:Field"
+      }
+    },
+    {
+      "@id": "reproschema:preamble",
+      "schema:domainIncludes": {
+        "@id": "reproschema:Field"
+      }
+    },
+    {
+      "@id": "schema:question",
+      "schema:domainIncludes": {
+        "@id": "reproschema:Field"
+      }
+    },
+    {
+      "@id": "schema:image",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "reproschema:Field"
+      },
+      "rdfs:comment": "An image of the item. This can be a <a class=\"localLink\" href=\"http://schema.org/URL\">URL</a> or a fully described <a class=\"localLink\" href=\"http://schema.org/ImageObject\">ImageObject</a>.",
+      "rdfs:label": "image"
+    },
+    {
+      "@id": "reproschema:inputType",
+      "schema:domainIncludes": {
+        "@id": "reproschema:Field"
+      }
+    },
+    {
+      "@id": "schema:readonlyValue",
+      "schema:domainIncludes": {
+        "@id": "reproschema:Field"
+      }
+    },
+    {
+      "@id": "schema:isPartOf",
+      "schema:domainIncludes": {
+        "@id": "reproschema:Field"
+      },
+      "schema:rangeIncludes": {
+        "@id": "reproschema:Activity"
+      }
+    },
+    {
+      "@id": "reproschema:responseOptions",
+      "schema:domainIncludes": {
+        "@id": "reproschema:Field"
+      }
+    },
+    {
+      "@id": "schema:associatedMedia",
+      "schema:domainIncludes": {
+        "@id": "reproschema:Field"
+      }
+    },
+    {
+      "@id": "schema:about",
+      "schema:domainIncludes": {
+        "@id": "reproschema:Field"
+      }
+    },
+    {
+      "@id": "reproschema:Field",
+      "@type": [
+        "rdfs:Class",
+        "prov:Entity",
+        "nidm:DataElement"
+      ],
+      "rdfs:comment": "An item in an assessment.",
+      "rdfs:label": "Field",
+      "rdfs:subClassOf": {
+        "@id": "schema:CreativeWork"
+      }
+    },
+    {
+      "@id": "prov:used",
+      "schema:domainIncludes": {
+        "@id": "reproschema:ResponseActivity"
+      }
+    },
+    {
+      "@id": "schema:inLanguage",
+      "schema:domainIncludes": {
+        "@id": "reproschema:ResponseActivity"
+      }
+    },
+    {
+      "@id": "prov:startedAtTime",
+      "schema:domainIncludes": {
+        "@id": "reproschema:ResponseActivity"
+      }
+    },
+    {
+      "@id": "prov:endedAtTime",
+      "schema:domainIncludes": {
+        "@id": "reproschema:ResponseActivity"
+      }
+    },
+    {
+      "@id": "prov:endedAtTime",
+      "schema:domainIncludes": {
+        "@id": "reproschema:ResponseActivity"
+      }
+    },
+    {
+      "@id": "prov:generated",
+      "schema:domainIncludes": {
+        "@id": "reproschema:ResponseActivity"
+      }
+    },
+    {
+      "@id": "reproschema:ResponseActivity",
+      "@type": [
+        "rdfs:Class",
+        "prov:Activity"
+      ],
+      "rdfs:comment": "Captures information about some action that took place. It also links to information (entities) that were used during the activity",
+      "rdfs:label": "ResponseActivity",
+      "rdfs:subClassOf": {
+        "@id": "schema:CreativeWork"
+      }
+    },
+    {
+      "@id": "reproschema:valueType",
+      "schema:domainIncludes": {
+        "@id": "reproschema:ResponseOption"
+      }
+    },
+    {
+      "@id": "schema:minValue",
+      "schema:domainIncludes": {
+        "@id": "reproschema:ResponseOption"
+      }
+    },
+    {
+      "@id": "schema:maxValue",
+      "schema:domainIncludes": {
+        "@id": "reproschema:ResponseOption"
+      }
+    },
+    {
+      "@id": "reproschema:multipleChoice",
+      "schema:domainIncludes": {
+        "@id": "reproschema:ResponseOption"
+      }
+    },
+    {
+      "@id": "reproschema:datumType",
+      "schema:domainIncludes": {
+        "@id": "reproschema:ResponseOption"
+      }
+    },
+    {
+      "@id": "schema:unitCode",
+      "schema:domainIncludes": {
+        "@id": "reproschema:ResponseOption"
+      }
+    },
+    {
+      "@id": "reproschema:choices",
+      "schema:domainIncludes": {
+        "@id": "reproschema:ResponseOption"
+      }
+    },
+    {
+      "@id": "reproschema:ResponseOption",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "An element (object or by URL)to describe the properties of response of the Field item.",
+      "rdfs:label": "Response option"
+    },
+    {
+      "@id": "reproschema:variableName",
+      "@type": "rdf:Property",
+      "schema:rangeIncludes": {
+        "@id": "schema:Text"
+      },
+      "rdfs:comment": "The name used to represent an item.",
+      "rdfs:label": "variableName"
+    },
+    {
+      "@id": "reproschema:isAbout",
+      "@type": "rdf:Property",
+      "schema:rangeIncludes": [
+        {
+          "@id": "reproschema:Activity"
+        },
+        {
+          "@id": "reproschema:Field"
+        }
+      ],
+      "rdfs:comment": "A pointer to the node describing the item.",
+      "rdfs:label": "isAbout"
+    },
+    {
+      "@id": "reproschema:variableName",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "reproschema:ComputeSpecification"
+      },
+      "rdfs:comment": "The name used to represent an item.",
+      "rdfs:label": "variableName"
+    },
+    {
+      "@id": "reproschema:jsExpression",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "reproschema:ComputeSpecification"
+      },
+      "rdfs:comment": "A JavaScript expression for computations.",
+      "rdfs:label": "JavaScript Expression"
+    },
+    {
+      "@id": "reproschema:ComputeSpecification",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "An object to define computations in an activity or protocol.",
+      "rdfs:label": "Compute Specification"
+    },
+    {
+      "@id": "reproschema:addProperties",
+      "@type": "rdf:Property",
+      "schema:rangeIncludes": {
+        "@id": "reproschema:AdditionalProperty"
+      },
+      "rdfs:comment": "An array of objects to describe the various properties added to assessments and fields.",
+      "rdfs:label": "addProperties"
+    },
+    {
+      "@id": "reproschema:compute",
+      "@type": "rdf:Property",
+      "schema:rangeIncludes": {
+        "@id": "reproschema:ComputeSpecification"
+      },
+      "rdfs:comment": "An array of objects indicating computations in an activity or protocol and maps it to the corresponding Field item. scoring logic is a subset of all computations that could be performed and not all computations will be scoring. For example, one may want to do conversion from one unit to another. ",
+      "rdfs:label": "computation"
+    },
+    {
+      "@id": "reproschema:datumType",
+      "@type": "rdf:Property",
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:URL"
+        },
+        {
+          "@id": "schema:Text"
+        }
+      ],
+      "rdfs:comment": "Indicates what type of datum the response is (e.g. range,count,scalar etc.) for the Field item.",
+      "rdfs:label": "datumType"
+    },
+    {
+      "@id": "reproschema:additionalNotesObj",
+      "@type": "rdf:Property",
+      "schema:rangeIncludes": {
+        "@id": "reproschema:AdditionalNoteObj"
+      },
+      "rdfs:comment": "A set of objects to define notes in a field. For example, most Redcap and NDA data dictionaries have notes for each item which needs to be captured in reproschema.",
+      "rdfs:label": "additional notes"
+    },
+    {
+      "@id": "reproschema:valueType",
+      "@type": "rdf:Property",
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:Text"
+        },
+        {
+          "@id": "rdf:langString"
+        }
+      ],
+      "rdfs:comment": "The type of the response of an item. For example, string, integer, etc.",
+      "rdfs:label": "The type of the response"
+    },
+    {
+      "@id": "reproschema:isVis",
+      "@type": "rdf:Property",
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:Boolean"
+        },
+        {
+          "@id": "schema:Text"
+        }
+      ],
+      "rdfs:comment": "An element to describe (by boolean or conditional statement) visibility conditions of items in an assessment.",
+      "rdfs:label": "visibility"
+    },
+    {
+      "@id": "reproschema:responseOptions",
+      "@type": "rdf:Property",
+      "schema:rangeIncludes": [
+        {
+          "@id": "reproschema:ResponseOption"
+        },
+        {
+          "@id": "schema:URL"
+        }
+      ],
+      "rdfs:comment": "An element (object or by URL)to describe the properties of response of the Field item.",
+      "rdfs:label": "Response options"
+    },
+    {
+      "@id": "reproschema:source",
+      "schema:domainIncludes": {
+        "@id": "reproschema:AdditionalNoteObj"
+      }
+    },
+    {
+      "@id": "reproschema:column",
+      "schema:domainIncludes": {
+        "@id": "reproschema:AdditionalNoteObj"
+      }
+    },
+    {
+      "@id": "reproschema:value",
+      "schema:domainIncludes": {
+        "@id": "reproschema:AdditionalNoteObj"
+      }
+    },
+    {
+      "@id": "reproschema:AdditionalNoteObj",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A set of objects to define notes in a field. For example, most Redcap and NDA data dictionaries have notes for each item which needs to be captured in reproschema",
+      "rdfs:label": "Additional Notes Object"
+    },
+    {
+      "@id": "reproschema:randomMaxDelay",
+      "@type": "rdf:Property",
+      "schema:rangeIncludes": {
+        "@id": "schema:Text"
+      },
+      "rdfs:comment": "Present activity/item within some random offset of activity available time up to the maximum specified by this ISO 8601 duration",
+      "rdfs:label": "randomMaxDelay"
+    },
+    {
+      "@id": "reproschema:landingPage",
+      "@type": "rdf:Property",
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:URL"
+        },
+        {
+          "@id": "schema:Text"
+        }
+      ],
+      "rdfs:comment": "An element (by URL) to point to the protocol readme or landing page.",
+      "rdfs:label": "Landing page content"
+    },
+    {
+      "@id": "reproschema:variableName",
+      "schema:domainIncludes": {
+        "@id": "reproschema:AdditionalProperty"
+      }
+    },
+    {
+      "@id": "reproschema:isAbout",
+      "schema:domainIncludes": {
+        "@id": "reproschema:AdditionalProperty"
+      }
+    },
+    {
+      "@id": "schema:valueRequired",
+      "schema:domainIncludes": {
+        "@id": "reproschema:AdditionalProperty"
+      }
+    },
+    {
+      "@id": "skos:prefLabel",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "reproschema:AdditionalProperty"
+      },
+      "rdfs:comment": "The preferred label.",
+      "rdfs:label": "preferred label"
+    },
+    {
+      "@id": "reproschema:isVis",
+      "schema:domainIncludes": {
+        "@id": "reproschema:AdditionalProperty"
+      }
+    },
+    {
+      "@id": "reproschema:randomMaxDelay",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "reproschema:AdditionalProperty"
+      }
+    },
+    {
+      "@id": "reproschema:schedule",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "reproschema:AdditionalProperty"
+      }
+    },
+    {
+      "@id": "reproschema:limit",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "reproschema:AdditionalProperty"
+      }
+    },
+    {
+      "@id": "reproschema:maxRetakes",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "reproschema:AdditionalProperty"
+      }
+    },
+    {
+      "@id": "reproschema:AdditionalProperty",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "An object to describe the various properties added to assessments and fields.",
+      "rdfs:label": "Additional properties"
+    },
+    {
+      "@id": "reproschema:jsExpression",
+      "@type": "rdf:Property",
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:Text"
+        },
+        {
+          "@id": "schema:Boolean"
+        }
+      ],
+      "rdfs:comment": "A JavaScript expression to compute a score from other variables.",
+      "rdfs:label": "JavaScript Expression"
+    }
+  ]
+}

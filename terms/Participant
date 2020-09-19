@@ -1,0 +1,25 @@
+{
+    "@context": "../contexts/base",
+    "@graph": [
+        {
+            "@id": "nidm:subject_id",
+            "rdfs:comment": "The identifier of a participant",
+            "rdfs:label": "Participant identifier",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Participant"
+            }
+        },
+        {
+            "@id": "reproschema:Participant",
+            "@type": [
+                "rdfs:Class",
+                "prov:Person"
+            ],
+            "rdfs:comment": "An Agent describing characteristics associated with a participant.",
+            "rdfs:label": "Participant",
+            "rdfs:subClassOf": {
+                "@id": "prov:Agent"
+            }
+        }
+    ]
+}

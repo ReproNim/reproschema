@@ -1,0 +1,91 @@
+{
+    "@context": "../contexts/base",
+    "@graph": [
+        {
+            "@id": "skos:prefLabel",
+            "@type": "rdf:Property",
+            "rdfs:comment": "The preferred label.",
+            "rdfs:label": "preferred label",
+            "schema:domainIncludes": {
+                    "@id": "reproschema:Activity"
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:Text"
+            }
+        },
+        {
+            "@id": "schema:description",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Activity"
+            }
+        },
+        {
+            "@id": "schema:schemaVersion",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Activity"
+            }
+        },
+        {
+            "@id": "schema:version",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Activity"
+            }
+        },
+        {
+            "@id": "schema:citation",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Activity"
+            }
+        },
+        {
+            "@id": "reproschema:preamble",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Activity"
+            }
+        },
+        {
+            "@id": "reproschema:order",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Activity"
+            }
+        },
+        {
+            "@id": "reproschema:shuffle",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Activity"
+            }
+        },
+        {
+            "@id": "reproschema:addProperties",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Activity"
+            }
+        },
+        {
+            "@id": "reproschema:scoringLogic",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Activity"
+            }
+        },
+        {
+            "@id": "schema:about",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Activity"
+            }
+        },
+        {
+            "@id": "reproschema:Activity",
+            "@type": [
+                "rdfs:Class",
+                "prov:Entity",
+                "prov:Plan",
+                "nidm:Assessment"
+            ],
+            "rdfs:comment": "An assessment in a protocol.",
+            "rdfs:label": "Activity",
+            "rdfs:subClassOf": {
+                "@id": "schema:CreativeWork"
+            }
+        }
+    ]
+}
