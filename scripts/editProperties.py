@@ -11,6 +11,8 @@ def edit_properties(version):
         "Activity",
         "Field",
         "AdditionalProperty",
+        "OverrideProperty",
+        "UnitOption",
         "ResponseOption",
         "Choice",
         "ComputeSpecification",
