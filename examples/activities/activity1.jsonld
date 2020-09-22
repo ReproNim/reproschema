@@ -17,6 +17,12 @@
             "jsExpression": "phq9_1 + phq9_2 + phq9_3 + phq9_4 + phq9_5 + phq9_6 + phq9_7 + phq9_8 + phq9_9"
         }
     ],
+    "messages": [
+		{
+			"message": "Test message: Triggered when item1 value is greater than 1",
+			"criteria": "item1 > 1"
+		}
+	],
     "ui": {
         "addProperties": [
             {   "isAbout": "items/item1.jsonld",
@@ -30,9 +36,7 @@
             {   "isAbout": "items/item2.jsonld",
                 "variableName": "item2",
                 "requiredValue": true,
-                "isVis": true,
-                "message": "test message",
-				"showMessage": "item1 > 1"
+                "isVis": true
             }
         ],
         "order": [

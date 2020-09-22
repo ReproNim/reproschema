@@ -9,6 +9,12 @@
 	"description": "example Protocol",
 	"schemaVersion": "1.0.0-rc1.post",
 	"version": "0.0.1",
+	"messages": [
+		{
+			"message": "Test message: Triggered when item1 value is greater than 0",
+			"criteria": "item1 > 0"
+		}
+	],
 	"ui": {
 		"addProperties": [
 			{
@@ -22,14 +28,6 @@
 				"schedule": "R5/2008-01-01T13:00:00Z/P1Y2M10DT2H30M",
 				"randomMaxDelay": "PT12H",
 				"limit": "P1W/2020-08-01T13:00:00Z"
-			}
-		],
-		"overrideProperties": [
-			{
-				"isAbout": "../activities/items/item1.jsonld",
-				"variableName": "item1",
-				"message": "test message",
-				"showMessage": "item1 > 0"
 			}
 		],
 		"order": [

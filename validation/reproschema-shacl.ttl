@@ -37,6 +37,9 @@ reproschema:ActivityShape a sh:NodeShape ;
         [ sh:node reproschema:ComputeSpecificationShape ;
             sh:path reproschema:compute ],
 
+        [ sh:node reproschema:MessageSpecificationShape ;
+            sh:path reproschema:messages ],
+
         [ sh:maxCount 1 ;
             sh:node dash:ListShape ;
             sh:path reproschema:order ;
@@ -138,6 +141,9 @@ reproschema:ProtocolShape a sh:NodeShape ;
         [ sh:node reproschema:ComputeSpecificationShape ;
             sh:path reproschema:compute ],
 
+        [ sh:node reproschema:MessageSpecificationShape ;
+            sh:path reproschema:messages ],
+
         [ sh:minCount 1 ;
             sh:node dash:ListShape ;
             sh:path reproschema:order ;
@@ -235,13 +241,8 @@ reproschema:AddPropertiesShape a sh:NodeShape ;
             sh:path reproschema:limit ],
 
         [ sh:datatype xsd:integer ;
-            sh:path reproschema:maxRetakes ] ,
+            sh:path reproschema:maxRetakes ] ;
 
-        [ sh:datatype rdf:langString ;
-            sh:path reproschema:message ] ,
-
-        [ sh:or ( [ sh:datatype rdf:langString ] [ sh:datatype xsd:boolean ] ) ;
-            sh:path reproschema:showMessage ] ;
     sh:targetClass reproschema:AdditionalProperty .
 
 reproschema:OverridePropertiesShape a sh:NodeShape ;
@@ -285,13 +286,7 @@ reproschema:OverridePropertiesShape a sh:NodeShape ;
             sh:path reproschema:limit ],
 
         [ sh:datatype xsd:integer ;
-            sh:path reproschema:maxRetakes ] ,
-
-        [ sh:datatype rdf:langString ;
-            sh:path reproschema:message ] ,
-
-        [ sh:or ( [ sh:datatype rdf:langString ] [ sh:datatype xsd:boolean ] ) ;
-            sh:path reproschema:showMessage ] ;
+            sh:path reproschema:maxRetakes ] ;
     sh:targetClass reproschema:OverrideProperty .
 
 reproschema:ChoicesShape a sh:NodeShape ;
@@ -342,6 +337,18 @@ reproschema:ComputeSpecificationShape a sh:NodeShape ;
             sh:minCount 1 ;
             sh:path reproschema:jsExpression ] ;
     sh:targetClass reproschema:ComputeSpecification .
+
+reproschema:MessageSpecificationShape a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:datatype rdf:langString ;
+            sh:minCount 1 ;
+            sh:path reproschema:message ] ,
+
+        [ sh:or ( [ sh:datatype rdf:langString ] [ sh:datatype xsd:boolean ] ) ;
+            sh:minCount 1 ;
+            sh:path reproschema:criteria ] ;
+    sh:targetClass reproschema:MessageSpecification .
 
 reproschema:AdditionalNoteObjShape a sh:NodeShape ;
     sh:closed true ;
