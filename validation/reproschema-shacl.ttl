@@ -37,6 +37,9 @@ reproschema:ActivityShape a sh:NodeShape ;
         [ sh:node reproschema:ComputeSpecificationShape ;
             sh:path reproschema:compute ],
 
+        [ sh:node reproschema:MessageSpecificationShape ;
+            sh:path reproschema:messages ],
+
         [ sh:maxCount 1 ;
             sh:node dash:ListShape ;
             sh:path reproschema:order ;
@@ -46,6 +49,9 @@ reproschema:ActivityShape a sh:NodeShape ;
 
         [ sh:node reproschema:AddPropertiesShape ;
             sh:path reproschema:addProperties ],
+
+        [ sh:node reproschema:OverridePropertiesShape ;
+            sh:path reproschema:overrideProperties ],
 
         [ sh:datatype xsd:string ;
             sh:path reproschema:inputType ],
@@ -135,6 +141,9 @@ reproschema:ProtocolShape a sh:NodeShape ;
         [ sh:node reproschema:ComputeSpecificationShape ;
             sh:path reproschema:compute ],
 
+        [ sh:node reproschema:MessageSpecificationShape ;
+            sh:path reproschema:messages ],
+
         [ sh:minCount 1 ;
             sh:node dash:ListShape ;
             sh:path reproschema:order ;
@@ -144,6 +153,9 @@ reproschema:ProtocolShape a sh:NodeShape ;
 
         [ sh:node reproschema:AddPropertiesShape ;
             sh:path reproschema:addProperties ],
+
+        [ sh:node reproschema:OverridePropertiesShape ;
+            sh:path reproschema:overrideProperties ],
 
         [ sh:datatype schema:Boolean ;
             sh:path reproschema:shuffle ],
@@ -180,6 +192,9 @@ reproschema:ResponseOptionsShape a sh:NodeShape ;
 
         [ sh:or ( [ sh:datatype schema:URL ] [ sh:datatype rdf:langString ] ) ;
             sh:path schema:unitCode ],
+
+        [ sh:node reproschema:UnitOptionsShape ;
+            sh:path reproschema:unitOptions ] ,
 
         [ sh:node reproschema:ChoicesShape ;
             sh:path reproschema:choices ] ;
@@ -227,7 +242,52 @@ reproschema:AddPropertiesShape a sh:NodeShape ;
 
         [ sh:datatype xsd:integer ;
             sh:path reproschema:maxRetakes ] ;
+
     sh:targetClass reproschema:AdditionalProperty .
+
+reproschema:OverridePropertiesShape a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:datatype rdf:langString ;
+            sh:minCount 1 ;
+            sh:path reproschema:variableName ],
+
+        [ sh:minCount 1 ;
+            sh:nodeKind sh:IRI ;
+            sh:path reproschema:isAbout ],
+
+        [ sh:or ( [ sh:datatype rdf:langString ] [ sh:datatype xsd:boolean ] [ sh:node reproschema:IsVisShape ] ) ;
+            sh:path reproschema:isVis ],
+
+        [ sh:datatype rdf:langString ;
+            sh:path skos:prefLabel ],
+
+        [ sh:datatype xsd:boolean ;
+            sh:path schema:valueRequired ],
+
+        [ sh:datatype rdf:langString ;
+            sh:pattern "^P(?!$)(\\d+(?:\\.\\d+)?Y)?(\\d+(?:\\.\\d+)?M)?(\\d+(?:\\.\\d+)?W)?(\\d+(?:\\.\\d+)?D)?(T(?=\\d)(\\d+(?:\\.\\d+)?H)?(\\d+(?:\\.\\d+)?M)?(\\d+(?:\\.\\d+)?S)?)?$" ;
+            sh:path reproschema:randomMaxDelay ],
+
+        # Patterns extracted from: https://gist.githubusercontent.com/philipashlock/8830168/raw/e65bee7b2c1c9908fd62d064b2451e2cf29aa43c/index.html
+        [ sh:datatype rdf:langString ;
+            sh:or ( [sh:pattern "^([\\+-]?\\d{4}(?!\\d{2}\\b))((-?)((0[1-9]|1[0-2])(\\3([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\17[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?$" ]
+                    [sh:pattern "^(R\\d*\\/)?P(?:\\d+(?:\\.\\d+)?Y)?(?:\\d+(?:\\.\\d+)?M)?(?:\\d+(?:\\.\\d+)?W)?(?:\\d+(?:\\.\\d+)?D)?(?:T(?:\\d+(?:\\.\\d+)?H)?(?:\\d+(?:\\.\\d+)?M)?(?:\\d+(?:\\.\\d+)?S)?)?$" ]
+                    [sh:pattern "^([\\+-]?\\d{4}(?!\\d{2}\\b))((-?)((0[1-9]|1[0-2])(\\3([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\17[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?(\\/)([\\+-]?\\d{4}(?!\\d{2}\\b))((-?)((0[1-9]|1[0-2])(\\3([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\17[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?$" ]
+                    [sh:pattern "^(R\\d*\\/)?([\\+-]?\\d{4}(?!\\d{2}\\b))((-?)((0[1-9]|1[0-2])(\\4([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\18[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?(\\/)P(?:\\d+(?:\\.\\d+)?Y)?(?:\\d+(?:\\.\\d+)?M)?(?:\\d+(?:\\.\\d+)?W)?(?:\\d+(?:\\.\\d+)?D)?(?:T(?:\\d+(?:\\.\\d+)?H)?(?:\\d+(?:\\.\\d+)?M)?(?:\\d+(?:\\.\\d+)?S)?)?$" ]
+                    [sh:pattern "^(R\\d*\\/)?P(?:\\d+(?:\\.\\d+)?Y)?(?:\\d+(?:\\.\\d+)?M)?(?:\\d+(?:\\.\\d+)?W)?(?:\\d+(?:\\.\\d+)?D)?(?:T(?:\\d+(?:\\.\\d+)?H)?(?:\\d+(?:\\.\\d+)?M)?(?:\\d+(?:\\.\\d+)?S)?)?\\/([\\+-]?\\d{4}(?!\\d{2}\\b))((-?)((0[1-9]|1[0-2])(\\4([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\18[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?$" ]
+                    ) ;
+            sh:path reproschema:schedule ],
+
+        [ sh:datatype rdf:langString ;
+            sh:or ( [sh:pattern "^P(?!$)(\\d+(?:\\.\\d+)?Y)?(\\d+(?:\\.\\d+)?M)?(\\d+(?:\\.\\d+)?W)?(\\d+(?:\\.\\d+)?D)?(T(?=\\d)(\\d+(?:\\.\\d+)?H)?(\\d+(?:\\.\\d+)?M)?(\\d+(?:\\.\\d+)?S)?)?$"]
+                    [sh:pattern "^(R\\d*\\/)?P(?:\\d+(?:\\.\\d+)?Y)?(?:\\d+(?:\\.\\d+)?M)?(?:\\d+(?:\\.\\d+)?W)?(?:\\d+(?:\\.\\d+)?D)?(?:T(?:\\d+(?:\\.\\d+)?H)?(?:\\d+(?:\\.\\d+)?M)?(?:\\d+(?:\\.\\d+)?S)?)?\\/([\\+-]?\\d{4}(?!\\d{2}\\b))((-?)((0[1-9]|1[0-2])(\\4([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\18[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?$" ]
+                  ) ;
+            sh:path reproschema:limit ],
+
+        [ sh:datatype xsd:integer ;
+            sh:path reproschema:maxRetakes ] ;
+    sh:targetClass reproschema:OverrideProperty .
 
 reproschema:ChoicesShape a sh:NodeShape ;
     sh:closed true ;
@@ -241,6 +301,16 @@ reproschema:ChoicesShape a sh:NodeShape ;
         [ sh:or ( [ sh:datatype xsd:integer ] [ sh:nodeKind sh:IRI ] [ sh:datatype schema:Boolean ] [ sh:datatype schema:StructuredValue ] [ sh:datatype schema:Text ]) ;
             sh:path reproschema:value ] ;
     sh:targetClass reproschema:Choice .
+
+reproschema:UnitOptionsShape a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:datatype rdf:langString ;
+            sh:path skos:prefLabel ],
+
+        [ sh:or ( [ sh:nodeKind sh:IRI ] [ sh:datatype schema:Text ]) ;
+            sh:path reproschema:value ] ;
+    sh:targetClass reproschema:UnitOption .
 
 reproschema:IsVisShape a sh:NodeShape ;
     sh:closed true ;
@@ -267,6 +337,18 @@ reproschema:ComputeSpecificationShape a sh:NodeShape ;
             sh:minCount 1 ;
             sh:path reproschema:jsExpression ] ;
     sh:targetClass reproschema:ComputeSpecification .
+
+reproschema:MessageSpecificationShape a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:datatype rdf:langString ;
+            sh:minCount 1 ;
+            sh:path reproschema:message ] ,
+
+        [ sh:or ( [ sh:datatype rdf:langString ] [ sh:datatype xsd:boolean ] ) ;
+            sh:minCount 1 ;
+            sh:path reproschema:jsExpression ] ;
+    sh:targetClass reproschema:MessageSpecification .
 
 reproschema:AdditionalNoteObjShape a sh:NodeShape ;
     sh:closed true ;

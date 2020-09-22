@@ -91,6 +91,10 @@
                 "@id": "schema:unitCode",
                 "@container": "@set"
             },
+            "unitOptions": {
+                "@id": "reproschema:unitOptions",
+                "@container": "@set"
+            },
             "ui" : "@nest",
             "order": {
                 "@id": "reproschema:order",
@@ -103,6 +107,16 @@
                 "@type": "reproschema:AdditionalProperty",
                 "@container": "@set",
                 "@nest": "ui"
+            },
+            "overrideProperties": {
+                "@id": "reproschema:overrideProperties",
+                "@type": "reproschema:OverrideProperty",
+                "@container": "@set",
+                "@nest": "ui"
+            },
+            "message": {
+                "@id": "reproschema:message",
+                "@container": "@language"
             },
             "shuffle": {
                 "@id": "reproschema:shuffle",
@@ -125,6 +139,10 @@
             },
             "compute": {
                 "@id": "reproschema:compute",
+                "@container": "@index"
+            },
+            "messages": {
+                "@id": "reproschema:messages",
                 "@container": "@index"
             },
             "jsExpression": {
