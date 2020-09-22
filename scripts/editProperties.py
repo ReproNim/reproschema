@@ -16,6 +16,7 @@ def edit_properties(version):
         "ResponseOption",
         "Choice",
         "ComputeSpecification",
+        "MessageSpecification",
         "AdditionalNoteObj",
         "ResponseActivity",
         "Response",
