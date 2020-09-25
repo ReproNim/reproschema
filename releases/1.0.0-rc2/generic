@@ -1,0 +1,266 @@
+{
+    "@context": [ "base",
+        {
+            "@version": 1.1,
+            "@language": "en",
+            "description": {
+                "@id": "schema:description",
+                "@container": "@language"
+            },
+            "name": {
+                "@id": "schema:name",
+                "@container": "@language"
+            },
+            "value": {
+                "@id": "reproschema:value",
+                "@type": "@id",
+                "@container": "@language"
+            },
+            "image": {
+                "@id": "schema:image",
+                "@type": "@id"
+            },
+            "inLanguage": {
+                "@id": "schema:inLanguage"
+            },
+            "url": {
+                "@id": "schema:url",
+                "@type": "@id"
+            },
+            "citation": {
+                "@id": "schema:citation",
+                "@container": "@language"
+            },
+            "version": {
+                "@id": "schema:version",
+                "@container": "@language"
+            },
+            "schemaVersion": {
+                "@id": "schema:schemaVersion",
+                "@container": "@language"
+            },
+            "prefLabel": {
+                "@id": "skos:prefLabel",
+                "@container": "@language"
+            },
+            "altLabel": {
+                "@id": "skos:altLabel",
+                "@container": "@language"
+            },
+            "preamble": {
+                "@id": "reproschema:preamble",
+                "@container": "@language"
+            },
+            "valueType": {
+                "@id": "reproschema:valueType",
+                "@type": "@id",
+                "@container": "@set"
+            },
+            "landingPage": {
+                "@id": "reproschema:landingPage",
+                "@container": "@set"
+            },
+            "question": {
+                "@id": "schema:question",
+                "@container": "@language"
+            },
+            "choices": {
+                "@id": "reproschema:choices"
+            },
+            "valueRequired": "schema:valueRequired",
+            "multipleChoice": {
+                "@id": "reproschema:multipleChoice",
+                "@type": "schema:Boolean"
+            },
+            "responseOptions": {
+                "@id": "reproschema:responseOptions",
+                "@container": "@set",
+                "@type": "@id"
+            },
+            "dataType": {
+                "@id": "schema:DataType",
+                "@type": "@id"
+            },
+            "minValue": {
+                "@id": "schema:minValue"
+            },
+            "maxValue": {
+                "@id": "schema:maxValue"
+            },
+            "unitCode": {
+                "@id": "schema:unitCode",
+                "@container": "@set"
+            },
+            "unitOptions": {
+                "@id": "reproschema:unitOptions",
+                "@container": "@set"
+            },
+            "ui" : "@nest",
+            "order": {
+                "@id": "reproschema:order",
+                "@container": "@list",
+                "@type": "@id",
+                "@nest": "ui"
+            },
+            "addProperties": {
+                "@id": "reproschema:addProperties",
+                "@type": "reproschema:AdditionalProperty",
+                "@container": "@set",
+                "@nest": "ui"
+            },
+            "overrideProperties": {
+                "@id": "reproschema:overrideProperties",
+                "@type": "reproschema:OverrideProperty",
+                "@container": "@set",
+                "@nest": "ui"
+            },
+            "message": {
+                "@id": "reproschema:message",
+                "@container": "@language"
+            },
+            "shuffle": {
+                "@id": "reproschema:shuffle",
+                "@type": "schema:Boolean",
+                "@nest": "ui"
+            },
+            "inputOptions": {
+                "@id": "reproschema:inputs",
+                "@container": "@index",
+                "@nest": "ui"
+            },
+            "inputType": {
+                "@id": "reproschema:inputType",
+                "@type": "xsd:string",
+                "@nest": "ui"
+            },
+            "readonlyValue": {
+                "@id": "schema:readonlyValue",
+                "@nest": "ui"
+            },
+            "compute": {
+                "@id": "reproschema:compute",
+                "@container": "@index"
+            },
+            "messages": {
+                "@id": "reproschema:messages",
+                "@container": "@index"
+            },
+            "jsExpression": {
+                "@id": "reproschema:jsExpression"
+            },
+            "isVis": {
+                "@id": "reproschema:isVis"
+            },
+            "variableName": "reproschema:variableName",
+            "isAbout": {
+                "@id": "reproschema:isAbout",
+                "@type": "@id"
+            },
+            "allow": {
+                "@id": "reproschema:allow",
+                "@container": "@set",
+                "@type": "@id",
+                "@nest": "ui"
+            },
+            "reproschema:Skipped": {"@id": "reproschema:Skipped"},
+            "reproschema:DontKnow": {"@id": "reproschema:DontKnow"},
+            "reproschema:TimedOut": {"@id": "reproschema:TimedOut"},
+            "reproschema:AutoAdvance": {"@id": "reproschema:AutoAdvance"},
+            "reproschema:DisableBack": {"@id": "reproschema:DisableBack"},
+            "reproschema:AllowExport": {"@id": "reproschema:AllowExport"},
+            "reproschema:AllowReplay": {"@id": "reproschema:AllowReplay"},
+            "timer": {
+                "@id": "reproschema:timer",
+                "@type": "@id",
+                "@nest": "ui"
+            },
+            "delay": {
+                "@id": "reproschema:delay",
+                "@type": "@id",
+                "@nest": "ui"
+            },
+            "additionalNotesObj": {
+                "@id": "reproschema:additionalNotesObj",
+                "@container": "@set"
+            },
+            "source": {
+                "@id": "reproschema:source",
+                "@type": "xsd:string"
+            },
+            "column": {
+                "@id": "reproschema:column",
+                "@type": "xsd:string"
+            },
+            "randomMaxDelay": {
+                "@id": "reproschema:randomMaxDelay"
+            },
+            "schedule": {
+                "@id": "reproschema:schedule"
+            },
+             "limit": {
+                "@id": "reproschema:limit"
+            },
+            "maxRetakes": {
+                "@id": "reproschema:maxRetakes"
+            },
+            "importedFrom": {
+                "@id": "pav:importedFrom",
+                "@type": "@id"
+            },
+            "importedBy": {
+                "@id": "pav:importedBy",
+                "@type": "@id"
+            },
+            "createdWith": {
+                "@id": "pav:createdWith",
+                "@type": "@id"
+            },
+            "createdBy": {
+                "@id": "pav:createdBy",
+                "@type": "@id"
+            },
+            "createdOn": {
+                "@id": "pav:createdOn",
+                "@type": "xsd:dateTime"
+            },
+            "previousVersion": {
+                "@id": "pav:previousVersion",
+                "@type": "@id"
+            },
+            "lastUpdateOn": {
+                "@id": "pav:lastUpdateOn",
+                "@type": "xsd:dateTime"
+            },
+            "derivedFrom": {
+                "@id": "prov:wasDerivedFrom",
+                "@type": "@id"
+            },
+            "used": {
+                "@id": "prov:used",
+                "@container": "@set",
+                "@type": "@id"
+            },
+            "wasAttributedTo": {
+                "@id": "prov:wasAttributedTo",
+                "@type": "reproschema:Participant",
+                "@container": "@set"
+            },
+            "wasAssociatedWith": {
+                "@id": "prov:wasAssociatedWith",
+                "@type": "reproschema:SoftwareAgent",
+                "@container": "@set"
+            },
+            "subject_id": {
+                "@id": "nidm:subject_id"
+            },
+            "startedAtTime": {
+                "@id": "prov:startedAtTime",
+                "@type": "xsd:dateTime"
+            },
+            "endedAtTime": {
+                "@id": "prov:endedAtTime",
+                "@type": "xsd:dateTime"
+            }
+        }
+    ]
+}
