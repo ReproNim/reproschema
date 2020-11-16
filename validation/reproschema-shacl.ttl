@@ -32,6 +32,9 @@ reproschema:ActivityShape a sh:NodeShape ;
             sh:path skos:prefLabel ],
 
         [ sh:datatype rdf:langString ;
+            sh:path skos:altLabel ],
+
+        [ sh:datatype rdf:langString ;
             sh:path reproschema:preamble ],
 
         [ sh:node reproschema:ComputeSpecificationShape ;
@@ -134,6 +137,9 @@ reproschema:ProtocolShape a sh:NodeShape ;
         [ sh:datatype rdf:langString ;
             sh:minCount 1 ;
             sh:path skos:prefLabel ],
+
+        [ sh:datatype rdf:langString ;
+            sh:path skos:altLabel ],
 
         [ sh:datatype rdf:langString ;
             sh:path reproschema:preamble ],
