@@ -226,6 +226,10 @@ reproschema:AddPropertiesShape a sh:NodeShape ;
         [ sh:datatype xsd:boolean ;
             sh:path schema:valueRequired ],
 
+        [ sh:nodeKind sh:IRI ;
+            sh:in ( reproschema:AllowExport reproschema:DisableBack reproschema:AutoAdvance reproschema:AllowReplay reproschema:Skipped reproschema:DontKnow reproschema:TimedOut ) ;
+            sh:path reproschema:allow ],
+
         [ sh:datatype rdf:langString ;
             sh:pattern "^P(?!$)(\\d+(?:\\.\\d+)?Y)?(\\d+(?:\\.\\d+)?M)?(\\d+(?:\\.\\d+)?W)?(\\d+(?:\\.\\d+)?D)?(T(?=\\d)(\\d+(?:\\.\\d+)?H)?(\\d+(?:\\.\\d+)?M)?(\\d+(?:\\.\\d+)?S)?)?$" ;
             sh:path reproschema:randomMaxDelay ],
