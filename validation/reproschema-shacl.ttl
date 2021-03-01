@@ -27,6 +27,14 @@ reproschema:ActivityShape a sh:NodeShape ;
         [ sh:nodeKind sh:IRI ;
             sh:path schema:image ],
 
+        [ sh:nodeKind sh:IRI ;
+            sh:maxCount 1 ;
+            sh:path schema:audio ],
+
+        [ sh:nodeKind sh:IRI ;
+            sh:maxCount 1 ;
+            sh:path schema:video ],
+
         [ sh:datatype rdf:langString ;
             sh:minCount 1 ;
             sh:path skos:prefLabel ],
@@ -138,6 +146,14 @@ reproschema:ProtocolShape a sh:NodeShape ;
         [ sh:nodeKind sh:IRI ;
             sh:maxCount 1 ;
             sh:path schema:image ],
+
+        [ sh:nodeKind sh:IRI ;
+            sh:maxCount 1 ;
+            sh:path schema:audio ],
+
+        [ sh:nodeKind sh:IRI ;
+            sh:maxCount 1 ;
+            sh:path schema:video ],
 
         [ sh:nodeKind sh:IRI ;
             sh:path reproschema:landingPage ],
