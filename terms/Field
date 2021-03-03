@@ -14,6 +14,18 @@
             }
         },
         {
+            "@id": "skos:altLabel",
+            "@type": "rdf:Property",
+            "rdfs:comment": "The alternate label.",
+            "rdfs:label": "alternate label",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Field"
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:Text"
+            }
+        },
+        {
             "@id": "schema:description",
             "schema:domainIncludes": {
                 "@id": "reproschema:Field"
@@ -21,24 +33,28 @@
         },
         {
             "@id": "schema:schemaVersion",
+            "@type": "rdf:Property",
             "schema:domainIncludes": {
                 "@id": "reproschema:Field"
             }
         },
         {
             "@id": "schema:version",
+            "@type": "rdf:Property",
             "schema:domainIncludes": {
                 "@id": "reproschema:Field"
             }
         },
         {
             "@id": "reproschema:preamble",
+            "@type": "rdf:Property",
             "schema:domainIncludes": {
                 "@id": "reproschema:Field"
             }
         },
         {
             "@id": "schema:question",
+            "@type": "rdf:Property",
             "schema:domainIncludes": {
                 "@id": "reproschema:Field"
             }
@@ -54,18 +70,21 @@
         },
         {
             "@id": "reproschema:inputType",
+            "@type": "rdf:Property",
             "schema:domainIncludes": {
                 "@id": "reproschema:Field"
             }
         },
         {
             "@id": "schema:readonlyValue",
+            "@type": "rdf:Property",
             "schema:domainIncludes": {
                 "@id": "reproschema:Field"
             }
         },
         {
             "@id": "schema:isPartOf",
+            "@type": "rdf:Property",
             "schema:domainIncludes": {
                 "@id": "reproschema:Field"
             },
@@ -75,18 +94,32 @@
         },
         {
             "@id": "reproschema:responseOptions",
+            "@type": "rdf:Property",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Field"
+            }
+        },
+        {
+            "@id": "reproschema:additionalNotesObj",
+            "@type": "rdf:Property",
+            "rdfs:comment": "A set of objects to define notes in a field. For example, most Redcap and NDA data dictionaries have notes for each item which needs to be captured in reproschema.",
             "schema:domainIncludes": {
                 "@id": "reproschema:Field"
             }
         },
         {
             "@id": "schema:associatedMedia",
+            "@type": "rdf:Property",
+            "rdfs:comment": "A media object that encodes this CreativeWork. This property is a synonym for encoding.",
+            "rdfs:label": "associatedMedia",
             "schema:domainIncludes": {
                 "@id": "reproschema:Field"
             }
         },
         {
             "@id": "schema:about",
+            "@type": "rdf:Property",
+            "rdfs:comment": "The subject matter of the Field."
             "schema:domainIncludes": {
                 "@id": "reproschema:Field"
             }
@@ -106,3 +139,4 @@
         }
     ]
 }
+

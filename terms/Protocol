@@ -14,6 +14,18 @@
             }
         },
         {
+            "@id": "skos:altLabel",
+            "@type": "rdf:Property",
+            "rdfs:comment": "The alternate label.",
+            "rdfs:label": "alternate label",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Protocol"
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:Text"
+            }
+        },
+        {
             "@id": "schema:description",
             "schema:domainIncludes": {
                 "@id": "reproschema:Protocol"
@@ -32,6 +44,15 @@
             }
         },
         {
+            "@id": "schema:associatedMedia",
+            "@type": "rdf:Property",
+            "rdfs:comment": "A media object that encodes this CreativeWork. This property is a synonym for encoding.",
+            "rdfs:label": "associatedMedia",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Protocol"
+            }
+        },
+        {
             "@id": "reproschema:order",
             "schema:domainIncludes": {
                 "@id": "reproschema:Protocol"
@@ -44,7 +65,19 @@
             }
         },
         {
+            "@id": "reproschema:messages",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Protocol"
+            }
+        },
+        {
             "@id": "reproschema:addProperties",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Protocol"
+            }
+        },
+        {
+            "@id": "reproschema:overrideProperties",
             "schema:domainIncludes": {
                 "@id": "reproschema:Protocol"
             }
@@ -62,7 +95,13 @@
             }
         },
         {
-            "@id": "reproschema:scoringLogic",
+            "@id": "reproschema:compute",
+            "schema:domainIncludes": {
+                "@id": "reproschema:Protocol"
+            }
+        },
+        {
+            "@id": "reproschema:cronTable",
             "schema:domainIncludes": {
                 "@id": "reproschema:Protocol"
             }

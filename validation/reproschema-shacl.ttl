@@ -28,12 +28,10 @@ reproschema:ActivityShape a sh:NodeShape ;
             sh:path schema:image ],
 
         [ sh:nodeKind sh:IRI ;
-            sh:maxCount 1 ;
-            sh:path schema:audio ],
+            sh:path schema:associatedMedia ],
 
         [ sh:nodeKind sh:IRI ;
-            sh:maxCount 1 ;
-            sh:path schema:video ],
+            sh:path schema:about ],
 
         [ sh:datatype rdf:langString ;
             sh:minCount 1 ;
@@ -63,9 +61,6 @@ reproschema:ActivityShape a sh:NodeShape ;
 
         [ sh:node reproschema:OverridePropertiesShape ;
             sh:path reproschema:overrideProperties ],
-
-        [ sh:datatype xsd:string ;
-            sh:path reproschema:inputType ],
 
         [ sh:datatype schema:Boolean ;
             sh:path reproschema:shuffle ],
@@ -100,20 +95,15 @@ reproschema:FieldShape a sh:NodeShape ;
         [ sh:datatype rdf:langString ;
             sh:path schema:question ],
 
+        [ sh:datatype rdf:langString ;
+            sh:path reproschema:preamble ],
+
         [ sh:nodeKind sh:IRI ;
             sh:maxCount 1 ;
             sh:path schema:image ],
 
         [ sh:nodeKind sh:IRI ;
-            sh:maxCount 1 ;
-            sh:path schema:audio ],
-
-        [ sh:nodeKind sh:IRI ;
-            sh:maxCount 1 ;
-            sh:path schema:video ],
-
-        [ sh:datatype rdf:langString ;
-            sh:path reproschema:preamble ],
+            sh:path schema:associatedMedia ],
 
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
@@ -124,7 +114,14 @@ reproschema:FieldShape a sh:NodeShape ;
             sh:maxCount 1 ;
             sh:path schema:readonlyValue ],
 
-        [ sh:node reproschema:AdditionalNoteObj ;
+        [ sh:nodeKind sh:IRI ;
+            sh:maxCount 1 ;
+            sh:path schema:about ],
+
+        [ sh:nodeKind sh:IRI ;
+            sh:path schema:isPartOf ],
+
+        [ sh:node reproschema:AdditionalNoteObjShape ;
             sh:path reproschema:additionalNotesObj ],
 
         [ sh:or ( [ sh:nodeKind sh:IRI ] [ sh:node reproschema:ResponseOptionsShape ] ) ;
@@ -145,15 +142,10 @@ reproschema:ProtocolShape a sh:NodeShape ;
 
         [ sh:nodeKind sh:IRI ;
             sh:maxCount 1 ;
-            sh:path schema:image ],
+            sh:path schema:about ],
 
         [ sh:nodeKind sh:IRI ;
-            sh:maxCount 1 ;
-            sh:path schema:audio ],
-
-        [ sh:nodeKind sh:IRI ;
-            sh:maxCount 1 ;
-            sh:path schema:video ],
+            sh:path schema:associatedMedia ],
 
         [ sh:nodeKind sh:IRI ;
             sh:path reproschema:landingPage ],
@@ -192,10 +184,7 @@ reproschema:ProtocolShape a sh:NodeShape ;
 
         [ sh:nodeKind sh:IRI ;
             sh:in ( reproschema:AllowExport reproschema:DisableBack reproschema:AutoAdvance reproschema:AllowReplay reproschema:Skipped reproschema:DontKnow reproschema:TimedOut ) ;
-            sh:path reproschema:allow ],
-
-        [ sh:node reproschema:CronTableShape ;
-            sh:path reproschema:cronTable ] ;
+            sh:path reproschema:allow ] ;
     sh:targetClass reproschema:Protocol .
 
 reproschema:ResponseOptionsShape a sh:NodeShape ;
