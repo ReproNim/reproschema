@@ -24,11 +24,14 @@ reproschema:ActivityShape a sh:NodeShape ;
         [ sh:datatype rdf:langString ;
             sh:path schema:citation ],
 
-        [ sh:nodeKind sh:IRI ;
+        [ sh:or ( [ sh:nodeKind sh:IRI ] [sh:node schema:ImageObject] ) ;
             sh:path schema:image ],
 
-        [ sh:nodeKind sh:IRI ;
-            sh:path schema:associatedMedia ],
+        [ sh:node schema:AudioObject ;
+            sh:path schema:audio ],
+
+        [ sh:node schema:VideoObject ;
+            sh:path schema:video ],
 
         [ sh:nodeKind sh:IRI ;
             sh:path schema:about ],
@@ -98,12 +101,14 @@ reproschema:FieldShape a sh:NodeShape ;
         [ sh:datatype rdf:langString ;
             sh:path reproschema:preamble ],
 
-        [ sh:nodeKind sh:IRI ;
-            sh:maxCount 1 ;
+        [ sh:or ( [ sh:nodeKind sh:IRI ] [sh:node schema:ImageObject] ) ;
             sh:path schema:image ],
 
-        [ sh:nodeKind sh:IRI ;
-            sh:path schema:associatedMedia ],
+        [ sh:node schema:AudioObject ;
+            sh:path schema:audio ],
+
+        [ sh:node schema:VideoObject ;
+            sh:path schema:video ],
 
         [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
@@ -144,8 +149,14 @@ reproschema:ProtocolShape a sh:NodeShape ;
             sh:maxCount 1 ;
             sh:path schema:about ],
 
-        [ sh:nodeKind sh:IRI ;
-            sh:path schema:associatedMedia ],
+        [ sh:or ( [ sh:nodeKind sh:IRI ] [sh:node schema:ImageObject] ) ;
+            sh:path schema:image ],
+
+        [ sh:node schema:AudioObject ;
+            sh:path schema:audio ],
+
+        [ sh:node schema:VideoObject ;
+            sh:path schema:video ],
 
         [ sh:nodeKind sh:IRI ;
             sh:path reproschema:landingPage ],
