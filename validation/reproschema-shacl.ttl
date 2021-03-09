@@ -331,7 +331,7 @@ reproschema:UnitOptionsShape a sh:NodeShape ;
     sh:property [ sh:datatype rdf:langString ;
             sh:path skos:prefLabel ],
 
-        [ sh:or ( [ sh:nodeKind sh:IRI ] [ sh:datatype schema:Text ]) ;
+        [ sh:or ( [ sh:nodeKind sh:IRI ] [ sh:datatype rdf:langString ]) ;
             sh:path reproschema:value ] ;
     sh:targetClass reproschema:UnitOption .
 
@@ -376,15 +376,15 @@ reproschema:MessageSpecificationShape a sh:NodeShape ;
 reproschema:AdditionalNoteObjShape a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
-    sh:property [ sh:datatype rdf:langString ;
+    sh:property [ sh:datatype xsd:string ;
             sh:minCount 1 ;
             sh:path reproschema:source ],
 
-        [ sh:datatype rdf:langString ;
+        [ sh:datatype xsd:string ;
             sh:minCount 1 ;
             sh:path reproschema:column ],
 
-        [ sh:or ( [ sh:datatype xsd:integer ] [ sh:nodeKind sh:IRI ] [ sh:datatype schema:Boolean ] [ sh:datatype schema:StructuredValue ] [ sh:datatype schema:Text ]) ;
+        [ sh:or ( [ sh:datatype xsd:integer ] [ sh:nodeKind sh:IRI ] [ sh:datatype schema:Boolean ] [ sh:datatype schema:StructuredValue ] [ sh:datatype rdf:langString ]) ;
             sh:path reproschema:value ] ;
     sh:targetClass reproschema:AdditionalNoteObj .
 
