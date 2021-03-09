@@ -12,21 +12,16 @@
                 "@container": "@language"
             },
             "value": {
-                "@id": "reproschema:value",
-                "@type": "@id",
-                "@container": "@language"
+                "@id": "reproschema:value"
             },
             "image": {
                 "@id": "schema:image",
                 "@type": "@id"
             },
-            "audio": {
-                "@id": "schema:audio",
-                "@type": "@id"
-            },
-            "video": {
-                "@id": "schema:video",
-                "@type": "@id"
+            "associatedMedia": {
+                "@id": "schema:associatedMedia",
+                "@type": "@id",
+                "@container": "@set"
             },
             "inLanguage": {
                 "@id": "schema:inLanguage"
@@ -189,6 +184,7 @@
             },
             "additionalNotesObj": {
                 "@id": "reproschema:additionalNotesObj",
+                "@type": "reproschema:AdditionalNoteObj",
                 "@container": "@set"
             },
             "source": {
