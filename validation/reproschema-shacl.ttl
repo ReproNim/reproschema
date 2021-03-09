@@ -321,7 +321,7 @@ reproschema:ChoicesShape a sh:NodeShape ;
         [ sh:datatype rdf:langString ;
             sh:path schema:name ],
 
-        [ sh:or ( [ sh:datatype xsd:integer ] [ sh:nodeKind sh:IRI ] [ sh:datatype schema:Boolean ] [ sh:datatype schema:StructuredValue ] [ sh:datatype schema:Text ]) ;
+        [ sh:or ( [ sh:datatype xsd:integer ] [ sh:nodeKind sh:IRI ] [ sh:datatype schema:Boolean ] [ sh:datatype schema:StructuredValue ] [ sh:datatype rdf:langString ]) ;
             sh:path reproschema:value ] ;
     sh:targetClass reproschema:Choice .
 
