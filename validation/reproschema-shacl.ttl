@@ -104,10 +104,10 @@ reproschema:FieldShape a sh:NodeShape ;
         [ sh:or ( [ sh:nodeKind sh:IRI ] [sh:node schema:ImageObject] ) ;
             sh:path schema:image ],
 
-        [ sh:node schema:AudioObject ;
+        [ sh:node reproschema:MediaObjectShape ;
             sh:path schema:audio ],
 
-        [ sh:node schema:VideoObject ;
+        [ sh:node reproschema:MediaObjectShape ;
             sh:path schema:video ],
 
         [ sh:datatype xsd:string ;
@@ -359,7 +359,8 @@ reproschema:IsVisShape a sh:NodeShape ;
 
         [ sh:datatype rdf:langString ;
             sh:minCount 1 ;
-            sh:path reproschema:payload ] .
+            sh:path reproschema:payload ] ;
+    sh:targetClass reproschema:isVis .
 
 reproschema:ComputeSpecificationShape a sh:NodeShape ;
     sh:closed true ;
@@ -450,3 +451,11 @@ prov:SoftwareAgentShape a sh:NodeShape ;
         [ sh:nodeKind sh:IRI ;
             sh:path schema:url ] ;
     sh:targetClass reproschema:SoftwareAgent .
+
+reproschema:MediaObjectShape a sh:NodeShape ;
+    sh:closed true;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:nodeKind sh:IRI ;
+            sh:minCount 1 ;
+            sh:path schema:contentUrl ] ;
+    sh:targetClass schema:video , schema:audio .
