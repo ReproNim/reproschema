@@ -22,6 +22,14 @@ def edit_properties(version):
         "Response",
         "Participant",
         "SoftwareAgent",
+        "AllowExport",
+        "AllowReplay",
+        "AutoAdvance",
+        "DisableBack",
+        "DontKnow",
+        "AdditionalNoteObj",
+        "Skipped",
+        "TimedOut"
     ]
 
     with open("docs/30_schema.md") as fp:

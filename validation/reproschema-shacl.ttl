@@ -346,22 +346,6 @@ reproschema:UnitOptionsShape a sh:NodeShape ;
             sh:path reproschema:value ] ;
     sh:targetClass reproschema:UnitOption .
 
-reproschema:IsVisShape a sh:NodeShape ;
-    sh:closed true ;
-    sh:ignoredProperties ( rdf:type ) ;
-    sh:property [ sh:datatype rdf:langString ;
-            sh:minCount 1 ;
-            sh:path schema:method ],
-
-        [ sh:datatype rdf:langString ;
-            sh:minCount 1 ;
-            sh:path schema:url ],
-
-        [ sh:datatype rdf:langString ;
-            sh:minCount 1 ;
-            sh:path reproschema:payload ] ;
-    sh:targetClass reproschema:isVis .
-
 reproschema:ComputeSpecificationShape a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
