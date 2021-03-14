@@ -454,6 +454,7 @@ prov:SoftwareAgentShape a sh:NodeShape ;
 reproschema:MediaObjectShape a sh:NodeShape ;
     sh:closed true;
     sh:ignoredProperties ( rdf:type ) ;
-    sh:property [ sh:nodeKind sh:IRI ;
+    sh:property [ sh:datatype xsd:anyURI ;
             sh:minCount 1 ;
+            sh:pattern "((http|https)://)(www.)?[a-zA-Z0-9@:%._\\+~#?&//=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%._\\+~#?&//=]*)" ;
             sh:path schema:contentUrl ] .
