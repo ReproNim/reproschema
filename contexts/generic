@@ -15,14 +15,24 @@
                 "@id": "reproschema:value"
             },
             "image": {
+                "@id": "schema:image"
+            },
+            "imageUrl": {
                 "@id": "schema:image",
-                "@type": "@id"
+                "@type": "xsd:anyURI"
             },
-            "associatedMedia": {
-                "@id": "schema:associatedMedia",
-                "@type": "@id",
-                "@container": "@set"
+            "audio": {
+                "@id": "schema:audio"
             },
+            "video": {
+                "@id": "schema:video"
+            },
+            "contentUrl": {
+                "@id": "schema:contentUrl",
+                "@type": "xsd:anyURI"
+            },
+            "VideoObject": "schema:VideoObject",
+            "AudioObject": "schema:AudioObject",
             "inLanguage": {
                 "@id": "schema:inLanguage"
             },

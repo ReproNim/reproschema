@@ -22,6 +22,7 @@ def edit_properties(version):
         "Response",
         "Participant",
         "SoftwareAgent",
+        "AdditionalNoteObj"
     ]
 
     with open("docs/30_schema.md") as fp:
