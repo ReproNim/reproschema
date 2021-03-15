@@ -24,13 +24,13 @@ reproschema:ActivityShape a sh:NodeShape ;
         [ sh:datatype rdf:langString ;
             sh:path schema:citation ],
 
-        [ sh:or ( [ sh:nodeKind sh:IRI ] [sh:node schema:ImageObject] ) ;
+        [ sh:or ( [ sh:datatype xsd:anyURI ; sh:pattern "((http|https)://)(www.)?[a-zA-Z0-9@:%._\\+~#?&//=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%._\\+~#?&//=]*)" ] [sh:node reproschema:MediaObjectShape] ) ;
             sh:path schema:image ],
 
-        [ sh:node schema:AudioObject ;
+        [ sh:node reproschema:MediaObjectShape ;
             sh:path schema:audio ],
 
-        [ sh:node schema:VideoObject ;
+        [ sh:node reproschema:MediaObjectShape ;
             sh:path schema:video ],
 
         [ sh:nodeKind sh:IRI ;
@@ -101,7 +101,7 @@ reproschema:FieldShape a sh:NodeShape ;
         [ sh:datatype rdf:langString ;
             sh:path reproschema:preamble ],
 
-        [ sh:or ( [ sh:nodeKind sh:IRI ] [sh:node schema:ImageObject] ) ;
+        [ sh:or ( [ sh:datatype xsd:anyURI ; sh:pattern "((http|https)://)(www.)?[a-zA-Z0-9@:%._\\+~#?&//=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%._\\+~#?&//=]*)" ] [sh:node reproschema:MediaObjectShape] ) ;
             sh:path schema:image ],
 
         [ sh:node reproschema:MediaObjectShape ;
@@ -149,13 +149,13 @@ reproschema:ProtocolShape a sh:NodeShape ;
             sh:maxCount 1 ;
             sh:path schema:about ],
 
-        [ sh:or ( [ sh:nodeKind sh:IRI ] [sh:node schema:ImageObject] ) ;
+        [ sh:or ( [ sh:datatype xsd:anyURI ; sh:pattern "((http|https)://)(www.)?[a-zA-Z0-9@:%._\\+~#?&//=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%._\\+~#?&//=]*)" ] [sh:node reproschema:MediaObjectShape] ) ;
             sh:path schema:image ],
 
-        [ sh:node schema:AudioObject ;
+        [ sh:node reproschema:MediaObjectShape ;
             sh:path schema:audio ],
 
-        [ sh:node schema:VideoObject ;
+        [ sh:node reproschema:MediaObjectShape ;
             sh:path schema:video ],
 
         [ sh:nodeKind sh:IRI ;
@@ -326,7 +326,7 @@ reproschema:OverridePropertiesShape a sh:NodeShape ;
 reproschema:ChoicesShape a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
-    sh:property [ sh:nodeKind sh:IRI ;
+    sh:property [ sh:or ( [ sh:datatype xsd:anyURI ; sh:pattern "((http|https)://)(www.)?[a-zA-Z0-9@:%._\\+~#?&//=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%._\\+~#?&//=]*)" ] [sh:node reproschema:MediaObjectShape] ) ;
             sh:path schema:image ],
 
         [ sh:datatype rdf:langString ;
