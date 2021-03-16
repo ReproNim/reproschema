@@ -158,7 +158,8 @@ reproschema:ProtocolShape a sh:NodeShape ;
         [ sh:node reproschema:MediaObjectShape ;
             sh:path schema:video ],
 
-        [ sh:nodeKind sh:IRI ;
+        [ sh:datatype xsd:anyURI ;
+            sh:pattern "((http|https)://)(www.)?[a-zA-Z0-9@:%._\\+~#?&//=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%._\\+~#?&//=]*)" ;
             sh:path reproschema:landingPage ],
 
         [ sh:datatype rdf:langString ;
@@ -353,8 +354,9 @@ reproschema:IsVisShape a sh:NodeShape ;
             sh:minCount 1 ;
             sh:path schema:method ],
 
-        [ sh:datatype rdf:langString ;
+        [ sh:datatype xsd:anyURI ;
             sh:minCount 1 ;
+            sh:pattern "((http|https)://)(www.)?[a-zA-Z0-9@:%._\\+~#?&//=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%._\\+~#?&//=]*)" ;
             sh:path schema:url ],
 
         [ sh:datatype rdf:langString ;
@@ -447,7 +449,8 @@ prov:SoftwareAgentShape a sh:NodeShape ;
     sh:property [ sh:datatype rdf:langString ;
             sh:path schema:version ],
 
-        [ sh:nodeKind sh:IRI ;
+        [ sh:datatype xsd:anyURI ;
+            sh:pattern "((http|https)://)(www.)?[a-zA-Z0-9@:%._\\+~#?&//=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%._\\+~#?&//=]*)" ;
             sh:path schema:url ] ;
     sh:targetClass reproschema:SoftwareAgent .
 
