@@ -37,6 +37,13 @@ following libraries via pip
 - reproschema (makeRelease.py)
 - pytablewriter (editProperties.py)
 
+To make a new release:
+
+```
+python scripts/makeRelease.py <version>
+python scripts/editProperties.py <version>
+```
+
 In addition, this repo uses pre-commit to check styling.
 
 Install: `pip install pre-commit`
