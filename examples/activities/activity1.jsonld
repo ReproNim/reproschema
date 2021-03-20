@@ -4,7 +4,7 @@
     "@id": "activity1.jsonld",
     "prefLabel": "Example 1",
     "description": "Activity example 1",
-    "schemaVersion": "1.0.0-rc1.post",
+    "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "citation": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1495268/",
     "image": {
@@ -42,11 +42,17 @@
                 "requiredValue": true,
                 "isVis": true,
                 "allow": ["reproschema:Skipped"]
+            },
+            {   "isAbout": "items/activity1_total_score",
+                "variableName": "phq9_total_score",
+                "requiredValue": true,
+                "isVis": false
             }
         ],
         "order": [
             "items/item1.jsonld",
-            "items/item2.jsonld"
+            "items/item2.jsonld",
+            "items/activity1_total_score"
         ],
         "shuffle": false
     }
