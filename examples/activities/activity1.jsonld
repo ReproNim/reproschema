@@ -4,7 +4,7 @@
     "@id": "activity1.jsonld",
     "prefLabel": "Example 1",
     "description": "Activity example 1",
-    "schemaVersion": "1.0.0-rc1.post",
+    "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "citation": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1495268/",
     "image": {
@@ -17,8 +17,8 @@
     },
     "compute": [
         {
-            "variableName": "phq9_total_score",
-            "jsExpression": "phq9_1 + phq9_2 + phq9_3 + phq9_4 + phq9_5 + phq9_6 + phq9_7 + phq9_8 + phq9_9"
+            "variableName": "activity1_total_score",
+            "jsExpression": "item1 + item2"
         }
     ],
     "messages": [
@@ -42,11 +42,17 @@
                 "requiredValue": true,
                 "isVis": true,
                 "allow": ["reproschema:Skipped"]
+            },
+            {   "isAbout": "items/activity1_total_score",
+                "variableName": "activity1_total_score",
+                "requiredValue": true,
+                "isVis": false
             }
         ],
         "order": [
             "items/item1.jsonld",
-            "items/item2.jsonld"
+            "items/item2.jsonld",
+            "items/activity1_total_score"
         ],
         "shuffle": false
     }
