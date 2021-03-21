@@ -17,8 +17,8 @@
     },
     "compute": [
         {
-            "variableName": "phq9_total_score",
-            "jsExpression": "phq9_1 + phq9_2 + phq9_3 + phq9_4 + phq9_5 + phq9_6 + phq9_7 + phq9_8 + phq9_9"
+            "variableName": "activity1_total_score",
+            "jsExpression": "item1 + item2"
         }
     ],
     "messages": [
@@ -44,7 +44,7 @@
                 "allow": ["reproschema:Skipped"]
             },
             {   "isAbout": "items/activity1_total_score",
-                "variableName": "phq9_total_score",
+                "variableName": "activity1_total_score",
                 "requiredValue": true,
                 "isVis": false
             }
