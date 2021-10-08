@@ -12,27 +12,14 @@
                 "@container": "@language"
             },
             "value": {
-                "@id": "reproschema:value"
+                "@id": "reproschema:value",
+                "@type": "@id",
+                "@container": "@language"
             },
             "image": {
-                "@id": "schema:image"
-            },
-            "imageUrl": {
                 "@id": "schema:image",
                 "@type": "@id"
             },
-            "audio": {
-                "@id": "schema:audio"
-            },
-            "video": {
-                "@id": "schema:video"
-            },
-            "contentUrl": {
-                "@id": "schema:contentUrl",
-                "@type": "@id"
-            },
-            "VideoObject": "schema:VideoObject",
-            "AudioObject": "schema:AudioObject",
             "inLanguage": {
                 "@id": "schema:inLanguage"
             },
@@ -45,10 +32,12 @@
                 "@container": "@language"
             },
             "version": {
-                "@id": "schema:version"
+                "@id": "schema:version",
+                "@container": "@language"
             },
             "schemaVersion": {
-                "@id": "schema:schemaVersion"
+                "@id": "schema:schemaVersion",
+                "@container": "@language"
             },
             "prefLabel": {
                 "@id": "skos:prefLabel",
@@ -69,7 +58,6 @@
             },
             "landingPage": {
                 "@id": "reproschema:landingPage",
-                "@type": "@id",
                 "@container": "@set"
             },
             "question": {
@@ -151,11 +139,11 @@
             },
             "compute": {
                 "@id": "reproschema:compute",
-                "@container": "@set"
+                "@container": "@index"
             },
             "messages": {
                 "@id": "reproschema:messages",
-                "@container": "@set"
+                "@container": "@index"
             },
             "jsExpression": {
                 "@id": "reproschema:jsExpression"
@@ -193,7 +181,6 @@
             },
             "additionalNotesObj": {
                 "@id": "reproschema:additionalNotesObj",
-                "@type": "reproschema:AdditionalNoteObj",
                 "@container": "@set"
             },
             "source": {
