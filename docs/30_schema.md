@@ -62,7 +62,7 @@ A representation of a study which comprises one or more assessments.
 **URI:** [http://schema.repronim.org/Protocol](http://schema.repronim.org/Protocol)
 
 |        Name        |                                                                                                                                                Description                                                                                                                                                |                                              URI                                               |
-|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
+| ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
 | addProperties      | An array of objects to describe the various properties added to assessments and fields.                                                                                                                                                                                                                   | [http://schema.repronim.org/addProperties](http://schema.repronim.org/addProperties)           |
 | allow              | An array of items indicating properties allowed on an activity or protocol                                                                                                                                                                                                                                | [http://schema.repronim.org/allow](http://schema.repronim.org/allow)                           |
 | compute            | An array of objects indicating computations in an activity or protocol and maps it to the corresponding Field item. scoring logic is a subset of all computations that could be performed and not all computations will be scoring. For example, one may want to do conversion from one unit to another.  | [http://schema.repronim.org/compute](http://schema.repronim.org/compute)                       |
@@ -88,7 +88,7 @@ An assessment in a protocol.
 **URI:** [http://schema.repronim.org/Activity](http://schema.repronim.org/Activity)
 
 |        Name        |                                                                                                                                                Description                                                                                                                                                |                                              URI                                               |
-|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
+| ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
 | addProperties      | An array of objects to describe the various properties added to assessments and fields.                                                                                                                                                                                                                   | [http://schema.repronim.org/addProperties](http://schema.repronim.org/addProperties)           |
 | allow              | An array of items indicating properties allowed on an activity or protocol                                                                                                                                                                                                                                | [http://schema.repronim.org/allow](http://schema.repronim.org/allow)                           |
 | compute            | An array of objects indicating computations in an activity or protocol and maps it to the corresponding Field item. scoring logic is a subset of all computations that could be performed and not all computations will be scoring. For example, one may want to do conversion from one unit to another.  | [http://schema.repronim.org/compute](http://schema.repronim.org/compute)                       |
@@ -115,7 +115,7 @@ An item in an assessment.
 **URI:** [http://schema.repronim.org/Field](http://schema.repronim.org/Field)
 
 |        Name        |                                                                                                                                  Description                                                                                                                                  |                                              URI                                               |
-|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
+| ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
 | additionalNotesObj | A set of objects to define notes in a field. For example, most Redcap and NDA data dictionaries have notes for each item which needs to be captured in reproschema.                                                                                                           | [http://schema.repronim.org/additionalNotesObj](http://schema.repronim.org/additionalNotesObj) |
 | inputType          | An element to describe the input type of a Field item.                                                                                                                                                                                                                        | [http://schema.repronim.org/inputType](http://schema.repronim.org/inputType)                   |
 | preamble           | The preamble for an assessment                                                                                                                                                                                                                                                | [http://schema.repronim.org/preamble](http://schema.repronim.org/preamble)                     |
@@ -139,7 +139,7 @@ An object to describe the various properties added to assessments and fields.
 **URI:** [http://schema.repronim.org/AdditionalProperty](http://schema.repronim.org/AdditionalProperty)
 
 |      Name      |                                                           Description                                                            |                                              URI                                               |
-|----------------|----------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
 | allow          | An array of items indicating properties allowed on an activity or protocol                                                       | [http://schema.repronim.org/allow](http://schema.repronim.org/allow)                           |
 | isAbout        | A pointer to the node describing the item.                                                                                       | [http://schema.repronim.org/isAbout](http://schema.repronim.org/isAbout)                       |
 | isVis          | An element to describe (by boolean or conditional statement) visibility conditions of items in an assessment.                    | [http://schema.repronim.org/isVis](http://schema.repronim.org/isVis)                           |
@@ -157,7 +157,7 @@ An object to override the various properties added to assessments and fields.
 **URI:** [http://schema.repronim.org/OverrideProperty](http://schema.repronim.org/OverrideProperty)
 
 |      Name      |                                                           Description                                                            |                                              URI                                               |
-|----------------|----------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
 | isAbout        | A pointer to the node describing the item.                                                                                       | [http://schema.repronim.org/isAbout](http://schema.repronim.org/isAbout)                       |
 | isVis          | An element to describe (by boolean or conditional statement) visibility conditions of items in an assessment.                    | [http://schema.repronim.org/isVis](http://schema.repronim.org/isVis)                           |
 | limit          | An element to limit the duration (uses ISO 8601) this activity is allowed to be completed by once activity is available.         | [http://schema.repronim.org/limit](http://schema.repronim.org/limit)                           |
@@ -174,7 +174,7 @@ An object to represent a human displayable name alongside the more formal value 
 **URI:** [http://schema.repronim.org/UnitOption](http://schema.repronim.org/UnitOption)
 
 |   Name    |                          Description                          |                                              URI                                               |
-|-----------|---------------------------------------------------------------|------------------------------------------------------------------------------------------------|
+| --------- | ------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
 | value     | The value for each option in choices or in additionalNotesObj | [http://schema.repronim.org/value](http://schema.repronim.org/value)                           |
 | prefLabel | The preferred label.                                          | [http://www.w3.org/2004/02/skos/core#prefLabel](http://www.w3.org/2004/02/skos/core#prefLabel) |
 
@@ -184,7 +184,7 @@ An element (object or by URL)to describe the properties of response of the Field
 **URI:** [http://schema.repronim.org/ResponseOption](http://schema.repronim.org/ResponseOption)
 
 |      Name      |                                                                                   Description                                                                                    |                                          URI                                           |
-|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
 | choices        | An array to list the available options for response of the Field item.                                                                                                           | [http://schema.repronim.org/choices](http://schema.repronim.org/choices)               |
 | datumType      | Indicates what type of datum the response is (e.g. range,count,scalar etc.) for the Field item.                                                                                  | [http://schema.repronim.org/datumType](http://schema.repronim.org/datumType)           |
 | multipleChoice | Indicates (by bool) if response for the Field item has one or more answer.                                                                                                       | [http://schema.repronim.org/multipleChoice](http://schema.repronim.org/multipleChoice) |
@@ -200,7 +200,7 @@ An object to describe a response option.
 **URI:** [http://schema.repronim.org/Choice](http://schema.repronim.org/Choice)
 
 | Name  |                                                                                          Description                                                                                          |                                 URI                                  |
-|-------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
+| ----- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
 | value | The value for each option in choices or in additionalNotesObj                                                                                                                                 | [http://schema.repronim.org/value](http://schema.repronim.org/value) |
 | image | An image of the item. This can be a <a class="localLink" href="http://schema.org/URL">URL</a> or a fully described <a class="localLink" href="http://schema.org/ImageObject">ImageObject</a>. | [http://schema.org/image](http://schema.org/image)                   |
 | name  | The name of the item.                                                                                                                                                                         | [http://schema.org/name](http://schema.org/name)                     |
@@ -211,7 +211,7 @@ An object to define computations in an activity or protocol.
 **URI:** [http://schema.repronim.org/ComputeSpecification](http://schema.repronim.org/ComputeSpecification)
 
 |     Name     |                           Description                            |                                        URI                                         |
-|--------------|------------------------------------------------------------------|------------------------------------------------------------------------------------|
+| ------------ | ---------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
 | jsExpression | A JavaScript expression to compute a score from other variables. | [http://schema.repronim.org/jsExpression](http://schema.repronim.org/jsExpression) |
 | variableName | The name used to represent an item.                              | [http://schema.repronim.org/variableName](http://schema.repronim.org/variableName) |
 
@@ -221,7 +221,7 @@ An object to define messages in an activity or protocol.
 **URI:** [http://schema.repronim.org/MessageSpecification](http://schema.repronim.org/MessageSpecification)
 
 |     Name     |                           Description                            |                                        URI                                         |
-|--------------|------------------------------------------------------------------|------------------------------------------------------------------------------------|
+| ------------ | ---------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
 | jsExpression | A JavaScript expression to compute a score from other variables. | [http://schema.repronim.org/jsExpression](http://schema.repronim.org/jsExpression) |
 | message      | The message to be conditionally displayed for an item.           | [http://schema.repronim.org/message](http://schema.repronim.org/message)           |
 
@@ -231,7 +231,7 @@ A set of objects to define notes in a field. For example, most Redcap and NDA da
 **URI:** [http://schema.repronim.org/AdditionalNoteObj](http://schema.repronim.org/AdditionalNoteObj)
 
 |  Name  |                                   Description                                    |                                  URI                                   |
-|--------|----------------------------------------------------------------------------------|------------------------------------------------------------------------|
+| ------ | -------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | column | An element to define the column name where the note was taken from.              | [http://schema.repronim.org/column](http://schema.repronim.org/column) |
 | source | An element to define the source (eg. RedCap, NDA) where the note was taken from. | [http://schema.repronim.org/source](http://schema.repronim.org/source) |
 | value  | The value for each option in choices or in additionalNotesObj                    | [http://schema.repronim.org/value](http://schema.repronim.org/value)   |
@@ -242,7 +242,7 @@ Captures information about some action that took place. It also links to informa
 **URI:** [http://schema.repronim.org/ResponseActivity](http://schema.repronim.org/ResponseActivity)
 
 |       Name        |                                                                                               Description                                                                                                |                                            URI                                             |
-|-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
+| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
 | endedAtTime       | None                                                                                                                                                                                                     | [http://www.w3.org/ns/prov#endedAtTime](http://www.w3.org/ns/prov#endedAtTime)             |
 | generated         | None                                                                                                                                                                                                     | [http://www.w3.org/ns/prov#generated](http://www.w3.org/ns/prov#generated)                 |
 | startedAtTime     | None                                                                                                                                                                                                     | [http://www.w3.org/ns/prov#startedAtTime](http://www.w3.org/ns/prov#startedAtTime)         |
@@ -256,7 +256,7 @@ Describes the response of an item.
 **URI:** [http://schema.repronim.org/Response](http://schema.repronim.org/Response)
 
 |      Name       |                          Description                          |                                          URI                                           |
-|-----------------|---------------------------------------------------------------|----------------------------------------------------------------------------------------|
+| --------------- | ------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
 | wasAttributedTo | None                                                          | [http://www.w3.org/ns/prov#wasAttributedTo](http://www.w3.org/ns/prov#wasAttributedTo) |
 | isAbout         | A pointer to the node describing the item.                    | [http://schema.repronim.org/isAbout](http://schema.repronim.org/isAbout)               |
 | value           | The value for each option in choices or in additionalNotesObj | [http://schema.repronim.org/value](http://schema.repronim.org/value)                   |
@@ -267,7 +267,7 @@ An Agent describing characteristics associated with a participant.
 **URI:** [http://schema.repronim.org/Participant](http://schema.repronim.org/Participant)
 
 |    Name    |           Description           |                                       URI                                        |
-|------------|---------------------------------|----------------------------------------------------------------------------------|
+| ---------- | ------------------------------- | -------------------------------------------------------------------------------- |
 | subject_id | The identifier of a participant | [http://purl.org/nidash/nidm#subject_id](http://purl.org/nidash/nidm#subject_id) |
 
 ### SoftwareAgent
@@ -276,6 +276,6 @@ Captures information about some action that took place. It also links to informa
 **URI:** [http://schema.repronim.org/SoftwareAgent](http://schema.repronim.org/SoftwareAgent)
 
 |  Name   |                            Description                            |                          URI                           |
-|---------|-------------------------------------------------------------------|--------------------------------------------------------|
+| ------- | ----------------------------------------------------------------- | ------------------------------------------------------ |
 | url     | URL of the item.                                                  | [http://schema.org/url](http://schema.org/url)         |
 | version | The version of the CreativeWork embodied by a specified resource. | [http://schema.org/version](http://schema.org/version) |
