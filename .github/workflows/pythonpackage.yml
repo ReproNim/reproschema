@@ -24,6 +24,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip setuptools
         pip install reproschema
+        pip install rdflib==5.0.0
     - name: Test with pyshacl
       run: |
         python scripts/jsonParser.py

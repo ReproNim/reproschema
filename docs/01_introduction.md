@@ -17,16 +17,16 @@ Cognitive and clinical questionnaires and assessments are used throughout
 neuroscience. There is little consistency in assessment data acquisition or response
 representation across studies or laboratories. Each project tends to use its own
 format and data collection tool (e.g., paper, survey tools, RedCap, LORIS). In the
-long run, this can the source of a lot inefficiencies not only in terms data
+long run, this can be a source of a lot inefficiencies not only in terms data
 curation but also by diminishing the value of the data less interoperable and
 reusable. Imagine for example a researcher wanting to run a meta or mega-analysis
 across several studies. To do this each one would not only need to know which
-specific assessments were collected, but also to relate differing column names in
+specific assessments were collected, but also how to relate different column names in
 data spreadsheets to these assessments and across projects.
 
 Several efforts have focused on linking the assessments themselves
 through consistent terminologies and relationships that map to human cognition
-(e.g., ([Cognitive Atlas](https://www.cognitiveatlas.org/),
+(e.g., [Cognitive Atlas](https://www.cognitiveatlas.org/),
 [Cognitive Paradigm Ontology](http://www.cogpo.org/)). Other efforts such as the
 National Institute for Mental Health (NIMH) Data Archive (NDA) and the National
 Library of Medicine (NLM) [Common Data Elements](https://www.nlm.nih.gov/cde/index.html)
@@ -102,31 +102,32 @@ and 3 `items`.
 
 ```json
 ├── activities
-│   ├── activity1.jsonld
-│   └── items
-│       ├── item1.jsonld
-│       ├── item2.jsonld
-│       └── item3.jsonld
-└── protocols
-    └── protocol1.jsonld
+│   └── activity1
+│       ├── activity1_schema.jsonld
+│       └── items
+│           ├── item1.jsonld
+│           ├── item2.jsonld
+│           └── item3.jsonld
+└── protocol
+    └── protocol1_schema.jsonld
 ```
 
-The Reproschema can also easily and flexibly specify details about how the schema
+The Reproschema can also easily and flexibly specify details how the schema
 for an assessment should be used. Independently of what solution is chosen in the
 end by a researcher, a lab, or an institute to display the assessment to their
 participants or patients (for example whether using an Web-app written in javascript
 or a mobile app written in React-native), the schema can already specify:
 
-- the `input type` to choose among several user-interface rendering options e.g
-if an item should be displayed as a Likert scale, a dropdown menu, a multiple choice...
+- the `input type` to choose among several user-interface rendering options e.g.,
+ a Likert scale, a dropdown menu, a multiple choice...
 - the `visibility` to decide whether a given `item` or `activity` should be
 displayed to the user and under which conditions,
 - the `compute logic` of how the total score to the responses on a questionnaire
 should be computed
 
 The Reproschema also allows for internationalization and multiple languages support
-by making it very easy to keep everything the same about a questionnaire and only
-specify which language should be displayed by the user interface.
+by making it very easy to keep everything the same 
+except the language displayed by the user interface.
 
 Finally Reproschema allows tracking of variations and version of different assessments
 tools (e.g., PHQ-9, PHQ-8).

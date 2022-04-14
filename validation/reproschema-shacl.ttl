@@ -24,7 +24,8 @@ reproschema:ActivityShape a sh:NodeShape ;
         [ sh:datatype rdf:langString ;
             sh:path schema:citation ],
 
-        [ sh:or ( [ sh:datatype xsd:anyURI ; sh:pattern "((http|https)://)(www.)?[a-zA-Z0-9@:%._\\+~#?&//=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%._\\+~#?&//=]*)" ] [sh:node reproschema:MediaObjectShape] ) ;
+        [ sh:or ( [ sh:nodeKind sh:IRI; ]
+                  [sh:node reproschema:MediaObjectShape] ) ;
             sh:path schema:image ],
 
         [ sh:node reproschema:MediaObjectShape ;
@@ -101,7 +102,8 @@ reproschema:FieldShape a sh:NodeShape ;
         [ sh:datatype rdf:langString ;
             sh:path reproschema:preamble ],
 
-        [ sh:or ( [ sh:datatype xsd:anyURI ; sh:pattern "((http|https)://)(www.)?[a-zA-Z0-9@:%._\\+~#?&//=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%._\\+~#?&//=]*)" ] [sh:node reproschema:MediaObjectShape] ) ;
+        [ sh:or ( [ sh:nodeKind sh:IRI ]
+                  [ sh:node reproschema:MediaObjectShape] ) ;
             sh:path schema:image ],
 
         [ sh:node reproschema:MediaObjectShape ;
@@ -149,7 +151,8 @@ reproschema:ProtocolShape a sh:NodeShape ;
             sh:maxCount 1 ;
             sh:path schema:about ],
 
-        [ sh:or ( [ sh:datatype xsd:anyURI ; sh:pattern "((http|https)://)(www.)?[a-zA-Z0-9@:%._\\+~#?&//=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%._\\+~#?&//=]*)" ] [sh:node reproschema:MediaObjectShape] ) ;
+        [ sh:or ( [ sh:nodeKind sh:IRI]
+                  [sh:node reproschema:MediaObjectShape] ) ;
             sh:path schema:image ],
 
         [ sh:node reproschema:MediaObjectShape ;
@@ -158,8 +161,7 @@ reproschema:ProtocolShape a sh:NodeShape ;
         [ sh:node reproschema:MediaObjectShape ;
             sh:path schema:video ],
 
-        [ sh:datatype xsd:anyURI ;
-            sh:pattern "((http|https)://)(www.)?[a-zA-Z0-9@:%._\\+~#?&//=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%._\\+~#?&//=]*)" ;
+        [ sh:node reproschema:LandingPageShape;
             sh:path reproschema:landingPage ],
 
         [ sh:datatype rdf:langString ;
@@ -198,6 +200,14 @@ reproschema:ProtocolShape a sh:NodeShape ;
             sh:in ( reproschema:AllowExport reproschema:DisableBack reproschema:AutoAdvance reproschema:AllowReplay reproschema:Skipped reproschema:DontKnow reproschema:TimedOut ) ;
             sh:path reproschema:allow ] ;
     sh:targetClass reproschema:Protocol .
+
+reproschema:LandingPageShape a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:datatype rdf:langString ;
+            sh:minCount 1 ;
+            sh:maxCount 1 ;
+            sh:path schema:inLanguage ] .
 
 reproschema:ResponseOptionsShape a sh:NodeShape ;
     sh:closed true ;
@@ -327,7 +337,7 @@ reproschema:OverridePropertiesShape a sh:NodeShape ;
 reproschema:ChoicesShape a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
-    sh:property [ sh:or ( [ sh:datatype xsd:anyURI ; sh:pattern "((http|https)://)(www.)?[a-zA-Z0-9@:%._\\+~#?&//=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%._\\+~#?&//=]*)" ] [sh:node reproschema:MediaObjectShape] ) ;
+    sh:property [ sh:or ( [ sh:nodeKind sh:IRI ] [sh:node reproschema:MediaObjectShape] ) ;
             sh:path schema:image ],
 
         [ sh:datatype rdf:langString ;
@@ -354,9 +364,8 @@ reproschema:IsVisShape a sh:NodeShape ;
             sh:minCount 1 ;
             sh:path schema:method ],
 
-        [ sh:datatype xsd:anyURI ;
+        [ sh:nodeKind sh:IRI ;
             sh:minCount 1 ;
-            sh:pattern "((http|https)://)(www.)?[a-zA-Z0-9@:%._\\+~#?&//=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%._\\+~#?&//=]*)" ;
             sh:path schema:url ],
 
         [ sh:datatype rdf:langString ;
@@ -449,15 +458,16 @@ prov:SoftwareAgentShape a sh:NodeShape ;
     sh:property [ sh:datatype rdf:langString ;
             sh:path schema:version ],
 
-        [ sh:datatype xsd:anyURI ;
-            sh:pattern "((http|https)://)(www.)?[a-zA-Z0-9@:%._\\+~#?&//=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%._\\+~#?&//=]*)" ;
+        [ sh:nodeKind sh:IRI ;
             sh:path schema:url ] ;
     sh:targetClass reproschema:SoftwareAgent .
 
 reproschema:MediaObjectShape a sh:NodeShape ;
     sh:closed true;
     sh:ignoredProperties ( rdf:type ) ;
-    sh:property [ sh:datatype xsd:anyURI ;
+    sh:property [ sh:nodeKind sh:IRI ;
             sh:minCount 1 ;
-            sh:pattern "((http|https)://)(www.)?[a-zA-Z0-9@:%._\\+~#?&//=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%._\\+~#?&//=]*)" ;
-            sh:path schema:contentUrl ] .
+            sh:path schema:contentUrl ],
+                [ sh:datatype rdf:langString ;
+            sh:maxCount 1 ;
+            sh:path schema:inLanguage ] .
