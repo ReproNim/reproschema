@@ -8,7 +8,7 @@
     - Versions of a given questionnaire can be tracked (e.g., PHQ-9, PHQ-8).
     - Allows, supports, and tracks internationalization (e.g. ABCD requires Spanish
     and English forms).
-    - Implementation agnostic – the schema can be used by several software
+    - Implementation agnostic – the schema can be used by several different software packages
     - Uses a linked data graph that can be validated using [SHACL](https://www.w3.org/TR/shacl/).
 
 ## The problem
