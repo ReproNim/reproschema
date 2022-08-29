@@ -19,6 +19,12 @@ could save you from a lot of confusion. 😉
 - Not sure how the project is organized? Check out the [project structure](./20_project_structure)
 page.
 
+## How to cite
+
+If you need to cite Reproschema, you can use this DOI:
+
+- [doi:10.5281/zenodo.4064940](https://doi.org/10.5281/zenodo.4064940).
+
 ## Licence
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
