@@ -1,0 +1,362 @@
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix nidm: <http://purl.org/nidash/nidm#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix reproschema: <http://schema.repronim.org/> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+reproschema:ActivityShape a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:datatype rdf:langString ;
+            sh:path schema:description ],
+        [ sh:datatype rdf:langString ;
+            sh:path schema:schemaVersion ],
+        [ sh:datatype rdf:langString ;
+            sh:path schema:version ],
+        [ sh:datatype rdf:langString ;
+            sh:path schema:citation ],
+        [ sh:or ( [ sh:nodeKind sh:IRI ] [ sh:node reproschema:MediaObjectShape ] ) ;
+            sh:path schema:image ],
+        [ sh:node reproschema:MediaObjectShape ;
+            sh:path schema:audio ],
+        [ sh:node reproschema:MediaObjectShape ;
+            sh:path schema:video ],
+        [ sh:nodeKind sh:IRI ;
+            sh:path schema:about ],
+        [ sh:datatype rdf:langString ;
+            sh:minCount 1 ;
+            sh:path skos:prefLabel ],
+        [ sh:datatype rdf:langString ;
+            sh:path skos:altLabel ],
+        [ sh:datatype rdf:langString ;
+            sh:path reproschema:preamble ],
+        [ sh:node reproschema:ComputeSpecificationShape ;
+            sh:path reproschema:compute ],
+        [ sh:node reproschema:MessageSpecificationShape ;
+            sh:path reproschema:messages ],
+        [ sh:maxCount 1 ;
+            sh:node dash:ListShape ;
+            sh:path reproschema:order ;
+            sh:property [ sh:minCount 1 ;
+                    sh:nodeKind sh:IRI ;
+                    sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ] ],
+        [ sh:node reproschema:AddPropertiesShape ;
+            sh:path reproschema:addProperties ],
+        [ sh:node reproschema:OverridePropertiesShape ;
+            sh:path reproschema:overrideProperties ],
+        [ sh:datatype schema:Boolean ;
+            sh:path reproschema:shuffle ],
+        [ sh:in ( reproschema:AllowExport reproschema:DisableBack reproschema:AutoAdvance reproschema:AllowReplay reproschema:Skipped reproschema:DontKnow reproschema:TimedOut ) ;
+            sh:nodeKind sh:IRI ;
+            sh:path reproschema:allow ],
+        [ sh:node reproschema:CronTableShape ;
+            sh:path reproschema:cronTable ] ;
+    sh:targetClass reproschema:Activity .
+
+reproschema:FieldShape a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:datatype rdf:langString ;
+            sh:path reproschema:preamble ],
+        [ sh:or ( [ sh:nodeKind sh:IRI ] [ sh:node reproschema:MediaObjectShape ] ) ;
+            sh:path schema:image ],
+        [ sh:node reproschema:MediaObjectShape ;
+            sh:path schema:audio ],
+        [ sh:node reproschema:MediaObjectShape ;
+            sh:path schema:video ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path reproschema:inputType ],
+        [ sh:datatype xsd:boolean ;
+            sh:maxCount 1 ;
+            sh:path schema:readonlyValue ],
+        [ sh:maxCount 1 ;
+            sh:nodeKind sh:IRI ;
+            sh:path schema:about ],
+        [ sh:nodeKind sh:IRI ;
+            sh:path schema:isPartOf ],
+        [ sh:node reproschema:AdditionalNoteObjShape ;
+            sh:path reproschema:additionalNotesObj ],
+        [ sh:or ( [ sh:nodeKind sh:IRI ] [ sh:node reproschema:ResponseOptionsShape ] ) ;
+            sh:path reproschema:responseOptions ],
+        [ sh:datatype rdf:langString ;
+            sh:minCount 1 ;
+            sh:path skos:prefLabel ],
+        [ sh:datatype rdf:langString ;
+            sh:path skos:altLabel ],
+        [ sh:datatype rdf:langString ;
+            sh:path schema:description ],
+        [ sh:datatype rdf:langString ;
+            sh:path schema:schemaVersion ],
+        [ sh:datatype rdf:langString ;
+            sh:path schema:version ],
+        [ sh:datatype rdf:langString ;
+            sh:path schema:question ] ;
+    sh:targetClass reproschema:Field .
+
+reproschema:ProtocolShape a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:datatype rdf:langString ;
+            sh:path schema:description ],
+        [ sh:datatype rdf:langString ;
+            sh:path schema:schemaVersion ],
+        [ sh:datatype rdf:langString ;
+            sh:path schema:version ],
+        [ sh:maxCount 1 ;
+            sh:nodeKind sh:IRI ;
+            sh:path schema:about ],
+        [ sh:or ( [ sh:nodeKind sh:IRI ] [ sh:node reproschema:MediaObjectShape ] ) ;
+            sh:path schema:image ],
+        [ sh:node reproschema:MediaObjectShape ;
+            sh:path schema:audio ],
+        [ sh:node reproschema:MediaObjectShape ;
+            sh:path schema:video ],
+        [ sh:node reproschema:LandingPageShape ;
+            sh:path reproschema:landingPage ],
+        [ sh:datatype rdf:langString ;
+            sh:minCount 1 ;
+            sh:path skos:prefLabel ],
+        [ sh:datatype rdf:langString ;
+            sh:path skos:altLabel ],
+        [ sh:datatype rdf:langString ;
+            sh:path reproschema:preamble ],
+        [ sh:node reproschema:ComputeSpecificationShape ;
+            sh:path reproschema:compute ],
+        [ sh:node reproschema:MessageSpecificationShape ;
+            sh:path reproschema:messages ],
+        [ sh:minCount 1 ;
+            sh:node dash:ListShape ;
+            sh:path reproschema:order ;
+            sh:property [ sh:minCount 1 ;
+                    sh:nodeKind sh:IRI ;
+                    sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ] ],
+        [ sh:node reproschema:AddPropertiesShape ;
+            sh:path reproschema:addProperties ],
+        [ sh:node reproschema:OverridePropertiesShape ;
+            sh:path reproschema:overrideProperties ],
+        [ sh:datatype schema:Boolean ;
+            sh:path reproschema:shuffle ],
+        [ sh:in ( reproschema:AllowExport reproschema:DisableBack reproschema:AutoAdvance reproschema:AllowReplay reproschema:Skipped reproschema:DontKnow reproschema:TimedOut ) ;
+            sh:nodeKind sh:IRI ;
+            sh:path reproschema:allow ] ;
+    sh:targetClass reproschema:Protocol .
+
+reproschema:ResponseActivityShape a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:nodeKind sh:IRI ;
+            sh:path prov:used ],
+        [ sh:datatype rdf:langString ;
+            sh:path schema:inLanguage ],
+        [ sh:datatype xsd:dateTime ;
+            sh:path prov:startedAtTime ],
+        [ sh:datatype xsd:dateTime ;
+            sh:path prov:endedAtTime ],
+        [ sh:node prov:SoftwareAgentShape ;
+            sh:path prov:wasAssociatedWith ],
+        [ sh:datatype rdf:langString ;
+            sh:path prov:generated ] ;
+    sh:targetClass reproschema:ResponseActivity .
+
+reproschema:ResponseShape a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:node prov:ParticipantShape ;
+            sh:path prov:wasAttributedTo ],
+        [ sh:nodeKind sh:IRI ;
+            sh:path reproschema:isAbout ],
+        [ sh:or ( [ sh:datatype xsd:integer ] [ sh:nodeKind sh:IRI ] [ sh:datatype schema:Boolean ] [ sh:datatype schema:StructuredValue ] [ sh:datatype schema:Text ] ) ;
+            sh:path reproschema:value ] ;
+    sh:targetClass reproschema:Response .
+
+reproschema:AdditionalNoteObjShape a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:datatype xsd:string ;
+            sh:minCount 1 ;
+            sh:path reproschema:source ],
+        [ sh:datatype xsd:string ;
+            sh:minCount 1 ;
+            sh:path reproschema:column ],
+        [ sh:or ( [ sh:datatype xsd:integer ] [ sh:nodeKind sh:IRI ] [ sh:datatype schema:Boolean ] [ sh:datatype schema:StructuredValue ] [ sh:datatype rdf:langString ] ) ;
+            sh:path reproschema:value ] ;
+    sh:targetClass reproschema:AdditionalNoteObj .
+
+reproschema:ChoicesShape a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:or ( [ sh:nodeKind sh:IRI ] [ sh:node reproschema:MediaObjectShape ] ) ;
+            sh:path schema:image ],
+        [ sh:datatype rdf:langString ;
+            sh:path schema:name ],
+        [ sh:or ( [ sh:datatype xsd:integer ] [ sh:nodeKind sh:IRI ] [ sh:datatype schema:Boolean ] [ sh:datatype schema:StructuredValue ] [ sh:datatype rdf:langString ] ) ;
+            sh:path reproschema:value ] ;
+    sh:targetClass reproschema:Choice .
+
+reproschema:LandingPageShape a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:datatype rdf:langString ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path schema:inLanguage ] .
+
+reproschema:ResponseOptionsShape a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:datatype schema:Boolean ;
+            sh:maxCount 1 ;
+            sh:path reproschema:multipleChoice ],
+        [ sh:nodeKind sh:IRI ;
+            sh:path reproschema:valueType ],
+        [ sh:datatype xsd:integer ;
+            sh:maxCount 1 ;
+            sh:path schema:minValue ],
+        [ sh:datatype xsd:integer ;
+            sh:maxCount 1 ;
+            sh:path schema:maxValue ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:path reproschema:datumType ],
+        [ sh:or ( [ sh:datatype schema:URL ] [ sh:datatype rdf:langString ] ) ;
+            sh:path schema:unitCode ],
+        [ sh:node reproschema:UnitOptionsShape ;
+            sh:path reproschema:unitOptions ],
+        [ sh:node reproschema:ChoicesShape ;
+            sh:path reproschema:choices ] ;
+    sh:targetClass reproschema:ResponseOption .
+
+reproschema:UnitOptionsShape a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:datatype rdf:langString ;
+            sh:path skos:prefLabel ],
+        [ sh:or ( [ sh:nodeKind sh:IRI ] [ sh:datatype rdf:langString ] ) ;
+            sh:path reproschema:value ] ;
+    sh:targetClass reproschema:UnitOption .
+
+prov:ParticipantShape a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:datatype rdf:langString ;
+            sh:path nidm:subject_id ] ;
+    sh:targetClass reproschema:Participant .
+
+prov:SoftwareAgentShape a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:datatype rdf:langString ;
+            sh:path schema:version ],
+        [ sh:nodeKind sh:IRI ;
+            sh:path schema:url ] ;
+    sh:targetClass reproschema:SoftwareAgent .
+
+reproschema:AddPropertiesShape a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:datatype rdf:langString ;
+            sh:minCount 1 ;
+            sh:path reproschema:variableName ],
+        [ sh:minCount 1 ;
+            sh:nodeKind sh:IRI ;
+            sh:path reproschema:isAbout ],
+        [ sh:or ( [ sh:datatype rdf:langString ] [ sh:datatype xsd:boolean ] [ sh:node reproschema:IsVisShape ] ) ;
+            sh:path reproschema:isVis ],
+        [ sh:datatype rdf:langString ;
+            sh:path skos:prefLabel ],
+        [ sh:datatype xsd:boolean ;
+            sh:path schema:valueRequired ],
+        [ sh:in ( reproschema:AllowExport reproschema:DisableBack reproschema:AutoAdvance reproschema:AllowReplay reproschema:Skipped reproschema:DontKnow reproschema:TimedOut ) ;
+            sh:nodeKind sh:IRI ;
+            sh:path reproschema:allow ],
+        [ sh:datatype rdf:langString ;
+            sh:path reproschema:randomMaxDelay ;
+            sh:pattern "^P(?!$)(\\d+(?:\\.\\d+)?Y)?(\\d+(?:\\.\\d+)?M)?(\\d+(?:\\.\\d+)?W)?(\\d+(?:\\.\\d+)?D)?(T(?=\\d)(\\d+(?:\\.\\d+)?H)?(\\d+(?:\\.\\d+)?M)?(\\d+(?:\\.\\d+)?S)?)?$" ],
+        [ sh:datatype rdf:langString ;
+            sh:or ( [ sh:pattern "^([\\+-]?\\d{4}(?!\\d{2}\\b))((-?)((0[1-9]|1[0-2])(\\3([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\17[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?$" ] [ sh:pattern "^(R\\d*\\/)?P(?:\\d+(?:\\.\\d+)?Y)?(?:\\d+(?:\\.\\d+)?M)?(?:\\d+(?:\\.\\d+)?W)?(?:\\d+(?:\\.\\d+)?D)?(?:T(?:\\d+(?:\\.\\d+)?H)?(?:\\d+(?:\\.\\d+)?M)?(?:\\d+(?:\\.\\d+)?S)?)?$" ] [ sh:pattern "^([\\+-]?\\d{4}(?!\\d{2}\\b))((-?)((0[1-9]|1[0-2])(\\3([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\17[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?(\\/)([\\+-]?\\d{4}(?!\\d{2}\\b))((-?)((0[1-9]|1[0-2])(\\3([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\17[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?$" ] [ sh:pattern "^(R\\d*\\/)?([\\+-]?\\d{4}(?!\\d{2}\\b))((-?)((0[1-9]|1[0-2])(\\4([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\18[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?(\\/)P(?:\\d+(?:\\.\\d+)?Y)?(?:\\d+(?:\\.\\d+)?M)?(?:\\d+(?:\\.\\d+)?W)?(?:\\d+(?:\\.\\d+)?D)?(?:T(?:\\d+(?:\\.\\d+)?H)?(?:\\d+(?:\\.\\d+)?M)?(?:\\d+(?:\\.\\d+)?S)?)?$" ] [ sh:pattern "^(R\\d*\\/)?P(?:\\d+(?:\\.\\d+)?Y)?(?:\\d+(?:\\.\\d+)?M)?(?:\\d+(?:\\.\\d+)?W)?(?:\\d+(?:\\.\\d+)?D)?(?:T(?:\\d+(?:\\.\\d+)?H)?(?:\\d+(?:\\.\\d+)?M)?(?:\\d+(?:\\.\\d+)?S)?)?\\/([\\+-]?\\d{4}(?!\\d{2}\\b))((-?)((0[1-9]|1[0-2])(\\4([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\18[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?$" ] ) ;
+            sh:path reproschema:schedule ],
+        [ sh:datatype rdf:langString ;
+            sh:or ( [ sh:pattern "^P(?!$)(\\d+(?:\\.\\d+)?Y)?(\\d+(?:\\.\\d+)?M)?(\\d+(?:\\.\\d+)?W)?(\\d+(?:\\.\\d+)?D)?(T(?=\\d)(\\d+(?:\\.\\d+)?H)?(\\d+(?:\\.\\d+)?M)?(\\d+(?:\\.\\d+)?S)?)?$" ] [ sh:pattern "^(R\\d*\\/)?P(?:\\d+(?:\\.\\d+)?Y)?(?:\\d+(?:\\.\\d+)?M)?(?:\\d+(?:\\.\\d+)?W)?(?:\\d+(?:\\.\\d+)?D)?(?:T(?:\\d+(?:\\.\\d+)?H)?(?:\\d+(?:\\.\\d+)?M)?(?:\\d+(?:\\.\\d+)?S)?)?\\/([\\+-]?\\d{4}(?!\\d{2}\\b))((-?)((0[1-9]|1[0-2])(\\4([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\18[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?$" ] ) ;
+            sh:path reproschema:limit ],
+        [ sh:datatype xsd:integer ;
+            sh:path reproschema:maxRetakes ] ;
+    sh:targetClass reproschema:AdditionalProperty .
+
+reproschema:ComputeSpecificationShape a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:datatype rdf:langString ;
+            sh:minCount 1 ;
+            sh:path reproschema:variableName ],
+        [ sh:datatype rdf:langString ;
+            sh:minCount 1 ;
+            sh:path reproschema:jsExpression ] ;
+    sh:targetClass reproschema:ComputeSpecification .
+
+reproschema:IsVisShape a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:datatype rdf:langString ;
+            sh:minCount 1 ;
+            sh:path schema:method ],
+        [ sh:minCount 1 ;
+            sh:nodeKind sh:IRI ;
+            sh:path schema:url ],
+        [ sh:datatype rdf:langString ;
+            sh:minCount 1 ;
+            sh:path reproschema:payload ] .
+
+reproschema:MessageSpecificationShape a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:datatype rdf:langString ;
+            sh:minCount 1 ;
+            sh:path reproschema:message ],
+        [ sh:minCount 1 ;
+            sh:or ( [ sh:datatype rdf:langString ] [ sh:datatype xsd:boolean ] ) ;
+            sh:path reproschema:jsExpression ] ;
+    sh:targetClass reproschema:MessageSpecification .
+
+reproschema:OverridePropertiesShape a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:datatype rdf:langString ;
+            sh:minCount 1 ;
+            sh:path reproschema:variableName ],
+        [ sh:minCount 1 ;
+            sh:nodeKind sh:IRI ;
+            sh:path reproschema:isAbout ],
+        [ sh:or ( [ sh:datatype rdf:langString ] [ sh:datatype xsd:boolean ] [ sh:node reproschema:IsVisShape ] ) ;
+            sh:path reproschema:isVis ],
+        [ sh:datatype rdf:langString ;
+            sh:path skos:prefLabel ],
+        [ sh:datatype xsd:boolean ;
+            sh:path schema:valueRequired ],
+        [ sh:datatype rdf:langString ;
+            sh:path reproschema:randomMaxDelay ;
+            sh:pattern "^P(?!$)(\\d+(?:\\.\\d+)?Y)?(\\d+(?:\\.\\d+)?M)?(\\d+(?:\\.\\d+)?W)?(\\d+(?:\\.\\d+)?D)?(T(?=\\d)(\\d+(?:\\.\\d+)?H)?(\\d+(?:\\.\\d+)?M)?(\\d+(?:\\.\\d+)?S)?)?$" ],
+        [ sh:datatype rdf:langString ;
+            sh:or ( [ sh:pattern "^([\\+-]?\\d{4}(?!\\d{2}\\b))((-?)((0[1-9]|1[0-2])(\\3([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\17[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?$" ] [ sh:pattern "^(R\\d*\\/)?P(?:\\d+(?:\\.\\d+)?Y)?(?:\\d+(?:\\.\\d+)?M)?(?:\\d+(?:\\.\\d+)?W)?(?:\\d+(?:\\.\\d+)?D)?(?:T(?:\\d+(?:\\.\\d+)?H)?(?:\\d+(?:\\.\\d+)?M)?(?:\\d+(?:\\.\\d+)?S)?)?$" ] [ sh:pattern "^([\\+-]?\\d{4}(?!\\d{2}\\b))((-?)((0[1-9]|1[0-2])(\\3([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\17[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?(\\/)([\\+-]?\\d{4}(?!\\d{2}\\b))((-?)((0[1-9]|1[0-2])(\\3([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\17[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?$" ] [ sh:pattern "^(R\\d*\\/)?([\\+-]?\\d{4}(?!\\d{2}\\b))((-?)((0[1-9]|1[0-2])(\\4([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\18[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?(\\/)P(?:\\d+(?:\\.\\d+)?Y)?(?:\\d+(?:\\.\\d+)?M)?(?:\\d+(?:\\.\\d+)?W)?(?:\\d+(?:\\.\\d+)?D)?(?:T(?:\\d+(?:\\.\\d+)?H)?(?:\\d+(?:\\.\\d+)?M)?(?:\\d+(?:\\.\\d+)?S)?)?$" ] [ sh:pattern "^(R\\d*\\/)?P(?:\\d+(?:\\.\\d+)?Y)?(?:\\d+(?:\\.\\d+)?M)?(?:\\d+(?:\\.\\d+)?W)?(?:\\d+(?:\\.\\d+)?D)?(?:T(?:\\d+(?:\\.\\d+)?H)?(?:\\d+(?:\\.\\d+)?M)?(?:\\d+(?:\\.\\d+)?S)?)?\\/([\\+-]?\\d{4}(?!\\d{2}\\b))((-?)((0[1-9]|1[0-2])(\\4([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\18[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?$" ] ) ;
+            sh:path reproschema:schedule ],
+        [ sh:datatype rdf:langString ;
+            sh:or ( [ sh:pattern "^P(?!$)(\\d+(?:\\.\\d+)?Y)?(\\d+(?:\\.\\d+)?M)?(\\d+(?:\\.\\d+)?W)?(\\d+(?:\\.\\d+)?D)?(T(?=\\d)(\\d+(?:\\.\\d+)?H)?(\\d+(?:\\.\\d+)?M)?(\\d+(?:\\.\\d+)?S)?)?$" ] [ sh:pattern "^(R\\d*\\/)?P(?:\\d+(?:\\.\\d+)?Y)?(?:\\d+(?:\\.\\d+)?M)?(?:\\d+(?:\\.\\d+)?W)?(?:\\d+(?:\\.\\d+)?D)?(?:T(?:\\d+(?:\\.\\d+)?H)?(?:\\d+(?:\\.\\d+)?M)?(?:\\d+(?:\\.\\d+)?S)?)?\\/([\\+-]?\\d{4}(?!\\d{2}\\b))((-?)((0[1-9]|1[0-2])(\\4([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\18[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?$" ] ) ;
+            sh:path reproschema:limit ],
+        [ sh:datatype xsd:integer ;
+            sh:path reproschema:maxRetakes ] ;
+    sh:targetClass reproschema:OverrideProperty .
+
+reproschema:MediaObjectShape a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:minCount 1 ;
+            sh:nodeKind sh:IRI ;
+            sh:path schema:contentUrl ],
+        [ sh:datatype rdf:langString ;
+            sh:maxCount 1 ;
+            sh:path schema:inLanguage ] .

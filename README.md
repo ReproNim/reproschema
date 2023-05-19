@@ -1,4 +1,5 @@
 ![Python package](https://github.com/ReproNim/reproschema/workflows/Python%20package/badge.svg)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4064940.svg)](https://doi.org/10.5281/zenodo.4064940)
 
 <img src="docs/img/reproschema_logo.png" width="100px" />
 
@@ -35,6 +36,13 @@ following libraries via pip
 
 - reproschema (makeRelease.py)
 - pytablewriter (editProperties.py)
+
+To make a new release:
+
+```
+python scripts/makeRelease.py <version>
+python scripts/editProperties.py <version>
+```
 
 In addition, this repo uses pre-commit to check styling.
 

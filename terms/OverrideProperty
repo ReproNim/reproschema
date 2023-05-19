@@ -1,0 +1,72 @@
+{
+    "@context": "../contexts/base",
+    "@graph": [
+        {
+            "@id": "reproschema:variableName",
+            "schema:domainIncludes": {
+               "@id": "reproschema:OverrideProperty"
+            }
+        },
+        {
+            "@id": "reproschema:isAbout",
+            "schema:domainIncludes": {
+               "@id": "reproschema:OverrideProperty"
+            }
+        },
+        {
+            "@id": "schema:valueRequired",
+            "schema:domainIncludes": {
+               "@id": "reproschema:OverrideProperty"
+            }
+        },
+        {
+            "@id": "skos:prefLabel",
+            "@type": "rdf:Property",
+            "rdfs:comment": "The preferred label.",
+            "rdfs:label": "preferred label",
+            "schema:domainIncludes": {
+               "@id": "reproschema:OverrideProperty"
+            }
+        },
+        {
+            "@id": "reproschema:isVis",
+            "schema:domainIncludes": {
+               "@id": "reproschema:OverrideProperty"
+            }
+        },
+        {
+            "@id": "reproschema:randomMaxDelay",
+            "@type": "rdf:Property",
+            "schema:domainIncludes": {
+                "@id": "reproschema:OverrideProperty"
+            }
+        },
+        {
+            "@id": "reproschema:schedule",
+	        "@type": "rdf:Property",
+            "schema:domainIncludes": {
+                "@id": "reproschema:OverrideProperty"
+            }
+        },
+	    {
+            "@id": "reproschema:limit",
+	        "@type": "rdf:Property",
+            "schema:domainIncludes": {
+                "@id": "reproschema:OverrideProperty"
+            }
+        },
+        {
+            "@id": "reproschema:maxRetakes",
+	        "@type": "rdf:Property",
+            "schema:domainIncludes": {
+                "@id": "reproschema:OverrideProperty"
+            }
+        },
+        {
+            "@id": "reproschema:OverrideProperty",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "An object to override the various properties added to assessments and fields.",
+            "rdfs:label": "Additional properties"
+        }
+    ]
+}

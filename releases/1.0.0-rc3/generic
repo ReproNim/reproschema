@@ -19,7 +19,7 @@
             },
             "imageUrl": {
                 "@id": "schema:image",
-                "@type": "@id"
+                "@type": "xsd:anyURI"
             },
             "audio": {
                 "@id": "schema:audio"
@@ -29,7 +29,7 @@
             },
             "contentUrl": {
                 "@id": "schema:contentUrl",
-                "@type": "@id"
+                "@type": "xsd:anyURI"
             },
             "VideoObject": "schema:VideoObject",
             "AudioObject": "schema:AudioObject",
@@ -38,17 +38,19 @@
             },
             "url": {
                 "@id": "schema:url",
-                "@type": "@id"
+                "@type": "xsd:anyURI"
             },
             "citation": {
                 "@id": "schema:citation",
                 "@container": "@language"
             },
             "version": {
-                "@id": "schema:version"
+                "@id": "schema:version",
+                "@container": "@language"
             },
             "schemaVersion": {
-                "@id": "schema:schemaVersion"
+                "@id": "schema:schemaVersion",
+                "@container": "@language"
             },
             "prefLabel": {
                 "@id": "skos:prefLabel",
@@ -69,7 +71,7 @@
             },
             "landingPage": {
                 "@id": "reproschema:landingPage",
-                "@type": "@id",
+                "@type": "xsd:anyURI",
                 "@container": "@set"
             },
             "question": {

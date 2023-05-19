@@ -36,12 +36,12 @@ def create_release(version):
     with open(f"releases/{version}/reproschema.nt", "w") as fp:
         fp.write(data)
     with open(f"releases/{version}/reproschema.ttl", "w") as fp:
-        fp.write(g.serialize(format="turtle").decode())
+        fp.write(g.serialize(format="turtle"))
 
     g1 = rl.Graph()
     g1.parse("validation/reproschema-shacl.ttl", format="turtle")
     with open(f"releases/{version}/reproschema-shacl.ttl", "w") as fp:
-        fp.write(g1.serialize(format="turtle").decode())
+        fp.write(g1.serialize(format="turtle"))
 
     return g
 
