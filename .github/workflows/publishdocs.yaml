@@ -19,7 +19,7 @@ jobs:
           python-version: 3.9
 
       - name: Install the required python packages
-        run: python -m pip install linkml, mkdocs, mkdocs-material, mkdocs-redirects, mkdocs-minify-plugin, mkdocs-git-revision-date-localized-plugin, mkdocs-awesome-pages-plugin, mkdocs-macros-plug
+        run: python -m pip install linkml mkdocs mkdocs-material
 
       - name: generating linkml docs
         run: gen-doc -d docs/linkml linkml-schema/reproschema.yam
