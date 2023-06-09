@@ -19,7 +19,7 @@ jobs:
           python-version: 3.9
 
       - name: Install the required python packages
-        run: python -m pip install linkml mkdocs mkdocs-material
+        run: python -m pip install linkml mkdocs mkdocs-material mkdocs-mermaid2-plugin
 
       - name: generating linkml docs
         run: gen-doc -d docs/linkml linkml-schema/reproschema.yaml
