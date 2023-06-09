@@ -22,7 +22,7 @@ jobs:
         run: python -m pip install linkml mkdocs mkdocs-material
 
       - name: generating linkml docs
-        run: gen-doc -d docs/linkml linkml-schema/reproschema.yam
+        run: gen-doc -d docs/linkml linkml-schema/reproschema.yaml
 
       - name: Deploy docs
         uses: mhausenblas/mkdocs-deploy-gh-pages@master
