@@ -24,7 +24,11 @@ jobs:
       - name: generating linkml docs
         run: gen-doc -d docs/linkml linkml-schema/reproschema.yaml
 
-      - name: Deploy docs
-        uses: mhausenblas/mkdocs-deploy-gh-pages@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Deploy docs with mkdocs
+        run: |
+          mkdocs gh-deploy --force
+
+#      - name: Deploy docs
+#        uses: mhausenblas/mkdocs-deploy-gh-pages@master
+#        env:
+#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
