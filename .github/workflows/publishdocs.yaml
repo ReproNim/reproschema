@@ -28,6 +28,8 @@ jobs:
 
       - name: generating linkml docs
         run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
           gen-doc -d docs/linkml linkml-schema/reproschema.yaml
           mkdocs gh-deploy --force
 
