@@ -1,0 +1,920 @@
+{
+    "$defs": {
+        "Activity": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "about": {
+                    "type": "string"
+                },
+                "addProperties": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/AdditionalProperty"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "allow": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Thing"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "altLabel": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Text"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "associatedMedia": {
+                    "type": "string"
+                },
+                "citation": {
+                    "type": "string"
+                },
+                "compute": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/ComputeSpecification"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "cronTable": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "messages": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/MessageSpecification"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "order": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/URL"
+                        },
+                        {
+                            "$ref": "#/$defs/Activity"
+                        },
+                        {
+                            "$ref": "#/$defs/Field"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "overrideProperties": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/OverrideProperty"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "preamble": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Text"
+                        },
+                        {
+                            "$ref": "#/$defs/LangString"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "prefLabel": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Text"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "schemaVersion": {
+                    "type": "string"
+                },
+                "shuffle": {
+                    "anyOf": [
+                        {
+                            "type": "boolean"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "version": {
+                    "type": "string"
+                }
+            },
+            "title": "Activity",
+            "type": "object"
+        },
+        "AdditionalNoteObj": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "column": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/LangString"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "source": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/LangString"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "value": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Boolean"
+                        },
+                        {
+                            "$ref": "#/$defs/Number"
+                        },
+                        {
+                            "$ref": "#/$defs/StructuredValue"
+                        },
+                        {
+                            "$ref": "#/$defs/Text"
+                        },
+                        {
+                            "$ref": "#/$defs/URL"
+                        }
+                    ],
+                    "type": "string"
+                }
+            },
+            "title": "AdditionalNoteObj",
+            "type": "object"
+        },
+        "AdditionalProperty": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "isAbout": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Activity"
+                        },
+                        {
+                            "$ref": "#/$defs/Field"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "isVis": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Boolean"
+                        },
+                        {
+                            "$ref": "#/$defs/Text"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "limit": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Text"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "maxRetakes": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Number"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "prefLabel": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Text"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "randomMaxDelay": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Text"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "schedule": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Schedule"
+                        },
+                        {
+                            "$ref": "#/$defs/Text"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "valueRequired": {
+                    "type": "string"
+                },
+                "variableName": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Text"
+                        }
+                    ],
+                    "type": "string"
+                }
+            },
+            "title": "AdditionalProperty",
+            "type": "object"
+        },
+        "Agent": {
+            "additionalProperties": false,
+            "description": "",
+            "title": "Agent",
+            "type": "object"
+        },
+        "AllowExport": {
+            "additionalProperties": false,
+            "description": "",
+            "title": "AllowExport",
+            "type": "object"
+        },
+        "AllowReplay": {
+            "additionalProperties": false,
+            "description": "",
+            "title": "AllowReplay",
+            "type": "object"
+        },
+        "AutoAdvance": {
+            "additionalProperties": false,
+            "description": "",
+            "title": "AutoAdvance",
+            "type": "object"
+        },
+        "Boolean": {
+            "additionalProperties": false,
+            "description": "",
+            "title": "Boolean",
+            "type": "object"
+        },
+        "Choice": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "image": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "value_from_schema": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Skipped"
+                        },
+                        {
+                            "$ref": "#/$defs/DontKnow"
+                        }
+                    ],
+                    "type": "string"
+                }
+            },
+            "title": "Choice",
+            "type": "object"
+        },
+        "ComputeSpecification": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "jsExpression": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Boolean"
+                        },
+                        {
+                            "$ref": "#/$defs/Text"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "variableName": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Text"
+                        }
+                    ],
+                    "type": "string"
+                }
+            },
+            "title": "ComputeSpecification",
+            "type": "object"
+        },
+        "CreativeWork": {
+            "additionalProperties": false,
+            "description": "",
+            "title": "CreativeWork",
+            "type": "object"
+        },
+        "DisableBack": {
+            "additionalProperties": false,
+            "description": "",
+            "title": "DisableBack",
+            "type": "object"
+        },
+        "DontKnow": {
+            "additionalProperties": false,
+            "description": "",
+            "title": "DontKnow",
+            "type": "object"
+        },
+        "Field": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "about": {
+                    "type": "string"
+                },
+                "additionalNotesObj": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/AdditionalNoteObj"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "altLabel": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Text"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "associatedMedia": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "image": {
+                    "type": "string"
+                },
+                "inputType": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Text"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "isPartOf": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Activity"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "preamble": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Text"
+                        },
+                        {
+                            "$ref": "#/$defs/LangString"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "prefLabel": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Text"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "question": {
+                    "type": "string"
+                },
+                "readonlyValue": {
+                    "type": "string"
+                },
+                "responseOptions": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/URL"
+                        },
+                        {
+                            "$ref": "#/$defs/ResponseOption"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "schemaVersion": {
+                    "type": "string"
+                },
+                "version": {
+                    "type": "string"
+                }
+            },
+            "title": "Field",
+            "type": "object"
+        },
+        "LangString": {
+            "additionalProperties": false,
+            "description": "",
+            "title": "LangString",
+            "type": "object"
+        },
+        "MessageSpecification": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "jsExpression": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Boolean"
+                        },
+                        {
+                            "$ref": "#/$defs/Text"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "message": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Text"
+                        },
+                        {
+                            "$ref": "#/$defs/LangString"
+                        }
+                    ],
+                    "type": "string"
+                }
+            },
+            "title": "MessageSpecification",
+            "type": "object"
+        },
+        "Number": {
+            "additionalProperties": false,
+            "description": "",
+            "title": "Number",
+            "type": "object"
+        },
+        "OverrideProperty": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "isAbout": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Activity"
+                        },
+                        {
+                            "$ref": "#/$defs/Field"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "isVis": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Boolean"
+                        },
+                        {
+                            "$ref": "#/$defs/Text"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "limit": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Text"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "maxRetakes": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Number"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "prefLabel": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Text"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "randomMaxDelay": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Text"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "schedule": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Schedule"
+                        },
+                        {
+                            "$ref": "#/$defs/Text"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "valueRequired": {
+                    "type": "string"
+                },
+                "variableName": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Text"
+                        }
+                    ],
+                    "type": "string"
+                }
+            },
+            "title": "OverrideProperty",
+            "type": "object"
+        },
+        "Participant": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "subject_id": {
+                    "type": "string"
+                }
+            },
+            "title": "Participant",
+            "type": "object"
+        },
+        "Protocol": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "about": {
+                    "type": "string"
+                },
+                "addProperties": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/AdditionalProperty"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "allow": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Thing"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "altLabel": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Text"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "associatedMedia": {
+                    "type": "string"
+                },
+                "compute": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/ComputeSpecification"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "cronTable": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "landingPage": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Text"
+                        },
+                        {
+                            "$ref": "#/$defs/URL"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "messages": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/MessageSpecification"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "order": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/URL"
+                        },
+                        {
+                            "$ref": "#/$defs/Activity"
+                        },
+                        {
+                            "$ref": "#/$defs/Field"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "overrideProperties": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/OverrideProperty"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "prefLabel": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Text"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "schemaVersion": {
+                    "type": "string"
+                },
+                "shuffle": {
+                    "anyOf": [
+                        {
+                            "type": "boolean"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "version": {
+                    "type": "string"
+                }
+            },
+            "title": "Protocol",
+            "type": "object"
+        },
+        "Response": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "isAbout": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Activity"
+                        },
+                        {
+                            "$ref": "#/$defs/Field"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "value_from_schema": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Skipped"
+                        },
+                        {
+                            "$ref": "#/$defs/DontKnow"
+                        },
+                        {
+                            "$ref": "#/$defs/Number"
+                        },
+                        {
+                            "$ref": "#/$defs/Boolean"
+                        },
+                        {
+                            "$ref": "#/$defs/Text"
+                        },
+                        {
+                            "$ref": "#/$defs/URL"
+                        },
+                        {
+                            "$ref": "#/$defs/StructuredValue"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "wasAttributedTo": {
+                    "$ref": "#/$defs/Participant"
+                }
+            },
+            "title": "Response",
+            "type": "object"
+        },
+        "ResponseActivity": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "endedAtTime": {
+                    "type": "string"
+                },
+                "generated": {
+                    "type": "string"
+                },
+                "inLanguage": {
+                    "type": "string"
+                },
+                "startedAtTime": {
+                    "type": "string"
+                },
+                "used": {
+                    "type": "string"
+                }
+            },
+            "title": "ResponseActivity",
+            "type": "object"
+        },
+        "ResponseOption": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "choices": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/URL"
+                        },
+                        {
+                            "$ref": "#/$defs/Choice"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "datumType": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Text"
+                        },
+                        {
+                            "$ref": "#/$defs/URL"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "maxValue": {
+                    "type": "string"
+                },
+                "minValue": {
+                    "type": "string"
+                },
+                "multipleChoice": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Boolean"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "unitOptions": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/UnitOption"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "valueType": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Text"
+                        },
+                        {
+                            "$ref": "#/$defs/LangString"
+                        }
+                    ],
+                    "type": "string"
+                }
+            },
+            "title": "ResponseOption",
+            "type": "object"
+        },
+        "Schedule": {
+            "additionalProperties": false,
+            "description": "",
+            "title": "Schedule",
+            "type": "object"
+        },
+        "Skipped": {
+            "additionalProperties": false,
+            "description": "",
+            "title": "Skipped",
+            "type": "object"
+        },
+        "SoftwareAgent": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "url": {
+                    "type": "string"
+                },
+                "version": {
+                    "type": "string"
+                }
+            },
+            "title": "SoftwareAgent",
+            "type": "object"
+        },
+        "StructuredValue": {
+            "additionalProperties": false,
+            "description": "",
+            "title": "StructuredValue",
+            "type": "object"
+        },
+        "Text": {
+            "additionalProperties": false,
+            "description": "",
+            "title": "Text",
+            "type": "object"
+        },
+        "Thing": {
+            "additionalProperties": false,
+            "description": "",
+            "title": "Thing",
+            "type": "object"
+        },
+        "TimedOut": {
+            "additionalProperties": false,
+            "description": "",
+            "title": "TimedOut",
+            "type": "object"
+        },
+        "URL": {
+            "additionalProperties": false,
+            "description": "",
+            "title": "URL",
+            "type": "object"
+        },
+        "UnitOption": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "prefLabel": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Text"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "value": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/URL"
+                        },
+                        {
+                            "$ref": "#/$defs/Text"
+                        }
+                    ],
+                    "type": "string"
+                }
+            },
+            "title": "UnitOption",
+            "type": "object"
+        }
+    },
+    "$id": "http://example.org/example",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "additionalProperties": true,
+    "metamodel_version": "1.7.0",
+    "title": "reproschema",
+    "type": "object",
+    "version": null
+}
