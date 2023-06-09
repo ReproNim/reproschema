@@ -48,68 +48,68 @@ reproschema:Activity a sh:NodeShape ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:name "Activity" ;
     sh:property [ sh:maxCount 1 ;
-            sh:name "preferred label" ;
-            sh:order 13 ;
-            sh:path skos:prefLabel ],
-        [ sh:maxCount 1 ;
-            sh:name "associatedMedia" ;
-            sh:order 4 ;
-            sh:path schema1:associatedMedia ],
-        [ sh:maxCount 1 ;
-            sh:order 16 ;
-            sh:path schema1:version ],
-        [ sh:maxCount 1 ;
-            sh:order 14 ;
-            sh:path schema1:schemaVersion ],
-        [ sh:maxCount 1 ;
-            sh:name "Shuffle" ;
-            sh:order 15 ;
-            sh:path reproschema:shuffle ],
-        [ sh:maxCount 1 ;
-            sh:order 0 ;
-            sh:path schema1:about ],
-        [ sh:maxCount 1 ;
             sh:name "cronTable" ;
             sh:order 7 ;
             sh:path reproschema:cronTable ],
-        [ sh:maxCount 1 ;
-            sh:name "addProperties" ;
-            sh:order 1 ;
-            sh:path reproschema:addProperties ],
-        [ sh:maxCount 1 ;
-            sh:name "alternate label" ;
-            sh:order 3 ;
-            sh:path skos:altLabel ],
-        [ sh:maxCount 1 ;
-            sh:name "overrideProperties" ;
-            sh:order 11 ;
-            sh:path reproschema:overrideProperties ],
-        [ sh:maxCount 1 ;
-            sh:name "allow" ;
-            sh:order 2 ;
-            sh:path reproschema:allow ],
-        [ sh:maxCount 1 ;
-            sh:name "Order" ;
-            sh:order 10 ;
-            sh:path reproschema:order ],
         [ sh:maxCount 1 ;
             sh:name "computation" ;
             sh:order 6 ;
             sh:path reproschema:compute ],
         [ sh:maxCount 1 ;
+            sh:name "allow" ;
+            sh:order 2 ;
+            sh:path reproschema:allow ],
+        [ sh:maxCount 1 ;
+            sh:name "addProperties" ;
+            sh:order 1 ;
+            sh:path reproschema:addProperties ],
+        [ sh:maxCount 1 ;
+            sh:name "preferred label" ;
+            sh:order 13 ;
+            sh:path skos:prefLabel ],
+        [ sh:maxCount 1 ;
+            sh:order 5 ;
+            sh:path schema1:citation ],
+        [ sh:maxCount 1 ;
+            sh:name "alternate label" ;
+            sh:order 3 ;
+            sh:path skos:altLabel ],
+        [ sh:maxCount 1 ;
+            sh:name "associatedMedia" ;
+            sh:order 4 ;
+            sh:path schema1:associatedMedia ],
+        [ sh:maxCount 1 ;
             sh:order 8 ;
             sh:path schema1:description ],
         [ sh:maxCount 1 ;
-            sh:name "messages" ;
-            sh:order 9 ;
-            sh:path reproschema:messages ],
+            sh:order 14 ;
+            sh:path schema1:schemaVersion ],
         [ sh:maxCount 1 ;
             sh:name "Preamble" ;
             sh:order 12 ;
             sh:path reproschema:preamble ],
         [ sh:maxCount 1 ;
-            sh:order 5 ;
-            sh:path schema1:citation ] ;
+            sh:order 0 ;
+            sh:path schema1:about ],
+        [ sh:maxCount 1 ;
+            sh:name "Shuffle" ;
+            sh:order 15 ;
+            sh:path reproschema:shuffle ],
+        [ sh:maxCount 1 ;
+            sh:name "overrideProperties" ;
+            sh:order 11 ;
+            sh:path reproschema:overrideProperties ],
+        [ sh:maxCount 1 ;
+            sh:name "Order" ;
+            sh:order 10 ;
+            sh:path reproschema:order ],
+        [ sh:maxCount 1 ;
+            sh:order 16 ;
+            sh:path schema1:version ],
+        [ sh:maxCount 1 ;
+            sh:name "messages" ;
+            sh:order 9 ;
+            sh:path reproschema:messages ] ;
     sh:targetClass reproschema:Activity .
 
 reproschema:AdditionalNoteObj a sh:NodeShape ;
@@ -117,17 +117,17 @@ reproschema:AdditionalNoteObj a sh:NodeShape ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:name "Additional Notes Object" ;
     sh:property [ sh:maxCount 1 ;
-            sh:name "source" ;
-            sh:order 1 ;
-            sh:path reproschema:source ],
-        [ sh:maxCount 1 ;
             sh:name "column" ;
             sh:order 0 ;
             sh:path reproschema:column ],
         [ sh:maxCount 1 ;
             sh:name "value" ;
             sh:order 2 ;
-            sh:path reproschema:value ] ;
+            sh:path reproschema:value ],
+        [ sh:maxCount 1 ;
+            sh:name "source" ;
+            sh:order 1 ;
+            sh:path reproschema:source ] ;
     sh:targetClass reproschema:AdditionalNoteObj .
 
 reproschema:AdditionalProperty a sh:NodeShape ;
@@ -135,17 +135,6 @@ reproschema:AdditionalProperty a sh:NodeShape ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:name "Additional properties" ;
     sh:property [ sh:maxCount 1 ;
-            sh:name "variableName" ;
-            sh:order 8 ;
-            sh:path reproschema:variableName ],
-        [ sh:maxCount 1 ;
-            sh:order 7 ;
-            sh:path schema1:valueRequired ],
-        [ sh:maxCount 1 ;
-            sh:name "isAbout" ;
-            sh:order 0 ;
-            sh:path reproschema:isAbout ],
-        [ sh:maxCount 1 ;
             sh:name "visibility" ;
             sh:order 1 ;
             sh:path reproschema:isVis ],
@@ -158,17 +147,28 @@ reproschema:AdditionalProperty a sh:NodeShape ;
             sh:order 6 ;
             sh:path reproschema:schedule ],
         [ sh:maxCount 1 ;
+            sh:name "isAbout" ;
+            sh:order 0 ;
+            sh:path reproschema:isAbout ],
+        [ sh:maxCount 1 ;
             sh:name "limit" ;
             sh:order 2 ;
             sh:path reproschema:limit ],
         [ sh:maxCount 1 ;
-            sh:name "maxRetakes" ;
-            sh:order 3 ;
-            sh:path reproschema:maxRetakes ],
+            sh:order 7 ;
+            sh:path schema1:valueRequired ],
         [ sh:maxCount 1 ;
             sh:name "randomMaxDelay" ;
             sh:order 5 ;
-            sh:path reproschema:randomMaxDelay ] ;
+            sh:path reproschema:randomMaxDelay ],
+        [ sh:maxCount 1 ;
+            sh:name "variableName" ;
+            sh:order 8 ;
+            sh:path reproschema:variableName ],
+        [ sh:maxCount 1 ;
+            sh:name "maxRetakes" ;
+            sh:order 3 ;
+            sh:path reproschema:maxRetakes ] ;
     sh:targetClass reproschema:AdditionalProperty .
 
 reproschema:AllowExport a sh:NodeShape ;
@@ -197,12 +197,12 @@ reproschema:Choice a sh:NodeShape ;
             sh:order 2 ;
             sh:path schema1:value ],
         [ sh:maxCount 1 ;
-            sh:order 0 ;
-            sh:path schema1:name ],
-        [ sh:maxCount 1 ;
             sh:name "image" ;
             sh:order 1 ;
-            sh:path schema1:image ] ;
+            sh:path schema1:image ],
+        [ sh:maxCount 1 ;
+            sh:order 0 ;
+            sh:path schema1:name ] ;
     sh:targetClass reproschema:Choice .
 
 reproschema:ComputeSpecification a sh:NodeShape ;
@@ -236,25 +236,42 @@ reproschema:Field a sh:NodeShape ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:name "Field" ;
     sh:property [ sh:maxCount 1 ;
-            sh:order 11 ;
-            sh:path schema1:readonlyValue ],
+            sh:name "inputType" ;
+            sh:order 6 ;
+            sh:path reproschema:inputType ],
         [ sh:maxCount 1 ;
-            sh:order 7 ;
-            sh:path schema1:isPartOf ],
-        [ sh:maxCount 1 ;
-            sh:order 14 ;
-            sh:path schema1:version ],
-        [ sh:maxCount 1 ;
-            sh:name "alternate label" ;
-            sh:order 2 ;
-            sh:path skos:altLabel ],
+            sh:name "additional notes" ;
+            sh:order 1 ;
+            sh:path reproschema:additionalNotesObj ],
         [ sh:maxCount 1 ;
             sh:name "image" ;
             sh:order 5 ;
             sh:path schema1:image ],
         [ sh:maxCount 1 ;
+            sh:order 4 ;
+            sh:path schema1:description ],
+        [ sh:maxCount 1 ;
+            sh:name "Response options" ;
+            sh:order 12 ;
+            sh:path reproschema:responseOptions ],
+        [ sh:maxCount 1 ;
             sh:order 13 ;
             sh:path schema1:schemaVersion ],
+        [ sh:maxCount 1 ;
+            sh:name "associatedMedia" ;
+            sh:order 3 ;
+            sh:path schema1:associatedMedia ],
+        [ sh:maxCount 1 ;
+            sh:name "alternate label" ;
+            sh:order 2 ;
+            sh:path skos:altLabel ],
+        [ sh:maxCount 1 ;
+            sh:name "Preamble" ;
+            sh:order 8 ;
+            sh:path reproschema:preamble ],
+        [ sh:maxCount 1 ;
+            sh:order 11 ;
+            sh:path schema1:readonlyValue ],
         [ sh:maxCount 1 ;
             sh:order 10 ;
             sh:path schema1:question ],
@@ -263,28 +280,11 @@ reproschema:Field a sh:NodeShape ;
             sh:order 9 ;
             sh:path skos:prefLabel ],
         [ sh:maxCount 1 ;
-            sh:name "Preamble" ;
-            sh:order 8 ;
-            sh:path reproschema:preamble ],
+            sh:order 7 ;
+            sh:path schema1:isPartOf ],
         [ sh:maxCount 1 ;
-            sh:name "Response options" ;
-            sh:order 12 ;
-            sh:path reproschema:responseOptions ],
-        [ sh:maxCount 1 ;
-            sh:name "associatedMedia" ;
-            sh:order 3 ;
-            sh:path schema1:associatedMedia ],
-        [ sh:maxCount 1 ;
-            sh:order 4 ;
-            sh:path schema1:description ],
-        [ sh:maxCount 1 ;
-            sh:name "additional notes" ;
-            sh:order 1 ;
-            sh:path reproschema:additionalNotesObj ],
-        [ sh:maxCount 1 ;
-            sh:name "inputType" ;
-            sh:order 6 ;
-            sh:path reproschema:inputType ],
+            sh:order 14 ;
+            sh:path schema1:version ],
         [ sh:maxCount 1 ;
             sh:order 0 ;
             sh:path schema1:about ] ;
@@ -309,40 +309,40 @@ reproschema:OverrideProperty a sh:NodeShape ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:name "Additional properties" ;
     sh:property [ sh:maxCount 1 ;
-            sh:name "maxRetakes" ;
-            sh:order 3 ;
-            sh:path reproschema:maxRetakes ],
-        [ sh:maxCount 1 ;
-            sh:order 7 ;
-            sh:path schema1:valueRequired ],
-        [ sh:maxCount 1 ;
             sh:name "randomMaxDelay" ;
             sh:order 5 ;
             sh:path reproschema:randomMaxDelay ],
-        [ sh:maxCount 1 ;
-            sh:name "variableName" ;
-            sh:order 8 ;
-            sh:path reproschema:variableName ],
         [ sh:maxCount 1 ;
             sh:name "isAbout" ;
             sh:order 0 ;
             sh:path reproschema:isAbout ],
         [ sh:maxCount 1 ;
-            sh:name "limit" ;
-            sh:order 2 ;
-            sh:path reproschema:limit ],
-        [ sh:maxCount 1 ;
             sh:name "Schedule" ;
             sh:order 6 ;
             sh:path reproschema:schedule ],
+        [ sh:maxCount 1 ;
+            sh:name "visibility" ;
+            sh:order 1 ;
+            sh:path reproschema:isVis ],
         [ sh:maxCount 1 ;
             sh:name "preferred label" ;
             sh:order 4 ;
             sh:path skos:prefLabel ],
         [ sh:maxCount 1 ;
-            sh:name "visibility" ;
-            sh:order 1 ;
-            sh:path reproschema:isVis ] ;
+            sh:name "variableName" ;
+            sh:order 8 ;
+            sh:path reproschema:variableName ],
+        [ sh:maxCount 1 ;
+            sh:name "maxRetakes" ;
+            sh:order 3 ;
+            sh:path reproschema:maxRetakes ],
+        [ sh:maxCount 1 ;
+            sh:name "limit" ;
+            sh:order 2 ;
+            sh:path reproschema:limit ],
+        [ sh:maxCount 1 ;
+            sh:order 7 ;
+            sh:path schema1:valueRequired ] ;
     sh:targetClass reproschema:OverrideProperty .
 
 reproschema:Protocol a sh:NodeShape ;
@@ -350,65 +350,65 @@ reproschema:Protocol a sh:NodeShape ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:name "Protocol" ;
     sh:property [ sh:maxCount 1 ;
-            sh:name "messages" ;
-            sh:order 9 ;
-            sh:path reproschema:messages ],
-        [ sh:maxCount 1 ;
-            sh:name "Shuffle" ;
-            sh:order 14 ;
-            sh:path reproschema:shuffle ],
-        [ sh:maxCount 1 ;
-            sh:name "Landing page content" ;
-            sh:order 8 ;
-            sh:path reproschema:landingPage ],
-        [ sh:maxCount 1 ;
-            sh:name "allow" ;
-            sh:order 2 ;
-            sh:path reproschema:allow ],
-        [ sh:maxCount 1 ;
-            sh:order 0 ;
-            sh:path schema1:about ],
-        [ sh:maxCount 1 ;
             sh:order 13 ;
             sh:path schema1:schemaVersion ],
-        [ sh:maxCount 1 ;
-            sh:order 7 ;
-            sh:path schema1:description ],
-        [ sh:maxCount 1 ;
-            sh:name "Order" ;
-            sh:order 10 ;
-            sh:path reproschema:order ],
-        [ sh:maxCount 1 ;
-            sh:name "addProperties" ;
-            sh:order 1 ;
-            sh:path reproschema:addProperties ],
-        [ sh:maxCount 1 ;
-            sh:name "alternate label" ;
-            sh:order 3 ;
-            sh:path skos:altLabel ],
-        [ sh:maxCount 1 ;
-            sh:name "associatedMedia" ;
-            sh:order 4 ;
-            sh:path schema1:associatedMedia ],
-        [ sh:maxCount 1 ;
-            sh:order 15 ;
-            sh:path schema1:version ],
-        [ sh:maxCount 1 ;
-            sh:name "preferred label" ;
-            sh:order 12 ;
-            sh:path skos:prefLabel ],
         [ sh:maxCount 1 ;
             sh:name "overrideProperties" ;
             sh:order 11 ;
             sh:path reproschema:overrideProperties ],
         [ sh:maxCount 1 ;
-            sh:name "cronTable" ;
-            sh:order 6 ;
-            sh:path reproschema:cronTable ],
+            sh:name "Shuffle" ;
+            sh:order 14 ;
+            sh:path reproschema:shuffle ],
+        [ sh:maxCount 1 ;
+            sh:name "alternate label" ;
+            sh:order 3 ;
+            sh:path skos:altLabel ],
+        [ sh:maxCount 1 ;
+            sh:name "messages" ;
+            sh:order 9 ;
+            sh:path reproschema:messages ],
+        [ sh:maxCount 1 ;
+            sh:name "addProperties" ;
+            sh:order 1 ;
+            sh:path reproschema:addProperties ],
+        [ sh:maxCount 1 ;
+            sh:name "Landing page content" ;
+            sh:order 8 ;
+            sh:path reproschema:landingPage ],
+        [ sh:maxCount 1 ;
+            sh:name "associatedMedia" ;
+            sh:order 4 ;
+            sh:path schema1:associatedMedia ],
+        [ sh:maxCount 1 ;
+            sh:order 7 ;
+            sh:path schema1:description ],
+        [ sh:maxCount 1 ;
+            sh:name "preferred label" ;
+            sh:order 12 ;
+            sh:path skos:prefLabel ],
         [ sh:maxCount 1 ;
             sh:name "computation" ;
             sh:order 5 ;
-            sh:path reproschema:compute ] ;
+            sh:path reproschema:compute ],
+        [ sh:maxCount 1 ;
+            sh:order 0 ;
+            sh:path schema1:about ],
+        [ sh:maxCount 1 ;
+            sh:name "allow" ;
+            sh:order 2 ;
+            sh:path reproschema:allow ],
+        [ sh:maxCount 1 ;
+            sh:name "Order" ;
+            sh:order 10 ;
+            sh:path reproschema:order ],
+        [ sh:maxCount 1 ;
+            sh:order 15 ;
+            sh:path schema1:version ],
+        [ sh:maxCount 1 ;
+            sh:name "cronTable" ;
+            sh:order 6 ;
+            sh:path reproschema:cronTable ] ;
     sh:targetClass reproschema:Protocol .
 
 reproschema:Response a sh:NodeShape ;
@@ -418,15 +418,15 @@ reproschema:Response a sh:NodeShape ;
     sh:property [ sh:maxCount 1 ;
             sh:order 1 ;
             sh:path schema1:value ],
-        [ sh:maxCount 1 ;
-            sh:name "isAbout" ;
-            sh:order 0 ;
-            sh:path reproschema:isAbout ],
         [ sh:class reproschema:Participant ;
             sh:maxCount 1 ;
             sh:nodeKind sh:BlankNode ;
             sh:order 2 ;
-            sh:path prov:wasAttributedTo ] ;
+            sh:path prov:wasAttributedTo ],
+        [ sh:maxCount 1 ;
+            sh:name "isAbout" ;
+            sh:order 0 ;
+            sh:path reproschema:isAbout ] ;
     sh:targetClass reproschema:Response .
 
 reproschema:ResponseActivity a sh:NodeShape ;
@@ -434,20 +434,20 @@ reproschema:ResponseActivity a sh:NodeShape ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:name "ResponseActivity" ;
     sh:property [ sh:maxCount 1 ;
-            sh:order 4 ;
-            sh:path prov:used ],
-        [ sh:maxCount 1 ;
             sh:order 0 ;
             sh:path prov:endedAtTime ],
+        [ sh:maxCount 1 ;
+            sh:order 3 ;
+            sh:path prov:startedAtTime ],
         [ sh:maxCount 1 ;
             sh:order 2 ;
             sh:path schema1:inLanguage ],
         [ sh:maxCount 1 ;
-            sh:order 1 ;
-            sh:path prov:generated ],
+            sh:order 4 ;
+            sh:path prov:used ],
         [ sh:maxCount 1 ;
-            sh:order 3 ;
-            sh:path prov:startedAtTime ] ;
+            sh:order 1 ;
+            sh:path prov:generated ] ;
     sh:targetClass reproschema:ResponseActivity .
 
 reproschema:ResponseOption a sh:NodeShape ;
@@ -455,13 +455,6 @@ reproschema:ResponseOption a sh:NodeShape ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:name "Response option" ;
     sh:property [ sh:maxCount 1 ;
-            sh:order 2 ;
-            sh:path schema1:maxValue ],
-        [ sh:maxCount 1 ;
-            sh:name "choices" ;
-            sh:order 0 ;
-            sh:path reproschema:choices ],
-        [ sh:maxCount 1 ;
             sh:order 3 ;
             sh:path schema1:minValue ],
         [ sh:maxCount 1 ;
@@ -469,17 +462,24 @@ reproschema:ResponseOption a sh:NodeShape ;
             sh:order 4 ;
             sh:path reproschema:multipleChoice ],
         [ sh:maxCount 1 ;
-            sh:name "The type of the response" ;
-            sh:order 6 ;
-            sh:path reproschema:valueType ],
+            sh:order 2 ;
+            sh:path schema1:maxValue ],
+        [ sh:maxCount 1 ;
+            sh:name "choices" ;
+            sh:order 0 ;
+            sh:path reproschema:choices ],
+        [ sh:maxCount 1 ;
+            sh:name "datumType" ;
+            sh:order 1 ;
+            sh:path reproschema:datumType ],
         [ sh:maxCount 1 ;
             sh:name "unitOptions" ;
             sh:order 5 ;
             sh:path reproschema:unitOptions ],
         [ sh:maxCount 1 ;
-            sh:name "datumType" ;
-            sh:order 1 ;
-            sh:path reproschema:datumType ] ;
+            sh:name "The type of the response" ;
+            sh:order 6 ;
+            sh:path reproschema:valueType ] ;
     sh:targetClass reproschema:ResponseOption .
 
 reproschema:Schedule a sh:NodeShape ;
