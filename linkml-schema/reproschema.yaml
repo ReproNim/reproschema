@@ -18,7 +18,7 @@ default_range: string
 slots:
   about:
     comments:
-    - The subject matter of the Field.
+    - The subject matter of the Field/Item.
     slot_uri: schema:about
   addProperties:
     title: addProperties
@@ -59,7 +59,7 @@ slots:
   choices:
     title: choices
     comments:
-    - An array to list the available options for response of the Field item.
+    - An array to list the available options for response of the Field/Item item.
     exact_mappings:
     - itemListElement
     slot_uri: reproschema:choices
@@ -79,7 +79,7 @@ slots:
     title: computation
     comments:
     - 'An array of objects indicating computations in an activity or protocol and
-      maps it to the corresponding Field item. scoring logic is a subset of all computations
+      maps it to the corresponding Field/Item item. scoring logic is a subset of all computations
       that could be performed and not all computations will be scoring. For example,
       one may want to do conversion from one unit to another. '
     slot_uri: reproschema:compute
@@ -94,7 +94,7 @@ slots:
     title: datumType
     comments:
     - Indicates what type of datum the response is (e.g. range,count,scalar etc.)
-      for the Field item.
+      for the Field/Item item.
     slot_uri: reproschema:datumType
     any_of:
     - range: Text
@@ -116,7 +116,7 @@ slots:
   inputType:
     title: inputType
     comments:
-    - An element to describe the input type of a Field item.
+    - An element to describe the input type of a Field/Item item.
     slot_uri: reproschema:inputType
     any_of:
     - range: Text
@@ -127,7 +127,7 @@ slots:
     slot_uri: reproschema:isAbout
     any_of:
     - range: Activity
-    - range: Field
+    - range: Item
   isPartOf:
     slot_uri: schema:isPartOf
     any_of:
@@ -195,7 +195,7 @@ slots:
   multipleChoice:
     title: Multiple choice response expectation
     comments:
-    - Indicates (by bool) if response for the Field item has one or more answer.
+    - Indicates (by bool) if response for the Field/Item item has one or more answer.
     slot_uri: reproschema:multipleChoice
     any_of:
     - range: Boolean
@@ -210,7 +210,7 @@ slots:
     any_of:
     - range: URL
     - range: Activity
-    - range: Field
+    - range: Item
   overrideProperties:
     title: overrideProperties
     comments:
@@ -249,7 +249,7 @@ slots:
   responseOptions:
     title: Response options
     comments:
-    - An element (object or by URL)to describe the properties of response of the Field
+    - An element (object or by URL)to describe the properties of response of the Field/Item
       item.
     slot_uri: reproschema:responseOptions
     any_of:
@@ -445,8 +445,8 @@ classes:
     comments:
     - An element to describe the choice when response is not known.
     class_uri: reproschema:DontKnow
-  Field: #TODO: multiple @type in reproschema
-    title: Field
+  Item: #TODO: multiple @type in reproschema
+    title: Item
     comments:
     - An item in an assessment.
     is_a: CreativeWork
@@ -466,7 +466,7 @@ classes:
     - responseOptions
     - schemaVersion
     - version
-    class_uri: reproschema:Field
+    class_uri: reproschema:Item
   langString:
     class_uri: rdf:langString
   MessageSpecification:
@@ -561,7 +561,7 @@ classes:
   ResponseOption:
     title: Response option
     comments:
-    - An element (object or by URL)to describe the properties of response of the Field
+    - An element (object or by URL)to describe the properties of response of the Field/Item
       item.
     slots:
     - choices
