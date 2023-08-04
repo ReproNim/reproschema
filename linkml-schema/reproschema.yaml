@@ -48,8 +48,6 @@ slots:
     comments:
     - The alternate label.
     slot_uri: skos:altLabel
-    any_of:
-    - range: Text
   associatedMedia:
     title: associatedMedia
     comments:
@@ -64,7 +62,7 @@ slots:
     - itemListElement
     slot_uri: reproschema:choices
     any_of:
-    - range: URL
+    - range: uri
     - range: Choice
   citation:
     slot_uri: schema:citation
@@ -97,8 +95,8 @@ slots:
       for the Field/Item item.
     slot_uri: reproschema:datumType
     any_of:
-    - range: Text
-    - range: URL
+    - range: string
+    - range: uri
   description:
     slot_uri: schema:description
   endedAtTime:
@@ -118,8 +116,6 @@ slots:
     comments:
     - An element to describe the input type of a Field/Item item.
     slot_uri: reproschema:inputType
-    any_of:
-    - range: Text
   isAbout:
     title: isAbout
     comments:
@@ -139,8 +135,8 @@ slots:
       of items in an assessment.
     slot_uri: reproschema:isVis
     any_of:
-    - range: Boolean
-    - range: Text
+    - range: boolean
+    - range: string
   jsExpression:
     title: JavaScript Expression
     comments:
@@ -148,31 +144,29 @@ slots:
     - A JavaScript expression to compute a score from other variables.
     slot_uri: reproschema:jsExpression
     any_of:
-    - range: Boolean
-    - range: Text
+    - range: boolean
+    - range: string
   landingPage:
     title: Landing page content
     comments:
     - An element (by URL) to point to the protocol readme or landing page.
     slot_uri: reproschema:landingPage
     any_of:
-    - range: Text
-    - range: URL
+    - range: string
+    - range: uri
   limit:
     title: limit
     comments:
     - An element to limit the duration (uses ISO 8601) this activity is allowed to
       be completed by once activity is available.
     slot_uri: reproschema:limit
-    any_of:
-    - range: Text
   maxRetakes:
     title: maxRetakes
     comments:
     - Defines number of times the item is allowed to be redone.
     slot_uri: reproschema:maxRetakes
     any_of:
-    - range: Number
+    - range: decimal
   maxValue:
     slot_uri: schema:maxValue
   message:
@@ -181,7 +175,7 @@ slots:
     - 'The message to be conditionally displayed for an item. '
     slot_uri: reproschema:message
     any_of:
-    - range: Text
+    - range: string
     - range: langString
   messages:
     title: messages
@@ -198,7 +192,7 @@ slots:
     - Indicates (by bool) if response for the Field/Item item has one or more answer.
     slot_uri: reproschema:multipleChoice
     any_of:
-    - range: Boolean
+    - range: boolean
   name:
     slot_uri: schema:name
   order:
@@ -208,7 +202,7 @@ slots:
       protocol appear in the user interface.
     slot_uri: reproschema:order
     any_of:
-    - range: URL
+    - range: uri
     - range: Activity
     - range: Item
   overrideProperties:
@@ -225,15 +219,13 @@ slots:
     - The preamble for an assessment
     slot_uri: reproschema:preamble
     any_of:
-    - range: Text
+    - range: string
     - range: langString
   prefLabel:
     title: preferred label
     comments:
     - The preferred label.
     slot_uri: skos:prefLabel
-    any_of: # why we need any_of here?
-    - range: Text
   question:
     slot_uri: schema:question
   randomMaxDelay:
@@ -242,8 +234,6 @@ slots:
     - Present activity/item within some random offset of activity available time up
       to the maximum specified by this ISO 8601 duration
     slot_uri: reproschema:randomMaxDelay
-    any_of:
-    - range: Text
   readonlyValue:
     slot_uri: schema:readonlyValue
   responseOptions:
@@ -253,7 +243,7 @@ slots:
       item.
     slot_uri: reproschema:responseOptions
     any_of:
-    - range: URL
+    - range: uri
     - range: ResponseOption
   schedule:
     title: Schedule
@@ -263,7 +253,7 @@ slots:
     slot_uri: reproschema:schedule
     any_of:
     - range: Schedule
-    - range: Text
+    - range: string
   schemaVersion:
     slot_uri: schema:schemaVersion
   shuffle:
@@ -286,8 +276,6 @@ slots:
     - "Provides information on whether or not a field item wants to be accompanied\
       \ by the additional status option(s) defined in \u201CstatusOptions\u201D"
     slot_uri: reproschema:statusOptions
-    any_of:
-    - range: Text
   startedAtTime:
     slot_uri: prov:startedAtTime
   subject_id:
@@ -312,11 +300,11 @@ slots:
     - value
     slot_uri: reproschema:value
     any_of:
-    - range: Boolean
-    - range: Number
+    - range: boolean
+    - range: decimal
     - range: StructuredValue
-    - range: Text
-    - range: URL
+    - range: string
+    - range: uri
   value_from_schema:
     slot_uri: schema:value
   valueType:
@@ -325,7 +313,7 @@ slots:
     - The type of the response of an item. For example, string, integer, etc.
     slot_uri: reproschema:valueType
     any_of:
-    - range: Text
+    - range: string
     - range: langString
   valueRequired:
     slot_uri: schema:valueRequired
@@ -334,8 +322,6 @@ slots:
     comments:
     - The name used to represent an item.
     slot_uri: reproschema:variableName
-    any_of:
-    - range: Text
   version:
     slot_uri: schema:version
   wasAttributedTo:
@@ -408,8 +394,6 @@ classes:
     comments:
     - Indicates (by boolean) if assessments in a protocol can auto advance or not.
     class_uri: reproschema:AutoAdvance
-  Boolean: #todo should we switch to linkml boolean?
-    class_uri: schema:Boolean
   Choice:
     title: Response choice
     comments:
@@ -477,8 +461,6 @@ classes:
     - jsExpression
     - message
     class_uri: reproschema:MessageSpecification
-  Number: # todo: should we switch to linkml numbers?
-    class_uri: schema:Number
   OverrideProperty:
     title: Additional properties
     comments:
@@ -539,10 +521,10 @@ classes:
         any_of:
           - range: Skipped
           - range: DontKnow
-          - range: Number
-          - range: Boolean
-          - range: Text
-          - range: URL
+          - range: decimal
+          - range: boolean
+          - range: string
+          - range: uri
           - range: StructuredValue
     class_uri: reproschema:Response
   ResponseActivity: # multiple types
@@ -594,8 +576,6 @@ classes:
   StructuredValue:
     class_uri: schema:StructuredValue
 
-  Text: #todo should we switch to linkml strings?
-    class_uri: schema:Text
   Thing: # todo should we switch
     class_uri: schema:Thing
   TimedOut:
@@ -604,8 +584,6 @@ classes:
     - A boolean element to describe if the response did not occur within the prescribed
       time.
     class_uri: reproschema:TimedOut
-  URL: #todo should we switch to linkml urls?
-    class_uri: schema:URL
   UnitOption:
     title: Unit options
     comments:
@@ -617,6 +595,6 @@ classes:
     slot_usage:
       value:
         any_of:
-          - range: URL
-          - range: Text
+          - range: uri
+          - range: string
     class_uri: reproschema:UnitOption
