@@ -24,11 +24,6 @@
                     "type": "string"
                 },
                 "altLabel": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/Text"
-                        }
-                    ],
                     "type": "string"
                 },
                 "associatedMedia": {
@@ -62,7 +57,7 @@
                 "order": {
                     "anyOf": [
                         {
-                            "$ref": "#/$defs/URL"
+                            "type": "string"
                         },
                         {
                             "$ref": "#/$defs/Activity"
@@ -84,7 +79,7 @@
                 "preamble": {
                     "anyOf": [
                         {
-                            "$ref": "#/$defs/Text"
+                            "type": "string"
                         },
                         {
                             "$ref": "#/$defs/LangString"
@@ -93,11 +88,6 @@
                     "type": "string"
                 },
                 "prefLabel": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/Text"
-                        }
-                    ],
                     "type": "string"
                 },
                 "schemaVersion": {
@@ -141,19 +131,19 @@
                 "value": {
                     "anyOf": [
                         {
-                            "$ref": "#/$defs/Boolean"
+                            "type": "boolean"
                         },
                         {
-                            "$ref": "#/$defs/Number"
+                            "type": "number"
                         },
                         {
                             "$ref": "#/$defs/StructuredValue"
                         },
                         {
-                            "$ref": "#/$defs/Text"
+                            "type": "string"
                         },
                         {
-                            "$ref": "#/$defs/URL"
+                            "type": "string"
                         }
                     ],
                     "type": "string"
@@ -180,44 +170,29 @@
                 "isVis": {
                     "anyOf": [
                         {
-                            "$ref": "#/$defs/Boolean"
+                            "type": "boolean"
                         },
                         {
-                            "$ref": "#/$defs/Text"
+                            "type": "string"
                         }
                     ],
                     "type": "string"
                 },
                 "limit": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/Text"
-                        }
-                    ],
                     "type": "string"
                 },
                 "maxRetakes": {
                     "anyOf": [
                         {
-                            "$ref": "#/$defs/Number"
+                            "type": "number"
                         }
                     ],
                     "type": "string"
                 },
                 "prefLabel": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/Text"
-                        }
-                    ],
                     "type": "string"
                 },
                 "randomMaxDelay": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/Text"
-                        }
-                    ],
                     "type": "string"
                 },
                 "schedule": {
@@ -226,7 +201,7 @@
                             "$ref": "#/$defs/Schedule"
                         },
                         {
-                            "$ref": "#/$defs/Text"
+                            "type": "string"
                         }
                     ],
                     "type": "string"
@@ -235,11 +210,6 @@
                     "type": "string"
                 },
                 "variableName": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/Text"
-                        }
-                    ],
                     "type": "string"
                 }
             },
@@ -268,12 +238,6 @@
             "additionalProperties": false,
             "description": "",
             "title": "AutoAdvance",
-            "type": "object"
-        },
-        "Boolean": {
-            "additionalProperties": false,
-            "description": "",
-            "title": "Boolean",
             "type": "object"
         },
         "Choice": {
@@ -308,20 +272,15 @@
                 "jsExpression": {
                     "anyOf": [
                         {
-                            "$ref": "#/$defs/Boolean"
+                            "type": "boolean"
                         },
                         {
-                            "$ref": "#/$defs/Text"
+                            "type": "string"
                         }
                     ],
                     "type": "string"
                 },
                 "variableName": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/Text"
-                        }
-                    ],
                     "type": "string"
                 }
             },
@@ -362,11 +321,6 @@
                     "type": "string"
                 },
                 "altLabel": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/Text"
-                        }
-                    ],
                     "type": "string"
                 },
                 "associatedMedia": {
@@ -379,11 +333,6 @@
                     "type": "string"
                 },
                 "inputType": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/Text"
-                        }
-                    ],
                     "type": "string"
                 },
                 "isPartOf": {
@@ -397,7 +346,7 @@
                 "preamble": {
                     "anyOf": [
                         {
-                            "$ref": "#/$defs/Text"
+                            "type": "string"
                         },
                         {
                             "$ref": "#/$defs/LangString"
@@ -406,11 +355,6 @@
                     "type": "string"
                 },
                 "prefLabel": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/Text"
-                        }
-                    ],
                     "type": "string"
                 },
                 "question": {
@@ -422,7 +366,7 @@
                 "responseOptions": {
                     "anyOf": [
                         {
-                            "$ref": "#/$defs/URL"
+                            "type": "string"
                         },
                         {
                             "$ref": "#/$defs/ResponseOption"
@@ -453,10 +397,10 @@
                 "jsExpression": {
                     "anyOf": [
                         {
-                            "$ref": "#/$defs/Boolean"
+                            "type": "boolean"
                         },
                         {
-                            "$ref": "#/$defs/Text"
+                            "type": "string"
                         }
                     ],
                     "type": "string"
@@ -464,7 +408,7 @@
                 "message": {
                     "anyOf": [
                         {
-                            "$ref": "#/$defs/Text"
+                            "type": "string"
                         },
                         {
                             "$ref": "#/$defs/LangString"
@@ -474,12 +418,6 @@
                 }
             },
             "title": "MessageSpecification",
-            "type": "object"
-        },
-        "Number": {
-            "additionalProperties": false,
-            "description": "",
-            "title": "Number",
             "type": "object"
         },
         "OverrideProperty": {
@@ -500,44 +438,29 @@
                 "isVis": {
                     "anyOf": [
                         {
-                            "$ref": "#/$defs/Boolean"
+                            "type": "boolean"
                         },
                         {
-                            "$ref": "#/$defs/Text"
+                            "type": "string"
                         }
                     ],
                     "type": "string"
                 },
                 "limit": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/Text"
-                        }
-                    ],
                     "type": "string"
                 },
                 "maxRetakes": {
                     "anyOf": [
                         {
-                            "$ref": "#/$defs/Number"
+                            "type": "number"
                         }
                     ],
                     "type": "string"
                 },
                 "prefLabel": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/Text"
-                        }
-                    ],
                     "type": "string"
                 },
                 "randomMaxDelay": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/Text"
-                        }
-                    ],
                     "type": "string"
                 },
                 "schedule": {
@@ -546,7 +469,7 @@
                             "$ref": "#/$defs/Schedule"
                         },
                         {
-                            "$ref": "#/$defs/Text"
+                            "type": "string"
                         }
                     ],
                     "type": "string"
@@ -555,11 +478,6 @@
                     "type": "string"
                 },
                 "variableName": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/Text"
-                        }
-                    ],
                     "type": "string"
                 }
             },
@@ -601,11 +519,6 @@
                     "type": "string"
                 },
                 "altLabel": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/Text"
-                        }
-                    ],
                     "type": "string"
                 },
                 "associatedMedia": {
@@ -628,10 +541,10 @@
                 "landingPage": {
                     "anyOf": [
                         {
-                            "$ref": "#/$defs/Text"
+                            "type": "string"
                         },
                         {
-                            "$ref": "#/$defs/URL"
+                            "type": "string"
                         }
                     ],
                     "type": "string"
@@ -647,7 +560,7 @@
                 "order": {
                     "anyOf": [
                         {
-                            "$ref": "#/$defs/URL"
+                            "type": "string"
                         },
                         {
                             "$ref": "#/$defs/Activity"
@@ -667,11 +580,6 @@
                     "type": "string"
                 },
                 "prefLabel": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/Text"
-                        }
-                    ],
                     "type": "string"
                 },
                 "schemaVersion": {
@@ -716,16 +624,16 @@
                             "$ref": "#/$defs/DontKnow"
                         },
                         {
-                            "$ref": "#/$defs/Number"
+                            "type": "number"
                         },
                         {
-                            "$ref": "#/$defs/Boolean"
+                            "type": "boolean"
                         },
                         {
-                            "$ref": "#/$defs/Text"
+                            "type": "string"
                         },
                         {
-                            "$ref": "#/$defs/URL"
+                            "type": "string"
                         },
                         {
                             "$ref": "#/$defs/StructuredValue"
@@ -770,7 +678,7 @@
                 "choices": {
                     "anyOf": [
                         {
-                            "$ref": "#/$defs/URL"
+                            "type": "string"
                         },
                         {
                             "$ref": "#/$defs/Choice"
@@ -781,10 +689,10 @@
                 "datumType": {
                     "anyOf": [
                         {
-                            "$ref": "#/$defs/Text"
+                            "type": "string"
                         },
                         {
-                            "$ref": "#/$defs/URL"
+                            "type": "string"
                         }
                     ],
                     "type": "string"
@@ -798,7 +706,7 @@
                 "multipleChoice": {
                     "anyOf": [
                         {
-                            "$ref": "#/$defs/Boolean"
+                            "type": "boolean"
                         }
                     ],
                     "type": "string"
@@ -814,7 +722,7 @@
                 "valueType": {
                     "anyOf": [
                         {
-                            "$ref": "#/$defs/Text"
+                            "type": "string"
                         },
                         {
                             "$ref": "#/$defs/LangString"
@@ -858,12 +766,6 @@
             "title": "StructuredValue",
             "type": "object"
         },
-        "Text": {
-            "additionalProperties": false,
-            "description": "",
-            "title": "Text",
-            "type": "object"
-        },
         "Thing": {
             "additionalProperties": false,
             "description": "",
@@ -876,31 +778,20 @@
             "title": "TimedOut",
             "type": "object"
         },
-        "URL": {
-            "additionalProperties": false,
-            "description": "",
-            "title": "URL",
-            "type": "object"
-        },
         "UnitOption": {
             "additionalProperties": false,
             "description": "",
             "properties": {
                 "prefLabel": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/Text"
-                        }
-                    ],
                     "type": "string"
                 },
                 "value": {
                     "anyOf": [
                         {
-                            "$ref": "#/$defs/URL"
+                            "type": "string"
                         },
                         {
-                            "$ref": "#/$defs/Text"
+                            "type": "string"
                         }
                     ],
                     "type": "string"

@@ -47,9 +47,6 @@ AllowReplay {
 AutoAdvance {
 
 }
-Boolean {
-
-}
 Choice {
     string name  
     string image  
@@ -91,9 +88,6 @@ LangString {
 MessageSpecification {
     string jsExpression  
     string message  
-}
-Number {
-
 }
 OverrideProperty {
     string isAbout  
@@ -160,16 +154,10 @@ SoftwareAgent {
 StructuredValue {
 
 }
-Text {
-
-}
 Thing {
 
 }
 TimedOut {
-
-}
-URL {
 
 }
 UnitOption {

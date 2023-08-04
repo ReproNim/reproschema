@@ -31,21 +31,21 @@ class AdditionalNoteObj(ConfiguredBaseModel):
     
     column: Optional[LangString] = Field(None, title="column")
     source: Optional[LangString] = Field(None, title="source")
-    value: Optional[Union[Boolean, Number, StructuredValue, Text, URL]] = Field(None, title="value")
+    value: Optional[Union[Decimal, StructuredValue, bool, str]] = Field(None, title="value")
     
 
 
 class AdditionalProperty(ConfiguredBaseModel):
     
     isAbout: Optional[Union[Activity, Item]] = Field(None, title="isAbout")
-    isVis: Optional[Union[Boolean, Text]] = Field(None, title="visibility")
-    limit: Optional[Text] = Field(None, title="limit")
-    maxRetakes: Optional[Number] = Field(None, title="maxRetakes")
-    prefLabel: Optional[Text] = Field(None, title="preferred label")
-    randomMaxDelay: Optional[Text] = Field(None, title="randomMaxDelay")
-    schedule: Optional[Union[Schedule, Text]] = Field(None, title="Schedule")
+    isVis: Optional[Union[bool, str]] = Field(None, title="visibility")
+    limit: Optional[str] = Field(None, title="limit")
+    maxRetakes: Optional[Decimal] = Field(None, title="maxRetakes")
+    prefLabel: Optional[str] = Field(None, title="preferred label")
+    randomMaxDelay: Optional[str] = Field(None, title="randomMaxDelay")
+    schedule: Optional[Union[Schedule, str]] = Field(None, title="Schedule")
     valueRequired: Optional[str] = Field(None)
-    variableName: Optional[Text] = Field(None, title="variableName")
+    variableName: Optional[str] = Field(None, title="variableName")
     
 
 
@@ -73,12 +73,6 @@ class AutoAdvance(ConfiguredBaseModel):
     
 
 
-class Boolean(ConfiguredBaseModel):
-    
-    None
-    
-
-
 class Choice(ConfiguredBaseModel):
     
     name: Optional[str] = Field(None)
@@ -89,8 +83,8 @@ class Choice(ConfiguredBaseModel):
 
 class ComputeSpecification(ConfiguredBaseModel):
     
-    jsExpression: Optional[Union[Boolean, Text]] = Field(None, title="JavaScript Expression")
-    variableName: Optional[Text] = Field(None, title="variableName")
+    jsExpression: Optional[Union[bool, str]] = Field(None, title="JavaScript Expression")
+    variableName: Optional[str] = Field(None, title="variableName")
     
 
 
@@ -105,17 +99,17 @@ class Activity(CreativeWork):
     about: Optional[str] = Field(None)
     addProperties: Optional[AdditionalProperty] = Field(None, title="addProperties")
     allow: Optional[Thing] = Field(None, title="allow")
-    altLabel: Optional[Text] = Field(None, title="alternate label")
+    altLabel: Optional[str] = Field(None, title="alternate label")
     associatedMedia: Optional[str] = Field(None, title="associatedMedia")
     citation: Optional[str] = Field(None)
     compute: Optional[ComputeSpecification] = Field(None, title="computation")
     cronTable: Optional[str] = Field(None, title="cronTable")
     description: Optional[str] = Field(None)
     messages: Optional[MessageSpecification] = Field(None, title="messages")
-    order: Optional[Union[Activity, Item, URL]] = Field(None, title="Order")
+    order: Optional[Union[Activity, Item, str]] = Field(None, title="Order")
     overrideProperties: Optional[OverrideProperty] = Field(None, title="overrideProperties")
-    preamble: Optional[Union[LangString, Text]] = Field(None, title="Preamble")
-    prefLabel: Optional[Text] = Field(None, title="preferred label")
+    preamble: Optional[Union[LangString, str]] = Field(None, title="Preamble")
+    prefLabel: Optional[str] = Field(None, title="preferred label")
     schemaVersion: Optional[str] = Field(None)
     shuffle: Optional[bool] = Field(None, title="Shuffle")
     version: Optional[str] = Field(None)
@@ -138,17 +132,17 @@ class Item(CreativeWork):
     
     about: Optional[str] = Field(None)
     additionalNotesObj: Optional[AdditionalNoteObj] = Field(None, title="additional notes")
-    altLabel: Optional[Text] = Field(None, title="alternate label")
+    altLabel: Optional[str] = Field(None, title="alternate label")
     associatedMedia: Optional[str] = Field(None, title="associatedMedia")
     description: Optional[str] = Field(None)
     image: Optional[str] = Field(None, title="image")
-    inputType: Optional[Text] = Field(None, title="inputType")
+    inputType: Optional[str] = Field(None, title="inputType")
     isPartOf: Optional[Activity] = Field(None)
-    preamble: Optional[Union[LangString, Text]] = Field(None, title="Preamble")
-    prefLabel: Optional[Text] = Field(None, title="preferred label")
+    preamble: Optional[Union[LangString, str]] = Field(None, title="Preamble")
+    prefLabel: Optional[str] = Field(None, title="preferred label")
     question: Optional[str] = Field(None)
     readonlyValue: Optional[str] = Field(None)
-    responseOptions: Optional[Union[ResponseOption, URL]] = Field(None, title="Response options")
+    responseOptions: Optional[Union[ResponseOption, str]] = Field(None, title="Response options")
     schemaVersion: Optional[str] = Field(None)
     version: Optional[str] = Field(None)
     
@@ -162,28 +156,22 @@ class LangString(ConfiguredBaseModel):
 
 class MessageSpecification(ConfiguredBaseModel):
     
-    jsExpression: Optional[Union[Boolean, Text]] = Field(None, title="JavaScript Expression")
-    message: Optional[Union[LangString, Text]] = Field(None, title="Message")
-    
-
-
-class Number(ConfiguredBaseModel):
-    
-    None
+    jsExpression: Optional[Union[bool, str]] = Field(None, title="JavaScript Expression")
+    message: Optional[Union[LangString, str]] = Field(None, title="Message")
     
 
 
 class OverrideProperty(ConfiguredBaseModel):
     
     isAbout: Optional[Union[Activity, Item]] = Field(None, title="isAbout")
-    isVis: Optional[Union[Boolean, Text]] = Field(None, title="visibility")
-    limit: Optional[Text] = Field(None, title="limit")
-    maxRetakes: Optional[Number] = Field(None, title="maxRetakes")
-    prefLabel: Optional[Text] = Field(None, title="preferred label")
-    randomMaxDelay: Optional[Text] = Field(None, title="randomMaxDelay")
-    schedule: Optional[Union[Schedule, Text]] = Field(None, title="Schedule")
+    isVis: Optional[Union[bool, str]] = Field(None, title="visibility")
+    limit: Optional[str] = Field(None, title="limit")
+    maxRetakes: Optional[Decimal] = Field(None, title="maxRetakes")
+    prefLabel: Optional[str] = Field(None, title="preferred label")
+    randomMaxDelay: Optional[str] = Field(None, title="randomMaxDelay")
+    schedule: Optional[Union[Schedule, str]] = Field(None, title="Schedule")
     valueRequired: Optional[str] = Field(None)
-    variableName: Optional[Text] = Field(None, title="variableName")
+    variableName: Optional[str] = Field(None, title="variableName")
     
 
 
@@ -198,16 +186,16 @@ class Protocol(CreativeWork):
     about: Optional[str] = Field(None)
     addProperties: Optional[AdditionalProperty] = Field(None, title="addProperties")
     allow: Optional[Thing] = Field(None, title="allow")
-    altLabel: Optional[Text] = Field(None, title="alternate label")
+    altLabel: Optional[str] = Field(None, title="alternate label")
     associatedMedia: Optional[str] = Field(None, title="associatedMedia")
     compute: Optional[ComputeSpecification] = Field(None, title="computation")
     cronTable: Optional[str] = Field(None, title="cronTable")
     description: Optional[str] = Field(None)
-    landingPage: Optional[Union[Text, URL]] = Field(None, title="Landing page content")
+    landingPage: Optional[str] = Field(None, title="Landing page content")
     messages: Optional[MessageSpecification] = Field(None, title="messages")
-    order: Optional[Union[Activity, Item, URL]] = Field(None, title="Order")
+    order: Optional[Union[Activity, Item, str]] = Field(None, title="Order")
     overrideProperties: Optional[OverrideProperty] = Field(None, title="overrideProperties")
-    prefLabel: Optional[Text] = Field(None, title="preferred label")
+    prefLabel: Optional[str] = Field(None, title="preferred label")
     schemaVersion: Optional[str] = Field(None)
     shuffle: Optional[bool] = Field(None, title="Shuffle")
     version: Optional[str] = Field(None)
@@ -217,7 +205,7 @@ class Protocol(CreativeWork):
 class Response(CreativeWork):
     
     isAbout: Optional[Union[Activity, Item]] = Field(None, title="isAbout")
-    value_from_schema: Optional[Union[Boolean, DontKnow, Number, Skipped, StructuredValue, Text, URL]] = Field(None)
+    value_from_schema: Optional[Union[Decimal, DontKnow, Skipped, StructuredValue, bool, str]] = Field(None)
     wasAttributedTo: Optional[Participant] = Field(None)
     
 
@@ -234,13 +222,13 @@ class ResponseActivity(CreativeWork):
 
 class ResponseOption(ConfiguredBaseModel):
     
-    choices: Optional[Union[Choice, URL]] = Field(None, title="choices")
-    datumType: Optional[Union[Text, URL]] = Field(None, title="datumType")
+    choices: Optional[Union[Choice, str]] = Field(None, title="choices")
+    datumType: Optional[str] = Field(None, title="datumType")
     maxValue: Optional[str] = Field(None)
     minValue: Optional[str] = Field(None)
-    multipleChoice: Optional[Boolean] = Field(None, title="Multiple choice response expectation")
+    multipleChoice: Optional[bool] = Field(None, title="Multiple choice response expectation")
     unitOptions: Optional[UnitOption] = Field(None, title="unitOptions")
-    valueType: Optional[Union[LangString, Text]] = Field(None, title="The type of the response")
+    valueType: Optional[Union[LangString, str]] = Field(None, title="The type of the response")
     
 
 
@@ -269,12 +257,6 @@ class StructuredValue(ConfiguredBaseModel):
     
 
 
-class Text(ConfiguredBaseModel):
-    
-    None
-    
-
-
 class Thing(ConfiguredBaseModel):
     
     None
@@ -287,16 +269,10 @@ class TimedOut(ConfiguredBaseModel):
     
 
 
-class URL(ConfiguredBaseModel):
-    
-    None
-    
-
-
 class UnitOption(ConfiguredBaseModel):
     
-    prefLabel: Optional[Text] = Field(None, title="preferred label")
-    value: Optional[Union[Text, URL]] = Field(None, title="value")
+    prefLabel: Optional[str] = Field(None, title="preferred label")
+    value: Optional[str] = Field(None, title="value")
     
 
 
@@ -309,7 +285,6 @@ Agent.update_forward_refs()
 AllowExport.update_forward_refs()
 AllowReplay.update_forward_refs()
 AutoAdvance.update_forward_refs()
-Boolean.update_forward_refs()
 Choice.update_forward_refs()
 ComputeSpecification.update_forward_refs()
 CreativeWork.update_forward_refs()
@@ -319,7 +294,6 @@ DontKnow.update_forward_refs()
 Item.update_forward_refs()
 LangString.update_forward_refs()
 MessageSpecification.update_forward_refs()
-Number.update_forward_refs()
 OverrideProperty.update_forward_refs()
 Participant.update_forward_refs()
 Protocol.update_forward_refs()
@@ -330,9 +304,7 @@ Schedule.update_forward_refs()
 Skipped.update_forward_refs()
 SoftwareAgent.update_forward_refs()
 StructuredValue.update_forward_refs()
-Text.update_forward_refs()
 Thing.update_forward_refs()
 TimedOut.update_forward_refs()
-URL.update_forward_refs()
 UnitOption.update_forward_refs()
 
