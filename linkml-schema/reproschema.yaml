@@ -26,6 +26,7 @@ slots:
     - An array of objects to describe the various properties added to assessments
       and fields.
     slot_uri: reproschema:addProperties
+    multivalued: true
     any_of:
     - range: AdditionalProperty
   additionalNotesObj:
@@ -41,6 +42,7 @@ slots:
     comments:
     - 'An array of items indicating properties allowed on an activity or protocol '
     slot_uri: reproschema:allow
+    multivalued: true
     any_of:
     - range: Thing
   altLabel:
@@ -59,8 +61,9 @@ slots:
     comments:
     - An array to list the available options for response of the Field/Item item.
     exact_mappings:
-    - itemListElement
+    - schema:itemListElement
     slot_uri: reproschema:choices
+    multivalued: true
     any_of:
     - range: uri
     - range: Choice
@@ -81,6 +84,7 @@ slots:
       that could be performed and not all computations will be scoring. For example,
       one may want to do conversion from one unit to another. '
     slot_uri: reproschema:compute
+    multivalued: true
     any_of:
     - range: ComputeSpecification
   cronTable:
@@ -182,6 +186,7 @@ slots:
     comments:
     - An array of objects to define conditional messages in an activity or protocol.
     slot_uri: reproschema:messages
+    multivalued: true
     any_of:
     - range: MessageSpecification
   minValue:
@@ -201,6 +206,7 @@ slots:
     - An ordered list to describe the order in which the items of an assessment or
       protocol appear in the user interface.
     slot_uri: reproschema:order
+    multivalued: true
     any_of:
     - range: uri
     - range: Activity
@@ -211,6 +217,7 @@ slots:
     - An array of objects to override the various properties added to assessments
       and fields.
     slot_uri: reproschema:overrideProperties
+    multivalued: true
     any_of:
     - range: OverrideProperty
   preamble:
@@ -286,6 +293,7 @@ slots:
     - A list of objects to represent a human displayable name alongside the more formal
       value for units.
     slot_uri: reproschema:unitOptions
+    multivalued: true
     any_of:
     - range: UnitOption
   url:
@@ -297,7 +305,7 @@ slots:
     comments:
     - The value for each option in choices or in additionalNotesObj
     exact_mappings:
-    - value
+    - schema:value
     slot_uri: reproschema:value
     any_of:
     - range: boolean
