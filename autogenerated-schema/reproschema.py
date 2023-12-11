@@ -2,8 +2,7 @@ from __future__ import annotations
 from datetime import datetime, date
 from enum import Enum
 from typing import List, Dict, Optional, Any, Union
-from pydantic import BaseModel as BaseModel, Field
-from linkml_runtime.linkml_model import Decimal
+from pydantic import BaseModel as BaseModel, ConfigDict, Field
 import sys
 if sys.version_info >= (3, 8):
     from typing import Literal
@@ -14,17 +13,13 @@ else:
 metamodel_version = "None"
 version = "None"
 
-class WeakRefShimBaseModel(BaseModel):
-   __slots__ = '__weakref__'
-
-class ConfiguredBaseModel(WeakRefShimBaseModel,
-                validate_assignment = True,
-                validate_all = True,
-                underscore_attrs_are_private = True,
-                extra = 'forbid',
-                arbitrary_types_allowed = True,
-                use_enum_values = True):
-    pass
+class ConfiguredBaseModel(BaseModel):
+    model_config = ConfigDict(
+        validate_assignment=True,
+        validate_default=True,
+        extra = 'forbid',
+        arbitrary_types_allowed=True,
+        use_enum_values = True)
 
 
 class AdditionalNoteObj(ConfiguredBaseModel):
@@ -33,7 +28,6 @@ class AdditionalNoteObj(ConfiguredBaseModel):
     source: Optional[LangString] = Field(None, title="source")
     value: Optional[Union[Decimal, StructuredValue, bool, str]] = Field(None, title="value")
     
-
 
 class AdditionalProperty(ConfiguredBaseModel):
     
@@ -48,30 +42,25 @@ class AdditionalProperty(ConfiguredBaseModel):
     variableName: Optional[str] = Field(None, title="variableName")
     
 
-
 class Agent(ConfiguredBaseModel):
     
     None
     
-
 
 class AllowExport(ConfiguredBaseModel):
     
     None
     
 
-
 class AllowReplay(ConfiguredBaseModel):
     
     None
     
 
-
 class AutoAdvance(ConfiguredBaseModel):
     
     None
     
-
 
 class Choice(ConfiguredBaseModel):
     
@@ -80,34 +69,31 @@ class Choice(ConfiguredBaseModel):
     value_from_schema: Optional[Union[DontKnow, Skipped]] = Field(None)
     
 
-
 class ComputeSpecification(ConfiguredBaseModel):
     
     jsExpression: Optional[Union[bool, str]] = Field(None, title="JavaScript Expression")
     variableName: Optional[str] = Field(None, title="variableName")
     
 
-
 class CreativeWork(ConfiguredBaseModel):
     
     None
     
 
-
 class Activity(CreativeWork):
     
     about: Optional[str] = Field(None)
-    addProperties: Optional[AdditionalProperty] = Field(None, title="addProperties")
-    allow: Optional[Thing] = Field(None, title="allow")
+    addProperties: Optional[List[AdditionalProperty]] = Field(default_factory=list, title="addProperties")
+    allow: Optional[List[Thing]] = Field(default_factory=list, title="allow")
     altLabel: Optional[str] = Field(None, title="alternate label")
     associatedMedia: Optional[str] = Field(None, title="associatedMedia")
     citation: Optional[str] = Field(None)
-    compute: Optional[ComputeSpecification] = Field(None, title="computation")
+    compute: Optional[List[ComputeSpecification]] = Field(default_factory=list, title="computation")
     cronTable: Optional[str] = Field(None, title="cronTable")
     description: Optional[str] = Field(None)
-    messages: Optional[MessageSpecification] = Field(None, title="messages")
-    order: Optional[Union[Activity, Item, str]] = Field(None, title="Order")
-    overrideProperties: Optional[OverrideProperty] = Field(None, title="overrideProperties")
+    messages: Optional[List[MessageSpecification]] = Field(default_factory=list, title="messages")
+    order: Optional[List[Union[Activity, Item, str]]] = Field(default_factory=list, title="Order")
+    overrideProperties: Optional[List[OverrideProperty]] = Field(default_factory=list, title="overrideProperties")
     preamble: Optional[Union[LangString, str]] = Field(None, title="Preamble")
     prefLabel: Optional[str] = Field(None, title="preferred label")
     schemaVersion: Optional[str] = Field(None)
@@ -115,18 +101,15 @@ class Activity(CreativeWork):
     version: Optional[str] = Field(None)
     
 
-
 class DisableBack(ConfiguredBaseModel):
     
     None
     
 
-
 class DontKnow(ConfiguredBaseModel):
     
     None
     
-
 
 class Item(CreativeWork):
     
@@ -147,19 +130,16 @@ class Item(CreativeWork):
     version: Optional[str] = Field(None)
     
 
-
 class LangString(ConfiguredBaseModel):
     
     None
     
-
 
 class MessageSpecification(ConfiguredBaseModel):
     
     jsExpression: Optional[Union[bool, str]] = Field(None, title="JavaScript Expression")
     message: Optional[Union[LangString, str]] = Field(None, title="Message")
     
-
 
 class OverrideProperty(ConfiguredBaseModel):
     
@@ -174,33 +154,30 @@ class OverrideProperty(ConfiguredBaseModel):
     variableName: Optional[str] = Field(None, title="variableName")
     
 
-
 class Participant(Agent):
     
     subject_id: Optional[str] = Field(None)
     
 
-
 class Protocol(CreativeWork):
     
     about: Optional[str] = Field(None)
-    addProperties: Optional[AdditionalProperty] = Field(None, title="addProperties")
-    allow: Optional[Thing] = Field(None, title="allow")
+    addProperties: Optional[List[AdditionalProperty]] = Field(default_factory=list, title="addProperties")
+    allow: Optional[List[Thing]] = Field(default_factory=list, title="allow")
     altLabel: Optional[str] = Field(None, title="alternate label")
     associatedMedia: Optional[str] = Field(None, title="associatedMedia")
-    compute: Optional[ComputeSpecification] = Field(None, title="computation")
+    compute: Optional[List[ComputeSpecification]] = Field(default_factory=list, title="computation")
     cronTable: Optional[str] = Field(None, title="cronTable")
     description: Optional[str] = Field(None)
     landingPage: Optional[str] = Field(None, title="Landing page content")
-    messages: Optional[MessageSpecification] = Field(None, title="messages")
-    order: Optional[Union[Activity, Item, str]] = Field(None, title="Order")
-    overrideProperties: Optional[OverrideProperty] = Field(None, title="overrideProperties")
+    messages: Optional[List[MessageSpecification]] = Field(default_factory=list, title="messages")
+    order: Optional[List[Union[Activity, Item, str]]] = Field(default_factory=list, title="Order")
+    overrideProperties: Optional[List[OverrideProperty]] = Field(default_factory=list, title="overrideProperties")
     prefLabel: Optional[str] = Field(None, title="preferred label")
     schemaVersion: Optional[str] = Field(None)
     shuffle: Optional[bool] = Field(None, title="Shuffle")
     version: Optional[str] = Field(None)
     
-
 
 class Response(CreativeWork):
     
@@ -208,7 +185,6 @@ class Response(CreativeWork):
     value_from_schema: Optional[Union[Decimal, DontKnow, Skipped, StructuredValue, bool, str]] = Field(None)
     wasAttributedTo: Optional[Participant] = Field(None)
     
-
 
 class ResponseActivity(CreativeWork):
     
@@ -219,30 +195,26 @@ class ResponseActivity(CreativeWork):
     used: Optional[str] = Field(None)
     
 
-
 class ResponseOption(ConfiguredBaseModel):
     
-    choices: Optional[Union[Choice, str]] = Field(None, title="choices")
+    choices: Optional[List[Union[Choice, str]]] = Field(default_factory=list, title="choices")
     datumType: Optional[str] = Field(None, title="datumType")
     maxValue: Optional[str] = Field(None)
     minValue: Optional[str] = Field(None)
     multipleChoice: Optional[bool] = Field(None, title="Multiple choice response expectation")
-    unitOptions: Optional[UnitOption] = Field(None, title="unitOptions")
+    unitOptions: Optional[List[UnitOption]] = Field(default_factory=list, title="unitOptions")
     valueType: Optional[Union[LangString, str]] = Field(None, title="The type of the response")
     
-
 
 class Schedule(ConfiguredBaseModel):
     
     None
     
 
-
 class Skipped(ConfiguredBaseModel):
     
     None
     
-
 
 class SoftwareAgent(ConfiguredBaseModel):
     
@@ -250,24 +222,20 @@ class SoftwareAgent(ConfiguredBaseModel):
     url: Optional[str] = Field(None)
     
 
-
 class StructuredValue(ConfiguredBaseModel):
     
     None
     
-
 
 class Thing(ConfiguredBaseModel):
     
     None
     
 
-
 class TimedOut(ConfiguredBaseModel):
     
     None
     
-
 
 class UnitOption(ConfiguredBaseModel):
     
@@ -276,35 +244,34 @@ class UnitOption(ConfiguredBaseModel):
     
 
 
-
-# Update forward refs
-# see https://pydantic-docs.helpmanual.io/usage/postponed_annotations/
-AdditionalNoteObj.update_forward_refs()
-AdditionalProperty.update_forward_refs()
-Agent.update_forward_refs()
-AllowExport.update_forward_refs()
-AllowReplay.update_forward_refs()
-AutoAdvance.update_forward_refs()
-Choice.update_forward_refs()
-ComputeSpecification.update_forward_refs()
-CreativeWork.update_forward_refs()
-Activity.update_forward_refs()
-DisableBack.update_forward_refs()
-DontKnow.update_forward_refs()
-Item.update_forward_refs()
-LangString.update_forward_refs()
-MessageSpecification.update_forward_refs()
-OverrideProperty.update_forward_refs()
-Participant.update_forward_refs()
-Protocol.update_forward_refs()
-Response.update_forward_refs()
-ResponseActivity.update_forward_refs()
-ResponseOption.update_forward_refs()
-Schedule.update_forward_refs()
-Skipped.update_forward_refs()
-SoftwareAgent.update_forward_refs()
-StructuredValue.update_forward_refs()
-Thing.update_forward_refs()
-TimedOut.update_forward_refs()
-UnitOption.update_forward_refs()
+# Model rebuild
+# see https://pydantic-docs.helpmanual.io/usage/models/#rebuilding-a-model
+AdditionalNoteObj.model_rebuild()
+AdditionalProperty.model_rebuild()
+Agent.model_rebuild()
+AllowExport.model_rebuild()
+AllowReplay.model_rebuild()
+AutoAdvance.model_rebuild()
+Choice.model_rebuild()
+ComputeSpecification.model_rebuild()
+CreativeWork.model_rebuild()
+Activity.model_rebuild()
+DisableBack.model_rebuild()
+DontKnow.model_rebuild()
+Item.model_rebuild()
+LangString.model_rebuild()
+MessageSpecification.model_rebuild()
+OverrideProperty.model_rebuild()
+Participant.model_rebuild()
+Protocol.model_rebuild()
+Response.model_rebuild()
+ResponseActivity.model_rebuild()
+ResponseOption.model_rebuild()
+Schedule.model_rebuild()
+Skipped.model_rebuild()
+SoftwareAgent.model_rebuild()
+StructuredValue.model_rebuild()
+Thing.model_rebuild()
+TimedOut.model_rebuild()
+UnitOption.model_rebuild()
 

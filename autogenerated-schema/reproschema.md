@@ -2,17 +2,17 @@
 erDiagram
 Activity {
     string about  
-    string addProperties  
-    string allow  
+    stringList addProperties  
+    stringList allow  
     string altLabel  
     string associatedMedia  
     string citation  
-    string compute  
+    stringList compute  
     string cronTable  
     string description  
-    string messages  
-    string order  
-    string overrideProperties  
+    stringList messages  
+    stringList order  
+    stringList overrideProperties  
     string preamble  
     string prefLabel  
     string schemaVersion  
@@ -105,17 +105,17 @@ Participant {
 }
 Protocol {
     string about  
-    string addProperties  
-    string allow  
+    stringList addProperties  
+    stringList allow  
     string altLabel  
     string associatedMedia  
-    string compute  
+    stringList compute  
     string cronTable  
     string description  
     string landingPage  
-    string messages  
-    string order  
-    string overrideProperties  
+    stringList messages  
+    stringList order  
+    stringList overrideProperties  
     string prefLabel  
     string schemaVersion  
     string shuffle  
@@ -133,12 +133,12 @@ ResponseActivity {
     string used  
 }
 ResponseOption {
-    string choices  
+    stringList choices  
     string datumType  
     string maxValue  
     string minValue  
     string multipleChoice  
-    string unitOptions  
+    stringList unitOptions  
     string valueType  
 }
 Schedule {

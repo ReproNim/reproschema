@@ -8,20 +8,26 @@
                     "type": "string"
                 },
                 "addProperties": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/AdditionalProperty"
-                        }
-                    ],
-                    "type": "string"
+                    "items": {
+                        "anyOf": [
+                            {
+                                "$ref": "#/$defs/AdditionalProperty"
+                            }
+                        ],
+                        "type": "string"
+                    },
+                    "type": "array"
                 },
                 "allow": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/Thing"
-                        }
-                    ],
-                    "type": "string"
+                    "items": {
+                        "anyOf": [
+                            {
+                                "$ref": "#/$defs/Thing"
+                            }
+                        ],
+                        "type": "string"
+                    },
+                    "type": "array"
                 },
                 "altLabel": {
                     "type": "string"
@@ -33,12 +39,15 @@
                     "type": "string"
                 },
                 "compute": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/ComputeSpecification"
-                        }
-                    ],
-                    "type": "string"
+                    "items": {
+                        "anyOf": [
+                            {
+                                "$ref": "#/$defs/ComputeSpecification"
+                            }
+                        ],
+                        "type": "string"
+                    },
+                    "type": "array"
                 },
                 "cronTable": {
                     "type": "string"
@@ -47,34 +56,43 @@
                     "type": "string"
                 },
                 "messages": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/MessageSpecification"
-                        }
-                    ],
-                    "type": "string"
+                    "items": {
+                        "anyOf": [
+                            {
+                                "$ref": "#/$defs/MessageSpecification"
+                            }
+                        ],
+                        "type": "string"
+                    },
+                    "type": "array"
                 },
                 "order": {
-                    "anyOf": [
-                        {
-                            "type": "string"
-                        },
-                        {
-                            "$ref": "#/$defs/Activity"
-                        },
-                        {
-                            "$ref": "#/$defs/Item"
-                        }
-                    ],
-                    "type": "string"
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "$ref": "#/$defs/Activity"
+                            },
+                            {
+                                "$ref": "#/$defs/Item"
+                            }
+                        ],
+                        "type": "string"
+                    },
+                    "type": "array"
                 },
                 "overrideProperties": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/OverrideProperty"
-                        }
-                    ],
-                    "type": "string"
+                    "items": {
+                        "anyOf": [
+                            {
+                                "$ref": "#/$defs/OverrideProperty"
+                            }
+                        ],
+                        "type": "string"
+                    },
+                    "type": "array"
                 },
                 "preamble": {
                     "anyOf": [
@@ -503,20 +521,26 @@
                     "type": "string"
                 },
                 "addProperties": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/AdditionalProperty"
-                        }
-                    ],
-                    "type": "string"
+                    "items": {
+                        "anyOf": [
+                            {
+                                "$ref": "#/$defs/AdditionalProperty"
+                            }
+                        ],
+                        "type": "string"
+                    },
+                    "type": "array"
                 },
                 "allow": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/Thing"
-                        }
-                    ],
-                    "type": "string"
+                    "items": {
+                        "anyOf": [
+                            {
+                                "$ref": "#/$defs/Thing"
+                            }
+                        ],
+                        "type": "string"
+                    },
+                    "type": "array"
                 },
                 "altLabel": {
                     "type": "string"
@@ -525,12 +549,15 @@
                     "type": "string"
                 },
                 "compute": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/ComputeSpecification"
-                        }
-                    ],
-                    "type": "string"
+                    "items": {
+                        "anyOf": [
+                            {
+                                "$ref": "#/$defs/ComputeSpecification"
+                            }
+                        ],
+                        "type": "string"
+                    },
+                    "type": "array"
                 },
                 "cronTable": {
                     "type": "string"
@@ -550,34 +577,43 @@
                     "type": "string"
                 },
                 "messages": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/MessageSpecification"
-                        }
-                    ],
-                    "type": "string"
+                    "items": {
+                        "anyOf": [
+                            {
+                                "$ref": "#/$defs/MessageSpecification"
+                            }
+                        ],
+                        "type": "string"
+                    },
+                    "type": "array"
                 },
                 "order": {
-                    "anyOf": [
-                        {
-                            "type": "string"
-                        },
-                        {
-                            "$ref": "#/$defs/Activity"
-                        },
-                        {
-                            "$ref": "#/$defs/Item"
-                        }
-                    ],
-                    "type": "string"
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "$ref": "#/$defs/Activity"
+                            },
+                            {
+                                "$ref": "#/$defs/Item"
+                            }
+                        ],
+                        "type": "string"
+                    },
+                    "type": "array"
                 },
                 "overrideProperties": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/OverrideProperty"
-                        }
-                    ],
-                    "type": "string"
+                    "items": {
+                        "anyOf": [
+                            {
+                                "$ref": "#/$defs/OverrideProperty"
+                            }
+                        ],
+                        "type": "string"
+                    },
+                    "type": "array"
                 },
                 "prefLabel": {
                     "type": "string"
@@ -676,15 +712,18 @@
             "description": "",
             "properties": {
                 "choices": {
-                    "anyOf": [
-                        {
-                            "type": "string"
-                        },
-                        {
-                            "$ref": "#/$defs/Choice"
-                        }
-                    ],
-                    "type": "string"
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "$ref": "#/$defs/Choice"
+                            }
+                        ],
+                        "type": "string"
+                    },
+                    "type": "array"
                 },
                 "datumType": {
                     "anyOf": [
@@ -712,12 +751,15 @@
                     "type": "string"
                 },
                 "unitOptions": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/UnitOption"
-                        }
-                    ],
-                    "type": "string"
+                    "items": {
+                        "anyOf": [
+                            {
+                                "$ref": "#/$defs/UnitOption"
+                            }
+                        ],
+                        "type": "string"
+                    },
+                    "type": "array"
                 },
                 "valueType": {
                     "anyOf": [
