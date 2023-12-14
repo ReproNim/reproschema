@@ -1,0 +1,853 @@
+{
+    "$defs": {
+        "Activity": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "about": {
+                    "type": "string"
+                },
+                "addProperties": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "$ref": "#/$defs/AdditionalProperty"
+                            }
+                        ],
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "allow": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "$ref": "#/$defs/Thing"
+                            }
+                        ],
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "altLabel": {
+                    "type": "string"
+                },
+                "associatedMedia": {
+                    "type": "string"
+                },
+                "citation": {
+                    "type": "string"
+                },
+                "compute": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "$ref": "#/$defs/ComputeSpecification"
+                            }
+                        ],
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "cronTable": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "messages": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "$ref": "#/$defs/MessageSpecification"
+                            }
+                        ],
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "order": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "$ref": "#/$defs/Activity"
+                            },
+                            {
+                                "$ref": "#/$defs/Field"
+                            }
+                        ],
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "overrideProperties": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "$ref": "#/$defs/OverrideProperty"
+                            }
+                        ],
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "preamble": {
+                    "anyOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "$ref": "#/$defs/LangString"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "prefLabel": {
+                    "type": "string"
+                },
+                "schemaVersion": {
+                    "type": "string"
+                },
+                "shuffle": {
+                    "anyOf": [
+                        {
+                            "type": "boolean"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "version": {
+                    "type": "string"
+                }
+            },
+            "title": "Activity",
+            "type": "object"
+        },
+        "AdditionalNoteObj": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "column": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/LangString"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "source": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/LangString"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "value": {
+                    "anyOf": [
+                        {
+                            "type": "boolean"
+                        },
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "$ref": "#/$defs/StructuredValue"
+                        },
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ],
+                    "type": "string"
+                }
+            },
+            "title": "AdditionalNoteObj",
+            "type": "object"
+        },
+        "AdditionalProperty": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "isAbout": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Activity"
+                        },
+                        {
+                            "$ref": "#/$defs/Field"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "isVis": {
+                    "anyOf": [
+                        {
+                            "type": "boolean"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "limit": {
+                    "type": "string"
+                },
+                "maxRetakes": {
+                    "anyOf": [
+                        {
+                            "type": "number"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "prefLabel": {
+                    "type": "string"
+                },
+                "randomMaxDelay": {
+                    "type": "string"
+                },
+                "schedule": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Schedule"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "valueRequired": {
+                    "type": "string"
+                },
+                "variableName": {
+                    "type": "string"
+                }
+            },
+            "title": "AdditionalProperty",
+            "type": "object"
+        },
+        "Agent": {
+            "additionalProperties": false,
+            "description": "",
+            "title": "Agent",
+            "type": "object"
+        },
+        "AllowExport": {
+            "additionalProperties": false,
+            "description": "",
+            "title": "AllowExport",
+            "type": "object"
+        },
+        "AllowReplay": {
+            "additionalProperties": false,
+            "description": "",
+            "title": "AllowReplay",
+            "type": "object"
+        },
+        "AutoAdvance": {
+            "additionalProperties": false,
+            "description": "",
+            "title": "AutoAdvance",
+            "type": "object"
+        },
+        "Choice": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "image": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "value_from_schema": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Skipped"
+                        },
+                        {
+                            "$ref": "#/$defs/DontKnow"
+                        }
+                    ],
+                    "type": "string"
+                }
+            },
+            "title": "Choice",
+            "type": "object"
+        },
+        "ComputeSpecification": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "jsExpression": {
+                    "anyOf": [
+                        {
+                            "type": "boolean"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "variableName": {
+                    "type": "string"
+                }
+            },
+            "title": "ComputeSpecification",
+            "type": "object"
+        },
+        "CreativeWork": {
+            "additionalProperties": false,
+            "description": "",
+            "title": "CreativeWork",
+            "type": "object"
+        },
+        "DisableBack": {
+            "additionalProperties": false,
+            "description": "",
+            "title": "DisableBack",
+            "type": "object"
+        },
+        "DontKnow": {
+            "additionalProperties": false,
+            "description": "",
+            "title": "DontKnow",
+            "type": "object"
+        },
+        "Field": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "about": {
+                    "type": "string"
+                },
+                "additionalNotesObj": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/AdditionalNoteObj"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "altLabel": {
+                    "type": "string"
+                },
+                "associatedMedia": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "image": {
+                    "type": "string"
+                },
+                "inputType": {
+                    "type": "string"
+                },
+                "isPartOf": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Activity"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "preamble": {
+                    "anyOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "$ref": "#/$defs/LangString"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "prefLabel": {
+                    "type": "string"
+                },
+                "question": {
+                    "type": "string"
+                },
+                "readonlyValue": {
+                    "type": "string"
+                },
+                "responseOptions": {
+                    "anyOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "$ref": "#/$defs/ResponseOption"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "schemaVersion": {
+                    "type": "string"
+                },
+                "version": {
+                    "type": "string"
+                }
+            },
+            "title": "Field",
+            "type": "object"
+        },
+        "LangString": {
+            "additionalProperties": false,
+            "description": "",
+            "title": "LangString",
+            "type": "object"
+        },
+        "MessageSpecification": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "jsExpression": {
+                    "anyOf": [
+                        {
+                            "type": "boolean"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "message": {
+                    "anyOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "$ref": "#/$defs/LangString"
+                        }
+                    ],
+                    "type": "string"
+                }
+            },
+            "title": "MessageSpecification",
+            "type": "object"
+        },
+        "OverrideProperty": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "isAbout": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Activity"
+                        },
+                        {
+                            "$ref": "#/$defs/Field"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "isVis": {
+                    "anyOf": [
+                        {
+                            "type": "boolean"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "limit": {
+                    "type": "string"
+                },
+                "maxRetakes": {
+                    "anyOf": [
+                        {
+                            "type": "number"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "prefLabel": {
+                    "type": "string"
+                },
+                "randomMaxDelay": {
+                    "type": "string"
+                },
+                "schedule": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Schedule"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "valueRequired": {
+                    "type": "string"
+                },
+                "variableName": {
+                    "type": "string"
+                }
+            },
+            "title": "OverrideProperty",
+            "type": "object"
+        },
+        "Participant": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "subject_id": {
+                    "type": "string"
+                }
+            },
+            "title": "Participant",
+            "type": "object"
+        },
+        "Protocol": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "about": {
+                    "type": "string"
+                },
+                "addProperties": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "$ref": "#/$defs/AdditionalProperty"
+                            }
+                        ],
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "allow": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "$ref": "#/$defs/Thing"
+                            }
+                        ],
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "altLabel": {
+                    "type": "string"
+                },
+                "associatedMedia": {
+                    "type": "string"
+                },
+                "compute": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "$ref": "#/$defs/ComputeSpecification"
+                            }
+                        ],
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "cronTable": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "landingPage": {
+                    "anyOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "messages": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "$ref": "#/$defs/MessageSpecification"
+                            }
+                        ],
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "order": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "$ref": "#/$defs/Activity"
+                            },
+                            {
+                                "$ref": "#/$defs/Field"
+                            }
+                        ],
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "overrideProperties": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "$ref": "#/$defs/OverrideProperty"
+                            }
+                        ],
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "prefLabel": {
+                    "type": "string"
+                },
+                "schemaVersion": {
+                    "type": "string"
+                },
+                "shuffle": {
+                    "anyOf": [
+                        {
+                            "type": "boolean"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "version": {
+                    "type": "string"
+                }
+            },
+            "title": "Protocol",
+            "type": "object"
+        },
+        "Response": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "isAbout": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Activity"
+                        },
+                        {
+                            "$ref": "#/$defs/Field"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "value_from_schema": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Skipped"
+                        },
+                        {
+                            "$ref": "#/$defs/DontKnow"
+                        },
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "boolean"
+                        },
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "$ref": "#/$defs/StructuredValue"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "wasAttributedTo": {
+                    "$ref": "#/$defs/Participant"
+                }
+            },
+            "title": "Response",
+            "type": "object"
+        },
+        "ResponseActivity": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "endedAtTime": {
+                    "type": "string"
+                },
+                "generated": {
+                    "type": "string"
+                },
+                "inLanguage": {
+                    "type": "string"
+                },
+                "startedAtTime": {
+                    "type": "string"
+                },
+                "used": {
+                    "type": "string"
+                }
+            },
+            "title": "ResponseActivity",
+            "type": "object"
+        },
+        "ResponseOption": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "choices": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "$ref": "#/$defs/Choice"
+                            }
+                        ],
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "datumType": {
+                    "anyOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "maxValue": {
+                    "type": "string"
+                },
+                "minValue": {
+                    "type": "string"
+                },
+                "multipleChoice": {
+                    "anyOf": [
+                        {
+                            "type": "boolean"
+                        }
+                    ],
+                    "type": "string"
+                },
+                "unitOptions": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "$ref": "#/$defs/UnitOption"
+                            }
+                        ],
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "valueType": {
+                    "anyOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "$ref": "#/$defs/LangString"
+                        }
+                    ],
+                    "type": "string"
+                }
+            },
+            "title": "ResponseOption",
+            "type": "object"
+        },
+        "Schedule": {
+            "additionalProperties": false,
+            "description": "",
+            "title": "Schedule",
+            "type": "object"
+        },
+        "Skipped": {
+            "additionalProperties": false,
+            "description": "",
+            "title": "Skipped",
+            "type": "object"
+        },
+        "SoftwareAgent": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "url": {
+                    "type": "string"
+                },
+                "version": {
+                    "type": "string"
+                }
+            },
+            "title": "SoftwareAgent",
+            "type": "object"
+        },
+        "StructuredValue": {
+            "additionalProperties": false,
+            "description": "",
+            "title": "StructuredValue",
+            "type": "object"
+        },
+        "Thing": {
+            "additionalProperties": false,
+            "description": "",
+            "title": "Thing",
+            "type": "object"
+        },
+        "TimedOut": {
+            "additionalProperties": false,
+            "description": "",
+            "title": "TimedOut",
+            "type": "object"
+        },
+        "UnitOption": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "prefLabel": {
+                    "type": "string"
+                },
+                "value": {
+                    "anyOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ],
+                    "type": "string"
+                }
+            },
+            "title": "UnitOption",
+            "type": "object"
+        }
+    },
+    "$id": "http://example.org/example",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "additionalProperties": true,
+    "metamodel_version": "1.7.0",
+    "title": "reproschema",
+    "type": "object",
+    "version": null
+}
