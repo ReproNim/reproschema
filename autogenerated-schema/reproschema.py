@@ -31,7 +31,7 @@ class AdditionalNoteObj(ConfiguredBaseModel):
 
 class AdditionalProperty(ConfiguredBaseModel):
     
-    isAbout: Optional[Union[Activity, Item]] = Field(None, title="isAbout")
+    isAbout: Optional[Union[Activity, Field]] = Field(None, title="isAbout")
     isVis: Optional[Union[bool, str]] = Field(None, title="visibility")
     limit: Optional[str] = Field(None, title="limit")
     maxRetakes: Optional[Decimal] = Field(None, title="maxRetakes")
@@ -92,7 +92,7 @@ class Activity(CreativeWork):
     cronTable: Optional[str] = Field(None, title="cronTable")
     description: Optional[str] = Field(None)
     messages: Optional[List[MessageSpecification]] = Field(default_factory=list, title="messages")
-    order: Optional[List[Union[Activity, Item, str]]] = Field(default_factory=list, title="Order")
+    order: Optional[List[Union[Activity, Field, str]]] = Field(default_factory=list, title="Order")
     overrideProperties: Optional[List[OverrideProperty]] = Field(default_factory=list, title="overrideProperties")
     preamble: Optional[Union[LangString, str]] = Field(None, title="Preamble")
     prefLabel: Optional[str] = Field(None, title="preferred label")
@@ -111,7 +111,7 @@ class DontKnow(ConfiguredBaseModel):
     None
     
 
-class Item(CreativeWork):
+class Field(CreativeWork):
     
     about: Optional[str] = Field(None)
     additionalNotesObj: Optional[AdditionalNoteObj] = Field(None, title="additional notes")
@@ -143,7 +143,7 @@ class MessageSpecification(ConfiguredBaseModel):
 
 class OverrideProperty(ConfiguredBaseModel):
     
-    isAbout: Optional[Union[Activity, Item]] = Field(None, title="isAbout")
+    isAbout: Optional[Union[Activity, Field]] = Field(None, title="isAbout")
     isVis: Optional[Union[bool, str]] = Field(None, title="visibility")
     limit: Optional[str] = Field(None, title="limit")
     maxRetakes: Optional[Decimal] = Field(None, title="maxRetakes")
@@ -171,7 +171,7 @@ class Protocol(CreativeWork):
     description: Optional[str] = Field(None)
     landingPage: Optional[str] = Field(None, title="Landing page content")
     messages: Optional[List[MessageSpecification]] = Field(default_factory=list, title="messages")
-    order: Optional[List[Union[Activity, Item, str]]] = Field(default_factory=list, title="Order")
+    order: Optional[List[Union[Activity, Field, str]]] = Field(default_factory=list, title="Order")
     overrideProperties: Optional[List[OverrideProperty]] = Field(default_factory=list, title="overrideProperties")
     prefLabel: Optional[str] = Field(None, title="preferred label")
     schemaVersion: Optional[str] = Field(None)
@@ -181,7 +181,7 @@ class Protocol(CreativeWork):
 
 class Response(CreativeWork):
     
-    isAbout: Optional[Union[Activity, Item]] = Field(None, title="isAbout")
+    isAbout: Optional[Union[Activity, Field]] = Field(None, title="isAbout")
     value_from_schema: Optional[Union[Decimal, DontKnow, Skipped, StructuredValue, bool, str]] = Field(None)
     wasAttributedTo: Optional[Participant] = Field(None)
     
@@ -258,7 +258,7 @@ CreativeWork.model_rebuild()
 Activity.model_rebuild()
 DisableBack.model_rebuild()
 DontKnow.model_rebuild()
-Item.model_rebuild()
+Field.model_rebuild()
 LangString.model_rebuild()
 MessageSpecification.model_rebuild()
 OverrideProperty.model_rebuild()
