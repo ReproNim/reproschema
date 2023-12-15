@@ -60,7 +60,7 @@ by the work of [CEDAR Metadata Model](https://more.metadatacenter.org/tools-trai
 
 In this project we provide a comprehensive set of tools to create and use the
 schemas, while tracking the source of the schema, and changes to it over time.
-The Reproschema project covers:
+The ReproSchema project covers:
 
 1. a schema that can be found [in the present repository](https://github.com/ReproNim/reproschema)
 that describes the content and relations of the different elements of a
@@ -73,7 +73,7 @@ questionnaire and collect data locally,
 5. a [backend server](https://github.com/sensein/voice-backend) to capture the
 data remotely.
 
-In brief, Reproschema offers a way to standardize the underlying representation
+In brief, ReproSchema offers a way to standardize the underlying representation
 of assessment tools. It comes with an open and accessible library of questionnaires
 with appropriate conversion (e.g., from/to [RedCap](https://www.project-redcap.org/))
 and data collection tools (e.g., [MindLogger](https://mindlogger.org/),
@@ -112,7 +112,7 @@ and 3 `items`.
     └── protocol1_schema.jsonld
 ```
 
-The Reproschema can also easily and flexibly specify details how the schema
+The ReproSchema can also easily and flexibly specify details how the schema
 for an assessment should be used. Independently of what solution is chosen in the
 end by a researcher, a lab, or an institute to display the assessment to their
 participants or patients (for example whether using an Web-app written in javascript
@@ -125,9 +125,9 @@ displayed to the user and under which conditions,
 - the `compute logic` of how the total score to the responses on a questionnaire
 should be computed
 
-The Reproschema also allows for internationalization and multiple languages support
+The ReproSchema also allows for internationalization and multiple languages support
 by making it very easy to keep everything the same 
 except the language displayed by the user interface.
 
-Finally Reproschema allows tracking of variations and version of different assessments
+Finally ReproSchema allows tracking of variations and version of different assessments
 tools (e.g., PHQ-9, PHQ-8).

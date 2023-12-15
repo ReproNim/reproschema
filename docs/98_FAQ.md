@@ -134,27 +134,27 @@ directly into the [JSON-LD playground](https://json-ld.org/playground/) to see w
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UmvWk_TQ30A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-## Why is linked data important for the Reproschema ?
+## Why is linked data important for the ReproSchema ?
 
 ## Which assessments tools will/are supporting this standard?
 
-At the moment, all the assessments that support this standard are listed in [this folder](https://github.com/ReproNim/reproschema-library/tree/master/activities) or the [Reproschema-library repository](https://github.com/ReproNim/reproschema-library).
+At the moment, all the assessments that support this standard are listed in [this folder](https://github.com/ReproNim/reproschema-library/tree/master/activities) or the [reproschema-library repository](https://github.com/ReproNim/reproschema-library).
 
 If you want to see those different tools in action using our user interface, you can explore them on [schema.repronim.org/](https://schema.repronim.org/rl/).
 
-The Reproschema is also used to develop a checklist to [improve methods and results reporting in neuroimaging](https://github.com/ohbm/cobidas).
+The ReproSchema is also used to develop a checklist to [improve methods and results reporting in neuroimaging](https://github.com/ohbm/cobidas).
 
 **🛠 Work in progress 🛠**
 
-## Why should I use Reproschema?
+## Why should I use ReproSchema?
 
 **🛠 Work in progress 🛠**
 
-## Who is Reproschema for?
+## Who is ReproSchema for?
 
 **🛠 Work in progress 🛠**
 
-## How can I know if a certain property is supported by Reproschema?
+## How can I know if a certain property is supported by ReproSchema?
 
 **🛠 Work in progress 🛠**
 
@@ -170,13 +170,13 @@ The Reproschema is also used to develop a checklist to [improve methods and resu
 
 **🛠 Work in progress 🛠**
 
-## An assessment tool I regularly use is not supported by Reproschema: how can I add it?
+## An assessment tool I regularly use is not supported by ReproSchema: how can I add it?
 
 **🛠 Work in progress 🛠**
 
 ## How can I visualize the schema for a `protocol` or an `activity`?
 
-If you want to see what the assessment that are already supported by the Reproschema would look like using our Reproschema user-interface, you can visualize them directly on [schema.repronim.org](https://schema.repronim.org/rl).
+If you want to see what the assessment that are already supported by the ReproSchema would look like using our ReproSchema user-interface, you can visualize them directly on [schema.repronim.org](https://schema.repronim.org/rl).
 
 If you just want to view a protocol or activity you are developing using the `reproschema-ui`, you can pass the URL of the schema to the `url` query parameter like this:
 
