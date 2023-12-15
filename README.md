@@ -9,7 +9,7 @@ To see the documentation concerning the ReproNim schema specification [click her
 
 This repository contains:
 
--   the [different terms of the Reproschema](./terms)
+-   the [different terms of the ReproSchema](./terms)
 -   the [corresponding context files](./contexts)
 -   a example of [a protocol based on the reproschema](./examples)
 -   the [validation SHACL files](./validation)
