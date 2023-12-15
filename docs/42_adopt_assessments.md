@@ -1,4 +1,4 @@
-# Integrating Assessments from the reproschema-library 
+# Adopting Assessments from the reproschema-library 
 
 This part focuses on how to select and integrate assessments from the reproschema-library into your research protocol, an essential step in crafting a comprehensive study. The chosen assessments are to be placed in the `activities` folder within your repository. This folder serves as the central hub for various assessments or activities that collectively form your research protocol.
 
