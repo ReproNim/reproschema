@@ -123,7 +123,7 @@ Different from `demograpgics`, `psychological_questionnaire_schema` combines ass
     ```
 
     In the addProperties section, we define each variable that corresponds to a specific assessment. For instance:
-    - "variableName": "phq-9" is linked to "isAbout": "activities:PHQ-9/PHQ9_schema". This implies that the PHQ-9 schema (an assessment for depressive symptoms) from the reproschema-library is used in the current psychological questionnaire schema.
+    - `"variableName": "phq-9"` is linked to `"isAbout": "activities:PHQ-9/PHQ9_schema"`. This implies that the PHQ-9 schema (an assessment for depressive symptoms) from the reproschema-library is used in the current psychological questionnaire schema.
     - Similarly, other assessments like GAD-7 and PC-PTSD-5 are included using their respective variable names and links to their schemas in the activities context.
     - Additional variables related to clinical history in psychiatry are linked using the demo context, pointing to specific items within the demographics and background information section of the reproschema-library.
         ```javascript
@@ -133,4 +133,4 @@ Different from `demograpgics`, `psychological_questionnaire_schema` combines ass
         }
         ```
     - The `order` array specifies the sequence in which these assessments will appear in the questionnaire, ensuring a logical flow for participants.
-    - The `shuffle`` setting is `false`, maintaining the defined order, and allow includes functionalities like auto-advance between assessments and data export.
+    - The `shuffle` setting is `false`, maintaining the defined order, and allow includes functionalities like auto-advance between assessments and data export.

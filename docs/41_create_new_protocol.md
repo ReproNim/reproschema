@@ -19,4 +19,4 @@ Once you run the Cookiecutter command, you will be prompted to make choices for 
 
 The inclusion of activity choices aims to provide users with a practical understanding of how activities are structured within ReproSchema protocols. Whether you use these as a starting point or prefer to create your own from the ground up, these templates are there to guide you in structuring your research protocol effectively.
 
-We provide more detailed instructions for customizing your protocol in the following pages.
+We provide more detailed instructions for customizing your protocol in the following pages using [reproschema-demo-protocol](https://github.com/ReproNim/reproschema-demo-protocol) as an example.
