@@ -4,9 +4,9 @@ This part focuses on how to select and integrate assessments from the reproschem
 
 Each activity or assessment within this `activities` folder is typically structured around a file named with a suffix `_schema`. This file defines the overall framework of the assessment. Accompanying this, if an assessment comprises specific questions, these are organized in a subfolder titled `items` within the respective activity's directory. It's important to note that if an assessment is directly taken from the ReproSchema-library without any customization, the creation of an `items` subfolder is not necessary, as the itemized questions are predefined in the library.
 
-To illustrate this process, we will use two specific types of assessments from the ReproSchema-library: `demographics` and `psychological questions`. The latter represents a composite assessment created from multiple pre-existing assessments within the library. This example demonstrates how to combine different elements from the library to construct a bespoke assessment tailored to the unique demands of your research protocol.
+To illustrate this process, we will use two specific types of assessments from [reproschema-library](https://github.com/ReproNim/reproschema-library): `demographics` and `psychological questions`. The latter represents a composite assessment created from multiple pre-existing assessments within the library. This example demonstrates how to combine different elements from the library to construct a bespoke assessment tailored to the unique demands of your research protocol.
 
-## Step 1: Understand the structure of a *_schema file throught this exemplar file 
+## Step 1: Understand the structure of a *_schema file throught this [exemplar file](https://github.com/ReproNim/reproschema-protocol-cookiecutter/blob/main/%7B%7Bcookiecutter.protocol_name%7D%7D/activities/Activity1/activity1_schema) 
 1. **Context (@context)**: This field provides references to the context definitions. In this schema, it links to the generic context of ReproSchema and the specific context for the items in the repository, defined by the URL with the "rl" key. This context helps to interpret the terms used within the schema.
 2. **Type (@type)**: Defined as "reproschema:Activity," this indicates the nature of the document, specifying that it is an activity within the ReproSchema framework.
 3. **Identifier (@id)**: The unique identifier for this specific schema is "activity1_schema." This ID uniquely distinguishes this activity from others in the repository.
@@ -43,9 +43,11 @@ This step involves precise modifications, particularly in the `@context` and `ad
     The `"variableName": "year_of_birth"` is where you specify the variable as the participant's year of birth.
     The `"isAbout": "demo:year_of_birth"` part establishes a link to the detailed structure of this item in the ReproSchema-library. The "demo:" prefix references the additional context you've added, guiding the schema to the correct location for the structure and details of the "year_of_birth" item.
 
+See the outcome file [here](https://github.com/ReproNim/reproschema-demo-protocol/blob/main/activities/1_demographics/demographics_schema)
+
 ## Step 3: Integrating multiple assessments
 
-Different from `demograpgics`, `psychological_questionnaire_schema` combines assessments, such as PHQ-9, GAD7, PC-PTSD-5, and demographics from the reproschema-library.
+Different from `demograpgics`, `psychological_questionnaire_schema` combines assessments, such as [PHQ-9](https://github.com/ReproNim/reproschema-library/tree/master/activities/PHQ-9), [GAD7](https://github.com/ReproNim/reproschema-library/tree/master/activities/GAD7), [PC-PTSD-5](https://github.com/ReproNim/reproschema-library/tree/master/activities/PC-PTSD-5), and [demographics](https://github.com/ReproNim/reproschema-library/tree/master/activities/demographics_and_background_information_v1/items) from [reproschema-library](https://github.com/ReproNim/reproschema-library).
 
 1. **Contextual setup (@context)**:
 
