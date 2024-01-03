@@ -24,7 +24,7 @@ To conclude our protocol, we integrate a customized feedback activity. This choi
 }
 ```
 
-The `feedback` item in this activity (`5_feedback`) is specifically designed to gather open-ended responses, allowing participants to share their thoughts and suggestions:
+The `feedback` item in this activity ([`5_feedback`](https://github.com/ReproNim/reproschema-demo-protocol/blob/main/activities/5_feedback/items/feedback)) is specifically designed to gather open-ended responses, allowing participants to share their thoughts and suggestions:
 
 - Item Structure: The item `feedback` is set up with an identification and purpose, indicated by its '@id' and descriptive fields.
 - Question Prompt: The `question` is presented in both English and Spanish, encouraging participants to provide comments on their study experience. It’s formatted to be inclusive, giving participants the option to skip if they choose.
