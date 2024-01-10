@@ -4,7 +4,7 @@ In the world of research data management, flexibility and compatibility are key.
 
 ## Install reproschema-py
 
-```
+```bash
 pip install reproschema
 ```
 
@@ -12,7 +12,7 @@ pip install reproschema
 
 `reproschema-py` can be used as a Commend-Line Interface.
 
-```
+```bash
 $ reproschema
 Usage: reproschema [OPTIONS] COMMAND [ARGS]...
 
@@ -41,29 +41,35 @@ Commands:
 
 To convert ReproSchema protocol to REDCap CSV format, use the following command
 
-```
+```bash
 reproschema reproschema2redcap <input_dir_path> <output_csv_filename>
 ```
 
 - `<input_dir_path>`: The path to the root folder of a protocol. For example, to convert the reproschema-demo-protocol provided by ReproNim, you can use the following commands:
+
   ```bash
   git clone https://github.com/ReproNim/reproschema-demo-protocol.git
   cd reproschema-demo-protocol
   pwd
   ```
+  
   In this case,  the output from `pwd` (which shows your current directory path)should be your `<input_dir_path>`.
 - `<output_csv_filename>`: The name of the output CSV file where the converted data will be saved.
 
 ## `redcap2reproschema` Usage
+
 The `redcap2reproschema` function is designed to process a given REDCap CSV file and YAML configuration to generate the output in the reproschema format.
 
 ### Prerequisites
+
 Before the conversion, ensure you have the following:
 
 **YAML Configuration File**:
-   - Download [templates/redcap2rs.yaml](templates/redcap2rs.yaml) and fill it out with your protocol details.
+
+- Download [templates/redcap2rs.yaml](templates/redcap2rs.yaml) and fill it out with your protocol details.
 
 ### YAML File Configuration
+
 In the `templates/redcap2rs.yaml` file, provide the following information:
 
 - **protocol_name**: This is a unique identifier for your protocol. Use underscores for spaces and avoid special characters.
@@ -71,13 +77,15 @@ In the `templates/redcap2rs.yaml` file, provide the following information:
 - **protocol_description**: A brief description of your protocol.
 
 Example:
+
 ```yaml
 protocol_name: "My_Protocol"
 protocol_display_name: "Assessment Protocol"
 protocol_description: "This protocol is for assessing cognitive skills."
 ```
 
-The `redcap2reproschema`` function has been integrated into a CLI tool, use the following command:
+The `redcap2reproschema` function has been integrated into a CLI tool, use the following command:
+
 ```bash
 reproschema redcap2reproschema path/to/your_redcap_data_dic.csv path/to/your_redcap2rs.yaml
 ```
