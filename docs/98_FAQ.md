@@ -65,11 +65,7 @@ OK before we go for JSON-LD, let's start with JSON. JSON stands for JavaScript O
 
 If you want to see an example of how this works, here is [dummy example](http://dummy.restapiexample.com/api/v1/employees) of the response to a request made by one website to another about a list of employees. By default the output of this dummy example is presented in a way that is more pleasing to the human eye, but if you click on `Raw Data`, you will see the raw unformatted JSON file that was returned by the website. Copy-paste in a text editor, it should like the big ugly and scary one-liner below that we, mere mortals, have no idea what to do with, but that a computer has no problem making sense of.
 
-
-
 **Insert image ???**
-
-
 
 ```json
 
@@ -79,11 +75,7 @@ If you want to see an example of how this works, here is [dummy example](http://
 
 By the way, if you ever come across such monstrosity and you want to turn into something you as a human being can understand (or least read), you can copy-paste it in a validator-formatter like [jsonformatter](https://jsonformatter.curiousconcept.com/) or [jsonlint](https://jsonlint.com/). This will quickly tell you a) whether this is a valid JSON format (eaning if it respects the rules of how a JSON file should be formatted) and b) it will highlight and help you navigate the nested and hierarchical nature of the JSON file.
 
-
-
 **Insert image ???**
-
-
 
 OK but let's start with a much simpler example of a JSON file, like the one below which could be the content of JSON file returned by a website when asked about a certain person.
 
@@ -132,7 +124,6 @@ directly into the [JSON-LD playground](https://json-ld.org/playground/) to see w
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vioCbTo3C-4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UmvWk_TQ30A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 
 ## Why is linked data important for the ReproSchema ?
 
@@ -190,4 +181,4 @@ But to get access to the raw content of that file you must click on the `Raw` bu
 
 [https://raw.githubusercontent.com/ReproNim/demo-protocol/master/VoicePilot/VoicePilot_schema](https://raw.githubusercontent.com/ReproNim/demo-protocol/master/VoicePilot/VoicePilot_schema).
 
-If you want to visualize the graph represented by the JSON-LD file, we explain how to do this in [From JSON to JSON-LD](#From-JSON-to-JSON-LD).
+If you want to visualize the graph represented by the JSON-LD file, we explain how to do this in [From JSON to JSON-LD](#from-json-to-json-ld).

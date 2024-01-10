@@ -13,6 +13,7 @@ The structure of an item within the `items` folder of a ReproSchema activity is 
 3. **Question field (question)**: This field contains the actual question or prompt that will be presented to the participant. In this template, it reads: "This is an item where the user can select a country."
 4. **UI configuration (ui)**: The ui section in the item template differs from the schema template. It specifies how the question will be presented to the user. The inputType is set to "selectCountry", indicating that the user interface will provide a country selection method.
 5. **Response options (responseOptions)**: This section defines the nature and structure of the responses allowed for the item. In this example, it specifies the valueType as "xsd:string" and a maxLength of 50 characters. It also provides a URL to a list of choices, in this case, a JSON file containing country names. This link allows the questionnaire to dynamically fetch and display a list of countries as response options.
+
     ```javascript
     "responseOptions": {
         "valueType": "xsd:string",
@@ -29,33 +30,34 @@ Take 'alcohol_consumption' as an example. The UI configuration and response opti
 
 ```javascript
 "question": {
-    	"en": "Have you drunk alcohol today?",
-    	"es": "¿Has bebido alcohol hoy?"
-	},
+    "en": "Have you drunk alcohol today?",
+    "es": "¿Has bebido alcohol hoy?"
+    },
 "ui": {
-    	"inputType": "radio"
-	},
+    "inputType": "radio"
+    },
 "responseOptions": {
-    	"valueType": "xsd:string",
-      	"multipleChoice": false,
-    	"choices": [
-        	{
-            	"name": {
-                	"en": "Yes",
-                	"es": "Sí"
-            	},
-            	"value": 1
-        	},
-        	{
-            	"name": {
-                	"en": "No",
-                	"es": "No"
-            	},
-            	"value": 2
-        	}
-    	]
-	}
+    "valueType": "xsd:string",
+    "multipleChoice": false,
+    "choices": [
+        {
+            "name": {
+                "en": "Yes",
+                "es": "Sí"
+                },
+            "value": 1
+         },
+         {
+            "name": {
+                "en": "No",
+                 "es": "No"
+                 },
+            "value": 2
+        }
+    ]
+}
 ```
+
 - The ui section sets the `inputType` to `"radio"`. This choice indicates that the question will be presented to the participant as a radio button selection, providing a simple and clear interface for response selection.
 - In the responseOptions, the `valueType` is defined as `"xsd:string"`, signifying that the expected type of response is a string. The multipleChoice field is set to false, indicating that participants can only select one of the provided options.
 - The `choices` array lists the possible responses. In this case, there are two: "Yes" and "No", each with a corresponding value (1 for Yes, 2 for No) and translations provided for English ("en") and Spanish ("es").
@@ -73,9 +75,9 @@ Take 'alcohol_consumption' as an example. The UI configuration and response opti
     }
     ```
 
-- In the ui section, the `inputType` is set to `"audioPassageRecord"`. This specific input type is designed to enable participants to record an audio passage directly within the questionnaire interface. 
-- The `responseOptions` are configured to accommodate the nature of audio data. 
-- The `valueType` is specified as "schema:AudioObject", indicating that the response will be an audio file. 
+- In the ui section, the `inputType` is set to `"audioPassageRecord"`. This specific input type is designed to enable participants to record an audio passage directly within the questionnaire interface.
+- The `responseOptions` are configured to accommodate the nature of audio data.
+- The `valueType` is specified as "schema:AudioObject", indicating that the response will be an audio file.
 - The fields `minValue` and `maxValue` define the allowable duration of the audio recording in milliseconds. In this case, the maximum duration is set to 60,000 milliseconds (or 1 minute).
 
 ## Step 2: Integrating additional components for activity-specific needs
@@ -97,6 +99,7 @@ We can integrate additional components tailored to the unique requirements of sp
         }
     ]
     ```
-    The @context section includes a specific context link under "voice", pointing to the repository with items relevant to voice and audio tasks: "https://raw.githubusercontent.com/ReproNim/reproschema-library/.../VoiceTask/items/" This targeted link ensures that the audio check activity aligns with the specific requirements of voice-related tasks.
 
-    The ui's `addProperties` array is tailored for the audio check. We define a property `"variableName": "audio_check"` linked to `"isAbout": "voice:audio_check"`. 
+    The @context section includes a specific context link under "voice", pointing to the repository with items relevant to voice and audio tasks: "<https://raw.githubusercontent.com/ReproNim/reproschema-library/.../VoiceTask/items/>" This targeted link ensures that the audio check activity aligns with the specific requirements of voice-related tasks.
+
+    The ui's `addProperties` array is tailored for the audio check. We define a property `"variableName": "audio_check"` linked to `"isAbout": "voice:audio_check"`.

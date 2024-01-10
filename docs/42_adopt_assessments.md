@@ -6,7 +6,8 @@ Each activity or assessment within this `activities` folder is typically structu
 
 To illustrate this process, we will use two specific types of assessments from [reproschema-library](https://github.com/ReproNim/reproschema-library): `demographics` and `psychological questions`. The latter represents a composite assessment created from multiple pre-existing assessments within the library. This example demonstrates how to combine different elements from the library to construct a bespoke assessment tailored to the unique demands of your research protocol.
 
-## Step 1: Understand the structure of a *_schema file throught this [exemplar file](https://github.com/ReproNim/reproschema-protocol-cookiecutter/blob/main/%7B%7Bcookiecutter.protocol_name%7D%7D/activities/Activity1/activity1_schema) 
+## Step 1: Understand the structure of a *_schema file throught this [exemplar file](https://github.com/ReproNim/reproschema-protocol-cookiecutter/blob/main/%7B%7Bcookiecutter.protocol_name%7D%7D/activities/Activity1/activity1_schema)
+
 1. **Context (@context)**: This field provides references to the context definitions. In this schema, it links to the generic context of ReproSchema and the specific context for the items in the repository, defined by the URL with the "rl" key. This context helps to interpret the terms used within the schema.
 2. **Type (@type)**: Defined as "reproschema:Activity," this indicates the nature of the document, specifying that it is an activity within the ReproSchema framework.
 3. **Identifier (@id)**: The unique identifier for this specific schema is "activity1_schema." This ID uniquely distinguishes this activity from others in the repository.
@@ -24,22 +25,26 @@ To illustrate this process, we will use two specific types of assessments from [
 This step involves precise modifications, particularly in the `@context` and `addProperties` sections, to ensure the schema accurately reflects the demographic data you aim to collect.
 
 1. **Adjusting the `@context` for Demographics**:
-   
+
     In addition to the standard ReproSchema context, we've added a specific link in the "@context" section for demographics:
+
     ```javascript
     "demo": "https://raw.githubusercontent.com/ReproNim/reproschema-library/[commitID]/demographics_and_background_information_v1/items/"
     ```
+
     Labeling this link as "demo" directs the schema to the location in the ReproSchema-library where items for demographics and background information are defined. We use the link with a specific commit ID to ensure the consistency of the assessment version. This contextual link allows the schema to access the detailed structures and definitions needed for each demographic item.
 
 2. **Customizing "addProperties" for Demographic Variables**: 
 
     In the "addProperties" section, we define each variable that corresponds to a demographic question. For example:
+
     ```javascript
     {
     "variableName": "year_of_birth",
     "isAbout": "demo:year_of_birth"
     }
     ```
+    
     The `"variableName": "year_of_birth"` is where you specify the variable as the participant's year of birth.
     The `"isAbout": "demo:year_of_birth"` part establishes a link to the detailed structure of this item in the ReproSchema-library. The "demo:" prefix references the additional context you've added, guiding the schema to the correct location for the structure and details of the "year_of_birth" item.
 
@@ -52,6 +57,7 @@ Different from `demograpgics`, `psychological_questionnaire_schema` combines ass
 1. **Contextual setup (@context)**:
 
     The @context section is expanded to include not only the generic ReproSchema context but also specific links to the ReproSchema-library. This enables the schema to access a broader range of predefined items and assessments. For the psychological questionnaire, two context links are established:
+
     ```javascript
     "@context": [
     "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
@@ -61,6 +67,7 @@ Different from `demograpgics`, `psychological_questionnaire_schema` combines ass
             }
         ]
     ```
+
     A link to the activities in the reproschema-library (`activities`: ) and a link for demographics items (`demo`: ), both are commit-specific. This indicates that we will combine different assessments from those two parts.
 2. **Defining the activity (@type, @id, prefLabel, etc.)**:
 
@@ -103,7 +110,7 @@ Different from `demograpgics`, `psychological_questionnaire_schema` combines ass
                 "variableName": "clinical_history_psychiatry_current_only_some_other",
                 "isAbout": "demo:clinical_history_psychiatry_current_only_some_other"
             }
-        ],
+            ],
         "order": [
             "activities:PHQ-9/PHQ9_schema",
             "activities:GAD7/GAD7_schema",
@@ -113,12 +120,12 @@ Different from `demograpgics`, `psychological_questionnaire_schema` combines ass
             "demo:clinical_history_psychiatry_current",
             "demo:clinical_history_psychiatry_current_only_some",
             "demo:clinical_history_psychiatry_current_only_some_other"
-        ],
+            ],
         "shuffle": false,
         "allow": [
-			"reproschema:AutoAdvance",
-			"reproschema:AllowExport"
-		]
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+            ]
     }
     ```
 
@@ -126,12 +133,14 @@ Different from `demograpgics`, `psychological_questionnaire_schema` combines ass
     - `"variableName": "phq-9"` is linked to `"isAbout": "activities:PHQ-9/PHQ9_schema"`. This implies that the PHQ-9 schema (an assessment for depressive symptoms) from the reproschema-library is used in the current psychological questionnaire schema.
     - Similarly, other assessments like `GAD-7` and `PC-PTSD-5` are included using their respective variable names and links to their schemas in the activities context.
     - Additional variables related to clinical history in psychiatry are linked using the demo context, pointing to specific items within the demographics and background information section of the reproschema-library.
+
         ```javascript
         {
             "variableName": "clinical_history_psychiatry",
             "isAbout": "demo:clinical_history_psychiatry"
         }
         ```
+        
     - The `order` array specifies the sequence in which these assessments will appear in the questionnaire, ensuring a logical flow for participants.
     - The `shuffle` setting is `false`, maintaining the defined order, and allow includes functionalities like auto-advance between assessments and data export.
 
