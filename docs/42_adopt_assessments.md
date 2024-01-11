@@ -28,9 +28,9 @@ This step involves precise modifications, particularly in the `@context` and `ad
 
     In addition to the standard ReproSchema context, we've added a specific link in the "@context" section for demographics:
 
-```javascript
-"demo": "https://raw.githubusercontent.com/ReproNim/reproschema-library/[commitID]/demographics_and_background_information_v1/items/"
-```
+    ```
+    "demo": "https://raw.githubusercontent.com/ReproNim/reproschema-library/[commitID]/demographics_and_background_information_v1/items/"
+    ```
 
     Labeling this link as "demo" directs the schema to the location in the ReproSchema-library where items for demographics and background information are defined. We use the link with a specific commit ID to ensure the consistency of the assessment version. This contextual link allows the schema to access the detailed structures and definitions needed for each demographic item.
 
@@ -38,17 +38,17 @@ This step involves precise modifications, particularly in the `@context` and `ad
 
     In the "addProperties" section, we define each variable that corresponds to a demographic question. For example:
 
-```javascript
-{
-"variableName": "year_of_birth",
-"isAbout": "demo:year_of_birth"
-}
-```
-    
+    ```
+    {
+    "variableName": "year_of_birth",
+    "isAbout": "demo:year_of_birth"
+    }
+    ```
+
     The `"variableName": "year_of_birth"` is where you specify the variable as the participant's year of birth.
     The `"isAbout": "demo:year_of_birth"` part establishes a link to the detailed structure of this item in the ReproSchema-library. The "demo:" prefix references the additional context you've added, guiding the schema to the correct location for the structure and details of the "year_of_birth" item.
 
-See the outcome file [here](https://github.com/ReproNim/reproschema-demo-protocol/blob/main/activities/1_demographics/demographics_schema)
+    See the outcome file [here](https://github.com/ReproNim/reproschema-demo-protocol/blob/main/activities/1_demographics/demographics_schema)
 
 ## Step 3: Integrating multiple assessments
 
@@ -58,89 +58,90 @@ Different from `demograpgics`, `psychological_questionnaire_schema` combines ass
 
     The @context section is expanded to include not only the generic ReproSchema context but also specific links to the ReproSchema-library. This enables the schema to access a broader range of predefined items and assessments. For the psychological questionnaire, two context links are established:
 
-```javascript
-"@context": [
-"https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
-        {
-            "activities": "https://raw.githubusercontent.com/ReproNim/reproschema-library/[commitID]/activities/",
-            "demo": "https://raw.githubusercontent.com/ReproNim/reproschema-library/[commitID]/activities/demographics_and_background_information_v1/items/"
-        }
-    ]
-```
+    ```
+    "@context": [
+    "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+            {
+                "activities": "https://raw.githubusercontent.com/ReproNim/reproschema-library/[commitID]/activities/",
+                "demo": "https://raw.githubusercontent.com/ReproNim/reproschema-library/[commitID]/activities/demographics_and_background_information_v1/items/"
+            }
+        ]
+    ```
 
     A link to the activities in the reproschema-library (`activities`: ) and a link for demographics items (`demo`: ), both are commit-specific. This indicates that we will combine different assessments from those two parts.
+
 2. **Defining the activity (@type, @id, prefLabel, etc.)**:
 
     The standard fields like @type, @id, prefLabel, description, preamble, schemaVersion, and version define the nature and purpose of the psychological questionnaire.
 
 3. **UI configuration and integration of multiple assessments (ui)**:
 
-```javascript
-"ui": {
-    "addProperties": [
-        {
-            "variableName": "phq-9",
-            "isAbout": "activities:PHQ-9/PHQ9_schema"
-        },
-        {
-            "variableName": "gad-7",
-            "isAbout": "activities:GAD7/GAD7_schema"
-        },
-        {
-            "variableName": "pc-ptsd-5",
-            "isAbout": "activities:PC-PTSD-5/PC-PTSD-5_schema"
-        },
-        {
-            "variableName": "clinical_history_psychiatry",
-            "isAbout": "demo:clinical_history_psychiatry"
-        },
-        {
-            "variableName": "clinical_history_psychiatry_other",
-            "isAbout": "demo:clinical_history_psychiatry_other"
-        },
-        {
-            "variableName": "clinical_history_psychiatry_current",
-            "isAbout": "demo:clinical_history_psychiatry_current"
-        },
-        {
-            "variableName": "clinical_history_psychiatry_current_only_some",
-            "isAbout": "demo:clinical_history_psychiatry_current_only_some"
-        },
-        {
-            "variableName": "clinical_history_psychiatry_current_only_some_other",
-            "isAbout": "demo:clinical_history_psychiatry_current_only_some_other"
-        }
-        ],
-    "order": [
-        "activities:PHQ-9/PHQ9_schema",
-        "activities:GAD7/GAD7_schema",
-        "activities:PC-PTSD-5/PC-PTSD-5_schema",
-        "demo:clinical_history_psychiatry",
-        "demo:clinical_history_psychiatry_other",
-        "demo:clinical_history_psychiatry_current",
-        "demo:clinical_history_psychiatry_current_only_some",
-        "demo:clinical_history_psychiatry_current_only_some_other"
-        ],
-    "shuffle": false,
-    "allow": [
-        "reproschema:AutoAdvance",
-        "reproschema:AllowExport"
-        ]
-}
-```
+    ```
+    "ui": {
+        "addProperties": [
+            {
+                "variableName": "phq-9",
+                "isAbout": "activities:PHQ-9/PHQ9_schema"
+            },
+            {
+                "variableName": "gad-7",
+                "isAbout": "activities:GAD7/GAD7_schema"
+            },
+            {
+                "variableName": "pc-ptsd-5",
+                "isAbout": "activities:PC-PTSD-5/PC-PTSD-5_schema"
+            },
+            {
+                "variableName": "clinical_history_psychiatry",
+                "isAbout": "demo:clinical_history_psychiatry"
+            },
+            {
+                "variableName": "clinical_history_psychiatry_other",
+                "isAbout": "demo:clinical_history_psychiatry_other"
+            },
+            {
+                "variableName": "clinical_history_psychiatry_current",
+                "isAbout": "demo:clinical_history_psychiatry_current"
+            },
+            {
+                "variableName": "clinical_history_psychiatry_current_only_some",
+                "isAbout": "demo:clinical_history_psychiatry_current_only_some"
+            },
+            {
+                "variableName": "clinical_history_psychiatry_current_only_some_other",
+                "isAbout": "demo:clinical_history_psychiatry_current_only_some_other"
+            }
+            ],
+        "order": [
+            "activities:PHQ-9/PHQ9_schema",
+            "activities:GAD7/GAD7_schema",
+            "activities:PC-PTSD-5/PC-PTSD-5_schema",
+            "demo:clinical_history_psychiatry",
+            "demo:clinical_history_psychiatry_other",
+            "demo:clinical_history_psychiatry_current",
+            "demo:clinical_history_psychiatry_current_only_some",
+            "demo:clinical_history_psychiatry_current_only_some_other"
+            ],
+        "shuffle": false,
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+            ]
+    }
+    ```
 
     In the addProperties section, we define each variable that corresponds to a specific assessment. For instance:
     - `"variableName": "phq-9"` is linked to `"isAbout": "activities:PHQ-9/PHQ9_schema"`. This implies that the PHQ-9 schema (an assessment for depressive symptoms) from the reproschema-library is used in the current psychological questionnaire schema.
     - Similarly, other assessments like `GAD-7` and `PC-PTSD-5` are included using their respective variable names and links to their schemas in the activities context.
     - Additional variables related to clinical history in psychiatry are linked using the demo context, pointing to specific items within the demographics and background information section of the reproschema-library.
 
-```javascript
-{
-    "variableName": "clinical_history_psychiatry",
-    "isAbout": "demo:clinical_history_psychiatry"
-}
-```
-        
+        ```
+        {
+            "variableName": "clinical_history_psychiatry",
+            "isAbout": "demo:clinical_history_psychiatry"
+        }
+        ```
+    
     - The `order` array specifies the sequence in which these assessments will appear in the questionnaire, ensuring a logical flow for participants.
     - The `shuffle` setting is `false`, maintaining the defined order, and allow includes functionalities like auto-advance between assessments and data export.
 
