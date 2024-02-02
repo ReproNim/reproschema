@@ -1,0 +1,706 @@
+# metamodel_version: 1.7.0
+@prefix nidm: <http://purl.org/nidash/nidm#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix reproschema: <http://schema.repronim.org/> .
+@prefix schema1: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+schema1:CreativeWork a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:targetClass schema1:CreativeWork .
+
+schema1:MediaObject a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:name "Media Object" ;
+    sh:property [ sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:order 0 ;
+            sh:path schema1:contentUrl ],
+        [ sh:or ( [ sh:datatype xsd:string ] [ sh:datatype rdf:langString ] ) ;
+            sh:order 1 ;
+            sh:path schema1:inLanguage ] ;
+    sh:targetClass schema1:MediaObject .
+
+reproschema:AllowExport a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:name "Allow export" ;
+    sh:targetClass reproschema:AllowExport .
+
+reproschema:AllowReplay a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:name "Allow replay" ;
+    sh:targetClass reproschema:AllowReplay .
+
+reproschema:AutoAdvance a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:name "Auto advance" ;
+    sh:targetClass reproschema:AutoAdvance .
+
+reproschema:DisableBack a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:name "Disable redo" ;
+    sh:targetClass reproschema:DisableBack .
+
+reproschema:Protocol a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:name "Protocol" ;
+    sh:property [ sh:name "computation" ;
+            sh:or ( [ sh:node reproschema:ComputeSpecification ] ) ;
+            sh:order 5 ;
+            sh:path reproschema:compute ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:order 0 ;
+            sh:path schema1:about ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:order 13 ;
+            sh:path schema1:schemaVersion ],
+        [ sh:name "allow" ;
+            sh:or ( [ sh:node schema1:Thing ] ) ;
+            sh:order 2 ;
+            sh:path reproschema:allow ],
+        [ sh:name "preferred label" ;
+            sh:or ( [ sh:datatype xsd:string ] [ sh:datatype rdf:langString ] ) ;
+            sh:order 12 ;
+            sh:path skos:prefLabel ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:name "cronTable" ;
+            sh:order 6 ;
+            sh:path reproschema:cronTable ],
+        [ sh:name "overrideProperties" ;
+            sh:or ( [ sh:node reproschema:OverrideProperty ] ) ;
+            sh:order 11 ;
+            sh:path reproschema:overrideProperties ],
+        [ sh:name "addProperties" ;
+            sh:or ( [ sh:node reproschema:AdditionalProperty ] ) ;
+            sh:order 1 ;
+            sh:path reproschema:addProperties ],
+        [ sh:maxCount 1 ;
+            sh:name "Shuffle" ;
+            sh:or ( [ sh:datatype xsd:boolean ] ) ;
+            sh:order 14 ;
+            sh:path reproschema:shuffle ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:name "associatedMedia" ;
+            sh:order 4 ;
+            sh:path schema1:associatedMedia ],
+        [ sh:name "Order" ;
+            sh:or ( [ sh:datatype xsd:anyURI ] [ sh:node reproschema:Activity ] [ sh:node reproschema:Field ] ) ;
+            sh:order 10 ;
+            sh:path reproschema:order ],
+        [ sh:name "messages" ;
+            sh:or ( [ sh:node reproschema:MessageSpecification ] ) ;
+            sh:order 9 ;
+            sh:path reproschema:messages ],
+        [ sh:node <http://example.org/example/:UI> ;
+            sh:maxCount 1 ;
+            sh:name "UI" ;
+            sh:order 15 ;
+            sh:path reproschema:ui ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:order 16 ;
+            sh:path schema1:version ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:name "alternate label" ;
+            sh:order 3 ;
+            sh:path skos:altLabel ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:order 7 ;
+            sh:path schema1:description ],
+        [ sh:maxCount 1 ;
+            sh:name "Landing page content" ;
+            sh:or ( [ sh:datatype xsd:anyURI ] [ sh:datatype xsd:string ] [ sh:node reproschema:LandingPage ] ) ;
+            sh:order 8 ;
+            sh:path reproschema:landingPage ] ;
+    sh:targetClass reproschema:Protocol .
+
+reproschema:Response a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:name "Response" ;
+    sh:property [ sh:node <http://example.org/example/:UI> ;
+            sh:maxCount 1 ;
+            sh:name "UI" ;
+            sh:order 1 ;
+            sh:path reproschema:ui ],
+        [ sh:maxCount 1 ;
+            sh:name "isAbout" ;
+            sh:or ( [ sh:node reproschema:Activity ] [ sh:node reproschema:Field ] ) ;
+            sh:order 0 ;
+            sh:path reproschema:isAbout ],
+        [ sh:node reproschema:Participant ;
+            sh:maxCount 1 ;
+            sh:order 3 ;
+            sh:path prov:wasAttributedTo ],
+        [ sh:name "value" ;
+            sh:or ( [ sh:node reproschema:Skipped ] [ sh:node reproschema:DontKnow ] [ sh:datatype xsd:decimal ] [ sh:datatype xsd:boolean ] [ sh:datatype xsd:string ] [ sh:datatype xsd:anyURI ] [ sh:node schema1:StructuredValue ] ) ;
+            sh:order 2 ;
+            sh:path reproschema:value ] ;
+    sh:targetClass reproschema:Response .
+
+reproschema:ResponseActivity a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:name "ResponseActivity" ;
+    sh:property [ sh:datatype xsd:string ;
+            sh:order 4 ;
+            sh:path prov:used ],
+        [ sh:node reproschema:SoftwareAgent ;
+            sh:maxCount 1 ;
+            sh:order 5 ;
+            sh:path prov:wasAssociatedWith ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:order 1 ;
+            sh:path prov:generated ],
+        [ sh:or ( [ sh:datatype xsd:string ] [ sh:datatype rdf:langString ] ) ;
+            sh:order 2 ;
+            sh:path schema1:inLanguage ],
+        [ sh:datatype xsd:dateTime ;
+            sh:maxCount 1 ;
+            sh:order 0 ;
+            sh:path prov:endedAtTime ],
+        [ sh:datatype xsd:dateTime ;
+            sh:maxCount 1 ;
+            sh:order 3 ;
+            sh:path prov:startedAtTime ] ;
+    sh:targetClass reproschema:ResponseActivity .
+
+reproschema:TimedOut a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:name "Response timed out" ;
+    sh:targetClass reproschema:TimedOut .
+
+prov:Agent a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:targetClass prov:Agent .
+
+schema1:VideoObject a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:name "Video Object" ;
+    sh:property [ sh:or ( [ sh:datatype xsd:string ] [ sh:datatype rdf:langString ] ) ;
+            sh:order 1 ;
+            sh:path schema1:inLanguage ],
+        [ sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:order 0 ;
+            sh:path schema1:contentUrl ] ;
+    sh:targetClass schema1:VideoObject .
+
+reproschema:AdditionalNoteObj a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:name "Additional Notes Object" ;
+    sh:property [ sh:name "column" ;
+            sh:or ( [ sh:datatype xsd:string ] [ sh:datatype rdf:langString ] ) ;
+            sh:order 0 ;
+            sh:path reproschema:column ],
+        [ sh:name "value" ;
+            sh:or ( [ sh:datatype xsd:boolean ] [ sh:datatype xsd:decimal ] [ sh:node schema1:StructuredValue ] [ sh:datatype xsd:string ] [ sh:datatype rdf:langString ] [ sh:datatype xsd:anyURI ] ) ;
+            sh:order 2 ;
+            sh:path reproschema:value ],
+        [ sh:name "source" ;
+            sh:or ( [ sh:datatype xsd:string ] [ sh:datatype rdf:langString ] ) ;
+            sh:order 1 ;
+            sh:path reproschema:source ] ;
+    sh:targetClass reproschema:AdditionalNoteObj .
+
+reproschema:Choice a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:name "Response choice" ;
+    sh:property [ sh:maxCount 1 ;
+            sh:name "image" ;
+            sh:order 1 ;
+            sh:path schema1:image ],
+        [ sh:name "value" ;
+            sh:or ( [ sh:datatype xsd:boolean ] [ sh:datatype xsd:decimal ] [ sh:node schema1:StructuredValue ] [ sh:datatype xsd:string ] [ sh:datatype rdf:langString ] [ sh:datatype xsd:anyURI ] ) ;
+            sh:order 2 ;
+            sh:path reproschema:value ],
+        [ sh:or ( [ sh:datatype xsd:string ] [ sh:datatype rdf:langString ] ) ;
+            sh:order 0 ;
+            sh:path schema1:name ] ;
+    sh:targetClass reproschema:Choice .
+
+reproschema:DontKnow a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:name "Do not know" ;
+    sh:targetClass reproschema:DontKnow .
+
+reproschema:LandingPage a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:name "Landing Page" ;
+    sh:property [ sh:or ( [ sh:datatype xsd:string ] [ sh:datatype rdf:langString ] ) ;
+            sh:order 0 ;
+            sh:path schema1:inLanguage ] ;
+    sh:targetClass reproschema:LandingPage .
+
+reproschema:Participant a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:name "Participant" ;
+    sh:property [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:order 0 ;
+            sh:path nidm:subject_id ] ;
+    sh:targetClass reproschema:Participant .
+
+reproschema:ResponseOption a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:name "Response option" ;
+    sh:property [ sh:maxCount 1 ;
+            sh:name "datumType" ;
+            sh:or ( [ sh:datatype xsd:string ] [ sh:datatype xsd:anyURI ] ) ;
+            sh:order 1 ;
+            sh:path reproschema:datumType ],
+        [ sh:name "The type of the response" ;
+            sh:or ( [ sh:datatype xsd:string ] [ sh:datatype rdf:langString ] ) ;
+            sh:order 6 ;
+            sh:path reproschema:valueType ],
+        [ sh:maxCount 1 ;
+            sh:or ( [ sh:datatype xsd:float ] [ sh:datatype xsd:integer ] ) ;
+            sh:order 3 ;
+            sh:path schema1:minValue ],
+        [ sh:name "unitOptions" ;
+            sh:or ( [ sh:node reproschema:UnitOption ] ) ;
+            sh:order 5 ;
+            sh:path reproschema:unitOptions ],
+        [ sh:maxCount 1 ;
+            sh:or ( [ sh:datatype xsd:float ] [ sh:datatype xsd:integer ] ) ;
+            sh:order 2 ;
+            sh:path schema1:maxValue ],
+        [ sh:name "choices" ;
+            sh:or ( [ sh:datatype xsd:anyURI ] [ sh:node reproschema:Choice ] ) ;
+            sh:order 0 ;
+            sh:path reproschema:choices ],
+        [ sh:maxCount 1 ;
+            sh:name "Multiple choice response expectation" ;
+            sh:or ( [ sh:datatype xsd:boolean ] ) ;
+            sh:order 4 ;
+            sh:path reproschema:multipleChoice ] ;
+    sh:targetClass reproschema:ResponseOption .
+
+reproschema:Skipped a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:name "Skipped" ;
+    sh:targetClass reproschema:Skipped .
+
+reproschema:SoftwareAgent a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:name "Software Agent" ;
+    sh:property [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:order 1 ;
+            sh:path schema1:url ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:order 0 ;
+            sh:path schema1:version ] ;
+    sh:targetClass reproschema:SoftwareAgent .
+
+reproschema:UnitOption a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:name "Unit options" ;
+    sh:property [ sh:name "preferred label" ;
+            sh:or ( [ sh:datatype xsd:string ] [ sh:datatype rdf:langString ] ) ;
+            sh:order 0 ;
+            sh:path skos:prefLabel ],
+        [ sh:name "value" ;
+            sh:or ( [ sh:datatype xsd:anyURI ] [ sh:datatype xsd:string ] ) ;
+            sh:order 1 ;
+            sh:path reproschema:value ] ;
+    sh:targetClass reproschema:UnitOption .
+
+reproschema:ComputeSpecification a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:name "Compute Specification" ;
+    sh:property [ sh:maxCount 1 ;
+            sh:name "JavaScript Expression" ;
+            sh:or ( [ sh:datatype xsd:boolean ] [ sh:datatype xsd:string ] ) ;
+            sh:order 0 ;
+            sh:path reproschema:jsExpression ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:name "variableName" ;
+            sh:order 1 ;
+            sh:path reproschema:variableName ] ;
+    sh:targetClass reproschema:ComputeSpecification .
+
+reproschema:MessageSpecification a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:name "Message Specification" ;
+    sh:property [ sh:maxCount 1 ;
+            sh:name "JavaScript Expression" ;
+            sh:or ( [ sh:datatype xsd:boolean ] [ sh:datatype xsd:string ] ) ;
+            sh:order 0 ;
+            sh:path reproschema:jsExpression ],
+        [ sh:name "Message" ;
+            sh:or ( [ sh:datatype xsd:string ] [ sh:datatype rdf:langString ] ) ;
+            sh:order 1 ;
+            sh:path reproschema:message ] ;
+    sh:targetClass reproschema:MessageSpecification .
+
+reproschema:Schedule a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:name "Schedule" ;
+    sh:targetClass reproschema:Schedule .
+
+schema1:StructuredValue a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:targetClass schema1:StructuredValue .
+
+reproschema:AdditionalProperty a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:name "Additional properties" ;
+    sh:property [ sh:name "preferred label" ;
+            sh:or ( [ sh:datatype xsd:string ] [ sh:datatype rdf:langString ] ) ;
+            sh:order 5 ;
+            sh:path skos:prefLabel ],
+        [ sh:maxCount 1 ;
+            sh:name "Schedule" ;
+            sh:or ( [ sh:node reproschema:Schedule ] [ sh:datatype xsd:string ] ) ;
+            sh:order 7 ;
+            sh:path reproschema:schedule ],
+        [ sh:datatype xsd:boolean ;
+            sh:maxCount 1 ;
+            sh:order 8 ;
+            sh:path schema1:valueRequired ],
+        [ sh:name "allow" ;
+            sh:or ( [ sh:node schema1:Thing ] ) ;
+            sh:order 0 ;
+            sh:path reproschema:allow ],
+        [ sh:maxCount 1 ;
+            sh:name "visibility" ;
+            sh:or ( [ sh:datatype xsd:boolean ] [ sh:datatype xsd:string ] ) ;
+            sh:order 2 ;
+            sh:path reproschema:isVis ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:name "variableName" ;
+            sh:order 9 ;
+            sh:path reproschema:variableName ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:name "randomMaxDelay" ;
+            sh:order 6 ;
+            sh:path reproschema:randomMaxDelay ],
+        [ sh:maxCount 1 ;
+            sh:name "isAbout" ;
+            sh:or ( [ sh:node reproschema:Activity ] [ sh:node reproschema:Field ] ) ;
+            sh:order 1 ;
+            sh:path reproschema:isAbout ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:name "limit" ;
+            sh:order 3 ;
+            sh:path reproschema:limit ],
+        [ sh:maxCount 1 ;
+            sh:name "maxRetakes" ;
+            sh:or ( [ sh:datatype xsd:decimal ] ) ;
+            sh:order 4 ;
+            sh:path reproschema:maxRetakes ] ;
+    sh:targetClass reproschema:AdditionalProperty .
+
+reproschema:OverrideProperty a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:name "Additional properties" ;
+    sh:property [ sh:maxCount 1 ;
+            sh:name "maxRetakes" ;
+            sh:or ( [ sh:datatype xsd:decimal ] ) ;
+            sh:order 3 ;
+            sh:path reproschema:maxRetakes ],
+        [ sh:maxCount 1 ;
+            sh:name "visibility" ;
+            sh:or ( [ sh:datatype xsd:boolean ] [ sh:datatype xsd:string ] ) ;
+            sh:order 1 ;
+            sh:path reproschema:isVis ],
+        [ sh:datatype xsd:boolean ;
+            sh:maxCount 1 ;
+            sh:order 7 ;
+            sh:path schema1:valueRequired ],
+        [ sh:name "preferred label" ;
+            sh:or ( [ sh:datatype xsd:string ] [ sh:datatype rdf:langString ] ) ;
+            sh:order 4 ;
+            sh:path skos:prefLabel ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:name "randomMaxDelay" ;
+            sh:order 5 ;
+            sh:path reproschema:randomMaxDelay ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:name "limit" ;
+            sh:order 2 ;
+            sh:path reproschema:limit ],
+        [ sh:maxCount 1 ;
+            sh:name "Schedule" ;
+            sh:or ( [ sh:node reproschema:Schedule ] [ sh:datatype xsd:string ] ) ;
+            sh:order 6 ;
+            sh:path reproschema:schedule ],
+        [ sh:maxCount 1 ;
+            sh:name "isAbout" ;
+            sh:or ( [ sh:node reproschema:Activity ] [ sh:node reproschema:Field ] ) ;
+            sh:order 0 ;
+            sh:path reproschema:isAbout ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:name "variableName" ;
+            sh:order 8 ;
+            sh:path reproschema:variableName ] ;
+    sh:targetClass reproschema:OverrideProperty .
+
+<http://example.org/example/:UI> a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:name "todo" ;
+    sh:property [ sh:datatype xsd:boolean ;
+            sh:maxCount 1 ;
+            sh:order 6 ;
+            sh:path schema1:readonlyValue ],
+        [ sh:maxCount 1 ;
+            sh:name "Shuffle" ;
+            sh:or ( [ sh:datatype xsd:boolean ] ) ;
+            sh:order 4 ;
+            sh:path reproschema:shuffle ],
+        [ sh:name "addProperties" ;
+            sh:or ( [ sh:node reproschema:AdditionalProperty ] ) ;
+            sh:order 1 ;
+            sh:path reproschema:addProperties ],
+        [ sh:datatype xsd:boolean ;
+            sh:maxCount 1 ;
+            sh:order 8 ;
+            sh:path schema1:valueRequired ],
+        [ sh:name "Order" ;
+            sh:or ( [ sh:datatype xsd:anyURI ] [ sh:node reproschema:Activity ] [ sh:node reproschema:Field ] ) ;
+            sh:order 0 ;
+            sh:path reproschema:order ],
+        [ sh:name "overrideProperties" ;
+            sh:or ( [ sh:node reproschema:OverrideProperty ] ) ;
+            sh:order 2 ;
+            sh:path reproschema:overrideProperties ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:name "inputType" ;
+            sh:order 5 ;
+            sh:path reproschema:inputType ],
+        [ sh:name "Message" ;
+            sh:or ( [ sh:datatype xsd:string ] [ sh:datatype rdf:langString ] ) ;
+            sh:order 3 ;
+            sh:path reproschema:message ],
+        [ sh:name "allow" ;
+            sh:or ( [ sh:node schema1:Thing ] ) ;
+            sh:order 7 ;
+            sh:path reproschema:allow ] ;
+    sh:targetClass <http://example.org/example/:UI> .
+
+schema1:Thing a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:targetClass schema1:Thing .
+
+reproschema:Field a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:name "Field" ;
+    sh:property [ sh:maxCount 1 ;
+            sh:or ( [ sh:node reproschema:Activity ] ) ;
+            sh:order 8 ;
+            sh:path schema1:isPartOf ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:order 12 ;
+            sh:path schema1:readonlyValue ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:name "associatedMedia" ;
+            sh:order 3 ;
+            sh:path schema1:associatedMedia ],
+        [ sh:maxCount 1 ;
+            sh:name "Response options" ;
+            sh:or ( [ sh:datatype xsd:anyURI ] [ sh:node reproschema:ResponseOption ] ) ;
+            sh:order 13 ;
+            sh:path reproschema:responseOptions ],
+        [ sh:maxCount 1 ;
+            sh:name "image" ;
+            sh:order 6 ;
+            sh:path schema1:image ],
+        [ sh:name "preferred label" ;
+            sh:or ( [ sh:datatype xsd:string ] [ sh:datatype rdf:langString ] ) ;
+            sh:order 10 ;
+            sh:path skos:prefLabel ],
+        [ sh:name "additional notes" ;
+            sh:or ( [ sh:node reproschema:AdditionalNoteObj ] ) ;
+            sh:order 1 ;
+            sh:path reproschema:additionalNotesObj ],
+        [ sh:maxCount 1 ;
+            sh:name "audio" ;
+            sh:order 4 ;
+            sh:path schema1:audio ],
+        [ sh:node <http://example.org/example/:UI> ;
+            sh:maxCount 1 ;
+            sh:name "UI" ;
+            sh:order 15 ;
+            sh:path reproschema:ui ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:order 16 ;
+            sh:path schema1:version ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:name "alternate label" ;
+            sh:order 2 ;
+            sh:path skos:altLabel ],
+        [ sh:or ( [ sh:datatype xsd:string ] [ sh:datatype rdf:langString ] ) ;
+            sh:order 11 ;
+            sh:path schema1:question ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:order 0 ;
+            sh:path schema1:about ],
+        [ sh:node schema1:VideoObject ;
+            sh:maxCount 1 ;
+            sh:order 17 ;
+            sh:path schema1:video ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:order 14 ;
+            sh:path schema1:schemaVersion ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:name "inputType" ;
+            sh:order 7 ;
+            sh:path reproschema:inputType ],
+        [ sh:name "Preamble" ;
+            sh:or ( [ sh:datatype xsd:string ] [ sh:datatype rdf:langString ] ) ;
+            sh:order 9 ;
+            sh:path reproschema:preamble ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:order 5 ;
+            sh:path schema1:description ] ;
+    sh:targetClass reproschema:Field .
+
+reproschema:Activity a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:name "Activity" ;
+    sh:property [ sh:node <http://example.org/example/:UI> ;
+            sh:maxCount 1 ;
+            sh:name "UI" ;
+            sh:order 17 ;
+            sh:path reproschema:ui ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:order 5 ;
+            sh:path schema1:citation ],
+        [ sh:name "preferred label" ;
+            sh:or ( [ sh:datatype xsd:string ] [ sh:datatype rdf:langString ] ) ;
+            sh:order 14 ;
+            sh:path skos:prefLabel ],
+        [ sh:name "Order" ;
+            sh:or ( [ sh:datatype xsd:anyURI ] [ sh:node reproschema:Activity ] [ sh:node reproschema:Field ] ) ;
+            sh:order 11 ;
+            sh:path reproschema:order ],
+        [ sh:maxCount 1 ;
+            sh:name "image" ;
+            sh:order 9 ;
+            sh:path schema1:image ],
+        [ sh:name "overrideProperties" ;
+            sh:or ( [ sh:node reproschema:OverrideProperty ] ) ;
+            sh:order 12 ;
+            sh:path reproschema:overrideProperties ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:order 0 ;
+            sh:path schema1:about ],
+        [ sh:name "computation" ;
+            sh:or ( [ sh:node reproschema:ComputeSpecification ] ) ;
+            sh:order 6 ;
+            sh:path reproschema:compute ],
+        [ sh:maxCount 1 ;
+            sh:name "Shuffle" ;
+            sh:or ( [ sh:datatype xsd:boolean ] ) ;
+            sh:order 16 ;
+            sh:path reproschema:shuffle ],
+        [ sh:name "allow" ;
+            sh:or ( [ sh:node schema1:Thing ] ) ;
+            sh:order 2 ;
+            sh:path reproschema:allow ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:order 18 ;
+            sh:path schema1:version ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:name "cronTable" ;
+            sh:order 7 ;
+            sh:path reproschema:cronTable ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:name "associatedMedia" ;
+            sh:order 4 ;
+            sh:path schema1:associatedMedia ],
+        [ sh:name "messages" ;
+            sh:or ( [ sh:node reproschema:MessageSpecification ] ) ;
+            sh:order 10 ;
+            sh:path reproschema:messages ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:order 15 ;
+            sh:path schema1:schemaVersion ],
+        [ sh:name "Preamble" ;
+            sh:or ( [ sh:datatype xsd:string ] [ sh:datatype rdf:langString ] ) ;
+            sh:order 13 ;
+            sh:path reproschema:preamble ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:order 8 ;
+            sh:path schema1:description ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:name "alternate label" ;
+            sh:order 3 ;
+            sh:path skos:altLabel ],
+        [ sh:name "addProperties" ;
+            sh:or ( [ sh:node reproschema:AdditionalProperty ] ) ;
+            sh:order 1 ;
+            sh:path reproschema:addProperties ] ;
+    sh:targetClass reproschema:Activity .
+
+rdf:langString a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:targetClass rdf:langString .
+
+
