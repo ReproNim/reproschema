@@ -27,8 +27,7 @@ slots:
       and fields.
     slot_uri: reproschema:addProperties
     multivalued: true
-    any_of:
-    - range: AdditionalProperty
+    range: AdditionalProperty
   additionalNotesObj:
     title: additional notes
     comments:
@@ -44,8 +43,7 @@ slots:
     - 'An array of items indicating properties allowed on an activity or protocol '
     slot_uri: reproschema:allow
     multivalued: true
-    any_of:
-    - range: Thing
+    range: Thing
   altLabel:
     title: alternate label
     comments:
@@ -149,8 +147,7 @@ slots:
     - range: Field
   isPartOf:
     slot_uri: schema:isPartOf
-    any_of:
-    - range: Activity
+    range: Activity
   isVis:
     title: visibility
     comments:
@@ -211,8 +208,7 @@ slots:
     - An array of objects to define conditional messages in an activity or protocol.
     slot_uri: reproschema:messages
     multivalued: true
-    any_of:
-    - range: MessageSpecification
+    range: MessageSpecification
   minValue:
     slot_uri: schema:minValue
     any_of:
@@ -223,8 +219,7 @@ slots:
     comments:
     - Indicates (by bool) if response for the Field item has one or more answer.
     slot_uri: reproschema:multipleChoice
-    any_of:
-    - range: boolean
+    range: boolean
   name:
     multivalued: true
     any_of:
@@ -249,8 +244,7 @@ slots:
       and fields.
     slot_uri: reproschema:overrideProperties
     multivalued: true
-    any_of:
-    - range: OverrideProperty
+    range: OverrideProperty
   preamble:
     title: Preamble
     comments:
@@ -312,8 +306,7 @@ slots:
     comments:
     - An element (bool) to determine if the list of items is shuffled or in order.
     slot_uri: reproschema:shuffle
-    any_of:
-    - range: boolean
+    range: boolean
   source:
     title: source
     comments:
@@ -347,8 +340,7 @@ slots:
       value for units.
     slot_uri: reproschema:unitOptions
     multivalued: true
-    any_of:
-    - range: UnitOption
+    range: UnitOption
   url:
     slot_uri: schema:url
   used:
