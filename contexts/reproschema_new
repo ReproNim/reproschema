@@ -22,6 +22,9 @@
       "@vocab": "http://example.org/example/",
       "@version": 1.1,
       "@language": "en",
+      "id": "@id",
+      "category": "@type",
+      "ui": "@nest",
       "about": {
          "@id": "schema:about"
       },
@@ -29,12 +32,15 @@
          "@id": "reproschema:additionalNotesObj"
       },
       "addProperties": {
-         "@type": "@id",
-         "@id": "reproschema:addProperties"
+         "@id": "reproschema:addProperties",
+         "@container": "@set",
+         "@nest": "ui"
       },
       "allow": {
          "@type": "@id",
-         "@id": "reproschema:allow"
+         "@id": "reproschema:allow",
+         "@container": "@set",
+         "@nest": "ui"
       },
       "altLabel": {
          "@id": "skos:altLabel",
@@ -59,7 +65,8 @@
          "@type": "xsd:string"
       },
       "compute": {
-         "@id": "reproschema:compute"
+         "@id": "reproschema:compute",
+         "@container": "@list"
       },
       "contentUrl": {
          "@type": "@id",
@@ -95,7 +102,8 @@
       },
       "inputType": {
          "@id": "reproschema:inputType",
-         "@type": "xsd:string"
+         "@type": "xsd:string",
+         "@nest": "ui"
       },
       "isAbout": {
          "@type": "@id",
@@ -116,7 +124,8 @@
          "@id": "reproschema:landingPage"
       },
       "limit": {
-         "@id": "reproschema:limit"
+         "@id": "reproschema:limit",
+         "@language": null
       },
       "maxRetakes": {
          "@id": "reproschema:maxRetakes"
@@ -129,7 +138,7 @@
          "@container": "@language"
       },
       "messages": {
-         "@type": "@id",
+         "@container": "@set",
          "@id": "reproschema:messages"
       },
       "minValue": {
@@ -145,11 +154,14 @@
       },
       "order": {
          "@type": "@id",
-         "@id": "reproschema:order"
+         "@id": "reproschema:order",
+         "@container": "@list",
+         "@nest": "ui"
       },
       "overrideProperties": {
-         "@type": "@id",
-         "@id": "reproschema:overrideProperties"
+         "@id": "reproschema:overrideProperties",
+         "@container": "@set",
+         "@nest": "ui"
       },
       "preamble": {
          "@id": "reproschema:preamble",
@@ -164,7 +176,8 @@
          "@container": "@language"
       },
       "randomMaxDelay": {
-         "@id": "reproschema:randomMaxDelay"
+         "@id": "reproschema:randomMaxDelay",
+         "@language": null
       },
       "readonlyValue": {
          "@type": "xsd:boolean",
@@ -175,14 +188,16 @@
          "@id": "reproschema:responseOptions"
       },
       "schedule": {
-         "@id": "reproschema:schedule"
+         "@id": "reproschema:schedule",
+         "@language": null
       },
       "schemaVersion": {
          "@id": "schema:schemaVersion"
       },
       "shuffle": {
          "@type": "xsd:boolean",
-         "@id": "reproschema:shuffle"
+         "@id": "reproschema:shuffle",
+         "@nest": "ui"
       },
       "source": {
          "@id": "reproschema:source",
@@ -197,10 +212,6 @@
       },
       "subject_id": {
          "@id": "nidm:subject_id"
-      },
-      "ui": {
-         "@type": "@id",
-         "@id": "reproschema:ui"
       },
       "unitOptions": {
          "@type": "@id",
@@ -279,7 +290,7 @@
       "DontKnow": {
          "@id": "reproschema:DontKnow"
       },
-      "Field": {
+      "Item": {
          "@id": "reproschema:Field"
       },
       "LandingPage": {

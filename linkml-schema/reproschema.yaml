@@ -1,5 +1,5 @@
 name: reproschema
-id: http://example.org/example # todo: change this
+id: http://schema.repronim.org/ # todo: change this
 imports:
 - linkml:types
 prefixes:
@@ -17,21 +17,19 @@ prefixes:
 default_range: string
 slots:
   about:
-    description:
-    - The subject matter of the Field.
+    description: The subject matter of the Field.
     slot_uri: schema:about
   addProperties:
     title: addProperties
-    description:
-    - An array of objects to describe the various properties added to assessments
-      and fields.
+    description: An array of objects to describe the various properties added to assessments
+      and Items.
     slot_uri: reproschema:addProperties
     multivalued: true
     range: AdditionalProperty
   additionalNotesObj:
     title: additional notes
     description:
-    - A set of objects to define notes in a field. For example, most Redcap and NDA
+      A set of objects to define notes in a field. For example, most Redcap and NDA
       data dictionaries have notes for each item which needs to be captured in reproschema.
     slot_uri: reproschema:additionalNotesObj
     multivalued: true
@@ -39,33 +37,32 @@ slots:
     - range: AdditionalNoteObj
   allow:
     title: allow
-    description:
-    - 'An array of items indicating properties allowed on an activity or protocol '
+    description: An array of items indicating properties allowed on an activity or protocol.
     slot_uri: reproschema:allow
     multivalued: true
-    range: Thing
+    range: AllowedType
   altLabel:
     title: alternate label
-    description:
-    - The alternate label.
+    description: The alternate label.
     slot_uri: skos:altLabel
   associatedMedia:
     title: associatedMedia
-    description:
-    - A media object that encodes this CreativeWork. This property is a synonym for
-      encoding.
+    description: A media object that encodes this CreativeWork. This property is a synonym for encoding.
     slot_uri: schema:associatedMedia
   audio:
     title: audio
-    description:
-      - TDOO
+    description: TODO
     slot_uri: schema:audio
-    range: uriorcurie
+    any_of:
+    - range: uri
+    - range: AudioObject
     inlined: true
+  category:
+    slot_uri: rdf:type
+    range: uriorcurie
   choices:
     title: choices
-    description:
-    - An array to list the available options for response of the Field item.
+    description: An array to list the available options for response of the Item.
     exact_mappings:
     - schema:itemListElement
     slot_uri: reproschema:choices
@@ -75,89 +72,88 @@ slots:
     - range: Choice
   citation:
     slot_uri: schema:citation
+    multivalued: true
     range: langString
+    inlined: true
   column:
     title: column
-    description:
-    - An element to define the column name where the note was taken from.
+    description: An element to define the column name where the note was taken from.
     slot_uri: reproschema:column
-    multivalued: true
     range: string
   compute:
     title: computation
     description:
-    - 'An array of objects indicating computations in an activity or protocol and
-      maps it to the corresponding Field item. scoring logic is a subset of all computations
+      An array of objects indicating computations in an activity or protocol and
+      maps it to the corresponding Item. scoring logic is a subset of all computations
       that could be performed and not all computations will be scoring. For example,
-      one may want to do conversion from one unit to another. '
+      one may want to do conversion from one unit to another.
     slot_uri: reproschema:compute
     multivalued: true
-    any_of:
-    - range: ComputeSpecification
+    range: ComputeSpecification
+    inlined: true
   contentUrl:
     slot_uri: schema:contentUrl
     range: uriorcurie
   cronTable:
     title: cronTable
-    description:
-      - TODO not described in reproschema
+    description: TODO not described in reproschema
     slot_uri: reproschema:cronTable
   datumType:
     title: datumType
-    description:
-    - Indicates what type of datum the response is (e.g. range,count,scalar etc.)
-      for the Field item.
+    description: Indicates what type of datum the response is (e.g. range,count,scalar etc.) for the Item.
     slot_uri: reproschema:datumType
     any_of:
     - range: string
     - range: uri
   description:
     slot_uri: schema:description
+    multivalued: true
     range: langString
+    inlined: true
   endedAtTime:
     range: datetime
     slot_uri: prov:endedAtTime
   generated:
     slot_uri: prov:generated
-    range: langString
+    range: uri
+  id:
+    slot_uri: schema:id
+    range: uri
   image:
     title: image
     description:
-    - An image of the item. This can be a <a class="localLink" href="http://schema.org/URL">URL</a>
+      An image of the item. This can be a <a class="localLink" href="http://schema.org/URL">URL</a>
       or a fully described <a class="localLink" href="http://schema.org/ImageObject">ImageObject</a>.
     slot_uri: schema:image
-    range: uriorcurie
+    range: ImageObject
   imageUrl:
     title: imageUrl
-    description:
-    - An image url.
+    description: An image url.
     slot_uri: reproschema:imageUrl
     range: uri
   inLanguage:
     slot_uri: schema:inLanguage
-    multivalued: true
-    range: langString
+    range: string
   inputType:
     title: inputType
-    description:
-    - An element to describe the input type of a Field item.
+    description: An element to describe the input type of a Item.
     slot_uri: reproschema:inputType
   isAbout:
     title: isAbout
-    description:
-    - A pointer to the node describing the item.
+    description: A pointer to the node describing the item.
     slot_uri: reproschema:isAbout
     any_of:
+    - range: uri
     - range: Activity
-    - range: Field
+    - range: Item
+    inlined: true
   isPartOf:
     slot_uri: schema:isPartOf
     range: Activity
   isVis:
     title: visibility
     description:
-    - An element to describe (by boolean or conditional statement) visibility conditions
-      of items in an assessment.
+      An element to describe (by boolean or conditional statement) visibility conditions of items in an assessment.
     slot_uri: reproschema:isVis
     any_of:
     - range: boolean
@@ -165,52 +161,57 @@ slots:
   jsExpression:
     title: JavaScript Expression
     description:
-    - A JavaScript expression for computations.
-    - A JavaScript expression to compute a score from other variables.
+      A JavaScript expression for computations.
+      A JavaScript expression to compute a score from other variables.
     slot_uri: reproschema:jsExpression
-    any_of:
-    - range: boolean
-    - range: langString
+    range: string
   landingPage:
     title: Landing page content
-    description:
-    - An element (by URL) to point to the protocol readme or landing page.
+    description: An element (by URL) to point to the protocol readme or landing page.
     slot_uri: reproschema:landingPage
     any_of:
     - range: uri
     - range: string
     - range: LandingPage
+  langstring_prefix:
+    description:
+      The language prefix component of a langString.
+    key: true
+    range: string
+    required: true
+  langstring_value:
+    description:
+      The value component of a langString.
+    range: string
+    required: true
   limit:
     title: limit
     description:
-    - An element to limit the duration (uses ISO 8601) this activity is allowed to
+      An element to limit the duration (uses ISO 8601) this activity is allowed to
       be completed by once activity is available.
     slot_uri: reproschema:limit
-    range: langString
+    range: string
   maxRetakes:
     title: maxRetakes
-    description:
-    - Defines number of times the item is allowed to be redone.
+    description: Defines number of times the item is allowed to be redone.
     slot_uri: reproschema:maxRetakes
     any_of:
     - range: decimal
   maxValue:
     any_of:
-      - range: float
-      - range: integer
+    - range: float
+    - range: integer
     slot_uri: schema:maxValue
   message:
     title: Message
-    description:
-    - 'The message to be conditionally displayed for an item. '
+    description: The message to be conditionally displayed for an item.
     slot_uri: reproschema:message
     multivalued: true
-    any_of:
     range: langString
+    inlined: true
   messages:
     title: messages
-    description:
-    - An array of objects to define conditional messages in an activity or protocol.
+    description: An array of objects to define conditional messages in an activity or protocol.
     slot_uri: reproschema:messages
     multivalued: true
     range: MessageSpecification
@@ -221,40 +222,38 @@ slots:
     - range: integer
   multipleChoice:
     title: Multiple choice response expectation
-    description:
-    - Indicates (by bool) if response for the Field item has one or more answer.
+    description: Indicates (by bool) if response for the Item has one or more answer.
     slot_uri: reproschema:multipleChoice
     range: boolean
   name:
+    slot_uri: schema:name
     multivalued: true
     range: langString
-    slot_uri: schema:name
+    inlined: true
   order:
     title: Order
     description:
-    - An ordered list to describe the order in which the items of an assessment or
+      An ordered list to describe the order in which the items of an assessment or
       protocol appear in the user interface.
     slot_uri: reproschema:order
     multivalued: true
     any_of:
     - range: uri
     - range: Activity
-    - range: Field
+    - range: Item
   overrideProperties:
     title: overrideProperties
-    description:
-    - An array of objects to override the various properties added to assessments
-      and fields.
+    description: An array of objects to override the various properties added to assessments and fields.
     slot_uri: reproschema:overrideProperties
     multivalued: true
     range: OverrideProperty
   preamble:
     title: Preamble
-    description:
-    - The preamble for an assessment
+    description: The preamble for an assessment
     slot_uri: reproschema:preamble
     multivalued: true
     range: langString
+    inlined: true
   prefLabel:
     title: preferred label
     description:
@@ -262,17 +261,19 @@ slots:
     slot_uri: skos:prefLabel
     multivalued: true
     range: langString
+    inlined: true
   question:
     slot_uri: schema:question
     multivalued: true
     range: langString
+    inlined: true
   randomMaxDelay:
     title: randomMaxDelay
     description:
-    - Present activity/item within some random offset of activity available time up
+      Present activity/item within some random offset of activity available time up
       to the maximum specified by this ISO 8601 duration
     slot_uri: reproschema:randomMaxDelay
-    range: langString
+    range: string
   readonlyValue:
     slot_uri: schema:readonlyValue
     range: boolean
@@ -281,63 +282,51 @@ slots:
 #    slot_uri: schema:requiredValue
   responseOptions:
     title: Response options
-    description:
-    - An element (object or by URL)to describe the properties of response of the Field
-      item.
+    description: An element (object or by URL)to describe the properties of response of the Item.
     slot_uri: reproschema:responseOptions
     any_of:
     - range: uri
     - range: ResponseOption
   schedule:
     title: Schedule
-    description:
-    - An element to set make activity available/repeat info using ISO 8601 repeating
-      interval format.
+    description: An element to set make activity available/repeat info using ISO 8601 repeating interval format.
     slot_uri: reproschema:schedule
-    any_of:
-    - range: Schedule
-    - range: string
+    range: string
   schemaVersion:
     slot_uri: schema:schemaVersion
-    range: langString
+    range: string
   shuffle:
     title: Shuffle
-    description:
-    - An element (bool) to determine if the list of items is shuffled or in order.
+    description: An element (bool) to determine if the list of items is shuffled or in order.
     slot_uri: reproschema:shuffle
     range: boolean
   source:
     title: source
-    description:
-    - An element to define the source (eg. RedCap, NDA) where the note was taken from.
+    description: An element to define the source (eg. RedCap, NDA) where the note was taken from.
     slot_uri: reproschema:source
-    multivalued: true
     range: string
   statusOptions:
     title: Status options
     description:
-    - "Provides information on whether or not a field item wants to be accompanied\
-      \ by the additional status option(s) defined in \u201CstatusOptions\u201D"
+      Provides information on whether or not an Item wants to be accompanied
+      by the additional status option(s) defined in "statusOptions"
     slot_uri: reproschema:statusOptions
   startedAtTime:
     range: datetime
     slot_uri: prov:startedAtTime
   subject_id:
     slot_uri: nidm:subject_id #TODO check this @type:rdf:Property
-    range: langString
+    range: string
   ui:
     title: UI
     description:
-    - it was originally @nest in jsonld, but decided for a new class for now
+      An element to control UI specifications. Originally @nest in jsonld, but using a class in the model.
     slot_uri: reproschema:ui
-    any_of:
-    - range: UiActivity
-    - range: UiField
-    - range: UiProtocol
+    range: UI
   unitOptions:
     title: unitOptions
     description:
-    - A list of objects to represent a human displayable name alongside the more formal
+      A list of objects to represent a human displayable name alongside the more formal
       value for units.
     slot_uri: reproschema:unitOptions
     multivalued: true
@@ -350,40 +339,32 @@ slots:
     multivalued: true
   value:
     title: value
-    description:
-    - The value for each option in choices or in additionalNotesObj
-    exact_mappings:
-    - schema:value
-    slot_uri: reproschema:value
-    multivalued: true
+    description: The value for each option in choices or in additionalNotesObj
+    slot_uri: schema:value
     any_of:
     - range: boolean
     - range: decimal
     - range: StructuredValue
-    - range: string
     - range: langString
     - range: uri
-#  value_from_schema:
-#    slot_uri: schema:value
+    - range: string
+    inlined: true
   valueType:
     title: The type of the response
-    description:
-    - The type of the response of an item. For example, string, integer, etc.
+    description: The type of the response of an item. For example, string, integer, etc.
     slot_uri: reproschema:valueType
-    multivalued: true
-    range: uri
+    range: string
   valueRequired:
     slot_uri: schema:valueRequired
     range: boolean
   variableName:
     title: variableName
-    description:
-    - The name used to represent an item.
+    description: The name used to represent an item.
     slot_uri: reproschema:variableName
     range: langString
   version:
     slot_uri: schema:version
-    range: langString
+    range: string
   video:
     slot_uri: schema:video
     range: VideoObject
@@ -396,8 +377,7 @@ slots:
 classes:
   Activity:
     title: Activity
-    description:
-    - An assessment in a protocol.
+    description: An assessment in a protocol.
     is_a: CreativeWork
     slots:
     - about
@@ -416,12 +396,12 @@ classes:
     - version
     slot_usage:
       ui:
-        range: UiActivity
+        range: UI
     class_uri: reproschema:Activity
   AdditionalNoteObj:
     title: Additional Notes Object
     description:
-    - A set of objects to define notes in a field. For example, most Redcap and NDA
+      A set of objects to define notes in a Item. For example, most Redcap and NDA
       data dictionaries have notes for each item which needs to be captured in reproschema
     slots:
     - column
@@ -430,8 +410,7 @@ classes:
     class_uri: reproschema:AdditionalNoteObj
   AdditionalProperty:
     title: Additional properties
-    description:
-    - An object to describe the various properties added to assessments and fields.
+    description: An object to describe the various properties added to assessments and Items.
     slots:
     - allow
     - isAbout
@@ -443,63 +422,39 @@ classes:
     - schedule
     - valueRequired
     - variableName
+    - ui
     class_uri: reproschema:AdditionalProperty
+  AudioObject:
+    is_a: MediaObject
+    class_uri: schema:AudioObject
   Agent:
     class_uri: prov:Agent
-  AllowExport:
-    title: Allow export
-    description:
-    - Indicates (by boolean) if data can be exported or not.
-    class_uri: reproschema:AllowExport
-  AllowReplay:
-    title: Allow replay
-    description:
-    - Indicates (by boolean) if items can be replayed or not.
-    class_uri: reproschema:AllowReplay
-  AutoAdvance:
-    title: Auto advance
-    description:
-    - Indicates (by boolean) if assessments in a protocol can auto advance or not.
-    class_uri: reproschema:AutoAdvance
   Choice:
     title: Response choice
-    description:
-    - An object to describe a response option.
+    description: An object to describe a response option.
     slots:
     - name
     - image
-    - value #TODO it was schema:value
-#TODO validator
-#    slot_usage:
-#      value_from_schema:
-#        any_of: #Ask Satra
-#          - range: Skipped
-#          - range: DontKnow
+    - value
     class_uri: reproschema:Choice
   ComputeSpecification:
     title: Compute Specification
-    description:
-    - An object to define computations in an activity or protocol.
+    description: An object to define computations in an activity or protocol.
     slots:
     - jsExpression
     - variableName
     class_uri: reproschema:ComputeSpecification
   CreativeWork:
+    slots:
+      - id
+      - category
     class_uri: schema:CreativeWork
-  DisableBack:
-    title: Disable redo
-    description:
-    - Indicates (by boolean) if we can go back to a completed assessment in a protocol.
-    class_uri: reproschema:DisableBack
-  DontKnow:
-    title: Do not know
-    description:
-    - An element to describe the choice when response is not known.
-    class_uri: reproschema:DontKnow
-  Field: #TODO: multiple @type in reproschema
-    title: Field
-    description:
-    - An item in an assessment.
+  ImageObject:
+    is_a: MediaObject
+    class_uri: schema:ImageObject
+  Item: #TODO: multiple @type in reproschema
+    title: Item in an activity
+    description: An item in an assessment.
     is_a: CreativeWork
     slots:
     - about
@@ -519,23 +474,24 @@ classes:
     - ui
     - version
     - video
-    slot_usage:
-      ui:
-        range: UiField
     class_uri: reproschema:Field
   LandingPage:
     title: Landing Page
-    description:
-    - An object to define the landing page of a protocol.
+    description: An object to define the landing page of a protocol.
     slots:
     - inLanguage
+    - id
     class_uri: reproschema:LandingPage
   langString:
+    description: RDF langString tuple
+    slots:
+    - langstring_prefix
+    - langstring_value
     class_uri: rdf:langString
   MediaObject:
     title: Media Object
-    description:
-      - TODO comments
+    description: Add description #TODO
+    is_a: CreativeWork
     class_uri: schema:MediaObject
     slots:
       - contentUrl
@@ -545,16 +501,14 @@ classes:
         required: true
   MessageSpecification:
     title: Message Specification
-    description:
-    - An object to define messages in an activity or protocol.
+    description: An object to define messages in an activity or protocol.
     slots:
     - jsExpression
     - message
     class_uri: reproschema:MessageSpecification
   OverrideProperty:
     title: Additional properties
-    description:
-    - An object to override the various properties added to assessments and fields.
+    description: An object to override the various properties added to assessments and Items.
     slots:
     - isAbout
     - isVis
@@ -568,16 +522,14 @@ classes:
     class_uri: reproschema:OverrideProperty
   Participant:
     title: Participant
-    description:
-    - An Agent describing characteristics associated with a participant.
+    description: An Agent describing characteristics associated with a participant.
     is_a: Agent
     slots:
       - subject_id
     class_uri: reproschema:Participant
   Protocol: # TODO multiple types
     title: Protocol
-    description:
-    - A representation of a study which comprises one or more assessments.
+    description: A representation of a study which comprises one or more assessments.
     is_a: CreativeWork
     slots:
     - about
@@ -594,12 +546,11 @@ classes:
     - version
     slot_usage:
       ui:
-        range: UiProtocol
+        range: UI
     class_uri: reproschema:Protocol
   Response: # multiple types
     title: Response
-    description:
-    - Describes the response of an item.
+    description: Describes the response of an item.
     is_a: CreativeWork
     slots:
     - isAbout
@@ -608,8 +559,7 @@ classes:
     slot_usage:
       value:
         any_of:
-          - range: Skipped
-          - range: DontKnow
+          - range: MissingType
           - range: decimal
           - range: boolean
           - range: string
@@ -619,7 +569,7 @@ classes:
   ResponseActivity: # multiple types
     title: ResponseActivity
     description:
-    - Captures information about some action that took place. It also links to information
+      Captures information about some action that took place. It also links to information
       (entities) that were used during the activity
     is_a: CreativeWork
     slots:
@@ -632,9 +582,7 @@ classes:
     class_uri: reproschema:ResponseActivity
   ResponseOption:
     title: Response option
-    description:
-    - An element (object or by URL)to describe the properties of response of the Field
-      item.
+    description: An element (object or by URL)to describe the properties of response of the Item.
     slots:
     - choices
     - datumType
@@ -644,37 +592,25 @@ classes:
     - unitOptions
     - valueType
     class_uri: reproschema:ResponseOption
-  Schedule:
-    title: Schedule
-    description:
-    - An object to define the schedule of an activity or protocol. #TODO can't find it in the schema
-    class_uri: reproschema:Schedule
-  Skipped:
-    title: Skipped
-    description:
-    - An element to describe the choice when the item is skipped.
-    class_uri: reproschema:Skipped
   SoftwareAgent: # TODO multiple types
     title: Software Agent
     description:
-    - Captures information about some action that took place. It also links to information
+      Captures information about some action that took place. It also links to information
       (entities) that were used during the activity
     slots:
     - version
     - url
     class_uri: reproschema:SoftwareAgent
   StructuredValue:
+    is_a: CreativeWork
     class_uri: schema:StructuredValue
-
   Thing: # todo should we switch
     class_uri: schema:Thing
   TimedOut:
     title: Response timed out
-    description:
-    - A boolean element to describe if the response did not occur within the prescribed
-      time.
+    description: A boolean element to describe if the response did not occur within the prescribed time.
     class_uri: reproschema:TimedOut
-  UiActivity:
+  UI:
     title: todo
     description:
     - todo
@@ -684,31 +620,12 @@ classes:
       - overrideProperties
       - shuffle
       - allow
-    class_uri: reproschema:UiActivity
-  UiField:
-    title: todo
-    description:
-    - todo
-    slots:
       - inputType
       - readonlyValue
-    class_uri: reproschema:UiField
-  UiProtocol:
-    title: todo
-    description:
-    - todo
-    slots:
-      - order
-      - addProperties
-      - overrideProperties
-      - shuffle
-      - allow
-    class_uri: reproschema:UiProtocol
+    class_uri: reproschema:UI
   UnitOption:
     title: Unit options
-    description:
-    - An object to represent a human displayable name alongside the more formal value
-      for units.
+    description: An object to represent a human displayable name alongside the more formal value for units.
     slots:
     - prefLabel
     - value
@@ -718,13 +635,34 @@ classes:
           - range: uri
           - range: langString
     class_uri: reproschema:UnitOption
-
   VideoObject:
     title: Video Object
+    is_a: MediaObject
     class_uri: schema:VideoObject
-    slots:
-      - contentUrl
-      - inLanguage
-    slot_usage:
-      contentUrl:
-        required: true
+
+enums:
+  AllowedType:
+    permissible_values:
+      AllowExport:
+        description: Indicates (by boolean) if data can be exported or not.
+        meaning: reproschema:AllowExport
+      AllowReplay:
+        description: Indicates (by boolean) if items can be replayed or not.
+        meaning: reproschema:AllowReplay
+      AutoAdvance:
+        description: Indicates (by boolean) if assessments in a protocol can auto advance or not.
+        meaning: reproschema:AutoAdvance
+      DisableBack:
+        description: Indicates (by boolean) if we can go back to a completed assessment in a protocol.
+        meaning: reproschema:DisableBack
+  MissingType:
+    permissible_values:
+      Skipped:
+        description: An element to describe the choice when the item is skipped.
+        meaning: reproschema:Skipped
+      DontKnow:
+        description: An element to describe the choice when response is not known.
+        meaning: reproschema:DontKnow
+      Unknown:
+        description: An element to describe the choice when the reason for missing response is unknown.
+        meaning: reproschema:Unknown
