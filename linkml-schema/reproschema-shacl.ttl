@@ -23,7 +23,7 @@ schema1:MediaObject a sh:NodeShape ;
             sh:order 0 ;
             sh:path schema1:contentUrl ],
         [ sh:datatype rdf:langString ;
-            
+             
             sh:order 1 ;
             sh:path schema1:inLanguage ] ;
     sh:targetClass schema1:MediaObject .
@@ -61,73 +61,96 @@ reproschema:Protocol a sh:NodeShape ;
     sh:description "['A representation of a study which comprises one or more assessments.']" ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:name "Protocol" ;
-    sh:property [ sh:description "['An element (by URL) to point to the protocol readme or landing page.']" ;
-            sh:maxCount 1 ;
-            sh:name "Landing page content" ;
-            sh:or ( [ sh:datatype xsd:anyURI ] [ sh:datatype xsd:string ] [ sh:node reproschema:LandingPage ] ) ;
-            sh:order 6 ;
-            sh:path reproschema:landingPage ],
+    sh:property [ sh:description "['An ordered list to describe the order in which the items of an assessment or protocol appear in the user interface.']" ;
+            sh:name "Order" ;
+            sh:or ( [ sh:datatype xsd:anyURI ] [ sh:node reproschema:Activity ] [ sh:node reproschema:Field ] ) ;
+            sh:order 10 ;
+            sh:path reproschema:order ],
         [ sh:datatype rdf:langString ;
-            sh:description "['The preferred label.']" ;
-            sh:name "preferred label" ;
-            sh:order 8 ;
-            sh:path skos:prefLabel ],
+            sh:maxCount 1 ;
+             
+            sh:order 15 ;
+            sh:path schema1:version ],
+        [ sh:node schema1:Thing ;
+            sh:description "['An array of items indicating properties allowed on an activity or protocol ']" ;
+            sh:name "allow" ;
+             
+            sh:order 2 ;
+            sh:path reproschema:allow ],
         [ sh:datatype xsd:string ;
             sh:description "['The subject matter of the Field.']" ;
             sh:maxCount 1 ;
             sh:order 0 ;
             sh:path schema1:about ],
+        [ sh:datatype rdf:langString ;
+            sh:description "['The preferred label.']" ;
+            sh:name "preferred label" ;
+             
+            sh:order 12 ;
+            sh:path skos:prefLabel ],
         [ sh:datatype xsd:string ;
             sh:description "['A media object that encodes this CreativeWork. This property is a synonym for encoding.']" ;
             sh:maxCount 1 ;
             sh:name "associatedMedia" ;
-            sh:order 2 ;
+            sh:order 4 ;
             sh:path schema1:associatedMedia ],
         [ sh:datatype xsd:string ;
             sh:description "['TODO not described in reproschema']" ;
             sh:maxCount 1 ;
             sh:name "cronTable" ;
-            sh:order 4 ;
+            sh:order 6 ;
             sh:path reproschema:cronTable ],
-        [ sh:description "['An array of objects indicating computations in an activity or protocol and maps it to the corresponding Field item. scoring logic is a subset of all computations that could be performed and not all computations will be scoring. For example, one may want to do conversion from one unit to another. ']" ;
-            sh:name "computation" ;
-            sh:or ( [ sh:node reproschema:ComputeSpecification ] ) ;
-            sh:order 3 ;
-            sh:path reproschema:compute ],
+        [ sh:node reproschema:MessageSpecification ;
+            sh:description "['An array of objects to define conditional messages in an activity or protocol.']" ;
+            sh:name "messages" ;
+             
+            sh:order 9 ;
+            sh:path reproschema:messages ],
         [ sh:datatype rdf:langString ;
             sh:maxCount 1 ;
-            
-            sh:order 5 ;
-            sh:path schema1:description ],
-        [ sh:datatype rdf:langString ;
+             
+            sh:order 13 ;
+            sh:path schema1:schemaVersion ],
+        [ sh:datatype xsd:boolean ;
+            sh:description "['An element (bool) to determine if the list of items is shuffled or in order.']" ;
             sh:maxCount 1 ;
-            
+            sh:name "Shuffle" ;
+            sh:order 14 ;
+            sh:path reproschema:shuffle ],
+        [ sh:node reproschema:OverrideProperty ;
+            sh:description "['An array of objects to override the various properties added to assessments and fields.']" ;
+            sh:name "overrideProperties" ;
+             
             sh:order 11 ;
-            sh:path schema1:version ],
+            sh:path reproschema:overrideProperties ],
+        [ sh:node reproschema:AdditionalProperty ;
+            sh:description "['An array of objects to describe the various properties added to assessments and fields.']" ;
+            sh:name "addProperties" ;
+             
+            sh:order 1 ;
+            sh:path reproschema:addProperties ],
+        [ sh:datatype rdf:langString ;
+            sh:maxCount 1 ;
+             
+            sh:order 7 ;
+            sh:path schema1:description ],
         [ sh:datatype xsd:string ;
             sh:description "['The alternate label.']" ;
             sh:maxCount 1 ;
             sh:name "alternate label" ;
-            sh:order 1 ;
+            sh:order 3 ;
             sh:path skos:altLabel ],
-        [ sh:node reproschema:UiProtocol ;
-            sh:description "['it was originally @nest in jsonld, but decided for a new class for now']" ;
+        [ sh:description "['An element (by URL) to point to the protocol readme or landing page.']" ;
             sh:maxCount 1 ;
-            sh:name "UI" ;
-            
-            sh:order 10 ;
-            sh:path reproschema:ui ],
-        [ sh:node reproschema:MessageSpecification ;
-            sh:description "['An array of objects to define conditional messages in an activity or protocol.']" ;
-            sh:name "messages" ;
-            
-            sh:order 7 ;
-            sh:path reproschema:messages ],
-        [ sh:datatype rdf:langString ;
-            sh:maxCount 1 ;
-            
-            sh:order 9 ;
-            sh:path schema1:schemaVersion ] ;
+            sh:name "Landing page content" ;
+            sh:or ( [ sh:datatype xsd:anyURI ] [ sh:datatype xsd:string ] [ sh:node reproschema:LandingPage ] ) ;
+            sh:order 8 ;
+            sh:path reproschema:landingPage ],
+        [ sh:description "['An array of objects indicating computations in an activity or protocol and maps it to the corresponding Field item. scoring logic is a subset of all computations that could be performed and not all computations will be scoring. For example, one may want to do conversion from one unit to another. ']" ;
+            sh:name "computation" ;
+            sh:or ( [ sh:node reproschema:ComputeSpecification ] ) ;
+            sh:order 5 ;
+            sh:path reproschema:compute ] ;
     sh:targetClass reproschema:Protocol .
 
 reproschema:Response a sh:NodeShape ;
@@ -135,20 +158,20 @@ reproschema:Response a sh:NodeShape ;
     sh:description "['Describes the response of an item.']" ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:name "Response" ;
-    sh:property [ sh:description "['A pointer to the node describing the item.']" ;
+    sh:property [ sh:description "['The value for each option in choices or in additionalNotesObj']" ;
+            sh:name "value" ;
+            sh:or ( [ sh:node reproschema:Skipped ] [ sh:node reproschema:DontKnow ] [ sh:datatype xsd:decimal ] [ sh:datatype xsd:boolean ] [ sh:datatype xsd:string ] [ sh:datatype xsd:anyURI ] [ sh:node schema1:StructuredValue ] ) ;
+            sh:order 1 ;
+            sh:path reproschema:value ],
+        [ sh:description "['A pointer to the node describing the item.']" ;
             sh:maxCount 1 ;
             sh:name "isAbout" ;
             sh:or ( [ sh:node reproschema:Activity ] [ sh:node reproschema:Field ] ) ;
             sh:order 0 ;
             sh:path reproschema:isAbout ],
-        [ sh:description "['The value for each option in choices or in additionalNotesObj']" ;
-            sh:name "value" ;
-            sh:or ( [ sh:node reproschema:Skipped ] [ sh:node reproschema:DontKnow ] [ sh:datatype xsd:decimal ] [ sh:datatype xsd:boolean ] [ sh:datatype xsd:string ] [ sh:datatype xsd:anyURI ] [ sh:node schema1:StructuredValue ] ) ;
-            sh:order 1 ;
-            sh:path reproschema:value ],
         [ sh:node reproschema:Participant ;
             sh:maxCount 1 ;
-            
+             
             sh:order 2 ;
             sh:path prov:wasAttributedTo ] ;
     sh:targetClass reproschema:Response .
@@ -158,30 +181,31 @@ reproschema:ResponseActivity a sh:NodeShape ;
     sh:description "['Captures information about some action that took place. It also links to information (entities) that were used during the activity']" ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:name "ResponseActivity" ;
-    sh:property [ sh:datatype rdf:langString ;
-            
-            sh:order 2 ;
-            sh:path schema1:inLanguage ],
-        [ sh:node reproschema:SoftwareAgent ;
-            sh:maxCount 1 ;
-            
-            sh:order 5 ;
-            sh:path prov:wasAssociatedWith ],
-        [ sh:datatype xsd:dateTime ;
+    sh:property [ sh:datatype xsd:dateTime ;
             sh:maxCount 1 ;
             sh:order 3 ;
             sh:path prov:startedAtTime ],
+        [ sh:datatype xsd:dateTime ;
+            sh:maxCount 1 ;
+            sh:order 0 ;
+            sh:path prov:endedAtTime ],
+        [ sh:datatype rdf:langString ;
+            sh:maxCount 1 ;
+             
+            sh:order 1 ;
+            sh:path prov:generated ],
         [ sh:nodeKind sh:IRI ;
             sh:order 4 ;
             sh:path prov:used ],
         [ sh:datatype rdf:langString ;
+             
+            sh:order 2 ;
+            sh:path schema1:inLanguage ],
+        [ sh:node reproschema:SoftwareAgent ;
             sh:maxCount 1 ;
-            sh:order 1 ;
-            sh:path prov:generated ],
-        [ sh:datatype xsd:dateTime ;
-            sh:maxCount 1 ;
-            sh:order 0 ;
-            sh:path prov:endedAtTime ] ;
+             
+            sh:order 5 ;
+            sh:path prov:wasAssociatedWith ] ;
     sh:targetClass reproschema:ResponseActivity .
 
 reproschema:TimedOut a sh:NodeShape ;
@@ -201,7 +225,7 @@ schema1:VideoObject a sh:NodeShape ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:name "Video Object" ;
     sh:property [ sh:datatype rdf:langString ;
-            
+             
             sh:order 1 ;
             sh:path schema1:inLanguage ],
         [ sh:maxCount 1 ;
@@ -215,7 +239,12 @@ reproschema:AdditionalNoteObj a sh:NodeShape ;
     sh:description "['A set of objects to define notes in a field. For example, most Redcap and NDA data dictionaries have notes for each item which needs to be captured in reproschema']" ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:name "Additional Notes Object" ;
-    sh:property [ sh:datatype xsd:string ;
+    sh:property [ sh:description "['The value for each option in choices or in additionalNotesObj']" ;
+            sh:name "value" ;
+            sh:or ( [ sh:datatype xsd:boolean ] [ sh:datatype xsd:decimal ] [ sh:node schema1:StructuredValue ] [ sh:datatype xsd:string ] [ sh:datatype rdf:langString ] [ sh:datatype xsd:anyURI ] ) ;
+            sh:order 2 ;
+            sh:path reproschema:value ],
+        [ sh:datatype xsd:string ;
             sh:description "['An element to define the source (eg. RedCap, NDA) where the note was taken from.']" ;
             sh:name "source" ;
             sh:order 1 ;
@@ -224,12 +253,7 @@ reproschema:AdditionalNoteObj a sh:NodeShape ;
             sh:description "['An element to define the column name where the note was taken from.']" ;
             sh:name "column" ;
             sh:order 0 ;
-            sh:path reproschema:column ],
-        [ sh:description "['The value for each option in choices or in additionalNotesObj']" ;
-            sh:name "value" ;
-            sh:or ( [ sh:datatype xsd:boolean ] [ sh:datatype xsd:decimal ] [ sh:node schema1:StructuredValue ] [ sh:datatype xsd:string ] [ sh:datatype rdf:langString ] [ sh:datatype xsd:anyURI ] ) ;
-            sh:order 2 ;
-            sh:path reproschema:value ] ;
+            sh:path reproschema:column ] ;
     sh:targetClass reproschema:AdditionalNoteObj .
 
 reproschema:Choice a sh:NodeShape ;
@@ -237,20 +261,20 @@ reproschema:Choice a sh:NodeShape ;
     sh:description "['An object to describe a response option.']" ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:name "Response choice" ;
-    sh:property [ sh:description "['The value for each option in choices or in additionalNotesObj']" ;
+    sh:property [ sh:description "['An image of the item. This can be a <a class=\"localLink\" href=\"http://schema.org/URL\">URL</a> or a fully described <a class=\"localLink\" href=\"http://schema.org/ImageObject\">ImageObject</a>.']" ;
+            sh:maxCount 1 ;
+            sh:name "image" ;
+            sh:order 1 ;
+            sh:path schema1:image ],
+        [ sh:description "['The value for each option in choices or in additionalNotesObj']" ;
             sh:name "value" ;
             sh:or ( [ sh:datatype xsd:boolean ] [ sh:datatype xsd:decimal ] [ sh:node schema1:StructuredValue ] [ sh:datatype xsd:string ] [ sh:datatype rdf:langString ] [ sh:datatype xsd:anyURI ] ) ;
             sh:order 2 ;
             sh:path reproschema:value ],
         [ sh:datatype rdf:langString ;
-            
+             
             sh:order 0 ;
-            sh:path schema1:name ],
-        [ sh:description "['An image of the item. This can be a <a class=\"localLink\" href=\"http://schema.org/URL\">URL</a> or a fully described <a class=\"localLink\" href=\"http://schema.org/ImageObject\">ImageObject</a>.']" ;
-            sh:maxCount 1 ;
-            sh:name "image" ;
-            sh:order 1 ;
-            sh:path schema1:image ] ;
+            sh:path schema1:name ] ;
     sh:targetClass reproschema:Choice .
 
 reproschema:DontKnow a sh:NodeShape ;
@@ -266,7 +290,7 @@ reproschema:LandingPage a sh:NodeShape ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:name "Landing Page" ;
     sh:property [ sh:datatype rdf:langString ;
-            
+             
             sh:order 0 ;
             sh:path schema1:inLanguage ] ;
     sh:targetClass reproschema:LandingPage .
@@ -278,7 +302,7 @@ reproschema:Participant a sh:NodeShape ;
     sh:name "Participant" ;
     sh:property [ sh:datatype rdf:langString ;
             sh:maxCount 1 ;
-            
+             
             sh:order 0 ;
             sh:path nidm:subject_id ] ;
     sh:targetClass reproschema:Participant .
@@ -294,36 +318,36 @@ reproschema:ResponseOption a sh:NodeShape ;
             sh:name "Multiple choice response expectation" ;
             sh:order 4 ;
             sh:path reproschema:multipleChoice ],
-        [ sh:node reproschema:UnitOption ;
-            sh:description "['A list of objects to represent a human displayable name alongside the more formal value for units.']" ;
-            sh:name "unitOptions" ;
-            
-            sh:order 5 ;
-            sh:path reproschema:unitOptions ],
         [ sh:description "['An array to list the available options for response of the Field item.']" ;
             sh:name "choices" ;
             sh:or ( [ sh:datatype xsd:anyURI ] [ sh:node reproschema:Choice ] ) ;
             sh:order 0 ;
             sh:path reproschema:choices ],
-        [ sh:nodeKind sh:IRI ;
-            sh:description "['The type of the response of an item. For example, string, integer, etc.']" ;
-            sh:name "The type of the response" ;
-            sh:order 6 ;
-            sh:path reproschema:valueType ],
+        [ sh:maxCount 1 ;
+            sh:or ( [ sh:datatype xsd:float ] [ sh:datatype xsd:integer ] ) ;
+            sh:order 3 ;
+            sh:path schema1:minValue ],
+        [ sh:node reproschema:UnitOption ;
+            sh:description "['A list of objects to represent a human displayable name alongside the more formal value for units.']" ;
+            sh:name "unitOptions" ;
+             
+            sh:order 5 ;
+            sh:path reproschema:unitOptions ],
         [ sh:description "['Indicates what type of datum the response is (e.g. range,count,scalar etc.) for the Field item.']" ;
             sh:maxCount 1 ;
             sh:name "datumType" ;
             sh:or ( [ sh:datatype xsd:string ] [ sh:datatype xsd:anyURI ] ) ;
             sh:order 1 ;
             sh:path reproschema:datumType ],
+        [ sh:nodeKind sh:IRI ;
+            sh:description "['The type of the response of an item. For example, string, integer, etc.']" ;
+            sh:name "The type of the response" ;
+            sh:order 6 ;
+            sh:path reproschema:valueType ],
         [ sh:maxCount 1 ;
             sh:or ( [ sh:datatype xsd:float ] [ sh:datatype xsd:integer ] ) ;
             sh:order 2 ;
-            sh:path schema1:maxValue ],
-        [ sh:maxCount 1 ;
-            sh:or ( [ sh:datatype xsd:float ] [ sh:datatype xsd:integer ] ) ;
-            sh:order 3 ;
-            sh:path schema1:minValue ] ;
+            sh:path schema1:maxValue ] ;
     sh:targetClass reproschema:ResponseOption .
 
 reproschema:Skipped a sh:NodeShape ;
@@ -344,99 +368,10 @@ reproschema:SoftwareAgent a sh:NodeShape ;
             sh:path schema1:url ],
         [ sh:datatype rdf:langString ;
             sh:maxCount 1 ;
-            
+             
             sh:order 0 ;
             sh:path schema1:version ] ;
     sh:targetClass reproschema:SoftwareAgent .
-
-reproschema:UiActivity a sh:NodeShape ;
-    sh:closed true ;
-    sh:description "['todo']" ;
-    sh:ignoredProperties ( rdf:type ) ;
-    sh:name "todo" ;
-    sh:property [ sh:node schema1:Thing ;
-            sh:description "['An array of items indicating properties allowed on an activity or protocol ']" ;
-            sh:name "allow" ;
-            
-            sh:order 4 ;
-            sh:path reproschema:allow ],
-        [ sh:description "['An ordered list to describe the order in which the items of an assessment or protocol appear in the user interface.']" ;
-            sh:name "Order" ;
-            sh:or ( [ sh:datatype xsd:anyURI ] [ sh:node reproschema:Activity ] [ sh:node reproschema:Field ] ) ;
-            sh:order 0 ;
-            sh:path reproschema:order ],
-        [ sh:node reproschema:OverrideProperty ;
-            sh:description "['An array of objects to override the various properties added to assessments and fields.']" ;
-            sh:name "overrideProperties" ;
-            
-            sh:order 2 ;
-            sh:path reproschema:overrideProperties ],
-        [ sh:node reproschema:AdditionalProperty ;
-            sh:description "['An array of objects to describe the various properties added to assessments and fields.']" ;
-            sh:name "addProperties" ;
-            
-            sh:order 1 ;
-            sh:path reproschema:addProperties ],
-        [ sh:datatype xsd:boolean ;
-            sh:description "['An element (bool) to determine if the list of items is shuffled or in order.']" ;
-            sh:maxCount 1 ;
-            sh:name "Shuffle" ;
-            sh:order 3 ;
-            sh:path reproschema:shuffle ] ;
-    sh:targetClass reproschema:UiActivity .
-
-reproschema:UiField a sh:NodeShape ;
-    sh:closed true ;
-    sh:description "['todo']" ;
-    sh:ignoredProperties ( rdf:type ) ;
-    sh:name "todo" ;
-    sh:property [ sh:datatype xsd:boolean ;
-            sh:maxCount 1 ;
-            sh:order 1 ;
-            sh:path schema1:readonlyValue ],
-        [ sh:datatype xsd:string ;
-            sh:description "['An element to describe the input type of a Field item.']" ;
-            sh:maxCount 1 ;
-            sh:name "inputType" ;
-            sh:order 0 ;
-            sh:path reproschema:inputType ] ;
-    sh:targetClass reproschema:UiField .
-
-reproschema:UiProtocol a sh:NodeShape ;
-    sh:closed true ;
-    sh:description "['todo']" ;
-    sh:ignoredProperties ( rdf:type ) ;
-    sh:name "todo" ;
-    sh:property [ sh:node schema1:Thing ;
-            sh:description "['An array of items indicating properties allowed on an activity or protocol ']" ;
-            sh:name "allow" ;
-            
-            sh:order 4 ;
-            sh:path reproschema:allow ],
-        [ sh:node reproschema:OverrideProperty ;
-            sh:description "['An array of objects to override the various properties added to assessments and fields.']" ;
-            sh:name "overrideProperties" ;
-            
-            sh:order 2 ;
-            sh:path reproschema:overrideProperties ],
-        [ sh:description "['An ordered list to describe the order in which the items of an assessment or protocol appear in the user interface.']" ;
-            sh:name "Order" ;
-            sh:or ( [ sh:datatype xsd:anyURI ] [ sh:node reproschema:Activity ] [ sh:node reproschema:Field ] ) ;
-            sh:order 0 ;
-            sh:path reproschema:order ],
-        [ sh:node reproschema:AdditionalProperty ;
-            sh:description "['An array of objects to describe the various properties added to assessments and fields.']" ;
-            sh:name "addProperties" ;
-            
-            sh:order 1 ;
-            sh:path reproschema:addProperties ],
-        [ sh:datatype xsd:boolean ;
-            sh:description "['An element (bool) to determine if the list of items is shuffled or in order.']" ;
-            sh:maxCount 1 ;
-            sh:name "Shuffle" ;
-            sh:order 3 ;
-            sh:path reproschema:shuffle ] ;
-    sh:targetClass reproschema:UiProtocol .
 
 reproschema:UnitOption a sh:NodeShape ;
     sh:closed true ;
@@ -451,7 +386,7 @@ reproschema:UnitOption a sh:NodeShape ;
         [ sh:datatype rdf:langString ;
             sh:description "['The preferred label.']" ;
             sh:name "preferred label" ;
-            
+             
             sh:order 0 ;
             sh:path skos:prefLabel ] ;
     sh:targetClass reproschema:UnitOption .
@@ -461,67 +396,67 @@ reproschema:AdditionalProperty a sh:NodeShape ;
     sh:description "['An object to describe the various properties added to assessments and fields.']" ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:name "Additional properties" ;
-    sh:property [ sh:description "['A pointer to the node describing the item.']" ;
+    sh:property [ sh:datatype rdf:langString ;
+            sh:description "['The preferred label.']" ;
+            sh:name "preferred label" ;
+             
+            sh:order 5 ;
+            sh:path skos:prefLabel ],
+        [ sh:datatype rdf:langString ;
+            sh:description "['Present activity/item within some random offset of activity available time up to the maximum specified by this ISO 8601 duration']" ;
+            sh:maxCount 1 ;
+            sh:name "randomMaxDelay" ;
+             
+            sh:order 6 ;
+            sh:path reproschema:randomMaxDelay ],
+        [ sh:description "['An element to describe (by boolean or conditional statement) visibility conditions of items in an assessment.']" ;
+            sh:maxCount 1 ;
+            sh:name "visibility" ;
+            sh:or ( [ sh:datatype xsd:boolean ] [ sh:datatype xsd:string ] ) ;
+            sh:order 2 ;
+            sh:path reproschema:isVis ],
+        [ sh:datatype rdf:langString ;
+            sh:description "['The name used to represent an item.']" ;
+            sh:maxCount 1 ;
+            sh:name "variableName" ;
+             
+            sh:order 9 ;
+            sh:path reproschema:variableName ],
+        [ sh:description "['A pointer to the node describing the item.']" ;
             sh:maxCount 1 ;
             sh:name "isAbout" ;
             sh:or ( [ sh:node reproschema:Activity ] [ sh:node reproschema:Field ] ) ;
             sh:order 1 ;
             sh:path reproschema:isAbout ],
-        [ sh:datatype rdf:langString ;
-            sh:description "['An element to limit the duration (uses ISO 8601) this activity is allowed to be completed by once activity is available.']" ;
-            sh:maxCount 1 ;
-            sh:name "limit" ;
-            
-            sh:order 3 ;
-            sh:path reproschema:limit ],
-        [ sh:datatype xsd:boolean ;
-            sh:maxCount 1 ;
-            sh:order 8 ;
-            sh:path schema1:valueRequired ],
         [ sh:node schema1:Thing ;
             sh:description "['An array of items indicating properties allowed on an activity or protocol ']" ;
             sh:name "allow" ;
-            
+             
             sh:order 0 ;
             sh:path reproschema:allow ],
-        [ sh:datatype rdf:langString ;
-            sh:description "['Present activity/item within some random offset of activity available time up to the maximum specified by this ISO 8601 duration']" ;
-            sh:maxCount 1 ;
-            sh:name "randomMaxDelay" ;
-            
-            sh:order 6 ;
-            sh:path reproschema:randomMaxDelay ],
-        [ sh:datatype rdf:langString ;
-            sh:description "['The preferred label.']" ;
-            sh:name "preferred label" ;
-            
-            sh:order 5 ;
-            sh:path skos:prefLabel ],
-        [ sh:description "['An element to set make activity available/repeat info using ISO 8601 repeating interval format.']" ;
-            sh:maxCount 1 ;
-            sh:name "Schedule" ;
-            sh:or ( [ sh:node reproschema:Schedule ] [ sh:datatype xsd:string ] ) ;
-            sh:order 7 ;
-            sh:path reproschema:schedule ],
-        [ sh:datatype rdf:langString ;
-            sh:description "['The name used to represent an item.']" ;
-            sh:maxCount 1 ;
-            sh:name "variableName" ;
-            
-            sh:order 9 ;
-            sh:path reproschema:variableName ],
         [ sh:description "['Defines number of times the item is allowed to be redone.']" ;
             sh:maxCount 1 ;
             sh:name "maxRetakes" ;
             sh:or ( [ sh:datatype xsd:decimal ] ) ;
             sh:order 4 ;
             sh:path reproschema:maxRetakes ],
-        [ sh:description "['An element to describe (by boolean or conditional statement) visibility conditions of items in an assessment.']" ;
+        [ sh:datatype xsd:boolean ;
             sh:maxCount 1 ;
-            sh:name "visibility" ;
-            sh:or ( [ sh:datatype xsd:boolean ] [ sh:datatype xsd:string ] ) ;
-            sh:order 2 ;
-            sh:path reproschema:isVis ] ;
+            sh:order 8 ;
+            sh:path schema1:valueRequired ],
+        [ sh:datatype rdf:langString ;
+            sh:description "['An element to limit the duration (uses ISO 8601) this activity is allowed to be completed by once activity is available.']" ;
+            sh:maxCount 1 ;
+            sh:name "limit" ;
+             
+            sh:order 3 ;
+            sh:path reproschema:limit ],
+        [ sh:description "['An element to set make activity available/repeat info using ISO 8601 repeating interval format.']" ;
+            sh:maxCount 1 ;
+            sh:name "Schedule" ;
+            sh:or ( [ sh:node reproschema:Schedule ] [ sh:datatype xsd:string ] ) ;
+            sh:order 7 ;
+            sh:path reproschema:schedule ] ;
     sh:targetClass reproschema:AdditionalProperty .
 
 reproschema:ComputeSpecification a sh:NodeShape ;
@@ -533,7 +468,7 @@ reproschema:ComputeSpecification a sh:NodeShape ;
             sh:description "['The name used to represent an item.']" ;
             sh:maxCount 1 ;
             sh:name "variableName" ;
-            
+             
             sh:order 1 ;
             sh:path reproschema:variableName ],
         [ sh:description "['A JavaScript expression for computations.', 'A JavaScript expression to compute a score from other variables.']" ;
@@ -558,7 +493,7 @@ reproschema:MessageSpecification a sh:NodeShape ;
         [ sh:datatype rdf:langString ;
             sh:description "['The message to be conditionally displayed for an item. ']" ;
             sh:name "Message" ;
-            
+             
             sh:order 1 ;
             sh:path reproschema:message ] ;
     sh:targetClass reproschema:MessageSpecification .
@@ -568,14 +503,7 @@ reproschema:OverrideProperty a sh:NodeShape ;
     sh:description "['An object to override the various properties added to assessments and fields.']" ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:name "Additional properties" ;
-    sh:property [ sh:datatype rdf:langString ;
-            sh:description "['The name used to represent an item.']" ;
-            sh:maxCount 1 ;
-            sh:name "variableName" ;
-            
-            sh:order 8 ;
-            sh:path reproschema:variableName ],
-        [ sh:description "['Defines number of times the item is allowed to be redone.']" ;
+    sh:property [ sh:description "['Defines number of times the item is allowed to be redone.']" ;
             sh:maxCount 1 ;
             sh:name "maxRetakes" ;
             sh:or ( [ sh:datatype xsd:decimal ] ) ;
@@ -585,28 +513,9 @@ reproschema:OverrideProperty a sh:NodeShape ;
             sh:description "['An element to limit the duration (uses ISO 8601) this activity is allowed to be completed by once activity is available.']" ;
             sh:maxCount 1 ;
             sh:name "limit" ;
-            
+             
             sh:order 2 ;
             sh:path reproschema:limit ],
-        [ sh:datatype rdf:langString ;
-            sh:description "['Present activity/item within some random offset of activity available time up to the maximum specified by this ISO 8601 duration']" ;
-            sh:maxCount 1 ;
-            sh:name "randomMaxDelay" ;
-            
-            sh:order 5 ;
-            sh:path reproschema:randomMaxDelay ],
-        [ sh:description "['An element to describe (by boolean or conditional statement) visibility conditions of items in an assessment.']" ;
-            sh:maxCount 1 ;
-            sh:name "visibility" ;
-            sh:or ( [ sh:datatype xsd:boolean ] [ sh:datatype xsd:string ] ) ;
-            sh:order 1 ;
-            sh:path reproschema:isVis ],
-        [ sh:description "['A pointer to the node describing the item.']" ;
-            sh:maxCount 1 ;
-            sh:name "isAbout" ;
-            sh:or ( [ sh:node reproschema:Activity ] [ sh:node reproschema:Field ] ) ;
-            sh:order 0 ;
-            sh:path reproschema:isAbout ],
         [ sh:description "['An element to set make activity available/repeat info using ISO 8601 repeating interval format.']" ;
             sh:maxCount 1 ;
             sh:name "Schedule" ;
@@ -617,10 +526,36 @@ reproschema:OverrideProperty a sh:NodeShape ;
             sh:maxCount 1 ;
             sh:order 7 ;
             sh:path schema1:valueRequired ],
+        [ sh:description "['A pointer to the node describing the item.']" ;
+            sh:maxCount 1 ;
+            sh:name "isAbout" ;
+            sh:or ( [ sh:node reproschema:Activity ] [ sh:node reproschema:Field ] ) ;
+            sh:order 0 ;
+            sh:path reproschema:isAbout ],
+        [ sh:description "['An element to describe (by boolean or conditional statement) visibility conditions of items in an assessment.']" ;
+            sh:maxCount 1 ;
+            sh:name "visibility" ;
+            sh:or ( [ sh:datatype xsd:boolean ] [ sh:datatype xsd:string ] ) ;
+            sh:order 1 ;
+            sh:path reproschema:isVis ],
+        [ sh:datatype rdf:langString ;
+            sh:description "['Present activity/item within some random offset of activity available time up to the maximum specified by this ISO 8601 duration']" ;
+            sh:maxCount 1 ;
+            sh:name "randomMaxDelay" ;
+             
+            sh:order 5 ;
+            sh:path reproschema:randomMaxDelay ],
+        [ sh:datatype rdf:langString ;
+            sh:description "['The name used to represent an item.']" ;
+            sh:maxCount 1 ;
+            sh:name "variableName" ;
+             
+            sh:order 8 ;
+            sh:path reproschema:variableName ],
         [ sh:datatype rdf:langString ;
             sh:description "['The preferred label.']" ;
             sh:name "preferred label" ;
-            
+             
             sh:order 4 ;
             sh:path skos:prefLabel ] ;
     sh:targetClass reproschema:OverrideProperty .
@@ -647,73 +582,68 @@ reproschema:Field a sh:NodeShape ;
     sh:description "['An item in an assessment.']" ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:name "Field" ;
-    sh:property [ sh:node schema1:VideoObject ;
-            sh:maxCount 1 ;
-            
-            sh:order 16 ;
-            sh:path schema1:video ],
-        [ sh:datatype xsd:string ;
-            sh:description "['A media object that encodes this CreativeWork. This property is a synonym for encoding.']" ;
-            sh:maxCount 1 ;
-            sh:name "associatedMedia" ;
-            sh:order 3 ;
-            sh:path schema1:associatedMedia ],
-        [ sh:description "['An element (object or by URL)to describe the properties of response of the Field item.']" ;
-            sh:maxCount 1 ;
-            sh:name "Response options" ;
-            sh:or ( [ sh:datatype xsd:anyURI ] [ sh:node reproschema:ResponseOption ] ) ;
-            sh:order 12 ;
-            sh:path reproschema:responseOptions ],
-        [ sh:description "['An image of the item. This can be a <a class=\"localLink\" href=\"http://schema.org/URL\">URL</a> or a fully described <a class=\"localLink\" href=\"http://schema.org/ImageObject\">ImageObject</a>.']" ;
+    sh:property [ sh:description "['An image of the item. This can be a <a class=\"localLink\" href=\"http://schema.org/URL\">URL</a> or a fully described <a class=\"localLink\" href=\"http://schema.org/ImageObject\">ImageObject</a>.']" ;
             sh:maxCount 1 ;
             sh:name "image" ;
             sh:order 6 ;
             sh:path schema1:image ],
+        [ sh:description "['A set of objects to define notes in a field. For example, most Redcap and NDA data dictionaries have notes for each item which needs to be captured in reproschema.']" ;
+            sh:name "additional notes" ;
+            sh:or ( [ sh:node reproschema:AdditionalNoteObj ] ) ;
+            sh:order 1 ;
+            sh:path reproschema:additionalNotesObj ],
+        [ sh:datatype rdf:langString ;
+            sh:maxCount 1 ;
+             
+            sh:order 15 ;
+            sh:path schema1:schemaVersion ],
+        [ sh:description "['TDOO']" ;
+            sh:maxCount 1 ;
+            sh:name "audio" ;
+            sh:order 4 ;
+            sh:path schema1:audio ],
+        [ sh:datatype rdf:langString ;
+             
+            sh:order 12 ;
+            sh:path schema1:question ],
         [ sh:nodeKind sh:IRI ;
             sh:description "['An image url.']" ;
             sh:maxCount 1 ;
             sh:name "imageUrl" ;
             sh:order 7 ;
             sh:path reproschema:imageUrl ],
-        [ sh:datatype rdf:langString ;
-            sh:maxCount 1 ;
-            
-            sh:order 13 ;
-            sh:path schema1:schemaVersion ],
-        [ sh:datatype rdf:langString ;
-            sh:maxCount 1 ;
-            
-            sh:order 15 ;
-            sh:path schema1:version ],
-        [ sh:datatype rdf:langString ;
-            sh:description "['The preamble for an assessment']" ;
-            sh:name "Preamble" ;
-            
-            sh:order 9 ;
-            sh:path reproschema:preamble ],
-        [ sh:datatype rdf:langString ;
-            sh:description "['The preferred label.']" ;
-            sh:name "preferred label" ;
-            
-            sh:order 10 ;
-            sh:path skos:prefLabel ],
-        [ sh:description "['TDOO']" ;
-            sh:maxCount 1 ;
-            sh:name "audio" ;
-            sh:order 4 ;
-            sh:path schema1:audio ],
-        [ sh:node reproschema:UiField ;
-            sh:description "['it was originally @nest in jsonld, but decided for a new class for now']" ;
-            sh:maxCount 1 ;
-            sh:name "UI" ;
-            
-            sh:order 14 ;
-            sh:path reproschema:ui ],
         [ sh:datatype xsd:string ;
             sh:description "['The subject matter of the Field.']" ;
             sh:maxCount 1 ;
             sh:order 0 ;
             sh:path schema1:about ],
+        [ sh:datatype xsd:string ;
+            sh:description "['A media object that encodes this CreativeWork. This property is a synonym for encoding.']" ;
+            sh:maxCount 1 ;
+            sh:name "associatedMedia" ;
+            sh:order 3 ;
+            sh:path schema1:associatedMedia ],
+        [ sh:datatype rdf:langString ;
+            sh:description "['The preamble for an assessment']" ;
+            sh:name "Preamble" ;
+             
+            sh:order 10 ;
+            sh:path reproschema:preamble ],
+        [ sh:datatype rdf:langString ;
+            sh:maxCount 1 ;
+             
+            sh:order 5 ;
+            sh:path schema1:description ],
+        [ sh:datatype xsd:boolean ;
+            sh:maxCount 1 ;
+            sh:order 13 ;
+            sh:path schema1:readonlyValue ],
+        [ sh:datatype xsd:string ;
+            sh:description "['An element to describe the input type of a Field item.']" ;
+            sh:maxCount 1 ;
+            sh:name "inputType" ;
+            sh:order 8 ;
+            sh:path reproschema:inputType ],
         [ sh:datatype xsd:string ;
             sh:description "['The alternate label.']" ;
             sh:maxCount 1 ;
@@ -721,24 +651,32 @@ reproschema:Field a sh:NodeShape ;
             sh:order 2 ;
             sh:path skos:altLabel ],
         [ sh:datatype rdf:langString ;
-            
+            sh:description "['The preferred label.']" ;
+            sh:name "preferred label" ;
+             
             sh:order 11 ;
-            sh:path schema1:question ],
-        [ sh:datatype rdf:langString ;
+            sh:path skos:prefLabel ],
+        [ sh:description "['An element (object or by URL)to describe the properties of response of the Field item.']" ;
             sh:maxCount 1 ;
-            
-            sh:order 5 ;
-            sh:path schema1:description ],
+            sh:name "Response options" ;
+            sh:or ( [ sh:datatype xsd:anyURI ] [ sh:node reproschema:ResponseOption ] ) ;
+            sh:order 14 ;
+            sh:path reproschema:responseOptions ],
+        [ sh:node schema1:VideoObject ;
+            sh:maxCount 1 ;
+             
+            sh:order 17 ;
+            sh:path schema1:video ],
         [ sh:node reproschema:Activity ;
             sh:maxCount 1 ;
-            
-            sh:order 8 ;
+             
+            sh:order 9 ;
             sh:path schema1:isPartOf ],
-        [ sh:description "['A set of objects to define notes in a field. For example, most Redcap and NDA data dictionaries have notes for each item which needs to be captured in reproschema.']" ;
-            sh:name "additional notes" ;
-            sh:or ( [ sh:node reproschema:AdditionalNoteObj ] ) ;
-            sh:order 1 ;
-            sh:path reproschema:additionalNotesObj ] ;
+        [ sh:datatype rdf:langString ;
+            sh:maxCount 1 ;
+             
+            sh:order 16 ;
+            sh:path schema1:version ] ;
     sh:targetClass reproschema:Field .
 
 reproschema:Activity a sh:NodeShape ;
@@ -746,84 +684,106 @@ reproschema:Activity a sh:NodeShape ;
     sh:description "['An assessment in a protocol.']" ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:name "Activity" ;
-    sh:property [ sh:description "['An array of objects indicating computations in an activity or protocol and maps it to the corresponding Field item. scoring logic is a subset of all computations that could be performed and not all computations will be scoring. For example, one may want to do conversion from one unit to another. ']" ;
-            sh:name "computation" ;
-            sh:or ( [ sh:node reproschema:ComputeSpecification ] ) ;
-            sh:order 4 ;
-            sh:path reproschema:compute ],
-        [ sh:datatype rdf:langString ;
-            sh:description "['The preamble for an assessment']" ;
-            sh:name "Preamble" ;
-            
-            sh:order 9 ;
-            sh:path reproschema:preamble ],
-        [ sh:description "['An image of the item. This can be a <a class=\"localLink\" href=\"http://schema.org/URL\">URL</a> or a fully described <a class=\"localLink\" href=\"http://schema.org/ImageObject\">ImageObject</a>.']" ;
+    sh:property [ sh:datatype xsd:string ;
+            sh:description "['A media object that encodes this CreativeWork. This property is a synonym for encoding.']" ;
             sh:maxCount 1 ;
-            sh:name "image" ;
+            sh:name "associatedMedia" ;
+            sh:order 4 ;
+            sh:path schema1:associatedMedia ],
+        [ sh:datatype xsd:string ;
+            sh:description "['TODO not described in reproschema']" ;
+            sh:maxCount 1 ;
+            sh:name "cronTable" ;
             sh:order 7 ;
-            sh:path schema1:image ],
+            sh:path reproschema:cronTable ],
+        [ sh:node reproschema:OverrideProperty ;
+            sh:description "['An array of objects to override the various properties added to assessments and fields.']" ;
+            sh:name "overrideProperties" ;
+             
+            sh:order 12 ;
+            sh:path reproschema:overrideProperties ],
         [ sh:datatype xsd:string ;
             sh:description "['The subject matter of the Field.']" ;
             sh:maxCount 1 ;
             sh:order 0 ;
             sh:path schema1:about ],
-        [ sh:datatype xsd:string ;
-            sh:description "['TODO not described in reproschema']" ;
+        [ sh:description "['An image of the item. This can be a <a class=\"localLink\" href=\"http://schema.org/URL\">URL</a> or a fully described <a class=\"localLink\" href=\"http://schema.org/ImageObject\">ImageObject</a>.']" ;
             sh:maxCount 1 ;
-            sh:name "cronTable" ;
-            sh:order 5 ;
-            sh:path reproschema:cronTable ],
-        [ sh:datatype rdf:langString ;
-            sh:maxCount 1 ;
-            
-            sh:order 3 ;
-            sh:path schema1:citation ],
-        [ sh:datatype rdf:langString ;
-            sh:maxCount 1 ;
-            
-            sh:order 13 ;
-            sh:path schema1:version ],
+            sh:name "image" ;
+            sh:order 9 ;
+            sh:path schema1:image ],
         [ sh:datatype xsd:string ;
             sh:description "['The alternate label.']" ;
             sh:maxCount 1 ;
             sh:name "alternate label" ;
-            sh:order 1 ;
+            sh:order 2 ;
             sh:path skos:altLabel ],
         [ sh:datatype rdf:langString ;
             sh:maxCount 1 ;
-            
-            sh:order 6 ;
-            sh:path schema1:description ],
-        [ sh:node reproschema:UiActivity ;
-            sh:description "['it was originally @nest in jsonld, but decided for a new class for now']" ;
-            sh:maxCount 1 ;
-            sh:name "UI" ;
-            
-            sh:order 12 ;
-            sh:path reproschema:ui ],
-        [ sh:datatype rdf:langString ;
-            sh:description "['The preferred label.']" ;
-            sh:name "preferred label" ;
-            
-            sh:order 10 ;
-            sh:path skos:prefLabel ],
+             
+            sh:order 15 ;
+            sh:path schema1:schemaVersion ],
+        [ sh:description "['An ordered list to describe the order in which the items of an assessment or protocol appear in the user interface.']" ;
+            sh:name "Order" ;
+            sh:or ( [ sh:datatype xsd:anyURI ] [ sh:node reproschema:Activity ] [ sh:node reproschema:Field ] ) ;
+            sh:order 11 ;
+            sh:path reproschema:order ],
         [ sh:node reproschema:MessageSpecification ;
             sh:description "['An array of objects to define conditional messages in an activity or protocol.']" ;
             sh:name "messages" ;
-            
-            sh:order 8 ;
+             
+            sh:order 10 ;
             sh:path reproschema:messages ],
         [ sh:datatype rdf:langString ;
             sh:maxCount 1 ;
-            
-            sh:order 11 ;
-            sh:path schema1:schemaVersion ],
-        [ sh:datatype xsd:string ;
-            sh:description "['A media object that encodes this CreativeWork. This property is a synonym for encoding.']" ;
+             
+            sh:order 8 ;
+            sh:path schema1:description ],
+        [ sh:datatype rdf:langString ;
+            sh:description "['The preferred label.']" ;
+            sh:name "preferred label" ;
+             
+            sh:order 14 ;
+            sh:path skos:prefLabel ],
+        [ sh:datatype rdf:langString ;
+            sh:description "['The preamble for an assessment']" ;
+            sh:name "Preamble" ;
+             
+            sh:order 13 ;
+            sh:path reproschema:preamble ],
+        [ sh:datatype rdf:langString ;
             sh:maxCount 1 ;
-            sh:name "associatedMedia" ;
-            sh:order 2 ;
-            sh:path schema1:associatedMedia ] ;
+             
+            sh:order 5 ;
+            sh:path schema1:citation ],
+        [ sh:description "['An array of objects indicating computations in an activity or protocol and maps it to the corresponding Field item. scoring logic is a subset of all computations that could be performed and not all computations will be scoring. For example, one may want to do conversion from one unit to another. ']" ;
+            sh:name "computation" ;
+            sh:or ( [ sh:node reproschema:ComputeSpecification ] ) ;
+            sh:order 6 ;
+            sh:path reproschema:compute ],
+        [ sh:node schema1:Thing ;
+            sh:description "['An array of items indicating properties allowed on an activity or protocol ']" ;
+            sh:name "allow" ;
+             
+            sh:order 3 ;
+            sh:path reproschema:allow ],
+        [ sh:node reproschema:AdditionalProperty ;
+            sh:description "['An array of objects to describe the various properties added to assessments and fields.']" ;
+            sh:name "addProperties" ;
+             
+            sh:order 1 ;
+            sh:path reproschema:addProperties ],
+        [ sh:datatype rdf:langString ;
+            sh:maxCount 1 ;
+             
+            sh:order 17 ;
+            sh:path schema1:version ],
+        [ sh:datatype xsd:boolean ;
+            sh:description "['An element (bool) to determine if the list of items is shuffled or in order.']" ;
+            sh:maxCount 1 ;
+            sh:name "Shuffle" ;
+            sh:order 16 ;
+            sh:path reproschema:shuffle ] ;
     sh:targetClass reproschema:Activity .
 
 rdf:langString a sh:NodeShape ;

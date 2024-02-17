@@ -1,5 +1,5 @@
 name: reproschema
-id: http://example.org/example # todo: change this
+id: http://schema.repronim.org/
 imports:
 - linkml:types
 prefixes:
@@ -276,9 +276,6 @@ slots:
   readonlyValue:
     slot_uri: schema:readonlyValue
     range: boolean
-#  requiredValue:
-#    range: boolean
-#    slot_uri: schema:requiredValue
   responseOptions:
     title: Response options
     description:
@@ -325,15 +322,6 @@ slots:
   subject_id:
     slot_uri: nidm:subject_id #TODO check this @type:rdf:Property
     range: langString
-  ui:
-    title: UI
-    description:
-    - it was originally @nest in jsonld, but decided for a new class for now
-    slot_uri: reproschema:ui
-    any_of:
-    - range: UiActivity
-    - range: UiField
-    - range: UiProtocol
   unitOptions:
     title: unitOptions
     description:
@@ -401,7 +389,9 @@ classes:
     is_a: CreativeWork
     slots:
     - about
+    - addProperties
     - altLabel
+    - allow
     - associatedMedia
     - citation
     - compute
@@ -409,14 +399,13 @@ classes:
     - description
     - image
     - messages
+    - order
+    - overrideProperties
     - preamble
     - prefLabel
     - schemaVersion
-    - ui
+    - shuffle
     - version
-    slot_usage:
-      ui:
-        range: UiActivity
     class_uri: reproschema:Activity
   AdditionalNoteObj:
     title: Additional Notes Object
@@ -510,18 +499,16 @@ classes:
     - description
     - image
     - imageUrl
+    - inputType
     - isPartOf
     - preamble
     - prefLabel
     - question
+    - readonlyValue
     - responseOptions
     - schemaVersion
-    - ui
     - version
     - video
-    slot_usage:
-      ui:
-        range: UiField
     class_uri: reproschema:Field
   LandingPage:
     title: Landing Page
@@ -581,6 +568,8 @@ classes:
     is_a: CreativeWork
     slots:
     - about
+    - addProperties
+    - allow
     - altLabel
     - associatedMedia
     - compute
@@ -588,13 +577,12 @@ classes:
     - description
     - landingPage
     - messages
+    - order
+    - overrideProperties
     - prefLabel
     - schemaVersion
-    - ui
+    - shuffle
     - version
-    slot_usage:
-      ui:
-        range: UiProtocol
     class_uri: reproschema:Protocol
   Response: # multiple types
     title: Response
@@ -674,36 +662,6 @@ classes:
     - A boolean element to describe if the response did not occur within the prescribed
       time.
     class_uri: reproschema:TimedOut
-  UiActivity:
-    title: todo
-    description:
-    - todo
-    slots:
-      - order
-      - addProperties
-      - overrideProperties
-      - shuffle
-      - allow
-    class_uri: reproschema:UiActivity
-  UiField:
-    title: todo
-    description:
-    - todo
-    slots:
-      - inputType
-      - readonlyValue
-    class_uri: reproschema:UiField
-  UiProtocol:
-    title: todo
-    description:
-    - todo
-    slots:
-      - order
-      - addProperties
-      - overrideProperties
-      - shuffle
-      - allow
-    class_uri: reproschema:UiProtocol
   UnitOption:
     title: Unit options
     description:
