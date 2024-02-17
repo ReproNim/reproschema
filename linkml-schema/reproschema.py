@@ -29,28 +29,25 @@ class ConfiguredBaseModel(BaseModel):
         
 
 class AllowedType(str, Enum):
-    
     # Indicates (by boolean) if data can be exported or not.
-    AllowExport = "AllowExport"
+    AllowExport = "reproschema:AllowExport"
     # Indicates (by boolean) if items can be replayed or not.
-    AllowReplay = "AllowReplay"
+    AllowReplay = "reproschema:AllowReplay"
     # Indicates (by boolean) if assessments in a protocol can auto advance or not.
-    AutoAdvance = "AutoAdvance"
+    AutoAdvance = "reproschema:AutoAdvance"
     # Indicates (by boolean) if we can go back to a completed assessment in a protocol.
-    DisableBack = "DisableBack"
-    
-    
+    DisableBack = "reproschema:DisableBack"
+
 
 class MissingType(str, Enum):
-    
     # An element to describe the choice when the item is skipped.
-    Skipped = "Skipped"
+    Skipped = "reproschema:Skipped"
     # An element to describe the choice when response is not known.
-    DontKnow = "DontKnow"
+    DontKnow = "reproschema:DontKnow"
     # An element to describe the choice when the reason for missing response is unknown.
-    Unknown = "Unknown"
+    Unknown = "reproschema:Unknown"
     # A boolean element to describe if the response did not occur within the prescribed time.
-    TimedOut = "TimedOut"
+    TimedOut = "reproschema:TimedOut"
     
     
 
@@ -253,7 +250,7 @@ class Protocol(CreativeWork):
     compute: Optional[List[ComputeSpecification]] = Field(default_factory=list, title="computation", description="""An array of objects indicating computations in an activity or protocol and maps it to the corresponding Item. scoring logic is a subset of all computations that could be performed and not all computations will be scoring. For example, one may want to do conversion from one unit to another.""")
     cronTable: Optional[str] = Field(None, title="cronTable", description="""TODO not described in reproschema""")
     description: Optional[Dict[str, str]] = Field(default_factory=dict)
-    landingPage: Optional[Union[LandingPage, str]] = Field(None, title="Landing page content", description="""An element (by URL) to point to the protocol readme or landing page.""")
+    landingPage: Optional[List[Union[LandingPage, str]]] = Field(default_factory=list, title="Landing page content", description="""An element (by URL) to point to the protocol readme or landing page.""")
     messages: Optional[List[MessageSpecification]] = Field(default_factory=list, title="messages", description="""An array of objects to define conditional messages in an activity or protocol.""")
     prefLabel: Optional[Dict[str, str]] = Field(default_factory=dict, title="preferred label", description="""['The preferred label.']""")
     schemaVersion: Optional[str] = Field(None)

@@ -169,10 +169,12 @@ slots:
     title: Landing page content
     description: An element (by URL) to point to the protocol readme or landing page.
     slot_uri: reproschema:landingPage
+    multivalued: true
     any_of:
     - range: uri
     - range: string
     - range: LandingPage
+    inlined: true
   langstring_prefix:
     description:
       The language prefix component of a langString.
