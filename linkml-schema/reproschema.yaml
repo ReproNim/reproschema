@@ -606,10 +606,6 @@ classes:
     class_uri: schema:StructuredValue
   Thing: # todo should we switch
     class_uri: schema:Thing
-  TimedOut:
-    title: Response timed out
-    description: A boolean element to describe if the response did not occur within the prescribed time.
-    class_uri: reproschema:TimedOut
   UI:
     title: todo
     description:
@@ -666,3 +662,6 @@ enums:
       Unknown:
         description: An element to describe the choice when the reason for missing response is unknown.
         meaning: reproschema:Unknown
+      TimedOut:
+        description: A boolean element to describe if the response did not occur within the prescribed time.
+        meaning: reproschema:TimedOut
