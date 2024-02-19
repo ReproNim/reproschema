@@ -26,7 +26,7 @@ class ConfiguredBaseModel(BaseModel):
 
     pass
 
-        
+
 
 class AllowedType(str, Enum):
     # Indicates (by boolean) if data can be exported or not.
@@ -48,8 +48,8 @@ class MissingType(str, Enum):
     Unknown = "reproschema:Unknown"
     # A boolean element to describe if the response did not occur within the prescribed time.
     TimedOut = "reproschema:TimedOut"
-    
-    
+
+
 
 class AdditionalNoteObj(ConfiguredBaseModel):
     """
@@ -70,7 +70,7 @@ class AdditionalProperty(ConfiguredBaseModel):
     isVis: Optional[Union[bool, str]] = Field(None, title="visibility", description="""An element to describe (by boolean or conditional statement) visibility conditions of items in an assessment.""")
     limit: Optional[str] = Field(None, title="limit", description="""An element to limit the duration (uses ISO 8601) this activity is allowed to be completed by once activity is available.""")
     maxRetakes: Optional[Decimal] = Field(None, title="maxRetakes", description="""Defines number of times the item is allowed to be redone.""")
-    prefLabel: Optional[Dict[str, str]] = Field(default_factory=dict, title="preferred label", description="""['The preferred label.']""")
+    prefLabel: Optional[Dict[str, str]] = Field(default_factory=dict, title="preferred label", description="""The preferred label.""")
     randomMaxDelay: Optional[str] = Field(None, title="randomMaxDelay", description="""Present activity/item within some random offset of activity available time up to the maximum specified by this ISO 8601 duration""")
     schedule: Optional[str] = Field(None, title="Schedule", description="""An element to set make activity available/repeat info using ISO 8601 repeating interval format.""")
     valueRequired: Optional[bool] = Field(None)
@@ -125,7 +125,7 @@ class Activity(CreativeWork):
     image: Optional[ImageObject] = Field(None, title="image", description="""An image of the item. This can be a <a class=\"localLink\" href=\"http://schema.org/URL\">URL</a> or a fully described <a class=\"localLink\" href=\"http://schema.org/ImageObject\">ImageObject</a>.""")
     messages: Optional[List[MessageSpecification]] = Field(default_factory=list, title="messages", description="""An array of objects to define conditional messages in an activity or protocol.""")
     preamble: Optional[Dict[str, str]] = Field(default_factory=dict, title="Preamble", description="""The preamble for an assessment""")
-    prefLabel: Optional[Dict[str, str]] = Field(default_factory=dict, title="preferred label", description="""['The preferred label.']""")
+    prefLabel: Optional[Dict[str, str]] = Field(default_factory=dict, title="preferred label", description="""The preferred label.""")
     schemaVersion: Optional[str] = Field(None)
     ui: Optional[UI] = Field(None, title="UI", description="""An element to control UI specifications. Originally @nest in jsonld, but using a class in the model.""")
     version: Optional[str] = Field(None)
@@ -148,7 +148,7 @@ class Item(CreativeWork):
     imageUrl: Optional[str] = Field(None, title="imageUrl", description="""An image url.""")
     isPartOf: Optional[Activity] = Field(None)
     preamble: Optional[Dict[str, str]] = Field(default_factory=dict, title="Preamble", description="""The preamble for an assessment""")
-    prefLabel: Optional[Dict[str, str]] = Field(default_factory=dict, title="preferred label", description="""['The preferred label.']""")
+    prefLabel: Optional[Dict[str, str]] = Field(default_factory=dict, title="preferred label", description="""The preferred label.""")
     question: Optional[Dict[str, str]] = Field(default_factory=dict)
     responseOptions: Optional[Union[ResponseOption, str]] = Field(None, title="Response options", description="""An element (object or by URL)to describe the properties of response of the Item.""")
     schemaVersion: Optional[str] = Field(None)
@@ -224,7 +224,7 @@ class OverrideProperty(ConfiguredBaseModel):
     isVis: Optional[Union[bool, str]] = Field(None, title="visibility", description="""An element to describe (by boolean or conditional statement) visibility conditions of items in an assessment.""")
     limit: Optional[str] = Field(None, title="limit", description="""An element to limit the duration (uses ISO 8601) this activity is allowed to be completed by once activity is available.""")
     maxRetakes: Optional[Decimal] = Field(None, title="maxRetakes", description="""Defines number of times the item is allowed to be redone.""")
-    prefLabel: Optional[Dict[str, str]] = Field(default_factory=dict, title="preferred label", description="""['The preferred label.']""")
+    prefLabel: Optional[Dict[str, str]] = Field(default_factory=dict, title="preferred label", description="""The preferred label.""")
     randomMaxDelay: Optional[str] = Field(None, title="randomMaxDelay", description="""Present activity/item within some random offset of activity available time up to the maximum specified by this ISO 8601 duration""")
     schedule: Optional[str] = Field(None, title="Schedule", description="""An element to set make activity available/repeat info using ISO 8601 repeating interval format.""")
     valueRequired: Optional[bool] = Field(None)
@@ -252,7 +252,7 @@ class Protocol(CreativeWork):
     description: Optional[Dict[str, str]] = Field(default_factory=dict)
     landingPage: Optional[List[Union[LandingPage, str]]] = Field(default_factory=list, title="Landing page content", description="""An element (by URL) to point to the protocol readme or landing page.""")
     messages: Optional[List[MessageSpecification]] = Field(default_factory=list, title="messages", description="""An array of objects to define conditional messages in an activity or protocol.""")
-    prefLabel: Optional[Dict[str, str]] = Field(default_factory=dict, title="preferred label", description="""['The preferred label.']""")
+    prefLabel: Optional[Dict[str, str]] = Field(default_factory=dict, title="preferred label", description="""The preferred label.""")
     schemaVersion: Optional[str] = Field(None)
     ui: Optional[UI] = Field(None, title="UI", description="""An element to control UI specifications. Originally @nest in jsonld, but using a class in the model.""")
     version: Optional[str] = Field(None)
@@ -266,7 +266,7 @@ class Response(CreativeWork):
     Describes the response of an item.
     """
     isAbout: Optional[Union[Activity, Item, str]] = Field(None, title="isAbout", description="""A pointer to the node describing the item.""")
-    value: Optional[Union[Decimal, MissingType, StructuredValue, bool, str]] = Field(None, title="value", description="""The value for each option in choices or in additionalNotesObj""")
+    value: Optional[Union[Decimal, LangString, StructuredValue, bool, str]] = Field(None, title="value", description="""The value for each option in choices or in additionalNotesObj""")
     wasAttributedTo: Optional[Participant] = Field(None)
     id: Optional[str] = Field(None)
     category: Optional[str] = Field(None)
@@ -342,7 +342,7 @@ class UnitOption(ConfiguredBaseModel):
     """
     An object to represent a human displayable name alongside the more formal value for units.
     """
-    prefLabel: Optional[Dict[str, str]] = Field(default_factory=dict, title="preferred label", description="""['The preferred label.']""")
+    prefLabel: Optional[Dict[str, str]] = Field(default_factory=dict, title="preferred label", description="""The preferred label.""")
     value: Optional[Union[LangString, str]] = Field(None, title="value", description="""The value for each option in choices or in additionalNotesObj""")
     
     

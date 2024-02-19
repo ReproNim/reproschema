@@ -258,8 +258,7 @@ slots:
     inlined: true
   prefLabel:
     title: preferred label
-    description:
-    - The preferred label.
+    description: The preferred label.
     slot_uri: skos:prefLabel
     multivalued: true
     range: langString
@@ -396,9 +395,6 @@ classes:
     - schemaVersion
     - ui
     - version
-    slot_usage:
-      ui:
-        range: UI
     class_uri: reproschema:Activity
   AdditionalNoteObj:
     title: Additional Notes Object
@@ -546,9 +542,6 @@ classes:
     - schemaVersion
     - ui
     - version
-    slot_usage:
-      ui:
-        range: UI
     class_uri: reproschema:Protocol
   Response: # multiple types
     title: Response
@@ -558,15 +551,6 @@ classes:
     - isAbout
     - value #TODO it was schema:value
     - wasAttributedTo
-    slot_usage:
-      value:
-        any_of:
-          - range: MissingType
-          - range: decimal
-          - range: boolean
-          - range: string
-          - range: uri
-          - range: StructuredValue
     class_uri: reproschema:Response
   ResponseActivity: # multiple types
     title: ResponseActivity
