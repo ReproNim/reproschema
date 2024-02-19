@@ -76,7 +76,7 @@ class AdditionalProperty(ConfiguredBaseModel):
     randomMaxDelay: Optional[str] = Field(None, title="randomMaxDelay", description="""Present activity/item within some random offset of activity available time up to the maximum specified by this ISO 8601 duration""")
     schedule: Optional[str] = Field(None, title="Schedule", description="""An element to set make activity available/repeat info using ISO 8601 repeating interval format.""")
     valueRequired: Optional[bool] = Field(None)
-    variableName: Optional[LangString] = Field(None, title="variableName", description="""The name used to represent an item.""")
+    variableName: Optional[str] = Field(None, title="variableName", description="""The name used to represent an item.""")
     ui: Optional[UI] = Field(None, title="UI", description="""An element to control UI specifications. Originally @nest in jsonld, but using a class in the model.""")
     
     
@@ -102,7 +102,7 @@ class ComputeSpecification(ConfiguredBaseModel):
     An object to define computations in an activity or protocol.
     """
     jsExpression: Optional[str] = Field(None, title="JavaScript Expression", description="""A JavaScript expression for computations. A JavaScript expression to compute a score from other variables.""")
-    variableName: Optional[LangString] = Field(None, title="variableName", description="""The name used to represent an item.""")
+    variableName: Optional[str] = Field(None, title="variableName", description="""The name used to represent an item.""")
     
     
 
@@ -230,7 +230,7 @@ class OverrideProperty(ConfiguredBaseModel):
     randomMaxDelay: Optional[str] = Field(None, title="randomMaxDelay", description="""Present activity/item within some random offset of activity available time up to the maximum specified by this ISO 8601 duration""")
     schedule: Optional[str] = Field(None, title="Schedule", description="""An element to set make activity available/repeat info using ISO 8601 repeating interval format.""")
     valueRequired: Optional[bool] = Field(None)
-    variableName: Optional[LangString] = Field(None, title="variableName", description="""The name used to represent an item.""")
+    variableName: Optional[str] = Field(None, title="variableName", description="""The name used to represent an item.""")
     
     
 
