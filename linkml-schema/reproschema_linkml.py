@@ -33,6 +33,8 @@ class AllowedType(str, Enum):
     AllowExport = "reproschema:AllowExport"
     # Indicates (by boolean) if items can be replayed or not.
     AllowReplay = "reproschema:AllowReplay"
+    # Indicates (by boolean) if items can be skipped or not.
+    AllowSkip = "reproschema:AllowSkip"
     # Indicates (by boolean) if assessments in a protocol can auto advance or not.
     AutoAdvance = "reproschema:AutoAdvance"
     # Indicates (by boolean) if we can go back to a completed assessment in a protocol.
