@@ -1,0 +1,987 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../46_tools/">
+      
+      
+        <link rel="next" href="../99_glossary/">
+      
+      <link rel="icon" href="../img/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.6">
+    
+    
+      
+        <title>FAQ - ReproSchema documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.558e4712.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="dark-blue" data-md-color-accent="light-blue">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#faq" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="ReproSchema documentation" class="md-header__button md-logo" aria-label="ReproSchema documentation" data-md-component="logo">
+      
+  <img src="../img/favicon_on_white.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ReproSchema documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              FAQ
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ReproNim/reproschema" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ReproNim/reproschema
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="ReproSchema documentation" class="md-nav__button md-logo" aria-label="ReproSchema documentation" data-md-component="logo">
+      
+  <img src="../img/favicon_on_white.png" alt="logo">
+
+    </a>
+    ReproSchema documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ReproNim/reproschema" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ReproNim/reproschema
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Welcome
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20_project_structure/" class="md-nav__link">
+        Project structure
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../30_schema/" class="md-nav__link">
+        Schema
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5" tabindex="0" aria-expanded="false">
+          User Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="User Guide" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          User Guide
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../41_create_new_protocol/" class="md-nav__link">
+        Create a research protocol
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../42_adopt_assessments/" class="md-nav__link">
+        Adopt assessments from the library
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../43_create_new_assess/" class="md-nav__link">
+        Create new assessments for a protocol
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../44_setup_feedback/" class="md-nav__link">
+        Add a feedback section
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../45_finalize_protocol/" class="md-nav__link">
+        Finalize the protocol
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../46_tools/" class="md-nav__link">
+        Toolkit
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          FAQ
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        FAQ
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-the-semantic-web" class="md-nav__link">
+    What is the semantic web?
+  </a>
+  
+    <nav class="md-nav" aria-label="What is the semantic web?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#more-info" class="md-nav__link">
+    More info
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-linked-data" class="md-nav__link">
+    What is linked data?
+  </a>
+  
+    <nav class="md-nav" aria-label="What is linked data?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-theory" class="md-nav__link">
+    The theory
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-more-concrete-example" class="md-nav__link">
+    A more concrete example
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#more-info_1" class="md-nav__link">
+    More info
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-json-ld" class="md-nav__link">
+    What is JSON-LD?
+  </a>
+  
+    <nav class="md-nav" aria-label="What is JSON-LD?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-json" class="md-nav__link">
+    What is JSON?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#from-json-to-json-ld" class="md-nav__link">
+    From JSON to JSON-LD
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#more-info_2" class="md-nav__link">
+    More info
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-is-linked-data-important-for-the-reproschema" class="md-nav__link">
+    Why is linked data important for the ReproSchema ?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#which-assessments-tools-willare-supporting-this-standard" class="md-nav__link">
+    Which assessments tools will/are supporting this standard?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-should-i-use-reproschema" class="md-nav__link">
+    Why should I use ReproSchema?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#who-is-reproschema-for" class="md-nav__link">
+    Who is ReproSchema for?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-can-i-know-if-a-certain-property-is-supported-by-reproschema" class="md-nav__link">
+    How can I know if a certain property is supported by ReproSchema?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-can-i-add-a-property-to-my-schema" class="md-nav__link">
+    How can I add a property to my schema?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-are-these-assessments-licensed" class="md-nav__link">
+    How are these assessments licensed?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-can-i-contribute-to-the-project" class="md-nav__link">
+    How can I contribute to the project?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#an-assessment-tool-i-regularly-use-is-not-supported-by-reproschema-how-can-i-add-it" class="md-nav__link">
+    An assessment tool I regularly use is not supported by ReproSchema: how can I add it?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-can-i-visualize-the-schema-for-a-protocol-or-an-activity" class="md-nav__link">
+    How can I visualize the schema for a protocol or an activity?
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../99_glossary/" class="md-nav__link">
+        Glossary
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../100_about_this_doc/" class="md-nav__link">
+        About this doc
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-the-semantic-web" class="md-nav__link">
+    What is the semantic web?
+  </a>
+  
+    <nav class="md-nav" aria-label="What is the semantic web?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#more-info" class="md-nav__link">
+    More info
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-linked-data" class="md-nav__link">
+    What is linked data?
+  </a>
+  
+    <nav class="md-nav" aria-label="What is linked data?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-theory" class="md-nav__link">
+    The theory
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-more-concrete-example" class="md-nav__link">
+    A more concrete example
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#more-info_1" class="md-nav__link">
+    More info
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-json-ld" class="md-nav__link">
+    What is JSON-LD?
+  </a>
+  
+    <nav class="md-nav" aria-label="What is JSON-LD?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-json" class="md-nav__link">
+    What is JSON?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#from-json-to-json-ld" class="md-nav__link">
+    From JSON to JSON-LD
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#more-info_2" class="md-nav__link">
+    More info
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-is-linked-data-important-for-the-reproschema" class="md-nav__link">
+    Why is linked data important for the ReproSchema ?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#which-assessments-tools-willare-supporting-this-standard" class="md-nav__link">
+    Which assessments tools will/are supporting this standard?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-should-i-use-reproschema" class="md-nav__link">
+    Why should I use ReproSchema?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#who-is-reproschema-for" class="md-nav__link">
+    Who is ReproSchema for?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-can-i-know-if-a-certain-property-is-supported-by-reproschema" class="md-nav__link">
+    How can I know if a certain property is supported by ReproSchema?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-can-i-add-a-property-to-my-schema" class="md-nav__link">
+    How can I add a property to my schema?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-are-these-assessments-licensed" class="md-nav__link">
+    How are these assessments licensed?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-can-i-contribute-to-the-project" class="md-nav__link">
+    How can I contribute to the project?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#an-assessment-tool-i-regularly-use-is-not-supported-by-reproschema-how-can-i-add-it" class="md-nav__link">
+    An assessment tool I regularly use is not supported by ReproSchema: how can I add it?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-can-i-visualize-the-schema-for-a-protocol-or-an-activity" class="md-nav__link">
+    How can I visualize the schema for a protocol or an activity?
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+
+<h1 id="faq">FAQ</h1>
+<h2 id="what-is-the-semantic-web">What is the semantic web?</h2>
+<p>When you request access to a certain document by clicking on a hyperlink, the computer will give a visual rendering of the html code of this document. But computer used to do that in pretty "silly" fashion: it would give you a human-readable version of the content, but the computer would not make the distinction if a certain element in the webpage (for example a paragraph) was referring to a person or a place or a song.</p>
+<p>What the semantic wed allows is to "inject" additional information into a webpage so that a machine can know what certain elements are about (e.g "<em>this image is about a cat.</em>") or how they are linked to other elements (on the same page or somewhere else on the web). The tagged content of a webpage thus acquires "meaning" from the point of view of the computer, making the semantic content of the code machine-readable.</p>
+<h3 id="more-info">More info</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Semantic_Web">wikipedia article on the semantic web</a></li>
+<li>A short video intro to the semantic web by Manu Sporny:</li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OGg8A2zfWKg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h2 id="what-is-linked-data">What is linked data?</h2>
+<h3 id="the-theory">The theory</h3>
+<p>The same way that an element in webpage could be given "meaning" by tagging with extra information about the nature of this element, the same can be done with data. Hence a given row on a spreadsheet stored somewhere on the web can be tagged and linked to another piece of data on another website.</p>
+<p>"<em>Linked data is a way to create a network of standards-based machine interpretable data across different documents and Web sites. It allows an application to start at one piece of Linked Data, and follow embedded links to other pieces of Linked Data that are hosted on different sites across the Web.</em>" [<a href="https://w3c.github.io/json-ld-bp/#terminology">source</a>]</p>
+<p>Linked data has some basic principles behind it (<a href="https://en.wikipedia.org/wiki/Linked_data">adapted from wikipedia</a>):</p>
+<ul>
+<li>Use Unique Resources identifiers (URI) to name (identify) things.</li>
+<li>Use HTTP URIs so that these things can be looked up.</li>
+<li>Provide useful information about what a name identifies when it's looked up.</li>
+<li>Refer to other things using their HTTP URI-based names when publishing data on the Web.</li>
+</ul>
+<h3 id="a-more-concrete-example">A more concrete example</h3>
+<p>As things might be be quite abstract, here is a simple example of linked data to help make things more concrete:</p>
+<pre><code class="language-json">{
+  &quot;@context&quot;: &quot;http://schema.org&quot;,
+  &quot;name&quot;: &quot;Barack Obama&quot;,
+  &quot;givenName&quot;: &quot;Barack&quot;,
+  &quot;familyName&quot;: &quot;Obama&quot;,
+  &quot;jobTitle&quot;: &quot;44th President of the United States&quot;
+}
+</code></pre>
+<p>You can see that the file is organised in pairs of <code>"key": "value"</code>. The <code>@context</code> gives you the base URL of the website where you can find more information about the different properties of this piece of data.</p>
+<p>What follows (<code>name</code>, <code>givenNAme</code>, <code>familyName</code>, ...) are the actual properties about this data and in front of it the values that this data takes for each property (in this case: "Barack Obama", "Barack", "Obama").</p>
+<p>Now go and look up what is hiding behind one of those property by going to the URL made of the <strong>base URL + the property name</strong>, for example <a href="https://schema.org/familyName">https://schema.org/familyName</a>. This is the HTTP URI of <code>familyName</code> and this gives you a description of the <code>familyName</code> property.</p>
+<p>Well "<em>So what?</em>" you might say. Well it also tells you which type of data this property it can be applied to: in this case, the <code>Person</code> type (see its description <a href="https://schema.org/Person">here</a>). So even though, we never wrote anywhere explicitly that this data describes a person, a computer able to parse that piece of linked data above would "know" this.</p>
+<h3 id="more-info_1">More info</h3>
+<ul>
+<li>Here is <a href="https://www.ted.com/talks/tim_berners_lee_the_next_web">a TED talk</a> by Tim Berners-Lee on linked data.</li>
+<li>A short video intro to linked data by Manu Sporny:</li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4x_xzT5eF5Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h2 id="what-is-json-ld">What is JSON-LD?</h2>
+<h3 id="what-is-json">What is JSON?</h3>
+<p>OK before we go for JSON-LD, let's start with JSON. JSON stands for JavaScript Object Notation and is just a specific format for a text file. This type of text file is very often used by website when they need to transmit information to one another.</p>
+<p>If you want to see an example of how this works, here is <a href="http://dummy.restapiexample.com/api/v1/employees">dummy example</a> of the response to a request made by one website to another about a list of employees. By default the output of this dummy example is presented in a way that is more pleasing to the human eye, but if you click on <code>Raw Data</code>, you will see the raw unformatted JSON file that was returned by the website. Copy-paste in a text editor, it should like the big ugly and scary one-liner below that we, mere mortals, have no idea what to do with, but that a computer has no problem making sense of.</p>
+<p><strong>Insert image ???</strong></p>
+<pre><code class="language-json">
+{&quot;status&quot;:&quot;success&quot;,&quot;data&quot;:[{&quot;id&quot;:&quot;1&quot;,&quot;employee_name&quot;:&quot;Tiger Nixon&quot;,&quot;employee_salary&quot;:&quot;320800&quot;,&quot;employee_age&quot;:&quot;61&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;2&quot;,&quot;employee_name&quot;:&quot;Garrett Winters&quot;,&quot;employee_salary&quot;:&quot;170750&quot;,&quot;employee_age&quot;:&quot;63&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;3&quot;,&quot;employee_name&quot;:&quot;Ashton Cox&quot;,&quot;employee_salary&quot;:&quot;86000&quot;,&quot;employee_age&quot;:&quot;66&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;4&quot;,&quot;employee_name&quot;:&quot;Cedric Kelly&quot;,&quot;employee_salary&quot;:&quot;433060&quot;,&quot;employee_age&quot;:&quot;22&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;5&quot;,&quot;employee_name&quot;:&quot;Airi Satou&quot;,&quot;employee_salary&quot;:&quot;162700&quot;,&quot;employee_age&quot;:&quot;33&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;6&quot;,&quot;employee_name&quot;:&quot;Brielle Williamson&quot;,&quot;employee_salary&quot;:&quot;372000&quot;,&quot;employee_age&quot;:&quot;61&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;7&quot;,&quot;employee_name&quot;:&quot;Herrod Chandler&quot;,&quot;employee_salary&quot;:&quot;137500&quot;,&quot;employee_age&quot;:&quot;59&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;8&quot;,&quot;employee_name&quot;:&quot;Rhona Davidson&quot;,&quot;employee_salary&quot;:&quot;327900&quot;,&quot;employee_age&quot;:&quot;55&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;9&quot;,&quot;employee_name&quot;:&quot;Colleen Hurst&quot;,&quot;employee_salary&quot;:&quot;205500&quot;,&quot;employee_age&quot;:&quot;39&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10&quot;,&quot;employee_name&quot;:&quot;Sonya Frost&quot;,&quot;employee_salary&quot;:&quot;103600&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;11&quot;,&quot;employee_name&quot;:&quot;Jena Gaines&quot;,&quot;employee_salary&quot;:&quot;90560&quot;,&quot;employee_age&quot;:&quot;30&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;12&quot;,&quot;employee_name&quot;:&quot;Quinn Flynn&quot;,&quot;employee_salary&quot;:&quot;342000&quot;,&quot;employee_age&quot;:&quot;22&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;13&quot;,&quot;employee_name&quot;:&quot;Charde Marshall&quot;,&quot;employee_salary&quot;:&quot;470600&quot;,&quot;employee_age&quot;:&quot;36&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;14&quot;,&quot;employee_name&quot;:&quot;Haley Kennedy&quot;,&quot;employee_salary&quot;:&quot;313500&quot;,&quot;employee_age&quot;:&quot;43&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;15&quot;,&quot;employee_name&quot;:&quot;Tatyana Fitzpatrick&quot;,&quot;employee_salary&quot;:&quot;385750&quot;,&quot;employee_age&quot;:&quot;19&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;16&quot;,&quot;employee_name&quot;:&quot;Michael Silva&quot;,&quot;employee_salary&quot;:&quot;198500&quot;,&quot;employee_age&quot;:&quot;66&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;17&quot;,&quot;employee_name&quot;:&quot;Paul Byrd&quot;,&quot;employee_salary&quot;:&quot;725000&quot;,&quot;employee_age&quot;:&quot;64&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;18&quot;,&quot;employee_name&quot;:&quot;Gloria Little&quot;,&quot;employee_salary&quot;:&quot;237500&quot;,&quot;employee_age&quot;:&quot;59&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;19&quot;,&quot;employee_name&quot;:&quot;Bradley Greer&quot;,&quot;employee_salary&quot;:&quot;132000&quot;,&quot;employee_age&quot;:&quot;41&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;20&quot;,&quot;employee_name&quot;:&quot;Dai Rios&quot;,&quot;employee_salary&quot;:&quot;217500&quot;,&quot;employee_age&quot;:&quot;35&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;21&quot;,&quot;employee_name&quot;:&quot;Jenette Caldwell&quot;,&quot;employee_salary&quot;:&quot;345000&quot;,&quot;employee_age&quot;:&quot;30&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;22&quot;,&quot;employee_name&quot;:&quot;Yuri Berry&quot;,&quot;employee_salary&quot;:&quot;675000&quot;,&quot;employee_age&quot;:&quot;40&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;23&quot;,&quot;employee_name&quot;:&quot;Caesar Vance&quot;,&quot;employee_salary&quot;:&quot;106450&quot;,&quot;employee_age&quot;:&quot;21&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;24&quot;,&quot;employee_name&quot;:&quot;Doris Wilder&quot;,&quot;employee_salary&quot;:&quot;85600&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;}]}
+
+</code></pre>
+<p>By the way, if you ever come across such monstrosity and you want to turn into something you as a human being can understand (or least read), you can copy-paste it in a validator-formatter like <a href="https://jsonformatter.curiousconcept.com/">jsonformatter</a> or <a href="https://jsonlint.com/">jsonlint</a>. This will quickly tell you a) whether this is a valid JSON format (eaning if it respects the rules of how a JSON file should be formatted) and b) it will highlight and help you navigate the nested and hierarchical nature of the JSON file.</p>
+<p><strong>Insert image ???</strong></p>
+<p>OK but let's start with a much simpler example of a JSON file, like the one below which could be the content of JSON file returned by a website when asked about a certain person.</p>
+<pre><code class="language-json">{
+  &quot;name&quot;: &quot;Barack Obama&quot;,
+  &quot;givenName&quot;: &quot;Barack&quot;,
+  &quot;familyName&quot;: &quot;Obama&quot;,
+  &quot;jobTitle&quot;: &quot;44th President of the United States&quot;
+}
+</code></pre>
+<p>Looks familiar? It is very close to the one we had at the end of the previous FAQ section.</p>
+<h3 id="from-json-to-json-ld">From JSON to JSON-LD</h3>
+<p>Now say you would like to use this JSON file to represent a piece of linked-data. The only thing you would need to do in this specific case is to provide the <code>@context</code> line we saw before that will give a precise and unambiguous meaning to the following lines.</p>
+<pre><code class="language-json">{
+  &quot;@context&quot;: &quot;http://schema.org&quot;,
+  &quot;name&quot;: &quot;Barack Obama&quot;,
+  &quot;givenName&quot;: &quot;Barack&quot;,
+  &quot;familyName&quot;: &quot;Obama&quot;,
+  &quot;jobTitle&quot;: &quot;44th President of the United States&quot;
+}
+</code></pre>
+<p>🎉 <strong>Congratulations!</strong> 🎉</p>
+<p>You now have a valid JSON-LD. If you want to make sure it is valid, you can copy-paste that into the <a href="https://json-ld.org/playground/">JSON-LD playground</a>. If you to to visualize the "linked" aspect of that data, you can click on the <code>Visualized</code> tab and this will give you a graph where that connects the different nodes (piece of information to one another).</p>
+<p>If you want to visualize a more complex graph, we can try that with one of the JSON-LD file that describe one of the <code>protocols</code> of the reproschema like the one <a href="https://github.com/ReproNim/reproschema/blob/master/protocols/VoicePilot/VoicePilot_schema">here</a>. Actually if you want to test get the raw content of the file you should click on <code>Raw</code>. You can then either use the raw content of the file or the URL of this raw file which should be something like:</p>
+<pre><code>https://raw.githubusercontent.com/ReproNim/reproschema/master/protocols/VoicePilot/VoicePilot_schema
+</code></pre>
+<p>directly into the <a href="https://json-ld.org/playground/">JSON-LD playground</a> to see whether it is a valid JSON-LD and how the different elements are connected.</p>
+<h3 id="more-info_2">More info</h3>
+<ul>
+<li>It would be a stretch to say that the <a href="https://www.w3.org/TR/json-ld11/">JSON-LD specifications</a> make for a fascinating read that will keep you up at night (although they might but mostly out of frustration) but it is good to know that it is out there in case you eventually need to look something up</li>
+<li>Two short videos by Manu Sporny about JSON-LD and core mark up features JSON-LD:</li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vioCbTo3C-4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UmvWk_TQ30A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h2 id="why-is-linked-data-important-for-the-reproschema">Why is linked data important for the ReproSchema ?</h2>
+<h2 id="which-assessments-tools-willare-supporting-this-standard">Which assessments tools will/are supporting this standard?</h2>
+<p>At the moment, all the assessments that support this standard are listed in <a href="https://github.com/ReproNim/reproschema-library/tree/master/activities">this folder</a> or the <a href="https://github.com/ReproNim/reproschema-library">reproschema-library repository</a>.</p>
+<p>If you want to see those different tools in action using our user interface, you can explore them on <a href="https://schema.repronim.org/rl/">schema.repronim.org/</a>.</p>
+<p>The ReproSchema is also used to develop a checklist to <a href="https://github.com/ohbm/cobidas">improve methods and results reporting in neuroimaging</a>.</p>
+<p><strong>🛠 Work in progress 🛠</strong></p>
+<h2 id="why-should-i-use-reproschema">Why should I use ReproSchema?</h2>
+<p><strong>🛠 Work in progress 🛠</strong></p>
+<h2 id="who-is-reproschema-for">Who is ReproSchema for?</h2>
+<p><strong>🛠 Work in progress 🛠</strong></p>
+<h2 id="how-can-i-know-if-a-certain-property-is-supported-by-reproschema">How can I know if a certain property is supported by ReproSchema?</h2>
+<p><strong>🛠 Work in progress 🛠</strong></p>
+<h2 id="how-can-i-add-a-property-to-my-schema">How can I add a property to my schema?</h2>
+<p><strong>🛠 Work in progress 🛠</strong></p>
+<h2 id="how-are-these-assessments-licensed">How are these assessments licensed?</h2>
+<p><strong>🛠 Work in progress 🛠</strong></p>
+<h2 id="how-can-i-contribute-to-the-project">How can I contribute to the project?</h2>
+<p><strong>🛠 Work in progress 🛠</strong></p>
+<h2 id="an-assessment-tool-i-regularly-use-is-not-supported-by-reproschema-how-can-i-add-it">An assessment tool I regularly use is not supported by ReproSchema: how can I add it?</h2>
+<p><strong>🛠 Work in progress 🛠</strong></p>
+<h2 id="how-can-i-visualize-the-schema-for-a-protocol-or-an-activity">How can I visualize the schema for a <code>protocol</code> or an <code>activity</code>?</h2>
+<p>If you want to see what the assessment that are already supported by the ReproSchema would look like using our ReproSchema user-interface, you can visualize them directly on <a href="https://schema.repronim.org/rl">schema.repronim.org</a>.</p>
+<p>If you just want to view a protocol or activity you are developing using the <code>reproschema-ui</code>, you can pass the URL of the schema to the <code>url</code> query parameter like this:</p>
+<p><code>https://schema.repronim.org/ui/#/?url=url-to-your-schema</code></p>
+<p>If you are hosting a schema on github, make sure that you are passing the URL of the <strong>raw</strong> content of the schema. For example, our demo protocol can be accessed at this URL:</p>
+<p><a href="https://github.com/ReproNim/demo-protocol/blob/master/VoicePilot/VoicePilot_schema">https://github.com/ReproNim/demo-protocol/blob/master/VoicePilot/VoicePilot_schema</a></p>
+<p>But to get access to the raw content of that file you must click on the <code>Raw</code> button once you have opened that page on github that will open this URL:</p>
+<p><a href="https://raw.githubusercontent.com/ReproNim/demo-protocol/master/VoicePilot/VoicePilot_schema">https://raw.githubusercontent.com/ReproNim/demo-protocol/master/VoicePilot/VoicePilot_schema</a>.</p>
+<p>If you want to visualize the graph represented by the JSON-LD file, we explain how to do this in <a href="#from-json-to-json-ld">From JSON to JSON-LD</a>.</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      CC-BY 4.0
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.51d95adb.min.js"></script>
+      
+    
+  </body>
+</html>
