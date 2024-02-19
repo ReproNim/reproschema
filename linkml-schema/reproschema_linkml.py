@@ -4,7 +4,7 @@ from enum import Enum
 
 from decimal import Decimal
 from typing import List, Dict, Optional, Any, Union
-from pydantic import BaseModel as BaseModel, ConfigDict,  Field, field_validator
+from pydantic import BaseModel as BaseModel, ConfigDict,  Extra, Field, field_validator
 import re
 import sys
 if sys.version_info >= (3, 8):
@@ -72,11 +72,11 @@ class AdditionalProperty(ConfiguredBaseModel):
     isVis: Optional[Union[bool, str]] = Field(None, title="visibility", description="""An element to describe (by boolean or conditional statement) visibility conditions of items in an assessment.""")
     limit: Optional[str] = Field(None, title="limit", description="""An element to limit the duration (uses ISO 8601) this activity is allowed to be completed by once activity is available.""")
     maxRetakes: Optional[Decimal] = Field(None, title="maxRetakes", description="""Defines number of times the item is allowed to be redone.""")
-    prefLabel: Optional[Dict[str, str]] = Field(default_factory=dict, title="preferred label", description="""The preferred label.""")
+    prefLabel: Optional[LangString] = Field(None, title="preferred label", description="""The preferred label.""")
     randomMaxDelay: Optional[str] = Field(None, title="randomMaxDelay", description="""Present activity/item within some random offset of activity available time up to the maximum specified by this ISO 8601 duration""")
     schedule: Optional[str] = Field(None, title="Schedule", description="""An element to set make activity available/repeat info using ISO 8601 repeating interval format.""")
     valueRequired: Optional[bool] = Field(None)
-    variableName: Optional[str] = Field(None, title="variableName", description="""The name used to represent an item.""")
+    variableName: Optional[LangString] = Field(None, title="variableName", description="""The name used to represent an item.""")
     ui: Optional[UI] = Field(None, title="UI", description="""An element to control UI specifications. Originally @nest in jsonld, but using a class in the model.""")
     
     
@@ -91,7 +91,7 @@ class Choice(ConfiguredBaseModel):
     """
     An object to describe a response option.
     """
-    name: Optional[Dict[str, str]] = Field(default_factory=dict)
+    name: Optional[LangString] = Field(None)
     image: Optional[ImageObject] = Field(None, title="image", description="""An image of the item. This can be a <a class=\"localLink\" href=\"http://schema.org/URL\">URL</a> or a fully described <a class=\"localLink\" href=\"http://schema.org/ImageObject\">ImageObject</a>.""")
     value: Optional[Union[Decimal, LangString, StructuredValue, bool, str]] = Field(None, title="value", description="""The value for each option in choices or in additionalNotesObj""")
     
@@ -102,7 +102,7 @@ class ComputeSpecification(ConfiguredBaseModel):
     An object to define computations in an activity or protocol.
     """
     jsExpression: Optional[str] = Field(None, title="JavaScript Expression", description="""A JavaScript expression for computations. A JavaScript expression to compute a score from other variables.""")
-    variableName: Optional[str] = Field(None, title="variableName", description="""The name used to represent an item.""")
+    variableName: Optional[LangString] = Field(None, title="variableName", description="""The name used to represent an item.""")
     
     
 
@@ -120,14 +120,14 @@ class Activity(CreativeWork):
     about: Optional[str] = Field(None, description="""The subject matter of the Field.""")
     altLabel: Optional[str] = Field(None, title="alternate label", description="""The alternate label.""")
     associatedMedia: Optional[str] = Field(None, title="associatedMedia", description="""A media object that encodes this CreativeWork. This property is a synonym for encoding.""")
-    citation: Optional[Dict[str, str]] = Field(default_factory=dict)
+    citation: Optional[LangString] = Field(None)
     compute: Optional[List[ComputeSpecification]] = Field(default_factory=list, title="computation", description="""An array of objects indicating computations in an activity or protocol and maps it to the corresponding Item. scoring logic is a subset of all computations that could be performed and not all computations will be scoring. For example, one may want to do conversion from one unit to another.""")
     cronTable: Optional[str] = Field(None, title="cronTable", description="""TODO not described in reproschema""")
-    description: Optional[Dict[str, str]] = Field(default_factory=dict)
+    description: Optional[LangString] = Field(None)
     image: Optional[ImageObject] = Field(None, title="image", description="""An image of the item. This can be a <a class=\"localLink\" href=\"http://schema.org/URL\">URL</a> or a fully described <a class=\"localLink\" href=\"http://schema.org/ImageObject\">ImageObject</a>.""")
     messages: Optional[List[MessageSpecification]] = Field(default_factory=list, title="messages", description="""An array of objects to define conditional messages in an activity or protocol.""")
-    preamble: Optional[Dict[str, str]] = Field(default_factory=dict, title="Preamble", description="""The preamble for an assessment""")
-    prefLabel: Optional[Dict[str, str]] = Field(default_factory=dict, title="preferred label", description="""The preferred label.""")
+    preamble: Optional[LangString] = Field(None, title="Preamble", description="""The preamble for an assessment""")
+    prefLabel: Optional[LangString] = Field(None, title="preferred label", description="""The preferred label.""")
     schemaVersion: Optional[str] = Field(None)
     ui: Optional[UI] = Field(None, title="UI", description="""An element to control UI specifications. Originally @nest in jsonld, but using a class in the model.""")
     version: Optional[str] = Field(None)
@@ -145,13 +145,13 @@ class Item(CreativeWork):
     altLabel: Optional[str] = Field(None, title="alternate label", description="""The alternate label.""")
     associatedMedia: Optional[str] = Field(None, title="associatedMedia", description="""A media object that encodes this CreativeWork. This property is a synonym for encoding.""")
     audio: Optional[Union[AudioObject, str]] = Field(None, title="audio", description="""TODO""")
-    description: Optional[Dict[str, str]] = Field(default_factory=dict)
+    description: Optional[LangString] = Field(None)
     image: Optional[ImageObject] = Field(None, title="image", description="""An image of the item. This can be a <a class=\"localLink\" href=\"http://schema.org/URL\">URL</a> or a fully described <a class=\"localLink\" href=\"http://schema.org/ImageObject\">ImageObject</a>.""")
     imageUrl: Optional[str] = Field(None, title="imageUrl", description="""An image url.""")
     isPartOf: Optional[Activity] = Field(None)
-    preamble: Optional[Dict[str, str]] = Field(default_factory=dict, title="Preamble", description="""The preamble for an assessment""")
-    prefLabel: Optional[Dict[str, str]] = Field(default_factory=dict, title="preferred label", description="""The preferred label.""")
-    question: Optional[Dict[str, str]] = Field(default_factory=dict)
+    preamble: Optional[LangString] = Field(None, title="Preamble", description="""The preamble for an assessment""")
+    prefLabel: Optional[LangString] = Field(None, title="preferred label", description="""The preferred label.""")
+    question: Optional[LangString] = Field(None)
     responseOptions: Optional[Union[ResponseOption, str]] = Field(None, title="Response options", description="""An element (object or by URL)to describe the properties of response of the Item.""")
     schemaVersion: Optional[str] = Field(None)
     ui: Optional[UI] = Field(None, title="UI", description="""An element to control UI specifications. Originally @nest in jsonld, but using a class in the model.""")
@@ -171,12 +171,12 @@ class LandingPage(ConfiguredBaseModel):
     
     
 
-class LangString(ConfiguredBaseModel):
+class LangString(ConfiguredBaseModel, extra=Extra.allow):
     """
     RDF langString tuple
     """
-    langstring_prefix: str = Field(..., description="""The language prefix component of a langString.""")
-    langstring_value: str = Field(..., description="""The value component of a langString.""")
+    en: Optional[str] = Field(None, title="English", description="""English language string""")
+    es: Optional[str] = Field(None, title="Spanish", description="""Spanish language string""")
     
     
 
@@ -214,7 +214,7 @@ class MessageSpecification(ConfiguredBaseModel):
     An object to define messages in an activity or protocol.
     """
     jsExpression: Optional[str] = Field(None, title="JavaScript Expression", description="""A JavaScript expression for computations. A JavaScript expression to compute a score from other variables.""")
-    message: Optional[Dict[str, str]] = Field(default_factory=dict, title="Message", description="""The message to be conditionally displayed for an item.""")
+    message: Optional[LangString] = Field(None, title="Message", description="""The message to be conditionally displayed for an item.""")
     
     
 
@@ -226,11 +226,11 @@ class OverrideProperty(ConfiguredBaseModel):
     isVis: Optional[Union[bool, str]] = Field(None, title="visibility", description="""An element to describe (by boolean or conditional statement) visibility conditions of items in an assessment.""")
     limit: Optional[str] = Field(None, title="limit", description="""An element to limit the duration (uses ISO 8601) this activity is allowed to be completed by once activity is available.""")
     maxRetakes: Optional[Decimal] = Field(None, title="maxRetakes", description="""Defines number of times the item is allowed to be redone.""")
-    prefLabel: Optional[Dict[str, str]] = Field(default_factory=dict, title="preferred label", description="""The preferred label.""")
+    prefLabel: Optional[LangString] = Field(None, title="preferred label", description="""The preferred label.""")
     randomMaxDelay: Optional[str] = Field(None, title="randomMaxDelay", description="""Present activity/item within some random offset of activity available time up to the maximum specified by this ISO 8601 duration""")
     schedule: Optional[str] = Field(None, title="Schedule", description="""An element to set make activity available/repeat info using ISO 8601 repeating interval format.""")
     valueRequired: Optional[bool] = Field(None)
-    variableName: Optional[str] = Field(None, title="variableName", description="""The name used to represent an item.""")
+    variableName: Optional[LangString] = Field(None, title="variableName", description="""The name used to represent an item.""")
     
     
 
@@ -251,10 +251,10 @@ class Protocol(CreativeWork):
     associatedMedia: Optional[str] = Field(None, title="associatedMedia", description="""A media object that encodes this CreativeWork. This property is a synonym for encoding.""")
     compute: Optional[List[ComputeSpecification]] = Field(default_factory=list, title="computation", description="""An array of objects indicating computations in an activity or protocol and maps it to the corresponding Item. scoring logic is a subset of all computations that could be performed and not all computations will be scoring. For example, one may want to do conversion from one unit to another.""")
     cronTable: Optional[str] = Field(None, title="cronTable", description="""TODO not described in reproschema""")
-    description: Optional[Dict[str, str]] = Field(default_factory=dict)
+    description: Optional[LangString] = Field(None)
     landingPage: Optional[List[Union[LandingPage, str]]] = Field(default_factory=list, title="Landing page content", description="""An element (by URL) to point to the protocol readme or landing page.""")
     messages: Optional[List[MessageSpecification]] = Field(default_factory=list, title="messages", description="""An array of objects to define conditional messages in an activity or protocol.""")
-    prefLabel: Optional[Dict[str, str]] = Field(default_factory=dict, title="preferred label", description="""The preferred label.""")
+    prefLabel: Optional[LangString] = Field(None, title="preferred label", description="""The preferred label.""")
     schemaVersion: Optional[str] = Field(None)
     ui: Optional[UI] = Field(None, title="UI", description="""An element to control UI specifications. Originally @nest in jsonld, but using a class in the model.""")
     version: Optional[str] = Field(None)
@@ -344,7 +344,7 @@ class UnitOption(ConfiguredBaseModel):
     """
     An object to represent a human displayable name alongside the more formal value for units.
     """
-    prefLabel: Optional[Dict[str, str]] = Field(default_factory=dict, title="preferred label", description="""The preferred label.""")
+    prefLabel: Optional[LangString] = Field(None, title="preferred label", description="""The preferred label.""")
     value: Optional[Union[LangString, str]] = Field(None, title="value", description="""The value for each option in choices or in additionalNotesObj""")
     
     

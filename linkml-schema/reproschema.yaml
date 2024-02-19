@@ -72,9 +72,7 @@ slots:
     - range: Choice
   citation:
     slot_uri: schema:citation
-    multivalued: true
     range: langString
-    inlined: true
   column:
     title: column
     description: An element to define the column name where the note was taken from.
@@ -107,9 +105,7 @@ slots:
     - range: uri
   description:
     slot_uri: schema:description
-    multivalued: true
     range: langString
-    inlined: true
   endedAtTime:
     range: datetime
     slot_uri: prov:endedAtTime
@@ -175,17 +171,6 @@ slots:
     - range: string
     - range: LandingPage
     inlined: true
-  langstring_prefix:
-    description:
-      The language prefix component of a langString.
-    key: true
-    range: string
-    required: true
-  langstring_value:
-    description:
-      The value component of a langString.
-    range: string
-    required: true
   limit:
     title: limit
     description:
@@ -208,9 +193,7 @@ slots:
     title: Message
     description: The message to be conditionally displayed for an item.
     slot_uri: reproschema:message
-    multivalued: true
     range: langString
-    inlined: true
   messages:
     title: messages
     description: An array of objects to define conditional messages in an activity or protocol.
@@ -229,9 +212,7 @@ slots:
     range: boolean
   name:
     slot_uri: schema:name
-    multivalued: true
     range: langString
-    inlined: true
   order:
     title: Order
     description:
@@ -253,21 +234,15 @@ slots:
     title: Preamble
     description: The preamble for an assessment
     slot_uri: reproschema:preamble
-    multivalued: true
     range: langString
-    inlined: true
   prefLabel:
     title: preferred label
     description: The preferred label.
     slot_uri: skos:prefLabel
-    multivalued: true
     range: langString
-    inlined: true
   question:
     slot_uri: schema:question
-    multivalued: true
     range: langString
-    inlined: true
   randomMaxDelay:
     title: randomMaxDelay
     description:
@@ -482,9 +457,15 @@ classes:
     class_uri: reproschema:LandingPage
   langString:
     description: RDF langString tuple
-    slots:
-    - langstring_prefix
-    - langstring_value
+    attributes:
+      en:
+        title: English
+        description: English language string
+        range: string
+      es:
+        title: Spanish
+        description: Spanish language string
+        range: string
     class_uri: rdf:langString
   MediaObject:
     title: Media Object
