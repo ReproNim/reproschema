@@ -21,8 +21,6 @@ A brief description of how they all interact could be along the following lines:
 
 ## [reproschema](https://github.com/ReproNim/reproschema)
 
-GPT
-
 The ReproSchema is like a blueprint for research projects, ensuring everyone collects data in a consistent way, which makes it easier to compare results from different studies. Here’s a simpler breakdown of what’s inside:
 
 - **Key Terms:** These are the building blocks, like common types of answers and data formats, that help everyone understand and use data the same way.
