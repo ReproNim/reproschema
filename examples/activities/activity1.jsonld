@@ -1,5 +1,5 @@
 {
-    "@context": "../../contexts/generic",
+    "@context": "../../contexts/reproschema_new",
     "@type": "reproschema:Activity",
     "@id": "activity1.jsonld",
     "prefLabel": "Example 1",
@@ -31,7 +31,7 @@
         "addProperties": [
             {   "isAbout": "items/item1.jsonld",
                 "variableName": "item1",
-                "requiredValue": true,
+                "valueRequired": true,
                 "isVis": true,
                 "randomMaxDelay": "PT2H",
                 "limit": "P2D",
@@ -39,13 +39,13 @@
             },
             {   "isAbout": "items/item2.jsonld",
                 "variableName": "item2",
-                "requiredValue": true,
+                "valueRequired": true,
                 "isVis": true,
                 "allow": ["reproschema:Skipped"]
             },
             {   "isAbout": "items/activity1_total_score",
                 "variableName": "activity1_total_score",
-                "requiredValue": true,
+                "valueRequired": true,
                 "isVis": false
             }
         ],
