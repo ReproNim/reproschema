@@ -19,7 +19,7 @@
          "@prefix": true
       },
       "xsd": "http://www.w3.org/2001/XMLSchema#",
-      "@vocab": "http://example.org/example/",
+      "@vocab": "http://schema.repronim.org/",
       "@version": 1.1,
       "@language": "en",
       "id": "@id",
@@ -28,17 +28,12 @@
       "about": {
          "@id": "schema:about"
       },
-      "additionalNotesObj": {
-         "@id": "reproschema:additionalNotesObj"
-      },
       "addProperties": {
-         "@id": "reproschema:addProperties",
          "@container": "@set",
          "@nest": "ui"
       },
       "allow": {
          "@type": "@id",
-         "@id": "reproschema:allow",
          "@container": "@set",
          "@nest": "ui"
       },
@@ -53,19 +48,14 @@
          "@type": "@id",
          "@id": "schema:audio"
       },
-      "choices": {
-         "@id": "reproschema:choices"
-      },
       "citation": {
          "@id": "schema:citation",
          "@container": "@language"
       },
       "column": {
-         "@id": "reproschema:column",
          "@type": "xsd:string"
       },
       "compute": {
-         "@id": "reproschema:compute",
          "@container": "@list"
       },
       "contentUrl": {
@@ -94,61 +84,44 @@
          "@id": "schema:image"
       },
       "imageUrl": {
-         "@type": "@id",
-         "@id": "reproschema:imageUrl"
+         "@type": "@id"
       },
       "inLanguage": {
          "@id": "schema:inLanguage",
          "@language": null
       },
       "inputType": {
-         "@id": "reproschema:inputType",
          "@type": "xsd:string",
          "@nest": "ui"
       },
       "isAbout": {
-         "@type": "@id",
-         "@id": "reproschema:isAbout"
+         "@type": "@id"
       },
       "isPartOf": {
          "@type": "@id",
          "@id": "schema:isPartOf"
       },
-      "isVis": {
-         "@id": "reproschema:isVis"
-      },
-      "jsExpression": {
-         "@id": "reproschema:jsExpression"
-      },
       "landingPage": {
          "@type": "@id",
-         "@id": "reproschema:landingPage",
          "@container": "@set"
       },
       "limit": {
-         "@id": "reproschema:limit",
          "@language": null
-      },
-      "maxRetakes": {
-         "@id": "reproschema:maxRetakes"
       },
       "maxValue": {
          "@id": "schema:maxValue"
       },
       "message": {
-         "@id": "reproschema:message",
          "@container": "@language"
       },
       "messages": {
-         "@container": "@set",
-         "@id": "reproschema:messages"
+         "@container": "@set"
       },
       "minValue": {
          "@id": "schema:minValue"
       },
       "multipleChoice": {
-         "@type": "xsd:boolean",
-         "@id": "reproschema:multipleChoice"
+         "@type": "xsd:boolean"
       },
       "name": {
          "@id": "schema:name",
@@ -156,12 +129,10 @@
       },
       "order": {
          "@type": "@id",
-         "@id": "reproschema:order",
          "@container": "@list",
          "@nest": "ui"
       },
       "overrideProperties": {
-         "@id": "reproschema:overrideProperties",
          "@container": "@set",
          "@nest": "ui"
       },
@@ -178,7 +149,6 @@
          "@container": "@language"
       },
       "randomMaxDelay": {
-         "@id": "reproschema:randomMaxDelay",
          "@language": null
       },
       "readonlyValue": {
@@ -186,11 +156,9 @@
          "@id": "schema:readonlyValue"
       },
       "responseOptions": {
-         "@type": "@id",
-         "@id": "reproschema:responseOptions"
+         "@type": "@id"
       },
       "schedule": {
-         "@id": "reproschema:schedule",
          "@language": null
       },
       "schemaVersion": {
@@ -199,26 +167,20 @@
       },
       "shuffle": {
          "@type": "xsd:boolean",
-         "@id": "reproschema:shuffle",
          "@nest": "ui"
       },
       "source": {
-         "@id": "reproschema:source",
          "@type": "xsd:string"
       },
       "startedAtTime": {
          "@type": "xsd:dateTime",
          "@id": "prov:startedAtTime"
       },
-      "statusOptions": {
-         "@id": "reproschema:statusOptions"
-      },
       "subject_id": {
          "@id": "nidm:subject_id"
       },
       "unitOptions": {
-         "@type": "@id",
-         "@id": "reproschema:unitOptions"
+         "@type": "@id"
       },
       "url": {
          "@type": "@id",
@@ -228,19 +190,12 @@
          "@type": "@id",
          "@id": "prov:used"
       },
-      "value": {
-         "@id": "reproschema:value"
-      },
       "valueRequired": {
          "@type": "xsd:boolean",
          "@id": "schema:valueRequired"
       },
       "valueType": {
-         "@type": "@id",
-         "@id": "reproschema:valueType"
-      },
-      "variableName": {
-         "@id": "reproschema:variableName"
+         "@type": "@id"
       },
       "version": {
          "@id": "schema:version",
@@ -261,47 +216,11 @@
       "Activity": {
          "@id": "reproschema:Activity"
       },
-      "AdditionalNoteObj": {
-         "@id": "reproschema:AdditionalNoteObj"
-      },
-      "AdditionalProperty": {
-         "@id": "reproschema:AdditionalProperty"
-      },
       "Agent": {
          "@id": "prov:Agent"
       },
-      "AllowExport": {
-         "@id": "reproschema:AllowExport"
-      },
-      "AllowReplay": {
-         "@id": "reproschema:AllowReplay"
-      },
-      "AllowSkip": {
-         "@id": "reproschema:AllowSkip"
-      },
-      "AutoAdvance": {
-         "@id": "reproschema:AutoAdvance"
-      },
-      "Choice": {
-         "@id": "reproschema:Choice"
-      },
-      "ComputeSpecification": {
-         "@id": "reproschema:ComputeSpecification"
-      },
       "CreativeWork": {
          "@id": "schema:CreativeWork"
-      },
-      "DisableBack": {
-         "@id": "reproschema:DisableBack"
-      },
-      "DontKnow": {
-         "@id": "reproschema:DontKnow"
-      },
-      "Item": {
-         "@id": "reproschema:Field"
-      },
-      "LandingPage": {
-         "@id": "reproschema:LandingPage"
       },
       "LangString": {
          "@id": "rdf:langString"
@@ -309,56 +228,11 @@
       "MediaObject": {
          "@id": "schema:MediaObject"
       },
-      "MessageSpecification": {
-         "@id": "reproschema:MessageSpecification"
-      },
-      "OverrideProperty": {
-         "@id": "reproschema:OverrideProperty"
-      },
-      "Participant": {
-         "@id": "reproschema:Participant"
-      },
-      "Protocol": {
-         "@id": "reproschema:Protocol"
-      },
-      "Response": {
-         "@id": "reproschema:Response"
-      },
-      "ResponseActivity": {
-         "@id": "reproschema:ResponseActivity"
-      },
-      "ResponseOption": {
-         "@id": "reproschema:ResponseOption"
-      },
-      "Schedule": {
-         "@id": "reproschema:Schedule"
-      },
-      "Skipped": {
-         "@id": "reproschema:Skipped"
-      },
-      "SoftwareAgent": {
-         "@id": "reproschema:SoftwareAgent"
-      },
       "StructuredValue": {
          "@id": "schema:StructuredValue"
       },
       "Thing": {
          "@id": "schema:Thing"
-      },
-      "TimedOut": {
-         "@id": "reproschema:TimedOut"
-      },
-      "UiActivity": {
-         "@id": "http://example.org/example/UiActivity"
-      },
-      "UiField": {
-         "@id": "http://example.org/example/UiField"
-      },
-      "UiProtocol": {
-         "@id": "http://example.org/example/UiProtocol"
-      },
-      "UnitOption": {
-         "@id": "reproschema:UnitOption"
       },
       "VideoObject": {
          "@id": "schema:VideoObject"
