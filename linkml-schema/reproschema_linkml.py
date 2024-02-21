@@ -59,7 +59,7 @@ class AdditionalNoteObj(ConfiguredBaseModel):
     """
     column: Optional[str] = Field(None, title="column", description="""An element to define the column name where the note was taken from.""")
     source: Optional[str] = Field(None, title="source", description="""An element to define the source (eg. RedCap, NDA) where the note was taken from.""")
-    value: Optional[Union[Decimal, LangString, StructuredValue, bool, str]] = Field(None, title="value", description="""The value for each option in choices or in additionalNotesObj""")
+    value: Optional[Union[Decimal, Dict[str, str], StructuredValue, bool, str]] = Field(None, title="value", description="""The value for each option in choices or in additionalNotesObj""")
     
     
 
@@ -93,7 +93,7 @@ class Choice(ConfiguredBaseModel):
     """
     name: Optional[Dict[str, str]] = Field(default_factory=dict)
     image: Optional[ImageObject] = Field(None, title="image", description="""An image of the item. This can be a <a class=\"localLink\" href=\"http://schema.org/URL\">URL</a> or a fully described <a class=\"localLink\" href=\"http://schema.org/ImageObject\">ImageObject</a>.""")
-    value: Optional[Union[Decimal, LangString, StructuredValue, bool, str]] = Field(None, title="value", description="""The value for each option in choices or in additionalNotesObj""")
+    value: Optional[Union[Decimal, Dict[str, str], StructuredValue, bool, str]] = Field(None, title="value", description="""The value for each option in choices or in additionalNotesObj""")
     
     
 
@@ -168,16 +168,7 @@ class LandingPage(ConfiguredBaseModel):
     """
     inLanguage: Optional[str] = Field(None)
     id: Optional[str] = Field(None)
-    
-    
 
-class LangString(ConfiguredBaseModel):
-    """
-    RDF langString tuple
-    """
-    langstring_prefix: str = Field(..., description="""The language prefix component of a langString.""")
-    langstring_value: str = Field(..., description="""The value component of a langString.""")
-    
     
 
 class MediaObject(CreativeWork):
@@ -268,7 +259,7 @@ class Response(CreativeWork):
     Describes the response of an item.
     """
     isAbout: Optional[Union[Activity, Item, str]] = Field(None, title="isAbout", description="""A pointer to the node describing the item.""")
-    value: Optional[Union[Decimal, LangString, StructuredValue, bool, str]] = Field(None, title="value", description="""The value for each option in choices or in additionalNotesObj""")
+    value: Optional[Union[Decimal, Dict[str, str], StructuredValue, bool, str]] = Field(None, title="value", description="""The value for each option in choices or in additionalNotesObj""")
     wasAttributedTo: Optional[Participant] = Field(None)
     id: Optional[str] = Field(None)
     category: Optional[str] = Field(None)
@@ -345,7 +336,7 @@ class UnitOption(ConfiguredBaseModel):
     An object to represent a human displayable name alongside the more formal value for units.
     """
     prefLabel: Optional[Dict[str, str]] = Field(default_factory=dict, title="preferred label", description="""The preferred label.""")
-    value: Optional[Union[LangString, str]] = Field(None, title="value", description="""The value for each option in choices or in additionalNotesObj""")
+    value: Optional[Union[Dict[str, str], str]] = Field(None, title="value", description="""The value for each option in choices or in additionalNotesObj""")
     
     
 
@@ -370,7 +361,6 @@ CreativeWork.model_rebuild()
 Activity.model_rebuild()
 Item.model_rebuild()
 LandingPage.model_rebuild()
-LangString.model_rebuild()
 MediaObject.model_rebuild()
 AudioObject.model_rebuild()
 ImageObject.model_rebuild()
