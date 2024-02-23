@@ -118,7 +118,7 @@ class Activity(CreativeWork):
     An assessment in a protocol.
     """
     about: Optional[str] = Field(None, description="""The subject matter of the Field.""")
-    altLabel: Optional[str] = Field(None, title="alternate label", description="""The alternate label.""")
+    altLabel: Optional[Dict[str, str]] = Field(default_factory=dict, title="alternate label", description="""The alternate label.""")
     associatedMedia: Optional[str] = Field(None, title="associatedMedia", description="""A media object that encodes this CreativeWork. This property is a synonym for encoding.""")
     citation: Optional[Dict[str, str]] = Field(default_factory=dict)
     compute: Optional[List[ComputeSpecification]] = Field(default_factory=list, title="computation", description="""An array of objects indicating computations in an activity or protocol and maps it to the corresponding Item. scoring logic is a subset of all computations that could be performed and not all computations will be scoring. For example, one may want to do conversion from one unit to another.""")
@@ -142,7 +142,7 @@ class Item(CreativeWork):
     """
     about: Optional[str] = Field(None, description="""The subject matter of the Field.""")
     additionalNotesObj: Optional[List[AdditionalNoteObj]] = Field(default_factory=list, title="additional notes", description="""A set of objects to define notes in a field. For example, most Redcap and NDA data dictionaries have notes for each item which needs to be captured in reproschema.""")
-    altLabel: Optional[str] = Field(None, title="alternate label", description="""The alternate label.""")
+    altLabel: Optional[Dict[str, str]] = Field(default_factory=dict, title="alternate label", description="""The alternate label.""")
     associatedMedia: Optional[str] = Field(None, title="associatedMedia", description="""A media object that encodes this CreativeWork. This property is a synonym for encoding.""")
     audio: Optional[Union[AudioObject, str]] = Field(None, title="audio", description="""TODO""")
     description: Optional[Dict[str, str]] = Field(default_factory=dict)
@@ -238,7 +238,7 @@ class Protocol(CreativeWork):
     A representation of a study which comprises one or more assessments.
     """
     about: Optional[str] = Field(None, description="""The subject matter of the Field.""")
-    altLabel: Optional[str] = Field(None, title="alternate label", description="""The alternate label.""")
+    altLabel: Optional[Dict[str, str]] = Field(default_factory=dict, title="alternate label", description="""The alternate label.""")
     associatedMedia: Optional[str] = Field(None, title="associatedMedia", description="""A media object that encodes this CreativeWork. This property is a synonym for encoding.""")
     compute: Optional[List[ComputeSpecification]] = Field(default_factory=list, title="computation", description="""An array of objects indicating computations in an activity or protocol and maps it to the corresponding Item. scoring logic is a subset of all computations that could be performed and not all computations will be scoring. For example, one may want to do conversion from one unit to another.""")
     cronTable: Optional[str] = Field(None, title="cronTable", description="""TODO not described in reproschema""")
