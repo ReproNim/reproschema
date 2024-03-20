@@ -1,4 +1,4 @@
-# Adopting Assessments from the reproschema-library 
+# Adopting Assessments from the reproschema-library
 
 This part focuses on how to select and integrate assessments from the reproschema-library into your research protocol, an essential step in crafting a comprehensive study. The chosen assessments are to be placed in the `activities` folder within your repository. This folder serves as the central hub for various assessments or activities that collectively form your research protocol.
 
@@ -6,7 +6,7 @@ Each activity or assessment within this `activities` folder is typically structu
 
 To illustrate this process, we will use two specific types of assessments from [reproschema-library](https://github.com/ReproNim/reproschema-library): `demographics` and `psychological questions`. The latter represents a composite assessment created from multiple pre-existing assessments within the library. This example demonstrates how to combine different elements from the library to construct a bespoke assessment tailored to the unique demands of your research protocol.
 
-## Step 1: Understand the structure of a *_schema file throught this [exemplar file](https://github.com/ReproNim/reproschema-protocol-cookiecutter/blob/main/%7B%7Bcookiecutter.protocol_name%7D%7D/activities/Activity1/activity1_schema)
+## Step 1: Understand the structure of a *_schema file through this [exemplar file](https://github.com/ReproNim/reproschema-protocol-cookiecutter/blob/main/%7B%7Bcookiecutter.protocol_name%7D%7D/activities/Activity1/activity1_schema)
 
 1. **Context (@context)**: This field provides references to the context definitions. In this schema, it links to the generic context of ReproSchema and the specific context for the items in the repository, defined by the URL with the "rl" key. This context helps to interpret the terms used within the schema.
 2. **Type (@type)**: Defined as "reproschema:Activity," this indicates the nature of the document, specifying that it is an activity within the ReproSchema framework.
@@ -34,7 +34,7 @@ This step involves precise modifications, particularly in the `@context` and `ad
 
     Labeling this link as "demo" directs the schema to the location in the ReproSchema-library where items for demographics and background information are defined. We use the link with a specific commit ID to ensure the consistency of the assessment version. This contextual link allows the schema to access the detailed structures and definitions needed for each demographic item.
 
-2. **Customizing "addProperties" for Demographic Variables**: 
+2. **Customizing "addProperties" for Demographic Variables**:
 
     In the "addProperties" section, we define each variable that corresponds to a demographic question. For example:
 
@@ -141,7 +141,7 @@ Different from `demograpgics`, `psychological_questionnaire_schema` combines ass
             "isAbout": "demo:clinical_history_psychiatry"
         }
         ```
-    
+
     - The `order` array specifies the sequence in which these assessments will appear in the questionnaire, ensuring a logical flow for participants.
     - The `shuffle` setting is `false`, maintaining the defined order, and allow includes functionalities like auto-advance between assessments and data export.
 
