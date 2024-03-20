@@ -434,7 +434,7 @@ touch activities/items/EHI_results.jsonld
   "description": "a study on linguistic processing in depression",
   "schemaVersion": "1.0.0-rc1",
   "version": "0.0.1",
-  "landingPage": {EHI
+  "landingPage": {
     "@id": "README.md",
     "@language": "en"
   },

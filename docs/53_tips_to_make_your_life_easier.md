@@ -8,7 +8,7 @@
 
 First, make sure your syntax is in correct jsonld format. Test all files with `@context` from command line:
 
-```
+```bash
 npm install -g jsonlint
 grep -r "@context" . \
    | cut -d: -f1 | xargs -I fname jsonlint -q fname
@@ -23,7 +23,7 @@ Or test individual files on the [json linter website](`https://jsonlint.com/`).
 - mention that it needs python and add a pointer to reproschema-py
 -->
 
-```
+```bash
 pip install reproschema requests_cache
 reproschema -l DEBUG validate activities
 ```
@@ -46,7 +46,7 @@ To set those up you simply need to create a `.github/workflows` folder inside th
 
 For example you could create a `validate.yml` file in this repository.
 
-```bash
+```
 ├── .git # hidden git folder
 ├── .github # hidden github folder
 │    └── workflows
@@ -138,7 +138,7 @@ If you have to create several items that always have the same set of response op
 
 For example, you could create response set file to constrains the possible answers on the questions of the Edinburgh Handedness Inventory we have been working on by organizing things this way.
 
-```bash
+```
 activities
 ├── edinburgh_handedness_inventory_short.jsonld
 ├── leftRightValueConstraints.jsonld
