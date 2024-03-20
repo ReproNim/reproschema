@@ -1,6 +1,6 @@
 # Toolkit
 
-In the world of research data management, flexibility and compatibility are key. Understanding this, we provide specialized tools designed to create, validata schemas, and convert data between ReproSchema format and REDCap CSV format. Whether you're transitioning from REDCap to ReproSchema or vice versa, these tools ensure a smooth and efficient conversion process, preserving the integrity and structure of your data.
+In the world of research data management, flexibility and compatibility are key. Understanding this, we provide specialized tools designed to create, validate schemas, and convert data between ReproSchema format and REDCap CSV format. Whether you're transitioning from REDCap to ReproSchema or vice versa, these tools ensure a smooth and efficient conversion process, preserving the integrity and structure of your data.
 
 ## Install reproschema-py
 
@@ -52,7 +52,7 @@ reproschema reproschema2redcap <input_dir_path> <output_csv_filename>
   cd reproschema-demo-protocol
   pwd
   ```
-  
+
   In this case,  the output from `pwd` (which shows your current directory path)should be your `<input_dir_path>`.
 - `<output_csv_filename>`: The name of the output CSV file where the converted data will be saved.
 
@@ -90,4 +90,4 @@ The `redcap2reproschema` function has been integrated into a CLI tool, use the f
 reproschema redcap2reproschema path/to/your_redcap_data_dic.csv path/to/your_redcap2rs.yaml
 ```
 
-Those tools can also be used as Python functions. For detailed instructions, please visit [reproschema-py](https://github.com/ReproNim/reproschema-py). 
+Those tools can also be used as Python functions. For detailed instructions, please visit [reproschema-py](https://github.com/ReproNim/reproschema-py).
