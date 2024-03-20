@@ -2,7 +2,7 @@
 
 ??? example "Tl;DR - Advantages of the current schema representation"
     - Rich contexts for a questionnaire with JSON-LD rather than a "flat" csv file.
-    - A single source of curated assessments from [ReproSchema Library](https://github.com/reproschema-library)
+    - A single source of curated assessments from [ReproSchema Library](https://github.com/ReproNim/reproschema-library)
     - Each `item` (i.e question), `activity` (i.e questionnaire), and `protocol`
     (i.e set of questionnaires) provides unique and persistent identifiers.
     - Versions of a given questionnaire can be tracked (e.g., PHQ-9, PHQ-8).
@@ -126,7 +126,7 @@ displayed to the user and under which conditions,
 should be computed
 
 The ReproSchema also allows for internationalization and multiple languages support
-by making it very easy to keep everything the same 
+by making it very easy to keep everything the same
 except the language displayed by the user interface.
 
 Finally ReproSchema allows tracking of variations and version of different assessments
