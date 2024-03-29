@@ -92,7 +92,7 @@ class Choice(ConfiguredBaseModel):
     An object to describe a response option.
     """
     name: Optional[Dict[str, str]] = Field(default_factory=dict)
-    image: Optional[ImageObject] = Field(None, title="image", description="""An image of the item. This can be a <a class=\"localLink\" href=\"http://schema.org/URL\">URL</a> or a fully described <a class=\"localLink\" href=\"http://schema.org/ImageObject\">ImageObject</a>.""")
+    image: Optional[Union[ImageObject, str]] = Field(None, title="image", description="""An image of the item. This can be a <a class=\"localLink\" href=\"http://schema.org/URL\">URL</a> or a fully described <a class=\"localLink\" href=\"http://schema.org/ImageObject\">ImageObject</a>.""")
     value: Optional[Union[Decimal, Dict[str, str], StructuredValue, bool, str]] = Field(None, title="value", description="""The value for each option in choices or in additionalNotesObj""")
     
     
@@ -124,7 +124,7 @@ class Activity(CreativeWork):
     compute: Optional[List[ComputeSpecification]] = Field(default_factory=list, title="computation", description="""An array of objects indicating computations in an activity or protocol and maps it to the corresponding Item. scoring logic is a subset of all computations that could be performed and not all computations will be scoring. For example, one may want to do conversion from one unit to another.""")
     cronTable: Optional[str] = Field(None, title="cronTable", description="""TODO not described in reproschema""")
     description: Optional[Dict[str, str]] = Field(default_factory=dict)
-    image: Optional[ImageObject] = Field(None, title="image", description="""An image of the item. This can be a <a class=\"localLink\" href=\"http://schema.org/URL\">URL</a> or a fully described <a class=\"localLink\" href=\"http://schema.org/ImageObject\">ImageObject</a>.""")
+    image: Optional[Union[ImageObject, str]] = Field(None, title="image", description="""An image of the item. This can be a <a class=\"localLink\" href=\"http://schema.org/URL\">URL</a> or a fully described <a class=\"localLink\" href=\"http://schema.org/ImageObject\">ImageObject</a>.""")
     messages: Optional[List[MessageSpecification]] = Field(default_factory=list, title="messages", description="""An array of objects to define conditional messages in an activity or protocol.""")
     preamble: Optional[Dict[str, str]] = Field(default_factory=dict, title="Preamble", description="""The preamble for an assessment""")
     prefLabel: Optional[Dict[str, str]] = Field(default_factory=dict, title="preferred label", description="""The preferred label.""")
@@ -146,7 +146,7 @@ class Item(CreativeWork):
     associatedMedia: Optional[str] = Field(None, title="associatedMedia", description="""A media object that encodes this CreativeWork. This property is a synonym for encoding.""")
     audio: Optional[Union[AudioObject, str]] = Field(None, title="audio", description="""TODO""")
     description: Optional[Dict[str, str]] = Field(default_factory=dict)
-    image: Optional[ImageObject] = Field(None, title="image", description="""An image of the item. This can be a <a class=\"localLink\" href=\"http://schema.org/URL\">URL</a> or a fully described <a class=\"localLink\" href=\"http://schema.org/ImageObject\">ImageObject</a>.""")
+    image: Optional[Union[ImageObject, str]] = Field(None, title="image", description="""An image of the item. This can be a <a class=\"localLink\" href=\"http://schema.org/URL\">URL</a> or a fully described <a class=\"localLink\" href=\"http://schema.org/ImageObject\">ImageObject</a>.""")
     imageUrl: Optional[str] = Field(None, title="imageUrl", description="""An image url.""")
     isPartOf: Optional[Activity] = Field(None)
     preamble: Optional[Dict[str, str]] = Field(default_factory=dict, title="Preamble", description="""The preamble for an assessment""")
@@ -291,7 +291,7 @@ class ResponseOption(ConfiguredBaseModel):
     minValue: Optional[Union[float, int]] = Field(None)
     multipleChoice: Optional[bool] = Field(None, title="Multiple choice response expectation", description="""Indicates (by bool) if response for the Item has one or more answer.""")
     unitOptions: Optional[List[UnitOption]] = Field(default_factory=list, title="unitOptions", description="""A list of objects to represent a human displayable name alongside the more formal value for units.""")
-    valueType: Optional[str] = Field(None, title="The type of the response", description="""The type of the response of an item. For example, string, integer, etc.""")
+    valueType: Optional[List[str]] = Field(default_factory=list, title="The type of the response", description="""The type of the response of an item. For example, string, integer, etc.""")
     
     
 
