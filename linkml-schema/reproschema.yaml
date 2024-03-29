@@ -128,7 +128,9 @@ slots:
       An image of the item. This can be a <a class="localLink" href="http://schema.org/URL">URL</a>
       or a fully described <a class="localLink" href="http://schema.org/ImageObject">ImageObject</a>.
     slot_uri: schema:image
-    range: ImageObject
+    any_of:
+      - range: ImageObject
+      - range: uri
   imageUrl:
     title: imageUrl
     description: An image url.
@@ -354,6 +356,7 @@ slots:
     title: The type of the response
     description: The type of the response of an item. For example, string, integer, etc.
     slot_uri: reproschema:valueType
+    multivalued: true
     range: string
   valueRequired:
     slot_uri: schema:valueRequired
