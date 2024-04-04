@@ -351,6 +351,7 @@ slots:
     - range: langString
     - range: uri
     - range: string
+    - range: MissingType
     inlined: true
   valueType:
     title: The type of the response
@@ -552,7 +553,7 @@ classes:
     is_a: CreativeWork
     slots:
     - isAbout
-    - value #TODO it was schema:value
+    - value
     - wasAttributedTo
     class_uri: reproschema:Response
   ResponseActivity: # multiple types
