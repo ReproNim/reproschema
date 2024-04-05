@@ -29,6 +29,9 @@ class ConfiguredBaseModel(BaseModel):
 
 
 class AllowedType(str, Enum):
+
+    # Indicates (by boolean) if alternate responses are allowed or not.
+    AllowAltResponse = "reproschema:AllowAltResponse"
     # Indicates (by boolean) if data can be exported or not.
     AllowExport = "reproschema:AllowExport"
     # Indicates (by boolean) if items can be replayed or not.
