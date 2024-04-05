@@ -29,6 +29,9 @@ class ConfiguredBaseModel(BaseModel):
 
 
 class AllowedType(str, Enum):
+
+    # Indicates (by boolean) if alternate responses are allowed or not.
+    AllowAltResponse = "reproschema:AllowAltResponse"
     # Indicates (by boolean) if data can be exported or not.
     AllowExport = "reproschema:AllowExport"
     # Indicates (by boolean) if items can be replayed or not.
@@ -59,7 +62,7 @@ class AdditionalNoteObj(ConfiguredBaseModel):
     """
     column: Optional[str] = Field(None, title="column", description="""An element to define the column name where the note was taken from.""")
     source: Optional[str] = Field(None, title="source", description="""An element to define the source (eg. RedCap, NDA) where the note was taken from.""")
-    value: Optional[Union[Decimal, Dict[str, str], StructuredValue, bool, str]] = Field(None, title="value", description="""The value for each option in choices or in additionalNotesObj""")
+    value: Optional[Union[Decimal, Dict[str, str], MissingType, StructuredValue, bool, str]] = Field(None, title="value", description="""The value for each option in choices or in additionalNotesObj""")
     
     
 
@@ -93,7 +96,7 @@ class Choice(ConfiguredBaseModel):
     """
     name: Optional[Dict[str, str]] = Field(default_factory=dict)
     image: Optional[Union[ImageObject, str]] = Field(None, title="image", description="""An image of the item. This can be a <a class=\"localLink\" href=\"http://schema.org/URL\">URL</a> or a fully described <a class=\"localLink\" href=\"http://schema.org/ImageObject\">ImageObject</a>.""")
-    value: Optional[Union[Decimal, Dict[str, str], StructuredValue, bool, str]] = Field(None, title="value", description="""The value for each option in choices or in additionalNotesObj""")
+    value: Optional[Union[Decimal, Dict[str, str], MissingType, StructuredValue, bool, str]] = Field(None, title="value", description="""The value for each option in choices or in additionalNotesObj""")
     
     
 
@@ -121,7 +124,7 @@ class Activity(CreativeWork):
     altLabel: Optional[Dict[str, str]] = Field(default_factory=dict, title="alternate label", description="""The alternate label.""")
     associatedMedia: Optional[str] = Field(None, title="associatedMedia", description="""A media object that encodes this CreativeWork. This property is a synonym for encoding.""")
     citation: Optional[Dict[str, str]] = Field(default_factory=dict)
-    compute: Optional[Union[List[ComputeSpecification], ComputeSpecification]] = Field(default_factory=list, title="computation", description="""An array of objects indicating computations in an activity or protocol and maps it to the corresponding Item. scoring logic is a subset of all computations that could be performed and not all computations will be scoring. For example, one may want to do conversion from one unit to another.""")
+    compute: Optional[List[ComputeSpecification]] = Field(default_factory=list, title="computation", description="""An array of objects indicating computations in an activity or protocol and maps it to the corresponding Item. scoring logic is a subset of all computations that could be performed and not all computations will be scoring. For example, one may want to do conversion from one unit to another.""")
     cronTable: Optional[str] = Field(None, title="cronTable", description="""TODO not described in reproschema""")
     description: Optional[Dict[str, str]] = Field(default_factory=dict)
     image: Optional[Union[ImageObject, str]] = Field(None, title="image", description="""An image of the item. This can be a <a class=\"localLink\" href=\"http://schema.org/URL\">URL</a> or a fully described <a class=\"localLink\" href=\"http://schema.org/ImageObject\">ImageObject</a>.""")
@@ -240,7 +243,7 @@ class Protocol(CreativeWork):
     about: Optional[str] = Field(None, description="""The subject matter of the Field.""")
     altLabel: Optional[Dict[str, str]] = Field(default_factory=dict, title="alternate label", description="""The alternate label.""")
     associatedMedia: Optional[str] = Field(None, title="associatedMedia", description="""A media object that encodes this CreativeWork. This property is a synonym for encoding.""")
-    compute: Optional[Union[List[ComputeSpecification], ComputeSpecification]] = Field(default_factory=list, title="computation", description="""An array of objects indicating computations in an activity or protocol and maps it to the corresponding Item. scoring logic is a subset of all computations that could be performed and not all computations will be scoring. For example, one may want to do conversion from one unit to another.""")
+    compute: Optional[List[ComputeSpecification]] = Field(default_factory=list, title="computation", description="""An array of objects indicating computations in an activity or protocol and maps it to the corresponding Item. scoring logic is a subset of all computations that could be performed and not all computations will be scoring. For example, one may want to do conversion from one unit to another.""")
     cronTable: Optional[str] = Field(None, title="cronTable", description="""TODO not described in reproschema""")
     description: Optional[Dict[str, str]] = Field(default_factory=dict)
     landingPage: Optional[List[Union[LandingPage, str]]] = Field(default_factory=list, title="Landing page content", description="""An element (by URL) to point to the protocol readme or landing page.""")
@@ -259,7 +262,7 @@ class Response(CreativeWork):
     Describes the response of an item.
     """
     isAbout: Optional[Union[Activity, Item, str]] = Field(None, title="isAbout", description="""A pointer to the node describing the item.""")
-    value: Optional[Union[Decimal, Dict[str, str], StructuredValue, bool, str]] = Field(None, title="value", description="""The value for each option in choices or in additionalNotesObj""")
+    value: Optional[Union[Decimal, Dict[str, str], MissingType, StructuredValue, bool, str]] = Field(None, title="value", description="""The value for each option in choices or in additionalNotesObj""")
     wasAttributedTo: Optional[Participant] = Field(None)
     id: Optional[str] = Field(None)
     category: Optional[str] = Field(None)
