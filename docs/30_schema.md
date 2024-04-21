@@ -9,7 +9,7 @@ include:
 We have used schema.org classes and properties where it maps on to the needs of
 the model and extended the model with NIDM elements to harmonize across ReproNim
 projects.
-1. Allowing for structued nested elements in a schema
+1. Allowing for structured nested elements in a schema
 `Protocol > Activity > [Activity | Field > ResponseOption]`. This nested
 structure provides a flexible schema to represent nested activities, which are
 common in biomedical and other domains.
@@ -38,7 +38,7 @@ used.
 participant.
 1. Allowing for user interface (UI) elements that allow interaction between the schema
 and any implementation that allows collecting data using the schema. By providing
-some additional UI elements the provider can guide an implementor to allow for
+some additional UI elements the provider can guide an implementer to allow for
 more complex data collection behavior.
 
 The [ReproSchema-UI](https://repronim.org/reproschema-ui) is a prototype implementation of an UI that leverages these
