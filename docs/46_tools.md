@@ -66,7 +66,7 @@ Before the conversion, ensure you have the following:
 
 **YAML Configuration File**:
 
-- Download [templates/redcap2rs.yaml](templates/redcap2rs.yaml) and fill it out with your protocol details.
+- Download [templates/redcap2rs.yaml](https://github.com/ReproNim/reproschema-py/blob/ab7c051dbd4ebfce92917ce154a8053343a011e7/templates/redcap2rs.yaml) and fill it out with your protocol details.
 
 ### YAML File Configuration
 

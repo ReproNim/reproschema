@@ -108,10 +108,10 @@ Now say you would like to use this JSON file to represent a piece of linked-data
 
 You now have a valid JSON-LD. If you want to make sure it is valid, you can copy-paste that into the [JSON-LD playground](https://json-ld.org/playground/). If you to to visualize the "linked" aspect of that data, you can click on the `Visualized` tab and this will give you a graph where that connects the different nodes (piece of information to one another).
 
-If you want to visualize a more complex graph, we can try that with one of the JSON-LD file that describe one of the `protocols` of the reproschema like the one [here](https://github.com/ReproNim/reproschema/blob/master/protocols/VoicePilot/VoicePilot_schema). Actually if you want to test get the raw content of the file you should click on `Raw`. You can then either use the raw content of the file or the URL of this raw file which should be something like:
+If you want to visualize a more complex graph, we can try that with one of the JSON-LD file that describe one of the `protocols` of the reproschema like the one [here](https://github.com/ReproNim/reproschema/blob/741e295d998037629c213ef41cffaaf177f4d014/examples/protocols/protocol1.jsonld). Actually if you want to test get the raw content of the file you should click on `Raw`. You can then either use the raw content of the file or the URL of this raw file which should be something like:
 
 ```
-https://raw.githubusercontent.com/ReproNim/reproschema/master/protocols/VoicePilot/VoicePilot_schema
+https://raw.githubusercontent.com/ReproNim/reproschema/741e295d998037629c213ef41cffaaf177f4d014/examples/protocols/protocol1.jsonld
 ```
 
 directly into the [JSON-LD playground](https://json-ld.org/playground/) to see whether it is a valid JSON-LD and how the different elements are connected.
@@ -175,10 +175,10 @@ If you just want to view a protocol or activity you are developing using the `re
 
 If you are hosting a schema on github, make sure that you are passing the URL of the **raw** content of the schema. For example, our demo protocol can be accessed at this URL:
 
-[https://github.com/ReproNim/demo-protocol/blob/master/VoicePilot/VoicePilot_schema](https://github.com/ReproNim/demo-protocol/blob/master/VoicePilot/VoicePilot_schema)
+[https://github.com/ReproNim/reproschema-demo-protocol/blob/7ed1ae49279f75acdd57380fff1f8aaff2c7b511/reproschema_demo_protocol/reproschema_demo_protocol_schema](https://github.com/ReproNim/reproschema-demo-protocol/blob/7ed1ae49279f75acdd57380fff1f8aaff2c7b511/reproschema_demo_protocol/reproschema_demo_protocol_schema)
 
 But to get access to the raw content of that file you must click on the `Raw` button once you have opened that page on github that will open this URL:
 
-[https://raw.githubusercontent.com/ReproNim/demo-protocol/master/VoicePilot/VoicePilot_schema](https://raw.githubusercontent.com/ReproNim/demo-protocol/master/VoicePilot/VoicePilot_schema).
+[https://raw.githubusercontent.com/ReproNim/reproschema-demo-protocol/7ed1ae49279f75acdd57380fff1f8aaff2c7b511/reproschema_demo_protocol/reproschema_demo_protocol_schema](https://raw.githubusercontent.com/ReproNim/reproschema-demo-protocol/7ed1ae49279f75acdd57380fff1f8aaff2c7b511/reproschema_demo_protocol/reproschema_demo_protocol_schema).
 
 If you want to visualize the graph represented by the JSON-LD file, we explain how to do this in [From JSON to JSON-LD](#from-json-to-json-ld).
