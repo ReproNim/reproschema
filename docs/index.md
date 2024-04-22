@@ -16,7 +16,7 @@ our [FAQ](./98_FAQ.md). You do not need an in depth understanding of what those
 things are to use the ReproSchema but some "big picture" conceptual understanding
 could save you from a lot of confusion. 😉
 
-- Not sure how the project is organized? Check out the [project structure](./20_project_structure)
+- Not sure how the project is organized? Check out the [project structure](./20_project_structure.md)
 page.
 
 ## How to cite
