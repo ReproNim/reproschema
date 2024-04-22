@@ -35,7 +35,7 @@ these questionnaires. However, these resources are often used to make data
 consistent and reusable after, rather than during data collection. However,
 harmonizing data after acquisition is resource intensive and this approach can
 create a mismatch between collected and submitted data due to human error during
-the harmonization process. To faciliate tedious harmonization efforts, several
+the harmonization process. To facilitate tedious harmonization efforts, several
 projects, over the last two decades, have developed technologies to automatically
 or interactively align and harmonize data elements (e.g., BIRN mediator, OpenRefine).
 
