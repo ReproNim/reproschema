@@ -47,7 +47,6 @@ class ConfiguredBaseModel(BaseModel):
 
 
 class AllowedType(str, Enum):
-
     # Indicates (by boolean) if alternate responses are allowed or not.
     AllowAltResponse = "reproschema:AllowAltResponse"
     # Indicates (by boolean) if data can be exported or not.
@@ -71,6 +70,7 @@ class MissingType(str, Enum):
     Unknown = "reproschema:Unknown"
     # A boolean element to describe if the response did not occur within the prescribed time.
     TimedOut = "reproschema:TimedOut"
+
 
 class Agent(ConfiguredBaseModel):
     pass
@@ -187,7 +187,6 @@ class LandingPage(CreativeWork):
     id: Optional[str] = Field(None, description="""A unique identifier for an item.""")
     category: Optional[str] = Field(None, description="""A specific type of class.""")
 
-    
 
 class MediaObject(CreativeWork):
     """

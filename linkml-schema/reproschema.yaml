@@ -640,35 +640,45 @@ classes:
 enums:
   AllowedType:
     permissible_values:
-      AllowAltResponse:
+      reproschema:AllowAltResponse:
+        title: AllowAltResponse
         description: Indicates (by boolean) if alternate responses are allowed or not.
         meaning: reproschema:AllowAltResponse
-      AllowExport:
+      reproschema:AllowExport:
+        title: AllowExport
         description: Indicates (by boolean) if data can be exported or not.
         meaning: reproschema:AllowExport
-      AllowReplay:
+      reproschema:AllowReplay:
+        title: AllowReplay
         description: Indicates (by boolean) if items can be replayed or not.
         meaning: reproschema:AllowReplay
-      AllowSkip:
+      reproschema:AllowSkip:
+        title: AllowSkip
         description: Indicates (by boolean) if items can be skipped or not.
         meaning: reproschema:AllowSkip
-      AutoAdvance:
+      reproschema:AutoAdvance:
+        title: AutoAdvance
         description: Indicates (by boolean) if assessments in a protocol can auto advance or not.
         meaning: reproschema:AutoAdvance
-      DisableBack:
+      reproschema:DisableBack:
+        title: DisableBack
         description: Indicates (by boolean) if we can go back to a completed assessment in a protocol.
         meaning: reproschema:DisableBack
   MissingType:
     permissible_values:
-      Skipped:
+      reproschema:Skipped:
+        title: Skipped
         description: An element to describe the choice when the item is skipped.
         meaning: reproschema:Skipped
-      DontKnow:
+      reproschema:DontKnow:
+        title: DontKnow
         description: An element to describe the choice when response is not known.
         meaning: reproschema:DontKnow
-      Unknown:
+      reproschema:Unknown:
+        title: Unknown
         description: An element to describe the choice when the reason for missing response is unknown.
         meaning: reproschema:Unknown
-      TimedOut:
+      reproschema:TimedOut:
+        title: TimedOut
         description: A boolean element to describe if the response did not occur within the prescribed time.
         meaning: reproschema:TimedOut
