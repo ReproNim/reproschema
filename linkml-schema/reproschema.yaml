@@ -62,7 +62,10 @@ slots:
     - range: AudioObject
     inlined: true
   category:
-    description: A specific type of class.
+    description:
+      Name of the high level ontology class in which this entity is categorized.
+      Corresponds to the label for the biolink entity type class.
+      In an RDF database it should be a model class URI. This field is multi-valued.
     slot_uri: rdf:type
     range: uriorcurie
   choices:
@@ -99,6 +102,9 @@ slots:
   contentUrl:
     slot_uri: schema:contentUrl
     range: uriorcurie
+  creator:
+    slot_uri: schema:creator
+    range: Person
   cronTable:
     title: cronTable
     description: TODO not described in reproschema
@@ -122,9 +128,11 @@ slots:
     slot_uri: prov:generated
     range: uri
   id:
-    description: A unique identifier for an item.
+    description:
+      A unique identifier for an entity.
+      Must be either a CURIE shorthand for a URI or a complete URI.
     slot_uri: schema:identifier
-    range: uri
+    range: uriorcurie
   image:
     title: image
     description:
@@ -386,7 +394,7 @@ classes:
   Activity:
     title: Activity
     description: An assessment in a protocol.
-    is_a: CreativeWork
+    is_a: Thing
     slots:
     - about
     - altLabel
@@ -408,7 +416,7 @@ classes:
     description:
       A set of objects to define notes in a Item. For example, most Redcap and NDA
       data dictionaries have notes for each item which needs to be captured in reproschema
-    is_a: CreativeWork
+    is_a: Thing
     slots:
     - column
     - source
@@ -417,7 +425,7 @@ classes:
   AdditionalProperty:
     title: Additional properties
     description: An object to describe the various properties added to assessments and Items.
-    is_a: CreativeWork
+    is_a: Thing
     slots:
     - allow
     - isAbout
@@ -439,7 +447,7 @@ classes:
   Choice:
     title: Response choice
     description: An object to describe a response option.
-    is_a: CreativeWork
+    is_a: Thing
     slots:
     - name
     - image
@@ -454,14 +462,15 @@ classes:
     - variableName
     class_uri: reproschema:ComputeSpecification
   CreativeWork:
+    is_a: Thing
     slots:
-      - id
       - category
+      - contentUrl
     class_uri: schema:CreativeWork
   ImageObject:
     is_a: MediaObject
     class_uri: schema:ImageObject
-  Item: #TODO: multiple @type in reproschema
+  Item:
     title: Item in an activity
     description: An item in an assessment.
     is_a: CreativeWork
@@ -503,7 +512,6 @@ classes:
     is_a: CreativeWork
     class_uri: schema:MediaObject
     slots:
-      - contentUrl
       - inLanguage
     slot_usage:
       contentUrl:
@@ -519,7 +527,7 @@ classes:
   OverrideProperty:
     title: Additional properties
     description: An object to override the various properties added to assessments and Items.
-    is_a: CreativeWork
+    is_a: Thing
     slots:
     - isAbout
     - isVis
@@ -583,7 +591,7 @@ classes:
   ResponseOption:
     title: Response option
     description: An element (object or by URL)to describe the properties of response of the Item.
-    is_a: CreativeWork
+    is_a: Thing
     slots:
     - choices
     - datumType
@@ -598,14 +606,19 @@ classes:
     description:
       Captures information about some action that took place. It also links to information
       (entities) that were used during the activity
-    is_a: CreativeWork
+    is_a: Thing
     slots:
     - version
     - url
     class_uri: reproschema:SoftwareAgent
   StructuredValue:
-    is_a: CreativeWork
+    is_a: Thing
     class_uri: schema:StructuredValue
+  Thing:
+    slots:
+      - id
+      - name
+    class_uri: schema:Thing
   UI:
     title: todo
     description:
@@ -622,7 +635,7 @@ classes:
   UnitOption:
     title: Unit options
     description: An object to represent a human displayable name alongside the more formal value for units.
-    is_a: CreativeWork
+    is_a: Thing
     slots:
     - prefLabel
     - value
