@@ -89,28 +89,6 @@ class Thing(ConfiguredBaseModel):
     name: Optional[Dict[str, str]] = Field(default_factory=dict)
 
 
-class Activity(Thing):
-    """
-    An assessment in a protocol.
-    """
-    about: Optional[str] = Field(None, description="""The subject matter of the Field.""")
-    altLabel: Optional[Dict[str, str]] = Field(default_factory=dict, title="alternate label", description="""The alternate label.""")
-    associatedMedia: Optional[str] = Field(None, title="associatedMedia", description="""A media object that encodes this CreativeWork. This property is a synonym for encoding.""")
-    citation: Optional[Dict[str, str]] = Field(default_factory=dict)
-    compute: Optional[List[ComputeSpecification]] = Field(default_factory=list, title="computation", description="""An array of objects indicating computations in an activity or protocol and maps it to the corresponding Item. scoring logic is a subset of all computations that could be performed and not all computations will be scoring. For example, one may want to do conversion from one unit to another.""")
-    cronTable: Optional[str] = Field(None, title="cronTable", description="""TODO not described in reproschema""")
-    description: Optional[Dict[str, str]] = Field(default_factory=dict)
-    image: Optional[Union[ImageObject, str]] = Field(None, title="image", description="""An image of the item. This can be a <a class=\"localLink\" href=\"http://schema.org/URL\">URL</a> or a fully described <a class=\"localLink\" href=\"http://schema.org/ImageObject\">ImageObject</a>.""")
-    messages: Optional[List[MessageSpecification]] = Field(default_factory=list, title="messages", description="""An array of objects to define conditional messages in an activity or protocol.""")
-    preamble: Optional[Dict[str, str]] = Field(default_factory=dict, title="Preamble", description="""The preamble for an assessment""")
-    prefLabel: Optional[Dict[str, str]] = Field(default_factory=dict, title="preferred label", description="""The preferred label.""")
-    schemaVersion: Optional[str] = Field(None)
-    ui: Optional[UI] = Field(None, title="UI", description="""An element to control UI specifications. Originally @nest in jsonld, but using a class in the model.""")
-    version: Optional[str] = Field(None)
-    id: Optional[str] = Field(None, description="""A unique identifier for an entity. Must be either a CURIE shorthand for a URI or a complete URI.""")
-    name: Optional[Dict[str, str]] = Field(default_factory=dict)
-
-
 class AdditionalNoteObj(Thing):
     """
     A set of objects to define notes in a Item. For example, most Redcap and NDA data dictionaries have notes for each item which needs to be captured in reproschema
@@ -152,6 +130,30 @@ class Choice(Thing):
 
 
 class CreativeWork(Thing):
+    category: Optional[str] = Field(None, description="""Name of the high level ontology class in which this entity is categorized. Corresponds to the label for the biolink entity type class. In an RDF database it should be a model class URI. This field is multi-valued.""")
+    contentUrl: Optional[str] = Field(None)
+    id: Optional[str] = Field(None, description="""A unique identifier for an entity. Must be either a CURIE shorthand for a URI or a complete URI.""")
+    name: Optional[Dict[str, str]] = Field(default_factory=dict)
+
+
+class Activity(CreativeWork):
+    """
+    An assessment in a protocol.
+    """
+    about: Optional[str] = Field(None, description="""The subject matter of the Field.""")
+    altLabel: Optional[Dict[str, str]] = Field(default_factory=dict, title="alternate label", description="""The alternate label.""")
+    associatedMedia: Optional[str] = Field(None, title="associatedMedia", description="""A media object that encodes this CreativeWork. This property is a synonym for encoding.""")
+    citation: Optional[Dict[str, str]] = Field(default_factory=dict)
+    compute: Optional[List[ComputeSpecification]] = Field(default_factory=list, title="computation", description="""An array of objects indicating computations in an activity or protocol and maps it to the corresponding Item. scoring logic is a subset of all computations that could be performed and not all computations will be scoring. For example, one may want to do conversion from one unit to another.""")
+    cronTable: Optional[str] = Field(None, title="cronTable", description="""TODO not described in reproschema""")
+    description: Optional[Dict[str, str]] = Field(default_factory=dict)
+    image: Optional[Union[ImageObject, str]] = Field(None, title="image", description="""An image of the item. This can be a <a class=\"localLink\" href=\"http://schema.org/URL\">URL</a> or a fully described <a class=\"localLink\" href=\"http://schema.org/ImageObject\">ImageObject</a>.""")
+    messages: Optional[List[MessageSpecification]] = Field(default_factory=list, title="messages", description="""An array of objects to define conditional messages in an activity or protocol.""")
+    preamble: Optional[Dict[str, str]] = Field(default_factory=dict, title="Preamble", description="""The preamble for an assessment""")
+    prefLabel: Optional[Dict[str, str]] = Field(default_factory=dict, title="preferred label", description="""The preferred label.""")
+    schemaVersion: Optional[str] = Field(None)
+    ui: Optional[UI] = Field(None, title="UI", description="""An element to control UI specifications. Originally @nest in jsonld, but using a class in the model.""")
+    version: Optional[str] = Field(None)
     category: Optional[str] = Field(None, description="""Name of the high level ontology class in which this entity is categorized. Corresponds to the label for the biolink entity type class. In an RDF database it should be a model class URI. This field is multi-valued.""")
     contentUrl: Optional[str] = Field(None)
     id: Optional[str] = Field(None, description="""A unique identifier for an entity. Must be either a CURIE shorthand for a URI or a complete URI.""")
@@ -315,7 +317,7 @@ class ResponseActivity(CreativeWork):
     name: Optional[Dict[str, str]] = Field(default_factory=dict)
 
 
-class ResponseOption(Thing):
+class ResponseOption(CreativeWork):
     """
     An element (object or by URL)to describe the properties of response of the Item.
     """
@@ -326,6 +328,8 @@ class ResponseOption(Thing):
     multipleChoice: Optional[bool] = Field(None, title="Multiple choice response expectation", description="""Indicates (by bool) if response for the Item has one or more answer.""")
     unitOptions: Optional[List[UnitOption]] = Field(default_factory=list, title="unitOptions", description="""A list of objects to represent a human displayable name alongside the more formal value for units.""")
     valueType: Optional[List[str]] = Field(default_factory=list, title="The type of the response", description="""The type of the response of an item. For example, string, integer, etc.""")
+    category: Optional[str] = Field(None, description="""Name of the high level ontology class in which this entity is categorized. Corresponds to the label for the biolink entity type class. In an RDF database it should be a model class URI. This field is multi-valued.""")
+    contentUrl: Optional[str] = Field(None)
     id: Optional[str] = Field(None, description="""A unique identifier for an entity. Must be either a CURIE shorthand for a URI or a complete URI.""")
     name: Optional[Dict[str, str]] = Field(default_factory=dict)
 
@@ -381,11 +385,11 @@ class VideoObject(MediaObject):
 Agent.model_rebuild()
 Participant.model_rebuild()
 Thing.model_rebuild()
-Activity.model_rebuild()
 AdditionalNoteObj.model_rebuild()
 AdditionalProperty.model_rebuild()
 Choice.model_rebuild()
 CreativeWork.model_rebuild()
+Activity.model_rebuild()
 ComputeSpecification.model_rebuild()
 Item.model_rebuild()
 LandingPage.model_rebuild()
