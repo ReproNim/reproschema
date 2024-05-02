@@ -1,5 +1,6 @@
 name: reproschema
 id: http://schema.repronim.org/
+version: 1.0.0
 imports:
 - linkml:types
 prefixes:
@@ -61,6 +62,10 @@ slots:
     - range: AudioObject
     inlined: true
   category:
+    description:
+      Name of the high level ontology class in which this entity is categorized.
+      Corresponds to the label for the biolink entity type class.
+      In an RDF database it should be a model class URI. This field is multi-valued.
     slot_uri: rdf:type
     range: uriorcurie
   choices:
@@ -97,6 +102,9 @@ slots:
   contentUrl:
     slot_uri: schema:contentUrl
     range: uriorcurie
+  creator:
+    slot_uri: schema:creator
+    range: Person
   cronTable:
     title: cronTable
     description: TODO not described in reproschema
@@ -120,8 +128,11 @@ slots:
     slot_uri: prov:generated
     range: uri
   id:
-    slot_uri: schema:id
-    range: uri
+    description:
+      A unique identifier for an entity.
+      Must be either a CURIE shorthand for a URI or a complete URI.
+    slot_uri: schema:identifier
+    range: uriorcurie
   image:
     title: image
     description:
@@ -405,6 +416,7 @@ classes:
     description:
       A set of objects to define notes in a Item. For example, most Redcap and NDA
       data dictionaries have notes for each item which needs to be captured in reproschema
+    is_a: Thing
     slots:
     - column
     - source
@@ -413,6 +425,7 @@ classes:
   AdditionalProperty:
     title: Additional properties
     description: An object to describe the various properties added to assessments and Items.
+    is_a: Thing
     slots:
     - allow
     - isAbout
@@ -434,6 +447,7 @@ classes:
   Choice:
     title: Response choice
     description: An object to describe a response option.
+    is_a: Thing
     slots:
     - name
     - image
@@ -442,19 +456,21 @@ classes:
   ComputeSpecification:
     title: Compute Specification
     description: An object to define computations in an activity or protocol.
+    is_a: CreativeWork
     slots:
     - jsExpression
     - variableName
     class_uri: reproschema:ComputeSpecification
   CreativeWork:
+    is_a: Thing
     slots:
-      - id
       - category
+      - contentUrl
     class_uri: schema:CreativeWork
   ImageObject:
     is_a: MediaObject
     class_uri: schema:ImageObject
-  Item: #TODO: multiple @type in reproschema
+  Item:
     title: Item in an activity
     description: An item in an assessment.
     is_a: CreativeWork
@@ -480,9 +496,9 @@ classes:
   LandingPage:
     title: Landing Page
     description: An object to define the landing page of a protocol.
+    is_a: CreativeWork
     slots:
     - inLanguage
-    - id
     class_uri: reproschema:LandingPage
   langString:
     description: RDF langString tuple
@@ -496,7 +512,6 @@ classes:
     is_a: CreativeWork
     class_uri: schema:MediaObject
     slots:
-      - contentUrl
       - inLanguage
     slot_usage:
       contentUrl:
@@ -504,6 +519,7 @@ classes:
   MessageSpecification:
     title: Message Specification
     description: An object to define messages in an activity or protocol.
+    is_a: CreativeWork
     slots:
     - jsExpression
     - message
@@ -511,6 +527,7 @@ classes:
   OverrideProperty:
     title: Additional properties
     description: An object to override the various properties added to assessments and Items.
+    is_a: Thing
     slots:
     - isAbout
     - isVis
@@ -527,6 +544,7 @@ classes:
     description: An Agent describing characteristics associated with a participant.
     is_a: Agent
     slots:
+      - id
       - subject_id
     class_uri: reproschema:Participant
   Protocol: # TODO multiple types
@@ -588,14 +606,18 @@ classes:
     description:
       Captures information about some action that took place. It also links to information
       (entities) that were used during the activity
+    is_a: Thing
     slots:
     - version
     - url
     class_uri: reproschema:SoftwareAgent
   StructuredValue:
-    is_a: CreativeWork
+    is_a: Thing
     class_uri: schema:StructuredValue
-  Thing: # todo should we switch
+  Thing:
+    slots:
+      - id
+      - name
     class_uri: schema:Thing
   UI:
     title: todo
@@ -613,6 +635,7 @@ classes:
   UnitOption:
     title: Unit options
     description: An object to represent a human displayable name alongside the more formal value for units.
+    is_a: Thing
     slots:
     - prefLabel
     - value
@@ -630,35 +653,45 @@ classes:
 enums:
   AllowedType:
     permissible_values:
-      AllowAltResponse:
+      reproschema:AllowAltResponse:
+        title: AllowAltResponse
         description: Indicates (by boolean) if alternate responses are allowed or not.
         meaning: reproschema:AllowAltResponse
-      AllowExport:
+      reproschema:AllowExport:
+        title: AllowExport
         description: Indicates (by boolean) if data can be exported or not.
         meaning: reproschema:AllowExport
-      AllowReplay:
+      reproschema:AllowReplay:
+        title: AllowReplay
         description: Indicates (by boolean) if items can be replayed or not.
         meaning: reproschema:AllowReplay
-      AllowSkip:
+      reproschema:AllowSkip:
+        title: AllowSkip
         description: Indicates (by boolean) if items can be skipped or not.
         meaning: reproschema:AllowSkip
-      AutoAdvance:
+      reproschema:AutoAdvance:
+        title: AutoAdvance
         description: Indicates (by boolean) if assessments in a protocol can auto advance or not.
         meaning: reproschema:AutoAdvance
-      DisableBack:
+      reproschema:DisableBack:
+        title: DisableBack
         description: Indicates (by boolean) if we can go back to a completed assessment in a protocol.
         meaning: reproschema:DisableBack
   MissingType:
     permissible_values:
-      Skipped:
+      reproschema:Skipped:
+        title: Skipped
         description: An element to describe the choice when the item is skipped.
         meaning: reproschema:Skipped
-      DontKnow:
+      reproschema:DontKnow:
+        title: DontKnow
         description: An element to describe the choice when response is not known.
         meaning: reproschema:DontKnow
-      Unknown:
+      reproschema:Unknown:
+        title: Unknown
         description: An element to describe the choice when the reason for missing response is unknown.
         meaning: reproschema:Unknown
-      TimedOut:
+      reproschema:TimedOut:
+        title: TimedOut
         description: A boolean element to describe if the response did not occur within the prescribed time.
         meaning: reproschema:TimedOut
