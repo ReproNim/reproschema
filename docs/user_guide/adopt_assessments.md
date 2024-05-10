@@ -9,12 +9,12 @@ To illustrate this process, we will use two specific types of assessments from [
 ## Step 1: Understand the structure of a *_schema file through this [exemplar file](https://github.com/ReproNim/reproschema-protocol-cookiecutter/blob/main/%7B%7Bcookiecutter.protocol_name%7D%7D/activities/Activity1/activity1_schema)
 
 1. **Context (@context)**: This field provides references to the context definitions. In this schema, it links to the generic context of ReproSchema and the specific context for the items in the repository, defined by the URL with the "rl" key. This context helps to interpret the terms used within the schema.
-2. **Type (@type)**: Defined as "reproschema:Activity," this indicates the nature of the document, specifying that it is an activity within the ReproSchema framework.
-3. **Identifier (@id)**: The unique identifier for this specific schema is "activity1_schema." This ID uniquely distinguishes this activity from others in the repository.
-4. **PrefLabel**: This is the human-readable name of the activity, here given as "Screening." It serves as a clear and concise title for the activity.
-5. **Description**: Provides a brief overview of the activity, in this case, "example of an activity."
-6. **SchemaVersion and Version**: These fields indicate the versions of the ReproSchema being used ("1.0.0-rc2" means “1.0.0 Release Candidate 2”) and the version of this particular activity schema ("0.0.1"), respectively.
-7. **UI Configuration**: This section specifies how the activity will be presented to users. It includes:
+1. **Type (@type)**: Defined as "reproschema:Activity," this indicates the nature of the document, specifying that it is an activity within the ReproSchema framework.
+1. **Identifier (@id)**: The unique identifier for this specific schema is "activity1_schema." This ID uniquely distinguishes this activity from others in the repository.
+1. **PrefLabel**: This is the human-readable name of the activity, here given as "Screening." It serves as a clear and concise title for the activity.
+1. **Description**: Provides a brief overview of the activity, in this case, "example of an activity."
+1. **SchemaVersion and Version**: These fields indicate the versions of the ReproSchema being used ("1.0.0-rc2" means “1.0.0 Release Candidate 2”) and the version of this particular activity schema ("0.0.1"), respectively.
+1. **UI Configuration**: This section specifies how the activity will be presented to users. It includes:
     - **addProperties**: Lists the variables and corresponding items collected in the activity. For example, the variable `document_upload_item` is about the item `items/document_upload_item` and is always visible (`isVis: true`). It allows for the item to be skipped (`reproschema:Skipped`).
     - **order**: Dictates the sequence in which items will appear in the UI. Here, it specifies that "items/document_upload_item" will be the first (and only) item.
     - **shuffle**: Indicates whether the order of items should be randomized. In this example, it is set to `false`, meaning the order is fixed.
@@ -34,7 +34,7 @@ This step involves precise modifications, particularly in the `@context` and `ad
 
     Labeling this link as "demo" directs the schema to the location in the ReproSchema-library where items for demographics and background information are defined. We use the link with a specific commit ID to ensure the consistency of the assessment version. This contextual link allows the schema to access the detailed structures and definitions needed for each demographic item.
 
-2. **Customizing "addProperties" for Demographic Variables**:
+1. **Customizing "addProperties" for Demographic Variables**:
 
     In the "addProperties" section, we define each variable that corresponds to a demographic question. For example:
 
@@ -70,7 +70,7 @@ Different from `demograpgics`, `psychological_questionnaire_schema` combines ass
 
     A link to the activities in the reproschema-library (`activities`: ) and a link for demographics items (`demo`: ), both are commit-specific. This indicates that we will combine different assessments from those two parts.
 
-2. **Defining the activity (@type, @id, prefLabel, etc.)**:
+1. **Defining the activity (@type, @id, prefLabel, etc.)**:
 
     The standard fields like @type, @id, prefLabel, description, preamble, schemaVersion, and version define the nature and purpose of the psychological questionnaire.
 
