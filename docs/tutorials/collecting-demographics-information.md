@@ -4,7 +4,7 @@ Before you go and start creating new activities and items to collect the names, 
 
 See the [demographics_and_background_information_v1](https://github.com/ReproNim/reproschema-library/tree/master/activities/demographics_and_background_information_v1/items) folder:
 
-```
+```text
 demographics_and_background_information_v1/
 └── items
     ├── age_months

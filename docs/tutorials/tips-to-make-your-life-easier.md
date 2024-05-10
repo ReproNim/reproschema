@@ -52,7 +52,7 @@ described by a `yml` file.
 
 For example you could create a `validate.yml` file in this repository.
 
-```
+```text
 ├── .git # hidden git folder
 ├── .github # hidden github folder
 │    └── workflows
@@ -151,7 +151,7 @@ For example, you could create response set file to constrains the possible
 answers on the questions of the Edinburgh Handedness Inventory we have been
 working on by organizing things this way.
 
-```
+```text
 activities
 ├── edinburgh_handedness_inventory_short.jsonld
 ├── leftRightValueConstraints.jsonld

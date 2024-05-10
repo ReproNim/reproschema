@@ -2,11 +2,14 @@
 
 This section provides the customized new assessments tailored to specific research needs. Our focus is on creating three distinct types of activities that are not readily available in the reproschema-library.
 These include:
-1. clinical questions to gather clinical background information,
-1. a speech task designed to collect audio data, and
-1. an audio check to facilitate the speech task.
+1.  clinical questions to gather clinical background information,
+1.  a speech task designed to collect audio data, and
+1.  an audio check to facilitate the speech task.
 
-For each of these new assessments, the folder structure within the repository will differ slightly from those directly adopted from the reproschema-library. Specifically, each activity has its own dedicated folder within the `activities` directory. For instance, the speech task resides in [`activities/4_speech`](https://github.com/ReproNim/reproschema-demo-protocol/tree/main/activities/4_speech). Within this folder, besides the primary schema file (e.g., `speech_schema`), there is an additional subfolder named `items`. This `items` folder contains individual questions or tasks pertaining to that specific activity.
+For each of these new assessments, the folder structure within the repository will differ slightly from those directly adopted from the reproschema-library. Specifically, each activity has its own dedicated folder within the `activities` directory.
+For instance, the speech task resides in [`activities/4_speech`](https://github.com/ReproNim/reproschema-demo-protocol/tree/main/activities/4_speech).
+Within this folder, besides the primary schema file (e.g., `speech_schema`), there is an additional subfolder named `items`.
+This `items` folder contains individual questions or tasks pertaining to that specific activity.
 
 In the case of the speech task, the `items` folder might include a single task designed to prompt the participant to provide a speech sample. Similarly, for the clinical questions, their respective folders will contain `items` subfolders with corresponding questions tailored to elicit the required information.
 
@@ -120,12 +123,12 @@ The UI configuration and response options for this question are tailored to capt
 
 We can integrate additional components tailored to the unique requirements of specific activities. For instance, considering the unique needs of our speech task, we add an 'audio check' component to confirm the functionality of the audio recording feature.
 
-1. Setting up an audio check for the speech task
+1.  Setting up an audio check for the speech task
 
     To ensure the effectiveness of our speech task, we create an activity for audio verification within the `activities` folder, naming it [`0_audio`](https://github.com/ReproNim/reproschema-demo-protocol/blob/main/activities/0_audio/).
     This folder contains the [`audio_check_schema`](https://github.com/ReproNim/reproschema-demo-protocol/blob/main/activities/0_audio/audio_check_schema), a schema specifically designed to test and confirm that the audio recording system is operational and effective for participants.
 
-1. Contextual and properties configuration for audio check
+1.  Contextual and properties configuration for audio check
 
 ```json
 "@context": [

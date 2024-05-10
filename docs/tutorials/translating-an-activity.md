@@ -6,7 +6,7 @@ Well there is an easy way to reuse the work we have already done to have the too
 
 First here is the list of the questions of the EHI in French.
 
-```
+```text
 Quelle main utilisez vous de préférence pour:
 
 1) Écrire (*)

@@ -22,13 +22,13 @@ Ready for your first ReproSchema project?! We are going to use the [Reproschema 
 
 Once you run the Cookiecutter command, you will be prompted to make choices for your protocol, ranging from 1-5. These choices generate corresponding activities in your repository. Here's what you can do with these activities:
 
-1. **Use as templates:**
+1.  **Use as templates:**
     The activities created based on your choices serve as templates.
     You can use these to understand the structure and elements within the activities folder.
     This is particularly useful if you're new to ReproSchema.
     By exploring these templates, you'll get a clearer picture of how activities are structured and what kind of information they contain.
 
-1. **Delete and start fresh:**
+1.  **Delete and start fresh:**
     Alternatively, if you already have a clear idea of what your protocol needs, you can delete these generated activities.
     This allows you to start from scratch, creating activities that are tailored specifically to your research needs.
 

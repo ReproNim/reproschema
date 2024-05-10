@@ -1,11 +1,11 @@
 # Contributing
 
-### Contributing to the documentation
+## Contributing to the documentation
 
 This documentation is a work in progress and we wellcome any input:
 if something is missing or unclear, let us know by opening an issue on our repository.
 
-#### Serving the doc locally
+### Serving the doc locally
 
 This project uses [MkDocs](https://www.mkdocs.org/) tool with [Material theme](https://squidfunk.github.io/mkdocs-material/)
 and extra plugins to generate the website.
