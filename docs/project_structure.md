@@ -33,7 +33,7 @@ The ReproSchema is like a blueprint for research projects, ensuring everyone col
 
 There is also an [`example`](https://github.com/ReproNim/reproschema/tree/master/examples)
 schema that can help give you a quick overview of what the protocol and activity
-for a study might look like. For more details see the [schema section](30_schema.md).
+for a study might look like. For more details see the [schema section](schema.md).
 
 ## [reproschema-library](https://github.com/ReproNim/reproschema-library)
 
@@ -72,7 +72,8 @@ You can see it in action [here](https://www.repronim.org/reproschema-ui/)
 
 ## [reproschema-protocol-cookiecutter](https://github.com/ReproNim/reproschema-protocol-cookiecutter)
 
-The reproschema-protocol-cookiecutter is a straightforward tool that helps you quickly set up a research study. It offers a ready-to-use template for organizing your study's structure and surveys, ensuring everything meets standard guidelines. Think of it as a quick-start guide to get your research project up and running smoothly. A step-by-step guide see [here](41_create_new_protocol.md).
+The reproschema-protocol-cookiecutter is a straightforward tool that helps you quickly set up a research study. It offers a ready-to-use template for organizing your study's structure and surveys, ensuring everything meets standard guidelines. Think of it as a quick-start guide to get your research project up and running smoothly.
+A step-by-step guide see [here](user_guide/create_new_protocol.md).
 
 ## Other repositories
 

@@ -25,7 +25,7 @@ You can see an example of those in the [examples folder](https://github.com/Repr
 
 There are in fact more levels than this each and each level has its own schema:
 - all of the schemas can be found in the [`terms` folder](https://github.com/ReproNim/reproschema/terms)
-- the Reproschema actually allows for a more complex level nesting than the one described above (e.g you can have an `activity` wihtin an `activity`)
+- the Reproschema actually allows for a more complex level nesting than the one described above (e.g you can have an `activity` within an `activity`)
 - all the properties of each level are described below in the [Properties of ReproSchema objects section](#properties-of-reproschema-objects)
 
 ## Detailed description

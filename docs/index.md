@@ -8,18 +8,18 @@ style="width: 350px; height: auto; display: block; margin-left: auto;  margin-ri
 ## How to use this documentation
 
 - If you want to know more about the ReproSchema project, its goals and the problems
-it tries to solve: check out our [introduction](./01_introduction.md).
+it tries to solve: check out our [introduction](./introduction.md).
 
 - The ReproSchema is related to the `Semantic Web` and relies on `linked data`
 and the `JSON-LD` format. If you are unfamiliar with such things, head over to
-our [FAQ](./98_FAQ.md). You do not need an in depth understanding of what those
+our [FAQ](./FAQ.md). You do not need an in depth understanding of what those
 things are to use the ReproSchema but some "big picture" conceptual understanding
 could save you from a lot of confusion. 😉
 
-- Not sure how the project is organized? Check out the [project structure](./20_project_structure.md)
+- Not sure how the project is organized? Check out the [project structure](./project_structure.md)
 page.
 
-- Want more details on how the `Reproschema` itself is structured: check out our [schema page](./30_schema)
+- Want more details on how the `Reproschema` itself is structured: check out our [schema page](./schema.md)
 
 <!-- - If you want to use the schema to create your own questionnaire: check out our
 
@@ -43,4 +43,4 @@ is unclear by [opening an issue on our repository](https://github.com/ReproNim/r
 You can also get in touch on [our channel on the mattermost Brainhack](https://mattermost.brainhack.org/brainhack/channels/repronim-reproschema).
 
 If you want to get started right away and contribute directly to this
-documentation,you can find references and how-to in the [about section](./100_about_this_doc.md).
+documentation,you can find references and how-to in the [about section](./CONTRIBUTING.md).
