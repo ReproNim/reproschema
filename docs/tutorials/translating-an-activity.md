@@ -1,6 +1,7 @@
 # Translating a questionnaire
 
-Imagine that a colleague of yours has heard that you have created this online tool based on the Edinburgh handedness inventory and she wants to use it for her own work. But she would need a French version of the questionnaire.
+Imagine that a colleague of yours has heard that you have created this online tool based on the Edinburgh handedness inventory
+and she wants to use it for her own work. But she would need a French version of the questionnaire.
 
 Well there is an easy way to reuse the work we have already done to have the tool support several languages.
 
@@ -24,25 +25,9 @@ i) Quel est le pied avec lequel vous préférez shooter?
 ii) Quel oeil utiliser-vous pour viser?
 ```
 
-<!-- ---
-
-Signer un document
-Lire le braille
-Lancer
-Utiliser une paire de ciseaux
-Utiliser une brosse à dents
-Tenir un couteau (sans fourchette)
-Tenir une cuillère
-Utiliser un balai (main supérieure)
-Allumer un briquet
-Ouvrir une boîte (prendre le couvercle)
-
-Quel est le pied avec lequel vous préférez shooter?
-Quel main utilisez vous pour tenir votre canne (ou chien guide si pas de canne)? -->
-
 ## Updating the items
 
-```json
+```json linenums="1" hl_lines="5-8 12-15"
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
     "@type": "reproschema:Field",
@@ -63,25 +48,9 @@ Quel main utilisez vous pour tenir votre canne (ou chien guide si pas de canne)?
 }
 ```
 
-### What did we change ?
-
-```json
-"prefLabel": {
-    "en": "writing",
-    "fr": "écrire"
-}
-```
-
-```json
-"question": {
-    "en": "Writing",
-    "fr": "Écrire"
-}
-```
-
 ## Updating the response options
 
-```json
+```json linenums="1" hl_lines="5-8 12-15"
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
     "@id": "leftRightValueConstraints.jsonld",
@@ -130,17 +99,11 @@ Quel main utilisez vous pour tenir votre canne (ou chien guide si pas de canne)?
 }
 ```
 
-### What did we change ?
-
-```json
-
-```
-
 ## Updating the activity
 
 We need to update the `edinburgh_handedness_inventory_short.jsonld` so that the preamble question has both languages:
 
-```json
+```json linenums="1" hl_lines="5-8 12-15"
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
     "@type": "reproschema:Activity",

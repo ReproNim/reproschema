@@ -9,6 +9,9 @@ theme:
   language: "en"
   favicon: img/favicon.png
   logo: img/favicon_on_white.png
+  features:
+    - content.code.copy
+    - content.code.annotate
   palette:
     primary: "dark blue"
     accent: "light blue"
@@ -27,32 +30,40 @@ nav:
       - Finalize the protocol: "user_guide/finalize-protocol.md"
       - Toolkit: "user_guide/tools.md"
   - Tutorial:
-      - Intro: "tutorials/using_reproschema.md"
-      - Create a research protocol: "tutorials/create-new_protocol.md"
-      - Creating a new activity: "tutorials/create-new-activity.md"
+      - Intro: "tutorials/using-reproschema.md"
+      - Create a protocol: "tutorials/create-new-protocol.md"
+      - Create a new activity: "tutorials/create-new-activity.md"
+      - Create new items: "tutorials/create-new-items.md"
+      - Finalize the protocol: "tutorials/finalizing-the-protocol.md"
       - Tips to make your life easier: "tutorials/tips-to-make-your-life-easier.md"
       - Translate a questionnaire: "tutorials/translating-an-activity.md"
       - Demographic information : "tutorials/collecting-demographics-information.md"
-  # - Creating a new activity and protocol: "create_new_activity_protocol.md"
-  # - Testing your schema and collecting data: "testing_using_schema.md"
-  # - Contribute to the project:
-  #     - ReproSchema: "81_contribute_to_schema.md"
-  #     - Assesement library: "82_contribute_to_library.md"
-  #     - Python package: "83_contribute_to_python.md"
-  #     - User-interface: "84_contribute_to_ui.md"
   - FAQ: "FAQ.md"
   - Glossary: "glossary.md"
   - Contributing: "CONTRIBUTING.md"
 
 # list of extension
 markdown_extensions:
+  - abbr
+  - attr_list
   - admonition
-  - pymdownx.details
   - pymdownx.critic
+  - pymdownx.details
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite
-  - pymdownx.snippets
   - pymdownx.superfences
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+  - toc:
+      anchorlink: true
+
+watch:
+  - includes
+
+plugins:
+  - search
+  - tags

@@ -20,7 +20,7 @@ In the 'DemoProtocol_schema', located in the 'DemoProtocol' folder, we integrate
 }
 ```
 
-    This structure is repeated for each activity, including audio check, demographics, psychological questions, clinical questions, speech task, and feedback.
+This structure is repeated for each activity, including audio check, demographics, psychological questions, clinical questions, speech task, and feedback.
 
 1.  [Order of presentation](https://github.com/ReproNim/reproschema-demo-protocol/blob/454ea9b65ef563c70cd496de7c8f22fbbc18ba5a/reproschema_demo_protocol/reproschema_demo_protocol_schema#L50)
 

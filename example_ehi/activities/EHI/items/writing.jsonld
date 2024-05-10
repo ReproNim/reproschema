@@ -1,0 +1,39 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "writing",
+    "prefLabel": "writing",
+    "description": "writing item of the EHI",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "question": "Writing",
+    "ui": { "inputType": "radio" },
+    "responseOptions": {
+      "valueType": "xsd:integer",
+      "minValue": -100,
+      "maxValue": 100,
+      "multipleChoice": false,
+      "choices": [
+        {
+          "name": "Always right",
+          "value": 100
+        },
+        {
+          "name": "Usually right",
+          "value": 50
+        },
+        {
+          "name": "Both equally",
+          "value": 0
+        },
+        {
+          "name": "Usually left",
+          "value": -50
+        },
+        {
+          "name": "Always left",
+          "value": -100
+        }
+      ]
+    }
+}
