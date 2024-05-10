@@ -9,7 +9,7 @@ and extra plugins to generate the website.
 
 To test locally, you will need to install the Python dependencies. To do that, type the following commands:
 
-```
+```bash
 git clone https://github.com/ReproNim/reproschema.git
 cd reproschema
 pip install -r requirements.txt
@@ -20,7 +20,7 @@ by `git clone git@github.com/<username>/reproschema.git` where `<username>` is y
 
 Once done, you need to run MkDocs. Simply type:
 
-```
+```bash
 mkdocs serve
 ```
 

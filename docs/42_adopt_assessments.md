@@ -28,7 +28,7 @@ This step involves precise modifications, particularly in the `@context` and `ad
 
     In addition to the standard ReproSchema context, we've added a specific link in the "@context" section for demographics:
 
-    ```
+    ```json
     "demo": "https://raw.githubusercontent.com/ReproNim/reproschema-library/[commitID]/demographics_and_background_information_v1/items/"
     ```
 
@@ -38,7 +38,7 @@ This step involves precise modifications, particularly in the `@context` and `ad
 
     In the "addProperties" section, we define each variable that corresponds to a demographic question. For example:
 
-    ```
+    ```json
     {
     "variableName": "year_of_birth",
     "isAbout": "demo:year_of_birth"
@@ -58,7 +58,7 @@ Different from `demograpgics`, `psychological_questionnaire_schema` combines ass
 
     The @context section is expanded to include not only the generic ReproSchema context but also specific links to the ReproSchema-library. This enables the schema to access a broader range of predefined items and assessments. For the psychological questionnaire, two context links are established:
 
-    ```
+    ```json
     "@context": [
     "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
             {
@@ -76,7 +76,7 @@ Different from `demograpgics`, `psychological_questionnaire_schema` combines ass
 
 3. **UI configuration and integration of multiple assessments (ui)**:
 
-    ```
+    ```json
     "ui": {
         "addProperties": [
             {
@@ -135,12 +135,12 @@ Different from `demograpgics`, `psychological_questionnaire_schema` combines ass
     - Similarly, other assessments like `GAD-7` and `PC-PTSD-5` are included using their respective variable names and links to their schemas in the activities context.
     - Additional variables related to clinical history in psychiatry are linked using the demo context, pointing to specific items within the demographics and background information section of the reproschema-library.
 
-        ```
-        {
-            "variableName": "clinical_history_psychiatry",
-            "isAbout": "demo:clinical_history_psychiatry"
-        }
-        ```
+    ```json
+    {
+        "variableName": "clinical_history_psychiatry",
+        "isAbout": "demo:clinical_history_psychiatry"
+    }
+    ```
 
     - The `order` array specifies the sequence in which these assessments will appear in the questionnaire, ensuring a logical flow for participants.
     - The `shuffle` setting is `false`, maintaining the defined order, and allow includes functionalities like auto-advance between assessments and data export.
