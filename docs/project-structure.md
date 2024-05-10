@@ -77,7 +77,7 @@ You can see it in action [here](https://www.repronim.org/reproschema-ui/)
 ## [reproschema-protocol-cookiecutter](https://github.com/ReproNim/reproschema-protocol-cookiecutter)
 
 The reproschema-protocol-cookiecutter is a straightforward tool that helps you quickly set up a research study. It offers a ready-to-use template for organizing your study's structure and surveys, ensuring everything meets standard guidelines. Think of it as a quick-start guide to get your research project up and running smoothly.
-A step-by-step guide see [here](user_guide/create_new_protocol.md).
+A step-by-step guide see [here](user_guide/create-new-protocol.md).
 
 ## Other repositories
 

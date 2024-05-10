@@ -134,14 +134,14 @@ We can integrate additional components tailored to the unique requirements of sp
 "@context": [
     "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     {
-        "voice": "https://raw.githubusercontent.com/ReproNim/reproschema-library/43e7afab312596708c0ad4dfd45b69c8904088ae/activities/VoiceTask/items/"
+        "voice": "https://github.com/ReproNim/reproschema-library/tree/master/activities/VoiceTask/items"
     }
 ]
 ```
 
-The @context section includes a specific context link under "voice",
+The `@context` section includes a specific context link under "voice",
 pointing to the repository with items relevant to voice and audio tasks:
-"<https://raw.githubusercontent.com/ReproNim/reproschema-library/.../VoiceTask/items/>"
+`https://github.com/ReproNim/reproschema-library/tree/master/activities/VoiceTask/items`
 This targeted link ensures that the audio check activity aligns with the specific requirements of voice-related tasks.
 
 The ui's `addProperties` array is tailored for the audio check.
