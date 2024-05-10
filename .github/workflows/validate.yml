@@ -25,8 +25,7 @@ jobs:
         # Installing `jsonlint` to validate the JSON files
         # Looking recursively through the directories `protocol`
         # and `activities` for any file with "@context" in them
-        # (that makes them JSON-LD files) and validate their content
-        # with jsonlint
+        # (that makes them JSON-LD files) and validate their content with jsonlint
         -   name: Check for syntax errors
             run: |
                 npm install -g jsonlint
@@ -36,7 +35,7 @@ jobs:
         # Checks that the schemas are valid
         # Using python and the installing the reproschema tools
         # from the reproschema-py repository to then validate
-        # the content of the `activities` and `protocols` folders.
+        # the content of the folders containing the JSON-LD files.
         -   name: Set up Python
             uses: actions/setup-python@v5
             with:

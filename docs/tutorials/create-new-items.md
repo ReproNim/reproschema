@@ -1,4 +1,3 @@
-
 ## Creating items
 
 Now that we have a basic structure for this new activity, let us start adding some items.
@@ -62,7 +61,7 @@ For next step you can create on your own the `throwing` item of the questionnair
     "shuffle": false,
     "addProperties": [
       {
-        "variableName": "writing",
+        "variableName": "writing",jsonld
         "isAbout": "items/writing.jsonld",
         "isVis": true
       },
@@ -96,7 +95,6 @@ Add it to the activity.
 ```json linenums="1" hl_lines="15 31-35 38-42"
 --8<-- "example_ehi/activities/EHI/edinburgh_handedness_inventory_short.jsonld"
 ```
-
 
 ## Using presets response options
 

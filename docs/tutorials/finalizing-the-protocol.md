@@ -1,4 +1,3 @@
-
 ## Viewing the activity
 
 Push the content you have created on your repository on github
