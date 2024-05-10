@@ -15,7 +15,7 @@ grep -r "@context" . \
    | cut -d: -f1 | xargs -I fname jsonlint -q fname
 ```
 
-Or test individual files on the [json linter website](`https://jsonlint.com/`).
+Or test individual files on the [json linter website](https://jsonlint.com/).
 
 ## Validating your schema
 
