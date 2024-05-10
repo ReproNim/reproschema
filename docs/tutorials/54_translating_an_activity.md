@@ -7,7 +7,7 @@ Well there is an easy way to reuse the work we have already done to have the too
 First here is the list of the questions of the EHI in French.
 
 ```
-Quelle main utilisez vous de préférence pour: 
+Quelle main utilisez vous de préférence pour:
 
 1) Écrire (*)
 2) Dessiner
@@ -208,5 +208,3 @@ We need to update the `edinburgh_handedness_inventory_short.jsonld` so that the 
     "fr": "Quelle main utilisez vous de préférence pour :"
 }
 ```
-
-

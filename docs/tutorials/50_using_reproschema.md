@@ -18,7 +18,7 @@ For this tutorial you will be using some other tools to put your work online. He
 We don't assume that you have in-depth knowledge of Git and Github for this tutorial so we will try to provide with the commands you need to type when it is required. Similarly, we will provide some of the commands to create directories and files though you could do many of those actions "by hand" with a couple of mouse clicks.
 
 ??? "For Windows users"
-    Most of the commands we will provide should work in the command line interface that will come on your computer when you isntall Git. But you could also look into using one the linux sub-system that provide you with Unix command line and that can be easily installed from the app-store on your computer.
+    Most of the commands we will provide should work in the command line interface that will come on your computer when you install Git. But you could also look into using one the linux sub-system that provide you with Unix command line and that can be easily installed from the app-store on your computer.
 
 ## Context
 
@@ -35,7 +35,7 @@ So we would want to have a set of questionnaires:
 
 We will be creating several jsonld files in this tutorial. Those can quickly grow big and it can be hard to see what was added to a certain file from one step to the next. This gets even more confusing when you know that the order of the lines does not really matter. So to makes things easier to follow (and unless we explicitly say so) any new content we add to a file we have already worked on will be put at the end of this file.
 
-So if step 1 looked like this: 
+So if step 1 looked like this:
 
 ```json
 {

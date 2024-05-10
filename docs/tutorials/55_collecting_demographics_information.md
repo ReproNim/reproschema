@@ -1,6 +1,6 @@
 # Collecting information about your participant
 
-Before you go and start creating new activities and items to collect the names, surnames and other demographics of your participants make sure you have had a look at these items on the reproschema library: 
+Before you go and start creating new activities and items to collect the names, surnames and other demographics of your participants make sure you have had a look at these items on the reproschema library:
 
 See the [demographics_and_background_information_v1](https://github.com/ReproNim/reproschema-library/tree/master/activities/demographics_and_background_information_v1/items) folder:
 
@@ -146,6 +146,3 @@ demographics_and_background_information_v1/
     }
 }
 ```
-
-
-
