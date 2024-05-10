@@ -36,53 +36,6 @@ We can now add:
 --8<-- "example_ehi/activities/EHI/items/writing.jsonld"
 ```
 
-### What did we add ?
-
--   the question for this item
-
-```json
-"question": "Writing",
-```
-
--   the `inputType` for for the user interface that will decide how this item will displayed to the user.
-
-```json
-"ui": {"inputType": "radio"},
-```
-
--   the response options
-
-```json
-"responseOptions": {
-    "valueType": "xsd:integer",
-    "minValue": -100,
-    "maxValue": 100,
-    "multipleChoice": false,
-    "choices": [
-        {
-            "name": "Always right",
-            "value": 100
-        },
-        {
-            "name": "Usually right",
-            "value": 50
-        },
-        {
-            "name": "Both equally",
-            "value": 0
-        },
-        {
-            "name": "Usually left",
-            "value": -50
-        },
-        {
-            "name": "Always left",
-            "value": -100
-        }
-    ]
-}
-```
-
 <!-- TODO
 - describe the different input types or at least point the doc of the UI that describes them
 -->
@@ -120,30 +73,6 @@ For next step you can create on your own the `throwing` item of the questionnair
       }
     ]
   }
-}
-```
-
-### What did we add ?
-
-```json
-"ui": {
-    "order": [
-        "items/writing.jsonld",
-        "items/throwing.jsonld"
-    ],
-    "shuffle": false,
-    "addProperties": [
-        {
-            "variableName": "writing",
-            "isAbout": "items/writing.jsonld",
-            "isVis": true
-        },
-        {
-            "variableName": "throwing",
-            "isAbout": "items/throwing.jsonld",
-            "isVis": true
-        }
-    ]
 }
 ```
 

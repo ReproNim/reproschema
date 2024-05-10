@@ -1,13 +1,19 @@
 {
   "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
   "@type": "reproschema:Activity",
-  "@id": "edinburgh_handedness_inventory_short.jsonld",
-  "prefLabel": "Edinburgh handedness inventory - short form",
+  "@id": "edinburgh_handedness_inventory_short_multi_lang.jsonld",
+  "prefLabel": {
+    "en": "Edinburgh handedness inventory - short form",
+    "fr": "Version abrégée du test Edinburgh"
+  },
   "description": "Short version of the Edinburgh handedness inventory",
   "schemaVersion": "1.0.0-rc1",
   "version": "0.0.1",
   "citation": "10.1080/1357650X.2013.783045",
-  "preamble": "Please indicate your preferences in the use of hands in the following activities or objects:",
+  "preamble": {
+    "en": "Please indicate your preferences in the use of hands in the following activities or objects:",
+    "fr": "Quelle main utilisez-vous de préférence pour :"
+  },
   "ui": {
     "order": [
       "items/writing.jsonld",
