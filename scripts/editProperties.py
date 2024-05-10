@@ -24,7 +24,7 @@ def edit_properties(version):
         "SoftwareAgent",
     ]
 
-    with open("docs/30_schema.md") as fp:
+    with open("docs/schema.md") as fp:
         doc = fp.readlines()
         for idx, line in enumerate(doc):
             if line.startswith(AUTO_LINE):
