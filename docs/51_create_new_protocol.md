@@ -9,7 +9,7 @@ We first need to create some folders to host the schema that will represent all 
 ```bash
 # Type this in a terminal window
 
-# FYI: this line starts with # 
+# FYI: this line starts with #
 #  it is comment and it will not be executed
 #  if you copy paste it in the command line
 
@@ -168,21 +168,21 @@ Let's just highlight the things that have changed.
 
 We have added a `ui` and an `order` fields.
 
-`ui` is for things realted to the user interface and contains `addProperties` where we will be listing all the assessments that we add to our protocol.
+`ui` is for things related to the user interface and contains `addProperties` where we will be listing all the assessments that we add to our protocol.
 
 Each assessment is represented by an activity that is given a `variableName` and a `prefLabel`. The latter will be used as the name to display on the UI in english.
 
-The field `isAbout` is the URL to point to the schema of that activity. 
+The field `isAbout` is the URL to point to the schema of that activity.
 
 The field `order` is there to indicate which activity should be presented first, second...
 
 ??? "Making sure you have a valid json file"
-    Json files can get a bit long and you might sometimes forget a coma of a closing square brackets, so to make sure that your json file is correctly formatted you can use a linter. For example, you can test individual files on the [json linter website](`https://jsonlint.com/`).
+    Json files can get a bit long and you might sometimes forget a coma of a closing square brackets, so to make sure that your json file is correctly formatted you can use a linter. For example, you can test individual files on the [json linter website](https://jsonlint.com/).
 
 ??? "JSON-LD expansion"
     You might notice that `rl:PHQ-9/PHQ9_schema` does not look like a typical URL and clearly does not match the one we fed the UI earlier (https://raw.githubusercontent.com/ReproNim/reproschema-library/master/activities/PHQ-9/PHQ9_schema). Well this is because we have defined, in the `@context` part of our jsonld, that the `rl` from `rl:PHQ-9/PHQ9_schema` will actually stand for `https://raw.githubusercontent.com/ReproNim/reproschema-library/master/activities/`. This shorthand makes it faster for us to write URL but the UI will know how to `expand` this into an actual URL.
-    
-    Similarly the `reproschema:Protocol` in `"@type": "reproschema:Protocol"` expands in `http://schema.repronim.org/Protocol` because `reproschema` has been indirectly defined in the context of `depression_nimg_schema.jsonld`. To be more precise `reproschema` is defined in the [base file](https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/base) which is part of the context of the [generic file](https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic) that our protocol points to. 
+
+    Similarly the `reproschema:Protocol` in `"@type": "reproschema:Protocol"` expands in `http://schema.repronim.org/Protocol` because `reproschema` has been indirectly defined in the context of `depression_nimg_schema.jsonld`. To be more precise `reproschema` is defined in the [base file](https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/base) which is part of the context of the [generic file](https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic) that our protocol points to.
 
 
 
@@ -254,5 +254,3 @@ git add --all
 git commit -m 'add a thank you activity'
 git push
 ```
-
-

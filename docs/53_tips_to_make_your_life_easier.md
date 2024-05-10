@@ -15,7 +15,7 @@ grep -r "@context" . \
    | cut -d: -f1 | xargs -I fname jsonlint -q fname
 ```
 
-Or test individual files on the [json linter website](`https://jsonlint.com/`).
+Or test individual files on the [json linter website](https://jsonlint.com/).
 
 ## Validating your schema
 
@@ -45,7 +45,7 @@ every time there some new content is added on a repository.
 To set those up you simply need to create a `.github/workflows` folder inside
 the repository where you are working. This will contain all the workflows (a set
 of "actions") that Github has to run on this repository. Each workflow is
-decribed by a `yml` file.
+described by a `yml` file.
 
 <!-- TODO
 - add link to the turing-way section on yml files.
