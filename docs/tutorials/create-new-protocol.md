@@ -86,7 +86,7 @@ Now we want to add this file to our protocol and make it the landing page for th
   "version": "0.0.1",
   "landingPage": {
     "@id": "README.md",
-    "@language": "en"
+    "inLanguage": "en"
   }
 }
 ```
@@ -150,7 +150,7 @@ To do this, the content of your `depression_nimg_schema.jsonld` should now look 
   "version": "0.0.1",
   "landingPage": {
     "@id": "README.md",
-    "@language": "en"
+    "inLanguage": "en"
   },
   "ui": {
     "addProperties": [
