@@ -16,9 +16,7 @@ our [FAQ](./FAQ.md). You do not need an in depth understanding of what those
 things are to use the ReproSchema but some "big picture" conceptual understanding
 could save you from a lot of confusion. 😉
 
-- Not sure how the project is organized? Check out the [project structure](./project_structure.md)
-page.
-
+- Not sure how the project is organized? Check out the [project structure](./project_structure.md) page.
 - Want more details on how the `Reproschema` itself is structured: check out our [schema page](./schema.md)
 
 <!-- - If you want to use the schema to create your own questionnaire: check out our
