@@ -19,6 +19,12 @@ could save you from a lot of confusion. 😉
 - Not sure how the project is organized? Check out the [project structure](./20_project_structure.md)
 page.
 
+- Want more details on how the `Reproschema` itself is structured: check out our [schema page](./30_schema)
+
+<!-- - If you want to use the schema to create your own questionnaire: check out our
+
+- Looking for ways to contribute to the project: check out our -->
+
 ## How to cite
 
 If you need to cite ReproSchema, you can use this DOI:
