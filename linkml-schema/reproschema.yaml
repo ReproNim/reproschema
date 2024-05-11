@@ -51,7 +51,7 @@ slots:
     inlined: true
   associatedMedia:
     title: associatedMedia
-    description: A media object that encodes this CreativeWork. This property is a synonym for encoding.
+    description: A media object that encodes this creative work. This property is a synonym for encoding.
     slot_uri: schema:associatedMedia
   audio:
     title: audio
@@ -60,7 +60,6 @@ slots:
     any_of:
     - range: uri
     - range: AudioObject
-    inlined: true
   category:
     description:
       Name of the high level ontology class in which this entity is categorized.
@@ -142,11 +141,6 @@ slots:
     any_of:
       - range: ImageObject
       - range: uri
-  imageUrl:
-    title: imageUrl
-    description: An image url.
-    slot_uri: reproschema:imageUrl
-    range: uri
   inLanguage:
     slot_uri: schema:inLanguage
     range: string
@@ -383,7 +377,9 @@ slots:
     range: string
   video:
     slot_uri: schema:video
-    range: VideoObject
+    any_of:
+    - range: VideoObject
+    - range: uri
   wasAssociatedWith:
     slot_uri: prov:wasAssociatedWith
     range: SoftwareAgent
@@ -394,7 +390,7 @@ classes:
   Activity:
     title: Activity
     description: An assessment in a protocol.
-    is_a: CreativeWork
+    is_a: Thing
     slots:
     - about
     - altLabel
@@ -456,24 +452,18 @@ classes:
   ComputeSpecification:
     title: Compute Specification
     description: An object to define computations in an activity or protocol.
-    is_a: CreativeWork
+    is_a: Thing
     slots:
     - jsExpression
     - variableName
     class_uri: reproschema:ComputeSpecification
-  CreativeWork:
-    is_a: Thing
-    slots:
-      - category
-      - contentUrl
-    class_uri: schema:CreativeWork
   ImageObject:
     is_a: MediaObject
     class_uri: schema:ImageObject
   Item:
     title: Item in an activity
     description: An item in an assessment.
-    is_a: CreativeWork
+    is_a: Thing
     slots:
     - about
     - additionalNotesObj
@@ -482,7 +472,6 @@ classes:
     - audio
     - description
     - image
-    - imageUrl
     - isPartOf
     - preamble
     - prefLabel
@@ -496,7 +485,7 @@ classes:
   LandingPage:
     title: Landing Page
     description: An object to define the landing page of a protocol.
-    is_a: CreativeWork
+    is_a: Thing
     slots:
     - inLanguage
     class_uri: reproschema:LandingPage
@@ -509,17 +498,18 @@ classes:
   MediaObject:
     title: Media Object
     description: Add description #TODO
-    is_a: CreativeWork
+    is_a: Thing
     class_uri: schema:MediaObject
     slots:
       - inLanguage
+      - contentUrl
     slot_usage:
       contentUrl:
         required: true
   MessageSpecification:
     title: Message Specification
     description: An object to define messages in an activity or protocol.
-    is_a: CreativeWork
+    is_a: Thing
     slots:
     - jsExpression
     - message
@@ -550,7 +540,7 @@ classes:
   Protocol: # TODO multiple types
     title: Protocol
     description: A representation of a study which comprises one or more assessments.
-    is_a: CreativeWork
+    is_a: Thing
     slots:
     - about
     - altLabel
@@ -568,7 +558,7 @@ classes:
   Response: # multiple types
     title: Response
     description: Describes the response of an item.
-    is_a: CreativeWork
+    is_a: Thing
     slots:
     - isAbout
     - value
@@ -579,7 +569,7 @@ classes:
     description:
       Captures information about some action that took place. It also links to information
       (entities) that were used during the activity
-    is_a: CreativeWork
+    is_a: Thing
     slots:
       - endedAtTime
       - generated
@@ -591,7 +581,7 @@ classes:
   ResponseOption:
     title: Response option
     description: An element (object or by URL)to describe the properties of response of the Item.
-    is_a: CreativeWork
+    is_a: Thing
     slots:
     - choices
     - datumType
@@ -618,6 +608,7 @@ classes:
     slots:
       - id
       - name
+      - category
     class_uri: schema:Thing
   UI:
     title: todo
