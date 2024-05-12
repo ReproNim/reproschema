@@ -1,5 +1,3 @@
-# FAQ
-
 ## What is the semantic web?
 
 When you request access to a certain document by clicking on a hyperlink, the computer will give a visual rendering of the html code of this document. But computer used to do that in pretty "silly" fashion: it would give you a human-readable version of the content, but the computer would not make the distinction if a certain element in the webpage (for example a paragraph) was referring to a person or a place or a song.
@@ -8,8 +6,8 @@ What the semantic wed allows is to "inject" additional information into a webpag
 
 ### More info
 
-- [wikipedia article on the semantic web](https://en.wikipedia.org/wiki/Semantic_Web)
-- A short video intro to the semantic web by Manu Sporny:
+-   [wikipedia article on the semantic web](https://en.wikipedia.org/wiki/Semantic_Web)
+-   A short video intro to the semantic web by Manu Sporny:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/OGg8A2zfWKg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -23,10 +21,10 @@ The same way that an element in webpage could be given "meaning" by tagging with
 
 Linked data has some basic principles behind it ([adapted from wikipedia](https://en.wikipedia.org/wiki/Linked_data)):
 
-- Use Unique Resources identifiers (URI) to name (identify) things.
-- Use HTTP URIs so that these things can be looked up.
-- Provide useful information about what a name identifies when it's looked up.
-- Refer to other things using their HTTP URI-based names when publishing data on the Web.
+-   Use Unique Resources identifiers (URI) to name (identify) things.
+-   Use HTTP URIs so that these things can be looked up.
+-   Provide useful information about what a name identifies when it's looked up.
+-   Refer to other things using their HTTP URI-based names when publishing data on the Web.
 
 ### A more concrete example
 
@@ -52,8 +50,8 @@ Well "*So what?*" you might say. Well it also tells you which type of data this 
 
 ### More info
 
-- Here is [a TED talk](https://www.ted.com/talks/tim_berners_lee_the_next_web) by Tim Berners-Lee on linked data.
-- A short video intro to linked data by Manu Sporny:
+-   Here is [a TED talk](https://www.ted.com/talks/tim_berners_lee_the_next_web) by Tim Berners-Lee on linked data.
+-   A short video intro to linked data by Manu Sporny:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4x_xzT5eF5Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -61,11 +59,14 @@ Well "*So what?*" you might say. Well it also tells you which type of data this 
 
 ### What is JSON?
 
-OK before we go for JSON-LD, let's start with JSON. JSON stands for JavaScript Object Notation and is just a specific format for a text file. This type of text file is very often used by website when they need to transmit information to one another.
+OK before we go for JSON-LD, let's start with JSON. JSON stands for JavaScript Object Notation and is just a specific format for a text file.
+This type of text file is very often used by website when they need to transmit information to one another.
 
-If you want to see an example of how this works, here is [dummy example](http://dummy.restapiexample.com/api/v1/employees) of the response to a request made by one website to another about a list of employees. By default the output of this dummy example is presented in a way that is more pleasing to the human eye, but if you click on `Raw Data`, you will see the raw unformatted JSON file that was returned by the website. Copy-paste in a text editor, it should like the big ugly and scary one-liner below that we, mere mortals, have no idea what to do with, but that a computer has no problem making sense of.
+If you want to see an example of how this works, here is [dummy example](http://dummy.restapiexample.com/api/v1/employees) of the response to a request made by one website to another about a list of employees.
+By default the output of this dummy example is presented in a way that is more pleasing to the human eye, but if you click on `Raw Data`, you will see the raw unformatted JSON file that was returned by the website.
+Copy-paste in a text editor, it should like the big ugly and scary one-liner below that we, mere mortals, have no idea what to do with, but that a computer has no problem making sense of.
 
-**Insert image ???**
+<!-- **Insert image ???** -->
 
 ```json
 
@@ -73,9 +74,11 @@ If you want to see an example of how this works, here is [dummy example](http://
 
 ```
 
-By the way, if you ever come across such monstrosity and you want to turn into something you as a human being can understand (or least read), you can copy-paste it in a validator-formatter like [jsonformatter](https://jsonformatter.curiousconcept.com/) or [jsonlint](https://jsonlint.com/). This will quickly tell you a) whether this is a valid JSON format (eaning if it respects the rules of how a JSON file should be formatted) and b) it will highlight and help you navigate the nested and hierarchical nature of the JSON file.
+By the way, if you ever come across such monstrosity and you want to turn into something you as a human being can understand (or least read), you can copy-paste it in a validator-formatter like [jsonformatter](https://jsonformatter.curiousconcept.com/) or [jsonlint](https://jsonlint.com/). This will quickly tell you
+1.  whether this is a valid JSON format (eaning if it respects the rules of how a JSON file should be formatted) and
+1.  it will highlight and help you navigate the nested and hierarchical nature of the JSON file.
 
-**Insert image ???**
+<!-- **Insert image ???** -->
 
 OK but let's start with a much simpler example of a JSON file, like the one below which could be the content of JSON file returned by a website when asked about a certain person.
 
@@ -110,7 +113,7 @@ You now have a valid JSON-LD. If you want to make sure it is valid, you can copy
 
 If you want to visualize a more complex graph, we can try that with one of the JSON-LD file that describe one of the `protocols` of the reproschema like the one [here](https://github.com/ReproNim/reproschema/blob/741e295d998037629c213ef41cffaaf177f4d014/examples/protocols/protocol1.jsonld). Actually if you want to test get the raw content of the file you should click on `Raw`. You can then either use the raw content of the file or the URL of this raw file which should be something like:
 
-```
+```text
 https://raw.githubusercontent.com/ReproNim/reproschema/741e295d998037629c213ef41cffaaf177f4d014/examples/protocols/protocol1.jsonld
 ```
 
@@ -118,8 +121,8 @@ directly into the [JSON-LD playground](https://json-ld.org/playground/) to see w
 
 ### More info
 
-- It would be a stretch to say that the [JSON-LD specifications](https://www.w3.org/TR/json-ld11/) make for a fascinating read that will keep you up at night (although they might but mostly out of frustration) but it is good to know that it is out there in case you eventually need to look something up
-- Two short videos by Manu Sporny about JSON-LD and core mark up features JSON-LD:
+-   It would be a stretch to say that the [JSON-LD specifications](https://www.w3.org/TR/json-ld11/) make for a fascinating read that will keep you up at night (although they might but mostly out of frustration) but it is good to know that it is out there in case you eventually need to look something up
+-   Two short videos by Manu Sporny about JSON-LD and core mark up features JSON-LD:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vioCbTo3C-4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -134,51 +137,3 @@ At the moment, all the assessments that support this standard are listed in [thi
 If you want to see those different tools in action using our user interface, you can explore them on [schema.repronim.org/](https://schema.repronim.org/rl/).
 
 The ReproSchema is also used to develop a checklist to [improve methods and results reporting in neuroimaging](https://github.com/ohbm/cobidas).
-
-**🛠 Work in progress 🛠**
-
-## Why should I use ReproSchema?
-
-**🛠 Work in progress 🛠**
-
-## Who is ReproSchema for?
-
-**🛠 Work in progress 🛠**
-
-## How can I know if a certain property is supported by ReproSchema?
-
-**🛠 Work in progress 🛠**
-
-## How can I add a property to my schema?
-
-**🛠 Work in progress 🛠**
-
-## How are these assessments licensed?
-
-**🛠 Work in progress 🛠**
-
-## How can I contribute to the project?
-
-**🛠 Work in progress 🛠**
-
-## An assessment tool I regularly use is not supported by ReproSchema: how can I add it?
-
-**🛠 Work in progress 🛠**
-
-## How can I visualize the schema for a `protocol` or an `activity`?
-
-If you want to see what the assessment that are already supported by the ReproSchema would look like using our ReproSchema user-interface, you can visualize them directly on [schema.repronim.org](https://schema.repronim.org/rl).
-
-If you just want to view a protocol or activity you are developing using the `reproschema-ui`, you can pass the URL of the schema to the `url` query parameter like this:
-
-```https://schema.repronim.org/ui/#/?url=url-to-your-schema```
-
-If you are hosting a schema on github, make sure that you are passing the URL of the **raw** content of the schema. For example, our demo protocol can be accessed at this URL:
-
-[https://github.com/ReproNim/reproschema-demo-protocol/blob/7ed1ae49279f75acdd57380fff1f8aaff2c7b511/reproschema_demo_protocol/reproschema_demo_protocol_schema](https://github.com/ReproNim/reproschema-demo-protocol/blob/7ed1ae49279f75acdd57380fff1f8aaff2c7b511/reproschema_demo_protocol/reproschema_demo_protocol_schema)
-
-But to get access to the raw content of that file you must click on the `Raw` button once you have opened that page on github that will open this URL:
-
-[https://raw.githubusercontent.com/ReproNim/reproschema-demo-protocol/7ed1ae49279f75acdd57380fff1f8aaff2c7b511/reproschema_demo_protocol/reproschema_demo_protocol_schema](https://raw.githubusercontent.com/ReproNim/reproschema-demo-protocol/7ed1ae49279f75acdd57380fff1f8aaff2c7b511/reproschema_demo_protocol/reproschema_demo_protocol_schema).
-
-If you want to visualize the graph represented by the JSON-LD file, we explain how to do this in [From JSON to JSON-LD](#from-json-to-json-ld).

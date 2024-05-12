@@ -11,9 +11,9 @@ Here we will show a step by step approach to create a new protocol that includes
 
 For this tutorial you will be using some other tools to put your work online. Here is what you will need to install or set up.
 
-- [Git](https://git-scm.com/downloads)
-- a [Github account](https://github.com/)
-- a "decent" text editor like [atom](https://atom.io/) or [visual studio code](https://code.visualstudio.com/) and we do recommend that you look for extensions or packages that help you deal with json files.
+-   [Git](https://git-scm.com/downloads)
+-   a [Github account](https://github.com/)
+-   a "decent" text editor like [atom](https://atom.io/) or [visual studio code](https://code.visualstudio.com/) and we do recommend that you look for extensions or packages that help you deal with json files.
 
 We don't assume that you have in-depth knowledge of Git and Github for this tutorial so we will try to provide with the commands you need to type when it is required. Similarly, we will provide some of the commands to create directories and files though you could do many of those actions "by hand" with a couple of mouse clicks.
 
@@ -26,10 +26,9 @@ To make this a bit less abstract, we will imagine we want to create a new protoc
 
 So we would want to have a set of questionnaires:
 
-- to assess the severity of the depression of our participants,
-- check which participants can go in an MRI scanner,
-- estimate the handedness of the participants (because of the language lateralization organization of the brain).
-
+-   to assess the severity of the depression of our participants,
+-   check which participants can go in an MRI scanner,
+-   estimate the handedness of the participants (because of the language lateralization organization of the brain).
 
 ## A note about this tutorial
 

@@ -46,9 +46,9 @@ Open the `depression_nimg_schema.jsonld` with a text editor and add the followin
 
 To explain a bit what all of this means:
 
-- `@context` gives the URL where we can find the "definitions" of terms used in the reproschema. It is itself a json file that you [can view directly](https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic).
-- `@type` just says what type of entity this jsonld file describes. In this case it is a `protocol` entity as defined by the reproschema.
-- `@id` is the identity of this entity, its unique identifier.
+-   `@context` gives the URL where we can find the "definitions" of terms used in the reproschema. It is itself a json file that you [can view directly](https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic).
+-   `@type` just says what type of entity this jsonld file describes. In this case it is a `protocol` entity as defined by the reproschema.
+-   `@id` is the identity of this entity, its unique identifier.
 
 You can then use the preferred label field and the description to give more human readable ways to describe this entity.
 
@@ -110,13 +110,13 @@ To get access to the raw content of that activity you must click on the `Raw` bu
 
 You can then pass the the URL of raw content to the UI using the following template:
 
-```
+```text
 https://www.repronim.org/reproschema-ui/#/activities/0?url=url-to-activity-schema
 ```
 
 So in the case of the PHQ-9, it would give this URL that we copy-paste in a browser to view the activity on its own.
 
-```
+```text
 https://www.repronim.org/reproschema-ui/#/activities/0?url=https://raw.githubusercontent.com/ReproNim/reproschema-library/master/activities/PHQ-9/PHQ9_schema
 ```
 
@@ -180,11 +180,11 @@ The field `order` is there to indicate which activity should be presented first,
     Json files can get a bit long and you might sometimes forget a coma of a closing square brackets, so to make sure that your json file is correctly formatted you can use a linter. For example, you can test individual files on the [json linter website](https://jsonlint.com/).
 
 ??? "JSON-LD expansion"
-    You might notice that `rl:PHQ-9/PHQ9_schema` does not look like a typical URL and clearly does not match the one we fed the UI earlier (https://raw.githubusercontent.com/ReproNim/reproschema-library/master/activities/PHQ-9/PHQ9_schema). Well this is because we have defined, in the `@context` part of our jsonld, that the `rl` from `rl:PHQ-9/PHQ9_schema` will actually stand for `https://raw.githubusercontent.com/ReproNim/reproschema-library/master/activities/`. This shorthand makes it faster for us to write URL but the UI will know how to `expand` this into an actual URL.
+    You might notice that `rl:PHQ-9/PHQ9_schema` does not look like a typical URL and clearly does not match the one we fed the UI earlier (`https://raw.githubusercontent.com/ReproNim/reproschema-library/master/activities/PHQ-9/PHQ9_schema`).
+    Well this is because we have defined, in the `@context` part of our jsonld, that the `rl` from `rl:PHQ-9/PHQ9_schema` will actually stand for `https://raw.githubusercontent.com/ReproNim/reproschema-library/master/activities/`.
+    This shorthand makes it faster for us to write URL but the UI will know how to `expand` this into an actual URL.
 
     Similarly the `reproschema:Protocol` in `"@type": "reproschema:Protocol"` expands in `http://schema.repronim.org/Protocol` because `reproschema` has been indirectly defined in the context of `depression_nimg_schema.jsonld`. To be more precise `reproschema` is defined in the [base file](https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/base) which is part of the context of the [generic file](https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic) that our protocol points to.
-
-
 
 #### Starting to put things online to see how they look
 
@@ -212,7 +212,7 @@ Now to move things to a github repository, you need to go and create an empty re
 
 The repository should have an URL that resembles this one where `your_user_name` is your actual Github username:
 
-```
+```text
 https://github.com/your_user_name/depression_nimg_schema.git
 ```
 
@@ -230,13 +230,13 @@ git push -u origin master
 
 If everything worked normally, you should be able to use the reproschema-ui to visualize your protocol using the following template:
 
-```
+```text
 https://www.repronim.org/reproschema-ui/#/?url=url-to-protocol-schema
 ```
 
 So once again grab the URL of the **raw** content of your protocol and point the UI to it:
 
-```
+```text
 https://www.repronim.org/reproschema-ui/#/?url=https://raw.githubusercontent.com/your_user_name/depression_nimg_schema/master/protocol/depression_nimg_schema.jsonld
 ```
 

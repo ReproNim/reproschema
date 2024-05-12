@@ -11,8 +11,7 @@ First, make sure your syntax is in correct jsonld format. Test all files with
 
 ```bash
 npm install -g jsonlint
-grep -r "@context" . \
-   | cut -d: -f1 | xargs -I fname jsonlint -q fname
+grep -r "@context" . | cut -d: -f1 | xargs -I fname jsonlint -q fname
 ```
 
 Or test individual files on the [json linter website](https://jsonlint.com/).
@@ -53,7 +52,7 @@ described by a `yml` file.
 
 For example you could create a `validate.yml` file in this repository.
 
-```
+```text
 ├── .git # hidden git folder
 ├── .github # hidden github folder
 │    └── workflows
@@ -70,7 +69,7 @@ For example you could create a `validate.yml` file in this repository.
 
 The content of `validate.yml` file would look like this.
 
-```yml
+```yaml
 name: validate protocol and activities
 
 # describes when this workfllow is triggered
@@ -152,7 +151,7 @@ For example, you could create response set file to constrains the possible
 answers on the questions of the Edinburgh Handedness Inventory we have been
 working on by organizing things this way.
 
-```
+```text
 activities
 ├── edinburgh_handedness_inventory_short.jsonld
 ├── leftRightValueConstraints.jsonld
