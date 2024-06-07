@@ -21,9 +21,11 @@ jobs:
       with:
         python-version: 3.12
     - name: Install dependencies
+      # TODO update to install from the latest version on reproschema
+      # once https://github.com/ReproNim/reproschema-py/pull/40 has been merged and a new release has been made.
       run: |
         python -m pip install --upgrade pip setuptools
-        pip install reproschema
+        pip install git+https://github.com/Remi-Gau/reproschema-py.git@skip
     - name: Test with pyshacl
       run: |
         python scripts/jsonParser.py
