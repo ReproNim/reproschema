@@ -57,7 +57,7 @@ This step involves precise modifications, particularly in the `@context` and `ad
     The `"variableName": "year_of_birth"` is where you specify the variable as the participant's year of birth.
     The `"isAbout": "demo:year_of_birth"` part establishes a link to the detailed structure of this item in the ReproSchema-library. The "demo:" prefix references the additional context you've added, guiding the schema to the correct location for the structure and details of the "year_of_birth" item.
 
-    See the outcome file [here](https://github.com/ReproNim/reproschema-demo-protocol/blob/main/activities/1_demographics/demographics_schema)
+See the outcome file [here](https://github.com/ReproNim/reproschema-demo-protocol/blob/main/activities/1_demographics/demographics_schema)
 
 ## Step 3: Integrating multiple assessments
 
@@ -144,10 +144,17 @@ and [demographics](https://github.com/ReproNim/reproschema-library/tree/master/a
     ```
 
     In the addProperties section, we define each variable that corresponds to a specific assessment.
+
     For instance:
-    -   `"variableName": "phq-9"` is linked to `"isAbout": "activities:PHQ-9/PHQ9_schema"`. This implies that the PHQ-9 schema (an assessment for depressive symptoms) from the reproschema-library is used in the current psychological questionnaire schema.
-    -   Similarly, other assessments like `GAD-7` and `PC-PTSD-5` are included using their respective variable names and links to their schemas in the activities context.
-    -   Additional variables related to clinical history in psychiatry are linked using the demo context, pointing to specific items within the demographics and background information section of the reproschema-library.
+
+    -   `"variableName": "phq-9"` is linked to `"isAbout": "activities:PHQ-9/PHQ9_schema"`.
+        This implies that the PHQ-9 schema (an assessment for depressive symptoms) from the reproschema-library is used in the current psychological questionnaire schema.
+
+    -   Similarly, other assessments like `GAD-7` and `PC-PTSD-5` are included
+        using their respective variable names and links to their schemas in the activities context.
+
+    -   Additional variables related to clinical history in psychiatry are linked using the demo context,
+        pointing to specific items within the demographics and background information section of the reproschema-library.
 
     ```json
     {
@@ -156,7 +163,10 @@ and [demographics](https://github.com/ReproNim/reproschema-library/tree/master/a
     }
     ```
 
-    -   The `order` array specifies the sequence in which these assessments will appear in the questionnaire, ensuring a logical flow for participants.
-    -   The `shuffle` setting is `false`, maintaining the defined order, and allow includes functionalities like auto-advance between assessments and data export.
+    -   The `order` array specifies the sequence in which these assessments will appear in the questionnaire,
+        ensuring a logical flow for participants.
+
+    -   The `shuffle` setting is `false`, maintaining the defined order,
+        and allow includes functionalities like auto-advance between assessments and data export.
 
 See the outcome [here](https://github.com/ReproNim/reproschema-demo-protocol/blob/main/activities/2_psychological/psychological_questionnaire_schema)
