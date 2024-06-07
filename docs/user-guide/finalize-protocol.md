@@ -12,13 +12,13 @@ In the 'DemoProtocol_schema', located in the 'DemoProtocol' folder, we integrate
 
     The ui section's addProperties array is crucial. Here, each activity schema we've created is referenced under `isAbout`, with its respective `variableName` and `prefLabel`. For example, the `audio` activity is linked as
 
-```json
-{
-    "isAbout": "../activities/0_audio/audio_check_schema",
-    "variableName": "audio_check_schema",
-    "prefLabel": {"en": "Audio Check"}
-}
-```
+    ```json
+    {
+        "isAbout": "../activities/0_audio/audio_check_schema",
+        "variableName": "audio_check_schema",
+        "prefLabel": {"en": "Audio Check"}
+    }
+    ```
 
 This structure is repeated for each activity, including audio check, demographics, psychological questions, clinical questions, speech task, and feedback.
 

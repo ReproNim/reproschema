@@ -156,12 +156,12 @@ and [demographics](https://github.com/ReproNim/reproschema-library/tree/master/a
     -   Additional variables related to clinical history in psychiatry are linked using the demo context,
         pointing to specific items within the demographics and background information section of the reproschema-library.
 
-    ```json
-    {
-        "variableName": "clinical_history_psychiatry",
-        "isAbout": "demo:clinical_history_psychiatry"
-    }
-    ```
+        ```json
+        {
+            "variableName": "clinical_history_psychiatry",
+            "isAbout": "demo:clinical_history_psychiatry"
+        }
+        ```
 
     -   The `order` array specifies the sequence in which these assessments will appear in the questionnaire,
         ensuring a logical flow for participants.
