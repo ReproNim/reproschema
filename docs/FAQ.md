@@ -53,6 +53,17 @@ once you have opened that page on github that will open this URL:
 If you want to visualize the graph represented by the JSON-LD file,
 we explain how to do this in [From JSON to JSON-LD](#from-json-to-json-ld).
 
+
+### Which assessments tools will/are supporting this standard?
+
+At the moment, all the assessments that support this standard are listed in [this folder](https://github.com/ReproNim/reproschema-library/tree/master/activities) or the [reproschema-library repository](https://github.com/ReproNim/reproschema-library).
+
+If you want to see those different tools in action using our user interface,
+you can explore them on [schema.repronim.org/](https://schema.repronim.org/rl/).
+
+The ReproSchema is also used to develop a checklist to [improve methods and results reporting in neuroimaging](https://github.com/ohbm/cobidas).
+
+
 ## Linked data and semantic web
 
 ## What is the semantic web?
@@ -221,14 +232,3 @@ allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
 src="https://www.youtube.com/embed/UmvWk_TQ30A" frameborder="0"
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
-
-### Why is linked data important for the ReproSchema ?
-
-### Which assessments tools will/are supporting this standard?
-
-At the moment, all the assessments that support this standard are listed in [this folder](https://github.com/ReproNim/reproschema-library/tree/master/activities) or the [reproschema-library repository](https://github.com/ReproNim/reproschema-library).
-
-If you want to see those different tools in action using our user interface,
-you can explore them on [schema.repronim.org/](https://schema.repronim.org/rl/).
-
-The ReproSchema is also used to develop a checklist to [improve methods and results reporting in neuroimaging](https://github.com/ohbm/cobidas).
