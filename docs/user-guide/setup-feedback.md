@@ -5,7 +5,7 @@ choice of ending with participant feedback is just one of many possibilities,
 demonstrating the adaptability of ReproSchema to diverse research needs.
 
 ```json linenums="1"
---8<-- "example_ehi/activities/user_guide/items/feedback.jsonld"
+--8<-- "examples/activities/user_guide/items/feedback.jsonld"
 ```
 
 The `feedback` item in this activity

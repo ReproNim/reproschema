@@ -52,7 +52,7 @@ ii) Quel oeil utiliser-vous pour viser?
 ## Updating the response options
 
 ```json linenums="1" hl_lines="10-14 17-21 24-28 31-35 38-42"
---8<-- "example_ehi/activities/EHI/leftRightValueConstraintsMultiLang.jsonld"
+--8<-- "examples/activities/EHI/leftRightValueConstraintsMultiLang.jsonld"
 ```
 
 ## Updating the activity
@@ -60,5 +60,5 @@ ii) Quel oeil utiliser-vous pour viser?
 We need to update the `edinburgh_handedness_inventory_short.jsonld` so that the preamble question has both languages:
 
 ```json linenums="1" hl_lines="5-8 13-16"
---8<-- "example_ehi/activities/EHI/edinburgh_handedness_inventory_short_multi_lang.jsonld"
+--8<-- "examples/activities/EHI/edinburgh_handedness_inventory_short_multi_lang.jsonld"
 ```

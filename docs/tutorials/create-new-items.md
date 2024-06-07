@@ -32,7 +32,7 @@ We can now add:
 -   the response options
 
 ```json linenums="1" hl_lines="9 10 11-38"
---8<-- "example_ehi/activities/EHI/items/writing.jsonld"
+--8<-- "examples/activities/EHI/items/writing.jsonld"
 ```
 
 <!-- TODO
@@ -87,13 +87,13 @@ touch activities/EHI/items/EHI_results.jsonld
 Add the following content to it.
 
 ```json linenums="1"
---8<-- "example_ehi/activities/EHI/items/EHI_results.jsonld"
+--8<-- "examples/activities/EHI/items/EHI_results.jsonld"
 ```
 
 Add it to the activity.
 
 ```json linenums="1" hl_lines="15 31-35 38-42"
---8<-- "example_ehi/activities/EHI/edinburgh_handedness_inventory_short.jsonld"
+--8<-- "examples/activities/EHI/edinburgh_handedness_inventory_short.jsonld"
 ```
 
 ## Using presets response options
@@ -119,7 +119,7 @@ activities
 The content of the `leftRightValueConstraints.jsonld` file would look like this:
 
 ```json linenums="1"
---8<-- "example_ehi/activities/EHI/leftRightValueConstraints.jsonld"
+--8<-- "examples/activities/EHI/leftRightValueConstraints.jsonld"
 ```
 
 And you can point each item to it by referring to the local file in the `responseOptions` field.

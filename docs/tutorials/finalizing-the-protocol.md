@@ -22,5 +22,5 @@ https://www.repronim.org/reproschema-ui/#/activities/0?url=https://raw.githubuse
 ## Adding the activity to the protocol
 
 ```json linenums="1" hl_lines="25-29 33"
---8<-- "example_ehi/protocols/depression_nimg_schema.jsonld"
+--8<-- "examples/protocols/depression_nimg_schema.jsonld"
 ```
