@@ -208,7 +208,7 @@ slots:
     description: Defines number of times the item is allowed to be redone.
     slot_uri: reproschema:maxRetakes
     any_of:
-    - range: decimal
+    - range: integer
   maxValue:
     any_of:
     - range: float
@@ -350,8 +350,9 @@ slots:
     description: The value for each option in choices or in additionalNotesObj
     slot_uri: schema:value
     any_of:
+    - range: float
+    - range: integer
     - range: boolean
-    - range: decimal
     - range: StructuredValue
     - range: langString
     - range: uri
