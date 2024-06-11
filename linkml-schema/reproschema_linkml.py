@@ -119,7 +119,7 @@ class AdditionalNoteObj(Thing):
     """
     column: Optional[str] = Field(None, title="column", description="""An element to define the column name where the note was taken from.""")
     source: Optional[str] = Field(None, title="source", description="""An element to define the source (eg. RedCap, NDA) where the note was taken from.""")
-    value: Optional[Union[Decimal, Dict[str, str], MissingType, StructuredValue, bool, str]] = Field(None, title="value", description="""The value for each option in choices or in additionalNotesObj""")
+    value: Optional[Union[Dict[str, str], MissingType, StructuredValue, bool, float, int, str]] = Field(None, title="value", description="""The value for each option in choices or in additionalNotesObj""")
     id: Optional[str] = Field(None, description="""A unique identifier for an entity. Must be either a CURIE shorthand for a URI or a complete URI.""")
     name: Optional[Dict[str, str]] = Field(default_factory=dict)
     category: Optional[str] = Field(None, description="""Name of the high level ontology class in which this entity is categorized. Corresponds to the label for the biolink entity type class. In an RDF database it should be a model class URI. This field is multi-valued.""")
@@ -133,7 +133,7 @@ class AdditionalProperty(Thing):
     isAbout: Optional[Union[Activity, Item, str]] = Field(None, title="isAbout", description="""A pointer to the node describing the item.""")
     isVis: Optional[Union[bool, str]] = Field(None, title="visibility", description="""An element to describe (by boolean or conditional statement) visibility conditions of items in an assessment.""")
     limit: Optional[str] = Field(None, title="limit", description="""An element to limit the duration (uses ISO 8601) this activity is allowed to be completed by once activity is available.""")
-    maxRetakes: Optional[Decimal] = Field(None, title="maxRetakes", description="""Defines number of times the item is allowed to be redone.""")
+    maxRetakes: Optional[int] = Field(None, title="maxRetakes", description="""Defines number of times the item is allowed to be redone.""")
     prefLabel: Optional[Dict[str, str]] = Field(default_factory=dict, title="preferred label", description="""The preferred label.""")
     randomMaxDelay: Optional[str] = Field(None, title="randomMaxDelay", description="""Present activity/item within some random offset of activity available time up to the maximum specified by this ISO 8601 duration""")
     schedule: Optional[str] = Field(None, title="Schedule", description="""An element to set make activity available/repeat info using ISO 8601 repeating interval format.""")
@@ -151,7 +151,7 @@ class Choice(Thing):
     """
     name: Optional[Dict[str, str]] = Field(default_factory=dict)
     image: Optional[Union[ImageObject, str]] = Field(None, title="image", description="""An image of the item. This can be a <a class=\"localLink\" href=\"http://schema.org/URL\">URL</a> or a fully described <a class=\"localLink\" href=\"http://schema.org/ImageObject\">ImageObject</a>.""")
-    value: Optional[Union[Decimal, Dict[str, str], MissingType, StructuredValue, bool, str]] = Field(None, title="value", description="""The value for each option in choices or in additionalNotesObj""")
+    value: Optional[Union[Dict[str, str], MissingType, StructuredValue, bool, float, int, str]] = Field(None, title="value", description="""The value for each option in choices or in additionalNotesObj""")
     id: Optional[str] = Field(None, description="""A unique identifier for an entity. Must be either a CURIE shorthand for a URI or a complete URI.""")
     category: Optional[str] = Field(None, description="""Name of the high level ontology class in which this entity is categorized. Corresponds to the label for the biolink entity type class. In an RDF database it should be a model class URI. This field is multi-valued.""")
 
@@ -247,7 +247,7 @@ class OverrideProperty(Thing):
     isAbout: Optional[Union[Activity, Item, str]] = Field(None, title="isAbout", description="""A pointer to the node describing the item.""")
     isVis: Optional[Union[bool, str]] = Field(None, title="visibility", description="""An element to describe (by boolean or conditional statement) visibility conditions of items in an assessment.""")
     limit: Optional[str] = Field(None, title="limit", description="""An element to limit the duration (uses ISO 8601) this activity is allowed to be completed by once activity is available.""")
-    maxRetakes: Optional[Decimal] = Field(None, title="maxRetakes", description="""Defines number of times the item is allowed to be redone.""")
+    maxRetakes: Optional[int] = Field(None, title="maxRetakes", description="""Defines number of times the item is allowed to be redone.""")
     prefLabel: Optional[Dict[str, str]] = Field(default_factory=dict, title="preferred label", description="""The preferred label.""")
     randomMaxDelay: Optional[str] = Field(None, title="randomMaxDelay", description="""Present activity/item within some random offset of activity available time up to the maximum specified by this ISO 8601 duration""")
     schedule: Optional[str] = Field(None, title="Schedule", description="""An element to set make activity available/repeat info using ISO 8601 repeating interval format.""")
@@ -284,7 +284,7 @@ class Response(Thing):
     Describes the response of an item.
     """
     isAbout: Optional[Union[Activity, Item, str]] = Field(None, title="isAbout", description="""A pointer to the node describing the item.""")
-    value: Optional[Union[Decimal, Dict[str, str], MissingType, StructuredValue, bool, str]] = Field(None, title="value", description="""The value for each option in choices or in additionalNotesObj""")
+    value: Optional[Union[Dict[str, str], MissingType, StructuredValue, bool, float, int, str]] = Field(None, title="value", description="""The value for each option in choices or in additionalNotesObj""")
     wasAttributedTo: Optional[Participant] = Field(None)
     id: Optional[str] = Field(None, description="""A unique identifier for an entity. Must be either a CURIE shorthand for a URI or a complete URI.""")
     name: Optional[Dict[str, str]] = Field(default_factory=dict)
