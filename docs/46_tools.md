@@ -52,7 +52,7 @@ reproschema reproschema2redcap <input_dir_path> <output_csv_filename>
   cd reproschema-demo-protocol
   pwd
   ```
-  
+
   In this case,  the output from `pwd` (which shows your current directory path)should be your `<input_dir_path>`.
 - `<output_csv_filename>`: The name of the output CSV file where the converted data will be saved.
 
@@ -90,4 +90,4 @@ The `redcap2reproschema` function has been integrated into a CLI tool, use the f
 reproschema redcap2reproschema path/to/your_redcap_data_dic.csv path/to/your_redcap2rs.yaml
 ```
 
-Those tools can also be used as Python functions. For detailed instructions, please visit [reproschema-py](https://github.com/ReproNim/reproschema-py). 
+Those tools can also be used as Python functions. For detailed instructions, please visit [reproschema-py](https://github.com/ReproNim/reproschema-py).
