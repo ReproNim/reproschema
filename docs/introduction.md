@@ -1,6 +1,6 @@
 # Introduction
 
-??? example "Tl;DR - Advantages of the current schema representation"
+!!! example "Tl;DR - Advantages of the current schema representation"
 
     -   Rich contexts for a questionnaire with JSON-LD rather than a "flat" csv file.
     -   A single source of curated assessments from [ReproSchema Library](https://github.com/ReproNim/reproschema-library)

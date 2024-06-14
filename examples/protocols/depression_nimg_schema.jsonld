@@ -1,0 +1,36 @@
+{
+    "@context": [
+      "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+      {
+        "rl": "https://raw.githubusercontent.com/ReproNim/reproschema-library/master/activities/"
+      }
+    ],
+    "@type": "reproschema:Protocol",
+    "@id": "depression_nimg_schema.jsonld",
+    "prefLabel": "depression neuroimaging study",
+    "description": "a study on linguistic processing in depression",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "landingPage": {
+      "@id": "README.md",
+      "inLanguage": "en"
+    },
+    "ui": {
+      "addProperties": [
+        {
+          "isAbout": "rl:PHQ-9/PHQ9_schema",
+          "variableName": "PHQ9_schema",
+          "prefLabel": { "en": "Depression" }
+        },
+          {
+          "isAbout": "../activities/EHI/edinburgh_handedness_inventory_short.jsonld",
+          "variableName": "EHI_short_schema",
+          "prefLabel": { "en": "EHI" }
+        }
+      ],
+      "order": [
+          "rl:PHQ-9/PHQ9_schema",
+          "EHI_short_schema"
+          ]
+    }
+}

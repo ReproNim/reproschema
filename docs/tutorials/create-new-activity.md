@@ -36,8 +36,7 @@ i) Which foot do you prefer to kick with ?
 ii) Which eye do you use when using only one?
 ```
 
-The asterisks denote the subset of items that belong to the short form of the
-questionnaire.
+The asterisks denote the subset of items that belong to the short form of the questionnaire.
 
 The scoring for each item follows the following scheme:
 
@@ -55,7 +54,6 @@ classification according to the Laterality Quotient score goes as follow:
 -   Right handers: 61 to 100
 
 <!-- ---
-
 Note that there is also a longer with extra items that are not on the standard inventory.
 
 - Holding a Computer Mouse
@@ -64,12 +62,12 @@ Note that there is also a longer with extra items that are not on the standard i
 - Holding a Brush or Comb
 - Holding a Cup while Drinking
 
-Source: http://www.brainmapping.org/shared/Edinburgh.php -->
+Source: http://www.brainmapping.org/shared/Edinburgh.php
+-->
 
 ## Preparing the JSON for the activity
 
-Now let's create the `activities` folder, an activity file for the new
-assessment tool we want to create.
+Now let's create the `activities` folder, an activity file for the new assessment tool we want to create.
 For this tutorial we will be using the short form of the Edinburgh handedness inventory.
 
 ```bash
@@ -80,7 +78,7 @@ touch activities/EHI/edinburgh_handedness_inventory_short.jsonld
 
 Now let's start by adding the following content in the activity file we have just created.
 
-```json
+```json linenums="1"
 {
   "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
   "@type": "reproschema:Activity",
@@ -92,16 +90,16 @@ Now let's start by adding the following content in the activity file we have jus
 }
 ```
 
-The content is for now very similar to the jsonld that defines our protocol.
+The content is for now very similar to the JSON-LD that defines our protocol.
 The main difference is for the `@type` field that mentions
 that we are now describing an activity as defined in the Reproschema.
 
 Two other things we can add right away are:
 
 -   the references for this questionnaire,
--   the "preamble" that is common to all items in this questionnaire.
+-   the `"preamble"` that is common to all items in this questionnaire.
 
-```json
+```json linenums="1" hl_lines="9-10"
 {
   "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
   "@type": "reproschema:Activity",
@@ -112,375 +110,5 @@ Two other things we can add right away are:
   "version": "0.0.1",
   "citation": "10.1080/1357650X.2013.783045",
   "preamble": "Please indicate your preferences in the use of hands in the following activities or objects:"
-}
-```
-
-## Creating items
-
-Now that we have a basic structure for this new activity, let us start adding some items.
-
-Let's first start with the item for `writing`
-
-```bash
-# Type this in a terminal window
-mkdir activities/EHI/items
-touch activities/EHI/items/writing.jsonld
-```
-
-The content for items starts like the ones we have seen so far but
-`"reproschema:Field"` for the `@type` field.
-
-```json
-{
-  "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
-  "@type": "reproschema:Field",
-  "@id": "writing.jsonld",
-  "prefLabel": "writing",
-  "description": "writing item of the EHI",
-  "schemaVersion": "1.0.0-rc1",
-  "version": "0.0.1"
-}
-```
-
-We can now add:
-
--   the question for this item
--   the response options
--   and the `inputType` for for the user interface that will decide how this item will displayed to the user.
-
-```json
-{
-  "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
-  "@type": "reproschema:Field",
-  "@id": "writing",
-  "prefLabel": "writing",
-  "description": "writing item of the EHI",
-  "schemaVersion": "1.0.0-rc1",
-  "version": "0.0.1",
-  "question": "Writing",
-  "ui": { "inputType": "radio" },
-  "responseOptions": {
-    "valueType": "xsd:integer",
-    "minValue": -100,
-    "maxValue": 100,
-    "multipleChoice": false,
-    "choices": [
-      {
-        "name": "Always right",
-        "value": 100
-      },
-      {
-        "name": "Usually right",
-        "value": 50
-      },
-      {
-        "name": "Both equally",
-        "value": 0
-      },
-      {
-        "name": "Usually left",
-        "value": -50
-      },
-      {
-        "name": "Always left",
-        "value": -100
-      }
-    ]
-  }
-}
-```
-
-### What did we add ?
-
-```json
-"question": "Writing",
-```
-
-```json
-"ui": {"inputType": "radio"},
-```
-
-```json
-"responseOptions": {
-    "valueType": "xsd:integer",
-    "minValue": -100,
-    "maxValue": 100,
-    "multipleChoice": false,
-    "choices": [
-        {
-            "name": "Always right",
-            "value": 100
-        },
-        {
-            "name": "Usually right",
-            "value": 50
-        },
-        {
-            "name": "Both equally",
-            "value": 0
-        },
-        {
-            "name": "Usually left",
-            "value": -50
-        },
-        {
-            "name": "Always left",
-            "value": -100
-        }
-    ]
-}
-```
-
-<!-- TODO
-- describe the different input types or at least point the doc of the UI that describes them -->
-
-## In your own time: create a second item
-
-For next step you can create on your own the `throwing` item of the questionnaire.
-
-## Add the items to the activity
-
-```json
-{
-  "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
-  "@type": "reproschema:Activity",
-  "@id": "edinburgh_handedness_inventory_short.jsonld",
-  "prefLabel": "Edinburgh handedness inventory - short form",
-  "description": "Short version of the Edinburgh handedness inventory",
-  "schemaVersion": "1.0.0-rc1",
-  "version": "0.0.1",
-  "citation": "10.1080/1357650X.2013.783045",
-  "preamble": "Please indicate your preferences in the use of hands in the following activities or objects:",
-  "ui": {
-    "order": ["items/writing.jsonld", "items/throwing.jsonld"],
-    "shuffle": false,
-    "addProperties": [
-      {
-        "variableName": "writing",
-        "isAbout": "items/writing.jsonld",
-        "isVis": true
-      },
-      {
-        "variableName": "throwing",
-        "isAbout": "items/throwing.jsonld",
-        "isVis": true
-      }
-    ]
-  }
-}
-```
-
-### What did we add ?
-
-```json
-"ui": {
-    "order": [
-        "items/writing.jsonld",
-        "items/throwing.jsonld"
-    ],
-    "shuffle": false,
-    "addProperties": [
-        {
-            "variableName": "writing",
-            "isAbout": "items/writing.jsonld",
-            "isVis": true
-        },
-        {
-            "variableName": "throwing",
-            "isAbout": "items/throwing.jsonld",
-            "isVis": true
-        }
-    ]
-}
-```
-
-## Viewing the activity
-
-Push the content you have created on your repository on github
-
-```bash
-# Type this in a terminal window
-git add --all
-git commit -m 'adding the EHI activity'
-git push
-```
-
-Use the UI to visualize just the activity.
-
-```text
-https://www.repronim.org/reproschema-ui/#/activities/0?url=url-to-activity-schema
-```
-
-```text
-https://www.repronim.org/reproschema-ui/#/activities/0?url=https://raw.githubusercontent.com/your_user_name/depression_nimg_schema/activities/edinburgh_handedness_inventory_short.jsonld
-```
-
-<!-- https://www.repronim.org/reproschema-ui/#/activities/0?url=https://raw.githubusercontent.com/Remi-Gau/depression_nimg_schema/master/activities/edinburgh_handedness_inventory_short.jsonld -->
-
-<!-- https://www.repronim.org/reproschema-ui/#/activities/0?url=https://raw.githubusercontent.com/ReproNim/reproschema-library/master/activities/PHQ-9/PHQ9_schema -->
-
-## Viewing the results
-
-### Creating an item for the results
-
-```bash
-# Type this in a terminal window
-mkdir activities/items
-touch activities/items/EHI_results.jsonld
-```
-
-```json
-{
-  "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
-  "@type": "reproschema:Field",
-  "@id": "EHI_results.jsonld",
-  "prefLabel": "EHI results",
-  "description": "Edinburgh handedness inventory",
-  "schemaVersion": "1.0.0-rc1",
-  "version": "0.0.1",
-  "ui": {
-    "inputType": "number",
-    "readonlyValue": true
-  },
-  "responseOptions": {
-    "valueType": "xsd:integer",
-    "minValue": -100,
-    "maxValue": 100
-  }
-}
-```
-
-```json
-{
-  "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
-  "@type": "reproschema:Activity",
-  "@id": "edinburgh_handedness_inventory_short.jsonld",
-  "prefLabel": "Edinburgh handedness inventory - short form",
-  "description": "Short version of the Edinburgh handedness inventory",
-  "schemaVersion": "1.0.0-rc1",
-  "version": "0.0.1",
-  "citation": "10.1080/1357650X.2013.783045",
-  "preamble": "Please indicate your preferences in the use of hands in the following activities or objects:",
-  "ui": {
-    "order": [
-      "items/writing.jsonld",
-      "items/throwing.jsonld",
-      "items/EHI_results.jsonld"
-    ],
-    "shuffle": false,
-    "addProperties": [
-      {
-        "variableName": "writing",
-        "isAbout": "items/writing.jsonld",
-        "valueRequired": true,
-        "isVis": true
-      },
-      {
-        "variableName": "throwing",
-        "isAbout": "items/throwing.jsonld",
-        "valueRequired": true,
-        "isVis": true
-      },
-      {
-        "isAbout": "items/EHI_results.jsonld",
-        "variableName": "EHI_results",
-        "isVis": true
-      }
-    ]
-  },
-  "compute": [
-    {
-      "variableName": "EHI_results",
-      "jsExpression": "( writing + throwing ) / 2"
-    }
-  ]
-}
-```
-
-### What did we add ?
-
-```json
-    "ui": {
-        "order": [
-            ...
-            "items/EHI_results.jsonld"
-        ],
-        "addProperties": [
-            ...
-            {
-                "isAbout": "items/EHI_results.jsonld",
-                "variableName": "EHI_results",
-                "isVis": true
-            }
-        ]
-    }
-```
-
-```json
-"compute": [
-    {
-        "variableName": "EHI_results",
-        "jsExpression": "( writing + throwing ) / 2"
-    }
-]
-```
-
-## Adding the activity to the protocol
-
-```json
-{
-  "@context": [
-    "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
-    {
-      "rl": "https://raw.githubusercontent.com/ReproNim/reproschema-library/master/activities/"
-    }
-  ],
-  "@type": "reproschema:Protocol",
-  "@id": "depression_nimg_schema.jsonld",
-  "prefLabel": "depression neuroimaging study",
-  "description": "a study on linguistic processing in depression",
-  "schemaVersion": "1.0.0-rc1",
-  "version": "0.0.1",
-  "landingPage": {
-    "@id": "README.md",
-    "@language": "en"
-  },
-  "ui": {
-    "addProperties": [
-      {
-        "isAbout": "rl:PHQ-9/PHQ9_schema",
-        "variableName": "PHQ9_schema",
-        "prefLabel": { "en": "Depression" }
-      },
-        {
-        "isAbout": "../activities/EHI/edinburgh_handedness_inventory_short.jsonld",
-        "variableName": "EHI_short_schema",
-        "prefLabel": { "en": "EHI" }
-      }
-    ],
-    "order": [
-        "rl:PHQ-9/PHQ9_schema",
-        "EHI_short_schema"
-        ]
-  }
-}
-```
-
-### What did we add ?
-
-```json
-"ui": {
-"addProperties": [
-    ...
-    {
-    "isAbout": "../activities/edinburgh_handedness_inventory_short.jsonld",
-    "variableName": "EHI_short_schema",
-    "prefLabel": { "en": "EHI" }
-    }
-],
-"order": [
-    ...
-    "EHI_short_schema"
-    ]
 }
 ```

@@ -2,6 +2,7 @@
 
 This section provides the customized new assessments tailored to specific research needs. Our focus is on creating three distinct types of activities that are not readily available in the reproschema-library.
 These include:
+
 1.  clinical questions to gather clinical background information,
 1.  a speech task designed to collect audio data, and
 1.  an audio check to facilitate the speech task.
@@ -39,13 +40,13 @@ The structure of an item within the `items` folder of a ReproSchema activity is 
     It also provides a URL to a list of choices, in this case, a JSON file containing country names.
     This link allows the questionnaire to dynamically fetch and display a list of countries as response options.
 
-```json
-"responseOptions": {
-    "valueType": "xsd:string",
-    "maxLength": 50,
-    "choices": "https://raw.githubusercontent.com/samayo/country-json/master/src/country-by-name.json"
-}
-```
+    ```json
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 50,
+        "choices": "https://raw.githubusercontent.com/samayo/country-json/master/src/country-by-name.json"
+    }
+    ```
 
 ## Step 1: Specifying `inputType` and `responseOption` to gather precise data
 
@@ -98,16 +99,16 @@ The UI configuration and response options for this question are tailored to capt
 -   For the speech task in our demo project, the configuration of ui `inputType` and `responseOptions` is distinctively tailored
     to facilitate audio data collection:
 
-```json
-"ui": {
-    "inputType": "audioPassageRecord"
-},
-"responseOptions": {
-    "valueType": "schema:AudioObject",
-    "minValue": 0,
-    "maxValue": 60000
-}
-```
+    ```json
+    "ui": {
+        "inputType": "audioPassageRecord"
+    },
+    "responseOptions": {
+        "valueType": "schema:AudioObject",
+        "minValue": 0,
+        "maxValue": 60000
+    }
+    ```
 
 -   In the ui section, the `inputType` is set to `"audioPassageRecord"`.
     This specific input type is designed to enable participants to record an audio passage directly within the questionnaire interface.
@@ -130,14 +131,14 @@ We can integrate additional components tailored to the unique requirements of sp
 
 1.  Contextual and properties configuration for audio check
 
-```json
-"@context": [
-    "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
-    {
-        "voice": "https://github.com/ReproNim/reproschema-library/tree/master/activities/VoiceTask/items"
-    }
-]
-```
+    ```json
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+        {
+            "voice": "https://github.com/ReproNim/reproschema-library/tree/master/activities/VoiceTask/items"
+        }
+    ]
+    ```
 
 The `@context` section includes a specific context link under "voice",
 pointing to the repository with items relevant to voice and audio tasks:
