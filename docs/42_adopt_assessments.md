@@ -1,4 +1,4 @@
-# Adopting Assessments from the reproschema-library 
+# Adopting Assessments from the reproschema-library
 
 This part focuses on how to select and integrate assessments from the reproschema-library into your research protocol, an essential step in crafting a comprehensive study. The chosen assessments are to be placed in the `activities` folder within your repository. This folder serves as the central hub for various assessments or activities that collectively form your research protocol.
 
@@ -34,7 +34,7 @@ This step involves precise modifications, particularly in the `@context` and `ad
 
     Labeling this link as "demo" directs the schema to the location in the ReproSchema-library where items for demographics and background information are defined. We use the link with a specific commit ID to ensure the consistency of the assessment version. This contextual link allows the schema to access the detailed structures and definitions needed for each demographic item.
 
-2. **Customizing "addProperties" for Demographic Variables**: 
+2. **Customizing "addProperties" for Demographic Variables**:
 
     In the "addProperties" section, we define each variable that corresponds to a demographic question. For example:
 
@@ -141,7 +141,7 @@ Different from `demograpgics`, `psychological_questionnaire_schema` combines ass
             "isAbout": "demo:clinical_history_psychiatry"
         }
         ```
-    
+
     - The `order` array specifies the sequence in which these assessments will appear in the questionnaire, ensuring a logical flow for participants.
     - The `shuffle` setting is `false`, maintaining the defined order, and allow includes functionalities like auto-advance between assessments and data export.
 

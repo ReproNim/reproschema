@@ -126,7 +126,7 @@ displayed to the user and under which conditions,
 should be computed
 
 The ReproSchema also allows for internationalization and multiple languages support
-by making it very easy to keep everything the same 
+by making it very easy to keep everything the same
 except the language displayed by the user interface.
 
 Finally ReproSchema allows tracking of variations and version of different assessments
