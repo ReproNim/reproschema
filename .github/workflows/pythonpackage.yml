@@ -27,7 +27,7 @@ jobs:
     - name: Test with pyshacl
       run: |
         python scripts/jsonParser.py
-        reproschema -l DEBUG validate --shapefile validation/reproschema-shacl.ttl examples
+        reproschema validate examples
     - name: Make a release
       run: |
         python scripts/makeRelease.py ci-release
