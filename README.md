@@ -39,7 +39,7 @@ following libraries via pip
 
 To make a new release:
 
-```
+```bash
 python scripts/makeRelease.py <version>
 python scripts/editProperties.py <version>
 ```

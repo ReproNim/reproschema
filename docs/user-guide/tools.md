@@ -1,6 +1,6 @@
 # Toolkit
 
-In the world of research data management, flexibility and compatibility are key. Understanding this, we provide specialized tools designed to create, validata schemas, and convert data between ReproSchema format and REDCap CSV format. Whether you're transitioning from REDCap to ReproSchema or vice versa, these tools ensure a smooth and efficient conversion process, preserving the integrity and structure of your data.
+In the world of research data management, flexibility and compatibility are key. Understanding this, we provide specialized tools designed to create, validate schemas, and convert data between ReproSchema format and REDCap CSV format. Whether you're transitioning from REDCap to ReproSchema or vice versa, these tools ensure a smooth and efficient conversion process, preserving the integrity and structure of your data.
 
 ## Install reproschema-py
 
@@ -45,7 +45,7 @@ To convert ReproSchema protocol to REDCap CSV format, use the following command
 reproschema reproschema2redcap <input_dir_path> <output_csv_filename>
 ```
 
-- `<input_dir_path>`: The path to the root folder of a protocol. For example, to convert the reproschema-demo-protocol provided by ReproNim, you can use the following commands:
+-   `<input_dir_path>`: The path to the root folder of a protocol. For example, to convert the reproschema-demo-protocol provided by ReproNim, you can use the following commands:
 
   ```bash
   git clone https://github.com/ReproNim/reproschema-demo-protocol.git
@@ -53,8 +53,9 @@ reproschema reproschema2redcap <input_dir_path> <output_csv_filename>
   pwd
   ```
 
-  In this case,  the output from `pwd` (which shows your current directory path)should be your `<input_dir_path>`.
-- `<output_csv_filename>`: The name of the output CSV file where the converted data will be saved.
+  In this case, the output from `pwd` (which shows your current directory path)should be your `<input_dir_path>`.
+
+-   `<output_csv_filename>`: The name of the output CSV file where the converted data will be saved.
 
 ## `redcap2reproschema` Usage
 
@@ -66,15 +67,15 @@ Before the conversion, ensure you have the following:
 
 **YAML Configuration File**:
 
-- Download [templates/redcap2rs.yaml](templates/redcap2rs.yaml) and fill it out with your protocol details.
+-   Download [templates/redcap2rs.yaml](https://github.com/ReproNim/reproschema-py/blob/ab7c051dbd4ebfce92917ce154a8053343a011e7/templates/redcap2rs.yaml) and fill it out with your protocol details.
 
 ### YAML File Configuration
 
 In the `templates/redcap2rs.yaml` file, provide the following information:
 
-- **protocol_name**: This is a unique identifier for your protocol. Use underscores for spaces and avoid special characters.
-- **protocol_display_name**: The name that will appear in the application.
-- **protocol_description**: A brief description of your protocol.
+-   **protocol_name**: This is a unique identifier for your protocol. Use underscores for spaces and avoid special characters.
+-   **protocol_display_name**: The name that will appear in the application.
+-   **protocol_description**: A brief description of your protocol.
 
 Example:
 
