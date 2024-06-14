@@ -1,15 +1,14 @@
 # Introduction
 
 ??? example "Tl;DR - Advantages of the current schema representation"
-    - Rich contexts for a questionnaire with JSON-LD rather than a "flat" csv file.
-    - A single source of curated assessments from [ReproSchema Library](https://github.com/reproschema-library)
-    - Each `item` (i.e question), `activity` (i.e questionnaire), and `protocol`
-    (i.e set of questionnaires) provides unique and persistent identifiers.
-    - Versions of a given questionnaire can be tracked (e.g., PHQ-9, PHQ-8).
-    - Allows, supports, and tracks internationalization (e.g. ABCD requires Spanish
-    and English forms).
-    - Implementation agnostic – the schema can be used by several different software packages
-    - Uses a linked data graph that can be validated using [SHACL](https://www.w3.org/TR/shacl/).
+
+    -   Rich contexts for a questionnaire with JSON-LD rather than a "flat" csv file.
+    -   A single source of curated assessments from [ReproSchema Library](https://github.com/ReproNim/reproschema-library)
+    -   Each `item` (i.e question), `activity` (i.e questionnaire), and `protocol` (i.e set of questionnaires) provides unique and persistent identifiers.
+    -   Versions of a given questionnaire can be tracked (e.g., PHQ-9, PHQ-8).
+    -   Allows, supports, and tracks internationalization (e.g. ABCD requires Spanish and English forms).
+    -   Implementation agnostic – the schema can be used by several different software packages
+    -   Uses a linked data graph that can be validated using [SHACL](https://www.w3.org/TR/shacl/).
 
 ## The problem
 
@@ -35,7 +34,7 @@ these questionnaires. However, these resources are often used to make data
 consistent and reusable after, rather than during data collection. However,
 harmonizing data after acquisition is resource intensive and this approach can
 create a mismatch between collected and submitted data due to human error during
-the harmonization process. To faciliate tedious harmonization efforts, several
+the harmonization process. To facilitate tedious harmonization efforts, several
 projects, over the last two decades, have developed technologies to automatically
 or interactively align and harmonize data elements (e.g., BIRN mediator, OpenRefine).
 
@@ -62,16 +61,16 @@ In this project we provide a comprehensive set of tools to create and use the
 schemas, while tracking the source of the schema, and changes to it over time.
 The ReproSchema project covers:
 
-1. a schema that can be found [in the present repository](https://github.com/ReproNim/reproschema)
-that describes the content and relations of the different elements of a
-questionnaire or set of assessment tools,
-2. an [associated curated library of reusable common assessments and questionnaires](https://github.com/ReproNim/reproschema-library),
-3. a [python package](https://github.com/ReproNim/reproschema-py) to help create
-and validate the schemas of new assessments,
-4. a [user interface](https://github.com/ReproNim/reproschema-ui) to visualize
-questionnaire and collect data locally,
-5. a [backend server](https://github.com/sensein/voice-backend) to capture the
-data remotely.
+1.  a schema that can be found [in the present repository](https://github.com/ReproNim/reproschema)
+    that describes the content and relations of the different elements of a questionnaire or set of assessment tools,
+
+1.  an [associated curated library of reusable common assessments and questionnaires](https://github.com/ReproNim/reproschema-library),
+
+1.  a [python package](https://github.com/ReproNim/reproschema-py) to help create and validate the schemas of new assessments,
+
+1.  a [user interface](https://github.com/ReproNim/reproschema-ui) to visualize questionnaire and collect data locally,
+
+1.  a [backend server](https://github.com/sensein/voice-backend) to capture the data remotely.
 
 In brief, ReproSchema offers a way to standardize the underlying representation
 of assessment tools. It comes with an open and accessible library of questionnaires
@@ -85,12 +84,14 @@ harmonized by design.
 
 With this schema we can represent:
 
-- at the `item` level, the elements of an individual assessment, like the questions
-in a questionnaire
-- at the `activity` level, an individual assessment that contains a set of `items`,
-like for example a whole questionnaire with a several questions.
-- at the `protocols` level, a collection of `activities` performed by a participant,
- e.g a set of questionnaires used in a study.
+-   at the `item` level, the elements of an individual assessment,
+    like the questions in a questionnaire
+
+-   at the `activity` level, an individual assessment that contains a set of `items`,
+    like for example a whole questionnaire with a several questions
+
+-   at the `protocols` level, a collection of `activities` performed by a participant,
+    e.g a set of questionnaires used in a study
 
 All those elements are specified text files in a `JSON-LD` format (JavaScript
 Object Notation for Linked Data) and each `item`, `activity`, and `protocol` provides
@@ -118,12 +119,14 @@ end by a researcher, a lab, or an institute to display the assessment to their
 participants or patients (for example whether using an Web-app written in javascript
 or a mobile app written in React-native), the schema can already specify:
 
-- the `input type` to choose among several user-interface rendering options e.g.,
- a Likert scale, a dropdown menu, a multiple choice...
-- the `visibility` to decide whether a given `item` or `activity` should be
-displayed to the user and under which conditions,
-- the `compute logic` of how the total score to the responses on a questionnaire
-should be computed
+-   the `input type` to choose among several user-interface rendering options e.g.,
+    a Likert scale, a dropdown menu, a multiple choice...
+
+-   the `visibility` to decide whether a given `item` or `activity` should be
+    displayed to the user and under which conditions,
+
+-   the `compute logic` of how the total score to the responses on a questionnaire
+    should be computed
 
 The ReproSchema also allows for internationalization and multiple languages support
 by making it very easy to keep everything the same
