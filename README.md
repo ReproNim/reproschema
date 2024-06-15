@@ -3,16 +3,21 @@
 
 <img src="docs/img/reproschema_logo.png" width="100px" />
 
-# Schema Standardization
+# ReproSchema: Enhancing Research Reproducibility through Standardized Survey Data Collection 
 
-To see the documentation concerning the ReproNim schema specification [click here](https://www.repronim.org/reproschema/).
+The ReproSchema project integrates five key components designed to standardize research protocols and enhance consistency across various stages of data collection.
+- Foundational Schema ([reproschema](https://github.com/ReproNim/reproschema)): This core schema delineates the content and relationships of protocols, assessments, and items to ensure consistency and facilitate data harmonization across studies.
+- Assessment Library ([reproschema-library](https://github.com/ReproNim/reproschema-library)): This library provides a comprehensive collection of standardized questionnaires, supporting the application of uniform assessments across time and different studies.
+- Python-based CLI Tool ([reproschema-py](https://github.com/ReproNim/reproschema-py)): This command-line interface tool facilitates schema development and validation, aiding researchers in efficiently creating and refining data collection frameworks.
+- User Interface ([reproschema-ui](https://github.com/ReproNim/reproschema-ui)): This intuitive user interface simplifies the visualization and interaction with data, enhancing the manageability of the data collection process for researchers.
+- Protocol Template ([reproschema-protocol-cookiecutter](https://github.com/ReproNim/reproschema-protocol-cookiecutter)): This customizable template supports the design and implementation of research protocols tailored to specific study requirements.
 
 This repository contains:
 
--   the [different terms of the ReproSchema](./terms)
--   the [corresponding context files](./contexts)
--   a example of [a protocol based on the reproschema](./examples)
--   the [documentation](./docs)
+- the [different terms of the ReproSchema](./terms)
+- the [corresponding context files](./contexts)
+- a example of [a protocol based on the reproschema](./examples)
+- the [documentation](./docs)
 
 
 ## Licenses
@@ -46,4 +51,5 @@ python scripts/editProperties.py <version>
 In addition, this repo uses pre-commit to check styling.
 
 Install: `pip install pre-commit`
+
 Use: run `pre-commit install` in the root directory of the repo.
