@@ -75,12 +75,16 @@ markdown_extensions:
   - pymdownx.snippets:
       auto_append:
         - includes/abbreviations.md
+  - tables        
   - toc:
       anchorlink: true
 
 watch:
   - includes
+  - linkml-schema
 
 plugins:
   - search
   - tags
+  - macros:
+      module_name: macros/main

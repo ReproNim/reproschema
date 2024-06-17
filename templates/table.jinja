@@ -1,0 +1,13 @@
+
+
+### {{ this_class.title }}
+
+{{ this_class.description }}
+
+URI: [{{ this_class.uri }}]({{ this_class.uri }})
+
+| Property | Title | Description | URI |
+| :------- | :---- | :---------- | :-- |
+{% for slot in this_class.slots %}
+| {{ slot.name }} | {{ slot.title }} | {{ slot.description }} | [{{ slot.uri }}]({{ slot.uri }}) |
+{% endfor %}
