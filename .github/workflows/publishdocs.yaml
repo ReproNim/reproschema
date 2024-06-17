@@ -18,20 +18,12 @@ jobs:
           python-version: 3.9
 
       - name: Install the required python packages
-        run: python -m pip install linkml mkdocs-material mkdocs-mermaid2-plugin
-
-      - name: Other installations
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y build-essential git wget curl
+        run: python -m pip install linkml
 
       - name: Generating docs
         run: |
           gen-doc -d docs/schema/doc-linkml-autogen linkml-schema/reproschema.yaml
           gen-erdiagram linkml-schema/reproschema.yaml > docs/schema/erdiagram-autogen.md
-
-      - name: Build MkDocs site
-        run: mkdocs build
 
       - name: Deploy docs
         uses: mhausenblas/mkdocs-deploy-gh-pages@master

@@ -42,6 +42,7 @@ nav:
   - Schema:
       - Schema overview: "schema/schema.md"
       - Schema documentation: "schema/doc-linkml-autogen/index.md"
+      - Schema diagram: schema/erdiagram-autogen.md
   - User Guide:
       - Create a research protocol: "user-guide/create-new-protocol.md"
       - Adopt assessments from the library: "user-guide/adopt-assessments.md"
@@ -79,6 +80,11 @@ markdown_extensions:
         - includes/abbreviations.md
   - toc:
       anchorlink: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
 watch:
   - includes
@@ -86,4 +92,3 @@ watch:
 plugins:
   - search
   - tags
-  - mermaid2
