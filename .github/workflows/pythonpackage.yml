@@ -21,17 +21,19 @@ jobs:
       with:
         python-version: 3.12
     - name: Install dependencies
-      # TODO update to install from the latest version on reproschema
-      # once https://github.com/ReproNim/reproschema-py/pull/40 has been merged and a new release has been made.
+      # TODO This installs reproschema from source and not from pypi
+      # This may not be the optimal way of doing it.
       run: |
         python -m pip install --upgrade pip setuptools
-        pip install git+https://github.com/Remi-Gau/reproschema-py.git@skip
+        pip install git+https://github.com/ReproNim/reproschema-py.git
     - name: Test with pyshacl
       run: |
         python scripts/jsonParser.py
         reproschema validate examples
-    - name: Make a release
-      run: |
-        python scripts/makeRelease.py ci-release
-        pip install pytablewriter
-        python scripts/editProperties.py ci-release
+    # TODO adapt make release
+    # TODO use mkdocs macro to update doc content
+    # - name: Make a release
+    #   run: |
+    #     python scripts/makeRelease.py ci-release
+    #     pip install pytablewriter
+    #     python scripts/editProperties.py ci-release

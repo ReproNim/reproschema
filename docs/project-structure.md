@@ -31,7 +31,7 @@ The ReproSchema is like a blueprint for research projects, ensuring everyone col
     -   **Activity Level:** At this stage, an entire survey or tool, made up of many items, is grouped together as an "Activity." It gives a complete overview of what the survey involves.
     -   **Protocols Level:** The highest level, a "Protocol," bundles together all the activities a participant will do in a study, providing a comprehensive plan.
 
--   **[Validation](https://github.com/ReproNim/reproschema/tree/main/validation):** The schema uses special standards (like SHACL files) to make sure the data and forms are up to standard and consistent.
+-   **Validation:** The schema uses special standards (like SHACL files) to make sure the data and forms are up to standard and consistent.
 
 -   **Context Files:** These files ([`contexts`](https://github.com/ReproNim/reproschema/tree/master/contexts)and [`terms`](https://github.com/ReproNim/reproschema/tree/master/terms)) specify user-interface details and enhance schema flexibility. They define elements like input types, visibility conditions, and response options, supporting a tailored user experience. Additionally, they enable internationalization and multiple language support for broad applicability.
 
