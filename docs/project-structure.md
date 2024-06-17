@@ -37,7 +37,7 @@ The ReproSchema is like a blueprint for research projects, ensuring everyone col
 
 There is also an [`example`](https://github.com/ReproNim/reproschema/tree/master/examples)
 schema that can help give you a quick overview of what the protocol and activity
-for a study might look like. For more details see the [schema section](./schema.md).
+for a study might look like. For more details see the [schema section](./schema/schema.md).
 
 ## [reproschema-library](https://github.com/ReproNim/reproschema-library)
 
