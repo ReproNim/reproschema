@@ -28,7 +28,7 @@ jobs:
 
       - name: Generating docs
         run: |
-          gen-doc -d docs linkml-schema/library_generation.yaml
+          gen-doc -d docs/model linkml-schema/reproschema.yaml
 
       - name: Deploy docs
         uses: mhausenblas/mkdocs-deploy-gh-pages@master
