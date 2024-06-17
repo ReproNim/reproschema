@@ -33,7 +33,6 @@ jobs:
 
   release:
     needs: [validate]
-    # if: github.repository == 'ReproNim/reproschema'
     if: github.event_name == 'release'
     runs-on: ubuntu-latest
     steps:
