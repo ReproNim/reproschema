@@ -30,8 +30,10 @@ jobs:
       run: |
         python scripts/jsonParser.py
         reproschema validate examples
-    - name: Make a release
-      run: |
-        python scripts/makeRelease.py ci-release
-        pip install pytablewriter
-        python scripts/editProperties.py ci-release
+    # TODO adapt make release
+    # TODO use mkdocs macro to update doc content
+    # - name: Make a release
+    #   run: |
+    #     python scripts/makeRelease.py ci-release
+    #     pip install pytablewriter
+    #     python scripts/editProperties.py ci-release
