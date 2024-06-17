@@ -1,0 +1,5 @@
+| Activity | Description | URI |
+| :------  | :---------- | :-- |
+{% for activity in activities %}
+| {{ activity.name }} | {{ activity.description }} | [link]({{ activity.uri }}) |
+{% endfor %}

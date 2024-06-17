@@ -51,8 +51,7 @@ questionnaire for your next participant or patient. Also you can mix and match
 items from this library, knowing that the information is tracked in your protocol.
 
 All assessments are listed in [the `activity` folder](https://github.com/ReproNim/reproschema-library/tree/master/activities)
-and are served [here](https://schema.repronim.org/rl/) if you want to visualize
-them.
+and are served [here](https://schema.repronim.org/rl/) if you want to visualize them.
 
 -   **Standard Alignment:** Each element in the library aligns with the ReproSchema framework, ensuring uniformity in terms and structure and upholding validation protocols for consistency across the ecosystem.
 -   **Research Protocol Integration:** Researchers can utilize these assessments in various combinations to align with specific protocol needs, customizing their application per study objectives. This process can be integrated using the reproschema-protocol-cookiecutter for constructing user interfaces.
