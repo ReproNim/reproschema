@@ -15,10 +15,6 @@ jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
-    - name: Dump GitHub context1
-      env:
-        GITHUB_CONTEXT: ${{ toJson(github) }}
-      run: echo "$GITHUB_CONTEXT"
     - uses: actions/checkout@v4
     - name: Set up Python
       uses: actions/setup-python@v5
@@ -37,7 +33,8 @@ jobs:
 
   release:
     needs: [validate]
-    if: github.repository == 'ReproNim/reproschema'
+    # if: github.repository == 'ReproNim/reproschema'
+    if: ${{ github.event_name }} == 'release'
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
