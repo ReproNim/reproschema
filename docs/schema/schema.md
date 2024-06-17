@@ -19,7 +19,7 @@ A simplistic way to describe the Reprochema is to say it is organized in a hiera
     This schema is defined by the [Field schema](https://raw.githubusercontent.com/ReproNim/reproschema/master/terms/Field).
 
 <img
-src="../img/reproschema.png"
+src="../../img/reproschema.png"
 alt="reproschema"
 style="width: 800px; height: auto; display: block; margin-left: auto;  margin-right: auto;"/>
 
@@ -84,10 +84,11 @@ different elements of the schema.
 
 The model was written using a linked data modeling language [LinkML](https://linkml.io/linkml/).
 
-There are multiple ways of accessing the content
-- [The LinkML YAML file that defines the model](https://github.com/ReproNim/reproschema/blob/main/linkml-schema/reproschema.yaml)
-- [Automatically generated documentation](./doc-linkml-autogen/index.md) using LinkML tools
-- [Automatically generated Entity-Relationship (ER) Diagrams](./erdiagram-autogen.md)) to visualize the model.
+There are multiple ways of accessing the content:
+
+-  [The LinkML YAML file that defines the model](https://github.com/ReproNim/reproschema/blob/main/linkml-schema/reproschema.yaml)
+-  [Automatically generated documentation](./doc-linkml-autogen/index.md) using LinkML tools
+-  [Automatically generated Entity-Relationship (ER) Diagrams](./erdiagram-autogen.md)) to visualize the model.
 
 The context was created semi-automatically: the initial version was generated using LinkML tools,
 but manual curation was necessary to support all Reeproschema features.
