@@ -45,4 +45,5 @@ jobs:
     - name: Make a release
       run: |
         echo "Making a release"
+        echo ${{ github.event_name }}
     #     python scripts/makeRelease.py ci-release
