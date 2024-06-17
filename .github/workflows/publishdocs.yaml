@@ -29,6 +29,7 @@ jobs:
       - name: Generating docs
         run: |
           gen-doc -d docs/model linkml-schema/reproschema.yaml
+          gen-erdiagram linkml-schema/reproschema.yaml > docs/model/erdiagram.md
 
       - name: Deploy docs
         uses: mhausenblas/mkdocs-deploy-gh-pages@master
