@@ -8,8 +8,13 @@ on:
       - main
   pull_request:
     branches: ['*']
-  release:
-    types: [published]
+  # Allow to trigger the generation of release files automatically
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'version number'
+        required: true
+        type: string
 
 jobs:
   validate:
@@ -33,7 +38,7 @@ jobs:
 
   release:
     needs: [validate]
-    if: github.event_name == 'release'
+    if: github.event == 'workflow_dispatch'
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
@@ -41,8 +46,20 @@ jobs:
       uses: actions/setup-python@v5
       with:
         python-version: 3.12
+
     - name: Make a release
       run: |
-        echo "Making a release"
-        echo ${{ github.event_name }}
-    #     python scripts/makeRelease.py ci-release
+        echo "Making a release ${{ inputs.version }}"
+        mkdir releases/${{ inputs.version }}
+        cp contexts/reproschema releases/${{ inputs.version }}/base
+    #     python scripts/makeRelease.py ${{ inputs.version }}
+
+    -   name: Open pull requests to add files
+        uses: peter-evans/create-pull-request@v6
+        with:
+            commit-message: "[REL] adding files to for release ${{ inputs.version }}"
+            base: main
+            token: ${{ secrets.GITHUB_TOKEN }}
+            delete-branch: true
+            title: "[REL] adding files to for release ${{ inputs.version }}"
+            body: done via this [GitHub Action](https://github.com/${{ github.repository_owner }}/reproschema/blob/main/.github/workflows/validate_and_release.yml)
