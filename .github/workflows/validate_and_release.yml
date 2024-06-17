@@ -34,7 +34,7 @@ jobs:
   release:
     needs: [validate]
     # if: github.repository == 'ReproNim/reproschema'
-    if: ${{ github.event_name }} == 'release'
+    if: github.event_name == 'release'
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
