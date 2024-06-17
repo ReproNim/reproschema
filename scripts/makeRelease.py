@@ -10,7 +10,7 @@ from reproschema.jsonldutils import to_newformat
 def create_release(version):
     # read all the terms
     terms = []
-    for root, dirs, files in os.walk("terms"):
+    for root, _, files in os.walk("terms"):
         for name in files:
             terms.extend(json.loads(to_newformat(os.path.join(root, name), "jsonld")))
 
