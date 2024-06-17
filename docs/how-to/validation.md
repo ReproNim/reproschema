@@ -23,9 +23,9 @@ reproschema --log-level DEBUG validate PATH_TO_VALIDATE
 ### Automating validation
 
 If you are hosting your schema on a github repository,
-you can automate the validation with a with GitHub CI workflow.
+you can automate its validation with a with GitHub CI workflow.
 
-For example if you repository is structured like this:
+For example if your repository is structured like this:
 
 ```text
 ├── protocols
