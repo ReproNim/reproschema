@@ -12,6 +12,7 @@ TEMPLATES_DIR = ROOT / "templates"
 
 SCHEMA_DIR = ROOT / "linkml-schema"
 
+
 def return_jinja_env() -> Environment:
     return Environment(
         loader=FileSystemLoader(TEMPLATES_DIR),
