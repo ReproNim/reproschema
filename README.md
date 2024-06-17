@@ -3,7 +3,7 @@
 
 <img src="docs/img/reproschema_logo.png" width="100px" />
 
-# ReproSchema: Enhancing Research Reproducibility through Standardized Survey Data Collection 
+# ReproSchema: Enhancing Research Reproducibility through Standardized Survey Data Collection
 
 The ReproSchema project integrates five key components designed to standardize research protocols and enhance consistency across various stages of data collection.
 - Foundational Schema ([reproschema](https://github.com/ReproNim/reproschema)): This core schema delineates the content and relationships of protocols, assessments, and items to ensure consistency and facilitate data harmonization across studies.
