@@ -1,19 +1,19 @@
-# This workflow will install Python dependencies, run tests and lint with a variety of Python versions
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
-
-name: Python package
+# - validate the protocol and activities in the repo with reproschema.py
+# - triggers a release when a github release is published
+name: validate and release
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
   pull_request:
-    branches: '*'
+    branches: ['*']
+  release:
+    types: [published]
 
 jobs:
-  build:
-
+  validate:
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v4
     - name: Set up Python
@@ -26,14 +26,22 @@ jobs:
       run: |
         python -m pip install --upgrade pip setuptools
         pip install git+https://github.com/ReproNim/reproschema-py.git
-    - name: Test with pyshacl
+    - name: Validate content
       run: |
         python scripts/jsonParser.py
         reproschema validate examples
-    # TODO adapt make release
-    # TODO use mkdocs macro to update doc content
-    # - name: Make a release
-    #   run: |
+
+  release:
+    needs: [validate]
+    if: github.repository == 'ReproNim/reproschema'
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: 3.12
+    - name: Make a release
+      run: |
+        echo "Making a release"
     #     python scripts/makeRelease.py ci-release
-    #     pip install pytablewriter
-    #     python scripts/editProperties.py ci-release
