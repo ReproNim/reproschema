@@ -35,15 +35,18 @@ The content of this repository is distributed under the [Apache 2.0 license](./L
 https://github.com/ReproNim/reproschema/graphs/contributors
 
 ### Developer notes
-
-To run the Python scripts in the scripts directory,
-you will need to install the following libraries via pip
+To run the Python scripts in the scripts directory, you will need to install the
+following libraries via pip
 
 - reproschema (makeRelease.py)
+- pytablewriter (editProperties.py)
 
-A new release can be triggered by making a [Github release](https://github.com/ReproNim/reproschema/releases).
+To make a new release:
 
-## Style guide
+```bash
+python scripts/makeRelease.py <version>
+python scripts/editProperties.py <version>
+```
 
 In addition, this repo uses pre-commit to check styling.
 
