@@ -41,7 +41,7 @@ you will need to install the following libraries via pip
 
 - reproschema (makeRelease.py)
 
-A new release can be triggered by making a Github release:
+A new release can be triggered by making a [Github release](https://github.com/ReproNim/reproschema/releases).
 
 ## Style guide
 
