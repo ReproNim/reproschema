@@ -29,6 +29,4 @@ def define_env(env):
 
     Macro aliases must start with "MACROS___"
     """
-    env.macro(
-        macros.schema_table, "MACROS___schema_table"
-    )
+    env.macro(macros.schema_table, "MACROS___schema_table")

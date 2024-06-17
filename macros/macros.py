@@ -15,6 +15,7 @@ SCHEMA_DIR = ROOT / "linkml-schema"
 
 from rich import print
 
+
 def return_jinja_env() -> Environment:
     return Environment(
         loader=FileSystemLoader(TEMPLATES_DIR),
@@ -45,7 +46,7 @@ def schema_table() -> str:
     ]
 
     input_file = SCHEMA_DIR / "reproschema.yaml"
-    
+
     reproschema = yaml.load(input_file)
 
     env = return_jinja_env()
@@ -55,7 +56,9 @@ def schema_table() -> str:
     for this_class in target_classes:
 
         class_dict = reproschema["classes"][this_class]
-        class_dict["uri"] = class_dict["class_uri"].replace("reproschema:", reproschema["id"])
+        class_dict["uri"] = class_dict["class_uri"].replace(
+            "reproschema:", reproschema["id"]
+        )
 
         slots = []
         for this_slot in class_dict["slots"]:
@@ -63,7 +66,7 @@ def schema_table() -> str:
             slot_dict = reproschema["slots"][this_slot]
 
             slot_dict["name"] = this_slot
-            
+
             if "title" not in slot_dict:
                 slot_dict["title"] = "**TODO**"
             if "description" not in slot_dict:
@@ -74,7 +77,7 @@ def schema_table() -> str:
             if prefix in reproschema["prefixes"]:
                 value = reproschema["prefixes"][prefix]
 
-            slot_dict ["uri"] = slot_dict["slot_uri"].replace(f"{prefix}:", value)
+            slot_dict["uri"] = slot_dict["slot_uri"].replace(f"{prefix}:", value)
 
             slots.append(slot_dict)
 
