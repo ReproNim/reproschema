@@ -53,8 +53,8 @@ jobs:
         pip install git+https://github.com/ReproNim/reproschema-py.git
     - name: Generate pydantic  using linml and fixing it with reproschema specific script
       run: |
-        gen-pydantic --pydantic-version 2 linkml-schema/reproschema.yaml > reproschema_model_autogen.py
-        python scripts/fix_pydantic.py reproschema_model_autogen.py reproschema_model.py
+        gen-pydantic --pydantic-version 2 linkml-schema/reproschema.yaml > reproschema_model.py
+        python scripts/fix_pydantic.py reproschema_model.py
         pre-commit run --files reproschema_model.py || true
     - name: Generate jsonld format using linkml
       run: |
@@ -68,10 +68,10 @@ jobs:
         echo "Making a release ${{ inputs.version }}"
         mkdir releases/${{ inputs.version }}
         cp contexts/reproschema releases/${{ inputs.version }}/reproschema
-        cp reproschema_model.py releases/${{ inputs.version }}/reproschema_model.py
-        cp reproschema.jsonld releases/${{ inputs.version }}/reproschema.jsonld
-        cp reproschema.nt releases/${{ inputs.version }}/reproschema.nt
-        cp reproschema.ttl releases/${{ inputs.version }}/reproschema.ttl
+        mv reproschema_model.py releases/${{ inputs.version }}/reproschema_model.py
+        mv reproschema.jsonld releases/${{ inputs.version }}/reproschema.jsonld
+        mv reproschema.nt releases/${{ inputs.version }}/reproschema.nt
+        mv reproschema.ttl releases/${{ inputs.version }}/reproschema.ttl
     #     python scripts/makeRelease.py ${{ inputs.version }}
 
     -   name: Open pull requests to add files
