@@ -1,9 +1,11 @@
+import json
 import os
 import sys
-import json
-from pyld import jsonld
-import rdflib as rl
 from shutil import copyfile
+
+import rdflib as rl
+from pyld import jsonld
+
 from reproschema.jsonldutils import to_newformat
 
 
@@ -12,7 +14,9 @@ def create_release(version):
     terms = []
     for root, _, files in os.walk("terms"):
         for name in files:
-            terms.extend(json.loads(to_newformat(os.path.join(root, name), "jsonld")))
+            terms.extend(
+                json.loads(to_newformat(os.path.join(root, name), "jsonld"))
+            )
 
     kwargs = {"algorithm": "URDNA2015", "format": "application/n-quads"}
     data = jsonld.normalize(terms, kwargs)

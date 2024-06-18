@@ -1,0 +1,13 @@
+[tool.black]
+line-length = 79
+
+[tool.codespell]
+skip = "env,venv,*.svg,pyproject.toml"
+ignore-words-list = "HSI"
+builtin = "clear,rare"
+
+[tool.isort]
+combine_as_imports = true
+line_length = 79
+profile = "black"
+skip_gitignore = true
