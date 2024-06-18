@@ -1,4 +1,5 @@
 import sys
+
 import rdflib as rl
 from pytablewriter import MarkdownTableWriter
 
@@ -81,7 +82,11 @@ WHERE {
         writer.value_matrix = []
         del props["klass_desc"]
         for val, comment in sorted(props.items()):
-            property = [val[2], comment, f"[{val[1]}{val[2]}]({val[1]}{val[2]})"]
+            property = [
+                val[2],
+                comment,
+                f"[{val[1]}{val[2]}]({val[1]}{val[2]})",
+            ]
             writer.value_matrix.append(property)
         writer.margin = 1  # add a whitespace for both sides of each cell
         doc.append("\n")
