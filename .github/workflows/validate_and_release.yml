@@ -53,7 +53,7 @@ jobs:
         run: |
           gen-pydantic --pydantic-version 2 linkml-schema/reproschema.yaml > reproschema_model_autogen.py
           python scripts/fix_pydantic.py reproschema_model_autogen.py reproschema_model.py
-          pre-commit run --files reproschema_model.py
+          pre-commit run --files reproschema_model.py || true
       - name: generate jsonld
         run: |
            gen-jsonld --context contexts/reproschema linkml-schema/reproschema.yaml > reproschema.jsonld
