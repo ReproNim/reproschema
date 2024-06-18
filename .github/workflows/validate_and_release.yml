@@ -49,6 +49,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip setuptools
           python install linkml astor pre-commit
+          pip install git+https://github.com/ReproNim/reproschema-py.git
       - name: generate pydantic and fixing it
         run: |
           gen-pydantic --pydantic-version 2 linkml-schema/reproschema.yaml > reproschema_model_autogen.py
@@ -57,6 +58,10 @@ jobs:
       - name: generate jsonld
         run: |
            gen-jsonld --context contexts/reproschema linkml-schema/reproschema.yaml > reproschema.jsonld
+      - name: generate n-triples and turtle formats using reproschema
+        run: |
+          reproschema convert --format n-triples reproschema.jsonld > reproschema.nt
+          reproschema convert --format turtle reproschema.jsonld > reproschema.ttl
 
 
   release:
@@ -76,6 +81,9 @@ jobs:
         mkdir releases/${{ inputs.version }}
         cp contexts/reproschema releases/${{ inputs.version }}/reproschema
         cp reproschema_model.py releases/${{ inputs.version }}/reproschema_model.py
+        cp reproschema.jsonld releases/${{ inputs.version }}/reproschema.jsonld
+        cp reproschema.nt releases/${{ inputs.version }}/reproschema.nt
+        cp reproschema.ttl releases/${{ inputs.version }}/reproschema.ttl
     #     python scripts/makeRelease.py ${{ inputs.version }}
 
     -   name: Open pull requests to add files
