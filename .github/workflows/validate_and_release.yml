@@ -6,6 +6,7 @@ on:
   push:
     branches:
       - main
+      - ga_rel_generate
   pull_request:
     branches: ['*']
   # Allow to trigger the generation of release files automatically
@@ -36,6 +37,28 @@ jobs:
         python scripts/jsonParser.py
         reproschema validate examples
 
+  generate other formats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.12
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip setuptools
+          python install linkml astor pre-commit
+      - name: generate pydantic and fixing it
+        run: |
+          gen-pydantic --pydantic-version 2 linkml-schema/reproschema.yaml > reproschema_model_autogen.py
+          python scripts/fix_pydantic.py reproschema_model_autogen.py reproschema_model.py
+          pre-commit run --files reproschema_model.py
+      - name: generate jsonld
+        run: |
+           gen-jsonld --context contexts/reproschema linkml-schema/reproschema.yaml > reproschema.jsonld
+
+
   release:
     needs: [validate]
     if: github.event_name == 'workflow_dispatch'
@@ -51,7 +74,8 @@ jobs:
       run: |
         echo "Making a release ${{ inputs.version }}"
         mkdir releases/${{ inputs.version }}
-        cp contexts/reproschema releases/${{ inputs.version }}/base
+        cp contexts/reproschema releases/${{ inputs.version }}/reproschema
+        cp reproschema_model.py releases/${{ inputs.version }}/reproschema_model.py
     #     python scripts/makeRelease.py ${{ inputs.version }}
 
     -   name: Open pull requests to add files
