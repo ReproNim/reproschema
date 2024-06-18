@@ -1,0 +1,1563 @@
+@prefix ns1: <https://w3id.org/linkml/> .
+@prefix rs: <http://schema.repronim.org/> .
+@prefix sdo: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+rs: a ns1:SchemaDefinition ;
+    sdo:name "reproschema"@en ;
+    sdo:version "1.0.0" ;
+    ns1:classes [ a ns1:ClassDefinition ;
+            sdo:description "An element (object or by URL)to describe the properties of response of the Item."@en ;
+            sdo:name "ResponseOption"@en ;
+            ns1:class_uri "http://schema.repronim.org/ResponseOption"@en ;
+            ns1:definition_uri "http://schema.repronim.org//ResponseOption"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:is_a "Thing"@en ;
+            ns1:mappings "reproschema:ResponseOption"@en ;
+            ns1:slot_usage [ ] ;
+            ns1:slots "category"@en,
+                "choices"@en,
+                "datumType"@en,
+                "id"@en,
+                "maxValue"@en,
+                "minValue"@en,
+                "multipleChoice"@en,
+                "name"@en,
+                "unitOptions"@en,
+                "valueType"@en ;
+            ns1:title "Response option"@en ],
+        [ a ns1:ClassDefinition ;
+            sdo:description "RDF langString tuple"@en ;
+            sdo:name "LangString"@en ;
+            ns1:class_uri "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"@en ;
+            ns1:definition_uri "http://schema.repronim.org//LangString"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:mappings "rdf:langString"@en ;
+            ns1:slot_usage [ ] ;
+            ns1:slots "langstring_prefix"@en,
+                "langstring_value"@en ],
+        [ a ns1:ClassDefinition ;
+            sdo:description "A group of properties related to UI."@en ;
+            sdo:name "UI"@en ;
+            ns1:class_uri "http://schema.repronim.org/UI"@en ;
+            ns1:definition_uri "http://schema.repronim.org//UI"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:mappings "reproschema:UI"@en ;
+            ns1:slot_usage [ ] ;
+            ns1:slots "addProperties"@en,
+                "allow"@en,
+                "inputType"@en,
+                "order"@en,
+                "overrideProperties"@en,
+                "readonlyValue"@en,
+                "shuffle"@en ;
+            ns1:title "UI properties"@en ],
+        [ a ns1:ClassDefinition ;
+            sdo:description "An object to describe the various properties added to assessments and Items."@en ;
+            sdo:name "AdditionalProperty"@en ;
+            ns1:class_uri "http://schema.repronim.org/AdditionalProperty"@en ;
+            ns1:definition_uri "http://schema.repronim.org//AdditionalProperty"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:is_a "Thing"@en ;
+            ns1:mappings "reproschema:AdditionalProperty"@en ;
+            ns1:slot_usage [ ] ;
+            ns1:slots "allow"@en,
+                "category"@en,
+                "id"@en,
+                "isAbout"@en,
+                "isVis"@en,
+                "limit"@en,
+                "maxRetakes"@en,
+                "name"@en,
+                "prefLabel"@en,
+                "randomMaxDelay"@en,
+                "schedule"@en,
+                "ui"@en,
+                "valueRequired"@en,
+                "variableName"@en ;
+            ns1:title "Additional properties"@en ],
+        [ a ns1:ClassDefinition ;
+            sdo:name "VideoObject"@en ;
+            ns1:class_uri "http://schema.org/VideoObject"@en ;
+            ns1:definition_uri "http://schema.repronim.org//VideoObject"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:is_a "MediaObject"@en ;
+            ns1:mappings "schema:VideoObject"@en ;
+            ns1:slot_usage [ ] ;
+            ns1:slots "MediaObject_contentUrl"@en,
+                "category"@en,
+                "id"@en,
+                "inLanguage"@en,
+                "name"@en ;
+            ns1:title "Video Object"@en ],
+        [ a ns1:ClassDefinition ;
+            sdo:description "Describes the response of an item."@en ;
+            sdo:name "Response"@en ;
+            ns1:class_uri "http://schema.repronim.org/Response"@en ;
+            ns1:definition_uri "http://schema.repronim.org//Response"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:is_a "Thing"@en ;
+            ns1:mappings "reproschema:Response"@en ;
+            ns1:slot_usage [ ] ;
+            ns1:slots "category"@en,
+                "id"@en,
+                "isAbout"@en,
+                "name"@en,
+                "value"@en,
+                "wasAttributedTo"@en ;
+            ns1:title "Response"@en ],
+        [ a ns1:ClassDefinition ;
+            sdo:description "An object to define messages in an activity or protocol."@en ;
+            sdo:name "MessageSpecification"@en ;
+            ns1:class_uri "http://schema.repronim.org/MessageSpecification"@en ;
+            ns1:definition_uri "http://schema.repronim.org//MessageSpecification"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:is_a "Thing"@en ;
+            ns1:mappings "reproschema:MessageSpecification"@en ;
+            ns1:slot_usage [ ] ;
+            ns1:slots "category"@en,
+                "id"@en,
+                "jsExpression"@en,
+                "message"@en,
+                "name"@en ;
+            ns1:title "Message Specification"@en ],
+        [ a ns1:ClassDefinition ;
+            sdo:name "ImageObject"@en ;
+            ns1:class_uri "http://schema.org/ImageObject"@en ;
+            ns1:definition_uri "http://schema.repronim.org//ImageObject"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:is_a "MediaObject"@en ;
+            ns1:mappings "schema:ImageObject"@en ;
+            ns1:slot_usage [ ] ;
+            ns1:slots "MediaObject_contentUrl"@en,
+                "category"@en,
+                "id"@en,
+                "inLanguage"@en,
+                "name"@en ],
+        [ a ns1:ClassDefinition ;
+            sdo:description "An object to define the landing page of a protocol."@en ;
+            sdo:name "LandingPage"@en ;
+            ns1:class_uri "http://schema.repronim.org/LandingPage"@en ;
+            ns1:definition_uri "http://schema.repronim.org//LandingPage"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:is_a "Thing"@en ;
+            ns1:mappings "reproschema:LandingPage"@en ;
+            ns1:slot_usage [ ] ;
+            ns1:slots "category"@en,
+                "id"@en,
+                "inLanguage"@en,
+                "name"@en ;
+            ns1:title "Landing Page"@en ],
+        [ a ns1:ClassDefinition ;
+            sdo:description "An object to define computations in an activity or protocol."@en ;
+            sdo:name "ComputeSpecification"@en ;
+            ns1:class_uri "http://schema.repronim.org/ComputeSpecification"@en ;
+            ns1:definition_uri "http://schema.repronim.org//ComputeSpecification"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:is_a "Thing"@en ;
+            ns1:mappings "reproschema:ComputeSpecification"@en ;
+            ns1:slot_usage [ ] ;
+            ns1:slots "category"@en,
+                "id"@en,
+                "jsExpression"@en,
+                "name"@en,
+                "variableName"@en ;
+            ns1:title "Compute Specification"@en ],
+        [ a ns1:ClassDefinition ;
+            sdo:description "An object to represent a human displayable name alongside the more formal value for units."@en ;
+            sdo:name "UnitOption"@en ;
+            ns1:class_uri "http://schema.repronim.org/UnitOption"@en ;
+            ns1:definition_uri "http://schema.repronim.org//UnitOption"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:is_a "Thing"@en ;
+            ns1:mappings "reproschema:UnitOption"@en ;
+            ns1:slot_usage [ ] ;
+            ns1:slots "UnitOption_value"@en,
+                "category"@en,
+                "id"@en,
+                "name"@en,
+                "prefLabel"@en ;
+            ns1:title "Unit options"@en ],
+        [ a ns1:ClassDefinition ;
+            sdo:name "Agent"@en ;
+            ns1:class_uri "http://www.w3.org/ns/prov#Agent"@en ;
+            ns1:definition_uri "http://schema.repronim.org//Agent"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:mappings "prov:Agent"@en ;
+            ns1:slot_usage [ ] ],
+        [ a ns1:ClassDefinition ;
+            sdo:description "A representation of a study which comprises one or more assessments."@en ;
+            sdo:name "Protocol"@en ;
+            ns1:class_uri "http://schema.repronim.org/Protocol"@en ;
+            ns1:definition_uri "http://schema.repronim.org//Protocol"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:is_a "Thing"@en ;
+            ns1:mappings "reproschema:Protocol"@en ;
+            ns1:slot_usage [ ] ;
+            ns1:slots "about"@en,
+                "altLabel"@en,
+                "associatedMedia"@en,
+                "category"@en,
+                "compute"@en,
+                "cronTable"@en,
+                "description"@en,
+                "id"@en,
+                "landingPage"@en,
+                "messages"@en,
+                "name"@en,
+                "preamble"@en,
+                "prefLabel"@en,
+                "schemaVersion"@en,
+                "ui"@en,
+                "version"@en ;
+            ns1:title "Protocol"@en ],
+        [ a ns1:ClassDefinition ;
+            sdo:description "A media object, such as an image, video, audio, or text object embedded in a web page or a downloadable dataset."@en ;
+            sdo:name "MediaObject"@en ;
+            ns1:class_uri "http://schema.org/MediaObject"@en ;
+            ns1:definition_uri "http://schema.repronim.org//MediaObject"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:is_a "Thing"@en ;
+            ns1:mappings "schema:MediaObject"@en ;
+            ns1:slot_usage [ ] ;
+            ns1:slots "MediaObject_contentUrl"@en,
+                "category"@en,
+                "id"@en,
+                "inLanguage"@en,
+                "name"@en ;
+            ns1:title "Media Object"@en ],
+        [ a ns1:ClassDefinition ;
+            sdo:description "An item in an assessment."@en ;
+            sdo:name "Item"@en ;
+            ns1:class_uri "http://schema.repronim.org/Field"@en ;
+            ns1:definition_uri "http://schema.repronim.org//Item"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:is_a "Thing"@en ;
+            ns1:mappings "reproschema:Field"@en ;
+            ns1:slot_usage [ ] ;
+            ns1:slots "about"@en,
+                "additionalNotesObj"@en,
+                "altLabel"@en,
+                "associatedMedia"@en,
+                "audio"@en,
+                "category"@en,
+                "description"@en,
+                "id"@en,
+                "image"@en,
+                "isPartOf"@en,
+                "name"@en,
+                "preamble"@en,
+                "prefLabel"@en,
+                "question"@en,
+                "responseOptions"@en,
+                "schemaVersion"@en,
+                "ui"@en,
+                "version"@en,
+                "video"@en ;
+            ns1:title "Item in an activity"@en ],
+        [ a ns1:ClassDefinition ;
+            sdo:description "An assessment in a protocol."@en ;
+            sdo:name "Activity"@en ;
+            ns1:class_uri "http://schema.repronim.org/Activity"@en ;
+            ns1:definition_uri "http://schema.repronim.org//Activity"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:is_a "Thing"@en ;
+            ns1:mappings "reproschema:Activity"@en ;
+            ns1:slot_usage [ ] ;
+            ns1:slots "about"@en,
+                "altLabel"@en,
+                "associatedMedia"@en,
+                "category"@en,
+                "citation"@en,
+                "compute"@en,
+                "cronTable"@en,
+                "description"@en,
+                "id"@en,
+                "image"@en,
+                "isProprietary"@en,
+                "messages"@en,
+                "name"@en,
+                "preamble"@en,
+                "prefLabel"@en,
+                "schemaVersion"@en,
+                "ui"@en,
+                "version"@en ;
+            ns1:title "Activity"@en ],
+        [ a ns1:ClassDefinition ;
+            sdo:description "An object to override the various properties added to assessments and Items."@en ;
+            sdo:name "OverrideProperty"@en ;
+            ns1:class_uri "http://schema.repronim.org/OverrideProperty"@en ;
+            ns1:definition_uri "http://schema.repronim.org//OverrideProperty"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:is_a "Thing"@en ;
+            ns1:mappings "reproschema:OverrideProperty"@en ;
+            ns1:slot_usage [ ] ;
+            ns1:slots "category"@en,
+                "id"@en,
+                "isAbout"@en,
+                "isVis"@en,
+                "limit"@en,
+                "maxRetakes"@en,
+                "name"@en,
+                "prefLabel"@en,
+                "randomMaxDelay"@en,
+                "schedule"@en,
+                "valueRequired"@en,
+                "variableName"@en ;
+            ns1:title "Additional properties"@en ],
+        [ a ns1:ClassDefinition ;
+            sdo:description "Captures information about some action that took place. It also links to information (entities) that were used during the activity"@en ;
+            sdo:name "ResponseActivity"@en ;
+            ns1:class_uri "http://schema.repronim.org/ResponseActivity"@en ;
+            ns1:definition_uri "http://schema.repronim.org//ResponseActivity"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:is_a "Thing"@en ;
+            ns1:mappings "reproschema:ResponseActivity"@en ;
+            ns1:slot_usage [ ] ;
+            ns1:slots "category"@en,
+                "endedAtTime"@en,
+                "generated"@en,
+                "id"@en,
+                "inLanguage"@en,
+                "name"@en,
+                "startedAtTime"@en,
+                "used"@en,
+                "wasAssociatedWith"@en ;
+            ns1:title "ResponseActivity"@en ],
+        [ a ns1:ClassDefinition ;
+            sdo:description "An Agent describing characteristics associated with a participant."@en ;
+            sdo:name "Participant"@en ;
+            ns1:class_uri "http://schema.repronim.org/Participant"@en ;
+            ns1:definition_uri "http://schema.repronim.org//Participant"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:is_a "Agent"@en ;
+            ns1:mappings "reproschema:Participant"@en ;
+            ns1:slot_usage [ ] ;
+            ns1:slots "id"@en,
+                "subject_id"@en ;
+            ns1:title "Participant"@en ],
+        [ a ns1:ClassDefinition ;
+            sdo:description "Captures information about some action that took place. It also links to information (entities) that were used during the activity"@en ;
+            sdo:name "SoftwareAgent"@en ;
+            ns1:class_uri "http://schema.repronim.org/SoftwareAgent"@en ;
+            ns1:definition_uri "http://schema.repronim.org//SoftwareAgent"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:is_a "Thing"@en ;
+            ns1:mappings "reproschema:SoftwareAgent"@en ;
+            ns1:slot_usage [ ] ;
+            ns1:slots "category"@en,
+                "id"@en,
+                "name"@en,
+                "url"@en,
+                "version"@en ;
+            ns1:title "Software Agent"@en ],
+        [ a ns1:ClassDefinition ;
+            sdo:name "Thing"@en ;
+            ns1:class_uri "http://schema.org/Thing"@en ;
+            ns1:definition_uri "http://schema.repronim.org//Thing"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:mappings "schema:Thing"@en ;
+            ns1:slot_usage [ ] ;
+            ns1:slots "category"@en,
+                "id"@en,
+                "name"@en ],
+        [ a ns1:ClassDefinition ;
+            sdo:name "StructuredValue"@en ;
+            ns1:class_uri "http://schema.org/StructuredValue"@en ;
+            ns1:definition_uri "http://schema.repronim.org//StructuredValue"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:is_a "Thing"@en ;
+            ns1:mappings "schema:StructuredValue"@en ;
+            ns1:slot_usage [ ] ;
+            ns1:slots "category"@en,
+                "id"@en,
+                "name"@en ],
+        [ a ns1:ClassDefinition ;
+            sdo:description "An object to describe a response option."@en ;
+            sdo:name "Choice"@en ;
+            ns1:class_uri "http://schema.repronim.org/Choice"@en ;
+            ns1:definition_uri "http://schema.repronim.org//Choice"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:is_a "Thing"@en ;
+            ns1:mappings "reproschema:Choice"@en ;
+            ns1:slot_usage [ ] ;
+            ns1:slots "category"@en,
+                "id"@en,
+                "image"@en,
+                "name"@en,
+                "value"@en ;
+            ns1:title "Response choice"@en ],
+        [ a ns1:ClassDefinition ;
+            sdo:description "A set of objects to define notes in a Item. For example, most Redcap and NDA data dictionaries have notes for each item which needs to be captured in reproschema"@en ;
+            sdo:name "AdditionalNoteObj"@en ;
+            ns1:class_uri "http://schema.repronim.org/AdditionalNoteObj"@en ;
+            ns1:definition_uri "http://schema.repronim.org//AdditionalNoteObj"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:is_a "Thing"@en ;
+            ns1:mappings "reproschema:AdditionalNoteObj"@en ;
+            ns1:slot_usage [ ] ;
+            ns1:slots "category"@en,
+                "column"@en,
+                "id"@en,
+                "name"@en,
+                "source"@en,
+                "value"@en ;
+            ns1:title "Additional Notes Object"@en ],
+        [ a ns1:ClassDefinition ;
+            sdo:name "AudioObject"@en ;
+            ns1:class_uri "http://schema.org/AudioObject"@en ;
+            ns1:definition_uri "http://schema.repronim.org//AudioObject"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:is_a "MediaObject"@en ;
+            ns1:mappings "schema:AudioObject"@en ;
+            ns1:slot_usage [ ] ;
+            ns1:slots "MediaObject_contentUrl"@en,
+                "category"@en,
+                "id"@en,
+                "inLanguage"@en,
+                "name"@en ] ;
+    ns1:default_prefix "http://schema.repronim.org/"@en ;
+    ns1:default_range "string"@en ;
+    ns1:enums [ sdo:name "MissingType"@en ;
+            ns1:definition_uri "http://schema.repronim.org//MissingType"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:permissible_values [ sdo:description "An element to describe the choice when the item is skipped."@en ;
+                    ns1:meaning "reproschema:Skipped"@en ;
+                    ns1:text "reproschema:Skipped"@en ;
+                    ns1:title "Skipped"@en ],
+                [ sdo:description "An element to describe the choice when the reason for missing response is unknown."@en ;
+                    ns1:meaning "reproschema:Unknown"@en ;
+                    ns1:text "reproschema:Unknown"@en ;
+                    ns1:title "Unknown"@en ],
+                [ sdo:description "A boolean element to describe if the response did not occur within the prescribed time."@en ;
+                    ns1:meaning "reproschema:TimedOut"@en ;
+                    ns1:text "reproschema:TimedOut"@en ;
+                    ns1:title "TimedOut"@en ],
+                [ sdo:description "An element to describe the choice when response is not known."@en ;
+                    ns1:meaning "reproschema:DontKnow"@en ;
+                    ns1:text "reproschema:DontKnow"@en ;
+                    ns1:title "DontKnow"@en ] ],
+        [ sdo:name "AllowedType"@en ;
+            ns1:definition_uri "http://schema.repronim.org//AllowedType"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:permissible_values [ sdo:description "Indicates (by boolean) if items can be replayed or not."@en ;
+                    ns1:meaning "reproschema:AllowReplay"@en ;
+                    ns1:text "reproschema:AllowReplay"@en ;
+                    ns1:title "AllowReplay"@en ],
+                [ sdo:description "Indicates (by boolean) if data can be exported or not."@en ;
+                    ns1:meaning "reproschema:AllowExport"@en ;
+                    ns1:text "reproschema:AllowExport"@en ;
+                    ns1:title "AllowExport"@en ],
+                [ sdo:description "Indicates (by boolean) if alternate responses are allowed or not."@en ;
+                    ns1:meaning "reproschema:AllowAltResponse"@en ;
+                    ns1:text "reproschema:AllowAltResponse"@en ;
+                    ns1:title "AllowAltResponse"@en ],
+                [ sdo:description "Indicates (by boolean) if assessments in a protocol can auto advance or not."@en ;
+                    ns1:meaning "reproschema:AutoAdvance"@en ;
+                    ns1:text "reproschema:AutoAdvance"@en ;
+                    ns1:title "AutoAdvance"@en ],
+                [ sdo:description "Indicates (by boolean) if we can go back to a completed assessment in a protocol."@en ;
+                    ns1:meaning "reproschema:DisableBack"@en ;
+                    ns1:text "reproschema:DisableBack"@en ;
+                    ns1:title "DisableBack"@en ],
+                [ sdo:description "Indicates (by boolean) if items can be skipped or not."@en ;
+                    ns1:meaning "reproschema:AllowSkip"@en ;
+                    ns1:text "reproschema:AllowSkip"@en ;
+                    ns1:title "AllowSkip"@en ] ] ;
+    ns1:generation_date "2024-06-18T17:05:07"@en ;
+    ns1:imports "linkml:types"@en ;
+    ns1:license "https://creativecommons.org/publicdomain/zero/1.0/"@en ;
+    ns1:metamodel_version "1.7.0"@en ;
+    ns1:prefixes [ ns1:prefix_prefix "xsd"@en ;
+            ns1:prefix_reference "http://www.w3.org/2001/XMLSchema#"@en ],
+        [ ns1:prefix_prefix "schema"@en ;
+            ns1:prefix_reference "http://schema.org/"@en ],
+        [ ns1:prefix_prefix "rdfs"@en ;
+            ns1:prefix_reference "http://www.w3.org/2000/01/rdf-schema#"@en ],
+        [ ns1:prefix_prefix "owl"@en ;
+            ns1:prefix_reference "http://www.w3.org/2002/07/owl#"@en ],
+        [ ns1:prefix_prefix "prov"@en ;
+            ns1:prefix_reference "http://www.w3.org/ns/prov#"@en ],
+        [ ns1:prefix_prefix "skos"@en ;
+            ns1:prefix_reference "http://www.w3.org/2004/02/skos/core#"@en ],
+        [ ns1:prefix_prefix "rdf"@en ;
+            ns1:prefix_reference "http://www.w3.org/1999/02/22-rdf-syntax-ns#"@en ],
+        [ ns1:prefix_prefix "nidm"@en ;
+            ns1:prefix_reference "http://purl.org/nidash/nidm#"@en ],
+        [ ns1:prefix_prefix "linkml"@en ;
+            ns1:prefix_reference "https://w3id.org/linkml/"@en ],
+        [ ns1:prefix_prefix "xml"@en ;
+            ns1:prefix_reference "http://www.w3.org/XML/1998/namespace"@en ],
+        [ ns1:prefix_prefix "reproschema"@en ;
+            ns1:prefix_reference "http://schema.repronim.org/"@en ] ;
+    ns1:slots [ a ns1:SlotDefinition ;
+            sdo:description "An element to limit the duration (uses ISO 8601) this activity is allowed to be completed by once activity is available."@en ;
+            sdo:name "limit"@en ;
+            ns1:definition_uri "http://schema.repronim.org//limit"@en ;
+            ns1:domain_of "AdditionalProperty"@en,
+                "OverrideProperty"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:mappings "http://schema.repronim.org/limit"@en ;
+            ns1:owner "OverrideProperty"@en ;
+            ns1:range "string"@en ;
+            ns1:slot_uri "http://schema.repronim.org/limit"@en ;
+            ns1:title "limit"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:description "An element to define the source (eg. RedCap, NDA) where the note was taken from."@en ;
+            sdo:name "source"@en ;
+            ns1:definition_uri "http://schema.repronim.org//source"@en ;
+            ns1:domain_of "AdditionalNoteObj"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:mappings "http://schema.repronim.org/source"@en ;
+            ns1:owner "AdditionalNoteObj"@en ;
+            ns1:range "string"@en ;
+            ns1:slot_uri "http://schema.repronim.org/source"@en ;
+            ns1:title "source"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:name "contentUrl"@en ;
+            ns1:definition_uri "http://schema.repronim.org//contentUrl"@en ;
+            ns1:domain_of "MediaObject"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:mappings "http://schema.org/contentUrl"@en ;
+            ns1:owner "MediaObject"@en ;
+            ns1:range "uriorcurie"@en ;
+            ns1:slot_uri "http://schema.org/contentUrl"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:name "description"@en ;
+            ns1:definition_uri "http://schema.repronim.org//description"@en ;
+            ns1:domain_of "Activity"@en,
+                "Item"@en,
+                "Protocol"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:inlined true ;
+            ns1:mappings "http://schema.org/description"@en ;
+            ns1:multivalued true ;
+            ns1:owner "Protocol"@en ;
+            ns1:range "LangString"@en ;
+            ns1:slot_uri "http://schema.org/description"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:description "The value for each option in choices or in additionalNotesObj"@en ;
+            sdo:name "value"@en ;
+            ns1:any_of [ a ns1:AnonymousSlotExpression ;
+                    ns1:range "float"@en ],
+                [ a ns1:AnonymousSlotExpression ;
+                    ns1:range "uri"@en ],
+                [ a ns1:AnonymousSlotExpression ;
+                    ns1:range "boolean"@en ],
+                [ a ns1:AnonymousSlotExpression ;
+                    ns1:range "MissingType"@en ],
+                [ a ns1:AnonymousSlotExpression ;
+                    ns1:range "string"@en ],
+                [ a ns1:AnonymousSlotExpression ;
+                    ns1:range "StructuredValue"@en ],
+                [ a ns1:AnonymousSlotExpression ;
+                    ns1:range "integer"@en ],
+                [ a ns1:AnonymousSlotExpression ;
+                    ns1:range "LangString"@en ] ;
+            ns1:definition_uri "http://schema.repronim.org//value"@en ;
+            ns1:domain_of "AdditionalNoteObj"@en,
+                "Choice"@en,
+                "Response"@en,
+                "UnitOption"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:inlined true ;
+            ns1:mappings "http://schema.org/value"@en ;
+            ns1:owner "UnitOption"@en ;
+            ns1:range "string"@en ;
+            ns1:slot_uri "http://schema.org/value"@en ;
+            ns1:title "value"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:description "An array of objects indicating computations in an activity or protocol and maps it to the corresponding Item. scoring logic is a subset of all computations that could be performed and not all computations will be scoring. For example, one may want to do conversion from one unit to another."@en ;
+            sdo:name "compute"@en ;
+            ns1:definition_uri "http://schema.repronim.org//compute"@en ;
+            ns1:domain_of "Activity"@en,
+                "Protocol"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:inlined true ;
+            ns1:mappings "http://schema.repronim.org/compute"@en ;
+            ns1:multivalued true ;
+            ns1:owner "Protocol"@en ;
+            ns1:range "ComputeSpecification"@en ;
+            ns1:slot_uri "http://schema.repronim.org/compute"@en ;
+            ns1:title "computation"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:description "An element (object or by URL)to describe the properties of response of the Item."@en ;
+            sdo:name "responseOptions"@en ;
+            ns1:any_of [ a ns1:AnonymousSlotExpression ;
+                    ns1:range "uri"@en ],
+                [ a ns1:AnonymousSlotExpression ;
+                    ns1:range "ResponseOption"@en ] ;
+            ns1:definition_uri "http://schema.repronim.org//responseOptions"@en ;
+            ns1:domain_of "Item"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:mappings "http://schema.repronim.org/responseOptions"@en ;
+            ns1:owner "Item"@en ;
+            ns1:range "string"@en ;
+            ns1:slot_uri "http://schema.repronim.org/responseOptions"@en ;
+            ns1:title "Response options"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:description "An image of the item. This can be a <a class=\"localLink\" href=\"http://schema.org/URL\">URL</a> or a fully described <a class=\"localLink\" href=\"http://schema.org/ImageObject\">ImageObject</a>."@en ;
+            sdo:name "image"@en ;
+            ns1:any_of [ a ns1:AnonymousSlotExpression ;
+                    ns1:range "ImageObject"@en ],
+                [ a ns1:AnonymousSlotExpression ;
+                    ns1:range "uri"@en ] ;
+            ns1:definition_uri "http://schema.repronim.org//image"@en ;
+            ns1:domain_of "Activity"@en,
+                "Choice"@en,
+                "Item"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:mappings "http://schema.org/image"@en ;
+            ns1:owner "Item"@en ;
+            ns1:range "string"@en ;
+            ns1:slot_uri "http://schema.org/image"@en ;
+            ns1:title "image"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:description "The type of the response of an item. For example, string, integer, etc."@en ;
+            sdo:name "valueType"@en ;
+            ns1:definition_uri "http://schema.repronim.org//valueType"@en ;
+            ns1:domain_of "ResponseOption"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:mappings "http://schema.repronim.org/valueType"@en ;
+            ns1:multivalued true ;
+            ns1:owner "ResponseOption"@en ;
+            ns1:range "string"@en ;
+            ns1:slot_uri "http://schema.repronim.org/valueType"@en ;
+            ns1:title "The type of the response"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:description "An array to list the available options for response of the Item."@en ;
+            sdo:name "choices"@en ;
+            ns1:any_of [ a ns1:AnonymousSlotExpression ;
+                    ns1:range "Choice"@en ],
+                [ a ns1:AnonymousSlotExpression ;
+                    ns1:range "uri"@en ] ;
+            ns1:definition_uri "http://schema.repronim.org//choices"@en ;
+            ns1:domain_of "ResponseOption"@en ;
+            ns1:exact_mappings "http://schema.org/itemListElement"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:mappings "http://schema.repronim.org/choices"@en ;
+            ns1:multivalued true ;
+            ns1:owner "ResponseOption"@en ;
+            ns1:range "string"@en ;
+            ns1:slot_uri "http://schema.repronim.org/choices"@en ;
+            ns1:title "choices"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:description "An audio object."@en ;
+            sdo:name "audio"@en ;
+            ns1:any_of [ a ns1:AnonymousSlotExpression ;
+                    ns1:range "AudioObject"@en ],
+                [ a ns1:AnonymousSlotExpression ;
+                    ns1:range "uri"@en ] ;
+            ns1:definition_uri "http://schema.repronim.org//audio"@en ;
+            ns1:domain_of "Item"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:mappings "http://schema.org/audio"@en ;
+            ns1:owner "Item"@en ;
+            ns1:range "string"@en ;
+            ns1:slot_uri "http://schema.org/audio"@en ;
+            ns1:title "audio"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:name "generated"@en ;
+            ns1:definition_uri "http://schema.repronim.org//generated"@en ;
+            ns1:domain_of "ResponseActivity"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:mappings "http://www.w3.org/ns/prov#generated"@en ;
+            ns1:owner "ResponseActivity"@en ;
+            ns1:range "uri"@en ;
+            ns1:slot_uri "http://www.w3.org/ns/prov#generated"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:name "maxValue"@en ;
+            ns1:any_of [ a ns1:AnonymousSlotExpression ;
+                    ns1:range "float"@en ],
+                [ a ns1:AnonymousSlotExpression ;
+                    ns1:range "integer"@en ] ;
+            ns1:definition_uri "http://schema.repronim.org//maxValue"@en ;
+            ns1:domain_of "ResponseOption"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:mappings "http://schema.org/maxValue"@en ;
+            ns1:owner "ResponseOption"@en ;
+            ns1:range "string"@en ;
+            ns1:slot_uri "http://schema.org/maxValue"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:description "An element (bool) to determine if the list of items is shuffled or in order."@en ;
+            sdo:name "shuffle"@en ;
+            ns1:definition_uri "http://schema.repronim.org//shuffle"@en ;
+            ns1:domain_of "UI"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:mappings "http://schema.repronim.org/shuffle"@en ;
+            ns1:owner "UI"@en ;
+            ns1:range "boolean"@en ;
+            ns1:slot_uri "http://schema.repronim.org/shuffle"@en ;
+            ns1:title "Shuffle"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:name "question"@en ;
+            ns1:definition_uri "http://schema.repronim.org//question"@en ;
+            ns1:domain_of "Item"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:inlined true ;
+            ns1:mappings "http://schema.org/question"@en ;
+            ns1:multivalued true ;
+            ns1:owner "Item"@en ;
+            ns1:range "LangString"@en ;
+            ns1:slot_uri "http://schema.org/question"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:description "The message to be conditionally displayed for an item."@en ;
+            sdo:name "message"@en ;
+            ns1:definition_uri "http://schema.repronim.org//message"@en ;
+            ns1:domain_of "MessageSpecification"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:inlined true ;
+            ns1:mappings "http://schema.repronim.org/message"@en ;
+            ns1:multivalued true ;
+            ns1:owner "MessageSpecification"@en ;
+            ns1:range "LangString"@en ;
+            ns1:slot_uri "http://schema.repronim.org/message"@en ;
+            ns1:title "Message"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:description "An array of objects to override the various properties added to assessments and fields."@en ;
+            sdo:name "overrideProperties"@en ;
+            ns1:definition_uri "http://schema.repronim.org//overrideProperties"@en ;
+            ns1:domain_of "UI"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:inlined true ;
+            ns1:mappings "http://schema.repronim.org/overrideProperties"@en ;
+            ns1:multivalued true ;
+            ns1:owner "UI"@en ;
+            ns1:range "OverrideProperty"@en ;
+            ns1:slot_uri "http://schema.repronim.org/overrideProperties"@en ;
+            ns1:title "overrideProperties"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:description "A set of objects to define notes in a field. For example, most Redcap and NDA data dictionaries have notes for each item which needs to be captured in reproschema."@en ;
+            sdo:name "additionalNotesObj"@en ;
+            ns1:any_of [ a ns1:AnonymousSlotExpression ;
+                    ns1:range "AdditionalNoteObj"@en ] ;
+            ns1:definition_uri "http://schema.repronim.org//additionalNotesObj"@en ;
+            ns1:domain_of "Item"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:mappings "http://schema.repronim.org/additionalNotesObj"@en ;
+            ns1:multivalued true ;
+            ns1:owner "Item"@en ;
+            ns1:range "string"@en ;
+            ns1:slot_uri "http://schema.repronim.org/additionalNotesObj"@en ;
+            ns1:title "additional notes"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:description "An array of items indicating properties allowed on an activity or protocol."@en ;
+            sdo:name "allow"@en ;
+            ns1:definition_uri "http://schema.repronim.org//allow"@en ;
+            ns1:domain_of "AdditionalProperty"@en,
+                "UI"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:mappings "http://schema.repronim.org/allow"@en ;
+            ns1:multivalued true ;
+            ns1:owner "UI"@en ;
+            ns1:range "AllowedType"@en ;
+            ns1:slot_uri "http://schema.repronim.org/allow"@en ;
+            ns1:title "allow"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:name "name"@en ;
+            ns1:definition_uri "http://schema.repronim.org//name"@en ;
+            ns1:domain_of "Choice"@en,
+                "Thing"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:inlined true ;
+            ns1:mappings "http://schema.org/name"@en ;
+            ns1:multivalued true ;
+            ns1:owner "Thing"@en ;
+            ns1:range "LangString"@en ;
+            ns1:slot_uri "http://schema.org/name"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:description "An element to define the column name where the note was taken from."@en ;
+            sdo:name "column"@en ;
+            ns1:definition_uri "http://schema.repronim.org//column"@en ;
+            ns1:domain_of "AdditionalNoteObj"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:mappings "http://schema.repronim.org/column"@en ;
+            ns1:owner "AdditionalNoteObj"@en ;
+            ns1:range "string"@en ;
+            ns1:slot_uri "http://schema.repronim.org/column"@en ;
+            ns1:title "column"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:description "Indicates (by bool) if response for the Item has one or more answer."@en ;
+            sdo:name "multipleChoice"@en ;
+            ns1:definition_uri "http://schema.repronim.org//multipleChoice"@en ;
+            ns1:domain_of "ResponseOption"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:mappings "http://schema.repronim.org/multipleChoice"@en ;
+            ns1:owner "ResponseOption"@en ;
+            ns1:range "boolean"@en ;
+            ns1:slot_uri "http://schema.repronim.org/multipleChoice"@en ;
+            ns1:title "Multiple choice response expectation"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:name "isProprietary"@en ;
+            ns1:definition_uri "http://schema.repronim.org//isProprietary"@en ;
+            ns1:domain_of "Activity"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:mappings "http://schema.org/isProprietary"@en ;
+            ns1:owner "Activity"@en ;
+            ns1:range "boolean"@en ;
+            ns1:slot_uri "http://schema.org/isProprietary"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:description "An element to set make activity available/repeat info using ISO 8601 repeating interval format."@en ;
+            sdo:name "schedule"@en ;
+            ns1:definition_uri "http://schema.repronim.org//schedule"@en ;
+            ns1:domain_of "AdditionalProperty"@en,
+                "OverrideProperty"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:mappings "http://schema.repronim.org/schedule"@en ;
+            ns1:owner "OverrideProperty"@en ;
+            ns1:range "string"@en ;
+            ns1:slot_uri "http://schema.repronim.org/schedule"@en ;
+            ns1:title "Schedule"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:name "startedAtTime"@en ;
+            ns1:definition_uri "http://schema.repronim.org//startedAtTime"@en ;
+            ns1:domain_of "ResponseActivity"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:mappings "http://www.w3.org/ns/prov#startedAtTime"@en ;
+            ns1:owner "ResponseActivity"@en ;
+            ns1:range "datetime"@en ;
+            ns1:slot_uri "http://www.w3.org/ns/prov#startedAtTime"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:name "valueRequired"@en ;
+            ns1:definition_uri "http://schema.repronim.org//valueRequired"@en ;
+            ns1:domain_of "AdditionalProperty"@en,
+                "OverrideProperty"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:mappings "http://schema.org/valueRequired"@en ;
+            ns1:owner "OverrideProperty"@en ;
+            ns1:range "boolean"@en ;
+            ns1:slot_uri "http://schema.org/valueRequired"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:description "The preamble for an assessment."@en ;
+            sdo:name "preamble"@en ;
+            ns1:definition_uri "http://schema.repronim.org//preamble"@en ;
+            ns1:domain_of "Activity"@en,
+                "Item"@en,
+                "Protocol"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:inlined true ;
+            ns1:mappings "http://schema.repronim.org/preamble"@en ;
+            ns1:multivalued true ;
+            ns1:owner "Protocol"@en ;
+            ns1:range "LangString"@en ;
+            ns1:slot_uri "http://schema.repronim.org/preamble"@en ;
+            ns1:title "Preamble"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:description "The name used to represent an item."@en ;
+            sdo:name "variableName"@en ;
+            ns1:definition_uri "http://schema.repronim.org//variableName"@en ;
+            ns1:domain_of "AdditionalProperty"@en,
+                "ComputeSpecification"@en,
+                "OverrideProperty"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:mappings "http://schema.repronim.org/variableName"@en ;
+            ns1:owner "OverrideProperty"@en ;
+            ns1:range "LangString"@en ;
+            ns1:slot_uri "http://schema.repronim.org/variableName"@en ;
+            ns1:title "variableName"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:name "wasAssociatedWith"@en ;
+            ns1:definition_uri "http://schema.repronim.org//wasAssociatedWith"@en ;
+            ns1:domain_of "ResponseActivity"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:inlined true ;
+            ns1:mappings "http://www.w3.org/ns/prov#wasAssociatedWith"@en ;
+            ns1:owner "ResponseActivity"@en ;
+            ns1:range "SoftwareAgent"@en ;
+            ns1:slot_uri "http://www.w3.org/ns/prov#wasAssociatedWith"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:description "Name of the high level ontology class in which this entity is categorized. Corresponds to the label for the biolink entity type class. In an RDF database it should be a model class URI. This field is multi-valued."@en ;
+            sdo:name "category"@en ;
+            ns1:definition_uri "http://schema.repronim.org//category"@en ;
+            ns1:domain_of "Thing"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:mappings "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"@en ;
+            ns1:owner "Thing"@en ;
+            ns1:range "uriorcurie"@en ;
+            ns1:slot_uri "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:description "Indicates what type of datum the response is (e.g. range,count,scalar etc.) for the Item."@en ;
+            sdo:name "datumType"@en ;
+            ns1:any_of [ a ns1:AnonymousSlotExpression ;
+                    ns1:range "uri"@en ],
+                [ a ns1:AnonymousSlotExpression ;
+                    ns1:range "string"@en ] ;
+            ns1:definition_uri "http://schema.repronim.org//datumType"@en ;
+            ns1:domain_of "ResponseOption"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:mappings "http://schema.repronim.org/datumType"@en ;
+            ns1:owner "ResponseOption"@en ;
+            ns1:range "string"@en ;
+            ns1:slot_uri "http://schema.repronim.org/datumType"@en ;
+            ns1:title "datumType"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:description "A unique identifier for an entity. Must be either a CURIE shorthand for a URI or a complete URI."@en ;
+            sdo:name "id"@en ;
+            ns1:definition_uri "http://schema.repronim.org//id"@en ;
+            ns1:domain_of "Participant"@en,
+                "Thing"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:mappings "http://schema.org/identifier"@en ;
+            ns1:owner "Thing"@en ;
+            ns1:range "uriorcurie"@en ;
+            ns1:slot_uri "http://schema.org/identifier"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:name "video"@en ;
+            ns1:any_of [ a ns1:AnonymousSlotExpression ;
+                    ns1:range "uri"@en ],
+                [ a ns1:AnonymousSlotExpression ;
+                    ns1:range "VideoObject"@en ] ;
+            ns1:definition_uri "http://schema.repronim.org//video"@en ;
+            ns1:domain_of "Item"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:mappings "http://schema.org/video"@en ;
+            ns1:owner "Item"@en ;
+            ns1:range "string"@en ;
+            ns1:slot_uri "http://schema.org/video"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:name "cronTable"@en ;
+            ns1:definition_uri "http://schema.repronim.org//cronTable"@en ;
+            ns1:domain_of "Activity"@en,
+                "Protocol"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:mappings "http://schema.repronim.org/cronTable"@en ;
+            ns1:owner "Protocol"@en ;
+            ns1:range "string"@en ;
+            ns1:slot_uri "http://schema.repronim.org/cronTable"@en ;
+            ns1:title "cronTable"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:description "Present activity/item within some random offset of activity available time up to the maximum specified by this ISO 8601 duration"@en ;
+            sdo:name "randomMaxDelay"@en ;
+            ns1:definition_uri "http://schema.repronim.org//randomMaxDelay"@en ;
+            ns1:domain_of "AdditionalProperty"@en,
+                "OverrideProperty"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:mappings "http://schema.repronim.org/randomMaxDelay"@en ;
+            ns1:owner "OverrideProperty"@en ;
+            ns1:range "string"@en ;
+            ns1:slot_uri "http://schema.repronim.org/randomMaxDelay"@en ;
+            ns1:title "randomMaxDelay"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:name "isPartOf"@en ;
+            ns1:definition_uri "http://schema.repronim.org//isPartOf"@en ;
+            ns1:domain_of "Item"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:inlined true ;
+            ns1:mappings "http://schema.org/isPartOf"@en ;
+            ns1:owner "Item"@en ;
+            ns1:range "Activity"@en ;
+            ns1:slot_uri "http://schema.org/isPartOf"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:description "The language prefix component of a langString."@en ;
+            sdo:name "langstring_prefix"@en ;
+            ns1:definition_uri "http://schema.repronim.org//langstring_prefix"@en ;
+            ns1:domain_of "LangString"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:key true ;
+            ns1:owner "LangString"@en ;
+            ns1:range "string"@en ;
+            ns1:required true ;
+            ns1:slot_uri "http://schema.repronim.org/langstring_prefix"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:name "endedAtTime"@en ;
+            ns1:definition_uri "http://schema.repronim.org//endedAtTime"@en ;
+            ns1:domain_of "ResponseActivity"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:mappings "http://www.w3.org/ns/prov#endedAtTime"@en ;
+            ns1:owner "ResponseActivity"@en ;
+            ns1:range "datetime"@en ;
+            ns1:slot_uri "http://www.w3.org/ns/prov#endedAtTime"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:description "The value for each option in choices or in additionalNotesObj"@en ;
+            sdo:name "UnitOption_value"@en ;
+            ns1:alias "value"@en ;
+            ns1:any_of [ a ns1:AnonymousSlotExpression ;
+                    ns1:range "uri"@en ],
+                [ a ns1:AnonymousSlotExpression ;
+                    ns1:range "LangString"@en ] ;
+            ns1:definition_uri "http://schema.repronim.org//value"@en ;
+            ns1:domain "UnitOption"@en ;
+            ns1:domain_of "UnitOption"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:inlined true ;
+            ns1:is_a "value"@en ;
+            ns1:is_usage_slot true ;
+            ns1:mappings "http://schema.org/value"@en ;
+            ns1:owner "UnitOption"@en ;
+            ns1:range "string"@en ;
+            ns1:slot_uri "http://schema.org/value"@en ;
+            ns1:title "value"@en ;
+            ns1:usage_slot_name "value"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:name "inLanguage"@en ;
+            ns1:definition_uri "http://schema.repronim.org//inLanguage"@en ;
+            ns1:domain_of "LandingPage"@en,
+                "MediaObject"@en,
+                "ResponseActivity"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:mappings "http://schema.org/inLanguage"@en ;
+            ns1:owner "ResponseActivity"@en ;
+            ns1:range "string"@en ;
+            ns1:slot_uri "http://schema.org/inLanguage"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:name "version"@en ;
+            ns1:definition_uri "http://schema.repronim.org//version"@en ;
+            ns1:domain_of "Activity"@en,
+                "Item"@en,
+                "Protocol"@en,
+                "SoftwareAgent"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:mappings "http://schema.org/version"@en ;
+            ns1:owner "SoftwareAgent"@en ;
+            ns1:range "string"@en ;
+            ns1:slot_uri "http://schema.org/version"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:name "MediaObject_contentUrl"@en ;
+            ns1:alias "contentUrl"@en ;
+            ns1:definition_uri "http://schema.repronim.org//contentUrl"@en ;
+            ns1:domain "MediaObject"@en ;
+            ns1:domain_of "MediaObject"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:is_a "contentUrl"@en ;
+            ns1:is_usage_slot true ;
+            ns1:mappings "http://schema.org/contentUrl"@en ;
+            ns1:owner "MediaObject"@en ;
+            ns1:range "uriorcurie"@en ;
+            ns1:required true ;
+            ns1:slot_uri "http://schema.org/contentUrl"@en ;
+            ns1:usage_slot_name "contentUrl"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:name "readonlyValue"@en ;
+            ns1:definition_uri "http://schema.repronim.org//readonlyValue"@en ;
+            ns1:domain_of "UI"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:mappings "http://schema.org/readonlyValue"@en ;
+            ns1:owner "UI"@en ;
+            ns1:range "boolean"@en ;
+            ns1:slot_uri "http://schema.org/readonlyValue"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:name "minValue"@en ;
+            ns1:any_of [ a ns1:AnonymousSlotExpression ;
+                    ns1:range "integer"@en ],
+                [ a ns1:AnonymousSlotExpression ;
+                    ns1:range "float"@en ] ;
+            ns1:definition_uri "http://schema.repronim.org//minValue"@en ;
+            ns1:domain_of "ResponseOption"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:mappings "http://schema.org/minValue"@en ;
+            ns1:owner "ResponseOption"@en ;
+            ns1:range "string"@en ;
+            ns1:slot_uri "http://schema.org/minValue"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:name "citation"@en ;
+            ns1:definition_uri "http://schema.repronim.org//citation"@en ;
+            ns1:domain_of "Activity"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:inlined true ;
+            ns1:mappings "http://schema.org/citation"@en ;
+            ns1:multivalued true ;
+            ns1:owner "Activity"@en ;
+            ns1:range "LangString"@en ;
+            ns1:slot_uri "http://schema.org/citation"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:description "A media object that encodes this creative work. This property is a synonym for encoding."@en ;
+            sdo:name "associatedMedia"@en ;
+            ns1:definition_uri "http://schema.repronim.org//associatedMedia"@en ;
+            ns1:domain_of "Activity"@en,
+                "Item"@en,
+                "Protocol"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:mappings "http://schema.org/associatedMedia"@en ;
+            ns1:owner "Protocol"@en ;
+            ns1:range "string"@en ;
+            ns1:slot_uri "http://schema.org/associatedMedia"@en ;
+            ns1:title "associatedMedia"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:description "An element to describe the input type of a Item."@en ;
+            sdo:name "inputType"@en ;
+            ns1:definition_uri "http://schema.repronim.org//inputType"@en ;
+            ns1:domain_of "UI"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:mappings "http://schema.repronim.org/inputType"@en ;
+            ns1:owner "UI"@en ;
+            ns1:range "string"@en ;
+            ns1:slot_uri "http://schema.repronim.org/inputType"@en ;
+            ns1:title "inputType"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:description "A list of objects to represent a human displayable name alongside the more formal value for units."@en ;
+            sdo:name "unitOptions"@en ;
+            ns1:definition_uri "http://schema.repronim.org//unitOptions"@en ;
+            ns1:domain_of "ResponseOption"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:inlined true ;
+            ns1:mappings "http://schema.repronim.org/unitOptions"@en ;
+            ns1:multivalued true ;
+            ns1:owner "ResponseOption"@en ;
+            ns1:range "UnitOption"@en ;
+            ns1:slot_uri "http://schema.repronim.org/unitOptions"@en ;
+            ns1:title "unitOptions"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:description "The preferred label."@en ;
+            sdo:name "prefLabel"@en ;
+            ns1:definition_uri "http://schema.repronim.org//prefLabel"@en ;
+            ns1:domain_of "Activity"@en,
+                "AdditionalProperty"@en,
+                "Item"@en,
+                "OverrideProperty"@en,
+                "Protocol"@en,
+                "UnitOption"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:inlined true ;
+            ns1:mappings "http://www.w3.org/2004/02/skos/core#prefLabel"@en ;
+            ns1:multivalued true ;
+            ns1:owner "UnitOption"@en ;
+            ns1:range "LangString"@en ;
+            ns1:slot_uri "http://www.w3.org/2004/02/skos/core#prefLabel"@en ;
+            ns1:title "preferred label"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:description "An element to describe (by boolean or conditional statement) visibility conditions of items in an assessment."@en ;
+            sdo:name "isVis"@en ;
+            ns1:any_of [ a ns1:AnonymousSlotExpression ;
+                    ns1:range "boolean"@en ],
+                [ a ns1:AnonymousSlotExpression ;
+                    ns1:range "string"@en ] ;
+            ns1:definition_uri "http://schema.repronim.org//isVis"@en ;
+            ns1:domain_of "AdditionalProperty"@en,
+                "OverrideProperty"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:mappings "http://schema.repronim.org/isVis"@en ;
+            ns1:owner "OverrideProperty"@en ;
+            ns1:range "string"@en ;
+            ns1:slot_uri "http://schema.repronim.org/isVis"@en ;
+            ns1:title "visibility"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:description "The subject matter of the Field."@en ;
+            sdo:name "about"@en ;
+            ns1:definition_uri "http://schema.repronim.org//about"@en ;
+            ns1:domain_of "Activity"@en,
+                "Item"@en,
+                "Protocol"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:mappings "http://schema.org/about"@en ;
+            ns1:owner "Protocol"@en ;
+            ns1:range "string"@en ;
+            ns1:slot_uri "http://schema.org/about"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:description "An element to control UI specifications. Originally @nest in jsonld, but using a class in the model."@en ;
+            sdo:name "ui"@en ;
+            ns1:definition_uri "http://schema.repronim.org//ui"@en ;
+            ns1:domain_of "Activity"@en,
+                "AdditionalProperty"@en,
+                "Item"@en,
+                "Protocol"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:inlined true ;
+            ns1:mappings "http://schema.repronim.org/ui"@en ;
+            ns1:owner "Protocol"@en ;
+            ns1:range "UI"@en ;
+            ns1:slot_uri "http://schema.repronim.org/ui"@en ;
+            ns1:title "UI"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:name "used"@en ;
+            ns1:definition_uri "http://schema.repronim.org//used"@en ;
+            ns1:domain_of "ResponseActivity"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:mappings "http://www.w3.org/ns/prov#used"@en ;
+            ns1:multivalued true ;
+            ns1:owner "ResponseActivity"@en ;
+            ns1:range "string"@en ;
+            ns1:slot_uri "http://www.w3.org/ns/prov#used"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:description "Defines number of times the item is allowed to be redone."@en ;
+            sdo:name "maxRetakes"@en ;
+            ns1:any_of [ a ns1:AnonymousSlotExpression ;
+                    ns1:range "integer"@en ] ;
+            ns1:definition_uri "http://schema.repronim.org//maxRetakes"@en ;
+            ns1:domain_of "AdditionalProperty"@en,
+                "OverrideProperty"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:mappings "http://schema.repronim.org/maxRetakes"@en ;
+            ns1:owner "OverrideProperty"@en ;
+            ns1:range "string"@en ;
+            ns1:slot_uri "http://schema.repronim.org/maxRetakes"@en ;
+            ns1:title "maxRetakes"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:description "A JavaScript expression for computations. A JavaScript expression to compute a score from other variables."@en ;
+            sdo:name "jsExpression"@en ;
+            ns1:definition_uri "http://schema.repronim.org//jsExpression"@en ;
+            ns1:domain_of "ComputeSpecification"@en,
+                "MessageSpecification"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:mappings "http://schema.repronim.org/jsExpression"@en ;
+            ns1:owner "MessageSpecification"@en ;
+            ns1:range "string"@en ;
+            ns1:slot_uri "http://schema.repronim.org/jsExpression"@en ;
+            ns1:title "JavaScript Expression"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:description "An array of objects to define conditional messages in an activity or protocol."@en ;
+            sdo:name "messages"@en ;
+            ns1:definition_uri "http://schema.repronim.org//messages"@en ;
+            ns1:domain_of "Activity"@en,
+                "Protocol"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:inlined true ;
+            ns1:mappings "http://schema.repronim.org/messages"@en ;
+            ns1:multivalued true ;
+            ns1:owner "Protocol"@en ;
+            ns1:range "MessageSpecification"@en ;
+            ns1:slot_uri "http://schema.repronim.org/messages"@en ;
+            ns1:title "messages"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:description "An element (by URL) to point to the protocol readme or landing page."@en ;
+            sdo:name "landingPage"@en ;
+            ns1:any_of [ a ns1:AnonymousSlotExpression ;
+                    ns1:range "LandingPage"@en ],
+                [ a ns1:AnonymousSlotExpression ;
+                    ns1:range "uri"@en ],
+                [ a ns1:AnonymousSlotExpression ;
+                    ns1:range "string"@en ] ;
+            ns1:definition_uri "http://schema.repronim.org//landingPage"@en ;
+            ns1:domain_of "Protocol"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:inlined true ;
+            ns1:mappings "http://schema.repronim.org/landingPage"@en ;
+            ns1:multivalued true ;
+            ns1:owner "Protocol"@en ;
+            ns1:range "string"@en ;
+            ns1:slot_uri "http://schema.repronim.org/landingPage"@en ;
+            ns1:title "Landing page content"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:description "An array of objects to describe the various properties added to assessments and Items."@en ;
+            sdo:name "addProperties"@en ;
+            ns1:definition_uri "http://schema.repronim.org//addProperties"@en ;
+            ns1:domain_of "UI"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:inlined true ;
+            ns1:mappings "http://schema.repronim.org/addProperties"@en ;
+            ns1:multivalued true ;
+            ns1:owner "UI"@en ;
+            ns1:range "AdditionalProperty"@en ;
+            ns1:slot_uri "http://schema.repronim.org/addProperties"@en ;
+            ns1:title "addProperties"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:name "subject_id"@en ;
+            ns1:definition_uri "http://schema.repronim.org//subject_id"@en ;
+            ns1:domain_of "Participant"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:mappings "http://purl.org/nidash/nidm#subject_id"@en ;
+            ns1:owner "Participant"@en ;
+            ns1:range "string"@en ;
+            ns1:slot_uri "http://purl.org/nidash/nidm#subject_id"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:description "The value component of a langString."@en ;
+            sdo:name "langstring_value"@en ;
+            ns1:definition_uri "http://schema.repronim.org//langstring_value"@en ;
+            ns1:domain_of "LangString"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:owner "LangString"@en ;
+            ns1:range "string"@en ;
+            ns1:required true ;
+            ns1:slot_uri "http://schema.repronim.org/langstring_value"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:description "Provides information on whether or not an Item wants to be accompanied by the additional status option(s) defined in \"statusOptions\""@en ;
+            sdo:name "statusOptions"@en ;
+            ns1:definition_uri "http://schema.repronim.org//statusOptions"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:mappings "http://schema.repronim.org/statusOptions"@en ;
+            ns1:range "string"@en ;
+            ns1:slot_uri "http://schema.repronim.org/statusOptions"@en ;
+            ns1:title "Status options"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:description "An ordered list to describe the order in which the items of an assessment or protocol appear in the user interface."@en ;
+            sdo:name "order"@en ;
+            ns1:any_of [ a ns1:AnonymousSlotExpression ;
+                    ns1:range "Item"@en ],
+                [ a ns1:AnonymousSlotExpression ;
+                    ns1:range "uri"@en ],
+                [ a ns1:AnonymousSlotExpression ;
+                    ns1:range "Activity"@en ] ;
+            ns1:definition_uri "http://schema.repronim.org//order"@en ;
+            ns1:domain_of "UI"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:mappings "http://schema.repronim.org/order"@en ;
+            ns1:multivalued true ;
+            ns1:owner "UI"@en ;
+            ns1:range "string"@en ;
+            ns1:slot_uri "http://schema.repronim.org/order"@en ;
+            ns1:title "Order"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:description "The alternate label."@en ;
+            sdo:name "altLabel"@en ;
+            ns1:definition_uri "http://schema.repronim.org//altLabel"@en ;
+            ns1:domain_of "Activity"@en,
+                "Item"@en,
+                "Protocol"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:inlined true ;
+            ns1:mappings "http://www.w3.org/2004/02/skos/core#altLabel"@en ;
+            ns1:multivalued true ;
+            ns1:owner "Protocol"@en ;
+            ns1:range "LangString"@en ;
+            ns1:slot_uri "http://www.w3.org/2004/02/skos/core#altLabel"@en ;
+            ns1:title "alternate label"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:description "A pointer to the node describing the item."@en ;
+            sdo:name "isAbout"@en ;
+            ns1:any_of [ a ns1:AnonymousSlotExpression ;
+                    ns1:range "uri"@en ],
+                [ a ns1:AnonymousSlotExpression ;
+                    ns1:range "Item"@en ],
+                [ a ns1:AnonymousSlotExpression ;
+                    ns1:range "Activity"@en ] ;
+            ns1:definition_uri "http://schema.repronim.org//isAbout"@en ;
+            ns1:domain_of "AdditionalProperty"@en,
+                "OverrideProperty"@en,
+                "Response"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:inlined true ;
+            ns1:mappings "http://schema.repronim.org/isAbout"@en ;
+            ns1:owner "Response"@en ;
+            ns1:range "string"@en ;
+            ns1:slot_uri "http://schema.repronim.org/isAbout"@en ;
+            ns1:title "isAbout"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:name "url"@en ;
+            ns1:definition_uri "http://schema.repronim.org//url"@en ;
+            ns1:domain_of "SoftwareAgent"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:mappings "http://schema.org/url"@en ;
+            ns1:owner "SoftwareAgent"@en ;
+            ns1:range "uri"@en ;
+            ns1:slot_uri "http://schema.org/url"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:name "schemaVersion"@en ;
+            ns1:definition_uri "http://schema.repronim.org//schemaVersion"@en ;
+            ns1:domain_of "Activity"@en,
+                "Item"@en,
+                "Protocol"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:mappings "http://schema.org/schemaVersion"@en ;
+            ns1:owner "Protocol"@en ;
+            ns1:range "string"@en ;
+            ns1:slot_uri "http://schema.org/schemaVersion"@en ],
+        [ a ns1:SlotDefinition ;
+            sdo:name "wasAttributedTo"@en ;
+            ns1:definition_uri "http://schema.repronim.org//wasAttributedTo"@en ;
+            ns1:domain_of "Response"@en ;
+            ns1:from_schema "http://schema.repronim.org/"@en ;
+            ns1:inlined true ;
+            ns1:mappings "http://www.w3.org/ns/prov#wasAttributedTo"@en ;
+            ns1:owner "Response"@en ;
+            ns1:range "Participant"@en ;
+            ns1:slot_uri "http://www.w3.org/ns/prov#wasAttributedTo"@en ] ;
+    ns1:source_file "reproschema.yaml"@en ;
+    ns1:source_file_date "2024-06-18T17:04:09"@en ;
+    ns1:source_file_size 19504 ;
+    ns1:types [ a ns1:TypeDefinition ;
+            sdo:description "A binary (true or false) value"@en ;
+            sdo:name "boolean"@en ;
+            ns1:base "Bool"@en ;
+            ns1:definition_uri "https://w3id.org/linkml/Boolean"@en ;
+            ns1:exact_mappings "schema:Boolean"@en ;
+            ns1:from_schema "https://w3id.org/linkml/types"@en ;
+            ns1:imported_from "linkml:types"@en ;
+            ns1:notes "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"boolean\"."@en ;
+            ns1:repr "bool"@en ;
+            ns1:uri "http://www.w3.org/2001/XMLSchema#boolean"@en ],
+        [ a ns1:TypeDefinition ;
+            sdo:description "An integer"@en ;
+            sdo:name "integer"@en ;
+            ns1:base "int"@en ;
+            ns1:definition_uri "https://w3id.org/linkml/Integer"@en ;
+            ns1:exact_mappings "schema:Integer"@en ;
+            ns1:from_schema "https://w3id.org/linkml/types"@en ;
+            ns1:imported_from "linkml:types"@en ;
+            ns1:notes "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"integer\"."@en ;
+            ns1:uri "http://www.w3.org/2001/XMLSchema#integer"@en ],
+        [ a ns1:TypeDefinition ;
+            sdo:description "The combination of a date and time"@en ;
+            sdo:name "datetime"@en ;
+            ns1:base "XSDDateTime"@en ;
+            ns1:definition_uri "https://w3id.org/linkml/Datetime"@en ;
+            ns1:exact_mappings "schema:DateTime"@en ;
+            ns1:from_schema "https://w3id.org/linkml/types"@en ;
+            ns1:imported_from "linkml:types"@en ;
+            ns1:notes "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"datetime\"."@en ;
+            ns1:repr "str"@en ;
+            ns1:uri "http://www.w3.org/2001/XMLSchema#dateTime"@en ],
+        [ a ns1:TypeDefinition ;
+            sdo:description "A real number that conforms to the xsd:float specification"@en ;
+            sdo:name "float"@en ;
+            ns1:base "float"@en ;
+            ns1:definition_uri "https://w3id.org/linkml/Float"@en ;
+            ns1:exact_mappings "schema:Float"@en ;
+            ns1:from_schema "https://w3id.org/linkml/types"@en ;
+            ns1:imported_from "linkml:types"@en ;
+            ns1:notes "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"float\"."@en ;
+            ns1:uri "http://www.w3.org/2001/XMLSchema#float"@en ],
+        [ a ns1:TypeDefinition ;
+            sdo:description "A time object represents a (local) time of day, independent of any particular day"@en ;
+            sdo:name "time"@en ;
+            ns1:base "XSDTime"@en ;
+            ns1:definition_uri "https://w3id.org/linkml/Time"@en ;
+            ns1:exact_mappings "schema:Time"@en ;
+            ns1:from_schema "https://w3id.org/linkml/types"@en ;
+            ns1:imported_from "linkml:types"@en ;
+            ns1:notes "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"time\"."@en,
+                "URI is dateTime because OWL reasoners do not work with straight date or time"@en ;
+            ns1:repr "str"@en ;
+            ns1:uri "http://www.w3.org/2001/XMLSchema#time"@en ],
+        [ a ns1:TypeDefinition ;
+            sdo:description "a date (year, month and day) in an idealized calendar"@en ;
+            sdo:name "date"@en ;
+            ns1:base "XSDDate"@en ;
+            ns1:definition_uri "https://w3id.org/linkml/Date"@en ;
+            ns1:exact_mappings "schema:Date"@en ;
+            ns1:from_schema "https://w3id.org/linkml/types"@en ;
+            ns1:imported_from "linkml:types"@en ;
+            ns1:notes "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"date\"."@en,
+                "URI is dateTime because OWL reasoners don't work with straight date or time"@en ;
+            ns1:repr "str"@en ;
+            ns1:uri "http://www.w3.org/2001/XMLSchema#date"@en ],
+        [ a ns1:TypeDefinition ;
+            sdo:description "A URI, CURIE or BNODE that represents a node in a model."@en ;
+            sdo:name "nodeidentifier"@en ;
+            ns1:base "NodeIdentifier"@en ;
+            ns1:definition_uri "https://w3id.org/linkml/Nodeidentifier"@en ;
+            ns1:from_schema "https://w3id.org/linkml/types"@en ;
+            ns1:imported_from "linkml:types"@en ;
+            ns1:notes "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"nodeidentifier\"."@en ;
+            ns1:repr "str"@en ;
+            ns1:uri "http://www.w3.org/ns/shex#nonLiteral"@en ],
+        [ a ns1:TypeDefinition ;
+            sdo:description "A real number with arbitrary precision that conforms to the xsd:decimal specification"@en ;
+            sdo:name "decimal"@en ;
+            ns1:base "Decimal"@en ;
+            ns1:broad_mappings "schema:Number"@en ;
+            ns1:definition_uri "https://w3id.org/linkml/Decimal"@en ;
+            ns1:from_schema "https://w3id.org/linkml/types"@en ;
+            ns1:imported_from "linkml:types"@en ;
+            ns1:notes "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"decimal\"."@en ;
+            ns1:uri "http://www.w3.org/2001/XMLSchema#decimal"@en ],
+        [ a ns1:TypeDefinition ;
+            sdo:description "A URI or CURIE that represents an object in the model."@en ;
+            sdo:name "objectidentifier"@en ;
+            ns1:base "ElementIdentifier"@en ;
+            ns1:comments "Used for inheritance and type checking"@en ;
+            ns1:definition_uri "https://w3id.org/linkml/Objectidentifier"@en ;
+            ns1:from_schema "https://w3id.org/linkml/types"@en ;
+            ns1:imported_from "linkml:types"@en ;
+            ns1:notes "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"objectidentifier\"."@en ;
+            ns1:repr "str"@en ;
+            ns1:uri "http://www.w3.org/ns/shex#iri"@en ],
+        [ a ns1:TypeDefinition ;
+            sdo:description "A string encoding a JSON Pointer. The value of the string MUST conform to JSON Point syntax and SHOULD dereference to a valid object within the current instance document when encoded in tree form."@en ;
+            sdo:name "jsonpointer"@en ;
+            ns1:base "str"@en ;
+            ns1:conforms_to "https://datatracker.ietf.org/doc/html/rfc6901"@en ;
+            ns1:definition_uri "https://w3id.org/linkml/Jsonpointer"@en ;
+            ns1:from_schema "https://w3id.org/linkml/types"@en ;
+            ns1:imported_from "linkml:types"@en ;
+            ns1:notes "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"jsonpointer\"."@en ;
+            ns1:repr "str"@en ;
+            ns1:uri "http://www.w3.org/2001/XMLSchema#string"@en ],
+        [ a ns1:TypeDefinition ;
+            sdo:description "A string encoding a JSON Path. The value of the string MUST conform to JSON Point syntax and SHOULD dereference to zero or more valid objects within the current instance document when encoded in tree form."@en ;
+            sdo:name "jsonpath"@en ;
+            ns1:base "str"@en ;
+            ns1:conforms_to "https://www.ietf.org/archive/id/draft-goessner-dispatch-jsonpath-00.html"@en ;
+            ns1:definition_uri "https://w3id.org/linkml/Jsonpath"@en ;
+            ns1:from_schema "https://w3id.org/linkml/types"@en ;
+            ns1:imported_from "linkml:types"@en ;
+            ns1:notes "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"jsonpath\"."@en ;
+            ns1:repr "str"@en ;
+            ns1:uri "http://www.w3.org/2001/XMLSchema#string"@en ],
+        [ a ns1:TypeDefinition ;
+            sdo:description "A real number that conforms to the xsd:double specification"@en ;
+            sdo:name "double"@en ;
+            ns1:base "float"@en ;
+            ns1:close_mappings "schema:Float"@en ;
+            ns1:definition_uri "https://w3id.org/linkml/Double"@en ;
+            ns1:from_schema "https://w3id.org/linkml/types"@en ;
+            ns1:imported_from "linkml:types"@en ;
+            ns1:notes "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"double\"."@en ;
+            ns1:uri "http://www.w3.org/2001/XMLSchema#double"@en ],
+        [ a ns1:TypeDefinition ;
+            sdo:description "a compact URI"@en ;
+            sdo:name "curie"@en ;
+            ns1:base "Curie"@en ;
+            ns1:comments "in RDF serializations this MUST be expanded to a URI"@en,
+                "in non-RDF serializations MAY be serialized as the compact representation"@en ;
+            ns1:conforms_to "https://www.w3.org/TR/curie/"@en ;
+            ns1:definition_uri "https://w3id.org/linkml/Curie"@en ;
+            ns1:from_schema "https://w3id.org/linkml/types"@en ;
+            ns1:imported_from "linkml:types"@en ;
+            ns1:notes "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"curie\"."@en ;
+            ns1:repr "str"@en ;
+            ns1:uri "http://www.w3.org/2001/XMLSchema#string"@en ],
+        [ a ns1:TypeDefinition ;
+            sdo:description "Prefix part of CURIE"@en ;
+            sdo:name "ncname"@en ;
+            ns1:base "NCName"@en ;
+            ns1:definition_uri "https://w3id.org/linkml/Ncname"@en ;
+            ns1:from_schema "https://w3id.org/linkml/types"@en ;
+            ns1:imported_from "linkml:types"@en ;
+            ns1:notes "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"ncname\"."@en ;
+            ns1:repr "str"@en ;
+            ns1:uri "http://www.w3.org/2001/XMLSchema#string"@en ],
+        [ a ns1:TypeDefinition ;
+            sdo:description "A character string"@en ;
+            sdo:name "string"@en ;
+            ns1:base "str"@en ;
+            ns1:definition_uri "https://w3id.org/linkml/String"@en ;
+            ns1:exact_mappings "schema:Text"@en ;
+            ns1:from_schema "https://w3id.org/linkml/types"@en ;
+            ns1:imported_from "linkml:types"@en ;
+            ns1:notes "In RDF serializations, a slot with range of string is treated as a literal or type xsd:string.   If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"string\"."@en ;
+            ns1:uri "http://www.w3.org/2001/XMLSchema#string"@en ],
+        [ a ns1:TypeDefinition ;
+            sdo:description "Either a date or a datetime"@en ;
+            sdo:name "date_or_datetime"@en ;
+            ns1:base "str"@en ;
+            ns1:definition_uri "https://w3id.org/linkml/DateOrDatetime"@en ;
+            ns1:from_schema "https://w3id.org/linkml/types"@en ;
+            ns1:imported_from "linkml:types"@en ;
+            ns1:notes "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"date_or_datetime\"."@en ;
+            ns1:repr "str"@en ;
+            ns1:uri "https://w3id.org/linkml/DateOrDatetime"@en ],
+        [ a ns1:TypeDefinition ;
+            sdo:description "a complete URI"@en ;
+            sdo:name "uri"@en ;
+            ns1:base "URI"@en ;
+            ns1:close_mappings "schema:URL"@en ;
+            ns1:comments "in RDF serializations a slot with range of uri is treated as a literal or type xsd:anyURI unless it is an identifier or a reference to an identifier, in which case it is translated directly to a node"@en ;
+            ns1:conforms_to "https://www.ietf.org/rfc/rfc3987.txt"@en ;
+            ns1:definition_uri "https://w3id.org/linkml/Uri"@en ;
+            ns1:from_schema "https://w3id.org/linkml/types"@en ;
+            ns1:imported_from "linkml:types"@en ;
+            ns1:notes "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"uri\"."@en ;
+            ns1:repr "str"@en ;
+            ns1:uri "http://www.w3.org/2001/XMLSchema#anyURI"@en ],
+        [ a ns1:TypeDefinition ;
+            sdo:description "a URI or a CURIE"@en ;
+            sdo:name "uriorcurie"@en ;
+            ns1:base "URIorCURIE"@en ;
+            ns1:definition_uri "https://w3id.org/linkml/Uriorcurie"@en ;
+            ns1:from_schema "https://w3id.org/linkml/types"@en ;
+            ns1:imported_from "linkml:types"@en ;
+            ns1:notes "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"uriorcurie\"."@en ;
+            ns1:repr "str"@en ;
+            ns1:uri "http://www.w3.org/2001/XMLSchema#anyURI"@en ],
+        [ a ns1:TypeDefinition ;
+            sdo:description "A string encoding a SPARQL Property Path. The value of the string MUST conform to SPARQL syntax and SHOULD dereference to zero or more valid objects within the current instance document when encoded as RDF."@en ;
+            sdo:name "sparqlpath"@en ;
+            ns1:base "str"@en ;
+            ns1:conforms_to "https://www.w3.org/TR/sparql11-query/#propertypaths"@en ;
+            ns1:definition_uri "https://w3id.org/linkml/Sparqlpath"@en ;
+            ns1:from_schema "https://w3id.org/linkml/types"@en ;
+            ns1:imported_from "linkml:types"@en ;
+            ns1:notes "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"sparqlpath\"."@en ;
+            ns1:repr "str"@en ;
+            ns1:uri "http://www.w3.org/2001/XMLSchema#string"@en ] .
+
+
