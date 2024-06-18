@@ -55,7 +55,7 @@ slots:
     slot_uri: schema:associatedMedia
   audio:
     title: audio
-    description: TODO
+    description: An audio object.
     slot_uri: schema:audio
     any_of:
     - range: uri
@@ -103,7 +103,6 @@ slots:
     range: uriorcurie
   cronTable:
     title: cronTable
-    description: TODO not described in reproschema
     slot_uri: reproschema:cronTable
   datumType:
     title: datumType
@@ -261,7 +260,7 @@ slots:
     range: OverrideProperty
   preamble:
     title: Preamble
-    description: The preamble for an assessment
+    description: The preamble for an assessment.
     slot_uri: reproschema:preamble
     multivalued: true
     range: langString
@@ -323,7 +322,7 @@ slots:
     range: datetime
     slot_uri: prov:startedAtTime
   subject_id:
-    slot_uri: nidm:subject_id #TODO check this @type:rdf:Property
+    slot_uri: nidm:subject_id
     range: string
   ui:
     title: UI
@@ -499,7 +498,7 @@ classes:
     class_uri: rdf:langString
   MediaObject:
     title: Media Object
-    description: Add description #TODO
+    description: A media object, such as an image, video, audio, or text object embedded in a web page or a downloadable dataset.
     is_a: Thing
     class_uri: schema:MediaObject
     slots:
@@ -539,7 +538,7 @@ classes:
       - id
       - subject_id
     class_uri: reproschema:Participant
-  Protocol: # TODO multiple types
+  Protocol:
     title: Protocol
     description: A representation of a study which comprises one or more assessments.
     is_a: Thing
@@ -552,6 +551,7 @@ classes:
     - description
     - landingPage
     - messages
+    - preamble
     - prefLabel
     - schemaVersion
     - ui
@@ -593,7 +593,7 @@ classes:
     - unitOptions
     - valueType
     class_uri: reproschema:ResponseOption
-  SoftwareAgent: # TODO multiple types
+  SoftwareAgent:
     title: Software Agent
     description:
       Captures information about some action that took place. It also links to information
@@ -613,9 +613,8 @@ classes:
       - category
     class_uri: schema:Thing
   UI:
-    title: todo
-    description:
-    - todo
+    title: UI properties
+    description: A group of properties related to UI.
     slots:
       - order
       - addProperties
