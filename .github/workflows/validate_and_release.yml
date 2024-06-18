@@ -36,33 +36,6 @@ jobs:
         python scripts/jsonParser.py
         reproschema validate examples
 
-  generate_other_formats:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: 3.12
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip setuptools
-          pip install linkml astor pre-commit
-          pip install git+https://github.com/ReproNim/reproschema-py.git
-      - name: generate pydantic and fixing it
-        run: |
-          gen-pydantic --pydantic-version 2 linkml-schema/reproschema.yaml > reproschema_model_autogen.py
-          python scripts/fix_pydantic.py reproschema_model_autogen.py reproschema_model.py
-          pre-commit run --files reproschema_model.py || true
-      - name: generate jsonld
-        run: |
-           gen-jsonld --context contexts/reproschema linkml-schema/reproschema.yaml > reproschema.jsonld
-      - name: generate n-triples and turtle formats using reproschema
-        run: |
-          reproschema convert --format n-triples reproschema.jsonld > reproschema.nt
-          reproschema convert --format turtle reproschema.jsonld > reproschema.ttl
-
-
   release:
     needs: [validate]
     if: github.event_name == 'workflow_dispatch'
@@ -73,7 +46,23 @@ jobs:
       uses: actions/setup-python@v5
       with:
         python-version: 3.12
-
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip setuptools
+        pip install linkml astor pre-commit
+        pip install git+https://github.com/ReproNim/reproschema-py.git
+    - name: Generate pydantic  using linml and fixing it with reproschema specific script
+      run: |
+        gen-pydantic --pydantic-version 2 linkml-schema/reproschema.yaml > reproschema_model_autogen.py
+        python scripts/fix_pydantic.py reproschema_model_autogen.py reproschema_model.py
+        pre-commit run --files reproschema_model.py || true
+    - name: Generate jsonld format using linkml
+      run: |
+        gen-jsonld --context contexts/reproschema linkml-schema/reproschema.yaml > reproschema.jsonld
+    - name: Generate n-triples and turtle formats using reproschema
+      run: |
+        reproschema convert --format n-triples reproschema.jsonld > reproschema.nt
+        reproschema convert --format turtle reproschema.jsonld > reproschema.ttl
     - name: Make a release
       run: |
         echo "Making a release ${{ inputs.version }}"
