@@ -1,0 +1,2387 @@
+{
+  "name": "reproschema",
+  "id": "http://schema.repronim.org/",
+  "version": "1.0.0",
+  "imports": [
+    "linkml:types"
+  ],
+  "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "prefixes": [
+    {
+      "prefix_prefix": "owl",
+      "prefix_reference": "http://www.w3.org/2002/07/owl#"
+    },
+    {
+      "prefix_prefix": "rdf",
+      "prefix_reference": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    },
+    {
+      "prefix_prefix": "rdfs",
+      "prefix_reference": "http://www.w3.org/2000/01/rdf-schema#"
+    },
+    {
+      "prefix_prefix": "xsd",
+      "prefix_reference": "http://www.w3.org/2001/XMLSchema#"
+    },
+    {
+      "prefix_prefix": "xml",
+      "prefix_reference": "http://www.w3.org/XML/1998/namespace"
+    },
+    {
+      "prefix_prefix": "nidm",
+      "prefix_reference": "http://purl.org/nidash/nidm#"
+    },
+    {
+      "prefix_prefix": "prov",
+      "prefix_reference": "http://www.w3.org/ns/prov#"
+    },
+    {
+      "prefix_prefix": "reproschema",
+      "prefix_reference": "http://schema.repronim.org/"
+    },
+    {
+      "prefix_prefix": "schema",
+      "prefix_reference": "http://schema.org/"
+    },
+    {
+      "prefix_prefix": "skos",
+      "prefix_reference": "http://www.w3.org/2004/02/skos/core#"
+    },
+    {
+      "prefix_prefix": "linkml",
+      "prefix_reference": "https://w3id.org/linkml/"
+    }
+  ],
+  "default_prefix": "http://schema.repronim.org/",
+  "default_range": "string",
+  "types": [
+    {
+      "name": "string",
+      "definition_uri": "https://w3id.org/linkml/String",
+      "description": "A character string",
+      "notes": [
+        "In RDF serializations, a slot with range of string is treated as a literal or type xsd:string.   If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"string\"."
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "exact_mappings": [
+        "schema:Text"
+      ],
+      "base": "str",
+      "uri": "http://www.w3.org/2001/XMLSchema#string",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "integer",
+      "definition_uri": "https://w3id.org/linkml/Integer",
+      "description": "An integer",
+      "notes": [
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"integer\"."
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "exact_mappings": [
+        "schema:Integer"
+      ],
+      "base": "int",
+      "uri": "http://www.w3.org/2001/XMLSchema#integer",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "boolean",
+      "definition_uri": "https://w3id.org/linkml/Boolean",
+      "description": "A binary (true or false) value",
+      "notes": [
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"boolean\"."
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "exact_mappings": [
+        "schema:Boolean"
+      ],
+      "base": "Bool",
+      "uri": "http://www.w3.org/2001/XMLSchema#boolean",
+      "repr": "bool",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "float",
+      "definition_uri": "https://w3id.org/linkml/Float",
+      "description": "A real number that conforms to the xsd:float specification",
+      "notes": [
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"float\"."
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "exact_mappings": [
+        "schema:Float"
+      ],
+      "base": "float",
+      "uri": "http://www.w3.org/2001/XMLSchema#float",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "double",
+      "definition_uri": "https://w3id.org/linkml/Double",
+      "description": "A real number that conforms to the xsd:double specification",
+      "notes": [
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"double\"."
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "close_mappings": [
+        "schema:Float"
+      ],
+      "base": "float",
+      "uri": "http://www.w3.org/2001/XMLSchema#double",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "decimal",
+      "definition_uri": "https://w3id.org/linkml/Decimal",
+      "description": "A real number with arbitrary precision that conforms to the xsd:decimal specification",
+      "notes": [
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"decimal\"."
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "broad_mappings": [
+        "schema:Number"
+      ],
+      "base": "Decimal",
+      "uri": "http://www.w3.org/2001/XMLSchema#decimal",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "time",
+      "definition_uri": "https://w3id.org/linkml/Time",
+      "description": "A time object represents a (local) time of day, independent of any particular day",
+      "notes": [
+        "URI is dateTime because OWL reasoners do not work with straight date or time",
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"time\"."
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "exact_mappings": [
+        "schema:Time"
+      ],
+      "base": "XSDTime",
+      "uri": "http://www.w3.org/2001/XMLSchema#time",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "date",
+      "definition_uri": "https://w3id.org/linkml/Date",
+      "description": "a date (year, month and day) in an idealized calendar",
+      "notes": [
+        "URI is dateTime because OWL reasoners don't work with straight date or time",
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"date\"."
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "exact_mappings": [
+        "schema:Date"
+      ],
+      "base": "XSDDate",
+      "uri": "http://www.w3.org/2001/XMLSchema#date",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "datetime",
+      "definition_uri": "https://w3id.org/linkml/Datetime",
+      "description": "The combination of a date and time",
+      "notes": [
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"datetime\"."
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "exact_mappings": [
+        "schema:DateTime"
+      ],
+      "base": "XSDDateTime",
+      "uri": "http://www.w3.org/2001/XMLSchema#dateTime",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "date_or_datetime",
+      "definition_uri": "https://w3id.org/linkml/DateOrDatetime",
+      "description": "Either a date or a datetime",
+      "notes": [
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"date_or_datetime\"."
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "str",
+      "uri": "https://w3id.org/linkml/DateOrDatetime",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "uriorcurie",
+      "definition_uri": "https://w3id.org/linkml/Uriorcurie",
+      "description": "a URI or a CURIE",
+      "notes": [
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"uriorcurie\"."
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "URIorCURIE",
+      "uri": "http://www.w3.org/2001/XMLSchema#anyURI",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "curie",
+      "definition_uri": "https://w3id.org/linkml/Curie",
+      "conforms_to": "https://www.w3.org/TR/curie/",
+      "description": "a compact URI",
+      "notes": [
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"curie\"."
+      ],
+      "comments": [
+        "in RDF serializations this MUST be expanded to a URI",
+        "in non-RDF serializations MAY be serialized as the compact representation"
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "Curie",
+      "uri": "http://www.w3.org/2001/XMLSchema#string",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "uri",
+      "definition_uri": "https://w3id.org/linkml/Uri",
+      "conforms_to": "https://www.ietf.org/rfc/rfc3987.txt",
+      "description": "a complete URI",
+      "notes": [
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"uri\"."
+      ],
+      "comments": [
+        "in RDF serializations a slot with range of uri is treated as a literal or type xsd:anyURI unless it is an identifier or a reference to an identifier, in which case it is translated directly to a node"
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "close_mappings": [
+        "schema:URL"
+      ],
+      "base": "URI",
+      "uri": "http://www.w3.org/2001/XMLSchema#anyURI",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "ncname",
+      "definition_uri": "https://w3id.org/linkml/Ncname",
+      "description": "Prefix part of CURIE",
+      "notes": [
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"ncname\"."
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "NCName",
+      "uri": "http://www.w3.org/2001/XMLSchema#string",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "objectidentifier",
+      "definition_uri": "https://w3id.org/linkml/Objectidentifier",
+      "description": "A URI or CURIE that represents an object in the model.",
+      "notes": [
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"objectidentifier\"."
+      ],
+      "comments": [
+        "Used for inheritance and type checking"
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "ElementIdentifier",
+      "uri": "http://www.w3.org/ns/shex#iri",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "nodeidentifier",
+      "definition_uri": "https://w3id.org/linkml/Nodeidentifier",
+      "description": "A URI, CURIE or BNODE that represents a node in a model.",
+      "notes": [
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"nodeidentifier\"."
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "NodeIdentifier",
+      "uri": "http://www.w3.org/ns/shex#nonLiteral",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "jsonpointer",
+      "definition_uri": "https://w3id.org/linkml/Jsonpointer",
+      "conforms_to": "https://datatracker.ietf.org/doc/html/rfc6901",
+      "description": "A string encoding a JSON Pointer. The value of the string MUST conform to JSON Point syntax and SHOULD dereference to a valid object within the current instance document when encoded in tree form.",
+      "notes": [
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"jsonpointer\"."
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "str",
+      "uri": "http://www.w3.org/2001/XMLSchema#string",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "jsonpath",
+      "definition_uri": "https://w3id.org/linkml/Jsonpath",
+      "conforms_to": "https://www.ietf.org/archive/id/draft-goessner-dispatch-jsonpath-00.html",
+      "description": "A string encoding a JSON Path. The value of the string MUST conform to JSON Point syntax and SHOULD dereference to zero or more valid objects within the current instance document when encoded in tree form.",
+      "notes": [
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"jsonpath\"."
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "str",
+      "uri": "http://www.w3.org/2001/XMLSchema#string",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "sparqlpath",
+      "definition_uri": "https://w3id.org/linkml/Sparqlpath",
+      "conforms_to": "https://www.w3.org/TR/sparql11-query/#propertypaths",
+      "description": "A string encoding a SPARQL Property Path. The value of the string MUST conform to SPARQL syntax and SHOULD dereference to zero or more valid objects within the current instance document when encoded as RDF.",
+      "notes": [
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"sparqlpath\"."
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "str",
+      "uri": "http://www.w3.org/2001/XMLSchema#string",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    }
+  ],
+  "enums": [
+    {
+      "name": "AllowedType",
+      "definition_uri": "http://schema.repronim.org//AllowedType",
+      "from_schema": "http://schema.repronim.org/",
+      "permissible_values": [
+        {
+          "text": "reproschema:AllowAltResponse",
+          "description": "Indicates (by boolean) if alternate responses are allowed or not.",
+          "meaning": "reproschema:AllowAltResponse",
+          "title": "AllowAltResponse"
+        },
+        {
+          "text": "reproschema:AllowExport",
+          "description": "Indicates (by boolean) if data can be exported or not.",
+          "meaning": "reproschema:AllowExport",
+          "title": "AllowExport"
+        },
+        {
+          "text": "reproschema:AllowReplay",
+          "description": "Indicates (by boolean) if items can be replayed or not.",
+          "meaning": "reproschema:AllowReplay",
+          "title": "AllowReplay"
+        },
+        {
+          "text": "reproschema:AllowSkip",
+          "description": "Indicates (by boolean) if items can be skipped or not.",
+          "meaning": "reproschema:AllowSkip",
+          "title": "AllowSkip"
+        },
+        {
+          "text": "reproschema:AutoAdvance",
+          "description": "Indicates (by boolean) if assessments in a protocol can auto advance or not.",
+          "meaning": "reproschema:AutoAdvance",
+          "title": "AutoAdvance"
+        },
+        {
+          "text": "reproschema:DisableBack",
+          "description": "Indicates (by boolean) if we can go back to a completed assessment in a protocol.",
+          "meaning": "reproschema:DisableBack",
+          "title": "DisableBack"
+        }
+      ]
+    },
+    {
+      "name": "MissingType",
+      "definition_uri": "http://schema.repronim.org//MissingType",
+      "from_schema": "http://schema.repronim.org/",
+      "permissible_values": [
+        {
+          "text": "reproschema:Skipped",
+          "description": "An element to describe the choice when the item is skipped.",
+          "meaning": "reproschema:Skipped",
+          "title": "Skipped"
+        },
+        {
+          "text": "reproschema:DontKnow",
+          "description": "An element to describe the choice when response is not known.",
+          "meaning": "reproschema:DontKnow",
+          "title": "DontKnow"
+        },
+        {
+          "text": "reproschema:Unknown",
+          "description": "An element to describe the choice when the reason for missing response is unknown.",
+          "meaning": "reproschema:Unknown",
+          "title": "Unknown"
+        },
+        {
+          "text": "reproschema:TimedOut",
+          "description": "A boolean element to describe if the response did not occur within the prescribed time.",
+          "meaning": "reproschema:TimedOut",
+          "title": "TimedOut"
+        }
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "about",
+      "definition_uri": "http://schema.repronim.org//about",
+      "description": "The subject matter of the Field.",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.org/about"
+      ],
+      "slot_uri": "http://schema.org/about",
+      "owner": "Protocol",
+      "domain_of": [
+        "Activity",
+        "Item",
+        "Protocol"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "addProperties",
+      "definition_uri": "http://schema.repronim.org//addProperties",
+      "description": "An array of objects to describe the various properties added to assessments and Items.",
+      "title": "addProperties",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.repronim.org/addProperties"
+      ],
+      "slot_uri": "http://schema.repronim.org/addProperties",
+      "multivalued": true,
+      "owner": "UI",
+      "domain_of": [
+        "UI"
+      ],
+      "range": "AdditionalProperty",
+      "inlined": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "additionalNotesObj",
+      "definition_uri": "http://schema.repronim.org//additionalNotesObj",
+      "description": "A set of objects to define notes in a field. For example, most Redcap and NDA data dictionaries have notes for each item which needs to be captured in reproschema.",
+      "title": "additional notes",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.repronim.org/additionalNotesObj"
+      ],
+      "slot_uri": "http://schema.repronim.org/additionalNotesObj",
+      "multivalued": true,
+      "owner": "Item",
+      "domain_of": [
+        "Item"
+      ],
+      "range": "string",
+      "any_of": [
+        {
+          "range": "AdditionalNoteObj",
+          "@type": "AnonymousSlotExpression"
+        }
+      ],
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "allow",
+      "definition_uri": "http://schema.repronim.org//allow",
+      "description": "An array of items indicating properties allowed on an activity or protocol.",
+      "title": "allow",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.repronim.org/allow"
+      ],
+      "slot_uri": "http://schema.repronim.org/allow",
+      "multivalued": true,
+      "owner": "UI",
+      "domain_of": [
+        "AdditionalProperty",
+        "UI"
+      ],
+      "range": "AllowedType",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "altLabel",
+      "definition_uri": "http://schema.repronim.org//altLabel",
+      "description": "The alternate label.",
+      "title": "alternate label",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://www.w3.org/2004/02/skos/core#altLabel"
+      ],
+      "slot_uri": "http://www.w3.org/2004/02/skos/core#altLabel",
+      "multivalued": true,
+      "owner": "Protocol",
+      "domain_of": [
+        "Activity",
+        "Item",
+        "Protocol"
+      ],
+      "range": "LangString",
+      "inlined": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "associatedMedia",
+      "definition_uri": "http://schema.repronim.org//associatedMedia",
+      "description": "A media object that encodes this creative work. This property is a synonym for encoding.",
+      "title": "associatedMedia",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.org/associatedMedia"
+      ],
+      "slot_uri": "http://schema.org/associatedMedia",
+      "owner": "Protocol",
+      "domain_of": [
+        "Activity",
+        "Item",
+        "Protocol"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "audio",
+      "definition_uri": "http://schema.repronim.org//audio",
+      "description": "An audio object.",
+      "title": "audio",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.org/audio"
+      ],
+      "slot_uri": "http://schema.org/audio",
+      "owner": "Item",
+      "domain_of": [
+        "Item"
+      ],
+      "range": "string",
+      "any_of": [
+        {
+          "range": "uri",
+          "@type": "AnonymousSlotExpression"
+        },
+        {
+          "range": "AudioObject",
+          "@type": "AnonymousSlotExpression"
+        }
+      ],
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "category",
+      "definition_uri": "http://schema.repronim.org//category",
+      "description": "Name of the high level ontology class in which this entity is categorized. Corresponds to the label for the biolink entity type class. In an RDF database it should be a model class URI. This field is multi-valued.",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      ],
+      "slot_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "owner": "Thing",
+      "domain_of": [
+        "Thing"
+      ],
+      "range": "uriorcurie",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "choices",
+      "definition_uri": "http://schema.repronim.org//choices",
+      "description": "An array to list the available options for response of the Item.",
+      "title": "choices",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.repronim.org/choices"
+      ],
+      "exact_mappings": [
+        "http://schema.org/itemListElement"
+      ],
+      "slot_uri": "http://schema.repronim.org/choices",
+      "multivalued": true,
+      "owner": "ResponseOption",
+      "domain_of": [
+        "ResponseOption"
+      ],
+      "range": "string",
+      "any_of": [
+        {
+          "range": "uri",
+          "@type": "AnonymousSlotExpression"
+        },
+        {
+          "range": "Choice",
+          "@type": "AnonymousSlotExpression"
+        }
+      ],
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "citation",
+      "definition_uri": "http://schema.repronim.org//citation",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.org/citation"
+      ],
+      "slot_uri": "http://schema.org/citation",
+      "multivalued": true,
+      "owner": "Activity",
+      "domain_of": [
+        "Activity"
+      ],
+      "range": "LangString",
+      "inlined": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "column",
+      "definition_uri": "http://schema.repronim.org//column",
+      "description": "An element to define the column name where the note was taken from.",
+      "title": "column",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.repronim.org/column"
+      ],
+      "slot_uri": "http://schema.repronim.org/column",
+      "owner": "AdditionalNoteObj",
+      "domain_of": [
+        "AdditionalNoteObj"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "compute",
+      "definition_uri": "http://schema.repronim.org//compute",
+      "description": "An array of objects indicating computations in an activity or protocol and maps it to the corresponding Item. scoring logic is a subset of all computations that could be performed and not all computations will be scoring. For example, one may want to do conversion from one unit to another.",
+      "title": "computation",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.repronim.org/compute"
+      ],
+      "slot_uri": "http://schema.repronim.org/compute",
+      "multivalued": true,
+      "owner": "Protocol",
+      "domain_of": [
+        "Activity",
+        "Protocol"
+      ],
+      "range": "ComputeSpecification",
+      "inlined": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "contentUrl",
+      "definition_uri": "http://schema.repronim.org//contentUrl",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.org/contentUrl"
+      ],
+      "slot_uri": "http://schema.org/contentUrl",
+      "owner": "MediaObject",
+      "domain_of": [
+        "MediaObject"
+      ],
+      "range": "uriorcurie",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "cronTable",
+      "definition_uri": "http://schema.repronim.org//cronTable",
+      "title": "cronTable",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.repronim.org/cronTable"
+      ],
+      "slot_uri": "http://schema.repronim.org/cronTable",
+      "owner": "Protocol",
+      "domain_of": [
+        "Activity",
+        "Protocol"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "datumType",
+      "definition_uri": "http://schema.repronim.org//datumType",
+      "description": "Indicates what type of datum the response is (e.g. range,count,scalar etc.) for the Item.",
+      "title": "datumType",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.repronim.org/datumType"
+      ],
+      "slot_uri": "http://schema.repronim.org/datumType",
+      "owner": "ResponseOption",
+      "domain_of": [
+        "ResponseOption"
+      ],
+      "range": "string",
+      "any_of": [
+        {
+          "range": "string",
+          "@type": "AnonymousSlotExpression"
+        },
+        {
+          "range": "uri",
+          "@type": "AnonymousSlotExpression"
+        }
+      ],
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "description",
+      "definition_uri": "http://schema.repronim.org//description",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.org/description"
+      ],
+      "slot_uri": "http://schema.org/description",
+      "multivalued": true,
+      "owner": "Protocol",
+      "domain_of": [
+        "Activity",
+        "Item",
+        "Protocol"
+      ],
+      "range": "LangString",
+      "inlined": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "endedAtTime",
+      "definition_uri": "http://schema.repronim.org//endedAtTime",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://www.w3.org/ns/prov#endedAtTime"
+      ],
+      "slot_uri": "http://www.w3.org/ns/prov#endedAtTime",
+      "owner": "ResponseActivity",
+      "domain_of": [
+        "ResponseActivity"
+      ],
+      "range": "datetime",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "generated",
+      "definition_uri": "http://schema.repronim.org//generated",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://www.w3.org/ns/prov#generated"
+      ],
+      "slot_uri": "http://www.w3.org/ns/prov#generated",
+      "owner": "ResponseActivity",
+      "domain_of": [
+        "ResponseActivity"
+      ],
+      "range": "uri",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "id",
+      "definition_uri": "http://schema.repronim.org//id",
+      "description": "A unique identifier for an entity. Must be either a CURIE shorthand for a URI or a complete URI.",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.org/identifier"
+      ],
+      "slot_uri": "http://schema.org/identifier",
+      "owner": "Thing",
+      "domain_of": [
+        "Participant",
+        "Thing"
+      ],
+      "range": "uriorcurie",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "image",
+      "definition_uri": "http://schema.repronim.org//image",
+      "description": "An image of the item. This can be a <a class=\"localLink\" href=\"http://schema.org/URL\">URL</a> or a fully described <a class=\"localLink\" href=\"http://schema.org/ImageObject\">ImageObject</a>.",
+      "title": "image",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.org/image"
+      ],
+      "slot_uri": "http://schema.org/image",
+      "owner": "Item",
+      "domain_of": [
+        "Activity",
+        "Choice",
+        "Item"
+      ],
+      "range": "string",
+      "any_of": [
+        {
+          "range": "ImageObject",
+          "@type": "AnonymousSlotExpression"
+        },
+        {
+          "range": "uri",
+          "@type": "AnonymousSlotExpression"
+        }
+      ],
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "inLanguage",
+      "definition_uri": "http://schema.repronim.org//inLanguage",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.org/inLanguage"
+      ],
+      "slot_uri": "http://schema.org/inLanguage",
+      "owner": "ResponseActivity",
+      "domain_of": [
+        "LandingPage",
+        "MediaObject",
+        "ResponseActivity"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "inputType",
+      "definition_uri": "http://schema.repronim.org//inputType",
+      "description": "An element to describe the input type of a Item.",
+      "title": "inputType",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.repronim.org/inputType"
+      ],
+      "slot_uri": "http://schema.repronim.org/inputType",
+      "owner": "UI",
+      "domain_of": [
+        "UI"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "isAbout",
+      "definition_uri": "http://schema.repronim.org//isAbout",
+      "description": "A pointer to the node describing the item.",
+      "title": "isAbout",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.repronim.org/isAbout"
+      ],
+      "slot_uri": "http://schema.repronim.org/isAbout",
+      "owner": "Response",
+      "domain_of": [
+        "AdditionalProperty",
+        "OverrideProperty",
+        "Response"
+      ],
+      "range": "string",
+      "inlined": true,
+      "any_of": [
+        {
+          "range": "uri",
+          "@type": "AnonymousSlotExpression"
+        },
+        {
+          "range": "Activity",
+          "@type": "AnonymousSlotExpression"
+        },
+        {
+          "range": "Item",
+          "@type": "AnonymousSlotExpression"
+        }
+      ],
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "isPartOf",
+      "definition_uri": "http://schema.repronim.org//isPartOf",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.org/isPartOf"
+      ],
+      "slot_uri": "http://schema.org/isPartOf",
+      "owner": "Item",
+      "domain_of": [
+        "Item"
+      ],
+      "range": "Activity",
+      "inlined": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "isProprietary",
+      "definition_uri": "http://schema.repronim.org//isProprietary",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.org/isProprietary"
+      ],
+      "slot_uri": "http://schema.org/isProprietary",
+      "owner": "Activity",
+      "domain_of": [
+        "Activity"
+      ],
+      "range": "boolean",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "isVis",
+      "definition_uri": "http://schema.repronim.org//isVis",
+      "description": "An element to describe (by boolean or conditional statement) visibility conditions of items in an assessment.",
+      "title": "visibility",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.repronim.org/isVis"
+      ],
+      "slot_uri": "http://schema.repronim.org/isVis",
+      "owner": "OverrideProperty",
+      "domain_of": [
+        "AdditionalProperty",
+        "OverrideProperty"
+      ],
+      "range": "string",
+      "any_of": [
+        {
+          "range": "boolean",
+          "@type": "AnonymousSlotExpression"
+        },
+        {
+          "range": "string",
+          "@type": "AnonymousSlotExpression"
+        }
+      ],
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "jsExpression",
+      "definition_uri": "http://schema.repronim.org//jsExpression",
+      "description": "A JavaScript expression for computations. A JavaScript expression to compute a score from other variables.",
+      "title": "JavaScript Expression",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.repronim.org/jsExpression"
+      ],
+      "slot_uri": "http://schema.repronim.org/jsExpression",
+      "owner": "MessageSpecification",
+      "domain_of": [
+        "ComputeSpecification",
+        "MessageSpecification"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "landingPage",
+      "definition_uri": "http://schema.repronim.org//landingPage",
+      "description": "An element (by URL) to point to the protocol readme or landing page.",
+      "title": "Landing page content",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.repronim.org/landingPage"
+      ],
+      "slot_uri": "http://schema.repronim.org/landingPage",
+      "multivalued": true,
+      "owner": "Protocol",
+      "domain_of": [
+        "Protocol"
+      ],
+      "range": "string",
+      "inlined": true,
+      "any_of": [
+        {
+          "range": "uri",
+          "@type": "AnonymousSlotExpression"
+        },
+        {
+          "range": "string",
+          "@type": "AnonymousSlotExpression"
+        },
+        {
+          "range": "LandingPage",
+          "@type": "AnonymousSlotExpression"
+        }
+      ],
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "langstring_prefix",
+      "definition_uri": "http://schema.repronim.org//langstring_prefix",
+      "description": "The language prefix component of a langString.",
+      "from_schema": "http://schema.repronim.org/",
+      "slot_uri": "http://schema.repronim.org/langstring_prefix",
+      "key": true,
+      "owner": "LangString",
+      "domain_of": [
+        "LangString"
+      ],
+      "range": "string",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "langstring_value",
+      "definition_uri": "http://schema.repronim.org//langstring_value",
+      "description": "The value component of a langString.",
+      "from_schema": "http://schema.repronim.org/",
+      "slot_uri": "http://schema.repronim.org/langstring_value",
+      "owner": "LangString",
+      "domain_of": [
+        "LangString"
+      ],
+      "range": "string",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "limit",
+      "definition_uri": "http://schema.repronim.org//limit",
+      "description": "An element to limit the duration (uses ISO 8601) this activity is allowed to be completed by once activity is available.",
+      "title": "limit",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.repronim.org/limit"
+      ],
+      "slot_uri": "http://schema.repronim.org/limit",
+      "owner": "OverrideProperty",
+      "domain_of": [
+        "AdditionalProperty",
+        "OverrideProperty"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "maxRetakes",
+      "definition_uri": "http://schema.repronim.org//maxRetakes",
+      "description": "Defines number of times the item is allowed to be redone.",
+      "title": "maxRetakes",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.repronim.org/maxRetakes"
+      ],
+      "slot_uri": "http://schema.repronim.org/maxRetakes",
+      "owner": "OverrideProperty",
+      "domain_of": [
+        "AdditionalProperty",
+        "OverrideProperty"
+      ],
+      "range": "string",
+      "any_of": [
+        {
+          "range": "integer",
+          "@type": "AnonymousSlotExpression"
+        }
+      ],
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "maxValue",
+      "definition_uri": "http://schema.repronim.org//maxValue",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.org/maxValue"
+      ],
+      "slot_uri": "http://schema.org/maxValue",
+      "owner": "ResponseOption",
+      "domain_of": [
+        "ResponseOption"
+      ],
+      "range": "string",
+      "any_of": [
+        {
+          "range": "float",
+          "@type": "AnonymousSlotExpression"
+        },
+        {
+          "range": "integer",
+          "@type": "AnonymousSlotExpression"
+        }
+      ],
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "message",
+      "definition_uri": "http://schema.repronim.org//message",
+      "description": "The message to be conditionally displayed for an item.",
+      "title": "Message",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.repronim.org/message"
+      ],
+      "slot_uri": "http://schema.repronim.org/message",
+      "multivalued": true,
+      "owner": "MessageSpecification",
+      "domain_of": [
+        "MessageSpecification"
+      ],
+      "range": "LangString",
+      "inlined": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "messages",
+      "definition_uri": "http://schema.repronim.org//messages",
+      "description": "An array of objects to define conditional messages in an activity or protocol.",
+      "title": "messages",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.repronim.org/messages"
+      ],
+      "slot_uri": "http://schema.repronim.org/messages",
+      "multivalued": true,
+      "owner": "Protocol",
+      "domain_of": [
+        "Activity",
+        "Protocol"
+      ],
+      "range": "MessageSpecification",
+      "inlined": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "minValue",
+      "definition_uri": "http://schema.repronim.org//minValue",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.org/minValue"
+      ],
+      "slot_uri": "http://schema.org/minValue",
+      "owner": "ResponseOption",
+      "domain_of": [
+        "ResponseOption"
+      ],
+      "range": "string",
+      "any_of": [
+        {
+          "range": "float",
+          "@type": "AnonymousSlotExpression"
+        },
+        {
+          "range": "integer",
+          "@type": "AnonymousSlotExpression"
+        }
+      ],
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "multipleChoice",
+      "definition_uri": "http://schema.repronim.org//multipleChoice",
+      "description": "Indicates (by bool) if response for the Item has one or more answer.",
+      "title": "Multiple choice response expectation",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.repronim.org/multipleChoice"
+      ],
+      "slot_uri": "http://schema.repronim.org/multipleChoice",
+      "owner": "ResponseOption",
+      "domain_of": [
+        "ResponseOption"
+      ],
+      "range": "boolean",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "name",
+      "definition_uri": "http://schema.repronim.org//name",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.org/name"
+      ],
+      "slot_uri": "http://schema.org/name",
+      "multivalued": true,
+      "owner": "Thing",
+      "domain_of": [
+        "Choice",
+        "Thing"
+      ],
+      "range": "LangString",
+      "inlined": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "order",
+      "definition_uri": "http://schema.repronim.org//order",
+      "description": "An ordered list to describe the order in which the items of an assessment or protocol appear in the user interface.",
+      "title": "Order",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.repronim.org/order"
+      ],
+      "slot_uri": "http://schema.repronim.org/order",
+      "multivalued": true,
+      "owner": "UI",
+      "domain_of": [
+        "UI"
+      ],
+      "range": "string",
+      "any_of": [
+        {
+          "range": "uri",
+          "@type": "AnonymousSlotExpression"
+        },
+        {
+          "range": "Activity",
+          "@type": "AnonymousSlotExpression"
+        },
+        {
+          "range": "Item",
+          "@type": "AnonymousSlotExpression"
+        }
+      ],
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "overrideProperties",
+      "definition_uri": "http://schema.repronim.org//overrideProperties",
+      "description": "An array of objects to override the various properties added to assessments and fields.",
+      "title": "overrideProperties",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.repronim.org/overrideProperties"
+      ],
+      "slot_uri": "http://schema.repronim.org/overrideProperties",
+      "multivalued": true,
+      "owner": "UI",
+      "domain_of": [
+        "UI"
+      ],
+      "range": "OverrideProperty",
+      "inlined": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "preamble",
+      "definition_uri": "http://schema.repronim.org//preamble",
+      "description": "The preamble for an assessment.",
+      "title": "Preamble",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.repronim.org/preamble"
+      ],
+      "slot_uri": "http://schema.repronim.org/preamble",
+      "multivalued": true,
+      "owner": "Protocol",
+      "domain_of": [
+        "Activity",
+        "Item",
+        "Protocol"
+      ],
+      "range": "LangString",
+      "inlined": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "prefLabel",
+      "definition_uri": "http://schema.repronim.org//prefLabel",
+      "description": "The preferred label.",
+      "title": "preferred label",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://www.w3.org/2004/02/skos/core#prefLabel"
+      ],
+      "slot_uri": "http://www.w3.org/2004/02/skos/core#prefLabel",
+      "multivalued": true,
+      "owner": "UnitOption",
+      "domain_of": [
+        "Activity",
+        "AdditionalProperty",
+        "Item",
+        "OverrideProperty",
+        "Protocol",
+        "UnitOption"
+      ],
+      "range": "LangString",
+      "inlined": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "question",
+      "definition_uri": "http://schema.repronim.org//question",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.org/question"
+      ],
+      "slot_uri": "http://schema.org/question",
+      "multivalued": true,
+      "owner": "Item",
+      "domain_of": [
+        "Item"
+      ],
+      "range": "LangString",
+      "inlined": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "randomMaxDelay",
+      "definition_uri": "http://schema.repronim.org//randomMaxDelay",
+      "description": "Present activity/item within some random offset of activity available time up to the maximum specified by this ISO 8601 duration",
+      "title": "randomMaxDelay",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.repronim.org/randomMaxDelay"
+      ],
+      "slot_uri": "http://schema.repronim.org/randomMaxDelay",
+      "owner": "OverrideProperty",
+      "domain_of": [
+        "AdditionalProperty",
+        "OverrideProperty"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "readonlyValue",
+      "definition_uri": "http://schema.repronim.org//readonlyValue",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.org/readonlyValue"
+      ],
+      "slot_uri": "http://schema.org/readonlyValue",
+      "owner": "UI",
+      "domain_of": [
+        "UI"
+      ],
+      "range": "boolean",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "responseOptions",
+      "definition_uri": "http://schema.repronim.org//responseOptions",
+      "description": "An element (object or by URL)to describe the properties of response of the Item.",
+      "title": "Response options",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.repronim.org/responseOptions"
+      ],
+      "slot_uri": "http://schema.repronim.org/responseOptions",
+      "owner": "Item",
+      "domain_of": [
+        "Item"
+      ],
+      "range": "string",
+      "any_of": [
+        {
+          "range": "uri",
+          "@type": "AnonymousSlotExpression"
+        },
+        {
+          "range": "ResponseOption",
+          "@type": "AnonymousSlotExpression"
+        }
+      ],
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "schedule",
+      "definition_uri": "http://schema.repronim.org//schedule",
+      "description": "An element to set make activity available/repeat info using ISO 8601 repeating interval format.",
+      "title": "Schedule",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.repronim.org/schedule"
+      ],
+      "slot_uri": "http://schema.repronim.org/schedule",
+      "owner": "OverrideProperty",
+      "domain_of": [
+        "AdditionalProperty",
+        "OverrideProperty"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "schemaVersion",
+      "definition_uri": "http://schema.repronim.org//schemaVersion",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.org/schemaVersion"
+      ],
+      "slot_uri": "http://schema.org/schemaVersion",
+      "owner": "Protocol",
+      "domain_of": [
+        "Activity",
+        "Item",
+        "Protocol"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "shuffle",
+      "definition_uri": "http://schema.repronim.org//shuffle",
+      "description": "An element (bool) to determine if the list of items is shuffled or in order.",
+      "title": "Shuffle",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.repronim.org/shuffle"
+      ],
+      "slot_uri": "http://schema.repronim.org/shuffle",
+      "owner": "UI",
+      "domain_of": [
+        "UI"
+      ],
+      "range": "boolean",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "source",
+      "definition_uri": "http://schema.repronim.org//source",
+      "description": "An element to define the source (eg. RedCap, NDA) where the note was taken from.",
+      "title": "source",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.repronim.org/source"
+      ],
+      "slot_uri": "http://schema.repronim.org/source",
+      "owner": "AdditionalNoteObj",
+      "domain_of": [
+        "AdditionalNoteObj"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "statusOptions",
+      "definition_uri": "http://schema.repronim.org//statusOptions",
+      "description": "Provides information on whether or not an Item wants to be accompanied by the additional status option(s) defined in \"statusOptions\"",
+      "title": "Status options",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.repronim.org/statusOptions"
+      ],
+      "slot_uri": "http://schema.repronim.org/statusOptions",
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "startedAtTime",
+      "definition_uri": "http://schema.repronim.org//startedAtTime",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://www.w3.org/ns/prov#startedAtTime"
+      ],
+      "slot_uri": "http://www.w3.org/ns/prov#startedAtTime",
+      "owner": "ResponseActivity",
+      "domain_of": [
+        "ResponseActivity"
+      ],
+      "range": "datetime",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "subject_id",
+      "definition_uri": "http://schema.repronim.org//subject_id",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://purl.org/nidash/nidm#subject_id"
+      ],
+      "slot_uri": "http://purl.org/nidash/nidm#subject_id",
+      "owner": "Participant",
+      "domain_of": [
+        "Participant"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "ui",
+      "definition_uri": "http://schema.repronim.org//ui",
+      "description": "An element to control UI specifications. Originally @nest in jsonld, but using a class in the model.",
+      "title": "UI",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.repronim.org/ui"
+      ],
+      "slot_uri": "http://schema.repronim.org/ui",
+      "owner": "Protocol",
+      "domain_of": [
+        "Activity",
+        "AdditionalProperty",
+        "Item",
+        "Protocol"
+      ],
+      "range": "UI",
+      "inlined": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "unitOptions",
+      "definition_uri": "http://schema.repronim.org//unitOptions",
+      "description": "A list of objects to represent a human displayable name alongside the more formal value for units.",
+      "title": "unitOptions",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.repronim.org/unitOptions"
+      ],
+      "slot_uri": "http://schema.repronim.org/unitOptions",
+      "multivalued": true,
+      "owner": "ResponseOption",
+      "domain_of": [
+        "ResponseOption"
+      ],
+      "range": "UnitOption",
+      "inlined": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "url",
+      "definition_uri": "http://schema.repronim.org//url",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.org/url"
+      ],
+      "slot_uri": "http://schema.org/url",
+      "owner": "SoftwareAgent",
+      "domain_of": [
+        "SoftwareAgent"
+      ],
+      "range": "uri",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "used",
+      "definition_uri": "http://schema.repronim.org//used",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://www.w3.org/ns/prov#used"
+      ],
+      "slot_uri": "http://www.w3.org/ns/prov#used",
+      "multivalued": true,
+      "owner": "ResponseActivity",
+      "domain_of": [
+        "ResponseActivity"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "value",
+      "definition_uri": "http://schema.repronim.org//value",
+      "description": "The value for each option in choices or in additionalNotesObj",
+      "title": "value",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.org/value"
+      ],
+      "slot_uri": "http://schema.org/value",
+      "owner": "UnitOption",
+      "domain_of": [
+        "AdditionalNoteObj",
+        "Choice",
+        "Response",
+        "UnitOption"
+      ],
+      "range": "string",
+      "inlined": true,
+      "any_of": [
+        {
+          "range": "float",
+          "@type": "AnonymousSlotExpression"
+        },
+        {
+          "range": "integer",
+          "@type": "AnonymousSlotExpression"
+        },
+        {
+          "range": "boolean",
+          "@type": "AnonymousSlotExpression"
+        },
+        {
+          "range": "StructuredValue",
+          "@type": "AnonymousSlotExpression"
+        },
+        {
+          "range": "LangString",
+          "@type": "AnonymousSlotExpression"
+        },
+        {
+          "range": "uri",
+          "@type": "AnonymousSlotExpression"
+        },
+        {
+          "range": "string",
+          "@type": "AnonymousSlotExpression"
+        },
+        {
+          "range": "MissingType",
+          "@type": "AnonymousSlotExpression"
+        }
+      ],
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "valueType",
+      "definition_uri": "http://schema.repronim.org//valueType",
+      "description": "The type of the response of an item. For example, string, integer, etc.",
+      "title": "The type of the response",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.repronim.org/valueType"
+      ],
+      "slot_uri": "http://schema.repronim.org/valueType",
+      "multivalued": true,
+      "owner": "ResponseOption",
+      "domain_of": [
+        "ResponseOption"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "valueRequired",
+      "definition_uri": "http://schema.repronim.org//valueRequired",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.org/valueRequired"
+      ],
+      "slot_uri": "http://schema.org/valueRequired",
+      "owner": "OverrideProperty",
+      "domain_of": [
+        "AdditionalProperty",
+        "OverrideProperty"
+      ],
+      "range": "boolean",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "variableName",
+      "definition_uri": "http://schema.repronim.org//variableName",
+      "description": "The name used to represent an item.",
+      "title": "variableName",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.repronim.org/variableName"
+      ],
+      "slot_uri": "http://schema.repronim.org/variableName",
+      "owner": "OverrideProperty",
+      "domain_of": [
+        "AdditionalProperty",
+        "ComputeSpecification",
+        "OverrideProperty"
+      ],
+      "range": "LangString",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "version",
+      "definition_uri": "http://schema.repronim.org//version",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.org/version"
+      ],
+      "slot_uri": "http://schema.org/version",
+      "owner": "SoftwareAgent",
+      "domain_of": [
+        "Activity",
+        "Item",
+        "Protocol",
+        "SoftwareAgent"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "video",
+      "definition_uri": "http://schema.repronim.org//video",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.org/video"
+      ],
+      "slot_uri": "http://schema.org/video",
+      "owner": "Item",
+      "domain_of": [
+        "Item"
+      ],
+      "range": "string",
+      "any_of": [
+        {
+          "range": "VideoObject",
+          "@type": "AnonymousSlotExpression"
+        },
+        {
+          "range": "uri",
+          "@type": "AnonymousSlotExpression"
+        }
+      ],
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "wasAssociatedWith",
+      "definition_uri": "http://schema.repronim.org//wasAssociatedWith",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://www.w3.org/ns/prov#wasAssociatedWith"
+      ],
+      "slot_uri": "http://www.w3.org/ns/prov#wasAssociatedWith",
+      "owner": "ResponseActivity",
+      "domain_of": [
+        "ResponseActivity"
+      ],
+      "range": "SoftwareAgent",
+      "inlined": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "wasAttributedTo",
+      "definition_uri": "http://schema.repronim.org//wasAttributedTo",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://www.w3.org/ns/prov#wasAttributedTo"
+      ],
+      "slot_uri": "http://www.w3.org/ns/prov#wasAttributedTo",
+      "owner": "Response",
+      "domain_of": [
+        "Response"
+      ],
+      "range": "Participant",
+      "inlined": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "MediaObject_contentUrl",
+      "definition_uri": "http://schema.repronim.org//contentUrl",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.org/contentUrl"
+      ],
+      "is_a": "contentUrl",
+      "domain": "MediaObject",
+      "slot_uri": "http://schema.org/contentUrl",
+      "alias": "contentUrl",
+      "owner": "MediaObject",
+      "domain_of": [
+        "MediaObject"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "contentUrl",
+      "range": "uriorcurie",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "UnitOption_value",
+      "definition_uri": "http://schema.repronim.org//value",
+      "description": "The value for each option in choices or in additionalNotesObj",
+      "title": "value",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "http://schema.org/value"
+      ],
+      "is_a": "value",
+      "domain": "UnitOption",
+      "slot_uri": "http://schema.org/value",
+      "alias": "value",
+      "owner": "UnitOption",
+      "domain_of": [
+        "UnitOption"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "value",
+      "range": "string",
+      "inlined": true,
+      "any_of": [
+        {
+          "range": "uri",
+          "@type": "AnonymousSlotExpression"
+        },
+        {
+          "range": "LangString",
+          "@type": "AnonymousSlotExpression"
+        }
+      ],
+      "@type": "SlotDefinition"
+    }
+  ],
+  "classes": [
+    {
+      "name": "Activity",
+      "definition_uri": "http://schema.repronim.org//Activity",
+      "description": "An assessment in a protocol.",
+      "title": "Activity",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "reproschema:Activity"
+      ],
+      "is_a": "Thing",
+      "slots": [
+        "id",
+        "name",
+        "category",
+        "about",
+        "altLabel",
+        "associatedMedia",
+        "citation",
+        "compute",
+        "cronTable",
+        "description",
+        "image",
+        "isProprietary",
+        "messages",
+        "preamble",
+        "prefLabel",
+        "schemaVersion",
+        "ui",
+        "version"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://schema.repronim.org/Activity",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "AdditionalNoteObj",
+      "definition_uri": "http://schema.repronim.org//AdditionalNoteObj",
+      "description": "A set of objects to define notes in a Item. For example, most Redcap and NDA data dictionaries have notes for each item which needs to be captured in reproschema",
+      "title": "Additional Notes Object",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "reproschema:AdditionalNoteObj"
+      ],
+      "is_a": "Thing",
+      "slots": [
+        "id",
+        "name",
+        "category",
+        "column",
+        "source",
+        "value"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://schema.repronim.org/AdditionalNoteObj",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "AdditionalProperty",
+      "definition_uri": "http://schema.repronim.org//AdditionalProperty",
+      "description": "An object to describe the various properties added to assessments and Items.",
+      "title": "Additional properties",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "reproschema:AdditionalProperty"
+      ],
+      "is_a": "Thing",
+      "slots": [
+        "id",
+        "name",
+        "category",
+        "allow",
+        "isAbout",
+        "isVis",
+        "limit",
+        "maxRetakes",
+        "prefLabel",
+        "randomMaxDelay",
+        "schedule",
+        "valueRequired",
+        "variableName",
+        "ui"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://schema.repronim.org/AdditionalProperty",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "AudioObject",
+      "definition_uri": "http://schema.repronim.org//AudioObject",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "schema:AudioObject"
+      ],
+      "is_a": "MediaObject",
+      "slots": [
+        "id",
+        "name",
+        "category",
+        "inLanguage",
+        "MediaObject_contentUrl"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://schema.org/AudioObject",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Agent",
+      "definition_uri": "http://schema.repronim.org//Agent",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "prov:Agent"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://www.w3.org/ns/prov#Agent",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Choice",
+      "definition_uri": "http://schema.repronim.org//Choice",
+      "description": "An object to describe a response option.",
+      "title": "Response choice",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "reproschema:Choice"
+      ],
+      "is_a": "Thing",
+      "slots": [
+        "id",
+        "category",
+        "name",
+        "image",
+        "value"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://schema.repronim.org/Choice",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "ComputeSpecification",
+      "definition_uri": "http://schema.repronim.org//ComputeSpecification",
+      "description": "An object to define computations in an activity or protocol.",
+      "title": "Compute Specification",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "reproschema:ComputeSpecification"
+      ],
+      "is_a": "Thing",
+      "slots": [
+        "id",
+        "name",
+        "category",
+        "jsExpression",
+        "variableName"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://schema.repronim.org/ComputeSpecification",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "ImageObject",
+      "definition_uri": "http://schema.repronim.org//ImageObject",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "schema:ImageObject"
+      ],
+      "is_a": "MediaObject",
+      "slots": [
+        "id",
+        "name",
+        "category",
+        "inLanguage",
+        "MediaObject_contentUrl"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://schema.org/ImageObject",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Item",
+      "definition_uri": "http://schema.repronim.org//Item",
+      "description": "An item in an assessment.",
+      "title": "Item in an activity",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "reproschema:Field"
+      ],
+      "is_a": "Thing",
+      "slots": [
+        "id",
+        "name",
+        "category",
+        "about",
+        "additionalNotesObj",
+        "altLabel",
+        "associatedMedia",
+        "audio",
+        "description",
+        "image",
+        "isPartOf",
+        "preamble",
+        "prefLabel",
+        "question",
+        "responseOptions",
+        "schemaVersion",
+        "ui",
+        "version",
+        "video"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://schema.repronim.org/Field",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "LandingPage",
+      "definition_uri": "http://schema.repronim.org//LandingPage",
+      "description": "An object to define the landing page of a protocol.",
+      "title": "Landing Page",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "reproschema:LandingPage"
+      ],
+      "is_a": "Thing",
+      "slots": [
+        "id",
+        "name",
+        "category",
+        "inLanguage"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://schema.repronim.org/LandingPage",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "LangString",
+      "definition_uri": "http://schema.repronim.org//LangString",
+      "description": "RDF langString tuple",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "rdf:langString"
+      ],
+      "slots": [
+        "langstring_prefix",
+        "langstring_value"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "MediaObject",
+      "definition_uri": "http://schema.repronim.org//MediaObject",
+      "description": "A media object, such as an image, video, audio, or text object embedded in a web page or a downloadable dataset.",
+      "title": "Media Object",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "schema:MediaObject"
+      ],
+      "is_a": "Thing",
+      "slots": [
+        "id",
+        "name",
+        "category",
+        "inLanguage",
+        "MediaObject_contentUrl"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://schema.org/MediaObject",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "MessageSpecification",
+      "definition_uri": "http://schema.repronim.org//MessageSpecification",
+      "description": "An object to define messages in an activity or protocol.",
+      "title": "Message Specification",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "reproschema:MessageSpecification"
+      ],
+      "is_a": "Thing",
+      "slots": [
+        "id",
+        "name",
+        "category",
+        "jsExpression",
+        "message"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://schema.repronim.org/MessageSpecification",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "OverrideProperty",
+      "definition_uri": "http://schema.repronim.org//OverrideProperty",
+      "description": "An object to override the various properties added to assessments and Items.",
+      "title": "Additional properties",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "reproschema:OverrideProperty"
+      ],
+      "is_a": "Thing",
+      "slots": [
+        "id",
+        "name",
+        "category",
+        "isAbout",
+        "isVis",
+        "limit",
+        "maxRetakes",
+        "prefLabel",
+        "randomMaxDelay",
+        "schedule",
+        "valueRequired",
+        "variableName"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://schema.repronim.org/OverrideProperty",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Participant",
+      "definition_uri": "http://schema.repronim.org//Participant",
+      "description": "An Agent describing characteristics associated with a participant.",
+      "title": "Participant",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "reproschema:Participant"
+      ],
+      "is_a": "Agent",
+      "slots": [
+        "id",
+        "subject_id"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://schema.repronim.org/Participant",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Protocol",
+      "definition_uri": "http://schema.repronim.org//Protocol",
+      "description": "A representation of a study which comprises one or more assessments.",
+      "title": "Protocol",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "reproschema:Protocol"
+      ],
+      "is_a": "Thing",
+      "slots": [
+        "id",
+        "name",
+        "category",
+        "about",
+        "altLabel",
+        "associatedMedia",
+        "compute",
+        "cronTable",
+        "description",
+        "landingPage",
+        "messages",
+        "preamble",
+        "prefLabel",
+        "schemaVersion",
+        "ui",
+        "version"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://schema.repronim.org/Protocol",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Response",
+      "definition_uri": "http://schema.repronim.org//Response",
+      "description": "Describes the response of an item.",
+      "title": "Response",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "reproschema:Response"
+      ],
+      "is_a": "Thing",
+      "slots": [
+        "id",
+        "name",
+        "category",
+        "isAbout",
+        "value",
+        "wasAttributedTo"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://schema.repronim.org/Response",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "ResponseActivity",
+      "definition_uri": "http://schema.repronim.org//ResponseActivity",
+      "description": "Captures information about some action that took place. It also links to information (entities) that were used during the activity",
+      "title": "ResponseActivity",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "reproschema:ResponseActivity"
+      ],
+      "is_a": "Thing",
+      "slots": [
+        "id",
+        "name",
+        "category",
+        "endedAtTime",
+        "generated",
+        "inLanguage",
+        "startedAtTime",
+        "used",
+        "wasAssociatedWith"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://schema.repronim.org/ResponseActivity",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "ResponseOption",
+      "definition_uri": "http://schema.repronim.org//ResponseOption",
+      "description": "An element (object or by URL)to describe the properties of response of the Item.",
+      "title": "Response option",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "reproschema:ResponseOption"
+      ],
+      "is_a": "Thing",
+      "slots": [
+        "id",
+        "name",
+        "category",
+        "choices",
+        "datumType",
+        "maxValue",
+        "minValue",
+        "multipleChoice",
+        "unitOptions",
+        "valueType"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://schema.repronim.org/ResponseOption",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "SoftwareAgent",
+      "definition_uri": "http://schema.repronim.org//SoftwareAgent",
+      "description": "Captures information about some action that took place. It also links to information (entities) that were used during the activity",
+      "title": "Software Agent",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "reproschema:SoftwareAgent"
+      ],
+      "is_a": "Thing",
+      "slots": [
+        "id",
+        "name",
+        "category",
+        "version",
+        "url"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://schema.repronim.org/SoftwareAgent",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "StructuredValue",
+      "definition_uri": "http://schema.repronim.org//StructuredValue",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "schema:StructuredValue"
+      ],
+      "is_a": "Thing",
+      "slots": [
+        "id",
+        "name",
+        "category"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://schema.org/StructuredValue",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Thing",
+      "definition_uri": "http://schema.repronim.org//Thing",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "schema:Thing"
+      ],
+      "slots": [
+        "id",
+        "name",
+        "category"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://schema.org/Thing",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "UI",
+      "definition_uri": "http://schema.repronim.org//UI",
+      "description": "A group of properties related to UI.",
+      "title": "UI properties",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "reproschema:UI"
+      ],
+      "slots": [
+        "order",
+        "addProperties",
+        "overrideProperties",
+        "shuffle",
+        "allow",
+        "inputType",
+        "readonlyValue"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://schema.repronim.org/UI",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "UnitOption",
+      "definition_uri": "http://schema.repronim.org//UnitOption",
+      "description": "An object to represent a human displayable name alongside the more formal value for units.",
+      "title": "Unit options",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "reproschema:UnitOption"
+      ],
+      "is_a": "Thing",
+      "slots": [
+        "id",
+        "name",
+        "category",
+        "prefLabel",
+        "UnitOption_value"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://schema.repronim.org/UnitOption",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "VideoObject",
+      "definition_uri": "http://schema.repronim.org//VideoObject",
+      "title": "Video Object",
+      "from_schema": "http://schema.repronim.org/",
+      "mappings": [
+        "schema:VideoObject"
+      ],
+      "is_a": "MediaObject",
+      "slots": [
+        "id",
+        "name",
+        "category",
+        "inLanguage",
+        "MediaObject_contentUrl"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://schema.org/VideoObject",
+      "@type": "ClassDefinition"
+    }
+  ],
+  "metamodel_version": "1.7.0",
+  "source_file": "reproschema.yaml",
+  "source_file_date": "2024-06-18T18:48:16",
+  "source_file_size": 19504,
+  "generation_date": "2024-06-18T18:49:18",
+  "@type": "SchemaDefinition",
+  "@context": [
+    "https://raw.githubusercontent.com/ReproNim/reproschema/main/contexts/reproschema",
+    "https://w3id.org/linkml/types.context.jsonld",
+    {
+      "@base": "http://schema.repronim.org/"
+    }
+  ]
+}
+
