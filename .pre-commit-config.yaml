@@ -16,11 +16,29 @@ repos:
     -   id: check-ast
     -   id: check-added-large-files
     -   id: check-merge-conflict
+
+# Sorts Python imports alphabetically and by section with `isort`.
+-   repo: https://github.com/pycqa/isort
+    rev: 5.13.2
+    hooks:
+    -   id: isort
+        args: [--settings-path, pyproject.toml]
+
 -   repo: https://github.com/psf/black
     rev: 24.3.0
     hooks:
     -   id: black
+
 -   repo: https://github.com/codespell-project/codespell
     rev: v2.2.6
     hooks:
     -   id: codespell
+        args: [--toml, pyproject.toml]
+        additional_dependencies: [tomli]
+
+-   repo: https://github.com/pyCQA/flake8
+    rev: 7.1.0
+    hooks:
+    -   id: flake8
+        args: [--config, .flake8, --verbose]
+        additional_dependencies: [flake8-bugbear]
