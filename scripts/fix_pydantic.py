@@ -1,7 +1,8 @@
-""" Using ast transformer to fix some issues with automatic pydantic generation"""
+""" Using ast transformer to fix issues with automatic pydantic generation"""
 
-import sys
 import ast
+import sys
+
 import astor
 
 
@@ -20,7 +21,7 @@ class ClassRemover(ast.NodeTransformer):
         if isinstance(node.value, ast.Call):
             # Check if the call expression is an attribute (method call)
             if isinstance(node.value.func, ast.Attribute):
-                # Check if the method call matches the specified class and method name
+                # Check if the method call matches the specified class
                 if (
                     isinstance(node.value.func.value, ast.Name)
                     and node.value.func.value.id == self.class_name
@@ -79,7 +80,9 @@ def edit_pydantic(input_file, output_file):
     transformer_class = ClassRemover(class_name="LangString")
     tree_modclass = transformer_class.visit(tree)
 
-    transformer_tp = TypeReplacer(old_type="LangString", new_type="Dict[str, str]")
+    transformer_tp = TypeReplacer(
+        old_type="LangString", new_type="Dict[str, str]"
+    )
     tree_modclass_modtype = transformer_tp.visit(tree_modclass)
 
     with open(output_file, "w") as file:
@@ -93,6 +96,7 @@ if __name__ == "__main__":
     else:
         output_file = sys.argv[2]
     print(
-        f"Fixing automatically generated pydantic file {input_file} and saving to {output_file}"
+        f"Fixing automatically generated pydantic file {input_file} "
+        f"and saving to {output_file}"
     )
     edit_pydantic(input_file, output_file)
