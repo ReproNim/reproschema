@@ -1,0 +1,65 @@
+# - validate the protocol and activities in the repo with reproschema.py
+# - triggers a release when a github release is published
+name: validate and release
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches: ['*']
+  # Allow to trigger the generation of release files automatically
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'version number'
+        required: true
+        type: string
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: 3.12
+    - name: Install dependencies
+      # TODO This installs reproschema from source and not from pypi
+      # This may not be the optimal way of doing it.
+      run: |
+        python -m pip install --upgrade pip setuptools
+        pip install git+https://github.com/ReproNim/reproschema-py.git
+    - name: Validate content
+      run: |
+        python scripts/jsonParser.py
+        reproschema validate examples
+
+  release:
+    needs: [validate]
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: 3.12
+
+    - name: Make a release
+      run: |
+        echo "Making a release ${{ inputs.version }}"
+        mkdir releases/${{ inputs.version }}
+        cp contexts/reproschema releases/${{ inputs.version }}/base
+    #     python scripts/makeRelease.py ${{ inputs.version }}
+
+    -   name: Open pull requests to add files
+        uses: peter-evans/create-pull-request@v6
+        with:
+            commit-message: "[REL] adding files to for release ${{ inputs.version }}"
+            base: main
+            token: ${{ secrets.GITHUB_TOKEN }}
+            delete-branch: true
+            title: "[REL] adding files to for release ${{ inputs.version }}"
+            body: done via this [GitHub Action](https://github.com/${{ github.repository_owner }}/reproschema/blob/main/.github/workflows/validate_and_release.yml)
