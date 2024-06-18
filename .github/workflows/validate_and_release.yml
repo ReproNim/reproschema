@@ -58,7 +58,7 @@ jobs:
         pre-commit run --files reproschema_model.py || true
     - name: Generate jsonld format using linkml
       run: |
-        gen-jsonld --context contexts/reproschema linkml-schema/reproschema.yaml > reproschema.jsonld
+        gen-jsonld --context https://raw.githubusercontent.com/ReproNim/reproschema/main/contexts/reproschema linkml-schema/reproschema.yaml > reproschema.jsonld
     - name: Generate n-triples and turtle formats using reproschema
       run: |
         reproschema convert --format n-triples reproschema.jsonld > reproschema.nt
