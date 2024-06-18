@@ -48,7 +48,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip setuptools
-          python install linkml astor pre-commit
+          pip install linkml astor pre-commit
           pip install git+https://github.com/ReproNim/reproschema-py.git
       - name: generate pydantic and fixing it
         run: |
