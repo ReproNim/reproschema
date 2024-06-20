@@ -21,11 +21,20 @@ This repository contains:
 
 ## Developing ReproSchema
 
+### Updating the schema
+
 As of release 1.0.0, a linked data modeling language, [LinkML](https://linkml.io/linkml/), is used to create
 a [YAML file](linkml-schema/reproschema.yaml) with the schema.
 
 The [context file](contexts/reproschema) was automatically generated using LinkML,
 and then manually curated in order to support all the reproschema feature.
+
+#### Style
+
+This repo uses pre-commit to check styling.
+- Install pre-commit with pip: `pip install pre-commit`
+- In order to use it with the repository, you have to run `run pre-commit install` in the root directory the first time you use it.
+
 
 ### Release
 Upon release, there are additional formats, `jsonsld`, `turtle`, `n-triples`
