@@ -1,4 +1,8 @@
-""" Using ast transformer to fix issues with automatic pydantic generation"""
+""" Using ast transformer to fix issues with automatic pydantic generation
+Currently the main issue is with the LangString representation in the pydantic
+model, I'm changing it to Dict[str, str].
+Perhaps in the future this script will not be required.
+"""
 
 import ast
 import sys

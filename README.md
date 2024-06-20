@@ -30,7 +30,7 @@ and then manually curated in order to support all the reproschema feature.
 ### Release
 Upon release, there are additional formats, `jsonsld`, `turtle`, `n-triples`
 and `pydantic` that are created using `LinkML` tools, `reproschema-py`,
-and reproschema-specific script for the `pydantic` format.
+and [reproschema-specific script](./scripts/fix_pydantic.py) to "fix" the `pydantic` format.
 The entire process is automated in the GitHub Action Workflow:
 [Validate and Release](.github/workflows/validate_and_release.yml).
 This workflow must be manually triggered by the core developers once a new release is ready.
