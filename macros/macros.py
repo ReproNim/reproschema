@@ -1,5 +1,5 @@
-from pathlib import Path
 import json
+from pathlib import Path
 
 import ruamel.yaml
 from jinja2 import Environment, FileSystemLoader, select_autoescape
@@ -38,7 +38,11 @@ def library_table() -> str:
 
         for file in activity_path.glob("*"):
 
-            if file.is_dir() or file is None or "valueConstraints" in file.stem:
+            if (
+                file.is_dir()
+                or file is None
+                or "valueConstraints" in file.stem
+            ):
                 continue
 
             with open(file) as f:
@@ -48,9 +52,14 @@ def library_table() -> str:
                 {
                     "name": content["@id"],
                     "description": (
-                        content["description"] if "description" in content else ""
+                        content["description"]
+                        if "description" in content
+                        else ""
                     ),
-                    "uri": f"{LIBRARY_URL}/tree/master/activities/{activity_path.stem}/{file.stem}{file.suffix}",
+                    "uri": (
+                        f"{LIBRARY_URL}/tree/master/activities/"
+                        f"{activity_path.stem}/{file.stem}{file.suffix}"
+                    ),
                 }
             )
 
