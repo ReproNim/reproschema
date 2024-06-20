@@ -1,6 +1,4 @@
-from .macros import (
-    library_table,
-)
+from .macros import library_table
 from .main import define_env
 
 __all__ = [
