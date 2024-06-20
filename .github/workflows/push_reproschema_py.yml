@@ -27,7 +27,7 @@ jobs:
         run: |
           cp releases/${{ inputs.version }}/reproschema.jsonld reproschema-py/reproschema.jsonld
           cd reproschema-py
-          git checkout -b release_${{ inputs.version }}
+          git checkout -b new_release
           # TODO: change to pydantic model
           # TODO: a script to change CONTEXTFILE_URL can be added
           git add reproschema.jsonld
@@ -39,12 +39,12 @@ jobs:
           PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
         run: |
           cd reproschema-py
-          git push origin release_${{ inputs.version }}
+          git push origin new_release
       - name: Create pull request
         env:
           TARGET_REPO: repronim/reproschema-py
           PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
         run: |
           curl -X POST -H "Authorization: token ${{ secrets.PERSONAL_ACCESS_TOKEN }}" \
-          -d '{"title":"Automated PR: Add new version of the model: ${{ inputs.version }}", "head":"release_${{ inputs.version }}", "base":"main"}' \
+          -d '{"title":"Automated PR: Add new version of the model: ${{ inputs.version }}", "head":"new_release", "base":"main"}' \
           https://api.github.com/repos/$TARGET_REPO/pulls
