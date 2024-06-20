@@ -56,7 +56,9 @@ nav:
       - Translate a questionnaire: "tutorials/translating-an-activity.md"
       - Demographic information : "tutorials/collecting-demographics-information.md"
   - How to guides:
-      - how-to/validation.md
+      - Validation: "how-to/validation.md"
+      - Visualize: "how-to/visualize.md"
+
   - FAQ: "FAQ.md"
   - Contributing: "CONTRIBUTING.md"
 
@@ -76,12 +78,16 @@ markdown_extensions:
   - pymdownx.snippets:
       auto_append:
         - includes/abbreviations.md
+  - tables
   - toc:
       anchorlink: true
 
 watch:
   - includes
+  - linkml-schema
 
 plugins:
   - search
   - tags
+  - macros:
+      module_name: macros/main

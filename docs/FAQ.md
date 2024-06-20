@@ -40,7 +40,6 @@ you can explore them on [schema.repronim.org/](https://schema.repronim.org/rl/).
 
 The ReproSchema is also used to develop a checklist to [improve methods and results reporting in neuroimaging](https://github.com/ohbm/cobidas).
 
-
 ## Linked data and semantic web
 
 ## What is the semantic web?
