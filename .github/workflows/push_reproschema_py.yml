@@ -25,22 +25,25 @@ jobs:
       - name: Make changes to target repository
         id: changes
         run: |
-          cp releases/${{ inputs.version }}/reproschema.jsonld reproschema-py/reproschema.jsonld
+          # updating pydantic model
+          cp releases/${{ inputs.version }}/reproschema_model.py reproschema-py/reproschema/models/model.py
           cd reproschema-py
+          # updating url to context
+          echo "# this is automatically updated after reproschema new release" > reproschema/context_url.py
+          echo "CONTEXTFILE_URL = 'https://raw.githubusercontent.com/ReproNim/reproschema/main/releases/${{ inputs.version }}/reproschema'"
           git checkout -b release_${{ inputs.version }}
-          # TODO: change to pydantic model
-          # TODO: a script to change CONTEXTFILE_URL can be added
-          git add reproschema.jsonld
-          git commit -m "Add new version of the model"
+          git add reproschema/models/model.py
+          git add reproschema/context_url.py
+          git commit -m "Add new version of the pydantic model and new context url"
           cd ..
-      - name: Push changes to target repository
+      - name: Push changes to reproschema-py
         env:
           TARGET_REPO: repronim/reproschema-py
           PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
         run: |
           cd reproschema-py
           git push origin release_${{ inputs.version }}
-      - name: Create pull request
+      - name: Create pull request to reproschema-py
         env:
           TARGET_REPO: repronim/reproschema-py
           PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
