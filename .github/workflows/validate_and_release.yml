@@ -72,7 +72,6 @@ jobs:
         mv reproschema.jsonld releases/${{ inputs.version }}/reproschema.jsonld
         mv reproschema.nt releases/${{ inputs.version }}/reproschema.nt
         mv reproschema.ttl releases/${{ inputs.version }}/reproschema.ttl
-    #     python scripts/makeRelease.py ${{ inputs.version }}
 
     -   name: Open pull requests to add files
         uses: peter-evans/create-pull-request@v6
