@@ -56,7 +56,10 @@ def library_table() -> str:
                         if "description" in content
                         else ""
                     ),
-                    "uri": f"{LIBRARY_URL}/tree/master/activities/{activity_path.stem}/{file.stem}{file.suffix}",
+                    "uri": (
+                        f"{LIBRARY_URL}/tree/master/activities/"
+                        f"{activity_path.stem}/{file.stem}{file.suffix}"
+                    ),
                 }
             )
 
