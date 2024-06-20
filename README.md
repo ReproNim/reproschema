@@ -19,6 +19,29 @@ This repository contains:
 - a example of [a protocol based on the reproschema](./examples)
 - the [documentation](./docs)
 
+## Developing ReproSchema
+
+As of release 1.0.0, a linked data modeling language, [LinkML](https://linkml.io/linkml/), is used to create
+a [YAML file](linkml-schema/reproschema.yaml) with the schema.
+
+The [context file](contexts/reproschema) was automatically generated using LinkML,
+and then manually curated in order to support all the reproschema feature.
+
+### Release
+Upon release, there are additional formats, `jsonsld`, `turtle`, `n-triples`
+and `pydantic` that are created using `LinkML` tools, `reproschema-py`,
+and [reproschema-specific script](./scripts/fix_pydantic.py) to "fix" the `pydantic` format.
+The entire process is automated in the GitHub Action Workflow:
+[Validate and Release](.github/workflows/validate_and_release.yml).
+This workflow must be manually triggered by the core developers once a new release is ready.
+All the releases can be found in [releases directory](./releases).
+
+### Updating model in reproschema-py
+Another GitHub Action Workflow: [ Create Pull Request to reproschema-py](.github/workflows/push_reproschema_py.yml)
+is responsible for creating pull request to the `reproschema-py` Python library with
+the new version of pydantic model and context.
+The workflow is currently also triggered manually by the core developers.
+
 
 ## Licenses
 
