@@ -54,8 +54,8 @@ nav:
       - Create new items: "tutorials/create-new-items.md"
       - Finalize the protocol: "tutorials/finalizing-the-protocol.md"
       - Translate a questionnaire: "tutorials/translating-an-activity.md"
-      - Demographic information : "tutorials/collecting-demographics-information.md"
-      - Tips to make your life easier: "tutorials/tips-to-make-your-life-easier.md"
+      - Tips: tutorials/tips-to-make-your-life-easier.md
+  - Library: library.md
   - FAQ: "FAQ.md"
   - Contributing: "CONTRIBUTING.md"
 
@@ -75,12 +75,16 @@ markdown_extensions:
   - pymdownx.snippets:
       auto_append:
         - includes/abbreviations.md
+  - tables
   - toc:
       anchorlink: true
 
 watch:
   - includes
+  - linkml-schema
 
 plugins:
   - search
   - tags
+  - macros:
+      module_name: macros/main
