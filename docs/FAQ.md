@@ -31,29 +31,6 @@
 **🛠 Work in progress 🛠**
 -->
 
-### How can I visualize the schema for a `protocol` or an `activity`?
-
-If you want to see what the assessment that are already supported by the ReproSchema would look like using our ReproSchema user-interface, you can visualize them directly on [schema.repronim.org](https://schema.repronim.org/rl).
-
-If you just want to view a protocol or activity you are developing using the `reproschema-ui`,
-you can pass the URL of the schema to the `url` query parameter like this:
-
-```https://schema.repronim.org/ui/#/?url=url-to-your-schema```
-
-If you are hosting a schema on github, make sure that you are passing the URL of the **raw** content of the schema.
-For example, our demo protocol can be accessed at this URL:
-
-[https://github.com/ReproNim/reproschema-demo-protocol/blob/7ed1ae49279f75acdd57380fff1f8aaff2c7b511/reproschema_demo_protocol/reproschema_demo_protocol_schema](https://github.com/ReproNim/reproschema-demo-protocol/blob/7ed1ae49279f75acdd57380fff1f8aaff2c7b511/reproschema_demo_protocol/reproschema_demo_protocol_schema)
-
-But to get access to the raw content of that file you must click on the `Raw` button
-once you have opened that page on github that will open this URL:
-
-[https://raw.githubusercontent.com/ReproNim/reproschema-demo-protocol/7ed1ae49279f75acdd57380fff1f8aaff2c7b511/reproschema_demo_protocol/reproschema_demo_protocol_schema](https://raw.githubusercontent.com/ReproNim/reproschema-demo-protocol/7ed1ae49279f75acdd57380fff1f8aaff2c7b511/reproschema_demo_protocol/reproschema_demo_protocol_schema).
-
-If you want to visualize the graph represented by the JSON-LD file,
-we explain how to do this in [From JSON to JSON-LD](#from-json-to-json-ld).
-
-
 ### Which assessments tools will/are supporting this standard?
 
 At the moment, all the assessments that support this standard are listed in [this folder](https://github.com/ReproNim/reproschema-library/tree/master/activities) or the [reproschema-library repository](https://github.com/ReproNim/reproschema-library).
@@ -62,7 +39,6 @@ If you want to see those different tools in action using our user interface,
 you can explore them on [schema.repronim.org/](https://schema.repronim.org/rl/).
 
 The ReproSchema is also used to develop a checklist to [improve methods and results reporting in neuroimaging](https://github.com/ohbm/cobidas).
-
 
 ## Linked data and semantic web
 

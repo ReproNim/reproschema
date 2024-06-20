@@ -46,12 +46,32 @@ jobs:
       uses: actions/setup-python@v5
       with:
         python-version: 3.12
-
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip setuptools
+        pip install linkml astor pre-commit
+        pip install git+https://github.com/ReproNim/reproschema-py.git
+    - name: Generate pydantic  using linml and fixing it with reproschema specific script
+      run: |
+        gen-pydantic --pydantic-version 2 linkml-schema/reproschema.yaml > reproschema_model.py
+        python scripts/fix_pydantic.py reproschema_model.py
+        pre-commit run --files reproschema_model.py || true
+    - name: Generate jsonld format using linkml
+      run: |
+        gen-jsonld --context https://raw.githubusercontent.com/ReproNim/reproschema/main/contexts/reproschema linkml-schema/reproschema.yaml > reproschema.jsonld
+    - name: Generate n-triples and turtle formats using reproschema
+      run: |
+        reproschema convert --format n-triples reproschema.jsonld > reproschema.nt
+        reproschema convert --format turtle reproschema.jsonld > reproschema.ttl
     - name: Make a release
       run: |
         echo "Making a release ${{ inputs.version }}"
         mkdir releases/${{ inputs.version }}
-        cp contexts/reproschema releases/${{ inputs.version }}/base
+        cp contexts/reproschema releases/${{ inputs.version }}/reproschema
+        mv reproschema_model.py releases/${{ inputs.version }}/reproschema_model.py
+        mv reproschema.jsonld releases/${{ inputs.version }}/reproschema.jsonld
+        mv reproschema.nt releases/${{ inputs.version }}/reproschema.nt
+        mv reproschema.ttl releases/${{ inputs.version }}/reproschema.ttl
     #     python scripts/makeRelease.py ${{ inputs.version }}
 
     -   name: Open pull requests to add files
