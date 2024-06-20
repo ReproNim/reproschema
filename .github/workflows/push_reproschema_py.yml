@@ -1,7 +1,11 @@
 name: Create Pull Request in Another Repository
 on:
-  push:
-    paths: 'releases'
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'version number'
+        required: true
+        type: string
 
 jobs:
   create-pull-request:
@@ -21,13 +25,9 @@ jobs:
       - name: Make changes to target repository
         id: changes
         run: |
-          LAST_VERSION=$(ls -lt releases/ | grep ^d | head -1 | awk '{print $9}')
-          echo "::set-output name=last_version::$LAST_VERSION"
-          echo "Last Version"
-          echo $LAST_VERSION
-          cp releases/$LAST_VERSION/reproschema.jsonld reproschema-py/reproschema.jsonld
+          cp releases/${{ inputs.version }}/reproschema.jsonld reproschema-py/reproschema.jsonld
           cd reproschema-py
-          git checkout -b new_release
+          git checkout -b release_${{ inputs.version }}
           # TODO: change to pydantic model
           # TODO: a script to change CONTEXTFILE_URL can be added
           git add reproschema.jsonld
@@ -39,12 +39,12 @@ jobs:
           PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
         run: |
           cd reproschema-py
-          git push origin new_release
+          git push origin release_${{ inputs.version }}
       - name: Create pull request
         env:
           TARGET_REPO: repronim/reproschema-py
           PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
         run: |
           curl -X POST -H "Authorization: token ${{ secrets.PERSONAL_ACCESS_TOKEN }}" \
-          -d '{"title":"Automated PR: Add new version of the model: ${{ steps.changes.outputs.last_version }}", "head":"new_release", "base":"main"}' \
+          -d '{"title":"Automated PR: Add new version of the model: ${{ inputs.version }}", "head":"release_${{ inputs.version }}", "base":"main"}' \
           https://api.github.com/repos/$TARGET_REPO/pulls
