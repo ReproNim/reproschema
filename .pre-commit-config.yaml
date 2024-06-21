@@ -11,6 +11,8 @@ repos:
             (?x)^(
                 docs/specification/.*
                 | mkdocs.yml
+                | .*\.ttl
+                | .*\.nt
             )$
     -   id: check-json
     -   id: check-ast
