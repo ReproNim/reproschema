@@ -30,7 +30,7 @@ jobs:
           cd reproschema-py
           # updating url to context
           echo "# this is automatically updated after reproschema new release" > reproschema/context_url.py
-          echo "CONTEXTFILE_URL = 'https://raw.githubusercontent.com/ReproNim/reproschema/main/releases/${{ inputs.version }}/reproschema'"
+          echo "CONTEXTFILE_URL = 'https://raw.githubusercontent.com/ReproNim/reproschema/main/releases/${{ inputs.version }}/reproschema'" >> reproschema/context_url.py
           git checkout -b release_${{ inputs.version }}
           git add reproschema/models/model.py
           git add reproschema/context_url.py
