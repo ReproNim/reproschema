@@ -19,6 +19,38 @@ This repository contains:
 - a example of [a protocol based on the reproschema](./examples)
 - the [documentation](./docs)
 
+## Developing ReproSchema
+
+### Updating the schema
+
+As of release 1.0.0, a linked data modeling language, [LinkML](https://linkml.io/linkml/), is used to create
+a [YAML file](linkml-schema/reproschema.yaml) with the schema.
+
+The [context file](contexts/reproschema) was automatically generated using LinkML,
+and then manually curated in order to support all the reproschema feature.
+
+#### Style
+
+This repo uses pre-commit to check styling.
+- Install pre-commit with pip: `pip install pre-commit`
+- In order to use it with the repository, you have to run `run pre-commit install` in the root directory the first time you use it.
+
+
+### Release
+Upon release, there are additional formats, `jsonsld`, `turtle`, `n-triples`
+and `pydantic` that are created using `LinkML` tools, `reproschema-py`,
+and [reproschema-specific script](./scripts/fix_pydantic.py) to "fix" the `pydantic` format.
+The entire process is automated in the GitHub Action Workflow:
+[Validate and Release](.github/workflows/validate_and_release.yml).
+This workflow must be manually triggered by the core developers once a new release is ready.
+All the releases can be found in [releases directory](./releases).
+
+### Updating model in reproschema-py
+Another GitHub Action Workflow: [ Create Pull Request to reproschema-py](.github/workflows/push_reproschema_py.yml)
+is responsible for creating pull request to the `reproschema-py` Python library with
+the new version of pydantic model and context.
+The workflow is currently also triggered manually by the core developers.
+
 
 ## Licenses
 
@@ -33,23 +65,3 @@ The content of this repository is distributed under the [Apache 2.0 license](./L
 ## Contributors
 
 https://github.com/ReproNim/reproschema/graphs/contributors
-
-### Developer notes
-To run the Python scripts in the scripts directory, you will need to install the
-following libraries via pip
-
-- reproschema (makeRelease.py)
-- pytablewriter (editProperties.py)
-
-To make a new release:
-
-```bash
-python scripts/makeRelease.py <version>
-python scripts/editProperties.py <version>
-```
-
-In addition, this repo uses pre-commit to check styling.
-
-Install: `pip install pre-commit`
-
-Use: run `pre-commit install` in the root directory of the repo.
