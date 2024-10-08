@@ -74,7 +74,7 @@ jobs:
         mv reproschema.ttl releases/${{ inputs.version }}/reproschema.ttl
 
     -   name: Open pull requests to add files
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@v7
         with:
             commit-message: "[REL] adding files to for release ${{ inputs.version }}"
             base: main
