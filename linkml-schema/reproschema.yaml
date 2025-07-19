@@ -60,6 +60,14 @@ slots:
     any_of:
     - range: uri
     - range: AudioObject
+  backgroundImage:
+    title: backgroundImage
+    description:
+      Background image for drawing activities.
+    slot_uri: reproschema:backgroundImage
+    any_of:
+      - range: ImageObject
+      - range: ur
   category:
     description:
       Name of the high level ontology class in which this entity is categorized.
@@ -471,6 +479,7 @@ classes:
     - altLabel
     - associatedMedia
     - audio
+    - backgroundImage
     - description
     - image
     - isPartOf
