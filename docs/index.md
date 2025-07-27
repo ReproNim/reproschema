@@ -25,9 +25,13 @@ could save you from a lot of confusion. 😉
 
 ## How to cite
 
-If you need to cite ReproSchema, you can use this DOI:
+If you use ReproSchema in your research, please cite our paper:
 
--   [doi:10.5281/zenodo.4064940](https://doi.org/10.5281/zenodo.4064940).
+Chen Y, Jarecka D, Abraham S, Gau R, Ng E, Low D, Bevers I, Johnson A, Keshavan A, Klein A, Clucas J, Rosli Z, Hodge S, Linkersdörfer J, Bartsch H, Das S, Fair D, Kennedy D, Ghosh S. **Standardizing Survey Data Collection to Enhance Reproducibility: Development and Comparative Evaluation of the ReproSchema Ecosystem**. J Med Internet Res 2025;27:e63343. DOI: [10.2196/63343](https://doi.org/10.2196/63343)
+
+For the software itself, you can use this DOI:
+
+-   [doi:10.5281/zenodo.4064940](https://doi.org/10.5281/zenodo.4064940)
 
 ## Licence
 

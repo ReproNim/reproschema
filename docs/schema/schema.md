@@ -33,7 +33,7 @@ There are in fact more levels than this each and each level has its own schema:
 
 ## Detailed description
 
-The core model of ReproSchema was initially derived from the [CEDAR Metadata Model](https://more.metadatacenter.org/tools-training/outreach/cedar-template-model).
+The core model of ReproSchema was initially derived from the [CEDAR Metadata Model](https://more.metadatacenter.org/).
 To accommodate the needs of neuroimaging and other clinical and behavioral
 protocols and assessments the schema has evolved significantly. These changes
 include:
