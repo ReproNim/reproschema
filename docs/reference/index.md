@@ -5,15 +5,14 @@ Complete technical specifications and API documentation for ReproSchema.
 ## 📖 Available References
 
 ### Schema Specifications
+- **[Field Types](field-types.md)** - Complete field types and response options reference
 - **[Schema Specification](../schema/schema.md)** - Complete ReproSchema specification
 - **[Assessment Library](../library.md)** - Available questionnaires and instruments
 
 ### Coming Soon
 - **API Reference** - Python API documentation
 - **CLI Reference** - Command-line tool documentation
-- **Field Types Reference** - All field types with examples
 - **Properties Reference** - Complete property definitions
-- **Response Types** - All supported response formats
 
 ## 🔍 Quick Links
 
