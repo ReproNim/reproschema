@@ -9,8 +9,10 @@ Complete technical specifications and API documentation for ReproSchema.
 - **[Schema Specification](../schema/schema.md)** - Complete ReproSchema specification
 - **[Assessment Library](../library.md)** - Available questionnaires and instruments
 
+### API Documentation
+- **[Python API Reference](api-reference.md)** - Complete Python API documentation
+
 ### Coming Soon
-- **API Reference** - Python API documentation
 - **CLI Reference** - Command-line tool documentation
 - **Properties Reference** - Complete property definitions
 
