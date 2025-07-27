@@ -28,7 +28,7 @@ through consistent terminologies and relationships that map to human cognition
 (e.g., [Cognitive Atlas](https://www.cognitiveatlas.org/),
 [Cognitive Paradigm Ontology](http://www.cogpo.org/)). Other efforts such as the
 National Institute for Mental Health (NIMH) Data Archive (NDA) and the National
-Library of Medicine (NLM) [Common Data Elements](https://www.nlm.nih.gov/cde/index.html)
+Library of Medicine (NLM) [Common Data Elements](https://cde.nlm.nih.gov/)
 have curated data elements corresponding to the items and calculated scores from
 these questionnaires. However, these resources are often used to make data
 consistent and reusable after, rather than during data collection. However,
@@ -55,7 +55,7 @@ stage by relying on a common `schema` that encodes how the different elements of
 the data and / or the metadata relate to one another. This way, all this relational
 information between these elements is captured from the very start as it is already
 embedded in the formal description of the assessment. This solution was inspired
-by the work of [CEDAR Metadata Model](https://more.metadatacenter.org/tools-training/outreach/cedar-template-model).
+by the work of [CEDAR Metadata Model](https://more.metadatacenter.org/).
 
 In this project we provide a comprehensive set of tools to create and use the
 schemas, while tracking the source of the schema, and changes to it over time.
