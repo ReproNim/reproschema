@@ -11,13 +11,15 @@ Quick, practical guides for accomplishing specific tasks with ReproSchema.
 - ✅ **[Validate Your Schemas](validation.md)** - Check schemas for errors and compliance
 - 👁️ **[Visualize in ReproSchema UI](visualize.md)** - Preview your schemas as web forms
 
+### Content Management
+- 🌍 **[Add Translations](add-translations.md)** - Add multilingual support to schemas
+- 🚀 **[Deploy Your Protocol](deploy-protocol.md)** - Deploy for data collection
+
 ### Coming Soon
 - 🔄 Convert from REDCap format
-- 🌍 Add translations to your schemas
-- 🚀 Deploy to production
 - 🔧 Set up CI/CD validation
-- 🐍 Use the Python API
 - 🎨 Customize response types
+- 📊 Export and analyze data
 
 ## 📋 How-To Guide Format
 
