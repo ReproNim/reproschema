@@ -1,0 +1,42 @@
+# ReproSchema Repository Guidelines
+
+## Repository Overview
+This is the core ReproSchema repository containing schema definitions and specifications.
+
+## Development Guidelines
+
+### Documentation Reorganization
+See `DOCUMENTATION_REORGANIZATION_PROPOSAL.md` for the planned restructuring of docs following the Diátaxis framework.
+
+### Key Areas
+- Schema definitions in `/terms`
+- Context files in `/contexts`
+- Examples in `/examples`
+- Documentation in `/docs`
+
+### Testing
+Always validate schemas after changes using:
+```bash
+reproschema -l DEBUG validate <path-to-schema>
+```
+
+### Commits
+Follow conventional commit format:
+- `feat(schema):` for new schema features
+- `fix(docs):` for documentation fixes
+- `chore(deps):` for dependency updates
+
+## Internal Notes
+This folder contains internal documentation and planning documents that should not be committed to the repository.
+## Lessons Learned
+
+### Template for New Lessons
+```markdown
+### [YYYY-MM-DD] - [Brief Description]
+**Problem**: [What challenge we faced]
+**Solution**: [How we solved it]
+**Transferable to**: [Which other repos might benefit]
+**Status**: [Shared/Local-only/Under-evaluation]
+```
+
+<!-- Add new lessons above this line -->

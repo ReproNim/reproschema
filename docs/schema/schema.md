@@ -19,7 +19,7 @@ A simplistic way to describe the Reprochema is to say it is organized in a hiera
     This schema is defined by the [Field schema](https://raw.githubusercontent.com/ReproNim/reproschema/master/terms/Field).
 
 <img
-src="../../img/reproschema.png"
+src="../img/reproschema.png"
 alt="reproschema"
 style="width: 800px; height: auto; display: block; margin-left: auto;  margin-right: auto;"/>
 
@@ -30,10 +30,76 @@ There are in fact more levels than this each and each level has its own schema:
 -   all of the schemas can be found in the [`terms` folder](https://github.com/ReproNim/reproschema/tree/master/terms)
 -   the Reproschema actually allows for a more complex level nesting than the one described above (e.g you can have an `activity` within an `activity`)
 -   all the properties of each level are described below in the [Properties of ReproSchema objects section](#properties-of-reproschema-objects)
+## Properties of ReproSchema Objects
+
+### Protocol Properties
+
+The main properties of a ReproSchema Protocol include:
+
+- `@id`: Unique identifier for the protocol
+- `@type`: Must be `reproschema:Protocol`
+- `prefLabel`: Human-readable name
+- `description`: Detailed description of the protocol
+- `landingPage`: Link to landing page (typically README.md)
+- `ui`: UI configuration object containing:
+  - `order`: Array of activities to display
+  - `shuffle`: Boolean to randomize activity order
+  - `addProperties`: Array of activity properties to add
+
+### Activity Properties
+
+ReproSchema Activity properties include:
+
+- `@id`: Unique identifier for the activity
+- `@type`: Must be `reproschema:Activity`
+- `prefLabel`: Human-readable name
+- `description`: Description of the activity
+- `ui`: UI configuration object containing:
+  - `order`: Array of items to display
+  - `shuffle`: Boolean to randomize item order
+  - `addProperties`: Array of item properties
+
+### Field (Item) Properties
+
+ReproSchema Field properties include:
+
+- `@id`: Unique identifier for the item
+- `@type`: Must be `reproschema:Item`
+- `prefLabel`: Human-readable label
+- `question`: The actual question text
+- `description`: Additional context
+- `responseOptions`: Object describing response format:
+  - `valueType`: Data type (xsd:string, xsd:integer, etc.)
+  - `choices`: Array of choice options
+  - `minValue`: Minimum value
+  - `maxValue`: Maximum value
+  - `multipleChoice`: Boolean for multiple selections
+
+### ResponseOption Properties
+
+Response options define the format and constraints of responses:
+
+- `valueType`: Data type specification
+- `choices`: Available options for selection items
+- `minValue`/`maxValue`: Numeric range constraints
+- `maxLength`: Maximum string length
+- `pattern`: Regular expression validation
+
+### UI Properties
+
+UI properties control the rendering and behavior:
+
+- `order`: Display order of items/activities
+- `shuffle`: Randomize order
+- `addProperties`: Additional UI properties
+- `allow`: Array of permitted behaviors
+- `visibility`: Conditional visibility rules
+
+For detailed specifications, see the [LinkML schema](https://github.com/ReproNim/reproschema/blob/main/linkml-schema/reproschema.yaml).
+
 
 ## Detailed description
 
-The core model of ReproSchema was initially derived from the [CEDAR Metadata Model](https://more.metadatacenter.org/tools-training/outreach/cedar-template-model).
 To accommodate the needs of neuroimaging and other clinical and behavioral
 protocols and assessments the schema has evolved significantly. These changes
 include:
