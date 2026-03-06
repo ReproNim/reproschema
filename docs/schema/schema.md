@@ -80,6 +80,73 @@ Protocol
 The [ReproSchema-UI](https://repronim.org/reproschema-ui) is a prototype implementation of an UI that leverages these
 different elements of the schema.
 
+## Properties of ReproSchema Objects
+
+### Protocol Properties
+
+The main properties of a ReproSchema Protocol include:
+
+- `@id`: Unique identifier for the protocol
+- `@type`: Must be `reproschema:Protocol`
+- `prefLabel`: Human-readable name
+- `description`: Detailed description of the protocol
+- `landingPage`: Link to landing page (typically README.md)
+- `ui`: UI configuration object containing:
+  - `order`: Array of activities to display
+  - `shuffle`: Boolean to randomize activity order
+  - `addProperties`: Array of activity properties to add
+
+### Activity Properties
+
+ReproSchema Activity properties include:
+
+- `@id`: Unique identifier for the activity
+- `@type`: Must be `reproschema:Activity`
+- `prefLabel`: Human-readable name
+- `description`: Description of the activity
+- `ui`: UI configuration object containing:
+  - `order`: Array of items to display
+  - `shuffle`: Boolean to randomize item order
+  - `addProperties`: Array of item properties
+
+### Field (Item) Properties
+
+ReproSchema Field properties include:
+
+- `@id`: Unique identifier for the item
+- `@type`: Must be `reproschema:Item`
+- `prefLabel`: Human-readable label
+- `question`: The actual question text
+- `description`: Additional description
+- `responseOptions`: Object describing response format:
+  - `valueType`: Data type (xsd:string, xsd:integer, etc.)
+  - `choices`: Array of choice options
+  - `minValue`: Minimum value
+  - `maxValue`: Maximum value
+  - `multipleChoice`: Boolean for multiple selections
+
+### ResponseOption Properties
+
+Response options define the format and constraints of responses:
+
+- `valueType`: Data type specification
+- `choices`: Available options for selection items
+- `minValue`/`maxValue`: Numeric range constraints
+- `maxLength`: Maximum string length
+- `pattern`: Regular expression validation
+
+### UI Properties
+
+UI properties control the rendering and behavior:
+
+- `order`: Display order of items/activities
+- `shuffle`: Randomize order
+- `addProperties`: Additional UI properties
+- `allow`: Array of permitted behaviors
+- `visibility`: Conditional visibility rules
+
+For detailed specifications, see the [LinkML schema](https://github.com/ReproNim/reproschema/blob/main/linkml-schema/reproschema.yaml).
+
 ## ReproSchema Model
 
 The model was written using a linked data modeling language [LinkML](https://linkml.io/linkml/).
