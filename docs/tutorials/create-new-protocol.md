@@ -126,7 +126,7 @@ https://www.repronim.org/reproschema-ui/#/activities/0?url=https://raw.githubuse
 You should now be able to see something like this and browse directly through the content of the activity.
 
 <img
-src="../../img/phq-9_ui.png"
+src="../img/phq-9_ui.png"
 alt="phq-9_ui.png"
 style="width: 700px; height: auto; display: block; margin-left: auto;  margin-right: auto;"/>
 
