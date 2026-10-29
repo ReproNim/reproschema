@@ -141,7 +141,7 @@ have no idea what to do with, but that a computer has no problem making sense of
 
 ```
 
-By the way, if you ever come across such monstrosity and you want to turn into something you as a human being can understand (or least read), you can copy-paste it in a validator-formatter like [jsonformatter](https://jsonformatter.curiousconcept.com/) or [jsonlint](https://jsonlint.com/). This will quickly tell you
+By the way, if you ever come across such monstrosity and you want to turn into something you as a human being can understand (or least read), you can copy-paste it in a validator-formatter like [jsonformatter](https://jsonformatter.curiousconcept.com/), [jsonlint](https://jsonlint.com/), or [JSONViewerTool's JSON Validator](https://jsonviewertool.com/json-validator). This will quickly tell you
 1.  whether this is a valid JSON format (eaning if it respects the rules of how a JSON file should be formatted) and
 1.  it will highlight and help you navigate the nested and hierarchical nature of the JSON file.
 
